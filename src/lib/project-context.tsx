@@ -146,6 +146,7 @@ export type ProjectData = {
     texture: string;
     brutalist: string;
     heroBg?: string;
+    ogImage?: string;
     hero1Caption?: string;
     brutalistCaption?: string;
   };

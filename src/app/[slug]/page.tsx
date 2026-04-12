@@ -19,6 +19,10 @@ export async function generateMetadata({
   const title = `${project.client.name} × ${project.studio.name} — Proposal`;
   const description = project.project.tagline;
 
+  const ogImage = project.images.ogImage
+    ? `https://proposal.crowdcontroldigital.com${project.images.ogImage}`
+    : undefined;
+
   return {
     title,
     description,
@@ -28,8 +32,16 @@ export async function generateMetadata({
       type: "website",
       url: `https://proposal.crowdcontroldigital.com/${slug}`,
       siteName: "Crowd Control Digital Proposals",
+      ...(ogImage && {
+        images: [{ url: ogImage, width: 1200, height: 630, alt: title }],
+      }),
     },
-    twitter: { card: "summary_large_image", title, description },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+      ...(ogImage && { images: [ogImage] }),
+    },
   };
 }
 

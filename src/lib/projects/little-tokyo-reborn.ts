@@ -326,6 +326,7 @@ export const littleTokyoReborn: ProjectData = {
     texture: "/images/little-tokyo-reborn/texture.jpg",
     brutalist: "/images/little-tokyo-reborn/brutalist.jpg",
     heroBg: "/images/little-tokyo-reborn/torii-bg.jpg",
+    ogImage: "/images/little-tokyo-reborn/og-image.png",
     hero1Caption: "Full-Service Marketing + Creative Campaign",
     brutalistCaption: "Little Tokyo × Crowd Control Digital"
   }
