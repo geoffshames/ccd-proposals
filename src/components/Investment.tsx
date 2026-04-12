@@ -87,7 +87,7 @@ export function Investment() {
                     </div>
                   )}
                   <div className="px-10 py-6 flex items-center justify-between border-t border-border">
-                    <span className="text-[18px] font-semibold text-text-primary tracking-[-0.01em]">{q.model === "retainer" ? "Monthly Total" : "Total"}</span>
+                    <span className="text-[18px] font-semibold text-text-primary tracking-[-0.01em]">Total Engagement</span>
                     <span className="text-[28px] font-bold font-mono text-accent tabular-nums tracking-[-0.03em]">
                       <AnimatedCurrency value={q.total} />
                     </span>
