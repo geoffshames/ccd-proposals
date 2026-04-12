@@ -9,8 +9,9 @@ export const size = {
 };
 export const contentType = "image/png";
 
-export default async function Image({ params }: { params: { slug: string } }) {
-  const project = getProject(params.slug);
+export default async function Image({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
+  const project = getProject(slug);
 
   if (!project) {
     return new ImageResponse(
