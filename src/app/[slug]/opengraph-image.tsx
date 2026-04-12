@@ -1,7 +1,7 @@
 import { ImageResponse } from "next/og";
 import { getProject } from "@/lib/projects";
-import { readFile } from "node:fs/promises";
-import { join } from "node:path";
+import * as fs from "fs";
+import * as path from "path";
 
 export const runtime = "nodejs";
 export const alt = "Crowd Control Digital — Project Proposal";
@@ -19,16 +19,20 @@ export default async function Image({
   const { slug } = await params;
   const project = getProject(slug);
 
-  // Load N27 Bold font
-  const n27Bold = await readFile(
-    join(process.cwd(), "public/brand/N27-Bold.otf")
+  // Load N27 Bold font from public/brand — use sync read at module level for reliability
+  const n27Bold = fs.readFileSync(
+    path.join(process.cwd(), "public", "brand", "N27-Bold.otf")
   );
 
   // Load CCD wordmark as base64 data URI
-  const wordmarkBuf = await readFile(
-    join(process.cwd(), "public/brand/CC-LOGO-2024-WHITE.png")
+  const wordmarkBuf = fs.readFileSync(
+    path.join(process.cwd(), "public", "brand", "CC-LOGO-2024-WHITE.png")
   );
   const wordmarkBase64 = `data:image/png;base64,${wordmarkBuf.toString("base64")}`;
+
+  const fonts = [
+    { name: "N27Bold", data: n27Bold, style: "normal" as const, weight: 700 as const },
+  ];
 
   if (!project) {
     return new ImageResponse(
@@ -49,10 +53,7 @@ export default async function Image({
           Project Not Found
         </div>
       ),
-      {
-        ...size,
-        fonts: [{ name: "N27Bold", data: n27Bold, style: "normal", weight: 700 }],
-      }
+      { ...size, fonts }
     );
   }
 
@@ -106,36 +107,28 @@ export default async function Image({
         <div
           style={{
             display: "flex",
-            flexDirection: "column",
-            gap: "16px",
+            alignItems: "center",
+            gap: "14px",
           }}
         >
           <div
             style={{
+              width: "10px",
+              height: "10px",
+              background: accent,
               display: "flex",
-              alignItems: "center",
-              gap: "14px",
+            }}
+          />
+          <span
+            style={{
+              fontSize: 16,
+              color: "#666666",
+              letterSpacing: "3px",
+              textTransform: "uppercase",
             }}
           >
-            <div
-              style={{
-                width: "10px",
-                height: "10px",
-                background: accent,
-                display: "flex",
-              }}
-            />
-            <span
-              style={{
-                fontSize: 16,
-                color: "#666666",
-                letterSpacing: "3px",
-                textTransform: "uppercase",
-              }}
-            >
-              {project.project.type}
-            </span>
-          </div>
+            {project.project.type}
+          </span>
         </div>
 
         {/* Center — project name large */}
@@ -144,35 +137,34 @@ export default async function Image({
             display: "flex",
             flexDirection: "column",
             gap: "20px",
-            marginTop: "-40px",
           }}
         >
-          <h1
+          <div
             style={{
               fontSize: 82,
               fontWeight: 700,
               color: "#FFFFFF",
-              margin: 0,
               lineHeight: 0.95,
               letterSpacing: "-2px",
               textTransform: "uppercase",
+              display: "flex",
             }}
           >
             {project.client.name}
-          </h1>
-          <p
+          </div>
+          <div
             style={{
               fontSize: 22,
               color: "#555555",
-              margin: 0,
               maxWidth: "700px",
               lineHeight: 1.3,
+              display: "flex",
             }}
           >
             {project.project.tagline.length > 100
-              ? project.project.tagline.slice(0, 100).trim() + "..."
+              ? project.project.tagline.slice(0, 100).trim() + "…"
               : project.project.tagline}
-          </p>
+          </div>
         </div>
 
         {/* Bottom bar — CCD wordmark + project details */}
@@ -181,6 +173,7 @@ export default async function Image({
             display: "flex",
             alignItems: "flex-end",
             justifyContent: "space-between",
+            width: "100%",
           }}
         >
           {/* CCD Wordmark */}
@@ -208,16 +201,6 @@ export default async function Image({
         </div>
       </div>
     ),
-    {
-      ...size,
-      fonts: [
-        {
-          name: "N27Bold",
-          data: n27Bold,
-          style: "normal",
-          weight: 700,
-        },
-      ],
-    }
+    { ...size, fonts }
   );
 }
