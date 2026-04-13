@@ -109,7 +109,7 @@ export function AboutCCD() {
                 {[...SELECT_CLIENTS, ...SELECT_CLIENTS].map((client, i) => (
                   <span
                     key={`${client}-${i}`}
-                    className="text-[13px] font-mono text-text-muted/60 tracking-wide"
+                    className="text-[15px] font-bold text-accent tracking-wide" style={{ fontFamily: "var(--font-heading)" }}
                   >
                     {client}
                   </span>
