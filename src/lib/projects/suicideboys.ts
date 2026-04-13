@@ -100,6 +100,51 @@ export const suicideboys: ProjectData = {
       "The Grey Day audience is one of the most loyal and highest-spending fan bases in hip-hop — a cross-genre community united by authenticity, independence, and raw emotional connection.",
     demographics:
       "16–28 core, predominantly male (70%+), suburban and secondary-market concentrated across North America. Skews white middle-class — rap music's biggest-spending consumer segment.",
+    demographicCards: [
+      {
+        label: "Age Range",
+        value: "16–28 core",
+        detail: "18–24 peak engagement",
+      },
+      {
+        label: "Gender",
+        value: "70%+ male",
+        detail: "Cross-genre skew from hardcore/metal overlap",
+      },
+      {
+        label: "Geography",
+        value: "Secondary Markets",
+        detail: "Suburbs + mid-size cities across North America",
+      },
+      {
+        label: "Behavior",
+        value: "Annual pilgrimage",
+        detail: "Grey Day is a yearly ritual, not a one-off show",
+      },
+    ],
+    personas: [
+      {
+        name: "The Day One",
+        ageRange: "18–24",
+        description:
+          "Been listening since the SoundCloud era. Owns multiple G59 pieces, hits Grey Day every year, active on r/G59. Doesn't need convincing — needs to be rewarded with access and exclusivity.",
+        traits: ["Loyal Commenter", "Merch Collector", "Annual Attendee", "Reddit Active"],
+      },
+      {
+        name: "The Grey Day Convert",
+        ageRange: "16–22",
+        description:
+          "Discovered through TikTok or a friend's playlist. First Grey Day was 2024 or 2025. High enthusiasm, still building the collection. Most likely to opt in for exclusive drops and early access.",
+        traits: ["TikTok Discovery", "High FOMO", "First-Time Buyer", "Share-Heavy"],
+      },
+      {
+        name: "The Culture Tap-In",
+        ageRange: "22–28",
+        description:
+          "Crossover from hardcore and metal scenes. Respects the independence story and the DIY ethos. Buys selectively but at higher price points. Responds to brand authenticity over hype.",
+        traits: ["Cross-Genre", "Higher Spend", "Selective Buyer", "Ethos-Driven"],
+      },
+    ],
     psychographics: [
       "Connect through shared darkness — mental health, addiction recovery, feeling like outsiders — and the music gives them a community built on authenticity",
       "Anti-corporate, pro-independence — they respect $uicideboy$ because they did it themselves, without labels or radio",
@@ -111,6 +156,34 @@ export const suicideboys: ProjectData = {
       "Merch scarcity at shows — long lines, designs sell out before some fans reach the booth",
       "No recognition for loyalty — fans who've attended 5+ Grey Days get the same experience as first-timers",
       "No direct communication — fans rely on Instagram algorithms to know when something drops",
+    ],
+    purchaseTriggers: [
+      "Limited/exclusive drops — FOMO is real, and the 2-3x Grailed resale market proves demand consistently exceeds supply",
+      "Tour announcements — Grey Day pre-sale access functions as currency in this community",
+      "New music × merch cascades — album drops paired with merch create immediate purchase behavior",
+      "Community identity — G59 gear is tribal signaling; fans buy to belong, not just to wear",
+    ],
+    platforms: [
+      {
+        name: "Instagram",
+        description:
+          "4M followers — fan edits, tour content, and merch reveals drive the highest engagement. The primary visual channel for the brand.",
+      },
+      {
+        name: "TikTok",
+        description:
+          "2M followers — song clips in edits, concert footage, and underground aesthetic content. Discovery engine for new fans.",
+      },
+      {
+        name: "Reddit (r/G59)",
+        description:
+          "Extremely active community — setlist speculation, merch drops, tour logistics, and mutual support. The unfiltered fan voice.",
+      },
+      {
+        name: "YouTube",
+        description:
+          "Music videos and a massive fan-made content ecosystem. Long-form engagement and catalog discovery.",
+      },
     ],
     quotes: [
       {
