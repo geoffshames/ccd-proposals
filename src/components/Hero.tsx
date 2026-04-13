@@ -6,7 +6,7 @@ import { useProject } from "@/lib/project-context";
 export function Hero() {
   const PROJECT = useProject();
   return (
-    <section className="relative min-h-screen flex flex-col justify-end px-6 pb-16 pt-32 overflow-hidden grid-texture">
+    <section className="relative min-h-screen flex flex-col justify-end px-6 pb-28 pt-32 overflow-hidden grid-texture">
       {/* Hero background image */}
       {PROJECT.images.heroBg && (
         <div
@@ -26,13 +26,13 @@ export function Hero() {
       <div className="absolute bottom-6 left-6 w-8 h-8 border-b border-l border-text-muted/20" />
       <div className="absolute bottom-6 right-6 w-8 h-8 border-b border-r border-text-muted/20" />
 
-      <div className="relative max-w-6xl mx-auto w-full">
+      <div className="relative max-w-6xl mx-auto w-full px-4 md:px-0">
         {/* Top meta row */}
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1, delay: 0.3 }}
-          className="flex items-center justify-between mb-20"
+          className="flex flex-col gap-3 md:flex-row md:items-center md:justify-between mb-20"
         >
           <div className="flex items-center gap-4">
             <div className="w-2 h-2 rounded-full bg-accent" />
@@ -103,7 +103,7 @@ export function Hero() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 2 }}
-        className="absolute bottom-6 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2"
+        className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2"
       >
         <span className="text-[9px] font-mono tracking-[0.3em] text-text-muted uppercase">
           Scroll
