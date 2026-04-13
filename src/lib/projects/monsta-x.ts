@@ -99,7 +99,52 @@ export const monstaX: ProjectData = {
     summary:
       "Monbebe is a decade-deep, globally distributed fandom that has stayed loyal through military enlistments, label transitions, and industry shifts — and is now fully re-activated for the first complete group tour in four years.",
     demographics:
-      "18–28 core, 89.6% female, US is the largest international market. 39.4% college students, 11.1% graduate students. Strong secondary concentration in Southeast Asia (Indonesia, Malaysia, Philippines).",
+      "18–28 core, 89.6% female, US is the largest international market with strong secondary concentration in Southeast Asia.",
+    demographicCards: [
+      {
+        label: "Age Range",
+        value: "18–28 core",
+        detail: "21–25 peak spending demo",
+      },
+      {
+        label: "Gender",
+        value: "89.6% female",
+        detail: "Strong female skew across all platforms",
+      },
+      {
+        label: "Geography",
+        value: "US + Southeast Asia",
+        detail: "LA, NYC, Dallas, Toronto top markets",
+      },
+      {
+        label: "Behavior",
+        value: "Multi-platform",
+        detail: "X for coordination, IG for content, Berriz for community",
+      },
+    ],
+    personas: [
+      {
+        name: "The Day One",
+        ageRange: "22–28",
+        description:
+          "Has been Monbebe since No Mercy or earlier. Survived every enlistment, streamed every comeback, and organized fan projects across timezones. Treats the reunion tour like a homecoming — wants priority access and recognition for loyalty.",
+        traits: ["Streaming Organizer", "Merch Collector", "Fan Project Leader", "Concert Veteran"],
+      },
+      {
+        name: "The English-Language Convert",
+        ageRange: "18–24",
+        description:
+          "Discovered MONSTA X through the English albums or a viral moment. Engages primarily with English content — lyrics, interviews, variety show clips. Hasn't deep-dived the Korean catalog yet but is high-intent for the tour.",
+        traits: ["Lyric-Sharer", "Spotify-First", "Instagram-Native", "New to K-Pop"],
+      },
+      {
+        name: "The K-Pop Ecosystem Fan",
+        ageRange: "16–22",
+        description:
+          "Follows multiple groups — ATEEZ, Stray Kids, SEVENTEEN — and discovered MONSTA X through the reunion buzz or collaborative playlists. Values stage presence and live performance above all. Compares VIP experiences across tours.",
+        traits: ["Multi-Group Stan", "Concert-Hopper", "TikTok Fancam Poster", "VIP Comparer"],
+      },
+    ],
     psychographics: [
       "Loyalty-driven, not trend-driven — Monbebe ride through enlistments, hiatuses, and industry noise. They don't chase the next group; they invest in this one.",
       "Organized and empowered — fan projects, streaming parties, charitable campaigns, concert chants coordinated across timezones. This fandom wants to be activated, not just entertained.",
@@ -111,6 +156,34 @@ export const monstaX: ProjectData = {
       "Merch drops sell out with no pre-registration, waitlist, or restock alerts — frustration instead of anticipation",
       "No centralized direct communication channel — fans rely on Berriz (community, not marketing), X/Twitter algorithms, and checking Ticketmaster manually",
       "No recognition gradient for loyalty — a fan who attended 5 tours gets the same experience as a first-timer",
+    ],
+    purchaseTriggers: [
+      "Reunion FOMO — the first full-group tour in 4 years creates once-in-a-generation urgency that drives ticket and merch spend",
+      "Exclusive and limited drops — photocards, tour-only merch, city-edition designs gated behind email/SMS opt-in or VIP tier",
+      "Community momentum — when Monbebe organize collectively around a goal (streaming targets, merch drops, fan projects), individual spend follows",
+      "English-language accessibility — Unfold album content is shareable and quotable in ways Korean releases aren't, lowering the barrier for casual Western fans to convert",
+    ],
+    platforms: [
+      {
+        name: "X / Twitter",
+        description:
+          "Primary coordination hub. Real-time fan organizing, streaming parties, hashtag campaigns, and tour updates. This is where Monbebe mobilize — the highest-intent communication channel.",
+      },
+      {
+        name: "Instagram",
+        description:
+          "6.5M followers. Visual content hub — member updates, tour photos, behind-the-scenes. Reels underutilized relative to feed engagement. Strong story interaction.",
+      },
+      {
+        name: "Berriz",
+        description:
+          "Official fan community platform (Kakao). Membership perks, exclusive content, live streams, concert presale access. High engagement but data stays with Kakao — not exportable for marketing.",
+      },
+      {
+        name: "TikTok",
+        description:
+          "Growing but underindexed relative to fandom size. English-language content has crossover potential. Concert fancams and behind-the-scenes clips drive the most engagement.",
+      },
     ],
     quotes: [
       {
@@ -523,6 +596,7 @@ export const monstaX: ProjectData = {
 
   images: {
     hero1: "/images/monsta-x/hero1.png",
+    heroBg: "/images/monsta-x/hero-bg.jpg",
     hero2: "/images/monsta-x/hero2.png",
     product: "/images/monsta-x/product.png",
     editorial: "/images/monsta-x/editorial.png",
