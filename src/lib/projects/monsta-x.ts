@@ -479,7 +479,7 @@ export const monstaX: ProjectData = {
       },
     ],
     paymentTerms: "7 days from invoice",
-    paymentLink: "#",
+    paymentLink: "https://buy.stripe.com/5kQ00i3Pu3MtcDfgw9a7C08",
   },
 
   nextSteps: [
