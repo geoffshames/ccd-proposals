@@ -2,6 +2,7 @@ import { littleTokyoReborn } from "./little-tokyo-reborn";
 import { ykNiece } from "./yk-niece";
 import { suicideboys } from "./suicideboys";
 import { monstaX } from "./monsta-x";
+import { trim } from "./trim";
 import type { ProjectData } from "../project-context";
 
 export const PROJECTS: Record<string, ProjectData> = {
@@ -9,6 +10,7 @@ export const PROJECTS: Record<string, ProjectData> = {
   "yk-niece": ykNiece,
   "suicideboys": suicideboys,
   "monsta-x": monstaX,
+  "trim": trim,
 };
 
 export function getProject(slug: string): ProjectData | undefined {
