@@ -279,7 +279,7 @@ export const ykNiece: ProjectData = {
       tasks: [
         "Full digital ecosystem audit — social, streaming, merch, YouTube, competitive benchmarking",
         "Paid media architecture — pixel installation, audience building, campaign structure across Meta, TikTok, and YouTube",
-        "Email/SMS platform setup (Klaviyo) — list architecture, welcome flows, segmentation strategy",
+        "Email/SMS platform setup (Laylo) — list architecture, welcome flows, segmentation strategy",
         "Social strategy development — content pillars, posting cadence, platform-specific optimization plan",
         "Creator marketing shortlist — identify and vet 50+ creators across music, lifestyle, fashion, and dance verticals",
         "Merch store audit and optimization — product strategy, drop calendar, e-commerce UX improvements",
@@ -417,7 +417,7 @@ export const ykNiece: ProjectData = {
           name: "Email/SMS Platform Setup",
           quantity: "1",
           description:
-            "Full Klaviyo implementation — list architecture, segmentation, welcome flow, abandoned cart flow, and integration with merch store and landing pages",
+            "Full Laylo implementation — list architecture, segmentation, welcome flow, abandoned cart flow, and integration with merch store and landing pages",
         },
         {
           name: "Campaign Sends",
@@ -449,7 +449,7 @@ export const ykNiece: ProjectData = {
       "Full-service paid media management across Meta, TikTok, and YouTube for the 6-month engagement",
       "Social media strategy development and content calendar planning across all active platforms",
       "Creator marketing — identification, outreach, campaign management, and performance tracking",
-      "Email/SMS platform setup (Klaviyo), list building, automation flows, and campaign sends",
+      "Email/SMS platform setup (Laylo), list building, automation flows, and campaign sends",
       "Merch store optimization, drop strategy planning, and e-commerce integration",
       "Geo-targeted tour marketing campaigns for all confirmed 2026 dates",
       "Weekly performance snapshots and monthly deep-dive reporting with optimization recommendations",
@@ -494,7 +494,7 @@ export const ykNiece: ProjectData = {
       {
         name: "Email/SMS & E-Commerce",
         description:
-          "Klaviyo setup, list building, campaign sends, merch drop strategy, and store optimization",
+          "Laylo setup, list building, campaign sends, merch drop strategy, and store optimization",
         price: 1500,
         recurring: true,
       },
@@ -574,7 +574,7 @@ export const ykNiece: ProjectData = {
       step: 3,
       title: "Onboarding Sprint",
       description:
-        "One-week intensive — full digital audit, pixel and tracking setup, Klaviyo implementation, paid media architecture, and creator shortlisting.",
+        "One-week intensive — full digital audit, pixel and tracking setup, Laylo implementation, paid media architecture, and creator shortlisting.",
     },
     {
       step: 4,
