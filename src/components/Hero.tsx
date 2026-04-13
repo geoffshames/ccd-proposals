@@ -10,7 +10,7 @@ export function Hero() {
       {/* Hero background image */}
       {PROJECT.images.heroBg && (
         <div
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-[0.07] pointer-events-none"
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-[0.20] pointer-events-none"
           style={{ backgroundImage: `url(${PROJECT.images.heroBg})` }}
         />
       )}
