@@ -43,7 +43,7 @@ const SELECT_CLIENTS = [
 
 export function AboutCCD() {
   return (
-    <section className="relative px-6 py-32 overflow-hidden">
+    <section className="relative px-6 py-16 overflow-hidden">
       <div className="max-w-6xl mx-auto">
         <ScrollReveal>
           <SectionLabel number="" label="About Crowd Control" />

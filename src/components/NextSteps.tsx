@@ -25,7 +25,7 @@ export function NextSteps() {
 
       <div className="max-w-6xl mx-auto">
         <ScrollReveal>
-          <SectionLabel number="11" label="Next Steps" />
+          <SectionLabel number="10" label="Next Steps" />
         </ScrollReveal>
 
         <ScrollReveal delay={0.1}>
