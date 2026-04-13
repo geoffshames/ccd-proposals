@@ -63,7 +63,7 @@ export const ykNiece: ProjectData = {
       {
         label: "Infrastructure Gap",
         finding:
-          "Despite Motown Records backing and co-signs from Metro Boomin, Quavo, Lizzo, Latto, and Sexyy Red — YK Niece has zero paid media campaigns running, no email or SMS list, and a dormant merch store. The gap between cultural capital and marketing infrastructure is massive.",
+          "Despite co-signs from Metro Boomin, Quavo, Lizzo, Latto, and Sexyy Red — YK Niece has zero paid media campaigns running, no email or SMS list, and a dormant merch store. She's proudly independent, which means there's no label marketing team filling the gap. The distance between cultural capital and marketing infrastructure is massive.",
         source: "Digital audit / Meta Ad Library",
       },
       {
@@ -92,7 +92,7 @@ export const ykNiece: ProjectData = {
       },
     ],
     marketContext:
-      "The female rap market is experiencing unprecedented commercial momentum — but it's also more crowded than ever. Artists who broke through in 2024–25 and didn't invest in digital marketing infrastructure are already losing ground to newer acts with better teams. YK Niece's Motown backing and Metro Boomin co-signs put her in a tier that demands professional marketing infrastructure. The album window makes the timing urgent.",
+      "The female rap market is experiencing unprecedented commercial momentum — but it's also more crowded than ever. Artists who broke through in 2024–25 and didn't invest in digital marketing infrastructure are already losing ground to newer acts with better teams. YK Niece's Metro Boomin co-signs and Billboard Hot 100 placement put her in a tier that demands professional marketing infrastructure — and as an independent artist, that infrastructure has to come from somewhere outside a label. The album window makes the timing urgent.",
   },
 
   audience: {
