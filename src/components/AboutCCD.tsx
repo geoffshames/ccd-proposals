@@ -6,24 +6,24 @@ import { SectionLabel } from "./SectionLabel";
 
 const CASE_STUDIES = [
   {
-    client: "Oasis Wynwood",
-    metric: "$10M+",
-    description: "in attributable ticketing revenue",
+    client: "bbno$",
+    metric: "150K+",
+    description: "TIKTOK CREATES",
   },
   {
-    client: "Malbon Golf",
-    metric: "$4.5M+",
-    description: "in attributable online sales",
+    client: "Peso Pluma",
+    metric: "700M+",
+    description: "SPOTIFY STREAMS GENERATED",
   },
   {
     client: "KSI",
     metric: "350M+",
-    description: "Spotify streams generated",
+    description: "SPOTIFY STREAMS GENERATED",
   },
   {
     client: "Illenium",
     metric: "150K+",
-    description: "tickets sold across North America",
+    description: "TICKETS SOLD ACROSS NORTH AMERICA",
   },
 ];
 
@@ -64,6 +64,15 @@ export function AboutCCD() {
           </div>
         </ScrollReveal>
 
+        {/* Case study header */}
+        <ScrollReveal delay={0.15}>
+          <div className="mb-10">
+            <h3 className="text-[clamp(1.4rem,2.5vw,1.8rem)] font-bold tracking-[-0.02em] text-text-primary leading-[1.2]">
+              Results that speak for themselves.
+            </h3>
+          </div>
+        </ScrollReveal>
+
         {/* Case study metrics grid */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-20">
           {CASE_STUDIES.map((study, i) => (
@@ -75,7 +84,7 @@ export function AboutCCD() {
                 <div className="text-[clamp(1.8rem,3vw,2.5rem)] font-bold text-text-primary tracking-[-0.03em] mb-2">
                   {study.metric}
                 </div>
-                <div className="text-[13px] text-text-muted leading-relaxed">
+                <div className="text-[13px] text-text-muted leading-relaxed uppercase">
                   {study.description}
                 </div>
               </div>
