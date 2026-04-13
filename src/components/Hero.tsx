@@ -10,12 +10,12 @@ export function Hero() {
       {/* Hero background image */}
       {PROJECT.images.heroBg && (
         <div
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-[0.20] pointer-events-none"
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-[0.35] pointer-events-none"
           style={{ backgroundImage: `url(${PROJECT.images.heroBg})` }}
         />
       )}
       {/* Gradient overlay to ensure text readability */}
-      <div className="absolute inset-0 bg-gradient-to-t from-bg via-bg/80 to-bg/40 pointer-events-none" />
+      <div className="absolute inset-0 bg-gradient-to-t from-bg via-bg/70 to-bg/20 pointer-events-none" />
 
       {/* Background gradient orb */}
       <div className="absolute top-1/3 left-1/3 w-[600px] h-[600px] rounded-full bg-accent/[0.02] blur-[150px] pointer-events-none" />
