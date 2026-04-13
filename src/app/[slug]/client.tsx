@@ -46,7 +46,7 @@ export function ProposalClient({ project }: { project: ProjectData }) {
           }
         />
         <Scope />
-        <Investment />
+        {/* <Investment /> */}
         <NextSteps />
         <AboutCCD />
         <Footer />
