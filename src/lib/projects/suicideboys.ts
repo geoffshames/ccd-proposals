@@ -469,6 +469,7 @@ export const suicideboys: ProjectData = {
     brutalist: "/images/suicideboys/brutalist.png",
     heroBg: "/images/suicideboys/hero-bg.png",
     hero1Caption: "Tour Data Capture + Revenue Infrastructure",
+    ogImage: "/images/suicideboys/og-image.png",
     brutalistCaption: "$UICIDEBOY$ × Crowd Control Digital",
   },
 };
