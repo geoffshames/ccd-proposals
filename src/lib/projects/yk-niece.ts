@@ -456,7 +456,7 @@ export const ykNiece: ProjectData = {
       },
     ],
     paymentTerms: "Net 7 from invoice",
-    paymentLink: "#",
+    paymentLink: "https://buy.stripe.com/28EaEWadS82Jbzb6Vza7C05",
   },
 
   nextSteps: [
