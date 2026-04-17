@@ -3,8 +3,9 @@
 import { motion } from "framer-motion";
 import { ScrollReveal } from "./ScrollReveal";
 import { SectionLabel } from "./SectionLabel";
+import { useProject } from "@/lib/project-context";
 
-const CASE_STUDIES = [
+const DEFAULT_CASE_STUDIES = [
   {
     client: "BBNO$",
     metric: "150K+",
@@ -42,6 +43,8 @@ const SELECT_CLIENTS = [
 ];
 
 export function AboutCCD() {
+  const project = useProject();
+  const CASE_STUDIES = project.caseStudies ?? DEFAULT_CASE_STUDIES;
   return (
     <section className="relative px-6 py-16 overflow-hidden">
       <div className="max-w-6xl mx-auto">

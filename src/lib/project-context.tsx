@@ -166,6 +166,11 @@ export type ProjectData = {
     hero1Caption?: string;
     brutalistCaption?: string;
   };
+  caseStudies?: {
+    client: string;
+    metric: string;
+    description: string;
+  }[];
 };
 
 const ProjectContext = createContext<ProjectData | null>(null);
