@@ -518,7 +518,7 @@ export const destinConrad: ProjectData = {
       { milestone: "Month 6", percentage: 16, amount: 10000, due: "October 1, 2026" },
     ],
     paymentTerms: "Net 7 from invoice",
-    paymentLink: "#",
+    paymentLink: "https://buy.stripe.com/3cIaEWadSgzfeLngw9a7C0a",
   },
 
   nextSteps: [
