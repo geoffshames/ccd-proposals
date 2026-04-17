@@ -30,7 +30,7 @@ export const alexWarren: ProjectData = {
   overview: {
     heading: "The System",
     summary:
-      "Crowd Control Digital will deploy a full data capture and revenue intelligence layer around the FINDING FAMILY ON THE ROAD North American arena tour. CCD's proprietary TOUR CONTROL platform delivers real-time ticket pacing intelligence across every arena date (Bridgestone → MSG), while a purpose-built fan data system converts 29M+ of social reach and 54M Spotify monthly listeners into an owned Warreners database — captured at every touchpoint: ticket purchase, merch transaction, VIP registration, on-site QR scan, and TikTok-to-Laylo bridge funnel. Paid media campaigns sustain streaming velocity, activate album catalog beyond 'Ordinary,' and keep ticket sell-through healthy in every market. The result: the owned fan infrastructure Alex Warren doesn't have yet — one that makes every future tour cycle, release, and international expansion exponentially more profitable.",
+      "Crowd Control Digital will deploy a full data capture and revenue intelligence layer around the FINDING FAMILY ON THE ROAD North American arena tour. CCD's proprietary TOUR CONTROL platform delivers real-time ticket pacing intelligence across every arena date (Bridgestone → MSG), while a purpose-built fan data system converts 29M+ of social reach and 54M Spotify monthly listeners into an owned Warreners database — captured at every touchpoint: ticket purchase, merch transaction, VIP registration, on-site QR scan, and TikTok-to-Laylo bridge funnel. Paid media campaigns sustain streaming velocity, activate album catalog beyond 'Ordinary,' and keep ticket sell-through healthy in every market. The result: the artist-owned fan infrastructure that sits alongside Atlantic's CRM — one Alex's team can segment, retarget, and activate on their own cadence, making every future tour cycle, release, and international expansion exponentially more profitable.",
     objectives: [
       "Deploy TOUR CONTROL across all 20+ North American arena markets — real-time sell-through pacing, risk-tier classification, and dynamic media allocation so budget lands on the dates that actually need support",
       "Build a first-party fan data system (Warreners database) — capturing email, SMS, and behavioral data from ticket buyers, merch customers, VIP attendees, and TikTok-to-Laylo funnels",
@@ -58,13 +58,13 @@ export const alexWarren: ProjectData = {
   discovery: {
     heading: "What We Found",
     summary:
-      "Before proposing a single deliverable, we audited Alex Warren's full digital ecosystem — website, socials, streaming, merch, and the competitive emotional-Americana touring landscape. The findings are striking. Warren has one of the most valuable audiences in music right now — 54M Spotify monthly listeners, 19.9M TikTok followers, a 10-week #1 in 30+ countries. And almost none of it is owned. The gap isn't awareness. It's infrastructure. The data layer that captures, segments, and monetizes this audience doesn't exist yet — and the arena tour is the last window to build it before the moment passes.",
+      "Before proposing a single deliverable, we audited Alex Warren's full digital ecosystem — website, socials, streaming, merch, and the competitive emotional-Americana touring landscape. The findings are striking. Warren has one of the most valuable audiences in music right now — 54M Spotify monthly listeners, 19.9M TikTok followers, a 10-week #1 in 30+ countries. The label captures a slice of it — the pre-save list, the email file, the ticket data. But the artist team doesn't control that stack. The gap isn't awareness — it's sovereignty. The data layer that the artist fully owns, segments, and activates across every channel doesn't exist yet, and the arena tour is the last window to build it before the moment passes.",
     insights: [
       {
-        label: "Uncaptured Audience",
+        label: "Walled-Garden Data",
         finding:
-          "54M Spotify monthly listeners. 19.9M TikTok followers. 5.2M Instagram. 20+ arena dates selling on Ticketmaster. Zero documented email list, no SMS opt-in, no fan club, no Laylo. Every ticket buyer, every TikTok liker, every merch customer is a ghost after the transaction. The audience is built — the capture system isn't.",
-        source: "Ticketmaster audit / social platform analysis",
+          "Data is getting captured — but mostly by Atlantic. The label owns the email list, the pre-save data, and the ticket-buyer records. That's a real asset, but it lives inside someone else's stack. The artist team can't segment it, can't run independent retargeting, can't activate it across TikTok / Laylo / SMS flows on their own cadence. The audience exists — it's just behind a wall that isn't yours.",
+        source: "Atlantic Records CRM review / fan capture audit",
       },
       {
         label: "Album-to-Tour Conversion Leak",
@@ -154,7 +154,7 @@ export const alexWarren: ProjectData = {
     ],
     painPoints: [
       "No fan club, no presale tier, no priority access — every Warrener competes with the general queue, so the 'Ordinary' Convert and the Day One both hit the same Ticketmaster wall at the same second",
-      "No direct communication channel — fans rely on TikTok's algorithm and Instagram's decaying feed to find out about drops, shows, and releases",
+      "No artist-owned communication channel — the email list lives in Atlantic's stack, so fans who want direct word from Alex rely on TikTok's algorithm and Instagram's decaying feed instead",
       "Arena ticket prices ($273 average) with zero bundled value from the artist side — no merch bundles, no exclusive content, no VIP acknowledgment",
       "Album catalog (21 tracks) is treated as background — no strategic deep-cut marketing means fans who want more than 'Ordinary' don't get fed",
     ],
