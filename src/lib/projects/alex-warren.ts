@@ -17,7 +17,7 @@ export const alexWarren: ProjectData = {
     email: "geoff@crowdcontroldigital.com",
   },
   project: {
-    name: "LITTLE ORPHAN ALEX : DATA ENGINE",
+    name: "FINDING FAMILY : DATA ENGINE",
     tagline:
       "20+ arenas. 6 months. One system that turns every ticket scan, merch swipe, and TikTok click into an owned audience that compounds across every future tour and release — powered by TOUR CONTROL, built by the team doing this for the biggest tours in the game.",
     type: "Arena Tour Data Capture + Revenue Intelligence",
@@ -30,7 +30,7 @@ export const alexWarren: ProjectData = {
   overview: {
     heading: "The System",
     summary:
-      "Crowd Control Digital will deploy a full data capture and revenue intelligence layer around the LITTLE ORPHAN ALEX LIVE North American arena tour. CCD's proprietary TOUR CONTROL platform delivers real-time ticket pacing intelligence across every arena date (Bridgestone → MSG), while a purpose-built fan data system converts 29M+ of social reach and 54M Spotify monthly listeners into an owned Warreners database — captured at every touchpoint: ticket purchase, merch transaction, VIP registration, on-site QR scan, and TikTok-to-Laylo bridge funnel. Paid media campaigns sustain streaming velocity, activate album catalog beyond 'Ordinary,' and keep ticket sell-through healthy in every market. The result: the owned fan infrastructure Alex Warren doesn't have yet — one that makes every future tour cycle, release, and international expansion exponentially more profitable.",
+      "Crowd Control Digital will deploy a full data capture and revenue intelligence layer around the FINDING FAMILY ON THE ROAD North American arena tour. CCD's proprietary TOUR CONTROL platform delivers real-time ticket pacing intelligence across every arena date (Bridgestone → MSG), while a purpose-built fan data system converts 29M+ of social reach and 54M Spotify monthly listeners into an owned Warreners database — captured at every touchpoint: ticket purchase, merch transaction, VIP registration, on-site QR scan, and TikTok-to-Laylo bridge funnel. Paid media campaigns sustain streaming velocity, activate album catalog beyond 'Ordinary,' and keep ticket sell-through healthy in every market. The result: the owned fan infrastructure Alex Warren doesn't have yet — one that makes every future tour cycle, release, and international expansion exponentially more profitable.",
     objectives: [
       "Deploy TOUR CONTROL across all 20+ North American arena markets — real-time sell-through pacing, risk-tier classification, and dynamic media allocation so budget lands on the dates that actually need support",
       "Build a first-party fan data system (Warreners database) — capturing email, SMS, and behavioral data from ticket buyers, merch customers, VIP attendees, and TikTok-to-Laylo funnels",
@@ -47,7 +47,7 @@ export const alexWarren: ProjectData = {
         suffix: "+",
         label: "Arena Markets",
         description:
-          "Real-time ticket pacing and sell-through intelligence via TOUR CONTROL across every LITTLE ORPHAN ALEX LIVE date from Bridgestone to MSG",
+          "Real-time ticket pacing and sell-through intelligence via TOUR CONTROL across every FINDING FAMILY ON THE ROAD date from Bridgestone to MSG",
       },
       { value: 100, suffix: "K+", label: "Fan Data Target" },
       { value: 6, label: "Month Campaign" },
@@ -255,7 +255,7 @@ export const alexWarren: ProjectData = {
   },
 
   timelineSubheading:
-    "A focused 6-month engagement from infrastructure build through arena tour execution and post-tour monetization — every phase designed to maximize data capture and incremental revenue across the LITTLE ORPHAN ALEX LIVE tour window.",
+    "A focused 6-month engagement from infrastructure build through arena tour execution and post-tour monetization — every phase designed to maximize data capture and incremental revenue across the FINDING FAMILY ON THE ROAD tour window.",
   timelineImageCaption: "6 Months / 6 Phases / 20+ Arenas",
 
   timeline: [
@@ -335,7 +335,7 @@ export const alexWarren: ProjectData = {
   ],
 
   deliverablesSubheading:
-    "Every deliverable is designed to capture fan data, drive incremental revenue, or provide real-time market intelligence across the LITTLE ORPHAN ALEX LIVE arena tour cycle.",
+    "Every deliverable is designed to capture fan data, drive incremental revenue, or provide real-time market intelligence across the FINDING FAMILY ON THE ROAD arena tour cycle.",
 
   deliverables: [
     {
@@ -346,7 +346,7 @@ export const alexWarren: ProjectData = {
           name: "TOUR CONTROL Deployment",
           quantity: "20+ markets",
           description:
-            "CCD's proprietary tour intelligence platform — real-time ticket pacing dashboards, sell-through prediction models, risk-tier market classification, and dynamic media budget recommendations across every LITTLE ORPHAN ALEX LIVE North American arena date",
+            "CCD's proprietary tour intelligence platform — real-time ticket pacing dashboards, sell-through prediction models, risk-tier market classification, and dynamic media budget recommendations across every FINDING FAMILY ON THE ROAD North American arena date",
         },
         {
           name: "Weekly Pacing Reports",
@@ -406,7 +406,7 @@ export const alexWarren: ProjectData = {
           name: "TikTok Advertising",
           quantity: "6 months",
           description:
-            "In-feed and Spark Ads targeting LITTLE ORPHAN ALEX LIVE markets — concert hype content, city-edition merch drops, and TikTok-to-Laylo fan capture funnels leveraging the 19.9M follower base that broke 'Ordinary'",
+            "In-feed and Spark Ads targeting FINDING FAMILY ON THE ROAD markets — concert hype content, city-edition merch drops, and TikTok-to-Laylo fan capture funnels leveraging the 19.9M follower base that broke 'Ordinary'",
         },
         {
           name: "YouTube Campaigns",
@@ -450,7 +450,7 @@ export const alexWarren: ProjectData = {
 
   scope: {
     subheading:
-      "Everything included in this engagement — and where the boundaries are. This is a focused data capture and revenue intelligence scope built around the LITTLE ORPHAN ALEX LIVE tour cycle.",
+      "Everything included in this engagement — and where the boundaries are. This is a focused data capture and revenue intelligence scope built around the FINDING FAMILY ON THE ROAD tour cycle.",
     included: [
       "TOUR CONTROL platform deployment, configuration, and ongoing monitoring across all 20+ North American arena markets",
       "Laylo fan data infrastructure build — SMS/email capture, segmentation, automation flows, and TikTok/IG bridge strategy",
@@ -592,7 +592,7 @@ export const alexWarren: ProjectData = {
 
   cta: {
     headline: "54M monthly listeners. 20+ arenas. Let's make sure every Warrener counts.",
-    body: "LITTLE ORPHAN ALEX LIVE is the biggest moment of Alex Warren's career. Crowd Control Digital has the live-music expertise, the proprietary tour intelligence platform, and the data capture infrastructure to turn 20+ arena shows into a permanent fan engine that compounds across every future release, tour, and international leg. Let's build it — setup fee waived.",
+    body: "FINDING FAMILY ON THE ROAD is the biggest moment of Alex Warren's career. Crowd Control Digital has the live-music expertise, the proprietary tour intelligence platform, and the data capture infrastructure to turn 20+ arena shows into a permanent fan engine that compounds across every future release, tour, and international leg. Let's build it — setup fee waived.",
     email: "geoff@crowdcontroldigital.com",
   },
 
