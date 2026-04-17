@@ -3,6 +3,7 @@ import { ykNiece } from "./yk-niece";
 import { suicideboys } from "./suicideboys";
 import { monstaX } from "./monsta-x";
 import { trim } from "./trim";
+import { alexWarren } from "./alex-warren";
 import type { ProjectData } from "../project-context";
 
 export const PROJECTS: Record<string, ProjectData> = {
@@ -11,6 +12,7 @@ export const PROJECTS: Record<string, ProjectData> = {
   "suicideboys": suicideboys,
   "monsta-x": monstaX,
   "trim": trim,
+  "alex-warren": alexWarren,
 };
 
 export function getProject(slug: string): ProjectData | undefined {
