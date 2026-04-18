@@ -63,7 +63,7 @@ export const nadhifBasalamah: ProjectData = {
       {
         label: "Scale-vs-Infrastructure Gap",
         finding:
-          "Nadhif sits at ~19M Spotify monthly listeners and 11× Platinum across DSPs — top-10 among all Indonesian artists — but the owned infrastructure doesn't match the scale. The official website is a vanilla HTML build with a purple accent and hidden SEO spam; there's no visible email/SMS program, no structured merch operation, and no paid media running against his release windows. The distance between streaming dominance and professional marketing infrastructure is the single biggest unlock available to him.",
+          "Nadhif sits at ~19M Spotify monthly listeners and 11× Platinum across DSPs — top-10 among all Indonesian artists — but the owned infrastructure doesn't match the scale. The official website is a vanilla HTML build with a purple accent and hidden SEO spam; there's no visible email/SMS program, no structured merch operation, and no visible paid media footprint in public ad libraries. The distance between streaming dominance and professional marketing infrastructure is the single biggest unlock available to him.",
         source: "Digital audit / Meta Ad Library / nadhifbasalamah.com",
       },
       {
@@ -75,7 +75,7 @@ export const nadhifBasalamah: ProjectData = {
       {
         label: "The 'Penjaga Hati' Tail",
         finding:
-          "'Penjaga Hati' is still one of Asia's most-streamed songs more than two years after release — 17 weeks #1 Billboard Indonesia, 5 weeks #1 Billboard Malaysia, 354K+ TikTok creates. Zero paid amplification has ever run against it. That catalog tail is passive revenue being left on the table every day the release window isn't retargeted or re-seeded into new creator cohorts.",
+          "'Penjaga Hati' is still one of Asia's most-streamed songs more than two years after release — 17 weeks #1 Billboard Indonesia, 5 weeks #1 Billboard Malaysia, 354K+ TikTok creates. We can't see any paid amplification behind it in public ad libraries, which suggests the catalog tail is running almost entirely on organic momentum. That catalog tail is passive revenue being left on the table every day the release window isn't retargeted or re-seeded into new creator cohorts.",
         source: "Billboard Asia / TikTok Creative Center / Spotify for Artists",
       },
       {
@@ -87,7 +87,7 @@ export const nadhifBasalamah: ProjectData = {
       {
         label: "The Pan-Asia Land Grab",
         finding:
-          "The 12–20M monthly listener tier of Indonesian pop — Nadhif, Hindia, Pamungkas, Fourtwnty — is in a land-grab moment. Almost none of these artists have paid media, CRM, or structured creator programs. Whoever builds the infrastructure first owns the SEA fanbase and the diaspora bridge to the US/AU. NIKI proved the US ceiling is breakable. Nadhif's Indonesian-language catalog is a differentiator in that lane — emotional sounds travel, and pop-folk has no US-side competitor at his scale.",
+          "The 12–20M monthly listener tier of Indonesian pop — Nadhif, Hindia, Pamungkas, Fourtwnty — is in a land-grab moment. Very few of these artists have a visible paid media or CRM presence in the public footprint. Whoever builds the infrastructure first owns the SEA fanbase and the diaspora bridge to the US/AU. NIKI proved the US ceiling is breakable. Nadhif's Indonesian-language catalog is a differentiator in that lane — emotional sounds travel, and pop-folk has no US-side competitor at his scale.",
         source: "Spotify charts / Billboard Indonesia / competitive benchmarking",
       },
     ],
@@ -159,7 +159,7 @@ export const nadhifBasalamah: ProjectData = {
       "No direct communication channel — fans rely entirely on social algorithms to stay connected, and when those fail (as in Singapore), the experience falls apart",
     ],
     purchaseTriggers: [
-      "Tour on-sale moments — SEA tour demand is insatiable. Every announced market sells, but the funnel is leaking high-intent buyers who never see the announcement",
+      "Tour on-sale moments — SEA tour demand is strong — the 2025 Menjaga Hati run covered Kota Kinabalu, KL, and Singapore — but the funnel almost certainly leaks high-intent buyers who never see the announcement",
       "Seasonal emotional drops — Valentine's, post-Eid Ramadan, year-end reflection. Nadhif's emotional catalog aligns naturally with cultural moments fans already buy into",
       "Limited physical drops — vinyl, lyric books, handwritten letters, tour-exclusive tees. A fanbase this emotional will pay premium for tangible artifacts",
       "Album announcement + pre-save campaigns — the next album is the single highest-conversion moment available. Pre-save into Laylo is the most valuable email acquisition lever he has",
@@ -178,7 +178,7 @@ export const nadhifBasalamah: ProjectData = {
       {
         name: "Spotify",
         description:
-          "~19M monthly listeners, 11× Platinum. Home of the catalog tail — 'Penjaga Hati' still streaming 2+ years on. Playlist placement and algorithmic radio are the core growth levers. Zero paid amplification has ever run against the catalog.",
+          "~19M monthly listeners, 11× Platinum. Home of the catalog tail — 'Penjaga Hati' still streaming 2+ years on. Playlist placement and algorithmic radio are the core growth levers. No visible paid amplification behind the catalog in public ad libraries.",
       },
       {
         name: "YouTube",
@@ -254,7 +254,7 @@ export const nadhifBasalamah: ProjectData = {
         name: "Pamungkas — 14.3M Monthly Listeners",
         strength:
           "#2 Indonesian artist on Spotify. 'To the Bone' at 600M+ streams. Consistent release cadence since 2018, deep catalog, global indie-pop credibility that has pulled listeners from the US, Philippines, and Australia organically.",
-        gap: "Pamungkas has the streaming scale but hasn't converted it into an owned-audience flywheel — same infrastructure gap. He's the closest direct comp for Nadhif: same tier, same genre neighborhood, same catalog-plus-organic-reach operation. Whoever builds the paid media, Laylo, and creator system first takes the lane.",
+        gap: "Pamungkas has the streaming scale but has no visible owned-audience flywheel either — same infrastructure gap. He's the closest direct comp for Nadhif: same tier, same genre neighborhood, same catalog-plus-organic-reach operation. Whoever builds the paid media, Laylo, and creator system first takes the lane.",
       },
       {
         name: "Fourtwnty — 13.2M Monthly Listeners",
