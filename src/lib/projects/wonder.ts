@@ -555,7 +555,7 @@ export const wonder: ProjectData = {
       },
     ],
     paymentTerms: "7 days from invoice",
-    paymentLink: "#",
+    paymentLink: "https://buy.stripe.com/dRm3cu0Di6YFbzb7ZDa7C0b",
   },
 
   nextSteps: [
