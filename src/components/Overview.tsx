@@ -53,7 +53,9 @@ export function Overview() {
           <StaggerItem className="md:col-span-7">
             <TiltCard className="group h-full">
               <div className="card frame bg-bg-card rounded-none p-10 hover:bg-bg-card-hover transition-all duration-500 h-full">
-                <span className="text-[10px] font-mono tracking-[0.2em] text-accent/50 uppercase block mb-6">01</span>
+                <div className="w-10 h-10 rounded-none bg-accent/10 flex items-center justify-center flex-shrink-0 group-hover:bg-accent group-hover:scale-105 transition-all duration-500 mb-6">
+                  <span className="text-[15px] font-mono text-accent group-hover:text-bg transition-colors duration-500 font-bold">01</span>
+                </div>
                 <p className="text-[20px] text-text-primary font-medium leading-[1.5] tracking-[-0.01em] mb-4">
                   {PROJECT.overview.objectives[0]}
                 </p>
@@ -69,7 +71,9 @@ export function Overview() {
           <StaggerItem className="md:col-span-5">
             <TiltCard className="group h-full">
               <div className="card frame bg-bg-card rounded-none p-10 hover:bg-bg-card-hover transition-all duration-500 h-full flex flex-col justify-center">
-                <span className="text-[10px] font-mono tracking-[0.2em] text-accent/50 uppercase block mb-6">02</span>
+                <div className="w-10 h-10 rounded-none bg-accent/10 flex items-center justify-center flex-shrink-0 group-hover:bg-accent group-hover:scale-105 transition-all duration-500 mb-6">
+                  <span className="text-[15px] font-mono text-accent group-hover:text-bg transition-colors duration-500 font-bold">02</span>
+                </div>
                 <p className="text-[16px] text-text-secondary leading-[1.6] group-hover:text-text-primary transition-colors duration-500">
                   {PROJECT.overview.objectives[1]}
                 </p>
@@ -80,7 +84,9 @@ export function Overview() {
           <StaggerItem className="md:col-span-5">
             <TiltCard className="group h-full">
               <div className="card frame bg-bg-card rounded-none p-10 hover:bg-bg-card-hover transition-all duration-500 h-full flex flex-col justify-center">
-                <span className="text-[10px] font-mono tracking-[0.2em] text-accent/50 uppercase block mb-6">03</span>
+                <div className="w-10 h-10 rounded-none bg-accent/10 flex items-center justify-center flex-shrink-0 group-hover:bg-accent group-hover:scale-105 transition-all duration-500 mb-6">
+                  <span className="text-[15px] font-mono text-accent group-hover:text-bg transition-colors duration-500 font-bold">03</span>
+                </div>
                 <p className="text-[16px] text-text-secondary leading-[1.6] group-hover:text-text-primary transition-colors duration-500">
                   {PROJECT.overview.objectives[2]}
                 </p>
@@ -90,8 +96,10 @@ export function Overview() {
 
           <StaggerItem className="md:col-span-7">
             <TiltCard className="group h-full">
-              <div className="bg-white/[0.06] border border-white/[0.10] rounded-none p-10 hover:bg-white/[0.09] transition-all duration-500 h-full flex items-center gap-8">
-                <span className="display text-[56px] text-accent/15 leading-none">04</span>
+              <div className="card frame bg-bg-card rounded-none p-10 hover:bg-bg-card-hover transition-all duration-500 h-full flex flex-col justify-center">
+                <div className="w-10 h-10 rounded-none bg-accent/10 flex items-center justify-center flex-shrink-0 group-hover:bg-accent group-hover:scale-105 transition-all duration-500 mb-6">
+                  <span className="text-[15px] font-mono text-accent group-hover:text-bg transition-colors duration-500 font-bold">04</span>
+                </div>
                 <p className="text-[16px] text-text-secondary leading-[1.6] group-hover:text-text-primary transition-colors duration-500">
                   {PROJECT.overview.objectives[3]}
                 </p>
