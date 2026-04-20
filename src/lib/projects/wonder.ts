@@ -608,6 +608,7 @@ export const wonder: ProjectData = {
     hero2: "/images/wonder/hero2.jpg",
     product: "/images/wonder/product.jpg",
     editorial: "/images/wonder/editorial.jpg",
+    texture: "/images/wonder/texture.jpg",
     brutalist: "/images/wonder/brutalist.jpg",
     hero1Caption: "Kiss of Life — Born to Be XX era  /  the act WONDER is quarterbacking in America",
     brutalistCaption: "Kiss of Life — Midas Touch  /  WONDER × Crowd Control Digital",
