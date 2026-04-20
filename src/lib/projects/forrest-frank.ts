@@ -595,6 +595,7 @@ export const forrestFrank: ProjectData = {
   },
 
   images: {
+    heroBg: "/images/forrest-frank/hero-bg.jpg",
     hero1: "/images/forrest-frank/hero1.png",
     hero2: "/images/forrest-frank/hero2.png",
     product: "/images/forrest-frank/product.png",
