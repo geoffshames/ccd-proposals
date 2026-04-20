@@ -7,6 +7,7 @@ import { alexWarren } from "./alex-warren";
 import { nadhifBasalamah } from "./nadhif-basalamah";
 import { destinConrad } from "./destin-conrad";
 import { forrestFrank } from "./forrest-frank";
+import { wonder } from "./wonder";
 import type { ProjectData } from "../project-context";
 
 export const PROJECTS: Record<string, ProjectData> = {
@@ -19,6 +20,7 @@ export const PROJECTS: Record<string, ProjectData> = {
   "nadhif-basalamah": nadhifBasalamah,
   "destin-conrad": destinConrad,
   "forrest-frank": forrestFrank,
+  "wonder": wonder,
 };
 
 export function getProject(slug: string): ProjectData | undefined {

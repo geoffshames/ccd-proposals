@@ -9,13 +9,13 @@
 }
 
 @theme inline {
-  --color-bg: #050505;
-  --color-bg-card: #111111;
-  --color-bg-card-hover: #1a1a1a;
-  --color-bg-elevated: #0e0e0e;
-  --color-accent: #E63946;
-  --color-accent-dim: #E6394610;
-  --color-text-primary: #E8E8E8;
+  --color-bg: #0A0A0A;
+  --color-bg-card: #1A1A1A;
+  --color-bg-card-hover: #2A2A2A;
+  --color-bg-elevated: #111111;
+  --color-accent: #FD3737;
+  --color-accent-dim: #FD373710;
+  --color-text-primary: #FAFAFA;
   --color-text-secondary: #777777;
   --color-text-muted: rgba(255, 255, 255, 0.55);
   --color-border: #1e1e1e;
