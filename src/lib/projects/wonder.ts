@@ -68,7 +68,7 @@ export const wonder: ProjectData = {
       {
         label: "Creator Adoption Flatline",
         finding:
-          "Kiss of Life's last single has near-zero sound usage on TikTok/Reels relative to fandom size (3.8M TikTok followers). There's no protracted creator strategy, no cultural tie-in, and no narrative hook — the last clipping vendor engagement produced volume without resonance. Dominic Fike's team ran ~600K Euphoria-tied creates and landed #10 on the Hot 100 the same month. Young Blood's team did Corpse Bride edits for 'Zombies' and 10x'd daily streams. That playbook — cultural IP (ie. Euphoria, Y2K, K-drama crossovers) + strong visual + paid deployment on the top 10% of creators — is currently not being run on Kiss of Life.",
+          "Kiss of Life's last single has near-zero sound usage on TikTok/Reels relative to fandom size (3.8M TikTok followers). There's no protracted creator strategy, no cultural tie-in, and no narrative hook — the last clipping vendor engagement produced volume without resonance. Dominic Fike's team ran ~600K Euphoria-tied creates and landed #10 on the Hot 100 the same month. BBNO$'s team ran Corpse Bride edits that drove 900K+ TikTok creates. That playbook — cultural IP (ie. Euphoria, Y2K, K-drama crossovers) + strong visual + paid deployment on the top 10% of creators — is currently not being run on Kiss of Life.",
         source: "TikTok/IG creator audit + Hot 100 case-study analysis",
       },
       {
@@ -218,7 +218,7 @@ export const wonder: ProjectData = {
       metric: "Creator Campaign Output",
       value: "50K+ creates",
       context:
-        "Drive 50K+ organic creates on Kiss of Life sounds through the cultural tie-in campaign (ie. Euphoria, Y2K, K-drama edit angles) with paid deployment on the top 10% of edit-community creators — benchmarked against the Dominic Fike / Young Blood playbook.",
+        "Drive 50K+ organic creates on Kiss of Life sounds through the cultural tie-in campaign (ie. Euphoria, Y2K, K-drama edit angles) with paid deployment on the top 10% of edit-community creators — benchmarked against the Dominic Fike / BBNO$ playbook.",
     },
     {
       metric: "YG Plus Services Blueprint",
@@ -394,7 +394,7 @@ export const wonder: ProjectData = {
           name: "Cultural Tie-In Campaign Strategy",
           quantity: "Per release",
           description:
-            "Strategy + execution for the Dominic Fike / Young Blood-style tie-in — find the cultural IP that matches the song's visual and tonal universe (ie. Euphoria, Corpse Bride, Y2K, K-drama cross-overs), then recruit and deploy the edit community that's already making that content.",
+            "Strategy + execution for the Dominic Fike / BBNO$-style tie-in — find the cultural IP that matches the song's visual and tonal universe (ie. Euphoria, Corpse Bride, Y2K, K-drama cross-overs), then recruit and deploy the edit community that's already making that content.",
         },
         {
           name: "Top-10% Creator Paid Deployment",
