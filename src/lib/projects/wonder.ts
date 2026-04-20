@@ -40,7 +40,7 @@ export const wonder: ProjectData = {
     ],
     subtitle:
       "Strategic quarterback. Infrastructure build. US-side execution. Priced so every release turns WONDER's marketing spend into owned assets — not disposable creative.",
-    imageCaption: "Strategic Quarterback + US Services Infrastructure",
+    imageCaption: "BLACKPINK — YG Plus catalog flagship. The institutional artist Crowd Control is productizing services around.",
     stats: [
       {
         value: 2,
@@ -262,7 +262,7 @@ export const wonder: ProjectData = {
   timelineHeading: "Engagement Roadmap",
   timelineSubheading:
     "A two-track 6-month engagement: the Kiss of Life rebrand runs front-and-center on the consumer side, while the YG Plus services infrastructure gets built in parallel on the institutional side — both delivering by end of October so WONDER walks into Q4 and 2027 with a signed YG Plus services deal and a proven flagship case study.",
-  timelineImageCaption: "6 Months / 4 Phases / 2 Tracks",
+  timelineImageCaption: "BABYMONSTER — the newest YG Plus act. Every per-release playbook Crowd Control builds this year is a cleaner launch for acts like these next year.",
 
   timeline: [
     {
