@@ -415,22 +415,28 @@ export const wonder: ProjectData = {
       icon: "◇",
       items: [
         {
-          name: "Three-Pillar Supply Chain",
+          name: "Pillar 1 — Tour Merch Fulfillment",
           quantity: "Scoped separately",
           description:
-            "Pillar 1: Tour merch with real-time fulfillment (Crowd Control's Monsta-X / Logic / Wiz Khalifa / Backstreet Boys operator). Pillar 2: Album physicals via Target / Walmart / indie-record-store distribution (Crowd Control's Lana Del Rey operator). Pillar 3: Branded D2C with Manila CS. Fee structure — monthly oversight retainer or percentage-of-net — scoped and quoted separately once WONDER confirms the initial pillars and release cadence.",
+            "Tour merch with real-time fulfillment, powered by Crowd Control's Monsta-X / Logic / Wiz Khalifa / Backstreet Boys operator. On-site production, replenishment, and settlement — scoped as monthly oversight retainer or percentage-of-net once WONDER confirms cadence.",
         },
         {
-          name: "EU Production Line",
+          name: "Pillar 2 — Physical Retail Distribution",
           quantity: "Scoped separately",
           description:
-            "Partnership activation with Crowd Control's Adidas-grade EU production facility — solves the $14-vs-$4 US-merch-cost bleed on European runs and plugs the Europe fulfillment gap.",
+            "Album physicals into Target, Walmart, and indie-record-store distribution via Crowd Control's Lana Del Rey operator. Covers manufacturing, DSP-tied bundle strategy, and chart-eligible retail placement for every Kiss of Life and YG Plus US release.",
+        },
+        {
+          name: "Pillar 3 — Branded D2C Storefront",
+          quantity: "Scoped separately",
+          description:
+            "Artist-sovereign D2C storefront with Manila-based CS coverage, integrated to the Laylo / SMS / email CRM. Every purchase becomes a first-party data point WONDER controls — not a walled-garden transaction.",
         },
         {
           name: "Experiential Pop-Ups (Paul)",
           quantity: "Scoped per activation",
           description:
-            "Paul Aufdermaur's events team (Lana Del Rey, Backstreet Boys, Logic, Wiz Khalifa) delivers the Kiss of Life rebrand pop-up and the YG Plus pop-up-store infrastructure. Full portfolio in WONDER's hands in the first 10 days of engagement.",
+            "Paul's events team (Lana Del Rey, Backstreet Boys, Logic, Wiz Khalifa) delivers the Kiss of Life rebrand pop-up and the YG Plus pop-up-store infrastructure. Full portfolio in WONDER's hands in the first 10 days of engagement.",
         },
       ],
     },
