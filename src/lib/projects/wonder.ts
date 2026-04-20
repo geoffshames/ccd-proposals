@@ -488,6 +488,7 @@ export const wonder: ProjectData = {
         description:
           "Three-pillar supply-chain oversight (tour fulfillment, Target/Walmart/indie retail, EU production), branded D2C storefront with Manila-based CS, and experiential coordination with Paul's events team. Scoped separately — billed either as a monthly oversight retainer or as a percentage of net merch revenue once pillars and release cadence are confirmed.",
         price: 0,
+        priceLabel: "TBD",
         recurring: true,
       },
     ],
@@ -504,6 +505,7 @@ export const wonder: ProjectData = {
     mediaBudget: {
       label: "Per-Release Investment + Managed Spend (Stacks on Retainer)",
       amount: 0,
+      amountLabel: "TBD",
       note:
         "Per-release investment varies based on the level of the release — creator campaign size, paid media, experiential activation, and physical-retail coordination are scoped to the moment and quoted per release on top of the retainer. Any campaign spend Crowd Control manages on WONDER's behalf (paid media, creator fees, production, experiential buyouts) is billed at a 15% management rate on top of the retainer. The July Kiss of Life rebrand scope will be quoted once the final label budget is confirmed.",
     },

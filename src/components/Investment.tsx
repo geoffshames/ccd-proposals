@@ -62,7 +62,7 @@ export function Investment() {
                           </div>
                         </div>
                         <div className="text-[15px] font-mono text-text-primary flex-shrink-0 tabular-nums tracking-[-0.02em]">
-                          {formatCurrency(item.price)}{item.recurring ? <span className="text-text-muted/60 text-[11px]">/mo</span> : ""}
+                          {item.priceLabel ? item.priceLabel : <>{formatCurrency(item.price)}{item.recurring ? <span className="text-text-muted/60 text-[11px]">/mo</span> : ""}</>}
                         </div>
                       </div>
                     </StaggerItem>
@@ -92,7 +92,7 @@ export function Investment() {
                         <span className="text-[13px] text-text-muted block">{q.mediaBudget.label}</span>
                         <span className="text-[11px] text-text-muted/50 block mt-1">{q.mediaBudget.note}</span>
                       </div>
-                      <span className="text-[14px] font-mono text-text-secondary tabular-nums flex-shrink-0">{formatCurrency(q.mediaBudget.amount)}<span className="text-text-muted/60 text-[11px]">/mo</span></span>
+                      <span className="text-[14px] font-mono text-text-secondary tabular-nums flex-shrink-0">{q.mediaBudget.amountLabel ? q.mediaBudget.amountLabel : <>{formatCurrency(q.mediaBudget.amount)}<span className="text-text-muted/60 text-[11px]">/mo</span></>}</span>
                     </div>
                   )}
                   {q.model === "retainer" && (

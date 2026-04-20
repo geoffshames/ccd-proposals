@@ -117,6 +117,7 @@ export type ProjectData = {
       name: string;
       description: string;
       price: number;
+      priceLabel?: string;
       recurring?: boolean;
     }[];
     subtotal: number;
@@ -132,6 +133,7 @@ export type ProjectData = {
     mediaBudget?: {
       label: string;
       amount: number;
+      amountLabel?: string;
       note: string;
     };
     total: number;
