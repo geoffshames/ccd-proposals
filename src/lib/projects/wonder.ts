@@ -605,7 +605,7 @@ export const wonder: ProjectData = {
     editorial: "/images/wonder/editorial.jpg",
     texture: "/images/wonder/texture.jpg",
     brutalist: "/images/wonder/brutalist.jpg",
-    hero1Caption: "Kiss of Life — Who Is She campaign  /  the April 2026 flagship WONDER is quarterbacking in America",
+    hero1Caption: "WONDER Produced Event",
     brutalistCaption: "Kiss of Life — Who Is She  /  WONDER × Crowd Control",
     ogImage: "/images/wonder/og-image.png",
   },
