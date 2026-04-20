@@ -30,10 +30,10 @@ export const forrestFrank: ProjectData = {
   overview: {
     heading: "The Growth Plan",
     summary:
-      "Forrest Frank just surpassed Drake on YouTube Music — 144M monthly listeners to Drake's 137M — with zero major-label marketing machine behind him. He's fully independent on his own imprint, Homemade Projects, and the math is extreme: the biggest leverage moment in faith-pop this decade is happening inside an artist team that's running lean by choice. Crowd Control Digital will deploy a 6-month full-service marketing retainer engineered for that exact gap. We'll wrap paid media across Meta, TikTok, and YouTube around the Party Wave launch window and the summer Jesus Generation Tour, consolidate the fragmented fan data stack into a Laylo-anchored owned audience, build a creator and comment-seeding program that amplifies the organic cultural moment already in motion, and deliver the reporting and insight layer a self-managed artist needs to make confident decisions week over week. The goal is straightforward: convert the 144M-listener audience into owned fans, tour ticket buyers, merch customers, and pre-save engines that compound across every future release.",
+      "Forrest Frank just surpassed Drake on YouTube Music — 144M monthly listeners to Drake's 137M — with zero major-label marketing machine behind him. He's fully independent on his own imprint, Homemade Projects, and the math is extreme: the biggest leverage moment in faith-pop this decade is happening inside an artist team that's running lean by choice. Crowd Control Digital will deploy a 6-month full-service marketing retainer engineered for that exact gap. We'll wrap paid media across Meta, TikTok, and YouTube around the Party Wave launch window and the summer Jesus Generation Tour, activate the Klaviyo + Shopify stack he already owns with the flow architecture, segmentation, and SMS layer a fanbase this size can support, and layer Laylo as a real-time fan-drop channel on top, build a creator and comment-seeding program that amplifies the organic cultural moment already in motion, and deliver the reporting and insight layer a self-managed artist needs to make confident decisions week over week. The goal is straightforward: convert the 144M-listener audience into owned fans, tour ticket buyers, merch customers, and pre-save engines that compound across every future release.",
     objectives: [
       "Scale paid media across Meta, TikTok, and YouTube behind the Party Wave / Dawn Patrol launch window and the Jesus Generation Tour summer run — with performance attribution tied to streams, ticket sales, and owned-audience capture",
-      "Consolidate fragmented fan capture (Klaviyo + Shopify + Ticketmaster) into a unified Laylo-anchored CRM — segmented by tour market, Party Wave buyer, Child of God II listener, merch customer, and Gen Z vs elder-millennial cohort",
+      "Activate the Klaviyo + Shopify CRM Forrest already owns — segmentation schema (market, buyer type, platform origin, engagement tier), welcome / post-purchase / win-back flows, and SMS keyword build — with Laylo layered on top for real-time fan drops at tour and release moments",
       "Build a creator + comment-seeding program across TikTok and Instagram that amplifies Forrest's organic cultural moment — especially for the Party Wave launch and Jesus Generation Tour markets",
       "Activate Forrest's 144M YouTube Music audience with paid catalog and pre-save campaigns — converting passive algorithmic listeners into followers, email subscribers, and ticket buyers",
       "Deliver the reporting and insight layer a self-managed independent artist needs — weekly dashboards, monthly strategy calls, and a documented decision framework across every platform",
@@ -58,7 +58,7 @@ export const forrestFrank: ProjectData = {
   discovery: {
     heading: "What We Found",
     summary:
-      "Before proposing a single deliverable, we audited Forrest Frank's full ecosystem — forrestfrank.com, Shopify merch, Klaviyo integration, Spotify catalog, YouTube Music footprint, TikTok and Instagram presence, the Party Wave launch, and the Jesus Generation Tour rollout. The findings are striking. Forrest has one of the most leveraged audiences in music right now — 144M YouTube Music listeners, 8M Spotify monthly, 1.5B+ catalog streams — and he owns his imprint outright. The gap isn't awareness. The gap is marketing infrastructure. He's running lean by choice, which is exactly what makes the ROI math on CCD's retainer structure extreme.",
+      "Before proposing a single deliverable, we audited Forrest Frank's full ecosystem — forrestfrank.com, the Shopify store, the Klaviyo stack piped into it, Spotify catalog, YouTube Music footprint, TikTok and Instagram presence, the Party Wave launch, and the Jesus Generation Tour rollout. The findings are striking. Forrest has one of the most leveraged audiences in music right now — 144M YouTube Music listeners, 8M Spotify monthly, 1.5B+ catalog streams — and he owns his imprint, his e-comm, and his CRM outright. The gap isn't awareness, and it isn't ownership. The gap is activation sophistication — the flows, the segmentation, the paid-social wrap, and the cross-channel orchestration sitting on top of a stack he already controls. He's running lean by choice, which is exactly what makes the ROI math on CCD's retainer structure extreme.",
     insights: [
       {
         label: "The Drake Moment — And Its Expiration Date",
@@ -67,10 +67,10 @@ export const forrestFrank: ProjectData = {
         source: "YouTube Music public data / competitive audit",
       },
       {
-        label: "Fragmented Fan Capture",
+        label: "Owned Stack, Under-Leveraged Flows",
         finding:
-          "Data is being captured — but nobody owns the unified audience. Klaviyo is embedded on forrestfrank.com via the Shopify integration. Ticketmaster holds the Jesus Generation ticket buyer data. Spotify and YouTube Music hold the listener audience. Shopify holds the merch buyer list. None of these lists talk to each other. Forrest's team can't segment a Party Wave buyer who's also a Nashville ticket holder, can't retarget a YouTube Music heavy listener with a tour merch drop, can't run an independent SMS flow to the fans most likely to preorder the next project. The lists exist. The activation layer doesn't.",
-        source: "forrestfrank.com audit / Shopify + Klaviyo surface review",
+          "The data is being captured and — critically — Forrest owns it end-to-end. His Shopify store and the Klaviyo instance piped into it are both under his control, which means email and SMS flows are fully available to run, segment, and optimize on his timeline, not anyone else's. What isn't in place yet is the flow architecture that a fanbase this size can support: lifecycle automations (welcome, post-purchase, win-back), behavior-triggered SMS (pre-save → tour on-sale → merch drop), and segmentation that lets the Party Wave buyer in Nashville actually get a different email than the casual Spotify listener in LA. Layer in Ticketmaster ticket data, Spotify for Artists pre-save audiences, and YouTube Music listener affinity — all live outside the Klaviyo stack today — and there's a clear cross-channel orchestration opportunity sitting right on top of the owned CRM he already runs.",
+        source: "forrestfrank.com audit / Shopify + Klaviyo stack review",
       },
       {
         label: "Dual Launch Window — Stacked",
@@ -207,7 +207,7 @@ export const forrestFrank: ProjectData = {
       metric: "Owned Audience Growth",
       value: "+100K",
       context:
-        "Add 100,000+ opt-in email and SMS subscribers to a unified Laylo-anchored CRM across the 6-month retainer — captured via tour market funnels, Party Wave pre-save flows, merch opt-in, and paid social conversion campaigns. This is the audience that compounds across every future release.",
+        "Add 100,000+ opt-in email and SMS subscribers to the owned Klaviyo + Shopify stack across the 6-month retainer — captured via tour market funnels, Party Wave pre-save flows, merch opt-in, and paid social conversion campaigns, and unified with Laylo for real-time drops. This is the audience that compounds across every future release.",
     },
     {
       metric: "Tour Ticket Attribution",
@@ -272,9 +272,9 @@ export const forrestFrank: ProjectData = {
       status: "upcoming" as const,
       tasks: [
         "Full audit across forrestfrank.com, Shopify, Klaviyo, Ticketmaster, DSPs, and all social platforms — baseline every metric and identify immediate quick-win opportunities",
-        "Stand up Laylo as the unified fan CRM — import Klaviyo list, design segmentation schema (market, buyer type, platform origin, engagement tier), and wire welcome and win-back flows",
+        "Activate Klaviyo + Shopify as the unified CRM backbone — segmentation schema (market, buyer type, platform origin, engagement tier), welcome / post-purchase / win-back flows, SMS keyword foundation. Deploy Laylo alongside for real-time fan drops at release and tour moments",
         "Configure Meta, TikTok, and YouTube ad accounts — pixel / CAPI instrumentation, seed audiences from Spotify and YouTube Music, and build the first conversion event taxonomy tied to streams, tickets, and merch",
-        "Weekly reporting dashboard build — single source of truth across paid media, Spotify for Artists, YouTube Studio, Laylo engagement, and Shopify revenue",
+        "Weekly reporting dashboard build — single source of truth across paid media, Spotify for Artists, YouTube Studio, Klaviyo + Laylo engagement, and Shopify revenue",
       ],
     },
     {
@@ -308,7 +308,7 @@ export const forrestFrank: ProjectData = {
       status: "upcoming" as const,
       tasks: [
         "On-tour real-time campaign ops — day-of and day-after paid sustain per market, attendee retargeting, and post-show digital bundle delivery via Laylo",
-        "QR-to-Laylo capture infrastructure at every venue — entry signage, merch booth opt-in, and VIP tier data integration wired back into the unified CRM",
+        "QR-to-CRM capture at every venue — entry signage and merch booth opt-in piped into Klaviyo + Shopify, Laylo registration for real-time drops, all wired into the unified fan view",
         "City-edition and tour-exclusive content drops — 6+ limited releases driving data opt-in and per-fan LTV lift",
         "Weekly attribution + media efficiency reporting — paid media ROAS, CRM growth, ticket and merch lift per market",
       ],
@@ -321,7 +321,7 @@ export const forrestFrank: ProjectData = {
       tasks: [
         "Full post-tour analysis — data capture rates, revenue attribution, paid media efficiency, and the documented 2027 playbook for the next release and tour cycle",
         "Catalog sustain campaigns — paid media behind Child of God II, Party Wave, and the full Forrest Frank catalog to beat the post-tour streaming cliff most artists walk into",
-        "Q4 Laylo campaigns — holiday merch, fan-to-fan gifting, and a seasonal pre-save capture tied to whatever's teased for 2027",
+        "Q4 Klaviyo + Laylo campaigns — holiday merch lifecycle flows, fan-to-fan gifting, and a seasonal pre-save capture tied to whatever's teased for 2027",
         "Full handoff documentation — platform access, process docs, 2027 readiness brief, and recommended path for continuing the retainer or expanding scope",
       ],
       ongoing: true,
@@ -363,14 +363,14 @@ export const forrestFrank: ProjectData = {
       ],
     },
     {
-      category: "Fan CRM (Laylo)",
+      category: "Fan CRM (Klaviyo + Laylo)",
       icon: "◆",
       items: [
         {
-          name: "Laylo Infrastructure Build",
+          name: "CRM Activation Build",
           quantity: "1 build",
           description:
-            "Full Laylo implementation — unified CRM architecture, Klaviyo migration, segmentation schema across market / buyer type / platform origin / engagement tier, welcome and win-back flows, and SMS keyword setup.",
+            "Activate the owned Klaviyo + Shopify stack — segmentation schema across market / buyer type / platform origin / engagement tier, welcome / post-purchase / win-back flows, and SMS keyword setup. Deploy Laylo on top as the real-time fan drop channel for release and tour moments.",
         },
         {
           name: "Lifecycle Campaigns",
@@ -424,7 +424,7 @@ export const forrestFrank: ProjectData = {
           name: "Weekly Performance Dashboard",
           quantity: "24 reports",
           description:
-            "Single source of truth across paid media ROAS, Spotify monthly listener growth, Laylo CRM health, tour pacing, and merch attribution. Delivered weekly, always current.",
+            "Single source of truth across paid media ROAS, Spotify monthly listener growth, Klaviyo + Laylo CRM health, tour pacing, and merch attribution. Delivered weekly, always current.",
         },
         {
           name: "Monthly Strategic Brief",
@@ -447,7 +447,7 @@ export const forrestFrank: ProjectData = {
       "Everything included in this retainer — and where the boundaries are. This is a focused full-service engagement built for an independent artist with a finite budget and two live launch windows.",
     included: [
       "Paid media strategy, creative direction, and day-to-day campaign management across Meta, TikTok, YouTube, and Spotify growth",
-      "Laylo CRM build, segmentation schema, and ongoing lifecycle campaign operations across tour markets, Party Wave audiences, and merch buyers",
+      "Klaviyo flow architecture + segmentation on the existing stack, Laylo deployment for real-time fan drops, and ongoing lifecycle campaign operations across tour markets, Party Wave audiences, and merch buyers",
       "Creator activation program — sourcing, briefing, contracting, delivery, and paid amplification of 40+ creators across tour and launch windows",
       "Comment-seeding and organic fan-voice amplification across TikTok, Instagram, and YouTube",
       "Weekly strategy calls, weekly performance dashboards, and monthly strategic briefs",
@@ -476,9 +476,9 @@ export const forrestFrank: ProjectData = {
         recurring: true,
       },
       {
-        name: "Fan CRM Activation (Laylo)",
+        name: "Fan CRM Activation (Klaviyo + Laylo)",
         description:
-          "Laylo build, Klaviyo migration, segmentation, lifecycle campaigns, on-site capture kit, and ongoing CRM operations across tour and launch windows.",
+          "Klaviyo flow architecture + segmentation on the existing stack, Laylo deployment for real-time drops, on-site capture kit, and ongoing CRM operations across tour and launch windows.",
         price: 1200,
         recurring: true,
       },
@@ -570,9 +570,9 @@ export const forrestFrank: ProjectData = {
     },
     {
       step: 3,
-      title: "Audit & Laylo Build",
+      title: "Audit & CRM Activation",
       description:
-        "Within Week 1 we deliver the baseline audit and stand up Laylo — unified CRM, Klaviyo migration, segmentation, and the first set of lifecycle flows. Data capture starts immediately.",
+        "Within Week 1 we deliver the baseline audit and activate the Klaviyo + Shopify stack Forrest already owns — segmentation, the first lifecycle flows, and SMS foundation — and deploy Laylo for real-time release and tour drops. Data activation starts immediately.",
     },
     {
       step: 4,
