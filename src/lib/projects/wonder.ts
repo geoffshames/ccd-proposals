@@ -603,15 +603,14 @@ export const wonder: ProjectData = {
   },
 
   images: {
-    hero1: "/images/wonder/hero1.png",
+    hero1: "/images/wonder/hero1.jpg",
     heroBg: "/images/wonder/hero-bg.jpg",
-    hero2: "/images/wonder/hero2.png",
-    product: "/images/wonder/product.png",
-    editorial: "/images/wonder/editorial.png",
-    texture: "/images/wonder/texture.png",
-    brutalist: "/images/wonder/brutalist.png",
-    hero1Caption: "Strategic Quarterback + US Services Infrastructure",
-    brutalistCaption: "WONDER × Crowd Control Digital",
+    hero2: "/images/wonder/hero2.jpg",
+    product: "/images/wonder/product.jpg",
+    editorial: "/images/wonder/editorial.jpg",
+    brutalist: "/images/wonder/brutalist.jpg",
+    hero1Caption: "Kiss of Life — Born to Be XX era  /  the act WONDER is quarterbacking in America",
+    brutalistCaption: "Kiss of Life — Midas Touch  /  WONDER × Crowd Control Digital",
     ogImage: "/images/wonder/og-image.png",
   },
 };
