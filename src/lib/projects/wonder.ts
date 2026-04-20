@@ -34,7 +34,7 @@ export const wonder: ProjectData = {
     objectives: [
       "Quarterback the Kiss of Life US rebrand — align S2, Kakao, Origin, and any retained vendors under one execution plan, audit every invoice, and make sure the July comeback lands with proper creator marketing, cultural tie-ins, and physical-album distribution for the first time in the US",
       "Build an owned fan-data layer for WONDER's roster — SMS/email capture targeting 100K+ US phone numbers across Kiss of Life and catalog acts, independent of Weverse/Kakao's walled gardens, so WONDER can activate a release or tour without needing permission from a label CRM",
-      "Deploy the creator marketing + comment-intelligence system — real strategy tied to cultural IP (ie. Euphoria, Tim Burton, Y2K, K-drama edit crossovers), paid deployment against the top 10% of creators, and the comment-seeding tool Crowd Control is already operating for other artists",
+      "Deploy the creator marketing + comment-intelligence system — real strategy tied to cultural IP (ie. Euphoria, Y2K, K-drama edit crossovers), paid deployment against the top 10% of creators, and the comment-seeding tool Crowd Control is already operating for other artists",
       "Stand up the three-pillar physical / merch / D2C supply chain — tour fulfillment, Target/Walmart/record-store album distribution, and a branded D2C layer with Philippines-based CS that fixes the $14-vs-$4 US-merch-cost problem and the zero-US-physicals problem in one move",
       "Productize the YG Plus services layer — package the Kiss of Life playbook into a per-release services offering, plus experiential pop-ups through Crowd Control's events partner, so YG Plus can offer real services against its advance money instead of burning it as straight cash to labels that don't know how to deploy it",
     ],
@@ -68,7 +68,7 @@ export const wonder: ProjectData = {
       {
         label: "Creator Adoption Flatline",
         finding:
-          "Kiss of Life's last single has near-zero sound usage on TikTok/Reels relative to fandom size (3.8M TikTok followers). There's no protracted creator strategy, no cultural tie-in, and no narrative hook — the last clipping vendor engagement produced volume without resonance. Dominic Fike's team ran ~600K Euphoria-tied creates and landed #10 on the Hot 100 the same month. Young Blood's team did Corpse Bride edits for 'Zombies' and 10x'd daily streams. That playbook — cultural IP (ie. Euphoria, Tim Burton, Y2K, K-drama crossovers) + strong visual + paid deployment on the top 10% of creators — is currently not being run on Kiss of Life.",
+          "Kiss of Life's last single has near-zero sound usage on TikTok/Reels relative to fandom size (3.8M TikTok followers). There's no protracted creator strategy, no cultural tie-in, and no narrative hook — the last clipping vendor engagement produced volume without resonance. Dominic Fike's team ran ~600K Euphoria-tied creates and landed #10 on the Hot 100 the same month. Young Blood's team did Corpse Bride edits for 'Zombies' and 10x'd daily streams. That playbook — cultural IP (ie. Euphoria, Y2K, K-drama crossovers) + strong visual + paid deployment on the top 10% of creators — is currently not being run on Kiss of Life.",
         source: "TikTok/IG creator audit + Hot 100 case-study analysis",
       },
       {
@@ -127,7 +127,7 @@ export const wonder: ProjectData = {
         name: "The Edit Kid",
         ageRange: "16–22",
         description:
-          "Lives on TikTok and Instagram Reels. Already makes or reposts K-pop edits daily — this is the audience we mobilize with cultural tie-in campaigns (ie. Euphoria edits, Tim Burton visual worlds, Y2K palettes, K-drama crossovers, fashion-brand cameos) and the 10% of them who are paid creators are the ones we deploy budget against.",
+          "Lives on TikTok and Instagram Reels. Already makes or reposts K-pop edits daily — this is the audience we mobilize with cultural tie-in campaigns (ie. Euphoria edits, Y2K palettes, K-drama crossovers, fashion-brand cameos) and the 10% of them who are paid creators are the ones we deploy budget against.",
         traits: ["Edit Maker", "Sound-Usage Driver", "Trend Adopter", "Paid Creator Funnel"],
       },
       {
@@ -146,7 +146,7 @@ export const wonder: ProjectData = {
       },
     ],
     psychographics: [
-      "Narrative-driven — the edit community responds to stories and visual universes (ie. Corpse Bride, Euphoria, Tim Burton-coded palettes, Y2K, Wes Anderson crossovers) more than to asset drops, so every campaign needs IP tie-in, not just hashtag deployment",
+      "Narrative-driven — the edit community responds to stories and visual universes (ie. Corpse Bride, Euphoria, Y2K, Wes Anderson crossovers) more than to asset drops, so every campaign needs IP tie-in, not just hashtag deployment",
       "Fandom-organized — US K-pop fans coordinate streaming pushes, chart strategy, and merch purchases across Discord/X, so we win by giving them coordination infrastructure (pre-save links, SMS drops, stream-tracking pages), not by trying to replace their energy",
       "Platform-native — they can smell a clipping farm, a botted comment section, or AI-generated slop with two followers instantly, so Crowd Control's comment-intelligence tool only works if every comment carries a narrative and every creator is legit",
       "Physically invested — photocards, poster inclusions, album variants, and city-edition merch drive real revenue, which means the physical/D2C track isn't a 'nice-to-have' alongside digital, it's the primary monetization surface",
@@ -158,7 +158,7 @@ export const wonder: ProjectData = {
       "There is no centralized US fan-communication channel — every touchpoint (Ticketmaster queue, Target checkout, Spotify pre-save, tour-venue merch booth) is a capture moment that isn't being captured",
     ],
     purchaseTriggers: [
-      "Cultural tie-in moments — ie. a Euphoria edit drop, a Tim Burton visual crossover, a K-drama OST placement — create discovery urgency the way a straight asset drop can't",
+      "Cultural tie-in moments — ie. a Euphoria edit drop, a K-drama OST placement — create discovery urgency the way a straight asset drop can't",
       "Scarcity drops — city-edition photocards, tour-only variants, SMS-gated exclusives — convert casual fans to repeat spenders at the highest rates in K-pop",
       "Physical-retail visibility — a Kiss of Life album in Target/Walmart is itself a discovery moment for the casual shopper and a chart event for the core fandom",
       "SMS-triggered streaming and D2C — one text to 100K fans on release day can move half a million streams and sell out a drop before paid media even spins up",
@@ -172,7 +172,7 @@ export const wonder: ProjectData = {
       {
         name: "Instagram",
         description:
-          "Fandom hub. Reels are the edit surface (where ie. Euphoria, Tim Burton, or Y2K-style tie-in campaigns deploy), feed is brand surface, Stories drive capture. Comment ops deploy here and on X simultaneously.",
+          "Fandom hub. Reels are the edit surface (where ie. Euphoria or Y2K-style tie-in campaigns deploy), feed is brand surface, Stories drive capture. Comment ops deploy here and on X simultaneously.",
       },
       {
         name: "X / Twitter",
@@ -218,7 +218,7 @@ export const wonder: ProjectData = {
       metric: "Creator Campaign Output",
       value: "50K+ creates",
       context:
-        "Drive 50K+ organic creates on Kiss of Life sounds through the cultural tie-in campaign (ie. Euphoria, Tim Burton, Y2K, K-drama edit angles) with paid deployment on the top 10% of edit-community creators — benchmarked against the Dominic Fike / Young Blood playbook.",
+        "Drive 50K+ organic creates on Kiss of Life sounds through the cultural tie-in campaign (ie. Euphoria, Y2K, K-drama edit angles) with paid deployment on the top 10% of edit-community creators — benchmarked against the Dominic Fike / Young Blood playbook.",
     },
     {
       metric: "YG Plus Services Blueprint",
@@ -283,7 +283,7 @@ export const wonder: ProjectData = {
       date: "July – August 2026",
       status: "upcoming" as const,
       tasks: [
-        "Execute the full cultural tie-in creator campaign against the Kiss of Life July release — ie. Euphoria / Tim Burton / Y2K / K-drama-adjacent edit campaigns deployed through paid creators at the top 10% of the edit community, not through clipping farms",
+        "Execute the full cultural tie-in creator campaign against the Kiss of Life July release — ie. Euphoria / Y2K / K-drama-adjacent edit campaigns deployed through paid creators at the top 10% of the edit community, not through clipping farms",
         "Narrative comment ops live across TikTok, IG, and X — seeded through Crowd Control's paid comment-intelligence network so every comment carries a story, not three flame emojis",
         "Physical album distribution live in Target, Walmart, and independent record stores (via Crowd Control's retail-partner network) + D2C bundles shipping out of the Manila-CS-backed store",
         "Experiential pop-up (Paul-led) in LA or NYC tied to the comeback, with SMS capture as the gating mechanism for photocard pulls and merch exclusives",
@@ -394,7 +394,7 @@ export const wonder: ProjectData = {
           name: "Cultural Tie-In Campaign Strategy",
           quantity: "Per release",
           description:
-            "Strategy + execution for the Dominic Fike / Young Blood-style tie-in — find the cultural IP that matches the song's visual and tonal universe (ie. Euphoria, Tim Burton, Corpse Bride, Y2K, K-drama cross-overs), then recruit and deploy the edit community that's already making that content.",
+            "Strategy + execution for the Dominic Fike / Young Blood-style tie-in — find the cultural IP that matches the song's visual and tonal universe (ie. Euphoria, Corpse Bride, Y2K, K-drama cross-overs), then recruit and deploy the edit community that's already making that content.",
         },
         {
           name: "Top-10% Creator Paid Deployment",
@@ -485,7 +485,7 @@ export const wonder: ProjectData = {
       {
         name: "Creator Marketing & Comment Ops",
         description:
-          "Cultural tie-in strategy (ie. Euphoria, Tim Burton, Y2K, K-drama crossovers), top-10% creator paid deployment network, and the comment-intelligence tool. Creator fees and paid media spend are billed separately at a 15% management rate — retainer covers program management only.",
+          "Cultural tie-in strategy (ie. Euphoria, Y2K, K-drama crossovers), top-10% creator paid deployment network, and the comment-intelligence tool. Creator fees and paid media spend are billed separately at a 15% management rate — retainer covers program management only.",
         price: 5000,
         recurring: true,
       },
