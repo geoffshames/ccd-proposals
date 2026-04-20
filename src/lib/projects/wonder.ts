@@ -30,10 +30,10 @@ export const wonder: ProjectData = {
   overview: {
     heading: "The Mandate",
     summary:
-      "This engagement is structured on two tracks running in parallel. Track 1 is the Kiss of Life rebrand flagship — CCD takes the quarterback seat alongside S2 Entertainment, Cacao, and Origin to run the US marketing against the July comeback: creator and edit-community mobilization, narrative-driven comment ops, experiential pop-ups, SMS/D2C capture, and proper physical-album distribution. Track 2 is the YG Plus services infrastructure — CCD builds the marketing, merch, D2C, and data-capture blueprint that becomes YGP's productized offering to its 600+ partner-label catalog, so YGP can hit its 2027 KPIs (Billboard entry, infrastructure stand-up, marketing services delivery) the same way Cacao International delivers for Cacao Entertainment. WONDER sits in the orchestration seat. CCD owns execution, vendor audit, data sovereignty, and US-side supply chain — so every dollar WONDER routes through YGP's advance money or KOL's marketing budget comes back as owned infrastructure instead of disposable spend.",
+      "This engagement is structured on two tracks running in parallel. Track 1 is the Kiss of Life rebrand flagship — CCD takes the quarterback seat alongside S2 Entertainment, Kakao, and Origin to run the US marketing against the July comeback: creator and edit-community mobilization, narrative-driven comment ops, experiential pop-ups, SMS/D2C capture, and proper physical-album distribution. Track 2 is the YG Plus services infrastructure — CCD builds the marketing, merch, D2C, and data-capture blueprint that becomes YGP's productized offering to its 600+ partner-label catalog, so YGP can hit its 2027 KPIs (Billboard entry, infrastructure stand-up, marketing services delivery) the same way Kakao International delivers for Kakao Entertainment. WONDER sits in the orchestration seat. CCD owns execution, vendor audit, data sovereignty, and US-side supply chain — so every dollar WONDER routes through YGP's advance money or KOL's marketing budget comes back as owned infrastructure instead of disposable spend.",
     objectives: [
-      "Quarterback the Kiss of Life US rebrand — align S2, Cacao, Origin, and any retained vendors under one execution plan, audit every invoice, and make sure KOL's July comeback lands with proper creator marketing, cultural tie-ins, and physical-album distribution for the first time in the US",
-      "Build an owned fan-data layer for WONDER's roster — SMS/email capture targeting 100K+ US phone numbers across KOL and catalog acts, independent of Berriz/Weverse/Cacao's walled gardens, so WONDER can activate a release or tour without needing permission from a label CRM",
+      "Quarterback the Kiss of Life US rebrand — align S2, Kakao, Origin, and any retained vendors under one execution plan, audit every invoice, and make sure KOL's July comeback lands with proper creator marketing, cultural tie-ins, and physical-album distribution for the first time in the US",
+      "Build an owned fan-data layer for WONDER's roster — SMS/email capture targeting 100K+ US phone numbers across KOL and catalog acts, independent of Berriz/Weverse/Kakao's walled gardens, so WONDER can activate a release or tour without needing permission from a label CRM",
       "Deploy the creator marketing + comment-intelligence system — real strategy tied to cultural IP (Euphoria/Tim Burton-style tie-ins), paid deployment against the top 10% of creators, and the comment-seeding tool CCD is already operating for other artists",
       "Stand up the three-pillar physical / merch / D2C supply chain — tour fulfillment, Target/Walmart/record-store album distribution, and a branded D2C layer with Philippines-based CS that fixes the $14-vs-$4 US-merch-cost problem and the zero-US-physicals problem in one move",
       "Productize the YG Plus services layer — package the KOL playbook into $10K / $30K / $50K per-release tiers, plus experiential pop-ups through CCD's events partner, so YGP can offer real services against its advance money instead of burning it as straight cash to labels that don't know how to deploy it",
@@ -57,7 +57,7 @@ export const wonder: ProjectData = {
   discovery: {
     heading: "What The Audit Turned Up",
     summary:
-      "Before writing a single line of this proposal, CCD audited the full WONDER-adjacent stack: Kiss of Life's US digital footprint, the S2/Cacao distribution chain, Origin's influencer-network play, the competitive Hot 100 landscape, and YG Plus's post-HYBE-divestment positioning. The findings below are the specific gaps — and the specific white space — we'd be hired to close.",
+      "Before writing a single line of this proposal, CCD audited the full WONDER-adjacent stack: Kiss of Life's US digital footprint, the S2/Kakao distribution chain, Origin's influencer-network play, the competitive Hot 100 landscape, and YG Plus's post-HYBE-divestment positioning. The findings below are the specific gaps — and the specific white space — we'd be hired to close.",
     insights: [
       {
         label: "Zero US Physicals",
@@ -74,8 +74,8 @@ export const wonder: ProjectData = {
       {
         label: "Walled-Garden Data",
         finding:
-          "Fan data is getting captured — but mostly by Cacao (distributor) and S2 (label). The US fan list lives inside someone else's CRM. WONDER can't segment it, can't retarget independently, can't run a pre-save-to-SMS funnel on its own cadence, and can't text 100K US fans the day a KOL single drops to pull in day-one streams. The audience exists — it's just behind a wall that isn't yours. This is a sovereignty gap, not an existence gap, and it's exactly the pattern CCD built around Cacao International for Kev's team.",
-        source: "S2 / Cacao distribution contract context + Berriz platform analysis",
+          "Fan data is getting captured — but mostly by Kakao (distributor) and S2 (label). The US fan list lives inside someone else's CRM. WONDER can't segment it, can't retarget independently, can't run a pre-save-to-SMS funnel on its own cadence, and can't text 100K US fans the day a KOL single drops to pull in day-one streams. The audience exists — it's just behind a wall that isn't yours. This is a sovereignty gap, not an existence gap, and it's exactly the pattern CCD built around Kakao International for Kev's team.",
+        source: "S2 / Kakao distribution contract context + Berriz platform analysis",
       },
       {
         label: "US Merch Cost Bleed",
@@ -86,7 +86,7 @@ export const wonder: ProjectData = {
       {
         label: "YGP White Space",
         finding:
-          "YG Plus divested from HYBE in September 2025 (~$27M) and is actively rebuilding its distribution network across 600+ partner labels. Their advance model is straight-cash to labels who don't know how to deploy it. The US-style alternative — route advance money through productized marketing services — is the exact blueprint Cacao International runs for Cacao Entertainment, and it's the gap WONDER is sitting in front of. There is no competitor currently offering YGP a pre-built three-tier services stack (Catalog / Priority / Flagship) with a Billboard-entry playbook. This is the window.",
+          "YG Plus divested from HYBE in September 2025 (~$27M) and is actively rebuilding its distribution network across 600+ partner labels. Their advance model is straight-cash to labels who don't know how to deploy it. The US-style alternative — route advance money through productized marketing services — is the exact blueprint Kakao International runs for Kakao Entertainment, and it's the gap WONDER is sitting in front of. There is no competitor currently offering YGP a pre-built three-tier services stack (Catalog / Priority / Flagship) with a Billboard-entry playbook. This is the window.",
         source: "Music Business Worldwide (HYBE/YGP divestment) + YGP partner-network data",
       },
     ],
@@ -99,7 +99,7 @@ export const wonder: ProjectData = {
     summary:
       "This engagement serves two audience layers: the end-consumer audience (Kiss of Life's US fandom and the broader 4th-gen K-pop ticket/physical-buyer) and the institutional audience WONDER is selling into (YG Plus leadership). The consumer layer drives the creative and media work. The institutional layer drives the services productization.",
     demographics:
-      "Consumer: 16–28 US core, ~85% female, multi-platform (X for coordination, TikTok for discovery, IG for content, Berriz for community). Institutional: YGP executive, S2 management, Cacao US operations.",
+      "Consumer: 16–28 US core, ~85% female, multi-platform (X for coordination, TikTok for discovery, IG for content, Berriz for community). Institutional: YGP executive, S2 management, Kakao US operations.",
     demographicCards: [
       {
         label: "Age Range",
@@ -182,7 +182,7 @@ export const wonder: ProjectData = {
       {
         name: "Berriz (Kakao)",
         description:
-          "Official fan community — high engagement, walled-garden data. CCD bridges Berriz engagement to owned Laylo/SMS infrastructure so WONDER can run its own flows without relying on Cacao's CRM.",
+          "Official fan community — high engagement, walled-garden data. CCD bridges Berriz engagement to owned Laylo/SMS infrastructure so WONDER can run its own flows without relying on Kakao's CRM.",
       },
     ],
     quotes: [
@@ -212,7 +212,7 @@ export const wonder: ProjectData = {
       metric: "US SMS Database",
       value: "100K+",
       context:
-        "Build an owned US SMS + email list of 100K+ fans across KOL and YGP catalog acts, captured through pre-save flows, tour-venue QR, D2C checkout, and data-gated exclusives — independent of Berriz, Cacao, and any third-party CRM.",
+        "Build an owned US SMS + email list of 100K+ fans across KOL and YGP catalog acts, captured through pre-save flows, tour-venue QR, D2C checkout, and data-gated exclusives — independent of Berriz, Kakao, and any third-party CRM.",
     },
     {
       metric: "Creator Campaign Output",
@@ -230,13 +230,13 @@ export const wonder: ProjectData = {
 
   competitive: {
     summary:
-      "WONDER is building the US services layer for YG Plus at the exact moment three competitive groups are chasing the same seat. Cacao International (Kev Nish's team) is the obvious comparable — CCD already knows that operation cold and its structural blind spots. Transparent Arts and 88rising play adjacent but different games — management + label services, not pure distribution services. Origin is influencer-network-only and can't deliver physicals, D2C, or data. The WONDER × CCD structure out-positions all of them on full-stack delivery.",
+      "WONDER is building the US services layer for YG Plus at the exact moment three competitive groups are chasing the same seat. Kakao International (Kev Nish's team) is the obvious comparable — CCD already knows that operation cold and its structural blind spots. Transparent Arts and 88rising play adjacent but different games — management + label services, not pure distribution services. Origin is influencer-network-only and can't deliver physicals, D2C, or data. The WONDER × CCD structure out-positions all of them on full-stack delivery.",
     competitors: [
       {
-        name: "Cacao International (US services arm of Cacao Entertainment)",
+        name: "Kakao International (US services arm of Kakao Entertainment)",
         strength:
           "Kev Nish's operation is the existing US-services benchmark for a Korean distributor — active on roster, embedded with US labels, has a sitting seat at Capitol/Virgin/RCA-style vendor reviews.",
-        gap: "Cacao International serves one distributor (Cacao) and one roster. YG Plus needs the equivalent operation built from scratch for a catalog that's 10x bigger (600+ partner labels). CCD has already run the same quarterback model Cacao International runs — same playbook, different catalog.",
+        gap: "Kakao International serves one distributor (Kakao) and one roster. YG Plus needs the equivalent operation built from scratch for a catalog that's 10x bigger (600+ partner labels). CCD has already run the same quarterback model Kakao International runs — same playbook, different catalog.",
       },
       {
         name: "Transparent Arts",
@@ -271,7 +271,7 @@ export const wonder: ProjectData = {
       date: "July 2026",
       status: "upcoming" as const,
       tasks: [
-        "Quarterback kickoff — align WONDER, S2, Cacao, Origin, and any retained vendors under a single execution plan with clear deliverable, spend, and accountability ownership on every line",
+        "Quarterback kickoff — align WONDER, S2, Kakao, Origin, and any retained vendors under a single execution plan with clear deliverable, spend, and accountability ownership on every line",
         "Vendor + spend audit across the existing KOL budget — invoice-level review (this is the audit that caught Capitol's missing $100K and the $300K Sunset-billboard overspend on prior CCD engagements)",
         "Build the Laylo / SMS fan-data layer, tour-venue QR capture kits, D2C checkout stack (with Philippines-based CS team pre-onboarded), and the first creator-marketing comment-intelligence deployment for the July KOL comeback",
         "Paul / events portfolio delivered to WONDER in the first 10 days so YG Plus pop-up locks move before their in-house stall vendor does",
@@ -334,7 +334,7 @@ export const wonder: ProjectData = {
           name: "Alignment + Orchestration",
           quantity: "Weekly",
           description:
-            "Weekly standing with WONDER, S2, Cacao, Origin, and whoever else is on a release — CCD quarterbacks the plan so WONDER isn't in four meetings with four vendors chasing four overlapping narratives. Single accountable operator on the US side.",
+            "Weekly standing with WONDER, S2, Kakao, Origin, and whoever else is on a release — CCD quarterbacks the plan so WONDER isn't in four meetings with four vendors chasing four overlapping narratives. Single accountable operator on the US side.",
         },
         {
           name: "YGP Services Productization",
@@ -452,9 +452,9 @@ export const wonder: ProjectData = {
     subheading:
       "What the $13K/mo retainer + per-release tiers cover — and what sits outside this engagement. CCD is built to quarterback and execute the US-side stack. Anything that belongs to Korea-side operations or to WONDER's existing contracted vendors stays where it is.",
     included: [
-      "Strategic quarterback role across S2, Cacao, Origin, and all US-side vendors — weekly alignment and single-point-of-accountability for the Kiss of Life rebrand and the YGP build-out",
+      "Strategic quarterback role across S2, Kakao, Origin, and all US-side vendors — weekly alignment and single-point-of-accountability for the Kiss of Life rebrand and the YGP build-out",
       "Monthly vendor + spend audits on US marketing invoices, including negotiated rate reviews and line-item recovery of misallocated spend",
-      "Laylo / SMS / email fan-data infrastructure and the Berriz bridge — independent of Cacao and Weverse-adjacent CRMs",
+      "Laylo / SMS / email fan-data infrastructure and the Berriz bridge — independent of Kakao and Weverse-adjacent CRMs",
       "D2C Shopify build and Philippines-based CS partnership activation for customer service, returns, and shipping ops",
       "Creator marketing + comment-intelligence program — strategy, creator sourcing, cultural tie-in concepting, and campaign QA",
       "Three-pillar merch / physicals / D2C supply-chain build — tour partner, Target/Walmart/indie-retail partner, EU production partner",
@@ -464,7 +464,7 @@ export const wonder: ProjectData = {
     excluded: [
       "Media and creator fees — ad spend and creator payouts are billed separately to platforms / creators at a 15% management fee, not bundled into the retainer",
       "Graphic design, music-video production, and hero brand creative (available as add-on through CCD's in-house AI creative studio — scoped and quoted separately)",
-      "Korea-side label operations, Korea-side physical production, and Cacao-exclusive distribution channels (stays with S2 / Cacao where it lives today)",
+      "Korea-side label operations, Korea-side physical production, and Kakao-exclusive distribution channels (stays with S2 / Kakao where it lives today)",
       "Day-to-day social-media content posting and community reply management (available as add-on if WONDER wants CCD to absorb that)",
       "Day-to-day Berriz content management — CCD builds the bridge, but Berriz posting remains with the existing S2 team",
       "Artist management, publishing administration, and sync licensing (WONDER's existing scope — untouched)",
@@ -478,7 +478,7 @@ export const wonder: ProjectData = {
       {
         name: "Strategic Quarterback",
         description:
-          "Weekly alignment across S2, Cacao, Origin, and all retained US vendors. Monthly invoice-level spend audit. Single accountable operator representing WONDER's interest in every US label and agency conversation.",
+          "Weekly alignment across S2, Kakao, Origin, and all retained US vendors. Monthly invoice-level spend audit. Single accountable operator representing WONDER's interest in every US label and agency conversation.",
         price: 4500,
         recurring: true,
       },
@@ -574,7 +574,7 @@ export const wonder: ProjectData = {
       step: 2,
       title: "10-Day Onboarding Sprint",
       description:
-        "Paul's events portfolio to WONDER. Vendor audit on the existing KOL budget. Berriz + Cacao data-pull access. D2C store spec kickoff. All inside the first 10 days so the YGP pop-up locks don't slip to their current vendor.",
+        "Paul's events portfolio to WONDER. Vendor audit on the existing KOL budget. Berriz + Kakao data-pull access. D2C store spec kickoff. All inside the first 10 days so the YGP pop-up locks don't slip to their current vendor.",
     },
     {
       step: 3,
