@@ -44,7 +44,7 @@ export function Audience() {
               {demographicCards.map((card, i) => (
                 <div
                   key={i}
-                  className="card frame bg-bg-card rounded-none p-6"
+                  className="ccd-card rounded-none p-6"
                 >
                   <p className="text-xs font-mono text-accent/70 tracking-[0.15em] uppercase mb-2">
                     {card.label}
@@ -63,7 +63,7 @@ export function Audience() {
           </ScrollReveal>
         ) : (
           <ScrollReveal className="mt-16">
-            <div className="card frame bg-bg-card rounded-none p-8">
+            <div className="ccd-card rounded-none p-8">
               <p className="text-xs font-mono text-accent/70 tracking-[0.15em] uppercase mb-3">
                 Demographics
               </p>
@@ -134,7 +134,7 @@ export function Audience() {
             </div>
           </ScrollReveal>
           <ScrollReveal className="md:col-span-5">
-            <div className="card frame bg-bg-card rounded-none p-8 h-full">
+            <div className="ccd-card rounded-none p-8 h-full">
               <p className="text-xs font-mono text-accent/70 tracking-[0.15em] uppercase mb-4">
                 Pain Points
               </p>
@@ -157,7 +157,7 @@ export function Audience() {
         {/* Purchase Triggers */}
         {purchaseTriggers && purchaseTriggers.length > 0 && (
           <ScrollReveal className="mt-12">
-            <div className="card frame bg-bg-card rounded-none p-8">
+            <div className="ccd-card rounded-none p-8">
               <p className="text-xs font-mono text-accent/70 tracking-[0.15em] uppercase mb-4">
                 What Makes Them Buy
               </p>
@@ -185,7 +185,7 @@ export function Audience() {
               {platforms.map((platform, i) => (
                 <motion.div
                   key={i}
-                  className="card frame bg-bg-card rounded-none p-6"
+                  className="ccd-card rounded-none p-6"
                   whileHover={{ y: -2, transition: { duration: 0.2 } }}
                 >
                   <p className="text-text-primary text-base font-bold mb-2">
@@ -210,7 +210,7 @@ export function Audience() {
               {quotes.map((quote, i) => (
                 <motion.div
                   key={i}
-                  className="card frame bg-bg-card rounded-none p-6"
+                  className="ccd-card rounded-none p-6"
                   whileHover={{ y: -2, transition: { duration: 0.2 } }}
                 >
                   <p className="text-text-primary text-base leading-relaxed italic mb-3">

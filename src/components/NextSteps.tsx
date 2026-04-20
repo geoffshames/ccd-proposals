@@ -40,7 +40,7 @@ export function NextSteps() {
             return (
               <StaggerItem key={i} className={layout.span} variant={layout.variant}>
                 <TiltCard className="group h-full">
-                  <div className="card frame bg-bg-card rounded-none p-7 hover:bg-bg-card-hover transition-all duration-500 h-full">
+                  <div className="ccd-card rounded-none p-7 hover:bg-bg-card-hover transition-all duration-500 h-full">
                     <div className="flex items-start gap-5">
                       <div className="w-10 h-10 rounded-none bg-accent/10 flex items-center justify-center flex-shrink-0 group-hover:bg-accent group-hover:scale-105 transition-all duration-500">
                         <span className="text-[15px] font-mono text-accent group-hover:text-bg transition-colors duration-500 font-bold">
@@ -62,7 +62,7 @@ export function NextSteps() {
         {/* Contact CTA */}
         <ScrollReveal delay={0.3} variant="scaleIn" className="mt-16">
           <TiltCard className="group max-w-xl mx-auto">
-            <div className="card frame bg-bg-card rounded-none p-8 text-center hover:bg-bg-card-hover transition-all duration-500">
+            <div className="ccd-card rounded-none p-8 text-center hover:bg-bg-card-hover transition-all duration-500">
               <h3 className="text-lg font-semibold text-text-primary mb-2">
                 {PROJECT.cta.body}
               </h3>

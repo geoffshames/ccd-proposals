@@ -84,7 +84,7 @@ export function AboutCCD() {
                 <div className="text-[10px] font-mono tracking-[0.2em] text-accent uppercase mb-4">
                   {study.client}
                 </div>
-                <div className="text-[clamp(1.8rem,3vw,2.5rem)] font-bold text-text-primary tracking-[-0.03em] mb-2">
+                <div className="display text-[clamp(1.8rem,3vw,2.5rem)] text-text-primary tracking-[-0.03em] mb-2">
                   {study.metric}
                 </div>
                 <div className="text-[13px] text-text-muted leading-relaxed uppercase">

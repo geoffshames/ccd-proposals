@@ -66,7 +66,7 @@ export function Deliverables() {
                       <div className={`rounded-none p-10 h-full transition-all duration-500 ${
                         isAccent
                           ? "bg-white/[0.05] border border-white/[0.08] hover:bg-white/[0.08]"
-                          : "card frame bg-bg-card hover:bg-bg-card-hover"
+                          : "ccd-card hover:bg-bg-card-hover"
                       }`}>
                         <div className="flex items-start justify-between mb-5">
                           <h4 className={`${isWide ? "text-[22px]" : "text-[18px]"} font-bold text-text-primary tracking-[-0.01em] group-hover:text-accent transition-colors duration-500`}>
