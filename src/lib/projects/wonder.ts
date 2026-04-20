@@ -21,8 +21,8 @@ export const wonder: ProjectData = {
     tagline:
       "Two mandates, one operator. Crowd Control stands up the US marketing, data, creator, and physical-infrastructure layer WONDER needs to (1) close the Kiss of Life rebrand through Q3 and (2) build the services blueprint YG Plus needs to hit its three 2027 KPIs — without WONDER having to staff an in-house execution team in Los Angeles.",
     type: "Strategic Quarterback + US Services Infrastructure",
-    startDate: "July 1, 2026",
-    endDate: "December 31, 2026",
+    startDate: "May 1, 2026",
+    endDate: "October 31, 2026",
     duration: "6 Months",
     status: "Awaiting Approval" as const,
   },
@@ -33,7 +33,7 @@ export const wonder: ProjectData = {
       "This engagement is structured on two tracks running in parallel. Track 1 is the Kiss of Life rebrand flagship — Crowd Control takes the quarterback seat alongside S2 Entertainment, Kakao, and Origin to run the US marketing against the July comeback: creator and edit-community mobilization, narrative-driven comment ops, experiential pop-ups, SMS capture, and proper physical-album distribution. Track 2 is the YG Plus services infrastructure — Crowd Control builds the marketing, merch, D2C, and data-capture blueprint that becomes YG Plus's productized offering to its 600+ partner-label catalog, so YG Plus can hit its 2027 KPIs (Billboard entry, infrastructure stand-up, marketing services delivery) the same way Kakao International delivers for Kakao Entertainment. WONDER sits in the orchestration seat. Crowd Control owns execution, vendor audit, data sovereignty, and US-side supply chain — so every dollar WONDER routes through YG Plus's advance money or the Kiss of Life marketing budget comes back as owned infrastructure instead of disposable spend.",
     objectives: [
       "Quarterback the Kiss of Life US rebrand — align S2, Kakao, Origin, and any retained vendors under one execution plan, audit every invoice, and make sure the July comeback lands with proper creator marketing, cultural tie-ins, and physical-album distribution for the first time in the US",
-      "Build an owned fan-data layer for WONDER's roster — SMS/email capture targeting 100K+ US phone numbers across Kiss of Life and catalog acts, independent of Berriz/Weverse/Kakao's walled gardens, so WONDER can activate a release or tour without needing permission from a label CRM",
+      "Build an owned fan-data layer for WONDER's roster — SMS/email capture targeting 100K+ US phone numbers across Kiss of Life and catalog acts, independent of Weverse/Kakao's walled gardens, so WONDER can activate a release or tour without needing permission from a label CRM",
       "Deploy the creator marketing + comment-intelligence system — real strategy tied to cultural IP (ie. Euphoria, Tim Burton, Y2K, K-drama edit crossovers), paid deployment against the top 10% of creators, and the comment-seeding tool Crowd Control is already operating for other artists",
       "Stand up the three-pillar physical / merch / D2C supply chain — tour fulfillment, Target/Walmart/record-store album distribution, and a branded D2C layer with Philippines-based CS that fixes the $14-vs-$4 US-merch-cost problem and the zero-US-physicals problem in one move",
       "Productize the YG Plus services layer — package the Kiss of Life playbook into a per-release services offering, plus experiential pop-ups through Crowd Control's events partner, so YG Plus can offer real services against its advance money instead of burning it as straight cash to labels that don't know how to deploy it",
@@ -75,7 +75,7 @@ export const wonder: ProjectData = {
         label: "Walled-Garden Data",
         finding:
           "Fan data is getting captured — but mostly by Kakao (distributor) and S2 (label). The US fan list lives inside someone else's CRM. WONDER can't segment it, can't retarget independently, can't run a pre-save-to-SMS funnel on its own cadence, and can't text 100K US fans the day a Kiss of Life single drops to pull in day-one streams. The audience exists — it's just behind a wall that isn't yours. This is a sovereignty gap, not an existence gap, and it's exactly the pattern Crowd Control built around Kakao International for Kev's team.",
-        source: "S2 / Kakao distribution contract context + Berriz platform analysis",
+        source: "S2 / Kakao distribution contract context + Weverse platform analysis",
       },
       {
         label: "US Merch Cost Bleed",
@@ -99,7 +99,7 @@ export const wonder: ProjectData = {
     summary:
       "This engagement serves two audience layers: the end-consumer audience (the Kiss of Life US fandom and the broader 4th-gen K-pop ticket/physical-buyer) and the institutional audience WONDER is selling into (YG Plus leadership). The consumer layer drives the creative and media work. The institutional layer drives the services productization.",
     demographics:
-      "Consumer: 16–28 US core, ~85% female, multi-platform (X for coordination, TikTok for discovery, IG for content, Berriz for community). Institutional: YG Plus executive, S2 management, Kakao US operations.",
+      "Consumer: 16–28 US core, ~85% female, multi-platform (X for coordination, TikTok for discovery, IG for content, Weverse for community). Institutional: YG Plus executive, S2 management, Kakao US operations.",
     demographicCards: [
       {
         label: "Age Range",
@@ -119,7 +119,7 @@ export const wonder: ProjectData = {
       {
         label: "Behavior",
         value: "Multi-platform",
-        detail: "X coordinates, TikTok discovers, Berriz engages, Target/Walmart converts",
+        detail: "X coordinates, TikTok discovers, Weverse engages, Target/Walmart converts",
       },
     ],
     personas: [
@@ -153,7 +153,7 @@ export const wonder: ProjectData = {
     ],
     painPoints: [
       "Kiss of Life releases drop in the US with no physicals, no creator campaign, no SMS list to text, and no D2C store — so the fans who want to spend money on the comeback have nowhere to spend it",
-      "Berriz is a walled garden — fan data stays with Kakao, and the WONDER/S2 side can't retarget, segment, or run independent flows off of it",
+      "Weverse is a walled garden — fan data stays with HYBE (the same company that holds a stake in YG Plus), and the WONDER/S2 side can't retarget, segment, or run independent flows off of it",
       "US merch that does exist costs 3–4x what Korean merch costs to produce, eating margin before it ever ships",
       "There is no centralized US fan-communication channel — every touchpoint (Ticketmaster queue, Target checkout, Spotify pre-save, tour-venue merch booth) is a capture moment that isn't being captured",
     ],
@@ -180,9 +180,9 @@ export const wonder: ProjectData = {
           "K-pop coordination backbone. Streaming parties, chart campaigns, and narrative comment ops live here. The comment-intelligence tool (Crowd Control's partner build) onboards editors and clippers into a paid comment network that operates primarily across IG, TikTok, and X.",
       },
       {
-        name: "Berriz (Kakao)",
+        name: "Weverse (HYBE)",
         description:
-          "Official fan community — high engagement, walled-garden data. Crowd Control bridges Berriz engagement to owned Laylo/SMS infrastructure so WONDER can run its own flows without relying on Kakao's CRM.",
+          "Official fan community — high engagement, walled-garden data sitting inside HYBE infrastructure. Crowd Control bridges Weverse engagement to owned Laylo/SMS infrastructure so WONDER can run its own flows on its own cadence, not someone else's.",
       },
     ],
     quotes: [
@@ -212,7 +212,7 @@ export const wonder: ProjectData = {
       metric: "US SMS Database",
       value: "100K+",
       context:
-        "Build an owned US SMS + email list of 100K+ fans across Kiss of Life and YG Plus catalog acts, captured through pre-save flows, tour-venue QR, D2C checkout, and data-gated exclusives — independent of Berriz, Kakao, and any third-party CRM.",
+        "Build an owned US SMS + email list of 100K+ fans across Kiss of Life and YG Plus catalog acts, captured through pre-save flows, tour-venue QR, D2C checkout, and data-gated exclusives — independent of Weverse, Kakao, and any third-party CRM.",
     },
     {
       metric: "Creator Campaign Output",
@@ -261,26 +261,26 @@ export const wonder: ProjectData = {
 
   timelineHeading: "Engagement Roadmap",
   timelineSubheading:
-    "A two-track 6-month engagement: the Kiss of Life rebrand runs front-and-center on the consumer side, while the YG Plus services infrastructure gets built in parallel on the institutional side — both delivering by December so WONDER walks into 2027 with a signed YG Plus services deal and a proven flagship case study.",
+    "A two-track 6-month engagement: the Kiss of Life rebrand runs front-and-center on the consumer side, while the YG Plus services infrastructure gets built in parallel on the institutional side — both delivering by end of October so WONDER walks into Q4 and 2027 with a signed YG Plus services deal and a proven flagship case study.",
   timelineImageCaption: "6 Months / 4 Phases / 2 Tracks",
 
   timeline: [
     {
-      phase: "Audit + Infrastructure Build",
-      week: "Weeks 1–4",
-      date: "July 2026",
+      phase: "Foundation Build + Vendor Audit",
+      week: "Weeks 1–8",
+      date: "May – June 2026",
       status: "upcoming" as const,
       tasks: [
         "Quarterback kickoff — align WONDER, S2, Kakao, Origin, and any retained vendors under a single execution plan with clear deliverable, spend, and accountability ownership on every line",
         "Vendor + spend audit across the existing Kiss of Life budget — invoice-level review (this is the audit that caught Capitol's missing $100K and the $300K Sunset-billboard overspend on prior Crowd Control engagements)",
-        "Build the Laylo / SMS fan-data layer, tour-venue QR capture kits, D2C checkout stack (with Philippines-based CS team pre-onboarded), and the first creator-marketing comment-intelligence deployment for the July Kiss of Life comeback",
+        "Build the Laylo / SMS fan-data layer, tour-venue QR capture kits, D2C checkout stack (with Philippines-based CS team pre-onboarded), and the creator-marketing + comment-intelligence network — all live and pressure-tested before the July Kiss of Life comeback, not scrambled to during it",
         "Paul / events portfolio delivered to WONDER in the first 10 days so the YG Plus pop-up locks move before their in-house stall vendor does",
       ],
     },
     {
       phase: "Kiss of Life Rebrand Flagship",
-      week: "Weeks 5–12",
-      date: "August – September 2026",
+      week: "Weeks 9–14",
+      date: "July – August 2026",
       status: "upcoming" as const,
       tasks: [
         "Execute the full cultural tie-in creator campaign against the Kiss of Life July release — ie. Euphoria / Tim Burton / Y2K / K-drama-adjacent edit campaigns deployed through paid creators at the top 10% of the edit community, not through clipping farms",
@@ -291,8 +291,8 @@ export const wonder: ProjectData = {
     },
     {
       phase: "YG Plus Services Productization",
-      week: "Weeks 13–18",
-      date: "October – November 2026",
+      week: "Weeks 15–20",
+      date: "August – September 2026",
       status: "upcoming" as const,
       tasks: [
         "Translate the Kiss of Life playbook into productized YG Plus services — documented deliverable schedules, expected outcomes, and creative / data / physical checklists priced to the level of the release",
@@ -303,8 +303,8 @@ export const wonder: ProjectData = {
     },
     {
       phase: "Activation + 2027 Planning",
-      week: "Weeks 19–24",
-      date: "November – December 2026",
+      week: "Weeks 21–24",
+      date: "October 2026",
       status: "upcoming" as const,
       tasks: [
         "Post-Kiss-of-Life-comeback data analysis — capture rates, physical sales, creator campaign attribution, D2C revenue per capture — packaged as the WONDER case-study deck for the YG Plus signing meeting",
@@ -370,7 +370,7 @@ export const wonder: ProjectData = {
           name: "Laylo / SMS Stack Build + Ops",
           quantity: "Monthly",
           description:
-            "Full Laylo deployment — fan database architecture, SMS/email capture flows, segmentation (by act, market, purchase history), welcome sequences, and Berriz-to-Laylo bridge strategy. Targets 100K+ US phone numbers across Kiss of Life and YG Plus catalog inside the engagement window.",
+            "Full Laylo deployment — fan database architecture, SMS/email capture flows, segmentation (by act, market, purchase history), welcome sequences, and Weverse-to-Laylo bridge strategy. Targets 100K+ US phone numbers across Kiss of Life and YG Plus catalog inside the engagement window.",
         },
         {
           name: "Tour Capture Kits",
@@ -442,7 +442,7 @@ export const wonder: ProjectData = {
     included: [
       "Strategic quarterback role across S2, Kakao, Origin, and all US-side vendors — weekly alignment and single-point-of-accountability for the Kiss of Life rebrand and the YG Plus build-out",
       "Monthly vendor + spend audits on US marketing invoices, including negotiated rate reviews and line-item recovery of misallocated spend",
-      "Laylo / SMS / email fan-data infrastructure and the Berriz bridge — independent of Kakao and Weverse-adjacent CRMs",
+      "Laylo / SMS / email fan-data infrastructure and the Weverse bridge — independent of Kakao and Weverse-adjacent CRMs",
       "Creator marketing + comment-intelligence program — strategy, creator sourcing, cultural tie-in concepting, and campaign QA",
       "YG Plus services productization — productized per-release package architecture, Billboard-entry playbook, and signing-meeting deck",
       "Per-release campaign scope — creator, comment ops, paid media oversight, and data-capture activation, quoted per release on top of the retainer",
@@ -453,7 +453,7 @@ export const wonder: ProjectData = {
       "Graphic design, music-video production, and hero brand creative (available as add-on through Crowd Control's in-house AI creative studio — scoped and quoted separately)",
       "Korea-side label operations, Korea-side physical production, and Kakao-exclusive distribution channels (stays with S2 / Kakao where it lives today)",
       "Day-to-day social-media content posting and community reply management (available as add-on if WONDER wants Crowd Control to absorb that)",
-      "Day-to-day Berriz content management — Crowd Control builds the bridge, but Berriz posting remains with the existing S2 team",
+      "Day-to-day Weverse content management — Crowd Control builds the bridge, but Weverse posting remains with the existing S2 team",
       "Artist management, publishing administration, and sync licensing (WONDER's existing scope — untouched)",
     ],
   },
@@ -472,7 +472,7 @@ export const wonder: ProjectData = {
       {
         name: "Data / Fan Ops",
         description:
-          "Laylo / SMS / email build and ongoing operation, Berriz bridge strategy, tour-venue capture, and pre-save-to-SMS funnel ops. Targets 100K+ captured US fans across Kiss of Life + YG Plus catalog during the engagement. Priced per client inside WONDER's management book.",
+          "Laylo / SMS / email build and ongoing operation, Weverse bridge strategy, tour-venue capture, and pre-save-to-SMS funnel ops. Targets 100K+ captured US fans across Kiss of Life + YG Plus catalog during the engagement. Priced per client inside WONDER's management book.",
         price: 2500,
         recurring: true,
       },
@@ -512,40 +512,40 @@ export const wonder: ProjectData = {
     total: 117500,
     paymentSchedule: [
       {
-        milestone: "Month 1 (July — retainer + setup)",
+        milestone: "Month 1 (May — retainer + setup)",
         percentage: 25.5,
         amount: 30000,
         due: "Upon approval",
       },
       {
-        milestone: "Month 2 (August)",
+        milestone: "Month 2 (June)",
+        percentage: 14.9,
+        amount: 17500,
+        due: "June 1, 2026",
+      },
+      {
+        milestone: "Month 3 (July)",
+        percentage: 14.9,
+        amount: 17500,
+        due: "July 1, 2026",
+      },
+      {
+        milestone: "Month 4 (August)",
         percentage: 14.9,
         amount: 17500,
         due: "August 1, 2026",
       },
       {
-        milestone: "Month 3 (September)",
+        milestone: "Month 5 (September)",
         percentage: 14.9,
         amount: 17500,
         due: "September 1, 2026",
       },
       {
-        milestone: "Month 4 (October)",
+        milestone: "Month 6 (October)",
         percentage: 14.9,
         amount: 17500,
         due: "October 1, 2026",
-      },
-      {
-        milestone: "Month 5 (November)",
-        percentage: 14.9,
-        amount: 17500,
-        due: "November 1, 2026",
-      },
-      {
-        milestone: "Month 6 (December)",
-        percentage: 14.9,
-        amount: 17500,
-        due: "December 1, 2026",
       },
     ],
     paymentTerms: "7 days from invoice",
@@ -563,13 +563,13 @@ export const wonder: ProjectData = {
       step: 2,
       title: "10-Day Onboarding Sprint",
       description:
-        "Paul's events portfolio to WONDER. Vendor audit on the existing Kiss of Life budget. Berriz + Kakao data-pull access. D2C store spec kickoff. All inside the first 10 days so the YG Plus pop-up locks don't slip to their current vendor.",
+        "Paul's events portfolio to WONDER. Vendor audit on the existing Kiss of Life budget. Weverse + Kakao data-pull access. D2C store spec kickoff. All inside the first 10 days so the YG Plus pop-up locks don't slip to their current vendor.",
     },
     {
       step: 3,
       title: "Infrastructure Go-Live",
       description:
-        "Laylo stack live, creator / comment-intelligence network onboarded, three-pillar supply-chain partners MOU'd, and the Philippines CS team staffed — all by end of Week 4 so the July Kiss of Life push lands on real infrastructure.",
+        "Laylo stack live, creator / comment-intelligence network onboarded, three-pillar supply-chain partners MOU'd, and the Philippines CS team staffed — all by end of Week 8 so the July Kiss of Life push lands on real infrastructure, pre-tested.",
     },
     {
       step: 4,
