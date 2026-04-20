@@ -8,7 +8,7 @@ import { useProject } from "@/lib/project-context";
 const DEFAULT_CASE_STUDIES = [
   {
     client: "BBNO$",
-    metric: "150K+",
+    metric: "900K+",
     description: "TIKTOK CREATES",
   },
   {

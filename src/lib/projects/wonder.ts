@@ -68,7 +68,7 @@ export const wonder: ProjectData = {
       {
         label: "Creator Adoption Flatline",
         finding:
-          "Kiss of Life's last single has near-zero sound usage on TikTok/Reels relative to fandom size (3.8M TikTok followers). There's no protracted creator strategy, no cultural tie-in, and no narrative hook — the last clipping vendor engagement produced volume without resonance. Dominic Fike's team ran ~600K Euphoria-tied creates and landed #10 on the Hot 100 the same month. BBNO$'s team ran Corpse Bride edits that drove 900K+ TikTok creates. That playbook — cultural IP (ie. Euphoria, Y2K, K-drama crossovers) + strong visual + paid deployment on the top 10% of creators — is currently not being run on Kiss of Life.",
+          "Kiss of Life's last single has near-zero sound usage on TikTok/Reels relative to fandom size (3.8M TikTok followers). There's no protracted creator strategy, no cultural tie-in, and no narrative hook — the last clipping vendor engagement produced volume without resonance. Dominic Fike's team ran ~600K Euphoria-tied creates and landed #10 on the Hot 100 the same month. BBNO$'s creator-edit campaign drove 900K+ TikTok creates on the sound. That playbook — cultural IP (ie. Euphoria, Y2K, K-drama crossovers) + strong visual + paid deployment on the top 10% of creators — is currently not being run on Kiss of Life.",
         source: "TikTok/IG creator audit + Hot 100 case-study analysis",
       },
       {
@@ -146,7 +146,7 @@ export const wonder: ProjectData = {
       },
     ],
     psychographics: [
-      "Narrative-driven — the edit community responds to stories and visual universes (ie. Corpse Bride, Euphoria, Y2K, Wes Anderson crossovers) more than to asset drops, so every campaign needs IP tie-in, not just hashtag deployment",
+      "Narrative-driven — the edit community responds to stories and visual universes (ie. Euphoria, Y2K, Wes Anderson crossovers, A24 film palettes) more than to asset drops, so every campaign needs IP tie-in, not just hashtag deployment",
       "Fandom-organized — US K-pop fans coordinate streaming pushes, chart strategy, and merch purchases across Discord/X, so we win by giving them coordination infrastructure (pre-save links, SMS drops, stream-tracking pages), not by trying to replace their energy",
       "Platform-native — they can smell a clipping farm, a botted comment section, or AI-generated slop with two followers instantly, so Crowd Control's comment-intelligence tool only works if every comment carries a narrative and every creator is legit",
       "Physically invested — photocards, poster inclusions, album variants, and city-edition merch drive real revenue, which means the physical/D2C track isn't a 'nice-to-have' alongside digital, it's the primary monetization surface",
@@ -394,7 +394,7 @@ export const wonder: ProjectData = {
           name: "Cultural Tie-In Campaign Strategy",
           quantity: "Per release",
           description:
-            "Strategy + execution for the Dominic Fike / BBNO$-style tie-in — find the cultural IP that matches the song's visual and tonal universe (ie. Euphoria, Corpse Bride, Y2K, K-drama cross-overs), then recruit and deploy the edit community that's already making that content.",
+            "Strategy + execution for the Dominic Fike / BBNO$-style tie-in — find the cultural IP that matches the song's visual and tonal universe (ie. Euphoria, Y2K, K-drama cross-overs, A24 palettes), then recruit and deploy the edit community that's already making that content.",
         },
         {
           name: "Top-10% Creator Paid Deployment",
