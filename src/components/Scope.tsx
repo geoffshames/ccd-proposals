@@ -38,10 +38,10 @@ export function Scope() {
                   {PROJECT.scope.included.map((item, i) => (
                     <StaggerItem key={i}>
                       <div className="flex items-start gap-4">
-                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" className="flex-shrink-0 mt-1 opacity-40">
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" className="flex-shrink-0 mt-1 opacity-100">
                           <path d="M2.5 7L5.5 10L11.5 4" stroke="#4ADE80" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                         </svg>
-                        <span className="text-[14px] text-text-secondary leading-[1.6]">{item}</span>
+                        <span className="text-[14px] text-text-primary leading-[1.6]">{item}</span>
                       </div>
                     </StaggerItem>
                   ))}
@@ -62,16 +62,16 @@ export function Scope() {
                   {PROJECT.scope.excluded.map((item, i) => (
                     <StaggerItem key={i}>
                       <div className="flex items-start gap-4">
-                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" className="flex-shrink-0 mt-1 opacity-20">
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" className="flex-shrink-0 mt-1 opacity-70">
                           <path d="M3.5 3.5L10.5 10.5M3.5 10.5L10.5 3.5" stroke="#888" strokeWidth="1.5" strokeLinecap="round" />
                         </svg>
-                        <span className="text-[14px] text-text-muted leading-[1.6]">{item}</span>
+                        <span className="text-[14px] text-text-primary leading-[1.6]">{item}</span>
                       </div>
                     </StaggerItem>
                   ))}
                 </StaggerContainer>
 
-                <p className="text-[12px] text-text-muted/40 mt-10 leading-[1.6]">
+                <p className="text-[12px] text-text-muted mt-10 leading-[1.6]">
                   Additional services can be scoped and quoted separately.
                 </p>
               </div>
