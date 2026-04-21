@@ -96,9 +96,9 @@ export function Investment() {
                     </div>
                   )}
                   {q.model === "retainer" && (
-                    <div className="px-10 py-4 flex items-center justify-between border-t border-border">
-                      <span className="text-[13px] text-text-muted">Monthly Retainer</span>
-                      <span className="text-[14px] font-mono text-text-secondary tabular-nums">{formatCurrency(q.subtotal)}<span className="text-text-muted/60 text-[11px]">/mo</span></span>
+                    <div className="px-10 py-5 flex items-center justify-between border-t border-border bg-bg-elevated/40">
+                      <span className="text-[14px] font-semibold text-text-primary tracking-[-0.01em] uppercase">Monthly Retainer</span>
+                      <span className="display text-[26px] text-text-primary tabular-nums tracking-[-0.02em]">{formatCurrency(q.subtotal)}<span className="text-text-muted/70 text-[13px] font-mono ml-0.5">/mo</span></span>
                     </div>
                   )}
                   {q.model === "retainer" && (
