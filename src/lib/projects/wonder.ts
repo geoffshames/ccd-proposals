@@ -469,24 +469,18 @@ export const wonder: ProjectData = {
     currency: "USD",
     lineItems: [
       {
-        name: "Strategic Quarterback",
+        name: "Base Retainer — Strategic Quarterback",
         description:
-          "Weekly alignment across S2, Kakao, Origin, and all retained US vendors. Monthly invoice-level spend audit. Single accountable operator representing WONDER's interest in every US label and agency conversation. YG Plus services productization, Billboard-entry playbook, and signing-meeting deck roll up into this seat.",
+          "Weekly alignment across S2, Kakao, Origin, and all retained US vendors. Monthly invoice-level spend audit. Single accountable operator representing WONDER's interest in every US label and agency conversation. YG Plus services productization, Billboard-entry playbook, and signing-meeting deck roll up into this seat. Flat base — does not scale with roster size.",
         price: 10000,
         recurring: true,
       },
       {
-        name: "Data / Fan Ops",
+        name: "Per-Client Services — Data + Creator",
         description:
-          "Laylo / SMS / email build and ongoing operation, Weverse bridge strategy, tour-venue capture, and pre-save-to-SMS funnel ops. Targets 100K+ captured US fans across Kiss of Life + YG Plus catalog during the engagement. Priced per client inside WONDER's management book.",
-        price: 2500,
-        recurring: true,
-      },
-      {
-        name: "Creator Marketing & Comment Ops",
-        description:
-          "Cultural tie-in strategy (ie. Euphoria, Y2K, K-drama crossovers), top-10% creator paid deployment network, and the comment-intelligence tool. Creator fees and paid media spend are billed separately at a 15% management rate — retainer covers program management only.",
-        price: 5000,
+          "$5,000/mo creator marketing & comment ops (cultural tie-in strategy, top-10% creator paid deployment, comment-intelligence tool) + $2,500/mo data / fan ops (Laylo / SMS / email build, Weverse bridge, tour-venue capture, pre-save-to-SMS). Creator fees and paid media billed separately at 15% management. Scales per artist on WONDER's roster — quote below assumes Kiss of Life as primary client.",
+        price: 7500,
+        priceLabel: "$7,500/mo · per client",
         recurring: true,
       },
       {
