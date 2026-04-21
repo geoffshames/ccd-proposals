@@ -476,11 +476,19 @@ export const wonder: ProjectData = {
         recurring: true,
       },
       {
-        name: "Per-Client Services — Data + Creator",
+        name: "Data / Fan Ops",
         description:
-          "$5,000/mo creator marketing & comment ops (cultural tie-in strategy, top-10% creator paid deployment, comment-intelligence tool) + $2,500/mo data / fan ops (Laylo / SMS / email build, Weverse bridge, tour-venue capture, pre-save-to-SMS). Creator fees and paid media billed separately at 15% management. Scales per artist on WONDER's roster — quote below assumes Kiss of Life as primary client.",
-        price: 7500,
-        priceLabel: "$7,500/mo · per client",
+          "Laylo / SMS / email build and ongoing operation, Weverse bridge strategy, tour-venue capture, and pre-save-to-SMS funnel ops. Targets 100K+ captured US fans across Kiss of Life + YG Plus catalog during the engagement. Scales per artist on WONDER's roster.",
+        price: 2500,
+        priceLabel: "$2,500/mo · per client",
+        recurring: true,
+      },
+      {
+        name: "Creator Marketing & Comment Ops",
+        description:
+          "Cultural tie-in strategy (ie. Euphoria, Y2K, K-drama crossovers), top-10% creator paid deployment network, and the comment-intelligence tool. Creator fees and paid media spend billed separately at a 15% management rate — retainer covers program management only. Scales per artist on WONDER's roster.",
+        price: 5000,
+        priceLabel: "$5,000/mo · per client",
         recurring: true,
       },
       {
