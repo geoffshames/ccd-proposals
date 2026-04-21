@@ -63,7 +63,7 @@ export function Scope() {
                     <StaggerItem key={i}>
                       <div className="flex items-start gap-4">
                         <svg width="14" height="14" viewBox="0 0 14 14" fill="none" className="flex-shrink-0 mt-1 opacity-70">
-                          <path d="M3.5 3.5L10.5 10.5M3.5 10.5L10.5 3.5" stroke="#888" strokeWidth="1.5" strokeLinecap="round" />
+                          <path d="M3.5 3.5L10.5 10.5M3.5 10.5L10.5 3.5" stroke="#FD3737" strokeWidth="1.5" strokeLinecap="round" />
                         </svg>
                         <span className="text-[14px] text-text-primary leading-[1.6]">{item}</span>
                       </div>
