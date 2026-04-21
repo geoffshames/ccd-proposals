@@ -80,7 +80,7 @@ export const wonder: ProjectData = {
       {
         label: "US Merch Cost Bleed",
         finding:
-          "Last US physical production (Opening Ceremony, ~10K units) ran $14/unit. Korea domestic production runs $3–4/unit for comparable CD+photocard packages. That's a $100K+ margin leak per release cycle before shipping, and it's the reason most Korean labels simply don't send albums into the US. The fix isn't one vendor — it's a three-pillar supply chain: tour fulfillment, album retail distribution (Target/Walmart/record stores), and a branded D2C layer with real customer service. Crowd Control has the partner operators for each pillar already active on Monsta X, Logic, Wiz Khalifa, Lana Del Rey, and Backstreet Boys tours.",
+          "Last US physical production (Ceremony Of Roses, ~10K units) ran $14/unit. Korea domestic production runs $3–4/unit for comparable CD+photocard packages. That's a $100K+ margin leak per release cycle before shipping, and it's the reason most Korean labels simply don't send albums into the US. The fix isn't one vendor — it's a three-pillar supply chain: tour fulfillment, album retail distribution (Target/Walmart/record stores), and a branded D2C layer with real customer service. Crowd Control has the partner operators for each pillar already active on Monsta X, Logic, Wiz Khalifa, Lana Del Rey, and Backstreet Boys tours.",
         source: "WONDER merch cost disclosure + Crowd Control merch-partner network audit",
       },
       {
