@@ -35,7 +35,7 @@ export const wonder: ProjectData = {
       "Quarterback the Kiss of Life US rebrand — align S2, Kakao, Origin, and any retained vendors under one execution plan, audit every invoice, and make sure the July comeback lands with proper creator marketing, cultural tie-ins, and physical-album distribution for the first time in the US",
       "Build an owned fan-data layer for WONDER's roster — SMS/email capture targeting 100K+ US phone numbers across Kiss of Life and catalog acts, independent of Weverse/Kakao's walled gardens, so WONDER can activate a release or tour without needing permission from a label CRM",
       "Deploy the creator marketing + comment-intelligence system — real strategy tied to cultural IP (ie. Euphoria, Y2K, K-drama edit crossovers), paid deployment against the top 10% of creators, and the comment-seeding tool Crowd Control is already operating for other artists",
-      "Stand up the three-pillar physical / merch / D2C supply chain — tour fulfillment, Target/Walmart/record-store album distribution, and a branded D2C layer with Philippines-based CS that fixes the $16-vs-$6 US-merch-cost problem and the zero-US-physicals problem in one move",
+      "Stand up the three-pillar physical / merch / D2C supply chain — tour fulfillment, major-retailer and record-store album distribution, and a branded D2C layer with Philippines-based CS that fixes the $16-vs-$6 US-merch-cost problem and the zero-US-physicals problem in one move",
       "Productize the YG Plus services layer — package the Kiss of Life playbook into a per-release services offering, plus experiential pop-ups through Crowd Control's events partner, so YG Plus can offer real services against its advance money instead of burning it as straight cash to labels that don't know how to deploy it",
     ],
     subtitle:
@@ -62,7 +62,7 @@ export const wonder: ProjectData = {
       {
         label: "Zero US Physicals",
         finding:
-          "Kiss of Life has moved zero physical units in the US year-to-date per Luminate. For context: Stray Kids (#2 US CD seller) moved 149K copies in 2025, Enhypen moved 145K, Ateez moved 116K — all on the same Target/Walmart/record-store infrastructure WONDER hasn't been plugged into. The US is the biggest physical-sales market in the world, and Kiss of Life is currently not competing in it. Physicals aren't a vanity metric — 20K US units charts you on the Billboard 200, which unlocks US editorial, US radio, and a whole second wave of organic pickup.",
+          "Kiss of Life has moved zero physical units in the US year-to-date per Luminate. For context: Stray Kids (#2 US CD seller) moved 149K copies in 2025, Enhypen moved 145K, Ateez moved 116K — all on the same major-retailer and record-store infrastructure WONDER hasn't been plugged into. The US is the biggest physical-sales market in the world, and Kiss of Life is currently not competing in it. Physicals aren't a vanity metric — 20K US units charts you on the Billboard 200, which unlocks US editorial, US radio, and a whole second wave of organic pickup.",
         source: "Luminate 2025 Year-End Music Report + midyear CD sales data",
       },
       {
@@ -80,7 +80,7 @@ export const wonder: ProjectData = {
       {
         label: "US Merch Cost Bleed",
         finding:
-          "Last US physical production (Ceremony Of Roses, ~10K units) ran $16/unit. Crowd Control's supply-chain partners target $6/unit out the door for comparable CD+photocard packages. That's a $100K+ margin recapture per release cycle before shipping, and it's the reason most Korean labels simply don't send albums into the US. The fix isn't one vendor — it's a three-pillar supply chain: tour fulfillment, album retail distribution (Target/Walmart/record stores), and a branded D2C layer with real customer service. Crowd Control has the partner operators for each pillar already active on Monsta X, Logic, Wiz Khalifa, Lana Del Rey, and Backstreet Boys tours.",
+          "Last US physical production (Ceremony Of Roses, ~10K units) ran $16/unit. Crowd Control's supply-chain partners target $6/unit out the door for comparable CD+photocard packages. That's a $100K+ margin recapture per release cycle before shipping, and it's the reason most Korean labels simply don't send albums into the US. The fix isn't one vendor — it's a three-pillar supply chain: tour fulfillment, album retail distribution (major retailers + record stores), and a branded D2C layer with real customer service. Crowd Control has the partner operators for each pillar already active on Monsta X, Logic, Wiz Khalifa, Lana Del Rey, and Backstreet Boys tours.",
         source: "WONDER merch cost disclosure + Crowd Control merch-partner network audit",
       },
       {
@@ -119,7 +119,7 @@ export const wonder: ProjectData = {
       {
         label: "Behavior",
         value: "Multi-platform",
-        detail: "X coordinates, TikTok discovers, Weverse engages, Target/Walmart converts",
+        detail: "X coordinates, TikTok discovers, Weverse engages, major retailers convert",
       },
     ],
     personas: [
@@ -134,8 +134,8 @@ export const wonder: ProjectData = {
         name: "The Physical Collector",
         ageRange: "18–28",
         description:
-          "Buys CDs, photocards, and album versions as identity — the reason Stray Kids and Enhypen move 100K+ US physicals per drop. Walks into Target on release day. Rebuys multiple copies to pull rare photocards. Currently has nothing Kiss of Life-branded to buy in the US.",
-        traits: ["Target / Walmart Buyer", "Photocard Chaser", "Multi-Copy Purchaser", "D2C Convertible"],
+          "Buys CDs, photocards, and album versions as identity — the reason Stray Kids and Enhypen move 100K+ US physicals per drop. Walks into major retailers on release day. Rebuys multiple copies to pull rare photocards. Currently has nothing Kiss of Life-branded to buy in the US.",
+        traits: ["Major-Retailer Buyer", "Photocard Chaser", "Multi-Copy Purchaser", "D2C Convertible"],
       },
       {
         name: "The Tour-Driven Convert",
@@ -160,7 +160,7 @@ export const wonder: ProjectData = {
     purchaseTriggers: [
       "Cultural tie-in moments — ie. a Euphoria edit drop, a K-drama OST placement — create discovery urgency the way a straight asset drop can't",
       "Scarcity drops — city-edition photocards, tour-only variants, SMS-gated exclusives — convert casual fans to repeat spenders at the highest rates in K-pop",
-      "Physical-retail visibility — a Kiss of Life album in Target/Walmart is itself a discovery moment for the casual shopper and a chart event for the core fandom",
+      "Physical-retail visibility — a Kiss of Life album in major retailers is itself a discovery moment for the casual shopper and a chart event for the core fandom",
       "SMS-triggered streaming and D2C — one text to 100K fans on release day can move half a million streams and sell out a drop before paid media even spins up",
     ],
     platforms: [
@@ -206,7 +206,7 @@ export const wonder: ProjectData = {
       metric: "US Physical Units (Kiss of Life)",
       value: "20K+",
       context:
-        "Move Kiss of Life's July US physical sales from zero to 20K+ units through Target/Walmart/independent-record-store distribution and D2C bundle drops — the Billboard 200 chart threshold and the single most credible case-study metric to sell YG Plus on the full services deal.",
+        "Move Kiss of Life's July US physical sales from zero to 20K+ units through major-retailer and independent-record-store distribution and D2C bundle drops — the Billboard 200 chart threshold and the single most credible case-study metric to sell YG Plus on the full services deal.",
     },
     {
       metric: "US SMS Database",
@@ -242,7 +242,7 @@ export const wonder: ProjectData = {
         name: "Transparent Arts",
         strength:
           "Strong K-pop / Asian-diaspora management and event-production capabilities; solid relationships with US-facing Asian creative talent and moderate touring infrastructure.",
-        gap: "Transparent Arts is a management firm, not a distribution-services operator. They don't stand up D2C infrastructure, Target/Walmart physical supply chain, or the productized marketing services YG Plus actually needs to productize its advance model.",
+        gap: "Transparent Arts is a management firm, not a distribution-services operator. They don't stand up D2C infrastructure, major-retailer physical supply chain, or the productized marketing services YG Plus actually needs to productize its advance model.",
       },
       {
         name: "88rising",
@@ -285,7 +285,7 @@ export const wonder: ProjectData = {
       tasks: [
         "Execute the full cultural tie-in creator campaign against the Kiss of Life July release — ie. Euphoria / Y2K / K-drama-adjacent edit campaigns deployed through paid creators at the top 10% of the edit community, not through clipping farms",
         "Narrative comment ops live across TikTok, IG, and X — seeded through Crowd Control's paid comment-intelligence network so every comment carries a story, not three flame emojis",
-        "Physical album distribution live in Target, Walmart, and independent record stores (via Crowd Control's retail-partner network) + D2C bundles shipping out of the Manila-CS-backed store",
+        "Physical album distribution live in major retailers and independent record stores (via Crowd Control's retail-partner network) + D2C bundles shipping out of the Manila-CS-backed store",
         "Experiential pop-up (Paul-led) in LA or NYC tied to the comeback, with SMS capture as the gating mechanism for photocard pulls and merch exclusives",
       ],
     },
@@ -298,7 +298,7 @@ export const wonder: ProjectData = {
         "Translate the Kiss of Life playbook into productized YG Plus services — documented deliverable schedules, expected outcomes, and creative / data / physical checklists priced to the level of the release",
         "Run the first two YG Plus catalog pilot releases through the productized package to prove unit economics before the full services deal signs",
         "Deliver the YG Plus Billboard-entry playbook — a step-by-step blueprint mapping their advance money to physical-sales threshold, creator spend, paid media, and D2C capture, tuned to the 20K-unit chart entry threshold",
-        "Merch and physical supply-chain MOUs signed with tour-fulfillment partner, Target/Walmart distribution partner, and EU-side production partner (Adidas-grade facility) — so YG Plus can activate without Crowd Control re-sourcing per release",
+        "Merch and physical supply-chain MOUs signed with tour-fulfillment partner, major-retailer distribution partner, and EU-side production partner (Adidas-grade facility) — so YG Plus can activate without Crowd Control re-sourcing per release",
       ],
     },
     {
@@ -424,7 +424,7 @@ export const wonder: ProjectData = {
           name: "Pillar 2 — Physical Retail Distribution",
           quantity: "Scoped separately",
           description:
-            "Album physicals into Target, Walmart, and indie-record-store distribution via Crowd Control's Lana Del Rey operator. Covers manufacturing, DSP-tied bundle strategy, and chart-eligible retail placement for every Kiss of Life and YG Plus US release.",
+            "Album physicals into major retailers and indie-record-store distribution via Crowd Control's Lana Del Rey operator. Covers manufacturing, DSP-tied bundle strategy, and chart-eligible retail placement for every Kiss of Life and YG Plus US release.",
         },
         {
           name: "Pillar 3 — Branded D2C Storefront",
@@ -492,7 +492,7 @@ export const wonder: ProjectData = {
       {
         name: "Merch / Physical / D2C",
         description:
-          "Three-pillar supply-chain oversight (tour fulfillment, Target/Walmart/indie retail, EU production), branded D2C storefront with Manila-based CS, and experiential coordination with Paul's events team. Scoped separately — billed either as a monthly oversight retainer or as a percentage of net merch revenue once pillars and release cadence are confirmed.",
+          "Three-pillar supply-chain oversight (tour fulfillment, major retailers + indie retail, EU production), branded D2C storefront with Manila-based CS, and experiential coordination with Paul's events team. Scoped separately — billed either as a monthly oversight retainer or as a percentage of net merch revenue once pillars and release cadence are confirmed.",
         price: 0,
         priceLabel: "TBD",
         recurring: true,
