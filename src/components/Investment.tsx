@@ -31,7 +31,7 @@ export function Investment() {
 
         <ScrollReveal delay={0.1}>
           <h2 className="text-4xl md:text-[3.5rem] font-bold tracking-[-0.03em] leading-[1.05] mb-8">
-            {q.model === "retainer" ? "Monthly Investment" : "Project Investment"}
+            {q.model === "retainer" ? "Total Investment" : "Project Investment"}
           </h2>
           <p className="text-[16px] text-text-secondary leading-[1.8] mb-20 max-w-2xl tracking-[-0.01em]">
             {q.model === "retainer" ? "Management fees only — ad spend and creator fees are billed separately at a 15% management rate." : "Transparent pricing with milestone-based payments aligned to delivery."}
@@ -108,7 +108,7 @@ export function Investment() {
                     </div>
                   )}
                   <div className="px-10 py-6 flex items-center justify-between border-t border-border">
-                    <span className="text-[18px] font-semibold text-text-primary tracking-[-0.01em]">{q.model === "retainer" ? "Total Campaign Value" : "Total"}</span>
+                    <span className="text-[18px] font-semibold text-text-primary tracking-[-0.01em]">{q.model === "retainer" ? "Total Campaign Cost" : "Total"}</span>
                     <span className="display text-[30px] text-accent tabular-nums tracking-[-0.02em]">
                       <AnimatedCurrency value={q.total} />
                     </span>
