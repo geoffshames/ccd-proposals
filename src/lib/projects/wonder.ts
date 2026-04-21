@@ -35,7 +35,7 @@ export const wonder: ProjectData = {
       "Quarterback the Kiss of Life US rebrand — align S2, Kakao, Origin, and any retained vendors under one execution plan, audit every invoice, and make sure the July comeback lands with proper creator marketing, cultural tie-ins, and physical-album distribution for the first time in the US",
       "Build an owned fan-data layer for WONDER's roster — SMS/email capture targeting 100K+ US phone numbers across Kiss of Life and catalog acts, independent of Weverse/Kakao's walled gardens, so WONDER can activate a release or tour without needing permission from a label CRM",
       "Deploy the creator marketing + comment-intelligence system — real strategy tied to cultural IP (ie. Euphoria, Y2K, K-drama edit crossovers), paid deployment against the top 10% of creators, and the comment-seeding tool Crowd Control is already operating for other artists",
-      "Stand up the three-pillar physical / merch / D2C supply chain — tour fulfillment, Target/Walmart/record-store album distribution, and a branded D2C layer with Philippines-based CS that fixes the $14-vs-$4 US-merch-cost problem and the zero-US-physicals problem in one move",
+      "Stand up the three-pillar physical / merch / D2C supply chain — tour fulfillment, Target/Walmart/record-store album distribution, and a branded D2C layer with Philippines-based CS that fixes the $16-vs-$6 US-merch-cost problem and the zero-US-physicals problem in one move",
       "Productize the YG Plus services layer — package the Kiss of Life playbook into a per-release services offering, plus experiential pop-ups through Crowd Control's events partner, so YG Plus can offer real services against its advance money instead of burning it as straight cash to labels that don't know how to deploy it",
     ],
     subtitle:
@@ -80,7 +80,7 @@ export const wonder: ProjectData = {
       {
         label: "US Merch Cost Bleed",
         finding:
-          "Last US physical production (Ceremony Of Roses, ~10K units) ran $14/unit. Korea domestic production runs $3–4/unit for comparable CD+photocard packages. That's a $100K+ margin leak per release cycle before shipping, and it's the reason most Korean labels simply don't send albums into the US. The fix isn't one vendor — it's a three-pillar supply chain: tour fulfillment, album retail distribution (Target/Walmart/record stores), and a branded D2C layer with real customer service. Crowd Control has the partner operators for each pillar already active on Monsta X, Logic, Wiz Khalifa, Lana Del Rey, and Backstreet Boys tours.",
+          "Last US physical production (Ceremony Of Roses, ~10K units) ran $16/unit. Crowd Control's supply-chain partners target $6/unit out the door for comparable CD+photocard packages. That's a $100K+ margin recapture per release cycle before shipping, and it's the reason most Korean labels simply don't send albums into the US. The fix isn't one vendor — it's a three-pillar supply chain: tour fulfillment, album retail distribution (Target/Walmart/record stores), and a branded D2C layer with real customer service. Crowd Control has the partner operators for each pillar already active on Monsta X, Logic, Wiz Khalifa, Lana Del Rey, and Backstreet Boys tours.",
         source: "WONDER merch cost disclosure + Crowd Control merch-partner network audit",
       },
       {
