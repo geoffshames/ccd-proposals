@@ -68,7 +68,7 @@ export const lngshot: ProjectData = {
       {
         label: "Walled-Garden Fan Data",
         finding:
-          "The bulk of LNGSHOT's fan interaction lives in Weverse (owned by HYBE/Weverse Company), TikTok's algorithm, and Instagram's feed. Fan letters, community posts, membership perks — all in someone else's ecosystem. The team can see it but can't segment, export, or activate it independently.",
+          "LNGSHOT runs their official fan community on Weverse — a platform owned by Weverse Company (a HYBE subsidiary) where LNGSHOT, as a More Vision indie label act, has no data access. Fan letters, community posts, membership perks: all confirmed active, all locked inside a third-party ecosystem. The team can see engagement but can't segment, export, or activate that audience independently.",
         source: "Weverse platform analysis / Instagram audit",
       },
       {
@@ -160,7 +160,7 @@ export const lngshot: ProjectData = {
       {
         name: "Weverse",
         description:
-          "Official fan community (HYBE-adjacent). Fan letters, live content, membership perks. High engagement but data is walled inside Weverse Company's ecosystem — the team can't export or activate it independently.",
+          "Official fan community platform (Weverse.io/lngshot — independently verified). Fan letters, live content, and membership perks are active and high-engagement. Data is owned by Weverse Company, not the artist — LNGSHOT's team cannot segment, export, or reactivate this audience outside the platform.",
       },
       {
         name: "YouTube — 425K Subscribers",
