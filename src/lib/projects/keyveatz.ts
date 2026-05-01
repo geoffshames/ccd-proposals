@@ -19,7 +19,7 @@ export const keyveatz: ProjectData = {
   project: {
     name: "KEYVEATZ : EP 2 RELEASE CAMPAIGN",
     tagline:
-      "A focused per-release campaign engineered around the June 29 EP 2 drop. Same channel architecture we built for the KISS OF LIFE rollout — calibrated three ways so Brian can pitch CJ a number he believes in.",
+      "A focused per-release campaign engineered around the June 29 EP 2 drop. Three calibrated tiers built on a proven 5th-gen K-pop release marketing architecture.",
     type: "K-Pop Release Campaign — EP 2 (June 29, 2026)",
     startDate: "May 5, 2026",
     endDate: "August 31, 2026",
@@ -30,16 +30,16 @@ export const keyveatz: ProjectData = {
   overview: {
     heading: "The Strategy",
     summary:
-      "Generate DSP traffic, music video views, social trending, and Spotify monthly listener velocity surrounding the EP 2 release on June 29, 2026 — the first major-budget moment for the first-ever AOMG × H1GHR girl group. Three calibrated tiers ($150K / $175K / $200K all-in) using the same channel architecture CCD has run for KISS OF LIFE, MONSTA X, and POW — paid media + influencer + Strive.fm + Apple Music Sales + Shazam + Clipping Support + Stationhead — scaled to fit the budget Brian needs to pitch CJ. Influencer is the largest single line in the recommended tier; YouTube + TikTok + Strive.fm carry the streaming and discovery weight; Apple Music Sales + Shazam force chart positions; Stationhead anchors the release-day moment. Every channel earns its line by pulling on at least one of four KPIs: Spotify monthly listener growth, MV view velocity, social chart positions, or owned audience capture.",
+      "Generate DSP traffic, music video views, social trending, and Spotify monthly listener velocity surrounding the EP 2 release on June 29, 2026 — the first major-budget moment for the first-ever AOMG × H1GHR girl group. Three calibrated tiers ($150K / $175K / $200K all-in) deploy a full-stack 5th-gen K-pop release architecture: paid media + Influencer + Twitter + Fan Pages + Strive.fm + Apple Music Sales + Shazam + Clipping Support + Stationhead. Influencer + Fan Pages + Twitter form the social compounding engine; YouTube + TikTok + Strive.fm carry streaming and discovery weight; Apple Music Sales + Shazam force chart positions; Stationhead anchors the release-day moment. Every channel earns its line by pulling on at least one of four KPIs: Spotify monthly listener growth, MV view velocity, social chart positions, or owned audience capture.",
     objectives: [
       "Force MV view velocity through the EP 2 launch window — YouTube In-Stream + In-Feed advertising sized to compete with the BABYMONSTER / ILLIT debut benchmarks (10M+ views in 30 days)",
-      "Hit Spotify monthly listener inflection — Spotify Showcase + Strive.fm in-rideshare playlisting + similar-artist conquesting flighted around the June 29 drop, modeled on the KISS OF LIFE rollout (4.7M monthly listeners)",
+      "Hit Spotify monthly listener inflection — Spotify Showcase + Strive.fm in-rideshare playlisting + similar-artist conquesting flighted around the June 29 drop, calibrated against 5th-gen girl group benchmarks of 2.7M (MEOVV) to 4.7M (peer comps)",
       "Force chart positions through Apple Music Sales + Shazam — coordinated single sales windows and attributable Shazam usage to signal Apple's algorithms and force Korean and global K-Pop chart entries",
       "Build the social trending engine — TikTok + Reels Influencer Campaign (Korea + global), Clipping Support for bulk UGC distribution, and Stationhead release-day listening party to compound organic reach",
       "Capture social-data signal in Meta + TikTok pixels for retargeting through Q3 — every paid touchpoint feeds the audience graph we'll re-deploy on EP 3",
     ],
     subtitle:
-      "Three calibrated tiers — same channel architecture as KISS OF LIFE Mini Album 2, scaled to Brian's $150–$200K range.",
+      "Three calibrated tiers across paid media, Influencer, Twitter, Fan Pages, and chart-forcing channels — calibrated for a $150–$200K range.",
     imageCaption: "K-Pop Release Campaign — EP 2",
     stats: [
       {
@@ -63,7 +63,7 @@ export const keyveatz: ProjectData = {
         label: "Inflection Window",
         finding:
           "The pre-release 'Key Beats' (April 29) and EP 2 (June 29) bracket a 60-day window that is statistically the highest-leverage period of any K-pop girl group's first 12 months. ILLIT cleared 10M Spotify monthly listeners in 20 days post-debut. MEOVV cleared 2.7M in 8 months. KEYVEATZ is currently sitting in this window with no paid amplification engine, no Strive.fm playlisting, no Apple Music Sales push, and no Shazam coordination. Every day this window stays open without coordinated activation is opportunity cost.",
-        source: "Spotify monthly listener velocity analysis (ILLIT, MEOVV, KISS OF LIFE, BABYMONSTER); CCD release-window benchmarks",
+        source: "Spotify monthly listener velocity analysis (ILLIT, MEOVV, KISS OF LIFE, BABYMONSTER) — public Spotify + kworb / Chartmetric data feed, May 2026",
       },
       {
         label: "The Subculture Wedge",
@@ -74,14 +74,14 @@ export const keyveatz: ProjectData = {
       {
         label: "Chart-Position Gap",
         finding:
-          "The KISS OF LIFE Holiday/January playbook used Apple Music Sales + Shazam Campaign as the chart-forcing layer — coordinated single sales windows and attributable Shazam plays to signal both the Apple algorithm and Korean radio. None of that infrastructure is currently active for KEYVEATZ. Without it, a strong streaming campaign still gets buried below institutional HYBE / YG releases on the public scoreboards Korean fans actually check.",
-        source: "CCD KISS OF LIFE Holiday/Jan Releases campaign brief; Apple Music chart mechanics analysis",
+          "Apple Music Sales + Shazam Campaign function as the chart-forcing layer in 5th-gen K-pop release cycles — coordinated single sales windows and attributable Shazam plays to signal both the Apple algorithm and Korean radio. None of that infrastructure is currently active for KEYVEATZ. Without it, a strong streaming campaign still gets buried below institutional HYBE / YG releases on the public scoreboards Korean fans actually check.",
+        source: "Apple Music chart mechanics analysis; 5th-gen K-pop release-cycle benchmarking",
       },
       {
         label: "Influencer Engine Vacuum",
         finding:
-          "ILLIT hit 10M monthly listeners in 20 days because HYBE pre-seeded Stan Twitter / TikTok / Reels with hundreds of coordinated creator activations 4-6 weeks pre-debut. KEYVEATZ has zero paid creator activations identifiable on TikTok or Reels at audit time. Korean local Reels creators (10K-200K follower fancam pages) cost less than $200/post and are the single highest-ROI channel for new girl group fancam culture. KISS OF LIFE Mini Album 2 allocated $150K of $245K subtotal (61%) to influencer for this exact reason.",
-        source: "TikTok Creative Center / Reels marketplace audit; CCD KISS OF LIFE Mini Album 2 budget reference",
+          "ILLIT hit 10M monthly listeners in 20 days because HYBE pre-seeded Stan Twitter / TikTok / Reels with hundreds of coordinated creator activations 4-6 weeks pre-debut. KEYVEATZ has zero paid creator activations identifiable on TikTok or Reels at audit time. Korean creators (10K-200K follower fancam pages) cost less than $200/post and are the single highest-ROI channel for new girl group fancam culture. Major-budget 5th-gen rollouts routinely allocate 50–60%+ of paid spend to influencer for this exact reason — and KEYVEATZ currently has zero of it active.",
+        source: "TikTok Creative Center / Reels marketplace audit; 5th-gen K-pop release-cycle budget benchmarks",
       },
       {
         label: "First-Mover Story Asset",
@@ -184,16 +184,16 @@ export const keyveatz: ProjectData = {
   targets: [
     { metric: "Spotify Monthly Listeners", value: "2M+", context: "Conservative recommended-tier target post-campaign window. MEOVV reached 2.7M from a similar 'subculture-credible' launch posture without coordinated paid + Strive.fm + Apple Music Sales infrastructure. KEYVEATZ has the engine MEOVV didn't." },
     { metric: "EP 2 MV View Velocity", value: "10M+ in 30 days", context: "Conservative benchmark for a 5th-gen girl group with paid YouTube In-Stream + In-Feed + influencer pre-seeding. ILLIT cleared 30M in 14 days. MEOVV cleared 12M in 30 days. The gap is paid amplification — which we close." },
-    { metric: "Apple Music + Shazam Position", value: "Top 50 Korea", context: "Coordinated Apple Music Sales windows + Shazam Campaign target a Top 50 Korea album chart entry post-release. KISS OF LIFE Holiday/January cycles charted via the same architecture." },
+    { metric: "Apple Music + Shazam Position", value: "Top 50 Korea", context: "Coordinated Apple Music Sales windows + Shazam Campaign target a Top 50 Korea album chart entry post-release. Multiple major-label 5th-gen releases have charted via the same architecture." },
     { metric: "Organic UGC Volume", value: "5K+ posts", context: "Total fancam edits, dance challenges, and reaction content across TikTok + Reels in the EP 2 release window. Influencer Campaign + Clipping Support seed it; genuine fans sustain it." },
   ],
 
   competitive: {
     summary:
-      "KEYVEATZ launches into the most concentrated 5th-gen girl group market K-pop has ever seen. ILLIT and BABYMONSTER own the institutional lane. KISS OF LIFE consolidated the R&B / hip-hop-adjacent niche from S2. MEOVV claimed the subculture-credible lane via TBL / Teddy. YOUNG POSSE shows what happens when hip-hop credibility lacks marketing infrastructure. KEYVEATZ has stronger label DNA than MEOVV had at launch, but is currently being marketed at YOUNG POSSE budgets — that mismatch is the entire opportunity. Numbers below pulled from Spotify analytics, kpopping.com, and musicmetricsvault as of May 2026.",
+      "KEYVEATZ launches into the most concentrated 5th-gen girl group market K-pop has ever seen. ILLIT and BABYMONSTER own the institutional lane. KISS OF LIFE consolidated the R&B / hip-hop-adjacent niche from S2. MEOVV claimed the subculture-credible lane via TBL / Teddy. YOUNG POSSE shows what happens when hip-hop credibility lacks marketing infrastructure. KEYVEATZ has stronger label DNA than MEOVV had at launch, but is currently being marketed at YOUNG POSSE budgets — that mismatch is the entire opportunity. Numbers verified from Spotify-direct + kworb (Chartmetric data pipeline), May 2026.",
     competitors: [
-      { name: "ILLIT — 13.6M Monthly Listeners", strength: "HYBE infrastructure, BELIFT marketing engine, Weverse data stack, fastest K-pop group to 10M monthly listeners (20 days post-debut)", gap: "ILLIT owns the easy-listening / HYBE-pop lane completely. KEYVEATZ doesn't compete here — but every dollar HYBE spends pulls from the same total addressable 5th-gen audience, which means KEYVEATZ needs creator volume to break through." },
-      { name: "BABYMONSTER — 7.4M Monthly Listeners", strength: "YG global marketing machine, multilingual member composition, 2B+ total Spotify streams, big-budget MV production", gap: "BABYMONSTER is institutional and polished. KEYVEATZ can position as the credibility alternative — the group your friend who hates manufactured K-pop will actually listen to." },
+      { name: "ILLIT — 12.5M Monthly Listeners", strength: "HYBE infrastructure, BELIFT marketing engine, Weverse data stack, fastest K-pop group to 10M monthly listeners (20 days post-debut)", gap: "ILLIT owns the easy-listening / HYBE-pop lane completely. KEYVEATZ doesn't compete here — but every dollar HYBE spends pulls from the same total addressable 5th-gen audience, which means KEYVEATZ needs creator volume to break through." },
+      { name: "BABYMONSTER — 7.2M Monthly Listeners", strength: "YG global marketing machine, multilingual member composition, 2B+ total Spotify streams, big-budget MV production", gap: "BABYMONSTER is institutional and polished. KEYVEATZ can position as the credibility alternative — the group your friend who hates manufactured K-pop will actually listen to." },
       { name: "KISS OF LIFE — 4.7M Monthly Listeners", strength: "S2 Entertainment R&B / hip-hop positioning, 1B+ total streams, deep fan loyalty, multilingual appeal across 4 members", gap: "KISS OF LIFE landed in the niche KEYVEATZ should occupy. They got there with strong music + concept clarity but limited paid amplification. KEYVEATZ has stronger label-DNA story and the right paid stack to clear them by year-end." },
       { name: "MEOVV — 2.7M Monthly Listeners", strength: "Teddy / TBL pedigree (BLACKPINK production lineage), distinct virtual / subculture aesthetic", gap: "MEOVV is the closest direct comp — both groups leverage label-prestige hip-hop DNA in a 5-member format. MEOVV got to 2.7M without a coordinated US/SEA influencer program or Strive.fm. KEYVEATZ with that program added should clear them by Q3." },
       { name: "YOUNG POSSE — 448K Monthly Listeners", strength: "Strong hip-hop-positioning clarity, dedicated fan base, critical respect, real bars from real members", gap: "YOUNG POSSE is the cautionary tale: the right music, the right concept, the wrong marketing infrastructure. DSP didn't have AOMG's budget or H1GHR's creator network. KEYVEATZ has both — the failure pattern here is solved by exactly the engagement this proposal scopes." },
@@ -204,7 +204,7 @@ export const keyveatz: ProjectData = {
     sectionNumber: "06",
     heading: "Three Tiers. One Drop.",
     subheading:
-      "Brian asked for a plan that moves the needle without putting CJ on tilt. Same channel architecture as KISS OF LIFE Mini Album 2 ($300K total reference) — calibrated three ways for the EP 2 release window. Each tier shows the per-channel paid spend, $10K campaign retainer, and 15% agency fees on top.",
+      "A plan that moves the needle without putting CJ on tilt. The same proven 5th-gen K-pop release architecture, calibrated three ways for the EP 2 release window. Each tier shows the per-channel paid spend, $10K campaign retainer, and 15% agency fees on top.",
     footnote:
       "All tiers are all-in totals (paid spend + retainer + 15% agency fees). Numbers reflect the EP 2 campaign window: pre-release runway through 14-day post-release sustain. CJ / AOMG / H1GHR retains creative approval.",
     tiers: [
@@ -216,16 +216,16 @@ export const keyveatz: ProjectData = {
         priceSuffix: "all-in",
         priceContext: "$122K paid + $10K retainer + 15% agency fees",
         includes: [
-          "YouTube Advertising — $20K (In-Stream + In-Feed)",
-          "Meta Advertising — $10K (IG + FB feed/stories/Reels)",
-          "TikTok Advertising — $14K (Spark Ads + In-Feed)",
-          "Twitter / X Advertising — $3K",
-          "Spotify Advertising — $5K (Showcase)",
-          "Influencer Campaign — $25K (paid creators, mix of Korean + global tiers via LV8)",
-          "Strive.fm — $5K (in-rideshare playlisting, 4 weeks)",
-          "Apple Music Sales — $3K",
+          "YouTube Advertising — $18K (In-Stream + In-Feed)",
+          "Meta Advertising — $8K (IG + FB feed/stories/Reels)",
+          "TikTok Advertising — $12K (Spark Ads + In-Feed)",
+          "Twitter / X Advertising — $7K (Stan Twitter activation, hashtag campaigns, coordinated drops)",
+          "Spotify Advertising — $4K (Showcase)",
+          "Influencer Campaign — $31K (heavy paid creator volume, mix of Korean + global tiers via LV8)",
+          "Strive.fm — $4K (in-rideshare playlisting, 3 weeks)",
+          "Apple Music Sales — $2K",
           "Shazam Campaign — $2K",
-          "Clipping Support — $5K (scaled bulk UGC distribution)",
+          "Clipping Support — $4K (scaled bulk UGC distribution)",
           "Fan Pages — $30K ($10K/mo × 3 channels for the core campaign window)",
         ],
         excludes: [
@@ -239,23 +239,23 @@ export const keyveatz: ProjectData = {
       {
         label: "Tier 02 — Recommended",
         name: "$175K",
-        tagline: "The middle tier. Same architecture as KISS OF LIFE Mini Album 2 at ~58% the spend. The number we'd pitch to anyone serious about a Top-3 5th-gen girl group outcome.",
+        tagline: "The middle tier — meaningful scale across every channel that matters with room for opportunistic moves. The number we'd pitch to any team serious about a Top-3 5th-gen girl group outcome.",
         price: "$174,450",
         priceSuffix: "all-in",
         priceContext: "$143K paid + $10K retainer + 15% agency fees",
         featured: true,
         includes: [
-          "YouTube Advertising — $25K (In-Stream + In-Feed + Engagement)",
-          "Meta Advertising — $12K",
-          "TikTok Advertising — $18K (Spark Ads + In-Feed + TopView)",
-          "Twitter / X Advertising — $4K",
-          "Programmatic Display & Video — $4K",
-          "Spotify Advertising — $6K (Showcase + Audio Liner)",
-          "Influencer Campaign — $25K (paid creators, mix of Korean + global tiers via LV8)",
-          "Strive.fm — $8K (in-rideshare playlisting, 8 weeks)",
-          "Apple Music Sales — $3K",
+          "YouTube Advertising — $20K (In-Stream + In-Feed + Engagement)",
+          "Meta Advertising — $9K",
+          "TikTok Advertising — $15K (Spark Ads + In-Feed + TopView)",
+          "Twitter / X Advertising — $9K (Stan Twitter activation, hashtag campaigns, coordinated drops, Spark Ads)",
+          "Programmatic Display & Video — $3K",
+          "Spotify Advertising — $4K (Showcase + Audio Liner)",
+          "Influencer Campaign — $35K (heavy paid creator volume, mix of Korean + global tiers via LV8)",
+          "Strive.fm — $6K (in-rideshare playlisting, 6 weeks)",
+          "Apple Music Sales — $2K",
           "Shazam Campaign — $2K",
-          "Clipping Support — $6K (scaled bulk UGC distribution, ~2x typical KOL volume)",
+          "Clipping Support — $8K (scaled bulk UGC distribution, 2x typical 5th-gen volume)",
           "Fan Pages — $30K ($10K/mo × 3 channels for the core campaign window)",
         ],
         excludes: [
@@ -264,7 +264,7 @@ export const keyveatz: ProjectData = {
           "OOH / DOOH",
         ],
         footerNote:
-          "The math works for both sides. Real money on every channel that matters, no fat anywhere — this is the tier that actually delivers a defensible Top-3 5th-gen outcome.",
+          "Real money on every channel that matters, no fat anywhere — this is the tier that delivers a defensible Top-3 5th-gen outcome.",
       },
       {
         label: "Tier 03 — Full Court Press",
@@ -274,23 +274,23 @@ export const keyveatz: ProjectData = {
         priceSuffix: "all-in",
         priceContext: "$165K paid + $10K retainer + 15% agency fees",
         includes: [
-          "YouTube Advertising — $30K",
-          "Meta Advertising — $14K",
-          "TikTok Advertising — $18K",
-          "Twitter / X Advertising — $5K",
-          "Programmatic Display & Video — $5K",
-          "Spotify Advertising — $7K",
-          "Influencer Campaign — $26K (paid creators, mix of Korean + global tiers via LV8)",
-          "Strive.fm — $10K (full 12-week run)",
-          "Apple Music Sales — $4K",
-          "Shazam Campaign — $3K",
-          "Clipping Support — $8K (highest-tier scaled bulk UGC distribution)",
+          "YouTube Advertising — $25K",
+          "Meta Advertising — $11K",
+          "TikTok Advertising — $16K",
+          "Twitter / X Advertising — $12K (Stan Twitter activation, hashtag campaigns, Spark Ads, takeover units)",
+          "Programmatic Display & Video — $4K",
+          "Spotify Advertising — $5K",
+          "Influencer Campaign — $35K (highest-volume paid creator program, mix of Korean + global tiers via LV8)",
+          "Strive.fm — $8K (full 8-week run)",
+          "Apple Music Sales — $3K",
+          "Shazam Campaign — $2K",
+          "Clipping Support — $9K (highest-tier scaled bulk UGC distribution)",
           "Fan Pages — $35K ($10K/mo × 3 channels with extended runway through post-release sustain)",
           "Stationhead Listening Party (release-day anchor moment)",
           "Bonus: TikTok AR Effect / CapCut Template included for sound usage acceleration",
         ],
         footerNote:
-          "If KEYVEATZ is the priority signing of the year, this is the tier that backs that claim. Engineered for chart-readable scale by August.",
+          "If KEYVEATZ is the priority signing of the year, this is the tier that backs the claim. Engineered for chart-readable scale by August.",
       },
     ],
   },
@@ -353,27 +353,27 @@ export const keyveatz: ProjectData = {
   ],
 
   deliverablesSubheading:
-    "Channel-by-channel breakdown of the EP 2 campaign — same architecture CCD has run for KISS OF LIFE, MONSTA X, and POW, scaled to fit Brian's $150–$200K range. Numbers below show the Tier 02 (Recommended) per-channel allocation.",
+    "Channel-by-channel breakdown of the EP 2 campaign — a proven 5th-gen K-pop release marketing architecture, scaled to fit a $150–$200K range. Numbers below show the Tier 02 (Recommended) per-channel allocation.",
 
   deliverables: [
     {
       category: "Paid Media",
       icon: "▶",
       items: [
-        { name: "YouTube Advertising", quantity: "$25K", description: "In-Stream (TrueView) for low-cost MV view velocity, In-Feed (Discovery) for channel growth, Engagement campaigns for K-pop and similar-artist conquesting audiences" },
-        { name: "Meta Advertising", quantity: "$12K", description: "IG + FB Feed/Stories/Reels traffic and DSP campaigns; social proofing on member-direct CTAs; geo-split across US, KR, JP, ID, PH, SG, TH, MY, AU, CA, UK, NL, DE, TW" },
-        { name: "TikTok Advertising", quantity: "$18K", description: "Spark Ads boosting top-performing organic and influencer content; In-Feed creative; TopView units flighted to release day" },
-        { name: "Twitter / X Advertising", quantity: "$4K", description: "Stan Twitter activation layer — coordinated content drops, hashtag campaign support, conversion to Spotify and YouTube" },
-        { name: "Programmatic Display & Video", quantity: "$4K", description: "Banner + video display across high-affinity 3PA targets — allkpop, Soompi, Koreaboo audiences plus geofenced K-pop event attendees" },
-        { name: "Spotify Advertising", quantity: "$6K", description: "Showcase + Audio Liner placements driving discovery via similar-artist and broad genre conquesting on-platform" },
+        { name: "YouTube Advertising", quantity: "$20K", description: "In-Stream (TrueView) for low-cost MV view velocity, In-Feed (Discovery) for channel growth, Engagement campaigns for K-pop and similar-artist conquesting audiences" },
+        { name: "Meta Advertising", quantity: "$9K", description: "IG + FB Feed/Stories/Reels traffic and DSP campaigns; social proofing on member-direct CTAs; geo-split across US, KR, JP, ID, PH, SG, TH, MY, AU, CA, UK, NL, DE, TW" },
+        { name: "TikTok Advertising", quantity: "$15K", description: "Spark Ads boosting top-performing organic and influencer content; In-Feed creative; TopView units flighted to release day" },
+        { name: "Twitter / X Advertising", quantity: "$9K", description: "Stan Twitter activation layer — coordinated content drops, hashtag campaign support, conversion to Spotify and YouTube" },
+        { name: "Programmatic Display & Video", quantity: "$3K", description: "Banner + video display across high-affinity 3PA targets — allkpop, Soompi, Koreaboo audiences plus geofenced K-pop event attendees" },
+        { name: "Spotify Advertising", quantity: "$4K", description: "Showcase + Audio Liner placements driving discovery via similar-artist and broad genre conquesting on-platform" },
       ],
     },
     {
       category: "Influencer & UGC",
       icon: "◆",
       items: [
-        { name: "Influencer Campaign", quantity: "$25K", description: "Paid creator activations across TikTok + Reels — fancam edits, dance challenges, reactions, discovery niches; sourced and managed via LV8 with a mix of Korean and global creator tiers" },
-        { name: "Clipping Support", quantity: "$6K", description: "Scaled bulk UGC distribution (~2x the typical KOL volume) — coordinated content packaging, seeding to micro-creators and stan accounts, daily clipping flow through the launch window" },
+        { name: "Influencer Campaign", quantity: "$35K", description: "Paid creator activations across TikTok + Reels — fancam edits, dance challenges, reactions, discovery niches; sourced and managed via LV8 with a mix of Korean and global creator tiers" },
+        { name: "Clipping Support", quantity: "$8K", description: "Scaled bulk UGC distribution — coordinated content packaging, seeding to micro-creators and stan accounts, daily clipping flow through the launch window at 2x typical 5th-gen volume" },
         { name: "Fan Pages", quantity: "$30K", description: "Owned-and-operated fan pages across 3 channels (TikTok, Instagram, X) — daily content publishing, audience growth, comment-section management, fancam reposts, news + lyric drops. $10K/mo for the 3-month core campaign window" },
       ],
     },
@@ -381,8 +381,8 @@ export const keyveatz: ProjectData = {
       category: "Streaming + Chart Force",
       icon: "■",
       items: [
-        { name: "Strive.fm", quantity: "$8K", description: "In-rideshare playlisting in target US markets (LA, NYC, Dallas, Atlanta) — captive-audience Spotify follow + save mechanics, 8-week run flighted around EP 2" },
-        { name: "Apple Music Sales", quantity: "$3K", description: "Coordinated single sales windows to force Apple Music Korea + global K-pop chart positions" },
+        { name: "Strive.fm", quantity: "$6K", description: "In-rideshare playlisting in target US markets (LA, NYC, Dallas, Atlanta) — captive-audience Spotify follow + save mechanics, 8-week run flighted around EP 2" },
+        { name: "Apple Music Sales", quantity: "$2K", description: "Coordinated single sales windows to force Apple Music Korea + global K-pop chart positions" },
         { name: "Shazam Campaign", quantity: "$2K", description: "Attributable Shazams to signal Apple Music algorithms and Korean radio rotation" },
       ],
     },
@@ -390,7 +390,7 @@ export const keyveatz: ProjectData = {
       category: "Targeting & Audiences",
       icon: "▲",
       items: [
-        { name: "Regional Targets", quantity: "14 markets", description: "US, KR, JP, ID, PH, SG, TH, MY, AU, CA, UK, NL, DE, TW — geo-split to prevent over-servicing any single region (POW Favorite learning: Indonesia + PH took outsized budget)" },
+        { name: "Regional Targets", quantity: "14 markets", description: "US, KR, JP, ID, PH, SG, TH, MY, AU, CA, UK, NL, DE, TW — geo-split to prevent over-servicing any single region; common K-pop campaign learning shows Indonesia + PH can over-service without breakouts" },
         { name: "Similar-Artist Targeting", quantity: "Chartmetric-driven", description: "GRAY, pH-1, Sik-K, BamBam, MEOVV, KISS OF LIFE, Stray Kids, BTS, ENHYPEN, NCT 127 plus broader K-pop genre and feature-specific lookalikes" },
         { name: "Lifestyle Targeting", quantity: "K-pop publishers", description: "allkpop, Soompi, Koreaboo audience targeting plus engagement audiences from social media data, website visitors, past purchasers, and KCON / K-pop event geofence data" },
         { name: "Age Tiers", quantity: "13–34", description: "13–17 broad targeting (interest unavailable <18), 18–24 peak save demo, 25–34 highest LTV" },
@@ -409,7 +409,7 @@ export const keyveatz: ProjectData = {
 
   scope: {
     subheading:
-      "What's included in the recommended Tier 02 ($175K) campaign — same boundaries as KISS OF LIFE Mini Album 2. Tier 01 trims and Tier 03 adds, as outlined in the Investment Tiers section above.",
+      "What's included in the recommended Tier 02 ($175K) campaign. Tier 01 trims and Tier 03 adds, as outlined in the Investment Tiers section above.",
     included: [
       "Full per-channel campaign management — strategy, creative direction, optimization, reporting across all 11 channels in the recommended tier",
       "Influencer Campaign sourcing, contracting, content review, and distribution via LV8 — 100–120 paid creator activations across Korea + global",
@@ -434,18 +434,18 @@ export const keyveatz: ProjectData = {
     model: "project" as const,
     currency: "USD",
     lineItems: [
-      { name: "YouTube Advertising", description: "In-Stream (TrueView) + In-Feed (Discovery) + Engagement campaigns flighted around the EP 2 release window across all 14 regional markets", price: 25000 },
-      { name: "Meta Advertising", description: "IG + FB Feed/Stories/Reels — traffic + DSP + social proofing campaigns across all 14 regional markets", price: 12000 },
-      { name: "TikTok Advertising", description: "Spark Ads + In-Feed + TopView units flighted to the release day window", price: 18000 },
-      { name: "Twitter / X Advertising", description: "Stan Twitter activation, coordinated drops, hashtag campaign support", price: 4000 },
-      { name: "Programmatic Display & Video", description: "Banner + video display across high-affinity 3PA targets and geofenced K-pop event audiences", price: 4000 },
-      { name: "Spotify Advertising", description: "Showcase + Audio Liner placements driving discovery via similar-artist and genre conquesting", price: 6000 },
-      { name: "Influencer Campaign", description: "Paid creator activations on TikTok + Reels (mix of Korean and global tiers), sourced and managed via LV8", price: 25000 },
-      { name: "Strive.fm", description: "In-rideshare playlisting in 4 target US markets, 8-week run flighted around EP 2", price: 8000 },
-      { name: "Apple Music Sales", description: "Coordinated single sales windows to force Apple Music Korea + global K-pop chart positions", price: 3000 },
+      { name: "Influencer Campaign", description: "Heavy paid creator program on TikTok + Reels — fancam edits, dance challenges, reactions, discovery niches; mix of Korean and global creator tiers sourced and managed via LV8 (largest single line in the recommended tier)", price: 35000 },
+      { name: "Fan Pages", description: "Owned-and-operated fan pages across 3 channels (TikTok, Instagram, X) — daily content publishing, audience growth, comment-section management, fancam reposts, news + lyric drops. $10K/mo for the 3-month core campaign window", price: 30000 },
+      { name: "YouTube Advertising", description: "In-Stream (TrueView) + In-Feed (Discovery) + Engagement campaigns flighted around the EP 2 release window across all 14 regional markets", price: 20000 },
+      { name: "TikTok Advertising", description: "Spark Ads + In-Feed + TopView units flighted to the release day window", price: 15000 },
+      { name: "Twitter / X Advertising", description: "Stan Twitter activation layer — coordinated content drops, hashtag campaign support, Spark Ads on top-performing organic tweets, conversion to Spotify and YouTube. Designed to activate the existing organic stan account network without replacing it", price: 9000 },
+      { name: "Meta Advertising", description: "IG + FB Feed/Stories/Reels — traffic + DSP + social proofing campaigns across all 14 regional markets", price: 9000 },
+      { name: "Clipping Support", description: "Scaled bulk UGC distribution + content packaging for micro-creator + stan account seeding, daily clipping flow through the launch window at 2x typical 5th-gen volume", price: 8000 },
+      { name: "Strive.fm", description: "In-rideshare playlisting in 4 target US markets, 6-week run flighted around EP 2", price: 6000 },
+      { name: "Spotify Advertising", description: "Showcase + Audio Liner placements driving discovery via similar-artist and genre conquesting", price: 4000 },
+      { name: "Programmatic Display & Video", description: "Banner + video display across high-affinity 3PA targets and geofenced K-pop event audiences", price: 3000 },
+      { name: "Apple Music Sales", description: "Coordinated single sales windows to force Apple Music Korea + global K-pop chart positions", price: 2000 },
       { name: "Shazam Campaign", description: "Attributable Shazams to signal Apple Music algorithms and Korean radio", price: 2000 },
-      { name: "Clipping Support", description: "Scaled bulk UGC distribution + content packaging for micro-creator + stan account seeding (~2x the volume of a typical KOL release)", price: 6000 },
-      { name: "Fan Pages", description: "Owned-and-operated fan pages across 3 channels — daily content publishing, audience growth, comment section management. $10K/mo for 3 months", price: 30000 },
     ],
     subtotal: 143000,
     setupFee: { label: "Campaign Retainer + Agency Fees (15% on paid spend)", amount: 31450 },
@@ -460,7 +460,7 @@ export const keyveatz: ProjectData = {
   },
 
   nextSteps: [
-    { step: 1, title: "Approve Tier + Sign", description: "Brian + CJ leadership pick a tier ($150K / $175K / $200K) and sign off. CCD sends a formal agreement and the first invoice." },
+    { step: 1, title: "Approve Tier + Sign", description: "CJ leadership picks a tier ($150K / $175K / $200K) and signs off. CCD sends a formal agreement and the first invoice." },
     { step: 2, title: "Onboarding Questionnaire", description: "Short intake — current ad accounts, Spotify For Artists access, AOMG label CRM bridge needs, KEYVEATZ team contacts, creator network blacklist." },
     { step: 3, title: "Channel Build (Week 1–2)", description: "Set up Meta, TikTok, YouTube, Twitter, Programmatic, Spotify ad accounts; install pixels; brief and contract first Influencer Campaign wave; activate Strive.fm." },
     { step: 4, title: "Pre-Release Activation (Week 3–8)", description: "First teaser content paid push goes live, first influencer wave activates, Apple Music Sales + Shazam infrastructure coordinated. Pacing dashboard live." },
@@ -469,7 +469,7 @@ export const keyveatz: ProjectData = {
 
   cta: {
     headline: "First-ever AOMG × H1GHR girl group. Once-in-a-decade window. Let's not miss it.",
-    body: "KEYVEATZ has the rarest asset in 5th-gen K-pop right now — institutional hip-hop credibility from the labels that broke Korean rap globally. The only thing standing between this moment and a Top-3 5th-gen girl group outcome is the per-channel paid + influencer + chart-force stack to convert the credibility into compounding monthly listeners and chart positions. Crowd Control Digital has run this exact architecture for KISS OF LIFE, MONSTA X, and POW. Three tiers. One drop. June 29.",
+    body: "KEYVEATZ has the rarest asset in 5th-gen K-pop right now — institutional hip-hop credibility from the labels that broke Korean rap globally. The only thing standing between this moment and a Top-3 5th-gen girl group outcome is the per-channel paid + Influencer + Twitter + Fan Pages + chart-force stack that converts the credibility into compounding monthly listeners and chart positions. Crowd Control Digital has built and run this architecture across multiple major K-pop release cycles. Three tiers. One drop. June 29.",
     email: "geoff@crowdcontroldigital.com",
   },
 
