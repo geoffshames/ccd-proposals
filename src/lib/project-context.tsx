@@ -196,7 +196,16 @@ export type ProjectData = {
 const ProjectContext = createContext<ProjectData | null>(null);
 
 export function ProjectProvider({ data, children }: { data: ProjectData; children: ReactNode }) {
-  return <ProjectContext.Provider value={data}>{children}</ProjectContext.Provider>;
+  const accentDim = data.accentColor + "1A"; // ~10% opacity
+  const styleVars = {
+    "--color-accent": data.accentColor,
+    "--color-accent-dim": accentDim,
+  } as React.CSSProperties;
+  return (
+    <div style={styleVars}>
+      <ProjectContext.Provider value={data}>{children}</ProjectContext.Provider>
+    </div>
+  );
 }
 
 export function useProject(): ProjectData {
