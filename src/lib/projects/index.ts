@@ -10,6 +10,7 @@ import { forrestFrank } from "./forrest-frank";
 import { wonder } from "./wonder";
 import { chadCisneros } from "./chad-cisneros";
 import { lngshot } from "./lngshot";
+import { keyveatz } from "./keyveatz";
 import type { ProjectData } from "../project-context";
 
 export const PROJECTS: Record<string, ProjectData> = {
@@ -25,6 +26,7 @@ export const PROJECTS: Record<string, ProjectData> = {
   "wonder": wonder,
   "chad-cisneros": chadCisneros,
   "lngshot": lngshot,
+  "keyveatz": keyveatz,
 };
 
 export function getProject(slug: string): ProjectData | undefined {

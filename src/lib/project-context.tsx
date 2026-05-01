@@ -84,6 +84,24 @@ export type ProjectData = {
       strength?: string;
     }[];
   };
+  tiers?: {
+    sectionNumber?: string;
+    heading?: string;
+    subheading?: string;
+    footnote?: string;
+    tiers: {
+      label: string;
+      name: string;
+      tagline?: string;
+      price: string;
+      priceSuffix?: string;
+      priceContext?: string;
+      includes: string[];
+      excludes?: string[];
+      footerNote?: string;
+      featured?: boolean;
+    }[];
+  };
   timelineHeading?: string;
   timelineSubheading?: string;
   timelineImageCaption?: string;

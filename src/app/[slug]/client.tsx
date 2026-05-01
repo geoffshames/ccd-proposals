@@ -8,6 +8,7 @@ import { Overview } from "@/components/Overview";
 import { Audience } from "@/components/Audience";
 import { Targets } from "@/components/Targets";
 import { Competitive } from "@/components/Competitive";
+import { Tiers } from "@/components/Tiers";
 import { Timeline } from "@/components/Timeline";
 import { Deliverables } from "@/components/Deliverables";
 import { Scope } from "@/components/Scope";
@@ -30,6 +31,7 @@ export function ProposalClient({ project }: { project: ProjectData }) {
         <Audience />
         <Targets />
         <Competitive />
+        <Tiers />
         <ImageBreak
           src={project.images.hero1}
           alt={`${project.client.name} brand direction`}
