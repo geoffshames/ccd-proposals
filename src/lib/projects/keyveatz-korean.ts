@@ -3,7 +3,7 @@ import type { ProjectData } from "../project-context";
 export const keyveatzKorean: ProjectData = {
   accentColor: "#FD3737",
   language: "ko",
-  languageAlternate: { slug: "keyveatz", label: "English Version", code: "EN" },
+  languageAlternates: [{ slug: "keyveatz", label: "English Version", code: "EN" }],
 
   client: {
     name: "KEYVEATZ",

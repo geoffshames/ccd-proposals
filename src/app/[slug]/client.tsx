@@ -18,12 +18,14 @@ import { Footer } from "@/components/Footer";
 import { AboutCCD } from "@/components/AboutCCD";
 import { ImageBreak } from "@/components/ImageBreak";
 import { CursorGlow } from "@/components/CursorGlow";
+import { LanguageToggle } from "@/components/LanguageToggle";
 
 export function ProposalClient({ project }: { project: ProjectData }) {
   return (
     <ProjectProvider data={project}>
       <main>
         <CursorGlow />
+        <LanguageToggle />
         <Navigation />
         <Hero />
         <Discovery />

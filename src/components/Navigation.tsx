@@ -73,28 +73,12 @@ export function Navigation() {
               ))}
             </div>
 
-            <div className="hidden md:flex items-center gap-3">
-              {PROJECT.languageAlternate && (
-                <div className="flex items-center text-[11px] font-mono tracking-[0.12em] uppercase border border-text-muted/30">
-                  <span className="px-2.5 py-1.5 bg-accent text-white">
-                    {PROJECT.language === "ko" ? "KO" : "EN"}
-                  </span>
-                  <a
-                    href={`/${PROJECT.languageAlternate.slug}`}
-                    className="px-2.5 py-1.5 text-text-muted hover:text-text-primary hover:bg-bg-card transition-colors"
-                    aria-label={`Switch to ${PROJECT.languageAlternate.label}`}
-                  >
-                    {PROJECT.languageAlternate.code}
-                  </a>
-                </div>
-              )}
-              <a
-                href="#next-steps"
-                className="text-[11px] font-mono tracking-[0.1em] uppercase text-bg bg-accent px-5 py-2 hover:bg-accent/90 transition-colors"
-              >
-                Contact
-              </a>
-            </div>
+            <a
+              href="#next-steps"
+              className="hidden md:block text-[11px] font-mono tracking-[0.1em] uppercase text-bg bg-accent px-5 py-2 hover:bg-accent/90 transition-colors"
+            >
+              Contact
+            </a>
 
             {/* Mobile hamburger */}
             <button
@@ -128,15 +112,7 @@ export function Navigation() {
                       {item.label}
                     </a>
                   ))}
-                  {PROJECT.languageAlternate && (
-                    <a
-                      href={`/${PROJECT.languageAlternate.slug}`}
-                      className="block px-3 py-2 text-[12px] font-mono text-accent hover:text-text-primary uppercase tracking-[0.1em] border-t border-border mt-2 pt-3"
-                      onClick={() => setMobileOpen(false)}
-                    >
-                      → {PROJECT.languageAlternate.label} ({PROJECT.languageAlternate.code})
-                    </a>
-                  )}
+
                 </div>
               </motion.div>
             )}
