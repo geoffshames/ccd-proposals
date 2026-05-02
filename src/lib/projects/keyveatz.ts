@@ -2,6 +2,8 @@ import type { ProjectData } from "../project-context";
 
 export const keyveatz: ProjectData = {
   accentColor: "#FD3737",
+  language: "en",
+  languageAlternate: { slug: "keyveatz-korean", label: "한국어 버전", code: "KO" },
 
   client: {
     name: "KEYVEATZ",

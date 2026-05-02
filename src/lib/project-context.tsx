@@ -191,6 +191,12 @@ export type ProjectData = {
     metric: string;
     description: string;
   }[];
+  language?: "en" | "ko";
+  languageAlternate?: {
+    slug: string;
+    label: string; // e.g. "한국어" or "English"
+    code: string;  // e.g. "KO" or "EN"
+  };
 };
 
 const ProjectContext = createContext<ProjectData | null>(null);

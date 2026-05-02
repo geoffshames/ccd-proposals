@@ -50,8 +50,8 @@ export function Navigation() {
           transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
           className="fixed top-0 left-0 right-0 z-50 backdrop-blur-xl bg-bg/80 border-b border-border"
         >
-          <div className="max-w-6xl mx-auto px-6 h-14 flex items-center justify-between">
-            <span className="text-[12px] font-mono tracking-[0.15em] text-text-muted uppercase">
+          <div className="max-w-6xl mx-auto px-6 h-14 flex items-center justify-between gap-4">
+            <span className="text-[12px] font-mono tracking-[0.15em] text-text-muted uppercase whitespace-nowrap">
               {PROJECT.client.name} <span className="text-text-muted/30">×</span> {PROJECT.studio.name}
             </span>
 
@@ -73,12 +73,28 @@ export function Navigation() {
               ))}
             </div>
 
-            <a
-              href="#next-steps"
-              className="hidden md:block text-[11px] font-mono tracking-[0.1em] uppercase text-bg bg-accent px-5 py-2 hover:bg-accent/90 transition-colors"
-            >
-              Contact
-            </a>
+            <div className="hidden md:flex items-center gap-3">
+              {PROJECT.languageAlternate && (
+                <div className="flex items-center text-[11px] font-mono tracking-[0.12em] uppercase border border-text-muted/30">
+                  <span className="px-2.5 py-1.5 bg-accent text-white">
+                    {PROJECT.language === "ko" ? "KO" : "EN"}
+                  </span>
+                  <a
+                    href={`/${PROJECT.languageAlternate.slug}`}
+                    className="px-2.5 py-1.5 text-text-muted hover:text-text-primary hover:bg-bg-card transition-colors"
+                    aria-label={`Switch to ${PROJECT.languageAlternate.label}`}
+                  >
+                    {PROJECT.languageAlternate.code}
+                  </a>
+                </div>
+              )}
+              <a
+                href="#next-steps"
+                className="text-[11px] font-mono tracking-[0.1em] uppercase text-bg bg-accent px-5 py-2 hover:bg-accent/90 transition-colors"
+              >
+                Contact
+              </a>
+            </div>
 
             {/* Mobile hamburger */}
             <button
@@ -112,6 +128,15 @@ export function Navigation() {
                       {item.label}
                     </a>
                   ))}
+                  {PROJECT.languageAlternate && (
+                    <a
+                      href={`/${PROJECT.languageAlternate.slug}`}
+                      className="block px-3 py-2 text-[12px] font-mono text-accent hover:text-text-primary uppercase tracking-[0.1em] border-t border-border mt-2 pt-3"
+                      onClick={() => setMobileOpen(false)}
+                    >
+                      → {PROJECT.languageAlternate.label} ({PROJECT.languageAlternate.code})
+                    </a>
+                  )}
                 </div>
               </motion.div>
             )}
