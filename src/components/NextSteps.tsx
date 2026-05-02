@@ -62,11 +62,11 @@ export function NextSteps() {
         {/* Contact CTA */}
         <ScrollReveal delay={0.3} variant="scaleIn" className="mt-16">
           <TiltCard className="group max-w-xl mx-auto">
-            <div className="ccd-card rounded-none p-8 text-center hover:bg-bg-card-hover transition-all duration-500">
-              <h3 className="text-lg font-semibold text-text-primary mb-2">
+            <div className="ccd-card rounded-none p-10 text-center hover:bg-bg-card-hover transition-all duration-500">
+              <p className="text-[15px] md:text-[16px] text-text-primary leading-relaxed mb-6" style={{ fontFamily: "var(--font-sans)" }}>
                 {PROJECT.cta.body}
-              </h3>
-              <p className="text-[14px] text-text-muted mb-6">
+              </p>
+              <p className="text-[13px] text-text-muted/70 mb-6 font-mono tracking-wide">
                 We&apos;re here to clarify anything about the project.
               </p>
               <motion.a
