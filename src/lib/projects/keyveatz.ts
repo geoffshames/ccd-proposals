@@ -414,11 +414,11 @@ export const keyveatz: ProjectData = {
       "Strive.fm in-rideshare playlisting setup and management across target US markets",
       "Apple Music Sales coordination + Shazam Campaign infrastructure to force chart positions",
       "Spotify Showcase + Audio Liner placements running through the launch window",
-      
       "Weekly pacing dashboard, bi-weekly performance reviews, final campaign brief with EP 3 readiness recommendations",
       "Coordination with AOMG / H1GHR creative teams on shared deliverables (MV launches, photo shoots, press timing)",
     ],
     excluded: [
+      "Pop-up activations (Korea + US) — IRL pop-up events, fan meet-ups, branded retail experiences in the post-EP-2 sustain phase. Available as additional-budget add-on; for a debut girl group, two pop-ups (one Seoul + one LA / NYC) is among the highest-impact IRL levers we know of for converting digital momentum into permanent fandom — scoped and quoted separately",
       "Music video production, photo shoots, and styling — handled by AOMG / H1GHR creative teams (CCD coordinates, does not produce)",
       "Music production, mixing, mastering, A&R (handled by AOMG / H1GHR)",
       "Direct fan-club platform management on Weverse / Bubble / Berriz (CCD focuses on owned-stack growth)",
