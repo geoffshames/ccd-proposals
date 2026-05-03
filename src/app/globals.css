@@ -174,3 +174,11 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-text-fill-color: transparent;
   animation: gradient-shift 6s ease infinite;
 }
+
+/* NDA gate — custom scrollbar inside the agreement scroll box.
+   Webkit-only; Firefox uses scrollbar-width below. */
+.nda-scroll > div::-webkit-scrollbar { width: 8px; }
+.nda-scroll > div::-webkit-scrollbar-track { background: rgba(255, 255, 255, 0.02); }
+.nda-scroll > div::-webkit-scrollbar-thumb { background: rgba(255, 255, 255, 0.18); }
+.nda-scroll > div::-webkit-scrollbar-thumb:hover { background: rgba(255, 255, 255, 0.28); }
+.nda-scroll > div { scrollbar-width: thin; scrollbar-color: rgba(255,255,255,0.22) rgba(255,255,255,0.02); }

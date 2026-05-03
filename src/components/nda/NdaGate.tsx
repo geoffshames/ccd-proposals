@@ -147,43 +147,51 @@ export function NdaGate({
           </p>
         </motion.div>
 
-        {/* Agreement preamble */}
+        {/* Agreement — collapsed into a scroll box so the form is the focal point.
+            The full text is still here, just contained. */}
         <section className="mt-14">
-          <div className="border-t border-white/[0.10] pt-10">
+          <div className="flex items-center justify-between mb-4">
             <h2
-              className="font-bold uppercase tracking-tight text-[22px] sm:text-[26px] mb-6"
+              className="font-bold uppercase tracking-tight text-[18px] sm:text-[20px]"
               style={{ fontFamily: "var(--font-heading), var(--font-sans), sans-serif" }}
             >
               Non-Disclosure and Confidentiality Agreement
             </h2>
-            <p className="text-[14.5px] sm:text-[15px] leading-[1.75] text-white/80">
-              {recitals}
-            </p>
+            <div className="font-mono uppercase tracking-[0.18em] text-[10px] text-white/45 hidden sm:block">
+              Scroll to read
+            </div>
           </div>
-        </section>
 
-        {/* Numbered sections */}
-        <section className="mt-10 space-y-9">
-          {sections.map((s) => (
-            <article key={s.n} className="flex gap-5">
-              <div className="font-mono text-[13px] text-white/40 pt-[2px] w-8 shrink-0">
-                {String(s.n).padStart(2, "0")}
-              </div>
-              <div className="flex-1 space-y-3 text-[14.5px] leading-[1.75] text-white/80">
-                <p>{s.body}</p>
-                {s.sub?.map((sub) => (
-                  <p key={sub.label} className="pl-4 sm:pl-6 border-l border-white/[0.10]">
-                    <span className="font-mono text-[12.5px] text-white/55 mr-2">{sub.label}</span>
-                    {sub.body}
-                  </p>
-                ))}
-              </div>
-            </article>
-          ))}
-        </section>
+          <div className="nda-scroll relative border border-white/[0.12] bg-white/[0.02]">
+            <div className="max-h-[460px] overflow-y-auto px-5 sm:px-7 py-6 sm:py-8 text-[13.5px] leading-[1.75] text-white/80 space-y-7">
+              <p>{recitals}</p>
 
-        <section className="mt-12 border-t border-white/[0.10] pt-8 text-[14px] uppercase tracking-[0.18em] font-mono text-white/55">
-          {WITNESS}
+              {sections.map((s) => (
+                <article key={s.n} className="flex gap-4">
+                  <div className="font-mono text-[12px] text-white/40 pt-[2px] w-7 shrink-0">
+                    {String(s.n).padStart(2, "0")}
+                  </div>
+                  <div className="flex-1 space-y-2.5">
+                    <p>{s.body}</p>
+                    {s.sub?.map((sub) => (
+                      <p key={sub.label} className="pl-3 sm:pl-5 border-l border-white/[0.10]">
+                        <span className="font-mono text-[11.5px] text-white/55 mr-2">{sub.label}</span>
+                        {sub.body}
+                      </p>
+                    ))}
+                  </div>
+                </article>
+              ))}
+
+              <p className="pt-3 mt-2 border-t border-white/[0.10] text-[12.5px] uppercase tracking-[0.18em] font-mono text-white/55">
+                {WITNESS}
+              </p>
+            </div>
+
+            {/* Bottom fade — softens the scroll edge */}
+            <div className="pointer-events-none absolute inset-x-0 bottom-0 h-10 bg-gradient-to-t from-[#0a0a0a] to-transparent" />
+          </div>
+
         </section>
 
         {/* Signature form — this is where the e-signature happens */}
@@ -230,29 +238,48 @@ export function NdaGate({
               />
             </div>
 
-            {/* Live signature preview */}
-            <div className="mt-8 border border-dashed border-white/[0.15] p-5 bg-black/40">
-              <div className="font-mono uppercase tracking-[0.2em] text-[10.5px] text-white/45 mb-2">
+            {/* Live signature preview — real handwriting font, signed on a line */}
+            <div className="mt-8 border border-dashed border-white/[0.15] px-6 py-7 bg-black/40">
+              <div className="font-mono uppercase tracking-[0.2em] text-[10.5px] text-white/45 mb-5">
                 Electronic Signature Preview
               </div>
-              <div
-                className="text-white/95"
-                style={{
-                  fontFamily: "var(--font-heading), var(--font-sans), sans-serif",
-                  fontStyle: "italic",
-                  fontSize: "clamp(1.6rem, 3vw, 2.2rem)",
-                  letterSpacing: "0.01em",
-                  minHeight: "1.6em",
-                }}
-              >
-                {fullName.trim() || (
-                  <span className="text-white/25 not-italic font-mono text-[14px]">
-                    Your typed name will appear here
-                  </span>
-                )}
+              <div className="relative">
+                {/* Signature line */}
+                <div className="absolute inset-x-0 bottom-0 border-b border-white/30" />
+                <div
+                  className="pb-2 pt-1 text-white"
+                  style={{
+                    fontFamily: "var(--font-caveat), \"Brush Script MT\", cursive",
+                    fontWeight: 700,
+                    fontSize: "clamp(2.2rem, 4.5vw, 3.4rem)",
+                    lineHeight: "1.05",
+                    transform: "rotate(-1.2deg)",
+                    transformOrigin: "left bottom",
+                    letterSpacing: "0.01em",
+                    minHeight: "1.05em",
+                  }}
+                >
+                  {fullName.trim() || (
+                    <span
+                      className="text-white/25 font-mono"
+                      style={{
+                        fontFamily: "var(--font-mono), monospace",
+                        fontWeight: 400,
+                        fontSize: "14px",
+                        letterSpacing: "0",
+                        transform: "none",
+                        display: "inline-block",
+                      }}
+                    >
+                      Your typed name will appear here
+                    </span>
+                  )}
+                </div>
               </div>
-              <div className="mt-2 font-mono text-[12px] text-white/55">
-                {email.trim() || "—"} · {effectiveDate}
+              <div className="mt-4 flex flex-col sm:flex-row sm:items-center sm:gap-3 gap-1 font-mono text-[11.5px] text-white/55 uppercase tracking-[0.16em]">
+                <span>x — {email.trim() || "—"}</span>
+                <span className="hidden sm:inline text-white/25">·</span>
+                <span>{effectiveDate}</span>
               </div>
             </div>
 
