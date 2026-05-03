@@ -2,6 +2,7 @@ import { littleTokyoReborn } from "./little-tokyo-reborn";
 import { ykNiece } from "./yk-niece";
 import { suicideboys } from "./suicideboys";
 import { monstaX } from "./monsta-x";
+import { breakingBenjamin } from "./breaking-benjamin";
 import { trim } from "./trim";
 import { alexWarren } from "./alex-warren";
 import { nadhifBasalamah } from "./nadhif-basalamah";
@@ -19,6 +20,7 @@ export const PROJECTS: Record<string, ProjectData> = {
   "yk-niece": ykNiece,
   "suicideboys": suicideboys,
   "monsta-x": monstaX,
+  "breaking-benjamin": breakingBenjamin,
   "trim": trim,
   "alex-warren": alexWarren,
   "nadhif-basalamah": nadhifBasalamah,
