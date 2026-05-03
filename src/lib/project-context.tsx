@@ -3,6 +3,19 @@
 import { createContext, useContext, type ReactNode } from "react";
 
 export type ProjectData = {
+  /**
+   * Optional NDA gate. When true, the proposal page is hidden behind a mutual NDA
+   * signing flow until the visitor signs (verified by signed cookie + Supabase row).
+   * See /api/nda/sign and /components/NdaGate.
+   */
+  requireNda?: boolean;
+  /**
+   * Optional override for the legal entity name that signs the NDA.
+   * Defaults to client.name when not set.
+   * Example: "Acme Records, LLC" instead of "Acme".
+   */
+  clientLegalName?: string;
+
   accentColor: string;
   client: {
     name: string;
