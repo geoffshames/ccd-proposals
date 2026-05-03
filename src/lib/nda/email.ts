@@ -359,13 +359,18 @@ function baseShell(opts: { preheader: string; body: string; auditFooter: string 
 
         <!-- Header: accent stripe + wordmark -->
         <tr><td style="height:4px;background:${ACCENT};line-height:4px;font-size:0;">&nbsp;</td></tr>
-        <tr><td style="padding:22px 40px 4px 40px;">
+        <tr><td style="padding:24px 40px 6px 40px;">
           <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
             <tr>
-              <td style="font-family:${SANS_FONT};font-weight:800;font-size:14px;letter-spacing:.24em;text-transform:uppercase;color:${TEXT};">
-                Crowd <span style="color:${ACCENT};">Control</span> Digital
+              <td valign="middle" style="line-height:0;">
+                <a href="https://proposal.crowdcontroldigital.com" style="text-decoration:none;border:0;outline:none;">
+                  <img src="https://proposal.crowdcontroldigital.com/brand/CC-LOGO-2024-WHITE.png"
+                       alt="Crowd Control Digital"
+                       width="170" height="24"
+                       style="display:block;width:170px;height:auto;max-width:170px;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic;" />
+                </a>
               </td>
-              <td align="right" style="font-family:${MONO_FONT};font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;color:${TEXT_FAINT};">
+              <td valign="middle" align="right" style="font-family:${MONO_FONT};font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;color:${TEXT_FAINT};">
                 Confidential
               </td>
             </tr>
