@@ -143,6 +143,7 @@ export type ProjectData = {
   };
   quote?: {
     model?: "project" | "retainer";
+    introMode?: boolean;
     currency: string;
     lineItems: {
       name: string;

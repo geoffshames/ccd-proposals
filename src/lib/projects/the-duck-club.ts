@@ -19,8 +19,8 @@ export const theDuckClub: ProjectData = {
   project: {
     name: "WIRE THE YEAR",
     tagline:
-      "9 months. One unified fan operating system across Treefort, Flipside, Treefort Music Hall, Shrine Social Club, and Hap Hap Lounge. A loyalty layer that compounds repeat-buyer rate from the industry-typical 12–17% toward 25%+. A brand visual system that finally matches the cultural authority Boise already gave you. Built by the team running TOUR CONTROL for the biggest tours in the game — calibrated for the only multi-venue indie promoter in the country with a Cultural Ambassador title.",
-    type: "Full-Service Marketing Retainer + Fan Operating System Build",
+      "One unified fan operating system across Treefort, Flipside, Treefort Music Hall, Shrine Social Club, and Hap Hap Lounge. A loyalty layer that compounds repeat-buyer rate from the industry-typical 12–17% toward 25%+. A brand visual system that finally matches the cultural authority Boise already gave you. Built by the team running TOUR CONTROL for the biggest tours in the game — calibrated for the only multi-venue indie promoter in the country with a Cultural Ambassador title.",
+    type: "Full-Service Marketing Engagement — Conversation Starter",
     startDate: "July 1, 2026",
     endDate: "March 31, 2027",
     duration: "9 Months",
@@ -30,7 +30,7 @@ export const theDuckClub: ProjectData = {
   overview: {
     heading: "The System",
     summary:
-      "Crowd Control Digital will operate as Duck Club's full-service marketing partner from July 2026 through Treefort 2027 weekend — nine months calibrated to take the only integrated three-venue + two-festival + Cultural-Ambassador promoter in the country and turn its once-a-year March spike into a 365-day fan operating system. Six concurrent workstreams: a unified Fan Operating System that consolidates Treefort, Flipside, Music Hall, Shrine, and Hap Hap data into one segmentable view across Mailchimp + Eventbrite + a new SMS layer; a Loyalty & Referral program (Founders' Club / Treefort Member) engineered to push repeat-buyer rate from the industry-typical 12–17% toward 25%+; a Brand & Visual System refresh that carries the Duck orange forward and finally gives the brand voice a design system that matches it, including a rebuilt theduckclub.com; a Year-Round Content Engine that fills the nine non-festival months with announce drops, show kits, and venue programming content; Paid Media Management across Meta, Google, and TikTok with Spotify lookalike expansion building on what already works in Eventbrite; and TOUR CONTROL per-show pacing intelligence applied to weekly Music Hall + Shrine onsales so budget lands on the shows that need it. The outcome: an artist-team-owned, Eventbrite-independent superfan stack that converts Treefort wristbands into year-round venue ticket holders and Flipside campers — with measurement underneath every dollar that goes out the door.",
+      "Crowd Control Digital is the kind of marketing partner who would take the only integrated three-venue + two-festival + Cultural-Ambassador promoter in the country and turn its once-a-year March spike into a 365-day fan operating system. Six concurrent workstreams: a unified Fan Operating System that consolidates Treefort, Flipside, Music Hall, Shrine, and Hap Hap data into one segmentable view across Mailchimp + Eventbrite + a new SMS layer; a Loyalty & Referral program (Founders' Club / Treefort Member) engineered to push repeat-buyer rate from the industry-typical 12–17% toward 25%+; a Brand & Visual System refresh that carries the Duck orange forward and finally gives the brand voice a design system that matches it, including a rebuilt theduckclub.com; a Year-Round Content Engine that fills the nine non-festival months with announce drops, show kits, and venue programming content; Paid Media Management across Meta, Google, and TikTok with Spotify lookalike expansion building on what already works in Eventbrite; and TOUR CONTROL per-show pacing intelligence applied to weekly Music Hall + Shrine onsales so budget lands on the shows that need it. The outcome: an artist-team-owned, Eventbrite-independent superfan stack that converts Treefort wristbands into year-round venue ticket holders and Flipside campers — with attribution underneath every show, every drop, every announce.",
     objectives: [
       "Build the unified Fan Operating System — consolidate Treefort + Flipside + Music Hall + Shrine + Hap Hap ticket-buyer data into a single segmentable customer view, layer SMS on top of the existing 60%-open-rate Mailchimp program, and stand up 8–12 lifecycle automations that keep Duck Club in front of fans across the calendar",
       "Launch the 'Founders' Club' / Treefort Member loyalty + referral program — push repeat-buyer rate from the industry-typical 12–17% toward 25%+ via tiered perks, presale priority, and referral mechanics (industry data: referred buyers convert 4× and retain 37% better)",
@@ -49,7 +49,7 @@ export const theDuckClub: ProjectData = {
           "Fan Operating System, Loyalty & Referral, Brand & Visual System, Year-Round Content Engine, Paid Media Management, and TOUR CONTROL per-show intelligence — all running concurrently from kickoff",
       },
       { value: 50, suffix: "K+", label: "SMS List Target" },
-      { value: 9, label: "Month Engagement" },
+      { value: 3, label: "Anchor Goals" },
       { value: 5, label: "Properties Unified" },
     ],
   },
@@ -217,75 +217,10 @@ export const theDuckClub: ProjectData = {
     ],
   },
 
-  tiers: {
-    sectionNumber: "06",
-    heading: "Three Engagement Tiers. One Outcome.",
-    subheading:
-      "Same nine-month engagement window. Same six workstreams. Three calibrations of execution depth. Standard is recommended — calibrated to deliver the full Wire The Year strategy without tradeoffs across the workstreams. All tiers exclude pass-through ad spend, billed separately to platforms with a 15% management fee.",
-    footnote:
-      "Setup fee is one-time, billed Month 1. Retainer is monthly across the 9-month engagement. Pass-through ad spend is separate, billed directly to platforms (Meta / Google / TikTok), with a 15% management fee added by CCD. Final scope tuning happens at kickoff.",
-    tiers: [
-      {
-        label: "Tier 01 — Lean",
-        name: "$155K",
-        tagline: "Tighter creative production hours and content volume across the same six workstreams. Best fit if the priority is starting smaller and scaling the engagement after the first wins land.",
-        price: "$155,000",
-        priceSuffix: "all-in",
-        priceContext: "$15K/mo × 9 months + $20K setup",
-        includes: [
-          "Fan Operating System — CRM consolidation, single-list segmentation, 4 lifecycle automation flows",
-          "Loyalty & Referral — Founders' Club tier design, referral mechanics, perks structure",
-          "Brand & Visual System — show poster design system + social templates (no full site rebuild)",
-          "Year-Round Content Engine — editorial calendar + 2 announce drop campaign waves (vs. 4 in Standard)",
-          "Paid Media — Meta + Google management; TikTok added at Standard tier",
-          "TOUR CONTROL — applied to the top 8 venue onsales per quarter (vs. all in Standard)",
-        ],
-        excludes: ["Full theduckclub.com site rebuild (available as add-on)", "Custom video / shoot production"],
-        footerNote: "Defensible minimum. Same strategic spine, slimmer execution. The loyalty and brand modernization workstreams move on a longer timeline at this tier.",
-      },
-      {
-        label: "Tier 02 — Standard",
-        name: "$215K",
-        tagline: "Recommended. All six workstreams running concurrently at full execution depth, including a complete theduckclub.com rebuild and the full Treefort 2027 announce drop campaign series.",
-        price: "$215,000",
-        priceSuffix: "all-in",
-        priceContext: "$20K/mo × 9 months + $35K setup",
-        featured: true,
-        includes: [
-          "Fan Operating System — full CRM consolidation across 5 properties, advanced segmentation, 8–12 lifecycle flows, SMS layer build (Attentive or Klaviyo)",
-          "Loyalty & Referral — Founders' Club + Treefort Member tier, presale priority architecture, referral mechanics, perks/benefits map, retention dashboard",
-          "Brand & Visual System — visual ID refresh, full theduckclub.com rebuild, per-venue + per-show poster design system, Treefort lookbook",
-          "Year-Round Content Engine — editorial calendar + 4 multi-wave Treefort 2027 announce drop campaigns + per-show content kits + venue BTS",
-          "Paid Media — Meta + Google + TikTok management, Spotify lookalike expansion beyond Eventbrite Wizard, single performance dashboard",
-          "TOUR CONTROL — applied to all weekly Music Hall + Shrine onsales, with per-show pacing intelligence and dynamic budget allocation",
-        ],
-        excludes: ["Custom video / shoot production (available as add-on, scoped per shoot)"],
-        footerNote: "What it takes to get from today to Treefort 2027 with a fan operating system that compounds. Real investment in every workstream that matters; no fat anywhere.",
-      },
-      {
-        label: "Tier 03 — Premium",
-        name: "$275K",
-        tagline: "Standard plus heavier creative production (tour-style video / photo shoots), a dedicated named account team, and deeper TOUR CONTROL coverage extended across every confirmed venue show.",
-        price: "$275,000",
-        priceSuffix: "all-in",
-        priceContext: "$25K/mo × 9 months + $50K setup",
-        includes: [
-          "Everything in Standard, plus —",
-          "Dedicated account team (account lead + creative + paid + analytics, all named, all Boise-cycle-fluent)",
-          "Quarterly creative production shoots — venue interiors, Treefort BTS, artist features, content for the year-round engine",
-          "TOUR CONTROL extended to every confirmed announce-and-onsale across all venues, with multi-show portfolio optimization",
-          "Treefort 2027 on-site activation strategy + measurement (data capture stations, QR-driven SMS keyword captures, post-festival debrief deck)",
-          "Year-end strategic planning session for the 2027–2028 cycle",
-        ],
-        footerNote: "The full court press. When six workstreams are all firing at maximum depth, the compounding effect on year-two retention math gets meaningfully larger.",
-      },
-    ],
-  },
-
-  timelineHeading: "9-Month Roadmap",
+  timelineHeading: "What an Engagement Could Look Like",
   timelineSubheading:
-    "From kickoff through Treefort 2027 weekend — five phases calibrated to the Duck Club calendar: foundation in the summer, build and launch in the fall, Treefort announce + year-end optimization in winter, onsale crescendo in early 2027, festival week activation and debrief in March.",
-  timelineImageCaption: "9 Months / 5 Phases / 1 Operating System",
+    "Five-phase shape we'd propose for a Treefort-cycle engagement — foundation in the summer, build and launch in the fall, Treefort announce + year-end optimization in winter, onsale crescendo in early 2027, and festival week activation. Final calendar gets tuned to your team's priorities on a first call.",
+  timelineImageCaption: "5 Phases / 1 Operating System",
   timeline: [
     {
       phase: "Phase 1 — Discovery & Foundation",
@@ -401,7 +336,7 @@ export const theDuckClub: ProjectData = {
       category: "05 — Paid Media Management",
       icon: "target",
       items: [
-        { name: "Meta + Google + TikTok Management", quantity: "3 platforms", description: "Year-round paid social and search management across all 3 venues + 2 festivals. Spotify lookalike expansion building on what Megan already runs through the Eventbrite Audience Wizard. Ad spend pass-through; 15% management fee." },
+        { name: "Meta + Google + TikTok Management", quantity: "3 platforms", description: "Year-round paid social and search management across all 3 venues + 2 festivals. Spotify lookalike expansion building on what Megan already runs through the Eventbrite Audience Wizard." },
         { name: "Creative Production for Paid", quantity: "Monthly cadence", description: "Paid-specific creative variants per platform (Reels, Shorts, In-Feed TikTok, Meta carousels). Built from the unified content engine to ensure brand consistency at paid scale." },
         { name: "Performance Dashboard", quantity: "1 dashboard", description: "Single source of truth — spend, ROAS, attribution, audience growth, creative performance — across every platform, every property, every campaign cycle. Updated weekly." },
       ],
@@ -418,7 +353,7 @@ export const theDuckClub: ProjectData = {
   ],
 
   scope: {
-    subheading: "Everything included in the Standard tier engagement — and where the boundaries are. Lean and Premium tiers adjust execution depth, not scope shape.",
+    subheading: "What CCD typically owns inside a full-service engagement of this shape — and where the boundaries are. Specifics tune to your priorities on a first call.",
     included: [
       "Full strategic and tactical operation of all 6 workstreams across 9 months — from foundation (July) through Treefort 2027 weekend (March)",
       "CRM consolidation across Treefort + Flipside + Music Hall + Shrine + Hap Hap, including SMS layer build and 8–12 lifecycle automation flows",
@@ -430,7 +365,7 @@ export const theDuckClub: ProjectData = {
       "Monthly performance reporting + quarterly strategic review with Lori, Megan, and the Duck Club leadership team",
     ],
     excluded: [
-      "Pass-through ad spend (billed separately to platforms — Meta, Google, TikTok — with a 15% management fee added by CCD)",
+      "Pass-through ad spend (billed separately to platforms — Meta, Google, TikTok — managed by CCD with full transparency on spend vs. management)",
       "Custom video and photo shoot production (available as add-on at any tier — scoped and quoted per shoot)",
       "Talent fees, artist agreements, or any festival booking-related costs (Duck Club's existing operation)",
       "Venue physical signage production and printing (design included; print/install handled by Duck Club's local partners)",
@@ -441,45 +376,65 @@ export const theDuckClub: ProjectData = {
 
   quote: {
     model: "retainer",
+    introMode: true,
     currency: "USD",
     lineItems: [
-      { name: "Fan Operating System", description: "Unified customer view across 5 properties, SMS program build (Attentive or Klaviyo), Mailchimp segmentation overhaul, 8–12 lifecycle automation flows, monthly performance dashboard.", price: 5000, priceLabel: "/mo", recurring: true },
-      { name: "Loyalty & Referral", description: "Founders' Club / Treefort Member tier design + launch, referral mechanics, presale priority architecture, member retention dashboard. Targets 25%+ repeat-buyer rate by Treefort 2027.", price: 3000, priceLabel: "/mo", recurring: true },
-      { name: "Brand & Visual System", description: "Visual identity refresh (carries the Duck orange forward), full theduckclub.com rebuild, per-venue show poster design system, Treefort 2027 lookbook.", price: 4000, priceLabel: "/mo", recurring: true },
-      { name: "Year-Round Content Engine", description: "Editorial calendar across the 9 non-festival months, per-show content kits, 4 Treefort 2027 announce drop campaigns, venue BTS programming.", price: 3000, priceLabel: "/mo", recurring: true },
-      { name: "Paid Media Management", description: "Meta + Google + TikTok management. Spotify lookalike expansion beyond the Eventbrite Audience Wizard. Pass-through ad spend billed separately to platforms with a 15% management fee.", price: 3000, priceLabel: "/mo", recurring: true },
-      { name: "TOUR CONTROL Per-Show Intelligence", description: "CCD's proprietary pacing prediction model applied to all weekly Music Hall + Shrine + Hap Hap onsales. Per-show risk briefs, dynamic media allocation, quarterly model calibration.", price: 2000, priceLabel: "/mo", recurring: true },
+      {
+        name: "Fan Operating System",
+        description: "Unified customer view across Treefort, Flipside, Treefort Music Hall, Shrine Social Club, and Hap Hap Lounge. SMS program build (Attentive or Klaviyo) layered on top of the existing 60%-open-rate Mailchimp program. Behavioral segmentation overhaul. 8–12 lifecycle automations. Monthly performance dashboard.",
+        price: 0,
+        priceLabel: "—",
+      },
+      {
+        name: "Loyalty & Referral",
+        description: "Founders’ Club / Treefort Member tier design + launch. Presale priority architecture. Referral mechanics (industry data: referred buyers convert 4× and retain 37% better). Member retention dashboard. Targets 25%+ repeat-buyer rate by Treefort 2027.",
+        price: 0,
+        priceLabel: "—",
+      },
+      {
+        name: "Brand & Visual System",
+        description: "Visual identity refresh (carries the Duck orange forward). Full theduckclub.com rebuild. Per-venue show poster design system for Treefort Music Hall, Shrine, and Hap Hap. Treefort 2027 lookbook.",
+        price: 0,
+        priceLabel: "—",
+      },
+      {
+        name: "Year-Round Content Engine",
+        description: "Editorial calendar across the nine non-festival months. Per-show content kits. Multi-wave Treefort 2027 announce drop campaigns. Venue BTS programming.",
+        price: 0,
+        priceLabel: "—",
+      },
+      {
+        name: "Paid Media Management",
+        description: "Meta + Google + TikTok management. Spotify lookalike expansion building on what already runs through the Eventbrite Audience Wizard. Single performance dashboard across every property.",
+        price: 0,
+        priceLabel: "—",
+      },
+      {
+        name: "TOUR CONTROL Per-Show Intelligence",
+        description: "CCD’s proprietary pacing prediction model applied to every weekly Music Hall + Shrine + Hap Hap onsale. Per-show risk briefs, dynamic media allocation, quarterly model calibration.",
+        price: 0,
+        priceLabel: "—",
+      },
     ],
-    subtotal: 20000,
-    setupFee: { label: "One-Time Setup & Foundation Build", amount: 35000 },
+    subtotal: 0,
     discount: { label: "", percentage: 0, amount: 0 },
-    total: 215000,
+    total: 0,
     paymentSchedule: [
-      { milestone: "Month 1 (July 2026) — Setup + Retainer", percentage: 25.6, amount: 55000, due: "On signing" },
-      { milestone: "Month 2 (August 2026) — Retainer", percentage: 9.3, amount: 20000, due: "August 1, 2026" },
-      { milestone: "Month 3 (September 2026) — Retainer", percentage: 9.3, amount: 20000, due: "September 1, 2026" },
-      { milestone: "Month 4 (October 2026) — Retainer", percentage: 9.3, amount: 20000, due: "October 1, 2026" },
-      { milestone: "Month 5 (November 2026) — Retainer", percentage: 9.3, amount: 20000, due: "November 1, 2026" },
-      { milestone: "Month 6 (December 2026) — Retainer", percentage: 9.3, amount: 20000, due: "December 1, 2026" },
-      { milestone: "Month 7 (January 2027) — Retainer", percentage: 9.3, amount: 20000, due: "January 1, 2027" },
-      { milestone: "Month 8 (February 2027) — Retainer", percentage: 9.3, amount: 20000, due: "February 1, 2027" },
-      { milestone: "Month 9 (March 2027) — Retainer", percentage: 9.3, amount: 20000, due: "March 1, 2027" },
+      { milestone: "Intro call", percentage: 100, amount: 0, due: "Reply to schedule" },
     ],
-    paymentTerms: "Net 7 from invoice. Setup fee billed Month 1. All retainer line items billed monthly on the 1st. Pass-through ad spend billed separately to platforms with a 15% management fee added by CCD on each invoice cycle.",
+    paymentTerms: "Pricing and exact scope are calibrated to your team’s priorities, calendar, and existing stack on a 30-minute intro call. The shape above is the starting point.",
     paymentLink: "#",
   },
-
   nextSteps: [
-    { step: 1, title: "Approve & Sign", description: "Review the proposal, ask any questions, pick a tier (Lean / Standard / Premium). We'll send a formal agreement and the Month 1 invoice." },
-    { step: 2, title: "Onboarding Questionnaire", description: "A short intake covering Mailchimp + Eventbrite access, current ad accounts, social logins, venue ticketing systems, and key team contacts. Sent the same day the agreement is countersigned." },
-    { step: 3, title: "Discovery Sprint Kickoff", description: "Within Week 1: a half-day virtual or in-Boise kickoff with Lori, Megan, and the Duck Club leadership team. CRM consolidation plan + brand visual direction + loyalty program architecture all green-lit by end of Week 2." },
-    { step: 4, title: "Foundation Build (Phase 1)", description: "By end of August 2026: unified customer schema live, brand visual system approved, Founders' Club tier design locked, TOUR CONTROL onboarded across all venues, SMS program selected and procurement started." },
-    { step: 5, title: "Launch (Phase 2) — September 2026", description: "New theduckclub.com goes live, SMS program launches, first 4 lifecycle flows running, Founders' Club opens for member signup. Paid media management starts. From here forward, the year is wired." },
+    { step: 1, title: "Reply with a time", description: "30-minute intro call. Just a reply to lori@theduckclub.com → geoff@crowdcontroldigital.com gets it scheduled. Bring whoever you want from the Duck Club team — Megan especially welcome." },
+    { step: 2, title: "Walk through the shape", description: "On the call we'll walk through this six-workstream shape and show how it would calibrate to Duck Club specifically — what we'd start with in the first 30 days, what we'd hold for after Treefort 2027, and where the ROI compounds." },
+    { step: 3, title: "Tailored scope + pricing", description: "After the call, we'll send a tailored scope and pricing options calibrated to the priorities Duck Club surfaces — not a fixed pre-baked tier. Final shape, calendar, and budget all tuned to your team." },
+    { step: 4, title: "Decide on your timeline", description: "No pressure to move fast. The Treefort 2027 announce cycle gives an obvious natural kickoff window, but we can start sooner or later depending on what Duck Club wants to lead with." },
   ],
 
   cta: {
     headline: "Wire The Year. Then Compound It.",
-    body: "Duck Club already has the cultural authority, the venue stack, the festival reputation, and a team running better email than 95% of the market. The piece sitting on the table — the operating system that ties all five properties into one segmentable, sovereign, year-round fan engine, with a loyalty layer that finally rewards the people who already love this brand — is what nine months with CCD builds. Pick a tier and we'll send the agreement and Month 1 invoice over the same day.",
+    body: "Duck Club already has the cultural authority, the venue stack, the festival reputation, and a team running better email than 95% of the market. The piece sitting on the table — the operating system that ties all five properties into one segmentable, sovereign, year-round fan engine, with a loyalty layer that finally rewards the people who already love this brand — is what an engagement with CCD builds. The next step is a 30-minute call.",
     email: "geoff@crowdcontroldigital.com",
   },
 

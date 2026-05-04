@@ -33,10 +33,10 @@ export function Investment() {
 
         <ScrollReveal delay={0.1}>
           <h2 className="text-4xl md:text-[3.5rem] font-bold tracking-[-0.03em] leading-[1.05] mb-8">
-            {q.model === "retainer" ? "Total Investment" : "Project Investment"}
+            {q.introMode ? "What We Do" : (q.model === "retainer" ? "Total Investment" : "Project Investment")}
           </h2>
           <p className="text-[16px] text-text-secondary leading-[1.8] mb-20 max-w-2xl tracking-[-0.01em]">
-            {q.model === "retainer" ? "Management fees only — ad spend and creator fees are billed separately at a 15% management rate." : "Transparent pricing with milestone-based payments aligned to delivery."}
+            {q.introMode ? "Six workstreams CCD operates in a full-service engagement of this shape. Final scope and pricing are calibrated to your priorities on a 30-minute intro call." : (q.model === "retainer" ? "Management fees only — ad spend and creator fees are billed separately at a 15% management rate." : "Transparent pricing with milestone-based payments aligned to delivery.")}
           </p>
         </ScrollReveal>
 
@@ -63,14 +63,17 @@ export function Investment() {
                             {item.description}
                           </div>
                         </div>
-                        <div className="text-[15px] font-mono text-text-primary flex-shrink-0 tabular-nums tracking-[-0.02em]">
-                          {item.priceLabel ? item.priceLabel : <>{formatCurrency(item.price)}{item.recurring ? <span className="text-text-muted/60 text-[11px]">/mo</span> : ""}</>}
-                        </div>
+                        {!q.introMode && (
+                          <div className="text-[15px] font-mono text-text-primary flex-shrink-0 tabular-nums tracking-[-0.02em]">
+                            {item.priceLabel ? item.priceLabel : <>{formatCurrency(item.price)}{item.recurring ? <span className="text-text-muted/60 text-[11px]">/mo</span> : ""}</>}
+                          </div>
+                        )}
                       </div>
                     </StaggerItem>
                   ))}
                 </StaggerContainer>
 
+                {!q.introMode && (
                 <div className="border-t border-border bg-bg-elevated/30">
                   <div className="px-10 py-4 flex items-center justify-between">
                     <span className="text-[13px] text-text-muted">Subtotal</span>
@@ -116,12 +119,57 @@ export function Investment() {
                     </span>
                   </div>
                 </div>
+                )}
               </div>
             </TiltCard>
           </ScrollReveal>
 
-          {/* Payment schedule */}
+          {/* Right column: payment schedule (paid mode) OR intro-call card (intro mode) */}
           <ScrollReveal delay={0.25} variant="slideLeft" className="lg:col-span-2">
+          {q.introMode ? (
+            <TiltCard className="group h-full">
+              <div className="card frame bg-bg-card rounded-none p-10 h-full flex flex-col hover:bg-bg-card-hover transition-all duration-500">
+                <span className="text-[10px] font-mono tracking-[0.2em] text-text-muted uppercase mb-10">
+                  Next Conversation
+                </span>
+                <div className="flex-1">
+                  <h3 className="text-[24px] font-bold text-text-primary tracking-[-0.02em] mb-4 leading-[1.15]">
+                    Schedule a 30-minute intro call.
+                  </h3>
+                  <p className="text-[14px] text-text-secondary leading-[1.7] mb-8">
+                    The shape of the engagement above is the starting point. Pricing, exact scope, and timeline are tuned to your team's priorities, calendar, and existing stack on a first call.
+                  </p>
+                  <div className="space-y-4 mb-8">
+                    {[
+                      "What an engagement could look like for Duck Club specifically",
+                      "Where we'd focus the first 30 days",
+                      "How the loyalty + content + paid layers compound for you",
+                      "Pricing options calibrated to scope priorities",
+                    ].map((line, i) => (
+                      <div key={i} className="flex items-start gap-3">
+                        <div className="w-1 h-1 rounded-full bg-accent mt-2 flex-shrink-0" />
+                        <span className="text-[13px] text-text-muted leading-[1.6]">{line}</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+                <div className="mt-auto pt-8 border-t border-border">
+                  <motion.a
+                    href={`mailto:${PROJECT.cta.email}?subject=${encodeURIComponent(`Re: Duck Club × Crowd Control Digital — Intro Call`)}`}
+                    whileHover={{ scale: 1.02 }}
+                    whileTap={{ scale: 0.98 }}
+                    className="block w-full text-center bg-accent text-bg font-semibold text-[14px] py-4 rounded-none tracking-[-0.01em]"
+                  >
+                    Reply to schedule a call
+                  </motion.a>
+                  <p className="text-[10px] text-text-muted/40 text-center mt-4 font-mono tracking-[0.1em]">
+                    {PROJECT.cta.email.toUpperCase()}
+                  </p>
+                </div>
+              </div>
+            </TiltCard>
+          ) : (
+          <>
             <TiltCard className="group h-full">
               <div className="card frame bg-bg-card rounded-none p-10 h-full flex flex-col hover:bg-bg-card-hover transition-all duration-500">
                 <span className="text-[10px] font-mono tracking-[0.2em] text-text-muted uppercase mb-10">
@@ -167,6 +215,8 @@ export function Investment() {
                 </div>
               </div>
             </TiltCard>
+          </>
+          )}
           </ScrollReveal>
         </div>
       </div>
