@@ -4,19 +4,23 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useProject } from "@/lib/project-context";
 
-const NAV_ITEMS = [
+const BASE_NAV_ITEMS = [
   { label: "Overview", href: "#overview" },
   { label: "Timeline", href: "#timeline" },
   { label: "Deliverables", href: "#deliverables" },
   { label: "Scope", href: "#scope" },
-  { label: "Investment", href: "#investment" },
 ];
+
+const INVESTMENT_NAV_ITEM = { label: "Investment", href: "#investment" };
 
 export function Navigation() {
   const [active, setActive] = useState("");
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
   const PROJECT = useProject();
+  const NAV_ITEMS = PROJECT.quote
+    ? [...BASE_NAV_ITEMS, INVESTMENT_NAV_ITEM]
+    : BASE_NAV_ITEMS;
 
   useEffect(() => {
     const handleScroll = () => {
