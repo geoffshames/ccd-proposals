@@ -14,6 +14,7 @@ import { lngshot } from "./lngshot";
 import { keyveatz } from "./keyveatz";
 import { keyveatzKorean } from "./keyveatz-korean";
 import { ndaTest } from "./nda-test";
+import { paxahau } from "./paxahau";
 import type { ProjectData } from "../project-context";
 
 export const PROJECTS: Record<string, ProjectData> = {
@@ -33,6 +34,7 @@ export const PROJECTS: Record<string, ProjectData> = {
   "keyveatz": keyveatz,
   "keyveatz-korean": keyveatzKorean,
   "nda-test": ndaTest,
+  "paxahau": paxahau,
 };
 
 export function getProject(slug: string): ProjectData | undefined {
