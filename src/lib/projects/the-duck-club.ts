@@ -426,7 +426,7 @@ export const theDuckClub: ProjectData = {
     paymentLink: "#",
   },
   nextSteps: [
-    { step: 1, title: "Reply with a time", description: "30-minute intro call. Just a reply to lori@theduckclub.com → geoff@crowdcontroldigital.com gets it scheduled. Bring whoever you want from the Duck Club team — Megan especially welcome." },
+    { step: 1, title: "Reply with a time", description: "30-minute intro call — just hit reply with a window that works and we'll get it on the calendar. Bring whoever from the Duck Club team you'd want in the room." },
     { step: 2, title: "Walk through the shape", description: "On the call we'll walk through this six-workstream shape and show how it would calibrate to Duck Club specifically — what we'd start with in the first 30 days, what we'd hold for after Treefort 2027, and where the ROI compounds." },
     { step: 3, title: "Tailored scope + pricing", description: "After the call, we'll send a tailored scope and pricing options calibrated to the priorities Duck Club surfaces — not a fixed pre-baked tier. Final shape, calendar, and budget all tuned to your team." },
     { step: 4, title: "Decide on your timeline", description: "No pressure to move fast. The Treefort 2027 announce cycle gives an obvious natural kickoff window, but we can start sooner or later depending on what Duck Club wants to lead with." },
