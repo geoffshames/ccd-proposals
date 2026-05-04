@@ -51,7 +51,7 @@ export const paxahau: ProjectData = {
       },
       { value: 6, label: "Month Pilot" },
       { value: 5, label: "Marketing Channels" },
-      { value: 250, suffix: "K+", label: "Owned Audience Target" },
+      { value: 3, label: "Data Sources Unified" },
     ],
   },
 
@@ -204,10 +204,10 @@ export const paxahau: ProjectData = {
 
   targets: [
     {
-      metric: "Owned Audience",
-      value: "250K+",
+      metric: "Owned Audience Layer",
+      value: "Unified",
       context:
-        "Unify the AXS ticket-buyer base, Hive newsletter, and Laylo SMS list into a single Paxahau-owned audience layer with 250K+ addressable contacts segmented by venue, genre, and buying behavior. A sovereign asset that compounds across every future Movement cycle and year-round event — and a baseline to grow from in 2027.",
+        "Stitch the existing AXS ticket-buyer data, Hive newsletter, and Laylo SMS list into one Paxahau-owned audience layer — segmented by venue, genre, and buying behavior, activatable across Meta, TikTok, and Laylo lifecycle. Whatever volume exists today becomes a working layer that compounds across every future Movement cycle and year-round event. We'll set a numeric target with the team in onboarding once we have visibility into the actual sources.",
     },
     {
       metric: "Year-Round Sell-Through Lift",
