@@ -394,7 +394,7 @@ export const paxahau: ProjectData = {
           name: "Meta Advertising",
           quantity: "6 months",
           description:
-            "Geo-targeted Facebook and Instagram campaigns supporting year-round programming and Movement '27 — Detroit core, Midwest faithful, and the international Movement-attendee retargeting pool. Ad spend billed separately + 15% management fee",
+            "Geo-targeted Facebook and Instagram campaigns supporting year-round programming and Movement '27 — Detroit core, Midwest faithful, and the international Movement-attendee retargeting pool",
         },
         {
           name: "TikTok Advertising",
@@ -442,7 +442,7 @@ export const paxahau: ProjectData = {
           name: "Creator-Led Activations",
           quantity: "10+ activations",
           description:
-            "On-site creator coverage at marquee year-round events and Movement '27 announcement moments — purpose-built content drops designed for native platform performance, not afterthought repurposes. Creator fees billed separately + 15% management fee",
+            "On-site creator coverage at marquee year-round events and Movement '27 announcement moments — purpose-built content drops designed for native platform performance, not afterthought repurposes",
         },
       ],
     },
@@ -466,148 +466,41 @@ export const paxahau: ProjectData = {
       "Graphic design, key art, and lineup poster production (available as add-on — scoped and quoted separately)",
       "Music video and long-form documentary production (available as add-on)",
       "PR and earned media — coordinated with existing Paxahau press partners but not directly managed by CCD",
-      "Ad spend and creator fees — media budgets billed directly to platforms, creator fees billed at cost. CCD manages campaigns and creator relationships at a 15% management fee",
+      "Ad spend and creator fees — these would be scoped separately if there's mutual fit, not part of this initial writeup",
       "Website rebuild, e-commerce migration, or AXS / Tixr integration engineering work (available as add-on — scoped and quoted separately)",
     ],
-  },
-
-  quote: {
-    model: "retainer" as const,
-    currency: "USD",
-    lineItems: [
-      {
-        name: "Strategy & Account Direction",
-        description:
-          "Senior strategy oversight, weekly calls with the Paxahau team, monthly performance reporting, and the cross-channel calibration that keeps every workstream feeding the same outcome",
-        price: 6000,
-        recurring: true,
-      },
-      {
-        name: "PACING DASHBOARD + COMMENT ENGINE",
-        description:
-          "CCD's proprietary pacing intelligence system across every year-round venue event + COMMENT ENGINE deployment on all key Movement and Paxahau announcement posts",
-        price: 5000,
-        recurring: true,
-      },
-      {
-        name: "Paid Media Management",
-        description:
-          "Campaign management and optimization across Meta, TikTok, and YouTube — ad spend billed separately to platforms at a 15% management rate",
-        price: 5000,
-        recurring: true,
-      },
-      {
-        name: "Organic Social + Content Capture",
-        description:
-          "Strategy, calendar, content capture, and execution across @paxahau and @movementdetroit Instagram, TikTok, X, and YouTube — with dedicated year-round programming coverage",
-        price: 6000,
-        recurring: true,
-      },
-      {
-        name: "Laylo Lifecycle (Email + SMS)",
-        description:
-          "Full Laylo activation — segmentation, automation flows, pre-show / day-of / post-show drops, and the audience-stitching plan unifying Hive, AXS, and existing Laylo data",
-        price: 3500,
-        recurring: true,
-      },
-      {
-        name: "Creator Network + Fan-Page Seeding",
-        description:
-          "Detroit-rooted creator network management, brief development, content management, and on-site activations. Creator fees billed at cost + 15% management",
-        price: 4500,
-        recurring: true,
-      },
-    ],
-    subtotal: 30000,
-    discount: {
-      label: "",
-      percentage: 0,
-      amount: 0,
-    },
-    mediaBudget: {
-      label: "Recommended Media Budget",
-      amount: 20000,
-      note: "Recommended ad spend across Meta, TikTok, and YouTube — billed directly to platforms at a 15% management fee. Scaled per event and per Movement '27 phase based on PACING DASHBOARD signals.",
-    },
-    total: 180000,
-    paymentSchedule: [
-      {
-        milestone: "Month 1 (June 2026)",
-        percentage: 16.67,
-        amount: 30000,
-        due: "Upon approval",
-      },
-      {
-        milestone: "Month 2 (July 2026)",
-        percentage: 16.67,
-        amount: 30000,
-        due: "July 1, 2026",
-      },
-      {
-        milestone: "Month 3 (August 2026)",
-        percentage: 16.67,
-        amount: 30000,
-        due: "August 1, 2026",
-      },
-      {
-        milestone: "Month 4 (September 2026)",
-        percentage: 16.67,
-        amount: 30000,
-        due: "September 1, 2026",
-      },
-      {
-        milestone: "Month 5 (October 2026)",
-        percentage: 16.67,
-        amount: 30000,
-        due: "October 1, 2026",
-      },
-      {
-        milestone: "Month 6 (November 2026)",
-        percentage: 16.65,
-        amount: 30000,
-        due: "November 1, 2026",
-      },
-    ],
-    paymentTerms: "7 days from invoice",
-    paymentLink: "#",
   },
 
   nextSteps: [
     {
       step: 1,
-      title: "Approve & Sign",
+      title: "Reply To Geoff",
       description:
-        "Review the proposal, ask any questions, and sign off. We'll send a formal agreement and Month 1 invoice.",
+        "If any of this lands, reply to the email this came in on — happy to set up a quick call to walk through the thinking, hear what's already running, and figure out what's actually useful for Paxahau.",
     },
     {
       step: 2,
-      title: "Onboarding Questionnaire",
+      title: "Intro Call",
       description:
-        "A short intake covering AXS / Tixr / Eventbrite data feed access, Hive newsletter credentials, current Laylo configuration, ad account access, and the year-round events we should be tracking on day one.",
+        "30 minutes — we'd want to hear about the year-round programming pipeline, the current AXS / Hive / Laylo setup, and where Paxahau sees the biggest leverage going into the 2027 Movement cycle.",
     },
     {
       step: 3,
-      title: "PACING DASHBOARD Activation",
+      title: "Tailored Scope",
       description:
-        "We ingest AXS, Tixr, and Eventbrite ticket data and configure the PACING DASHBOARD across every Magic Stick, TV Lounge, Spot Lite, Masonic, and Russell Industrial event currently on sale within the first 10 days of kickoff.",
+        "If there's mutual fit, we'll come back with a tailored scope and engagement structure built around what Paxahau actually wants to lean into — not what's in this writeup.",
     },
     {
       step: 4,
-      title: "Laylo Extension + Audience Stitch",
+      title: "Pilot Window",
       description:
-        "Audit and extend the existing laylo.com/paxahau setup with deeper segmentation, year-round programming flows, and the integration that unifies Hive newsletter and AXS ticket buyers into the same audience layer — live within 3 weeks of kickoff.",
-    },
-    {
-      step: 5,
-      title: "Campaigns Go Live",
-      description:
-        "Paid media, creator network, and the COMMENT ENGINE all deploy by Week 5. From there the PACING DASHBOARD runs live, every event gets the full lifecycle treatment, and the Movement '27 narrative ramp begins.",
+        "When the timing's right, the most defensible window for a pilot is post-Movement '26 through the 2027 onsale — six months to prove the pacing + lifecycle layer works before the next festival cycle.",
     },
   ],
 
   cta: {
-    headline: "20 years of Movement. The next 6 months sets up the next 20.",
-    body: "Paxahau has built one of the only operator positions in dance music that no corporate festival company can replicate — independent, Detroit-rooted, year-round. Crowd Control Digital brings the marketing infrastructure layer that protects and compounds that position: pacing intelligence on every show, owned audience underneath every campaign, creator-driven discovery for the next generation finding Detroit techno for the first time. Six months to prove the model. Then the 2027 cycle starts from a much stronger base.",
+    headline: "20 years of Movement. We'd love to talk about the next 20.",
+    body: "Paxahau has built one of the only operator positions in dance music that no corporate festival company can replicate — independent, Detroit-rooted, year-round. This writeup is our outside read on where a marketing infrastructure layer (pacing intelligence, lifecycle activation, creator-driven discovery) could compound that position. We could be wrong about plenty of it — that's why a conversation matters more than the document. If any of this is interesting, reply to the email this came in on and let's set up a call.",
     email: "geoff@crowdcontroldigital.com",
   },
 

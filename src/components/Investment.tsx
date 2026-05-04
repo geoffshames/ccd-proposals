@@ -11,10 +11,12 @@ export function Investment() {
   const PROJECT = useProject();
   const q = PROJECT.quote;
 
+  if (!q) return null;
+
   function formatCurrency(amount: number) {
     return new Intl.NumberFormat("en-US", {
       style: "currency",
-      currency: PROJECT.quote.currency,
+      currency: q!.currency,
       minimumFractionDigits: 0,
       maximumFractionDigits: 0,
     }).format(amount);

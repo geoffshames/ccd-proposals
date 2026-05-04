@@ -141,7 +141,7 @@ export type ProjectData = {
     excluded: string[];
     subheading?: string;
   };
-  quote: {
+  quote?: {
     model?: "project" | "retainer";
     currency: string;
     lineItems: {
