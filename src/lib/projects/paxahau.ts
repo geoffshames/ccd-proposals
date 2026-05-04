@@ -30,13 +30,13 @@ export const paxahau: ProjectData = {
   overview: {
     heading: "The System",
     summary:
-      "Crowd Control Digital deploys a full pacing-intelligence and marketing layer around Paxahau's year-round Detroit programming and the early Movement '27 build cycle. Our proprietary PACING DASHBOARD ingests AXS, Tixr, and Eventbrite ticket data across every venue night — Magic Stick, TV Lounge, Spot Lite, Masonic, Russell Industrial — so soft markets get caught in week 1, not on doors. The COMMENT ENGINE seeds organic-feeling momentum on every announcement post. Paid media drives ticket velocity through Meta, TikTok, and YouTube. Laylo lifecycle finally activates the 25-year ticket-buyer base that lives walled inside AXS. And a creator network captures the Gen Z techno-curious wave that's been finding Detroit on TikTok without anyone catching them. The pilot is engineered to prove the model in 180 days, ahead of the 2027 Movement onsale window.",
+      "Crowd Control Digital deploys a full pacing-intelligence and marketing layer around Paxahau's year-round Detroit programming and the early Movement '27 build cycle. Our proprietary PACING DASHBOARD ingests AXS, Tixr, and Eventbrite ticket data across every venue night — Magic Stick, TV Lounge, Spot Lite, Masonic, Russell Industrial — adding a calibration layer underneath the team's existing operating instinct so soft markets surface in week 1 of onsale. The COMMENT ENGINE seeds organic-feeling momentum on every announcement post. Paid media drives ticket velocity through Meta, TikTok, and YouTube. The Laylo lifecycle layer extends with deeper segmentation, AXS buyer integration, and a year-round programming flow set. And a creator network opens a lane into the Gen Z techno-curious wave finding Detroit on TikTok. The pilot is engineered to prove the model in 180 days, ahead of the 2027 Movement onsale window.",
     objectives: [
-      "Deploy the PACING DASHBOARD across every Paxahau-promoted year-round event — Magic Stick, TV Lounge, Spot Lite, Masonic, Russell Industrial — so soft shows get flagged on day three, not day thirty",
-      "Activate the walled-garden audience — 25 years of AXS ticket buyers + the Hive newsletter + the existing laylo.com/paxahau SMS list, finally stitched into a sovereign Paxahau-owned data layer that segments by venue, genre, and buying behavior",
+      "Deploy the PACING DASHBOARD across every Paxahau-promoted year-round event — Magic Stick, TV Lounge, Spot Lite, Masonic, Russell Industrial — adding a calibration layer underneath the team's existing operating instinct so soft markets surface in week 1 of onsale",
+      "Unify the audience stack — extending the existing Laylo with the AXS buyer base and Hive newsletter into a single Paxahau-owned segmentation schema across venue, genre, and buying behavior",
       "Stand up the COMMENT ENGINE — organic-feeling fan engagement seeded on every announcement, lineup wave, and stage reveal so the algorithm reads the post as a moment, not a flyer",
       "Run paid media across Meta, TikTok, and YouTube — for year-round venue events first, then surging into the Movement '27 announcement and presale waves through November",
-      "Capture the Gen Z TikTok-techno wave — Detroit techno is in active rotation among 18–24 listeners discovering the genre for the first time. None of that discovery is currently being captured, retargeted, or converted to a year-round ticket",
+      "Open a creator-led lane into the Gen Z TikTok-techno discovery wave — funneling that audience into the year-round Detroit calendar where it has the most room to compound",
     ],
     subtitle:
       "Pacing intelligence, lifecycle activation, and creator-driven growth — built by the agency that runs this exact playbook for stadium electronic tours, festival operators, and venue clients.",
@@ -58,36 +58,36 @@ export const paxahau: ProjectData = {
   discovery: {
     heading: "What We Found",
     summary:
-      "Before proposing a single deliverable, we audited the Paxahau and Movement digital ecosystem — paxahau.com, movementfestival.com, every active social handle, the AXS ticketing layer, the Hive newsletter, the laylo.com/paxahau SMS shortlink, the Tripadvisor and Reddit fan threads, and the year-round venue programming at Magic Stick, TV Lounge, Spot Lite, Masonic, and Russell Industrial. The findings are unusually clear: Paxahau holds one of the most defensible cultural positions in dance music — and the year-round programming is being sold with a fraction of the marketing infrastructure that the festival itself enjoys. This proposal closes that gap in 6 months.",
+      "Before proposing a single deliverable, we audited the Paxahau and Movement digital ecosystem — paxahau.com, movementfestival.com, every active social handle, the AXS ticketing layer, the Hive newsletter, the laylo.com/paxahau SMS shortlink, the Tripadvisor and Reddit fan threads, and the year-round venue programming at Magic Stick, TV Lounge, Spot Lite, Masonic, and Russell Industrial. Paxahau holds one of the most defensible cultural positions in dance music, and the festival operation is dialed in. The opportunity in 6 months is to give year-round programming the same flagship marketing rigor — building on what's already running, not replacing it.",
     insights: [
       {
-        label: "Movement Eats All The Oxygen",
+        label: "Year-Round Deserves Its Own Marquee Layer",
         finding:
-          "Movement Festival has 152K Instagram followers and dominates the Paxahau marketing calendar from January through May. The year-round programming — Magic Stick, TV Lounge, Spot Lite, Masonic, Russell Industrial — runs through the same shop without proportional marketing horsepower behind it. Year-round shows are where the per-event margin actually lives, and they're under-promoted by a factor we're confident is conservative.",
+          "Movement is the cultural anchor and rightly takes the marketing oxygen from January through May. The year-round programming — Magic Stick, TV Lounge, Spot Lite, Masonic, Russell Industrial — runs alongside it through the same shop, and the per-event margin lives in those rooms. The pilot is built to give year-round its own flagship-grade marketing layer alongside Movement, with Paxahau's existing operating instincts still leading.",
         source: "@movementdetroit + @paxahau IG audit, paxahau.com event listings",
       },
       {
-        label: "Walled-Garden Ticket Data",
+        label: "AXS Is The Audience Asset We Can Activate",
         finding:
-          "Movement and Paxahau-promoted shows ticket through AXS (with Tixel as the official resale partner). 20 years of Movement ticket buyers and every year-round venue night sits inside the AXS ecosystem — a real asset, but one that lives in someone else's stack. The Paxahau team can pull reports but cannot independently segment, retarget on Meta and TikTok, build win-back flows, or run pre-onsale to high-intent past buyers on their own cadence. The audience exists; the activation layer doesn't.",
+          "Movement and Paxahau-promoted shows ticket through AXS, with Tixel as the official resale partner. That's 20 years of Movement ticket buyers and every year-round venue night sitting inside one ecosystem — a real asset. AXS reports give the Paxahau team visibility, and there's an opportunity to extend that into a Paxahau-owned activation layer: independent segmentation, retargeting on Meta and TikTok, win-back flows, and pre-onsale offers to high-intent past buyers on Paxahau's own cadence.",
         source: "movementfestival.com/tickets, AXS event listings, Tixel partnership",
       },
       {
-        label: "Laylo Exists But Is Dormant",
+        label: "Laylo Is Already An Anchor — Build Around It",
         finding:
-          "laylo.com/paxahau is live and accepting SMS sign-ups — meaning the infrastructure is there, but the actual lifecycle marketing isn't. No segmentation by venue, genre, or buyer history. No pre-show drops. No post-show reactivation. No year-round programming sequences. Laylo is a DJ-grade lifecycle tool and Paxahau is using it as a static signup form. Activating it is one of the highest-leverage wins in the pilot.",
+          "laylo.com/paxahau is live and the right anchor for the lifecycle layer. Whatever is currently running stays — pre-show drops, sequences, segmentation that the Paxahau team has dialed in over time. The pilot extends what's there: unifying the AXS buyer base and the Hive newsletter into the same Laylo segmentation schema (venue, genre, buyer history, fan tier), and adding a year-round programming layer of flows so every Magic Stick / TV Lounge / Spot Lite / Masonic / Russell Industrial show benefits from the same lifecycle rigor as Movement.",
         source: "laylo.com/paxahau audit, paxahau.com footer SMS CTA",
       },
       {
-        label: "TikTok Discovery Without Capture",
+        label: "TikTok Discovery Is An Open Lane",
         finding:
-          "Detroit techno is in active rotation on TikTok — Carl Cox / Richie Hawtin clips, Hart Plaza B-roll, and 'birthplace of techno' explainers are pulling Gen Z and younger millennials into the genre for the first time. Movement's official TikTok presence trails its Instagram by an order of magnitude, and there is no creator network amplifying year-round venue events to that discovery audience. The top of the funnel is leaking the entire Detroit calendar.",
+          "Detroit techno is in active rotation on TikTok — Carl Cox / Richie Hawtin clips, Hart Plaza B-roll, and 'birthplace of techno' explainers are pulling Gen Z and younger millennials into the genre for the first time. There's a clear lane to plant a Detroit-rooted creator network that funnels that discovery audience into the year-round Detroit calendar — Movement itself doesn't need the help, but the year-round shows can absolutely benefit from the top-of-funnel volume.",
         source: "TikTok hashtag scan: #detroittechno #movementdetroit #hartplaza",
       },
       {
-        label: "No Live Pacing Intelligence",
+        label: "Pacing Calibration Is The Compounding Win",
         finding:
-          "Paxahau's year-round shows go on sale and then quietly sell or quietly don't — without a real-time pacing dashboard, soft markets get diagnosed at the door instead of in week 1, when paid media surges still bend the curve. Movement itself benefits from massive demand inertia, but a Tuesday night at TV Lounge with a touring DJ doesn't. That's exactly where the PACING DASHBOARD compounds — and where 6 months of model calibration sets up a much stronger 2027 onsale.",
+          "Paxahau's 25-year track record proves the team's instincts on year-round programming work. A live pacing dashboard adds a calibration layer underneath that instinct — soft markets surfaced in week 1 of onsale, when paid media surges still bend the curve. Six months of model calibration also sets up a tighter 2027 onsale baseline, with per-venue prediction baselines refined against real performance instead of estimated by feel.",
         source: "Per-event analysis across Magic Stick, TV Lounge, Spot Lite calendars",
       },
     ],
@@ -153,10 +153,10 @@ export const paxahau: ProjectData = {
       "Multi-decade attention spans — Movement attendees plan years out, return year after year, and treat the festival and year-round venue programming as part of a single ongoing relationship with the city",
     ],
     painPoints: [
-      "Tickets for year-round shows often quietly sell out without enough marketing surface — the announcement is on Instagram, the listing is on AXS, and that's the whole funnel",
-      "Out-of-towners discover Detroit-only shows after the trip is booked — there's no proactive 'when you're in Detroit next' lifecycle layer for the international Movement crowd",
-      "Heat at Hart Plaza in May, year over year — survivable but a real fan complaint in every review and Reddit recap, especially among first-time international attendees",
-      "Schedule clash anxiety at Movement and across afterparty programming — fans want better real-time scheduling and capture but it's not a Paxahau-owned channel today",
+      "Year-round shows can quietly sell out before fans outside the regular cadence catch the announcement — there's appetite for more advance signals, day-of pushes, and waitlist mechanics that hold attention beyond the post-and-listing window",
+      "Out-of-towners often discover Detroit-only shows after the trip is booked — a proactive 'next time you're in Detroit' lifecycle layer for the international Movement crowd would convert latent demand that already exists",
+      "Heat at Hart Plaza in May, year over year — survivable but a recurring fan note in reviews and Reddit recaps, especially among first-time international attendees",
+      "Schedule clash anxiety at Movement and across afterparty programming — fans consistently ask for better real-time scheduling tools across the festival and the venue calendar",
     ],
     purchaseTriggers: [
       "Lineup-wave drops with announcement-day urgency — Movement and major venue lineups are the highest-intent moments and currently leak demand without retargeting",
@@ -271,8 +271,8 @@ export const paxahau: ProjectData = {
       date: "June 2026",
       status: "upcoming" as const,
       tasks: [
-        "Deploy the PACING DASHBOARD — ingest AXS, Tixr, and Eventbrite data feeds across every Magic Stick, TV Lounge, Spot Lite, Masonic, and Russell Industrial event currently on sale; configure sell-through prediction, risk-tier alerts, and per-venue baselines",
-        "Activate the Laylo lifecycle layer — segmentation by venue, genre, and historical buyer behavior; welcome sequences, pre-show drops, and post-show reactivation flows. Stitch the existing Hive newsletter and the laylo.com/paxahau SMS list into one sovereign Paxahau-owned audience",
+        "Deploy the PACING DASHBOARD — ingest AXS, Tixr, and Eventbrite data feeds across every Magic Stick, TV Lounge, Spot Lite, Masonic, and Russell Industrial event currently on sale; configure sell-through prediction, risk-tier alerts, and per-venue baselines calibrated against the team's existing operating instinct",
+        "Extend the Laylo lifecycle layer — audit existing flows and segmentation, add the venue / genre / buyer-history schema where it fits alongside what's running, and integrate the AXS buyer base + Hive newsletter into the same audience layer",
         "Stand up paid media architecture — Meta, TikTok, and YouTube ad accounts; pixel and CAPI tracking; conversion event mapping; AXS ticket-buyer audience uploads as seed lookalikes for soft-market support",
         "Set up the COMMENT ENGINE — fan-page network mapped, comment templates seeded by event type and genre, deployment workflow tested on the first 3 announcement posts of the pilot",
       ],
@@ -361,10 +361,10 @@ export const paxahau: ProjectData = {
       icon: "◆",
       items: [
         {
-          name: "Laylo Lifecycle Build",
+          name: "Laylo Extension + Audience Stitch",
           quantity: "1 build",
           description:
-            "Full Laylo activation — segmentation schema (venue, genre, buyer history, fan tier), welcome sequences, pre-show / day-of / post-show flows for every event, and the migration plan that finally stitches Hive newsletter, AXS buyers, and the existing laylo.com/paxahau list into one Paxahau-owned audience",
+            "Build on the existing laylo.com/paxahau foundation — deeper segmentation schema (venue, genre, buyer history, fan tier) layered onto whatever flows are already running, plus a year-round programming flow set (pre-show / day-of / post-show) for every event, and the integration plan that unifies Hive newsletter and AXS buyer data into the same Laylo audience layer",
         },
         {
           name: "Lifecycle Drops",
@@ -454,7 +454,7 @@ export const paxahau: ProjectData = {
     included: [
       "PACING DASHBOARD deployment, configuration, and ongoing monitoring across all year-round Paxahau-promoted venue events (Magic Stick, TV Lounge, Spot Lite, Masonic, Russell Industrial)",
       "COMMENT ENGINE deployment on all major announcement posts, lineup waves, and stage reveals across Movement and Paxahau social channels",
-      "Laylo lifecycle infrastructure build — segmentation, automation flows, pre-show / day-of / post-show drops, and the unified audience-stitching plan across Hive, AXS, and existing Laylo data",
+      "Laylo extension — building on the existing laylo.com/paxahau setup with deeper segmentation, year-round programming flows, and the audience integration plan unifying Hive, AXS, and Laylo data",
       "Paid media strategy, creative direction, and campaign management across Meta, TikTok, and YouTube",
       "Organic social strategy and execution across @paxahau and @movementdetroit handles, with dedicated year-round programming coverage",
       "Detroit-rooted creator network — creator sourcing, brief development, content management, and on-site activations",
@@ -593,9 +593,9 @@ export const paxahau: ProjectData = {
     },
     {
       step: 4,
-      title: "Laylo Build + Audience Stitch",
+      title: "Laylo Extension + Audience Stitch",
       description:
-        "Full Laylo segmentation, automation flows, and the unified audience layer stitching Hive newsletter, AXS ticket buyers, and the existing laylo.com/paxahau SMS list — live and capturing within 3 weeks of kickoff.",
+        "Audit and extend the existing laylo.com/paxahau setup with deeper segmentation, year-round programming flows, and the integration that unifies Hive newsletter and AXS ticket buyers into the same audience layer — live within 3 weeks of kickoff.",
     },
     {
       step: 5,
