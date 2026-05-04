@@ -203,8 +203,8 @@ export const firstAvenue: ProjectData = {
         "Move Hive from venue-level periodic sends to per-show pacing-triggered flows. Target is roughly 3× the current campaign volume across the 3-month window, segmented by venue and pacing trajectory. Existing Hive infrastructure makes this a configuration sprint, not a build sprint.",
     },
     {
-      metric: "Cross-Venue Audience Crossover",
-      value: "15%+ Mainroom → Fine Line / Turf Club / Palace",
+      metric: "Mainroom → Cross-Venue Crossover",
+      value: "15%+",
       context:
         "Directional benchmark for cross-venue affinity activation. Today, Mainroom buyers under-index meaningfully on the smaller / cross-portfolio venues despite high genre overlap. Affinity routing is designed to close that gap during the pilot window.",
     },
