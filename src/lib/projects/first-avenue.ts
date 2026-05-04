@@ -266,7 +266,7 @@ export const firstAvenue: ProjectData = {
       tasks: [
         "Tour Control system integration — AXS export pipeline, historical comp dataset build, predictive pacing model calibrated on prior 12 months of First Avenue data",
         "Hive audit + per-venue flow architecture — map existing segments, design pacing-triggered flow templates (behind-pace / on-pace / ahead-of-pace) per venue",
-        "Paid media account stand-up — Meta, TikTok, Google ad accounts wired to AXS conversion events; Hive segment custom-audience export into Meta + TikTok",
+        "Plug into First Avenue's existing Meta, TikTok, and Google ad accounts — install / verify pixel + CAPI tracking, wire AXS conversion events, export Hive segments as custom audiences. We do not stand up new accounts; the existing accounts get the operating system layered on top.",
         "Brand discovery + content audit — Stars Wall + In House archive review, weekly editorial calendar template, per-venue content pillars",
       ],
     },
@@ -571,7 +571,7 @@ export const firstAvenue: ProjectData = {
       step: 3,
       title: "Tour Control Install (Weeks 1–3)",
       description:
-        "AXS data pipeline up, historical comp dataset built, pacing model calibrated. Hive audit + flow templates designed. Paid accounts wired to conversion events. Brand + content audit complete. Pacing dashboard live.",
+        "AXS data pipeline up, historical comp dataset built, pacing model calibrated. Hive audit + flow templates designed. Existing paid accounts wired to AXS conversion events + Hive custom audiences. Brand + content audit complete. Pacing dashboard live.",
     },
     {
       step: 4,
