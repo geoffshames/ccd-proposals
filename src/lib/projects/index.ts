@@ -12,6 +12,7 @@ import { wonder } from "./wonder";
 import { chadCisneros } from "./chad-cisneros";
 import { lngshot } from "./lngshot";
 import { keyveatz } from "./keyveatz";
+import { firstAvenue } from "./first-avenue";
 import { keyveatzKorean } from "./keyveatz-korean";
 import { ndaTest } from "./nda-test";
 import { paxahau } from "./paxahau";
@@ -33,6 +34,7 @@ export const PROJECTS: Record<string, ProjectData> = {
   "lngshot": lngshot,
   "keyveatz": keyveatz,
   "keyveatz-korean": keyveatzKorean,
+  "first-avenue": firstAvenue,
   "nda-test": ndaTest,
   "paxahau": paxahau,
 };
