@@ -18,10 +18,10 @@ export const firstAvenue: ProjectData = {
     email: "geoff@crowdcontroldigital.com",
   },
   project: {
-    name: "FIRST AVENUE × CCD — PORTFOLIO MARKETING + TOUR CONTROL PILOT",
+    name: "FIRST AVENUE × CROWD CONTROL DIGITAL",
     tagline:
-      "Indie cultural authority. Corporate-marketing velocity. A 3-month pilot wiring predictive ticket pacing, paid media, and Hive activation across all six venues.",
-    type: "Venue Marketing Retainer + Tour Control Pacing Tech — 3-Month Pilot",
+      "Indie cultural authority. Corporate-marketing velocity. A discussion document on what predictive ticket pacing, paid media, and Hive activation could look like across all six venues.",
+    type: "Cold Outreach — Discussion Document",
     startDate: "June 2, 2026",
     endDate: "August 31, 2026",
     duration: "3 Months (Pilot)",
@@ -40,7 +40,7 @@ export const firstAvenue: ProjectData = {
       "Match Live Nation's content velocity with First Avenue's authority — weekly cultural-institution editorial output (Stars Wall, archival storytelling, fan-poster network) syndicated across paid and Hive at the cadence the indie market actually demands",
     ],
     subtitle:
-      "A focused 3-month pilot that proves predictive pacing + portfolio activation at the lowest reasonable risk window before any annual commitment.",
+      "A first thinking-out-loud document on how predictive pacing + portfolio activation could plug into the operating system you already run.",
     imageCaption: "Venue Marketing Retainer + Tour Control Pacing Tech",
     stats: [
       {
@@ -352,7 +352,7 @@ export const firstAvenue: ProjectData = {
           name: "Meta Advertising",
           quantity: "Per-show, pacing-driven",
           description:
-            "Instagram + Facebook Feed / Stories / Reels campaigns built per show, deployed against pacing trajectory. Custom audiences sourced from Hive segments + AXS purchaser data. Ad spend billed separately at 15% management fee.",
+            "Instagram + Facebook Feed / Stories / Reels campaigns built per show, deployed against pacing trajectory. Custom audiences sourced from Hive segments + AXS purchaser data.",
         },
         {
           name: "TikTok Advertising",
@@ -448,7 +448,7 @@ export const firstAvenue: ProjectData = {
           name: "Renewal Recommendation Memo",
           quantity: "End of pilot",
           description:
-            "End-of-pilot memo: what the pilot proved, what to expand, what to cut, recommended annual scope. Honest read on whether full-year retainer is the right next step or whether a different shape fits better.",
+            "End-of-pilot memo: what the pilot proved, what to expand, what to cut, recommended annual scope. Honest read on whether continuing into a longer-term engagement is the right next step or whether a different shape fits better.",
         },
       ],
     },
@@ -456,10 +456,10 @@ export const firstAvenue: ProjectData = {
 
   scope: {
     subheading:
-      "Everything included in the 3-month pilot — and the boundaries that keep the pilot pilot-shaped. Larger-budget items are scoped separately so the pilot can prove the operating system before commitment.",
+      "What a 3-month pilot would cover, and the boundaries that would keep it tight. Final scope is a conversation, not a contract — this document exists to start it.",
     included: [
       "Full Tour Control system install + per-show predictive pacing across all 6 venues for the duration of the pilot",
-      "Per-show paid media management on Meta, TikTok, and Google / YouTube — strategy, creative direction, optimization, reporting (ad spend billed separately at 15% management fee)",
+      "Per-show paid media management on Meta, TikTok, and Google / YouTube — strategy, creative direction, optimization, reporting",
       "Hive activation — pacing-triggered flow design + buildout, cross-venue affinity routing, SMS opt-in growth, Memberships lifecycle flows",
       "Cultural-institution content engine — 12 weekly editorial drops, per-show paid creative, per-platform formatting",
       "Weekly per-show pacing review + flight plan; monthly portfolio performance report; end-of-pilot renewal recommendation memo",
@@ -475,123 +475,45 @@ export const firstAvenue: ProjectData = {
     ],
   },
 
-  quote: {
-    model: "retainer" as const,
-    currency: "USD",
-    lineItems: [
-      {
-        name: "Tour Control / Pacing Tech",
-        description:
-          "Per-show predictive pacing across all 6 venues, weekly flight plan, hosted pacing dashboard, prediction accuracy tracking",
-        price: 3500,
-        recurring: true,
-      },
-      {
-        name: "Paid Media Management",
-        description:
-          "Per-show campaign builds + optimization across Meta, TikTok, Google / YouTube. Ad spend billed separately at 15% management fee",
-        price: 2500,
-        recurring: true,
-      },
-      {
-        name: "Hive Activation (Email + SMS)",
-        description:
-          "Pacing-triggered flow design + buildout, cross-venue affinity routing, SMS opt-in growth, Memberships lifecycle flows",
-        price: 1500,
-        recurring: true,
-      },
-      {
-        name: "Content & Brand Velocity",
-        description:
-          "Weekly editorial drops, per-show paid creative, per-platform formatting — Stars Wall + archival + show-room cuts",
-        price: 1500,
-        recurring: true,
-      },
-      {
-        name: "Strategy & Reporting",
-        description:
-          "Weekly per-show pacing review + flight plan; monthly portfolio report; end-of-pilot renewal memo",
-        price: 500,
-        recurring: true,
-      },
-    ],
-    subtotal: 9500,
-    setupFee: {
-      label: "One-Time Setup + Onboarding",
-      amount: 7500,
-    },
-    discount: { label: "", percentage: 0, amount: 0 },
-    mediaBudget: {
-      label: "Recommended Media Spend",
-      amount: 20000,
-      amountLabel: "/mo recommended",
-      note:
-        "Recommended monthly ad spend across Meta, TikTok, and Google / YouTube — billed directly to platforms by First Avenue + 15% CCD management fee. Pacing model determines the per-show allocation. Budget is a recommendation, not a requirement; the pacing system runs at any spend level.",
-    },
-    total: 36000,
-    paymentSchedule: [
-      {
-        milestone: "Month 1 (includes setup)",
-        percentage: 47,
-        amount: 17000,
-        due: "Upon approval",
-      },
-      {
-        milestone: "Month 2",
-        percentage: 26,
-        amount: 9500,
-        due: "July 1, 2026",
-      },
-      {
-        milestone: "Month 3",
-        percentage: 26,
-        amount: 9500,
-        due: "August 1, 2026",
-      },
-    ],
-    paymentTerms:
-      "Net 7 from invoice. Management fees only — ad spend is billed separately by Meta / TikTok / Google to First Avenue, with a 15% CCD management fee applied on the spend through CCD invoicing. Pilot renews into an annual retainer at the end of August unless either side opts out — both parties get a clean exit.",
-    paymentLink: "#",
-  },
 
   nextSteps: [
     {
       step: 1,
-      title: "Approve + Sign",
+      title: "Read this document",
       description:
-        "First Avenue leadership approves the pilot scope and signs the agreement. CCD sends the first invoice ($17,000 = $7,500 setup + $9,500 Month 1 retainer).",
+        "Spend 15 minutes with it. Push back on anything that feels off. The research brief, the audience persona work, the pacing thesis — all of it is a starting point we expect First Avenue to mark up. The most useful response is honest reaction, not polite interest.",
     },
     {
       step: 2,
-      title: "Onboarding Questionnaire",
+      title: "20-minute intro call",
       description:
-        "Short intake — AXS export access, Hive admin login, current ad accounts (Meta, TikTok, Google), website / WooCommerce admin, marketing team contacts and weekly cadence. Roughly 30 minutes of First Avenue time.",
+        "If any of the framing lands, grab a short call with Geoff Shames (Co-Founder, CCD). No deck, no slide pitch — just a conversation about what First Avenue is actually solving for in 2026 and whether the operating system we\'ve built fits the shape of the problem.",
     },
     {
       step: 3,
-      title: "Tour Control Install (Weeks 1–3)",
+      title: "Pacing demo (optional)",
       description:
-        "AXS data pipeline up, historical comp dataset built, pacing model calibrated. Hive audit + flow templates designed. Existing paid accounts wired to AXS conversion events + Hive custom audiences. Brand + content audit complete. Pacing dashboard live.",
+        "Short live walkthrough of the Tour Control pacing system as it currently runs for festivals and tours — the predictive model, the per-show flight plan, the live recalibration loop. So First Avenue can see what a venue-portfolio version would actually look like, not just read about it.",
     },
     {
       step: 4,
-      title: "Activation Rollout (Weeks 4–7)",
+      title: "Scoped pilot proposal (only if there\'s mutual fit)",
       description:
-        "First wave of pacing-triggered Hive flows live, paid media campaigns flight per show, cross-venue affinity routing v1 in market, weekly editorial drops begin. First Avenue gets the weekly pacing review + flight plan starting Week 4.",
+        "If both sides feel aligned after the intro, a separate document follows — actual scope, actual pricing, actual timeline, calibrated to whatever First Avenue\'s 2026 priorities really are (this document is our best guess, not theirs).",
     },
     {
       step: 5,
-      title: "Optimize + Read",
+      title: "Or — no follow-up at all",
       description:
-        "Weeks 8–13. Pacing model self-calibrates, paid creative iterates, cross-venue routing refines. End-of-pilot read-out memo with a clean renewal recommendation: continue, expand, reshape, or end.",
+        "If the framing doesn\'t resonate or the timing\'s wrong, no pitch, no nurture sequence, no follow-up emails. We\'re building this company on respect for indie operators\' time — including a clean \'no thanks.\'",
     },
   ],
 
   cta: {
     headline:
-      "The cultural authority is yours. Let's pair it with the operating system the corporate competition runs on.",
+      "If any of this lands, we'd love a 20-minute conversation.",
     body:
-      "First Avenue does not need credibility, scale, or audience. The bones — AXS, Hive, Memberships, six legendary rooms — are already in place. The 3-month pilot installs the velocity layer on top: predictive pacing, per-show paid calibration, Hive activation, and a cross-venue audience graph. If the pilot proves the system, we renew into a year. If it doesn't, both sides get a clean exit. Either way, the data we generate together belongs to First Avenue.",
+      "This is a thinking-out-loud document, not a pitch. We built it because First Avenue is the indie venue we'd most love to work with — and because we think the operating system we've built (per-show predictive pacing, paid media calibration, Hive activation, cross-venue audience graph) is exactly the kind of velocity layer the room your team has built deserves. If the framing resonates, push back, tell us what's wrong, or grab a 20-minute call. If it doesn't, no pitch, no follow-up — just appreciation for the work.",
     email: "geoff@crowdcontroldigital.com",
   },
 
