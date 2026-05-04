@@ -23,7 +23,7 @@ import { LanguageToggle } from "@/components/LanguageToggle";
 export function ProposalClient({ project }: { project: ProjectData }) {
   return (
     <ProjectProvider data={project}>
-      <main>
+      <main style={{ ["--color-accent" as never]: project.accentColor, ["--color-accent-dim" as never]: `${project.accentColor}10` }}>
         <CursorGlow />
         <LanguageToggle />
         <Navigation />

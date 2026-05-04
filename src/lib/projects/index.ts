@@ -16,6 +16,7 @@ import { firstAvenue } from "./first-avenue";
 import { keyveatzKorean } from "./keyveatz-korean";
 import { ndaTest } from "./nda-test";
 import { paxahau } from "./paxahau";
+import { theDuckClub } from "./the-duck-club";
 import type { ProjectData } from "../project-context";
 
 export const PROJECTS: Record<string, ProjectData> = {
@@ -36,6 +37,7 @@ export const PROJECTS: Record<string, ProjectData> = {
   "keyveatz-korean": keyveatzKorean,
   "first-avenue": firstAvenue,
   "nda-test": ndaTest,
+  "the-duck-club": theDuckClub,
   "paxahau": paxahau,
 };
 
