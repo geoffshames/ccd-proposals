@@ -16,6 +16,7 @@ import { firstAvenue } from "./first-avenue";
 import { keyveatzKorean } from "./keyveatz-korean";
 import { ndaTest } from "./nda-test";
 import { paxahau } from "./paxahau";
+import { resoundPresents } from "./resound-presents";
 import { theDuckClub } from "./the-duck-club";
 import type { ProjectData } from "../project-context";
 
@@ -39,6 +40,7 @@ export const PROJECTS: Record<string, ProjectData> = {
   "nda-test": ndaTest,
   "the-duck-club": theDuckClub,
   "paxahau": paxahau,
+  "resound-presents": resoundPresents,
 };
 
 export function getProject(slug: string): ProjectData | undefined {
