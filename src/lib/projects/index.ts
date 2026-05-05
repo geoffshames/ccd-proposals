@@ -18,6 +18,7 @@ import { ndaTest } from "./nda-test";
 import { paxahau } from "./paxahau";
 import { resoundPresents } from "./resound-presents";
 import { theDuckClub } from "./the-duck-club";
+import { fearlessRecords } from "./fearless-records";
 import type { ProjectData } from "../project-context";
 
 export const PROJECTS: Record<string, ProjectData> = {
@@ -41,6 +42,7 @@ export const PROJECTS: Record<string, ProjectData> = {
   "the-duck-club": theDuckClub,
   "paxahau": paxahau,
   "resound-presents": resoundPresents,
+  "fearless-records": fearlessRecords,
 };
 
 export function getProject(slug: string): ProjectData | undefined {
