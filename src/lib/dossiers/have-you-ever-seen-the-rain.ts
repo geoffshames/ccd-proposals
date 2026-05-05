@@ -88,7 +88,7 @@ export const haveYouEverSeenTheRain: DossierData = {
       code: "F-04",
       label: "Two Audiences, Zero Conversion Layer",
       finding: "The track is about rain, melancholy, internal tension, the end of an era. The audience that owns this song spans the original-buyer cohort (60+) and the new TikTok discoverers (16-28). Yet the catalog has no anniversary box program, no merch capsule, no pop-up activation, and no creator engine running against either audience. The cultural resonance is doing the work; the conversion layer is missing entirely.",
-      soWhat: "Two-audience drop calendar: a Pendulum 56th anniversary box for the original-buyer cohort, a 7-inch vinyl + merch capsule riding the Outliers remix moment for the TikTok cohort. Creator and owned-channel programs running against each."
+      soWhat: "Two-audience drop calendar: a Pendulum 56th anniversary box for the original-buyer cohort, a 7-inch vinyl + merch capsule riding the Outliers remix moment for the TikTok cohort. Creator and owned-channel programs running against each.",
       source: "Streaming demographic analysis (Spotify) + creator audience cross-reference",
     },
     {
