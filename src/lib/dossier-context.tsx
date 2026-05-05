@@ -126,17 +126,17 @@ export type DossierData = {
     }[];
   };
 
-  /** Per-artist sync briefs. */
-  syncBriefs: {
+  /** Engagement engine: digital marketing, content strategy, creator + paid + owned channels. */
+  engagementEngine: {
     heading: string;
     note: string;
-    items: {
-      artist: string;
-      tracks: string[];
-      angle: string;
-      creativeCue: string;
-      targets: string[];
-      supervisorApproach: string;
+    channels: {
+      code: string;       // EE-01, EE-02 ...
+      name: string;       // "Owned Channels — Laylo / Email / SMS"
+      role: string;       // one-line role description
+      plays: string[];    // 3-6 specific tactics
+      deliverables: string[]; // 2-4 ship-this items
+      cadence: string;    // monthly / drop-day / always-on
     }[];
   };
 

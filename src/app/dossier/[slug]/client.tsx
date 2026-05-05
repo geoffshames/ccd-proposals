@@ -11,7 +11,7 @@ import { Thesis } from "@/components/dossier/Thesis";
 import { Plan } from "@/components/dossier/Plan";
 import { PhysicalDrops } from "@/components/dossier/PhysicalDrops";
 import { Experiential } from "@/components/dossier/Experiential";
-import { SyncBriefs } from "@/components/dossier/SyncBriefs";
+import { EngagementEngine } from "@/components/dossier/EngagementEngine";
 import { ComparablePlays } from "@/components/dossier/ComparablePlays";
 import { MathSection } from "@/components/dossier/MathSection";
 import { PilotMemo } from "@/components/dossier/PilotMemo";
@@ -30,7 +30,7 @@ export function DossierClient({ data }: { data: DossierData }) {
         <Plan />
         <PhysicalDrops />
         <Experiential />
-        <SyncBriefs />
+        <EngagementEngine />
         <ComparablePlays />
         <MathSection />
         <PilotMemo />
