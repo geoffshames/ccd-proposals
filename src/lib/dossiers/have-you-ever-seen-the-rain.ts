@@ -493,7 +493,22 @@ export const haveYouEverSeenTheRain: DossierData = {
       {
         code: "PD-01",
         url: "https://d8j0ntlcm91z4.cloudfront.net/user_38XpmZPtLEvhHvtskUSttPA3nUB/hf_20260505_055508_a6d1f3b9-bb31-4725-85f3-1bb2986f4852.png",
-        caption: "Concept render — 56th anniversary 180g pressing, storm-blue variant",
+        caption: "Concept render — 56th anniversary 7-inch, storm-blue variant",
+      },
+      {
+        code: "PD-02",
+        url: "https://d8j0ntlcm91z4.cloudfront.net/user_38XpmZPtLEvhHvtskUSttPA3nUB/hf_20260505_073926_c4b267dc-e291-430b-b79c-e59433154644.png",
+        caption: "Concept render — Pendulum 56th Anniversary multi-LP box with archival ephemera",
+      },
+      {
+        code: "PD-03",
+        url: "https://d8j0ntlcm91z4.cloudfront.net/user_38XpmZPtLEvhHvtskUSttPA3nUB/hf_20260505_073945_7d009cfd-5cb1-4353-8bfa-a04ac4ccb73a.png",
+        caption: "Concept flatlay — limited merch capsule (denim shirt, zine, poster, photo book)",
+      },
+      {
+        code: "PD-04",
+        url: "https://d8j0ntlcm91z4.cloudfront.net/user_38XpmZPtLEvhHvtskUSttPA3nUB/hf_20260505_073954_81cebc25-1d86-4d48-9e32-dd6e2a89e50f.png",
+        caption: "Concept render — Outliers remix cassette + 7-inch indie-store coalition pack",
       },
     ],
     experientialMockups: [
@@ -501,6 +516,21 @@ export const haveYouEverSeenTheRain: DossierData = {
         code: "EX-01",
         url: "https://d8j0ntlcm91z4.cloudfront.net/user_38XpmZPtLEvhHvtskUSttPA3nUB/hf_20260505_055517_2a088671-1a7e-4b79-a038-d32a70b46071.png",
         caption: "Concept render — Sausalito / Marin listening room pop-up",
+      },
+      {
+        code: "EX-02",
+        url: "https://d8j0ntlcm91z4.cloudfront.net/user_38XpmZPtLEvhHvtskUSttPA3nUB/hf_20260505_074004_339dac14-615a-4b39-85ab-24e148064041.png",
+        caption: "Concept render — Brooklyn independent record-store / listening room",
+      },
+      {
+        code: "EX-03",
+        url: "https://d8j0ntlcm91z4.cloudfront.net/user_38XpmZPtLEvhHvtskUSttPA3nUB/hf_20260505_074014_1d401942-279e-4d7f-9620-3fd3432a3a9b.png",
+        caption: "Concept render — Los Angeles Outliers remix DJ activation venue",
+      },
+      {
+        code: "EX-04",
+        url: "https://d8j0ntlcm91z4.cloudfront.net/user_38XpmZPtLEvhHvtskUSttPA3nUB/hf_20260505_074024_57d1edf4-b3b7-4d07-b226-26ebcb30c6d1.png",
+        caption: "Concept render — Soho London independent record store at dusk",
       },
     ],
   },

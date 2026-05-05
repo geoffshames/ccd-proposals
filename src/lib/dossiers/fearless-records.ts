@@ -529,4 +529,41 @@ export const fearlessRecords: DossierData = {
     date: "May 5, 2026",
     closing: "This dossier is issued under mutual NDA between Fearless Records (Concord Music Group, Inc.) and Crowd Control Digital, LLC. Modeled outcomes are directional and not guaranteed. The pilot fee is a fraction of one good outcome; the engagement is sized to prove that out in 90 days.",
   },
+
+  images: {
+    productMockups: [
+      {
+        code: "PD-01",
+        url: "https://d8j0ntlcm91z4.cloudfront.net/user_38XpmZPtLEvhHvtskUSttPA3nUB/hf_20260505_074035_08d7a36c-adf3-48f4-b6ef-a9f0692ec9ce.png",
+        caption: "Concept render — 3-variant lead vinyl drop on a priority S-tier track",
+      },
+      {
+        code: "PD-02",
+        url: "https://d8j0ntlcm91z4.cloudfront.net/user_38XpmZPtLEvhHvtskUSttPA3nUB/hf_20260505_074046_a25bcbe4-6f20-418b-bf8c-b92cf92c2997.png",
+        caption: "Concept render — Punk Goes 25-Year Anniversary multi-LP box",
+      },
+      {
+        code: "PD-03",
+        url: "https://d8j0ntlcm91z4.cloudfront.net/user_38XpmZPtLEvhHvtskUSttPA3nUB/hf_20260505_074255_7d721dbb-abf0-4829-b0b3-1d8fdc30e4bc.png",
+        caption: "Concept flatlay — limited merch capsule",
+      },
+      {
+        code: "PD-04",
+        url: "https://d8j0ntlcm91z4.cloudfront.net/user_38XpmZPtLEvhHvtskUSttPA3nUB/hf_20260505_074303_5bfd0fdb-7470-4d93-8fb3-6f9978a035ec.png",
+        caption: "Concept render — alumni-catalog cassette + 7-inch indie-store coalition pack",
+      },
+    ],
+    experientialMockups: [
+      {
+        code: "EX-01",
+        url: "https://d8j0ntlcm91z4.cloudfront.net/user_38XpmZPtLEvhHvtskUSttPA3nUB/hf_20260505_074314_42bd1826-26ee-4530-88d2-67a49a7503e7.png",
+        caption: "Concept render — pop-up activation weekend listening venue",
+      },
+      {
+        code: "EX-02",
+        url: "https://d8j0ntlcm91z4.cloudfront.net/user_38XpmZPtLEvhHvtskUSttPA3nUB/hf_20260505_074325_0e0cbd03-48b3-4978-915b-0cc4110f3b23.png",
+        caption: "Concept render — When We Were Young / Sad Summer festival-adjacent retail container",
+      },
+    ],
+  },
 };
