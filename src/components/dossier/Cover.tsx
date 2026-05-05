@@ -3,8 +3,15 @@ import { useDossier } from "@/lib/dossier-context";
 
 export function Cover() {
   const d = useDossier();
+  const heroBg = d.images?.heroBg;
   return (
-    <section className="border-b border-white/[0.10] min-h-[88vh] flex flex-col">
+    <section className="relative border-b border-white/[0.10] min-h-[88vh] flex flex-col overflow-hidden">
+      {heroBg && (
+        <>
+          <div className="absolute inset-0 -z-10" style={{ backgroundImage: `url(${heroBg})`, backgroundSize: "cover", backgroundPosition: "center", opacity: 0.18 }} aria-hidden />
+          <div className="absolute inset-0 -z-10 bg-gradient-to-t from-bg via-bg/85 to-bg/55" aria-hidden />
+        </>
+      )}
       <div className="border-b border-white/[0.10]">
         <div className="max-w-[1100px] mx-auto px-6 sm:px-10 py-5 flex items-center justify-between text-[11px] font-mono uppercase tracking-[0.2em] text-white/55">
           <span>{d.document.classification}</span>

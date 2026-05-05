@@ -194,6 +194,21 @@ export type DossierData = {
     date: string;
     closing: string;
   };
+
+  /**
+   * Optional imagery, generated via Higgsfield. All renders are era + atmosphere
+   * — no public-figure faces, no copyrighted album art, no logos.
+   */
+  images?: {
+    /** Cover hero background photo. Renders at low opacity behind the cover text. */
+    heroBg?: string;
+    /** Optional foreground hero on the Cover. */
+    coverHero?: string;
+    /** Vinyl / merch product mockups, keyed to PD-01..PD-04 codes. */
+    productMockups?: { code: string; url: string; caption?: string }[];
+    /** Pop-up / experiential venue concept renders, keyed to EX-01..EX-04 codes. */
+    experientialMockups?: { code: string; url: string; caption?: string }[];
+  };
 };
 
 const DossierContext = createContext<DossierData | null>(null);
