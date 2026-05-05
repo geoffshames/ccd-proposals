@@ -93,7 +93,7 @@ export function NdaGate({
       // Brief moment to show the confirmation state, then reload — the cookie
       // is set, the server-side gate check on /[slug] will let us through.
       setTimeout(() => {
-        window.location.href = `/${slug}`;
+        window.location.reload();
       }, 1400);
     } catch {
       setError("Network error. Please try again.");
