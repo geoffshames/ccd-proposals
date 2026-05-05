@@ -6,14 +6,12 @@ export function Plan() {
   const d = useDossier();
   const phases = d.plan.phases;
 
-  // If no phases, show a minimal fallback (legacy tracks). Most dossiers should use phases.
   if (!phases || phases.length === 0) {
     return (
       <section className="border-b border-white/[0.10] py-20 sm:py-28">
         <div className="max-w-[1100px] mx-auto px-6 sm:px-10">
           <h2 className="font-bold uppercase leading-[1.05] text-white" style={{ fontFamily: "var(--font-heading), var(--font-sans), sans-serif", fontSize: "clamp(1.6rem, 3.4vw, 2.6rem)" }}>{d.plan.heading}</h2>
           <p className="mt-4 text-[14.5px] leading-[1.7] text-white/65 max-w-[760px]">{d.plan.note}</p>
-          <p className="mt-6 text-[12.5px] text-white/45 font-mono uppercase tracking-[0.16em]">Phase data missing for this dossier.</p>
         </div>
       </section>
     );
@@ -29,6 +27,19 @@ function PhaseTimeline() {
   const [activePhase, setActivePhase] = useState<string | null>(null);
   const [openPhase, setOpenPhase] = useState<string | null>(phases[0]?.code ?? null);
 
+  // Split phases: in-window vs ongoing (start at or past final week, or zero-width).
+  const inWindow = phases.filter((p) => p.startWeek <= totalWeeks && p.endWeek > p.startWeek);
+  const ongoing = phases.filter((p) => p.startWeek >= totalWeeks || p.endWeek === p.startWeek);
+
+  // Phase order indices for "Phase N of M" framing.
+  const orderIndex = (code: string) => phases.findIndex((x) => x.code === code) + 1;
+
+  const onJump = (code: string) => {
+    setOpenPhase(code);
+    const target = document.getElementById(`phase-${code}`);
+    if (target) target.scrollIntoView({ behavior: "smooth", block: "start" });
+  };
+
   return (
     <section className="border-b border-white/[0.10] py-20 sm:py-28">
       <div className="max-w-[1100px] mx-auto px-6 sm:px-10">
@@ -43,24 +54,22 @@ function PhaseTimeline() {
           </div>
         </div>
 
-        {/* 12-week glance strip */}
+        {/* 12-week glance: phase code + week range only. No name truncation. Ongoing phases sit OUTSIDE the frame. */}
         <div className="mb-14">
-          <div className="flex items-center justify-between mb-3">
+          <div className="flex items-baseline justify-between mb-4">
             <div className="font-mono text-[10.5px] uppercase tracking-[0.2em] text-white/45">12-Week Glance</div>
-            <div className="font-mono text-[10.5px] uppercase tracking-[0.2em] text-white/45">{phases.length} Phases</div>
-          </div>
-          <div className="relative h-12 border border-white/[0.10] bg-white/[0.02] overflow-hidden">
-            {/* week grid lines */}
-            <div className="absolute inset-0 grid" style={{ gridTemplateColumns: `repeat(${totalWeeks}, minmax(0, 1fr))` }}>
-              {Array.from({ length: totalWeeks }, (_, i) => (
-                <div key={i} className="border-r border-white/[0.05] last:border-r-0 flex items-end justify-center pb-1.5">
-                  <span className="font-mono text-[9.5px] text-white/35 tracking-[0.1em]">{String(i + 1).padStart(2, "0")}</span>
-                </div>
-              ))}
+            <div className="font-mono text-[10.5px] uppercase tracking-[0.2em] text-white/45">
+              {inWindow.length} Phase{inWindow.length === 1 ? "" : "s"}{ongoing.length > 0 ? ` + ${ongoing.length} Ongoing` : ""}
             </div>
-            {/* phase bars */}
-            <div className="absolute inset-x-0 top-0 grid h-7" style={{ gridTemplateColumns: `repeat(${totalWeeks}, minmax(0, 1fr))` }}>
-              {phases.map((p, i) => {
+          </div>
+
+          <div className="flex items-stretch gap-3">
+            {/* In-window phases */}
+            <div
+              className="flex-1 grid gap-2 border border-white/[0.10] bg-white/[0.02] p-2"
+              style={{ gridTemplateColumns: `repeat(${totalWeeks}, minmax(0, 1fr))` }}
+            >
+              {inWindow.map((p) => {
                 const isActive = activePhase === p.code || openPhase === p.code;
                 return (
                   <button
@@ -68,30 +77,77 @@ function PhaseTimeline() {
                     type="button"
                     onMouseEnter={() => setActivePhase(p.code)}
                     onMouseLeave={() => setActivePhase((a) => (a === p.code ? null : a))}
-                    onClick={() => {
-                      setOpenPhase(p.code);
-                      const target = document.getElementById(`phase-${p.code}`);
-                      if (target) target.scrollIntoView({ behavior: "smooth", block: "start" });
-                    }}
-                    className={`mx-px my-1 px-2 flex items-center justify-start text-left transition-all ${isActive ? "bg-accent text-white" : "bg-accent/25 text-white/85 hover:bg-accent/45"}`}
-                    style={{
-                      gridColumn: `${p.startWeek} / ${p.endWeek + 1}`,
-                      opacity: i % 2 === 0 ? 1 : 0.92,
-                    }}
+                    onClick={() => onJump(p.code)}
+                    className={`min-h-[88px] flex flex-col items-start justify-between p-3 text-left border transition-all ${
+                      isActive
+                        ? "bg-accent border-accent text-white"
+                        : "bg-accent/15 border-accent/35 text-white/85 hover:bg-accent/30 hover:border-accent/55"
+                    }`}
+                    style={{ gridColumn: `${p.startWeek} / ${p.endWeek + 1}` }}
                     title={`${p.code} — ${p.name}`}
                   >
-                    <span className="font-mono text-[10.5px] uppercase tracking-[0.16em] truncate">{p.code} · {p.name}</span>
+                    <div className="font-mono text-[11.5px] uppercase tracking-[0.18em]">{p.code}</div>
+                    <div>
+                      <div className="font-mono text-[10px] uppercase tracking-[0.16em] opacity-70">
+                        Phase {orderIndex(p.code)} of {phases.length}
+                      </div>
+                      <div className="font-mono text-[11px] uppercase tracking-[0.16em] opacity-90 mt-1">
+                        W{String(p.startWeek).padStart(2, "0")}–W{String(p.endWeek).padStart(2, "0")}
+                      </div>
+                    </div>
                   </button>
                 );
               })}
             </div>
+
+            {/* Ongoing column (outside the 12-week frame) */}
+            {ongoing.length > 0 && (
+              <div className="flex flex-col gap-2">
+                <div className="font-mono text-[9.5px] uppercase tracking-[0.18em] text-white/35 mb-1 text-center">After</div>
+                {ongoing.map((p) => {
+                  const isActive = activePhase === p.code || openPhase === p.code;
+                  return (
+                    <button
+                      key={p.code}
+                      type="button"
+                      onMouseEnter={() => setActivePhase(p.code)}
+                      onMouseLeave={() => setActivePhase((a) => (a === p.code ? null : a))}
+                      onClick={() => onJump(p.code)}
+                      className={`min-h-[88px] w-[120px] flex flex-col items-start justify-between p-3 text-left border border-dashed transition-all ${
+                        isActive
+                          ? "bg-white/[0.10] border-white/50 text-white"
+                          : "bg-white/[0.03] border-white/[0.20] text-white/70 hover:bg-white/[0.06] hover:border-white/40"
+                      }`}
+                      title={`${p.code} — ${p.name}`}
+                    >
+                      <div className="font-mono text-[11.5px] uppercase tracking-[0.18em]">{p.code}</div>
+                      <div>
+                        <div className="font-mono text-[10px] uppercase tracking-[0.16em] opacity-70">
+                          Phase {orderIndex(p.code)} of {phases.length}
+                        </div>
+                        <div className="font-mono text-[11px] uppercase tracking-[0.16em] opacity-90 mt-1">Ongoing</div>
+                      </div>
+                    </button>
+                  );
+                })}
+              </div>
+            )}
           </div>
-          <p className="mt-3 font-mono text-[10.5px] text-white/35 uppercase tracking-[0.16em]">Click any phase to jump · hover to highlight</p>
+
+          {/* Week ruler */}
+          <div className="mt-2">
+            <div className="grid font-mono text-[9.5px] text-white/35 tracking-[0.1em]" style={{ gridTemplateColumns: `repeat(${totalWeeks}, minmax(0, 1fr))` }}>
+              {Array.from({ length: totalWeeks }, (_, i) => (
+                <div key={i} className="text-center">W{String(i + 1).padStart(2, "0")}</div>
+              ))}
+            </div>
+          </div>
+
+          <p className="mt-4 font-mono text-[10.5px] text-white/35 uppercase tracking-[0.16em]">Click any phase to jump to its detail · hover to highlight</p>
         </div>
 
-        {/* Phase cards: vertical timeline with left rail */}
+        {/* Phase cards (vertical timeline) */}
         <div className="relative">
-          {/* left rail */}
           <div className="absolute left-[24px] sm:left-[28px] top-2 bottom-2 w-px bg-white/[0.10]" aria-hidden />
 
           {phases.map((p, i) => {
@@ -104,7 +160,6 @@ function PhaseTimeline() {
                 onMouseEnter={() => setActivePhase(p.code)}
                 onMouseLeave={() => setActivePhase((a) => (a === p.code ? null : a))}
               >
-                {/* node dot */}
                 <div className="absolute left-0 top-2 flex items-center">
                   <div
                     className={`relative h-12 w-12 sm:h-14 sm:w-14 flex items-center justify-center border transition-colors ${
@@ -128,7 +183,9 @@ function PhaseTimeline() {
                         {p.code}
                       </div>
                       <div className="font-mono text-[12px] text-white/55">
-                        Weeks {p.startWeek}-{p.endWeek}
+                        {p.startWeek === p.endWeek
+                          ? `Week ${p.startWeek}+`
+                          : `Weeks ${p.startWeek}–${p.endWeek}`}
                       </div>
                       {p.dateLabel && (
                         <div className="font-mono text-[11px] text-white/40 mt-0.5">{p.dateLabel}</div>
