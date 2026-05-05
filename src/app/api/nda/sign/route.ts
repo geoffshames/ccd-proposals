@@ -13,6 +13,7 @@
 import "server-only";
 import { NextResponse, type NextRequest } from "next/server";
 import { getProject } from "@/lib/projects";
+import { getDossier } from "@/lib/dossiers";
 import { supabaseAdmin } from "@/lib/supabase";
 import { generateExecutedNdaPdf } from "@/lib/nda/pdf";
 import { sendNdaEmails } from "@/lib/nda/email";
@@ -49,8 +50,18 @@ export async function POST(req: NextRequest) {
   if (!EMAIL_RE.test(email)) return NextResponse.json({ error: "Invalid email." }, { status: 400 });
 
   const project = getProject(slug);
-  if (!project) return NextResponse.json({ error: "Unknown proposal." }, { status: 404 });
-  if (!project.requireNda) {
+  const dossier = getDossier(slug);
+  if (!project && !dossier) return NextResponse.json({ error: "Unknown proposal." }, { status: 404 });
+
+  // Unified resolver: either format can require NDA. Both expose the fields we need.
+  const subjectName = project ? project.client.name : dossier!.subject.name;
+  const studioName = project ? project.studio.name : "Crowd Control Digital";
+  const requireNda = project ? project.requireNda : dossier!.requireNda;
+  const legalName = project
+    ? (project.clientLegalName ?? project.client.name)
+    : (dossier!.clientLegalName ?? dossier!.subject.name);
+
+  if (!requireNda) {
     return NextResponse.json({ error: "This proposal does not require an NDA." }, { status: 400 });
   }
 
@@ -89,7 +100,7 @@ export async function POST(req: NextRequest) {
       user_agent: userAgent,
       agreement_version: AGREEMENT_VERSION,
       governing_law: "California",
-      client_legal_name: project.clientLegalName ?? project.client.name,
+      client_legal_name: legalName,
     })
     .select("id")
     .single();
@@ -141,7 +152,7 @@ export async function POST(req: NextRequest) {
   // 4) Send the emails (best-effort).
   if (pdf) {
     const proposalUrl = `https://proposal.crowdcontroldigital.com/${slug}`;
-    const proposalTitle = `${project.client.name} × ${project.studio.name}`;
+    const proposalTitle = `${subjectName} × ${studioName}`;
     sendNdaEmails({
       pdf,
       fullName,

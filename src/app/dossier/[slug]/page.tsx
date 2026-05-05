@@ -41,7 +41,7 @@ export default async function DossierPage({
   if (!dossier) notFound();
 
   if (dossier.requireNda) {
-    const check = await isNdaSignedForSlug(`dossier-${slug}`);
+    const check = await isNdaSignedForSlug(slug);
     if (!check.signed) {
       const today = new Date().toLocaleDateString("en-US", {
         year: "numeric",
@@ -50,7 +50,7 @@ export default async function DossierPage({
       });
       return (
         <NdaGate
-          slug={`dossier-${slug}`}
+          slug={slug}
           proposalTitle={`${dossier.subject.name} × Crowd Control Digital`}
           clientLegalName={dossier.clientLegalName ?? dossier.subject.name}
           companyDefinitionTerm="Client"
