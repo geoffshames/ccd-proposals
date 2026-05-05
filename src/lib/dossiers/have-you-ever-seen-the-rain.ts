@@ -14,7 +14,8 @@ export const haveYouEverSeenTheRain: DossierData = {
   clientLegalName: "Fantasy, Inc. (Concord Music Group)",
 
   subject: {
-    name: "Creedence Clearwater Revival — Have You Ever Seen the Rain",
+    name: "Have You Ever Seen the Rain",
+    parent: "Creedence Clearwater Revival",
     kind: "song",
     parentEntity: "Fantasy Records, Concord Music Group (post-merger: BMG-Concord, H2 2026)",
     coverage: "Roots rock, swamp rock, Bay Area sound. Single from Pendulum (Dec 1970), Fantasy Records.",

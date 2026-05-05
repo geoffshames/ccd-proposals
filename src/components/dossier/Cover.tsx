@@ -24,15 +24,31 @@ export function Cover() {
           <div className="font-mono text-[11px] uppercase tracking-[0.22em] text-accent mb-8">
             Catalog Reactivation Dossier
           </div>
+          {d.subject.parent && (
+            <div
+              className="font-mono uppercase text-white/55 mb-3 sm:mb-5"
+              style={{
+                fontSize: "clamp(0.85rem, 1.4vw, 1.2rem)",
+                letterSpacing: "0.18em",
+                lineHeight: 1.2,
+              }}
+            >
+              {d.subject.parent}
+            </div>
+          )}
           <h1
-            className="font-bold uppercase leading-[0.92] tracking-tight text-white"
+            className="font-bold leading-[0.92] tracking-tight text-white"
             style={{
               fontFamily: "var(--font-heading), var(--font-sans), sans-serif",
-              fontSize: "clamp(3rem, 9vw, 7.5rem)",
+              fontSize: d.subject.parent
+                ? "clamp(2.6rem, 7.5vw, 6.2rem)"
+                : "clamp(3rem, 9vw, 7.5rem)",
+              textTransform: "uppercase",
             }}
           >
             {d.subject.name}
           </h1>
+          <div className="mt-6 sm:mt-8 h-[3px] w-16 sm:w-24 bg-accent" aria-hidden />
 
           <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-x-12 gap-y-6 max-w-[920px] border-t border-white/[0.10] pt-8">
             <div>

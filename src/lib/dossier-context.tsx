@@ -19,6 +19,8 @@ export type DossierData = {
   /** The asset under review. */
   subject: {
     name: string;
+    /** Optional artist / owner / parent shown above the name on the cover. e.g. "Creedence Clearwater Revival" above "Have You Ever Seen the Rain". Omit for label dossiers where name is the parent. */
+    parent?: string;
     kind: "label" | "song" | "album" | "catalog-bundle" | "estate";
     parentEntity: string;
     /** e.g. "Pop-punk, post-hardcore, metalcore (1994-now)" */
