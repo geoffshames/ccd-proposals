@@ -508,13 +508,13 @@ export const fearlessRecords: DossierData = {
 
   pilot: {
     heading: "Pilot Engagement",
-    feeUsd: 45000,
+    feeUsd: 75000,
     duration: "90 days, Q3 2026",
     paymentTerms: "Net 7 from invoice",
     paymentSchedule: [
-      "50% greenlight ($22,500) — covers weeks 1-6",
-      "25% mid-pilot ($11,250) — end of week 6",
-      "25% close ($11,250) — end of week 12 with retainer recommendation",
+      "Month 1 ($25,000) — engagement greenlight, Audit + Lock through Manufacturing kickoff",
+      "Month 2 ($25,000) — Drop Wave 1, Pop-Up activation, Wk-30 review",
+      "Month 3 ($25,000) — Activation Peak, anniversary box presale opens, final report + retainer recommendation",
     ],
     passthroughNote: "$25K recommended passthrough budget for creator amplification, paid social, and pop-up production. Billed to platforms / vendors directly with a 15% management uplift. Manufacturing capital (vinyl, merch, anniversary box) sits separately with Fearless and is not included.",
     nextStepsNote: "Pilot output at Week 12 is a defensible recommendation on a multi-quarter retainer scoped against the full 30-artist priority roster, sized against actual pilot performance, not against this dossier's models.",

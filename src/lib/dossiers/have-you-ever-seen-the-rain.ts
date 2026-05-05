@@ -465,13 +465,13 @@ export const haveYouEverSeenTheRain: DossierData = {
 
   pilot: {
     heading: "Pilot Engagement",
-    feeUsd: 50000,
+    feeUsd: 75000,
     duration: "90 days, Q3 2026",
     paymentTerms: "Net 7 from invoice",
     paymentSchedule: [
-      "50% greenlight ($25,000) — covers weeks 1-6",
-      "25% mid-pilot ($12,500) — end of week 6",
-      "25% close ($12,500) — end of week 12 with retainer recommendation",
+      "Month 1 ($25,000) — engagement greenlight, Audit + Lock through Manufacturing kickoff",
+      "Month 2 ($25,000) — Drop Wave 1, Pop-Up activation, Wk-30 review",
+      "Month 3 ($25,000) — Activation Peak, anniversary box presale opens, final report + retainer recommendation",
     ],
     passthroughNote: "$30K recommended passthrough budget for creator amplification, paid social, and pop-up production. Billed to platforms / vendors directly with a 15% management uplift. Manufacturing capital (vinyl, merch, anniversary box) sits separately with Fantasy / Concord and is not included.",
     nextStepsNote: "Pilot output at Week 12 is a defensible recommendation on a multi-quarter retainer scoped against the wider Fantasy / Concord catalog (CCR's other top tracks, Vince Guaraldi A Charlie Brown Christmas, Tower of Power, Stax 1968-1975 catalog), sized against actual pilot performance, not against this dossier's models.",
