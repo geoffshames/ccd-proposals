@@ -128,8 +128,79 @@ export const fearlessRecords: DossierData = {
 
   plan: {
     heading: "90-Day Reactivation Roadmap",
-    note: "Four phases plus an ongoing learning loop. Twelve weeks from kickoff to retainer recommendation.",
+    note: "Four phases plus an ongoing learning loop. Each phase has discrete deliverables and a scheduled internal review at the close. Twelve weeks from kickoff to retainer recommendation.",
     weeks: 12,
+    phases: [
+      {
+        code: "P-01",
+        name: "Audit + Priority Lock",
+        startWeek: 1,
+        endWeek: 2,
+        dateLabel: "Q3 2026 — Month 1",
+        activities: [
+          "Joint kickoff with Fearless catalog + marketing leads to confirm priority 5 lead tracks",
+          "Clearance Q&A on each track: master scope, sample status, recoupment, partner conflicts",
+          "Punk Goes 25-year anniversary program scoping (volume selection, archival asset audit)",
+          "Owned-channel state audit: Laylo, email, SMS, pre-save tooling per priority artist",
+          "Vendor longlist for vinyl pressing + merch capsule production",
+        ],
+      },
+      {
+        code: "P-02",
+        name: "Manufacturing + Engagement Engine Live",
+        startWeek: 3,
+        endWeek: 5,
+        dateLabel: "Q3 2026 — Month 1-2",
+        activities: [
+          "Vinyl pressing partner locked + variant brief delivered (RTI / Furnace / Third Man / GZ)",
+          "First-wave merch capsule into production (lyric prints, era-correct apparel, photo zines)",
+          "Pop-up venue + city locked; concept brief out to candidate venues",
+          "Engagement engine goes live: Laylo flows, paid pixels + CAPI, creator seeding kits shipped",
+          "Pre-save unlock pages live for the lead drop, retargeting flows running",
+        ],
+      },
+      {
+        code: "P-03",
+        name: "Drop Wave 1 + Pop-Up Activation",
+        startWeek: 6,
+        endWeek: 9,
+        dateLabel: "Q3 2026 — Month 2-3",
+        activities: [
+          "Lead vinyl variant on sale: D2C drop with pre-save unlock + drop-day SMS wave",
+          "Pop-up activation weekend: earned press, owned-channel growth, retail uplift measurement",
+          "Hey There Delilah creator drop live; layered amplification on 3 alumni catalog tracks",
+          "Punk Goes re-introduction campaign in market across content + creator channels",
+          "Wk-30 internal review with Fearless team — early read on what's converting",
+        ],
+      },
+      {
+        code: "P-04",
+        name: "Activation Peak + Q4 Recommendation",
+        startWeek: 10,
+        endWeek: 12,
+        dateLabel: "Q4 2026 — Month 3",
+        activities: [
+          "Punk Goes anniversary box presale opens — long-tail revenue tail through holiday quarter",
+          "Second-wave merch capsule and second variant drop on the lead vinyl",
+          "Wk-60 internal review: refinements to creator + paid + owned mix",
+          "Final pilot performance report — listener uplift, vinyl units, creator amplification, press value",
+          "Multi-quarter retainer recommendation delivered: scope, pricing, target roster expansion",
+        ],
+      },
+      {
+        code: "P-05",
+        name: "Catalog Learning Loop (Ongoing)",
+        startWeek: 12,
+        endWeek: 12,
+        dateLabel: "Q4 2026 onward",
+        activities: [
+          "Monthly catalog rolling review of organic reactivation signals across the priority 30",
+          "Owned + paid + creator + content engine maintenance against active catalog drops",
+          "Quarterly vinyl + merch drop calendar against organic reactivation signals",
+          "Annual anniversary calendar maintenance — Punk Goes, era milestones, individual album anniversaries",
+        ],
+      },
+    ],
     tracks: [
       {
         name: "Audit + Priority Lock",

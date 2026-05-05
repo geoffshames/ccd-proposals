@@ -112,8 +112,79 @@ export const haveYouEverSeenTheRain: DossierData = {
 
   plan: {
     heading: "90-Day Reactivation Roadmap",
-    note: "Pilot timed to lock the December 2026 56th anniversary holiday-quarter drop window. Twelve weeks from kickoff to retainer recommendation; the box presale tail runs through Q4 2026.",
+    note: "Pilot timed to lock the December 2026 56th anniversary holiday-quarter drop window. Four phases plus an ongoing learning loop. Twelve weeks from kickoff to retainer recommendation; the box presale tail runs through Q4 2026.",
     weeks: 12,
+    phases: [
+      {
+        code: "P-01",
+        name: "Audit + Anniversary Lock",
+        startWeek: 1,
+        endWeek: 2,
+        dateLabel: "Q3 2026 — Month 1",
+        activities: [
+          "Joint kickoff with Fantasy / Concord catalog leads to lock the Pendulum 56th scope",
+          "Clearance Q&A: HYESR master + Pendulum companion tracks (Who'll Stop the Rain, Hey Tonight)",
+          "John Fogerty representative outreach for any signed-edition tier or video-message participation",
+          "Outliers remix licensing alignment with the remix producer team",
+          "Owned-channel audit on the CCR catalog umbrella; vinyl pressing partner shortlist",
+        ],
+      },
+      {
+        code: "P-02",
+        name: "Manufacturing + Engagement Engine Live",
+        startWeek: 3,
+        endWeek: 5,
+        dateLabel: "Q3 2026 — Month 1-2",
+        activities: [
+          "Vinyl pressing partner locked; 7-inch lead variant + Pendulum box production into queue",
+          "Limited merch capsule into production (zine, denim work shirt, screen-printed poster, photo book)",
+          "Sausalito / Marin venue lock for the lead pop-up; concept brief delivered",
+          "Engagement engine goes live: Laylo flows, paid pixels + CAPI, creator seeding kits shipped",
+          "Pre-save infrastructure live; retargeting flows running on remix + original audiences",
+        ],
+      },
+      {
+        code: "P-03",
+        name: "Drop Wave 1 + Sausalito Pop-Up",
+        startWeek: 6,
+        endWeek: 9,
+        dateLabel: "Q3 2026 — Month 2-3",
+        activities: [
+          "7-inch lead variant on sale: D2C drop with pre-save unlock + drop-day SMS wave",
+          "Sausalito / Marin pop-up activation weekend with full press + content capture",
+          "Outliers remix amplification kits live to fitness / festival / travel TikTok creators",
+          "Original recording creator wave to road-content / break-up / coming-of-age creators",
+          "Wk-30 internal review with Fantasy / Concord team — early read on conversion",
+        ],
+      },
+      {
+        code: "P-04",
+        name: "Pendulum Box Presale + Q4 Recommendation",
+        startWeek: 10,
+        endWeek: 12,
+        dateLabel: "Q4 2026 — Month 3 (anniversary window)",
+        activities: [
+          "Pendulum 56th Anniversary Vinyl Box presale opens — holiday-quarter window",
+          "Second-wave merch capsule and the second variant drop on the 7-inch",
+          "Wk-60 review: refinements + presale conversion math against comp benchmarks",
+          "Final pilot performance report — listener uplift, vinyl + merch units, creator amplification, press value",
+          "Multi-quarter retainer recommendation: scope across CCR's other top tracks + Vince Guaraldi catalog + Stax 1968-1975",
+        ],
+      },
+      {
+        code: "P-05",
+        name: "Catalog Learning Loop (Ongoing)",
+        startWeek: 12,
+        endWeek: 12,
+        dateLabel: "Q4 2026 onward",
+        activities: [
+          "Monthly catalog rolling review of organic reactivation signals across CCR + Fantasy roster",
+          "Owned + paid + creator + content engine maintenance",
+          "Quarterly vinyl + merch drop calendar against organic momentum",
+          "Annual anniversary calendar maintenance",
+        ],
+      },
+    ],
     tracks: [
       { name: "Audit + Anniversary Lock", bars: [{ startWeek: 1, endWeek: 2, label: "Lock Pendulum 56th scope + clearance Q&A" }] },
       { name: "Engagement Engine", bars: [

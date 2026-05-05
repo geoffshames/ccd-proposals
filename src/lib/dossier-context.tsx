@@ -83,12 +83,22 @@ export type DossierData = {
     pullQuote?: string;
   };
 
-  /** Gantt-style 90-day plan. */
+  /** 90-day plan. Render as phase timeline if phases[] present; falls back to tracks (legacy gantt) otherwise. */
   plan: {
     heading: string;
     note: string;
     weeks: number;
-    tracks: {
+    /** Preferred: phase-timeline layout. Each phase covers a contiguous week range with grouped activities. */
+    phases?: {
+      code: string;          // "P-01"
+      name: string;          // "Audit + Priority Lock"
+      startWeek: number;
+      endWeek: number;
+      dateLabel?: string;    // optional human label, e.g. "Q3 2026 — Month 1"
+      activities: string[];  // 3-6 bullets describing what happens in this phase
+    }[];
+    /** Legacy: gantt-style. Kept for backward compatibility. */
+    tracks?: {
       name: string;
       bars: { startWeek: number; endWeek: number; label: string }[];
     }[];
