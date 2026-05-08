@@ -1,15 +1,23 @@
 import type { ProjectData } from "../project-context";
 
 /**
- * Bogey Boys - E-Comm Stack Retainer Pitch
+ * Bogey Boys - E-Comm Stack Retainer Pitch (v2)
  *
  * Cold pitch positioning CCD as the always-on e-comm engine beneath the
  * drop calendar. Leverages CCD's apparel + sport + music DNA: Malbon Golf,
- * Kappa, Foot Locker, NBA - plus a music-industry foundation that maps
+ * Kappa, Foot Locker - plus a music-industry foundation that maps
  * directly to Macklemore's founder lane.
  *
- * Pricing: 6-month retainer at $35K/mo management + $15K setup. Ad spend
- * billed separately at 15% management. Total management value: $225K.
+ * Pricing (revised v2):
+ *   - Setup: $5,000 one-time
+ *   - Email & SMS: $3,000/mo
+ *   - Paid Media Management: $2,500/mo or 15% of monthly spend (greater of)
+ *   - Creator & Influencer: 15% of campaign spend - no flat retainer fee
+ *   - CRO, Analytics & Strategy: $5,000/mo
+ *   - Monthly retainer floor: $10,500
+ *   - Total 6-month engagement value: $68,000 (management only)
+ *   - Recommended ad spend: $10K-$25K/mo (separate, billed direct + 15%)
+ *   - Creative production NOT included - available as quoted add-on
  */
 export const bogeyBoys: ProjectData = {
   accentColor: "#C8392E",
@@ -29,7 +37,7 @@ export const bogeyBoys: ProjectData = {
   },
   project: {
     name: "Bogey Boys E-Comm Engine",
-    tagline: "The always-on growth stack beneath the drop calendar. Lifecycle, paid media, creative, and creator infrastructure built for an apparel brand that already wins on culture.",
+    tagline: "The always-on growth stack beneath the drop calendar. Lifecycle, paid media, creator activation, and analytics built on top of an apparel brand that already wins on culture and content.",
     type: "E-Comm Retainer (6 Months)",
     startDate: "Q3 2026",
     endDate: "Q4 2026",
@@ -39,21 +47,20 @@ export const bogeyBoys: ProjectData = {
 
   overview: {
     heading: "The Strategy",
-    summary: "Bogey Boys has the rarest thing an apparel brand can have: a real founder story, a clear point of view, and editorial-grade photography that already does half the marketing job. What's missing is the always-on engine that turns drop-day spikes into compounding LTV. CCD has built that engine for the brands you compete with - Malbon Golf, Kappa, Foot Locker, NBA - and we live in the music + culture lane that Bogey Boys' founder helped invent. This is a 6-month retainer to stand up the lifecycle program, run paid media as a system not a series of campaigns, scale creative output, and activate the creator network where music, golf, and streetwear actually overlap. Management fees only - ad spend and creator fees billed separately at a 15% management rate.",
+    summary: "Bogey Boys has the rarest thing an apparel brand can have: a real founder story, a clear point of view, and editorial-grade photography that already does half the marketing job. What's missing is the always-on engine that turns drop-day spikes into compounding LTV. CCD has built that engine for the brands you compete with - Malbon Golf ($5M+ driven), Kappa (10x ROAS), Foot Locker (30% lower CPA) - and we live in the music + culture lane that Bogey Boys' founder helped invent. This 6-month retainer stands up the lifecycle program, runs paid media as a system, activates the music + golf creator overlap, and ties it all together with conversion + analytics. We're not the creative team - your editorial photography is best-in-class - we're the engine that puts that content to work.",
     objectives: [
       "Build and run the Klaviyo lifecycle engine (8-10 flows, 8-12 campaigns/mo, segmented SMS) so every site visitor, drop subscriber, and one-time buyer gets a sequenced flywheel - not a single welcome email and silence",
       "Launch full-funnel paid media across Meta, Google (Search + Shopping + PMax), and TikTok with a unified prospecting + retargeting architecture - turning the Adidas-collab and Macklemore-press moments into sustained traffic, not 72-hour spikes",
-      "Scale creative production to platform-native volume (40-60 ads/mo) - retaining the Bogey Boys editorial DNA while feeding the systems that demand fresh assets every week",
-      "Activate the music-meets-golf creator overlap: a 25-50 creator pipeline spanning golf personalities, hip-hop adjacent culture, and streetwear influencers with the Macklemore halo built in",
-      "Stand up the conversion + measurement layer (CRO, attribution, cohort + LTV reporting) so every dollar across the stack is traceable - and Months 4-6 are optimized against real data, not gut"
+      "Activate the music-meets-golf creator overlap: a 25-50 partner pipeline spanning golf personalities, hip-hop adjacent culture, and streetwear influencers - billed at 15% of campaign spend, no flat retainer fee",
+      "Stand up the conversion + measurement layer (CRO, attribution, cohort + LTV reporting, monthly strategy) so every dollar across the stack is traceable - and Months 4-6 are optimized against real data, not gut"
     ],
     subtitle: "Six months to make Bogey Boys the most efficient drop-driven apparel engine in golf - then scale it.",
     imageCaption: "Bogey Boys x Crowd Control Digital",
     stats: [
       { value: 10, suffix: "+", label: "Lifecycle Flows", description: "Klaviyo + SMS engine built from welcome through win-back, segmented by buyer behavior" },
-      { value: 60, suffix: "+", label: "Ad Creatives / Mo" },
       { value: 3, label: "Paid Channels" },
-      { value: 50, suffix: "+", label: "Creator Pipeline" }
+      { value: 50, suffix: "+", label: "Creator Pipeline" },
+      { value: 6, label: "Month Engagement" }
     ],
   },
 
@@ -153,7 +160,7 @@ export const bogeyBoys: ProjectData = {
 
   targets: [
     { metric: "Email + SMS Revenue Share", value: "30%+", context: "Industry-leading apparel benchmark for owned-channel attribution by month 6 (Klaviyo apparel cohort median: 22-28%)." },
-    { metric: "Blended ROAS", value: "3.5-5x", context: "Full-funnel target across Meta, Google, and TikTok by month 4, after creative + audience iteration cycles." },
+    { metric: "Blended ROAS", value: "3.5-5x", context: "Full-funnel target across Meta, Google, and TikTok by month 4, after audience + creative iteration cycles using your existing content engine." },
     { metric: "Repeat-Purchase Rate", value: "+25%", context: "Lift driven by post-purchase sequencing, replenishment flows, and VIP segment activation versus current baseline." },
     { metric: "List Growth", value: "+50K subs", context: "Net new email + SMS subscribers across 6 months via on-site capture, drop-tease incentives, and paid acquisition layer." }
   ],
@@ -193,7 +200,7 @@ export const bogeyBoys: ProjectData = {
       tasks: [
         "Launch Meta + Google + TikTok prospecting and retargeting at full budget allocation",
         "Klaviyo build phase 2: VIP, win-back, replenishment, drop-tease, SMS program standup",
-        "Creative system: 40-60 ads/mo production cadence - statics, motion, UGC, creator-cut",
+        "Adapt existing Bogey Boys editorial content into platform-native ad units (versioning, copy, motion edits where applicable)",
         "Creator pipeline: source, vet, and onboard the first 15-20 partners across golf + culture + music"
       ]
     },
@@ -216,8 +223,8 @@ export const bogeyBoys: ProjectData = {
       status: "upcoming" as const,
       tasks: [
         "Cohort + LTV reporting v2: Months 1-4 buyer cohorts compared, retention modeled, replenishment tuned",
-        "Paid media efficiency pass: bidding, audience consolidation, creative refresh velocity, channel mix",
-        "Creator program scale: top-performing partners moved into evergreen whitelist + retainer terms",
+        "Paid media efficiency pass: bidding, audience consolidation, channel mix, scale-up plan as spend grows",
+        "Creator program scale: top-performing partners moved into evergreen whitelist agreements",
         "Quarter 7-12 strategic plan: defensible recommendation on multi-quarter renewal scoped against real data"
       ]
     }
@@ -229,7 +236,7 @@ export const bogeyBoys: ProjectData = {
       icon: "mail",
       items: [
         { name: "Klaviyo Flow Build (10+)", quantity: "10+ flows", description: "Welcome series, browse abandon, cart abandon, checkout abandon, post-purchase, win-back, replenishment, VIP, drop-tease, sunset. Built, A/B tested, monitored monthly." },
-        { name: "Email Campaigns", quantity: "8-12 / mo", description: "Drop launches, collab announcements, evergreen narrative, founder-led storytelling. Designed in-house using the Bogey Boys editorial DNA." },
+        { name: "Email Campaigns", quantity: "8-12 / mo", description: "Drop launches, collab announcements, evergreen narrative, founder-led storytelling. Designed using Bogey Boys' editorial photography library." },
         { name: "SMS Program", quantity: "Full standup", description: "Compliant opt-in, segmentation, drop-day broadcast, abandoned cart, VIP early-access. Attentive or Klaviyo SMS - whichever is best for the stack." },
         { name: "List Growth", quantity: "Always-on", description: "On-site capture, exit intent, drop-tease incentives, post-purchase referral - feeding the lifecycle engine continuously." }
       ]
@@ -238,20 +245,10 @@ export const bogeyBoys: ProjectData = {
       category: "Paid Media",
       icon: "target",
       items: [
-        { name: "Meta (Facebook + Instagram)", quantity: "Always-on", description: "Full-funnel: prospecting, retargeting, dynamic catalog ads, drop-tease campaigns, creator whitelist. Daily optimization. Ad spend billed separately at 15% management fee." },
-        { name: "Google (Search + Shopping + PMax)", quantity: "Always-on", description: "Brand defense, non-brand long-tail (vintage golf, golf cardigan, streetwear golf), Shopping feed optimization, Performance Max with audience signals. Ad spend billed separately at 15% management fee." },
-        { name: "TikTok Ads", quantity: "Always-on", description: "Spark Ads, creator whitelist, native UGC-style creative, drop-launch boosts. Ad spend billed separately at 15% management fee." },
+        { name: "Meta (Facebook + Instagram)", quantity: "Always-on", description: "Full-funnel: prospecting, retargeting, dynamic catalog ads, drop-tease campaigns, creator whitelist. Daily optimization. Ad spend billed direct to platform; mgmt fee is $2,500/mo or 15% of total monthly spend, whichever is greater." },
+        { name: "Google (Search + Shopping + PMax)", quantity: "Always-on", description: "Brand defense, non-brand long-tail (vintage golf, golf cardigan, streetwear golf), Shopping feed optimization, Performance Max with audience signals. Included in the paid media management fee." },
+        { name: "TikTok Ads", quantity: "Always-on", description: "Spark Ads, creator whitelist, native UGC-style creative, drop-launch boosts. Included in the paid media management fee." },
         { name: "Reporting + Attribution", quantity: "Weekly + Monthly", description: "Weekly performance pulses, monthly strategic deep-dives. Triple Whale or Northbeam attribution stack if not already in place." }
-      ]
-    },
-    {
-      category: "Creative Production",
-      icon: "image",
-      items: [
-        { name: "Ad Creative Volume", quantity: "40-60 / mo", description: "Static, motion, UGC-style, creator-cut, platform-native edits. Built from existing Bogey Boys editorial assets + new content production." },
-        { name: "Email Design System", quantity: "Templated", description: "Modular template library reflecting Bogey Boys' editorial photography and heritage typography. Faster builds, consistent brand." },
-        { name: "Landing Page Production", quantity: "1-2 / mo", description: "Drop-specific landing pages, collab microsites, paid-media-optimized pages. Conversion-tested." },
-        { name: "Drop Campaign Creative", quantity: "Per drop", description: "Full creative system per drop: launch, sustain, post-drop. Coordinated across paid, email, social, and on-site." }
       ]
     },
     {
@@ -259,25 +256,18 @@ export const bogeyBoys: ProjectData = {
       icon: "users",
       items: [
         { name: "Creator Pipeline", quantity: "25-50 partners", description: "Sourced, vetted, onboarded across three lanes: golf personalities, hip-hop / culture adjacent, streetwear/lifestyle. Macklemore halo built in." },
-        { name: "Seeding Program", quantity: "Monthly", description: "Drop-aligned product seeding, organic content asks, UGC harvesting rights. The ammunition for the paid creative pipeline." },
-        { name: "Paid Partnerships", quantity: "5-10 / mo", description: "Higher-tier paid creator placements - whitelisted, repurposed across channels, optimized for conversion not just awareness. Creator fees billed separately at 15% management fee." }
+        { name: "Seeding & Activation", quantity: "Monthly", description: "Drop-aligned product seeding, organic content asks, UGC harvesting rights. Coordinated with the Bogey Boys content team." },
+        { name: "Paid Partnerships", quantity: "5-10 / mo", description: "Higher-tier paid creator placements - whitelisted, repurposed across channels, optimized for conversion not just awareness. Billed at 15% of campaign spend - no flat retainer fee on this category." }
       ]
     },
     {
-      category: "CRO & Analytics",
-      icon: "bar-chart",
+      category: "CRO, Analytics & Strategy",
+      icon: "compass",
       items: [
         { name: "Site Optimization", quantity: "Continuous", description: "PDP, cart, checkout - friction-mapped and tested. Coordinated with Shopify dev partners as needed." },
         { name: "Cohort + LTV Reporting", quantity: "Monthly", description: "Acquisition cohorts tracked across retention, repeat-purchase, AOV growth, and channel attribution. The compass for the engagement." },
-        { name: "Funnel Diagnostics", quantity: "Quarterly deep-dive", description: "Top-of-funnel through repeat purchase: where the system leaks, where to invest more, where to cut." }
-      ]
-    },
-    {
-      category: "Strategy & Account Management",
-      icon: "compass",
-      items: [
-        { name: "Monthly Strategy Calls", quantity: "Monthly", description: "Calendar planning, drop sequencing, performance review, creative direction. With CCD's senior strategy team and Bogey Boys leadership." },
-        { name: "Drop Campaign Architecture", quantity: "Per drop", description: "End-to-end drop playbook designed and run by CCD, coordinated with the Bogey Boys creative + ops team." },
+        { name: "Funnel Diagnostics", quantity: "Quarterly deep-dive", description: "Top-of-funnel through repeat purchase: where the system leaks, where to invest more, where to cut." },
+        { name: "Monthly Strategy Calls", quantity: "Monthly", description: "Calendar planning, drop sequencing, performance review, channel mix. With CCD's senior strategy team and Bogey Boys leadership." },
         { name: "Quarterly Strategic Reviews", quantity: "Q3 + end-Q4", description: "Strategic re-set against business goals. KPI calibration. Multi-quarter plan." }
       ]
     }
@@ -289,16 +279,16 @@ export const bogeyBoys: ProjectData = {
       "Full Klaviyo lifecycle build (10+ flows) and ongoing campaign cadence (8-12 per month)",
       "SMS program standup and ongoing operation (compliant opt-in through drop broadcast)",
       "Always-on paid media management across Meta, Google (Search + Shopping + PMax), and TikTok",
-      "Ad creative production at 40-60 assets per month (static, motion, UGC-style, creator-cut)",
-      "Creator pipeline development (25-50 partners) and ongoing seeding + paid partnership management",
+      "Adaptation of existing Bogey Boys editorial content into platform-native ad units (versioning, copy, light motion edits)",
+      "Creator pipeline development (25-50 partners), seeding, and paid partnership management - paid placements billed at 15% of campaign spend",
       "CRO program: site optimization, A/B testing, funnel diagnostics, monthly cohort + LTV reporting",
       "Drop campaign architecture and execution coordination across the full stack",
       "Monthly strategy calls + quarterly strategic reviews with CCD senior leadership"
     ],
     excluded: [
-      "Ad spend across Meta, Google, and TikTok - billed directly to platforms, managed at 15%",
-      "Creator partnership fees - billed direct to creators, managed at 15%",
-      "Custom photo + video shoots, music video production (available as add-on - scoped and quoted separately)",
+      "Ad spend across Meta, Google, and TikTok - billed directly to platforms",
+      "Creator partnership fees - billed direct to creators (CCD takes 15% of campaign spend as the management fee)",
+      "Net-new creative production: photo + video shoots, custom motion design, music video production (available as add-on - scoped and quoted separately)",
       "Shopify development beyond optimization tweaks - structural rebuilds, theme work, app integrations (available as add-on)",
       "Brand identity, packaging, or in-store visual merchandising (available as add-on)",
       "PR + earned media outreach (available as add-on or coordinated with existing PR partner)"
@@ -309,16 +299,15 @@ export const bogeyBoys: ProjectData = {
     model: "retainer" as const,
     currency: "USD",
     lineItems: [
-      { name: "Email & SMS Lifecycle", description: "Klaviyo build + ongoing campaigns + SMS program. The compounding revenue layer.", price: 9500, recurring: true },
-      { name: "Paid Media Management", description: "Meta + Google + TikTok. Management fee only - ad spend billed separately at 15% management.", price: 11000, recurring: true },
-      { name: "Creative Production", description: "40-60 ads/mo, email design, landing pages, drop campaign creative.", price: 8500, recurring: true },
-      { name: "Creator & Influencer", description: "Pipeline development, seeding, paid partnership management. Creator fees billed separately at 15% management.", price: 3500, recurring: true },
-      { name: "CRO, Analytics & Strategy", description: "Site optimization, cohort + LTV reporting, monthly strategy calls, quarterly reviews.", price: 2500, recurring: true }
+      { name: "Email & SMS Lifecycle", description: "Klaviyo build + ongoing campaigns + SMS program. The compounding revenue layer.", price: 3000, recurring: true },
+      { name: "Paid Media Management", description: "Meta + Google + TikTok. $2,500/mo OR 15% of monthly ad spend, whichever is greater. Ad spend billed direct to platforms.", price: 2500, recurring: true },
+      { name: "Creator & Influencer", description: "Pipeline development + seeding included; paid creator partnerships billed at 15% of campaign spend (no flat retainer fee on this category).", price: 0, priceLabel: "15% of spend", recurring: false },
+      { name: "CRO, Analytics & Strategy", description: "Site optimization, cohort + LTV reporting, monthly strategy calls, quarterly reviews.", price: 5000, recurring: true }
     ],
-    subtotal: 35000,
+    subtotal: 10500,
     setupFee: {
       label: "Onboarding & Foundation (One-Time)",
-      amount: 15000
+      amount: 5000
     },
     discount: {
       label: "First-Engagement Partnership Discount",
@@ -327,28 +316,28 @@ export const bogeyBoys: ProjectData = {
     },
     mediaBudget: {
       label: "Recommended Monthly Ad Spend",
-      amount: 60000,
-      amountLabel: "$45K-$75K",
-      note: "Recommended ad spend across Meta, Google, and TikTok - billed direct to platforms, managed at 15% rate. Range scales with drop calendar; lower in evergreen weeks, higher around drop launches."
+      amount: 17500,
+      amountLabel: "$10K-$25K",
+      note: "Recommended starting ad spend across Meta, Google, and TikTok - billed direct to platforms. Paid media management fee is $2,500/mo or 15% of monthly spend, whichever is greater. We start at the lower end and scale spend up as ROAS hits target benchmarks."
     },
-    total: 225000,
+    total: 68000,
     paymentSchedule: [
-      { milestone: "Month 1 (includes setup)", percentage: 22, amount: 50000, due: "On signature - kicks off Foundation phase" },
-      { milestone: "Month 2", percentage: 16, amount: 35000, due: "Day 30" },
-      { milestone: "Month 3", percentage: 16, amount: 35000, due: "Day 60" },
-      { milestone: "Month 4", percentage: 16, amount: 35000, due: "Day 90" },
-      { milestone: "Month 5", percentage: 16, amount: 35000, due: "Day 120" },
-      { milestone: "Month 6", percentage: 14, amount: 35000, due: "Day 150" }
+      { milestone: "Month 1 (includes setup)", percentage: 23, amount: 15500, due: "On signature - kicks off Foundation phase" },
+      { milestone: "Month 2", percentage: 15, amount: 10500, due: "Day 30" },
+      { milestone: "Month 3", percentage: 15, amount: 10500, due: "Day 60" },
+      { milestone: "Month 4", percentage: 16, amount: 10500, due: "Day 90" },
+      { milestone: "Month 5", percentage: 16, amount: 10500, due: "Day 120" },
+      { milestone: "Month 6", percentage: 15, amount: 10500, due: "Day 150" }
     ],
-    paymentTerms: "Net 7 from invoice. ACH or wire preferred. Stripe link for first invoice provided below.",
-    paymentLink: "https://buy.stripe.com/aFabJ01Hm82J46J93Ha7C0d"
+    paymentTerms: "Net 7 from invoice. ACH or wire preferred. Stripe link for first invoice provided below. Note: paid media management is billed at the greater of $2,500/mo or 15% of monthly spend; creator paid placements are billed monthly at 15% of campaign spend.",
+    paymentLink: "https://buy.stripe.com/3cIeVc0Di0Ahbzb0xba7C0e"
   },
 
   nextSteps: [
     {
       step: 1,
       title: "Approve & Pay",
-      description: "Click Approve & Pay above to lock the engagement. Month 1 invoice ($50,000 - includes setup fee) is processed via Stripe and Foundation phase begins immediately."
+      description: "Click Approve & Pay above to lock the engagement. Month 1 invoice ($15,500 - includes the $5,000 setup fee) is processed via Stripe and Foundation phase begins immediately."
     },
     {
       step: 2,
@@ -358,7 +347,7 @@ export const bogeyBoys: ProjectData = {
     {
       step: 3,
       title: "Kickoff & Access Setup",
-      description: "60-minute kickoff with the Bogey Boys team and CCD's senior leads (strategy, paid, lifecycle, creative). Account access provisioned, Slack + project tooling stood up."
+      description: "60-minute kickoff with the Bogey Boys team and CCD's senior leads (strategy, paid, lifecycle). Account access provisioned, Slack + project tooling stood up."
     },
     {
       step: 4,
@@ -392,9 +381,8 @@ export const bogeyBoys: ProjectData = {
   },
 
   caseStudies: [
-    { client: "MALBON GOLF", metric: "FULL-FUNNEL", description: "GROWTH STACK" },
-    { client: "KAPPA", metric: "GLOBAL", description: "APPAREL CAMPAIGNS" },
-    { client: "FOOT LOCKER", metric: "RETAIL", description: "DROP STRATEGY" },
-    { client: "NBA", metric: "LEAGUE-WIDE", description: "CONTENT SYSTEMS" }
+    { client: "MALBON GOLF", metric: "$5M+", description: "REVENUE DRIVEN" },
+    { client: "KAPPA", metric: "10X", description: "ROAS" },
+    { client: "FOOT LOCKER", metric: "-30%", description: "LOWER CPA" }
   ]
 };

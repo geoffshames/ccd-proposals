@@ -77,7 +77,7 @@ export function AboutCCD() {
         </ScrollReveal>
 
         {/* Case study metrics grid */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-20">
+        <div className={`grid grid-cols-2 ${CASE_STUDIES.length === 3 ? "md:grid-cols-3" : "md:grid-cols-4"} gap-6 mb-20`}>
           {CASE_STUDIES.map((study, i) => (
             <ScrollReveal key={study.client} delay={0.1 + i * 0.08}>
               <div className="card frame bg-bg-card rounded-none p-6 group hover:border-accent/30 transition-colors">
