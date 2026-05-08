@@ -19,6 +19,7 @@ import { paxahau } from "./paxahau";
 import { resoundPresents } from "./resound-presents";
 import { theDuckClub } from "./the-duck-club";
 import { fearlessRecords } from "./fearless-records";
+import { bogeyBoys } from "./bogey-boys";
 import type { ProjectData } from "../project-context";
 
 export const PROJECTS: Record<string, ProjectData> = {
@@ -43,6 +44,7 @@ export const PROJECTS: Record<string, ProjectData> = {
   "paxahau": paxahau,
   "resound-presents": resoundPresents,
   "fearless-records": fearlessRecords,
+  "bogey-boys": bogeyBoys,
 };
 
 export function getProject(slug: string): ProjectData | undefined {
