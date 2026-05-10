@@ -32,7 +32,7 @@ export const yoQuieroBailar: ProjectData = {
   overview: {
     heading: "The System",
     summary:
-      "Yo Quiero Bailar built a touring brand that is doing 6 to 8 reggaeton mega-events a month across the US — Mayan in LA, Karamba in SLC, Decca in Jacksonville, Uptown Theater in Kansas City, BarCode in Jersey, soon Houston, Tampa, San Antonio, OKC, Springdale — at a scale that almost no independent promoter is matching. The engine pulls Ivy Queen, Angel y Khriz, Dani Flow, El Cherry into rooms of 1,200 to 1,500 with the resident DJ network anchored by J-Star. The marketing under the hood is what hasn't caught up. Our 48-hour audit confirmed what George already suspected: a 1.15X overall ROAS, no dedicated remarketing, ad copy too long for the format, no per-event custom conversions, and an email/SMS layer captive to TicketSpice's stock flows. This pilot is engineered to fix the four highest-leverage problems first, build out the next two layers (per-market creators + sponsorship pipeline), and have the whole stack ready to scale through the back half of 2026.",
+      "Yo Quiero Bailar built a touring brand that is doing 6 to 8 reggaeton mega-events a month across the US — Mayan in LA, Karamba in SLC, Decca in Jacksonville, Uptown Theater in Kansas City, BarCode in Jersey, soon Houston, Tampa, San Antonio, OKC, Springdale — at a scale that almost no independent promoter is matching. The engine pulls Ivy Queen, Angel y Khriz, Dani Flow, El Cherry into rooms of 1,200 to 1,500 with the resident DJ network anchored by J-Star. The marketing under the hood is what hasn't caught up. Our under-12-hour audit confirmed what George already suspected: a 1.15X overall ROAS, no dedicated remarketing, ad copy too long for the format, no per-event custom conversions, and an email/SMS layer captive to TicketSpice's stock flows. This pilot is engineered to fix the four highest-leverage problems first, build out the next two layers (per-market creators + sponsorship pipeline), and have the whole stack ready to scale through the back half of 2026.",
     objectives: [
       "Rebuild Meta from the ground up — per-event custom conversions, dedicated remarketing campaigns, surgically short copy variants, lookalike audiences seeded off real ticket-buyer data — moving the overall return from 1.15X toward the 2.5X industry benchmark",
       "Audit the existing TicketSpice email + SMS drip and win-back flows; rewrite or rebuild what's leaking; design the segmentation schema that survives whichever ticketing platform comes out of the migration",
@@ -60,7 +60,7 @@ export const yoQuieroBailar: ProjectData = {
   discovery: {
     heading: "What The Audit Found",
     summary:
-      "George and J-Star pulled us into the Meta accounts and TicketSpice for a 48-hour audit before this writeup. The findings below aren't speculation — they're pulled directly from the live ad accounts, the existing automation flows, and a structural read on where YQB sits in the Latin touring landscape. The good news: every single one of these is a fixable infrastructure problem, not a brand or product problem. The brand is winning. The infrastructure is just leaking margin out the back.",
+      "George and J-Star pulled us into the Meta accounts and TicketSpice for an under-12-hour audit before this writeup. The findings below aren't speculation — they're pulled directly from the live ad accounts, the existing automation flows, and a structural read on where YQB sits in the Latin touring landscape. The good news: every single one of these is a fixable infrastructure problem, not a brand or product problem. The brand is winning. The infrastructure is just leaking margin out the back.",
     insights: [
       {
         label: "1.15X Return — Not A Creative Problem",
@@ -206,26 +206,26 @@ export const yoQuieroBailar: ProjectData = {
 
   targets: [
     {
-      metric: "Blended ROAS",
-      value: "Target 2.5X",
+      metric: "Blended ROAS Target",
+      value: "2.5X",
       context:
-        "Industry benchmark for Latin touring on Meta. Current account is 1.15X. We're not committing to a number — variance per market and per headliner is real — but the directional target across the 90-day pilot is closing the gap to 2.5X+ blended through the remarketing build, custom conversions, copy compression, and creative volume increase.",
+        "Industry benchmark for Latin touring on Meta. Current account sits at 1.15X. Not a commitment — variance per market and per headliner is real — but the directional target across the 90-day pilot is closing the gap to 2.5X+ blended through the remarketing build, custom conversions, copy compression, and creative volume increase.",
     },
     {
-      metric: "Ad Spend % Of Gross",
-      value: "From ~28% → 15%",
+      metric: "Ad Spend As % Of Gross",
+      value: "28% → 15%",
       context:
-        "Current run rate is ~28 to 35 percent of gross going to ad spend. Industry healthy is 10 to 15 percent. Closing that gap is the compounding effect of every fix in the pilot — better targeting, lifecycle reactivation, and per-market creator content lowering CPMs in soft markets.",
+        "Current run rate is ~28 to 35 percent of gross going to ad spend. Industry healthy is 10 to 15 percent. Closing the gap is the compounding effect of every fix in the pilot — better targeting, lifecycle reactivation, and per-market creator content lowering CPMs in soft markets.",
     },
     {
-      metric: "Per-Market Creator Pods",
-      value: "17+ markets",
+      metric: "Markets With Creator Pods",
+      value: "17+",
       context:
-        "Stand up a 3 to 5-creator pod in every active YQB city across the pilot — Latin nightlife and perreo creators producing UGC in the week before each show, fed into both organic feed and as paid creative. The objective is to make the cost-per-buyer in 'soft' markets converge with 'strong' markets.",
+        "Stand up a 3 to 5-creator pod in every active YQB city — Latin nightlife and perreo creators producing UGC in the week before each show, fed into both organic feed and paid creative. The objective is making the cost-per-buyer in soft markets converge with strong ones.",
     },
     {
-      metric: "Sponsorship Pipeline",
-      value: "3+ active conversations",
+      metric: "Sponsorship Conversations",
+      value: "3+",
       context:
         "Open the sponsorship lane that currently has zero presence on the YQB site or in any event activation. Leveraging the Eric Schneider relationship (Bahia Mundo, Story Jalisco) plus inbound, the goal across the pilot is 3+ active conversations with Latin spirits, beauty, mobile carrier, or apparel brands fitting the YQB audience.",
     },
@@ -233,7 +233,7 @@ export const yoQuieroBailar: ProjectData = {
 
   competitive: {
     summary:
-      "YQB sits in a competitive lane that has gotten more crowded in 18 months — Cumbiatón, BESÁ, TBT, DESVELADO, and a wave of regional perreo brands are scaling club-tour formats. None of them are matching the YQB cadence (6 to 8 events a month, every weekend, in 17+ cities) or the legacy-headliner stacking (Ivy Queen, Angel y Khriz, El Cherry, Dani Flow). The opportunity inside this 90-day pilot is to leapfrog the entire competitive set on marketing infrastructure — paid media discipline, lifecycle, per-market creator depth, and sponsorship pipeline — while everyone else is still figuring out their flyer template.",
+      "YQB sits in a competitive lane that has gotten more crowded in the past year — Cumbiatón, BESÁ, TBT, DESVELADO, and a wave of regional perreo brands are scaling club-tour formats. None of them are matching the YQB cadence (6 to 8 events a month, every weekend, in 17+ cities) or the legacy-headliner stacking (Ivy Queen, Angel y Khriz, El Cherry, Dani Flow). The opportunity inside this 90-day pilot is to leapfrog the entire competitive set on marketing infrastructure — paid media discipline, lifecycle, per-market creator depth, and sponsorship pipeline — while everyone else is still figuring out their flyer template.",
     competitors: [
       {
         name: "Cumbiatón — LA / National Tour",
@@ -460,10 +460,10 @@ export const yoQuieroBailar: ProjectData = {
     currency: "USD",
     lineItems: [
       {
-        name: "Meta Advertising Management",
+        name: "Strategy & Account Direction",
         description:
-          "Full account rebuild, per-event campaign architecture, custom conversions, remarketing campaigns, lookalike builds, copy compression, structured creative testing, weekly performance reporting. Ad spend billed separately at 15% management fee.",
-        price: 2000,
+          "Cross-workstream strategic oversight, weekly Friday strategy calls with George + J-Star, monthly performance review against pilot targets, audit handoff doc, year-two scope build, full knowledge handoff playbook at pilot wrap. Meta tactical management is billed separately at 15% of managed ad spend — not on the retainer.",
+        price: 2500,
         recurring: true,
       },
       {
@@ -474,9 +474,9 @@ export const yoQuieroBailar: ProjectData = {
         recurring: true,
       },
       {
-        name: "Per-Market Creators + Sponsorship Pipeline",
+        name: "Local Strategy + Per-Market Creators + Sponsorship",
         description:
-          "17+ market creator pod sourcing and management, weekly pre-event content cycles, recap capture, sponsorship strategy deck, and active pipeline development. Creator placement fees billed separately at 15% management fee.",
+          "Per-market activation strategy across 17+ active YQB cities, creator pod sourcing and management, weekly pre-event content cycles, recap capture, sponsorship strategy deck, and active pipeline development. Creator placement fees billed separately at 15% management fee.",
         price: 1500,
         recurring: true,
       },
@@ -490,7 +490,7 @@ export const yoQuieroBailar: ProjectData = {
     mediaBudget: {
       label: "Recommended Media + Creator Budget",
       amount: 35000,
-      note: "Recommended ad spend across Meta plus per-market creator placements — billed directly to Meta and creators, managed by CCD at the 15% management fee. Right-sized down from the current ~$8K–$12K-per-event run rate as efficiency improves through the pilot. Final budget calibrated weekly against pacing.",
+      note: "Recommended ad spend across Meta plus per-market creator placements. Billed directly to Meta and creators; CCD's Meta and creator management is billed via a 15% management fee on this spend (separate from the retainer above). Right-sized down from the current ~$8K–$12K-per-event run rate as efficiency improves through the pilot. Final budget calibrated weekly against pacing.",
     },
     total: 15000,
     paymentSchedule: [
@@ -553,7 +553,7 @@ export const yoQuieroBailar: ProjectData = {
   cta: {
     headline: "The brand is already winning. The infrastructure just needs to catch up.",
     body:
-      "Yo Quiero Bailar built the hardest part — the cadence, the headliners, the venues, the brand voice — in 18 months. The Meta engine, the lifecycle layer, the ticketing rail, the per-market creator network, and the sponsorship pipeline are infrastructure problems, and infrastructure problems are the kind we run at every day. The audit is done. The plan is on this page. The next step is approving Month 1 below. Reply to Geoff with any questions before you click — happy to walk through any section live with George and J-Star.",
+      "Yo Quiero Bailar built the hardest part — the cadence, the headliners, the venues, the brand voice — in 5 months. The Meta engine, the lifecycle layer, the ticketing rail, the per-market creator network, and the sponsorship pipeline are infrastructure problems, and infrastructure problems are the kind we run at every day. The audit is done. The plan is on this page. The next step is approving Month 1 below. Reply to Geoff with any questions before you click — happy to walk through any section live with George and J-Star.",
     email: "geoff@crowdcontroldigital.com",
   },
 
