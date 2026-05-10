@@ -570,10 +570,6 @@ export const yoQuieroBailar: ProjectData = {
     ogImage: "/images/yo-quiero-bailar/og-image.png",
   },
 
-  caseStudies: [
-    { client: "BBNO$", metric: "100M+", description: "TIKTOK CREATES" },
-    { client: "PESO PLUMA", metric: "5B+", description: "SPOTIFY STREAMS" },
-    { client: "KSI", metric: "1M+", description: "TICKETS SOLD" },
-    { client: "ILLENIUM", metric: "750K+", description: "EVENT TICKETS" },
-  ],
+  // caseStudies omitted intentionally — falls through to DEFAULT_CASE_STUDIES in AboutCCD.tsx
+  // so case-study metrics stay canonical across all proposals (single source of truth).
 };
