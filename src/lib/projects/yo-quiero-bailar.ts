@@ -83,7 +83,7 @@ export const yoQuieroBailar: ProjectData = {
       {
         label: "Email + SMS Is Captive To TicketSpice",
         finding:
-          "The current drip, post-purchase, and win-back flows live inside TicketSpice — fine for low-friction transactional touchpoints, limited as a real lifecycle marketing layer. There is segmentation by event but no segmentation by market or buyer behavior across events, and SMS sits underleveraged given that the audience is overwhelmingly mobile-first. Whichever direction the ticketing migration goes, the email/SMS infrastructure needs to graduate to a dedicated platform (Klaviyo or Attentive on the brand side) so the buyer database compounds across every show, every market, every year — independently of which ticketing rail any given event runs on.",
+          "The current drip, post-purchase, and win-back flows live inside TicketSpice — fine for low-friction transactional touchpoints, limited as a real lifecycle marketing layer. There is segmentation by event but no segmentation by market or buyer behavior across events, and SMS sits underleveraged given that the audience is overwhelmingly mobile-first. Whichever direction the ticketing migration goes, the email/SMS infrastructure needs to graduate to Laylo — the music-industry standard for fan messaging — so the buyer database compounds across every show, every market, every year — independently of which ticketing rail any given event runs on.",
         source: "TicketSpice flow audit + post-purchase journey trace",
       },
       {
@@ -180,7 +180,7 @@ export const yoQuieroBailar: ProjectData = {
       {
         name: "Email + SMS (currently TicketSpice)",
         description:
-          "Drip and win-back flows exist but live inside TicketSpice's stock infrastructure — limited segmentation, no proper lifecycle, no SMS depth. The migration to a dedicated platform (Klaviyo or Attentive brand-side) is a strategic call on the call, not just a tooling decision — it's the difference between renting buyer data per-show and owning a multi-tour database.",
+          "Drip and win-back flows exist but live inside TicketSpice's stock infrastructure — limited segmentation, no proper lifecycle, no SMS depth. The migration to Laylo (the music-industry standard for fan messaging across email and SMS) is a strategic call on the call, not just a tooling decision — it's the difference between renting buyer data per-show and owning a multi-tour database.",
       },
       {
         name: "Per-Market Latin Nightlife Creators",
@@ -288,7 +288,7 @@ export const yoQuieroBailar: ProjectData = {
         "Copy compression sprint — every active campaign rewritten to 30–60 word primary text variants, structured testing framework deployed (3–4 hooks per event, urgency line, ticket CTA), creative refresh cadence locked at every 5 days per market",
         "Lookalike audience build — seeded off the past-ticket-buyer database, layered against Latin-event audience signals on Meta, scaled per active tour city for cold prospecting",
         "Ticketing platform decision finalized — chosen partner (Tixr / Eventim / Vivenu / TicketSauce or 'stay-and-optimize on TicketSpice') signed off by George + J-Star. Migration project plan locked",
-        "Email + SMS lifecycle audit — every existing TicketSpice flow mapped, gaps identified, replacement schema designed in the new platform (Klaviyo or Attentive on the brand side). Initial post-purchase, win-back, pre-show hype, and headliner-drop flows queued for build",
+        "Email + SMS lifecycle audit — every existing TicketSpice flow mapped, gaps identified, replacement schema designed in Laylo. Initial post-purchase, win-back, pre-show hype, and headliner-drop flows queued for build",
       ],
     },
     {
@@ -358,9 +358,9 @@ export const yoQuieroBailar: ProjectData = {
         },
         {
           name: "Lifecycle Platform Migration",
-          quantity: "Klaviyo or Attentive",
+          quantity: "Laylo",
           description:
-            "Brand-side email and SMS infrastructure stood up on a dedicated platform (recommended: Klaviyo for email, Attentive for SMS, or a unified Klaviyo + Klaviyo SMS stack). Database migrated, segmentation schema rebuilt by market and behavior, multi-tour buyer data architecture in place.",
+            "Brand-side email and SMS infrastructure stood up on Laylo — the music-industry standard for fan messaging, purpose-built for ticketing, drops, and SMS-first audience comms. Database migrated, segmentation schema rebuilt by market and behavior, multi-tour buyer data architecture in place.",
         },
         {
           name: "Lifecycle Flow Build",
@@ -437,7 +437,7 @@ export const yoQuieroBailar: ProjectData = {
       "Everything included in the 90-day pilot — and where the boundaries are. This is a focused scope built on top of the audit findings, with clear paths to expand into a full retainer once the pilot proves the model.",
     included: [
       "Full Meta account rebuild (custom conversions, remarketing campaigns, lookalikes, copy compression, structured creative testing, weekly performance reporting)",
-      "Email + SMS lifecycle migration off TicketSpice to a brand-side platform (Klaviyo / Attentive), with 8–12 segmented flows live by end of pilot",
+      "Email + SMS lifecycle migration off TicketSpice to Laylo (music-industry standard for fan messaging), with 8–12 segmented flows live by end of pilot",
       "Ticketing platform advisory bundled into Strategy & Account Direction — Tixr / Eventim / Vivenu / TicketSauce vendor RFP, comparison memo, and migration support (advisory, not separately billed)",
       "Per-market creator network deployment — 3 to 5 Latin nightlife creators in every active YQB city, with weekly content cycles tied to upcoming shows",
       "Sponsorship pipeline build — strategy deck, active pipeline development, Eric Schneider intro coordination, 10+ conversations opened",
@@ -469,7 +469,7 @@ export const yoQuieroBailar: ProjectData = {
       {
         name: "Email + SMS Lifecycle",
         description:
-          "TicketSpice flow audit, brand-side lifecycle platform migration (Klaviyo or Attentive), 8–12 segmented flow build covering pre-show hype, day-of, post-show reactivation, win-back, headliner-drop, and abandoned-cart recovery. Segmentation by market, persona, and buyer history.",
+          "TicketSpice flow audit, lifecycle platform migration to Laylo (music-industry standard for fan messaging), 8–12 segmented flow build covering pre-show hype, day-of, post-show reactivation, win-back, headliner-drop, and abandoned-cart recovery. Segmentation by market, persona, and buyer history.",
         price: 1500,
         recurring: true,
       },
