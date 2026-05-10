@@ -371,20 +371,20 @@ export const yoQuieroBailar: ProjectData = {
       ],
     },
     {
-      category: "Ticketing Platform Decision",
+      category: "Ticketing Platform Advisory (Bundled)",
       icon: "●",
       items: [
         {
           name: "Vendor RFP + Recommendation Memo",
           quantity: "1 process",
           description:
-            "Formal scoping with Tixr, Eventim / See Tickets, Vivenu, and TicketSauce — fees, integrations, email/SMS portability, marketing API depth, contractual flexibility. Comparison memo with CCD recommendation, delivered by end of Week 3.",
+            "Formal scoping with Tixr, Eventim / See Tickets, Vivenu, and TicketSauce — fees, integrations, email/SMS portability, marketing API depth, contractual flexibility. Comparison memo with CCD recommendation, delivered by end of Week 3. Bundled as a value-add inside the Strategy & Account Direction retainer line, not billed separately.",
         },
         {
-          name: "Migration Project Management",
-          quantity: "Full migration",
+          name: "Migration Advisory + Vendor Liaison",
+          quantity: "Through migration",
           description:
-            "Vendor contract negotiation support, integration scoping with Meta pixel + new lifecycle platform, buyer database export and import plan, change-management for J-Star and the operations team, parallel-run on a single test event before full cutover.",
+            "Vendor contract negotiation support, integration scoping advice across the Meta pixel and the new lifecycle platform, buyer database export/import planning, and change-management support for J-Star and the operations team. Advisory — not project management or vendor implementation.",
         },
       ],
     },
@@ -437,8 +437,8 @@ export const yoQuieroBailar: ProjectData = {
       "Everything included in the 90-day pilot — and where the boundaries are. This is a focused scope built on top of the audit findings, with clear paths to expand into a full retainer once the pilot proves the model.",
     included: [
       "Full Meta account rebuild (custom conversions, remarketing campaigns, lookalikes, copy compression, structured creative testing, weekly performance reporting)",
-      "TicketSpice email + SMS audit and migration to a brand-side lifecycle platform (Klaviyo / Attentive), with 8–12 segmented flows live by end of pilot",
-      "Ticketing platform RFP, vendor selection, and migration project management — Tixr, Eventim, Vivenu, TicketSauce, or optimized stay on TicketSpice",
+      "Email + SMS lifecycle migration off TicketSpice to a brand-side platform (Klaviyo / Attentive), with 8–12 segmented flows live by end of pilot",
+      "Ticketing platform advisory bundled into Strategy & Account Direction — Tixr / Eventim / Vivenu / TicketSauce vendor RFP, comparison memo, and migration support (advisory, not separately billed)",
       "Per-market creator network deployment — 3 to 5 Latin nightlife creators in every active YQB city, with weekly content cycles tied to upcoming shows",
       "Sponsorship pipeline build — strategy deck, active pipeline development, Eric Schneider intro coordination, 10+ conversations opened",
       "Weekly strategy calls with George + J-Star, monthly performance review against pilot targets",
@@ -462,14 +462,14 @@ export const yoQuieroBailar: ProjectData = {
       {
         name: "Strategy & Account Direction",
         description:
-          "Cross-workstream strategic oversight, weekly Friday strategy calls with George + J-Star, monthly performance review against pilot targets, audit handoff doc, year-two scope build, full knowledge handoff playbook at pilot wrap. Meta tactical management is billed separately at 15% of managed ad spend — not on the retainer.",
+          "Cross-workstream strategic oversight, weekly Friday strategy calls with George + J-Star, monthly performance review against pilot targets, audit handoff doc, year-two scope build, full knowledge handoff playbook at pilot wrap. Includes ticketing platform advisory — RFP support, vendor comparison memo, fee modeling, and migration consulting across Tixr, Eventim / See Tickets, Vivenu, and TicketSauce as a value-add, not a separate line. Meta tactical management is billed separately at 15% of managed ad spend — not on the retainer.",
         price: 2500,
         recurring: true,
       },
       {
-        name: "Email + SMS Lifecycle + Ticketing Migration",
+        name: "Email + SMS Lifecycle",
         description:
-          "TicketSpice audit, lifecycle platform migration (Klaviyo or Attentive), 8–12 segmented flow build, ticketing platform RFP and migration project management (Tixr / Eventim / Vivenu / TicketSauce).",
+          "TicketSpice flow audit, brand-side lifecycle platform migration (Klaviyo or Attentive), 8–12 segmented flow build covering pre-show hype, day-of, post-show reactivation, win-back, headliner-drop, and abandoned-cart recovery. Segmentation by market, persona, and buyer history.",
         price: 1500,
         recurring: true,
       },
