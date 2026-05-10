@@ -573,10 +573,6 @@ export const destinConrad: ProjectData = {
     brutalistCaption: "Destin Conrad × Crowd Control Digital",
   },
 
-  caseStudies: [
-    { client: "BBNO$", metric: "150K+", description: "TIKTOK CREATES" },
-    { client: "PESO PLUMA", metric: "700M+", description: "SPOTIFY STREAMS" },
-    { client: "EMOTIONAL ORANGES", metric: "300M+", description: "SPOTIFY STREAMS" },
-    { client: "KRIS WU × TRAVIS SCOTT", metric: "38M+", description: "SPOTIFY STREAMS" },
-  ],
+  // caseStudies omitted intentionally — falls through to DEFAULT_CASE_STUDIES in AboutCCD.tsx
+  // so case-study metrics stay canonical across all proposals (single source of truth).
 };
