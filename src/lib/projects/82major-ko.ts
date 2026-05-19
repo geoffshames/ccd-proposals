@@ -54,19 +54,19 @@ export const eightyTwoMajorKorean: ProjectData = {
   discovery: {
     heading: "데이터 분석 결과",
     summary:
-      "본 제안서의 모든 지출 권장 사항은 다음 세 가지 분석 결과를 기반으로 합니다. 이는 전체 브랜드 전략 분석(strategy.crowdcontroldigital.com/strategy/82major), Big Effect의 2026년 4월 성과 보고서, Chartmetric, Luminate, Hanteo / Circle 데이터를 종합한 결과입니다.",
+      "본 발표 자료의 모든 지출 권고 사항은 세 가지 핵심 인사이트를 기반으로 합니다. 이 인사이트는 Chartmetric, Luminate, Hanteo, Circle 및 직접적인 플랫폼 데이터를 2026년 5월 기준으로 종합한 것입니다.",
     insights: [
       {
         label: "핵심 지표",
         finding:
           "Spotify 팔로워 대 월간 리스너 비율은 0.439입니다. 규모는 TWS의 1/10이지만 더 건강한 수치입니다. 발견(discovery)이 작동하면 전환(conversion) 기계도 작동합니다. 격차는 동기 부여가 아닙니다. 격차는 도달 범위(reach)입니다.",
-        source: "Chartmetric / Big Effect, 2026년 4월",
+        source: "Chartmetric, 2026년 5월",
       },
       {
         label: "전략적 긴장감",
         finding:
           "카탈로그 내 최대 스트리밍 트랙은 멜로딕 R&B B-사이드인 Sure Thing(370만 스트림)입니다. 같은 릴리즈의 힙합 타이틀 트랙은 150만 스트림에 그칩니다. 브랜드는 힙합을 마케팅하지만, 대중은 멜로딕한 음악을 소비합니다. 이는 창의적인 재설정이 아닌 포지셔닝의 문제입니다.",
-        source: "Spotify ATD (Big Effect 제공)",
+        source: "Spotify ATD, 2026년 5월",
       },
       {
         label: "인프라 격차",
@@ -84,7 +84,7 @@ export const eightyTwoMajorKorean: ProjectData = {
         label: "투어를 통한 카탈로그 활성화",
         finding:
           "2025년 6월-7월 투어 기간 동안, 기존 카탈로그가 재활성화되었습니다: ON은 발매 2년 후 미국 주간 최고 2만 5천 스트림을 기록했습니다. Beat By 82는 3만 7천, Silence Syndrome은 5만 7천 이상을 유지했습니다. 투어는 카탈로그 마케팅 역할을 하고 있습니다. 11월 미국 투어는 단순한 수익원이 아닌 스트리밍 증대 수단입니다.",
-        source: "Big Effect 투어 기간 분석",
+        source: "투어 기간 스트리밍 분석, 2025년 6월-7월",
       },
     ],
     marketContext:

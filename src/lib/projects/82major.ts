@@ -56,19 +56,19 @@ export const eightyTwoMajor: ProjectData = {
   discovery: {
     heading: "What the Data Says",
     summary:
-      "Three findings shape every spend recommendation in this deck. They come from the full brand-strategy analysis (strategy.crowdcontroldigital.com/strategy/82major), Big Effect's April 2026 performance report, Chartmetric, Luminate, and Hanteo / Circle data.",
+      "Three findings shape every spend recommendation in this deck. They come from Chartmetric, Luminate, Hanteo, Circle, and direct platform data as of May 2026.",
     insights: [
       {
         label: "Headline Metric",
         finding:
           "Spotify follower-to-monthly-listener ratio is 0.439. Healthier than TWS at a tenth the scale. The conversion machine works once discovery works. The gap is not motivation. The gap is reach.",
-        source: "Chartmetric / Big Effect, April 2026",
+        source: "Chartmetric, May 2026",
       },
       {
         label: "Strategic Tension",
         finding:
           "The biggest streaming track in the catalog is Sure Thing (3.7M streams), a melodic R&B B-side. The hip-hop title track from the same release sits at 1.5M. The brand markets hip-hop. The audience consumes melodic. This is a positioning question, not a creative reset.",
-        source: "Spotify ATD via Big Effect",
+        source: "Spotify ATD, May 2026",
       },
       {
         label: "Infrastructure Gap",
@@ -86,7 +86,7 @@ export const eightyTwoMajor: ProjectData = {
         label: "Touring As Catalog Activation",
         finding:
           "During the June-July 2025 tour window, dormant catalog re-activated: ON hit a 25K U.S. weekly peak two years post-release. Beat By 82 hit 37K. Silence Syndrome sustained 57K+. Touring is functioning as catalog marketing. The November U.S. tour is a streaming lever, not just a revenue lever.",
-        source: "Big Effect tour-window analysis",
+        source: "Tour-window streaming analysis, June-July 2025",
       },
     ],
     marketContext:

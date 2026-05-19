@@ -1,6 +1,7 @@
 "use client";
-import { useProject } from "@/lib/project-context";
+import Link from "next/link";
 import { motion } from "framer-motion";
+import { useProject } from "@/lib/project-context";
 
 const LANG_LABELS: Record<string, string> = {
   en: "EN",
@@ -25,7 +26,7 @@ export function LanguageToggle() {
       initial={{ opacity: 0, y: -10 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6, delay: 0.4, ease: [0.22, 1, 0.36, 1] }}
-      className="fixed top-5 right-5 z-[60]"
+      className="fixed top-[13px] right-5 z-[60]"
     >
       <div className="flex items-center text-[11px] font-mono tracking-[0.14em] uppercase backdrop-blur-xl bg-bg/70 border border-text-muted/25">
         <span
@@ -35,15 +36,17 @@ export function LanguageToggle() {
           {currentCode}
         </span>
         {alts.map((alt) => (
-          <a
+          <Link
             key={alt.slug}
             href={`/${alt.slug}`}
+            prefetch
+            scroll={false}
             className="px-3 py-2 text-text-muted hover:text-text-primary hover:bg-bg-card-hover transition-colors border-l border-text-muted/20"
             aria-label={`Switch to ${alt.label}`}
             title={alt.label}
           >
             {alt.code}
-          </a>
+          </Link>
         ))}
       </div>
     </motion.div>
