@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { useProject } from "@/lib/project-context";
+import { ApproveButton } from "./ApproveButton";
 import { ScrollReveal, StaggerContainer, StaggerItem } from "./ScrollReveal";
 import { SectionLabel } from "./SectionLabel";
 import { TiltCard } from "./TiltCard";
@@ -201,17 +202,23 @@ export function Investment() {
                 </div>
 
                 <div className="mt-12 pt-8 border-t border-border">
-                  <motion.a
-                    href={q.paymentLink}
-                    whileHover={{ scale: 1.02 }}
-                    whileTap={{ scale: 0.98 }}
-                    className="block w-full text-center bg-accent text-bg font-semibold text-[14px] py-4 rounded-none tracking-[-0.01em]"
-                  >
-                    Approve & Pay {formatCurrency(q.paymentSchedule[0].amount)}
-                  </motion.a>
-                  <p className="text-[10px] text-text-muted/40 text-center mt-4 font-mono tracking-[0.1em]">
-                    SECURE CHECKOUT VIA STRIPE
-                  </p>
+                  {q.paymentLink === "#approve" ? (
+                    <ApproveButton />
+                  ) : (
+                    <>
+                      <motion.a
+                        href={q.paymentLink}
+                        whileHover={{ scale: 1.02 }}
+                        whileTap={{ scale: 0.98 }}
+                        className="block w-full text-center bg-accent text-bg font-semibold text-[14px] py-4 rounded-none tracking-[-0.01em]"
+                      >
+                        Approve & Pay {formatCurrency(q.paymentSchedule[0].amount)}
+                      </motion.a>
+                      <p className="text-[10px] text-text-muted/40 text-center mt-4 font-mono tracking-[0.1em]">
+                        SECURE CHECKOUT VIA STRIPE
+                      </p>
+                    </>
+                  )}
                 </div>
               </div>
             </TiltCard>

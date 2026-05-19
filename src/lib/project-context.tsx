@@ -115,6 +115,14 @@ export type ProjectData = {
       featured?: boolean;
     }[];
   };
+  philosophy?: {
+    sectionNumber?: string;
+    heading?: string;
+    thesis?: string;
+    principles?: string[];
+    hierarchy: { label: string; description: string }[];
+    footnote?: string;
+  };
   timelineHeading?: string;
   timelineSubheading?: string;
   timelineImageCaption?: string;

@@ -4,6 +4,7 @@ import { ProjectProvider, type ProjectData } from "@/lib/project-context";
 import { Navigation } from "@/components/Navigation";
 import { Hero } from "@/components/Hero";
 import { Discovery } from "@/components/Discovery";
+import { Philosophy } from "@/components/Philosophy";
 import { Overview } from "@/components/Overview";
 import { Audience } from "@/components/Audience";
 import { Targets } from "@/components/Targets";
@@ -29,6 +30,7 @@ export function ProposalClient({ project }: { project: ProjectData }) {
         <Navigation />
         <Hero />
         <Discovery />
+        <Philosophy />
         <Overview />
         <Audience />
         <Targets />

@@ -22,6 +22,7 @@ import { fearlessRecords } from "./fearless-records";
 import { bogeyBoys } from "./bogey-boys";
 import { fendiRodeo } from "./fendi-rodeo";
 import { yoQuieroBailar } from "./yo-quiero-bailar";
+import { eightyTwoMajor } from "./82major";
 import type { ProjectData } from "../project-context";
 
 export const PROJECTS: Record<string, ProjectData> = {
@@ -49,6 +50,7 @@ export const PROJECTS: Record<string, ProjectData> = {
   "bogey-boys": bogeyBoys,
   "fendi-rodeo": fendiRodeo,
   "yo-quiero-bailar": yoQuieroBailar,
+  "82major": eightyTwoMajor,
 };
 
 export function getProject(slug: string): ProjectData | undefined {
