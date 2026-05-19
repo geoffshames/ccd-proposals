@@ -42,6 +42,8 @@ export type StructureSection = {
     name: string;
     goal: string;
     includes: string[];
+    breakdown?: PricingTierBreakdown[];
+    deployable?: string;
     featured?: boolean;
   }[];
 };

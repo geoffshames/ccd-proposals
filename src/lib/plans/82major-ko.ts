@@ -111,6 +111,7 @@ export const eightyTwoMajorPlanKorean: StrategyPlanData = {
             "상시 팬덤 인프라 (미국 팬 페이지 네트워크)",
             "팬 HQ 소셜 전략",
             "Laylo에서의 CRM 및 SMS 수집",
+            "DSP 플레이리스트 피칭 및 에디토리얼",
             "기본 PR 지원",
             "가벼운 콘텐츠 및 내러티브 지출",
           ],
@@ -128,6 +129,7 @@ export const eightyTwoMajorPlanKorean: StrategyPlanData = {
             "더 공격적인 마케팅 캠페인",
             "경험적 활동 (리스닝 이벤트, 팝업)",
             "OOH, 릴리즈 시점에 맞춰 집행",
+            "확장된 DSP 전략 (라이브 프로그램 + 아티스트 투 워치)",
             "대규모 팬덤 성장 이니셔티브",
             "콘텐츠 생태계 확장",
           ],
@@ -147,10 +149,10 @@ export const eightyTwoMajorPlanKorean: StrategyPlanData = {
         {
           label: "A",
           title: "미국 중심 HQ 팬 페이지",
-          budget: "~월 $6K 수준의 에이전시 리테이너 (최종 확정 예정)",
+          budget: "$3,500/월 (채널당 1000만 뷰 기준, 변동 가능)",
           timeline: "최소 3-6개월 계약; 캠페인 시작 약 1개월 전부터 워밍업 시작",
           objective: "한국 팬 채널의 기본 틀을 벗어나, 미국 팬덤 생태계를 구축하고 미국 내 관심을 미국 소유의 오디언스로 전환합니다.",
-          strategy: "Beautiful Digital 또는 INFINITIZE와 같은 에이전시와 협력하여 미국 중심의 채널 네트워크를 운영합니다. 한국 콘텐츠를 자막 및 현지화 작업과 함께 재가공합니다. 미국 특화 편집본을 제작합니다. 채널이 팬 계정의 추측이 아닌 아티스트 팀의 확장으로 운영될 수 있도록 사전 촬영 목록 및 콘텐츠 요청 사항을 제공합니다.",
+          strategy: "Beautiful Digital 또는 INFINITIZE와 같은 에이전시와 협력하여 미국 시장에 포지셔닝된 채널 네트워크를 운영합니다. 한국 콘텐츠에 자막 및 현지화를 적용하여 재가공합니다. 미국 시장에 특화된 편집본을 제작합니다. 채널이 팬 계정의 추측이 아닌 아티스트 팀의 확장으로 운영될 수 있도록 사전에 샷 리스트와 콘텐츠 요청 사항을 제공합니다. 비용은 변동 가능하며 채널당 1000만 뷰당 월 $3,500로 상한선이 정해져 있습니다. 트래픽이 적으면 비용이 낮아지며, 상한선은 변동되지 않습니다.",
           components: {
             heading: "네트워크 운영 내용",
             items: [
@@ -216,7 +218,7 @@ export const eightyTwoMajorPlanKorean: StrategyPlanData = {
       type: "vertical",
       number: "05",
       title: "세부 영역 2 / 디지털 마케팅",
-      philosophy: "유료, 오가닉, 크리에이터, DSP 전반의 고수준 지출 배분 전략. 팬덤 기반을 도달로 전환시키는 증폭기 역할을 합니다.",
+      philosophy: "유료, 오가닉, 크리에이터 전반에 걸친 전반적인 지출 할당. 팬덤 기반을 도달로 전환하는 증폭기입니다. (DSP 전략은 아래 별도 항목으로 분리됩니다.)",
       subBlocks: [
         {
           label: "A",
@@ -260,28 +262,6 @@ export const eightyTwoMajorPlanKorean: StrategyPlanData = {
               "릴리즈 미학에 연계된 미국 댄스 및 스타일링 크리에이터",
             ],
           },
-        },
-        {
-          label: "D",
-          title: "DSP + 스트리밍 지원",
-          objective: "발견 계층의 격차 해소. 팬덤 전환율은 이미 양호하나, DSP 발견 표면으로의 도달이 병목 현상입니다.",
-          components: {
-            heading: "구성 요소",
-            items: [
-              "Spotify, Apple Music, YouTube Music 전반의 플레이리스트 피칭",
-              "에디토리얼 관계: Spotify Equal Asia, Apple Music K-Hits",
-              "플랫폼 통합 및 360 캠페인",
-              "릴리즈 시점에 연계된 DSP 마케팅 지원",
-              "상위 10개 카탈로그 트랙의 카탈로그 메타데이터 (Spotify Canvas)",
-            ],
-          },
-          examples: [
-            "COLORS",
-            "NBA Asia",
-            "Vevo DSCVR",
-            "Amazon Music City Sessions",
-            "문화-음악 파트너십 프로그램",
-          ],
         },
       ],
     },
@@ -362,12 +342,82 @@ export const eightyTwoMajorPlanKorean: StrategyPlanData = {
     },
 
     // ===================================================================
-    // 07. Vertical 4: PR
+    // 07. Vertical 4: DSP Strategy
     // ===================================================================
     {
       type: "vertical",
       number: "07",
-      title: "버티컬 4 / PR",
+      title: "버티컬 4 / DSP 전략",
+      philosophy: "발견 레이어. 82MAJOR의 건강한 팔로워 대 리스너 비율이 놓치고 있던 도달 범위를 확보하는 곳. DSP는 디지털 마케팅의 하위 블록이 아닌, 그 자체로 중요한 역량입니다.",
+      intro: "82MAJOR는 도달하는 것을 전환시킵니다. 병목 현상은 팬 동기 부여가 아닌, 에디토리얼 및 플랫폼 도달 범위에 있습니다. 이 버티컬은 해당 격차를 해소하기 위해 자체적인 전담 관계, 일정 및 콘텐츠 생산이 필요하기 때문에 존재합니다.",
+      subBlocks: [
+        {
+          label: "A",
+          title: "플레이리스트 피칭 & 에디토리얼 레인",
+          objective: "음악과 일치하는 레인에서 중요한 플레이리스트에 82MAJOR를 안착시키십시오. 그룹이 K-팝 범주에 기본적으로 포함되도록 두는 대신, 주요 DSP의 alt 및 pop 에디터에게 피칭하십시오.",
+          strategy: "주요 DSP 중 하나가 사이클 챔피언으로 참여합니다. Spotify, Apple 또는 YouTube Music이 해당 사이클에서 82MAJOR를 360도로 지원합니다. 나머지 두 곳은 기본 플레이리스트 및 에디토리얼을 운영합니다.",
+          components: {
+            heading: "구성 요소",
+            items: [
+              "Spotify, Apple Music, YouTube Music, Tidal, Amazon Music 전반의 플레이리스트 피칭",
+              "Alt + pop 에디터 포지셔닝 (K-팝 범주 제외)",
+              "Spotify Equal Asia / Apple Music K-Hits 앵커 플레이스먼트",
+              "에디토리얼 관계 개발 (DSP별 담당자 1명 지정)",
+              "현지화된 U.S. 맥락을 담은 사이클별 피치 패킷",
+            ],
+          },
+        },
+        {
+          label: "B",
+          title: "라이브 퍼포먼스 프로그램",
+          objective: "DSP 브랜드 라이브 콘텐츠를 통해 U.S. 관객에게 82MAJOR의 퍼포먼스 아이덴티티를 선보입니다. 멤버들의 프로듀서로서의 면모는 이러한 형식에서 자연스럽게 드러납니다.",
+          examples: [
+            "Spotify Outside (유연한 장소)",
+            "VEVO DSCVR (LA / NY 촬영)",
+            "Amazon Music City Sessions (Twitch 라이브 스트리밍을 통한 홍보)",
+            "Amazon Music Presents (LA 기반)",
+            "Spotify Singles / Amazon Music Original (미국 곡 커버 형식)",
+          ],
+        },
+        {
+          label: "C",
+          title: "주목할 만한 아티스트 프로그램",
+          objective: "미국 에디토리얼 및 레이블 서비스 파트너에게 '라이징' 신호를 보내는 플래그십 개발 프로그램에 선정",
+          examples: [
+            "Spotify RADAR",
+            "Amazon Music Breakthrough",
+            "Apple Up Next (프로그램 상태 미정)",
+            "YouTube On The Rise",
+            "VEVO DSCVR 주목할 만한 아티스트",
+            "TIDAL Rising",
+            "Pandora 개발 트랙",
+          ],
+        },
+        {
+          label: "D",
+          title: "카탈로그 활성화 및 Stationhead",
+          objective: "발매 주간 동안 휴면 상태인 스트리밍 카탈로그(Sure Thing, Stuck, ON)를 재활성화합니다. Stationhead 리스닝 파티를 활용하여 팬덤 에너지를 측정 가능한 스트림 증가로 전환합니다.",
+          components: {
+            heading: "구성 요소",
+            items: [
+              "상위 10개 카탈로그 트랙에 대한 Spotify Canvas 영상",
+              "팬 계정 호스트와 함께하는 Stationhead 발매 주간 리스닝 파티",
+              "발매 서사와 연계된 큐레이션된 U.S. 팬 플레이리스트",
+              "크로스 플랫폼 리스닝 파티 증폭 (YouTube, Discord)",
+              "스트리밍 알고리즘 신호 전달을 위한 메타데이터 정리",
+            ],
+          },
+        },
+      ],
+      footnote: "DSP는 나머지 전략을 측정 가능한 스트림으로 전환하는 발견 계층입니다.",
+    },
+
+    // 08. Vertical 5: PR
+    // ===================================================================
+    {
+      type: "vertical",
+      number: "08",
+      title: "버티컬 5 / PR",
       philosophy: "증폭, 내러티브 확장, 신뢰성. 주요 성장 동력은 아닙니다. PR은 강력한 팬덤 참여, 디지털 모멘텀, 경험적 순간, 스트리밍 트랙션에 의해 지원될 때 가장 효과적입니다.",
       subBlocks: [
         {
@@ -427,12 +477,12 @@ export const eightyTwoMajorPlanKorean: StrategyPlanData = {
     },
 
     // ===================================================================
-    // 08. Vertical 5: Optional Add-Ons
+    // 09. Vertical 6: Optional Add-Ons
     // ===================================================================
     {
       type: "vertical",
-      number: "08",
-      title: "Vertical 5 / 선택적 추가 사항",
+      number: "09",
+      title: "버티컬 6 / 선택적 추가 기능",
       philosophy: "Tier 외 영역. 별도 범위 설정 및 견적. 전략적 시점에 따라 비용 지출이 정당화될 때 실행됩니다.",
       subBlocks: [
         {
@@ -479,11 +529,11 @@ export const eightyTwoMajorPlanKorean: StrategyPlanData = {
     },
 
     // ===================================================================
-    // 09. Final Pricing Sheets
+    // 10. Final Pricing Sheets
     // ===================================================================
     {
       type: "pricing",
-      number: "09",
+      number: "10",
       title: "최종 가격 시트",
       intro: "두 가지 티어가 있으며, 두 티어 모두 현재 SIGN 싱글 사이클(2026년 5월 - 8월, 약 12주간의 적극적인 푸시)에 맞춰져 있습니다. 9월 컴백은 동일한 구조에 새로운 티어를 승인합니다. CCD 실행 수수료($2,500/월 리테이너 + 15% 미디어 관리)는 두 티어 모두에 포함되며, 계산은 아래에 제시되어 있습니다.",
       ccdNote: "티어 1: $7,500 리테이너(3개월 × $2,500) + 약 $1,500 미디어 관리(약 $10K 관리 미디어의 15%)로 사이클 전반에 걸쳐 공급업체 및 지출에 약 $41,000을 사용할 수 있습니다. 티어 2: $7,500 리테이너(3개월 × $2,500) + 약 $6,500 미디어 관리(약 $43K 관리 미디어의 15%)로 약 $86,000을 사용할 수 있습니다. 수치는 실제 사이클 미디어 계획에 맞춰 조정되며, 올인 상한선은 변동되지 않습니다.",
@@ -495,9 +545,9 @@ export const eightyTwoMajorPlanKorean: StrategyPlanData = {
           tagline: "올인 상한선. SIGN 사이클(약 12주). 기반 구축만 해당.",
           deployable: "$41,000",
           breakdown: [
-            { vertical: "팬덤 (3개월 에이전시 리테이너)", amount: "$18,000" },
-            { vertical: "디지털 마케팅 (기본)", amount: "$15,000" },
-            { vertical: "DSP + 에디토리얼", amount: "$4,000" },
+            { vertical: "팬덤 (3개월, 조회수 제한)", amount: "$18,000" },
+            { vertical: "디지털 마케팅 (기본)", amount: "$13,000" },
+            { vertical: "DSP 전략", amount: "$6,000" },
             { vertical: "PR (기본)", amount: "$4,000" },
             { vertical: "CCD 리테이너 + 관리 수수료", amount: "$9,000" },
           ],
@@ -510,12 +560,12 @@ export const eightyTwoMajorPlanKorean: StrategyPlanData = {
           featured: true,
           deployable: "$86,000",
           breakdown: [
-            { vertical: "팬덤 (확장, 3개월)", amount: "$24,000" },
-            { vertical: "디지털 마케팅 (풀퍼널)", amount: "$25,000" },
+            { vertical: "팬덤 (확장, 3개월, 조회수 제한)", amount: "$24,000" },
+            { vertical: "디지털 마케팅 (풀퍼널)", amount: "$22,000" },
             { vertical: "인플루언서 / 크리에이터", amount: "$12,000" },
             { vertical: "체험형 (이벤트 + 팝업 + OOH)", amount: "$15,000" },
-            { vertical: "DSP + 에디토리얼", amount: "$5,000" },
-            { vertical: "PR (확장)", amount: "$5,000" },
+            { vertical: "DSP 전략", amount: "$10,000" },
+            { vertical: "PR (확장)", amount: "$3,000" },
             { vertical: "CCD 리테이너 + 관리 수수료", amount: "$14,000" },
           ],
         },

@@ -111,6 +111,7 @@ export const eightyTwoMajorPlan: StrategyPlanData = {
             "Always-on fandom infrastructure (U.S. fan-page network)",
             "Fan HQ social strategy",
             "CRM and SMS capture on Laylo",
+            "DSP playlist pitching + editorial",
             "Baseline PR support",
             "Light content and narrative spend",
           ],
@@ -128,6 +129,7 @@ export const eightyTwoMajorPlan: StrategyPlanData = {
             "More aggressive marketing campaigns",
             "Experiential activations (listening event, pop-up)",
             "OOH timed to release window",
+            "Expanded DSP strategy (live programs + artist-to-watch)",
             "Larger-scale fandom growth initiatives",
             "Expanded content ecosystem",
           ],
@@ -147,10 +149,10 @@ export const eightyTwoMajorPlan: StrategyPlanData = {
         {
           label: "A",
           title: "U.S.-Centric HQ Fan Pages",
-          budget: "~$6K / mo agency retainer (to be finalized)",
+          budget: "Capped at $3,500/mo per 10M views, per channel (variable)",
           timeline: "3-6 month minimum; warm-up starts ~1 month pre-campaign",
           objective: "Build a dedicated U.S.-focused fandom ecosystem that lives outside the Korean fan-channel default and turns U.S. interest into U.S.-owned audience.",
-          strategy: "Partner with agencies like Beautiful Digital or INFINITIZE to run a network of U.S.-positioned channels. Repurpose Korean content with subtitles and localization. Create U.S.-specific edits. Provide shot lists and content requests in advance so the channels operate as an extension of the artist team, not a fan-account guess.",
+          strategy: "Partner with agencies like Beautiful Digital or INFINITIZE to run a network of U.S.-positioned channels. Repurpose Korean content with subtitles and localization. Create U.S.-specific edits. Provide shot lists and content requests in advance so the channels operate as an extension of the artist team, not a fan-account guess. Cost is variable and capped at $3,500/mo per 10M views per channel. Lighter traffic = lower cost; the ceiling does not move.",
           components: {
             heading: "What The Network Does",
             items: [
@@ -216,7 +218,7 @@ export const eightyTwoMajorPlan: StrategyPlanData = {
       type: "vertical",
       number: "05",
       title: "Vertical 2 / Digital Marketing",
-      philosophy: "High-level spend allocation strategy across paid, organic, creator, and DSP. The amplifier that turns the fandom foundation into reach.",
+      philosophy: "High-level spend allocation across paid, organic, and creator. The amplifier that turns the fandom foundation into reach. (DSP strategy is broken out as its own vertical below.)",
       subBlocks: [
         {
           label: "A",
@@ -260,28 +262,6 @@ export const eightyTwoMajorPlan: StrategyPlanData = {
               "U.S. dance and styling creators tied to release aesthetics",
             ],
           },
-        },
-        {
-          label: "D",
-          title: "DSP + Streaming Support",
-          objective: "Bridge the discovery-layer gap. The fandom conversion ratio is already healthy; the bottleneck is reach into the DSP discovery surfaces.",
-          components: {
-            heading: "Components",
-            items: [
-              "Playlist pitching across Spotify, Apple Music, YouTube Music",
-              "Editorial relationships: Spotify Equal Asia, Apple Music K-Hits",
-              "Platform integrations and 360 campaigns",
-              "DSP marketing support tied to release windows",
-              "Catalog metadata (Spotify Canvas) on top-10 catalog tracks",
-            ],
-          },
-          examples: [
-            "COLORS",
-            "NBA Asia",
-            "Vevo DSCVR",
-            "Amazon Music City Sessions",
-            "Cultural-music partnership programs",
-          ],
         },
       ],
     },
@@ -362,12 +342,82 @@ export const eightyTwoMajorPlan: StrategyPlanData = {
     },
 
     // ===================================================================
-    // 07. Vertical 4: PR
+    // 07. Vertical 4: DSP Strategy
     // ===================================================================
     {
       type: "vertical",
       number: "07",
-      title: "Vertical 4 / PR",
+      title: "Vertical 4 / DSP Strategy",
+      philosophy: "The discovery layer. Where 82MAJOR's healthy follower-to-listener ratio gets the reach it has been missing. DSP is its own muscle, not a sub-block of digital marketing.",
+      intro: "82MAJOR converts what reaches it. The bottleneck is editorial and platform reach, not fan motivation. This vertical exists because closing that gap requires its own dedicated relationships, calendar, and content output.",
+      subBlocks: [
+        {
+          label: "A",
+          title: "Playlist Pitching & Editorial Lane",
+          objective: "Land 82MAJOR on the playlists that matter, in the lanes that match the music. Pitch alt and pop editors at major DSPs rather than letting the group default into the K-pop bucket.",
+          strategy: "One major DSP commits as the cycle champion. Spotify, Apple, or YouTube Music takes 82MAJOR through a full 360 in that cycle. The other two run baseline playlist and editorial.",
+          components: {
+            heading: "Components",
+            items: [
+              "Playlist pitching across Spotify, Apple Music, YouTube Music, Tidal, Amazon Music",
+              "Alt + pop editor positioning (not K-pop bucket)",
+              "Spotify Equal Asia / Apple Music K-Hits anchor placements",
+              "Editorial relationship development (one named contact per DSP)",
+              "Cycle-specific pitch packets with localized U.S. context",
+            ],
+          },
+        },
+        {
+          label: "B",
+          title: "Live Performance Programs",
+          objective: "Showcase 82MAJOR's performance identity to U.S. audiences through DSP-branded live content. The members-as-producers angle reads natively in these formats.",
+          examples: [
+            "Spotify Outside (flexible location)",
+            "VEVO DSCVR (films in LA / NY)",
+            "Amazon Music City Sessions (livestreams to Twitch for amplification)",
+            "Amazon Music Presents (LA-based)",
+            "Spotify Singles / Amazon Music Original (American song cover format)",
+          ],
+        },
+        {
+          label: "C",
+          title: "Artist-to-Watch Programs",
+          objective: "Land on the flagship development programs that signal 'rising' to U.S. editorial and label-services partners.",
+          examples: [
+            "Spotify RADAR",
+            "Amazon Music Breakthrough",
+            "Apple Up Next (program status TBD)",
+            "YouTube On The Rise",
+            "VEVO DSCVR Artists To Watch",
+            "TIDAL Rising",
+            "Pandora development tracks",
+          ],
+        },
+        {
+          label: "D",
+          title: "Catalog Activation & Stationhead",
+          objective: "Re-activate the dormant streaming catalog (Sure Thing, Stuck, ON) during release weeks. Use Stationhead listening parties to convert fan-army energy into measurable stream lifts.",
+          components: {
+            heading: "Components",
+            items: [
+              "Spotify Canvas video on top-10 catalog tracks",
+              "Stationhead release-week listening parties with fan-account hosts",
+              "Curated U.S. fan playlists tied to release narratives",
+              "Cross-platform listening party amplification (YouTube, Discord)",
+              "Metadata cleanup for streaming algorithm signaling",
+            ],
+          },
+        },
+      ],
+      footnote: "DSP is the discovery layer that turns the rest of the strategy into measurable streams.",
+    },
+
+    // 08. Vertical 5: PR
+    // ===================================================================
+    {
+      type: "vertical",
+      number: "08",
+      title: "Vertical 5 / PR",
       philosophy: "Amplification, narrative extension, credibility. Not a primary growth engine. PR is most effective when supported by strong fandom engagement, digital momentum, experiential moments, and streaming traction.",
       subBlocks: [
         {
@@ -427,12 +477,12 @@ export const eightyTwoMajorPlan: StrategyPlanData = {
     },
 
     // ===================================================================
-    // 08. Vertical 5: Optional Add-Ons
+    // 09. Vertical 6: Optional Add-Ons
     // ===================================================================
     {
       type: "vertical",
-      number: "08",
-      title: "Vertical 5 / Optional Add-Ons",
+      number: "09",
+      title: "Vertical 6 / Optional Add-Ons",
       philosophy: "Outside the tier. Scoped and quoted separately. Triggered when the strategic moment justifies the spend.",
       subBlocks: [
         {
@@ -479,11 +529,11 @@ export const eightyTwoMajorPlan: StrategyPlanData = {
     },
 
     // ===================================================================
-    // 09. Final Pricing Sheets
+    // 10. Final Pricing Sheets
     // ===================================================================
     {
       type: "pricing",
-      number: "09",
+      number: "10",
       title: "Final Pricing Sheets",
       intro: "Two tiers, both scoped to the current SIGN single cycle (May - August 2026, ~12 weeks of active push). The September comeback authorizes a fresh tier on the same structure. CCD execution fee ($2,500/mo retainer + 15% media management) is inside both tiers; the math is shown below.",
       ccdNote: "Tier 1: $7,500 retainer (three months × $2,500) + ~$1,500 media management (15% on ~$10K managed media) leaves ~$41,000 deployable to vendors and spend across the cycle. Tier 2: $7,500 retainer (three months × $2,500) + ~$6,500 media management (15% on ~$43K managed media) leaves ~$86,000 deployable. Numbers calibrate against the actual cycle media plan; the all-in ceiling does not move.",
@@ -495,9 +545,9 @@ export const eightyTwoMajorPlan: StrategyPlanData = {
           tagline: "All-in ceiling. SIGN cycle (~12 weeks). Foundation only.",
           deployable: "$41,000",
           breakdown: [
-            { vertical: "Fandom (3 mo agency retainer)", amount: "$18,000" },
-            { vertical: "Digital Marketing (Light)", amount: "$15,000" },
-            { vertical: "DSP + Editorial", amount: "$4,000" },
+            { vertical: "Fandom (3 mo, view-capped)", amount: "$18,000" },
+            { vertical: "Digital Marketing (Light)", amount: "$13,000" },
+            { vertical: "DSP Strategy", amount: "$6,000" },
             { vertical: "PR (Baseline)", amount: "$4,000" },
             { vertical: "CCD Retainer + Mgmt Fee", amount: "$9,000" },
           ],
@@ -510,12 +560,12 @@ export const eightyTwoMajorPlan: StrategyPlanData = {
           featured: true,
           deployable: "$86,000",
           breakdown: [
-            { vertical: "Fandom (Expanded, 3 mo)", amount: "$24,000" },
-            { vertical: "Digital Marketing (Full-Funnel)", amount: "$25,000" },
+            { vertical: "Fandom (Expanded, 3 mo, view-capped)", amount: "$24,000" },
+            { vertical: "Digital Marketing (Full-Funnel)", amount: "$22,000" },
             { vertical: "Influencer / Creator", amount: "$12,000" },
             { vertical: "Experiential (Event + Pop-Up + OOH)", amount: "$15,000" },
-            { vertical: "DSP + Editorial", amount: "$5,000" },
-            { vertical: "PR (Expanded)", amount: "$5,000" },
+            { vertical: "DSP Strategy", amount: "$10,000" },
+            { vertical: "PR (Expanded)", amount: "$3,000" },
             { vertical: "CCD Retainer + Mgmt Fee", amount: "$14,000" },
           ],
         },
