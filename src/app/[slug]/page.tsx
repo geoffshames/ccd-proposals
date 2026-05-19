@@ -1,12 +1,18 @@
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { getProject, getAllSlugs } from "@/lib/projects";
+import { getPlan, getAllPlanSlugs } from "@/lib/plans";
 import { ProposalClient } from "./client";
+import { PlanClient } from "@/components/plan/PlanClient";
 import { isNdaSignedForSlug } from "@/lib/nda/verify";
 import { NdaGate } from "@/components/nda/NdaGate";
 
 export async function generateStaticParams() {
-  return getAllSlugs().map((slug) => ({ slug }));
+  // Both plan slugs and project slugs share the [slug] route.
+  const planSlugs = getAllPlanSlugs();
+  const projectSlugs = getAllSlugs();
+  const all = Array.from(new Set([...planSlugs, ...projectSlugs]));
+  return all.map((slug) => ({ slug }));
 }
 
 export async function generateMetadata({
@@ -15,22 +21,40 @@ export async function generateMetadata({
   params: Promise<{ slug: string }>;
 }): Promise<Metadata> {
   const { slug } = await params;
-  const project = getProject(slug);
-  if (!project) return { title: "Proposal Not Found" };
 
-  // Hide details from search engines / link previews when an NDA is required.
-  // The hero text and tagline are part of the protected material.
+  // Plan-format metadata (Kakao-style strategy plans).
+  const plan = getPlan(slug);
+  if (plan) {
+    const title = `${plan.cover.title} - ${plan.cover.label}`;
+    const description = plan.cover.subtitle;
+    return {
+      title,
+      description,
+      openGraph: {
+        title,
+        description,
+        type: "website",
+        url: `https://proposal.crowdcontroldigital.com/${slug}`,
+        siteName: "Crowd Control Digital",
+      },
+      twitter: { card: "summary_large_image", title, description },
+    };
+  }
+
+  // Proposal-format metadata (existing).
+  const project = getProject(slug);
+  if (!project) return { title: "Not Found" };
+
   if (project.requireNda) {
     return {
-      title: `${project.client.name} — Confidential Proposal`,
+      title: `${project.client.name} - Confidential Proposal`,
       description: "This proposal is confidential. Please sign the mutual NDA to view.",
       robots: { index: false, follow: false },
     };
   }
 
-  const title = `${project.client.name} — ${project.project.name}`;
+  const title = `${project.client.name} - ${project.project.name}`;
   const description = project.project.tagline;
-
   const ogImage = project.images.ogImage
     ? `https://proposal.crowdcontroldigital.com${project.images.ogImage}`
     : undefined;
@@ -63,11 +87,17 @@ export default async function ProposalPage({
   params: Promise<{ slug: string }>;
 }) {
   const { slug } = await params;
+
+  // Plan format (Kakao-style strategy plans) takes precedence.
+  const plan = getPlan(slug);
+  if (plan) {
+    return <PlanClient plan={plan} />;
+  }
+
+  // Proposal format (existing).
   const project = getProject(slug);
   if (!project) notFound();
 
-  // NDA gate: if the proposal requires one and the visitor hasn't signed
-  // (verified via cookie + Supabase row), render the gate instead.
   if (project.requireNda) {
     const check = await isNdaSignedForSlug(slug);
     if (!check.signed) {
