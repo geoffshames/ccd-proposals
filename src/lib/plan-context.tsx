@@ -53,6 +53,7 @@ export type FeatureArtist = {
   monthlyListeners: string;
   instagram: string;
   reference: string;
+  referenceUrl?: string;
   note: string;
 };
 
@@ -74,6 +75,8 @@ export type VerticalSubBlock = {
   timeline?: string;
   featureTiers?: FeatureArtistTier[];
   featureTiersHeading?: string;
+  links?: { label: string; url: string }[];
+  linksHeading?: string;
 };
 
 export type VerticalSection = {

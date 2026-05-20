@@ -126,7 +126,19 @@ function SubBlock({ block, idx }: { block: VerticalSubBlock; idx: number }) {
                             <span>{a.instagram}</span>
                           </div>
                           <div className="mt-3 text-[11px] font-mono text-text-muted/60 tracking-[0.05em]">
-                            REF: <span className="text-text-muted/85">{a.reference}</span>
+                            REF:{" "}
+                            {a.referenceUrl ? (
+                              <a
+                                href={a.referenceUrl}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-accent hover:text-text-primary underline-offset-2 hover:underline transition-colors"
+                              >
+                                {a.reference}
+                              </a>
+                            ) : (
+                              <span className="text-text-muted/85">{a.reference}</span>
+                            )}
                           </div>
                           <p className="mt-3 text-[13px] md:text-[14px] text-text-primary/85 leading-relaxed">
                             {a.note}
@@ -137,6 +149,28 @@ function SubBlock({ block, idx }: { block: VerticalSubBlock; idx: number }) {
                   </div>
                 ))}
               </div>
+            </div>
+          )}
+          {block.links && block.links.length > 0 && (
+            <div>
+              <div className="text-[10px] font-mono tracking-[0.22em] uppercase text-text-muted/60 mb-3">
+                {block.linksHeading || "References"}
+              </div>
+              <ul className="space-y-2">
+                {block.links.map((l, i) => (
+                  <li key={i} className="text-[13px] md:text-[14px] leading-relaxed">
+                    <span className="text-text-muted/70 mr-2">▸</span>
+                    <a
+                      href={l.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-accent hover:text-text-primary underline-offset-2 hover:underline transition-colors break-all"
+                    >
+                      {l.label}
+                    </a>
+                  </li>
+                ))}
+              </ul>
             </div>
           )}
         </div>
