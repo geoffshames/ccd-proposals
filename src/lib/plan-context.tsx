@@ -146,6 +146,8 @@ export type StrategyPlanData = {
     backgroundImage?: string;
   };
 
+  ogImage?: string;
+
   approveCta?: {
     label: string;
     caption: string;

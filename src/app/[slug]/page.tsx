@@ -27,6 +27,9 @@ export async function generateMetadata({
   if (plan) {
     const title = `${plan.cover.title} - ${plan.cover.label}`;
     const description = plan.cover.subtitle;
+    const ogImage = plan.ogImage
+      ? `https://proposal.crowdcontroldigital.com${plan.ogImage}`
+      : undefined;
     return {
       title,
       description,
@@ -36,8 +39,16 @@ export async function generateMetadata({
         type: "website",
         url: `https://proposal.crowdcontroldigital.com/${slug}`,
         siteName: "Crowd Control Digital",
+        ...(ogImage && {
+          images: [{ url: ogImage, width: 1200, height: 630, alt: title }],
+        }),
       },
-      twitter: { card: "summary_large_image", title, description },
+      twitter: {
+        card: "summary_large_image",
+        title,
+        description,
+        ...(ogImage && { images: [ogImage] }),
+      },
     };
   }
 

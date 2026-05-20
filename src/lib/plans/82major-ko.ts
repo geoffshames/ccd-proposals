@@ -2,6 +2,7 @@ import type { StrategyPlanData } from "../plan-context";
 
 export const eightyTwoMajorPlanKorean: StrategyPlanData = {
   accentColor: "#FD3737",
+  ogImage: "/images/82major/og-image.png",
   language: "ko",
   languageAlternates: [{ slug: "82major", label: "English", code: "EN" }],
 
