@@ -28,6 +28,7 @@ export const eightyTwoMajorPlanKorean: StrategyPlanData = {
     {
       type: "overview",
       number: "01",
+      navLabel: "개요",
       title: "개요 및 목표",
       subtitle: "팬덤 인프라를 우선 구축하고 릴리즈 시점을 중심으로 디지털, 체험형, PR을 통해 증폭시키는 확장 가능한 미국 확장 전략.",
       body: [
@@ -64,6 +65,7 @@ export const eightyTwoMajorPlanKorean: StrategyPlanData = {
     {
       type: "philosophy",
       number: "02",
+      navLabel: "철학",
       title: "핵심 전략 및 철학",
       thesis: "팬덤이 모든 것을 주도합니다. PR만으로는 아티스트를 성공시킬 수 없습니다. 강력한 팬덤과 참여는 보도할 가치가 있는 순간을 만듭니다. 오프라인 활동은 디지털 대화를 촉진합니다. 디지털 모멘텀은 미디어 및 파트너십 기회를 강화합니다.",
       hierarchy: [
@@ -99,6 +101,7 @@ export const eightyTwoMajorPlanKorean: StrategyPlanData = {
     {
       type: "structure",
       number: "03",
+      navLabel: "구조",
       title: "제안 구조",
       intro: "두 가지 티어가 있습니다. 두 티어 모두 현재 SIGN 싱글 사이클(2026년 5월 - 8월, 약 12주간의 적극적인 푸시)에 대한 올인 예산입니다. 9월 컴백은 새로운 티어 승인을 유발하며, 11월 미국 투어는 컴백 사이클에 포함됩니다. CCD 실행 수수료($2,500/월 리테이너 + 관리 미디어 15% 관리)는 티어 예산 내에 포함되며, 별도가 아닙니다.",
       tiers: [
@@ -143,6 +146,7 @@ export const eightyTwoMajorPlanKorean: StrategyPlanData = {
     {
       type: "vertical",
       number: "04",
+      navLabel: "팬덤",
       title: "버티컬 1 / 팬덤 & 상시 디지털",
       philosophy: "복리 효과를 창출하는 기반. 지속적인 지출. 곡과 무관함. 다른 모든 지출의 근간이 되는 레이어.",
       subBlocks: [
@@ -217,6 +221,7 @@ export const eightyTwoMajorPlanKorean: StrategyPlanData = {
     {
       type: "vertical",
       number: "05",
+      navLabel: "디지털",
       title: "세부 영역 2 / 디지털 마케팅",
       philosophy: "유료, 오가닉, 크리에이터 전반에 걸친 전반적인 지출 할당. 팬덤 기반을 도달로 전환하는 증폭기입니다. (DSP 전략은 아래 별도 항목으로 분리됩니다.)",
       subBlocks: [
@@ -272,6 +277,7 @@ export const eightyTwoMajorPlanKorean: StrategyPlanData = {
     {
       type: "vertical",
       number: "06",
+      navLabel: "경험",
       title: "버티컬 3 / 체험 마케팅",
       philosophy: "오프라인이 온라인을 견인합니다. 실제 세계의 순간들이 소셜 공유, 팬덤 신뢰도, 언론 노출, 바이럴 콘텐츠 기회를 창출합니다.",
       subBlocks: [
@@ -347,6 +353,7 @@ export const eightyTwoMajorPlanKorean: StrategyPlanData = {
     {
       type: "vertical",
       number: "07",
+      navLabel: "DSP",
       title: "버티컬 4 / DSP 전략",
       philosophy: "The discovery layer. Where 82MAJOR's healthy follower-to-listener ratio gets the reach it has been missing.",
       intro: "82MAJOR는 도달하는 것을 전환시킵니다. 병목 현상은 팬 동기 부여가 아닌, 에디토리얼 및 플랫폼 도달 범위에 있습니다. 이 버티컬은 해당 격차를 해소하기 위해 자체적인 전담 관계, 일정 및 콘텐츠 생산이 필요하기 때문에 존재합니다.",
@@ -492,6 +499,7 @@ export const eightyTwoMajorPlanKorean: StrategyPlanData = {
     {
       type: "vertical",
       number: "08",
+      navLabel: "PR",
       title: "증폭, 내러티브 확장, 신뢰성. 주요 성장 동력은 아닙니다. PR은 강력한 팬덤 참여, 디지털 모멘텀, 경험적 순간, 스트리밍 트랙션에 의해 지원될 때 가장 효과적입니다.",
       philosophy: "A",
       subBlocks: [
@@ -557,6 +565,7 @@ export const eightyTwoMajorPlanKorean: StrategyPlanData = {
     {
       type: "vertical",
       number: "09",
+      navLabel: "추가",
       title: "Tier 외 영역. 별도 범위 설정 및 견적. 전략적 시점에 따라 비용 지출이 정당화될 때 실행됩니다.",
       philosophy: "A",
       subBlocks: [
@@ -629,6 +638,7 @@ export const eightyTwoMajorPlanKorean: StrategyPlanData = {
     {
       type: "pricing",
       number: "10",
+      navLabel: "가격",
       title: "두 개의 티어가 있으며, 둘 다 현재 SIGN 단일 주기(2026년 5월 - 8월, 약 12주)에 맞춰져 있습니다. 9월 복귀 시 동일한 구조의 새로운 티어가 승인됩니다. CCD 실행 수수료는 각 티어 내에 포함되어 있으며, 계산은 각 카드에 포함되어 있습니다.",
       intro: "Tier 01",
       tiers: [

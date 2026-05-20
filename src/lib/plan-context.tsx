@@ -7,6 +7,7 @@ import { createContext, useContext, type ReactNode } from "react";
 export type OverviewSection = {
   type: "overview";
   number: string;
+  navLabel?: string;
   title: string;
   subtitle?: string;
   body: string[];
@@ -24,6 +25,7 @@ export type OverviewSection = {
 export type PhilosophySection = {
   type: "philosophy";
   number: string;
+  navLabel?: string;
   title: string;
   thesis: string;
   hierarchy: { label: string; description: string }[];
@@ -34,6 +36,7 @@ export type PhilosophySection = {
 export type StructureSection = {
   type: "structure";
   number: string;
+  navLabel?: string;
   title: string;
   intro: string;
   tiers: {
@@ -82,6 +85,7 @@ export type VerticalSubBlock = {
 export type VerticalSection = {
   type: "vertical";
   number: string;
+  navLabel?: string;
   title: string;
   philosophy?: string;
   intro?: string;
@@ -97,6 +101,7 @@ export type PricingTierBreakdown = {
 export type PricingSection = {
   type: "pricing";
   number: string;
+  navLabel?: string;
   title: string;
   intro: string;
   ccdNote?: string;

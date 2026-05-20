@@ -2,6 +2,7 @@
 
 import { PlanProvider, type StrategyPlanData } from "@/lib/plan-context";
 import { PlanCover } from "./PlanCover";
+import { PlanNavigation } from "./PlanNavigation";
 import { PlanOverview } from "./PlanOverview";
 import { PlanPhilosophy } from "./PlanPhilosophy";
 import { PlanStructure } from "./PlanStructure";
@@ -40,6 +41,7 @@ export function PlanClient({ plan }: { plan: StrategyPlanData }) {
         }}
       >
         <PlanLanguageToggle plan={plan} />
+        <PlanNavigation />
         <PlanCover />
 
         {plan.sections.map((section, i) => {

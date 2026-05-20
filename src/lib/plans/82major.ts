@@ -28,6 +28,7 @@ export const eightyTwoMajorPlan: StrategyPlanData = {
     {
       type: "overview",
       number: "01",
+      navLabel: "Overview",
       title: "Overview & Objective",
       subtitle: "A scalable U.S. expansion strategy that builds fandom infrastructure first and amplifies through digital, experiential, and PR around release windows.",
       body: [
@@ -64,6 +65,7 @@ export const eightyTwoMajorPlan: StrategyPlanData = {
     {
       type: "philosophy",
       number: "02",
+      navLabel: "Philosophy",
       title: "Core Strategy & Philosophy",
       thesis: "Fandom drives everything. PR does not break artists on its own. Strong fandom plus engagement creates moments worth reporting. IRL activations drive digital conversation. Digital momentum strengthens media and partnership opportunities.",
       hierarchy: [
@@ -99,6 +101,7 @@ export const eightyTwoMajorPlan: StrategyPlanData = {
     {
       type: "structure",
       number: "03",
+      navLabel: "Structure",
       title: "Proposal Structure",
       intro: "Two tiers. Both are all-in budgets for the current SIGN single cycle (May - August 2026, roughly 12 weeks of active push). The September comeback triggers a fresh tier authorization; the November U.S. tour wraps into the comeback cycle. CCD execution fee ($2,500/month retainer + 15% management on managed media) sits inside the tier budget, not on top.",
       tiers: [
@@ -143,6 +146,7 @@ export const eightyTwoMajorPlan: StrategyPlanData = {
     {
       type: "vertical",
       number: "04",
+      navLabel: "Fandom",
       title: "Vertical 1 / Fandom & Always-On Digital",
       philosophy: "The compounding foundation. Continuous spend. Song-agnostic. The layer every other dollar relies on.",
       subBlocks: [
@@ -217,6 +221,7 @@ export const eightyTwoMajorPlan: StrategyPlanData = {
     {
       type: "vertical",
       number: "05",
+      navLabel: "Digital",
       title: "Vertical 2 / Digital Marketing",
       philosophy: "High-level spend allocation across paid, organic, and creator. The amplifier that turns the fandom foundation into reach. (DSP strategy is broken out as its own vertical below.)",
       subBlocks: [
@@ -272,6 +277,7 @@ export const eightyTwoMajorPlan: StrategyPlanData = {
     {
       type: "vertical",
       number: "06",
+      navLabel: "Experiential",
       title: "Vertical 3 / Experiential Marketing",
       philosophy: "IRL drives digital. Real-world moments create social sharing, fandom credibility, earned media, and viral content opportunities.",
       subBlocks: [
@@ -347,6 +353,7 @@ export const eightyTwoMajorPlan: StrategyPlanData = {
     {
       type: "vertical",
       number: "07",
+      navLabel: "DSP",
       title: "Vertical 4 / DSP Strategy",
       philosophy: "The discovery layer. Where 82MAJOR's healthy follower-to-listener ratio gets the reach it has been missing.",
       intro: "82MAJOR converts what reaches it. The bottleneck is editorial and platform reach, not fan motivation. This vertical exists because closing that gap requires its own dedicated relationships, calendar, and content output.",
@@ -492,6 +499,7 @@ export const eightyTwoMajorPlan: StrategyPlanData = {
     {
       type: "vertical",
       number: "08",
+      navLabel: "PR",
       title: "Vertical 5 / PR",
       philosophy: "Amplification, narrative extension, credibility. Not a primary growth engine. PR is most effective when supported by strong fandom engagement, digital momentum, experiential moments, and streaming traction.",
       subBlocks: [
@@ -557,6 +565,7 @@ export const eightyTwoMajorPlan: StrategyPlanData = {
     {
       type: "vertical",
       number: "09",
+      navLabel: "Add-Ons",
       title: "Vertical 6 / Optional Add-Ons",
       philosophy: "Outside the tier. Scoped and quoted separately. Triggered when the strategic moment justifies the spend.",
       subBlocks: [
@@ -629,6 +638,7 @@ export const eightyTwoMajorPlan: StrategyPlanData = {
     {
       type: "pricing",
       number: "10",
+      navLabel: "Pricing",
       title: "Final Pricing Sheets",
       intro: "Two tiers, both scoped to the current SIGN single cycle (May - August 2026, ~12 weeks). The September comeback authorizes a fresh tier on the same structure. CCD execution fee is inside each tier; the math sits in each card.",
       tiers: [
