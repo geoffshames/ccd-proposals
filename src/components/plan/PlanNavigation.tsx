@@ -6,7 +6,6 @@ import { usePlan } from "@/lib/plan-context";
 
 function deriveNavLabel(section: { navLabel?: string; title: string }): string {
   if (section.navLabel) return section.navLabel;
-  // Heuristic: strip "Vertical N / " prefix, then take up to the first delimiter.
   let t = section.title.replace(/^Vertical\s+\d+\s*\/\s*/i, "").trim();
   t = t.replace(/\s+&\s+.*$/, "").trim();
   return t;
@@ -31,9 +30,7 @@ export function PlanNavigation() {
   useEffect(() => {
     const onScroll = () => {
       setScrolled(window.scrollY > 600);
-
-      // Find the section nearest to a point ~25% down the viewport
-      const probe = window.innerHeight * 0.25;
+      const probe = window.innerHeight * 0.28;
       let current = "";
       let bestDist = Infinity;
       for (const item of items) {
@@ -55,6 +52,8 @@ export function PlanNavigation() {
     return () => window.removeEventListener("scroll", onScroll);
   }, [items]);
 
+  const activeItem = items.find((i) => i.href === active);
+
   return (
     <AnimatePresence>
       {scrolled && (
@@ -66,47 +65,81 @@ export function PlanNavigation() {
           className="fixed top-0 left-0 right-0 z-50 backdrop-blur-xl bg-bg/85 border-b border-text-muted/15"
           aria-label="Plan sections"
         >
-          <div className="max-w-7xl mx-auto px-4 md:px-6 h-12 md:h-14 flex items-center justify-between gap-3 pr-20 md:pr-32 lg:pr-36">
-            {/* Brand label */}
+          <div className="max-w-7xl mx-auto px-4 md:px-6 h-12 md:h-14 flex items-center justify-between gap-3 md:gap-4 pr-16 md:pr-28 lg:pr-36">
+            {/* Brand label - very compact */}
             <a
               href="#cover"
-              className="text-[11px] font-mono tracking-[0.18em] text-text-muted hover:text-text-primary uppercase whitespace-nowrap transition-colors"
+              className="text-[10px] md:text-[11px] font-mono tracking-[0.18em] text-text-muted hover:text-text-primary uppercase whitespace-nowrap transition-colors flex-shrink-0"
             >
-              {PLAN.cover.title}{" "}
-              <span className="text-text-muted/30">×</span>{" "}
-              <span className="hidden sm:inline">{PLAN.cover.label}</span>
-              <span className="sm:hidden">Plan</span>
+              {PLAN.cover.title}
             </a>
 
-            {/* Desktop nav */}
-            <div className="hidden lg:flex items-center gap-0.5 overflow-x-auto">
-              {items.map((item) => (
-                <a
-                  key={item.href}
-                  href={item.href}
-                  className={`group relative px-2.5 py-1.5 text-[11px] font-mono tracking-[0.05em] uppercase transition-colors whitespace-nowrap ${
-                    active === item.href
-                      ? "text-accent"
-                      : "text-text-muted hover:text-text-primary"
-                  }`}
-                  onClick={() => setActive(item.href)}
-                >
-                  <span className="text-text-muted/50 mr-1.5">{item.number}</span>
-                  {item.label}
-                </a>
+            {/* === Desktop nav (xl+): full labels with dot separators === */}
+            <div className="hidden xl:flex items-center flex-1 justify-center gap-0">
+              {items.map((item, i) => (
+                <div key={item.href} className="flex items-center">
+                  <a
+                    href={item.href}
+                    className={`px-2 py-1 text-[10px] font-mono tracking-[0.12em] uppercase transition-colors whitespace-nowrap ${
+                      active === item.href
+                        ? "text-accent font-bold"
+                        : "text-text-muted hover:text-text-primary"
+                    }`}
+                    onClick={() => setActive(item.href)}
+                  >
+                    {item.label}
+                  </a>
+                  {i < items.length - 1 && (
+                    <span className="text-text-muted/25 text-[10px] select-none" aria-hidden="true">
+                      ·
+                    </span>
+                  )}
+                </div>
               ))}
             </div>
 
-            {/* Right-side CTA + Mobile hamburger */}
-            <div className="flex items-center gap-2">
+            {/* === Mid nav (md to xl): numbers only + active label reveal === */}
+            <div className="hidden md:flex xl:hidden items-center flex-1 justify-center gap-0">
+              {items.map((item, i) => (
+                <div key={item.href} className="flex items-center">
+                  <a
+                    href={item.href}
+                    title={item.label}
+                    className={`px-2 py-1 text-[10px] font-mono tracking-[0.12em] transition-colors whitespace-nowrap ${
+                      active === item.href
+                        ? "text-accent font-bold"
+                        : "text-text-muted/70 hover:text-text-primary"
+                    }`}
+                    onClick={() => setActive(item.href)}
+                  >
+                    {item.number}
+                  </a>
+                  {i < items.length - 1 && (
+                    <span className="text-text-muted/20 text-[10px] select-none" aria-hidden="true">
+                      ·
+                    </span>
+                  )}
+                </div>
+              ))}
+              {activeItem && (
+                <span className="ml-3 text-[10px] font-mono tracking-[0.15em] uppercase text-accent whitespace-nowrap">
+                  / {activeItem.label}
+                </span>
+              )}
+            </div>
+
+            {/* Right: Approve CTA (desktop) + mobile hamburger */}
+            <div className="flex items-center gap-2 flex-shrink-0">
               <a
                 href="#approve"
-                className="hidden md:inline-flex text-[11px] font-mono tracking-[0.12em] uppercase text-white bg-accent px-4 py-2 hover:bg-accent/90 transition-colors"
+                className="hidden md:inline-flex text-[10px] md:text-[11px] font-mono tracking-[0.14em] uppercase text-white bg-accent px-3 md:px-4 py-1.5 md:py-2 hover:bg-accent/90 transition-colors whitespace-nowrap"
               >
                 Approve
               </a>
+
+              {/* Mobile hamburger */}
               <button
-                className="lg:hidden p-2"
+                className="md:hidden p-2 -mr-2"
                 onClick={() => setMobileOpen(!mobileOpen)}
                 aria-label="Toggle sections menu"
                 aria-expanded={mobileOpen}
@@ -120,6 +153,7 @@ export function PlanNavigation() {
             </div>
           </div>
 
+          {/* Mobile menu drawer */}
           <AnimatePresence>
             {mobileOpen && (
               <motion.div
@@ -127,28 +161,28 @@ export function PlanNavigation() {
                 animate={{ height: "auto", opacity: 1 }}
                 exit={{ height: 0, opacity: 0 }}
                 transition={{ duration: 0.25 }}
-                className="lg:hidden border-t border-text-muted/15 overflow-hidden"
+                className="md:hidden border-t border-text-muted/15 overflow-hidden bg-bg/95 backdrop-blur-xl"
               >
-                <div className="p-3 max-w-7xl mx-auto grid grid-cols-2 gap-1">
+                <div className="max-w-7xl mx-auto px-4 py-3 space-y-1">
                   {items.map((item) => (
                     <a
                       key={item.href}
                       href={item.href}
-                      className={`flex items-center gap-2 px-3 py-2.5 text-[12px] font-mono uppercase tracking-[0.08em] transition-colors ${
+                      className={`flex items-baseline gap-3 px-3 py-3 text-[13px] font-mono uppercase tracking-[0.1em] transition-colors border-b border-text-muted/10 last:border-b-0 ${
                         active === item.href
-                          ? "text-accent bg-white/[0.04]"
-                          : "text-text-secondary hover:text-text-primary hover:bg-white/[0.03]"
+                          ? "text-accent"
+                          : "text-text-secondary hover:text-text-primary"
                       }`}
                       onClick={() => setMobileOpen(false)}
                     >
-                      <span className="text-text-muted/50">{item.number}</span>
+                      <span className="text-text-muted/50 text-[11px] tabular-nums w-6">{item.number}</span>
                       <span>{item.label}</span>
                     </a>
                   ))}
                   <a
                     href="#approve"
-                    className="col-span-2 mt-2 inline-flex items-center justify-center gap-2 px-3 py-3 text-[12px] font-mono uppercase tracking-[0.12em] text-white bg-accent"
                     onClick={() => setMobileOpen(false)}
+                    className="mt-3 flex items-center justify-center px-3 py-3.5 text-[12px] font-mono uppercase tracking-[0.18em] text-white bg-accent"
                   >
                     Approve
                   </a>
