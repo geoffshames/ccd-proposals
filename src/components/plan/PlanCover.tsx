@@ -14,10 +14,11 @@ export function PlanCover() {
       {backgroundImage && (
         <>
           <div
-            className="absolute inset-0 -z-10 bg-cover bg-center opacity-[0.10]"
+            className="absolute inset-0 -z-10 bg-cover bg-center opacity-[0.28] grayscale contrast-110"
             style={{ backgroundImage: `url(${backgroundImage})` }}
           />
-          <div className="absolute inset-0 -z-10 bg-gradient-to-t from-bg via-bg/70 to-bg/30" />
+          <div className="absolute inset-0 -z-10 bg-gradient-to-r from-bg via-bg/60 to-bg/10" />
+          <div className="absolute inset-0 -z-10 bg-gradient-to-t from-bg/95 via-bg/40 to-bg/30" />
         </>
       )}
 
