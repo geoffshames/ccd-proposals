@@ -65,7 +65,21 @@ export function PlanNavigation() {
           className="fixed top-0 left-0 right-0 z-50 backdrop-blur-xl bg-bg/85 border-b border-text-muted/15"
           aria-label="Plan sections"
         >
-          <div className="max-w-7xl mx-auto px-4 md:px-6 h-12 md:h-14 flex items-center justify-between gap-3 md:gap-4 pr-16 md:pr-28 lg:pr-36">
+          <div className="max-w-7xl mx-auto px-4 md:px-6 h-12 md:h-14 flex items-center gap-3 md:gap-4 pr-16 md:pr-28 lg:pr-36">
+            {/* Mobile hamburger - LEFT side so it clears the floating language toggle */}
+            <button
+              className="md:hidden p-2 -ml-2 flex-shrink-0 relative z-[70]"
+              onClick={() => setMobileOpen(!mobileOpen)}
+              aria-label="Toggle sections menu"
+              aria-expanded={mobileOpen}
+            >
+              <div className="space-y-1.5">
+                <div className={`w-5 h-px bg-text-primary transition-transform ${mobileOpen ? "rotate-45 translate-y-[3.5px]" : ""}`} />
+                <div className={`w-5 h-px bg-text-primary transition-opacity ${mobileOpen ? "opacity-0" : ""}`} />
+                <div className={`w-5 h-px bg-text-primary transition-transform ${mobileOpen ? "-rotate-45 -translate-y-[3.5px]" : ""}`} />
+              </div>
+            </button>
+
             {/* Brand label - very compact */}
             <a
               href="#cover"
@@ -128,29 +142,13 @@ export function PlanNavigation() {
               )}
             </div>
 
-            {/* Right: Approve CTA (desktop) + mobile hamburger */}
-            <div className="flex items-center gap-2 flex-shrink-0">
-              <a
-                href="#approve"
-                className="hidden md:inline-flex text-[10px] md:text-[11px] font-mono tracking-[0.14em] uppercase text-white bg-accent px-3 md:px-4 py-1.5 md:py-2 hover:bg-accent/90 transition-colors whitespace-nowrap"
-              >
-                Approve
-              </a>
-
-              {/* Mobile hamburger */}
-              <button
-                className="md:hidden p-2 -mr-2"
-                onClick={() => setMobileOpen(!mobileOpen)}
-                aria-label="Toggle sections menu"
-                aria-expanded={mobileOpen}
-              >
-                <div className="space-y-1.5">
-                  <div className={`w-5 h-px bg-text-primary transition-transform ${mobileOpen ? "rotate-45 translate-y-[3.5px]" : ""}`} />
-                  <div className={`w-5 h-px bg-text-primary transition-opacity ${mobileOpen ? "opacity-0" : ""}`} />
-                  <div className={`w-5 h-px bg-text-primary transition-transform ${mobileOpen ? "-rotate-45 -translate-y-[3.5px]" : ""}`} />
-                </div>
-              </button>
-            </div>
+            {/* Right: Approve CTA (desktop only). Mobile hamburger lives on the left. */}
+            <a
+              href="#approve"
+              className="hidden md:inline-flex ml-auto flex-shrink-0 text-[10px] md:text-[11px] font-mono tracking-[0.14em] uppercase text-white bg-accent px-3 md:px-4 py-1.5 md:py-2 hover:bg-accent/90 transition-colors whitespace-nowrap"
+            >
+              Approve
+            </a>
           </div>
 
           {/* Mobile menu drawer */}
