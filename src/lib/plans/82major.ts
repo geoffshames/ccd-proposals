@@ -535,8 +535,7 @@ export const eightyTwoMajorPlan: StrategyPlanData = {
       type: "pricing",
       number: "10",
       title: "Final Pricing Sheets",
-      intro: "Two tiers, both scoped to the current SIGN single cycle (May - August 2026, ~12 weeks of active push). The September comeback authorizes a fresh tier on the same structure. CCD execution fee ($2,500/mo retainer + 15% media management) is inside both tiers; the math is shown below.",
-      ccdNote: "Tier 1: $7,500 retainer (three months × $2,500) + ~$1,500 media management (15% on ~$10K managed media) leaves ~$41,000 deployable to vendors and spend across the cycle. Tier 2: $7,500 retainer (three months × $2,500) + ~$6,500 media management (15% on ~$43K managed media) leaves ~$86,000 deployable. Numbers calibrate against the actual cycle media plan; the all-in ceiling does not move.",
+      intro: "Two tiers, both scoped to the current SIGN single cycle (May - August 2026, ~12 weeks). The September comeback authorizes a fresh tier on the same structure. CCD execution fee is inside each tier; the math sits in each card.",
       tiers: [
         {
           label: "Tier 01",
@@ -544,6 +543,12 @@ export const eightyTwoMajorPlan: StrategyPlanData = {
           name: "Foundation Plan",
           tagline: "All-in ceiling. SIGN cycle (~12 weeks). Foundation only.",
           deployable: "$41,000",
+          feeBreakdown: {
+            retainer: "$7,500",
+            retainerDetail: "3 mo × $2,500",
+            mediaManagement: "~$1,500",
+            mediaManagementDetail: "15% on ~$10K managed",
+          },
           breakdown: [
             { vertical: "Fandom (3 mo, view-capped)", amount: "$18,000" },
             { vertical: "Digital Marketing (Light)", amount: "$13,000" },
@@ -559,6 +564,12 @@ export const eightyTwoMajorPlan: StrategyPlanData = {
           tagline: "All-in ceiling. SIGN cycle (~12 weeks). Foundation plus amplifiers.",
           featured: true,
           deployable: "$86,000",
+          feeBreakdown: {
+            retainer: "$7,500",
+            retainerDetail: "3 mo × $2,500",
+            mediaManagement: "~$6,500",
+            mediaManagementDetail: "15% on ~$43K managed",
+          },
           breakdown: [
             { vertical: "Fandom (Expanded, 3 mo, view-capped)", amount: "$24,000" },
             { vertical: "Digital Marketing (Full-Funnel)", amount: "$22,000" },

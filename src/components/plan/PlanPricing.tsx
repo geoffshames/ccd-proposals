@@ -9,17 +9,6 @@ export function PlanPricing({ section }: { section: PricingSection }) {
       <div className="max-w-6xl mx-auto">
         <PlanSectionHeader number={section.number} title={section.title} intro={section.intro} />
 
-        {section.ccdNote && (
-          <div className="mb-12 border-l-2 border-accent pl-6 max-w-3xl">
-            <div className="text-[10px] font-mono tracking-[0.22em] uppercase text-accent mb-2">
-              CCD Execution Fee (Inside The Tier)
-            </div>
-            <p className="text-text-primary/85 text-[14px] md:text-[15px] leading-relaxed">
-              {section.ccdNote}
-            </p>
-          </div>
-        )}
-
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
           {section.tiers.map((tier, i) => (
             <motion.div
@@ -50,6 +39,35 @@ export function PlanPricing({ section }: { section: PricingSection }) {
                 <p className="mt-4 text-text-primary/80 text-[14px] md:text-[15px] leading-relaxed">
                   {tier.tagline}
                 </p>
+              )}
+
+              {tier.feeBreakdown && (
+                <div className="mt-8 grid grid-cols-2 gap-px bg-text-muted/15 border border-text-muted/15">
+                  <div className="bg-bg-card p-4">
+                    <div className="text-[10px] font-mono tracking-[0.18em] uppercase text-text-muted/60 mb-2">
+                      CCD Retainer
+                    </div>
+                    <div className="text-[22px] md:text-[26px] font-bold text-text-primary leading-none"
+                         style={{ fontFamily: "var(--font-heading), var(--font-sans), sans-serif" }}>
+                      {tier.feeBreakdown.retainer}
+                    </div>
+                    <div className="text-[11px] font-mono text-text-muted/70 mt-2 leading-snug">
+                      {tier.feeBreakdown.retainerDetail}
+                    </div>
+                  </div>
+                  <div className="bg-bg-card p-4">
+                    <div className="text-[10px] font-mono tracking-[0.18em] uppercase text-text-muted/60 mb-2">
+                      Media Mgmt
+                    </div>
+                    <div className="text-[22px] md:text-[26px] font-bold text-text-primary leading-none"
+                         style={{ fontFamily: "var(--font-heading), var(--font-sans), sans-serif" }}>
+                      {tier.feeBreakdown.mediaManagement}
+                    </div>
+                    <div className="text-[11px] font-mono text-text-muted/70 mt-2 leading-snug">
+                      {tier.feeBreakdown.mediaManagementDetail}
+                    </div>
+                  </div>
+                </div>
               )}
 
               <div className="mt-8 pt-6 border-t border-text-muted/15">

@@ -89,6 +89,12 @@ export type PricingSection = {
     tagline?: string;
     deployable: string;
     breakdown: PricingTierBreakdown[];
+    feeBreakdown?: {
+      retainer: string;
+      retainerDetail: string;
+      mediaManagement: string;
+      mediaManagementDetail: string;
+    };
     featured?: boolean;
   }[];
   addOns?: { name: string; budget: string; description: string }[];

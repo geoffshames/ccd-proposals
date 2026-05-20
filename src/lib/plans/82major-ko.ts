@@ -535,8 +535,7 @@ export const eightyTwoMajorPlanKorean: StrategyPlanData = {
       type: "pricing",
       number: "10",
       title: "최종 가격 시트",
-      intro: "두 가지 티어가 있으며, 두 티어 모두 현재 SIGN 싱글 사이클(2026년 5월 - 8월, 약 12주간의 적극적인 푸시)에 맞춰져 있습니다. 9월 컴백은 동일한 구조에 새로운 티어를 승인합니다. CCD 실행 수수료($2,500/월 리테이너 + 15% 미디어 관리)는 두 티어 모두에 포함되며, 계산은 아래에 제시되어 있습니다.",
-      ccdNote: "티어 1: $7,500 리테이너(3개월 × $2,500) + 약 $1,500 미디어 관리(약 $10K 관리 미디어의 15%)로 사이클 전반에 걸쳐 공급업체 및 지출에 약 $41,000을 사용할 수 있습니다. 티어 2: $7,500 리테이너(3개월 × $2,500) + 약 $6,500 미디어 관리(약 $43K 관리 미디어의 15%)로 약 $86,000을 사용할 수 있습니다. 수치는 실제 사이클 미디어 계획에 맞춰 조정되며, 올인 상한선은 변동되지 않습니다.",
+      intro: "두 개의 티어가 있으며, 둘 다 현재 SIGN 단일 주기(2026년 5월 - 8월, 약 12주)에 맞춰져 있습니다. 9월 복귀 시 동일한 구조의 새로운 티어가 승인됩니다. CCD 실행 수수료는 각 티어 내에 포함되어 있으며, 계산은 각 카드에 포함되어 있습니다.",
       tiers: [
         {
           label: "Tier 01",
@@ -544,6 +543,12 @@ export const eightyTwoMajorPlanKorean: StrategyPlanData = {
           name: "기반 계획",
           tagline: "올인 상한선. SIGN 사이클(약 12주). 기반 구축만 해당.",
           deployable: "$41,000",
+          feeBreakdown: {
+            retainer: "$7,500",
+            retainerDetail: "3 mo × $2,500",
+            mediaManagement: "~$1,500",
+            mediaManagementDetail: "~$10K 관리 금액의 15%",
+          },
           breakdown: [
             { vertical: "팬덤 (3개월, 조회수 제한)", amount: "$18,000" },
             { vertical: "디지털 마케팅 (기본)", amount: "$13,000" },
@@ -559,6 +564,12 @@ export const eightyTwoMajorPlanKorean: StrategyPlanData = {
           tagline: "총액 상한선. SIGN 사이클 (~12주). 기본 구성 및 증폭 기능 포함.",
           featured: true,
           deployable: "$86,000",
+          feeBreakdown: {
+            retainer: "$7,500",
+            retainerDetail: "3 mo × $2,500",
+            mediaManagement: "~$6,500",
+            mediaManagementDetail: "~$43K 관리 금액의 15%",
+          },
           breakdown: [
             { vertical: "팬덤 (확장, 3개월, 조회수 제한)", amount: "$24,000" },
             { vertical: "디지털 마케팅 (풀퍼널)", amount: "$22,000" },
