@@ -17,8 +17,8 @@ export const eightyTwoMajorPlanKorean: StrategyPlanData = {
 
   approveCta: {
     label: "승인",
-    sentLabel: "발송 완료. Geoff가 연락드릴 것입니다.",
-    caption: "CLICKS는 CROWD CONTROL DIGITAL의 GEOFF에게 알립니다.",
+    sentLabel: "전송되었습니다. 저희 팀에서 연락드리겠습니다.",
+    caption: "승인 알림 Crowd Control Digital",
   },
 
   sections: [

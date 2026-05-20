@@ -17,8 +17,8 @@ export const eightyTwoMajorPlan: StrategyPlanData = {
 
   approveCta: {
     label: "Approve",
-    sentLabel: "Sent. Geoff will be in touch.",
-    caption: "CLICKS NOTIFY GEOFF AT CROWD CONTROL DIGITAL",
+    sentLabel: "Sent. Our team will be in touch.",
+    caption: "APPROVALS NOTIFY CROWD CONTROL DIGITAL",
   },
 
   sections: [
