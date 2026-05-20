@@ -26,11 +26,11 @@ export function LanguageToggle() {
       initial={{ opacity: 0, y: -10 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6, delay: 0.4, ease: [0.22, 1, 0.36, 1] }}
-      className="fixed top-[13px] right-5 z-[60]"
+      className="fixed top-3 right-3 md:top-[13px] md:right-5 z-[60]"
     >
       <div className="flex items-center text-[11px] font-mono tracking-[0.14em] uppercase backdrop-blur-xl bg-bg/70 border border-text-muted/25">
         <span
-          className="px-3 py-2 bg-accent text-white font-bold"
+          className="px-2.5 md:px-3 py-1.5 md:py-2 bg-accent text-white font-bold"
           aria-current="true"
         >
           {currentCode}
@@ -41,7 +41,7 @@ export function LanguageToggle() {
             href={`/${alt.slug}`}
             prefetch
             scroll={false}
-            className="px-3 py-2 text-text-muted hover:text-text-primary hover:bg-bg-card-hover transition-colors border-l border-text-muted/20"
+            className="px-2.5 md:px-3 py-1.5 md:py-2 text-text-muted hover:text-text-primary hover:bg-bg-card-hover transition-colors border-l border-text-muted/20"
             aria-label={`Switch to ${alt.label}`}
             title={alt.label}
           >

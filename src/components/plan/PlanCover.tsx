@@ -9,7 +9,7 @@ export function PlanCover() {
   return (
     <section
       id="cover"
-      className="relative min-h-[92vh] flex flex-col justify-between px-6 md:px-12 lg:px-24 pt-12 pb-16 overflow-hidden"
+      className="relative min-h-[92vh] flex flex-col justify-between px-6 md:px-12 lg:px-24 pt-20 md:pt-12 pb-16 overflow-hidden"
     >
       {backgroundImage && (
         <>
@@ -26,7 +26,7 @@ export function PlanCover() {
         initial={{ opacity: 0, y: -10 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
-        className="flex items-center justify-between gap-6"
+        className="flex flex-col md:flex-row md:items-center md:justify-between gap-2 md:gap-6 pr-0 md:pr-32 lg:pr-36"
       >
         <span className="text-[11px] font-mono tracking-[0.25em] uppercase text-text-muted/70">
           {label}
