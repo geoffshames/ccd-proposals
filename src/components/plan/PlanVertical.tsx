@@ -100,6 +100,45 @@ function SubBlock({ block, idx }: { block: VerticalSubBlock; idx: number }) {
               </ul>
             </div>
           )}
+          {block.featureTiers && block.featureTiers.length > 0 && (
+            <div>
+              <div className="text-[10px] font-mono tracking-[0.22em] uppercase text-text-muted/60 mb-4">
+                {block.featureTiersHeading || "Feature Artist Candidates"}
+              </div>
+              <div className="space-y-8">
+                {block.featureTiers.map((tier, ti) => (
+                  <div key={ti}>
+                    <div className="flex items-baseline gap-3 mb-3">
+                      <span className="text-[11px] font-mono tracking-[0.22em] uppercase text-accent">
+                        {tier.label}
+                      </span>
+                      <div className="flex-1 h-px bg-text-muted/15" />
+                    </div>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+                      {tier.artists.map((a, ai) => (
+                        <div key={ai} className="border border-text-muted/15 bg-bg-card p-5">
+                          <div className="text-[15px] md:text-[17px] font-bold text-text-primary leading-tight"
+                               style={{ fontFamily: "var(--font-heading), var(--font-sans), sans-serif" }}>
+                            {a.name}
+                          </div>
+                          <div className="mt-2 flex flex-wrap gap-x-4 gap-y-1 text-[11px] font-mono text-text-muted/70 tracking-[0.05em]">
+                            <span>{a.monthlyListeners}</span>
+                            <span>{a.instagram}</span>
+                          </div>
+                          <div className="mt-3 text-[11px] font-mono text-text-muted/60 tracking-[0.05em]">
+                            REF: <span className="text-text-muted/85">{a.reference}</span>
+                          </div>
+                          <p className="mt-3 text-[13px] md:text-[14px] text-text-primary/85 leading-relaxed">
+                            {a.note}
+                          </p>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
         </div>
       </div>
     </motion.div>

@@ -48,6 +48,19 @@ export type StructureSection = {
   }[];
 };
 
+export type FeatureArtist = {
+  name: string;
+  monthlyListeners: string;
+  instagram: string;
+  reference: string;
+  note: string;
+};
+
+export type FeatureArtistTier = {
+  label: string;
+  artists: FeatureArtist[];
+};
+
 export type VerticalSubBlock = {
   label: string;
   title: string;
@@ -59,6 +72,8 @@ export type VerticalSubBlock = {
   tactics?: string[];
   examples?: string[];
   timeline?: string;
+  featureTiers?: FeatureArtistTier[];
+  featureTiersHeading?: string;
 };
 
 export type VerticalSection = {

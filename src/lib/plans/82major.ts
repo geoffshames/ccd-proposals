@@ -353,6 +353,76 @@ export const eightyTwoMajorPlan: StrategyPlanData = {
       subBlocks: [
         {
           label: "A",
+          title: "Feature Artist Strategy (SIGN)",
+          objective: "Position 82MAJOR as a globally scalable performance-driven boy group by strategically pairing each single with feature artists that expand DSP reach outside core K-pop audiences, create viral and social crossover moments, strengthen editorial playlist positioning, add credibility within Western pop, dance, hip-hop, and alt spaces, support sync, remix, and festival opportunities, and build long-term association with tastemaker acts.",
+          strategy: "SIGN sonically leans into 90s-inspired R&B textures with restrained percussion, dreamy melodies, and emotionally controlled vocal delivery. The song is atmospheric, minimal, and mature, a departure from the group's more aggressive performance records. Feature pairing should match that mood: alt-R&B credibility, fashion / tastemaker positioning, and cultural reach outside the K-pop lane.",
+          components: {
+            heading: "Strategic Goals",
+            items: [
+              "Expand DSP reach outside core K-pop audiences",
+              "Create viral and social crossover moments",
+              "Strengthen editorial playlist positioning",
+              "Add credibility within Western pop, dance, hip-hop, and alt spaces",
+              "Support sync, remix, and festival opportunities",
+              "Build long-term artist association with tastemaker and culturally relevant acts",
+            ],
+          },
+          featureTiersHeading: "SIGN - Feature Artist Candidates",
+          featureTiers: [
+            {
+              label: "Tier 1",
+              artists: [
+                {
+                  name: "TOMMY RICHMAN",
+                  monthlyListeners: "12.3M Monthly Listeners",
+                  instagram: "334K IG Followers",
+                  reference: "Changes - Tommy Richman",
+                  note: "One of the biggest breakout artists of the past year with massive streaming momentum. Retro-inspired vocals and groove-heavy production fit the 90s influence of SIGN. Strong cultural buzz and broad crossover appeal beyond traditional pop audiences.",
+                },
+                {
+                  name: "BAKAR",
+                  monthlyListeners: "9.3M Monthly Listeners",
+                  instagram: "341K IG Followers",
+                  reference: "Don't Wanna - Justin Bieber, Bakar",
+                  note: "Recently featured on Justin Bieber's SWAG project, adding major cultural visibility. Seamlessly blends indie, alternative, and R&B influences that align with SIGN's mood. Strong fashion, tastemaker, and international touring credibility outside traditional pop lanes.",
+                },
+              ],
+            },
+            {
+              label: "Tier 2",
+              artists: [
+                {
+                  name: "AMBER MARK",
+                  monthlyListeners: "2.8M Monthly Listeners",
+                  instagram: "389K IG Followers",
+                  reference: "Sweet Serotonin - Amber Mark",
+                  note: "Recently opened for Sabrina Carpenter, significantly increasing mainstream exposure. Blends soulful R&B with alternative pop in a way that matches SIGN's mature atmosphere. Strong fashion-forward branding and DSP playlist appeal.",
+                },
+                {
+                  name: "charlieonafriday",
+                  monthlyListeners: "2.1M Monthly Listeners",
+                  instagram: "814K IG Followers",
+                  reference: "That's What I Get - charlieonafriday",
+                  note: "Strong Gen Z fan engagement and consistent streaming performance. Emotional pop songwriting aligns well with SIGN's melodic intimacy. Large social footprint gives strong short-form and crossover potential.",
+                },
+              ],
+            },
+            {
+              label: "Tier 3",
+              artists: [
+                {
+                  name: "DESTIN CONRAD",
+                  monthlyListeners: "1.1M Monthly Listeners",
+                  instagram: "418K IG Followers",
+                  reference: "Bad - DESTIN CONRAD",
+                  note: "One of the strongest emerging names in modern male R&B right now. Smooth vocal tone and emotionally controlled delivery fit SIGN naturally. Strong touring momentum and growing credibility within alt-R&B spaces.",
+                },
+              ],
+            },
+          ],
+        },
+        {
+          label: "B",
           title: "Playlist Pitching & Editorial Lane",
           objective: "Land 82MAJOR on the playlists that matter, in the lanes that match the music. Pitch alt and pop editors at major DSPs rather than letting the group default into the K-pop bucket.",
           strategy: "One major DSP commits as the cycle champion. Spotify, Apple, or YouTube Music takes 82MAJOR through a full 360 in that cycle. The other two run baseline playlist and editorial.",
@@ -368,7 +438,7 @@ export const eightyTwoMajorPlan: StrategyPlanData = {
           },
         },
         {
-          label: "B",
+          label: "C",
           title: "Live Performance Programs",
           objective: "Showcase 82MAJOR's performance identity to U.S. audiences through DSP-branded live content. The members-as-producers angle reads natively in these formats.",
           examples: [
@@ -380,7 +450,7 @@ export const eightyTwoMajorPlan: StrategyPlanData = {
           ],
         },
         {
-          label: "C",
+          label: "D",
           title: "Artist-to-Watch Programs",
           objective: "Land on the flagship development programs that signal 'rising' to U.S. editorial and label-services partners.",
           examples: [
@@ -394,7 +464,7 @@ export const eightyTwoMajorPlan: StrategyPlanData = {
           ],
         },
         {
-          label: "D",
+          label: "E",
           title: "Catalog Activation & Stationhead",
           objective: "Re-activate the dormant streaming catalog (Sure Thing, Stuck, ON) during release weeks. Use Stationhead listening parties to convert fan-army energy into measurable stream lifts.",
           components: {
