@@ -22,9 +22,11 @@ import { fearlessRecords } from "./fearless-records";
 import { bogeyBoys } from "./bogey-boys";
 import { fendiRodeo } from "./fendi-rodeo";
 import { yoQuieroBailar } from "./yo-quiero-bailar";
+import { emmitFenn } from "./emmit-fenn";
 import type { ProjectData } from "../project-context";
 
 export const PROJECTS: Record<string, ProjectData> = {
+  "emmit-fenn": emmitFenn,
   "little-tokyo-reborn": littleTokyoReborn,
   "yk-niece": ykNiece,
   "suicideboys": suicideboys,
