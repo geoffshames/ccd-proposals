@@ -437,7 +437,7 @@ export const eightyTwoMajorPlan: StrategyPlanData = {
               "Media narrative around the U.S. growth story",
               "Cultural-momentum framing (the group's tier ascent)",
               "Fan-engagement success as the news beat",
-              "Firsts and milestones (first U.S. tour, first Japan launch, chart benchmarks)",
+              "Firsts and milestones (first U.S. tour, chart benchmarks, fandom milestones)",
               "Long-term artist profile-building over a 12-month horizon",
             ],
           },
