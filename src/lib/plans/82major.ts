@@ -361,13 +361,13 @@ export const eightyTwoMajorPlan: StrategyPlanData = {
         {
           label: "A",
           title: "Playlist Pitching & Editorial Lane",
-          objective: "Land 82MAJOR on the playlists that matter, in the lanes that match the music. Pitch alt and pop editors at major DSPs rather than letting the group default into the K-pop bucket.",
+          objective: "Land 82MAJOR on the playlists that matter, in the lanes that match the music. Pitch Anglo Pop Editors at major DSPs rather than letting the group default into the K-pop bucket.",
           strategy: "One major DSP commits as the cycle champion. Spotify, Apple, or YouTube Music takes 82MAJOR through a full 360 in that cycle. The other two run baseline playlist and editorial.",
           components: {
             heading: "Components",
             items: [
               "Playlist pitching across Spotify, Apple Music, YouTube Music, Tidal, Amazon Music",
-              "Alt + pop editor positioning (not K-pop bucket)",
+              "Anglo Pop Editor positioning (not K-pop bucket)",
               "Spotify Equal Asia / Apple Music K-Hits anchor placements",
               "Editorial relationship development (one named contact per DSP)",
               "Cycle-specific pitch packets with localized U.S. context",

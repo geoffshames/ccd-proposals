@@ -361,13 +361,13 @@ export const eightyTwoMajorPlanKorean: StrategyPlanData = {
         {
           label: "A",
           title: "플레이리스트 피칭 및 에디토리얼 레인",
-          objective: "음악에 맞는 레인에서 중요한 플레이리스트에 82MAJOR를 올리세요. 그룹이 K-pop 범주에 기본적으로 포함되도록 두는 대신 주요 DSP의 alt 및 pop 편집자에게 피치하세요.",
+          objective: "82MAJOR를 중요한 플레이리스트에, 음악과 어울리는 장르에 안착시키십시오. 해당 그룹이 K-pop으로 분류되는 것을 방지하고, 주요 DSP에 Anglo Pop Editors로 제안하십시오.",
           strategy: "하나의 주요 DSP가 사이클 챔피언으로 참여합니다. Spotify, Apple 또는 YouTube Music이 해당 사이클에서 82MAJOR를 360도로 지원합니다. 나머지 두 개는 기본 플레이리스트 및 에디토리얼을 운영합니다.",
           components: {
             heading: "구성 요소",
             items: [
               "Spotify, Apple Music, YouTube Music, Tidal, Amazon Music 전반의 플레이리스트 피칭",
-              "Alt + pop 편집자 포지셔닝 (K-pop 범주 제외)",
+              "Anglo Pop Editor 포지셔닝 (K-pop 분류 아님)",
               "Spotify Equal Asia / Apple Music K-Hits 앵커 배치",
               "에디토리얼 관계 개발 (DSP당 한 명의 지정 연락처)",
               "현지화된 U.S. 맥락을 담은 시즌별 피치 패킷",
