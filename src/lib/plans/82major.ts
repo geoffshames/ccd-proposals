@@ -34,7 +34,7 @@ export const eightyTwoMajorPlan: StrategyPlanData = {
       subtitle: "A scalable U.S. expansion strategy that builds fandom infrastructure first and amplifies through digital, experiential, and PR around release windows.",
       body: [
         "This deck frames a long-term U.S. growth framework for 82MAJOR. It supports the current SIGN promotional cycle, the September comeback rollout, the November U.S. tour, and the longer arc of fandom plus audience growth through 1H 2027.",
-        "It is not a detailed creative deck. It is not a campaign-by-campaign tactical document. It is the strategic framework that governs how budget is allocated across verticals and how it scales from one release cycle to the next. The $50K and $100K tiers shown here are scoped to the current SIGN single cycle. The September comeback authorizes a fresh tier on the same structure; the same applies to the November tour and the 1H 2027 Japan launch. Recommended spend allocation, scalable U.S. market-building, and a non-negotiable foundational layer that runs across every cycle.",
+        "This is the strategic framework that governs how budget is allocated across verticals and how it scales from one release cycle to the next. The $50K and $100K tiers shown here are scoped to the current SIGN single cycle. The September comeback authorizes a fresh tier on the same structure; the same applies to the November tour and any subsequent release window. Recommended spend allocation, scalable U.S. market-building, and a non-negotiable foundational layer that runs across every cycle.",
       ],
       supports: {
         heading: "What This Strategy Supports",
@@ -42,7 +42,6 @@ export const eightyTwoMajorPlan: StrategyPlanData = {
           "Current SIGN single promotional push",
           "September comeback rollout (7th mini)",
           "November U.S. tour (return run)",
-          "1H 2027 Japan launch under HoriPro",
           "Long-term fandom growth through 1H 2027 and beyond",
         ],
       },
@@ -72,7 +71,7 @@ export const eightyTwoMajorPlan: StrategyPlanData = {
       hierarchy: [
         {
           label: "Fandom (Foundation, Always-On)",
-          description: "The compounding layer. U.S. fan-page network, CRM and SMS via Laylo, owned-audience capture, fan engagement mechanics. Runs every week regardless of release calendar. Non-negotiable foundational spend. Without this layer, every other dollar leaks.",
+          description: "The compounding layer. U.S. fan-page network, CRM with email and SMS via Laylo, owned-audience capture, fan engagement mechanics. Runs every week regardless of release calendar. Non-negotiable foundational spend. Without this layer, every other dollar leaks.",
         },
         {
           label: "Digital (Amplifier)",
@@ -114,7 +113,7 @@ export const eightyTwoMajorPlan: StrategyPlanData = {
           includes: [
             "Always-on fandom infrastructure (U.S. fan-page network)",
             "Fan HQ social strategy",
-            "CRM and SMS capture on Laylo",
+            "CRM with email and SMS capture on Laylo",
             "DSP playlist pitching + editorial",
             "Baseline PR support",
             "Light content and narrative spend",
@@ -181,12 +180,12 @@ export const eightyTwoMajorPlan: StrategyPlanData = {
           title: "Email CRM + SMS Strategy",
           budget: "TBD (inside tier)",
           objective: "Convert casual audience into a retained fandom ecosystem that the artist team owns outside platform algorithms.",
-          strategy: "Stand up Laylo as the U.S. CRM and SMS platform. Capture email and SMS at every touchpoint (Hello82 drops, tour stops, content unlocks, social DM funnels). Segment by city, engagement tier, and purchase history. Run retention flows tied to release windows.",
+          strategy: "Stand up Laylo as the U.S. CRM, email, and SMS platform. Capture email and SMS at every touchpoint (K-pop retailer drops, tour stops, content unlocks, social DM funnels). Segment by city, engagement tier, and purchase history. Run retention flows tied to release windows.",
           components: {
             heading: "Components",
             items: [
               "Email capture flows (web, social, tour)",
-              "Laylo SMS stack (drop alerts, ticketing, tour comms)",
+              "Laylo email + SMS stack (drop alerts, ticketing, tour comms)",
               "Fan segmentation by city, tier, behavior",
               "Retention campaigns timed to release windows",
               "Fan incentives that drive list growth (pre-save unlocks, photocard offers)",
@@ -299,10 +298,10 @@ export const eightyTwoMajorPlan: StrategyPlanData = {
           label: "B",
           title: "Pop-Ups",
           budget: "Tier 2 / tour-timed",
-          objective: "Convert U.S. tour stops and Hello82 quarterly drops into multi-day photo, content, and sales moments.",
+          objective: "Convert U.S. tour stops and K-pop retailer drops into multi-day photo, content, and sales moments.",
           tactics: [
             "Standalone pop-ups in LA and NYC",
-            "Layered onto Hello82 quarterly drops in tier-2 cities",
+            "Layered onto K-pop retailer drops in tier-2 cities",
             "Cup-sleeve events at coffee partners",
             "Fan-sign integration with partner record stores",
             "Photo-card and limited-edition physical drops on site",
@@ -361,81 +360,6 @@ export const eightyTwoMajorPlan: StrategyPlanData = {
       subBlocks: [
         {
           label: "A",
-          title: "Feature Artist Strategy (SIGN)",
-          objective: "Position 82MAJOR as a globally scalable performance-driven boy group by strategically pairing each single with feature artists that expand DSP reach outside core K-pop audiences, create viral and social crossover moments, strengthen editorial playlist positioning, add credibility within Western pop, dance, hip-hop, and alt spaces, support sync, remix, and festival opportunities, and build long-term association with tastemaker acts.",
-          strategy: "SIGN sonically leans into 90s-inspired R&B textures with restrained percussion, dreamy melodies, and emotionally controlled vocal delivery. The song is atmospheric, minimal, and mature, a departure from the group's more aggressive performance records. Feature pairing should match that mood: alt-R&B credibility, fashion / tastemaker positioning, and cultural reach outside the K-pop lane.",
-          components: {
-            heading: "Strategic Goals",
-            items: [
-              "Expand DSP reach outside core K-pop audiences",
-              "Create viral and social crossover moments",
-              "Strengthen editorial playlist positioning",
-              "Add credibility within Western pop, dance, hip-hop, and alt spaces",
-              "Support sync, remix, and festival opportunities",
-              "Build long-term artist association with tastemaker and culturally relevant acts",
-            ],
-          },
-          featureTiersHeading: "SIGN - Feature Artist Candidates",
-          featureTiers: [
-            {
-              label: "Tier 1",
-              artists: [
-                {
-                  name: "TOMMY RICHMAN",
-                  monthlyListeners: "12.3M Monthly Listeners",
-                  instagram: "334K IG Followers",
-                  reference: "Changes - Tommy Richman",
-                  referenceUrl: "https://open.spotify.com/track/32VOsoPR0N9dEZNbogPIeZ",
-                  note: "One of the biggest breakout artists of the past year with massive streaming momentum. Retro-inspired vocals and groove-heavy production fit the 90s influence of SIGN. Strong cultural buzz and broad crossover appeal beyond traditional pop audiences.",
-                },
-                {
-                  name: "BAKAR",
-                  monthlyListeners: "9.3M Monthly Listeners",
-                  instagram: "341K IG Followers",
-                  reference: "Don't Wanna - Justin Bieber, Bakar",
-                  referenceUrl: "https://open.spotify.com/track/5hplO2Sk1SaZgSaR05m6Nn",
-                  note: "Recently featured on Justin Bieber's SWAG project, adding major cultural visibility. Seamlessly blends indie, alternative, and R&B influences that align with SIGN's mood. Strong fashion, tastemaker, and international touring credibility outside traditional pop lanes.",
-                },
-              ],
-            },
-            {
-              label: "Tier 2",
-              artists: [
-                {
-                  name: "AMBER MARK",
-                  monthlyListeners: "2.8M Monthly Listeners",
-                  instagram: "389K IG Followers",
-                  reference: "Sweet Serotonin - Amber Mark",
-                  referenceUrl: "https://open.spotify.com/track/5pzCNVV0gcW92gF73DmhOa",
-                  note: "Recently opened for Sabrina Carpenter, significantly increasing mainstream exposure. Blends soulful R&B with alternative pop in a way that matches SIGN's mature atmosphere. Strong fashion-forward branding and DSP playlist appeal.",
-                },
-                {
-                  name: "charlieonafriday",
-                  monthlyListeners: "2.1M Monthly Listeners",
-                  instagram: "814K IG Followers",
-                  reference: "That's What I Get - charlieonafriday",
-                  referenceUrl: "https://open.spotify.com/track/1JXoYzZXVW7H829mHfiWRm",
-                  note: "Strong Gen Z fan engagement and consistent streaming performance. Emotional pop songwriting aligns well with SIGN's melodic intimacy. Large social footprint gives strong short-form and crossover potential.",
-                },
-              ],
-            },
-            {
-              label: "Tier 3",
-              artists: [
-                {
-                  name: "DESTIN CONRAD",
-                  monthlyListeners: "1.1M Monthly Listeners",
-                  instagram: "418K IG Followers",
-                  reference: "Bad - DESTIN CONRAD",
-                  referenceUrl: "https://open.spotify.com/track/48pi6NxVvt4npqDnLBi0iK",
-                  note: "One of the strongest emerging names in modern male R&B right now. Smooth vocal tone and emotionally controlled delivery fit SIGN naturally. Strong touring momentum and growing credibility within alt-R&B spaces.",
-                },
-              ],
-            },
-          ],
-        },
-        {
-          label: "B",
           title: "Playlist Pitching & Editorial Lane",
           objective: "Land 82MAJOR on the playlists that matter, in the lanes that match the music. Pitch alt and pop editors at major DSPs rather than letting the group default into the K-pop bucket.",
           strategy: "One major DSP commits as the cycle champion. Spotify, Apple, or YouTube Music takes 82MAJOR through a full 360 in that cycle. The other two run baseline playlist and editorial.",
@@ -451,7 +375,7 @@ export const eightyTwoMajorPlan: StrategyPlanData = {
           },
         },
         {
-          label: "C",
+          label: "B",
           title: "Live Performance Programs",
           objective: "Showcase 82MAJOR's performance identity to U.S. audiences through DSP-branded live content. The members-as-producers angle reads natively in these formats.",
           examples: [
@@ -463,7 +387,7 @@ export const eightyTwoMajorPlan: StrategyPlanData = {
           ],
         },
         {
-          label: "D",
+          label: "C",
           title: "Artist-to-Watch Programs",
           objective: "Land on the flagship development programs that signal 'rising' to U.S. editorial and label-services partners.",
           examples: [
@@ -477,7 +401,7 @@ export const eightyTwoMajorPlan: StrategyPlanData = {
           ],
         },
         {
-          label: "E",
+          label: "D",
           title: "Catalog Activation & Stationhead",
           objective: "Re-activate the dormant streaming catalog (Sure Thing, Stuck, ON) during release weeks. Use Stationhead listening parties to convert fan-army energy into measurable stream lifts.",
           components: {
@@ -522,13 +446,13 @@ export const eightyTwoMajorPlan: StrategyPlanData = {
           label: "B",
           title: "Editorial Support",
           components: {
-            heading: "What CCD Pitches",
+            heading: "What Kakao Pitches",
             items: [
               "Interviews (artist and member-level)",
               "Long-form profile features",
               "Campaign and release announcements",
               "Tour coverage in U.S. publications",
-              "Tentpole moments (comeback, Japan debut, milestones)",
+              "Tentpole moments (comeback, tour, milestones)",
             ],
           },
         },
@@ -573,17 +497,77 @@ export const eightyTwoMajorPlan: StrategyPlanData = {
         {
           label: "A",
           title: "A&R / Features Strategy",
-          objective: "Expand the artist ecosystem and audience overlap through targeted U.S. collaborations and Korean hip-hop credibility unlocks.",
+          objective: "Position 82MAJOR as a globally scalable performance-driven boy group by strategically pairing each single with feature artists that expand DSP reach outside core K-pop audiences, create viral and social crossover moments, strengthen editorial playlist positioning, add credibility within Western pop, dance, hip-hop, and alt spaces, support sync, remix, and festival opportunities, and build long-term association with tastemaker acts.",
+          strategy: "SIGN sonically leans into 90s-inspired R&B textures with restrained percussion, dreamy melodies, and emotionally controlled vocal delivery. The song is atmospheric, minimal, and mature, a departure from the group's more aggressive performance records. Feature pairing should match that mood: alt-R&B credibility, fashion / tastemaker positioning, and cultural reach outside the K-pop lane.",
           components: {
-            heading: "Components",
+            heading: "Strategic Goals",
             items: [
-              "Feature strategy across U.S. and Korean artists",
-              "Artist compatibility analysis (musical, audience, narrative)",
-              "U.S. collaboration introductions",
-              "Korean hip-hop credibility features (Beenzino, BIG Naughty, OLNL, Sik-K)",
-              "Strategic creative direction for collaboration cycles",
+              "Expand DSP reach outside core K-pop audiences",
+              "Create viral and social crossover moments",
+              "Strengthen editorial playlist positioning",
+              "Add credibility within Western pop, dance, hip-hop, and alt spaces",
+              "Support sync, remix, and festival opportunities",
+              "Build long-term artist association with tastemaker and culturally relevant acts",
             ],
           },
+          featureTiersHeading: "SIGN - Feature Artist Candidates",
+          featureTiers: [
+            {
+              label: "Tier 1",
+              artists: [
+                {
+                  name: "TOMMY RICHMAN",
+                  monthlyListeners: "12.3M Monthly Listeners",
+                  instagram: "334K IG Followers",
+                  reference: "Changes - Tommy Richman",
+                  referenceUrl: "https://open.spotify.com/track/32VOsoPR0N9dEZNbogPIeZ",
+                  note: "One of the biggest breakout artists of the past year with massive streaming momentum. Retro-inspired vocals and groove-heavy production fit the 90s influence of SIGN. Strong cultural buzz and broad crossover appeal beyond traditional pop audiences.",
+                },
+                {
+                  name: "BAKAR",
+                  monthlyListeners: "9.3M Monthly Listeners",
+                  instagram: "341K IG Followers",
+                  reference: "Don't Wanna - Justin Bieber, Bakar",
+                  referenceUrl: "https://open.spotify.com/track/5hplO2Sk1SaZgSaR05m6Nn",
+                  note: "Recently featured on Justin Bieber's SWAG project, adding major cultural visibility. Seamlessly blends indie, alternative, and R&B influences that align with SIGN's mood. Strong fashion, tastemaker, and international touring credibility outside traditional pop lanes.",
+                },
+              ],
+            },
+            {
+              label: "Tier 2",
+              artists: [
+                {
+                  name: "AMBER MARK",
+                  monthlyListeners: "2.8M Monthly Listeners",
+                  instagram: "389K IG Followers",
+                  reference: "Sweet Serotonin - Amber Mark",
+                  referenceUrl: "https://open.spotify.com/track/0RLl3obXeC2HsCQcI1EglP",
+                  note: "Recently opened for Sabrina Carpenter, significantly increasing mainstream exposure. Blends soulful R&B with alternative pop in a way that matches SIGN's mature atmosphere. Strong fashion-forward branding and DSP playlist appeal.",
+                },
+                {
+                  name: "charlieonafriday",
+                  monthlyListeners: "2.1M Monthly Listeners",
+                  instagram: "814K IG Followers",
+                  reference: "That's What I Get - charlieonafriday",
+                  referenceUrl: "https://open.spotify.com/track/0koOtMGSYQSbaUpSCoL9Kh",
+                  note: "Strong Gen Z fan engagement and consistent streaming performance. Emotional pop songwriting aligns well with SIGN's melodic intimacy. Large social footprint gives strong short-form and crossover potential.",
+                },
+              ],
+            },
+            {
+              label: "Tier 3",
+              artists: [
+                {
+                  name: "DESTIN CONRAD",
+                  monthlyListeners: "1.1M Monthly Listeners",
+                  instagram: "418K IG Followers",
+                  reference: "Bad - DESTIN CONRAD",
+                  referenceUrl: "https://open.spotify.com/track/5ld2rB0d5nG8RTQRRmkxNa",
+                  note: "One of the strongest emerging names in modern male R&B right now. Smooth vocal tone and emotionally controlled delivery fit SIGN naturally. Strong touring momentum and growing credibility within alt-R&B spaces.",
+                },
+              ],
+            },
+          ],
         },
         {
           label: "B",

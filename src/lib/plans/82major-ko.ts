@@ -4,7 +4,7 @@ export const eightyTwoMajorPlanKorean: StrategyPlanData = {
   accentColor: "#FD3737",
   ogImage: "/images/82major/og-image.png",
   language: "ko",
-  languageAlternates: [{ slug: "82major", label: "English", code: "EN" }],
+  languageAlternates: [{ slug: "82major", label: "English", code: "KO" }],
 
   cover: {
     label: "미국 성장 전략",
@@ -34,7 +34,7 @@ export const eightyTwoMajorPlanKorean: StrategyPlanData = {
       subtitle: "팬덤 인프라를 우선 구축하고 릴리즈 시점을 중심으로 디지털, 체험형, PR을 통해 증폭시키는 확장 가능한 미국 확장 전략.",
       body: [
         "본 자료는 82MAJOR의 장기적인 미국 성장 프레임워크를 제시합니다. 현재 SIGN 프로모션 사이클, 9월 컴백 롤아웃, 11월 미국 투어, 그리고 2027년 상반기까지의 팬덤 및 잠재 고객 성장을 지원합니다.",
-        "이는 상세한 크리에이티브 자료가 아니며, 캠페인별 전술 문서도 아닙니다. 예산이 여러 분야에 어떻게 배분되고 다음 릴리스 사이클로 어떻게 확장되는지를 관리하는 전략적 프레임워크입니다. 여기에 제시된 $50K 및 $100K 티어는 현재 SIGN 싱글 사이클에 맞춰져 있습니다. 9월 컴백은 동일한 구조에 새로운 티어를 승인하며, 11월 투어 및 2027년 상반기 일본 론칭에도 동일하게 적용됩니다. 권장 지출 배분, 확장 가능한 미국 시장 구축, 그리고 모든 사이클에 걸쳐 적용되는 협상 불가능한 기반 레이어를 포함합니다.",
+        "이는 예산이 여러 버티컬에 어떻게 할당되고 다음 릴리스 주기까지 어떻게 확장되는지를 관리하는 전략적 프레임워크입니다. 여기에 표시된 $50K 및 $100K 티어는 현재 SIGN 싱글 주기에 맞춰져 있습니다. 9월 컴백은 동일한 구조에 새로운 티어를 승인하며, 11월 투어 및 이후의 모든 릴리스 창에도 동일하게 적용됩니다. 권장 지출 할당, 확장 가능한 U.S. 시장 구축, 그리고 모든 주기에 걸쳐 실행되는 협상 불가능한 기반 레이어입니다.",
       ],
       supports: {
         heading: "본 전략이 지원하는 사항",
@@ -42,7 +42,6 @@ export const eightyTwoMajorPlanKorean: StrategyPlanData = {
           "현재 SIGN 싱글 프로모션 추진",
           "9월 컴백 롤아웃 (7번째 미니 앨범)",
           "11월 미국 투어 (재개)",
-          "2027년 상반기 HoriPro 산하 일본 론칭",
           "2027년 상반기 및 그 이후까지의 장기적인 팬덤 성장",
         ],
       },
@@ -72,7 +71,7 @@ export const eightyTwoMajorPlanKorean: StrategyPlanData = {
       hierarchy: [
         {
           label: "팬덤 (기반, 상시 운영)",
-          description: "축적층. Laylo를 통한 미국 팬 페이지 네트워크, CRM 및 SMS, 자체 팬덤 확보, 팬 참여 메커니즘. 릴리스 일정과 관계없이 매주 운영됩니다. 협상 불가능한 기본 지출입니다. 이 레이어가 없으면 다른 모든 지출은 누수됩니다.",
+          description: "컴파운딩 레이어입니다. U.S. 팬 페이지 네트워크, Laylo를 통한 이메일 및 SMS CRM, 자체 오디언스 확보, 팬 참여 메커니즘입니다. 릴리스 일정에 관계없이 매주 실행됩니다. 협상 불가능한 기반 지출입니다. 이 레이어 없이는 다른 모든 달러가 누수됩니다.",
         },
         {
           label: "디지털 (증폭기)",
@@ -108,13 +107,13 @@ export const eightyTwoMajorPlanKorean: StrategyPlanData = {
       tiers: [
         {
           label: "Tier 01",
-          budget: "기반 계획",
+          budget: "$50,000",
           name: "올인 상한선. SIGN 사이클(약 12주). 기반 구축만 해당.",
           goal: "SIGN 푸시를 통해 기초적인 미국 팬 생태계를 구축하고 지속적인 참여를 확보합니다.",
           includes: [
             "상시 팬덤 인프라 (미국 팬 페이지 네트워크)",
             "팬 HQ 소셜 전략",
-            "Laylo에서의 CRM 및 SMS 수집",
+            "Laylo에서의 이메일 및 SMS 캡처 CRM",
             "DSP 플레이리스트 피칭 및 에디토리얼",
             "기본 PR 지원",
             "가벼운 콘텐츠 및 내러티브 지출",
@@ -122,7 +121,7 @@ export const eightyTwoMajorPlanKorean: StrategyPlanData = {
         },
         {
           label: "Tier 02",
-          budget: "확장 성장 계획",
+          budget: "$100,000",
           name: "총액 상한선. SIGN 사이클 (~12주). 기본 구성 및 증폭 기능 포함.",
           goal: "SIGN 사이클에서 잠재 고객 성장을 가속화하고, 9월 컴백으로 모멘텀을 복합적으로 이어갈 화력을 확보합니다.",
           featured: true,
@@ -181,12 +180,12 @@ export const eightyTwoMajorPlanKorean: StrategyPlanData = {
           title: "이메일 CRM + SMS 전략",
           budget: "미정 (티어 내)",
           objective: "일반 오디언스를 아티스트 팀이 플랫폼 알고리즘 외부에서 소유하는 유지 가능한 팬덤 생태계로 전환합니다.",
-          strategy: "Laylo를 미국 CRM 및 SMS 플랫폼으로 구축합니다. 모든 접점(Hello82 드롭, 투어 현장, 콘텐츠 언락, 소셜 DM 퍼널)에서 이메일 및 SMS를 수집합니다. 도시, 참여 등급, 구매 이력별로 세분화합니다. 릴리즈 시점에 맞춰 유지 관리 플로우를 실행합니다.",
+          strategy: "Laylo를 U.S. CRM, 이메일 및 SMS 플랫폼으로 구축하십시오. 모든 터치포인트(K-pop 리테일 드롭, 투어 스탑, 콘텐츠 언락, 소셜 DM 퍼널)에서 이메일 및 SMS를 캡처하십시오. 도시, 참여 티어, 구매 이력별로 세분화하십시오. 릴리스 창에 연결된 리텐션 플로우를 실행하십시오.",
           components: {
             heading: "방송국 관계 구축 (얼터너티브, 탑-40, AAA, 대학 방송)",
             items: [
               "이메일 수집 플로우 (웹, 소셜, 투어)",
-              "Laylo SMS 스택 (드롭 알림, 티켓팅, 투어 커뮤니케이션)",
+              "Laylo 이메일 + SMS 스택 (드롭 알림, 티켓팅, 투어 커뮤니케이션)",
               "도시, 등급, 행동별 팬 세분화",
               "릴리즈 시점에 맞춰 진행되는 유지 캠페인",
               "리스트 성장을 견인하는 팬 인센티브 (사전 저장 언락, 포토카드 제공)",
@@ -299,10 +298,10 @@ export const eightyTwoMajorPlanKorean: StrategyPlanData = {
           label: "B",
           title: "팝업 스토어",
           budget: "Tier 2 / 투어 시점에 맞춰",
-          objective: "미국 투어 일정 및 Hello82 분기별 드롭을 다일간의 사진, 콘텐츠, 판매 이벤트로 전환합니다.",
+          objective: "U.S. 투어 스탑 및 K-pop 리테일 드롭을 다일간 사진, 콘텐츠 및 판매 모멘트로 전환하십시오.",
           tactics: [
             "LA 및 NYC 단독 팝업 스토어",
-            "2선 도시 Hello82 분기별 드롭에 추가 적용",
+            "티어-2 도시의 K-pop 리테일 드롭에 레이어링됨",
             "커피 파트너사와의 컵홀더 이벤트",
             "파트너 음반 매장과의 팬사인회 연계",
             "현장 포토카드 및 한정판 실물 앨범 발매",
@@ -361,81 +360,6 @@ export const eightyTwoMajorPlanKorean: StrategyPlanData = {
       subBlocks: [
         {
           label: "A",
-          title: "피처링 아티스트 전략 (SIGN)",
-          objective: "82MAJOR를 글로벌 스케일의 퍼포먼스 중심 보이그룹으로 포지셔닝하기 위해, 각 싱글을 피처링 아티스트와 전략적으로 협업하여 DSP 도달 범위를 핵심 K-pop 팬층을 넘어 확장하고, 바이럴 및 소셜 크로스오버 모멘트를 창출하며, 에디토리얼 플레이리스트 내 입지를 강화하고, 서구권 팝, 댄스, 힙합, 얼터너티브 분야에서의 신뢰도를 높이며, 싱크, 리믹스, 페스티벌 기회를 지원하고, 테이스티메이커 아티스트들과의 장기적인 연관성을 구축합니다.",
-          strategy: "SIGN은 절제된 퍼커션, 몽환적인 멜로디, 감정 조절된 보컬 딜리버리가 특징인 90년대 스타일의 R&B 질감에 사운드적으로 집중합니다. 이 곡은 그룹의 보다 강렬한 퍼포먼스 곡들과는 달리, 분위기 있고 미니멀하며 성숙한 느낌을 줍니다. 피처링 아티스트 선정은 이러한 무드에 맞춰 얼터너티브 R&B 신뢰도, 패션/테이스티메이커 포지셔닝, K-pop 외 문화적 도달 범위를 고려해야 합니다.",
-          components: {
-            heading: "전략적 목표",
-            items: [
-              "DSP 도달 범위를 핵심 K-pop 팬층을 넘어 확장",
-              "바이럴 및 소셜 크로스오버 모멘트 창출",
-              "에디토리얼 플레이리스트 내 입지 강화",
-              "서구권 팝, 댄스, 힙합, 얼터너티브 분야에서의 신뢰도 확보",
-              "싱크, 리믹스, 페스티벌 기회 지원",
-              "테이스티메이커 및 문화적으로 관련성 높은 아티스트들과의 장기적인 연관성 구축",
-            ],
-          },
-          featureTiersHeading: "SIGN - 피처링 아티스트 후보",
-          featureTiers: [
-            {
-              label: "티어 1",
-              artists: [
-                {
-                  name: "TOMMY RICHMAN",
-                  monthlyListeners: "월간 청취자 12.3M",
-                  instagram: "IG 팔로워 334K",
-                  reference: "Changes - Tommy Richman",
-                  referenceUrl: "https://open.spotify.com/track/32VOsoPR0N9dEZNbogPIeZ",
-                  note: "지난 한 해 동안 가장 큰 주목을 받은 아티스트 중 한 명으로, 막대한 스트리밍 모멘텀을 보여주고 있습니다. 레트로풍의 보컬과 그루브 넘치는 프로덕션은 SIGN의 90년대 영향을 잘 담아내고 있으며, 전통적인 팝 팬층을 넘어선 강력한 문화적 관심과 폭넓은 크로스오버 매력을 지니고 있습니다.",
-                },
-                {
-                  name: "BAKAR",
-                  monthlyListeners: "월간 청취자 9.3M",
-                  instagram: "IG 팔로워 341K",
-                  reference: "Don't Wanna - Justin Bieber, Bakar",
-                  referenceUrl: "https://open.spotify.com/track/5hplO2Sk1SaZgSaR05m6Nn",
-                  note: "최근 Justin Bieber의 SWAG 프로젝트에 참여하여 상당한 문화적 인지도를 얻었습니다. 인디, 얼터너티브, R&B의 영향을 SIGN의 무드와 자연스럽게 조화시키며, 전통적인 팝 시장을 넘어 패션, 테이스트메이커, 해외 투어링 분야에서도 강력한 신뢰도를 구축하고 있습니다.",
-                },
-              ],
-            },
-            {
-              label: "티어 2",
-              artists: [
-                {
-                  name: "AMBER MARK",
-                  monthlyListeners: "월간 청취자 2.8M",
-                  instagram: "IG 팔로워 389K",
-                  reference: "Sweet Serotonin - Amber Mark",
-                  referenceUrl: "https://open.spotify.com/track/5pzCNVV0gcW92gF73DmhOa",
-                  note: "최근 Sabrina Carpenter의 오프닝 무대를 장식하며 주류 노출을 크게 늘렸습니다. 소울풀한 R&B와 얼터너티브 팝을 SIGN의 성숙한 분위기와 일치하는 방식으로 결합했으며, 패션 선도적인 브랜딩과 DSP 플레이리스트에서의 매력을 갖추고 있습니다.",
-                },
-                {
-                  name: "charlieonafriday",
-                  monthlyListeners: "월간 청취자 2.1M",
-                  instagram: "IG 팔로워 814K",
-                  reference: "That's What I Get - charlieonafriday",
-                  referenceUrl: "https://open.spotify.com/track/1JXoYzZXVW7H829mHfiWRm",
-                  note: "Gen Z 팬들과의 강력한 참여와 꾸준한 스트리밍 성과를 보여주고 있습니다. 감성적인 팝 작곡은 SIGN의 멜로딕한 친밀감과 잘 어울리며, 넓은 소셜 네트워크는 숏폼 콘텐츠 및 크로스오버 잠재력을 강화합니다.",
-                },
-              ],
-            },
-            {
-              label: "티어 3",
-              artists: [
-                {
-                  name: "DESTIN CONRAD",
-                  monthlyListeners: "월간 청취자 1.1M",
-                  instagram: "IG 팔로워 418K",
-                  reference: "Bad - DESTIN CONRAD",
-                  referenceUrl: "https://open.spotify.com/track/48pi6NxVvt4npqDnLBi0iK",
-                  note: "현재 현대 남성 R&B 씬에서 가장 강력한 신예 중 한 명입니다. 부드러운 보컬 톤과 감정 조절이 뛰어난 전달력은 SIGN에 자연스럽게 어울리며, 강력한 투어링 모멘텀과 얼터너티브 R&B 분야에서의 신뢰도를 높여가고 있습니다.",
-                },
-              ],
-            },
-          ],
-        },
-        {
-          label: "B",
           title: "음악과 일치하는 레인에서 중요한 플레이리스트에 82MAJOR를 안착시키십시오. 그룹이 K-팝 범주에 기본적으로 포함되도록 두는 대신, 주요 DSP의 alt 및 pop 에디터에게 피칭하십시오.",
           objective: "주요 DSP 중 하나가 사이클 챔피언으로 참여합니다. Spotify, Apple 또는 YouTube Music이 해당 사이클에서 82MAJOR를 360도로 지원합니다. 나머지 두 곳은 기본 플레이리스트 및 에디토리얼을 운영합니다.",
           strategy: "구성 요소",
@@ -451,7 +375,7 @@ export const eightyTwoMajorPlanKorean: StrategyPlanData = {
           },
         },
         {
-          label: "C",
+          label: "B",
           title: "DSP 브랜드 라이브 콘텐츠를 통해 U.S. 관객에게 82MAJOR의 퍼포먼스 아이덴티티를 선보입니다. 멤버들의 프로듀서로서의 면모는 이러한 형식에서 자연스럽게 드러납니다.",
           objective: "Spotify Outside (유연한 장소)",
           examples: [
@@ -463,7 +387,7 @@ export const eightyTwoMajorPlanKorean: StrategyPlanData = {
           ],
         },
         {
-          label: "D",
+          label: "C",
           title: "미국 에디토리얼 및 레이블 서비스 파트너에게 '라이징' 신호를 보내는 플래그십 개발 프로그램에 선정",
           objective: "Spotify RADAR",
           examples: [
@@ -477,7 +401,7 @@ export const eightyTwoMajorPlanKorean: StrategyPlanData = {
           ],
         },
         {
-          label: "E",
+          label: "D",
           title: "발매 주간 동안 휴면 상태인 스트리밍 카탈로그(Sure Thing, Stuck, ON)를 재활성화합니다. Stationhead 리스닝 파티를 활용하여 팬덤 에너지를 측정 가능한 스트림 증가로 전환합니다.",
           objective: "구성 요소",
           components: {
@@ -522,13 +446,13 @@ export const eightyTwoMajorPlanKorean: StrategyPlanData = {
           label: "B",
           title: "CCD가 제안하는 내용",
           components: {
-            heading: "인터뷰 (아티스트 및 멤버 개별)",
+            heading: "Kakao가 제안하는 것",
             items: [
               "심층 프로필 기사",
               "캠페인 및 발매 발표",
               "미국 매체 투어 취재",
               "주요 이벤트 (컴백, 일본 데뷔, 주요 성과)",
-              "C",
+              "텐트폴 모멘트 (컴백, 투어, 마일스톤)",
             ],
           },
         },
@@ -573,17 +497,77 @@ export const eightyTwoMajorPlanKorean: StrategyPlanData = {
         {
           label: "A",
           title: "범위 지정",
-          objective: "구성 요소",
+          objective: "82MAJOR를 글로벌 스케일의 퍼포먼스 중심 보이그룹으로 포지셔닝하기 위해, 각 싱글을 피처링 아티스트와 전략적으로 협업하여 DSP 도달 범위를 핵심 K-pop 팬층을 넘어 확장하고, 바이럴 및 소셜 크로스오버 모멘트를 창출하며, 에디토리얼 플레이리스트 내 입지를 강화하고, 서구권 팝, 댄스, 힙합, 얼터너티브 분야에서의 신뢰도를 높이며, 싱크, 리믹스, 페스티벌 기회를 지원하고, 테이스티메이커 아티스트들과의 장기적인 연관성을 구축합니다.",
+          strategy: "SIGN은 절제된 퍼커션, 몽환적인 멜로디, 감정 조절된 보컬 딜리버리가 특징인 90년대 스타일의 R&B 질감에 사운드적으로 집중합니다. 이 곡은 그룹의 보다 강렬한 퍼포먼스 곡들과는 달리, 분위기 있고 미니멀하며 성숙한 느낌을 줍니다. 피처링 아티스트 선정은 이러한 무드에 맞춰 얼터너티브 R&B 신뢰도, 패션/테이스티메이커 포지셔닝, K-pop 외 문화적 도달 범위를 고려해야 합니다.",
           components: {
-            heading: "방송국 관계 구축 (얼터너티브, 탑-40, AAA, 대학 방송)",
+            heading: "전략적 목표",
             items: [
-              "아티스트 적합성 분석 (음악적, 타겟층, 서사)",
-              "미국 협업 소개",
-              "한국 힙합 신뢰도 강화 요소 (Beenzino, BIG Naughty, OLNL, Sik-K)",
-              "협업 주기별 전략적 크리에이티브 디렉션",
-              "B",
+              "DSP 도달 범위를 핵심 K-pop 팬층을 넘어 확장",
+              "바이럴 및 소셜 크로스오버 모멘트 창출",
+              "에디토리얼 플레이리스트 내 입지 강화",
+              "서구권 팝, 댄스, 힙합, 얼터너티브 분야에서의 신뢰도 확보",
+              "싱크, 리믹스, 페스티벌 기회 지원",
+              "테이스티메이커 및 문화적으로 관련성 높은 아티스트들과의 장기적인 연관성 구축",
             ],
           },
+          featureTiersHeading: "SIGN - 피처링 아티스트 후보",
+          featureTiers: [
+            {
+              label: "티어 1",
+              artists: [
+                {
+                  name: "TOMMY RICHMAN",
+                  monthlyListeners: "월간 청취자 12.3M",
+                  instagram: "IG 팔로워 334K",
+                  reference: "Changes - Tommy Richman",
+                  referenceUrl: "https://open.spotify.com/track/32VOsoPR0N9dEZNbogPIeZ",
+                  note: "지난 한 해 동안 가장 큰 주목을 받은 아티스트 중 한 명으로, 막대한 스트리밍 모멘텀을 보여주고 있습니다. 레트로풍의 보컬과 그루브 넘치는 프로덕션은 SIGN의 90년대 영향을 잘 담아내고 있으며, 전통적인 팝 팬층을 넘어선 강력한 문화적 관심과 폭넓은 크로스오버 매력을 지니고 있습니다.",
+                },
+                {
+                  name: "BAKAR",
+                  monthlyListeners: "월간 청취자 9.3M",
+                  instagram: "IG 팔로워 341K",
+                  reference: "Don't Wanna - Justin Bieber, Bakar",
+                  referenceUrl: "https://open.spotify.com/track/5hplO2Sk1SaZgSaR05m6Nn",
+                  note: "최근 Justin Bieber의 SWAG 프로젝트에 참여하여 상당한 문화적 인지도를 얻었습니다. 인디, 얼터너티브, R&B의 영향을 SIGN의 무드와 자연스럽게 조화시키며, 전통적인 팝 시장을 넘어 패션, 테이스트메이커, 해외 투어링 분야에서도 강력한 신뢰도를 구축하고 있습니다.",
+                },
+              ],
+            },
+            {
+              label: "티어 2",
+              artists: [
+                {
+                  name: "AMBER MARK",
+                  monthlyListeners: "월간 청취자 2.8M",
+                  instagram: "IG 팔로워 389K",
+                  reference: "Sweet Serotonin - Amber Mark",
+                  referenceUrl: "https://open.spotify.com/track/0RLl3obXeC2HsCQcI1EglP",
+                  note: "최근 Sabrina Carpenter의 오프닝 무대를 장식하며 주류 노출을 크게 늘렸습니다. 소울풀한 R&B와 얼터너티브 팝을 SIGN의 성숙한 분위기와 일치하는 방식으로 결합했으며, 패션 선도적인 브랜딩과 DSP 플레이리스트에서의 매력을 갖추고 있습니다.",
+                },
+                {
+                  name: "charlieonafriday",
+                  monthlyListeners: "월간 청취자 2.1M",
+                  instagram: "IG 팔로워 814K",
+                  reference: "That's What I Get - charlieonafriday",
+                  referenceUrl: "https://open.spotify.com/track/0koOtMGSYQSbaUpSCoL9Kh",
+                  note: "Gen Z 팬들과의 강력한 참여와 꾸준한 스트리밍 성과를 보여주고 있습니다. 감성적인 팝 작곡은 SIGN의 멜로딕한 친밀감과 잘 어울리며, 넓은 소셜 네트워크는 숏폼 콘텐츠 및 크로스오버 잠재력을 강화합니다.",
+                },
+              ],
+            },
+            {
+              label: "티어 3",
+              artists: [
+                {
+                  name: "DESTIN CONRAD",
+                  monthlyListeners: "월간 청취자 1.1M",
+                  instagram: "IG 팔로워 418K",
+                  reference: "Bad - DESTIN CONRAD",
+                  referenceUrl: "https://open.spotify.com/track/5ld2rB0d5nG8RTQRRmkxNa",
+                  note: "현재 현대 남성 R&B 씬에서 가장 강력한 신예 중 한 명입니다. 부드러운 보컬 톤과 감정 조절이 뛰어난 전달력은 SIGN에 자연스럽게 어울리며, 강력한 투어링 모멘텀과 얼터너티브 R&B 분야에서의 신뢰도를 높여가고 있습니다.",
+                },
+              ],
+            },
+          ],
         },
         {
           label: "B",
@@ -645,46 +629,46 @@ export const eightyTwoMajorPlanKorean: StrategyPlanData = {
       tiers: [
         {
           label: "Tier 01",
-          budget: "기반 계획",
+          budget: "$50,000",
           name: "올인 상한선. SIGN 사이클(약 12주). 기반 구축만 해당.",
           tagline: "$39,000",
-          deployable: "$7,500",
+          deployable: "$39,000",
           feeBreakdown: {
-            retainer: "3 mo × $2,500",
+            retainer: "$7,500",
             retainerDetail: "~$6,500",
             mediaManagement: "관리되는 미디어 지출 약 $22.5K에 대해 15%",
             mediaManagementDetail: "미국 본사 스타일 팬 페이지",
           },
           breakdown: [
-            { vertical: "$12,000", amount: "유료 소셜 광고 (IG + TikTok + X)" },
-            { vertical: "$24,000", amount: "Strive.fm" },
-            { vertical: "$4,500", amount: "YouTube 광고" },
-            { vertical: "$13,500", amount: "Tier 02" },
+            { vertical: "$12,000", amount: "$12,000" },
+            { vertical: "$24,000", amount: "$22,500" },
+            { vertical: "$4,500", amount: "$4,500" },
+            { vertical: "$13,500", amount: "$11,000" },
           ],
         },
         {
           label: "Tier 02",
-          budget: "확장 성장 계획",
+          budget: "$100,000",
           name: "총액 상한선. SIGN 사이클 (~12주). 기본 구성 및 증폭 기능 포함.",
           tagline: "$86,500",
           featured: true,
-          deployable: "$7,500",
+          deployable: "$86,500",
           feeBreakdown: {
-            retainer: "3 mo × $2,500",
+            retainer: "$7,500",
             retainerDetail: "~$6,500",
             mediaManagement: "관리되는 미디어 지출 약 $42K에 대해 15%",
             mediaManagementDetail: "미국 본사 스타일 팬 페이지",
           },
           breakdown: [
-            { vertical: "$12,000", amount: "유료 소셜 광고 (IG + TikTok + X)" },
-            { vertical: "$24,000", amount: "인플루언서" },
-            { vertical: "$13,000", amount: "클리핑 / 시딩" },
-            { vertical: "$8,000", amount: "Spotify 플레이리스트 등록" },
-            { vertical: "$10,000", amount: "CCD 리테이너 + 관리 수수료" },
-            { vertical: "$4,500", amount: "YouTube 광고" },
-            { vertical: "$5,000", amount: "체험형 / OOH" },
-            { vertical: "$10,000", amount: "CCD 리테이너 + 관리 수수료" },
-            { vertical: "$13,500", amount: "라디오 전략" },
+            { vertical: "$12,000", amount: "$12,000" },
+            { vertical: "$24,000", amount: "$24,000" },
+            { vertical: "$13,000", amount: "$13,000" },
+            { vertical: "$8,000", amount: "$8,000" },
+            { vertical: "$10,000", amount: "$10,000" },
+            { vertical: "$4,500", amount: "$4,500" },
+            { vertical: "$5,000", amount: "$5,000" },
+            { vertical: "$10,000", amount: "$10,000" },
+            { vertical: "$13,500", amount: "$13,500" },
           ],
         },
       ],
