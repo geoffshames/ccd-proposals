@@ -164,7 +164,7 @@ export const eightyTwoMajorPlanKorean: StrategyPlanData = {
               "미국 우선 편집본 (라이브 클립 순간, 멤버별 조명, 투어 영상)을 제작합니다.",
               "미국 특성에 맞는 속도로 진정성 있는 팬덤 참여를 구축합니다.",
               "CCD 및 아티스트 팀이 통제하는 채널로 미국 팬들을 유입시킵니다.",
-              "Hello82, Kpop-Nara 및 파트너 생태계와 협력하여 활동을 조율합니다.",
+              "K-pop 리테일러 및 파트너 생태계와 협력하여 활동을 조율합니다.",
             ],
           },
           kpis: [
@@ -329,7 +329,7 @@ export const eightyTwoMajorPlanKorean: StrategyPlanData = {
             "멤버별 카세트 테이프 (Y2K 감성 수집품)",
             "미국 투어 도시 연계 포토카드 세트",
             "파트너 음반 매장을 통한 한정판 친필 사인 앨범",
-            "Hello82 D2C 독점 상품",
+            "K-pop 리테일러 D2C 독점 상품",
           ],
         },
         {

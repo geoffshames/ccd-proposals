@@ -164,7 +164,7 @@ export const eightyTwoMajorPlan: StrategyPlanData = {
               "Produces U.S.-first cuts (live clip moments, member spotlights, tour footage)",
               "Builds authentic fandom engagement on a U.S. cadence",
               "Captures U.S. fans onto channels CCD and the artist team control",
-              "Coordinates with Hello82, Kpop-Nara, and partner ecosystems on activations",
+              "Coordinates with K-pop retailers and partner ecosystems on activations",
             ],
           },
           kpis: [
@@ -329,7 +329,7 @@ export const eightyTwoMajorPlan: StrategyPlanData = {
             "Member-specific cassette tapes (Y2K-coded collectibles)",
             "Photo-card sets tied to U.S. tour cities",
             "Signed limited-edition runs through partner record stores",
-            "Hello82 D2C exclusives",
+            "K-pop retailer D2C exclusives",
           ],
         },
         {
