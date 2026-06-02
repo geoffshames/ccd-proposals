@@ -50,7 +50,6 @@ export const eightyTwoMajorPlanStrategy: StrategyPlanData = {
         items: [
           "Fandom growth: U.S.-owned channels and CRM that compound across cycles",
           "Digital marketing: discovery-layer acquisition calibrated to the conversion ratio already in place",
-          "Experiential marketing: IRL moments that manufacture social proof and earned media",
           "PR amplification: credibility and narrative extension on top of the layers below it",
           "DSP and partnership opportunities: editorial relationships and platform integrations",
           "Optional add-ons: A&R / features strategy and a separate radio plan",
@@ -76,10 +75,6 @@ export const eightyTwoMajorPlanStrategy: StrategyPlanData = {
         {
           label: "Digital (Amplifier)",
           description: "Where reach happens. Platform strategy, narrative positioning, creator participation, paid amplification, DSP and editorial partnerships. Calibrated to the fandom layer below it. Spend rises during release windows; the team stays the same.",
-        },
-        {
-          label: "Experiential (Amplifier)",
-          description: "Where social proof gets manufactured. Listening events, pop-ups, OOH, specialty physical, gaming and XR integrations. IRL creates content. Content creates digital chatter. Digital chatter feeds PR. Skipping this layer means the brand never has a moment worth covering.",
         },
         {
           label: "PR (Amplifier)",
@@ -280,86 +275,14 @@ export const eightyTwoMajorPlanStrategy: StrategyPlanData = {
     },
 
     // ===================================================================
-    // 06. Vertical 3: Experiential Marketing
+    // ===================================================================
+    // 06. Vertical 3: DSP Strategy
     // ===================================================================
     {
       type: "vertical",
       number: "06",
-      navLabel: "Experiential",
-      title: "Vertical 3 / Experiential Marketing",
-      philosophy: "IRL drives digital. Real-world moments create social sharing, fandom credibility, earned media, and viral content opportunities.",
-      subBlocks: [
-        {
-          label: "A",
-          title: "Listening Events",
-          objective: "Create a release-day moment that fans, creators, and press want to be part of. Anchor for the digital chatter that follows.",
-          tactics: [
-            "Elevated listening experience (Polygon / L-Acoustics style)",
-            "Partner venues (Cosm, Little Cinema, cultural institutions)",
-            "Brand or DSP partnership for cost offset and cross-promotion",
-            "Live performance integration where possible",
-            "Online hub for fans outside the host city",
-          ],
-        },
-        {
-          label: "B",
-          title: "Pop-Ups",
-          objective: "Convert U.S. tour stops and K-pop retailer drops into multi-day photo, content, and sales moments.",
-          tactics: [
-            "Standalone pop-ups in LA and NYC",
-            "Layered onto K-pop retailer drops in tier-2 cities",
-            "Cup-sleeve events at coffee partners",
-            "Fan-sign integration with partner record stores",
-            "Photo-card and limited-edition physical drops on site",
-          ],
-        },
-        {
-          label: "C",
-          title: "OOH",
-          objective: "Generate the receipt fans share. OOH is not awareness; it is content for the U.S. fan ecosystem to amplify.",
-          examples: [
-            "Posters and snipes in LA + NYC tour-stop neighborhoods",
-            "QR / phone-number campaigns that drive to Laylo signup",
-            "Street marketing tied to high-traffic K-pop fan zones",
-            "Interactive billboards (member portraits, comeback teasers)",
-            "Visible placements near Spotify (DTLA) and PMC / Billboard (Westwood)",
-          ],
-        },
-        {
-          label: "D",
-          title: "Specialty Merch & Physical",
-          objective: "Local U.S. production where the math supports it; import where it does not. Sovereignty of the physical drop matters more than the unit margin alone.",
-          examples: [
-            "Eco-friendly vinyl variants (Good Neighbor-style partners)",
-            "Member-specific cassette tapes (Y2K-coded collectibles)",
-            "Photo-card sets tied to U.S. tour cities",
-            "Signed limited-edition runs through partner record stores",
-            "K-pop retailer D2C exclusives",
-          ],
-        },
-        {
-          label: "E",
-          title: "XR / VR / Gaming Integrations",
-          objective: "Reach the U.S. tour-convert demo where they already spend leisure time.",
-          examples: [
-            "Roblox or Fortnite skin / experience integration",
-            "Twitch performance partnership",
-            "Discord server activations tied to release windows",
-            "Gaming brand sponsorships (Riot, Razer, Logitech)",
-          ],
-        },
-      ],
-      footnote: "IRL is what gives PR something to report. Without it, the press cycle starves.",
-    },
-
-    // ===================================================================
-    // 07. Vertical 4: DSP Strategy
-    // ===================================================================
-    {
-      type: "vertical",
-      number: "07",
       navLabel: "DSP",
-      title: "Vertical 4 / DSP Strategy",
+      title: "Vertical 3 / DSP Strategy",
       philosophy: "The discovery layer. Where 82MAJOR's healthy follower-to-listener ratio gets the reach it has been missing.",
       intro: "82MAJOR converts what reaches it. The bottleneck is editorial and platform reach, not fan motivation. This vertical exists because closing that gap requires its own dedicated relationships, calendar, and content output.",
       subBlocks: [
@@ -424,13 +347,13 @@ export const eightyTwoMajorPlanStrategy: StrategyPlanData = {
       footnote: "DSP is the discovery layer that turns the rest of the strategy into measurable streams.",
     },
 
-    // 08. Vertical 5: PR
+    // 07. Vertical 4: PR
     // ===================================================================
     {
       type: "vertical",
-      number: "08",
+      number: "07",
       navLabel: "PR",
-      title: "Vertical 5 / PR",
+      title: "Vertical 4 / PR",
       philosophy: "Amplification, narrative extension, credibility. Not a primary growth engine. PR is most effective when supported by strong fandom engagement, digital momentum, experiential moments, and streaming traction.",
       subBlocks: [
         {
@@ -490,137 +413,6 @@ export const eightyTwoMajorPlanStrategy: StrategyPlanData = {
     },
 
     // ===================================================================
-    // 09. Vertical 6: Optional Add-Ons
-    // ===================================================================
-    {
-      type: "vertical",
-      number: "09",
-      navLabel: "Add-Ons",
-      title: "Vertical 6 / Optional Add-Ons",
-      philosophy: "Outside the tier. Scoped and quoted separately. Triggered when the strategic moment justifies the spend.",
-      subBlocks: [
-        {
-          label: "A",
-          title: "A&R / Features Strategy",
-          objective: "Position 82MAJOR as a globally scalable performance-driven boy group by strategically pairing each single with feature artists that expand DSP reach outside core K-pop audiences, create viral and social crossover moments, strengthen editorial playlist positioning, add credibility within Western pop, dance, hip-hop, and alt spaces, support sync, remix, and festival opportunities, and build long-term association with tastemaker acts.",
-          strategy: "SIGN sonically leans into 90s-inspired R&B textures with restrained percussion, dreamy melodies, and emotionally controlled vocal delivery. The song is atmospheric, minimal, and mature, a departure from the group's more aggressive performance records. Feature pairing should match that mood: alt-R&B credibility, fashion / tastemaker positioning, and cultural reach outside the K-pop lane.",
-          components: {
-            heading: "Strategic Goals",
-            items: [
-              "Expand DSP reach outside core K-pop audiences",
-              "Create viral and social crossover moments",
-              "Strengthen editorial playlist positioning",
-              "Add credibility within Western pop, dance, hip-hop, and alt spaces",
-              "Support sync, remix, and festival opportunities",
-              "Build long-term artist association with tastemaker and culturally relevant acts",
-            ],
-          },
-          featureTiersHeading: "SIGN - Feature Artist Candidates",
-          featureTiers: [
-            {
-              label: "Tier 1",
-              artists: [
-                {
-                  name: "TOMMY RICHMAN",
-                  monthlyListeners: "12.3M Monthly Listeners",
-                  instagram: "334K IG Followers",
-                  reference: "Changes - Tommy Richman",
-                  referenceUrl: "https://open.spotify.com/track/32VOsoPR0N9dEZNbogPIeZ",
-                  note: "One of the biggest breakout artists of the past year with massive streaming momentum. Retro-inspired vocals and groove-heavy production fit the 90s influence of SIGN. Strong cultural buzz and broad crossover appeal beyond traditional pop audiences.",
-                },
-                {
-                  name: "BAKAR",
-                  monthlyListeners: "9.3M Monthly Listeners",
-                  instagram: "341K IG Followers",
-                  reference: "Don't Wanna - Justin Bieber, Bakar",
-                  referenceUrl: "https://open.spotify.com/track/5hplO2Sk1SaZgSaR05m6Nn",
-                  note: "Recently featured on Justin Bieber's SWAG project, adding major cultural visibility. Seamlessly blends indie, alternative, and R&B influences that align with SIGN's mood. Strong fashion, tastemaker, and international touring credibility outside traditional pop lanes.",
-                },
-              ],
-            },
-            {
-              label: "Tier 2",
-              artists: [
-                {
-                  name: "AMBER MARK",
-                  monthlyListeners: "2.8M Monthly Listeners",
-                  instagram: "389K IG Followers",
-                  reference: "Sweet Serotonin - Amber Mark",
-                  referenceUrl: "https://open.spotify.com/track/0RLl3obXeC2HsCQcI1EglP",
-                  note: "Recently opened for Sabrina Carpenter, significantly increasing mainstream exposure. Blends soulful R&B with alternative pop in a way that matches SIGN's mature atmosphere. Strong fashion-forward branding and DSP playlist appeal.",
-                },
-                {
-                  name: "charlieonafriday",
-                  monthlyListeners: "2.1M Monthly Listeners",
-                  instagram: "814K IG Followers",
-                  reference: "That's What I Get - charlieonafriday",
-                  referenceUrl: "https://open.spotify.com/track/0koOtMGSYQSbaUpSCoL9Kh",
-                  note: "Strong Gen Z fan engagement and consistent streaming performance. Emotional pop songwriting aligns well with SIGN's melodic intimacy. Large social footprint gives strong short-form and crossover potential.",
-                },
-              ],
-            },
-            {
-              label: "Tier 3",
-              artists: [
-                {
-                  name: "DESTIN CONRAD",
-                  monthlyListeners: "1.1M Monthly Listeners",
-                  instagram: "418K IG Followers",
-                  reference: "Bad - DESTIN CONRAD",
-                  referenceUrl: "https://open.spotify.com/track/5ld2rB0d5nG8RTQRRmkxNa",
-                  note: "One of the strongest emerging names in modern male R&B right now. Smooth vocal tone and emotionally controlled delivery fit SIGN naturally. Strong touring momentum and growing credibility within alt-R&B spaces.",
-                },
-              ],
-            },
-          ],
-        },
-        {
-          label: "B",
-          title: "Radio Strategy",
-          timeline: "Phase 1 / 2-3 months",
-          objective: "Build the song at pop radio, move it up the chart, and more importantly introduce the group to pop radio so they can compete on a bigger scale.",
-          strategy: "Service wide to pop radio. There are over 200 pop stations across the country including Sirius. Lean on the stations that already support Asian pop and put an emphasis on those to start airplay and content. Look for spikes, test spins, and identify champions willing to lead the way. Hyper-focus on the iHeartradio show KPOP w JOJO since he has already started to support. make sure he continues to do so and use that lever with other iHeart stations.",
-          components: {
-            heading: "Key Radio Station Zooms",
-            items: [
-              "KMVQ San Francisco",
-              "WILD 94.9 San Francisco",
-              "KISS Chicago",
-              "Q99 Atlanta",
-              "Z100 New York",
-              "KISS Boston",
-              "KLUC Las Vegas",
-              "KALV Phoenix",
-              "Additional stations as time permits",
-            ],
-          },
-          tactics: [
-            "Artist engagement with any radio social posts that debut or support the song (retweets, IG Stories, reposts)",
-            "Most Requested Live 'Ask Anything Chat' (3-week promotion). fans tweet questions, the artist films answers, the final edited video posts across MRL socials and YouTube",
-            "MRL is the biggest, most important pop radio syndicated show, currently on 100+ pop radio stations",
-            "Service merch to key radio programmers and content creators",
-          ],
-          examples: [
-            "Past Ask Anything Chat artists: Jackson Wang, (G)I-DLE, P1Harmony, LISA, NMIXX, JO1",
-          ],
-          linksHeading: "Reference",
-          links: [
-            { label: "askanythingchat.com. Most Requested Live", url: "https://askanythingchat.com" },
-          ],
-        },
-        {
-          label: "C",
-          title: "Additional Experiential",
-          objective: "Multi-event experiential, gaming and XR integrations, and sponsored partnership executions beyond the in-tier listening event.",
-        },
-        {
-          label: "D",
-          title: "Additional Content Production",
-          objective: "Monthly studio vlog series, production-credit content, live performance recordings, and episodic tour-diary content for YouTube and Instagram Reels.",
-        },
-      ],
-    },
-
     // ===================================================================
   ],
 };

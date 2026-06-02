@@ -50,7 +50,6 @@ export const eightyTwoMajorPlan: StrategyPlanData = {
         items: [
           "Fandom growth: U.S.-owned channels and CRM that compound across cycles",
           "Digital marketing: discovery-layer acquisition calibrated to the conversion ratio already in place",
-          "Experiential marketing: IRL moments that manufacture social proof and earned media",
           "PR amplification: credibility and narrative extension on top of the layers below it",
           "DSP and partnership opportunities: editorial relationships and platform integrations",
           "Optional add-ons: A&R / features strategy and a separate $25K radio plan",
@@ -76,10 +75,6 @@ export const eightyTwoMajorPlan: StrategyPlanData = {
         {
           label: "Digital (Amplifier)",
           description: "Where reach happens. Platform strategy, narrative positioning, creator participation, paid amplification, DSP and editorial partnerships. Calibrated to the fandom layer below it. Spend rises during release windows; the team stays the same.",
-        },
-        {
-          label: "Experiential (Amplifier)",
-          description: "Where social proof gets manufactured. Listening events, pop-ups, OOH, specialty physical, gaming and XR integrations. IRL creates content. Content creates digital chatter. Digital chatter feeds PR. Skipping this layer means the brand never has a moment worth covering.",
         },
         {
           label: "PR (Amplifier)",
@@ -311,89 +306,14 @@ export const eightyTwoMajorPlan: StrategyPlanData = {
     },
 
     // ===================================================================
-    // 07. Vertical 3: Experiential Marketing
+    // ===================================================================
+    // 07. Vertical 3: DSP Strategy
     // ===================================================================
     {
       type: "vertical",
       number: "07",
-      navLabel: "Experiential",
-      title: "Vertical 3 / Experiential Marketing",
-      philosophy: "IRL drives digital. Real-world moments create social sharing, fandom credibility, earned media, and viral content opportunities.",
-      subBlocks: [
-        {
-          label: "A",
-          title: "Listening Events",
-          budget: "Tier 2 / 1 per cycle",
-          objective: "Create a release-day moment that fans, creators, and press want to be part of. Anchor for the digital chatter that follows.",
-          tactics: [
-            "Elevated listening experience (Polygon / L-Acoustics style)",
-            "Partner venues (Cosm, Little Cinema, cultural institutions)",
-            "Brand or DSP partnership for cost offset and cross-promotion",
-            "Live performance integration where possible",
-            "Online hub for fans outside the host city",
-          ],
-        },
-        {
-          label: "B",
-          title: "Pop-Ups",
-          budget: "Tier 2 / tour-timed",
-          objective: "Convert U.S. tour stops and K-pop retailer drops into multi-day photo, content, and sales moments.",
-          tactics: [
-            "Standalone pop-ups in LA and NYC",
-            "Layered onto K-pop retailer drops in tier-2 cities",
-            "Cup-sleeve events at coffee partners",
-            "Fan-sign integration with partner record stores",
-            "Photo-card and limited-edition physical drops on site",
-          ],
-        },
-        {
-          label: "C",
-          title: "OOH",
-          budget: "Tier 2 / release-window",
-          objective: "Generate the receipt fans share. OOH is not awareness; it is content for the U.S. fan ecosystem to amplify.",
-          examples: [
-            "Posters and snipes in LA + NYC tour-stop neighborhoods",
-            "QR / phone-number campaigns that drive to Laylo signup",
-            "Street marketing tied to high-traffic K-pop fan zones",
-            "Interactive billboards (member portraits, comeback teasers)",
-            "Visible placements near Spotify (DTLA) and PMC / Billboard (Westwood)",
-          ],
-        },
-        {
-          label: "D",
-          title: "Specialty Merch & Physical",
-          objective: "Local U.S. production where the math supports it; import where it does not. Sovereignty of the physical drop matters more than the unit margin alone.",
-          examples: [
-            "Eco-friendly vinyl variants (Good Neighbor-style partners)",
-            "Member-specific cassette tapes (Y2K-coded collectibles)",
-            "Photo-card sets tied to U.S. tour cities",
-            "Signed limited-edition runs through partner record stores",
-            "K-pop retailer D2C exclusives",
-          ],
-        },
-        {
-          label: "E",
-          title: "XR / VR / Gaming Integrations",
-          objective: "Reach the U.S. tour-convert demo where they already spend leisure time.",
-          examples: [
-            "Roblox or Fortnite skin / experience integration",
-            "Twitch performance partnership",
-            "Discord server activations tied to release windows",
-            "Gaming brand sponsorships (Riot, Razer, Logitech)",
-          ],
-        },
-      ],
-      footnote: "IRL is what gives PR something to report. Without it, the press cycle starves.",
-    },
-
-    // ===================================================================
-    // 08. Vertical 4: DSP Strategy
-    // ===================================================================
-    {
-      type: "vertical",
-      number: "08",
       navLabel: "DSP",
-      title: "Vertical 4 / DSP Strategy",
+      title: "Vertical 3 / DSP Strategy",
       philosophy: "The discovery layer. Where 82MAJOR's healthy follower-to-listener ratio gets the reach it has been missing.",
       intro: "82MAJOR converts what reaches it. The bottleneck is editorial and platform reach, not fan motivation. This vertical exists because closing that gap requires its own dedicated relationships, calendar, and content output.",
       subBlocks: [
@@ -458,13 +378,13 @@ export const eightyTwoMajorPlan: StrategyPlanData = {
       footnote: "DSP is the discovery layer that turns the rest of the strategy into measurable streams.",
     },
 
-    // 09. Vertical 5: PR
+    // 08. Vertical 4: PR
     // ===================================================================
     {
       type: "vertical",
-      number: "09",
+      number: "08",
       navLabel: "PR",
-      title: "Vertical 5 / PR",
+      title: "Vertical 4 / PR",
       philosophy: "Amplification, narrative extension, credibility. Not a primary growth engine. PR is most effective when supported by strong fandom engagement, digital momentum, experiential moments, and streaming traction.",
       subBlocks: [
         {
@@ -524,17 +444,91 @@ export const eightyTwoMajorPlan: StrategyPlanData = {
     },
 
     // ===================================================================
-    // 10. Vertical 6: Optional Add-Ons
+    // 09. Suggested Additions
     // ===================================================================
     {
       type: "vertical",
-      number: "10",
-      navLabel: "Add-Ons",
-      title: "Vertical 6 / Optional Add-Ons",
-      philosophy: "Outside the tier. Scoped and quoted separately. Triggered when the strategic moment justifies the spend.",
+      number: "09",
+      navLabel: "Additions",
+      title: "Suggested Additions (Optional)",
+      philosophy: "Outside the $62,500 budget. These are incremental opportunities CCD can layer in if Kakao wants more streaming velocity, more viral reach, or radio support for the SIGN Remix cycle.",
+      intro: "Each item is optional and scoped separately. Spotify Playlisting and Clipping are quick-deploy media buys with predictable output; Radio is a separate $20K plan already approved on its own track. A&R / Features Strategy and Additional Content are deeper-scope add-ons we can spin up on demand.",
       subBlocks: [
         {
           label: "A",
+          title: "Spotify Playlisting",
+          budget: "$5,000 - $10,000",
+          objective: "Buy into Spotify playlisting at scale to drive 200,000 - 400,000 incremental streams. Deployable on the current SIGN single to lift monthly listeners leading into the remix, or on the remix itself to drive streaming velocity at release.",
+          components: {
+            heading: "Use Cases",
+            items: [
+              "Run on the current SIGN single (June) to lift Spotify monthly listeners ahead of the remix release",
+              "Run on the SIGN Remix (July) to accelerate streaming velocity in the release window",
+              "Or split across both for compounding lift",
+            ],
+          },
+          kpis: [
+            "200,000 - 400,000 incremental Spotify streams",
+            "Spotify monthly listener lift leading into the remix",
+            "Algorithmic signal into Release Radar + Discover Weekly",
+          ],
+        },
+        {
+          label: "B",
+          title: "Clipping / Seeding",
+          budget: "$5,000",
+          objective: "Realistically generate 4-5M views on TikTok + IG Reels via the clipping / seeding network, launched around the SIGN Remix release. Cheapest way to push social-chart velocity and trigger algorithmic discovery in the release window.",
+          components: {
+            heading: "Use Cases",
+            items: [
+              "Launch in tandem with the SIGN Remix release for maximum compounding effect",
+              "Pair with the influencer line item already in the $62,500 budget for layered reach",
+              "Feeds TikTok pixel data into the Sept comeback campaign brief",
+            ],
+          },
+          kpis: [
+            "4-5M short-form video views",
+            "Sustained discovery surfacing on TikTok For You",
+            "Creator + clipper network spin-up for future cycles",
+          ],
+        },
+        {
+          label: "C",
+          title: "Radio Strategy",
+          budget: "$20,000 (approved separate from the $62,500 budget)",
+          timeline: "Phase 1 / 2-3 months",
+          objective: "Build the song at pop radio, move it up the chart, and more importantly introduce the group to pop radio so they can compete on a bigger scale. Approved by Kakao on its own track, not included in the $62,500 SIGN Remix budget.",
+          strategy: "Service wide to pop radio. There are over 200 pop stations across the country including Sirius. Lean on the stations that already support Asian pop and put an emphasis on those to start airplay and content. Look for spikes, test spins, and identify champions willing to lead the way. Hyper-focus on the iHeartradio show KPOP w JOJO since he has already started to support; make sure he continues to do so and use that lever with other iHeart stations.",
+          components: {
+            heading: "Key Radio Station Zooms",
+            items: [
+              "KMVQ San Francisco",
+              "WILD 94.9 San Francisco",
+              "KISS Chicago",
+              "Q99 Atlanta",
+              "Z100 New York",
+              "KISS Boston",
+              "KLUC Las Vegas",
+              "KALV Phoenix",
+              "Additional stations as time permits",
+            ],
+          },
+          tactics: [
+            "Artist engagement with any radio social posts that debut or support the song (retweets, IG Stories, reposts)",
+            "Most Requested Live 'Ask Anything Chat' (3-week promotion): fans tweet questions, the artist films answers, the final edited video posts across MRL socials and YouTube",
+            "MRL is the biggest, most important pop radio syndicated show, currently on 100+ pop radio stations",
+            "Service merch to key radio programmers and content creators",
+          ],
+          examples: [
+            "Past Ask Anything Chat artists: Jackson Wang, (G)I-DLE, P1Harmony, LISA, NMIXX, JO1",
+          ],
+          linksHeading: "Reference",
+          links: [
+            { label: "askanythingchat.com. Most Requested Live", url: "https://askanythingchat.com" },
+          ],
+        },
+        {
+          label: "D",
           title: "A&R / Features Strategy",
           objective: "Position 82MAJOR as a globally scalable performance-driven boy group by strategically pairing each single with feature artists that expand DSP reach outside core K-pop audiences, create viral and social crossover moments, strengthen editorial playlist positioning, add credibility within Western pop, dance, hip-hop, and alt spaces, support sync, remix, and festival opportunities, and build long-term association with tastemaker acts.",
           strategy: "SIGN sonically leans into 90s-inspired R&B textures with restrained percussion, dreamy melodies, and emotionally controlled vocal delivery. The song is atmospheric, minimal, and mature, a departure from the group's more aggressive performance records. Feature pairing should match that mood: alt-R&B credibility, fashion / tastemaker positioning, and cultural reach outside the K-pop lane.",
@@ -609,59 +603,20 @@ export const eightyTwoMajorPlan: StrategyPlanData = {
           ],
         },
         {
-          label: "B",
-          title: "Radio Strategy",
-          budget: "Phase 1: $15-20K (not included in Tier 1 or Tier 2)",
-          timeline: "Phase 1 / 2-3 months",
-          objective: "Build the song at pop radio, move it up the chart, and more importantly introduce the group to pop radio so they can compete on a bigger scale.",
-          strategy: "Service wide to pop radio. There are over 200 pop stations across the country including Sirius. Lean on the stations that already support Asian pop and put an emphasis on those to start airplay and content. Look for spikes, test spins, and identify champions willing to lead the way. Hyper-focus on the iHeartradio show KPOP w JOJO since he has already started to support. make sure he continues to do so and use that lever with other iHeart stations.",
-          components: {
-            heading: "Key Radio Station Zooms",
-            items: [
-              "KMVQ San Francisco",
-              "WILD 94.9 San Francisco",
-              "KISS Chicago",
-              "Q99 Atlanta",
-              "Z100 New York",
-              "KISS Boston",
-              "KLUC Las Vegas",
-              "KALV Phoenix",
-              "Additional stations as time permits",
-            ],
-          },
-          tactics: [
-            "Artist engagement with any radio social posts that debut or support the song (retweets, IG Stories, reposts)",
-            "Most Requested Live 'Ask Anything Chat' (3-week promotion). fans tweet questions, the artist films answers, the final edited video posts across MRL socials and YouTube",
-            "MRL is the biggest, most important pop radio syndicated show, currently on 100+ pop radio stations",
-            "Service merch to key radio programmers and content creators",
-          ],
-          examples: [
-            "Past Ask Anything Chat artists: Jackson Wang, (G)I-DLE, P1Harmony, LISA, NMIXX, JO1",
-          ],
-          linksHeading: "Reference",
-          links: [
-            { label: "askanythingchat.com. Most Requested Live", url: "https://askanythingchat.com" },
-          ],
-        },
-        {
-          label: "C",
-          title: "Additional Experiential",
-          objective: "Multi-event experiential, gaming and XR integrations, and sponsored partnership executions beyond the in-tier listening event.",
-        },
-        {
-          label: "D",
+          label: "E",
           title: "Additional Content Production",
           objective: "Monthly studio vlog series, production-credit content, live performance recordings, and episodic tour-diary content for YouTube and Instagram Reels.",
         },
       ],
+      footnote: "All items above are optional. Scope and deploy individually based on the SIGN Remix cycle performance signals.",
     },
 
     // ===================================================================
-    // 11. Media Flight
+    // 10. Media Flight
     // ===================================================================
     {
       type: "flight",
-      number: "11",
+      number: "10",
       navLabel: "Flight",
       title: "Proposed Media Flight",
       intro: "How the $62,500 budget deploys across the SIGN Remix cycle. June warms the channels and the audience. Early July teases the remix. Mid-July through August carries the post-release push.",
@@ -708,11 +663,11 @@ export const eightyTwoMajorPlan: StrategyPlanData = {
       footnote: "Phase budgets are directional; CCD reallocates between line items inside the tier based on weekly performance signals.",
     },
 
-    // 12. Final Pricing Sheets
+    // 11. Final Pricing Sheets
     // ===================================================================
     {
       type: "pricing",
-      number: "12",
+      number: "11",
       navLabel: "Pricing",
       title: "Final Pricing Sheets",
       intro: "Single all-in budget for the SIGN Remix cycle (June through August 2026). CCD execution fee is inside the tier; the math sits in the card. The September comeback authorizes a fresh budget on the same structure.",
@@ -741,7 +696,6 @@ export const eightyTwoMajorPlan: StrategyPlanData = {
       addOns: [
         { name: "Radio Strategy", budget: "Phase 1: $15-20K", description: "Phase 1 (2-3 months) pop radio push: wide service to 200+ pop stations + Sirius, KPOP w JOJO support, key-station Zooms, Ask Anything Chat with Most Requested Live." },
         { name: "A&R / Features Strategy", budget: "Scoped", description: "Feature strategy, artist compatibility analysis, U.S. collaboration introductions, Korean hip-hop credibility features." },
-        { name: "Additional Experiential", budget: "Scoped", description: "Multi-event experiential beyond the in-tier listening event. Gaming and XR partnerships, sponsored executions." },
         { name: "Additional Content Production", budget: "Scoped", description: "Monthly studio vlog series, production-credit content, live recordings, episodic tour-diary content." },
       ],
       footnote: "Each release cycle gets its own authorization. The September comeback triggers a fresh budget call based on SIGN Remix performance. Add-ons trigger per release cycle on standalone SOW.",
