@@ -93,6 +93,26 @@ export type VerticalSection = {
   footnote?: string;
 };
 
+export type AgeBracket = {
+  bracket: string;   // e.g. "16-24"
+  weight: number;    // percentage (0-100)
+};
+
+export type AudienceSection = {
+  type: "audience";
+  number: string;
+  navLabel?: string;
+  title: string;
+  intro?: string;
+  metros?: { name: string; tier?: "primary" | "secondary" }[];
+  ageDistribution?: AgeBracket[];
+  genderDistribution?: { female: number; male: number };
+  similarArtists?: string[];
+  genres?: string[];
+  platformSignals?: { platform: string; note: string }[];
+  footnote?: string;
+};
+
 export type FlightPhase = {
   label: string;
   window: string;
@@ -146,6 +166,7 @@ export type PricingSection = {
 export type PlanSection =
   | OverviewSection
   | PhilosophySection
+  | AudienceSection
   | StructureSection
   | VerticalSection
   | FlightSection

@@ -97,11 +97,67 @@ export const eightyTwoMajorPlanStrategy: StrategyPlanData = {
 
     // ===================================================================
     // ===================================================================
-    // 03. Vertical 1: Fandom / Always-On Digital
+    // 03. U.S. Audience & Targeting
+    // ===================================================================
+    {
+      type: "audience",
+      number: "03",
+      navLabel: "Audience",
+      title: "U.S. Audience & Targeting",
+      intro: "Tentative U.S.-market targeting based on current Chartmetric and platform signals. These splits set the initial paid-media targeting and the fan-page network's content posture. Numbers will refine after the June account-warm-up phase, with the warmed audiences feeding back into the September comeback campaign brief.",
+      metros: [
+        { name: "Los Angeles, CA" },
+        { name: "Chicago, IL" },
+        { name: "Dallas-Fort Worth, TX" },
+        { name: "Atlanta, GA" },
+        { name: "Seattle, WA" },
+        { name: "San Francisco Bay Area" },
+        { name: "Houston, TX", tier: "secondary" },
+        { name: "New York, NY", tier: "secondary" },
+        { name: "Washington, DC", tier: "secondary" },
+        { name: "Boston, MA", tier: "secondary" },
+      ],
+      ageDistribution: [
+        { bracket: "16-24", weight: 55 },
+        { bracket: "25-34", weight: 28 },
+        { bracket: "35-44", weight: 12 },
+        { bracket: "45+", weight: 5 },
+      ],
+      genderDistribution: { female: 65, male: 35 },
+      similarArtists: [
+        "TWS",
+        "BOYNEXTDOOR",
+        "RIIZE",
+        "ZEROBASEONE",
+        "NCT WISH",
+        "ATEEZ",
+        "ENHYPEN",
+        "Stray Kids",
+        "P1Harmony",
+        "DPR IAN",
+        "Beenzino",
+        "BIG Naughty",
+      ],
+      genres: [
+        "K-Pop",
+        "K-Hip-Hop",
+        "K-R&B",
+        "Korean Pop",
+      ],
+      platformSignals: [
+        { platform: "Spotify", note: "309K monthly listeners. Follower-to-listener ratio of 0.439 (healthy fandom conversion). Top U.S. tracks: Sure Thing, Stuck, ON." },
+        { platform: "TikTok", note: "Most under-built channel. Highest-leverage discovery layer for paid + organic creator activation." },
+        { platform: "YouTube", note: "Strong MV consumption lane; runway for In-Stream + In-Feed paid against MV view-velocity goals." },
+        { platform: "Instagram", note: "Active fan-page activity; brand layer where K-pop retailer drops, fan signs, OOH receipts compound." },
+      ],
+      footnote: "Tentative. Splits derived from Chartmetric + platform data as of May 2026. CCD recalibrates after the June warm-up phase delivers pixel data.",
+    },
+
+    // 04. Vertical 1: Fandom / Always-On Digital
     // ===================================================================
     {
       type: "vertical",
-      number: "03",
+      number: "04",
       navLabel: "Fandom",
       title: "Vertical 1 / Fandom & Always-On Digital",
       philosophy: "The compounding foundation. Continuous spend. Song-agnostic. The layer every other dollar relies on.",
@@ -170,11 +226,11 @@ export const eightyTwoMajorPlanStrategy: StrategyPlanData = {
     },
 
     // ===================================================================
-    // 04. Vertical 2: Digital Marketing
+    // 05. Vertical 2: Digital Marketing
     // ===================================================================
     {
       type: "vertical",
-      number: "04",
+      number: "05",
       navLabel: "Digital",
       title: "Vertical 2 / Digital Marketing",
       philosophy: "High-level spend allocation across paid, organic, and creator. The amplifier that turns the fandom foundation into reach. (DSP strategy is broken out as its own vertical below.)",
@@ -224,11 +280,11 @@ export const eightyTwoMajorPlanStrategy: StrategyPlanData = {
     },
 
     // ===================================================================
-    // 05. Vertical 3: Experiential Marketing
+    // 06. Vertical 3: Experiential Marketing
     // ===================================================================
     {
       type: "vertical",
-      number: "05",
+      number: "06",
       navLabel: "Experiential",
       title: "Vertical 3 / Experiential Marketing",
       philosophy: "IRL drives digital. Real-world moments create social sharing, fandom credibility, earned media, and viral content opportunities.",
@@ -297,11 +353,11 @@ export const eightyTwoMajorPlanStrategy: StrategyPlanData = {
     },
 
     // ===================================================================
-    // 06. Vertical 4: DSP Strategy
+    // 07. Vertical 4: DSP Strategy
     // ===================================================================
     {
       type: "vertical",
-      number: "06",
+      number: "07",
       navLabel: "DSP",
       title: "Vertical 4 / DSP Strategy",
       philosophy: "The discovery layer. Where 82MAJOR's healthy follower-to-listener ratio gets the reach it has been missing.",
@@ -368,11 +424,11 @@ export const eightyTwoMajorPlanStrategy: StrategyPlanData = {
       footnote: "DSP is the discovery layer that turns the rest of the strategy into measurable streams.",
     },
 
-    // 07. Vertical 5: PR
+    // 08. Vertical 5: PR
     // ===================================================================
     {
       type: "vertical",
-      number: "07",
+      number: "08",
       navLabel: "PR",
       title: "Vertical 5 / PR",
       philosophy: "Amplification, narrative extension, credibility. Not a primary growth engine. PR is most effective when supported by strong fandom engagement, digital momentum, experiential moments, and streaming traction.",
@@ -434,11 +490,11 @@ export const eightyTwoMajorPlanStrategy: StrategyPlanData = {
     },
 
     // ===================================================================
-    // 08. Vertical 6: Optional Add-Ons
+    // 09. Vertical 6: Optional Add-Ons
     // ===================================================================
     {
       type: "vertical",
-      number: "08",
+      number: "09",
       navLabel: "Add-Ons",
       title: "Vertical 6 / Optional Add-Ons",
       philosophy: "Outside the tier. Scoped and quoted separately. Triggered when the strategic moment justifies the spend.",
