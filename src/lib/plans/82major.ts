@@ -154,7 +154,7 @@ export const eightyTwoMajorPlan: StrategyPlanData = {
       number: "04",
       navLabel: "Structure",
       title: "Proposal Structure",
-      intro: "All-in budget for the SIGN Remix cycle: a June warm-up of the U.S. HQ fan pages and paid-social account growth, leading into the July remix release with a two-week teaser and a four-week post-release push. CCD execution fee ($2,500/month retainer + 15% management on managed media) sits inside the budget, not on top. The September comeback authorizes a fresh budget on the same structure.",
+      intro: "All-in budget for the SIGN Remix cycle: a June warm-up of the U.S. HQ fan pages and paid-social account growth, leading into the July remix release with a two-week teaser and a four-week post-release push. CCD retainer sits inside the budget, not on top. The September comeback authorizes a fresh budget on the same structure.",
       tiers: [
         {
           label: "SIGN Remix Plan",
@@ -168,7 +168,7 @@ export const eightyTwoMajorPlan: StrategyPlanData = {
             "Influencer activation concentrated on the post-release push",
             "DSP playlist pitching + editorial (operational, no hard cost)",
             "PR amplification (operational, no hard cost)",
-            "CCD strategic oversight + media management",
+            "CCD strategic oversight",
           ],
         },
       ],
@@ -682,7 +682,7 @@ export const eightyTwoMajorPlan: StrategyPlanData = {
       number: "12",
       navLabel: "Pricing",
       title: "Final Pricing Sheets",
-      intro: "Single all-in budget for the SIGN Remix cycle (June through August 2026). CCD execution fee is inside the tier; the math sits in the card. The September comeback authorizes a fresh budget on the same structure.",
+      intro: "Single all-in budget for the SIGN Remix cycle (June through August 2026). CCD retainer is inside the budget. The September comeback authorizes a fresh budget on the same structure.",
       tiers: [
         {
           label: "SIGN Remix Plan",
@@ -691,17 +691,11 @@ export const eightyTwoMajorPlan: StrategyPlanData = {
           tagline: "All-in. SIGN Remix cycle (~12 weeks): June warm-up, July teaser + post-release push, August sustain.",
           featured: true,
           deployable: "$49,000",
-          feeBreakdown: {
-            retainer: "$7,500",
-            retainerDetail: "3 mo × $2,500",
-            mediaManagement: "$6,000",
-            mediaManagementDetail: "15% on ~$40K managed",
-          },
           breakdown: [
             { vertical: "US HQ-Style Fan Pages", amount: "$12,000" },
             { vertical: "Paid Social (IG + TikTok + X)", amount: "$24,000" },
             { vertical: "Influencer", amount: "$13,000" },
-            { vertical: "CCD Agency Fee", amount: "$13,500" },
+            { vertical: "CCD Retainer", amount: "$13,500" },
           ],
         },
       ],
