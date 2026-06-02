@@ -93,6 +93,25 @@ export type VerticalSection = {
   footnote?: string;
 };
 
+export type FlightPhase = {
+  label: string;
+  window: string;
+  focus: string;
+  budget?: string;
+  tactics?: string[];
+};
+
+export type FlightSection = {
+  type: "flight";
+  number: string;
+  navLabel?: string;
+  title: string;
+  intro?: string;
+  totalBudget?: string;
+  phases: FlightPhase[];
+  footnote?: string;
+};
+
 export type PricingTierBreakdown = {
   vertical: string;
   amount: string;
@@ -129,6 +148,7 @@ export type PlanSection =
   | PhilosophySection
   | StructureSection
   | VerticalSection
+  | FlightSection
   | PricingSection;
 
 // Plan root -----------------------------------------------------------------

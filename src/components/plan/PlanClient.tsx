@@ -7,6 +7,7 @@ import { PlanOverview } from "./PlanOverview";
 import { PlanPhilosophy } from "./PlanPhilosophy";
 import { PlanStructure } from "./PlanStructure";
 import { PlanVertical } from "./PlanVertical";
+import { PlanFlight } from "./PlanFlight";
 import { PlanPricing } from "./PlanPricing";
 import { PlanApprove } from "./PlanApprove";
 import { LanguageToggle } from "@/components/LanguageToggle";
@@ -54,6 +55,8 @@ export function PlanClient({ plan }: { plan: StrategyPlanData }) {
               return <PlanStructure key={i} section={section} />;
             case "vertical":
               return <PlanVertical key={i} section={section} />;
+            case "flight":
+              return <PlanFlight key={i} section={section} />;
             case "pricing":
               return <PlanPricing key={i} section={section} />;
             default:

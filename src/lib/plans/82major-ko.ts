@@ -4,7 +4,7 @@ export const eightyTwoMajorPlanKorean: StrategyPlanData = {
   accentColor: "#FD3737",
   ogImage: "/images/82major/og-image.png",
   language: "ko",
-  languageAlternates: [{ slug: "82MAJOR-KO", label: "한국어", code: "KO" }],
+  languageAlternates: [{ slug: "82MAJOR-KO", label: "English", code: "KO" }],
 
   cover: {
     label: "미국 성장 전략",
@@ -34,7 +34,7 @@ export const eightyTwoMajorPlanKorean: StrategyPlanData = {
       subtitle: "릴리스 시점에 맞춰 디지털, 경험, PR을 통해 팬덤 인프라를 먼저 구축하고 증폭시키는 확장 가능한 미국 확장 전략입니다.",
       body: [
         "본 프레젠테이션은 82MAJOR의 장기적인 미국 성장 프레임워크를 구성합니다. 현재 SIGN 프로모션 사이클, 9월 컴백 롤아웃, 11월 미국 투어, 그리고 2027년 상반기까지의 팬덤 및 오디언스 성장을 지원합니다.",
-        "이는 예산이 여러 분야에 어떻게 할당되고 다음 릴리스 사이클로 어떻게 확장되는지를 관리하는 전략적 프레임워크입니다. 여기에 표시된 $50K 및 $100K 티어는 현재 SIGN 싱글 사이클에 맞춰져 있습니다. 9월 컴백은 동일한 구조에 새로운 티어를 승인하며, 11월 투어 및 이후의 모든 릴리스 창에도 동일하게 적용됩니다. 권장 지출 할당, 확장 가능한 미국 시장 구축, 그리고 모든 사이클에 걸쳐 적용되는 협상 불가능한 기반 레이어가 포함됩니다.",
+        "이는 각 버티컬에 예산이 어떻게 배분되고 다음 릴리스 주기까지 어떻게 확장되는지를 관리하는 전략적 프레임워크입니다. 여기에 표시된 예산은 현재 SIGN Remix 주기(6월~8월)에 맞춰져 있습니다. 9월 컴백 시 동일한 구조로 새로운 예산이 승인되며, 11월 투어 및 이후 릴리스 기간에도 동일하게 적용됩니다. 권장 지출 배분, 확장 가능한 U.S. 시장 구축, 그리고 모든 주기에 걸쳐 적용되는 협상 불가능한 기본 레이어를 포함합니다.",
       ],
       supports: {
         heading: "본 전략이 지원하는 내용",
@@ -53,7 +53,7 @@ export const eightyTwoMajorPlanKorean: StrategyPlanData = {
           "경험 마케팅: 사회적 증거와 언론 노출을 창출하는 IRL 순간들",
           "PR 증폭: 하위 레이어 위에 신뢰도와 스토리텔링 확장",
           "DSP 및 파트너십 기회: 에디토리얼 관계 및 플랫폼 통합",
-          "선택적 추가 사항: A&R / 피처링 전략 및 별도 $25K 라디오 플랜",
+          "선택 사항 추가: A&R / 피처링 전략 및 별도 $25K 라디오 플랜",
         ],
       },
       footnote: "이 덱은 전략적 척추입니다. 캠페인별 크리에이티브 및 전술 계획은 그 아래에 있습니다.",
@@ -103,38 +103,21 @@ export const eightyTwoMajorPlanKorean: StrategyPlanData = {
       number: "03",
       navLabel: "구조",
       title: "제안 구조",
-      intro: "두 가지 티어가 있습니다. 두 티어 모두 현재 SIGN 싱글 사이클(2026년 5월 - 8월, 약 12주간의 적극적인 푸시)에 대한 올인원 예산입니다. 9월 컴백은 새로운 티어 승인을 유발하며, 11월 미국 투어는 컴백 사이클에 포함됩니다. CCD 실행 수수료($2,500/월 리테이너 + 관리 미디어 15% 관리비)는 티어 예산 내에 포함되며 추가되지 않습니다.",
+      intro: "SIGN Remix 주기의 올인 예산: 6월 U.S. HQ 팬 페이지 및 유료 소셜 계정 성장 워밍업, 2주간의 티저와 4주간의 릴리스 후 푸시를 포함한 7월 리믹스 릴리스로 이어집니다. CCD 실행 수수료($2,500/월 고정 + 관리 미디어 15% 관리)는 예산 내에 포함되며 추가되지 않습니다. 9월 컴백 시 동일한 구조로 새로운 예산이 승인됩니다.",
       tiers: [
         {
-          label: "Tier 01",
-          budget: "$50,000",
-          name: "기반 플랜",
-          goal: "SIGN 푸시를 통해 기반이 되는 미국 팬 생태계를 구축하고 지속적인 참여를 유도합니다.",
-          includes: [
-            "상시 운영 팬덤 인프라 (미국 팬 페이지 네트워크)",
-            "팬 HQ 소셜 전략",
-            "Laylo를 통한 이메일 및 SMS 수집 CRM",
-            "DSP 플레이리스트 피칭 + 에디토리얼",
-            "기본 PR 지원",
-            "가벼운 콘텐츠 및 내러티브 지출",
-          ],
-        },
-        {
-          label: "Tier 02",
-          budget: "$100,000",
-          name: "확장 성장 플랜",
-          goal: "SIGN 사이클에서 타겟 오디언스 성장을 가속화하고, 9월 컴백까지 모멘텀을 복합적으로 쌓을 수 있는 화력을 갖춥니다.",
+          label: "SIGN Remix 계획",
+          budget: "$62,500",
+          name: "올인 예산",
+          goal: "6월에 U.S. 팬 페이지 네트워크를 워밍업하고 유료 소셜 계정을 성장시킨 후, 7월과 8월에 걸쳐 SIGN Remix를 위한 2주간의 티저와 4주간의 릴리스 후 푸시를 진행합니다.",
           featured: true,
           includes: [
-            "티어 1의 모든 것",
-            "디지털 지출 증대 (풀 퍼널)",
-            "인플루언서 / 크리에이터 지원",
-            "더 공격적인 마케팅 캠페인",
-            "경험형 이벤트 (리스닝 이벤트, 팝업 스토어)",
-            "출시 시점에 맞춘 OOH 광고",
-            "확장된 DSP 전략 (라이브 프로그램 + 주목할 만한 아티스트)",
-            "대규모 팬덤 성장 이니셔티브",
-            "확장된 콘텐츠 생태계",
+            "상시 운영 U.S. HQ 팬 페이지 네트워크",
+            "워밍업, 티저, 릴리스 기간 전반에 걸친 유료 소셜 (IG + TikTok + X)",
+            "릴리스 후 푸시에 집중된 인플루언서 활성화",
+            "DSP 플레이리스트 피칭 + 에디토리얼 (운영, 실비용 없음)",
+            "PR 앰플리피케이션 (운영, 실비용 없음)",
+            "CCD 전략적 감독 + 미디어 관리",
           ],
         },
       ],
@@ -153,10 +136,10 @@ export const eightyTwoMajorPlanKorean: StrategyPlanData = {
         {
           label: "A",
           title: "미국 중심 HQ 팬 페이지",
-          budget: "채널당 1,000만 뷰 기준 월 $3,500로 상한선 설정 (변동 가능)",
+          budget: "$3,500/월, 채널당 1,000만 뷰 기준 (변동 가능)",
           timeline: "최소 3-6개월 계약; 캠페인 시작 약 1개월 전부터 준비 시작",
           objective: "한국 팬 채널의 기본 틀을 벗어나 미국 팬덤 생태계를 구축하고, 미국 내 관심을 미국 소유의 오디언스로 전환합니다.",
-          strategy: "Beautiful Digital 또는 INFINITIZE와 같은 에이전시와 협력하여 미국 중심 채널 네트워크를 운영합니다. 한국 콘텐츠를 자막 및 현지화하여 재가공합니다. 미국 특화 편집본을 제작합니다. 채널이 팬 계정의 추측이 아닌 아티스트 팀의 확장으로 운영될 수 있도록 미리 촬영 목록과 콘텐츠 요청 사항을 제공합니다. 비용은 변동 가능하며 채널당 1,000만 뷰 기준 월 $3,500로 상한선이 설정됩니다. 트래픽이 적으면 비용이 낮아지며, 상한선은 변동되지 않습니다.",
+          strategy: "Beautiful Digital 또는 INFINITIZE와 같은 에이전시와 협력하여 미국 시장에 최적화된 채널 네트워크를 운영합니다. 한국 콘텐츠를 자막 및 현지화 작업을 거쳐 재가공하고, 미국 시장에 특화된 편집본을 제작합니다. 샷 리스트와 콘텐츠 요청 사항을 사전에 제공하여, 채널이 팬 계정의 추측이 아닌 아티스트 팀의 확장으로서 운영될 수 있도록 합니다. 비용은 변동 가능하며, 채널당 1,000만 뷰당 월 $3,500로 상한선이 정해져 있습니다. 트래픽이 적으면 비용이 낮아지며, 상한선은 변동되지 않습니다.",
           components: {
             heading: "네트워크의 역할",
             items: [
@@ -178,7 +161,7 @@ export const eightyTwoMajorPlanKorean: StrategyPlanData = {
         {
           label: "B",
           title: "이메일 CRM + SMS 전략",
-          budget: "TBD (티어 내)",
+          budget: "미정 (티어 내)",
           objective: "일반 팬을 아티스트 팀이 플랫폼 알고리즘 외부에서 소유하는 유지되는 팬덤 생태계로 전환합니다.",
           strategy: "Laylo를 미국 CRM, 이메일 및 SMS 플랫폼으로 구축합니다. 모든 접점에서 이메일 및 SMS를 수집합니다 (K-pop 리테일 드롭, 투어 스탑, 콘텐츠 잠금 해제, 소셜 DM 퍼널). 도시, 참여 티어, 구매 기록별로 세분화합니다. 릴리스 창에 맞춰 유지 흐름을 실행합니다.",
           components: {
@@ -243,7 +226,7 @@ export const eightyTwoMajorPlanKorean: StrategyPlanData = {
         {
           label: "B",
           title: "틱톡 증폭 + 크리에이터 참여",
-          budget: "티어 2만 해당",
+          budget: "티어 2 전용",
           objective: "82MAJOR가 가장 부족한 플랫폼인 틱톡을, 미국 투어 전환 팬과 K-힙합 크로스오버 팬을 팔로워 및 스트리머로 만드는 발견 엔진으로 전환합니다.",
           tactics: [
             "주요 크리에이터 활동 (릴리즈당 8-15건)",
@@ -256,7 +239,7 @@ export const eightyTwoMajorPlanKorean: StrategyPlanData = {
         {
           label: "C",
           title: "인플루언서 마케팅",
-          budget: "티어 2만 해당",
+          budget: "티어 2 전용",
           components: {
             heading: "구성 요소",
             items: [
@@ -284,7 +267,7 @@ export const eightyTwoMajorPlanKorean: StrategyPlanData = {
         {
           label: "A",
           title: "리스닝 이벤트",
-          budget: "티어 2 / 사이클당 1건",
+          budget: "티어 2 / 사이클당 1회",
           objective: "팬, 크리에이터, 언론이 참여하고 싶어하는 릴리즈 당일 순간을 만드세요. 이후의 디지털 대화의 중심이 될 것입니다.",
           tactics: [
             "향상된 리스닝 경험 (Polygon / L-Acoustics 스타일)",
@@ -297,7 +280,7 @@ export const eightyTwoMajorPlanKorean: StrategyPlanData = {
         {
           label: "B",
           title: "팝업 스토어",
-          budget: "티어 2 / 투어 시점",
+          budget: "티어 2 / 투어 시기",
           objective: "미국 투어 공연 및 K-pop 리테일 드롭을 다일간 사진, 콘텐츠, 판매 이벤트로 전환합니다.",
           tactics: [
             "LA 및 NYC 단독 팝업 스토어",
@@ -310,7 +293,7 @@ export const eightyTwoMajorPlanKorean: StrategyPlanData = {
         {
           label: "C",
           title: "OOH",
-          budget: "티어 2 / 발매 시점",
+          budget: "티어 2 / 발매 시기",
           objective: "팬들이 공유하는 영수증을 생성합니다. OOH는 인지도가 아니라 미국 팬 생태계가 증폭시킬 콘텐츠입니다.",
           examples: [
             "LA + NYC 투어 공연 지역 포스터 및 스나이프 광고",
@@ -572,7 +555,7 @@ export const eightyTwoMajorPlanKorean: StrategyPlanData = {
         {
           label: "B",
           title: "라디오 전략",
-          budget: "1단계: $15-20K (티어 1 또는 티어 2에 포함되지 않음)",
+          budget: "1단계: $15-20K (Tier 1 또는 Tier 2에 포함되지 않음)",
           timeline: "1단계 / 2-3개월",
           objective: "팝 라디오에서 곡을 구축하고, 차트 순위를 올리며, 더 중요하게는 그룹을 팝 라디오에 소개하여 더 큰 규모로 경쟁할 수 있도록 합니다.",
           strategy: "전국 200개 이상의 팝 라디오 방송국(Sirius 포함)에 서비스를 제공합니다. 이미 아시아 팝을 지원하는 방송국에 집중하여 방송 및 콘텐츠 시작을 강조합니다. 스파이크, 테스트 스핀을 찾고 선두에 설 의향이 있는 챔피언을 식별합니다. 이미 지원을 시작한 iHeartradio 쇼 KPOP w JOJO에 초점을 맞춥니다. 그가 계속 지원하도록 하고 다른 iHeart 방송국과 이 레버리지를 활용하도록 합니다.",
@@ -618,67 +601,94 @@ export const eightyTwoMajorPlanKorean: StrategyPlanData = {
     },
 
     // ===================================================================
-    // 10. Final Pricing Sheets
+    // 10. Media Flight
     // ===================================================================
     {
-      type: "pricing",
+      type: "flight",
       number: "10",
-      navLabel: "가격",
-      title: "최종 가격 시트",
-      intro: "두 가지 티어가 있으며, 두 티어 모두 현재 SIGN 싱글 사이클(2026년 5월 - 8월, 약 12주)에 맞춰져 있습니다. 9월 컴백 시 동일한 구조로 새로운 티어가 승인됩니다. CCD 실행 수수료는 각 티어 내에 포함되어 있으며, 계산은 각 카드에 명시되어 있습니다.",
-      tiers: [
+      navLabel: "플라이트",
+      title: "제안 미디어 플라이트",
+      intro: "$62,500 예산이 SIGN Remix 사이클 전반에 어떻게 배포되는지에 대한 설명입니다. 6월은 채널과 팬층을 데우는 시기입니다. 7월 초에는 리믹스를 티저합니다. 7월 중순부터 8월까지는 출시 후 푸시를 진행합니다.",
+      totalBudget: "$49,000 to media + creator (CCD agency fee separate)",
+      phases: [
         {
-          label: "Tier 01",
-          budget: "$50,000",
-          name: "기반 플랜",
-          tagline: "총액 상한선. SIGN 사이클(약 12주). 기본 구성만 해당.",
-          deployable: "$39,000",
-          feeBreakdown: {
-            retainer: "$7,500",
-            retainerDetail: "3개월 x $2,500",
-            mediaManagement: "~3,500달러",
-            mediaManagementDetail: "~22,500달러 관리액의 15%",
-          },
-          breakdown: [
-            { vertical: "미국 본사 스타일 팬 페이지", amount: "$12,000" },
-            { vertical: "유료 소셜 (IG + TikTok + X)", amount: "$22,500" },
-            { vertical: "Strive.fm", amount: "$4,500" },
-            { vertical: "CCD 리테이너 + 관리 수수료", amount: "$11,000" },
+          label: "웜업",
+          window: "2026년 6월 / 약 4주",
+          focus: "U.S. HQ 팬 페이지 네트워크를 구축하고 리믹스 출시 전에 계정 수준 도달 범위를 늘리기 위해 기본 Paid Social을 실행합니다. 아직 출시 특정 크리에이티브는 없으며, 목표는 계정 웜업 + 알고리즘 프라이밍입니다.",
+          budget: "~$10,000",
+          tactics: [
+            "U.S. HQ 팬 페이지 네트워크 출시 + 콘텐츠 케이던스",
+            "Paid Social 계정 성장 (IG + TikTok + X)",
+            "유사 타겟 + 팬 정복 타겟에 대한 알고리즘 워밍",
+            "출시 기간 동안 초기 Meta + TikTok 픽셀 데이터 수집",
           ],
         },
         {
-          label: "Tier 02",
-          budget: "$100,000",
-          name: "확장 성장 플랜",
-          tagline: "총액 상한선. SIGN 사이클 (약 12주). 기초 및 증폭기.",
+          label: "SIGN Remix 티저",
+          window: "2026년 7월 초 / 2주",
+          focus: "릴리즈 위크가 콜드 오픈이 아닌 순조로운 시작을 할 수 있도록, 사전 저장 퍼널, 짧은 형식의 티저 영상, 초기 크리에이터 시딩을 통해 사전 발매 기대감을 조성합니다.",
+          budget: "~$12,000",
+          tactics: [
+            "유료 소셜 티저 크리에이티브 (IG Reels + TikTok)",
+            "팬 페이지 대상 DM 자동화 사전 저장 캠페인",
+            "인플루언서 시딩 (짧은 형식, 반응형)",
+            "팬 페이지 네트워크: 티저 공개, 카운트다운 콘텐츠",
+          ],
+        },
+        {
+          label: "릴리즈 후 푸시",
+          window: "2026년 7월 중순 ~ 8월 / 4주",
+          focus: "출시된 리믹스에 대한 유료 소셜 + 인플루언서 예산의 전면 배포. 8월 기간 동안 지속적인 크리에이티브 테스트, 타겟 오디언스 반복, 크리에이터 증폭.",
+          budget: "~$27,000",
+          tactics: [
+            "유료 소셜 풀 퍼널 (인지도 + 참여 + 전환)",
+            "인플루언서 대규모 활성화 (TikTok + IG 크리에이터)",
+            "크리에이터 + 팬 페이지 UGC 증폭",
+            "지속적인 Meta + TikTok 크리에이티브 리프레시 (주간)",
+            "9월 컴백 캠페인 브리핑에 픽셀 피드백 반영",
+          ],
+        },
+      ],
+      footnote: "단계별 예산은 방향성을 제시하며, CCD는 주간 성과 신호에 따라 티어 내 항목 간 예산을 재할당합니다.",
+    },
+
+    // 11. Final Pricing Sheets
+    // ===================================================================
+    {
+      type: "pricing",
+      number: "11",
+      navLabel: "가격 책정",
+      title: "최종 가격 시트",
+      intro: "SIGN Remix 사이클(2026년 6월~8월)에 대한 단일 올인 예산. CCD 실행 수수료는 티어 내에 포함되며, 계산은 카드에 명시됩니다. 9월 컴백은 동일한 구조로 새로운 예산을 승인합니다.",
+      tiers: [
+        {
+          label: "SIGN Remix 계획",
+          budget: "$62,500",
+          name: "올인 예산",
+          tagline: "올인. SIGN Remix 사이클 (~12주): 6월 워밍업, 7월 티저 + 출시 후 푸시, 8월 유지.",
           featured: true,
-          deployable: "$86,500",
+          deployable: "$49,000",
           feeBreakdown: {
             retainer: "$7,500",
-            retainerDetail: "3개월 x $2,500",
-            mediaManagement: "~6,500달러",
-            mediaManagementDetail: "관리되는 약 42,000달러의 15%",
+            retainerDetail: "3개월 × $2,500",
+            mediaManagement: "$6,000",
+            mediaManagementDetail: "~$40K 관리 금액의 15%",
           },
           breakdown: [
             { vertical: "미국 본사 스타일 팬 페이지", amount: "$12,000" },
             { vertical: "유료 소셜 (IG + TikTok + X)", amount: "$24,000" },
             { vertical: "인플루언서", amount: "$13,000" },
-            { vertical: "클리핑 / 시딩", amount: "$8,000" },
-            { vertical: "스포티파이 플레이리스트", amount: "$10,000" },
-            { vertical: "Strive.fm", amount: "$4,500" },
-            { vertical: "유튜브 광고", amount: "$5,000" },
-            { vertical: "체험형 / 옥외 광고", amount: "$10,000" },
-            { vertical: "CCD 리테이너 + 관리 수수료", amount: "$13,500" },
+            { vertical: "CCD 대행 수수료", amount: "$13,500" },
           ],
         },
       ],
       addOns: [
-        { name: "라디오 전략", budget: "1단계: 15,000-20,000달러", description: "1단계 (2-3개월) 팝 라디오 푸시: 200개 이상의 팝 방송국 + Sirius, KPOP w JOJO 지원, 주요 방송국 줌, Most Requested Live와의 무엇이든 물어보세요 채팅에 광범위하게 서비스 제공." },
-        { name: "A&R / 피처링 전략", budget: "범위가 정해진", description: "기능 전략, 아티스트 호환성 분석, 미국 협업 소개, 한국 힙합 신뢰도 기능." },
-        { name: "추가 체험형 콘텐츠", budget: "범위가 정해진", description: "인-티어 리스닝 이벤트 이상의 다중 이벤트 경험. 게임 및 XR 파트너십, 스폰서 실행." },
-        { name: "추가 콘텐츠 제작", budget: "범위가 정해진", description: "월간 스튜디오 브이로그 시리즈, 프로덕션 크레딧 콘텐츠, 라이브 녹음, 에피소드별 투어 일지 콘텐츠." },
+        { name: "라디오 전략", budget: "1단계: $15-20K", description: "1단계 (2-3개월) 팝 라디오 푸시: 200개 이상의 팝 방송국 + Sirius, KPOP w JOJO 지원, 주요 방송국 줌, Most Requested Live와의 무엇이든 물어보세요 채팅." },
+        { name: "A&R / 피처링 전략", budget: "범위 지정됨", description: "아티스트 적합성 분석, 미국 협업 소개, 한국 힙합 신뢰도 강화 등 기능 전략 수립." },
+        { name: "추가 체험형 콘텐츠", budget: "범위 지정됨", description: "단순 청취 이벤트 이상의 다중 이벤트 경험 제공. 게임 및 XR 파트너십, 스폰서십 실행." },
+        { name: "추가 콘텐츠 제작", budget: "범위 지정됨", description: "월간 스튜디오 브이로그 시리즈, 프로덕션 크레딧 콘텐츠, 라이브 녹음, 에피소드별 투어 다이어리 콘텐츠 제작." },
       ],
-      footnote: "각 릴리스 주기는 자체 티어 승인을 받습니다. 9월 컴백은 사이클 2를 트리거합니다 (동일한 구조, 사이클 1 성과 기반의 새로운 예산 요청). 추가 기능은 독립적인 SOW에 따라 릴리스 주기별로 트리거됩니다.",
+      footnote: "각 릴리즈 사이클마다 별도의 승인이 필요합니다. 9월 컴백은 SIGN Remix 성과를 기반으로 새로운 예산 요청을 촉발하며, 추가 작업은 개별 SOW에 따라 릴리즈 사이클별로 트리거됩니다.",
     },
   ],
 };
