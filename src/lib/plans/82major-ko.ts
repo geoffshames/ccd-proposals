@@ -4,7 +4,7 @@ export const eightyTwoMajorPlanKorean: StrategyPlanData = {
   accentColor: "#FD3737",
   ogImage: "/images/82major/og-image.png",
   language: "ko",
-  languageAlternates: [{ slug: "82MAJOR-ko", label: "한국어", code: "KO" }],
+  languageAlternates: [{ slug: "82major", label: "English", code: "EN" }],
 
   cover: {
     label: "미국 성장 전략",
