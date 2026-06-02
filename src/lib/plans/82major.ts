@@ -277,7 +277,6 @@ export const eightyTwoMajorPlan: StrategyPlanData = {
         {
           label: "B",
           title: "TikTok Amplification + Creator Participation",
-          budget: "Tier 2 only",
           objective: "Move TikTok from the platform 82MAJOR is most under-built on to the discovery engine that turns U.S. tour-converts and K-hip-hop crossover fans into followers and streamers.",
           tactics: [
             "Tastemaker creator activations (8-15 per release window)",
@@ -290,7 +289,6 @@ export const eightyTwoMajorPlan: StrategyPlanData = {
         {
           label: "C",
           title: "Influencer Marketing",
-          budget: "Tier 2 only",
           components: {
             heading: "Components",
             items: [

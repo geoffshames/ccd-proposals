@@ -277,7 +277,6 @@ export const eightyTwoMajorPlanKorean: StrategyPlanData = {
         {
           label: "B",
           title: "스페셜 굿즈 & 실물 앨범",
-          budget: "수익성이 확보되는 경우 현지 미국 생산, 그렇지 않은 경우 수입합니다. 단위 마진뿐만 아니라 실물 앨범 드롭의 독점성이 더 중요합니다.",
           objective: "수익성이 확보되는 경우 현지 미국 생산, 그렇지 않은 경우 수입합니다. 단위 마진뿐만 아니라 실물 앨범 드롭의 독점성이 더 중요합니다.",
           tactics: [
             "B",
@@ -290,7 +289,6 @@ export const eightyTwoMajorPlanKorean: StrategyPlanData = {
         {
           label: "C",
           title: "XR / VR / 게이밍 통합",
-          budget: "수익성이 확보되는 경우 현지 미국 생산, 그렇지 않은 경우 수입합니다. 단위 마진뿐만 아니라 실물 앨범 드롭의 독점성이 더 중요합니다.",
           components: {
             heading: "주요 크리에이터 등급 (중간 영향력, 높은 신뢰도의 크리에이터)",
             items: [
