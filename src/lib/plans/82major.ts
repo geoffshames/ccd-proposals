@@ -705,11 +705,6 @@ export const eightyTwoMajorPlan: StrategyPlanData = {
           ],
         },
       ],
-      addOns: [
-        { name: "Radio Strategy", budget: "Phase 1: $15-20K", description: "Phase 1 (2-3 months) pop radio push: wide service to 200+ pop stations + Sirius, KPOP w JOJO support, key-station Zooms, Ask Anything Chat with Most Requested Live." },
-        { name: "A&R / Features Strategy", budget: "Scoped", description: "Feature strategy, artist compatibility analysis, U.S. collaboration introductions, Korean hip-hop credibility features." },
-        { name: "Additional Content Production", budget: "Scoped", description: "Monthly studio vlog series, production-credit content, live recordings, episodic tour-diary content." },
-      ],
       footnote: "Each release cycle gets its own authorization. The September comeback triggers a fresh budget call based on SIGN Remix performance. Add-ons trigger per release cycle on standalone SOW.",
     },
   ],

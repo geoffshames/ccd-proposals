@@ -705,11 +705,6 @@ export const eightyTwoMajorPlanKorean: StrategyPlanData = {
           ],
         },
       ],
-      addOns: [
-        { name: "인스타그램 팔로워 34만 1천 명", budget: "~$27,000", description: "유료 소셜 풀 퍼널 (인지도 + 참여 + 전환)" },
-        { name: "B", budget: "크리에이터 + 팬 페이지 UGC 증폭", description: "지속적인 Meta + TikTok 크리에이티브 리프레시 (주간)" },
-        { name: "2026년 7월 초 / 2주", budget: "크리에이터 + 팬 페이지 UGC 증폭", description: "pricing" },
-      ],
       footnote: "12",
     },
   ],
