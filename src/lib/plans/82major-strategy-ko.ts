@@ -412,6 +412,129 @@ export const eightyTwoMajorPlanStrategyKorean: StrategyPlanData = {
       footnote: "티어 라벨은 방향성을 나타내며 연대순이 아닙니다. 아웃리치는 계층이 아닌 스토리 준비 상태에 따라 안내됩니다.",
     },
 
+    // 08. Handled by Kakao
+    // ===================================================================
+    {
+      type: "vertical",
+      number: "08",
+      navLabel: "Kakao",
+      title: "Kakao에서 처리",
+      philosophy: "Kakao가 직접 소유하는 워크스트림입니다. CCD는 조정 및 정보를 제공하지만, Kakao가 관계, 재능 및 라디오 계획에 대한 주도권을 잡습니다.",
+      intro: "라디오는 자체적으로 승인되었습니다. A&R / 피처링 전략은 Kakao 팀과 엔드-투-엔드로 함께 진행됩니다. 아래 SIGN 피처링 아티스트 후보는 CCD의 추천이지만, 대화, 딜 플로우 및 최종 승인은 Kakao를 통해 진행됩니다.",
+      subBlocks: [
+        {
+          label: "A",
+          title: "인스타그램 팔로워 34만 1천 명",
+                    timeline: "https://open.spotify.com/track/5hplO2Sk1SaZgSaR05m6Nn",
+          objective: "팝 라디오에서 곡을 빌드하고, 차트 순위를 올리며, 더 중요하게는 그룹을 팝 라디오에 소개하여 더 큰 규모로 경쟁할 수 있도록 합니다. Kakao에서 자체적으로 승인되었습니다.",
+          strategy: "티어 2",
+          components: {
+            heading: "AMBER MARK",
+            items: [
+              "월간 리스너 2.8M",
+              "C",
+              "Sweet Serotonin - Amber Mark",
+              "https://open.spotify.com/track/0RLl3obXeC2HsCQcI1EglP",
+              "최근 Sabrina Carpenter의 오프닝 무대를 장식하며 주류 노출을 크게 늘렸습니다. 소울풀한 R&B와 얼터너티브 팝을 SIGN의 성숙한 분위기와 조화롭게 융합합니다. 패션 선도적인 브랜딩과 DSP 플레이리스트에서의 매력을 강점으로 가지고 있습니다.",
+              "charlieonafriday",
+              "월간 리스너 2.1M",
+              "IG 팔로워 814K",
+              "D",
+            ],
+          },
+          tactics: [
+            "https://open.spotify.com/track/0koOtMGSYQSbaUpSCoL9Kh",
+            "강력한 Gen Z 팬 참여와 꾸준한 스트리밍 성과를 보입니다. 감성적인 팝 작곡은 SIGN의 멜로디컬한 친밀감과 잘 부합합니다. 넓은 소셜 미디어 영향력은 숏폼 및 크로스오버 잠재력을 강화합니다.",
+            "티어 3",
+            "DESTIN CONRAD",
+          ],
+          examples: [
+            "월간 리스너 1.1M",
+          ],
+          linksHeading: "IG 팔로워 418K",
+          links: [
+            { label: "Bad - DESTIN CONRAD", url: "https://askanythingchat.com" },
+          ],
+        },
+        {
+          label: "B",
+          title: "B",
+          objective: "라디오 전략",
+          strategy: "1단계 / 2-3개월",
+          components: {
+            heading: "A",
+            items: [
+              "전국 200개 이상의 팝 라디오 방송국(Sirius 포함)에 서비스를 제공합니다. 이미 아시아 팝을 지원하는 방송국에 집중하여 방송 및 콘텐츠 시작을 강조합니다. 스파이크, 테스트 스핀을 찾고 선두에 설 의향이 있는 챔피언을 식별합니다. 이미 지원을 시작한 iHeartradio 쇼 KPOP w JOJO에 초점을 맞춥니다. 그가 계속 지원하도록 하고 다른 iHeart 방송국과 이 레버리지를 활용하도록 합니다.",
+              "주요 라디오 방송국 줌 회의",
+              "KMVQ 샌프란시스코",
+              "WILD 94.9 샌프란시스코",
+              "KISS 시카고",
+              "Q99 애틀랜타",
+            ],
+          },
+          featureTiersHeading: "Z100 뉴욕",
+          featureTiers: [
+            {
+              label: "KISS 보스턴",
+              artists: [
+                {
+                  name: "TOMMY RICHMAN",
+                  monthlyListeners: "KALV 피닉스",
+                  instagram: "시간이 허락하는 대로 추가 방송국",
+                  reference: "82MAJOR의 신곡 홍보 또는 지원을 위한 라디오 소셜 게시물 참여 (리트윗, IG 스토리, 재게시)",
+                  referenceUrl: "https://open.spotify.com/track/32VOsoPR0N9dEZNbogPIeZ",
+                  note: "MRL은 현재 100개 이상의 팝 라디오 방송국에서 송출되는 가장 크고 중요한 팝 라디오 신디케이션 쇼입니다.",
+                },
+                {
+                  name: "BAKAR",
+                  monthlyListeners: "과거 Ask Anything Chat 참여 아티스트: Jackson Wang, (G)I-DLE, P1Harmony, LISA, NMIXX, JO1",
+                  instagram: "https://open.spotify.com/track/32VOsoPR0N9dEZNbogPIeZ",
+                  reference: "askanythingchat.com. Most Requested Live",
+                  referenceUrl: "https://open.spotify.com/track/5hplO2Sk1SaZgSaR05m6Nn",
+                  note: "C",
+                },
+              ],
+            },
+            {
+              label: "추가 체험형 콘텐츠",
+              artists: [
+                {
+                  name: "AMBER MARK",
+                  monthlyListeners: "https://open.spotify.com/track/5hplO2Sk1SaZgSaR05m6Nn",
+                  instagram: "추가 콘텐츠 제작",
+                  reference: "YouTube 및 Instagram Reels를 위한 월간 스튜디오 브이로그 시리즈, 프로덕션 크레딧 콘텐츠, 라이브 공연 녹음, 에피소드별 투어 다이어리 콘텐츠",
+                  referenceUrl: "https://open.spotify.com/track/0RLl3obXeC2HsCQcI1EglP",
+                  note: "flight",
+                },
+                {
+                  name: "charlieonafriday",
+                  monthlyListeners: "플라이트",
+                  instagram: "https://open.spotify.com/track/0RLl3obXeC2HsCQcI1EglP",
+                  reference: "$62,500 예산이 SIGN Remix 사이클 전반에 어떻게 배포되는지에 대한 설명입니다. 6월은 채널과 팬층을 데우는 시기입니다. 7월 초에는 리믹스를 티저합니다. 7월 중순부터 8월까지는 출시 후 푸시를 진행합니다.",
+                  referenceUrl: "https://open.spotify.com/track/0koOtMGSYQSbaUpSCoL9Kh",
+                  note: "웜업",
+                },
+              ],
+            },
+            {
+              label: "2026년 6월 / 약 4주",
+              artists: [
+                {
+                  name: "DESTIN CONRAD",
+                  monthlyListeners: "https://open.spotify.com/track/0koOtMGSYQSbaUpSCoL9Kh",
+                  instagram: "U.S. HQ 팬 페이지 네트워크 출시 + 콘텐츠 케이던스",
+                  reference: "Paid Social 계정 성장 (IG + TikTok + X)",
+                  referenceUrl: "https://open.spotify.com/track/5ld2rB0d5nG8RTQRRmkxNa",
+                  note: "출시 기간 동안 초기 Meta + TikTok 픽셀 데이터 수집",
+                },
+              ],
+            },
+          ],
+        },
+      ],
+      footnote: "CCD는 전략과 조정을 제공하고, Kakao가 실행합니다.",
+    },
+
     // ===================================================================
     // ===================================================================
   ],

@@ -412,6 +412,129 @@ export const eightyTwoMajorPlanStrategy: StrategyPlanData = {
       footnote: "Tier labels are directional, not chronological. Outreach is guided by story-readiness, not hierarchy.",
     },
 
+    // 08. Handled by Kakao
+    // ===================================================================
+    {
+      type: "vertical",
+      number: "08",
+      navLabel: "Kakao",
+      title: "Handled by Kakao",
+      philosophy: "Workstreams Kakao owns directly. CCD coordinates and informs, but Kakao runs point on relationships, talent, and the radio plan.",
+      intro: "Radio is approved on its own track. A&R / Features Strategy sits with the Kakao team end-to-end; the SIGN feature artist candidates below are CCD's recommendation, but the conversation, deal flow, and sign-offs run through Kakao.",
+      subBlocks: [
+        {
+          label: "A",
+          title: "Radio Strategy",
+                    timeline: "Phase 1 / 2-3 months",
+          objective: "Build the song at pop radio, move it up the chart, and more importantly introduce the group to pop radio so they can compete on a bigger scale. Approved by Kakao on its own track.",
+          strategy: "Service wide to pop radio. There are over 200 pop stations across the country including Sirius. Lean on the stations that already support Asian pop and put an emphasis on those to start airplay and content. Look for spikes, test spins, and identify champions willing to lead the way. Hyper-focus on the iHeartradio show KPOP w JOJO since he has already started to support; make sure he continues to do so and use that lever with other iHeart stations.",
+          components: {
+            heading: "Key Radio Station Zooms",
+            items: [
+              "KMVQ San Francisco",
+              "WILD 94.9 San Francisco",
+              "KISS Chicago",
+              "Q99 Atlanta",
+              "Z100 New York",
+              "KISS Boston",
+              "KLUC Las Vegas",
+              "KALV Phoenix",
+              "Additional stations as time permits",
+            ],
+          },
+          tactics: [
+            "Artist engagement with any radio social posts that debut or support the song (retweets, IG Stories, reposts)",
+            "Most Requested Live 'Ask Anything Chat' (3-week promotion): fans tweet questions, the artist films answers, the final edited video posts across MRL socials and YouTube",
+            "MRL is the biggest, most important pop radio syndicated show, currently on 100+ pop radio stations",
+            "Service merch to key radio programmers and content creators",
+          ],
+          examples: [
+            "Past Ask Anything Chat artists: Jackson Wang, (G)I-DLE, P1Harmony, LISA, NMIXX, JO1",
+          ],
+          linksHeading: "Reference",
+          links: [
+            { label: "askanythingchat.com. Most Requested Live", url: "https://askanythingchat.com" },
+          ],
+        },
+        {
+          label: "B",
+          title: "A&R / Features Strategy",
+          objective: "Position 82MAJOR as a globally scalable performance-driven boy group by strategically pairing each single with feature artists that expand DSP reach outside core K-pop audiences, create viral and social crossover moments, strengthen editorial playlist positioning, add credibility within Western pop, dance, hip-hop, and alt spaces, support sync, remix, and festival opportunities, and build long-term association with tastemaker acts.",
+          strategy: "SIGN sonically leans into 90s-inspired R&B textures with restrained percussion, dreamy melodies, and emotionally controlled vocal delivery. The song is atmospheric, minimal, and mature, a departure from the group's more aggressive performance records. Feature pairing should match that mood: alt-R&B credibility, fashion / tastemaker positioning, and cultural reach outside the K-pop lane.",
+          components: {
+            heading: "Strategic Goals",
+            items: [
+              "Expand DSP reach outside core K-pop audiences",
+              "Create viral and social crossover moments",
+              "Strengthen editorial playlist positioning",
+              "Add credibility within Western pop, dance, hip-hop, and alt spaces",
+              "Support sync, remix, and festival opportunities",
+              "Build long-term artist association with tastemaker and culturally relevant acts",
+            ],
+          },
+          featureTiersHeading: "SIGN - Feature Artist Candidates",
+          featureTiers: [
+            {
+              label: "Tier 1",
+              artists: [
+                {
+                  name: "TOMMY RICHMAN",
+                  monthlyListeners: "12.3M Monthly Listeners",
+                  instagram: "334K IG Followers",
+                  reference: "Changes - Tommy Richman",
+                  referenceUrl: "https://open.spotify.com/track/32VOsoPR0N9dEZNbogPIeZ",
+                  note: "One of the biggest breakout artists of the past year with massive streaming momentum. Retro-inspired vocals and groove-heavy production fit the 90s influence of SIGN. Strong cultural buzz and broad crossover appeal beyond traditional pop audiences.",
+                },
+                {
+                  name: "BAKAR",
+                  monthlyListeners: "9.3M Monthly Listeners",
+                  instagram: "341K IG Followers",
+                  reference: "Don't Wanna - Justin Bieber, Bakar",
+                  referenceUrl: "https://open.spotify.com/track/5hplO2Sk1SaZgSaR05m6Nn",
+                  note: "Recently featured on Justin Bieber's SWAG project, adding major cultural visibility. Seamlessly blends indie, alternative, and R&B influences that align with SIGN's mood. Strong fashion, tastemaker, and international touring credibility outside traditional pop lanes.",
+                },
+              ],
+            },
+            {
+              label: "Tier 2",
+              artists: [
+                {
+                  name: "AMBER MARK",
+                  monthlyListeners: "2.8M Monthly Listeners",
+                  instagram: "389K IG Followers",
+                  reference: "Sweet Serotonin - Amber Mark",
+                  referenceUrl: "https://open.spotify.com/track/0RLl3obXeC2HsCQcI1EglP",
+                  note: "Recently opened for Sabrina Carpenter, significantly increasing mainstream exposure. Blends soulful R&B with alternative pop in a way that matches SIGN's mature atmosphere. Strong fashion-forward branding and DSP playlist appeal.",
+                },
+                {
+                  name: "charlieonafriday",
+                  monthlyListeners: "2.1M Monthly Listeners",
+                  instagram: "814K IG Followers",
+                  reference: "That's What I Get - charlieonafriday",
+                  referenceUrl: "https://open.spotify.com/track/0koOtMGSYQSbaUpSCoL9Kh",
+                  note: "Strong Gen Z fan engagement and consistent streaming performance. Emotional pop songwriting aligns well with SIGN's melodic intimacy. Large social footprint gives strong short-form and crossover potential.",
+                },
+              ],
+            },
+            {
+              label: "Tier 3",
+              artists: [
+                {
+                  name: "DESTIN CONRAD",
+                  monthlyListeners: "1.1M Monthly Listeners",
+                  instagram: "418K IG Followers",
+                  reference: "Bad - DESTIN CONRAD",
+                  referenceUrl: "https://open.spotify.com/track/5ld2rB0d5nG8RTQRRmkxNa",
+                  note: "One of the strongest emerging names in modern male R&B right now. Smooth vocal tone and emotionally controlled delivery fit SIGN naturally. Strong touring momentum and growing credibility within alt-R&B spaces.",
+                },
+              ],
+            },
+          ],
+        },
+      ],
+      footnote: "CCD provides strategy and coordination; Kakao executes.",
+    },
+
     // ===================================================================
     // ===================================================================
   ],

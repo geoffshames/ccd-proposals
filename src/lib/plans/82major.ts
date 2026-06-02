@@ -443,57 +443,18 @@ export const eightyTwoMajorPlan: StrategyPlanData = {
       footnote: "Tier labels are directional, not chronological. Outreach is guided by story-readiness, not hierarchy.",
     },
 
-    // ===================================================================
-    // 09. Suggested Additions
+    // 09. Handled by Kakao
     // ===================================================================
     {
       type: "vertical",
       number: "09",
-      navLabel: "Additions",
-      title: "Suggested Additions (Optional)",
-      philosophy: "Outside the $62,500 budget. These are incremental opportunities CCD can layer in if Kakao wants more streaming velocity, more viral reach, or radio support for the SIGN Remix cycle.",
-      intro: "Each item is optional and scoped separately. Spotify Playlisting and Clipping are quick-deploy media buys with predictable output; Radio is a separate $20K plan already approved on its own track. A&R / Features Strategy and Additional Content are deeper-scope add-ons we can spin up on demand.",
+      navLabel: "Kakao",
+      title: "Handled by Kakao",
+      philosophy: "Workstreams Kakao owns directly. CCD coordinates and informs, but Kakao runs point on relationships, talent, and the radio plan.",
+      intro: "Radio is approved on its own track ($20,000, separate from the $62,500 CCD budget). A&R / Features Strategy sits with the Kakao team end-to-end; the SIGN feature artist candidates below are CCD's recommendation, but the conversation, deal flow, and sign-offs run through Kakao.",
       subBlocks: [
         {
           label: "A",
-          title: "Spotify Playlisting",
-          budget: "$5,000 - $10,000",
-          objective: "Buy into Spotify playlisting at scale to drive 200,000 - 400,000 incremental streams. Deployable on the current SIGN single to lift monthly listeners leading into the remix, or on the remix itself to drive streaming velocity at release.",
-          components: {
-            heading: "Use Cases",
-            items: [
-              "Run on the current SIGN single (June) to lift Spotify monthly listeners ahead of the remix release",
-              "Run on the SIGN Remix (July) to accelerate streaming velocity in the release window",
-              "Or split across both for compounding lift",
-            ],
-          },
-          kpis: [
-            "200,000 - 400,000 incremental Spotify streams",
-            "Spotify monthly listener lift leading into the remix",
-            "Algorithmic signal into Release Radar + Discover Weekly",
-          ],
-        },
-        {
-          label: "B",
-          title: "Clipping / Seeding",
-          budget: "$5,000",
-          objective: "Realistically generate 4-5M views on TikTok + IG Reels via the clipping / seeding network, launched around the SIGN Remix release. Cheapest way to push social-chart velocity and trigger algorithmic discovery in the release window.",
-          components: {
-            heading: "Use Cases",
-            items: [
-              "Launch in tandem with the SIGN Remix release for maximum compounding effect",
-              "Pair with the influencer line item already in the $62,500 budget for layered reach",
-              "Feeds TikTok pixel data into the Sept comeback campaign brief",
-            ],
-          },
-          kpis: [
-            "4-5M short-form video views",
-            "Sustained discovery surfacing on TikTok For You",
-            "Creator + clipper network spin-up for future cycles",
-          ],
-        },
-        {
-          label: "C",
           title: "Radio Strategy",
           budget: "$20,000 (approved separate from the $62,500 budget)",
           timeline: "Phase 1 / 2-3 months",
@@ -528,7 +489,7 @@ export const eightyTwoMajorPlan: StrategyPlanData = {
           ],
         },
         {
-          label: "D",
+          label: "B",
           title: "A&R / Features Strategy",
           objective: "Position 82MAJOR as a globally scalable performance-driven boy group by strategically pairing each single with feature artists that expand DSP reach outside core K-pop audiences, create viral and social crossover moments, strengthen editorial playlist positioning, add credibility within Western pop, dance, hip-hop, and alt spaces, support sync, remix, and festival opportunities, and build long-term association with tastemaker acts.",
           strategy: "SIGN sonically leans into 90s-inspired R&B textures with restrained percussion, dreamy melodies, and emotionally controlled vocal delivery. The song is atmospheric, minimal, and mature, a departure from the group's more aggressive performance records. Feature pairing should match that mood: alt-R&B credibility, fashion / tastemaker positioning, and cultural reach outside the K-pop lane.",
@@ -602,8 +563,61 @@ export const eightyTwoMajorPlan: StrategyPlanData = {
             },
           ],
         },
+      ],
+      footnote: "These workstreams sit outside the $62,500 CCD budget and outside the CCD Suggested Additions. CCD provides strategy and coordination; Kakao executes.",
+    },
+
+    // ===================================================================
+    // 10. Suggested Additions
+    // ===================================================================
+    {
+      type: "vertical",
+      number: "10",
+      navLabel: "Additions",
+      title: "Suggested Additions (Optional)",
+      philosophy: "Outside the $62,500 budget. These are incremental opportunities CCD can layer in if Kakao wants more streaming velocity, more viral reach, or radio support for the SIGN Remix cycle.",
+      intro: "Each item is optional and scoped separately. Spotify Playlisting and Clipping are quick-deploy media buys with predictable output; Radio is a separate $20K plan already approved on its own track. A&R / Features Strategy and Additional Content are deeper-scope add-ons we can spin up on demand.",
+      subBlocks: [
         {
-          label: "E",
+          label: "A",
+          title: "Spotify Playlisting",
+          budget: "$5,000 - $10,000",
+          objective: "Buy into Spotify playlisting at scale to drive 200,000 - 400,000 incremental streams. Deployable on the current SIGN single to lift monthly listeners leading into the remix, or on the remix itself to drive streaming velocity at release.",
+          components: {
+            heading: "Use Cases",
+            items: [
+              "Run on the current SIGN single (June) to lift Spotify monthly listeners ahead of the remix release",
+              "Run on the SIGN Remix (July) to accelerate streaming velocity in the release window",
+              "Or split across both for compounding lift",
+            ],
+          },
+          kpis: [
+            "200,000 - 400,000 incremental Spotify streams",
+            "Spotify monthly listener lift leading into the remix",
+            "Algorithmic signal into Release Radar + Discover Weekly",
+          ],
+        },
+        {
+          label: "B",
+          title: "Clipping / Seeding",
+          budget: "$5,000",
+          objective: "Realistically generate 4-5M views on TikTok + IG Reels via the clipping / seeding network, launched around the SIGN Remix release. Cheapest way to push social-chart velocity and trigger algorithmic discovery in the release window.",
+          components: {
+            heading: "Use Cases",
+            items: [
+              "Launch in tandem with the SIGN Remix release for maximum compounding effect",
+              "Pair with the influencer line item already in the $62,500 budget for layered reach",
+              "Feeds TikTok pixel data into the Sept comeback campaign brief",
+            ],
+          },
+          kpis: [
+            "4-5M short-form video views",
+            "Sustained discovery surfacing on TikTok For You",
+            "Creator + clipper network spin-up for future cycles",
+          ],
+        },
+        {
+          label: "C",
           title: "Additional Content Production",
           objective: "Monthly studio vlog series, production-credit content, live performance recordings, and episodic tour-diary content for YouTube and Instagram Reels.",
         },
@@ -612,11 +626,11 @@ export const eightyTwoMajorPlan: StrategyPlanData = {
     },
 
     // ===================================================================
-    // 10. Media Flight
+    // 11. Media Flight
     // ===================================================================
     {
       type: "flight",
-      number: "10",
+      number: "11",
       navLabel: "Flight",
       title: "Proposed Media Flight",
       intro: "How the $62,500 budget deploys across the SIGN Remix cycle. June warms the channels and the audience. Early July teases the remix. Mid-July through August carries the post-release push.",
@@ -663,11 +677,11 @@ export const eightyTwoMajorPlan: StrategyPlanData = {
       footnote: "Phase budgets are directional; CCD reallocates between line items inside the tier based on weekly performance signals.",
     },
 
-    // 11. Final Pricing Sheets
+    // 12. Final Pricing Sheets
     // ===================================================================
     {
       type: "pricing",
-      number: "11",
+      number: "12",
       navLabel: "Pricing",
       title: "Final Pricing Sheets",
       intro: "Single all-in budget for the SIGN Remix cycle (June through August 2026). CCD execution fee is inside the tier; the math sits in the card. The September comeback authorizes a fresh budget on the same structure.",
