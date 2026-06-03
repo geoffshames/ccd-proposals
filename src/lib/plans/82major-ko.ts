@@ -695,7 +695,7 @@ export const eightyTwoMajorPlanKorean: StrategyPlanData = {
             { vertical: "미국 HQ 스타일 팬 페이지", amount: "$12,000" },
             { vertical: "유료 소셜 (IG + TikTok + X)", amount: "$24,000" },
             { vertical: "인플루언서", amount: "$13,000" },
-            { vertical: "CCD 리테이너", amount: "$13,500" },
+            { vertical: "CCD 리테이너", amount: "$7,500" },
           ],
         },
       ],

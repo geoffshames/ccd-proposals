@@ -158,7 +158,7 @@ export const eightyTwoMajorPlan: StrategyPlanData = {
       tiers: [
         {
           label: "SIGN Remix Plan",
-          budget: "$62,500",
+          budget: "$56,500",
           name: "All-In Budget",
           goal: "Warm up the U.S. fan-page network and grow paid social accounts in June, then flight a two-week teaser plus a four-week post-release push for the SIGN Remix across July and August.",
           featured: true,
@@ -449,14 +449,14 @@ export const eightyTwoMajorPlan: StrategyPlanData = {
       navLabel: "Kakao",
       title: "Handled by Kakao",
       philosophy: "Workstreams Kakao owns directly. CCD coordinates and informs, but Kakao runs point on relationships, talent, and the radio plan.",
-      intro: "Radio is approved on its own track ($20,000, separate from the $62,500 CCD budget). A&R / Features Strategy sits with the Kakao team end-to-end; the SIGN feature artist candidates below are CCD's recommendation, but the conversation, deal flow, and sign-offs run through Kakao.",
+      intro: "Radio is approved on its own track ($20,000, separate from the $56,500 CCD budget). A&R / Features Strategy sits with the Kakao team end-to-end; the SIGN feature artist candidates below are CCD's recommendation, but the conversation, deal flow, and sign-offs run through Kakao.",
       subBlocks: [
         {
           label: "A",
           title: "Radio Strategy",
-          budget: "$20,000 (approved separate from the $62,500 budget)",
+          budget: "$20,000 (approved separate from the $56,500 budget)",
           timeline: "Phase 1 / 2-3 months",
-          objective: "Build the song at pop radio, move it up the chart, and more importantly introduce the group to pop radio so they can compete on a bigger scale. Approved by Kakao on its own track, not included in the $62,500 SIGN Remix budget.",
+          objective: "Build the song at pop radio, move it up the chart, and more importantly introduce the group to pop radio so they can compete on a bigger scale. Approved by Kakao on its own track, not included in the $56,500 SIGN Remix budget.",
           strategy: "Service wide to pop radio. There are over 200 pop stations across the country including Sirius. Lean on the stations that already support Asian pop and put an emphasis on those to start airplay and content. Look for spikes, test spins, and identify champions willing to lead the way. Hyper-focus on the iHeartradio show KPOP w JOJO since he has already started to support; make sure he continues to do so and use that lever with other iHeart stations.",
           components: {
             heading: "Key Radio Station Zooms",
@@ -562,7 +562,7 @@ export const eightyTwoMajorPlan: StrategyPlanData = {
           ],
         },
       ],
-      footnote: "These workstreams sit outside the $62,500 CCD budget and outside the CCD Suggested Additions. CCD provides strategy and coordination; Kakao executes.",
+      footnote: "These workstreams sit outside the $56,500 CCD budget and outside the CCD Suggested Additions. CCD provides strategy and coordination; Kakao executes.",
     },
 
     // ===================================================================
@@ -573,7 +573,7 @@ export const eightyTwoMajorPlan: StrategyPlanData = {
       number: "10",
       navLabel: "Additions",
       title: "Suggested Additions (Optional)",
-      philosophy: "Outside the $62,500 budget. These are incremental opportunities CCD can layer in if Kakao wants more streaming velocity, more viral reach, or radio support for the SIGN Remix cycle.",
+      philosophy: "Outside the $56,500 budget. These are incremental opportunities CCD can layer in if Kakao wants more streaming velocity, more viral reach, or radio support for the SIGN Remix cycle.",
       intro: "Each item is optional and scoped separately. Spotify Playlisting and Clipping are quick-deploy media buys with predictable output; Radio is a separate $20K plan already approved on its own track. A&R / Features Strategy and Additional Content are deeper-scope add-ons we can spin up on demand.",
       subBlocks: [
         {
@@ -604,7 +604,7 @@ export const eightyTwoMajorPlan: StrategyPlanData = {
             heading: "Use Cases",
             items: [
               "Launch in tandem with the SIGN Remix release for maximum compounding effect",
-              "Pair with the influencer line item already in the $62,500 budget for layered reach",
+              "Pair with the influencer line item already in the $56,500 budget for layered reach",
               "Feeds TikTok pixel data into the Sept comeback campaign brief",
             ],
           },
@@ -631,7 +631,7 @@ export const eightyTwoMajorPlan: StrategyPlanData = {
       number: "11",
       navLabel: "Flight",
       title: "Proposed Media Flight",
-      intro: "How the $62,500 budget deploys across the SIGN Remix cycle. June warms the channels and the audience. Early July teases the remix. Mid-July through August carries the post-release push.",
+      intro: "How the $56,500 budget deploys across the SIGN Remix cycle. June warms the channels and the audience. Early July teases the remix. Mid-July through August carries the post-release push.",
       totalBudget: "$49,000 to media + creator (CCD agency fee separate)",
       phases: [
         {
@@ -686,7 +686,7 @@ export const eightyTwoMajorPlan: StrategyPlanData = {
       tiers: [
         {
           label: "SIGN Remix Plan",
-          budget: "$62,500",
+          budget: "$56,500",
           name: "All-In Budget",
           tagline: "All-in. SIGN Remix cycle (~12 weeks): June warm-up, July teaser + post-release push, August sustain.",
           featured: true,
@@ -695,7 +695,7 @@ export const eightyTwoMajorPlan: StrategyPlanData = {
             { vertical: "US HQ-Style Fan Pages", amount: "$12,000" },
             { vertical: "Paid Social (IG + TikTok + X)", amount: "$24,000" },
             { vertical: "Influencer", amount: "$13,000" },
-            { vertical: "CCD Retainer", amount: "$13,500" },
+            { vertical: "CCD Retainer", amount: "$7,500" },
           ],
         },
       ],
