@@ -158,7 +158,7 @@ export const eightyTwoMajorPlanKorean: StrategyPlanData = {
       tiers: [
         {
           label: "SIGN Remix 계획",
-          budget: "$62,500",
+          budget: "$56,500",
           name: "올인 예산",
           goal: "6월에 U.S. 팬 페이지 네트워크를 워밍업하고 유료 소셜 계정을 성장시킨 후, 7월과 8월에 걸쳐 SIGN Remix를 위한 2주간의 티저와 4주간의 출시 후 푸시를 진행합니다.",
           featured: true,
@@ -449,14 +449,14 @@ export const eightyTwoMajorPlanKorean: StrategyPlanData = {
       navLabel: "Kakao",
       title: "Kakao에서 담당",
       philosophy: "Kakao가 직접 소유하는 워크스트림입니다. CCD는 조율 및 정보를 제공하지만, Kakao가 관계, 재능, 라디오 계획에 대한 주도권을 가집니다.",
-      intro: "라디오는 별도의 트랙으로 승인됩니다 ($20,000, $62,500 CCD 예산과는 별개). A&R / 피처링 전략은 Kakao 팀에서 엔드-투-엔드로 진행됩니다. 아래 SIGN 피처링 아티스트 후보는 CCD의 추천이지만, 논의, 계약 진행 및 최종 승인은 Kakao를 통해 이루어집니다.",
+      intro: "라디오는 별도의 트랙으로 승인됩니다 ($20,000, $56,500 CCD 예산과는 별개). A&R / 피처링 전략은 Kakao 팀에서 엔드-투-엔드로 진행됩니다. 아래 SIGN 피처링 아티스트 후보는 CCD의 추천이지만, 논의, 계약 진행 및 최종 승인은 Kakao를 통해 이루어집니다.",
       subBlocks: [
         {
           label: "A",
           title: "라디오 전략",
-          budget: "$20,000 (approved separate from the $62,500 budget)",
+          budget: "$20,000 (approved separate from the $56,500 budget)",
           timeline: "1단계 / 2-3개월",
-          objective: "팝 라디오에서 곡을 구축하고, 차트 순위를 올리며, 더 중요하게는 그룹을 팝 라디오에 소개하여 더 큰 규모로 경쟁할 수 있도록 합니다. Kakao에서 자체 트랙으로 승인되었으며, $62,500 SIGN Remix 예산에는 포함되지 않습니다.",
+          objective: "팝 라디오에서 곡을 구축하고, 차트 순위를 올리며, 더 중요하게는 그룹을 팝 라디오에 소개하여 더 큰 규모로 경쟁할 수 있도록 합니다. Kakao에서 자체 트랙으로 승인되었으며, $56,500 SIGN Remix 예산에는 포함되지 않습니다.",
           strategy: "전국 팝 라디오 방송국에 서비스를 제공합니다. Sirius를 포함하여 전국에 200개 이상의 팝 방송국이 있습니다. 이미 아시아 팝을 지원하는 방송국에 집중하고, 해당 방송국을 중심으로 에어플레이와 콘텐츠를 시작하는 데 중점을 둡니다. 스파이크, 테스트 스핀을 찾고, 선두에 설 의향이 있는 챔피언을 식별합니다. iHeartradio의 KPOP w JOJO 쇼에 집중합니다. 그는 이미 지원을 시작했으므로, 계속 지원하도록 하고 이를 다른 iHeart 방송국과의 협상 지렛대로 활용합니다.",
           components: {
             heading: "주요 라디오 방송국 줌 미팅",
@@ -604,7 +604,7 @@ export const eightyTwoMajorPlanKorean: StrategyPlanData = {
             heading: "활용 사례",
             items: [
               "최대의 복합 효과를 위해 SIGN 리믹스 출시와 동시에 시작하십시오.",
-              "계층적 도달 범위를 위해 이미 $62,500 예산에 포함된 인플루언서 항목과 페어링하십시오.",
+              "계층적 도달 범위를 위해 이미 $56,500 예산에 포함된 인플루언서 항목과 페어링하십시오.",
               "9월 컴백 캠페인 브리프에 TikTok 픽셀 데이터를 제공합니다.",
             ],
           },
@@ -631,7 +631,7 @@ export const eightyTwoMajorPlanKorean: StrategyPlanData = {
       number: "11",
       navLabel: "플라이트",
       title: "제안된 미디어 플라이트",
-      intro: "$62,500 예산이 SIGN Remix 사이클 전반에 걸쳐 어떻게 배포되는지 보여줍니다. 6월은 채널과 청중을 데우는 기간입니다. 7월 초는 리믹스를 티저하는 기간입니다. 7월 중순부터 8월까지는 출시 후 푸시를 진행합니다.",
+      intro: "$56,500 예산이 SIGN Remix 사이클 전반에 걸쳐 어떻게 배포되는지 보여줍니다. 6월은 채널과 청중을 데우는 기간입니다. 7월 초는 리믹스를 티저하는 기간입니다. 7월 중순부터 8월까지는 출시 후 푸시를 진행합니다.",
       totalBudget: "$49,000 to media + creator (CCD agency fee separate)",
       phases: [
         {
@@ -686,7 +686,7 @@ export const eightyTwoMajorPlanKorean: StrategyPlanData = {
       tiers: [
         {
           label: "SIGN Remix 계획",
-          budget: "$62,500",
+          budget: "$56,500",
           name: "올인 예산",
           tagline: "통합 예산. SIGN Remix 사이클 (~12주): 6월 워밍업, 7월 티저 + 출시 후 푸시, 8월 지속.",
           featured: true,
