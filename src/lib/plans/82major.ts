@@ -632,7 +632,7 @@ export const eightyTwoMajorPlan: StrategyPlanData = {
       navLabel: "Flight",
       title: "Proposed Media Flight",
       intro: "How the $56,500 budget deploys across the SIGN Remix cycle. June warms the channels and the audience. Early July teases the remix. Mid-July through August carries the post-release push.",
-      totalBudget: "$49,000 to media + creator (CCD agency fee separate)",
+      totalBudget: "$49,000 to media + creator",
       phases: [
         {
           label: "Warm-Up",

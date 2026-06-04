@@ -632,7 +632,7 @@ export const eightyTwoMajorPlanKorean: StrategyPlanData = {
       navLabel: "플라이트",
       title: "제안된 미디어 플라이트",
       intro: "$56,500 예산이 SIGN Remix 사이클 전반에 걸쳐 어떻게 배포되는지 보여줍니다. 6월은 채널과 청중을 데우는 기간입니다. 7월 초는 리믹스를 티저하는 기간입니다. 7월 중순부터 8월까지는 출시 후 푸시를 진행합니다.",
-      totalBudget: "$49,000 to media + creator (CCD agency fee separate)",
+      totalBudget: "$49,000 to media + creator",
       phases: [
         {
           label: "웜업",
