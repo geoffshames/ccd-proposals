@@ -23,9 +23,11 @@ import { bogeyBoys } from "./bogey-boys";
 import { fendiRodeo } from "./fendi-rodeo";
 import { yoQuieroBailar } from "./yo-quiero-bailar";
 import { emmitFenn } from "./emmit-fenn";
+import { miguelDamned } from "./miguel-damned";
 import type { ProjectData } from "../project-context";
 
 export const PROJECTS: Record<string, ProjectData> = {
+  "miguel-damned": miguelDamned,
   "emmit-fenn": emmitFenn,
   "little-tokyo-reborn": littleTokyoReborn,
   "yk-niece": ykNiece,
