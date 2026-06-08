@@ -113,6 +113,37 @@ export type AudienceSection = {
   footnote?: string;
 };
 
+export type TimelineWeek = {
+  index: number;
+  label: string;
+  dates: string;
+  highlight?: boolean;
+  note?: string;
+};
+
+export type TimelineCell = {
+  weekIndex: number;
+  intensity: "low" | "medium" | "high";
+  milestone?: boolean;
+  label?: string;
+};
+
+export type TimelineWorkstream = {
+  name: string;
+  cells: TimelineCell[];
+};
+
+export type TimelineSection = {
+  type: "timeline";
+  number: string;
+  navLabel?: string;
+  title: string;
+  intro?: string;
+  weeks: TimelineWeek[];
+  workstreams: TimelineWorkstream[];
+  footnote?: string;
+};
+
 export type FlightPhase = {
   label: string;
   window: string;
@@ -170,6 +201,7 @@ export type PlanSection =
   | StructureSection
   | VerticalSection
   | FlightSection
+  | TimelineSection
   | PricingSection;
 
 // Plan root -----------------------------------------------------------------

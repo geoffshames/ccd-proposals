@@ -675,11 +675,120 @@ export const eightyTwoMajorPlan: StrategyPlanData = {
       footnote: "Phase budgets are directional; CCD reallocates between line items inside the tier based on weekly performance signals.",
     },
 
-    // 12. Final Pricing Sheets
+    // 12. Execution Timeline
+    // ===================================================================
+    {
+      type: "timeline",
+      number: "12",
+      navLabel: "Timeline",
+      title: "Execution Timeline",
+      intro: "Week-by-week deployment schedule. Sprints run in one-week cycles. Laylo CRM and initial Paid Social start the week of June 8. U.S. HQ Fan Pages launch the week of June 15. The SIGN Remix releases the week of July 20, anchoring the two-week teaser and the four-week post-release push.",
+      weeks: [
+        { index: 1, label: "W1", dates: "Jun 8" },
+        { index: 2, label: "W2", dates: "Jun 15" },
+        { index: 3, label: "W3", dates: "Jun 22" },
+        { index: 4, label: "W4", dates: "Jun 29" },
+        { index: 5, label: "W5", dates: "Jul 6" },
+        { index: 6, label: "W6", dates: "Jul 13" },
+        { index: 7, label: "W7", dates: "Jul 20", highlight: true, note: "RELEASE" },
+        { index: 8, label: "W8", dates: "Jul 27" },
+        { index: 9, label: "W9", dates: "Aug 3" },
+        { index: 10, label: "W10", dates: "Aug 10" },
+        { index: 11, label: "W11", dates: "Aug 17" },
+        { index: 12, label: "W12", dates: "Aug 24" },
+      ],
+      workstreams: [
+        {
+          name: "Laylo CRM (Email + SMS)",
+          cells: [
+            { weekIndex: 1, intensity: "high", label: "BUILD" },
+            { weekIndex: 2, intensity: "medium" },
+            { weekIndex: 3, intensity: "medium" },
+            { weekIndex: 4, intensity: "medium" },
+            { weekIndex: 5, intensity: "medium" },
+            { weekIndex: 6, intensity: "high", label: "TEASER FLOW" },
+            { weekIndex: 7, intensity: "high", label: "RELEASE FLOW" },
+            { weekIndex: 8, intensity: "medium" },
+            { weekIndex: 9, intensity: "medium" },
+            { weekIndex: 10, intensity: "medium" },
+            { weekIndex: 11, intensity: "low" },
+            { weekIndex: 12, intensity: "low" },
+          ],
+        },
+        {
+          name: "U.S. HQ Fan Pages",
+          cells: [
+            { weekIndex: 2, intensity: "high", label: "LAUNCH" },
+            { weekIndex: 3, intensity: "medium" },
+            { weekIndex: 4, intensity: "medium" },
+            { weekIndex: 5, intensity: "medium" },
+            { weekIndex: 6, intensity: "high" },
+            { weekIndex: 7, intensity: "high" },
+            { weekIndex: 8, intensity: "high" },
+            { weekIndex: 9, intensity: "medium" },
+            { weekIndex: 10, intensity: "medium" },
+            { weekIndex: 11, intensity: "medium" },
+            { weekIndex: 12, intensity: "medium" },
+          ],
+        },
+        {
+          name: "Paid Social (IG + TikTok + X)",
+          cells: [
+            { weekIndex: 1, intensity: "medium", label: "WARM-UP" },
+            { weekIndex: 2, intensity: "medium" },
+            { weekIndex: 3, intensity: "medium" },
+            { weekIndex: 4, intensity: "medium" },
+            { weekIndex: 5, intensity: "high", label: "TEASER" },
+            { weekIndex: 6, intensity: "high" },
+            { weekIndex: 7, intensity: "high", milestone: true, label: "RELEASE" },
+            { weekIndex: 8, intensity: "high" },
+            { weekIndex: 9, intensity: "high" },
+            { weekIndex: 10, intensity: "high" },
+            { weekIndex: 11, intensity: "medium" },
+            { weekIndex: 12, intensity: "low" },
+          ],
+        },
+        {
+          name: "Influencer",
+          cells: [
+            { weekIndex: 5, intensity: "medium", label: "SEEDING" },
+            { weekIndex: 6, intensity: "medium" },
+            { weekIndex: 7, intensity: "high", label: "FULL" },
+            { weekIndex: 8, intensity: "high" },
+            { weekIndex: 9, intensity: "high" },
+            { weekIndex: 10, intensity: "medium" },
+          ],
+        },
+        {
+          name: "Spotify Playlisting (Optional)",
+          cells: [
+            { weekIndex: 3, intensity: "low" },
+            { weekIndex: 4, intensity: "medium" },
+            { weekIndex: 5, intensity: "high" },
+            { weekIndex: 6, intensity: "high" },
+            { weekIndex: 7, intensity: "high" },
+            { weekIndex: 8, intensity: "medium" },
+            { weekIndex: 9, intensity: "low" },
+          ],
+        },
+        {
+          name: "Clipping / Seeding (Optional)",
+          cells: [
+            { weekIndex: 6, intensity: "low" },
+            { weekIndex: 7, intensity: "high", milestone: true },
+            { weekIndex: 8, intensity: "high" },
+            { weekIndex: 9, intensity: "medium" },
+          ],
+        },
+      ],
+      footnote: "Sprints run in one-week cycles. CCD reallocates weekly based on creative performance, MV view velocity, and Spotify monthly listener movement.",
+    },
+
+    // 13. Final Pricing Sheets
     // ===================================================================
     {
       type: "pricing",
-      number: "12",
+      number: "13",
       navLabel: "Pricing",
       title: "Final Pricing Sheets",
       intro: "Single all-in budget for the SIGN Remix cycle (June through August 2026). CCD retainer is inside the budget. The September comeback authorizes a fresh budget on the same structure.",
