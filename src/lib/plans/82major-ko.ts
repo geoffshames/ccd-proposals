@@ -679,7 +679,7 @@ export const eightyTwoMajorPlanKorean: StrategyPlanData = {
     // ===================================================================
     {
       type: "timeline",
-      number: "11",
+      number: "12",
       navLabel: "일정",
       title: "실행 일정",
       intro: "주차별 배포 일정. 스프린트는 1주 단위로 진행됩니다. Laylo CRM 및 초기 Paid Social은 6월 8일 주에 시작됩니다. U.S. HQ 팬 페이지는 6월 15일 주에 론칭됩니다. 아래의 티저 후 및 릴리스 후 주차는 7월 중하순의 잠정적인 릴리스를 기준으로 예시이며, 실제 릴리스 주는 레이블에서 확정하는 대로 W7을 대체할 것입니다.",

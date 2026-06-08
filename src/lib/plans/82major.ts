@@ -679,7 +679,7 @@ export const eightyTwoMajorPlan: StrategyPlanData = {
     // ===================================================================
     {
       type: "timeline",
-      number: "11",
+      number: "12",
       navLabel: "Timeline",
       title: "Execution Timeline",
       intro: "Week-by-week deployment schedule. Sprints run in one-week cycles. Laylo CRM and initial Paid Social start the week of June 8. U.S. HQ Fan Pages launch the week of June 15. The post-teaser and post-release weeks below are illustrative against a tentative mid-to-late July release; the actual release week will replace W7 once the label confirms it.",
