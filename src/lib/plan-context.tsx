@@ -113,6 +113,12 @@ export type AudienceSection = {
   footnote?: string;
 };
 
+export type WeekBreakdown = {
+  weekIndex: number;
+  title: string;
+  items: string[];
+};
+
 export type TimelineWeek = {
   index: number;
   label: string;
@@ -141,6 +147,7 @@ export type TimelineSection = {
   intro?: string;
   weeks: TimelineWeek[];
   workstreams: TimelineWorkstream[];
+  weekBreakdowns?: WeekBreakdown[];
   footnote?: string;
 };
 

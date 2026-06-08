@@ -106,6 +106,51 @@ export function PlanTimeline({ section }: { section: TimelineSection }) {
           </div>
         </div>
 
+        {section.weekBreakdowns && section.weekBreakdowns.length > 0 && (
+          <div className="mt-20">
+            <div className="text-[10px] font-mono tracking-[0.22em] uppercase text-text-muted/60 mb-6">
+              Week-by-week breakdown
+            </div>
+            <div className="grid gap-px bg-text-muted/10 border border-text-muted/15">
+              {section.weekBreakdowns.map((wb) => {
+                const wk = section.weeks.find((w) => w.index === wb.weekIndex);
+                return (
+                  <motion.div
+                    key={wb.weekIndex}
+                    initial={{ opacity: 0, y: 6 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true, margin: "-40px" }}
+                    transition={{ duration: 0.35 }}
+                    className="bg-bg-primary p-5 md:p-6 grid grid-cols-[80px_1fr] md:grid-cols-[110px_1fr] gap-4 md:gap-6"
+                  >
+                    <div>
+                      <div className="text-[18px] md:text-[20px] font-bold text-text-primary leading-none">
+                        {wk?.label ?? `W${wb.weekIndex}`}
+                      </div>
+                      <div className="text-[10px] font-mono tracking-[0.12em] uppercase text-text-muted/60 mt-1">
+                        {wk?.dates ?? ""}
+                      </div>
+                    </div>
+                    <div>
+                      <div className="text-[13px] md:text-[14px] font-semibold tracking-[0.02em] text-text-primary leading-snug mb-2.5">
+                        {wb.title}
+                      </div>
+                      <ul className="space-y-1.5">
+                        {wb.items.map((it, idx) => (
+                          <li key={idx} className="text-[12.5px] md:text-[13px] text-text-secondary leading-relaxed pl-4 relative">
+                            <span className="absolute left-0 top-[0.55em] w-1.5 h-1.5 bg-accent/60"></span>
+                            {it}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  </motion.div>
+                );
+              })}
+            </div>
+          </div>
+        )}
+
         {section.footnote && (
           <p className="mt-10 text-[12px] font-mono tracking-[0.18em] uppercase text-text-muted/60 leading-relaxed max-w-3xl">
             {section.footnote}

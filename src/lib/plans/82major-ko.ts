@@ -675,14 +675,14 @@ export const eightyTwoMajorPlanKorean: StrategyPlanData = {
       footnote: "단계별 예산은 방향성을 제시하며, CCD는 주간 성과 신호에 따라 티어 내 항목 간 예산을 재분배합니다.",
     },
 
-    // 12. Execution Timeline
+    // 11. Execution Timeline
     // ===================================================================
     {
       type: "timeline",
-      number: "12",
+      number: "11",
       navLabel: "일정",
       title: "실행 일정",
-      intro: "주차별 배포 일정. 스프린트는 1주 단위로 진행됩니다. Laylo CRM 및 초기 Paid Social은 6월 8일 주에 시작됩니다. U.S. HQ Fan Pages는 6월 15일 주에 론칭됩니다. SIGN Remix는 7월 20일 주에 발매되며, 2주간의 티저 기간과 4주간의 발매 후 푸시를 중심으로 진행됩니다.",
+      intro: "주차별 배포 일정. 스프린트는 1주 단위로 진행됩니다. Laylo CRM 및 초기 Paid Social은 6월 8일 주에 시작됩니다. U.S. HQ 팬 페이지는 6월 15일 주에 론칭됩니다. 아래의 티저 후 및 릴리스 후 주차는 7월 중하순의 잠정적인 릴리스를 기준으로 예시이며, 실제 릴리스 주는 레이블에서 확정하는 대로 W7을 대체할 것입니다.",
       weeks: [
         { index: 1, label: "W1", dates: "Jun 8" },
         { index: 2, label: "W2", dates: "Jun 15" },
@@ -690,7 +690,7 @@ export const eightyTwoMajorPlanKorean: StrategyPlanData = {
         { index: 4, label: "W4", dates: "Jun 29" },
         { index: 5, label: "W5", dates: "Jul 6" },
         { index: 6, label: "W6", dates: "Jul 13" },
-        { index: 7, label: "W7", dates: "Jul 20", highlight: true, note: "RELEASE" },
+        { index: 7, label: "W7", dates: "Jul 20", highlight: true, note: "릴리스 (미정)" },
         { index: 8, label: "W8", dates: "Jul 27" },
         { index: 9, label: "W9", dates: "Aug 3" },
         { index: 10, label: "W10", dates: "Aug 10" },
@@ -759,29 +759,75 @@ export const eightyTwoMajorPlanKorean: StrategyPlanData = {
             { weekIndex: 10, intensity: "medium" },
           ],
         },
-        {
-          name: "Spotify 플레이리스트 (선택 사항)",
-          cells: [
-            { weekIndex: 3, intensity: "low" },
-            { weekIndex: 4, intensity: "medium" },
-            { weekIndex: 5, intensity: "high" },
-            { weekIndex: 6, intensity: "high" },
-            { weekIndex: 7, intensity: "high" },
-            { weekIndex: 8, intensity: "medium" },
-            { weekIndex: 9, intensity: "low" },
-          ],
-        },
-        {
-          name: "클리핑 / 시딩 (선택 사항)",
-          cells: [
-            { weekIndex: 6, intensity: "low" },
-            { weekIndex: 7, intensity: "high", milestone: true },
-            { weekIndex: 8, intensity: "high" },
-            { weekIndex: 9, intensity: "medium" },
-          ],
-        },
       ],
-      footnote: "스프린트는 1주 단위로 진행됩니다. CCD는 크리에이티브 성과, MV 조회수 속도, Spotify 월간 리스너 수 변동에 따라 매주 재분배됩니다.",
+      weekBreakdowns: [
+        { weekIndex: 1, title: "CRM + Paid Social 착수", items: [
+          "Laylo를 이메일 및 SMS용으로 구축합니다. 기존 팬 연락처를 가져오고, 환영 플로우 및 첫 번째 방송 템플릿을 제작합니다.",
+          "가벼운 유료 소셜 워밍업: U.S. 유사 타겟 및 관심사 기반으로 2~3개의 상시 콘텐츠 테스트를 진행하여 CPV 및 CPM 기준선을 설정합니다.",
+          "U.S. HQ 팬 페이지 운영진에게 브리핑합니다. 콘텐츠 주기, 소스 에셋, 게시 계획을 확인합니다.",
+        ] },
+        { weekIndex: 2, title: "U.S. HQ 팬 페이지 론칭", items: [
+          "IG + TikTok 팬 페이지를 런칭 게시물과 함께 오픈합니다. 목표 주기: 페이지당 주 5회 IG, 주 7회 TikTok.",
+          "유료 소셜은 상시 테스트를 지속합니다. 첫 번째 크리에이티브 학습 결과를 기록하고 적용합니다.",
+          "Laylo: 첫 번째 예약 방송 (소개 + 팬 참여 CTA).",
+        ] },
+        { weekIndex: 3, title: "상시 빌드", items: [
+          "팬 페이지는 런칭 주기에 맞춰 운영됩니다. 첫 번째 유기적 모멘텀 결과 확인 (게시물당 저장, 공유, 댓글 수).",
+          "유료 소셜: W1-W2 우승작 기반으로 2~3개의 새로운 변형 콘텐츠를 도입합니다. 리타겟팅 풀 시딩을 시작합니다.",
+          "Laylo: 두 번째 방송 (구독자 보상을 위한 기존 카탈로그의 가사 또는 오디오 스니펫).",
+        ] },
+        { weekIndex: 4, title: "카탈로그 활성화", items: [
+          "팬 페이지는 백카탈로그 클립 및 비하인드 스토리 콘텐츠를 활용하여 리타겟팅 풀을 심화시킵니다.",
+          "유료 소셜: 성과가 좋은 크리에이티브를 확장하고, 타겟 오디언스 스택을 정제하며, 성과가 저조한 것을 제거합니다.",
+          "Laylo: 세 번째 브로드캐스트. 세분화 실험 (높은 참여도 vs 신규 구독자).",
+        ] },
+        { weekIndex: 5, title: "티저 웨이브 1 (예시)", items: [
+          "인플루언서 시딩 시작: 10~15명의 미국 중견 크리에이터에게 SIGN Remix 사전 액세스, 브리핑 및 에셋을 제공합니다.",
+          "유료 소셜은 티저 크리에이티브로 전환: 스니펫, MV 티저, 출시 임박 관련 콘텐츠.",
+          "팬 페이지는 티저 공개를 증폭시키며, 콘텐츠 발행 빈도를 높입니다.",
+          "Laylo: 티저 플로우가 구축 및 대기열에 추가되었습니다.",
+        ] },
+        { weekIndex: 6, title: "티저 웨이브 2 (예시)", items: [
+          "인플루언서 웜업이 계속되며, 첫 번째 유기적 크리에이터 게시물이 공개될 수 있습니다.",
+          "유료 소셜은 사전 저장 캠페인을 통해 티저 크리에이티브에 집중합니다.",
+          "팬 페이지는 카운트다운 콘텐츠와 함께 티저 발행 빈도가 최고조에 달합니다.",
+          "Laylo: 티저 플로우가 라이브됩니다 (타임드 이메일 브로드캐스트 + 자동 SMS 알림).",
+        ] },
+        { weekIndex: 7, title: "릴리스 기간 (미정)", items: [
+          "SIGN Remix가 이번 주에 출시된다고 가정하면, 모든 워크스트림에 걸쳐 출시 후 푸시가 활성화됩니다.",
+          "인플루언서 활동이 전면적으로 확대되며, 크리에이터 게시물 대부분이 발매 시점에 집중됩니다.",
+          "유료 소셜 광고는 발매일 크리에이티브 및 세이브 후 유입 퍼널을 중심으로 최대 예산이 투입됩니다.",
+          "Laylo 발매일 진행 사항: SMS 발송 + 이메일 발송 + 세분화된 후속 조치.",
+          "팬 페이지는 MV 클립, 반응 편집 영상, 공유 유도 게시물 등을 높은 빈도로 게시합니다.",
+        ] },
+        { weekIndex: 8, title: "릴리스 후 2주차", items: [
+          "유료 소셜 광고는 높은 예산을 유지하며, 발매 주차 우수 성과 크리에이티브를 기반으로 2~3개의 새로운 크리에이티브 변형을 순환시킵니다.",
+          "인플루언서 게시물이 계속해서 공개됩니다 (2차 시드 크리에이터).",
+          "팬 페이지: 반응 영상, 차트 성과 콘텐츠, 팬 UGC 컴필레이션.",
+          "Laylo: 발매 후 참여 독려 방송 (감사 인사 + 다음 단계 CTA).",
+        ] },
+        { weekIndex: 9, title: "릴리스 후 3주차", items: [
+          "유료 소셜 광고는 지출을 유지하며, 더 깊은 리타겟팅 풀(영상 시청자, IG 프로필 방문자)을 추가합니다.",
+          "인플루언서 활동이 자연스럽게 마무리되며, 성과가 우수한 게시물은 선별적으로 부스팅합니다.",
+          "팬 페이지는 상시 콘텐츠 및 리믹스/MV 대체 편집본 콘텐츠로 전환합니다.",
+        ] },
+        { weekIndex: 10, title: "릴리즈 후 4주차", items: [
+          "유료 소셜 광고: 마지막 집중 주간. 성과가 저조한 크리에이티브는 제외하고, 우수 성과 크리에이티브에 집중합니다.",
+          "팬 페이지는 여전히 효과적인 콘텐츠에 맞춰 게시물을 유지합니다.",
+          "Laylo: 미수신자 대상 재참여 캠페인 방송.",
+        ] },
+        { weekIndex: 11, title: "지속", items: [
+          "유료 소셜 광고는 상시 콘텐츠 및 리타겟팅 중심으로 축소 운영합니다.",
+          "팬 페이지는 주 3~4회 게시물로 축소합니다.",
+          "9월 컴백 준비 시작: 크리에이티브 브리프, 에셋 리스트, 팬 페이지 네트워크 리프레시.",
+        ] },
+        { weekIndex: 12, title: "마무리 및 인계", items: [
+          "각 업무 흐름은 유지보수 모드로 전환됩니다.",
+          "전체 업무 흐름 성과 검토 종합: 크리에이티브 학습, 타겟 인사이트, 팬 페이지 네트워크 현황.",
+          "9월 시즌 티어 결정을 위한 권고안 파일 전달.",
+        ] },
+      ],
+      footnote: "스프린트는 1주 단위로 진행됩니다. 릴리스 날짜는 잠정적이며, 레이블에서 실제 릴리스 주를 확정하면 W7 및 주변 셀이 이동합니다. CCD는 크리에이티브 성과, MV 조회수 속도, Spotify 월간 리스너 이동에 따라 주간 재할당됩니다.",
     },
 
     // 13. Final Pricing Sheets
