@@ -18,24 +18,26 @@ export function PlanTimeline({ section }: { section: TimelineSection }) {
 
         {/* Desktop / tablet: scrollable Gantt grid */}
         <div className="overflow-x-auto -mx-6 px-6 md:mx-0 md:px-0">
-          <div className="min-w-[760px]">
+          <div className="min-w-[920px]">
             {/* Header row: workstream label cell + week columns */}
             <div
-              className="grid items-end gap-x-px text-[10px] font-mono tracking-[0.12em] uppercase text-text-muted/70"
-              style={{ gridTemplateColumns: `180px repeat(${weekCount}, minmax(60px, 1fr))` }}
+              className="grid items-end gap-x-px text-[10px] font-mono tracking-[0.08em] uppercase text-text-muted/70"
+              style={{ gridTemplateColumns: `160px repeat(${weekCount}, minmax(60px, 1fr))` }}
             >
               <div className="pb-3"></div>
               {section.weeks.map((w) => (
                 <div
                   key={w.index}
-                  className={`pb-3 px-2 text-center border-b ${
+                  className={`pb-3 px-1 text-center border-b overflow-hidden ${
                     w.highlight ? "border-accent text-accent" : "border-text-muted/15"
                   }`}
                 >
                   <div className={`font-bold ${w.highlight ? "text-accent" : "text-text-primary"}`}>{w.label}</div>
-                  <div className="text-[9px] tracking-[0.08em] text-text-muted/60 mt-0.5">{w.dates}</div>
+                  <div className="text-[9px] tracking-[0.04em] text-text-muted/60 mt-0.5 truncate">{w.dates}</div>
                   {w.note && (
-                    <div className="text-[9px] font-bold tracking-[0.18em] text-accent mt-1">{w.note}</div>
+                    <div className="text-[8px] font-bold tracking-[0.04em] text-accent mt-1 leading-tight break-words">
+                      {w.note}
+                    </div>
                   )}
                 </div>
               ))}
@@ -50,11 +52,11 @@ export function PlanTimeline({ section }: { section: TimelineSection }) {
                 viewport={{ once: true, margin: "-60px" }}
                 transition={{ duration: 0.4, delay: ri * 0.05 }}
                 className="grid items-stretch gap-x-px"
-                style={{ gridTemplateColumns: `180px repeat(${weekCount}, minmax(60px, 1fr))` }}
+                style={{ gridTemplateColumns: `160px repeat(${weekCount}, minmax(60px, 1fr))` }}
               >
                 {/* Workstream name */}
-                <div className="py-3 pr-3 text-[12px] md:text-[13px] font-mono tracking-[0.05em] text-text-primary border-b border-text-muted/10 flex items-center">
-                  {ws.name}
+                <div className="py-3 pr-3 text-[12px] md:text-[13px] font-mono tracking-[0.02em] text-text-primary border-b border-text-muted/10 flex items-center min-w-0">
+                  <span className="truncate">{ws.name}</span>
                 </div>
                 {/* Week cells */}
                 {section.weeks.map((w) => {
@@ -69,15 +71,15 @@ export function PlanTimeline({ section }: { section: TimelineSection }) {
                   return (
                     <div
                       key={w.index}
-                      className={`py-3 border-b border-text-muted/10 ${w.highlight ? "bg-accent/[0.04]" : ""}`}
+                      className={`py-3 border-b border-text-muted/10 min-w-0 ${w.highlight ? "bg-accent/[0.04]" : ""}`}
                     >
                       <div
                         className={`h-7 ${intensityClass} ${
                           cell?.milestone ? "ring-2 ring-accent" : ""
-                        } flex items-center justify-center px-1`}
+                        } flex items-center justify-center px-1 overflow-hidden`}
                       >
                         {cell?.label && (
-                          <span className="text-[9px] font-mono tracking-[0.12em] uppercase text-white font-bold truncate">
+                          <span className="block w-full text-[8px] font-mono tracking-[0.02em] uppercase text-white font-bold truncate text-center">
                             {cell.label}
                           </span>
                         )}
