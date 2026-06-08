@@ -675,11 +675,120 @@ export const eightyTwoMajorPlanKorean: StrategyPlanData = {
       footnote: "단계별 예산은 방향성을 제시하며, CCD는 주간 성과 신호에 따라 티어 내 항목 간 예산을 재분배합니다.",
     },
 
-    // 12. Final Pricing Sheets
+    // 12. Execution Timeline
+    // ===================================================================
+    {
+      type: "timeline",
+      number: "12",
+      navLabel: "일정",
+      title: "실행 일정",
+      intro: "주차별 배포 일정. 스프린트는 1주 단위로 진행됩니다. Laylo CRM 및 초기 Paid Social은 6월 8일 주에 시작됩니다. U.S. HQ Fan Pages는 6월 15일 주에 론칭됩니다. SIGN Remix는 7월 20일 주에 발매되며, 2주간의 티저 기간과 4주간의 발매 후 푸시를 중심으로 진행됩니다.",
+      weeks: [
+        { index: 1, label: "W1", dates: "Jun 8" },
+        { index: 2, label: "W2", dates: "Jun 15" },
+        { index: 3, label: "W3", dates: "Jun 22" },
+        { index: 4, label: "W4", dates: "Jun 29" },
+        { index: 5, label: "W5", dates: "Jul 6" },
+        { index: 6, label: "W6", dates: "Jul 13" },
+        { index: 7, label: "W7", dates: "Jul 20", highlight: true, note: "RELEASE" },
+        { index: 8, label: "W8", dates: "Jul 27" },
+        { index: 9, label: "W9", dates: "Aug 3" },
+        { index: 10, label: "W10", dates: "Aug 10" },
+        { index: 11, label: "W11", dates: "Aug 17" },
+        { index: 12, label: "W12", dates: "Aug 24" },
+      ],
+      workstreams: [
+        {
+          name: "Laylo CRM (이메일 + SMS)",
+          cells: [
+            { weekIndex: 1, intensity: "high", label: "BUILD" },
+            { weekIndex: 2, intensity: "medium" },
+            { weekIndex: 3, intensity: "medium" },
+            { weekIndex: 4, intensity: "medium" },
+            { weekIndex: 5, intensity: "medium" },
+            { weekIndex: 6, intensity: "high", label: "TEASER FLOW" },
+            { weekIndex: 7, intensity: "high", label: "RELEASE FLOW" },
+            { weekIndex: 8, intensity: "medium" },
+            { weekIndex: 9, intensity: "medium" },
+            { weekIndex: 10, intensity: "medium" },
+            { weekIndex: 11, intensity: "low" },
+            { weekIndex: 12, intensity: "low" },
+          ],
+        },
+        {
+          name: "U.S. HQ 팬 페이지",
+          cells: [
+            { weekIndex: 2, intensity: "high", label: "LAUNCH" },
+            { weekIndex: 3, intensity: "medium" },
+            { weekIndex: 4, intensity: "medium" },
+            { weekIndex: 5, intensity: "medium" },
+            { weekIndex: 6, intensity: "high" },
+            { weekIndex: 7, intensity: "high" },
+            { weekIndex: 8, intensity: "high" },
+            { weekIndex: 9, intensity: "medium" },
+            { weekIndex: 10, intensity: "medium" },
+            { weekIndex: 11, intensity: "medium" },
+            { weekIndex: 12, intensity: "medium" },
+          ],
+        },
+        {
+          name: "Paid Social (IG + TikTok + X)",
+          cells: [
+            { weekIndex: 1, intensity: "medium", label: "WARM-UP" },
+            { weekIndex: 2, intensity: "medium" },
+            { weekIndex: 3, intensity: "medium" },
+            { weekIndex: 4, intensity: "medium" },
+            { weekIndex: 5, intensity: "high", label: "TEASER" },
+            { weekIndex: 6, intensity: "high" },
+            { weekIndex: 7, intensity: "high", milestone: true, label: "RELEASE" },
+            { weekIndex: 8, intensity: "high" },
+            { weekIndex: 9, intensity: "high" },
+            { weekIndex: 10, intensity: "high" },
+            { weekIndex: 11, intensity: "medium" },
+            { weekIndex: 12, intensity: "low" },
+          ],
+        },
+        {
+          name: "인플루언서",
+          cells: [
+            { weekIndex: 5, intensity: "medium", label: "SEEDING" },
+            { weekIndex: 6, intensity: "medium" },
+            { weekIndex: 7, intensity: "high", label: "FULL" },
+            { weekIndex: 8, intensity: "high" },
+            { weekIndex: 9, intensity: "high" },
+            { weekIndex: 10, intensity: "medium" },
+          ],
+        },
+        {
+          name: "Spotify 플레이리스트 (선택 사항)",
+          cells: [
+            { weekIndex: 3, intensity: "low" },
+            { weekIndex: 4, intensity: "medium" },
+            { weekIndex: 5, intensity: "high" },
+            { weekIndex: 6, intensity: "high" },
+            { weekIndex: 7, intensity: "high" },
+            { weekIndex: 8, intensity: "medium" },
+            { weekIndex: 9, intensity: "low" },
+          ],
+        },
+        {
+          name: "클리핑 / 시딩 (선택 사항)",
+          cells: [
+            { weekIndex: 6, intensity: "low" },
+            { weekIndex: 7, intensity: "high", milestone: true },
+            { weekIndex: 8, intensity: "high" },
+            { weekIndex: 9, intensity: "medium" },
+          ],
+        },
+      ],
+      footnote: "스프린트는 1주 단위로 진행됩니다. CCD는 크리에이티브 성과, MV 조회수 속도, Spotify 월간 리스너 수 변동에 따라 매주 재분배됩니다.",
+    },
+
+    // 13. Final Pricing Sheets
     // ===================================================================
     {
       type: "pricing",
-      number: "12",
+      number: "13",
       navLabel: "가격 책정",
       title: "최종 가격 시트",
       intro: "SIGN Remix 사이클 (2026년 6월 ~ 8월)에 대한 단일 통합 예산. CCD 리테이너는 예산에 포함됩니다. 9월 컴백은 동일한 구조로 새로운 예산을 승인합니다.",
