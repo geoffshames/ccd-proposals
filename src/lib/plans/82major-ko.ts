@@ -699,7 +699,7 @@ export const eightyTwoMajorPlanKorean: StrategyPlanData = {
       ],
       workstreams: [
         {
-          name: "Laylo CRM (이메일 + SMS)",
+          name: "Laylo CRM",
           cells: [
             { weekIndex: 1, intensity: "high", label: "BUILD" },
             { weekIndex: 2, intensity: "medium" },
@@ -732,7 +732,7 @@ export const eightyTwoMajorPlanKorean: StrategyPlanData = {
           ],
         },
         {
-          name: "Paid Social (IG + TikTok + X)",
+          name: "Paid Social",
           cells: [
             { weekIndex: 1, intensity: "medium", label: "WARM-UP" },
             { weekIndex: 2, intensity: "medium" },
