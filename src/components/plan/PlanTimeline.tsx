@@ -74,9 +74,7 @@ export function PlanTimeline({ section }: { section: TimelineSection }) {
                       className={`py-3 border-b border-text-muted/10 min-w-0 ${w.highlight ? "bg-accent/[0.04]" : ""}`}
                     >
                       <div
-                        className={`h-7 ${intensityClass} ${
-                          cell?.milestone ? "ring-2 ring-accent" : ""
-                        } flex items-center justify-center px-1 overflow-hidden`}
+                        className={`h-7 ${intensityClass} flex items-center justify-center px-1 overflow-hidden`}
                       >
                         {cell?.label && (
                           <span className="block w-full text-[8px] font-mono tracking-[0.02em] uppercase text-white font-bold truncate text-center">
