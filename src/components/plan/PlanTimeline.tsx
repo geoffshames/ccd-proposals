@@ -16,9 +16,17 @@ export function PlanTimeline({ section }: { section: TimelineSection }) {
       <div className="max-w-7xl mx-auto">
         <PlanSectionHeader number={section.number} title={section.title} intro={section.intro} />
 
+        {/* Mobile scroll hint */}
+        <div className="md:hidden flex items-center gap-2 mb-3 text-[10px] font-mono tracking-[0.2em] uppercase text-accent/80">
+          <span aria-hidden="true">←</span>
+          <span>Swipe to see full timeline</span>
+          <span aria-hidden="true">→</span>
+        </div>
+
         {/* Desktop / tablet: scrollable Gantt grid */}
-        <div className="overflow-x-auto -mx-6 px-6 md:mx-0 md:px-0">
-          <div className="min-w-[920px]">
+        <div className="relative">
+          <div className="overflow-x-auto -mx-6 px-6 md:mx-0 md:px-0">
+            <div className="min-w-[920px]">
             {/* Header row: workstream label cell + week columns */}
             <div
               className="grid items-end gap-x-px text-[10px] font-mono tracking-[0.08em] uppercase text-text-muted/70"
@@ -88,22 +96,28 @@ export function PlanTimeline({ section }: { section: TimelineSection }) {
               </motion.div>
             ))}
 
-            {/* Intensity legend */}
-            <div className="mt-6 flex items-center gap-5 text-[10px] font-mono tracking-[0.15em] uppercase text-text-muted/60">
-              <div className="flex items-center gap-2">
-                <span className="w-5 h-3 bg-accent/25 inline-block"></span>
-                <span>Light</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <span className="w-5 h-3 bg-accent/55 inline-block"></span>
-                <span>Active</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <span className="w-5 h-3 bg-accent inline-block"></span>
-                <span>Heavy</span>
+              {/* Intensity legend */}
+              <div className="mt-6 flex items-center gap-5 text-[10px] font-mono tracking-[0.15em] uppercase text-text-muted/60">
+                <div className="flex items-center gap-2">
+                  <span className="w-5 h-3 bg-accent/25 inline-block"></span>
+                  <span>Light</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <span className="w-5 h-3 bg-accent/55 inline-block"></span>
+                  <span>Active</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <span className="w-5 h-3 bg-accent inline-block"></span>
+                  <span>Heavy</span>
+                </div>
               </div>
             </div>
           </div>
+          {/* Right-edge fade overlay, mobile only, signals more content */}
+          <div
+            aria-hidden="true"
+            className="md:hidden pointer-events-none absolute top-0 right-0 h-full w-12 bg-gradient-to-l from-bg-primary to-transparent"
+          ></div>
         </div>
 
         {section.weekBreakdowns && section.weekBreakdowns.length > 0 && (
