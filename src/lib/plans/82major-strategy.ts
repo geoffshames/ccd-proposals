@@ -659,9 +659,11 @@ export const eightyTwoMajorPlanStrategy: StrategyPlanData = {
         { weekIndex: 11, title: "Sustain", items: ["Paid Social steps down to evergreen + retargeting only.",
           "Fan pages drop to 3 to 4 posts per week.",
           "Begin prep for September comeback: creative briefs, asset lists, fan page network refresh."] },
-        { weekIndex: 12, title: "Wind-down + handoff", items: ["Workstreams in maintenance mode.",
+        { weekIndex: 12, title: "Pre-Comeback", items: [
+          "Lock the September comeback plan. Creative briefs finalized, asset lists confirmed, fan page network refreshed for the next cycle.",
           "Performance review compiled across all workstreams: creative learnings, audience insights, fan page network health.",
-          "Recommendations file delivered to inform the September cycle's tier."] },
+          "Recommendations file delivered to inform the September cycle's tier.",
+        ] },
       ],
       footnote: "Sprints run in one-week cycles. Release date is tentative; W7 and the cells around it shift when the label confirms the actual release week. CCD reallocates weekly based on creative performance, MV view velocity, and Spotify monthly listener movement.",
     },
