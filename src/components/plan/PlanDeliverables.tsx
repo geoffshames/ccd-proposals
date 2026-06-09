@@ -10,19 +10,27 @@ import type {
 
 function EmbedCard({ ex }: { ex: DeliverableExample }) {
   const [loaded, setLoaded] = useState(false);
-  const vertical = ex.platform !== "youtube";
-  const src =
-    ex.platform === "tiktok"
-      ? `https://www.tiktok.com/embed/v2/${ex.id}`
-      : `https://www.youtube.com/embed/${ex.id}`;
+  const isTikTok = ex.platform === "tiktok";
+  const isShort = ex.platform === "youtube-short";
+  const src = isTikTok
+    ? `https://www.tiktok.com/embed/v2/${ex.id}`
+    : `https://www.youtube.com/embed/${ex.id}`;
+
+  // TikTok's v2 embed has a hard ~325px min-width and adds its own chrome
+  // (author bar + caption), so it gets a fixed-height frame at native width.
+  // YouTube embeds scale freely, so they keep pure aspect-ratio boxes.
+  const cardWidth = isTikTok ? "w-[325px]" : isShort ? "w-[230px]" : "w-[300px]";
+  const frameClass = isTikTok
+    ? "h-[575px] relative"
+    : isShort
+      ? "aspect-[9/16] relative"
+      : "aspect-video relative";
 
   return (
     <div
-      className={`flex-shrink-0 border border-text-muted/15 bg-bg-card overflow-hidden ${
-        vertical ? "w-[230px]" : "w-[300px]"
-      }`}
+      className={`flex-shrink-0 border border-text-muted/15 bg-bg-card overflow-hidden ${cardWidth}`}
     >
-      <div className={vertical ? "aspect-[9/16] relative" : "aspect-video relative"}>
+      <div className={frameClass}>
         {loaded ? (
           <iframe
             src={src}
@@ -30,6 +38,7 @@ function EmbedCard({ ex }: { ex: DeliverableExample }) {
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
             loading="lazy"
+            scrolling="no"
           />
         ) : (
           <button
