@@ -78,15 +78,11 @@ function ItemCard({
   checked,
   onToggle,
   idx,
-  hookLabel = "Hook",
-  ctaLabel = "CTA",
 }: {
   item: DeliverableItem;
   checked: boolean;
   onToggle: () => void;
   idx: number;
-  hookLabel?: string;
-  ctaLabel?: string;
 }) {
   return (
     <motion.div
@@ -145,22 +141,20 @@ function ItemCard({
               )}
             </div>
 
-            {item.platforms.length > 0 && (
-              <div className="mt-2 text-[11px] font-mono tracking-[0.1em] uppercase text-text-muted/60">
-                {item.platforms.join(" / ")}
-              </div>
-            )}
+            <div className="mt-2 text-[11px] font-mono tracking-[0.1em] uppercase text-text-muted/60">
+              {item.platforms.join(" / ")}
+            </div>
 
             <div className="mt-5 grid grid-cols-1 md:grid-cols-2 gap-5">
               <div>
                 <div className="text-[10px] font-mono tracking-[0.22em] uppercase text-text-muted/60 mb-2">
-                  {hookLabel}
+                  Hook
                 </div>
                 <p className="text-[14px] text-text-primary/85 leading-relaxed">{item.hook}</p>
               </div>
               <div>
                 <div className="text-[10px] font-mono tracking-[0.22em] uppercase text-text-muted/60 mb-2">
-                  {ctaLabel}
+                  CTA
                 </div>
                 <p className="text-[14px] text-text-primary/85 leading-relaxed">{item.cta}</p>
               </div>
@@ -196,25 +190,68 @@ function ItemCard({
   );
 }
 
+// Shared checklist state: every viewer of the page reads and writes the same
+// rows in Supabase (anon key + RLS scoped to this table), so the client team
+// and CCD see one source of truth instead of per-browser localStorage.
+const SB_URL = "https://hcyjlwbmrqcgbbizirzl.supabase.co";
+const SB_KEY = "sb_publishable_E1PXDuHKsBxmfbGfeYjbAw_63kK0p1y";
+const SB_TABLE = "proposal_checklist_state";
+const POLL_MS = 12000;
+
+async function fetchSharedState(storageKey: string): Promise<Record<string, boolean> | null> {
+  try {
+    const res = await fetch(
+      `${SB_URL}/rest/v1/${SB_TABLE}?storage_key=eq.${encodeURIComponent(storageKey)}&select=item_id,checked`,
+      { headers: { apikey: SB_KEY, Authorization: `Bearer ${SB_KEY}` } }
+    );
+    if (!res.ok) return null;
+    const rows: { item_id: string; checked: boolean }[] = await res.json();
+    const map: Record<string, boolean> = {};
+    for (const r of rows) map[r.item_id] = r.checked;
+    return map;
+  } catch {
+    return null;
+  }
+}
+
+async function pushSharedState(storageKey: string, itemId: string, checked: boolean) {
+  try {
+    await fetch(`${SB_URL}/rest/v1/${SB_TABLE}?on_conflict=storage_key,item_id`, {
+      method: "POST",
+      headers: {
+        apikey: SB_KEY,
+        Authorization: `Bearer ${SB_KEY}`,
+        "Content-Type": "application/json",
+        Prefer: "resolution=merge-duplicates",
+      },
+      body: JSON.stringify({
+        storage_key: storageKey,
+        item_id: itemId,
+        checked,
+        updated_at: new Date().toISOString(),
+      }),
+    });
+  } catch {}
+}
+
 export function PlanDeliverables({ section }: { section: DeliverablesSection }) {
   const storageKey = section.storageKey || "ccd-deliverables";
   const [checked, setChecked] = useState<Record<string, boolean>>({});
-  const [hydrated, setHydrated] = useState(false);
 
+  // Initial load + poll so concurrent viewers converge without a refresh.
   useEffect(() => {
-    try {
-      const raw = window.localStorage.getItem(storageKey);
-      if (raw) setChecked(JSON.parse(raw));
-    } catch {}
-    setHydrated(true);
+    let cancelled = false;
+    const sync = async () => {
+      const remote = await fetchSharedState(storageKey);
+      if (remote && !cancelled) setChecked(remote);
+    };
+    sync();
+    const t = setInterval(sync, POLL_MS);
+    return () => {
+      cancelled = true;
+      clearInterval(t);
+    };
   }, [storageKey]);
-
-  useEffect(() => {
-    if (!hydrated) return;
-    try {
-      window.localStorage.setItem(storageKey, JSON.stringify(checked));
-    } catch {}
-  }, [checked, hydrated, storageKey]);
 
   const allItems = section.groups.flatMap((g) => g.items);
   const total = allItems.length;
@@ -269,12 +306,12 @@ export function PlanDeliverables({ section }: { section: DeliverablesSection }) 
                     key={item.id}
                     item={item}
                     idx={ii}
-                    hookLabel={section.hookLabel}
-                    ctaLabel={section.ctaLabel}
                     checked={!!checked[item.id]}
-                    onToggle={() =>
-                      setChecked((c) => ({ ...c, [item.id]: !c[item.id] }))
-                    }
+                    onToggle={() => {
+                      const next = !checked[item.id];
+                      setChecked((c) => ({ ...c, [item.id]: next }));
+                      pushSharedState(storageKey, item.id, next);
+                    }}
                   />
                 ))}
               </div>
