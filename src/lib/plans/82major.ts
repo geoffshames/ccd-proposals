@@ -641,7 +641,7 @@ export const eightyTwoMajorPlan: StrategyPlanData = {
           budget: "~$12,000",
           tactics: [
             "Paid Social test phase: evergreen creative against U.S. lookalikes + interest stacks",
-            "U.S. HQ Fan Page network launch on IG + TikTok (5x/week IG, 7x/week TikTok per page)",
+            "U.S. HQ Fan Page network launch on IG + TikTok (~3 per week IG, ~4 per week TikTok per page)",
             "Influencer seeding: 10 to 15 mid-tier U.S. creators",
             "Laylo: stand up Email + SMS infrastructure, first broadcasts",
           ],
@@ -661,11 +661,11 @@ export const eightyTwoMajorPlan: StrategyPlanData = {
         {
           label: "Sustain + Pre-Comeback",
           window: "August 2026 / ~4 weeks",
-          focus: "Paid Social maintained at strength through mid-August, then stepped down to evergreen + retargeting. Fan Pages keep cadence on top-performing themes, easing to 3-4 posts per week in the final two weeks. Final weeks pivot to prep for the September Hello82 physical release and the October tour.",
+          focus: "Paid Social maintained at strength through mid-August, then stepped down to evergreen + retargeting. Fan Pages keep cadence on top-performing themes, easing to 2 to 3 posts per week per page in the final two weeks. Final weeks pivot to prep for the September Hello82 physical release and the October tour.",
           budget: "~$18,000",
           tactics: [
             "Paid Social: heavy through W10, then evergreen + retargeting only",
-            "Fan Pages: full cadence W7 to W10, easing to 3-4 posts per week in W11-W12",
+            "Fan Pages: full cadence W7 to W10, easing to 2 to 3 posts per week per page in W11-W12",
             "Laylo: re-engagement broadcast targeting non-openers",
             "September Hello82 + October tour briefs, asset lists, and fan page network refresh",
           ],
@@ -765,7 +765,7 @@ export const eightyTwoMajorPlan: StrategyPlanData = {
           "Confirm influencer shortlist and shipment logistics for the 7 to 10 day kickoff.",
         ] },
         { weekIndex: 2, title: "Fan Pages launch + Influencer kickoff", items: [
-          "U.S. HQ Fan Pages go live on IG + TikTok with launch posts. Target cadence: 5x per week IG, 7x per week TikTok per page.",
+          "U.S. HQ Fan Pages go live on IG + TikTok with launch posts. Target cadence: ~3 per week IG, ~4 per week TikTok per page (range flexes with partner-operator capacity).",
           "Influencer goes live: 10 to 15 mid-tier U.S. creators receive briefs and assets.",
           "Paid Social continues test mode. First round of creative learnings logged and applied.",
           "Laylo: first scheduled broadcast (introduction + fan rally CTA).",
@@ -815,7 +815,7 @@ export const eightyTwoMajorPlan: StrategyPlanData = {
         ] },
         { weekIndex: 11, title: "Pre-comeback warm-up", items: [
           "Paid Social steps to evergreen + retargeting only.",
-          "Fan pages drop slightly to 3 to 4 posts per week.",
+          "Fan pages drop slightly to 2 to 3 posts per week per page.",
           "Begin prep for September Hello82 physical: creative briefs, asset lists, fan page network refresh.",
         ] },
         { weekIndex: 12, title: "Pre-Comeback", items: [
