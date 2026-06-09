@@ -65,7 +65,7 @@ export const eightyTwoMajorDeliverablesKorean: StrategyPlanData = {
       number: "02",
       navLabel: "원칙",
       title: "크리에이티브 원칙",
-      intro: "이 리스트의 모든 에셋은 네 가지 규칙에 의해 관리됩니다. 이는 최고 성과를 보인 경쟁사 게시물(TWS, BOYNEXTDOOR, RIIZE, ZEROBASEONE, Stray Kids, ATEEZ, LE SSERAFIM, KATSEYE, Tommy Richman)의 프레임 단위 분석과 현재 미국 플랫폼 가이드라인에서 도출되었습니다.",
+      intro: "이 리스트의 모든 에셋은 네 가지 규칙에 의해 관리됩니다. 이는 최고 성과를 보인 경쟁사 게시물(TWS, BOYNEXTDOOR, RIIZE, ZEROBASEONE, Stray Kids, ATEEZ, LE SSERAFIM, KATSEYE, FIFTY FIFTY, Jung Kook)의 프레임 단위 분석과 현재 미국 플랫폼 가이드라인에서 도출되었습니다.",
       subBlocks: [
         {
           label: "A",
@@ -86,7 +86,7 @@ export const eightyTwoMajorDeliverablesKorean: StrategyPlanData = {
           label: "B",
           title: "유료 광고에 로파이 비트 폴리시 적용",
           objective: "레이블 광고처럼 보이지 않고 네이티브처럼 보이는 크리에이티브에 예산 집행",
-          strategy: "연습실 및 셀피 스타일 콘텐츠는 유료 광고 집행 시에도 정교하게 제작된 크리에이티브보다 꾸준히 높은 성과를 보입니다. Stray Kids의 댄스 연습 하이라이트(조회수 1,460만, 참여율 17%)와 Tommy Richman의 핸드헬드 스튜디오 클립은 피드 환경에서 자체 제작한 정교한 MV 편집본보다 더 나은 성과를 냅니다. MV는 소스 라이브러리이며, 성공적인 유료 광고 소재는 대부분 휴대폰으로 촬영된 것처럼 보일 것입니다.",
+          strategy: "연습실 및 셀피 스타일 콘텐츠는 유료 광고 집행 시에도 정교하게 제작된 크리에이티브보다 꾸준히 높은 성과를 보입니다. Stray Kids의 댄스 연습 하이라이트(조회수 1,460만, 참여율 17%)와 RIIZE의 고정 와이드샷 연습실 영상은 피드 환경에서 자체 제작한 정교한 MV 편집본보다 더 나은 성과를 냅니다. MV는 소스 라이브러리이며, 성공적인 유료 광고 소재는 대부분 휴대폰으로 촬영된 것처럼 보일 것입니다.",
           components: {
             heading: "시사점",
             items: [
@@ -249,7 +249,7 @@ export const eightyTwoMajorDeliverablesKorean: StrategyPlanData = {
               duration: "15-30초 (비주얼라이저 최대 60초)",
               platforms: ["TikTok 사운드 페이지", "YouTube", "IG Reels"],
               variants: "스피드업 + 슬로우 + 비주얼라이저",
-              hook: "대체 질감 오디오는 자체적인 발견 표면입니다: Tommy Richman의 로파이 VHS 버전은 TikTok에서 원본 사운드보다 약 7대 1의 비율로 더 많은 콘텐츠를 생성했으며, DSP에서는 원본에 대한 스트림이 누적되었습니다. 질감 있는 비주얼라이저가 포함된 SIGN 스피드업 버전은 편집자 및 팬 계정에 두 번째 사운드를 제공하고, 비주얼라이저를 통해 저렴한 광고 단위를 확보할 수 있게 합니다.",
+              hook: "대체 질감 오디오는 자체적인 발견 표면이며, 그 대표 사례는 K-pop에 있습니다: FIFTY FIFTY 'Cupid (Twin Ver.)' 스피드업 버전은 TikTok의 기본 사운드가 되어 곡의 미국 시장 돌파를 이끌었고, DSP에서는 원본에 대한 스트림이 누적되었습니다. 질감 있는 비주얼라이저가 포함된 SIGN 스피드업 버전은 편집자 및 팬 계정에 두 번째 사운드를 제공하고, 비주얼라이저를 통해 저렴한 광고 단위를 확보할 수 있게 합니다.",
               cta: "비주얼라이저 엔드 프레임: 'SIGN, 모든 플랫폼에서 발매' + DSP 로고. 스피드업 사운드 페이지 자체가 크리에이터를 위한 CTA이며, 2-3개의 공식 클립을 미리 배치하여 빈 공간이 되지 않도록 합니다.",
               notes: [
                 "비주얼라이저는 촬영이 아닌 디자인 결과물입니다: 커버 아트 + 키네틱 가사 타이포그래피 + 질감",
@@ -258,17 +258,10 @@ export const eightyTwoMajorDeliverablesKorean: StrategyPlanData = {
               examples: [
                 {
                   platform: "youtube",
-                  id: "qvF5iq_s01Q",
-                  artist: "Tommy Richman",
-                  label: "MILLION DOLLAR BABY (VHS) 비주얼라이저",
-                  takeaway: "대체 버전 비주얼라이저는 두 번째 사운드에 공식적이고 임베드 가능한 홈을 제공합니다.",
-                },
-                {
-                  platform: "tiktok",
-                  id: "7363826325108411690",
-                  artist: "Tommy Richman",
-                  label: "핸드헬드 스튜디오 스니펫",
-                  takeaway: "날것의 스튜디오 에너지, 1초에 팔세토 훅; 비정제 벤치마크입니다.",
+                  id: "Rxv4IPW1Y2o",
+                  artist: "FIFTY FIFTY",
+                  label: "Cupid (Twin Ver.) 스피드업 공식 오디오",
+                  takeaway: "공식 스피드업 업로드는 두 번째 사운드에 임베드 가능한 공식 홈을 제공합니다. 미국 TikTok 흐름을 이끈 것은 원본이 아닌 스피드업 사운드였습니다.",
                 },
               ],
             },
@@ -417,7 +410,8 @@ export const eightyTwoMajorDeliverablesKorean: StrategyPlanData = {
               hook: "프레임 안에 인지도가 높은 얼굴이 등장하면 즉각적으로 차가운 관객의 장벽을 허물 수 있습니다. ATEEZ x j-hope은 두 팬덤을 결합한 최고의 사례이며(26.5M 조회수), KATSEYE x Jessica Alba는 K-pop 팬이 아닌 대중을 위한 미국 셀러브리티 버전을 보여줍니다. 82MAJOR의 규모에서는 K-pop과 인접한 크리에이터, 레이블 동료, 또는 이미 선정된 크리에이터 파트너들이 각자의 페이지에서 SIGN 챌린지를 수행하는 것이 핵심입니다.",
               cta: "참여 + 프로필 방문 CTA. 각 콜라보는 파트너의 핸들에 Spark 부스트 가능한 에셋으로도 활용되며, 이는 얼굴뿐만 아니라 그들의 오디언스 그래프를 확보하는 효과를 가져옵니다.",
               notes: [
-                "새로운 예산 항목 불필요: 이미 진행 중인 크리에이터 프로그램을 통해 진행",
+                "파트너 섭외는 가능한 한 레이블 측에서 진행합니다: 레이블 동료, Kakao 소속 아티스트, 아이돌 간의 관계는 Kakao가 열 수 있는 영역이며, 크리에이터급 파트너는 이미 진행 중인 크리에이터 프로그램을 통해 진행됩니다.",
+                "가장 부담이 적은 형식: 파트너가 자신의 핸들에서 SIGN 챌린지에 대한 TikTok 리액션 또는 스티치 게시물을 올리는 방식입니다. 합동 촬영 일정 없이 동일한 효과를 얻습니다.",
                 "날짜가 확정되는 9월 컴백 시점에 맞춰 셀러브리티급 지원을 진행합니다.",
               ],
               examples: [
@@ -445,18 +439,18 @@ export const eightyTwoMajorDeliverablesKorean: StrategyPlanData = {
               duration: "10-15초",
               platforms: ["IG Reels", "TikTok 인스트림 광고", "Meta 피드"],
               variants: "2개의 훅",
-              hook: "SIGN의 레인은 실제 안무가 포함된 멜로딕 R&B로, Usher / Chris Brown의 계보를 잇습니다. Destin Conrad의 choreo-in-public 형식은 미국 R&B 관객들이 아이돌의 세련됨보다는 문화(스트릿웨어, 골든 아워, 핸드헬드)로 스타일링된 댄스 중심의 크리에이티브에 반응한다는 것을 증명합니다. 이 컷은 82MAJOR의 안무를 R&B 관심 스택을 위한 해당 비주얼 언어로 재평가하고 재구성합니다.",
-              cta: "레인 프레이밍과 함께하는 지금 듣기: 'Usher와 K-pop이 그룹을 결성했다면' 스타일 텍스트 훅, DSP 엔드 카드. Meta에서 Destin Conrad, Brent Faiyaz, Kehlani, Chris Brown에 관심 있는 오디언스를 타겟팅합니다.",
+              hook: "SIGN의 레인은 실제 안무가 포함된 멜로딕 R&B로, Usher / Chris Brown의 계보를 잇습니다. Jung Kook의 'Standing Next to You'는 아이돌의 세련됨이 아닌 R&B 문화(스트릿웨어, 따뜻한 색보정, 핸드헬드)로 스타일링된 안무 중심 크리에이티브를 앞세울 때 K-pop 아티스트가 미국에서 이 레인을 차지할 수 있다는 것을 증명한 사례이며, USHER 리믹스 퍼포먼스 비디오는 그 계보를 그대로 보여줍니다. 이 컷은 82MAJOR의 안무를 R&B 관심 스택을 위한 해당 비주얼 언어로 재평가하고 재구성합니다.",
+              cta: "레인 프레이밍과 함께하는 지금 듣기: 'Usher와 K-pop이 그룹을 결성했다면' 스타일 텍스트 훅, DSP 엔드 카드. Meta에서 Usher, Chris Brown, Brent Faiyaz, Kehlani에 관심 있는 오디언스를 타겟팅합니다.",
               notes: [
                 "이것은 R&B 포지셔닝이 K-pop 그래프 외부에서 전환되는지 테스트하는 에셋이며, K-pop 스타일링 노트로부터 보호해야 합니다.",
               ],
               examples: [
                 {
                   platform: "youtube",
-                  id: "8j3xtd78Lxw",
-                  artist: "Destin Conrad",
-                  label: "KISSING IN PUBLIC / 안무 중심 R&B 비디오",
-                  takeaway: "아이돌의 세련됨이 아닌 문화로 스타일링된 댄스 중심 R&B; SIGN의 레인을 위한 미국 비주얼 언어입니다.",
+                  id: "O1d2DYZZrek",
+                  artist: "Jung Kook x USHER",
+                  label: "Standing Next to You (USHER Remix) 퍼포먼스 비디오",
+                  takeaway: "Usher가 프레임 안에 함께하는, 문화로 스타일링된 안무 중심 R&B: K-pop 아티스트가 SIGN의 미국 레인을 차지한 최고 사례입니다.",
                 },
               ],
             },
@@ -559,6 +553,83 @@ export const eightyTwoMajorDeliverablesKorean: StrategyPlanData = {
         },
       ],
       footnote: "본 목록은 CCD 기반 유료 광고 크리에이티브에만 해당됩니다. UGC 및 오가닉 콘텐츠는 합의된 크리에이티브 분할에 따라 그룹의 기존 콘텐츠 및 소셜 캘린더가 공유된 후 별도로 범위가 지정됩니다.",
+    },
+
+    // ===================================================================
+    // 06. Advertising Access Checklist
+    // ===================================================================
+    {
+      type: "deliverables",
+      number: "06",
+      navLabel: "Access",
+      title: "광고 액세스 체크리스트",
+      intro: "유료 광고 집행 전에 CCD가 필요로 하는 액세스 목록입니다. 권한이 부여되는 대로 항목을 체크해 주세요. 대부분 Kakao 측에서 몇 분이면 처리 가능하며, 전체 목록은 하루 안에 완료할 수 있습니다. 광고 집행은 CCD 자체 광고 계정에서 운영됩니다.",
+      storageKey: "82major-sign-access",
+      hookLabel: "이유",
+      ctaLabel: "방법",
+      groups: [
+        {
+          heading: "Meta (Facebook + Instagram)",
+          items: [
+            {
+              id: "meta-partner-access",
+              title: "아티스트 Facebook 페이지 + Instagram 파트너 액세스",
+              priority: "Kakao",
+              formats: [],
+              platforms: ["Meta Business Manager"],
+              hook: "공식 게시물 부스팅과 아티스트 핸들을 통한 다크 포스팅 모두 페이지 수준의 광고주 권한이 필요합니다.",
+              cta: "Meta Business Manager에서: Business Settings > Partners > Add 이동 후, Crowd Control Digital(Business ID 686135554821430)에 Facebook 페이지와 연결된 Instagram 프로페셔널 계정에 대한 광고주 액세스를 부여합니다.",
+            },
+          ],
+        },
+        {
+          heading: "TikTok",
+          items: [
+            {
+              id: "tiktok-spark-codes",
+              title: "부스팅 게시물용 Spark Ads 비디오 코드",
+              priority: "Kakao",
+              formats: [],
+              platforms: ["TikTok"],
+              hook: "Spark Ads는 소셜 프루프가 그대로 유지된 공식 오가닉 게시물에 유료 예산을 집행하는 방식으로, 팬덤 트랙의 핵심입니다. 부스팅할 모든 게시물에는 게시 계정이 생성한 인증 코드가 필요합니다.",
+              cta: "부스팅할 각 게시물에서: Settings > Ad Settings > Ad Authorization 활성화, Generate Code(365일 설정) 후 코드를 CCD에 전달합니다. 매주 신규 게시물에 대한 코드를 일괄 전달하면 테스트 루프가 빨라집니다.",
+            },
+          ],
+        },
+        {
+          heading: "트래킹 + 피벗 링크",
+          items: [
+            {
+              id: "pixel-pivot-links",
+              title: "피벗 링크 픽셀 설치",
+              priority: "CCD",
+              formats: [],
+              platforms: ["Linkfire / Feature.fm / 자체 구축"],
+              hook: "모든 지금 듣기 CTA는 피벗 링크로 연결됩니다. 해당 페이지에 설치된 Meta Pixel + TikTok Pixel이 클릭을 리타겟팅 풀과 전환 이벤트로 전환합니다. 픽셀이 없으면 Meta 전환 레이어는 데이터 없이 운영됩니다.",
+              cta: "이미 사용 중인 링크 툴이 있다면 CCD에 두 픽셀 설치 권한을 부여합니다. 없는 경우 CCD가 픽셀이 사전 설치된 자체 도메인에 SIGN 피벗 링크를 구축하고 전체 게재 위치에 URL을 공유합니다.",
+            },
+            {
+              id: "meta-domain-verify",
+              title: "도메인 인증 + 이벤트 구성",
+              priority: "CCD",
+              formats: [],
+              platforms: ["Meta Business Manager"],
+              hook: "이벤트가 구성된 인증 도메인이 있어야 Meta가 단순 클릭이 아닌 링크 전환을 향해 최적화할 수 있습니다.",
+              cta: "픽셀 설치가 완료되면 CCD가 Business ID 686135554821430으로 피벗 링크 도메인을 인증하고 이벤트 우선순위를 구성합니다. 링크가 Kakao 소유 도메인에 있지 않는 한 Kakao 측 작업은 필요하지 않습니다.",
+            },
+            {
+              id: "youtube-google-link",
+              title: "Shorts 광고용 YouTube 채널 연결 (선택)",
+              priority: "Kakao",
+              formats: [],
+              platforms: ["Google Ads / YouTube"],
+              hook: "공식 업로드 영상을 Shorts 광고로 집행하려면 채널에서 Google Ads 연결 요청을 승인해야 합니다.",
+              cta: "채널 소유자가 CCD의 Google Ads 계정에서 보낸 연결 요청을 승인합니다(YouTube Studio > Settings > Channel > Advanced). 론칭 시점에는 선택 사항이며, Shorts 예산 확대 전에는 필수입니다.",
+            },
+          ],
+        },
+      ],
+      footnote: "Meta와 TikTok 액세스 및 Spark 코드가 확보되면, 1주일 P1 램프와 유료 론칭 셋업이 병행됩니다.",
     },
   ],
 };
