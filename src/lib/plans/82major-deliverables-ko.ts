@@ -34,14 +34,14 @@ export const eightyTwoMajorDeliverablesKorean: StrategyPlanData = {
       subtitle: "SIGN은 이미 출시되었습니다. 역산할 수 있는 주요 출시일이 없으므로, 에셋이 승인되는 즉시 유료 광고 크리에이티브가 집행되며 성과가 좋은 광고에 예산이 집중됩니다.",
       body: [
         "이 페이지는 SIGN의 CCD 주도 유료 광고 크리에이티브를 위한 제작 체크리스트입니다. 합의된 크리에이티브 분담에 따라, CCD는 경쟁사 크리에이티브 및 명확한 가이드라인을 기반으로 유료 광고 위시리스트를 담당합니다. UGC 및 오가닉 콘텐츠는 그룹의 기존 콘텐츠와 소셜 캘린더를 확인한 후 별도로 구상됩니다. 본 페이지의 어떤 항목도 에셋 질문 목록에 이미 요청된 것 외에 새로운 아티스트 활동 가능 시간을 요구하지 않습니다.",
-        "모든 영상 콘셉트는 9:16 세로 마스터본과 1:1 정사각형(및 4:5 피드 크롭)으로 제공되므로, 단 한 번의 승인으로 TikTok, Reels, Shorts 및 Meta 피드 게재가 가능합니다. 아래 각 항목에는 그 이유가 명시되어 있습니다: 후킹 포인트는 무엇인지, CTA는 무엇인지, 그리고 미국 시장에서 해당 형식이 성공적으로 작동하는 것을 보여주는 동종 아티스트의 재생 가능한 참고 사례가 포함됩니다. 참고 사례의 근거는 상위 성과를 보인 9개의 경쟁사 게시물에 대한 프레임 단위 비디오 AI 분석과 최신 플랫폼 문서에 기반합니다.",
+        "모든 비디오 콘셉트는 9:16 세로 마스터와 1:1 정사각형 마스터로 제공되므로, 단 한 번의 승인으로 TikTok, Reels, Shorts 및 Meta 피드 게재를 모두 커버합니다. 아래 각 항목은 그 이유를 담고 있습니다: 훅(hook)은 무엇인지, CTA는 무엇인지, 그리고 미국 시장에서 해당 형식이 성공적으로 작동하고 있음을 보여주는 동료 아티스트의 재생 가능한 참고 자료입니다. 참고 자료의 근거는 상위 성과를 보인 9개의 동료 게시물에 대한 프레임 단위 비디오 AI 분석과 최신 플랫폼 문서에 기반합니다.",
         "이 페이지의 항목을 체크하면 제작 대상으로 표시됩니다. 하단의 승인 버튼을 누르면 선택된 상태가 저희 팀에 전송되고 제작이 시작됩니다.",
       ],
       supports: {
         heading: "이 에셋들의 게재 위치",
         items: [
           "TikTok: 공식 게시물에 Spark Ads + 발견 테스트를 위한 인피드 광고",
-          "Instagram: 리타겟팅을 위한 Reels 광고 + 1:1/4:5 피드 게재",
+          "Instagram: 리타겟팅을 위한 Reels 광고 + 1:1 피드 게재",
           "YouTube Shorts: K-pop 및 R&B 시청자 대상 세로 편집본",
           "메타 리타겟팅 풀은 참여도 높은 틱톡 스타일 시청자들로부터 구축",
         ],
@@ -121,7 +121,7 @@ export const eightyTwoMajorDeliverablesKorean: StrategyPlanData = {
       number: "03",
       navLabel: "사양",
       title: "마스터 포맷 및 사양",
-      intro: "두 가지 마스터 포맷으로 모든 광고 지면에 대응합니다. 세로 9:16이 기본 제공물이며, 정사각형 및 4:5 비율은 프레이밍이 허용되는 경우 여기서 파생되거나 그렇지 않은 경우 재프레이밍됩니다.",
+      intro: "두 가지 마스터 형식이 모든 게재를 커버합니다. 9:16 세로 형식이 주요 결과물이며, 1:1 정사각형은 프레임이 허용하는 범위 내에서 파생되거나, 그렇지 않은 경우 재구성됩니다.",
       subBlocks: [
         {
           label: "A",
@@ -139,13 +139,12 @@ export const eightyTwoMajorDeliverablesKorean: StrategyPlanData = {
         },
         {
           label: "B",
-          title: "정방형 + 피드 크롭 / 1:1 및 4:5",
+          title: "정사각형 피드 마스터 / 1:1",
           objective: "Meta 피드 게재와 카탈로그 스타일 리타겟팅 유닛.",
           components: {
             heading: "플랫폼 요구 사항",
             items: [
               "1:1 (1080x1080): Meta Right Column 및 Marketplace에 필수이며, 범용 정방형 마스터입니다.",
-              "4:5 (1080x1350): 선호되는 피드 비율이며 (피드 내 최대 세로 공간 확보), 안무 프레이밍이 크롭 후에도 유지되는 9:16 마스터에서 파생됩니다.",
               "정적 유닛 (커버 아트, CTA 카드)은 1:1 및 9:16 스토리 사이즈 모두로 제공됩니다.",
             ],
           },
@@ -157,8 +156,8 @@ export const eightyTwoMajorDeliverablesKorean: StrategyPlanData = {
           components: {
             heading: "규약",
             items: [
-              "82M-SIGN-[컨셉]-[트랙: FAN/DISC]-[비율: 916/11/45]-[훅: H1/H2/H3]-[v#]",
-              "모든 메인 컨셉은 최소 9:16 마스터 + 1:1 + 4:5로 제공되며, 9:16에는 2-3개의 훅 변형이 포함됩니다.",
+              "82M-SIGN-[콘셉트]-[트랙: FAN/DISC]-[비율: 916/11]-[훅: H1/H2/H3]-[v#]",
+              "모든 메인 콘셉트는 최소 9:16 마스터 + 1:1로 제공되며, 9:16에는 2-3가지 훅 변형이 포함됩니다.",
               "성공적인 훅은 대규모 집행 전에 다른 비율에도 적용됩니다.",
             ],
           },
@@ -185,7 +184,7 @@ export const eightyTwoMajorDeliverablesKorean: StrategyPlanData = {
               id: "perf-cutdown",
               title: "Chorus-open MV 컷다운",
               priority: "P1 / 출시",
-              formats: ["9:16 1080x1920", "1:1 1080x1080", "4:5 1080x1350"],
+              formats: ["9:16 1080x1920", "1:1 1080x1080"],
               duration: "6-15초",
               platforms: ["TikTok 인스트림 광고", "IG Reels", "YouTube Shorts"],
               variants: "3가지 훅 변형",
@@ -193,7 +192,7 @@ export const eightyTwoMajorDeliverablesKorean: StrategyPlanData = {
               cta: "마지막 2초에 '지금 듣기' 엔드 카드(곡 제목 + DSP 로고)와 함께 캡션 링크를 포함합니다. 디스커버리 편집본은 첫 번째 초에 화면 텍스트 훅('K팝이 만들지 말았어야 할 R&B 곡')을 추가하여 처음 보는 시청자들을 위해 장르를 명확히 합니다.",
               notes: [
                 "첫 프레임부터 로고 워터마크를 넣어 훅을 침범하지 않으면서 3초 ID 가이드라인을 충족합니다.",
-                "1:1 및 4:5 크롭이 재편집 없이 유지되도록 중앙 안전 구역 프레임을 적용합니다.",
+                "1:1 크롭이 재편집 없이 유지되도록 중앙 안전 프레임 처리",
               ],
               examples: [
                 {
@@ -443,7 +442,7 @@ export const eightyTwoMajorDeliverablesKorean: StrategyPlanData = {
               id: "rnb-lane",
               title: "R&B 레인 안무 컷",
               priority: "P2 / 2-3주차",
-              formats: ["9:16 1080x1920", "4:5 1080x1350"],
+              formats: ["9:16 1080x1920", "1:1 1080x1080"],
               duration: "10-15초",
               platforms: ["IG Reels", "TikTok 인스트림 광고", "Meta 피드"],
               variants: "2개의 훅",
@@ -470,16 +469,16 @@ export const eightyTwoMajorDeliverablesKorean: StrategyPlanData = {
           items: [
             {
               id: "square-crops",
-              title: "모든 히어로 비디오의 정사각형 + 4:5 크롭",
+              title: "모든 메인 비디오의 정사각형 크롭",
               priority: "P1 / 각 히어로별",
-              formats: ["1:1 1080x1080", "4:5 1080x1350"],
+              formats: ["1:1 1080x1080"],
               duration: "소스와 일치",
               platforms: ["Meta 피드", "Meta 오른쪽 컬럼", "마켓플레이스"],
               variants: "히어로 컨셉별",
               hook: "9:16 마스터와 동일한 훅을 사용하되, 레터박스 없이 재구성합니다. 피드 시청자는 Reels 시청자보다 빠르게 스크롤하므로, 삽입된 텍스트 훅이 여기서 더 큰 비중을 차지합니다.",
               cta: "모든 피드 단위에 '지금 듣기' 버튼(Meta 네이티브 CTA)을 포함합니다. 이는 TikTok 참여 풀이 리타겟팅하는 전환 레이어 배치입니다.",
               notes: [
-                "안무 프레이밍이 유지되는 모든 경우 1:1보다 4:5를 선호합니다: 피드 내 더 많은 화면 공간 확보",
+                "1:1은 하나의 파일로 모든 Meta 피드, Right Column 및 Marketplace 게재를 커버합니다.",
               ],
             },
             {
@@ -542,7 +541,7 @@ export const eightyTwoMajorDeliverablesKorean: StrategyPlanData = {
         {
           label: "B",
           title: "전체 승인 시 볼륨",
-          objective: "전체 체크리스트 승인 시 약 45-55개의 최종 파일이 생성됩니다: 12개의 컨셉, 각 2-3개의 비율, 히어로에 대한 2-3개의 후크 변형입니다.",
+          objective: "전체 체크리스트 승인 시 약 35-45개의 최종 파일이 생성됩니다: 12개 콘셉트, 각 2가지 비율(9:16 + 1:1), 메인 영상에 2-3가지 훅 변형 포함.",
           strategy: "승인 시 편집이 시작되며, 출시 우선순위(P1) 유닛은 소스 자료 도착 후 1주일 이내에 출고되어 약속된 1주일 실행 램프에 맞춰집니다. P2 유닛은 다음 2주 이내에, P3는 크리에이터 프로그램 일정에 맞춰 진행됩니다.",
         },
         {
