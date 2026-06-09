@@ -35,7 +35,6 @@ export const eightyTwoMajorDeliverables: StrategyPlanData = {
       body: [
         "This page is the production checklist for CCD-driven paid-ad creative on SIGN. Per the agreed creative split, CCD owns the paid-ad wish list, grounded in competitor creative and hard guidelines; UGC and organic content is ideated separately once we see the group's existing content and social calendar. Nothing here requires new band availability beyond what is already requested in the asset question list.",
         "Every video concept ships as a 9:16 vertical master plus a 1:1 square so a single approval covers TikTok, Reels, Shorts, and Meta feed placements. Each line item below carries the reasoning: what the hook is, what the CTA is, and a playable reference example from a peer artist showing the format working in the U.S. market. Reference reasoning is grounded in frame-level video-AI analysis of nine top-performing peer posts plus current platform documentation.",
-        "Checking items on this page marks them for production. The Approve button at the bottom sends the selected state to our team and greenlights the build.",
       ],
       supports: {
         heading: "Where These Assets Run",
