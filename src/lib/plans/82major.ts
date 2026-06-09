@@ -154,13 +154,13 @@ export const eightyTwoMajorPlan: StrategyPlanData = {
       number: "04",
       navLabel: "Structure",
       title: "Proposal Structure",
-      intro: "All-in budget for the summer cycle: June stands up Paid Social, Influencer, and Laylo. July launches the U.S. HQ Fan Pages around the 15th and scales Paid Social to full strength. August sustains the channels as the runway into Hello82's September physical release and the October tour. CCD retainer sits inside the budget, not on top. The September release authorizes a fresh budget on the same structure.",
+      intro: "All-in budget for the summer cycle: June stands up Paid Social, Influencer, Laylo, and U.S. HQ Fan Pages (launching around June 15). July scales Paid Social to full strength and runs Fan Pages at full cadence. August sustains the channels as the runway into Hello82's September physical release and the October tour. CCD retainer sits inside the budget, not on top. The September release authorizes a fresh budget on the same structure.",
       tiers: [
         {
           label: "Summer 2026 Plan",
           budget: "$56,500",
           name: "All-In Budget",
-          goal: "Stand up Paid Social, Influencer, and Laylo in June. Launch U.S. HQ Fan Pages around July 15 and run through August. Twelve weeks of U.S. ramp leading into the September Hello82 physical release and the October tour.",
+          goal: "Stand up Paid Social, Influencer, Laylo, and U.S. HQ Fan Pages in June. Run all four through July at scale, then sustain into August. Twelve weeks of U.S. ramp leading into the September Hello82 physical release and the October tour.",
           featured: true,
           includes: [
             "Always-on U.S. HQ fan-page network",
@@ -631,42 +631,42 @@ export const eightyTwoMajorPlan: StrategyPlanData = {
       number: "11",
       navLabel: "Flight",
       title: "Proposed Media Flight",
-      intro: "How the $56,500 budget deploys across the summer cycle. June lays the foundation: Paid Social testing, Influencer kickoff, and Laylo build. July scales Paid Social and launches the U.S. HQ Fan Pages. August sustains the channels at strength as the runway into Hello82's September physical release and the October tour.",
+      intro: "How the $56,500 budget deploys across the summer cycle. June lays the foundation: Paid Social testing, U.S. HQ Fan Page launch around the 15th, Influencer kickoff, and Laylo build. July scales Paid Social, runs Fan Pages at full cadence, and winds Influencer down. August sustains the channels at strength as the runway into Hello82's September physical release and the October tour.",
       totalBudget: "$49,000 to media + creator",
       phases: [
         {
-          label: "Foundation",
+          label: "Foundation + Fan Page Launch",
           window: "June 2026 / ~4 weeks",
-          focus: "Paid Social launches in test mode and scales after 1 to 2 weeks. Influencer kicks off within 7 to 10 days for a 2 to 4 week run based on traction. Laylo CRM stands up as the always-on retention layer. Goal: prove the creative direction, lock the targeting stacks, and build the retargeting pool.",
-          budget: "~$10,000",
+          focus: "Paid Social launches in test mode and scales after 1 to 2 weeks. U.S. HQ Fan Pages launch around June 15 on IG + TikTok. Influencer kicks off within 7 to 10 days for a 2 to 4 week run based on traction. Laylo CRM stands up as the always-on retention layer. Goal: prove the creative direction, launch the U.S. fan-page network, and build the retargeting pool.",
+          budget: "~$12,000",
           tactics: [
             "Paid Social test phase: evergreen creative against U.S. lookalikes + interest stacks",
+            "U.S. HQ Fan Page network launch on IG + TikTok (5x/week IG, 7x/week TikTok per page)",
             "Influencer seeding: 10 to 15 mid-tier U.S. creators",
             "Laylo: stand up Email + SMS infrastructure, first broadcasts",
-            "Brief U.S. HQ Fan Page operators in parallel; lock July launch content stack",
           ],
         },
         {
-          label: "Scale + Fan Page Launch",
+          label: "Scale + Channels at Full Strength",
           window: "July 2026 / ~4 weeks",
-          focus: "Paid Social moves to full scale on the proven creative. U.S. HQ Fan Pages launch around July 15 and run at full cadence. Influencer winds down or extends based on traction. Goal: compound paid + organic into a unified U.S. presence.",
+          focus: "Paid Social moves to full scale on the proven creative. Fan Pages at full cadence, feeding retargeting pools and Paid Social variants. Influencer winds down or extends based on traction. Goal: compound paid + organic into a unified U.S. presence.",
           budget: "~$19,000",
           tactics: [
             "Paid Social full-funnel scale (awareness + engagement + retargeting)",
-            "U.S. HQ Fan Page network launch on IG + TikTok (5x/week IG, 7x/week TikTok per page)",
+            "Fan Pages at full cadence, top-performing themes rotated into Paid Social creative",
             "Influencer wind-down or extension; selectively boost top creator posts",
-            "Laylo: weekly broadcast cadence tied to fan page launch",
+            "Laylo: weekly broadcast cadence",
           ],
         },
         {
           label: "Sustain + Pre-Comeback",
           window: "August 2026 / ~4 weeks",
-          focus: "Paid Social maintained at strength through mid-August, then stepped down to evergreen + retargeting. Fan Pages keep cadence on top-performing themes. Final weeks pivot to prep for the September Hello82 physical release and the October tour.",
-          budget: "~$20,000",
+          focus: "Paid Social maintained at strength through mid-August, then stepped down to evergreen + retargeting. Fan Pages keep cadence on top-performing themes, easing to 3-4 posts per week in the final two weeks. Final weeks pivot to prep for the September Hello82 physical release and the October tour.",
+          budget: "~$18,000",
           tactics: [
             "Paid Social: heavy through W10, then evergreen + retargeting only",
             "Fan Pages: full cadence W7 to W10, easing to 3-4 posts per week in W11-W12",
-            "Laylo: re-engagement broadcast to non-openers",
+            "Laylo: re-engagement broadcast targeting non-openers",
             "September Hello82 + October tour briefs, asset lists, and fan page network refresh",
           ],
         },
@@ -681,7 +681,7 @@ export const eightyTwoMajorPlan: StrategyPlanData = {
       number: "12",
       navLabel: "Timeline",
       title: "Execution Timeline",
-      intro: "Week-by-week deployment schedule. Sprints run in one-week cycles. Paid Social launches the week of June 8 in test mode and scales after 1 to 2 weeks once creative and ad-account access lock in. Influencer kicks off within 7 to 10 days for a 2 to 4 week run based on traction. U.S. HQ Fan Pages launch around July 15 and run through August. Laylo CRM stands up immediately as the always-on retention layer. The entire 12-week window is the runway into Hello82's September physical release and the October tour.",
+      intro: "Week-by-week deployment schedule. Sprints run in one-week cycles. Paid Social launches the week of June 8 in test mode and scales after 1 to 2 weeks once creative and ad-account access lock in. U.S. HQ Fan Pages launch the week of June 15 and run through August. Influencer kicks off within 7 to 10 days for a 2 to 4 week run based on traction. Laylo CRM stands up immediately as the always-on retention layer. The entire 12-week window is the runway into Hello82's September physical release and the October tour.",
       weeks: [
         { index: 1, label: "W1", dates: "Jun 8" },
         { index: 2, label: "W2", dates: "Jun 15" },
@@ -715,6 +715,22 @@ export const eightyTwoMajorPlan: StrategyPlanData = {
           ],
         },
         {
+          name: "U.S. HQ Fan Pages",
+          cells: [
+            { weekIndex: 2, intensity: "high", label: "LAUNCH" },
+            { weekIndex: 3, intensity: "high" },
+            { weekIndex: 4, intensity: "high" },
+            { weekIndex: 5, intensity: "high" },
+            { weekIndex: 6, intensity: "high" },
+            { weekIndex: 7, intensity: "high" },
+            { weekIndex: 8, intensity: "high" },
+            { weekIndex: 9, intensity: "high" },
+            { weekIndex: 10, intensity: "high" },
+            { weekIndex: 11, intensity: "medium" },
+            { weekIndex: 12, intensity: "medium" },
+          ],
+        },
+        {
           name: "Paid Social",
           cells: [
             { weekIndex: 1, intensity: "medium", label: "TEST" },
@@ -740,64 +756,55 @@ export const eightyTwoMajorPlan: StrategyPlanData = {
             { weekIndex: 5, intensity: "medium" },
           ],
         },
-        {
-          name: "U.S. HQ Fan Pages",
-          cells: [
-            { weekIndex: 6, intensity: "high", label: "LAUNCH" },
-            { weekIndex: 7, intensity: "high" },
-            { weekIndex: 8, intensity: "high" },
-            { weekIndex: 9, intensity: "high" },
-            { weekIndex: 10, intensity: "high" },
-            { weekIndex: 11, intensity: "medium" },
-            { weekIndex: 12, intensity: "medium" },
-          ],
-        },
       ],
       weekBreakdowns: [
         { weekIndex: 1, title: "Foundation + Paid Social launch", items: [
-          "Stand up Laylo CRM for Email + SMS. Import existing fan contacts. Build welcome flow and first broadcast template.",
+          "Stand up Laylo CRM for Email + SMS. Import existing fan contacts. Build welcome flow and first broadcast template. Subscriber acquisition runs through the artist's own channels (and the fan pages once live), not influencer seeding.",
           "Paid Social launches this week, or as soon as creative + ad-account access lock in. Test mode: 2 to 3 evergreen creatives against U.S. lookalikes and interest stacks to baseline CPV and CPM.",
-          "Brief U.S. HQ fan page operators in parallel. Lock content cadence, source assets, and posting plan for the July launch.",
+          "Brief U.S. HQ fan page operators in parallel. Lock content cadence, source assets, and posting plan for the June 15 launch.",
           "Confirm influencer shortlist and shipment logistics for the 7 to 10 day kickoff.",
         ] },
-        { weekIndex: 2, title: "Influencer kickoff + Paid Social tests continue", items: [
-          "Influencer goes live: 10 to 15 mid-tier U.S. creators receive Laylo briefs, assets, and access.",
+        { weekIndex: 2, title: "Fan Pages launch + Influencer kickoff", items: [
+          "U.S. HQ Fan Pages go live on IG + TikTok with launch posts. Target cadence: 5x per week IG, 7x per week TikTok per page.",
+          "Influencer goes live: 10 to 15 mid-tier U.S. creators receive briefs and assets.",
           "Paid Social continues test mode. First round of creative learnings logged and applied.",
           "Laylo: first scheduled broadcast (introduction + fan rally CTA).",
         ] },
-        { weekIndex: 3, title: "Paid Social scales", items: [
-          "Paid Social shifts from test to scale: budget moves behind top-performing creative; 2 to 3 new variants introduced based on W1-W2 learnings; retargeting pools active.",
+        { weekIndex: 3, title: "Paid Social scales + fan-page first reads", items: [
+          "Paid Social shifts from test to scale: budget moves behind top-performing creative; 2 to 3 new variants introduced based on W1-W2 learnings; retargeting pools active, now including fan-page traffic.",
+          "Fan pages on launch cadence. First organic momentum readouts (saves, shares, comments per post).",
           "Influencer continues organic post wave one.",
           "Laylo: second broadcast (catalog snippet or behind-the-scenes content to reward subscribers).",
         ] },
         { weekIndex: 4, title: "Mid-run sustain", items: [
           "Paid Social at scaled budget; refine audience stacks, prune underperformers.",
+          "Fan pages active; second wave of content variants in rotation.",
           "Influencer mid-run. Possible second seeding wave if early traction supports it.",
           "Laylo: third broadcast.",
         ] },
-        { weekIndex: 5, title: "Influencer wind-down + fan page content build", items: [
+        { weekIndex: 5, title: "Influencer wind-down + content scale", items: [
           "Influencer enters final wave or tapers based on traction.",
           "Paid Social at full scale; creative refresh based on what is clicking.",
-          "Fan page operators finalize launch content stack.",
+          "Fan pages active. Operators rotate top-performing themes into the cadence.",
           "Laylo: fourth broadcast.",
         ] },
-        { weekIndex: 6, title: "U.S. HQ Fan Pages launch", items: [
-          "Fan pages go live around July 15 on IG + TikTok with launch posts. Target cadence: 5x per week IG, 7x per week TikTok per page.",
+        { weekIndex: 6, title: "Channels at full strength", items: [
+          "Fan pages and Paid Social compounding: fan-page-content variants feed Paid Social rotation.",
           "Paid Social maintains scaled budget; layer in retargeting from organic fan page traffic.",
           "Influencer phase wraps. Selectively boost top-performing creator posts.",
-          "Laylo: broadcast tied to fan page launch.",
-        ] },
-        { weekIndex: 7, title: "Fan page momentum", items: [
-          "Fan pages on launch cadence. First organic momentum readouts (saves, shares, comments per post).",
-          "Paid Social: introduce fan-page-content variants into the rotation.",
           "Laylo: continues weekly broadcast cadence.",
         ] },
-        { weekIndex: 8, title: "Full ramp", items: [
+        { weekIndex: 7, title: "Full ramp", items: [
+          "All channels at full strength.",
+          "Paid Social: introduce fresh creative based on best-performing fan page posts.",
+          "Laylo: continues weekly broadcast cadence.",
+        ] },
+        { weekIndex: 8, title: "Full ramp continued", items: [
           "Fan pages at full posting cadence.",
-          "Paid Social: heavy budget. Cycle in fresh creative based on best-performing fan page posts.",
+          "Paid Social: heavy budget. Cycle in 2 to 3 new creative variants.",
           "Laylo: content broadcast tied to the week's strongest moment.",
         ] },
-        { weekIndex: 9, title: "Full ramp continued", items: [
+        { weekIndex: 9, title: "Sustain wave", items: [
           "Paid Social maintains spend; layer in deeper retargeting (video viewers, profile visitors).",
           "Fan pages: catalog cuts, behind-the-scenes content, fan UGC compilations.",
         ] },
@@ -812,7 +819,7 @@ export const eightyTwoMajorPlan: StrategyPlanData = {
           "Begin prep for September Hello82 physical: creative briefs, asset lists, fan page network refresh.",
         ] },
         { weekIndex: 12, title: "Pre-Comeback", items: [
-          "Lock the September Hello82 physical release plan. Creative briefs finalized, asset lists confirmed, fan page network handed off for the next-cycle content.",
+          "Lock the September Hello82 physical release plan. Creative briefs finalized, asset lists confirmed, fan page network (owned inventory) cycled to next-release content.",
           "Lock the October tour marketing plan: per-market media flight, influencer targets, fan page content tied to tour dates.",
           "Performance review compiled across all workstreams: creative learnings, audience insights, fan page network health.",
           "Recommendations file delivered to inform the September cycle's tier.",
@@ -834,7 +841,7 @@ export const eightyTwoMajorPlan: StrategyPlanData = {
           label: "Summer 2026 Plan",
           budget: "$56,500",
           name: "All-In Budget",
-          tagline: "All-in. Summer cycle (~12 weeks): June Paid Social + Influencer launch, July Fan Pages launch + scale, August sustain into September Hello82.",
+          tagline: "All-in. Summer cycle (~12 weeks): June Paid Social + Influencer + Fan Pages launch, July full scale, August sustain into September Hello82.",
           featured: true,
           deployable: "$49,000",
           breakdown: [

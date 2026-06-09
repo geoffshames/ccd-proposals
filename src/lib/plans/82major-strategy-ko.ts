@@ -542,7 +542,7 @@ export const eightyTwoMajorPlanStrategyKorean: StrategyPlanData = {
       number: "09",
       navLabel: "Timeline",
       title: "Execution Timeline",
-      intro: "주차별 배포 일정. 스프린트는 1주 단위로 진행됩니다. Paid Social은 6월 8일 주에 테스트 모드로 출시되며, 크리에이티브 및 광고 계정 접근이 확정된 후 1~2주 후에 확장됩니다. 인플루언서는 7~10일 이내에 시작하여 트랙션에 따라 2~4주간 진행됩니다. U.S. HQ 팬 페이지는 7월 15일경 출시되어 8월까지 운영됩니다. Laylo CRM은 즉시 상시 운영되는 리텐션 레이어로 구축됩니다. 전체 12주간의 기간은 Hello82의 9월 실물 앨범 발매 및 10월 투어를 위한 준비 기간입니다.",
+      intro: "주차별 배포 일정. 스프린트는 1주 단위로 진행됩니다. Paid Social은 6월 8일 주에 테스트 모드로 출시되며, 크리에이티브 및 광고 계정 접근이 확정된 후 1~2주 후에 확장됩니다. U.S. HQ 팬 페이지는 6월 15일 주에 출시되어 8월까지 운영됩니다. 인플루언서는 트랙션에 따라 7~10일 이내에 시작하여 2~4주간 진행됩니다. Laylo CRM은 즉시 항상 켜져 있는 리텐션 레이어로 구축됩니다. 전체 12주간의 기간은 Hello82의 9월 실물 앨범 발매 및 10월 투어를 위한 준비 기간입니다.",
       weeks: [
         { index: 1, label: "W1", dates: "Jun 8" },
         { index: 2, label: "W2", dates: "Jun 15" },
@@ -576,6 +576,22 @@ export const eightyTwoMajorPlanStrategyKorean: StrategyPlanData = {
           ],
         },
         {
+          name: "U.S. HQ Fan Pages",
+          cells: [
+            { weekIndex: 2, intensity: "high", label: "LAUNCH" },
+            { weekIndex: 3, intensity: "high" },
+            { weekIndex: 4, intensity: "high" },
+            { weekIndex: 5, intensity: "high" },
+            { weekIndex: 6, intensity: "high" },
+            { weekIndex: 7, intensity: "high" },
+            { weekIndex: 8, intensity: "high" },
+            { weekIndex: 9, intensity: "high" },
+            { weekIndex: 10, intensity: "high" },
+            { weekIndex: 11, intensity: "medium" },
+            { weekIndex: 12, intensity: "medium" },
+          ],
+        },
+        {
           name: "Paid Social",
           cells: [
             { weekIndex: 1, intensity: "medium", label: "TEST" },
@@ -601,56 +617,47 @@ export const eightyTwoMajorPlanStrategyKorean: StrategyPlanData = {
             { weekIndex: 5, intensity: "medium" },
           ],
         },
-        {
-          name: "U.S. HQ Fan Pages",
-          cells: [
-            { weekIndex: 6, intensity: "high", label: "LAUNCH" },
-            { weekIndex: 7, intensity: "high" },
-            { weekIndex: 8, intensity: "high" },
-            { weekIndex: 9, intensity: "high" },
-            { weekIndex: 10, intensity: "high" },
-            { weekIndex: 11, intensity: "medium" },
-            { weekIndex: 12, intensity: "medium" },
-          ],
-        },
       ],
       weekBreakdowns: [
         { weekIndex: 1, title: "기반 구축 + Paid Social 출시", items: [
-          "Laylo CRM을 이메일 및 SMS용으로 구축합니다. 기존 팬 연락처를 가져오고, 환영 플로우 및 첫 번째 방송 템플릿을 제작합니다.",
+          "이메일 및 SMS를 위한 Laylo CRM을 구축합니다. 기존 팬 연락처를 가져오고, 환영 플로우와 첫 번째 방송 템플릿을 만듭니다. 구독자 확보는 인플루언서 시딩이 아닌, 아티스트 자체 채널(및 팬 페이지가 활성화된 후)을 통해 진행됩니다.",
           "유료 소셜 광고는 이번 주 또는 크리에이티브 및 광고 계정 접근 권한 확보 즉시 시작됩니다. 테스트 모드: 2~3개의 에버그린 크리에이티브를 U.S. 룩어라이크 및 관심사 스택과 비교하여 CPV 및 CPM 기준선을 설정합니다.",
-          "동시에 U.S. HQ 팬 페이지 운영진에게 브리핑합니다. 7월 출시를 위한 콘텐츠 주기, 소스 에셋 및 게시 계획을 확정합니다.",
+          "U.S. HQ 팬 페이지 운영자들에게 병행하여 간략히 브리핑합니다. 6월 15일 출시를 위한 콘텐츠 주기, 소스 에셋 및 게시 계획을 확정합니다.",
           "인플루언서 최종 후보 목록 및 7~10일간의 킥오프를 위한 배송 물류를 확정합니다.",
-        ] },        { weekIndex: 2, title: "인플루언서 시작 + Paid Social 테스트 지속", items: [
-          "인플루언서 라이브: 10~15명의 미드티어 U.S. 크리에이터에게 Laylo 브리프, 에셋 및 접근 권한이 제공됩니다.",
+        ] },        { weekIndex: 2, title: "팬 페이지 출시 + 인플루언서 킥오프", items: [
+          "U.S. HQ 팬 페이지가 IG + TikTok에 출시 게시물과 함께 라이브됩니다. 목표 주기: 페이지당 주 5회 IG, 주 7회 TikTok.",
+          "인플루언서 활동 시작: 10~15명의 미국 중견 크리에이터에게 브리프와 에셋이 전달됩니다.",
           "Paid Social은 테스트 모드를 지속합니다. 첫 번째 크리에이티브 학습 결과를 기록하고 적용했습니다.",
           "Laylo: 첫 번째 예정된 방송 (소개 + 팬 랠리 CTA).",
-        ] },        { weekIndex: 3, title: "Paid Social 확장", items: [
-          "Paid Social은 테스트에서 스케일로 전환합니다: 예산은 성과가 좋은 크리에이티브에 집중되며, W1-W2 학습 결과를 바탕으로 2~3개의 새로운 변형이 도입되고, 리타겟팅 풀이 활성화됩니다.",
+        ] },        { weekIndex: 3, title: "Paid Social 확장 + 팬 페이지 초기 성과 측정", items: [
+          "Paid Social이 테스트에서 확장으로 전환: 예산이 실적이 우수한 크리에이티브 뒤로 이동; W1-W2 학습을 기반으로 2~3개의 새로운 변형이 도입됨; 팬 페이지 트래픽을 포함한 리타겟팅 풀 활성화.",
+          "팬 페이지가 출시 주기에 맞춰 운영됩니다. 첫 번째 유기적 모멘텀 측정치 (게시물당 저장, 공유, 댓글).",
           "인플루언서는 첫 번째 오가닉 게시물 웨이브를 이어갑니다.",
           "Laylo: 두 번째 방송 (구독자 보상을 위한 카탈로그 스니펫 또는 비하인드 스토리 콘텐츠).",
         ] },        { weekIndex: 4, title: "중반 운영 유지", items: [
           "Paid Social은 스케일 예산으로 운영되며, 타겟 고객 그룹을 정교화하고 성과가 낮은 광고를 제거합니다.",
+          "팬 페이지 활성화; 두 번째 콘텐츠 변형이 순환됩니다.",
           "인플루언서 활동 중간 단계입니다. 초기 반응이 좋을 경우 두 번째 시딩 웨이브를 진행할 수 있습니다.",
           "Laylo: 세 번째 방송.",
-        ] },        { weekIndex: 5, title: "인플루언서 마무리 + 팬 페이지 콘텐츠 구축", items: [
+        ] },        { weekIndex: 5, title: "인플루언서 마무리 + 콘텐츠 확장", items: [
           "인플루언서는 최종 웨이브에 진입하거나 반응에 따라 활동을 축소합니다.",
           "Paid Social은 전체 스케일로 운영되며, 효과적인 크리에이티브를 기반으로 리프레시합니다.",
-          "팬 페이지 운영진, 론칭 콘텐츠 스택 최종 확정.",
+          "팬 페이지 활성화. 운영자들이 실적이 우수한 테마를 주기에 맞춰 순환시킵니다.",
           "Laylo: 네 번째 방송.",
-        ] },        { weekIndex: 6, title: "U.S. HQ 팬 페이지 출시", items: [
-          "팬 페이지, 7월 15일경 IG + TikTok에 론칭 포스트와 함께 라이브 예정. 목표 빈도: 페이지당 주 5회 IG, 주 7회 TikTok.",
-          "유료 소셜 광고, 확장된 예산 유지; 오가닉 팬 페이지 트래픽 기반 리타겟팅 추가.",
-          "인플루언서 단계 종료. 성과 우수 크리에이터 게시물 선별적 부스팅.",
-          "Laylo: 팬 페이지 론칭과 연계된 방송.",
-        ] },        { weekIndex: 7, title: "팬 페이지 모멘텀", items: [
-          "팬 페이지, 론칭 빈도 적용 중. 첫 오가닉 모멘텀 지표 확인 (게시물당 저장, 공유, 댓글 수).",
-          "유료 소셜 광고: 팬 페이지 콘텐츠 변형을 로테이션에 도입.",
-          "Laylo: 주간 방송 빈도 유지.",
-        ] },        { weekIndex: 8, title: "전면 가동", items: [
-          "팬 페이지, 전체 포스팅 빈도 적용 중.",
-          "유료 소셜 광고: 예산 증액. 성과가 가장 좋은 팬 페이지 게시물을 기반으로 새로운 크리에이티브를 주기적으로 투입합니다.",
-          "Laylo: 해당 주의 가장 강력한 모멘텀에 맞춰 콘텐츠를 방송합니다.",
-        ] },        { weekIndex: 9, title: "전면 가동 지속", items: [
+        ] },        { weekIndex: 6, title: "채널 전력 강화", items: [
+          "팬 페이지와 유료 소셜 광고의 통합: 팬 페이지 콘텐츠 변형이 유료 소셜 광고 로테이션에 활용됩니다.",
+          "유료 소셜 광고는 확장된 예산을 유지하며, 오가닉 팬 페이지 트래픽으로부터의 리타겟팅을 추가합니다.",
+          "인플루언서 단계가 마무리됩니다. 성과가 가장 좋은 크리에이터 게시물을 선별적으로 홍보합니다.",
+          "Laylo: 주간 방송 주기를 계속합니다.",
+        ] },        { weekIndex: 7, title: "전면 가동", items: [
+          "모든 채널이 최대 역량으로 운영됩니다.",
+          "유료 소셜 광고: 성과가 가장 좋은 팬 페이지 게시물을 기반으로 새로운 크리에이티브를 도입합니다.",
+          "Laylo: 주간 방송 주기를 계속합니다.",
+        ] },        { weekIndex: 8, title: "전면 가동 지속", items: [
+          "팬 페이지가 최대 게시 주기대로 운영됩니다.",
+          "유료 소셜 광고: 예산이 집중됩니다. 2~3개의 새로운 크리에이티브 변형을 순환시킵니다.",
+          "Laylo: 해당 주의 가장 강력한 순간에 맞춰 콘텐츠를 방송합니다.",
+        ] },        { weekIndex: 9, title: "지속적인 확산", items: [
           "유료 소셜 광고 지출을 유지하며, (영상 시청자, 프로필 방문자 대상) 심층 리타겟팅을 추가합니다.",
           "팬 페이지: 카탈로그 발췌본, 비하인드 스토리 콘텐츠, 팬 UGC 컴필레이션.",
         ] },        { weekIndex: 10, title: "유지", items: [
@@ -662,7 +669,7 @@ export const eightyTwoMajorPlanStrategyKorean: StrategyPlanData = {
           "팬 페이지는 주당 3~4회 게시로 소폭 감소합니다.",
           "9월 Hello82 실물 앨범 준비 시작: 크리에이티브 브리프, 에셋 리스트, 팬 페이지 네트워크 리프레시.",
         ] },        { weekIndex: 12, title: "Pre-Comeback", items: [
-          "9월 Hello82 실물 앨범 발매 계획 확정. 크리에이티브 브리프 최종 확정, 에셋 리스트 확인, 팬 페이지 네트워크는 차기 콘텐츠를 위해 인계.",
+          "9월 Hello82 실물 앨범 발매 계획을 확정합니다. 크리에이티브 브리프를 최종 확정하고, 에셋 목록을 확인하며, 팬 페이지 네트워크(자체 보유 인벤토리)를 다음 발매 콘텐츠로 전환합니다.",
           "10월 투어 마케팅 계획 확정: 마켓별 미디어 집행, 인플루언서 타겟, 투어 일정과 연계된 팬 페이지 콘텐츠.",
           "Performance review compiled across all workstreams: creative learnings, audience insights, fan page network health.",
           "Recommendations file delivered to inform the September cycle's tier.",
