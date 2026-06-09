@@ -34,14 +34,14 @@ export const eightyTwoMajorDeliverables: StrategyPlanData = {
       subtitle: "SIGN is already out. There is no tent-pole date to work backward from, so paid creative fires as soon as assets clear, and spend layers onto whatever wins.",
       body: [
         "This page is the production checklist for CCD-driven paid-ad creative on SIGN. Per the agreed creative split, CCD owns the paid-ad wish list, grounded in competitor creative and hard guidelines; UGC and organic content is ideated separately once we see the group's existing content and social calendar. Nothing here requires new band availability beyond what is already requested in the asset question list.",
-        "Every video concept ships as a 9:16 vertical master plus a 1:1 square (and 4:5 feed crop) so a single approval covers TikTok, Reels, Shorts, and Meta feed placements. Each line item below carries the reasoning: what the hook is, what the CTA is, and a playable reference example from a peer artist showing the format working in the U.S. market. Reference reasoning is grounded in frame-level video-AI analysis of nine top-performing peer posts plus current platform documentation.",
+        "Every video concept ships as a 9:16 vertical master plus a 1:1 square so a single approval covers TikTok, Reels, Shorts, and Meta feed placements. Each line item below carries the reasoning: what the hook is, what the CTA is, and a playable reference example from a peer artist showing the format working in the U.S. market. Reference reasoning is grounded in frame-level video-AI analysis of nine top-performing peer posts plus current platform documentation.",
         "Checking items on this page marks them for production. The Approve button at the bottom sends the selected state to our team and greenlights the build.",
       ],
       supports: {
         heading: "Where These Assets Run",
         items: [
           "TikTok: Spark Ads on official posts + In-Feed for discovery testing",
-          "Instagram: Reels ads + 1:1/4:5 feed placements for retargeting",
+          "Instagram: Reels ads + 1:1 feed placements for retargeting",
           "YouTube Shorts: vertical cutdowns against K-pop and R&B viewers",
           "Meta retargeting pools built from engaged TikTok-style viewers",
         ],
@@ -121,7 +121,7 @@ export const eightyTwoMajorDeliverables: StrategyPlanData = {
       number: "03",
       navLabel: "Specs",
       title: "Master Formats & Specs",
-      intro: "Two master formats cover every placement. Vertical 9:16 is the primary deliverable; square and 4:5 crops are derived from it where framing allows, or re-framed where it does not.",
+      intro: "Two master formats cover every placement. Vertical 9:16 is the primary deliverable; the 1:1 square is derived from it where framing allows, or re-framed where it does not.",
       subBlocks: [
         {
           label: "A",
@@ -139,13 +139,12 @@ export const eightyTwoMajorDeliverables: StrategyPlanData = {
         },
         {
           label: "B",
-          title: "Square + feed crops / 1:1 and 4:5",
+          title: "Square feed master / 1:1",
           objective: "Meta feed placements and catalog-style retargeting units.",
           components: {
             heading: "Platform Requirements",
             items: [
               "1:1 at 1080x1080: required for Meta Right Column and Marketplace; the universal square master",
-              "4:5 at 1080x1350: the preferred feed ratio (max vertical real estate in feed); derive from the 9:16 master where the choreo framing survives the crop",
               "Static units (cover art, CTA cards) ship in both 1:1 and 9:16 story sizes",
             ],
           },
@@ -157,8 +156,8 @@ export const eightyTwoMajorDeliverables: StrategyPlanData = {
           components: {
             heading: "Convention",
             items: [
-              "82M-SIGN-[concept]-[track: FAN/DISC]-[ratio: 916/11/45]-[hook: H1/H2/H3]-[v#]",
-              "Every hero concept ships minimum: 9:16 master + 1:1 + 4:5, with 2-3 hook variants on the 9:16",
+              "82M-SIGN-[concept]-[track: FAN/DISC]-[ratio: 916/11]-[hook: H1/H2/H3]-[v#]",
+              "Every hero concept ships minimum: 9:16 master + 1:1, with 2-3 hook variants on the 9:16",
               "Winning hooks get back-ported to the other ratios before scale spend",
             ],
           },
@@ -185,7 +184,7 @@ export const eightyTwoMajorDeliverables: StrategyPlanData = {
               id: "perf-cutdown",
               title: "Chorus-open MV cutdowns",
               priority: "P1 / Launch",
-              formats: ["9:16 1080x1920", "1:1 1080x1080", "4:5 1080x1350"],
+              formats: ["9:16 1080x1920", "1:1 1080x1080"],
               duration: "6-15s",
               platforms: ["TikTok In-Feed", "IG Reels", "YouTube Shorts"],
               variants: "3 hook variants",
@@ -193,7 +192,7 @@ export const eightyTwoMajorDeliverables: StrategyPlanData = {
               cta: "Listen-now end card in the final 2 seconds (track title + DSP logos) plus caption link. Discovery cuts add an on-screen text hook in second 1 ('the R&B song K-pop wasn't supposed to make') to frame the lane for cold viewers.",
               notes: [
                 "Logo watermark from frame 1 satisfies the 3-second ID guideline without eating the hook",
-                "Center-safe framing so the 1:1 and 4:5 crops survive without re-edit",
+                "Center-safe framing so the 1:1 crop survives without re-edit",
               ],
               examples: [
                 {
@@ -443,7 +442,7 @@ export const eightyTwoMajorDeliverables: StrategyPlanData = {
               id: "rnb-lane",
               title: "R&B-lane choreo cut",
               priority: "P2 / Week 2-3",
-              formats: ["9:16 1080x1920", "4:5 1080x1350"],
+              formats: ["9:16 1080x1920", "1:1 1080x1080"],
               duration: "10-15s",
               platforms: ["IG Reels", "TikTok In-Feed", "Meta Feed"],
               variants: "2 hooks",
@@ -470,16 +469,16 @@ export const eightyTwoMajorDeliverables: StrategyPlanData = {
           items: [
             {
               id: "square-crops",
-              title: "Square + 4:5 crops of all hero videos",
+              title: "Square crops of all hero videos",
               priority: "P1 / With each hero",
-              formats: ["1:1 1080x1080", "4:5 1080x1350"],
+              formats: ["1:1 1080x1080"],
               duration: "Matches source",
               platforms: ["Meta Feed", "Meta Right Column", "Marketplace"],
               variants: "Per hero concept",
               hook: "Same hooks as the 9:16 masters, re-framed not letterboxed. Feed viewers scroll faster than Reels viewers, so the burned-in text hook carries more weight here.",
               cta: "Listen-now button (Meta native CTA) on every feed unit. These are the conversion-layer placements the TikTok engagement pools retarget into.",
               notes: [
-                "4:5 preferred over 1:1 wherever the choreo framing survives: more screen real estate in feed",
+                "1:1 covers all Meta feed, Right Column, and Marketplace placements from one file",
               ],
             },
             {
@@ -542,7 +541,7 @@ export const eightyTwoMajorDeliverables: StrategyPlanData = {
         {
           label: "B",
           title: "Volume at full approval",
-          objective: "Approving the full checklist produces roughly 45-55 final files: 12 concepts, 2-3 ratios each, 2-3 hook variants on heroes.",
+          objective: "Approving the full checklist produces roughly 35-45 final files: 12 concepts, two ratios each (9:16 + 1:1), 2-3 hook variants on heroes.",
           strategy: "Editing begins on approval; the launch-priority (P1) units ship within one week of source material arriving, matching the committed one-week execution ramp. P2 units follow inside the next two weeks; P3 rides the creator program timeline.",
         },
         {
