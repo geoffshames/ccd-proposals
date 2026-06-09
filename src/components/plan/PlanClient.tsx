@@ -11,6 +11,7 @@ import { PlanVertical } from "./PlanVertical";
 import { PlanFlight } from "./PlanFlight";
 import { PlanTimeline } from "./PlanTimeline";
 import { PlanPricing } from "./PlanPricing";
+import { PlanDeliverables } from "./PlanDeliverables";
 import { PlanApprove } from "./PlanApprove";
 import { LanguageToggle } from "@/components/LanguageToggle";
 import { ProjectProvider } from "@/lib/project-context";
@@ -65,6 +66,8 @@ export function PlanClient({ plan }: { plan: StrategyPlanData }) {
               return <PlanTimeline key={i} section={section} />;
             case "pricing":
               return <PlanPricing key={i} section={section} />;
+            case "deliverables":
+              return <PlanDeliverables key={i} section={section} />;
             default:
               return null;
           }

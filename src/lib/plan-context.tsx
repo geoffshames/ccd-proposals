@@ -201,6 +201,46 @@ export type PricingSection = {
   footnote?: string;
 };
 
+
+export type DeliverableExample = {
+  platform: "youtube" | "youtube-short" | "tiktok";
+  id: string;
+  artist: string;
+  label: string;
+  takeaway?: string;
+};
+
+export type DeliverableItem = {
+  id: string;
+  title: string;
+  priority?: string;
+  formats: string[];
+  duration?: string;
+  platforms: string[];
+  variants?: string;
+  hook: string;
+  cta: string;
+  notes?: string[];
+  examples?: DeliverableExample[];
+};
+
+export type DeliverableGroup = {
+  heading: string;
+  description?: string;
+  items: DeliverableItem[];
+};
+
+export type DeliverablesSection = {
+  type: "deliverables";
+  number: string;
+  navLabel?: string;
+  title: string;
+  intro?: string;
+  storageKey?: string;
+  groups: DeliverableGroup[];
+  footnote?: string;
+};
+
 export type PlanSection =
   | OverviewSection
   | PhilosophySection
@@ -209,7 +249,8 @@ export type PlanSection =
   | VerticalSection
   | FlightSection
   | TimelineSection
-  | PricingSection;
+  | PricingSection
+  | DeliverablesSection;
 
 // Plan root -----------------------------------------------------------------
 
