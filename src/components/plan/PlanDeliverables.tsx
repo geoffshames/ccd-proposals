@@ -78,11 +78,15 @@ function ItemCard({
   checked,
   onToggle,
   idx,
+  hookLabel = "Hook",
+  ctaLabel = "CTA",
 }: {
   item: DeliverableItem;
   checked: boolean;
   onToggle: () => void;
   idx: number;
+  hookLabel?: string;
+  ctaLabel?: string;
 }) {
   return (
     <motion.div
@@ -141,20 +145,22 @@ function ItemCard({
               )}
             </div>
 
-            <div className="mt-2 text-[11px] font-mono tracking-[0.1em] uppercase text-text-muted/60">
-              {item.platforms.join(" / ")}
-            </div>
+            {item.platforms.length > 0 && (
+              <div className="mt-2 text-[11px] font-mono tracking-[0.1em] uppercase text-text-muted/60">
+                {item.platforms.join(" / ")}
+              </div>
+            )}
 
             <div className="mt-5 grid grid-cols-1 md:grid-cols-2 gap-5">
               <div>
                 <div className="text-[10px] font-mono tracking-[0.22em] uppercase text-text-muted/60 mb-2">
-                  Hook
+                  {hookLabel}
                 </div>
                 <p className="text-[14px] text-text-primary/85 leading-relaxed">{item.hook}</p>
               </div>
               <div>
                 <div className="text-[10px] font-mono tracking-[0.22em] uppercase text-text-muted/60 mb-2">
-                  CTA
+                  {ctaLabel}
                 </div>
                 <p className="text-[14px] text-text-primary/85 leading-relaxed">{item.cta}</p>
               </div>
@@ -263,6 +269,8 @@ export function PlanDeliverables({ section }: { section: DeliverablesSection }) 
                     key={item.id}
                     item={item}
                     idx={ii}
+                    hookLabel={section.hookLabel}
+                    ctaLabel={section.ctaLabel}
                     checked={!!checked[item.id]}
                     onToggle={() =>
                       setChecked((c) => ({ ...c, [item.id]: !c[item.id] }))

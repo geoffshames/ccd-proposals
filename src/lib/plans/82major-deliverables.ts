@@ -66,7 +66,7 @@ export const eightyTwoMajorDeliverables: StrategyPlanData = {
       number: "02",
       navLabel: "Principles",
       title: "Creative Principles",
-      intro: "Four rules govern every asset on this list. They come from frame-level analysis of the highest-performing peer posts (TWS, BOYNEXTDOOR, RIIZE, ZEROBASEONE, Stray Kids, ATEEZ, LE SSERAFIM, KATSEYE, Tommy Richman) and current U.S. platform guidance.",
+      intro: "Four rules govern every asset on this list. They come from frame-level analysis of the highest-performing peer posts (TWS, BOYNEXTDOOR, RIIZE, ZEROBASEONE, Stray Kids, ATEEZ, LE SSERAFIM, KATSEYE, FIFTY FIFTY, Jung Kook) and current U.S. platform guidance.",
       subBlocks: [
         {
           label: "A",
@@ -87,7 +87,7 @@ export const eightyTwoMajorDeliverables: StrategyPlanData = {
           label: "B",
           title: "Lo-fi beats polish in paid",
           objective: "Spend behind creative that reads native, not like a label ad.",
-          strategy: "Practice-room and selfie-style content consistently outperforms polished creative in paid placements. Stray Kids' dance-practice highlight (14.6M views, 17% engagement) and Tommy Richman's handheld studio clips outperform their own polished MV cuts in feed environments. The MV is the source library; the winning paid units will mostly look like they were shot on a phone.",
+          strategy: "Practice-room and selfie-style content consistently outperforms polished creative in paid placements. Stray Kids' dance-practice highlight (14.6M views, 17% engagement) and RIIZE's static practice-room wide shots outperform their own polished MV cuts in feed environments. The MV is the source library; the winning paid units will mostly look like they were shot on a phone.",
           components: {
             heading: "Implications",
             items: [
@@ -250,7 +250,7 @@ export const eightyTwoMajorDeliverables: StrategyPlanData = {
               duration: "15-30s (visualizer up to 60s)",
               platforms: ["TikTok sound page", "YouTube", "IG Reels"],
               variants: "Sped-up + slowed + visualizer",
-              hook: "Alt-texture audio is its own discovery surface: Tommy Richman's lo-fi VHS version out-created the original sound roughly 7-to-1 on TikTok while streams accrued to the original on DSPs. A SIGN sped-up version with a textured visualizer gives editors and fan accounts a second sound to create on, and gives us cheap ad units from the visualizer.",
+              hook: "Alt-texture audio is its own discovery surface, and K-pop owns the canonical case: FIFTY FIFTY's sped-up 'Cupid (Twin Ver.)' became the default TikTok sound and carried the song's U.S. breakout while streams accrued to the original on DSPs. A SIGN sped-up version with a textured visualizer gives editors and fan accounts a second sound to create on, and gives us cheap ad units from the visualizer.",
               cta: "Visualizer end-frame: 'SIGN, out everywhere' + DSP logos. The sped-up sound page itself is the CTA for creators; we seed it with 2-3 official clips so it is not an empty room.",
               notes: [
                 "Visualizer is a design deliverable, not a shoot: cover art + kinetic lyric type + texture",
@@ -259,17 +259,10 @@ export const eightyTwoMajorDeliverables: StrategyPlanData = {
               examples: [
                 {
                   platform: "youtube",
-                  id: "qvF5iq_s01Q",
-                  artist: "Tommy Richman",
-                  label: "MILLION DOLLAR BABY (VHS) visualizer",
-                  takeaway: "The alt-version visualizer gives the second sound an official, embeddable home.",
-                },
-                {
-                  platform: "tiktok",
-                  id: "7363826325108411690",
-                  artist: "Tommy Richman",
-                  label: "Handheld studio snippet",
-                  takeaway: "Raw studio energy, falsetto hook in second 1; the anti-polish benchmark.",
+                  id: "Rxv4IPW1Y2o",
+                  artist: "FIFTY FIFTY",
+                  label: "Cupid (Twin Ver.) sped-up official audio",
+                  takeaway: "The official sped-up upload gives the second sound an embeddable home; the sped-up sound, not the original, drove the U.S. TikTok run.",
                 },
               ],
             },
@@ -418,7 +411,8 @@ export const eightyTwoMajorDeliverables: StrategyPlanData = {
               hook: "A recognizable face inside the frame collapses the cold-audience barrier instantly. ATEEZ x j-hope is the ceiling case (26.5M views by stacking two fandoms); KATSEYE x Jessica Alba shows the U.S.-celebrity version for non-K-pop audiences. At 82MAJOR's scale the play is K-pop-adjacent creators, label-mates, or the creator partners already being selected, doing the SIGN challenge on their own pages.",
               cta: "Participation + profile-visit CTA. Each collab is also a Spark-boostable asset on the partner's handle, which buys their audience graph, not just their face.",
               notes: [
-                "No new budget line: routes through the creator program already in motion",
+                "Partner sourcing sits on the label side where possible: label-mates, Kakao roster artists, and idol relationships are Kakao's to open. Creator-tier partners route through the creator program already in motion.",
+                "Lowest-lift format: partners post TikTok reaction or stitch posts on the SIGN challenge from their own handles. Same face-in-frame effect, no joint shoot to schedule.",
                 "Hold celebrity-tier swings for the September comeback when there is a date to anchor",
               ],
               examples: [
@@ -446,18 +440,18 @@ export const eightyTwoMajorDeliverables: StrategyPlanData = {
               duration: "10-15s",
               platforms: ["IG Reels", "TikTok In-Feed", "Meta Feed"],
               variants: "2 hooks",
-              hook: "SIGN's lane is melodic R&B with real choreo: the Usher / Chris Brown inheritance. Destin Conrad's choreo-in-public format proves U.S. R&B audiences respond to dance-led creative when it is styled as culture (streetwear, golden hour, handheld) rather than idol polish. This cut re-grades and re-frames 82MAJOR's choreo into that visual language for R&B interest stacks.",
-              cta: "Listen-now with lane framing: 'if Usher and K-pop had a group' style text hook, DSP end card. Targets Destin Conrad, Brent Faiyaz, Kehlani, Chris Brown interest audiences on Meta.",
+              hook: "SIGN's lane is melodic R&B with real choreo: the Usher / Chris Brown inheritance. Jung Kook's 'Standing Next to You' is the proof a K-pop act can own that lane in the U.S. when the creative leads with choreography styled as R&B culture (streetwear, warm grade, handheld) rather than idol polish; the USHER remix performance video makes the inheritance literal. This cut re-grades and re-frames 82MAJOR's choreo into that visual language for R&B interest stacks.",
+              cta: "Listen-now with lane framing: 'if Usher and K-pop had a group' style text hook, DSP end card. Targets Usher, Chris Brown, Brent Faiyaz, Kehlani interest audiences on Meta.",
               notes: [
                 "This is the asset that tests whether the R&B positioning converts outside the K-pop graph; protect it from K-pop styling notes",
               ],
               examples: [
                 {
                   platform: "youtube",
-                  id: "8j3xtd78Lxw",
-                  artist: "Destin Conrad",
-                  label: "KISSING IN PUBLIC / choreo-forward R&B video",
-                  takeaway: "Dance-led R&B styled as culture, not idol polish; the U.S. visual language for SIGN's lane.",
+                  id: "O1d2DYZZrek",
+                  artist: "Jung Kook x USHER",
+                  label: "Standing Next to You (USHER Remix) performance video",
+                  takeaway: "Choreo-led R&B styled as culture with Usher in frame: the ceiling case for a K-pop act owning SIGN's U.S. lane.",
                 },
               ],
             },
@@ -560,6 +554,101 @@ export const eightyTwoMajorDeliverables: StrategyPlanData = {
         },
       ],
       footnote: "This list covers CCD-driven paid-ad creative only. UGC and organic content is scoped separately once the group's existing content and social calendar are shared, per the agreed creative split.",
+    },
+
+    // ===================================================================
+    // 06. Advertising Access Checklist
+    // ===================================================================
+    {
+      type: "deliverables",
+      number: "06",
+      navLabel: "Access",
+      title: "Advertising Access Checklist",
+      intro: "What CCD needs access to before paid spend goes live. Check items off as they are granted; most take minutes on the Kakao side and the full list can clear in a day.",
+      storageKey: "82major-sign-access",
+      hookLabel: "Why",
+      ctaLabel: "How",
+      groups: [
+        {
+          heading: "Meta (Facebook + Instagram)",
+          items: [
+            {
+              id: "meta-partner-access",
+              title: "Partner access to the artist Facebook Page + Instagram",
+              priority: "Kakao",
+              formats: [],
+              platforms: ["Meta Business Manager"],
+              hook: "Boosting official posts and dark-posting from the artist handles both require page-level advertiser permissions.",
+              cta: "In Meta Business Manager: Business Settings > Partners > Add, then grant Crowd Control Digital (Business ID 686135554821430) advertiser access to the Facebook Page and the linked Instagram professional account.",
+            },
+            {
+              id: "meta-ad-account",
+              title: "Ad account access (or confirm CCD runs its own)",
+              priority: "Both",
+              formats: [],
+              platforms: ["Meta Ads Manager"],
+              hook: "Spend history and pixel signal live at the ad-account level; whose account runs the spend decides who keeps the learnings.",
+              cta: "Either share the existing ad account with Business ID 686135554821430 as a partner, or confirm CCD runs spend from its own ad account against the granted pages.",
+            },
+          ],
+        },
+        {
+          heading: "TikTok",
+          items: [
+            {
+              id: "tiktok-spark-codes",
+              title: "Spark Ads video codes for boosted posts",
+              priority: "Kakao",
+              formats: [],
+              platforms: ["TikTok"],
+              hook: "Spark Ads put paid spend behind the official organic posts with the social proof attached, the core of the fandom track. Every boosted post needs an authorization code generated by the posting account.",
+              cta: "On each post to boost: Settings > Ad Settings > toggle Ad Authorization on, Generate Code (set to 365 days), send the code to CCD. A standing weekly batch for new posts keeps the test loop fast.",
+            },
+            {
+              id: "tiktok-ads-account",
+              title: "TikTok Ads Manager / Business Center access",
+              priority: "Both",
+              formats: [],
+              platforms: ["TikTok Business Center"],
+              hook: "In-feed discovery testing runs from an advertiser account, and the engaged-viewer pools that feed Meta retargeting build there.",
+              cta: "If Kakao has a U.S. advertiser account, invite CCD through Business Center. If not, CCD runs from its own advertiser account using the Spark codes.",
+            },
+          ],
+        },
+        {
+          heading: "Tracking + Pivot Links",
+          items: [
+            {
+              id: "pixel-pivot-links",
+              title: "Pixel placement on pivot links",
+              priority: "CCD",
+              formats: [],
+              platforms: ["Linkfire / Feature.fm / custom"],
+              hook: "Every listen-now CTA lands on a pivot link. Meta Pixel + TikTok Pixel on those pages is what turns clicks into retargeting pools and conversion events; without them the Meta conversion layer is flying blind.",
+              cta: "If a link tool is already in use, grant CCD access to install both pixels. Otherwise CCD builds the SIGN pivot links on its own domain with pixels pre-installed and shares the URLs for all placements.",
+            },
+            {
+              id: "meta-domain-verify",
+              title: "Domain verification + event configuration",
+              priority: "CCD",
+              formats: [],
+              platforms: ["Meta Business Manager"],
+              hook: "A verified domain with configured events lets Meta optimize toward link conversions instead of raw clicks.",
+              cta: "CCD verifies the pivot-link domain under Business ID 686135554821430 and configures event priority once pixel placement clears. No Kakao action needed unless the links live on a Kakao-owned domain.",
+            },
+            {
+              id: "youtube-google-link",
+              title: "YouTube channel link for Shorts ads (optional)",
+              priority: "Kakao",
+              formats: [],
+              platforms: ["Google Ads / YouTube"],
+              hook: "Running Shorts cutdowns as ads from the official uploads requires the channel to approve a Google Ads link request.",
+              cta: "Channel owner approves the link request from CCD's Google Ads account (YouTube Studio > Settings > Channel > Advanced). Optional at launch; required before Shorts spend scales.",
+            },
+          ],
+        },
+      ],
+      footnote: "Once Meta and TikTok access plus Spark codes clear, the one-week P1 production ramp and the paid launch setup run in parallel.",
     },
   ],
 };

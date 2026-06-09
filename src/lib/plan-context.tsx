@@ -237,6 +237,8 @@ export type DeliverablesSection = {
   title: string;
   intro?: string;
   storageKey?: string;
+  hookLabel?: string;
+  ctaLabel?: string;
   groups: DeliverableGroup[];
   footnote?: string;
 };
