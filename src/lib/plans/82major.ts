@@ -573,30 +573,11 @@ export const eightyTwoMajorPlan: StrategyPlanData = {
       number: "10",
       navLabel: "Additions",
       title: "Suggested Additions (Optional)",
-      philosophy: "Outside the $56,500 budget. These are incremental opportunities CCD can layer in if Kakao wants more streaming velocity, more viral reach, or radio support during the summer ramp or the September Hello82 release.",
-      intro: "Each item is optional and scoped separately. Spotify Playlisting and Clipping are quick-deploy media buys with predictable output; Radio is a separate $20K plan already approved on its own track. A&R / Features Strategy and Additional Content are deeper-scope add-ons we can spin up on demand.",
+      philosophy: "Outside the $56,500 budget. These are incremental opportunities CCD can layer in if Kakao wants more viral reach or radio support during the summer ramp or the September Hello82 release.",
+      intro: "Each item is optional and scoped separately. Clipping is a quick-deploy media buy with predictable output; Radio is a separate $20K plan already approved on its own track. A&R / Features Strategy and Additional Content are deeper-scope add-ons we can spin up on demand.",
       subBlocks: [
         {
           label: "A",
-          title: "Spotify Playlisting",
-          budget: "$5,000 - $10,000",
-          objective: "Buy into Spotify playlisting at scale to drive 200,000 - 400,000 incremental streams. Deployable on the current SIGN single across the summer ramp, or layered into the September Hello82 physical release for streaming velocity at launch.",
-          components: {
-            heading: "Use Cases",
-            items: [
-              "Run on the current SIGN single across June and July to lift Spotify monthly listeners ahead of the September Hello82 physical release",
-              "Run in July through August to accelerate streaming velocity ahead of the September Hello82 physical release",
-              "Or split across both for compounding lift",
-            ],
-          },
-          kpis: [
-            "200,000 - 400,000 incremental Spotify streams",
-            "Spotify monthly listener lift leading into the September Hello82 physical release",
-            "Algorithmic signal into Release Radar + Discover Weekly",
-          ],
-        },
-        {
-          label: "B",
           title: "Clipping / Seeding",
           budget: "$5,000",
           objective: "Realistically generate 4-5M views on TikTok + IG Reels via the clipping / seeding network, deployed during the summer ramp or around the September Hello82 release. Cheapest way to push social-chart velocity and trigger algorithmic discovery.",
@@ -615,7 +596,7 @@ export const eightyTwoMajorPlan: StrategyPlanData = {
           ],
         },
         {
-          label: "C",
+          label: "B",
           title: "Additional Content Production",
           objective: "Monthly studio vlog series, production-credit content, live performance recordings, and episodic tour-diary content for YouTube and Instagram Reels.",
         },
