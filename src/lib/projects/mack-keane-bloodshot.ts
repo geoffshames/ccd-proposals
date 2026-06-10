@@ -87,7 +87,7 @@ export const mackKeaneBloodshot: ProjectData = {
       {
         label: "The Video Is Built for Engagement",
         finding:
-          "Frame-by-frame AI analysis identified the falsetto climax at 2:45–2:56 ('Am I when it's said and done') as the single strongest comment trigger in the video, and 0:42–0:54 ('What am I running from?') as the ideal 15-second cold-viewer hook. These timestamps drive the ad cutdowns and the SWRM comment direction — nothing is generic.",
+          "Frame-by-frame AI analysis identified the falsetto climax at 2:45–2:56 ('Am I when it's said and done') as the single strongest comment trigger in the video, and 0:42–0:54 ('What am I running from?') as the ideal 15-second cold-viewer hook. These timestamps drive the ad thumbnails, headlines, and the SWRM comment direction — nothing is generic.",
         source: "TwelveLabs video AI analysis",
       },
     ],
@@ -243,7 +243,7 @@ export const mackKeaneBloodshot: ProjectData = {
       status: "upcoming" as const,
       tasks: [
         "Google Ads + YouTube channel access and audit of the paused label campaigns",
-        "Edit 2 in-feed cutdowns from the TwelveLabs-identified moments (0:42 hook / 2:45 falsetto climax)",
+        "Build thumbnail and headline variants around the TwelveLabs-identified moments (0:42 hook / 2:45 falsetto climax) — the full video runs as-is",
         "Build 4 custom audience segments: comp-artist listeners, live-session culture, engaged-viewer remarketing, tour-market geo",
         "Write SWRM comment direction brief grounded in the video's actual moments and the existing thread's voice",
       ],
@@ -292,10 +292,10 @@ export const mackKeaneBloodshot: ProjectData = {
             "Daniel Caesar / Frank Ocean / SZA / Giveon / Jorja Smith listener segments, live-session culture (COLORS, Tiny Desk viewers), engaged-viewer remarketing, and tour-market geo layers.",
         },
         {
-          name: "In-Feed Ad Cutdowns",
-          quantity: "2 edits",
+          name: "Thumbnail + Headline Variants",
+          quantity: "3 sets",
           description:
-            "Cut from the existing video at the AI-identified peak moments — the 0:42 'What am I running from?' hook and the 2:45 falsetto climax — with thumbnail and headline variants.",
+            "The full video runs untouched — testing happens on the packaging. Thumbnail and headline variants built around the AI-identified peak moments (the 0:42 hook, the 2:45 falsetto climax) to win the in-feed click.",
         },
         {
           name: "Optimization Passes",
@@ -355,7 +355,7 @@ export const mackKeaneBloodshot: ProjectData = {
     included: [
       "YouTube Ads campaign rebuild, in-feed engagement placements only",
       "4 custom audience segments + comp-artist and tour-market targeting",
-      "2 in-feed ad cutdowns edited from the existing video (TwelveLabs-guided)",
+      "Thumbnail + headline variants built on the TwelveLabs-identified peak moments",
       "SWRM verified-human engagement campaign with 3 timed pulses",
       "Comment direction brief matched to the video's organic thread voice",
       "Twice-weekly optimization passes on engagement economics",
@@ -365,7 +365,7 @@ export const mackKeaneBloodshot: ProjectData = {
     excluded: [
       "Meta / Instagram advertising (handled separately — available as add-on)",
       "TikTok, Spotify Marquee, or other platform campaigns (available as add-on)",
-      "New creative production beyond the 2 cutdowns (available as add-on)",
+      "Video editing or new creative production — the full video runs as-is (available as add-on)",
       "Email / SMS fan capture build via Laylo (available as add-on — the natural next step for owning the audience this flight creates)",
       "Tour ticketing campaigns (available as add-on — the retargeting audiences from this flight are built to feed it)",
     ],
@@ -424,7 +424,7 @@ export const mackKeaneBloodshot: ProjectData = {
       step: 3,
       title: "48-Hour Build",
       description:
-        "Cutdowns edited, audiences built, SWRM brief written, campaigns staged — live within two days of access.",
+        "Audiences built, thumbnail and headline variants staged, SWRM brief written — live within two days of access.",
     },
     {
       step: 4,
