@@ -97,7 +97,7 @@ export const miguelTestSprint: StrategyPlanData = {
           goal: "Run three revenue-accountable buckets for 45 days: merch creative-to-scale testing at $100 per day, CRM capture at $50 to 100 per day into Hive, and the full damned execution stack. Exit with real CAC, real ROAS, and a data-sized fall proposal.",
           featured: true,
           includes: [
-            "Merch paid social: creative, piece, and audience testing with a hard scale gate",
+            "Merch paid social: creative, piece, and audience tests concurrent from week 1, with a hard scale gate",
             "CRM capture flights with offer, channel, and geo splits measured in Hive",
             "damned execution: clipping, page network, Strive, and a $3K boost reserve behind winners",
             "Artist content briefed and edited by CCD, produced by Miguel at no hard cost",
@@ -113,12 +113,12 @@ export const miguelTestSprint: StrategyPlanData = {
       number: "04",
       navLabel: "Merch",
       title: "Bucket 1 / Merchandise Test & Scale",
-      philosophy: "Price a purchase before buying purchases in volume. $100 per day is enough scale to read creative and piece-level signal without bloat; the gate math decides when it becomes $250 to 500 per day.",
-      intro: "Total bucket: $4,500 in media ($100 per day x 45 days). Runs on Meta (IG + FB) with Shopify as the source of truth. Store access is already granted; week one is instrumentation plus launch.",
+      philosophy: "Price a purchase before buying purchases in volume. All three tests run concurrently from week 1 inside the $100 per day envelope; the only thing that waits is spending more. The gate math decides when $100 per day becomes $250 to 500.",
+      intro: "Total bucket: $4,500 in media ($100 per day x 45 days). Runs on Meta (IG + FB) with Shopify as the source of truth. Store access is already granted. Creative, piece, and audience tests all launch in the week 1 window; budget never exceeds $100 per day until the scale gate clears.",
       subBlocks: [
         {
           label: "A",
-          title: "Creative Test (Weeks 1-2)",
+          title: "Creative Test (Live Week 1)",
           budget: "$100/day",
           objective: "Find the creative angle that sells before optimizing anything else.",
           strategy: "Three angles enter, one leaves: tour-footage video cuts (the CAOS run as the backdrop), clean product-focused statics, and UGC-style worn-by-fans content. Even-split budget across angles against broad and engaged audiences.",
@@ -138,10 +138,10 @@ export const miguelTestSprint: StrategyPlanData = {
         },
         {
           label: "B",
-          title: "Piece-Level Test (Weeks 2-4)",
+          title: "Piece-Level Test (Live Week 1)",
           budget: "Within the $100/day flight",
           objective: "Learn which pieces actually sell so inventory and scale decisions follow demand, not guesswork.",
-          strategy: "Catalog sync from Shopify powers dynamic product ads across the full merch range, with leftover tour inventory prioritized for sell-through. The winning creative angle carries the catalog.",
+          strategy: "Catalog sync from Shopify powers dynamic product ads across the full merch range from day one, with leftover tour inventory prioritized for sell-through. Runs alongside the creative test; winning angles rotate in as they prove.",
           components: {
             heading: "Tests",
             items: [
@@ -158,10 +158,10 @@ export const miguelTestSprint: StrategyPlanData = {
         },
         {
           label: "C",
-          title: "Audience Test + Scale Gate (Weeks 4-7)",
+          title: "Audience Test (Live Week 1) + Scale Gate",
           budget: "Within the $100/day flight, stepping up only via the gate",
           objective: "Prove which audiences buy, then scale mechanically on the math.",
-          strategy: "Winning creative x winning pieces against three audience tiers: owned (CRM list + engaged followers), lookalike, and broad. At roughly 30 percent net margin, breakeven is about 3.3x ROAS. The gate, not opinion, decides scale.",
+          strategy: "All three audience tiers (owned: CRM list + engaged followers, lookalike, broad) run from week 1 inside the daily envelope. At roughly 30 percent net margin, breakeven is about 3.3x ROAS. The gate, not opinion, decides scale: budget holds at $100 per day until the math clears it.",
           components: {
             heading: "The Scale Rule",
             items: [
@@ -374,7 +374,7 @@ export const miguelTestSprint: StrategyPlanData = {
           budget: "~$11,500",
           tactics: [
             "damned: clipping wave 1 ($3K), page network onboard + posting, Miguel content batch briefed (reaction duet, one-take, storytime, Spanish thank-you, sped/slowed versions)",
-            "Merch: 3-angle creative test live; Shopify catalog + pixel verified end to end",
+            "Merch: creative, piece, and audience tests all live within $100/day; Shopify catalog + pixel verified end to end",
             "CRM: Hive capture pages live, offer test launches; Klaviyo + S1C audit and export",
             "First boost increments behind early organic winners",
           ],
@@ -386,7 +386,7 @@ export const miguelTestSprint: StrategyPlanData = {
           budget: "~$8,250",
           tactics: [
             "damned: Strive flight live ($1.8K), clipping wave 2 ($2K), sped-up pack ships, boost reserve scaling behind winners",
-            "Merch: dynamic catalog ads on full range, tour-inventory push, audience tiers split-tested",
+            "Merch: consolidate behind winning angle x piece x audience combos, tour-inventory push",
             "CRM: winning offer scaled, US vs. MX geo split live, first broadcasts to new captures",
             "Phase 2 decision: fund the playlisting + DSP unlock if weeks 1-2 cleared their gates",
           ],
@@ -426,11 +426,11 @@ export const miguelTestSprint: StrategyPlanData = {
         {
           name: "Merch Ads",
           cells: [
-            { weekIndex: 1, intensity: "medium", label: "LAUNCH" },
+            { weekIndex: 1, intensity: "high", label: "LAUNCH" },
             { weekIndex: 2, intensity: "high", label: "TEST" },
             { weekIndex: 3, intensity: "high" },
-            { weekIndex: 4, intensity: "high", label: "SKU" },
-            { weekIndex: 5, intensity: "high", label: "AUD" },
+            { weekIndex: 4, intensity: "high" },
+            { weekIndex: 5, intensity: "high", label: "READ" },
             { weekIndex: 6, intensity: "high", label: "SCALE" },
             { weekIndex: 7, intensity: "high", label: "GATE" },
           ],
@@ -515,7 +515,7 @@ export const miguelTestSprint: StrategyPlanData = {
           items: [
             "damned clipping wave 1 live across four briefed lanes; page network onboarded and posting",
             "Miguel content batch in production: reaction duet, live one-take, storytime, Spanish thank-you, sped/slowed versions (CCD briefs + edits)",
-            "Merch creative test launches at $100/day; pixel + Shopify catalog verified",
+            "Merch: creative, piece, and audience tests all live at $100/day; pixel + Shopify catalog verified",
             "Hive capture pages live; Klaviyo + S1C list audit begins",
           ],
         },
@@ -536,7 +536,7 @@ export const miguelTestSprint: StrategyPlanData = {
             "Strive flight launches geo-weighted to Shazam-spiking cities",
             "Clipping wave 2: winning lane + Spanish-caption LATAM lane",
             "Phase 2 playlisting unlock: go / no-go on the weeks 1-2 data",
-            "Merch: winning angle confirmed, catalog ads spin up",
+            "Merch: first winner reads across angle, piece, and audience",
             "15-minute health check: creates curve, CTR reads, capture CPA",
           ],
         },
