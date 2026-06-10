@@ -6,6 +6,7 @@ import { eightyTwoMajorPlanStrategyKorean } from "./82major-strategy-ko";
 import { eightyTwoMajorDeliverables } from "./82major-deliverables";
 import { eightyTwoMajorDeliverablesKorean } from "./82major-deliverables-ko";
 import { temporexDeliverables } from "./temporex-deliverables";
+import { miguelTestSprint } from "./miguel-test-sprint";
 
 export const PLANS: Record<string, StrategyPlanData> = {
   "82major": eightyTwoMajorPlan,
@@ -15,6 +16,7 @@ export const PLANS: Record<string, StrategyPlanData> = {
   "82major-deliverables": eightyTwoMajorDeliverables,
   "82major-deliverables-ko": eightyTwoMajorDeliverablesKorean,
   "temporex-deliverables": temporexDeliverables,
+  "miguel-test-sprint": miguelTestSprint,
 };
 
 export function getPlan(slug: string): StrategyPlanData | undefined {
