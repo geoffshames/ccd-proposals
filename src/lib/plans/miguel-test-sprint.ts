@@ -259,10 +259,10 @@ export const miguelTestSprint: StrategyPlanData = {
       subBlocks: [
         {
           label: "A",
-          title: "Clipping Program (Two Waves)",
+          title: "Clipping Program (One Wave)",
           budget: "$5,000",
           objective: "Reverse the creates plateau with paid nano-account volume, the trend's own proven engine.",
-          strategy: "Wave 1 ($3K, week 1): four briefed lanes (judgment-moment POVs, Wildheart nostalgia edits, lyric-meaning explainers, couple storytimes), official sound required for payout, underperforming lanes killed at 72 hours. Wave 2 ($2K, week 3): winning lane doubled plus a Spanish-caption LATAM lane.",
+          strategy: "One $5K wave, live week 1: four briefed lanes (judgment-moment POVs, Wildheart nostalgia edits, lyric-meaning explainers, couple storytimes), official sound required for payout. Underperforming lanes killed at 72 hours with budget reallocating into winners, including a Spanish-caption LATAM lane from the remaining pool. One buy, managed daily.",
           kpis: [
             "2.5M+ verified views at $2.00 or under blended CPM",
             "60 percent or more of paid clips on the official sound",
@@ -298,7 +298,7 @@ export const miguelTestSprint: StrategyPlanData = {
           objective: "Four weeks of official drops that give the trend an artist-sized accelerant, made by Miguel himself.",
           strategy: "Miguel produces the moment: a trend reaction + nano-creator duet, a stripped live one-take (which doubles as the CRM capture gift), a lyric-meaning storytime answering the search demand, a Spanish-language thank-you to Mexico, and the sped-up + slowed versions. CCD briefs, edits, and schedules everything through the existing posting pipeline; the label ships the official pack and a YouTube visualizer.",
           kpis: [
-            "Artist trend-participation post at 5M+ views",
+            "All four artist drops live on schedule across the window",
             "Official sped-up pack live by week 3 of the bucket",
           ],
         },
@@ -307,11 +307,10 @@ export const miguelTestSprint: StrategyPlanData = {
           title: "Boost Reserve + Capture Layer",
           budget: "$3,000 boost reserve / capture layer at no cost",
           objective: "Force distribution behind proven winners and own the audience the trend rented.",
-          strategy: "Spark Ads and TikTok Promote behind the top organic clips, page winners, and Miguel's own trend posts (never cold creative), deployed in $500 to 750 increments at peak velocity. Plus the no-cost capture net: the Hive damned page, comment-seeding squads in English and Spanish, a damned-anchored official playlist spreading the surge across the album, and a radio memo built on the Shazam city data.",
+          strategy: "Spark Ads only, behind the top organic clips, page winners, and Miguel's own trend posts (never cold creative), deployed in $500 to 750 increments at peak velocity. Plus the no-cost capture net: comment-seeding squads in English and Spanish, a damned-anchored official playlist spreading the surge across the album, and a radio memo built on the Shazam city data.",
           kpis: [
+            "Boost spend deployed only behind clips already beating account benchmarks",
             "Capture layer converting trend traffic into owned contacts",
-            "Boosted posts clearing organic engagement benchmarks at 2x or better",
-            "Parent-album streams up 25 percent in the window",
           ],
         },
       ],
@@ -369,10 +368,10 @@ export const miguelTestSprint: StrategyPlanData = {
         {
           label: "Ignite + Instrument",
           window: "Jun 11-28 / ~2.5 weeks",
-          focus: "The damned engine turns on at full force: clipping wave 1, page network live, Miguel's content batch briefed and in production. Merch launches the creative test at $100 per day with pixel and catalog instrumentation verified. CRM capture pages go live on Hive while consolidation begins. First health check June 25.",
+          focus: "The damned engine turns on at full force: the clipping wave live, page network posting, Miguel's content batch briefed and in production. Merch launches the creative test at $100 per day with pixel and catalog instrumentation verified. CRM capture pages go live on Hive while consolidation begins. First health check June 25.",
           budget: "~$11,500",
           tactics: [
-            "damned: clipping wave 1 ($3K), page network onboard + posting, Miguel content batch briefed (reaction duet, one-take, storytime, Spanish thank-you, sped/slowed versions)",
+            "damned: full $5K clipping wave live, page network onboard + posting, Miguel content batch briefed (reaction duet, one-take, storytime, Spanish thank-you, sped/slowed versions)",
             "Merch: creative, piece, and audience tests all live within $100/day; Shopify catalog + pixel verified end to end",
             "CRM: Hive capture pages live, offer test launches; Klaviyo + S1C audit and export",
             "First boost increments behind early organic winners",
@@ -381,10 +380,10 @@ export const miguelTestSprint: StrategyPlanData = {
         {
           label: "Convert + Read",
           window: "Jun 29 - Jul 12 / 2 weeks",
-          focus: "Attention converts to durable signal. Strive flight launches, clipping wave 2 doubles the winning lane, and the boost reserve goes to work behind proven posts. The phase 2 playlisting unlock gets its go / no-go call here. Merch moves to piece-level and audience testing; CRM offer winner takes the budget while Hive consolidation completes. Health check July 9.",
+          focus: "Attention converts to durable signal. Strive flight launches, clipping budget consolidates behind the winning lanes, and Spark boosts go to work behind proven posts. The phase 2 playlisting unlock gets its go / no-go call here. Merch moves to piece-level and audience testing; CRM offer winner takes the budget while Hive consolidation completes. Health check July 9.",
           budget: "~$8,250",
           tactics: [
-            "damned: Strive flight live ($1.8K), clipping wave 2 ($2K), sped-up pack ships, boost reserve scaling behind winners",
+            "damned: Strive flight live ($1.8K), sped-up pack ships, Spark boosts scaling behind winners",
             "Merch: consolidate behind winning angle x piece x audience combos, tour-inventory push",
             "CRM: winning offer scaled, US vs. MX geo split live, first broadcasts to new captures",
             "Phase 2 decision: fund the playlisting + DSP unlock if weeks 1-2 cleared their gates",
@@ -459,10 +458,10 @@ export const miguelTestSprint: StrategyPlanData = {
         {
           name: "damned Clipping",
           cells: [
-            { weekIndex: 1, intensity: "high", label: "WAVE 1" },
+            { weekIndex: 1, intensity: "high", label: "WAVE" },
             { weekIndex: 2, intensity: "high" },
-            { weekIndex: 3, intensity: "high", label: "WAVE 2" },
-            { weekIndex: 4, intensity: "medium" },
+            { weekIndex: 3, intensity: "medium", label: "SHIFT" },
+            { weekIndex: 4, intensity: "low" },
           ],
         },
         {
@@ -512,7 +511,7 @@ export const miguelTestSprint: StrategyPlanData = {
           weekIndex: 1,
           title: "Everything turns on",
           items: [
-            "damned clipping wave 1 live across four briefed lanes; page network onboarded and posting",
+            "damned clipping wave live across four briefed lanes; page network onboarded and posting",
             "Miguel content batch in production: reaction duet, live one-take, storytime, Spanish thank-you, sped/slowed versions (CCD briefs + edits)",
             "Merch: creative, piece, and audience tests all live at $100/day; pixel + Shopify catalog verified",
             "Hive capture pages live; Klaviyo + S1C list audit begins",
@@ -533,7 +532,7 @@ export const miguelTestSprint: StrategyPlanData = {
           title: "Health check 1 (Jun 25)",
           items: [
             "Strive flight launches geo-weighted to Shazam-spiking cities",
-            "Clipping wave 2: winning lane + Spanish-caption LATAM lane",
+            "Clipping reallocation: winners + the Spanish-caption LATAM lane",
             "Phase 2 playlisting unlock: go / no-go on the weeks 1-2 data",
             "Merch: first winner reads across angle, piece, and audience",
             "15-minute health check: creates curve, CTR reads, capture CPA",
