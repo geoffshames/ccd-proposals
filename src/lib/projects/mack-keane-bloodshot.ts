@@ -403,7 +403,7 @@ export const mackKeaneBloodshot: ProjectData = {
         due: "Upon approval",
       },
     ],
-    paymentTerms: "Due on approval — flight launches within 48 hours of access",
+    paymentTerms: "Due on approval — flight launches within 12–24 hours of access",
     paymentLink: "#",
   },
 
@@ -422,9 +422,9 @@ export const mackKeaneBloodshot: ProjectData = {
     },
     {
       step: 3,
-      title: "48-Hour Build",
+      title: "12–24 Hour Build",
       description:
-        "Audiences built, thumbnail and headline variants staged, SWRM brief written — live within two days of access.",
+        "Audiences built, thumbnail and headline variants staged, SWRM brief written — live within 12–24 hours of access.",
     },
     {
       step: 4,
@@ -442,7 +442,7 @@ export const mackKeaneBloodshot: ProjectData = {
 
   cta: {
     headline: "Let's make the next $400 count.",
-    body: "The last flight proved the music converts when real listeners reach it. This one is built so they do — every placement clickable, every engagement human, every dollar accountable. Approve and we're live within 48 hours.",
+    body: "The last flight proved the music converts when real listeners reach it. This one is built so they do — every placement clickable, every engagement human, every dollar accountable. Approve and we're live within 24 hours.",
     email: "geoff@crowdcontroldigital.com",
   },
 
