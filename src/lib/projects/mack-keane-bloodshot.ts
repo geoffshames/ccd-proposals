@@ -404,7 +404,7 @@ export const mackKeaneBloodshot: ProjectData = {
       },
     ],
     paymentTerms: "Due on approval — flight launches within 12–24 hours of access",
-    paymentLink: "#",
+    paymentLink: "https://buy.stripe.com/9B6aEWfycgzf6eRfs5a7C0g",
   },
 
   nextSteps: [
