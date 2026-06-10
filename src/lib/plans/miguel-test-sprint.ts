@@ -38,7 +38,7 @@ export const miguelTestSprint: StrategyPlanData = {
         items: [
           "The damned catalog moment while the window is live",
           "Post-tour merchandise sell-through on existing inventory",
-          "CRM consolidation onto Hive and the march toward 100 to 250K owned contacts",
+          "CRM consolidation onto Hive and compounding owned-list growth",
           "The fall album and tour budget, sized on this sprint's data",
         ],
       },
@@ -186,7 +186,7 @@ export const miguelTestSprint: StrategyPlanData = {
       navLabel: "CRM",
       title: "Bucket 2 / First-Party CRM Growth",
       philosophy: "The list is the asset the trend rents. A contact worth $20-plus per year that costs under $5 to acquire is the best trade in music marketing; this bucket proves we can make that trade at will.",
-      intro: "Total bucket: $3,500 in media (roughly $75 per day x 45 days, flexing $50 to 100 per day). Pure data capture measured in Hive. The current list sits near 25K contacts for an artist who put 15K people in the Forum alone; the 6-to-12-month target is 100 to 250K.",
+      intro: "Total bucket: $3,500 in media (roughly $75 per day x 45 days, flexing $50 to 100 per day). Pure data capture measured in Hive. The sprint prices a contact so list growth can scale on real math.",
       subBlocks: [
         {
           label: "A",
@@ -223,15 +223,14 @@ export const miguelTestSprint: StrategyPlanData = {
           },
           kpis: [
             "Blended CPA at or under $5; winning combination at or under $3",
-            "700 to 1,000 net-new paid contacts inside the window",
-            "10K-plus additional organic captures via the damned capture layer",
+            "Net-new contacts reported weekly, dollars-in / contacts-out",
           ],
         },
         {
           label: "C",
           title: "Geo Split + The Scale Case (Weeks 4-7)",
           budget: "Within the capture flight",
-          objective: "Price a US contact against a Mexico contact and write the scale math for the 100 to 250K target.",
+          objective: "Price a US contact against a Mexico contact and write the scale math for list growth.",
           strategy: "Miguel's five biggest cities in the world are all Mexican. A US vs. MX split tells us whether LATAM list growth is materially cheaper, which would reshape how the fall budget allocates. The end-of-sprint readout converts proven CPA into a funded path toward the contact target, layered with the label list pull and S1C integration.",
           components: {
             heading: "Tests",
@@ -243,11 +242,11 @@ export const miguelTestSprint: StrategyPlanData = {
           },
           kpis: [
             "CPA by geo, with a recommendation on LATAM list-growth weighting",
-            "A written scale model: dollars required per 10K contacts at proven CPA",
+            "A written scale model: dollars required per block of contacts at proven CPA",
           ],
         },
       ],
-      footnote: "Paid capture is one of several rails toward 100 to 250K contacts; this sprint prices the paid rail. The label list, S1C integration, and show-data capture stack on top.",
+      footnote: "Paid capture is one of several rails for list growth; this sprint prices the paid rail. The label list, S1C integration, and show-data capture stack on top.",
     },
 
     {
@@ -310,7 +309,7 @@ export const miguelTestSprint: StrategyPlanData = {
           objective: "Force distribution behind proven winners and own the audience the trend rented.",
           strategy: "Spark Ads and TikTok Promote behind the top organic clips, page winners, and Miguel's own trend posts (never cold creative), deployed in $500 to 750 increments at peak velocity. Plus the no-cost capture net: the Hive damned page, comment-seeding squads in English and Spanish, a damned-anchored official playlist spreading the surge across the album, and a radio memo built on the Shazam city data.",
           kpis: [
-            "10K+ contacts captured through the damned layer",
+            "Capture layer converting trend traffic into owned contacts",
             "Boosted posts clearing organic engagement benchmarks at 2x or better",
             "Parent-album streams up 25 percent in the window",
           ],
@@ -352,8 +351,8 @@ export const miguelTestSprint: StrategyPlanData = {
           label: "D",
           title: "CRM Scale Flight",
           budget: "Sized by proven CPA",
-          objective: "Fund the march to 100 to 250K contacts with real math.",
-          strategy: "Gate: blended CPA at or under $5 proven across 30+ days. The end-of-sprint readout includes the exact model: dollars per 10K contacts at proven CPA, layered with the label list pull and S1C integration.",
+          objective: "Fund list growth at scale with real math.",
+          strategy: "Gate: blended CPA at or under $5 proven across 30+ days. The end-of-sprint readout includes the exact model: dollars per block of contacts at proven CPA, layered with the label list pull and S1C integration.",
         },
       ],
       footnote: "All four levers roll into the fall album + tour proposal delivered in the final week of the sprint.",
