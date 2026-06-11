@@ -346,8 +346,8 @@ const html = `<!DOCTYPE html>
         <div>
           <div class="tagrow"><span class="sig">Sync Brief Match</span><span class="asset-ref">Midnight Interstate</span></div>
           <h3>A24 period drama scoring brief fits "Westbound Lights" profile</h3>
-          <p>Supervisor brief seeking 1970s Americana, melancholic, non-obvious. Deep cut matches tempo, era, and tone. Package and submit this week before the brief closes.</p>
-          <div class="conf">Confidence: High · Effort: Low · Owner: Sync Desk</div>
+          <p>Supervisor brief seeking 1970s Americana, melancholic, non-obvious. Deep cut matches tempo, era, and tone. Packet built; routing through the catalog's licensing rep before the brief closes.</p>
+          <div class="conf">Confidence: High · Effort: Low · Owner: Sync Readiness</div>
         </div>
         <div class="numbers"><div class="uplift num">$310k<small>est. annual uplift</small></div></div>
       </div>
@@ -387,7 +387,7 @@ const html = `<!DOCTYPE html>
           <div class="tagrow"><span class="sig">Playlist Gap</span><span class="asset-ref">Mirror Motel</span></div>
           <h3>Absent from 4 high-fit editorial playlists despite audience overlap</h3>
           <p>Listener profile overlaps 60%+ with four major editorial playlists the catalog has never charted on. Momentum data from the Q2 uptick supports a coordinated DSP pitch.</p>
-          <div class="conf">Confidence: Medium · Effort: Low · Owner: Sync Desk</div>
+          <div class="conf">Confidence: Medium · Effort: Low · Owner: Strategist</div>
         </div>
         <div class="numbers"><div class="uplift num">$95k<small>est. annual uplift</small></div></div>
       </div>

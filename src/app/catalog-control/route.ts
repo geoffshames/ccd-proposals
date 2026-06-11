@@ -248,7 +248,7 @@ const html = `<!DOCTYPE html>
   <div class="wrap">
     <div class="kicker">Active Management for Music IP</div>
     <h1>Your catalog is a nine-figure asset.<br /><span class="gold">Stop running it like a filing cabinet.</span></h1>
-    <p class="hero-sub">CATALOG CONTROL is a flat-fee management desk for catalog funds, estates, and artist-owners. Continuous monitoring, monthly reactivation sprints, proactive sync exploitation, and quarterly wealth-grade reporting on every master you own.</p>
+    <p class="hero-sub">CATALOG CONTROL is a flat-fee management desk for catalog funds, estates, and artist-owners. Continuous monitoring, monthly reactivation sprints, sync-ready packaging, and quarterly wealth-grade reporting on every master you own.</p>
     <div class="hero-ctas">
       <a href="/catalog-control/demo" class="btn btn-gold">View the live demo</a>
       <a href="#math" class="btn btn-ghost">See the math</a>
@@ -312,8 +312,8 @@ const html = `<!DOCTYPE html>
       </div>
       <div class="desk-card">
         <div class="idx">CC-03</div>
-        <h3>Sync Desk</h3>
-        <p>Proactive brief targeting across film, TV, trailer houses, gaming, and brand campaigns. We package and pitch your masters to supervisors before the brief closes, instead of waiting for inbound.</p>
+        <h3>Sync Readiness</h3>
+        <p>Your catalog packaged to clear fast: pitch packets built per track, metadata and one-stop status verified, placement on the major brief platforms, and active management of your existing sync reps. When a brief lands, you answer in hours, not weeks.</p>
       </div>
       <div class="desk-card">
         <div class="idx">CC-04</div>
@@ -365,7 +365,7 @@ const html = `<!DOCTYPE html>
         <div class="rowlab">Actually works the asset</div>
         <div>Passive distribution and accounting. Marketing is an upcharge.</div>
         <div>Does not touch revenue at all. Reports on what already happened.</div>
-        <div class="math-col-cc"><b>12 executed campaigns a year</b>, sync desk, monitoring, recovery.</div>
+        <div class="math-col-cc"><b>12 executed campaigns a year</b>, sync readiness, monitoring, recovery.</div>
       </div>
       <div class="math-row">
         <div class="rowlab">Who keeps the upside</div>
@@ -433,7 +433,7 @@ const html = `<!DOCTYPE html>
         <ul>
           <li><b>Monitoring desk</b> across the full portfolio</li>
           <li><b>12 executed reactivation sprints</b> per year</li>
-          <li><b>Sync desk</b> with proactive brief targeting</li>
+          <li><b>Sync readiness</b>: packaging, clearance status, rep management</li>
           <li><b>Risk, leakage detection and recovery</b></li>
           <li><b>Quarterly wealth-grade portfolio reviews</b></li>
           <li><b>Dedicated senior strategist</b></li>
