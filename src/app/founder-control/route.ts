@@ -270,7 +270,7 @@ const html = `<!DOCTYPE html>
       <div class="hero-right">
         <div class="dots"></div>
         <div class="float-card">
-          <div class="fc-top"><span>Attention Index</span><span class="live">Board Room live</span></div>
+          <div class="fc-top"><span>Attention Index</span><span class="live">Desk live</span></div>
           <div class="big-num">74 <small>/100</small></div>
           <div class="delta">+47 vs passive baseline</div>
           <svg viewBox="0 0 300 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">

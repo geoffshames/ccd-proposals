@@ -7,7 +7,6 @@ const html = `<!DOCTYPE html>
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>FOUNDER CONTROL · Attention P&L · Maya Reyes / Tidewater · Q2 2026</title>
 <meta name="description" content="FOUNDER CONTROL attention P&L dashboard demo. Illustrative data." />
-<link rel="preconnect" href="https://api.fontshare.com" crossorigin />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@500,700,800&f[]=satoshi@400,500,700&display=swap" rel="stylesheet" />
@@ -50,7 +49,7 @@ const html = `<!DOCTYPE html>
   .head { padding: 38px 0 30px; display: flex; align-items: flex-end; justify-content: space-between; gap: 24px; flex-wrap: wrap; }
   .head .eyebrow { font-family: var(--fm); font-size: 10px; letter-spacing: 0.28em; text-transform: uppercase; color: var(--soft); margin-bottom: 10px; }
   .head h1 { font-family: var(--fs); font-size: clamp(26px, 3vw, 40px); font-weight: 800; letter-spacing: -0.02em; }
-  .head h1 .co { font-family: var(--fs); font-style: normal; font-weight: 500; color: var(--coral); }
+  .head h1 .co { font-family: var(--fs); font-weight: 500; color: var(--coral); }
   .head h1 .qtr { color: var(--soft); font-weight: 400; font-size: 0.6em; }
   .period { font-family: var(--fm); font-size: 12px; color: var(--soft); display: flex; gap: 18px; align-items: center; flex-wrap: wrap; }
   .period .dot { width: 7px; height: 7px; border-radius: 50%; background: var(--coral); display: inline-block; margin-right: 8px; animation: pulse 2.2s infinite; }
@@ -60,14 +59,14 @@ const html = `<!DOCTYPE html>
   .kpi { background: var(--card); border: 1px solid var(--hair); border-radius: 16px; padding: 22px 24px; box-shadow: 0 1px 0 rgba(22,20,15,0.04); transition: transform 0.2s ease, box-shadow 0.2s ease; }
   .kpi:hover { transform: translateY(-3px); box-shadow: 0 14px 34px rgba(22,20,15,0.09); }
   .kpi .l { font-family: var(--fm); font-size: 9.5px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--soft); }
-  .kpi .v { margin-top: 12px; font-family: var(--fs); font-style: normal; font-size: 34px; font-weight: 800; line-height: 1; letter-spacing: -0.01em; }
-  .kpi .v small { font-family: var(--fm); font-size: 12px; font-weight: 400; color: var(--soft); }
+  .kpi .v { margin-top: 12px; font-family: var(--fs); font-weight: 800; font-size: 34px; line-height: 1; letter-spacing: -0.01em; }
+  .kpi .v small { font-family: var(--fm); font-size: 12px; color: var(--soft); }
   .kpi .d { margin-top: 10px; font-family: var(--fm); font-size: 11px; }
   .up { color: var(--green); } .down { color: var(--coral); } .blue { color: var(--cobalt); } .mut { color: var(--soft); }
 
   .panel { background: var(--card); border: 1px solid var(--hair); border-radius: 18px; margin-bottom: 24px; overflow: hidden; box-shadow: 0 1px 0 rgba(22,20,15,0.04); }
   .panel-head { padding: 20px 26px; border-bottom: 1px solid var(--hair); display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
-  .panel-head h2 { font-size: 16px; font-weight: 700; display: flex; align-items: center; gap: 12px; }
+  .panel-head h2 { font-size: 16px; font-weight: 600; display: flex; align-items: center; gap: 12px; }
   .panel-head h2 .code { font-family: var(--fm); font-size: 10px; color: var(--coral); letter-spacing: 0.16em; }
   .panel-head .sub { font-family: var(--fm); font-size: 11px; color: var(--soft); }
   .panel-body { padding: 26px; }
@@ -90,7 +89,7 @@ const html = `<!DOCTYPE html>
   tbody tr { transition: background 0.15s; }
   tbody tr:hover { background: rgba(22,20,15,0.025); }
   td.r, th.r { text-align: right; }
-  .piece { font-weight: 700; font-size: 14px; }
+  .piece { font-weight: 600; font-size: 14px; }
   .meta { margin-top: 4px; font-family: var(--fm); font-size: 10.5px; color: var(--soft); letter-spacing: 0.03em; }
   .outcome { font-family: var(--fm); font-size: 11px; color: var(--cobalt); letter-spacing: 0.02em; }
 
@@ -99,10 +98,10 @@ const html = `<!DOCTYPE html>
   .opp { padding: 20px 26px; border-bottom: 1px solid var(--hair); display: grid; grid-template-columns: 42px 1fr auto; gap: 18px; align-items: start; transition: background 0.15s; }
   .opp:last-child { border-bottom: none; }
   .opp:hover { background: rgba(22,20,15,0.025); }
-  .opp .rank { font-family: var(--fs); font-style: normal; font-weight: 800; font-size: 22px; color: var(--coral); }
+  .opp .rank { font-family: var(--fs); font-weight: 800; font-size: 22px; color: var(--coral); }
   .opp .tagrow { display: flex; gap: 10px; align-items: center; margin-bottom: 7px; flex-wrap: wrap; }
   .opp .sig { font-family: var(--fm); font-size: 9px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--coral); border: 1px solid rgba(224,80,46,0.4); padding: 3px 9px; border-radius: 999px; }
-  .opp h3 { font-size: 14.5px; font-weight: 700; line-height: 1.4; }
+  .opp h3 { font-size: 14.5px; font-weight: 600; line-height: 1.4; }
   .opp p { margin-top: 6px; font-size: 12.5px; line-height: 1.6; color: var(--soft); max-width: 520px; }
   .opp .est { text-align: right; white-space: nowrap; font-family: var(--fm); font-size: 12px; color: var(--ink); }
   .opp .est b { display: block; font-size: 15px; color: var(--green); font-weight: 600; }
@@ -119,11 +118,11 @@ const html = `<!DOCTYPE html>
   .w-ind { width: 8px; height: 8px; border-radius: 50%; margin-top: 6px; flex-shrink: 0; }
   .w-ind.hi { background: var(--coral); box-shadow: 0 0 0 4px rgba(224,80,46,0.14); }
   .w-ind.med { background: var(--amber); box-shadow: 0 0 0 4px rgba(176,120,22,0.14); }
-  .watch h4 { font-size: 13px; font-weight: 700; }
+  .watch h4 { font-size: 13px; font-weight: 600; }
   .watch p { margin-top: 4px; font-size: 12px; line-height: 1.55; color: var(--soft); }
 
   .foot-cta { background: var(--ink); color: var(--paper); border-radius: 20px; padding: 44px; text-align: center; margin: 8px 0 48px; }
-  .foot-cta h2 { font-family: var(--fs); font-style: normal; font-weight: 700; font-size: clamp(24px, 3vw, 34px); letter-spacing: -0.01em; }
+  .foot-cta h2 { font-family: var(--fs); font-weight: 700; font-size: clamp(24px, 3vw, 34px); letter-spacing: -0.01em; }
   .foot-cta h2 em { color: #FF9377; font-style: normal; }
   .foot-cta p { margin: 14px auto 0; max-width: 560px; color: rgba(244,239,230,0.75); font-size: 14px; line-height: 1.65; }
   .btns { margin-top: 26px; display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
@@ -135,8 +134,37 @@ const html = `<!DOCTYPE html>
   .btn-paper:hover { border-color: var(--paper); }
   .colophon { text-align: center; padding-bottom: 40px; font-family: var(--fm); font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--soft); }
 
+  /* Platform band */
+  .platgrid { display: grid; grid-template-columns: repeat(6, 1fr); gap: 16px; margin-bottom: 24px; }
+  .plat { background: var(--card); border: 1px solid var(--hair); border-radius: 14px; padding: 16px 18px; }
+  .plat .pn { font-family: var(--fm); font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--soft); }
+  .plat .po { margin-top: 8px; font-family: var(--fs); font-weight: 800; font-size: 22px; letter-spacing: -0.01em; }
+  .plat .pd { margin-top: 4px; font-family: var(--fm); font-size: 10.5px; }
+  .plat .pr { margin-top: 10px; display: inline-block; font-family: var(--fm); font-size: 9px; letter-spacing: 0.1em; text-transform: uppercase; padding: 3px 9px; border-radius: 999px; border: 1px solid var(--hair); color: var(--soft); }
+  .plat .pr.prim { color: var(--coral); border-color: rgba(224,80,46,0.4); }
+  .plat .pr.cap { color: var(--cobalt); border-color: rgba(39,66,245,0.35); }
+  .panel-foot { padding: 14px 26px; border-top: 1px solid var(--hair); display: flex; gap: 22px; flex-wrap: wrap; font-family: var(--fm); font-size: 10.5px; color: var(--soft); letter-spacing: 0.03em; }
+  .panel-foot b { color: var(--ink); font-weight: 600; }
+  .meth { margin-top: 14px; padding-top: 14px; border-top: 1px dashed var(--hair); font-family: var(--fm); font-size: 10.5px; line-height: 1.8; color: var(--soft); letter-spacing: 0.02em; }
+  .meth b { color: var(--ink); font-weight: 600; }
+  .sov-me { background: rgba(224,80,46,0.06); }
+  .spr { padding: 14px 26px; border-bottom: 1px solid var(--hair); display: flex; justify-content: space-between; gap: 14px; align-items: baseline; }
+  .spr:last-child { border-bottom: none; }
+  .spr .st { font-size: 12.5px; font-weight: 700; }
+  .spr .st small { display: block; font-family: var(--fm); font-size: 10px; font-weight: 400; color: var(--soft); margin-top: 3px; letter-spacing: 0.04em; }
+  .spr .sx { font-family: var(--fm); font-size: 9.5px; letter-spacing: 0.1em; text-transform: uppercase; white-space: nowrap; padding: 4px 10px; border-radius: 999px; border: 1px solid var(--hair); color: var(--soft); }
+  .spr .sx.go { color: var(--green); border-color: rgba(30,122,79,0.35); }
+  .spr .sx.stage { color: var(--amber); border-color: rgba(176,120,22,0.4); }
+  .statement { background: var(--ink); color: var(--paper); border-radius: 20px; padding: 40px 44px; margin-bottom: 24px; }
+  .statement .sh { font-family: var(--fm); font-size: 10px; letter-spacing: 0.24em; text-transform: uppercase; color: #FF9377; }
+  .statement p { margin-top: 16px; font-size: 15.5px; line-height: 1.75; color: rgba(244,239,230,0.88); max-width: 78ch; }
+  .statement .sig { margin-top: 18px; font-family: var(--fm); font-size: 10.5px; letter-spacing: 0.14em; text-transform: uppercase; color: rgba(244,239,230,0.55); }
+
   .reveal { opacity: 0; transform: translateY(18px); transition: opacity 0.6s ease, transform 0.6s ease; }
   .reveal.in { opacity: 1; transform: none; }
+
+  @media (max-width: 1100px) { .platgrid { grid-template-columns: repeat(3, 1fr); } }
+  @media (max-width: 700px) { .platgrid { grid-template-columns: repeat(2, 1fr); } }
 
   @media (max-width: 1100px) {
     .kpis { grid-template-columns: repeat(2, 1fr); }
@@ -201,8 +229,17 @@ const html = `<!DOCTYPE html>
     <div class="kpi">
       <div class="l">Owned Audience</div>
       <div class="v num">218k</div>
-      <div class="d num up">+41k QoQ · incl. newsletter</div>
+      <div class="d num up">+41k QoQ · cross-platform</div>
     </div>
+  </div>
+
+  <div class="platgrid reveal">
+    <div class="plat"><div class="pn">LinkedIn</div><div class="po num">88k</div><div class="pd num up">+13k QoQ</div><span class="pr prim">Primary</span></div>
+    <div class="plat"><div class="pn">TikTok</div><div class="po num">69k</div><div class="pd num up">+21k QoQ</div><span class="pr prim">Primary</span></div>
+    <div class="plat"><div class="pn">Instagram</div><div class="po num">32k</div><div class="pd num up">+5k QoQ</div><span class="pr">Secondary</span></div>
+    <div class="plat"><div class="pn">YT Shorts</div><div class="po num">20k</div><div class="pd num up">+3k QoQ</div><span class="pr">Secondary</span></div>
+    <div class="plat"><div class="pn">X</div><div class="po num">9k</div><div class="pd num down">-1k QoQ</div><span class="pr">Deprioritized</span></div>
+    <div class="plat"><div class="pn">Newsletter</div><div class="po num">0</div><div class="pd num mut">Launching Q3</div><span class="pr cap">Capture gap</span></div>
   </div>
 
   <div class="panel reveal">
@@ -218,6 +255,7 @@ const html = `<!DOCTYPE html>
     <div class="panel-body">
       <svg id="idxchart" viewBox="0 0 1060 330" xmlns="http://www.w3.org/2000/svg"></svg>
       <p class="chart-note">Attention Index is a composite of reach, engaged view-through, search volume, and qualified inbound, indexed 0-100 against the tracked comp set. Baseline projects the pre-engagement trajectory. Current alpha: <b>+47 points</b> over baseline, the gap between being posted and being programmed.</p>
+      <div class="meth"><b>Methodology:</b> Index = reach quality 30% (engaged view-through weighted) · qualified inbound 25% · share of voice 20% · search volume 15% · access surface 10%. Sources: client-granted platform analytics, comp-set crawl, search data, CRM-tagged inbound. Updated weekly. Baseline frozen at onboarding from 12 months of trailing data; verified quarterly.</div>
     </div>
   </div>
 
@@ -238,7 +276,7 @@ const html = `<!DOCTYPE html>
       </thead>
       <tbody>
         <tr>
-          <td><div class="piece">"Why we killed our best feature"</div><div class="meta">Studio cut · amplified</div></td>
+          <td><div class="piece">"Why we killed our best feature"</div><div class="meta">Studio cut · network amplified</div></td>
           <td>Talking-head + caption cut · LI + Reels</td>
           <td class="r num">2.4M</td>
           <td class="r num">41</td>
@@ -274,9 +312,11 @@ const html = `<!DOCTYPE html>
         </tr>
       </tbody>
     </table>
+    <div class="panel-foot"><span>By format: <b>16 short-form video · 9 talking-head · 7 carousels · 6 threads</b></span><span>Hit rate 100k+: <b>34%</b></span><span>Median views: <b>86k</b></span><span>Longest gap between pieces: <b>4 days</b></span></div>
   </div>
 
   <div class="two-col">
+    <div>
     <div class="panel reveal">
       <div class="panel-head">
         <h2><span class="code">FC-O1</span>Opportunity Queue</h2>
@@ -329,6 +369,28 @@ const html = `<!DOCTYPE html>
       </div>
     </div>
 
+    <div class="panel reveal">
+      <div class="panel-head">
+        <h2><span class="code">FC-S1</span>Share of Voice · Tracked Comp Set</h2>
+        <span class="sub">Consumer fintech founders · trailing 90d</span>
+      </div>
+      <table>
+        <thead>
+          <tr><th>Founder</th><th class="r">SOV</th><th class="r">QoQ</th><th class="r">Rank</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><div class="piece" style="font-size:13px;">R. Castellanos</div><div class="meta">Brightpay · CEO</div></td><td class="r num">34%</td><td class="r num down">-3 pts</td><td class="r num">#1</td></tr>
+          <tr class="sov-me"><td><div class="piece" style="font-size:13px;">Maya Reyes</div><div class="meta">Tidewater · CEO</div></td><td class="r num">31%</td><td class="r num up">+22 pts</td><td class="r num">#2</td></tr>
+          <tr><td><div class="piece" style="font-size:13px;">J. Okonkwo</div><div class="meta">Ledgerline · founder</div></td><td class="r num">14%</td><td class="r num down">-6 pts</td><td class="r num">#3</td></tr>
+          <tr><td><div class="piece" style="font-size:13px;">T. Vance</div><div class="meta">Splitstone · CEO</div></td><td class="r num">9%</td><td class="r num down">-4 pts</td><td class="r num">#4</td></tr>
+          <tr><td><div class="piece" style="font-size:13px;">E. Marsh</div><div class="meta">Coinage · CEO</div></td><td class="r num">7%</td><td class="r num down">-5 pts</td><td class="r num">#5</td></tr>
+          <tr><td><div class="piece" style="font-size:13px;">D. Liu</div><div class="meta">Pennywise · founder</div></td><td class="r num">5%</td><td class="r num down">-4 pts</td><td class="r num">#6</td></tr>
+        </tbody>
+      </table>
+      <div class="panel-foot"><span>SOV = share of engaged attention on category topics across tracked platforms. Zero-sum by construction; Maya's +22 came from somewhere.</span></div>
+    </div>
+    </div>
+
     <div>
       <div class="panel reveal">
         <div class="panel-head">
@@ -340,7 +402,7 @@ const html = `<!DOCTYPE html>
         <div class="rail"><div><div class="h">Desk setup, but honest</div><div class="r-meta">Collab cut · 3 creators</div></div><div class="reach">+240k</div></div>
         <div class="rail"><div><div class="h">Hiring manifesto</div><div class="r-meta">Newsletter cross-promo</div></div><div class="reach">+96k</div></div>
         <div class="rail"><div><div class="h">Board week, unfiltered</div><div class="r-meta">Engagement ops · first hour</div></div><div class="reach">+58k</div></div>
-        <div style="padding:16px 26px; font-family:var(--fm); font-size:11px; color:var(--soft);">Amplification lift: <span style="color:var(--green); font-weight:600;">2.6x</span> avg first-hour velocity on pushed pieces</div>
+        <div style="padding:16px 26px; font-family:var(--fm); font-size:11px; color:var(--soft);">Network lift: <span style="color:var(--green); font-weight:600;">2.6x</span> avg first-hour velocity on amplified pieces</div>
       </div>
 
       <div class="panel reveal">
@@ -368,6 +430,18 @@ const html = `<!DOCTYPE html>
             </tr>
           </tbody>
         </table>
+      </div>
+
+      <div class="panel reveal">
+        <div class="panel-head">
+          <h2><span class="code">FC-SP1</span>Current Sprint</h2>
+          <span class="sub">Next 30 days</span>
+        </div>
+        <div class="spr"><div class="st">4 cold-open POV cuts<small>Rides opp 01 · format window open</small></div><span class="sx go">In production</span></div>
+        <div class="spr"><div class="st">2 tier-1 pod packets out<small>Opp 02 · warm paths engaged</small></div><span class="sx go">This week</span></div>
+        <div class="spr"><div class="st">Interchange newsjack staged<small>Opp 03 · ships within 2h of ruling</small></div><span class="sx stage">Staged</span></div>
+        <div class="spr"><div class="st">Newsletter build + seed plan<small>Opp 04 · the capture layer</small></div><span class="sx stage">Scoping</span></div>
+        <div class="spr"><div class="st">Hiring series, part 1 of 3<small>Opp 05 · talent funnel lane</small></div><span class="sx go">Scripted</span></div>
       </div>
 
       <div class="panel reveal">
@@ -400,6 +474,12 @@ const html = `<!DOCTYPE html>
     </div>
   </div>
 
+  <div class="statement reveal">
+    <div class="sh">✦ Q2 2026 Attention Statement · In Brief</div>
+    <p>The attention portfolio entered the quarter at index 50 and exits at 74, against a passive baseline of 27. The Board Room shipped 38 pieces, amplified every winner, and attributed $4.1M in qualified pipeline plus two senior engineering hires to founder-led content. Share of voice more than tripled year-to-date to 31%, moving Maya from #5 to #2 in the tracked set; the cold-open format advantage is currently uncontested. Priority next quarter: stand up the capture layer (newsletter to 6k+ owned subscribers) before competitors finish copying the formats.</p>
+    <div class="sig">The Board Room · Founder Control · Full statement runs four pages, reads in four minutes</div>
+  </div>
+
   <div class="foot-cta reveal">
     <h2>This is what a founder looks like <em>under management.</em></h2>
     <p>The demo is illustrative. Your audit replaces it with your name, your comp set, and the alpha sitting unclaimed in your category.</p>
@@ -416,7 +496,7 @@ const html = `<!DOCTYPE html>
 (function () {
   var labels = ["Jul 25","Aug 25","Sep 25","Oct 25","Nov 25","Dec 25","Jan 26","Feb 26","Mar 26","Apr 26","May 26","Jun 26"];
   var actual = [31,30,32,29,30,28,34,41,50,58,67,74];
-  var deskStart = 5; // Dec 25 = last pre-engagement point
+  var deskStart = 5; // Dec 25 = last pre-desk point
   var baseline = [28,29,28,29,27,28,27]; // indices 5..11
 
   var svg = document.getElementById("idxchart");
