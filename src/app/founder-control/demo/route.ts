@@ -7,9 +7,11 @@ const html = `<!DOCTYPE html>
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>FOUNDER CONTROL · Attention P&L · Maya Reyes / Tidewater · Q2 2026</title>
 <meta name="description" content="FOUNDER CONTROL attention P&L dashboard demo. Illustrative data." />
+<link rel="preconnect" href="https://api.fontshare.com" crossorigin />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+<link href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@500,700,800&f[]=satoshi@400,500,700&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
 <style>
   :root {
     --paper: #F4EFE6;
@@ -18,13 +20,13 @@ const html = `<!DOCTYPE html>
     --soft: #5A554A;
     --faint: rgba(22, 20, 15, 0.12);
     --hair: rgba(22, 20, 15, 0.08);
-    --coral: #FF4A1F;
+    --coral: #E0502E;
     --cobalt: #2742F5;
     --green: #1E7A4F;
     --amber: #B07816;
-    --fd: "Space Grotesk", sans-serif;
-    --fs: "Instrument Serif", serif;
-    --fm: "IBM Plex Mono", monospace;
+    --fd: "Satoshi", sans-serif;
+    --fs: "Cabinet Grotesk", sans-serif;
+    --fm: "JetBrains Mono", monospace;
   }
   * { margin: 0; padding: 0; box-sizing: border-box; }
   body { background: var(--paper); color: var(--ink); font-family: var(--fd); -webkit-font-smoothing: antialiased; }
@@ -47,8 +49,8 @@ const html = `<!DOCTYPE html>
 
   .head { padding: 38px 0 30px; display: flex; align-items: flex-end; justify-content: space-between; gap: 24px; flex-wrap: wrap; }
   .head .eyebrow { font-family: var(--fm); font-size: 10px; letter-spacing: 0.28em; text-transform: uppercase; color: var(--soft); margin-bottom: 10px; }
-  .head h1 { font-size: clamp(26px, 3vw, 40px); font-weight: 600; letter-spacing: -0.02em; }
-  .head h1 .co { font-family: var(--fs); font-style: italic; font-weight: 400; color: var(--coral); }
+  .head h1 { font-family: var(--fs); font-size: clamp(26px, 3vw, 40px); font-weight: 800; letter-spacing: -0.02em; }
+  .head h1 .co { font-family: var(--fs); font-style: normal; font-weight: 500; color: var(--coral); }
   .head h1 .qtr { color: var(--soft); font-weight: 400; font-size: 0.6em; }
   .period { font-family: var(--fm); font-size: 12px; color: var(--soft); display: flex; gap: 18px; align-items: center; flex-wrap: wrap; }
   .period .dot { width: 7px; height: 7px; border-radius: 50%; background: var(--coral); display: inline-block; margin-right: 8px; animation: pulse 2.2s infinite; }
@@ -58,14 +60,14 @@ const html = `<!DOCTYPE html>
   .kpi { background: var(--card); border: 1px solid var(--hair); border-radius: 16px; padding: 22px 24px; box-shadow: 0 1px 0 rgba(22,20,15,0.04); transition: transform 0.2s ease, box-shadow 0.2s ease; }
   .kpi:hover { transform: translateY(-3px); box-shadow: 0 14px 34px rgba(22,20,15,0.09); }
   .kpi .l { font-family: var(--fm); font-size: 9.5px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--soft); }
-  .kpi .v { margin-top: 12px; font-family: var(--fs); font-size: 34px; line-height: 1; letter-spacing: -0.01em; }
-  .kpi .v small { font-family: var(--fm); font-size: 12px; color: var(--soft); }
+  .kpi .v { margin-top: 12px; font-family: var(--fs); font-style: normal; font-size: 34px; font-weight: 800; line-height: 1; letter-spacing: -0.01em; }
+  .kpi .v small { font-family: var(--fm); font-size: 12px; font-weight: 400; color: var(--soft); }
   .kpi .d { margin-top: 10px; font-family: var(--fm); font-size: 11px; }
   .up { color: var(--green); } .down { color: var(--coral); } .blue { color: var(--cobalt); } .mut { color: var(--soft); }
 
   .panel { background: var(--card); border: 1px solid var(--hair); border-radius: 18px; margin-bottom: 24px; overflow: hidden; box-shadow: 0 1px 0 rgba(22,20,15,0.04); }
   .panel-head { padding: 20px 26px; border-bottom: 1px solid var(--hair); display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
-  .panel-head h2 { font-size: 16px; font-weight: 600; display: flex; align-items: center; gap: 12px; }
+  .panel-head h2 { font-size: 16px; font-weight: 700; display: flex; align-items: center; gap: 12px; }
   .panel-head h2 .code { font-family: var(--fm); font-size: 10px; color: var(--coral); letter-spacing: 0.16em; }
   .panel-head .sub { font-family: var(--fm); font-size: 11px; color: var(--soft); }
   .panel-body { padding: 26px; }
@@ -76,7 +78,7 @@ const html = `<!DOCTYPE html>
   .lg .sw.pre { background: #A39C8C; }
   .lg .sw.act { background: var(--coral); }
   .lg .sw.base { height: 0; border-top: 2px dashed #A39C8C; border-radius: 0; }
-  .lg .sw.alpha { width: 12px; height: 12px; background: rgba(255,74,31,0.12); border: 1px solid rgba(255,74,31,0.45); }
+  .lg .sw.alpha { width: 12px; height: 12px; background: rgba(224,80,46,0.12); border: 1px solid rgba(224,80,46,0.45); }
   #idxchart { width: 100%; height: auto; display: block; }
   .chart-note { margin-top: 14px; font-size: 12.5px; color: var(--soft); line-height: 1.6; }
   .chart-note b { color: var(--coral); font-family: var(--fm); font-weight: 500; }
@@ -88,7 +90,7 @@ const html = `<!DOCTYPE html>
   tbody tr { transition: background 0.15s; }
   tbody tr:hover { background: rgba(22,20,15,0.025); }
   td.r, th.r { text-align: right; }
-  .piece { font-weight: 600; font-size: 14px; }
+  .piece { font-weight: 700; font-size: 14px; }
   .meta { margin-top: 4px; font-family: var(--fm); font-size: 10.5px; color: var(--soft); letter-spacing: 0.03em; }
   .outcome { font-family: var(--fm); font-size: 11px; color: var(--cobalt); letter-spacing: 0.02em; }
 
@@ -97,10 +99,10 @@ const html = `<!DOCTYPE html>
   .opp { padding: 20px 26px; border-bottom: 1px solid var(--hair); display: grid; grid-template-columns: 42px 1fr auto; gap: 18px; align-items: start; transition: background 0.15s; }
   .opp:last-child { border-bottom: none; }
   .opp:hover { background: rgba(22,20,15,0.025); }
-  .opp .rank { font-family: var(--fs); font-style: italic; font-size: 22px; color: var(--coral); }
+  .opp .rank { font-family: var(--fs); font-style: normal; font-weight: 800; font-size: 22px; color: var(--coral); }
   .opp .tagrow { display: flex; gap: 10px; align-items: center; margin-bottom: 7px; flex-wrap: wrap; }
-  .opp .sig { font-family: var(--fm); font-size: 9px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--coral); border: 1px solid rgba(255,74,31,0.4); padding: 3px 9px; border-radius: 999px; }
-  .opp h3 { font-size: 14.5px; font-weight: 600; line-height: 1.4; }
+  .opp .sig { font-family: var(--fm); font-size: 9px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--coral); border: 1px solid rgba(224,80,46,0.4); padding: 3px 9px; border-radius: 999px; }
+  .opp h3 { font-size: 14.5px; font-weight: 700; line-height: 1.4; }
   .opp p { margin-top: 6px; font-size: 12.5px; line-height: 1.6; color: var(--soft); max-width: 520px; }
   .opp .est { text-align: right; white-space: nowrap; font-family: var(--fm); font-size: 12px; color: var(--ink); }
   .opp .est b { display: block; font-size: 15px; color: var(--green); font-weight: 600; }
@@ -115,19 +117,20 @@ const html = `<!DOCTYPE html>
   .watch { padding: 18px 26px; border-bottom: 1px solid var(--hair); display: flex; gap: 14px; align-items: flex-start; }
   .watch:last-child { border-bottom: none; }
   .w-ind { width: 8px; height: 8px; border-radius: 50%; margin-top: 6px; flex-shrink: 0; }
-  .w-ind.hi { background: var(--coral); box-shadow: 0 0 0 4px rgba(255,74,31,0.14); }
+  .w-ind.hi { background: var(--coral); box-shadow: 0 0 0 4px rgba(224,80,46,0.14); }
   .w-ind.med { background: var(--amber); box-shadow: 0 0 0 4px rgba(176,120,22,0.14); }
-  .watch h4 { font-size: 13px; font-weight: 600; }
+  .watch h4 { font-size: 13px; font-weight: 700; }
   .watch p { margin-top: 4px; font-size: 12px; line-height: 1.55; color: var(--soft); }
 
   .foot-cta { background: var(--ink); color: var(--paper); border-radius: 20px; padding: 44px; text-align: center; margin: 8px 0 48px; }
-  .foot-cta h2 { font-family: var(--fs); font-style: italic; font-weight: 400; font-size: clamp(24px, 3vw, 34px); letter-spacing: -0.01em; }
-  .foot-cta h2 em { color: var(--coral); font-style: italic; }
+  .foot-cta h2 { font-family: var(--fs); font-style: normal; font-weight: 700; font-size: clamp(24px, 3vw, 34px); letter-spacing: -0.01em; }
+  .foot-cta h2 em { color: #FF9377; font-style: normal; }
   .foot-cta p { margin: 14px auto 0; max-width: 560px; color: rgba(244,239,230,0.75); font-size: 14px; line-height: 1.65; }
   .btns { margin-top: 26px; display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
   .btn { display: inline-flex; align-items: center; font-family: var(--fm); font-size: 11.5px; font-weight: 500; letter-spacing: 0.06em; text-transform: uppercase; text-decoration: none; padding: 13px 26px; border-radius: 999px; transition: transform 0.2s, box-shadow 0.2s; border: 1px solid transparent; }
+  .btn:active { transform: translateY(0) scale(0.97); }
   .btn-coral { background: var(--coral); color: var(--paper); }
-  .btn-coral:hover { transform: translateY(-2px); box-shadow: 0 10px 26px rgba(255,74,31,0.4); }
+  .btn-coral:hover { transform: translateY(-2px); box-shadow: 0 10px 26px rgba(224,80,46,0.4); }
   .btn-paper { background: transparent; color: var(--paper); border-color: rgba(244,239,230,0.4); }
   .btn-paper:hover { border-color: var(--paper); }
   .colophon { text-align: center; padding-bottom: 40px; font-family: var(--fm); font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--soft); }
@@ -155,7 +158,7 @@ const html = `<!DOCTYPE html>
     <a class="wordmark" href="/founder-control"><span class="star">✦</span><span class="name">FOUNDER CONTROL</span></a>
     <div class="topbar-right">
       <span class="stamp">Updated Jun 11, 2026 · 06:00 PT</span>
-      <a href="/founder-control">About the desk</a>
+      <a href="/founder-control">About the Board Room</a>
     </div>
   </div>
 </div>
@@ -168,7 +171,7 @@ const html = `<!DOCTYPE html>
       <h1>Maya Reyes <span class="co">/ Tidewater</span> <span class="qtr">· Q2 2026</span></h1>
     </div>
     <div class="period">
-      <span><span class="dot"></span>Desk live</span>
+      <span><span class="dot"></span>Board Room live</span>
       <span>Onboarded Jan 2026</span>
       <span>Seat 3 of 8</span>
     </div>
@@ -183,7 +186,7 @@ const html = `<!DOCTYPE html>
     <div class="kpi">
       <div class="l">Qualified Inbound</div>
       <div class="v num">23<small>/mo</small></div>
-      <div class="d num up">4x pre-desk avg (6/mo)</div>
+      <div class="d num up">4x pre-engagement avg (6/mo)</div>
     </div>
     <div class="kpi">
       <div class="l">Pipeline Attributed</div>
@@ -204,9 +207,9 @@ const html = `<!DOCTYPE html>
 
   <div class="panel reveal">
     <div class="panel-head">
-      <h2><span class="code">FC-R1</span>Attention Index · Managed vs Pre-Desk Baseline</h2>
+      <h2><span class="code">FC-R1</span>Attention Index · Managed vs Pre-Engagement Baseline</h2>
       <div class="legend">
-        <span class="lg"><span class="sw pre"></span>Pre-desk</span>
+        <span class="lg"><span class="sw pre"></span>Pre-engagement</span>
         <span class="lg"><span class="sw act"></span>Managed</span>
         <span class="lg"><span class="sw base"></span>Baseline projection</span>
         <span class="lg"><span class="sw alpha"></span>Attention alpha</span>
@@ -214,7 +217,7 @@ const html = `<!DOCTYPE html>
     </div>
     <div class="panel-body">
       <svg id="idxchart" viewBox="0 0 1060 330" xmlns="http://www.w3.org/2000/svg"></svg>
-      <p class="chart-note">Attention Index is a composite of reach, engaged view-through, search volume, and qualified inbound, indexed 0-100 against the tracked comp set. Baseline projects the pre-desk trajectory. Current alpha: <b>+47 points</b> over baseline, the gap between being posted and being programmed.</p>
+      <p class="chart-note">Attention Index is a composite of reach, engaged view-through, search volume, and qualified inbound, indexed 0-100 against the tracked comp set. Baseline projects the pre-engagement trajectory. Current alpha: <b>+47 points</b> over baseline, the gap between being posted and being programmed.</p>
     </div>
   </div>
 
@@ -235,7 +238,7 @@ const html = `<!DOCTYPE html>
       </thead>
       <tbody>
         <tr>
-          <td><div class="piece">"Why we killed our best feature"</div><div class="meta">Studio cut · network amplified</div></td>
+          <td><div class="piece">"Why we killed our best feature"</div><div class="meta">Studio cut · amplified</div></td>
           <td>Talking-head + caption cut · LI + Reels</td>
           <td class="r num">2.4M</td>
           <td class="r num">41</td>
@@ -246,7 +249,7 @@ const html = `<!DOCTYPE html>
           <td>Meme edit · TikTok</td>
           <td class="r num">1.6M</td>
           <td class="r num">6</td>
-          <td><span class="outcome">Memed by 3 network pages (ours)</span></td>
+          <td><span class="outcome">Stitched by 40+ creators</span></td>
         </tr>
         <tr>
           <td><div class="piece">"The fee transparency rant"</div><div class="meta">Cold-open POV format</div></td>
@@ -284,7 +287,7 @@ const html = `<!DOCTYPE html>
         <div>
           <div class="tagrow"><span class="sig">Trend Format</span></div>
           <h3>"Cold-open POV" format up 180% in the business niche</h3>
-          <p>SOUND CONTROL flagged the format inflecting across entertainment first; business creators are 3 weeks behind. Produce four cuts this sprint while the window is open.</p>
+          <p>Our trend desk flagged the format inflecting across entertainment first; business creators are 3 weeks behind. Produce four cuts this sprint while the window is open.</p>
         </div>
         <div class="est"><b>+6 pts</b>est. index lift<small>this sprint</small></div>
       </div>
@@ -311,7 +314,7 @@ const html = `<!DOCTYPE html>
         <div>
           <div class="tagrow"><span class="sig">Owned Channel Gap</span></div>
           <h3>Comp set averages 28k newsletter subs. Maya has zero.</h3>
-          <p>Launch a monthly newsletter on payments infrastructure; seed through the network's 96k-sub rail and convert episodic reach into an owned list.</p>
+          <p>Launch a monthly newsletter on payments infrastructure; seed through negotiated newsletter cross-promos and convert episodic reach into an owned list.</p>
         </div>
         <div class="est"><b>+9k</b>owned subs<small>per quarter</small></div>
       </div>
@@ -329,15 +332,15 @@ const html = `<!DOCTYPE html>
     <div>
       <div class="panel reveal">
         <div class="panel-head">
-          <h2><span class="code">FC-N1</span>Distribution Network</h2>
-          <span class="sub">Owned rails · 38 amplifications QTD</span>
+          <h2><span class="code">FC-N1</span>Amplification Log</h2>
+          <span class="sub">Creator seeding + paid · 38 pushes QTD</span>
         </div>
-        <div class="rail"><div><div class="h">fintech.memes.daily</div><div class="r-meta">IG + TikTok · meme page</div></div><div class="reach">412k</div></div>
-        <div class="rail"><div><div class="h">founderclips.tv</div><div class="r-meta">TikTok + Shorts · clip channel</div></div><div class="reach">380k</div></div>
-        <div class="rail"><div><div class="h">b2b.brainrot</div><div class="r-meta">TikTok · format lab</div></div><div class="reach">240k</div></div>
-        <div class="rail"><div><div class="h">money.moves.clips</div><div class="r-meta">IG Reels · finance clips</div></div><div class="reach">188k</div></div>
-        <div class="rail"><div><div class="h">The Ops Room</div><div class="r-meta">Newsletter · swap rail</div></div><div class="reach">96k</div></div>
-        <div style="padding:16px 26px; font-family:var(--fm); font-size:11px; color:var(--soft);">Network lift: <span style="color:var(--green); font-weight:600;">2.6x</span> avg first-hour velocity on amplified pieces</div>
+        <div class="rail"><div><div class="h">Fee transparency rant</div><div class="r-meta">Creator seeding · 14 stitches</div></div><div class="reach">+412k</div></div>
+        <div class="rail"><div><div class="h">Killed our best feature</div><div class="r-meta">Paid push · $9k behind the winner</div></div><div class="reach">+380k</div></div>
+        <div class="rail"><div><div class="h">Desk setup, but honest</div><div class="r-meta">Collab cut · 3 creators</div></div><div class="reach">+240k</div></div>
+        <div class="rail"><div><div class="h">Hiring manifesto</div><div class="r-meta">Newsletter cross-promo</div></div><div class="reach">+96k</div></div>
+        <div class="rail"><div><div class="h">Board week, unfiltered</div><div class="r-meta">Engagement ops · first hour</div></div><div class="reach">+58k</div></div>
+        <div style="padding:16px 26px; font-family:var(--fm); font-size:11px; color:var(--soft);">Amplification lift: <span style="color:var(--green); font-weight:600;">2.6x</span> avg first-hour velocity on pushed pieces</div>
       </div>
 
       <div class="panel reveal">
@@ -413,7 +416,7 @@ const html = `<!DOCTYPE html>
 (function () {
   var labels = ["Jul 25","Aug 25","Sep 25","Oct 25","Nov 25","Dec 25","Jan 26","Feb 26","Mar 26","Apr 26","May 26","Jun 26"];
   var actual = [31,30,32,29,30,28,34,41,50,58,67,74];
-  var deskStart = 5; // Dec 25 = last pre-desk point
+  var deskStart = 5; // Dec 25 = last pre-engagement point
   var baseline = [28,29,28,29,27,28,27]; // indices 5..11
 
   var svg = document.getElementById("idxchart");
@@ -426,20 +429,20 @@ const html = `<!DOCTYPE html>
 
   var defs = el("defs", {});
   defs.innerHTML = '<linearGradient id="coralfade" x1="0" y1="0" x2="0" y2="1">' +
-    '<stop offset="0%" stop-color="#FF4A1F" stop-opacity="0.16"/>' +
-    '<stop offset="100%" stop-color="#FF4A1F" stop-opacity="0"/></linearGradient>';
+    '<stop offset="0%" stop-color="#E0502E" stop-opacity="0.16"/>' +
+    '<stop offset="100%" stop-color="#E0502E" stop-opacity="0"/></linearGradient>';
   svg.appendChild(defs);
 
   [20, 40, 60, 80, 100].forEach(function (v) {
     svg.appendChild(el("line", { x1: padL, x2: W - padR, y1: y(v), y2: y(v), stroke: "rgba(22,20,15,0.07)", "stroke-width": 1 }));
-    var t = el("text", { x: padL - 12, y: y(v) + 4, "text-anchor": "end", fill: "#8B8578", "font-size": 10.5, "font-family": "IBM Plex Mono, monospace" });
+    var t = el("text", { x: padL - 12, y: y(v) + 4, "text-anchor": "end", fill: "#8B8578", "font-size": 10.5, "font-family": "JetBrains Mono, monospace" });
     t.textContent = v;
     svg.appendChild(t);
   });
 
   labels.forEach(function (lab, i) {
     if (i % 2 === 0 || i === labels.length - 1) {
-      var t = el("text", { x: x(i), y: H - 14, "text-anchor": "middle", fill: "#8B8578", "font-size": 10, "font-family": "IBM Plex Mono, monospace" });
+      var t = el("text", { x: x(i), y: H - 14, "text-anchor": "middle", fill: "#8B8578", "font-size": 10, "font-family": "JetBrains Mono, monospace" });
       t.textContent = lab;
       svg.appendChild(t);
     }
@@ -449,7 +452,7 @@ const html = `<!DOCTYPE html>
   for (var i = deskStart + 1; i < actual.length; i++) alphaPath += " L " + x(i) + " " + y(actual[i]);
   for (var j = actual.length - 1; j >= deskStart; j--) alphaPath += " L " + x(j) + " " + y(baseline[j - deskStart]);
   alphaPath += " Z";
-  svg.appendChild(el("path", { d: alphaPath, fill: "rgba(255,74,31,0.10)", stroke: "none" }));
+  svg.appendChild(el("path", { d: alphaPath, fill: "rgba(224,80,46,0.10)", stroke: "none" }));
 
   var areaPath = "M " + x(deskStart) + " " + y(actual[deskStart]);
   for (var i2 = deskStart + 1; i2 < actual.length; i2++) areaPath += " L " + x(i2) + " " + y(actual[i2]);
@@ -466,22 +469,22 @@ const html = `<!DOCTYPE html>
 
   var actPath = "M " + x(deskStart) + " " + y(actual[deskStart]);
   for (var a = deskStart + 1; a < actual.length; a++) actPath += " L " + x(a) + " " + y(actual[a]);
-  var actLine = el("path", { d: actPath, fill: "none", stroke: "#FF4A1F", "stroke-width": 2.8, "stroke-linecap": "round" });
+  var actLine = el("path", { d: actPath, fill: "none", stroke: "#E0502E", "stroke-width": 2.8, "stroke-linecap": "round" });
   svg.appendChild(actLine);
 
   svg.appendChild(el("line", { x1: x(deskStart + 1), x2: x(deskStart + 1), y1: padT, y2: H - padB, stroke: "rgba(22,20,15,0.25)", "stroke-width": 1, "stroke-dasharray": "3 4" }));
-  var mk = el("text", { x: x(deskStart + 1) + 8, y: padT + 12, fill: "#16140F", "font-size": 10, "font-family": "IBM Plex Mono, monospace", "letter-spacing": "1.5" });
-  mk.textContent = "DESK LIVE · JAN 2026";
+  var mk = el("text", { x: x(deskStart + 1) + 8, y: padT + 12, fill: "#16140F", "font-size": 10, "font-family": "JetBrains Mono, monospace", "letter-spacing": "1.5" });
+  mk.textContent = "BOARD ROOM LIVE · JAN 2026";
   svg.appendChild(mk);
 
   var lastX = x(actual.length - 1), lastY = y(actual[actual.length - 1]);
-  svg.appendChild(el("circle", { cx: lastX, cy: lastY, r: 4.5, fill: "#FF4A1F" }));
-  var endLabel = el("text", { x: lastX - 10, y: lastY - 12, "text-anchor": "end", fill: "#16140F", "font-size": 13, "font-weight": "600", "font-family": "IBM Plex Mono, monospace" });
+  svg.appendChild(el("circle", { cx: lastX, cy: lastY, r: 4.5, fill: "#E0502E" }));
+  var endLabel = el("text", { x: lastX - 10, y: lastY - 12, "text-anchor": "end", fill: "#16140F", "font-size": 13, "font-weight": "600", "font-family": "JetBrains Mono, monospace" });
   endLabel.textContent = "74";
   svg.appendChild(endLabel);
 
   var bX = x(actual.length - 1), bY = y(baseline[baseline.length - 1]);
-  var bLabel = el("text", { x: bX - 10, y: bY + 18, "text-anchor": "end", fill: "#8B8578", "font-size": 10.5, "font-family": "IBM Plex Mono, monospace" });
+  var bLabel = el("text", { x: bX - 10, y: bY + 18, "text-anchor": "end", fill: "#8B8578", "font-size": 10.5, "font-family": "JetBrains Mono, monospace" });
   bLabel.textContent = "baseline 27";
   svg.appendChild(bLabel);
 

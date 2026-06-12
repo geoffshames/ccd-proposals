@@ -7,9 +7,11 @@ const html = `<!DOCTYPE html>
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>FOUNDER CONTROL · Sample Attention Audit · Jordan Pike / Crestline</title>
 <meta name="description" content="Sample Founder Attention Audit. Illustrative data. By Crowd Control Digital." />
+<link rel="preconnect" href="https://api.fontshare.com" crossorigin />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+<link href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@500,700,800&f[]=satoshi@400,500,700&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
 <style>
   :root {
     --paper: #F4EFE6;
@@ -18,12 +20,12 @@ const html = `<!DOCTYPE html>
     --soft: #5A554A;
     --faint: rgba(22, 20, 15, 0.12);
     --hair: rgba(22, 20, 15, 0.08);
-    --coral: #FF4A1F;
+    --coral: #E0502E;
     --cobalt: #2742F5;
     --green: #1E7A4F;
-    --fd: "Space Grotesk", sans-serif;
-    --fs: "Instrument Serif", serif;
-    --fm: "IBM Plex Mono", monospace;
+    --fd: "Satoshi", sans-serif;
+    --fs: "Cabinet Grotesk", sans-serif;
+    --fm: "JetBrains Mono", monospace;
   }
   * { margin: 0; padding: 0; box-sizing: border-box; }
   body { background: var(--paper); color: var(--ink); font-family: var(--fd); -webkit-font-smoothing: antialiased; }
@@ -45,27 +47,27 @@ const html = `<!DOCTYPE html>
   .doc-head { padding: 64px 0 44px; border-bottom: 1px solid var(--faint); }
   .doc-meta { display: flex; justify-content: space-between; gap: 20px; flex-wrap: wrap; font-family: var(--fm); font-size: 10.5px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--soft); margin-bottom: 30px; }
   .doc-meta b { color: var(--coral); font-weight: 500; }
-  h1 { font-size: clamp(38px, 5.4vw, 64px); font-weight: 600; letter-spacing: -0.03em; line-height: 1.0; }
-  h1 .serif { font-family: var(--fs); font-style: italic; font-weight: 400; color: var(--coral); }
+  h1 { font-family: var(--fs); font-size: clamp(38px, 5.4vw, 62px); font-weight: 800; letter-spacing: -0.03em; line-height: 1.0; }
+  h1 .serif { font-family: var(--fs); font-style: normal; font-weight: 500; color: var(--coral); }
   .subject { margin-top: 22px; font-size: 17px; color: var(--soft); }
-  .subject b { color: var(--ink); font-weight: 600; }
+  .subject b { color: var(--ink); font-weight: 700; }
 
   .verdict { margin: 44px 0 0; display: grid; grid-template-columns: 280px 1fr; gap: 24px; align-items: stretch; }
   .score-card { background: var(--ink); color: var(--paper); border-radius: 20px; padding: 38px 36px; text-align: center; display: flex; flex-direction: column; justify-content: center; }
-  .score-card .lab { font-family: var(--fm); font-size: 10px; letter-spacing: 0.26em; text-transform: uppercase; color: var(--coral); }
-  .score-card .big { font-family: var(--fs); font-style: italic; font-size: 92px; line-height: 1; margin-top: 14px; }
+  .score-card .lab { font-family: var(--fm); font-size: 10px; letter-spacing: 0.26em; text-transform: uppercase; color: #FF9377; }
+  .score-card .big { font-family: var(--fs); font-style: normal; font-weight: 800; font-size: 92px; line-height: 1; margin-top: 14px; }
   .score-card .of { font-family: var(--fm); font-size: 12px; color: rgba(244,239,230,0.6); margin-top: 8px; }
   .score-card .rank { margin-top: 18px; font-family: var(--fm); font-size: 11px; letter-spacing: 0.1em; color: var(--paper); border-top: 1px solid rgba(244,239,230,0.16); padding-top: 16px; }
   .verdict-copy { background: var(--card); border: 1px solid var(--hair); border-radius: 20px; padding: 40px 42px; display: flex; flex-direction: column; justify-content: center; }
-  .verdict-copy .line { font-family: var(--fs); font-style: italic; font-size: clamp(22px, 2.8vw, 30px); line-height: 1.35; letter-spacing: -0.01em; }
-  .verdict-copy .line em { color: var(--coral); font-style: italic; }
+  .verdict-copy .line { font-family: var(--fs); font-style: normal; font-weight: 700; font-size: clamp(22px, 2.8vw, 30px); line-height: 1.35; letter-spacing: -0.01em; }
+  .verdict-copy .line em { color: var(--coral); font-style: normal; font-weight: 500; }
   .verdict-copy p { margin-top: 18px; font-size: 14.5px; line-height: 1.65; color: var(--soft); }
 
   section { padding: 84px 0; border-bottom: 1px solid var(--faint); }
   .sec-label { font-family: var(--fm); font-size: 11px; letter-spacing: 0.3em; text-transform: uppercase; color: var(--soft); margin-bottom: 16px; display: flex; align-items: center; gap: 10px; }
   .sec-label .s { color: var(--coral); }
-  h2 { font-size: clamp(26px, 3.4vw, 40px); font-weight: 600; letter-spacing: -0.02em; line-height: 1.08; }
-  h2 .serif { font-family: var(--fs); font-style: italic; font-weight: 400; color: var(--coral); }
+  h2 { font-family: var(--fs); font-size: clamp(26px, 3.4vw, 40px); font-weight: 700; letter-spacing: -0.02em; line-height: 1.08; }
+  h2 .serif { font-family: var(--fs); font-style: normal; font-weight: 500; color: var(--coral); }
 
   .comps { margin-top: 48px; display: flex; flex-direction: column; gap: 14px; }
   .comp { display: grid; grid-template-columns: 230px 1fr 60px; gap: 18px; align-items: center; }
@@ -81,9 +83,9 @@ const html = `<!DOCTYPE html>
   .dims { margin-top: 48px; display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
   .dim { background: var(--card); border: 1px solid var(--hair); border-radius: 16px; padding: 24px 26px; display: grid; grid-template-columns: 1fr auto; gap: 8px 18px; align-items: start; transition: transform 0.2s ease, box-shadow 0.2s ease; }
   .dim:hover { transform: translateY(-3px); box-shadow: 0 14px 32px rgba(22,20,15,0.08); }
-  .dim h3 { font-size: 15.5px; font-weight: 600; }
-  .dim .ds { font-family: var(--fs); font-style: italic; font-size: 28px; line-height: 1; }
-  .dim .ds small { font-family: var(--fm); font-size: 10px; color: var(--soft); }
+  .dim h3 { font-size: 15.5px; font-weight: 700; }
+  .dim .ds { font-family: var(--fs); font-style: normal; font-weight: 800; font-size: 28px; line-height: 1; }
+  .dim .ds small { font-family: var(--fm); font-size: 10px; font-weight: 400; color: var(--soft); }
   .dim .ds.bad { color: var(--coral); }
   .dim .ds.mid { color: var(--ink); }
   .dim p { grid-column: 1 / -1; font-size: 13px; line-height: 1.6; color: var(--soft); }
@@ -91,10 +93,10 @@ const html = `<!DOCTYPE html>
   .opps { margin-top: 48px; display: flex; flex-direction: column; }
   .opp { display: grid; grid-template-columns: 56px 1fr auto; gap: 22px; padding: 26px 0; border-top: 1px solid var(--hair); align-items: start; }
   .opp:last-child { border-bottom: 1px solid var(--hair); }
-  .opp .rank { font-family: var(--fs); font-style: italic; font-size: 34px; color: var(--coral); line-height: 1; }
-  .opp h3 { font-size: 17px; font-weight: 600; line-height: 1.35; }
+  .opp .rank { font-family: var(--fs); font-style: normal; font-weight: 800; font-size: 34px; color: var(--coral); line-height: 1; }
+  .opp h3 { font-size: 17px; font-weight: 700; line-height: 1.35; }
   .opp p { margin-top: 8px; font-size: 13.5px; line-height: 1.65; color: var(--soft); max-width: 600px; }
-  .opp p b { color: var(--ink); font-weight: 600; }
+  .opp p b { color: var(--ink); font-weight: 700; }
   .opp .est { text-align: right; white-space: nowrap; font-family: var(--fm); font-size: 11px; color: var(--soft); }
   .opp .est b { display: block; font-size: 16px; color: var(--green); font-weight: 600; margin-bottom: 4px; }
 
@@ -102,19 +104,20 @@ const html = `<!DOCTYPE html>
   .phase { background: var(--card); border: 1px solid var(--hair); border-radius: 18px; padding: 32px 30px; transition: transform 0.2s ease, box-shadow 0.2s ease; }
   .phase:hover { transform: translateY(-4px); box-shadow: 0 16px 38px rgba(22,20,15,0.09); }
   .phase .days { font-family: var(--fm); font-size: 10.5px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--coral); }
-  .phase h3 { margin-top: 14px; font-size: 18px; font-weight: 600; }
+  .phase h3 { margin-top: 14px; font-size: 18px; font-weight: 700; }
   .phase ul { margin-top: 16px; list-style: none; }
   .phase li { padding: 9px 0; border-top: 1px solid var(--hair); font-size: 13px; color: var(--soft); line-height: 1.5; display: flex; gap: 10px; }
   .phase li::before { content: "✦"; color: var(--coral); font-size: 10px; padding-top: 3px; }
 
   .cta-sec { border-bottom: none; text-align: center; }
-  .cta-sec .line { font-family: var(--fs); font-style: italic; font-size: clamp(28px, 4.4vw, 52px); line-height: 1.12; max-width: 820px; margin: 0 auto; }
-  .cta-sec .line em { color: var(--coral); font-style: italic; }
+  .cta-sec .line { font-family: var(--fs); font-style: normal; font-weight: 700; font-size: clamp(28px, 4.4vw, 52px); line-height: 1.12; max-width: 820px; margin: 0 auto; letter-spacing: -0.02em; }
+  .cta-sec .line em { color: var(--coral); font-style: normal; font-weight: 500; }
   .cta-sec p { margin: 24px auto 0; max-width: 520px; color: var(--soft); font-size: 15.5px; line-height: 1.7; }
   .btns { margin-top: 34px; display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
   .btn { display: inline-flex; align-items: center; font-family: var(--fm); font-size: 12px; font-weight: 500; letter-spacing: 0.06em; text-transform: uppercase; text-decoration: none; padding: 13px 26px; border-radius: 999px; transition: transform 0.2s, box-shadow 0.2s, background 0.2s, color 0.2s; border: 1px solid var(--ink); }
+  .btn:active { transform: translateY(0) scale(0.97); }
   .btn-coral { background: var(--coral); color: var(--paper); border-color: var(--coral); }
-  .btn-coral:hover { transform: translateY(-2px); box-shadow: 0 10px 26px rgba(255,74,31,0.35); }
+  .btn-coral:hover { transform: translateY(-2px); box-shadow: 0 10px 26px rgba(224,80,46,0.35); }
   .btn-line { background: transparent; color: var(--ink); }
   .btn-line:hover { background: var(--ink); color: var(--paper); }
   .price-tag { margin-top: 30px; font-family: var(--fm); font-size: 11px; letter-spacing: 0.22em; text-transform: uppercase; color: var(--coral); }
@@ -142,7 +145,7 @@ const html = `<!DOCTYPE html>
 <div class="topbar">
   <div class="topbar-inner">
     <a class="wordmark" href="/founder-control"><span class="star">✦</span><span class="name">FOUNDER CONTROL</span></a>
-    <a class="back" href="/founder-control">About the desk</a>
+    <a class="back" href="/founder-control">About the Board Room</a>
   </div>
 </div>
 
@@ -166,7 +169,7 @@ const html = `<!DOCTYPE html>
       </div>
       <div class="verdict-copy">
         <div class="line">Jordan is the best-kept secret in freight tech. <em>Secrets don't win categories.</em></div>
-        <p>The raw material is unusually good: clear convictions, a contrarian read on freight payments, and real stage presence. What's missing is everything around it: no owned territory, no short-form presence, no distribution, no capture. The good news is uncomfortable: the category's attention is sitting unclaimed, and the comp set's content is weak enough to take share fast.</p>
+        <p>The raw material is unusually good: clear convictions, a contrarian read on freight payments, and real stage presence. What's missing is everything around it: no owned territory, no short-form presence, no amplification, no capture. The good news is uncomfortable: the category's attention is sitting unclaimed, and the comp set's content is weak enough to take share fast.</p>
       </div>
     </div>
   </div>
@@ -195,7 +198,7 @@ const html = `<!DOCTYPE html>
       <div class="dim"><h3>Velocity</h3><div class="ds bad">4<small>/10</small></div><p>Three posts a month, episodic. Momentum resets after every gap; the algorithm forgets faster than buyers do.</p></div>
       <div class="dim"><h3>Format fitness</h3><div class="ds bad">4<small>/10</small></div><p>Text-only on LinkedIn. No video system, no carousel system, no formats engineered for completion.</p></div>
       <div class="dim"><h3>Platform mix</h3><div class="ds bad">4<small>/10</small></div><p>LinkedIn only. Absent on TikTok and Shorts, where exactly zero credible freight-tech founders currently operate.</p></div>
-      <div class="dim"><h3>Distribution</h3><div class="ds bad">2<small>/10</small></div><p>No owned rails, no network, no swaps. Every post starts from a cold open and relies on the feed's mercy.</p></div>
+      <div class="dim"><h3>Distribution</h3><div class="ds bad">2<small>/10</small></div><p>No amplification system: no creator seeding, no cross-promos, no paid behind winners. Every post starts cold and relies on the feed's mercy.</p></div>
       <div class="dim"><h3>Capture</h3><div class="ds bad">3<small>/10</small></div><p>No newsletter, no CTA system, no DM funnel. The attention that does land evaporates with nothing to hold it.</p></div>
       <div class="dim"><h3>Access surface</h3><div class="ds mid">6<small>/10</small></div><p>Two podcast appearances ever, both low-fit. Seven high-fit shows identified, none pitched. Warm paths exist via two investors.</p></div>
       <div class="dim"><h3>Momentum</h3><div class="ds mid">6<small>/10</small></div><p>The Series B announcement spiked attention; nothing followed it. Spikes without systems are donations to the feed.</p></div>
@@ -273,10 +276,10 @@ const html = `<!DOCTYPE html>
       </div>
       <div class="phase">
         <div class="days">Days 31-60</div>
-        <h3>Studio + rails</h3>
+        <h3>Studio + amplification</h3>
         <ul>
           <li>Short-form cadence: 8-10 cuts/mo through the studio</li>
-          <li>Network attach: amplification on every release</li>
+          <li>Amplification live: creator seeding + paid on every release</li>
           <li>First 3 podcast pitches out via warm paths</li>
           <li>Hiring narrative series begins</li>
         </ul>
@@ -285,10 +288,10 @@ const html = `<!DOCTYPE html>
         <div class="days">Days 61-90</div>
         <h3>Capture + compound</h3>
         <ul>
-          <li>Newsletter launch, seeded through network rails</li>
+          <li>Newsletter launch, seeded through cross-promos</li>
           <li>Paid amplification on proven winners only</li>
           <li>First quarterly attention statement delivered</li>
-          <li>Desk decision: graduate or walk with the system</li>
+          <li>Board Room decision: graduate or walk with the system</li>
         </ul>
       </div>
     </div>
