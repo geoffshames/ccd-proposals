@@ -432,7 +432,7 @@ const html = `<!DOCTYPE html>
 
   <section>
     <div class="sec-label"><span class="s">✦</span> 08 / The 90-Day Plan</div>
-    <h2>From secret <span class="serif">to programming.</span></h2>
+    <h2>From secret <span class="serif">to unavoidable.</span></h2>
     <div class="plan reveal">
       <div class="phase">
         <div class="days">Days 0-30</div>

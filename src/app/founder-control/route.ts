@@ -259,7 +259,7 @@ const html = `<!DOCTYPE html>
     <div class="hero-grid">
       <div>
         <div class="kicker">✦ For founders with something at stake</div>
-        <h1>Every founder has a ghostwriter. <span class="accent">Almost none have distribution.</span></h1>
+        <h1>You don't need a ghostwriter. <span class="accent">You need a media company.</span></h1>
         <p class="hero-sub">FOUNDER CONTROL is <b>The Board Room</b>: a capacity-limited operation that builds the media company around you: an editorial desk for your voice, a short-form studio that makes you watchable, a distribution engine that puts creator seeding and paid behind every winner, and an <b>attention P&amp;L your board will actually respect</b>.</p>
         <div class="hero-ctas">
           <a href="/founder-control/audit" class="btn btn-ink">See a sample audit</a>
@@ -300,7 +300,7 @@ const html = `<!DOCTYPE html>
 
 <div class="band" style="margin-top:96px;">
   <div class="ticker-inner">
-    <span>Personal branding is a commodity. Being programming is not.</span><span>✦</span><span>Trained in the hardest attention market on earth.</span><span>✦</span><span>Personal branding is a commodity. Being programming is not.</span><span>✦</span><span>Trained in the hardest attention market on earth.</span><span>✦</span>
+    <span>Personal branding is a commodity. A media company is an asset.</span><span>✦</span><span>Trained in the hardest attention market on earth.</span><span>✦</span><span>Personal branding is a commodity. A media company is an asset.</span><span>✦</span><span>Trained in the hardest attention market on earth.</span><span>✦</span>
   </div>
 </div>
 

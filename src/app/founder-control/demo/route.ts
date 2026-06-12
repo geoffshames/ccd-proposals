@@ -254,7 +254,7 @@ const html = `<!DOCTYPE html>
     </div>
     <div class="panel-body">
       <svg id="idxchart" viewBox="0 0 1060 330" xmlns="http://www.w3.org/2000/svg"></svg>
-      <p class="chart-note">Attention Index is a composite of reach, engaged view-through, search volume, and qualified inbound, indexed 0-100 against the tracked comp set. Baseline projects the pre-engagement trajectory. Current alpha: <b>+47 points</b> over baseline, the gap between being posted and being programmed.</p>
+      <p class="chart-note">Attention Index is a composite of reach, engaged view-through, search volume, and qualified inbound, indexed 0-100 against the tracked comp set. Baseline projects the pre-engagement trajectory. Current alpha: <b>+47 points</b> over baseline, the gap between posting and being managed.</p>
       <div class="meth"><b>Methodology:</b> Index = reach quality 30% (engaged view-through weighted) · qualified inbound 25% · share of voice 20% · search volume 15% · access surface 10%. Sources: client-granted platform analytics, comp-set crawl, search data, CRM-tagged inbound. Updated weekly. Baseline frozen at onboarding from 12 months of trailing data; verified quarterly.</div>
     </div>
   </div>
