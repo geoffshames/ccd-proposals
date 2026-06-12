@@ -65,11 +65,11 @@ const html = `<!DOCTYPE html>
     color: var(--dim); text-transform: uppercase;
   }
   .nav-links { display: flex; align-items: center; gap: 28px; }
-  .nav-links a {
+  .nav-links a:not(.btn) {
     color: var(--muted); text-decoration: none; font-size: 13px; letter-spacing: 0.04em;
     transition: color 0.2s;
   }
-  .nav-links a:hover { color: var(--text); }
+  .nav-links a:not(.btn):hover { color: var(--text); }
   .btn {
     display: inline-flex; align-items: center; gap: 10px;
     font-family: var(--font-mono); font-size: 12px; font-weight: 500;

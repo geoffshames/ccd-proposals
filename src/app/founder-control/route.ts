@@ -50,8 +50,8 @@ const html = `<!DOCTYPE html>
   .wordmark .star { color: var(--coral); font-size: 15px; }
   .wordmark .name { font-family: var(--fm); font-weight: 600; font-size: 13.5px; letter-spacing: 0.18em; }
   .nav-links { display: flex; align-items: center; gap: 26px; }
-  .nav-links a { color: var(--soft); text-decoration: none; font-size: 14px; font-weight: 500; transition: color 0.2s; }
-  .nav-links a:hover { color: var(--ink); }
+  .nav-links a:not(.btn) { color: var(--soft); text-decoration: none; font-size: 14px; font-weight: 500; transition: color 0.2s; }
+  .nav-links a:not(.btn):hover { color: var(--ink); }
   .btn { display: inline-flex; align-items: center; gap: 10px; font-family: var(--fm); font-size: 11.5px; font-weight: 500; letter-spacing: 0.06em; text-transform: uppercase; text-decoration: none; padding: 13px 26px; border-radius: 999px; transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.25s cubic-bezier(0.16, 1, 0.3, 1), background 0.2s, color 0.2s; cursor: pointer; border: 1px solid var(--ink); }
   .btn:active { transform: translateY(0) scale(0.97); }
   .btn-ink { background: var(--ink); color: var(--paper); }
