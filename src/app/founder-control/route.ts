@@ -526,6 +526,22 @@ const html = `<!DOCTYPE html>
     entries.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); } });
   }, { threshold: 0.1 });
   document.querySelectorAll(".reveal, .bento").forEach(function (el) { io.observe(el); });
+
+  // Marquees: duplicate content until it covers 4x viewport width, then
+  // normalize the animation duration so px/s speed stays constant.
+  function fillTickers() {
+    document.querySelectorAll(".ticker-inner").forEach(function (el) {
+      var guard = 0;
+      while (el.scrollWidth < window.innerWidth * 4 && guard < 6) {
+        el.innerHTML = el.innerHTML + el.innerHTML;
+        guard++;
+      }
+      var pps = el.closest(".band") ? 55 : 75;
+      el.style.animationDuration = (el.scrollWidth / 2 / pps) + "s";
+    });
+  }
+  fillTickers();
+  if (document.fonts && document.fonts.ready) { document.fonts.ready.then(fillTickers); }
 </script>
 </body>
 </html>
