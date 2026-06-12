@@ -389,7 +389,7 @@ const html = `<!DOCTYPE html>
       <div>
         <div class="sec-label">04 / Infrastructure</div>
         <h2>This desk is not a deck. It already runs.</h2>
-        <p style="margin-top:24px; color:var(--muted); font-size:16px; line-height:1.7; max-width:480px;">CATALOG CONTROL sits on the operating stack Crowd Control Digital runs across ~20 active engagements a month. The tooling is live; your portfolio plugs into it.</p>
+        <p style="margin-top:24px; color:var(--muted); font-size:16px; line-height:1.7; max-width:480px;">CATALOG CONTROL sits on the operating stack Crowd Control Digital runs across 100+ active engagements a month. The tooling is live; your portfolio plugs into it.</p>
       </div>
       <div class="infra-list reveal">
         <div class="infra-item">

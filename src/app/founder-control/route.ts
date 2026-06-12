@@ -432,7 +432,7 @@ const html = `<!DOCTYPE html>
       <div>
         <div class="sec-label"><span class="s">✦</span> 05 / Why Us</div>
         <h2>Our other desks chart records. <span class="accent">Literally.</span></h2>
-        <p style="margin-top:24px; color:var(--soft); font-size:16px; line-height:1.7;">Crowd Control Digital runs ~20 entertainment engagements a month. Music is the most brutal attention market that exists: no product demo, no whitepaper, just whether people watch. That's the muscle the Board Room runs on.</p>
+        <p style="margin-top:24px; color:var(--soft); font-size:16px; line-height:1.7;">Crowd Control Digital runs 100+ entertainment engagements a month. Music is the most brutal attention market that exists: no product demo, no whitepaper, just whether people watch. That's the muscle the Board Room runs on.</p>
       </div>
       <div class="wedge-list reveal">
         <div class="wedge-item">
