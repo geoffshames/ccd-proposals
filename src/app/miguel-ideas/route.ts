@@ -311,6 +311,7 @@ const html = `<!DOCTYPE html>
 
       <!-- 24hr stream -->
       <article class="ccd-card idea" data-levers="streaming crm social">
+        <div class="idea-hero"><img src="/images/miguel-ideas/visualizer.jpg" alt="Concept render: a CAOS-styled 24-hour visualizer still" loading="lazy"/><span class="tagr">CCD concept render</span></div>
         <div class="idea-top"><span class="idea-num">01</span><span class="lift lift-low">Low lift</span></div>
         <h3 class="idea-title">The 24-Hour CAOS Stream</h3>
         <p class="concept">A looping visualizer livestream on YouTube: the album and catalog on repeat for 24 hours, launched on a keynote date (a holiday, summer break, the week of college finals).</p>
@@ -430,6 +431,7 @@ const html = `<!DOCTYPE html>
 
       <!-- Plush speaker -->
       <article class="ccd-card idea" data-levers="merch social">
+        <div class="idea-hero"><img src="/images/miguel-ideas/plush.jpg" alt="Concept render: a Miguel plush with a built-in speaker" loading="lazy"/><span class="tagr">CCD concept render</span></div>
         <div class="idea-top"><span class="idea-num">07</span><span class="lift lift-low">Low lift</span></div>
         <h3 class="idea-title">The Miguel Plush (with a Speaker)</h3>
         <p class="concept">A plush of Miguel with a built-in Bluetooth speaker that plays his songs. A novelty drop that knows it is funny.</p>
@@ -484,6 +486,7 @@ const html = `<!DOCTYPE html>
 
       <!-- Fan built MV -->
       <article class="ccd-card idea" data-levers="crm social streaming">
+        <div class="idea-hero"><img src="/images/miguel-ideas/fan-mv.jpg" alt="Concept render: a CAOS green-screen submission booth at a show" loading="lazy"/><span class="tagr">CCD concept render</span></div>
         <div class="idea-top"><span class="idea-num">09</span><span class="lift lift-med">Medium lift</span></div>
         <h3 class="idea-title">The Fan-Built Music Video</h3>
         <p class="concept">A pop-up, physical or digital, where fans create and design scenes that become part of an official video. Everything tracked through a custom hashtag.</p>
@@ -545,6 +548,7 @@ const html = `<!DOCTYPE html>
 
       <!-- Hidden track -->
       <article class="ccd-card idea" data-levers="streaming merch crm">
+        <div class="idea-hero"><img src="/images/miguel-ideas/vinyl.jpg" alt="Concept render: a numbered CAOS collector vinyl with the album cover" loading="lazy"/><span class="tagr">CCD concept render</span></div>
         <div class="idea-top"><span class="idea-num">12</span><span class="lift lift-med">Medium lift</span></div>
         <h3 class="idea-title">Hidden Track + Collector Vinyl</h3>
         <p class="concept">A hidden track inside a reissue, plus a limited vinyl pressing that carries an exclusive cut from the new album.</p>
