@@ -574,20 +574,19 @@ const html = `<!DOCTYPE html>
       <article class="ccd-card idea" data-levers="brand social tour">
         <div class="idea-top"><span class="idea-num">13</span><span class="lift lift-high">High lift</span></div>
         <h3 class="idea-title">The Drink Deal</h3>
-        <p class="concept">A beverage or food partnership with Miguel as the face, in the lineage of artist-and-soda deals like Biz Markie and Zevia.</p>
+        <p class="concept">A beverage or food partnership with Miguel as the face, in the lineage of artist-and-brand deals like Travis Scott x McDonald's.</p>
         <div><span class="seg-label">Make it Miguel</span>
           <ol class="mig">
-            <li>A culture-forward partner (a brand like Jarritos), built on taste and craft, not heritage or identity.</li>
+            <li>A culture-forward partner built on taste and craft, the kind of brand Miguel actually uses.</li>
             <li>A limited co-branded flavor or can in the CAOS palette.</li>
             <li>The deal funds content and sampling at tour stops.</li>
           </ol>
         </div>
-        <div><span class="seg-label">What it moves</span><p class="moves">Non-music revenue, new reach (including Latino audiences) through the brand's distribution, and a content budget that is not ours to carry.</p></div>
+        <div><span class="seg-label">What it moves</span><p class="moves">Non-music revenue, a new audience through the brand's distribution, and a content budget that is not ours to carry.</p></div>
         <div class="tags"><span class="tag">Brand $</span><span class="tag">Social</span><span class="tag">Touring</span></div>
         <div class="refs"><span class="refs-label">Reference</span>
-          <a class="ref" href="https://www.fastcompany.com/3027309/80s-rapper-biz-markie-tapped-as-the-face-of-natural-soda-brand-zevia" target="_blank" rel="noopener"><span class="badge">Artist × F&amp;B</span><span class="ri"><span class="rt">Biz Markie, face of Zevia</span><span class="rs">Fast Company</span></span><span class="arr">↗</span></a>
+          <a class="ref" href="https://corporate.mcdonalds.com/corpmcd/our-stories/article/travis-scott-launch.html" target="_blank" rel="noopener"><span class="badge">Artist × F&amp;B</span><span class="ri"><span class="rt">Travis Scott × McDonald's</span><span class="rs">McDonald's · Cactus Jack Meal</span></span><span class="arr">↗</span></a>
         </div>
-        <p class="note"><b>Framing:</b> the brand carries the cultural connection, Miguel carries the taste. We build it on craft, not on a "we love Mexico" lean.</p>
       </article>
 
       <!-- Flying stage -->
