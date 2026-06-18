@@ -158,6 +158,9 @@ const html = `<!DOCTYPE html>
     opacity:0;transform:translateY(20px);transition:opacity .6s cubic-bezier(.22,1,.36,1),transform .6s cubic-bezier(.22,1,.36,1),border-color .3s,box-shadow .3s}
   .idea.in{opacity:1;transform:none}
   .idea.hide{display:none}
+  .idea-hero{position:relative;margin:-26px -24px 4px;overflow:hidden}
+  .idea-hero img{width:100%;height:auto;display:block}
+  .idea-hero .tagr{position:absolute;left:10px;bottom:10px;font-family:var(--fm);font-size:9px;letter-spacing:.14em;text-transform:uppercase;color:#fff;background:rgba(0,0,0,.55);border:1px solid rgba(255,255,255,.18);padding:4px 8px;backdrop-filter:blur(4px)}
   .idea-top{display:flex;align-items:center;justify-content:space-between}
   .idea-num{font-family:var(--fm);font-size:12px;letter-spacing:.1em;color:var(--secondary)}
   .lift{font-family:var(--fm);font-size:10px;letter-spacing:.1em;text-transform:uppercase;padding:4px 9px}
@@ -328,6 +331,7 @@ const html = `<!DOCTYPE html>
 
       <!-- Obviously-fake AI bit -->
       <article class="ccd-card idea" data-levers="social">
+        <div class="idea-hero"><img src="/images/miguel-ideas/ai-bit.jpg" alt="Concept render: the CAOS head headlining on the Moon" loading="lazy"/><span class="tagr">CCD concept render</span></div>
         <div class="idea-top"><span class="idea-num">02</span><span class="lift lift-low">Low lift</span></div>
         <h3 class="idea-title">The Obviously-Fake AI Bit</h3>
         <p class="concept">Cheeky, plainly-AI images of Miguel that everyone is in on. Not aspirational stadium shots (he already headlines those), but absurd, clearly-fake scenarios played for the joke.</p>
@@ -458,6 +462,7 @@ const html = `<!DOCTYPE html>
 
       <!-- Box truck set -->
       <article class="ccd-card idea" data-levers="tour social streaming">
+        <div class="idea-hero"><img src="/images/miguel-ideas/rolling-stage.jpg" alt="Concept render: a CAOS box-truck stage on an LA street at night" loading="lazy"/><span class="tagr">CCD concept render</span></div>
         <div class="idea-top"><span class="idea-num">08</span><span class="lift lift-med">Medium lift</span></div>
         <h3 class="idea-title">The Rolling Stage</h3>
         <p class="concept">A surprise live set staged from a moving vehicle or a clear-sided box truck that rolls through a city, livestreamed and cut into clips.</p>
@@ -572,6 +577,7 @@ const html = `<!DOCTYPE html>
 
       <!-- F&B partnership -->
       <article class="ccd-card idea" data-levers="brand social tour">
+        <div class="idea-hero"><img src="/images/miguel-ideas/drink-can.jpg" alt="Concept render: a CAOS-palette co-branded soda can" loading="lazy"/><span class="tagr">CCD concept render</span></div>
         <div class="idea-top"><span class="idea-num">13</span><span class="lift lift-high">High lift</span></div>
         <h3 class="idea-title">The Drink Deal</h3>
         <p class="concept">A beverage or food partnership with Miguel as the face, in the lineage of artist-and-brand deals like Travis Scott x McDonald's.</p>
@@ -591,6 +597,7 @@ const html = `<!DOCTYPE html>
 
       <!-- Flying stage -->
       <article class="ccd-card idea" data-levers="tour social brand">
+        <div class="idea-hero"><img src="/images/miguel-ideas/flying-stage.jpg" alt="Concept render: a flying CAOS stage above a Mexico City crowd" loading="lazy"/><span class="tagr">CCD concept render</span></div>
         <div class="idea-top"><span class="idea-num">14</span><span class="lift lift-high">High lift</span></div>
         <h3 class="idea-title">The Flying Stage, Mexico City</h3>
         <p class="concept">A suspended, flying-stage spectacle built around Miguel's October Mexico City Vogue moment.</p>
