@@ -284,7 +284,7 @@ const html = `<!DOCTYPE html>
   <div class="wrap">
     <div class="legend">
       <h2>How to read this</h2>
-      <p>Concepts are grouped by lift: quick wins you can fire this week, mid-lift builds, and tentpole swings. Tags show the business lever each idea pulls. Filter the whole board by lever in the bar above.</p>
+      <p>Concepts are grouped by lift: quick wins you can fire this week, mid-lift builds, and tentpole swings. Tags show the business lever each idea pulls. Filter the whole board by lever in the bar above. Every idea is backed by a real, clickable reference.</p>
       <div class="legend-grid">
         <div class="lg"><span class="k">Streaming</span><span class="t"><b>Streaming / catalog.</b> Plays, watch-time, catalog reactivation.</span></div>
         <div class="lg"><span class="k">Touring</span><span class="t"><b>Live / tour.</b> Demand, urgency, ticket pull.</span></div>
@@ -326,22 +326,22 @@ const html = `<!DOCTYPE html>
         </div>
       </article>
 
-      <!-- AI stadium portraits -->
-      <article class="ccd-card idea" data-levers="social tour">
+      <!-- Obviously-fake AI bit -->
+      <article class="ccd-card idea" data-levers="social">
         <div class="idea-top"><span class="idea-num">02</span><span class="lift lift-low">Low lift</span></div>
-        <h3 class="idea-title">AI Stadium Portraits</h3>
-        <p class="concept">AI-rendered portraits that place Miguel inside the biggest rooms in the world, built from his existing stage-head asset. We can render these immediately.</p>
+        <h3 class="idea-title">The Obviously-Fake AI Bit</h3>
+        <p class="concept">Cheeky, plainly-AI images of Miguel that everyone is in on. Not aspirational stadium shots (he already headlines those), but absurd, clearly-fake scenarios played for the joke.</p>
         <div><span class="seg-label">Make it Miguel</span>
           <ol class="mig">
-            <li>A series headlining iconic stadiums (SoFi, Estadio Azteca, Wembley).</li>
-            <li>One a week as a "manifesting it" tease that quietly sets a stadium-headliner frame.</li>
-            <li>Let fans request the next city in comments and render the winners.</li>
+            <li>Put him somewhere impossible: headlining the Moon, performing inside a giant soda can, opening for himself in 1850.</li>
+            <li>Lean into the AI-slop look on purpose, with a visible wink (a "100% real" caption, a sixth finger left in) so no one mistakes it for real.</li>
+            <li>Let fans request the next absurd scene and render the winners.</li>
           </ol>
         </div>
-        <div><span class="seg-label">What it moves</span><p class="moves">Premium social content at almost no cost, an ambition signal that primes tour demand, and a repeatable weekly post.</p></div>
-        <div class="tags"><span class="tag">Social</span><span class="tag">Touring</span></div>
+        <div><span class="seg-label">What it moves</span><p class="moves">Near-zero-cost social content with built-in shareability, personality, and a running bit fans start to anticipate.</p></div>
+        <div class="tags"><span class="tag">Social</span></div>
         <div class="refs"><span class="refs-label">Reference</span>
-          <div class="ref"><span class="badge">CCD · Higgsfield</span><span class="ri"><span class="rt">Rendered in-house</span><span class="rs">Off Miguel's stage-head asset</span></span></div>
+          <a class="ref" href="https://www.instagram.com/hey_reilly/" target="_blank" rel="noopener"><span class="badge">AI Parody</span><span class="ri"><span class="rt">Hey Reilly</span><span class="rs">Instagram · clearly-a-joke AI edits</span></span><span class="arr">↗</span></a>
         </div>
       </article>
 
@@ -349,18 +349,18 @@ const html = `<!DOCTYPE html>
       <article class="ccd-card idea" data-levers="crm social">
         <div class="idea-top"><span class="idea-num">03</span><span class="lift lift-low">Low lift</span></div>
         <h3 class="idea-title">The CAOS Dropbox</h3>
-        <p class="concept">A shared gallery where fans upload their own photos and video from the night. Same mechanic as the event photo-share apps couples use at weddings.</p>
+        <p class="concept">A shared gallery where fans upload their own photos and video from the night, and Miguel keeps the content plus the contact info that comes with it.</p>
         <div><span class="seg-label">Make it Miguel</span>
           <ol class="mig">
             <li>A QR at every tour stop: "Upload your CAOS night" straight into a live gallery.</li>
-            <li>Every upload asks for an email or number first, so the gallery is a capture tool.</li>
+            <li>Run it on FanVids, a standalone site, or an S1C.LA landing page, with email or phone capture on every upload.</li>
             <li>Best fan clips get reposted and featured, which feeds the next round of uploads.</li>
           </ol>
         </div>
         <div><span class="seg-label">What it moves</span><p class="moves">Direct fan capture at the scale we want (the 23K-emails goal), a stream of authentic UGC, and a deeper sense of community.</p></div>
         <div class="tags"><span class="tag">Fan CRM</span><span class="tag">Social</span></div>
         <div class="refs"><span class="refs-label">Reference</span>
-          <a class="ref" href="https://www.wedding.studio/" target="_blank" rel="noopener"><span class="badge">Photo Share</span><span class="ri"><span class="rt">wedding.studio</span><span class="rs">Guest upload gallery model</span></span><span class="arr">↗</span></a>
+          <a class="ref" href="https://www.fanvids.io/" target="_blank" rel="noopener"><span class="badge">Fan UGC</span><span class="ri"><span class="rt">FanVids.io</span><span class="rs">Artist upload + first-party data</span></span><span class="arr">↗</span></a>
         </div>
       </article>
 
@@ -389,7 +389,7 @@ const html = `<!DOCTYPE html>
       <article class="ccd-card idea" data-levers="social">
         <div class="idea-top"><span class="idea-num">05</span><span class="lift lift-low">Low lift</span></div>
         <h3 class="idea-title">The "Family Man" Easter Egg</h3>
-        <p class="concept">A single oversized-prop stunt post (think the Travis Scott inflatable-head moment) flipped into a warm, human beat that cuts against the chaos of the era.</p>
+        <p class="concept">A single oversized-prop stunt post (think the Travis Scott giant-head moment) flipped into a warm, human beat that cuts against the chaos of the era.</p>
         <div><span class="seg-label">Make it Miguel</span>
           <ol class="mig">
             <li>A giant CAOS-head prop dropped into a calm domestic setting (kitchen, backyard, couch).</li>
@@ -400,26 +400,26 @@ const html = `<!DOCTYPE html>
         <div><span class="seg-label">What it moves</span><p class="moves">Humanizes the brand, breaks up the feed, and tends to overperform on shares because the contrast is the joke.</p></div>
         <div class="tags"><span class="tag">Social</span></div>
         <div class="refs"><span class="refs-label">Reference</span>
-          <div class="ref"><span class="badge">Stunt Post</span><span class="ri"><span class="rt">Travis Scott inflatable head</span><span class="rs">Oversized-prop social moment</span></span></div>
+          <a class="ref" href="https://www.billboard.com/music/music-news/travis-scott-knocked-over-during-concert-giant-head-prop-1235562734/" target="_blank" rel="noopener"><span class="badge">Stunt Prop</span><span class="ri"><span class="rt">Travis Scott giant head</span><span class="rs">Billboard · oversized-prop moment</span></span><span class="arr">↗</span></a>
         </div>
       </article>
 
-      <!-- Fake copyright tiktok -->
+      <!-- Comedy tease tiktok -->
       <article class="ccd-card idea" data-levers="social streaming">
         <div class="idea-top"><span class="idea-num">06</span><span class="lift lift-low">Low lift</span></div>
-        <h3 class="idea-title">The Fake Copyright Bit</h3>
-        <p class="concept">A tongue-in-cheek "I just got copyright struck" TikTok that is actually a stealth tease for an unreleased song. The Dylan Francis style of cheeky meta-bit.</p>
+        <h3 class="idea-title">The Comedy Tease</h3>
+        <p class="concept">A cheeky, deadpan comedy skit in the Dillon Francis vein that is secretly a stealth tease for an unreleased song.</p>
         <div><span class="seg-label">Make it Miguel</span>
           <ol class="mig">
-            <li>Miguel gets "struck" by his own unreleased record.</li>
-            <li>Lean it into the chaos persona so it feels native, not like an ad.</li>
-            <li>The punchline drives curiosity straight at the real release date.</li>
+            <li>Miguel plays the joke straight: the chaos persona, deadpan, doing a dumb-funny bit.</li>
+            <li>The punchline is the unreleased record, hiding in plain sight.</li>
+            <li>Keep it native to TikTok, never an ad read.</li>
           </ol>
         </div>
         <div><span class="seg-label">What it moves</span><p class="moves">Native-feeling TikTok reach, song discovery ahead of a drop, and personality that platforms reward.</p></div>
         <div class="tags"><span class="tag">Social</span><span class="tag">Streaming</span></div>
         <div class="refs"><span class="refs-label">Reference</span>
-          <div class="ref"><span class="badge">TikTok Bit</span><span class="ri"><span class="rt">Dylan Francis style</span><span class="rs">Cheeky fake-copyright format</span></span></div>
+          <a class="ref" href="https://www.tiktok.com/@dillonfrancis" target="_blank" rel="noopener"><span class="badge">Comedy DJ</span><span class="ri"><span class="rt">Dillon Francis</span><span class="rs">TikTok · deadpan musician bits</span></span><span class="arr">↗</span></a>
         </div>
         <p class="note"><b>Voice check:</b> only ships if it lands in Miguel's voice. A copy of someone else's bit reads as a copy.</p>
       </article>
@@ -516,29 +516,9 @@ const html = `<!DOCTYPE html>
         </div>
       </article>
 
-      <!-- HQ account -->
-      <article class="ccd-card idea" data-levers="crm social">
-        <div class="idea-top"><span class="idea-num">11</span><span class="lift lift-med">Medium lift</span></div>
-        <h3 class="idea-title">The "HQ" Account</h3>
-        <p class="concept">A team-run account with a personal, behind-the-curtain vibe, run on the K-pop "HQ" playbook. It exists to feed discovery, not to replace the personal feed.</p>
-        <div><span class="seg-label">Make it Miguel</span>
-          <ol class="mig">
-            <li>A "CAOS HQ" account of team-curated, behind-the-scenes moments.</li>
-            <li>Every bio and CTA funnels to S1C. It is a feeder, full stop.</li>
-            <li>A daily cadence the team owns, so Miguel never has to touch it.</li>
-          </ol>
-        </div>
-        <div><span class="seg-label">What it moves</span><p class="moves">Discovery and algorithmic surface area without adding to Miguel's plate, all funneling into the owned audience.</p></div>
-        <div class="tags"><span class="tag">Fan CRM</span><span class="tag">Social</span></div>
-        <div class="refs"><span class="refs-label">Reference</span>
-          <div class="ref"><span class="badge">K-Pop HQ</span><span class="ri"><span class="rt">Team-run HQ account model</span><span class="rs">Discovery feeder, not a personal feed</span></span></div>
-        </div>
-        <p class="note"><b>Guardrail:</b> the personal stays on S1C. The HQ account points to it and never competes with it.</p>
-      </article>
-
       <!-- Hidden track -->
       <article class="ccd-card idea" data-levers="streaming merch crm">
-        <div class="idea-top"><span class="idea-num">12</span><span class="lift lift-med">Medium lift</span></div>
+        <div class="idea-top"><span class="idea-num">11</span><span class="lift lift-med">Medium lift</span></div>
         <h3 class="idea-title">Hidden Track + Collector Vinyl</h3>
         <p class="concept">A hidden track inside a reissue, plus a limited vinyl pressing that carries an exclusive cut from the new album.</p>
         <div><span class="seg-label">Make it Miguel</span>
@@ -570,12 +550,12 @@ const html = `<!DOCTYPE html>
 
       <!-- F&B partnership -->
       <article class="ccd-card idea" data-levers="brand social tour">
-        <div class="idea-top"><span class="idea-num">13</span><span class="lift lift-high">High lift</span></div>
+        <div class="idea-top"><span class="idea-num">12</span><span class="lift lift-high">High lift</span></div>
         <h3 class="idea-title">The Drink Deal</h3>
-        <p class="concept">A beverage or food partnership with Miguel as the face, in the lineage of artist-and-soda deals like Biz Markie and Zevia. Jarritos is the obvious first call.</p>
+        <p class="concept">A beverage or food partnership with Miguel as the face, in the lineage of artist-and-soda deals like Biz Markie and Zevia.</p>
         <div><span class="seg-label">Make it Miguel</span>
           <ol class="mig">
-            <li>A culture-forward partnership built on taste and craft, not heritage or identity.</li>
+            <li>A culture-forward partner (a brand like Jarritos), built on taste and craft, not heritage or identity.</li>
             <li>A limited co-branded flavor or can in the CAOS palette.</li>
             <li>The deal funds content and sampling at tour stops.</li>
           </ol>
@@ -588,28 +568,9 @@ const html = `<!DOCTYPE html>
         <p class="note"><b>Framing:</b> the brand carries the cultural connection, Miguel carries the taste. We build it on craft, not on a "we love Mexico" lean.</p>
       </article>
 
-      <!-- Sports moments -->
-      <article class="ccd-card idea" data-levers="social tour brand">
-        <div class="idea-top"><span class="idea-num">14</span><span class="lift lift-high">High lift</span></div>
-        <h3 class="idea-title">Marquee Sports Moments</h3>
-        <p class="concept">Honorary and anthem moments at major sporting events: an LAFC honorary kickoff, a National Anthem at a marquee NFL game.</p>
-        <div><span class="seg-label">Make it Miguel</span>
-          <ol class="mig">
-            <li>National Anthem at a tentpole NFL game for the broadcast reach and the "timeless artist" frame.</li>
-            <li>An LAFC moment in his home city, leaning into the LA story.</li>
-            <li>Capture every broadcast moment as owned content with a release tie-in.</li>
-          </ol>
-        </div>
-        <div><span class="seg-label">What it moves</span><p class="moves">A single shot of enormous TV reach and prestige, hometown LA positioning, and a natural bridge into sports and culture crossovers.</p></div>
-        <div class="tags"><span class="tag">Social</span><span class="tag">Touring</span><span class="tag">Brand $</span></div>
-        <div class="refs"><span class="refs-label">Reference</span>
-          <div class="ref"><span class="badge">Booking · PR-led</span><span class="ri"><span class="rt">Anthem / honorary kickoff</span><span class="rs">Run with Chamber Group</span></span></div>
-        </div>
-      </article>
-
       <!-- Flying stage -->
       <article class="ccd-card idea" data-levers="tour social brand">
-        <div class="idea-top"><span class="idea-num">15</span><span class="lift lift-high">High lift</span></div>
+        <div class="idea-top"><span class="idea-num">13</span><span class="lift lift-high">High lift</span></div>
         <h3 class="idea-title">The Flying Stage, Mexico City</h3>
         <p class="concept">A suspended, flying-stage spectacle built around Miguel's October Mexico City Vogue moment.</p>
         <div><span class="seg-label">Make it Miguel</span>
@@ -622,7 +583,7 @@ const html = `<!DOCTYPE html>
         <div><span class="seg-label">What it moves</span><p class="moves">A tentpole spectacle that generates outsized PR and clip volume, and anchors the entire Q4 push.</p></div>
         <div class="tags"><span class="tag">Touring</span><span class="tag">Social</span><span class="tag">Brand $</span></div>
         <div class="refs"><span class="refs-label">Reference</span>
-          <div class="ref"><span class="badge">Live Production</span><span class="ri"><span class="rt">Large-scale flying stage</span><span class="rs">Spectacle live moment</span></span></div>
+          <a class="ref" href="https://edm.com/music-releases/watch-footage-isoxo-knock2-dj-suspended-shipping-container-north-coast-festival/" target="_blank" rel="noopener"><span class="badge">Suspended Set</span><span class="ri"><span class="rt">ISOxo &amp; Knock2, crane-suspended booth</span><span class="rs">EDM.com · North Coast Festival</span></span><span class="arr">↗</span></a>
         </div>
         <p class="note"><b>Heads up:</b> high cost and dependent on a local production partner. Concept stage only until a partner is on board.</p>
       </article>
