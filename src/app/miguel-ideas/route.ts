@@ -516,9 +516,31 @@ const html = `<!DOCTYPE html>
         </div>
       </article>
 
+      <!-- HQ / fan page -->
+      <article class="ccd-card idea" data-levers="crm social">
+        <div class="idea-top"><span class="idea-num">11</span><span class="lift lift-med">Medium lift</span></div>
+        <h3 class="idea-title">The "HQ" Account</h3>
+        <p class="concept">A team-run fan/HQ-style page that lives in the culture and exists to feed discovery, not to replace Miguel's personal feed. The format that powers pages like the ones below.</p>
+        <div><span class="seg-label">Make it Miguel</span>
+          <ol class="mig">
+            <li>A "CAOS HQ" page of team-curated clips, edits, and behind-the-curtain moments.</li>
+            <li>Every bio and CTA funnels to S1C. It is a feeder, full stop.</li>
+            <li>A daily cadence the team owns, so Miguel never has to touch it.</li>
+          </ol>
+        </div>
+        <div><span class="seg-label">What it moves</span><p class="moves">Discovery and algorithmic surface area without adding to Miguel's plate, all funneling into the owned audience.</p></div>
+        <div class="tags"><span class="tag">Fan CRM</span><span class="tag">Social</span></div>
+        <div class="refs"><span class="refs-label">References</span>
+          <a class="ref" href="https://www.tiktok.com/@asapnorocky" target="_blank" rel="noopener"><span class="badge">Fan / HQ</span><span class="ri"><span class="rt">@asapnorocky</span><span class="rs">TikTok · fan / HQ page</span></span><span class="arr">↗</span></a>
+          <a class="ref" href="https://www.tiktok.com/@howtfwefeelin" target="_blank" rel="noopener"><span class="badge">Fan / HQ</span><span class="ri"><span class="rt">@howtfwefeelin</span><span class="rs">TikTok · fan / HQ page</span></span><span class="arr">↗</span></a>
+          <a class="ref" href="https://www.tiktok.com/@shes_a_hurricane" target="_blank" rel="noopener"><span class="badge">Fan / HQ</span><span class="ri"><span class="rt">@shes_a_hurricane</span><span class="rs">TikTok · fan / HQ page</span></span><span class="arr">↗</span></a>
+        </div>
+        <p class="note"><b>Guardrail:</b> the personal stays on S1C. The HQ page points to it and never competes with it.</p>
+      </article>
+
       <!-- Hidden track -->
       <article class="ccd-card idea" data-levers="streaming merch crm">
-        <div class="idea-top"><span class="idea-num">11</span><span class="lift lift-med">Medium lift</span></div>
+        <div class="idea-top"><span class="idea-num">12</span><span class="lift lift-med">Medium lift</span></div>
         <h3 class="idea-title">Hidden Track + Collector Vinyl</h3>
         <p class="concept">A hidden track inside a reissue, plus a limited vinyl pressing that carries an exclusive cut from the new album.</p>
         <div><span class="seg-label">Make it Miguel</span>
@@ -550,7 +572,7 @@ const html = `<!DOCTYPE html>
 
       <!-- F&B partnership -->
       <article class="ccd-card idea" data-levers="brand social tour">
-        <div class="idea-top"><span class="idea-num">12</span><span class="lift lift-high">High lift</span></div>
+        <div class="idea-top"><span class="idea-num">13</span><span class="lift lift-high">High lift</span></div>
         <h3 class="idea-title">The Drink Deal</h3>
         <p class="concept">A beverage or food partnership with Miguel as the face, in the lineage of artist-and-soda deals like Biz Markie and Zevia.</p>
         <div><span class="seg-label">Make it Miguel</span>
@@ -570,7 +592,7 @@ const html = `<!DOCTYPE html>
 
       <!-- Flying stage -->
       <article class="ccd-card idea" data-levers="tour social brand">
-        <div class="idea-top"><span class="idea-num">13</span><span class="lift lift-high">High lift</span></div>
+        <div class="idea-top"><span class="idea-num">14</span><span class="lift lift-high">High lift</span></div>
         <h3 class="idea-title">The Flying Stage, Mexico City</h3>
         <p class="concept">A suspended, flying-stage spectacle built around Miguel's October Mexico City Vogue moment.</p>
         <div><span class="seg-label">Make it Miguel</span>
