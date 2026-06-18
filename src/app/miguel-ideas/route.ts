@@ -352,6 +352,7 @@ const html = `<!DOCTYPE html>
 
       <!-- CAOS dropbox -->
       <article class="ccd-card idea" data-levers="crm social">
+        <div class="idea-hero"><img src="/images/miguel-ideas/dropbox.jpg" alt="Concept render: the CAOS fan-upload app at a show" loading="lazy"/><span class="tagr">CCD concept render</span></div>
         <div class="idea-top"><span class="idea-num">03</span><span class="lift lift-low">Low lift</span></div>
         <h3 class="idea-title">The CAOS Dropbox</h3>
         <p class="concept">A shared gallery where fans upload their own photos and video from the night, and Miguel keeps the content plus the contact info that comes with it.</p>
@@ -371,6 +372,7 @@ const html = `<!DOCTYPE html>
 
       <!-- Street reaction -->
       <article class="ccd-card idea" data-levers="social streaming">
+        <div class="idea-hero"><img src="/images/miguel-ideas/street.jpg" alt="Concept render: a CAOS street-reactions interview" loading="lazy"/><span class="tagr">CCD concept render</span></div>
         <div class="idea-top"><span class="idea-num">04</span><span class="lift lift-low">Low lift</span></div>
         <h3 class="idea-title">Street Reactions</h3>
         <p class="concept">Man-on-the-street segments where strangers react to and try to name Miguel songs on a mic, filmed for short form. The "Track Star" format.</p>
@@ -392,6 +394,7 @@ const html = `<!DOCTYPE html>
 
       <!-- Family man post -->
       <article class="ccd-card idea" data-levers="social">
+        <div class="idea-hero"><img src="/images/miguel-ideas/family.jpg" alt="Concept render: the giant CAOS head in a living room" loading="lazy"/><span class="tagr">CCD concept render</span></div>
         <div class="idea-top"><span class="idea-num">05</span><span class="lift lift-low">Low lift</span></div>
         <h3 class="idea-title">The "Family Man" Easter Egg</h3>
         <p class="concept">A single oversized-prop stunt post (think the Travis Scott giant-head moment) flipped into a warm, human beat that cuts against the chaos of the era.</p>
@@ -409,30 +412,10 @@ const html = `<!DOCTYPE html>
         </div>
       </article>
 
-      <!-- Comedy tease tiktok -->
-      <article class="ccd-card idea" data-levers="social streaming">
-        <div class="idea-top"><span class="idea-num">06</span><span class="lift lift-low">Low lift</span></div>
-        <h3 class="idea-title">The Comedy Tease</h3>
-        <p class="concept">A cheeky, deadpan comedy skit in the Dillon Francis vein that is secretly a stealth tease for an unreleased song.</p>
-        <div><span class="seg-label">Make it Miguel</span>
-          <ol class="mig">
-            <li>Miguel plays the joke straight: the chaos persona, deadpan, doing a dumb-funny bit.</li>
-            <li>The punchline is the unreleased record, hiding in plain sight.</li>
-            <li>Keep it native to TikTok, never an ad read.</li>
-          </ol>
-        </div>
-        <div><span class="seg-label">What it moves</span><p class="moves">Native-feeling TikTok reach, song discovery ahead of a drop, and personality that platforms reward.</p></div>
-        <div class="tags"><span class="tag">Social</span><span class="tag">Streaming</span></div>
-        <div class="refs"><span class="refs-label">Reference</span>
-          <a class="ref" href="https://www.tiktok.com/@dillonfrancis" target="_blank" rel="noopener"><span class="badge">Comedy DJ</span><span class="ri"><span class="rt">Dillon Francis</span><span class="rs">TikTok · deadpan musician bits</span></span><span class="arr">↗</span></a>
-        </div>
-        <p class="note"><b>Voice check:</b> only ships if it lands in Miguel's voice. A copy of someone else's bit reads as a copy.</p>
-      </article>
-
       <!-- Plush speaker -->
       <article class="ccd-card idea" data-levers="merch social">
         <div class="idea-hero"><img src="/images/miguel-ideas/plush.jpg" alt="Concept render: a Miguel plush with a built-in speaker" loading="lazy"/><span class="tagr">CCD concept render</span></div>
-        <div class="idea-top"><span class="idea-num">07</span><span class="lift lift-low">Low lift</span></div>
+        <div class="idea-top"><span class="idea-num">06</span><span class="lift lift-low">Low lift</span></div>
         <h3 class="idea-title">The Miguel Plush (with a Speaker)</h3>
         <p class="concept">A plush of Miguel with a built-in Bluetooth speaker that plays his songs. A novelty drop that knows it is funny.</p>
         <div><span class="seg-label">Make it Miguel</span>
@@ -465,7 +448,7 @@ const html = `<!DOCTYPE html>
       <!-- Box truck set -->
       <article class="ccd-card idea" data-levers="tour social streaming">
         <div class="idea-hero"><img src="/images/miguel-ideas/rolling-stage.jpg" alt="Concept render: a CAOS box-truck stage on an LA street at night" loading="lazy"/><span class="tagr">CCD concept render</span></div>
-        <div class="idea-top"><span class="idea-num">08</span><span class="lift lift-med">Medium lift</span></div>
+        <div class="idea-top"><span class="idea-num">07</span><span class="lift lift-med">Medium lift</span></div>
         <h3 class="idea-title">The Rolling Stage</h3>
         <p class="concept">A surprise live set staged from a moving vehicle or a clear-sided box truck that rolls through a city, livestreamed and cut into clips.</p>
         <div><span class="seg-label">Make it Miguel</span>
@@ -487,7 +470,7 @@ const html = `<!DOCTYPE html>
       <!-- Fan built MV -->
       <article class="ccd-card idea" data-levers="crm social streaming">
         <div class="idea-hero"><img src="/images/miguel-ideas/fan-mv.jpg" alt="Concept render: a CAOS green-screen submission booth at a show" loading="lazy"/><span class="tagr">CCD concept render</span></div>
-        <div class="idea-top"><span class="idea-num">09</span><span class="lift lift-med">Medium lift</span></div>
+        <div class="idea-top"><span class="idea-num">08</span><span class="lift lift-med">Medium lift</span></div>
         <h3 class="idea-title">The Fan-Built Music Video</h3>
         <p class="concept">A pop-up, physical or digital, where fans create and design scenes that become part of an official video. Everything tracked through a custom hashtag.</p>
         <div><span class="seg-label">Make it Miguel</span>
@@ -507,7 +490,8 @@ const html = `<!DOCTYPE html>
 
       <!-- AI brand film -->
       <article class="ccd-card idea" data-levers="brand social">
-        <div class="idea-top"><span class="idea-num">10</span><span class="lift lift-med">Medium lift</span></div>
+        <div class="idea-hero"><img src="/images/miguel-ideas/brand-film.jpg" alt="Concept render: a cinematic CAOS brand-film still" loading="lazy"/><span class="tagr">CCD concept render</span></div>
+        <div class="idea-top"><span class="idea-num">09</span><span class="lift lift-med">Medium lift</span></div>
         <h3 class="idea-title">The AI Brand Film</h3>
         <p class="concept">An AI-generated story piece tied to a brand partner (a fashion or beauty house, in the YSL Beauty vein), rendered in the CAOS aesthetic.</p>
         <div><span class="seg-label">Make it Miguel</span>
@@ -526,7 +510,8 @@ const html = `<!DOCTYPE html>
 
       <!-- HQ / fan page -->
       <article class="ccd-card idea" data-levers="crm social">
-        <div class="idea-top"><span class="idea-num">11</span><span class="lift lift-med">Medium lift</span></div>
+        <div class="idea-hero"><img src="/images/miguel-ideas/hq.jpg" alt="Concept render: the CAOS HQ account feed" loading="lazy"/><span class="tagr">CCD concept render</span></div>
+        <div class="idea-top"><span class="idea-num">10</span><span class="lift lift-med">Medium lift</span></div>
         <h3 class="idea-title">The "HQ" Account</h3>
         <p class="concept">A team-run fan/HQ-style page that lives in the culture and exists to feed discovery, not to replace Miguel's personal feed. The format that powers pages like the ones below.</p>
         <div><span class="seg-label">Make it Miguel</span>
@@ -549,7 +534,7 @@ const html = `<!DOCTYPE html>
       <!-- Hidden track -->
       <article class="ccd-card idea" data-levers="streaming merch crm">
         <div class="idea-hero"><img src="/images/miguel-ideas/vinyl.jpg" alt="Concept render: a numbered CAOS collector vinyl with the album cover" loading="lazy"/><span class="tagr">CCD concept render</span></div>
-        <div class="idea-top"><span class="idea-num">12</span><span class="lift lift-med">Medium lift</span></div>
+        <div class="idea-top"><span class="idea-num">11</span><span class="lift lift-med">Medium lift</span></div>
         <h3 class="idea-title">Hidden Track + Collector Vinyl</h3>
         <p class="concept">A hidden track inside a reissue, plus a limited vinyl pressing that carries an exclusive cut from the new album.</p>
         <div><span class="seg-label">Make it Miguel</span>
@@ -582,7 +567,7 @@ const html = `<!DOCTYPE html>
       <!-- F&B partnership -->
       <article class="ccd-card idea" data-levers="brand social tour">
         <div class="idea-hero"><img src="/images/miguel-ideas/drink-can.jpg" alt="Concept render: a CAOS-palette co-branded soda can" loading="lazy"/><span class="tagr">CCD concept render</span></div>
-        <div class="idea-top"><span class="idea-num">13</span><span class="lift lift-high">High lift</span></div>
+        <div class="idea-top"><span class="idea-num">12</span><span class="lift lift-high">High lift</span></div>
         <h3 class="idea-title">The Drink Deal</h3>
         <p class="concept">A beverage or food partnership with Miguel as the face, in the lineage of artist-and-brand deals like Travis Scott x McDonald's.</p>
         <div><span class="seg-label">Make it Miguel</span>
@@ -602,7 +587,7 @@ const html = `<!DOCTYPE html>
       <!-- Flying stage -->
       <article class="ccd-card idea" data-levers="tour social brand">
         <div class="idea-hero"><img src="/images/miguel-ideas/flying-stage.jpg" alt="Concept render: a flying CAOS stage above a Mexico City crowd" loading="lazy"/><span class="tagr">CCD concept render</span></div>
-        <div class="idea-top"><span class="idea-num">14</span><span class="lift lift-high">High lift</span></div>
+        <div class="idea-top"><span class="idea-num">13</span><span class="lift lift-high">High lift</span></div>
         <h3 class="idea-title">The Flying Stage, Mexico City</h3>
         <p class="concept">A suspended, flying-stage spectacle built around Miguel's October Mexico City Vogue moment.</p>
         <div><span class="seg-label">Make it Miguel</span>
