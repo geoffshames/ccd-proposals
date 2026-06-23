@@ -26,9 +26,13 @@ import { emmitFenn } from "./emmit-fenn";
 import { miguelDamned } from "./miguel-damned";
 import { mackKeaneBloodshot } from "./mack-keane-bloodshot";
 import { docRaven } from "./doc-raven";
+import { armenta } from "./armenta";
+import { armentaEs } from "./armenta-es";
 import type { ProjectData } from "../project-context";
 
 export const PROJECTS: Record<string, ProjectData> = {
+  "armenta": armenta,
+  "armenta-es": armentaEs,
   "doc-raven": docRaven,
   "mack-keane-bloodshot": mackKeaneBloodshot,
   "miguel-damned": miguelDamned,
