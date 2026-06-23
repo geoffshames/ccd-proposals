@@ -176,7 +176,25 @@ export type ProjectData = {
       amountLabel?: string;
       note: string;
     };
+    /**
+     * Variable costs billed on top of the committed fee. Rendered as a clearly
+     * separated block in the Investment section so it is unambiguous these are
+     * additional and scoped, not part of the committed retainer. Renders only
+     * when present.
+     */
+    variableCosts?: {
+      name: string;
+      basis: string;
+      note: string;
+    }[];
+    variableCostsHeading?: string;
+    variableCostsNote?: string;
     total: number;
+    /**
+     * Optional override for the final total row label. Defaults to
+     * "Total Campaign Cost" (retainer) / "Total" (project) when omitted.
+     */
+    totalLabel?: string;
     paymentSchedule: {
       milestone: string;
       percentage: number;

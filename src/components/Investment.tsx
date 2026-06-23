@@ -114,7 +114,7 @@ export function Investment() {
                     </div>
                   )}
                   <div className="px-10 py-6 flex items-center justify-between border-t border-border">
-                    <span className="text-[18px] font-semibold text-text-primary tracking-[-0.01em]">{q.model === "retainer" ? "Total Campaign Cost" : "Total"}</span>
+                    <span className="text-[18px] font-semibold text-text-primary tracking-[-0.01em]">{q.totalLabel ? q.totalLabel : (q.model === "retainer" ? "Total Campaign Cost" : "Total")}</span>
                     <span className="display text-[30px] text-accent tabular-nums tracking-[-0.02em]">
                       <AnimatedCurrency value={q.total} />
                     </span>
@@ -123,6 +123,38 @@ export function Investment() {
                 )}
               </div>
             </TiltCard>
+
+            {q.variableCosts && q.variableCosts.length > 0 && !q.introMode && (
+              <div className="mt-6 card frame bg-bg-card rounded-none overflow-hidden">
+                <div className="px-10 py-6 border-b border-border">
+                  <span className="text-[10px] font-mono tracking-[0.2em] text-accent uppercase">
+                    {q.variableCostsHeading ? q.variableCostsHeading : "Variable Costs (Billed On Top)"}
+                  </span>
+                </div>
+                <div className="divide-y divide-border">
+                  {q.variableCosts.map((vc, i) => (
+                    <div key={i} className="px-10 py-6 flex items-start justify-between gap-6">
+                      <div className="flex-1 min-w-0">
+                        <div className="text-[15px] font-medium text-text-primary mb-1 tracking-[-0.01em]">
+                          {vc.name}
+                        </div>
+                        <div className="text-[12px] text-text-muted leading-relaxed">
+                          {vc.note}
+                        </div>
+                      </div>
+                      <div className="text-[14px] font-mono text-accent flex-shrink-0 tabular-nums tracking-[-0.02em] text-right max-w-[42%]">
+                        {vc.basis}
+                      </div>
+                    </div>
+                  ))}
+                </div>
+                {q.variableCostsNote && (
+                  <div className="px-10 py-5 border-t border-border bg-bg-elevated/30">
+                    <span className="text-[11px] text-text-muted/70 leading-relaxed block">{q.variableCostsNote}</span>
+                  </div>
+                )}
+              </div>
+            )}
           </ScrollReveal>
 
           {/* Right column: payment schedule (paid mode) OR intro-call card (intro mode) */}
