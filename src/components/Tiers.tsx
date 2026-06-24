@@ -103,6 +103,17 @@ export function Tiers() {
                     )}
                   </div>
 
+                  <a
+                    href={`mailto:${PROJECT.cta.email}?subject=${encodeURIComponent(
+                      `${PROJECT.client.name} \u00d7 Crowd Control Digital \u2014 Get Started: ${tier.name}`
+                    )}&body=${encodeURIComponent(
+                      `Hi Geoff,\n\nWe'd like to get started with the "${tier.name}" option for ${PROJECT.client.name}. Let's set it up.\n\nThanks`
+                    )}`}
+                    className="mt-8 block w-full text-center bg-accent text-white font-semibold text-[14px] py-4 rounded-none tracking-[-0.01em] hover:opacity-90 transition-opacity"
+                  >
+                    Get Started
+                  </a>
+
                   {tier.footerNote && (
                     <div className="mt-8 pt-6 border-t border-white/[0.08]">
                       <p className="text-text-muted/80 text-[13px] leading-relaxed italic">

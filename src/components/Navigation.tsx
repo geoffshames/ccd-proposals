@@ -13,6 +13,7 @@ const BASE_NAV_ITEMS = [
   { label: "Scope", href: "#scope" },
 ];
 
+const PRICING_NAV_ITEM = { label: "Pricing", href: "#tiers" };
 const INVESTMENT_NAV_ITEM = { label: "Investment", href: "#investment" };
 
 export function Navigation() {
@@ -20,9 +21,12 @@ export function Navigation() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const scrolled = useScrolled(100);
   const PROJECT = useProject();
-  const NAV_ITEMS = PROJECT.quote
-    ? [...BASE_NAV_ITEMS, INVESTMENT_NAV_ITEM]
-    : BASE_NAV_ITEMS;
+  const NAV_ITEMS = [
+    BASE_NAV_ITEMS[0],
+    ...(PROJECT.tiers?.tiers?.length ? [PRICING_NAV_ITEM] : []),
+    ...BASE_NAV_ITEMS.slice(1),
+    ...(PROJECT.quote ? [INVESTMENT_NAV_ITEM] : []),
+  ];
   const hasAlternates = !!PROJECT.languageAlternates?.length;
 
   useEffect(() => {
