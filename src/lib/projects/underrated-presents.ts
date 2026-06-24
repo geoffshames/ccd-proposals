@@ -19,8 +19,8 @@ export const underratedPresents: ProjectData = {
   project: {
     name: "SIX BRANDS, ONE ENGINE",
     tagline:
-      "FLOAT is live. The Maze is locked for Halloween. Clinic Wednesdays, Minimal Effort, Resolutions NYE and Origin are all in motion. One always-on media-and-data engine across the portfolio, built project-by-project — starting with the two on the clock and scaling whenever it makes sense. The most under-marketed name in LA's underground, finally amplified like the headliner it already is.",
-    type: "Portfolio Event Marketing + Paid Media",
+      "FLOAT is live. The Maze is locked for Halloween. Clinic Wednesdays, Minimal Effort, Resolutions NYE and Origin are all in motion. One always-on marketing engine across the portfolio — paid media, social, creators, data and strategy — built project-by-project, starting with the two on the clock and scaling whenever it makes sense. The most under-marketed name in LA's underground, finally amplified like the headliner it already is.",
+    type: "Portfolio Marketing: Paid, Social, Creator & Strategy",
     startDate: "July 1, 2026",
     endDate: "June 30, 2027",
     duration: "Flexible · Per-Project or Monthly",
@@ -30,24 +30,25 @@ export const underratedPresents: ProjectData = {
   overview: {
     heading: "The Strategy",
     summary:
-      "Underrated has spent 14 years building the taste — the LA debuts (Lane 8, Claptone, Rampa), the 12-year Clinic Wednesdays institution, the Minimal Effort name that pulls Louie Vega and Guy Gerber to town. What it has never had is a media-and-data engine that matches the cultural weight. Crowd Control Digital builds that engine. We unify the ticket-buyer data that's currently scattered across DICE, go-out, RA and the email list into one segmented, retargetable audience layer. We run portfolio paid media that moves budget to whichever event needs the floor filled — not where a flat monthly says to spend. And we run disciplined paid efficiency against every on-sale, trafficking your creative through templated campaign structures so a launch goes live same-day. Because you run separate P&Ls per event, this is built project-by-project: the two on the clock — FLOAT (live now through mid-September) and The Maze (4,000-cap, Halloween) — get activated immediately as one combined campaign, and everything else compounds on the audience that activation builds.",
+      "Underrated has spent 14 years building the taste — the LA debuts (Lane 8, Claptone, Rampa), the 12-year Clinic Wednesdays institution, the Minimal Effort name that pulls Louie Vega and Guy Gerber to town. What it has never had is a marketing engine that matches the cultural weight. Crowd Control Digital builds that engine end to end. We unify the ticket-buyer data that's currently scattered across DICE, go-out, RA and the email list into one segmented, retargetable audience layer. We run portfolio paid media that moves budget to whichever event needs the floor filled. We run the organic layer too — managing social, driving creator and influencer strategy, and providing brand and marketing strategy support across all six brands so the channels, the creators and the positioning push the same way as the paid. Because you run separate P&Ls per event, this is built project-by-project: the two on the clock — FLOAT (live now through mid-September) and The Maze (4,000-cap, Halloween) — get activated immediately as one combined campaign, and everything else compounds on the audience that activation builds.",
     objectives: [
       "Activate the two pressing properties now — FLOAT's on-sale push through mid-September and The Maze's 4-month Halloween campaign, run as one combined effort on a phased spend that scales toward the Oct 31 close",
       "Unify the first-party data that already exists but lives in silos — ticket-buyer records across DICE, go-out and RA, plus the email list — into one segmented audience layer that retargets and seeds lookalikes across every brand",
       "Run portfolio paid media as one always-learning system across Meta, Instagram, TikTok and Google — shared retargeting pools so a FLOAT buyer sees The Maze early, and budget that flows to the event with the softest floor",
-      "Run disciplined paid efficiency against every on-sale — templated campaign structures and conversion tracking so a new event launches same-day from your supplied assets and every dollar traces back to ticket velocity",
+      "Run disciplined paid efficiency against every on-sale — templated campaign structures and conversion tracking so a new event launches same-day and every dollar traces back to ticket velocity",
+      "Own the organic layer too — social media management, creator and influencer strategy, and brand-level marketing direction across the portfolio, so the channels, the creator pipeline and the positioning all push the same way as the paid",
       "Close the reporting loop — pixels, conversion events, per-event post-mortems, and a monthly portfolio review that tells Underrated which brands, lineups and price tiers are actually media-responsive",
       "Stand up Origin Venue's launch and its independent-promoter / private-rental pipeline as the portfolio's owned home base",
     ],
     subtitle:
-      "One media-and-data engine across all six Underrated brands — built project-by-project, starting with FLOAT and The Maze.",
-    imageCaption: "Portfolio Event Marketing + Paid Media",
+      "One end-to-end marketing engine across all six Underrated brands — paid, social, creator, data and strategy, built project-by-project.",
+    imageCaption: "Paid Media · Social · Creator · Strategy",
     stats: [
       {
         value: 6,
         label: "Brands, One Engine",
         description:
-          "FLOAT, The Maze, Clinic Wednesdays, Minimal Effort, Resolutions NYE and Origin Venue — one unified media-and-data system across the portfolio instead of six disconnected promo efforts",
+          "FLOAT, The Maze, Clinic Wednesdays, Minimal Effort, Resolutions NYE and Origin Venue — one unified marketing system across the portfolio instead of six disconnected promo efforts",
       },
       { value: 4000, label: "The Maze — Capacity Target" },
       { value: 4, label: "Ticketing Platforms Unified" },
@@ -92,7 +93,7 @@ export const underratedPresents: ProjectData = {
       },
     ],
     marketContext:
-      "LA's underground is consolidating around operators with capital and infrastructure — Framework's new venue and Insomniac's warehouse machine are both scaling their reach right now. The next 18 months reward the promoters who pair real curation with disciplined paid efficiency and owned audience data. Underrated has the curation and, with Origin, the real estate. This partnership supplies the missing third leg — the media-and-data engine — before the FLOAT season closes and The Maze runway gets short.",
+      "LA's underground is consolidating around operators with capital and infrastructure — Framework's new venue and Insomniac's warehouse machine are both scaling their reach right now. The next 18 months reward the promoters who pair real curation with disciplined paid efficiency and owned audience data. Underrated has the curation and, with Origin, the real estate. This partnership supplies the missing third leg — the marketing engine — before the FLOAT season closes and The Maze runway gets short.",
   },
 
   audience: {
@@ -229,7 +230,7 @@ export const underratedPresents: ProjectData = {
     subheading:
       "You run separate P&Ls per event, so this is built project-by-project — not a forced all-in retainer. Start with the two on the clock: FLOAT + The Maze, combined at a discounted rate that scales toward Halloween. Add brands one at a time, or take the whole portfolio whenever it makes sense.",
     footnote:
-      "Every option: ad spend is billed directly to the platforms plus a 15% management fee. Month-to-month with 30-day notice. Creative production stays with your team or creative partner — CCD handles strategy, media buying, data and reporting.",
+      "Every option: ad spend is billed directly to the platforms plus a 15% management fee. Month-to-month with 30-day notice. CCD handles strategy, paid media, organic social, creator strategy, data and reporting. Any creative production or experiential activation can be handled too — quoted separately on an as-needed basis.",
     tiers: [
       {
         label: "À La Carte",
@@ -240,6 +241,7 @@ export const underratedPresents: ProjectData = {
         priceContext: "per property · + 15% of ad spend",
         includes: [
           "Dedicated paid media (Meta, Instagram, TikTok, Google) for one property",
+          "Organic social management + creator strategy for that property",
           "Audience building + retargeting on that brand's ticket buyers",
           "Conversion tracking + pixel setup on the event's ticketing",
           "Weekly pacing check-ins + a post-event performance report",
@@ -261,6 +263,7 @@ export const underratedPresents: ProjectData = {
         priceContext: "both events combined · $20K total to Halloween",
         includes: [
           "Both events run as one combined campaign — discounted vs. $5K/mo per property à la carte",
+          "Paid media + organic social + creator push across both events",
           "July — $4,000: awareness seeding for FLOAT + The Maze",
           "August — $4,500: FLOAT on-sale push + The Maze building",
           "September — $5,000: FLOAT close + The Maze momentum",
@@ -280,6 +283,7 @@ export const underratedPresents: ProjectData = {
         priceContext: "all 6 brands · + 15% of ad spend",
         includes: [
           "FLOAT, The Maze, Clinic Wednesdays, Minimal Effort, Resolutions NYE and Origin Venue — all covered",
+          "Social media management, creator strategy + brand and marketing strategy support, portfolio-wide",
           "One unified first-party data engine across DICE, go-out and RA + email/SMS",
           "Portfolio paid media — budget flows to whichever event needs the floor filled",
           "Origin Venue launch support + independent-promoter / private-rental pipeline",
@@ -304,6 +308,7 @@ export const underratedPresents: ProjectData = {
       tasks: [
         "FLOAT live promo on day one — on-sale push and weekly lineup pushes across Meta, Instagram and TikTok through the mid-September close, trafficking your supplied assets",
         "The Maze awareness seeding begins at the light end of the ramp ($4K combined) — early Halloween save-the-date audience building while CPMs are cheap",
+        "Take over organic social programming and stand up the creator / influencer pipeline for the tentpoles (The Maze, FLOAT)",
         "Stand up the data foundation — pixels and conversion events across DICE, go-out and RA event surfaces; begin unifying ticket-buyer records into one segmented layer",
         "Clinic Wednesdays always-on engine — keep the 12-year weekly filling rooms while it doubles as a top-of-funnel for the whole portfolio",
       ],
@@ -316,7 +321,7 @@ export const underratedPresents: ProjectData = {
       tasks: [
         "FLOAT series final pushes through mid-September + Minimal Effort summer shows run on shared retargeting pools",
         "The Maze momentum — combined spend steps up the ramp ($4.5K → $5K) as lineup reveals land and retargeting pools mature",
-        "Retargeting matures — FLOAT and Clinic buyers become the seed audience The Maze and Minimal Effort prospect against via lookalikes",
+        "Creator pipeline activates — briefed creators seed The Maze and Minimal Effort across IG and TikTok alongside organic social",
         "Campaign templates v1 — prospecting, retargeting and day-of ad-set structures per property so a new on-sale launches same-day from your supplied creative",
       ],
     },
@@ -360,7 +365,7 @@ export const underratedPresents: ProjectData = {
   ],
 
   deliverablesSubheading:
-    "Everything in the engagement — portfolio paid media, a unified first-party data engine, and the closed-loop reporting that makes every media dollar traceable to ticket velocity. Creative production stays with your team; CCD runs the media and the data.",
+    "Everything in the engagement — paid media, organic social and creator strategy, a unified first-party data engine, brand and marketing strategy support, and the closed-loop reporting that ties it all back to ticket velocity. Creative production and experiential activations aren't baked in, but CCD can handle any of it, quoted separately as-needed.",
   deliverables: [
     {
       category: "Paid Media",
@@ -370,6 +375,14 @@ export const underratedPresents: ProjectData = {
         { name: "Per-Event Ad-Set Architecture", quantity: "Every on-sale", description: "Prospecting, retargeting and day-of urgency ad sets built per event and launched same-day from a templated structure, trafficking and testing your supplied creative." },
         { name: "Shared Retargeting + Lookalikes", quantity: "Cross-portfolio", description: "Unified ticket-buyer pools so a FLOAT buyer sees The Maze early, plus lookalikes seeded by brand and lineup off the highest-intent segments." },
         { name: "FLOAT + The Maze — Combined Campaign", quantity: "4-month ramp", description: "The two on the clock run as one combined campaign with spend ramping $4K → $6.5K toward Oct 31 ($20K total), managed live against the 4,000 cap and a ~$17 CPA target." },
+      ],
+    },
+    {
+      category: "Social & Creator",
+      icon: "▶",
+      items: [
+        { name: "Social Media Management", quantity: "IG + TikTok", description: "Manage the brands' organic channels — content calendar, scheduling, community management and engagement — programmed around the event calendar so organic and paid push the same way." },
+        { name: "Creator & Influencer Strategy", quantity: "Per tentpole", description: "Source, brief and coordinate creators and influencers for event seeding and partnerships, with a managed creator pipeline around the tentpoles (The Maze, Resolutions, FLOAT)." },
       ],
     },
     {
@@ -385,6 +398,7 @@ export const underratedPresents: ProjectData = {
       category: "Strategy & Reporting",
       icon: "●",
       items: [
+        { name: "Brand & Marketing Strategy Support", quantity: "Ongoing", description: "High-level strategic advisory across positioning, brand growth and the marketing calendar — the connective layer that keeps paid, social, creator and data all pushing one direction across the six brands." },
         { name: "Portfolio Calendar Planning", quantity: "Monthly", description: "Cross-brand calendar so spend and announces are sequenced — no two on-sales cannibalizing the same audience in the same week." },
         { name: "Weekly Pacing Reviews", quantity: "Weekly", description: "Per-event sell-through tracking with budget reallocation toward the events with the softest floor." },
         { name: "Per-Event Post-Mortems + Portfolio Review", quantity: "Every event + monthly", description: "Every event gets a post-mortem; every month gets a portfolio view tracing media spend back to ticket velocity across the brands." },
@@ -397,16 +411,18 @@ export const underratedPresents: ProjectData = {
       "What's included across the engagement — and where the lines are. À la carte and the FLOAT + The Maze combined start are scoped proportionally; the lines below describe the full engagement.",
     included: [
       "Portfolio paid media management across Meta, Instagram, TikTok and Google for all six brands",
+      "Social media management across Instagram and TikTok — content calendar, scheduling, community management and engagement",
+      "Creator and influencer strategy — sourcing, briefing and coordinating creators around key events",
+      "Overall brand and marketing strategy support — positioning, calendar and growth advisory",
       "Per-event ad-set architecture + trafficking, testing and optimizing your supplied creative",
       "First-party data unification across DICE, go-out and RA + email/SMS lifecycle",
       "Shared retargeting pools and lookalike audiences across the portfolio",
       "FLOAT + The Maze run as one combined campaign managed to the 4,000 cap",
       "Weekly pacing reviews, per-event post-mortems and a monthly portfolio review",
       "Origin Venue launch support + independent-promoter / private-rental pipeline",
-      "Portfolio calendar planning across all six brands",
     ],
     excluded: [
-      "Creative production and asset design — handled by your team or creative partner",
+      "Creative production and experiential activations — not baked into the retainer, but CCD can handle any of it, quoted separately on an as-needed basis",
       "Ad spend itself — billed directly to the platforms, managed at a 15% fee",
       "Talent buying, booking fees and artist guarantees",
       "Ticketing platform fees and venue / production costs",
@@ -417,8 +433,8 @@ export const underratedPresents: ProjectData = {
   nextSteps: [
     { step: 1, title: "Pick the Entry Point", description: "Choose the lane: the FLOAT + The Maze combined start ($4K/mo scaling to $20K by Halloween), à la carte on a single brand, or the Full Portfolio. It's project-by-project — scale or add brands whenever it makes sense." },
     { step: 2, title: "Confirm & Kick Off This Week", description: "FLOAT is live and The Maze runway is already running. Reply to confirm scope and we activate both immediately as one combined campaign — there's promo time being left on the table every week we wait." },
-    { step: 3, title: "Data + Access Onboarding", description: "We get access to the ad accounts, DICE / go-out / RA event surfaces and the email platform, and start unifying ticket-buyer data into one segmented layer in week one." },
-    { step: 4, title: "Activate FLOAT + Seed The Maze", description: "FLOAT on-sale push goes live and The Maze awareness seeding begins at the light end of the ramp while CPMs are cheap, building the retargeting pool the Halloween push will need." },
+    { step: 3, title: "Data + Access Onboarding", description: "We get access to the ad accounts, social channels, DICE / go-out / RA event surfaces and the email platform, and start unifying ticket-buyer data into one segmented layer in week one." },
+    { step: 4, title: "Activate FLOAT + Seed The Maze", description: "FLOAT on-sale push goes live, organic social and the creator pipeline come online, and The Maze awareness seeding begins at the light end of the ramp while CPMs are cheap." },
     { step: 5, title: "Onboarding Questionnaire", description: "A short questionnaire once we're confirmed — current spend, list size and platforms, what's worked and what hasn't — to tune the first 30 days." },
   ],
 
@@ -438,7 +454,7 @@ export const underratedPresents: ProjectData = {
     brutalist: "/images/underrated-presents/brutalist.png",
     heroBg: "/images/underrated-presents/hero1.png",
     ogImage: "/images/underrated-presents/og-image.png",
-    hero1Caption: "Portfolio Event Marketing + Paid Media",
+    hero1Caption: "Paid Media · Social · Creator · Strategy",
     brutalistCaption: "Underrated Presents × Crowd Control Digital",
   },
 };
