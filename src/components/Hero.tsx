@@ -6,11 +6,11 @@ import { useProject } from "@/lib/project-context";
 export function Hero() {
   const PROJECT = useProject();
   return (
-    <section className="relative min-h-screen flex flex-col justify-end px-6 pb-28 pt-32 overflow-hidden grid-texture">
+    <section className="relative min-h-[85vh] flex flex-col justify-end px-6 pb-20 pt-32 overflow-hidden grid-texture">
       {/* Hero background image */}
       {PROJECT.images.heroBg && (
         <div
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-[0.25] pointer-events-none"
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-[0.16] pointer-events-none"
           style={{ backgroundImage: `url(${PROJECT.images.heroBg})` }}
         />
       )}
@@ -32,15 +32,15 @@ export function Hero() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1, delay: 0.3 }}
-          className="flex flex-col gap-3 md:flex-row md:items-center md:justify-between mb-20"
+          className="flex flex-col gap-3 md:flex-row md:items-center md:justify-between mb-16"
         >
           <div className="flex items-center gap-4">
             <div className="w-2 h-2 rounded-full bg-accent" />
-            <span className="text-[10px] font-mono tracking-[0.3em] text-text-muted uppercase">
+            <span className="text-[11px] font-mono tracking-[0.28em] text-text-muted/80 uppercase">
               Project Proposal
             </span>
           </div>
-          <span className="text-[10px] font-mono tracking-[0.2em] text-text-muted uppercase">
+          <span className="text-[11px] font-mono tracking-[0.18em] text-text-muted/80 uppercase">
             {PROJECT.studio.role}
           </span>
         </motion.div>
@@ -50,12 +50,12 @@ export function Hero() {
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1.2, delay: 0.5, ease: [0.22, 1, 0.36, 1] }}
-          className="mb-12"
+          className="mb-10"
         >
           <h1 className="text-[clamp(4rem,12vw,10rem)] font-bold leading-[0.85] tracking-[-0.05em]">
             <span className="block text-text-primary">{PROJECT.client.name}</span>
           </h1>
-          <p className="text-[clamp(0.9rem,1.5vw,1.2rem)] font-mono tracking-[0.15em] text-text-muted/50 uppercase mt-6">
+          <p className="text-[clamp(1rem,1.6vw,1.25rem)] font-mono tracking-[0.14em] text-text-muted/75 uppercase mt-6">
             A proposal by {PROJECT.studio.name}
           </p>
         </motion.div>
@@ -67,11 +67,11 @@ export function Hero() {
           transition={{ duration: 1, delay: 0.9 }}
           className="flex flex-col md:flex-row md:items-end justify-between gap-8"
         >
-          <div className="max-w-md">
-            <h2 className="text-[20px] text-text-primary font-medium tracking-[-0.01em] mb-3">
+          <div className="max-w-xl">
+            <h2 className="text-[24px] text-text-primary font-bold tracking-[-0.01em] mb-3">
               {PROJECT.project.name}
             </h2>
-            <p className="text-[14px] text-text-muted leading-[1.7]">
+            <p className="text-[16px] text-text-muted/90 leading-[1.7]">
               {PROJECT.project.tagline}
             </p>
           </div>
@@ -84,11 +84,11 @@ export function Hero() {
               { label: "Status", value: PROJECT.project.status, accent: true },
             ].map((stat) => (
               <div key={stat.label}>
-                <div className="text-[9px] font-mono tracking-[0.25em] text-text-muted uppercase mb-2">
+                <div className="text-[10px] font-mono tracking-[0.22em] text-text-muted/75 uppercase mb-2">
                   {stat.label}
                 </div>
-                <div className={`text-[14px] font-medium tracking-[-0.01em] ${
-                  stat.accent ? "text-warning" : "text-text-primary"
+                <div className={`text-[15px] font-semibold tracking-[-0.01em] ${
+                  stat.accent ? "text-accent" : "text-text-primary"
                 }`}>
                   {stat.value}
                 </div>

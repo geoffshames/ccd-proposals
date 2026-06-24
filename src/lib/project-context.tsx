@@ -152,6 +152,7 @@ export type ProjectData = {
   quote?: {
     model?: "project" | "retainer";
     introMode?: boolean;
+    investmentSubheading?: string;
     currency: string;
     lineItems: {
       name: string;

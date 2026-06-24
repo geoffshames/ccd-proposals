@@ -30,9 +30,11 @@ import { docRaven } from "./doc-raven";
 import { armenta } from "./armenta";
 import { armentaEs } from "./armenta-es";
 import { sublime } from "./sublime";
+import { hermes } from "./hermes";
 import type { ProjectData } from "../project-context";
 
 export const PROJECTS: Record<string, ProjectData> = {
+  "hermes": hermes,
   "sublime": sublime,
   "armenta": armenta,
   "armenta-es": armentaEs,
