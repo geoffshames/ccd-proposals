@@ -375,9 +375,15 @@ export const sublime: ProjectData = {
       ],
     },
     {
-      category: "Streaming & Content",
+      category: "Social, Streaming & Content",
       icon: "◇",
       items: [
+        {
+          name: "Social Media Management",
+          quantity: "Ongoing",
+          description:
+            "Day-to-day management of the band's social channels — content calendar, scheduling and publishing, community engagement, and reactive cultural-moment posting across Instagram, TikTok, and Facebook, all tuned to the legacy-plus-new narrative",
+        },
         {
           name: "Creator & TikTok Strategy",
           quantity: "6 months",
@@ -455,6 +461,7 @@ export const sublime: ProjectData = {
       "Unified fan-data layer — consolidation of Laylo, Shopify, Atlantic pre-save, smart-link, and ticketing data into one segmentable, band-owned audience with automation flows",
       "Full-funnel paid media strategy, creative direction, and campaign management across Meta, TikTok, YouTube/Google, and Spotify Growth",
       "Streaming + content engine — creator/TikTok strategy, pre-save and playlist support, and a legacy-plus-new content cadence",
+      "Social media management — content calendar, publishing, and community engagement across Instagram, TikTok, and Facebook",
       "Tour, festival, and cruise marketing — ticket-driving campaigns, owned-IP funnels, and data-gated merch / drop strategy across the full 2026 run",
       "Lifecycle campaigns — pre-show, day-of, post-show, and reactivation sequences personalized by market, era, and persona",
       "Monthly performance reporting, weekly strategy calls, and a 2027 readiness plan",
@@ -495,6 +502,14 @@ export const sublime: ProjectData = {
         name: "Streaming & Content Engine",
         description:
           "Creator/TikTok strategy, pre-save and playlist support, and a legacy-plus-new content cadence that converts catalog reach into owned fans",
+        price: 0,
+        priceLabel: "Included",
+        recurring: true,
+      },
+      {
+        name: "Social Media Management",
+        description:
+          "Day-to-day management of the band's social channels — content calendar, publishing, community engagement, and reactive cultural moments across Instagram, TikTok, and Facebook",
         price: 0,
         priceLabel: "Included",
         recurring: true,

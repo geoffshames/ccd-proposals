@@ -236,6 +236,20 @@ export function Investment() {
                 <div className="mt-12 pt-8 border-t border-border">
                   {q.paymentLink === "#approve" ? (
                     <ApproveButton />
+                  ) : q.paymentLink === "#" || q.paymentLink === "" ? (
+                    <>
+                      <motion.a
+                        href={`mailto:${PROJECT.cta.email}?subject=${encodeURIComponent(`${PROJECT.client.name} × Crowd Control Digital — Let's Get Started`)}`}
+                        whileHover={{ scale: 1.02 }}
+                        whileTap={{ scale: 0.98 }}
+                        className="block w-full text-center bg-accent text-bg font-semibold text-[14px] py-4 rounded-none tracking-[-0.01em]"
+                      >
+                        Get Started
+                      </motion.a>
+                      <p className="text-[10px] text-text-muted/40 text-center mt-4 font-mono tracking-[0.1em]">
+                        {PROJECT.cta.email.toUpperCase()}
+                      </p>
+                    </>
                   ) : (
                     <>
                       <motion.a
