@@ -426,7 +426,7 @@ export const underratedPresents: ProjectData = {
       "Ad spend itself — billed directly to the platforms, managed at a 15% fee",
       "Talent buying, booking fees and artist guarantees",
       "Ticketing platform fees and venue / production costs",
-      "PR and press outreach (available as an add-on — scoped separately)",
+      "PR and press outreach — not part of CCD's services; we recommend a dedicated PR partner",
     ],
   },
 
