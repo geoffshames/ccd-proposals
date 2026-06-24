@@ -29,9 +29,11 @@ import { mackKeaneBloodshot } from "./mack-keane-bloodshot";
 import { docRaven } from "./doc-raven";
 import { armenta } from "./armenta";
 import { armentaEs } from "./armenta-es";
+import { sublime } from "./sublime";
 import type { ProjectData } from "../project-context";
 
 export const PROJECTS: Record<string, ProjectData> = {
+  "sublime": sublime,
   "armenta": armenta,
   "armenta-es": armentaEs,
   "doc-raven": docRaven,
