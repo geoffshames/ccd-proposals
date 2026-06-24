@@ -19,35 +19,35 @@ export const underratedPresents: ProjectData = {
   project: {
     name: "SIX BRANDS, ONE ENGINE",
     tagline:
-      "FLOAT is live. The Maze is locked for Halloween. Clinic Wednesdays, Minimal Effort, Resolutions NYE and Origin are all in motion. Six brands, one always-on marketing engine — starting with the two on the clock and scaling to the whole portfolio. The most under-marketed name in LA's underground, finally amplified like the headliner it already is.",
+      "FLOAT is live. The Maze is locked for Halloween. Clinic Wednesdays, Minimal Effort, Resolutions NYE and Origin are all in motion. One always-on media-and-data engine across the portfolio, built project-by-project — starting with the two on the clock and scaling whenever it makes sense. The most under-marketed name in LA's underground, finally amplified like the headliner it already is.",
     type: "Portfolio Event Marketing + Paid Media",
     startDate: "July 1, 2026",
     endDate: "June 30, 2027",
-    duration: "12-Month Partnership",
+    duration: "Flexible · Per-Project or Monthly",
     status: "Awaiting Approval" as const,
   },
 
   overview: {
     heading: "The Strategy",
     summary:
-      "Underrated has spent 14 years building the taste — the LA debuts (Lane 8, Claptone, Rampa), the 12-year Clinic Wednesdays institution, the Minimal Effort name that pulls Louie Vega and Guy Gerber to town. What it has never had is a marketing engine that matches the cultural weight. Crowd Control Digital builds that engine across all six brands at once. We unify the ticket-buyer data that's currently scattered across DICE, go-out, RA and the email list into one segmented, retargetable audience layer. We run portfolio paid media that moves budget to whichever event needs the floor filled — not where a flat monthly says to spend. And we build per-property creative kits so a new on-sale launches in hours, not days. The two on the clock — FLOAT (live now through mid-September) and The Maze (4,000-cap, Halloween) — get activated immediately, with The Maze on a phased spend that scales toward Oct 31. Everything else compounds on top of the audience that activation builds.",
+      "Underrated has spent 14 years building the taste — the LA debuts (Lane 8, Claptone, Rampa), the 12-year Clinic Wednesdays institution, the Minimal Effort name that pulls Louie Vega and Guy Gerber to town. What it has never had is a media-and-data engine that matches the cultural weight. Crowd Control Digital builds that engine. We unify the ticket-buyer data that's currently scattered across DICE, go-out, RA and the email list into one segmented, retargetable audience layer. We run portfolio paid media that moves budget to whichever event needs the floor filled — not where a flat monthly says to spend. And we run disciplined paid efficiency against every on-sale, trafficking your creative through templated campaign structures so a launch goes live same-day. Because you run separate P&Ls per event, this is built project-by-project: the two on the clock — FLOAT (live now through mid-September) and The Maze (4,000-cap, Halloween) — get activated immediately as one combined campaign, and everything else compounds on the audience that activation builds.",
     objectives: [
-      "Activate the two pressing properties now — FLOAT's on-sale push through mid-September and The Maze's 4-month Halloween campaign on a phased spend that scales toward the Oct 31 close, not a flat monthly that strains the runway",
+      "Activate the two pressing properties now — FLOAT's on-sale push through mid-September and The Maze's 4-month Halloween campaign, run as one combined effort on a phased spend that scales toward the Oct 31 close",
       "Unify the first-party data that already exists but lives in silos — ticket-buyer records across DICE, go-out and RA, plus the email list — into one segmented audience layer that retargets and seeds lookalikes across every brand",
       "Run portfolio paid media as one always-learning system across Meta, Instagram, TikTok and Google — shared retargeting pools so a FLOAT buyer sees The Maze early, and budget that flows to the event with the softest floor",
-      "Build a per-property creative kit — FLOAT, The Maze, Clinic, Minimal Effort, Resolutions, Origin — so launching a new on-sale is a same-day production and every asset is platform-native",
+      "Run disciplined paid efficiency against every on-sale — templated campaign structures and conversion tracking so a new event launches same-day from your supplied assets and every dollar traces back to ticket velocity",
       "Close the reporting loop — pixels, conversion events, per-event post-mortems, and a monthly portfolio review that tells Underrated which brands, lineups and price tiers are actually media-responsive",
       "Stand up Origin Venue's launch and its independent-promoter / private-rental pipeline as the portfolio's owned home base",
     ],
     subtitle:
-      "One marketing engine across all six Underrated brands — starting with FLOAT and The Maze, scaling to the full portfolio.",
+      "One media-and-data engine across all six Underrated brands — built project-by-project, starting with FLOAT and The Maze.",
     imageCaption: "Portfolio Event Marketing + Paid Media",
     stats: [
       {
         value: 6,
         label: "Brands, One Engine",
         description:
-          "FLOAT, The Maze, Clinic Wednesdays, Minimal Effort, Resolutions NYE and Origin Venue — one unified marketing system across the entire portfolio instead of six disconnected promo efforts",
+          "FLOAT, The Maze, Clinic Wednesdays, Minimal Effort, Resolutions NYE and Origin Venue — one unified media-and-data system across the portfolio instead of six disconnected promo efforts",
       },
       { value: 4000, label: "The Maze — Capacity Target" },
       { value: 4, label: "Ticketing Platforms Unified" },
@@ -81,8 +81,8 @@ export const underratedPresents: ProjectData = {
       {
         label: "The Maze Runway Is a Pacing Problem, Not a Budget Problem",
         finding:
-          "A 4,000-cap Halloween block party needs awareness seeded early and a hard paid push as people lock Halloween plans in October. A flat monthly across a 4-month runway spends the same in July as it does in the final two weeks — exactly backwards. A phased ramp that protects the total but weights it toward the close matches how the buying decision actually forms.",
-        source: "Event-pacing benchmarks / CCD tour-pacing operating data",
+          "A 4,000-cap Halloween block party (~$320K gross at ~$80 tickets) supports roughly a 10%-of-gross marketing budget, the bulk of it into paid digital. The mistake would be spending it flat across a 4-month runway — same in July as in the final two weeks. A phased combined campaign that scales toward Oct 31, as Halloween plans lock in, matches how the buying decision actually forms.",
+        source: "Underrated call (Jun 23) / event-pacing benchmarks",
       },
       {
         label: "Origin Turns a Calendar Into Real Estate",
@@ -92,7 +92,7 @@ export const underratedPresents: ProjectData = {
       },
     ],
     marketContext:
-      "LA's underground is consolidating around operators with capital and infrastructure — Framework's new venue and Insomniac's warehouse machine are both scaling their reach right now. The next 18 months reward the promoters who pair real curation with disciplined paid efficiency and owned audience data. Underrated has the curation and, with Origin, the real estate. This partnership supplies the missing third leg — the marketing engine — before the FLOAT season closes and The Maze runway gets short.",
+      "LA's underground is consolidating around operators with capital and infrastructure — Framework's new venue and Insomniac's warehouse machine are both scaling their reach right now. The next 18 months reward the promoters who pair real curation with disciplined paid efficiency and owned audience data. Underrated has the curation and, with Origin, the real estate. This partnership supplies the missing third leg — the media-and-data engine — before the FLOAT season closes and The Maze runway gets short.",
   },
 
   audience: {
@@ -164,15 +164,21 @@ export const underratedPresents: ProjectData = {
   targets: [
     {
       metric: "The Maze — Sell-Through",
-      value: "4,000 cap",
+      value: "4,000 tickets",
       context:
-        "Full-funnel campaign engineered to fill the Arts District to its 4,000 target by Oct 31, with paid spend weighted to the final push as Halloween plans lock in.",
+        "Full-funnel paid campaign to fill the Arts District to its 4,000-cap target by Oct 31, with spend weighted to the final Halloween push.",
+    },
+    {
+      metric: "Maze Cost per Ticket",
+      value: "~$17 @ 5× ROAS",
+      context:
+        "Target cost per acquisition on ~$80 tickets — the paid efficiency the combined campaign is engineered to hit. Directional, not a guarantee.",
     },
     {
       metric: "Blended Cost per Ticket",
       value: "↓ 25–40%",
       context:
-        "Portfolio retargeting plus lookalikes seeded from unified ticket-buyer data typically cut paid cost-per-acquisition versus siloed, per-event ad buys. Directional, not guaranteed.",
+        "Portfolio retargeting plus lookalikes seeded from unified ticket-buyer data typically cut paid CPA versus siloed, per-event ad buys.",
     },
     {
       metric: "Owned Audience Growth",
@@ -180,17 +186,11 @@ export const underratedPresents: ProjectData = {
       context:
         "Consolidating DICE, go-out and email capture into one segmented list across all six brands — first-access drops that convert without paying the algorithm twice.",
     },
-    {
-      metric: "New On-Sale Launch Time",
-      value: "Hours, not days",
-      context:
-        "Per-property creative kits turn a new event launch into a same-day push instead of a multi-day build, so no on-sale window gets wasted.",
-    },
   ],
 
   competitive: {
     summary:
-      "Underrated competes against operators with more capital and infrastructure — but none of them own its curation or its 14-year local credibility. The gap to close is reach and data, not taste. Spotify-style scale lives with the machines; the cultural co-sign lives with Underrated.",
+      "Underrated competes against operators with more capital and infrastructure — but none of them own its curation or its 14-year local credibility. The gap to close is reach and data, not taste. Scale lives with the machines; the cultural co-sign lives with Underrated.",
     competitors: [
       {
         name: "Framework / re:frame Studios",
@@ -225,23 +225,23 @@ export const underratedPresents: ProjectData = {
 
   tiers: {
     sectionNumber: "08",
-    heading: "Start With Two. Or Take the Whole Floor.",
+    heading: "Start With Two. Scale to the Floor.",
     subheading:
-      "You flagged FLOAT and The Maze as the two on the clock — so there's a path that starts exactly there. But the math rewards the portfolio: à la carte, six brands run about $30K/mo. Bundled, it's $15K flat. Here's both, side by side.",
+      "You run separate P&Ls per event, so this is built project-by-project — not a forced all-in retainer. Start with the two on the clock: FLOAT + The Maze, combined at a discounted rate that scales toward Halloween. Add brands one at a time, or take the whole portfolio whenever it makes sense.",
     footnote:
-      "Every tier: ad spend is billed to the platforms plus a 15% management fee; creative is billed at $125/hr. Month-to-month with 30-day notice. The Maze ramp protects the same $20K total as a flat rate — just weighted toward the Halloween close.",
+      "Every option: ad spend is billed directly to the platforms plus a 15% management fee. Month-to-month with 30-day notice. Creative production stays with your team or creative partner — CCD handles strategy, media buying, data and reporting.",
     tiers: [
       {
         label: "À La Carte",
         name: "Single Property",
-        tagline: "One brand at a time. The rate you've already seen.",
+        tagline: "One brand at a time. The standard rate.",
         price: "$5,000",
         priceSuffix: "/mo",
-        priceContext: "per property · + 15% ad spend + $125/hr creative",
+        priceContext: "per property · + 15% of ad spend",
         includes: [
-          "Dedicated paid media (Meta, Instagram, TikTok) for one property",
-          "Per-event creative kit — static, motion and story formats",
+          "Dedicated paid media (Meta, Instagram, TikTok, Google) for one property",
           "Audience building + retargeting on that brand's ticket buyers",
+          "Conversion tracking + pixel setup on the event's ticketing",
           "Weekly pacing check-ins + a post-event performance report",
           "Month-to-month — scale up or pause around your calendar",
         ],
@@ -250,60 +250,60 @@ export const underratedPresents: ProjectData = {
           "Portfolio rate — each added property is another $5K/mo",
         ],
         footerNote:
-          "Best if you want to prove the partnership on one brand before committing the portfolio.",
-      },
-      {
-        label: "Full Portfolio",
-        name: "All Six Brands",
-        tagline: "Every property, one always-on engine. The whole gamut.",
-        price: "$15,000",
-        priceSuffix: "/mo",
-        priceContext: "all 6 brands · + 15% ad spend + $125/hr creative",
-        includes: [
-          "FLOAT, The Maze, Clinic Wednesdays, Minimal Effort, Resolutions NYE and Origin Venue — all covered",
-          "One unified first-party data engine across DICE, go-out and RA + email/SMS",
-          "Portfolio paid media — budget flows to whichever event needs the floor filled",
-          "Per-property creative kits so a new on-sale launches in hours, not days",
-          "Origin Venue launch support + independent-promoter / private-rental pipeline",
-          "Priority calendar planning + monthly portfolio review",
-        ],
-        featured: true,
-        footerNote:
-          "Six brands for the cost of three. À la carte, these six would run ~$30K/mo — the portfolio rate is $15K/mo flat, and any new property you add (or an Origin one-off) folds in at no extra retainer.",
+          "Best to prove the partnership on one brand before committing more.",
       },
       {
         label: "Start Here",
         name: "FLOAT + The Maze",
-        tagline: "The two on the clock — live now and locked for Halloween.",
-        price: "$8K–13K",
-        priceSuffix: "/mo",
-        priceContext: "the entry point you asked for · rolls into Full Portfolio anytime",
+        tagline: "The two on the clock — combined at a discounted rate, ramping to Halloween.",
+        price: "$4,000",
+        priceSuffix: "/mo to start",
+        priceContext: "both events combined · $20K total to Halloween",
         includes: [
-          "FLOAT — full-series promo now through mid-September: on-sale push, weekly lineup pushes, sold-out urgency",
-          "The Maze — 4-month Halloween campaign with spend that scales toward Oct 31",
-          "Phased Maze ramp — lighter awareness months, heavier final push (your structure, not a flat $5K)",
+          "Both events run as one combined campaign — discounted vs. $5K/mo per property à la carte",
+          "July — $4,000: awareness seeding for FLOAT + The Maze",
+          "August — $4,500: FLOAT on-sale push + The Maze building",
+          "September — $5,000: FLOAT close + The Maze momentum",
+          "October — $6,500: The Maze Halloween final push to the 4,000 cap",
           "Shared retargeting so FLOAT buyers see The Maze early",
-          "Creative kits + weekly pacing for both properties",
+        ],
+        featured: true,
+        footerNote:
+          "$20,000 total across both for the full run to Halloween — a discounted combined rate that scales with the calendar: lighter early, heavier into the final push. Ad spend billed separately at 15%. Roll into more brands or the Full Portfolio anytime.",
+      },
+      {
+        label: "Full Portfolio",
+        name: "All Six Brands",
+        tagline: "Every property, one engine. The whole gamut.",
+        price: "$15,000",
+        priceSuffix: "/mo",
+        priceContext: "all 6 brands · + 15% of ad spend",
+        includes: [
+          "FLOAT, The Maze, Clinic Wednesdays, Minimal Effort, Resolutions NYE and Origin Venue — all covered",
+          "One unified first-party data engine across DICE, go-out and RA + email/SMS",
+          "Portfolio paid media — budget flows to whichever event needs the floor filled",
+          "Origin Venue launch support + independent-promoter / private-rental pipeline",
+          "Priority calendar planning + monthly portfolio review",
         ],
         footerNote:
-          "The Maze ramp: ~$3K (awareness) → $4K → $5K → $8K (Halloween push) = $20K total over 4 months — the same total as a flat $5K/mo, just front-loaded toward the close. Add FLOAT at $5K/mo. Roll into the Full Portfolio anytime and both fold in.",
+          "Six brands for the cost of three. À la carte, these six would run ~$30K/mo — the portfolio rate is $15K/mo flat, and any new property or one-off folds in at no extra retainer.",
       },
     ],
   },
 
   timelineHeading: "The Calendar",
   timelineSubheading:
-    "A 12-month partnership that maps to Underrated's actual event calendar — FLOAT live now, The Maze ramping to Halloween, Resolutions over NYE, and Origin's launch — with the two pressing properties activated in week one and everything else compounding on the audience that activation builds.",
-  timelineImageCaption: "12 Months / 6 Brands / 1 Engine",
+    "Mapped to Underrated's actual event calendar — FLOAT live now, The Maze ramping to Halloween, Resolutions over NYE, and Origin's launch — with the two pressing properties activated in week one and everything else compounding on the audience that activation builds.",
+  timelineImageCaption: "6 Brands · One Calendar",
   timeline: [
     {
-      phase: "Immediate Activation — FLOAT + Maze Seeding",
+      phase: "Immediate Activation — FLOAT + Maze Combined",
       week: "Weeks 1–4",
       date: "July 2026",
       status: "in-progress" as const,
       tasks: [
-        "FLOAT live promo on day one — on-sale push, weekly lineup creative, and sold-out urgency across Meta, Instagram and TikTok through the mid-September close",
-        "The Maze awareness seeding begins at the light end of the ramp — early Halloween save-the-date content and audience building while CPMs are cheap",
+        "FLOAT live promo on day one — on-sale push and weekly lineup pushes across Meta, Instagram and TikTok through the mid-September close, trafficking your supplied assets",
+        "The Maze awareness seeding begins at the light end of the ramp ($4K combined) — early Halloween save-the-date audience building while CPMs are cheap",
         "Stand up the data foundation — pixels and conversion events across DICE, go-out and RA event surfaces; begin unifying ticket-buyer records into one segmented layer",
         "Clinic Wednesdays always-on engine — keep the 12-year weekly filling rooms while it doubles as a top-of-funnel for the whole portfolio",
       ],
@@ -315,9 +315,9 @@ export const underratedPresents: ProjectData = {
       status: "upcoming" as const,
       tasks: [
         "FLOAT series final pushes through mid-September + Minimal Effort summer shows run on shared retargeting pools",
-        "The Maze momentum — spend steps up the ramp ($4K → $5K) as lineup reveals land and retargeting pools mature",
+        "The Maze momentum — combined spend steps up the ramp ($4.5K → $5K) as lineup reveals land and retargeting pools mature",
         "Retargeting matures — FLOAT and Clinic buyers become the seed audience The Maze and Minimal Effort prospect against via lookalikes",
-        "Per-property creative kits v1 complete — FLOAT, Maze, Clinic and Minimal Effort templated for same-day on-sale launches",
+        "Campaign templates v1 — prospecting, retargeting and day-of ad-set structures per property so a new on-sale launches same-day from your supplied creative",
       ],
     },
     {
@@ -326,10 +326,10 @@ export const underratedPresents: ProjectData = {
       date: "October 2026",
       status: "upcoming" as const,
       tasks: [
-        "Heavy paid push to the 4,000 cap — the top of the ramp ($8K) as Halloween plans lock in",
-        "Creator + influencer seeding and FOMO / urgency creative built for the day-of converter",
+        "Heavy paid push to the 4,000 cap — the top of the ramp ($6.5K combined) as Halloween plans lock in",
+        "Creator + influencer seeding and day-of urgency campaigns built for the day-of converter",
         "Final-release and day-of urgency campaigns engineered to close the floor to capacity by Oct 31",
-        "Live pacing against the cap with daily budget reallocation across ad sets",
+        "Live pacing against the cap with daily budget reallocation across ad sets, holding the ~$17 CPA target",
       ],
     },
     {
@@ -352,7 +352,7 @@ export const underratedPresents: ProjectData = {
       tasks: [
         "Origin Venue launch — rebrand rollout, in-house programming 1–2 nights/week, and the independent-promoter + private-rental pipeline as the portfolio's home base",
         "Always-on engine across Minimal Effort, Clinic Wednesdays and the next FLOAT season on a single unified audience",
-        "Quarterly creative refresh + ongoing kit expansion as new properties and one-offs come online",
+        "Quarterly campaign refresh + expansion as new properties and one-offs come online",
         "Monthly portfolio reporting — per-event post-mortems and the cross-brand view of what's actually working",
       ],
       ongoing: true,
@@ -360,25 +360,16 @@ export const underratedPresents: ProjectData = {
   ],
 
   deliverablesSubheading:
-    "Everything Underrated gets in the Full Portfolio engagement — portfolio paid media, a per-property creative system, a unified first-party data engine, and the closed-loop reporting that makes every media dollar traceable to ticket velocity.",
+    "Everything in the engagement — portfolio paid media, a unified first-party data engine, and the closed-loop reporting that makes every media dollar traceable to ticket velocity. Creative production stays with your team; CCD runs the media and the data.",
   deliverables: [
     {
       category: "Paid Media",
       icon: "◆",
       items: [
         { name: "Portfolio Campaign Management", quantity: "All 6 brands", description: "Always-on management across Meta, Instagram, TikTok and Google for every property — one system that moves budget to whichever event needs the floor filled. Ad spend billed separately to platforms at a 15% management fee." },
-        { name: "Per-Event Ad-Set Architecture", quantity: "Every on-sale", description: "Prospecting, retargeting and day-of urgency ad sets built per event from the property's creative kit, launched same-day off the templated structure." },
+        { name: "Per-Event Ad-Set Architecture", quantity: "Every on-sale", description: "Prospecting, retargeting and day-of urgency ad sets built per event and launched same-day from a templated structure, trafficking and testing your supplied creative." },
         { name: "Shared Retargeting + Lookalikes", quantity: "Cross-portfolio", description: "Unified ticket-buyer pools so a FLOAT buyer sees The Maze early, plus lookalikes seeded by brand and lineup off the highest-intent segments." },
-        { name: "The Maze Ramp Management", quantity: "4-month phased", description: "The phased Halloween campaign — spend scaling $3K → $8K toward Oct 31 — managed against live pacing to the 4,000 cap." },
-      ],
-    },
-    {
-      category: "Creative System",
-      icon: "▶",
-      items: [
-        { name: "Per-Property Creative Kits", quantity: "6 brands", description: "Templated kits per property — vertical hero, Reels storyboard, Stories template, retargeting copy block and a day-of urgency variant — so a new on-sale is a 30-minute production, not a 3-day one." },
-        { name: "Per-Event Creative Production", quantity: "Every show", description: "Platform-native paid creative assembled from the kits for each on-sale across the calendar. Custom shoots beyond the kits billed at $125/hr." },
-        { name: "Lineup + Announce Assets", quantity: "Ongoing", description: "Lineup reveals, save-the-dates, final-release and sold-out creative matched to each brand's visual identity." },
+        { name: "FLOAT + The Maze — Combined Campaign", quantity: "4-month ramp", description: "The two on the clock run as one combined campaign with spend ramping $4K → $6.5K toward Oct 31 ($20K total), managed live against the 4,000 cap and a ~$17 CPA target." },
       ],
     },
     {
@@ -394,7 +385,7 @@ export const underratedPresents: ProjectData = {
       category: "Strategy & Reporting",
       icon: "●",
       items: [
-        { name: "Portfolio Calendar Planning", quantity: "Monthly", description: "Cross-brand calendar so spend, creative and announces are sequenced — no two on-sales cannibalizing the same audience in the same week." },
+        { name: "Portfolio Calendar Planning", quantity: "Monthly", description: "Cross-brand calendar so spend and announces are sequenced — no two on-sales cannibalizing the same audience in the same week." },
         { name: "Weekly Pacing Reviews", quantity: "Weekly", description: "Per-event sell-through tracking with budget reallocation toward the events with the softest floor." },
         { name: "Per-Event Post-Mortems + Portfolio Review", quantity: "Every event + monthly", description: "Every event gets a post-mortem; every month gets a portfolio view tracing media spend back to ticket velocity across the brands." },
       ],
@@ -403,66 +394,38 @@ export const underratedPresents: ProjectData = {
 
   scope: {
     subheading:
-      "Everything included in the Full Portfolio partnership — and where the boundaries are. À la carte and the FLOAT + The Maze entry point are scoped down proportionally; the lines below describe the full engagement.",
+      "What's included across the engagement — and where the lines are. À la carte and the FLOAT + The Maze combined start are scoped proportionally; the lines below describe the full engagement.",
     included: [
       "Portfolio paid media management across Meta, Instagram, TikTok and Google for all six brands",
-      "Per-property creative kits + per-event creative production assembled from them",
+      "Per-event ad-set architecture + trafficking, testing and optimizing your supplied creative",
       "First-party data unification across DICE, go-out and RA + email/SMS lifecycle",
       "Shared retargeting pools and lookalike audiences across the portfolio",
-      "The Maze 4-month phased campaign managed to the 4,000 cap",
+      "FLOAT + The Maze run as one combined campaign managed to the 4,000 cap",
       "Weekly pacing reviews, per-event post-mortems and a monthly portfolio review",
       "Origin Venue launch support + independent-promoter / private-rental pipeline",
       "Portfolio calendar planning across all six brands",
     ],
     excluded: [
+      "Creative production and asset design — handled by your team or creative partner",
       "Ad spend itself — billed directly to the platforms, managed at a 15% fee",
-      "Custom photo / video shoots beyond the templated kits (billed at $125/hr)",
       "Talent buying, booking fees and artist guarantees",
       "Ticketing platform fees and venue / production costs",
-      "Full brand-identity redesign for Origin (available as an add-on — scoped separately)",
       "PR and press outreach (available as an add-on — scoped separately)",
     ],
   },
 
-  quote: {
-    model: "retainer" as const,
-    currency: "USD",
-    lineItems: [
-      { name: "Portfolio Paid Media Management", description: "Meta, Instagram, TikTok and Google across all six brands — one always-learning system that moves budget to whichever event needs the floor filled. Ad spend billed separately to the platforms at a 15% management fee.", price: 6000, recurring: true },
-      { name: "Creative System (Per-Property Kits + Per-Event Production)", description: "Templated creative kits per property plus per-event paid creative assembled from them. Custom shoots beyond the kits billed at $125/hr.", price: 4000, recurring: true },
-      { name: "First-Party Data + CRM Engine", description: "Unify ticket-buyer data across DICE, go-out and RA into one segmented, retargetable layer + email/SMS lifecycle for first-access drops.", price: 3000, recurring: true },
-      { name: "Strategy, Calendar & Reporting", description: "Portfolio calendar planning across all six brands, weekly pacing reviews, per-event post-mortems and a monthly portfolio review.", price: 2000, recurring: true },
-    ],
-    subtotal: 15000,
-    discount: { label: "", percentage: 0, amount: 0 },
-    mediaBudget: {
-      label: "Ad Spend + Creative (variable)",
-      amount: 0,
-      amountLabel: "15% + $125/hr",
-      note: "Ad spend is billed directly to the platforms with a 15% management fee. Creative production beyond the templated kits is billed at $125/hr. Both scale with the calendar — heavier in tentpole months (The Maze, Resolutions), lighter in between.",
-    },
-    total: 180000,
-    paymentSchedule: [
-      { milestone: "Kickoff deposit — locks your start date, credited to your first month", percentage: 3, amount: 5000, due: "On signature" },
-      { milestone: "Ongoing monthly retainer — billed per the scope you choose (à la carte, the pair, or full portfolio)", percentage: 97, amount: 175000, due: "Monthly, in advance" },
-    ],
-    paymentTerms:
-      "Month-to-month with 30-day notice. The $5,000 kickoff deposit locks your start date and is credited to your first month — it is not an additional fee. The 12-month figure reflects annualized scope across the full event calendar, not a lock-in. À la carte and the FLOAT + The Maze entry are billed proportionally to the scope you start with.",
-    paymentLink: "https://buy.stripe.com/6oUdR8eu8ciZgTv5Rva7C0i",
-  },
-
   nextSteps: [
-    { step: 1, title: "Pick the Entry Point", description: "Choose the lane: the FLOAT + The Maze pair to start with the two on the clock, à la carte on a single brand, or the Full Portfolio. You can start with the pair and roll into the portfolio anytime — it folds in." },
-    { step: 2, title: "Approve & Kick Off This Week", description: "FLOAT is live and The Maze runway is already running. Approve and we activate both immediately — there's promo time being left on the table every week we wait." },
+    { step: 1, title: "Pick the Entry Point", description: "Choose the lane: the FLOAT + The Maze combined start ($4K/mo scaling to $20K by Halloween), à la carte on a single brand, or the Full Portfolio. It's project-by-project — scale or add brands whenever it makes sense." },
+    { step: 2, title: "Confirm & Kick Off This Week", description: "FLOAT is live and The Maze runway is already running. Reply to confirm scope and we activate both immediately as one combined campaign — there's promo time being left on the table every week we wait." },
     { step: 3, title: "Data + Access Onboarding", description: "We get access to the ad accounts, DICE / go-out / RA event surfaces and the email platform, and start unifying ticket-buyer data into one segmented layer in week one." },
     { step: 4, title: "Activate FLOAT + Seed The Maze", description: "FLOAT on-sale push goes live and The Maze awareness seeding begins at the light end of the ramp while CPMs are cheap, building the retargeting pool the Halloween push will need." },
-    { step: 5, title: "Onboarding Questionnaire", description: "A short questionnaire after approval — current spend, list size and platforms, what's worked and what hasn't — to tune the first 30 days. Sent once the partnership is signed." },
+    { step: 5, title: "Onboarding Questionnaire", description: "A short questionnaire once we're confirmed — current spend, list size and platforms, what's worked and what hasn't — to tune the first 30 days." },
   ],
 
   cta: {
     headline: "Let's make Underrated impossible to ignore.",
     body:
-      "The bookings already belong at the top of LA's underground. The marketing should too. FLOAT is live and The Maze runway is short — let's start with the two on the clock this week and scale to the whole portfolio from there.",
+      "The bookings already belong at the top of LA's underground. The marketing should too. FLOAT is live and The Maze runway is short — reply and let's start with the two on the clock this week, then scale from there.",
     email: "geoff@crowdcontroldigital.com",
   },
 
