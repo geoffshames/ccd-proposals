@@ -381,7 +381,7 @@ export const underratedPresents: ProjectData = {
       category: "Social & Creator",
       icon: "▶",
       items: [
-        { name: "Social Media Management", quantity: "IG + TikTok", description: "Manage the brands' organic channels — content calendar, scheduling, community management and engagement — programmed around the event calendar so organic and paid push the same way." },
+        { name: "Social Media Management", quantity: "All channels", description: "Manage the brands' organic channels across every platform — Instagram, TikTok, YouTube, Facebook, X and beyond — content calendar, scheduling, community management and engagement, programmed around the event calendar so organic and paid push the same way." },
         { name: "Creator & Influencer Strategy", quantity: "Per tentpole", description: "Source, brief and coordinate creators and influencers for event seeding and partnerships, with a managed creator pipeline around the tentpoles (The Maze, Resolutions, FLOAT)." },
       ],
     },
@@ -411,7 +411,7 @@ export const underratedPresents: ProjectData = {
       "What's included across the engagement — and where the lines are. À la carte and the FLOAT + The Maze combined start are scoped proportionally; the lines below describe the full engagement.",
     included: [
       "Portfolio paid media management across Meta, Instagram, TikTok and Google for all six brands",
-      "Social media management across Instagram and TikTok — content calendar, scheduling, community management and engagement",
+      "Social media management across all channels — content calendar, scheduling, community management and engagement",
       "Creator and influencer strategy — sourcing, briefing and coordinating creators around key events",
       "Overall brand and marketing strategy support — positioning, calendar and growth advisory",
       "Per-event ad-set architecture + trafficking, testing and optimizing your supplied creative",
