@@ -476,81 +476,102 @@ export const sublime: ProjectData = {
     currency: "USD",
     lineItems: [
       {
-        name: "Tour & Streaming Strategy",
+        name: "Fan Data & CRM (Laylo)",
         description:
-          "End-to-end campaign strategy and execution across the tour, festival, cruise, and album cycle — including the streaming + content engine and creator strategy",
-        price: 2000,
+          "Unified fan-data layer across Laylo, Shopify, Atlantic, smart-links, and ticketing — segmentation architecture, capture campaigns, and lifecycle automation",
+        price: 0,
+        priceLabel: "Included",
         recurring: true,
       },
       {
-        name: "Fan Data Infrastructure (Laylo)",
+        name: "Full-Funnel Paid Media",
         description:
-          "Unified fan-data layer — Laylo, Shopify, Atlantic, smart-link, and ticketing consolidation, segmentation architecture, capture campaigns, and lifecycle automation",
-        price: 1500,
+          "Strategy, creative direction, and day-to-day campaign management across Meta, TikTok, YouTube/Google, and Spotify Growth",
+        price: 0,
+        priceLabel: "Included",
         recurring: true,
       },
       {
-        name: "Paid Media Management",
+        name: "Streaming & Content Engine",
         description:
-          "Campaign management and optimization across Meta, TikTok, YouTube/Google, and Spotify Growth. Ad spend billed separately to platforms at a 15% management rate",
-        price: 2000,
+          "Creator/TikTok strategy, pre-save and playlist support, and a legacy-plus-new content cadence that converts catalog reach into owned fans",
+        price: 0,
+        priceLabel: "Included",
         recurring: true,
       },
       {
-        name: "Creative Production (as-needed)",
+        name: "Tour, Festival & Cruise Marketing",
         description:
-          "Design, edits, and campaign assets produced on-demand, billed hourly at $125/hr — only when used, never part of the monthly retainer",
-        price: 125,
-        recurring: false,
+          "Ticket-driving campaigns, owned-IP funnels for the Sublime Festival + Cruise, and data-gated merch / drop strategy across the full 2026 run",
+        price: 0,
+        priceLabel: "Included",
+        recurring: true,
+      },
+      {
+        name: "Strategy, Reporting & Optimization",
+        description:
+          "Weekly strategy calls, monthly performance reporting, ongoing optimization, and the 2027 readiness plan",
+        price: 0,
+        priceLabel: "Included",
+        recurring: true,
       },
     ],
-    subtotal: 5500,
+    subtotal: 6000,
     discount: {
       label: "",
       percentage: 0,
       amount: 0,
     },
-    mediaBudget: {
-      label: "Recommended Ad Spend",
-      amount: 20000,
-      note: "Recommended starting media budget across Meta, TikTok, YouTube/Google, and Spotify Growth — billed directly to the platforms and scalable up or down by the band. CCD manages and optimizes all campaigns at a 15% management fee on spend.",
-    },
-    total: 33000,
+    variableCosts: [
+      {
+        name: "Ad Spend",
+        basis: "Billed to platforms + 15%",
+        note: "Media budgets are paid directly to the platforms and scale up or down at the band's discretion. CCD manages and optimizes every campaign at a 15% management fee on spend.",
+      },
+      {
+        name: "Creative Production",
+        basis: "$125 / hr, as-needed",
+        note: "Design, edits, and campaign assets produced on demand — billed hourly only when used, never part of the monthly retainer.",
+      },
+    ],
+    variableCostsNote:
+      "Recommended starting media budget is ~$20K/mo across Meta, TikTok, YouTube/Google, and Spotify Growth — fully scalable. These costs sit on top of the flat monthly retainer.",
+    total: 36000,
     paymentSchedule: [
       {
         milestone: "Month 1 (July)",
         percentage: 16.67,
-        amount: 5500,
+        amount: 6000,
         due: "Upon approval",
       },
       {
         milestone: "Month 2 (August)",
         percentage: 16.67,
-        amount: 5500,
+        amount: 6000,
         due: "August 15, 2026",
       },
       {
         milestone: "Month 3 (September)",
         percentage: 16.67,
-        amount: 5500,
+        amount: 6000,
         due: "September 15, 2026",
       },
       {
         milestone: "Month 4 (October)",
         percentage: 16.67,
-        amount: 5500,
+        amount: 6000,
         due: "October 15, 2026",
       },
       {
         milestone: "Month 5 (November)",
         percentage: 16.66,
-        amount: 5500,
+        amount: 6000,
         due: "November 15, 2026",
       },
       {
         milestone: "Month 6 (December)",
         percentage: 16.66,
-        amount: 5500,
+        amount: 6000,
         due: "December 15, 2026",
       },
     ],
