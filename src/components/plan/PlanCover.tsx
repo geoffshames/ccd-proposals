@@ -29,7 +29,7 @@ export function PlanCover() {
           initial={{ opacity: 0, y: -8 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
-          className="h-6 md:h-7 w-auto mb-6 md:mb-8 select-none pointer-events-none"
+          className="h-6 md:h-7 w-auto self-start mb-6 md:mb-8 select-none pointer-events-none"
         />
       )}
 
