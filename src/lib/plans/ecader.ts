@@ -37,7 +37,7 @@ export const ecaderPlan: StrategyPlanData = {
       body: [
         "ECADER has no music until November. The opportunity is the seven months in front of it. A weekly documentary series launches in July, and that content is the fuel for a manufactured-momentum campaign designed to make the group feel inevitable before it ever debuts.",
         "The benchmark is explicit: WAYF BOYS. They built a top-tier 5th-gen launch trajectory before debuting a face, a name, or a song, on essentially zero paid media, by running a finite and replicable playbook. We reverse-engineered that playbook in full. This plan deploys it for ECADER with a tighter, paid-accelerated version: intentional clipping, a fan-page network, paid amplification of the winners, and an experiential layer that converts hype into data, units, and a chart story.",
-        "The working budget is $50,000, scoped to the July through September pre-debut window (roughly 12 weeks) leading into the November debut. There is no music to stream yet, so success is measured the way pre-debut is actually won: follower velocity, engagement rate, impression volume, conversation sentiment, and captured audience. Each subsequent phase (the November single, the debut, the first comeback) authorizes a fresh budget on the same structure.",
+        "The total program is $62,500 for the pre-debut window (July through September, roughly 12 weeks) leading into the November debut: $50,000 of working media plus $12,500 in CCD fees. There is no music to stream yet, so success is measured the way pre-debut is actually won: follower velocity, engagement rate, impression volume, conversation sentiment, and captured audience. Each subsequent phase (the November single, the debut, the first comeback) authorizes a fresh budget on the same structure.",
       ],
       supports: {
         heading: "What This Campaign Supports",
@@ -143,14 +143,14 @@ export const ecaderPlan: StrategyPlanData = {
       navLabel: "Structure",
       title: "Proposal Structure",
       intro:
-        "A single all-in working-media budget of $50,000 for the pre-debut window (July through September). It stands up clipping, two fan pages, the Origin placement buy, paid social, and SWRM in July, scales the winners through August, and sustains the hype into September as the runway to the November debut. The CCD campaign retainer (flat $5,000) and 15% media management sit on top of this working budget, not inside it. The November single and the debut each authorize a fresh budget on the same structure.",
+        "The total program for the pre-debut window (July through September) is $62,500: $50,000 of working media plus $12,500 in CCD fees (a flat $5,000 retainer and 15% media management). The working media stands up clipping, two fan pages, the Origin placement buy, paid social, and SWRM in July, scales the winners through August, and sustains the hype into September as the runway to the November debut. CCD fees sit on top of the working media, not inside it. The November single and the debut each authorize a fresh budget on the same structure.",
       tiers: [
         {
           label: "Pre-Debut Window (Jul to Sep)",
-          budget: "$50,000",
-          name: "Working Media Budget",
+          budget: "$62,500",
+          name: "Total Program",
           goal:
-            "Detonate in July alongside the documentary launch, scale the proven winners through August, and sustain hype into September. Twelve weeks of manufactured pre-debut velocity leading into the November single and official debut.",
+            "$50,000 working media plus $12,500 CCD fees. Detonate in July alongside the documentary launch, scale the proven winners through August, and sustain hype into September. Twelve weeks of manufactured pre-debut velocity leading into the November single and official debut.",
           featured: true,
           includes: [
             "Clipping and seeding across the managed clipper network (180K-person server)",
@@ -730,14 +730,14 @@ export const ecaderPlan: StrategyPlanData = {
       navLabel: "Investment",
       title: "Investment",
       intro:
-        "A single all-in working-media budget of $50,000 for the pre-debut window (July through September 2026). The CCD campaign retainer and 15% media management sit on top of the working budget, billed separately, not deducted from media. The full $50,000 deploys to working media. The November single and the official debut each authorize a fresh budget on the same structure.",
+        "The total program for the pre-debut window (July through September 2026) is $62,500: $50,000 of working media plus $12,500 in CCD fees (a flat $5,000 campaign retainer and 15% media management). The full $50,000 deploys to working media; the fees are billed on top, not deducted from it. The November single and the official debut each authorize a fresh budget on the same structure.",
       tiers: [
         {
           label: "Pre-Debut Window (Jul to Sep)",
-          budget: "$50,000",
-          name: "Working Media Budget",
+          budget: "$62,500",
+          name: "Total Program",
           tagline:
-            "All-in working media for the pre-debut window. CCD fees (flat $5,000 retainer plus 15% media management, $7,500) are billed on top. Total program: $62,500.",
+            "All-in for the pre-debut window: $50,000 working media plus $12,500 CCD fees. The working media deploys in full; CCD fees (flat $5,000 retainer plus 15% media management, $7,500) are billed on top.",
           featured: true,
           deployable: "$50,000",
           feeBreakdown: {
@@ -752,6 +752,8 @@ export const ecaderPlan: StrategyPlanData = {
             { vertical: "New Media Placements (Origin)", amount: "$10,000" },
             { vertical: "Paid Social Amplification", amount: "$12,000" },
             { vertical: "SWRM Comment Amplification", amount: "$3,000" },
+            { vertical: "CCD Retainer", amount: "$5,000" },
+            { vertical: "CCD Media Management (15%)", amount: "$7,500" },
           ],
         },
       ],
@@ -770,7 +772,7 @@ export const ecaderPlan: StrategyPlanData = {
         },
       ],
       footnote:
-        "Working media is $50,000 and deploys in full. CCD fees of $12,500 (flat $5,000 retainer plus $7,500 media management at 15%) are billed on top for a total program of $62,500. Experiential add-ons are scoped and approved separately. Each future cycle (November single, debut, first comeback) gets its own authorization on this structure.",
+        "Total program is $62,500: $50,000 working media (deploys in full) plus $12,500 CCD fees (flat $5,000 retainer plus $7,500 media management at 15%). Experiential add-ons are scoped and approved separately. Each future cycle (November single, debut, first comeback) gets its own authorization on this structure.",
     },
   ],
 };
