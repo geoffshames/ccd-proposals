@@ -268,6 +268,7 @@ export type StrategyPlanData = {
     prepared: string;
     date: string;
     backgroundImage?: string;
+    logo?: string;
   };
 
   ogImage?: string;

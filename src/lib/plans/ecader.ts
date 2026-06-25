@@ -15,6 +15,7 @@ export const ecaderPlan: StrategyPlanData = {
     prepared: "Geoff Shames / Co-Founder, CCD",
     date: "June 2026",
     backgroundImage: "/images/ecader/ecader-hero.jpg",
+    logo: "/brand/CC-LOGO-2024-WHITE.png",
   },
 
   approveCta: {

@@ -15,6 +15,7 @@ export const ecaderPlanKorean: StrategyPlanData = {
     prepared: "Geoff Shames / 공동 창립자, CCD",
     date: "2026년 6월",
     backgroundImage: "/images/ecader/ecader-hero.jpg",
+    logo: "/brand/CC-LOGO-2024-WHITE.png",
   },
 
   approveCta: {

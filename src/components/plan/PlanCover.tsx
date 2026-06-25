@@ -4,7 +4,7 @@ import { usePlan } from "@/lib/plan-context";
 
 export function PlanCover() {
   const PLAN = usePlan();
-  const { label, title, subtitle, partnership, prepared, date, backgroundImage } = PLAN.cover;
+  const { label, title, subtitle, partnership, prepared, date, backgroundImage, logo } = PLAN.cover;
 
   return (
     <section
@@ -20,6 +20,17 @@ export function PlanCover() {
           <div className="absolute inset-0 -z-10 bg-gradient-to-r from-bg via-bg/60 to-bg/10" />
           <div className="absolute inset-0 -z-10 bg-gradient-to-t from-bg/95 via-bg/40 to-bg/30" />
         </>
+      )}
+
+      {logo && (
+        <motion.img
+          src={logo}
+          alt="Crowd Control Digital"
+          initial={{ opacity: 0, y: -8 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
+          className="h-6 md:h-7 w-auto mb-6 md:mb-8 select-none pointer-events-none"
+        />
       )}
 
       <motion.div
