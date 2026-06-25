@@ -19,7 +19,7 @@ export function PlanAudience({ section }: { section: AudienceSection }) {
             className="mb-12"
           >
             <div className="text-[10px] font-mono tracking-[0.22em] uppercase text-text-muted/60 mb-4">
-              Top U.S. Metros
+              {section.metrosLabel ?? "Top U.S. Metros"}
             </div>
             <div className="flex flex-wrap gap-2">
               {section.metros.map((m, i) => {

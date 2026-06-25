@@ -35,7 +35,7 @@ export const ecaderPlan: StrategyPlanData = {
         "A pre-debut campaign that builds hype, engagement, and owned audience for ECADER before any music exists, using the exact playbook that took WAYF BOYS to nearly 1M followers with zero songs released.",
       body: [
         "ECADER has no music until November. The opportunity is the seven months in front of it. A weekly documentary series launches in July, and that content is the fuel for a manufactured-momentum campaign designed to make the group feel inevitable before it ever debuts.",
-        "The benchmark is explicit: WAYF BOYS. They built a top-tier 5th-gen launch trajectory before debuting a face, a name, or a song, on essentially zero paid media, by running a finite and replicable playbook. We reverse-engineered that playbook in full. This plan deploys it for ECADER with a tighter, paid-accelerated version: intentional clipping, a US-positioned fan-page network, paid amplification of the winners, and an experiential layer that converts hype into data, units, and a chart story.",
+        "The benchmark is explicit: WAYF BOYS. They built a top-tier 5th-gen launch trajectory before debuting a face, a name, or a song, on essentially zero paid media, by running a finite and replicable playbook. We reverse-engineered that playbook in full. This plan deploys it for ECADER with a tighter, paid-accelerated version: intentional clipping, a fan-page network, paid amplification of the winners, and an experiential layer that converts hype into data, units, and a chart story.",
         "The working budget is $50,000, scoped to the July through September pre-debut window (roughly 12 weeks) leading into the November debut. There is no music to stream yet, so success is measured the way pre-debut is actually won: follower velocity, engagement rate, impression volume, conversation sentiment, and captured audience. Each subsequent phase (the November single, the debut, the first comeback) authorizes a fresh budget on the same structure.",
       ],
       supports: {
@@ -52,7 +52,7 @@ export const ecaderPlan: StrategyPlanData = {
         items: [
           "Manufacture WAYF-level velocity: visible, everywhere, talked about, before the music",
           "Make the documentary the most-clipped pre-debut content of the cycle",
-          "Stand up a US-positioned fan-page network as owned distribution",
+          "Stand up a fan-page network as owned distribution",
           "Capture phone numbers and emails now, while attention is cheap",
           "Create one experiential moment fans fight to attend and clip",
         ],
@@ -62,203 +62,87 @@ export const ecaderPlan: StrategyPlanData = {
     },
 
     // ===================================================================
-    // 02. Strategy & Philosophy
-    // ===================================================================
-    {
-      type: "philosophy",
-      number: "02",
-      navLabel: "Philosophy",
-      title: "Strategy & Philosophy",
-      thesis:
-        "Hype is manufacturable. WAYF proved it twice over (LNGSHOT was the first signal, WAYF the confirmation): a hard, streetwear-leaning concept plus a disciplined seeding machine produces a top-tier launch trajectory before the music exists. The playbook is finite. We run it on purpose, accelerated with paid.",
-      hierarchy: [
-        {
-          label: "Clipping & Seeding (Foundation, Always-On)",
-          description:
-            "The single most impactful lever in pre-debut right now. Intentional, smart clipping of the documentary and concept content across a managed clipper network (including Brian's 180K-person server) plus a complementary seeding layer. This is what made WAYF feel everywhere. It runs every week the campaign is live and it is where the first dollar goes.",
-        },
-        {
-          label: "Fan Page Network (Owned Distribution)",
-          description:
-            "Two dedicated US-positioned fan pages operating as an extension of the artist team, not fan guesswork. People have figured out how to make fan pages work: they are owned inventory that compounds, feed the retargeting pool, and give the group a credible grassroots footprint from day one.",
-        },
-        {
-          label: "Paid Amplification + Swarm (Accelerant)",
-          description:
-            "Paid social behind the clips and posts that are already proving themselves, plus Swarm comment amplification on all content to drive conversation and social proof. This is the accelerant WAYF did not need but we will use to compress the timeline. Spend rides the winners, not guesses.",
-        },
-        {
-          label: "Experiential IRL (Conversion Layer)",
-          description:
-            "The needle-mover once hype exists. A pop-up that fans fight to attend produces thousands of pieces of fan-shot content, captures data, sells physical units, and (in the US) creates a Billboard-eligible unit-sales story. One event becomes the most clippable asset of the campaign. Scoped as an additional activation on top of the $50K.",
-        },
-      ],
-      messaging: [
-        "Clipping and fan pages first. Then paid and Swarm. Then experiential. That is the priority stack.",
-        "The documentary is the content engine. Every episode is raw material for hundreds of clips.",
-        "Concept does the heavy lifting. WAYF and LNGSHOT both won on a hard concept, not better music.",
-        "Capture audience now. Attention is cheapest before the debut. A web-based mechanic that pulls phone numbers turns hype into an owned list.",
-      ],
-      footnote:
-        "Clipping is the foundation. Experiential is the conversion. Everything between is amplification.",
-    },
-
-    // ===================================================================
-    // 03. The WAYF Benchmark (our audit)
-    // ===================================================================
-    {
-      type: "vertical",
-      number: "03",
-      navLabel: "WAYF Benchmark",
-      title: "The WAYF Benchmark",
-      philosophy:
-        "We did not guess at what WAYF did. We ran a forensic teardown of the first 24 days of their public existence. Here is what the playbook actually is, and what is portable to ECADER.",
-      intro:
-        "WAYF BOYS (label: WAYF, Where Art Yields Freedom, founded by a former Mnet producer) manufactured a top-tier launch trajectory before releasing a song, debuting a face, or confirming a name. The numbers below are what a disciplined, concept-led, organic-first machine produced. ECADER runs the same system with paid acceleration on top.",
-      subBlocks: [
-        {
-          label: "A",
-          title: "The Headline Numbers",
-          objective:
-            "What the WAYF machine produced in its first 24 days, pre-debut, with effectively zero paid media. This is the bar.",
-          components: {
-            heading: "Forensic Findings",
-            items: [
-              "63,636 TikTok followers per day: 2.4x CORTIS (HYBE) and 7.2x LNGSHOT (Jay Park), with zero music out",
-              "21.8% mean TikTok engagement rate: roughly 10x a healthy 2% baseline",
-              "Approximately 0% paid: Meta and TikTok ad libraries empty, organic-only confirmed in press",
-              "Nearly 1M followers across TikTok and Instagram inside the launch window",
-              "Four parallel content engines running at once, not one viral fluke",
-            ],
-          },
-          kpis: [
-            "TikTok @wayfboys: 1.4M followers, 13.7M likes, 18 videos",
-            "Instagram @wayfboys: 999K followers, 336K avg likes, 31 posts",
-            "YouTube (label): 83.4K subs, 3.06M views across 9 videos",
-            "No Weverse, no fancafe: the absences are themselves the strategy",
-          ],
-        },
-        {
-          label: "B",
-          title: "The Four Content Engines",
-          objective:
-            "WAYF ran a complete funnel: acquire, position, retain, mythologize. Each engine has an ECADER analog built into this plan.",
-          components: {
-            heading: "The System",
-            items: [
-              "Acquisition: a cappella covers of globally-legible Western songs (56% of TikTok views). Borrowed reach, language-barrier bypass, real-musician proof.",
-              "Positioning: an anti-idol manifesto and hard streetwear concept that defines an enemy and a worldview.",
-              "Retention: relentless candid and lifestyle content that makes followers feel inside the world before debut.",
-              "Mythology: a self-organized fan-translation and aggregator network (NGEUPDATE and peers) that distributes for free.",
-            ],
-          },
-        },
-        {
-          label: "C",
-          title: "What Is Portable to ECADER",
-          objective:
-            "The playbook is finite and replicable. Here is exactly how it maps onto ECADER's July documentary rollout, accelerated with paid.",
-          components: {
-            heading: "The Translation",
-            items: [
-              "WAYF covers become ECADER documentary clips: the weekly episodes are the borrowed-reach, real-human content the clipper network amplifies.",
-              "WAYF organic seeding becomes ECADER clipping plus paid: we run the same seeding machine and ride the winners with paid.",
-              "WAYF aggregator fandom becomes ECADER fan pages plus Swarm: we build the owned distribution rather than waiting for it to self-organize.",
-              "WAYF had no data capture: that is ECADER's edge. We add CRM and an experiential layer to convert hype into an owned list and physical units.",
-            ],
-          },
-          links: [
-            {
-              label: "Full forensic teardown: analysis.crowdcontroldigital.com/wayf",
-              url: "https://analysis.crowdcontroldigital.com/wayf",
-            },
-          ],
-          linksHeading: "Reference",
-        },
-      ],
-      footnote:
-        "The full 13-section teardown (channel census, paid-vs-organic split, amplification graph, breakout analysis, replication playbook) is live at the link above.",
-    },
-
-    // ===================================================================
-    // 04. Audience & Positioning
+    // 02. Audience & Positioning
     // ===================================================================
     {
       type: "audience",
-      number: "04",
+      number: "02",
       navLabel: "Audience",
       title: "Audience & Positioning",
+      metrosLabel: "Top Global Markets",
       intro:
-        "Pre-debut targeting is concept-and-comp-based, not data-based, because there is no music or pixel history yet. These splits set the initial clipping posture, fan-page content direction, and paid-social targeting. They refine fast once the July documentary and social accounts generate real pixel data, which feeds straight into the November debut campaign brief.",
+        "Pre-debut targeting is concept-and-comp-based, not data-based, because there is no music or pixel history yet. K-pop boy-group fandom is global from day one, and the geography is not US-led: across comparable hard-concept groups (RIIZE, BOYNEXTDOOR, TWS, CORTIS), Southeast Asia and Latin America drive the highest engagement and conversation volume, Korea and Japan anchor credibility and watch-time, and the US is a meaningful but secondary market. The cohort skews very young and overwhelmingly female. These splits set the initial clipping posture, fan-page content direction, and paid-social targeting, and re-weight fast once the July documentary and social accounts generate real pixel data.",
       metros: [
-        { name: "Los Angeles, CA" },
-        { name: "New York, NY" },
-        { name: "Dallas-Fort Worth, TX" },
-        { name: "Atlanta, GA" },
-        { name: "Chicago, IL" },
-        { name: "Seattle, WA" },
-        { name: "Toronto, ON", tier: "secondary" },
-        { name: "London, UK", tier: "secondary" },
-        { name: "Jakarta, ID", tier: "secondary" },
-        { name: "Manila, PH", tier: "secondary" },
+        { name: "Jakarta, Indonesia" },
+        { name: "Bangkok, Thailand" },
+        { name: "Manila, Philippines" },
+        { name: "Seoul, South Korea" },
+        { name: "Tokyo, Japan" },
+        { name: "Mexico City, Mexico" },
+        { name: "Sao Paulo, Brazil", tier: "secondary" },
+        { name: "Kuala Lumpur, Malaysia", tier: "secondary" },
+        { name: "Ho Chi Minh City, Vietnam", tier: "secondary" },
+        { name: "Taipei, Taiwan", tier: "secondary" },
+        { name: "Los Angeles, USA", tier: "secondary" },
+        { name: "Lima, Peru", tier: "secondary" },
       ],
       ageDistribution: [
-        { bracket: "16-24", weight: 58 },
-        { bracket: "25-34", weight: 27 },
+        { bracket: "16-24", weight: 55 },
+        { bracket: "25-34", weight: 30 },
         { bracket: "35-44", weight: 10 },
         { bracket: "45+", weight: 5 },
       ],
-      genderDistribution: { female: 70, male: 30 },
+      genderDistribution: { female: 88, male: 12 },
       similarArtists: [
         "WAYF BOYS",
         "LNGSHOT",
         "CORTIS",
-        "KISS OF LIFE",
+        "RIIZE",
         "BOYNEXTDOOR",
         "TWS",
-        "RIIZE",
-        "ATEEZ",
-        "Stray Kids",
+        "ZEROBASEONE",
         "ENHYPEN",
+        "&TEAM",
+        "NCT WISH",
       ],
       genres: [
         "K-Pop",
-        "K-Hip-Hop",
+        "K-Hip-Hop / Pop-Rap",
         "Streetwear Culture",
         "Alt / Hard Concept",
       ],
       platformSignals: [
         {
           platform: "TikTok",
-          note: "Primary acquisition engine. Where the documentary clips live and where WAYF-style velocity is won. Highest-leverage channel for both clipping and paid.",
+          note: "Primary global acquisition engine and the home of edit and fancam culture. Where the documentary clips live and where WAYF-style velocity is won. Highest reshare velocity comes from SEA (Indonesia, Philippines, Thailand) and LATAM (Mexico, Brazil), where hard streetwear concepts over-index.",
         },
         {
           platform: "YouTube Shorts",
-          note: "Documentary home plus Shorts arbitrage (the lever that trended Kiss of Life 25 of 30 days in Korea). Long-form episodes plus clipped verticals.",
+          note: "Documentary home plus Shorts arbitrage (the lever that trended Kiss of Life 25 of 30 days in Korea). Korea and SEA dominate watch-time; Latin American comment sections are among the most active for boy groups.",
         },
         {
           platform: "Instagram Reels",
-          note: "Dual engine: video mirror of TikTok plus lifestyle and concept carousels. The fan-page network operates here and on TikTok.",
+          note: "Dual engine: video mirror of TikTok plus lifestyle and concept carousels. Drives member bias culture and the fashion positioning a streetwear concept relies on. The fan-page network operates here and on TikTok; strongest engagement from Japan, Indonesia, and LATAM.",
         },
         {
           platform: "X / Aggregators",
-          note: "Where the conversation and fan-translation layer compounds. Swarm seeds it; the aggregator network (WAYF-style) amplifies it.",
+          note: "Real-time fan-account organizing, streaming parties, and hashtag pushes, led by Filipino, Indonesian, and Brazilian fanbases. SWRM seeds it; the aggregator network (WAYF-style) amplifies it across Korea, SEA, and the West.",
         },
       ],
       footnote:
-        "Concept-and-comp-based. Splits derived from the WAYF and LNGSHOT comp set and the hard-concept streetwear audience. CCD recalibrates once July content delivers pixel data.",
+        "Concept-and-comp-based directional estimates drawn from comparable groups' public Spotify listener geography and K-pop fandom demographics (RIIZE top Spotify cities run Bangkok over Kuala Lumpur over Seoul, with no US city leading). CCD recalibrates against first-party pixel data once July content launches.",
     },
 
     // ===================================================================
-    // 05. Proposal Structure
+    // 03. Proposal Structure
     // ===================================================================
     {
       type: "structure",
-      number: "05",
+      number: "03",
       navLabel: "Structure",
       title: "Proposal Structure",
       intro:
-        "A single all-in working-media budget of $50,000 for the pre-debut window (July through September). It stands up clipping, two fan pages, the Origin placement buy, paid social, and Swarm in July, scales the winners through August, and sustains the hype into September as the runway to the November debut. The CCD campaign retainer (flat $5,000) and 15% media management sit on top of this working budget, not inside it. The November single and the debut each authorize a fresh budget on the same structure.",
+        "A single all-in working-media budget of $50,000 for the pre-debut window (July through September). It stands up clipping, two fan pages, the Origin placement buy, paid social, and SWRM in July, scales the winners through August, and sustains the hype into September as the runway to the November debut. The CCD campaign retainer (flat $5,000) and 15% media management sit on top of this working budget, not inside it. The November single and the debut each authorize a fresh budget on the same structure.",
       tiers: [
         {
           label: "Pre-Debut Window (Jul to Sep)",
@@ -269,10 +153,10 @@ export const ecaderPlan: StrategyPlanData = {
           featured: true,
           includes: [
             "Clipping and seeding across the managed clipper network (180K-person server)",
-            "Two US-positioned HQ fan pages (IG plus TikTok)",
+            "Two HQ fan pages (IG plus TikTok)",
             "New media placements via Origin (reduced, one to two month test)",
             "Paid social amplification behind proven clips and posts",
-            "Swarm comment amplification across all content",
+            "SWRM comment amplification across all content",
             "CCD strategic oversight and weekly reallocation",
           ],
         },
@@ -280,11 +164,11 @@ export const ecaderPlan: StrategyPlanData = {
     },
 
     // ===================================================================
-    // 06. Clipping & Seeding
+    // 04. Clipping & Seeding
     // ===================================================================
     {
       type: "vertical",
-      number: "06",
+      number: "04",
       navLabel: "Clipping",
       title: "Vertical 1 / Clipping & Seeding",
       philosophy:
@@ -336,19 +220,19 @@ export const ecaderPlan: StrategyPlanData = {
     },
 
     // ===================================================================
-    // 07. Fan Page Network
+    // 05. Fan Page Network
     // ===================================================================
     {
       type: "vertical",
-      number: "07",
+      number: "05",
       navLabel: "Fan Pages",
       title: "Vertical 2 / Fan Page Network",
       philosophy:
-        "Priority two. Owned distribution that compounds. Two dedicated US-positioned pages operating as an extension of the artist team.",
+        "Priority two. Owned distribution that compounds. Two dedicated pages operating as an extension of the artist team.",
       subBlocks: [
         {
           label: "A",
-          title: "Two US-Positioned HQ Fan Pages",
+          title: "Two HQ Fan Pages",
           budget: "$15,000 (2 pages x $2,500/mo x 3 months)",
           timeline: "Launch week 1, run through the pre-debut window",
           objective:
@@ -378,11 +262,11 @@ export const ecaderPlan: StrategyPlanData = {
     },
 
     // ===================================================================
-    // 08. New Media Placements (Origin)
+    // 06. New Media Placements (Origin)
     // ===================================================================
     {
       type: "vertical",
-      number: "08",
+      number: "06",
       navLabel: "Placements",
       title: "Vertical 3 / New Media Placements",
       philosophy:
@@ -420,15 +304,15 @@ export const ecaderPlan: StrategyPlanData = {
     },
 
     // ===================================================================
-    // 09. Paid Social & Swarm
+    // 07. Paid Social & SWRM
     // ===================================================================
     {
       type: "vertical",
-      number: "09",
-      navLabel: "Paid + Swarm",
-      title: "Vertical 4 / Paid Social & Swarm Amplification",
+      number: "07",
+      navLabel: "Paid + SWRM",
+      title: "Vertical 4 / Paid Social & SWRM Amplification",
       philosophy:
-        "The accelerant. Paid rides the winners the clipping and fan pages surface; Swarm drives conversation and social proof on everything. This is the layer WAYF did not need but we use to compress the timeline.",
+        "The accelerant. Paid rides the winners the clipping and fan pages surface; SWRM drives conversation and social proof on everything. This is the layer WAYF did not need but we use to compress the timeline.",
       subBlocks: [
         {
           label: "A",
@@ -448,12 +332,12 @@ export const ecaderPlan: StrategyPlanData = {
         },
         {
           label: "B",
-          title: "Swarm Comment Amplification",
+          title: "SWRM Comment Amplification",
           budget: "$3,000 (working media)",
           objective:
             "Drive real-person conversation and social proof across all ECADER content and the clips seeded around it. Comments are where pre-debut hype reads as real.",
           strategy:
-            "Deploy Swarm to comment across owned posts and the broader clip footprint, manufacturing the conversation density that signals a group is popping. Operators agree to platform guardrails to keep it credible. Swarm is suited to a hard-concept group like this where the commentary is about the music and the look, unlike a campaign where comment content carries brand risk.",
+            "Deploy SWRM to comment across owned posts and the broader clip footprint, manufacturing the conversation density that signals a group is popping. Operators agree to platform guardrails to keep it credible. SWRM is suited to a hard-concept group like this where the commentary is about the music and the look, unlike a campaign where comment content carries brand risk.",
           components: {
             heading: "Scope",
             items: [
@@ -466,15 +350,15 @@ export const ecaderPlan: StrategyPlanData = {
         },
       ],
       footnote:
-        "Paid spend rides validated winners. Swarm makes the hype legible. Both are calibrated to the documentary cadence.",
+        "Paid spend rides validated winners. SWRM makes the hype legible. Both are calibrated to the documentary cadence.",
     },
 
     // ===================================================================
-    // 10. World-Building & Experiential
+    // 08. World-Building & Experiential
     // ===================================================================
     {
       type: "vertical",
-      number: "10",
+      number: "08",
       navLabel: "Experiential",
       title: "World-Building & Experiential (Optional)",
       philosophy:
@@ -525,28 +409,28 @@ export const ecaderPlan: StrategyPlanData = {
     },
 
     // ===================================================================
-    // 11. Media Flight
+    // 09. Media Flight
     // ===================================================================
     {
       type: "flight",
-      number: "11",
+      number: "09",
       navLabel: "Flight",
       title: "Proposed Media Flight",
       intro:
-        "How the $50,000 working budget deploys across the pre-debut window. July detonates alongside the documentary launch (clipping, fan pages, Origin, Swarm all firing on the weekly episodes). August scales paid behind the proven winners and runs the fan pages at full cadence while Origin tapers. September sustains the hype and sets the experiential decision and the runway into the November debut.",
+        "How the $50,000 working budget deploys across the pre-debut window. July detonates alongside the documentary launch (clipping, fan pages, Origin, SWRM all firing on the weekly episodes). August scales paid behind the proven winners and runs the fan pages at full cadence while Origin tapers. September sustains the hype and sets the experiential decision and the runway into the November debut.",
       totalBudget: "$50,000 working media",
       phases: [
         {
           label: "Detonation + Documentary Launch",
           window: "July 2026 / ~4 weeks",
           focus:
-            "All engines fire on the weekly documentary episodes. The clipper network and Origin both attack the same content from two angles, the two fan pages launch, Swarm drives conversation density, and paid social tests light to find early winners. Goal: prove the concept travels and build the first follower-velocity curve.",
+            "All engines fire on the weekly documentary episodes. The clipper network and Origin both attack the same content from two angles, the two fan pages launch, SWRM drives conversation density, and paid social tests light to find early winners. Goal: prove the concept travels and build the first follower-velocity curve.",
           budget: "~$20,000",
           tactics: [
             "Clipper network and 180K server attack each weekly episode",
-            "Two US-positioned fan pages launch on IG plus TikTok",
+            "Two HQ fan pages launch on IG plus TikTok",
             "Origin placement test begins on K-pop pages",
-            "Swarm comment coverage timed to episode drops",
+            "SWRM comment coverage timed to episode drops",
             "Paid social test phase against the concept-and-comp audience",
           ],
         },
@@ -579,19 +463,19 @@ export const ecaderPlan: StrategyPlanData = {
         },
       ],
       footnote:
-        "Phase budgets are directional. CCD reallocates weekly across clipping, fan pages, placements, paid, and Swarm based on follower-velocity and conversation signals.",
+        "Phase budgets are directional. CCD reallocates weekly across clipping, fan pages, placements, paid, and SWRM based on follower-velocity and conversation signals.",
     },
 
     // ===================================================================
-    // 12. Execution Timeline
+    // 10. Execution Timeline
     // ===================================================================
     {
       type: "timeline",
-      number: "12",
+      number: "10",
       navLabel: "Timeline",
       title: "Execution Timeline",
       intro:
-        "Week-by-week deployment across the pre-debut window. The six documentary episodes anchor July and early August (exact dates pending the release and content schedule from Jane). Clipping, fan pages, and Swarm launch in week 1. Origin runs a one-to-two-month test. Paid tests in week 1 and scales from week 3. The experiential decision lands around weeks 6 to 8 and, if greenlit, activates in September. The window is the runway into the November single and debut.",
+        "Week-by-week deployment across the pre-debut window. The six documentary episodes anchor July and early August (exact dates pending the release and content schedule from Jane). Clipping, fan pages, and SWRM launch in week 1. Origin runs a one-to-two-month test. Paid tests in week 1 and scales from week 3. The experiential decision lands around weeks 6 to 8 and, if greenlit, activates in September. The window is the runway into the November single and debut.",
       weeks: [
         { index: 1, label: "W1", dates: "Jul 6", note: "EP1" },
         { index: 2, label: "W2", dates: "Jul 13", note: "EP2" },
@@ -683,7 +567,7 @@ export const ecaderPlan: StrategyPlanData = {
           ],
         },
         {
-          name: "Swarm Comments",
+          name: "SWRM Comments",
           cells: [
             { weekIndex: 1, intensity: "high", label: "ON" },
             { weekIndex: 2, intensity: "high" },
@@ -718,8 +602,8 @@ export const ecaderPlan: StrategyPlanData = {
           title: "Detonation: documentary EP1 + all engines launch",
           items: [
             "Documentary episode 1 drops. Clipper network and 180K server immediately cut it into hook-first verticals and seed across the network.",
-            "Both US-positioned fan pages launch on IG plus TikTok with concept-led launch posts.",
-            "Swarm comment coverage goes live across owned posts and seeded clips.",
+            "Both fan pages launch on IG plus TikTok with concept-led launch posts.",
+            "SWRM comment coverage goes live across owned posts and seeded clips.",
             "Origin placement test begins. Paid social launches in test mode against the concept-and-comp audience.",
           ],
         },
@@ -760,7 +644,7 @@ export const ecaderPlan: StrategyPlanData = {
             "Documentary episode 5 drops.",
             "All organic and paid engines compounding.",
             "Origin go or no-go signal forming on cost-per-result.",
-            "Swarm density timed to the episode moment.",
+            "SWRM density timed to the episode moment.",
           ],
         },
         {
@@ -837,11 +721,11 @@ export const ecaderPlan: StrategyPlanData = {
     },
 
     // ===================================================================
-    // 13. Investment
+    // 11. Investment
     // ===================================================================
     {
       type: "pricing",
-      number: "13",
+      number: "11",
       navLabel: "Investment",
       title: "Investment",
       intro:
@@ -866,7 +750,7 @@ export const ecaderPlan: StrategyPlanData = {
             { vertical: "Fan Page Network (2 pages)", amount: "$15,000" },
             { vertical: "New Media Placements (Origin)", amount: "$10,000" },
             { vertical: "Paid Social Amplification", amount: "$12,000" },
-            { vertical: "Swarm Comment Amplification", amount: "$3,000" },
+            { vertical: "SWRM Comment Amplification", amount: "$3,000" },
           ],
         },
       ],

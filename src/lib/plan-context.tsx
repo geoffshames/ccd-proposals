@@ -104,6 +104,7 @@ export type AudienceSection = {
   navLabel?: string;
   title: string;
   intro?: string;
+  metrosLabel?: string;
   metros?: { name: string; tier?: "primary" | "secondary" }[];
   ageDistribution?: AgeBracket[];
   genderDistribution?: { female: number; male: number };
