@@ -7,8 +7,10 @@ import { eightyTwoMajorDeliverables } from "./82major-deliverables";
 import { eightyTwoMajorDeliverablesKorean } from "./82major-deliverables-ko";
 import { temporexDeliverables } from "./temporex-deliverables";
 import { miguelTestSprint } from "./miguel-test-sprint";
+import { ecaderPlan } from "./ecader";
 
 export const PLANS: Record<string, StrategyPlanData> = {
+  ecader: ecaderPlan,
   "82major": eightyTwoMajorPlan,
   "82major-strategy": eightyTwoMajorPlanStrategy,
   "82major-ko": eightyTwoMajorPlanKorean,
