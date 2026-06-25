@@ -182,7 +182,7 @@ export const ecaderPlan: StrategyPlanData = {
           objective:
             "Make the ECADER documentary the most-clipped pre-debut content of the cycle. Intentional, smart, on-concept clipping, not volume for volume's sake. WAYF proved good clipping beats more clipping.",
           strategy:
-            "Deploy the documentary episodes and concept content across the managed clipper network, including Brian's 180K-person clipping server, with tight creative direction: which moments, which hooks, which sounds. Coordinate sound usage so the clips seed a discoverable audio trail (the same way you trace a network by who used a sound). This runs in parallel with Origin, doubling down on the same content from a second angle.",
+            "Deploy the documentary episodes and concept content across the managed clipper network, including CCD's 180K-person clipping server, with tight creative direction: which moments, which hooks, which sounds. Coordinate sound usage so the clips seed a discoverable audio trail (the same way you trace a network by who used a sound). This runs in parallel with Origin, doubling down on the same content from a second angle.",
           components: {
             heading: "What The Network Does",
             items: [
