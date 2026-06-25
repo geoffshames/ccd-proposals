@@ -4,6 +4,7 @@ export const ecaderPlan: StrategyPlanData = {
   accentColor: "#FD3737",
   ogImage: "/images/ecader/og-image.png",
   language: "en",
+  languageAlternates: [{ slug: "ecader-ko", label: "한국어", code: "KO" }],
 
   cover: {
     label: "Pre-Debut Hype Strategy",

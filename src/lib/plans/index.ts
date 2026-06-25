@@ -8,9 +8,11 @@ import { eightyTwoMajorDeliverablesKorean } from "./82major-deliverables-ko";
 import { temporexDeliverables } from "./temporex-deliverables";
 import { miguelTestSprint } from "./miguel-test-sprint";
 import { ecaderPlan } from "./ecader";
+import { ecaderPlanKorean } from "./ecader-ko";
 
 export const PLANS: Record<string, StrategyPlanData> = {
   ecader: ecaderPlan,
+  "ecader-ko": ecaderPlanKorean,
   "82major": eightyTwoMajorPlan,
   "82major-strategy": eightyTwoMajorPlanStrategy,
   "82major-ko": eightyTwoMajorPlanKorean,
