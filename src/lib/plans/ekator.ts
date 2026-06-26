@@ -1,20 +1,20 @@
 import type { StrategyPlanData } from "../plan-context";
 
-export const ecaderPlan: StrategyPlanData = {
+export const ekatorPlan: StrategyPlanData = {
   accentColor: "#FD3737",
-  ogImage: "/images/ecader/og-image.png",
+  ogImage: "/images/ekator/og-image.png",
   language: "en",
-  languageAlternates: [{ slug: "ecader-ko", label: "한국어", code: "KO" }],
+  languageAlternates: [{ slug: "ekator-ko", label: "한국어", code: "KO" }],
 
   cover: {
     label: "Pre-Debut Hype Strategy",
-    title: "ECADER",
+    title: "EKATOR",
     subtitle:
       "A pre-debut hype and audience-acquisition framework. Engineered to manufacture WAYF-level velocity before a single song drops.",
     partnership: "Grid × Crowd Control Digital",
     prepared: "Geoff Shames / Co-Founder, CCD",
     date: "June 2026",
-    backgroundImage: "/images/ecader/ecader-hero.jpg",
+    backgroundImage: "/images/ekator/ekator-hero.jpg",
     logo: "/brand/CC-LOGO-2024-WHITE.png",
   },
 
@@ -34,10 +34,10 @@ export const ecaderPlan: StrategyPlanData = {
       navLabel: "Overview",
       title: "Overview & Objective",
       subtitle:
-        "A pre-debut campaign that builds hype, engagement, and owned audience for ECADER before any music exists, using the exact playbook that took WAYF BOYS to nearly 1M followers with zero songs released.",
+        "A pre-debut campaign that builds hype, engagement, and owned audience for EKATOR before any music exists, using the exact playbook that took WAYF BOYS to nearly 1M followers with zero songs released.",
       body: [
-        "ECADER has no music until November. The opportunity is the seven months in front of it. A weekly documentary series launches in July, and that content is the fuel for a manufactured-momentum campaign designed to make the group feel inevitable before it ever debuts.",
-        "The benchmark is explicit: WAYF BOYS. They built a top-tier 5th-gen launch trajectory before debuting a face, a name, or a song, on essentially zero paid media, by running a finite and replicable playbook. We reverse-engineered that playbook in full. This plan deploys it for ECADER with a tighter, paid-accelerated version: intentional clipping, a fan-page network, paid amplification of the winners, and an experiential layer that converts hype into data, units, and a chart story.",
+        "EKATOR has no music until November. The opportunity is the seven months in front of it. A weekly documentary series launches in July, and that content is the fuel for a manufactured-momentum campaign designed to make the group feel inevitable before it ever debuts.",
+        "The benchmark is explicit: WAYF BOYS. They built a top-tier 5th-gen launch trajectory before debuting a face, a name, or a song, on essentially zero paid media, by running a finite and replicable playbook. We reverse-engineered that playbook in full. This plan deploys it for EKATOR with a tighter, paid-accelerated version: intentional clipping, a fan-page network, paid amplification of the winners, and an experiential layer that converts hype into data, units, and a chart story.",
         "The total program is $62,500 for the pre-debut window (July through September, roughly 12 weeks) leading into the November debut: $50,000 of working media plus $12,500 in CCD fees. There is no music to stream yet, so success is measured the way pre-debut is actually won: follower velocity, engagement rate, impression volume, conversation sentiment, and captured audience. Each subsequent phase (the November single, the debut, the first comeback) authorizes a fresh budget on the same structure.",
       ],
       supports: {
@@ -181,7 +181,7 @@ export const ecaderPlan: StrategyPlanData = {
           title: "Managed Clipper Network",
           budget: "$10,000 (working media)",
           objective:
-            "Make the ECADER documentary the most-clipped pre-debut content of the cycle. Intentional, smart, on-concept clipping, not volume for volume's sake. WAYF proved good clipping beats more clipping.",
+            "Make the EKATOR documentary the most-clipped pre-debut content of the cycle. Intentional, smart, on-concept clipping, not volume for volume's sake. WAYF proved good clipping beats more clipping.",
           strategy:
             "Deploy the documentary episodes and concept content across the managed clipper network, including CCD's 180K-person clipping server, with tight creative direction: which moments, which hooks, which sounds. Coordinate sound usage so the clips seed a discoverable audio trail (the same way you trace a network by who used a sound). This runs in parallel with Origin, doubling down on the same content from a second angle.",
           components: {
@@ -337,7 +337,7 @@ export const ecaderPlan: StrategyPlanData = {
           title: "SWRM Comment Amplification",
           budget: "$3,000 (working media)",
           objective:
-            "Drive real-person conversation and social proof across all ECADER content and the clips seeded around it. Comments are where pre-debut hype reads as real.",
+            "Drive real-person conversation and social proof across all EKATOR content and the clips seeded around it. Comments are where pre-debut hype reads as real.",
           strategy:
             "Deploy SWRM to comment across owned posts and the broader clip footprint, manufacturing the conversation density that signals a group is popping. Operators agree to platform guardrails to keep it credible. SWRM is suited to a hard-concept group like this where the commentary is about the music and the look, unlike a campaign where comment content carries brand risk.",
           components: {
@@ -375,7 +375,7 @@ export const ecaderPlan: StrategyPlanData = {
           objective:
             "Build the world and capture the audience. A custom interactive site or web-based game that does the data capture WAYF never built, pulling phone numbers and emails while attention is cheapest.",
           strategy:
-            "Stand up a bespoke ECADER web experience (an interactive concept site or a lightweight web game) that gives fans something to do, then captures phone numbers and emails at the point of engagement. Pipe captures into a Laylo-style CRM so that by the time the November single drops, ECADER texts an owned list rather than renting attention. This is the long-term business-building asset the budget would otherwise miss.",
+            "Stand up a bespoke EKATOR web experience (an interactive concept site or a lightweight web game) that gives fans something to do, then captures phone numbers and emails at the point of engagement. Pipe captures into a Laylo-style CRM so that by the time the November single drops, EKATOR texts an owned list rather than renting attention. This is the long-term business-building asset the budget would otherwise miss.",
           components: {
             heading: "What It Delivers",
             items: [
