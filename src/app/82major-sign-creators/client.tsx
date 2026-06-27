@@ -173,8 +173,8 @@ export function CreatorsClient() {
           {/* STAT ROW — $5K leads as the emphasized metric */}
           <div className="rv grid grid-cols-2 sm:grid-cols-4 max-w-2xl gap-px bg-[#2a2a2a] border border-[#2a2a2a]" style={{ animationDelay: ".2s" }}>
             <div className="bg-accent px-4 py-5 text-center">
-              <div className="display text-[clamp(2rem,5.5vw,3rem)] text-white leading-none">{t.chipBudget}</div>
-              <div className="font-mono text-[10px] md:text-[11px] uppercase tracking-widest text-white/85 mt-1.5">
+              <div className="display text-[clamp(2rem,5.5vw,3rem)] text-[#0A0A0A] leading-none">{t.chipBudget}</div>
+              <div className="font-mono text-[10px] md:text-[11px] uppercase tracking-widest text-black/75 mt-1.5">
                 {t.statBudget}
               </div>
             </div>
