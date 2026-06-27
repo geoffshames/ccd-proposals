@@ -42,6 +42,7 @@ const COPY = {
     tagline: "U.S. dancer activation on TikTok.",
     chipChannel: "Influencer Marketing · TikTok",
     chipBudget: "$5K",
+    statBudget: "Initial Budget",
     statCreators: "Creators",
     statReach: "Combined followers",
     statViews: "Combined avg views",
@@ -62,6 +63,7 @@ const COPY = {
     tagline: "틱톡 미국 댄서 활성화 캠페인.",
     chipChannel: "인플루언서 마케팅 · TikTok",
     chipBudget: "$5K",
+    statBudget: "초기 예산",
     statCreators: "크리에이터",
     statReach: "총 팔로워",
     statViews: "총 평균 조회수",
@@ -165,22 +167,25 @@ export function CreatorsClient() {
               <TikTokGlyph className="w-4 h-4 text-accent" />
               {t.chipChannel}
             </span>
-            <span className="inline-flex items-center px-4 py-2 border border-accent/40 bg-accent/10 text-[13px] font-semibold text-white">
-              {t.chipBudget}
-            </span>
             <span className="text-[13px] text-white/60 max-w-xs leading-snug">{t.tagline}</span>
           </div>
 
-          {/* STAT ROW */}
-          <div className="rv grid grid-cols-3 max-w-xl border border-border divide-x divide-[#2a2a2a] bg-[#0A0A0A]/60 backdrop-blur" style={{ animationDelay: ".2s" }}>
+          {/* STAT ROW — $5K leads as the emphasized metric */}
+          <div className="rv grid grid-cols-2 sm:grid-cols-4 max-w-2xl gap-px bg-[#2a2a2a] border border-[#2a2a2a]" style={{ animationDelay: ".2s" }}>
+            <div className="bg-accent px-4 py-5 text-center">
+              <div className="display text-[clamp(2rem,5.5vw,3rem)] text-white leading-none">{t.chipBudget}</div>
+              <div className="font-mono text-[10px] md:text-[11px] uppercase tracking-widest text-white/85 mt-1.5">
+                {t.statBudget}
+              </div>
+            </div>
             {[
               { v: "10", l: t.statCreators },
               { v: "4.2M", l: t.statReach },
               { v: "905K", l: t.statViews },
             ].map((s) => (
-              <div key={s.l} className="px-4 py-5 text-center">
-                <div className="display text-[clamp(1.8rem,5vw,2.6rem)] text-accent">{s.v}</div>
-                <div className="font-mono text-[10px] md:text-[11px] uppercase tracking-widest text-text-muted mt-1">
+              <div key={s.l} className="bg-[#0d0d0d] px-4 py-5 text-center">
+                <div className="display text-[clamp(1.8rem,5vw,2.6rem)] text-accent leading-none">{s.v}</div>
+                <div className="font-mono text-[10px] md:text-[11px] uppercase tracking-widest text-text-muted mt-1.5">
                   {s.l}
                 </div>
               </div>
