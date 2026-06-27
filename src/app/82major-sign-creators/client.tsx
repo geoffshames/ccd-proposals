@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -101,13 +100,16 @@ export function CreatorsClient() {
 
   return (
     <div className="min-h-screen bg-[#0A0A0A] text-text-primary overflow-hidden">
+      {/* Reveal animation — pure CSS so the final state is always visible,
+          even if the tab loads throttled in the background. */}
+      <style>{`
+        @keyframes rvUp { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
+        .rv { animation: rvUp .7s cubic-bezier(.22,1,.36,1) both; }
+        @media (prefers-reduced-motion: reduce) { .rv { animation: none; } }
+      `}</style>
+
       {/* NAV */}
-      <motion.nav
-        initial={{ y: -60, opacity: 0 }}
-        animate={{ y: 0, opacity: 1 }}
-        transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
-        className="fixed top-0 left-0 right-0 z-50 backdrop-blur-xl bg-[#0A0A0A]/80 border-b border-border"
-      >
+      <nav className="fixed top-0 left-0 right-0 z-50 backdrop-blur-xl bg-[#0A0A0A]/80 border-b border-border">
         <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
           <Link href="https://crowdcontroldigital.com" className="flex-shrink-0">
             <Image
@@ -118,15 +120,13 @@ export function CreatorsClient() {
               className="w-7 h-7"
             />
           </Link>
-          <div className="flex items-center gap-1 border border-border rounded-none">
+          <div className="flex items-center gap-1 border border-border">
             {(["en", "ko"] as Lang[]).map((l) => (
               <button
                 key={l}
                 onClick={() => setLang(l)}
                 className={`px-3 py-1.5 text-[12px] font-mono uppercase tracking-wider transition-colors ${
-                  lang === l
-                    ? "bg-accent text-white"
-                    : "text-text-muted hover:text-text-primary"
+                  lang === l ? "bg-accent text-white" : "text-text-muted hover:text-text-primary"
                 }`}
               >
                 {l}
@@ -134,7 +134,7 @@ export function CreatorsClient() {
             ))}
           </div>
         </div>
-      </motion.nav>
+      </nav>
 
       {/* HERO */}
       <section className="relative min-h-[92vh] flex items-center overflow-hidden pt-20">
@@ -142,8 +142,8 @@ export function CreatorsClient() {
           className="absolute inset-0 w-full h-full bg-cover bg-center bg-no-repeat"
           style={{ backgroundImage: "url(/images/82major/82major-group.jpg)" }}
         >
-          <div className="absolute inset-0 bg-black/[0.72]" />
-          <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-transparent to-[#0A0A0A]" />
+          <div className="absolute inset-0 bg-black/[0.74]" />
+          <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-[#0A0A0A]" />
         </div>
 
         {/* corner brackets */}
@@ -153,39 +153,19 @@ export function CreatorsClient() {
         <div className="absolute bottom-12 right-8 w-10 h-10 border-r-2 border-b-2 border-accent pointer-events-none" />
 
         <div className="relative z-10 max-w-6xl mx-auto px-6 md:px-12 w-full">
-          <motion.p
-            initial={{ opacity: 0, y: 16 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, delay: 0.1 }}
-            className="font-mono text-[12px] md:text-[13px] tracking-[0.3em] text-accent uppercase mb-5"
-          >
+          <p className="rv font-mono text-[12px] md:text-[13px] tracking-[0.3em] text-accent uppercase mb-5">
             {t.eyebrow}
-          </motion.p>
+          </p>
 
-          <motion.h1
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-            className="text-[clamp(4.5rem,16vw,12rem)] leading-[0.82] tracking-[-0.04em] mb-4"
-          >
+          <h1 className="rv text-[clamp(4.5rem,16vw,12rem)] leading-[0.82] tracking-[-0.04em] mb-4" style={{ animationDelay: ".05s" }}>
             SIGN
-          </motion.h1>
+          </h1>
 
-          <motion.p
-            initial={{ opacity: 0, y: 16 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, delay: 0.32 }}
-            className="display text-[clamp(1.1rem,3.2vw,1.9rem)] text-white/90 mb-7"
-          >
+          <p className="rv display text-[clamp(1.1rem,3.2vw,1.9rem)] text-white/90 mb-7" style={{ animationDelay: ".1s" }}>
             {t.kicker}
-          </motion.p>
+          </p>
 
-          <motion.div
-            initial={{ opacity: 0, y: 14 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, delay: 0.4 }}
-            className="flex flex-wrap items-center gap-3 mb-10"
-          >
+          <div className="rv flex flex-wrap items-center gap-3 mb-10" style={{ animationDelay: ".15s" }}>
             <span className="inline-flex items-center gap-2 px-4 py-2 border border-border bg-[#1A1A1A]/70 backdrop-blur text-[13px] text-text-primary">
               <TikTokGlyph className="w-4 h-4 text-accent" />
               {t.chipChannel}
@@ -193,18 +173,11 @@ export function CreatorsClient() {
             <span className="inline-flex items-center px-4 py-2 border border-accent/40 bg-accent/10 text-[13px] font-semibold text-white">
               {t.chipBudget}
             </span>
-            <span className="text-[13px] text-white/60 max-w-xs leading-snug">
-              {t.tagline}
-            </span>
-          </motion.div>
+            <span className="text-[13px] text-white/60 max-w-xs leading-snug">{t.tagline}</span>
+          </div>
 
           {/* STAT ROW */}
-          <motion.div
-            initial={{ opacity: 0, y: 14 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, delay: 0.5 }}
-            className="grid grid-cols-3 max-w-xl border border-border divide-x divide-[#2a2a2a] bg-[#0A0A0A]/60 backdrop-blur"
-          >
+          <div className="rv grid grid-cols-3 max-w-xl border border-border divide-x divide-[#2a2a2a] bg-[#0A0A0A]/60 backdrop-blur" style={{ animationDelay: ".2s" }}>
             {[
               { v: "10", l: t.statCreators },
               { v: "4.2M", l: t.statReach },
@@ -217,7 +190,7 @@ export function CreatorsClient() {
                 </div>
               </div>
             ))}
-          </motion.div>
+          </div>
         </div>
       </section>
 
@@ -256,70 +229,53 @@ export function CreatorsClient() {
             <h2 className="text-[clamp(2rem,6vw,3.4rem)] leading-none">{t.rosterLabel}</h2>
             <p className="text-[14px] text-text-muted mt-3">{t.rosterSub}</p>
           </div>
-          <div className="font-mono text-[12px] uppercase tracking-widest text-text-muted">
-            01 — 10
-          </div>
+          <div className="font-mono text-[12px] uppercase tracking-widest text-text-muted">01 — 10</div>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {CREATORS.map((c, i) => (
-            <motion.a
+            <a
               key={c.handle}
               href={c.url}
               target="_blank"
               rel="noopener noreferrer"
-              initial={{ opacity: 0, y: 18 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-40px" }}
-              transition={{ duration: 0.5, delay: (i % 3) * 0.06 }}
-              className="ccd-card group relative p-6 flex flex-col"
+              className="ccd-card rv group relative p-6 flex flex-col"
+              style={{ animationDelay: `${(i % 3) * 0.06 + 0.05}s` }}
             >
-              {/* rank */}
               <span className="absolute top-4 right-5 font-mono text-[11px] text-text-muted/70 group-hover:text-accent transition-colors">
                 {String(i + 1).padStart(2, "0")}
               </span>
 
-              {/* avatar monogram + handle */}
               <div className="flex items-center gap-3 mb-6">
                 <div className="w-11 h-11 flex items-center justify-center bg-[#0A0A0A] border border-[#2a2a2a] group-hover:border-accent/60 transition-colors">
                   <TikTokGlyph className="w-5 h-5 text-text-primary group-hover:text-accent transition-colors" />
                 </div>
                 <div className="min-w-0">
-                  <div className="text-[15px] font-semibold text-text-primary truncate">
-                    @{c.handle}
-                  </div>
-                  <div className="font-mono text-[10px] uppercase tracking-widest text-text-muted">
-                    TikTok
-                  </div>
+                  <div className="text-[15px] font-semibold text-text-primary truncate">@{c.handle}</div>
+                  <div className="font-mono text-[10px] uppercase tracking-widest text-text-muted">TikTok</div>
                 </div>
               </div>
 
-              {/* stats */}
               <div className="grid grid-cols-2 gap-px bg-[#2a2a2a] border border-[#2a2a2a] mb-5">
                 <div className="bg-[#1A1A1A] px-3 py-3">
-                  <div className="display text-[1.5rem] text-text-primary leading-none">
-                    {c.followers}
-                  </div>
+                  <div className="display text-[1.5rem] text-text-primary leading-none">{c.followers}</div>
                   <div className="font-mono text-[9px] uppercase tracking-widest text-text-muted mt-1.5">
                     {t.cardFollowers}
                   </div>
                 </div>
                 <div className="bg-[#1A1A1A] px-3 py-3">
-                  <div className="display text-[1.5rem] text-accent leading-none">
-                    {c.avgViews}
-                  </div>
+                  <div className="display text-[1.5rem] text-accent leading-none">{c.avgViews}</div>
                   <div className="font-mono text-[9px] uppercase tracking-widest text-text-muted mt-1.5">
                     {t.cardViews}
                   </div>
                 </div>
               </div>
 
-              {/* cta */}
               <div className="mt-auto flex items-center justify-between text-[13px] text-text-muted group-hover:text-text-primary transition-colors">
                 <span>{t.cardCta}</span>
                 <span className="text-accent transition-transform group-hover:translate-x-1">&#8599;</span>
               </div>
-            </motion.a>
+            </a>
           ))}
         </div>
       </section>
@@ -331,9 +287,7 @@ export function CreatorsClient() {
             <div className="w-4 h-4 rounded-full bg-accent" />
             <span className="text-[13px] text-text-muted">&copy; {t.footer}</span>
           </div>
-          <div className="font-mono text-[11px] uppercase tracking-widest text-text-muted">
-            82MAJOR · SIGN
-          </div>
+          <div className="font-mono text-[11px] uppercase tracking-widest text-text-muted">82MAJOR · SIGN</div>
         </div>
       </footer>
     </div>
