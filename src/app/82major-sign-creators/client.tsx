@@ -115,9 +115,10 @@ export function CreatorsClient() {
             <Image
               src="/brand/CC-LOGO-2024-WHITE.png"
               alt="Crowd Control Digital"
-              width={28}
-              height={28}
-              className="w-7 h-7"
+              width={2198}
+              height={307}
+              priority
+              className="h-6 w-auto"
             />
           </Link>
           <div className="flex items-center gap-1 border border-border">
@@ -145,12 +146,6 @@ export function CreatorsClient() {
           <div className="absolute inset-0 bg-black/[0.74]" />
           <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-[#0A0A0A]" />
         </div>
-
-        {/* corner brackets */}
-        <div className="absolute top-24 left-8 w-10 h-10 border-l-2 border-t-2 border-accent pointer-events-none" />
-        <div className="absolute top-24 right-8 w-10 h-10 border-r-2 border-t-2 border-accent pointer-events-none" />
-        <div className="absolute bottom-12 left-8 w-10 h-10 border-l-2 border-b-2 border-accent pointer-events-none" />
-        <div className="absolute bottom-12 right-8 w-10 h-10 border-r-2 border-b-2 border-accent pointer-events-none" />
 
         <div className="relative z-10 max-w-6xl mx-auto px-6 md:px-12 w-full">
           <p className="rv font-mono text-[12px] md:text-[13px] tracking-[0.3em] text-accent uppercase mb-5">
