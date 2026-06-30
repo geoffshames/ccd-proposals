@@ -114,7 +114,7 @@ export function Overview() {
             <ScrollReveal delay={0.15} variant="scaleIn" className="md:col-span-5">
               <TiltCard className="group h-full">
                 <div className="card frame bg-bg-card rounded-none p-10 h-full flex flex-col justify-center hover:bg-bg-card-hover transition-all duration-500">
-                  <div className="display text-[72px] text-text-primary leading-none tracking-[-0.04em] mb-3">
+                  <div className="display text-[clamp(3.5rem,12vw,72px)] text-text-primary leading-none tracking-[-0.04em] mb-3">
                     <AnimatedCounter value={PROJECT.overview.stats[0].value} suffix={PROJECT.overview.stats[0].suffix || ""} />
                   </div>
                   <div className="text-[13px] text-text-muted leading-[1.6] group-hover:text-text-secondary transition-colors duration-500">

@@ -74,9 +74,9 @@ export function Timeline() {
                 >
                   <button
                     onClick={() => setExpanded(expanded === i ? null : i)}
-                    className="w-full text-left p-8 md:p-10 flex items-center gap-6 md:gap-10"
+                    className="w-full text-left p-5 md:p-10 flex items-center gap-4 md:gap-10"
                   >
-                    <div className={`flex-shrink-0 w-14 h-14 rounded-none flex items-center justify-center text-base font-mono font-bold transition-all duration-500 ${
+                    <div className={`flex-shrink-0 w-11 h-11 md:w-14 md:h-14 rounded-none flex items-center justify-center text-sm md:text-base font-mono font-bold transition-all duration-500 ${
                       expanded === i
                         ? "bg-accent text-bg scale-110"
                         : "bg-accent/10 text-accent group-hover:scale-105"
@@ -85,21 +85,21 @@ export function Timeline() {
                     </div>
 
                     <div className="flex-1 min-w-0">
-                      <div className="flex items-center gap-4 mb-2">
-                        <h3 className="text-[20px] font-bold text-text-primary truncate">
+                      <div className="flex flex-wrap items-center gap-x-4 gap-y-1 mb-2">
+                        <h3 className="text-[18px] md:text-[20px] font-bold text-text-primary leading-snug">
                           {phase.phase}
                         </h3>
                         <span className="hidden md:inline-block text-[11px] font-mono tracking-wider text-text-muted bg-bg-elevated px-3 py-1 rounded-none uppercase">
                           {phase.week}
                         </span>
                       </div>
-                      <span className="text-[15px] text-text-muted">{phase.date}</span>
+                      <span className="block text-[14px] md:text-[15px] text-text-muted">{phase.date}</span>
                     </div>
 
                     <motion.div
                       animate={{ rotate: expanded === i ? 45 : 0 }}
                       transition={{ duration: 0.3, ease: [0.22, 1, 0.36, 1] }}
-                      className="flex-shrink-0 w-8 h-8 rounded-none bg-bg-elevated flex items-center justify-center text-text-muted text-lg"
+                      className="flex-shrink-0 w-7 h-7 md:w-8 md:h-8 rounded-none bg-bg-elevated flex items-center justify-center text-text-muted text-lg"
                     >
                       +
                     </motion.div>

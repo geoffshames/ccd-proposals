@@ -19,8 +19,8 @@ export function Targets() {
           {PROJECT.targets.map((target, i) => (
             <ScrollReveal key={i}>
               <motion.div className={`ccd-card p-8 h-full ${i === 0 ? "!bg-white/[0.03] border-white/[0.12]" : ""}`} whileHover={{ y: -2, transition: { duration: 0.2 } }}>
-                <div className="flex items-baseline gap-4 mb-3">
-                  <span className="display text-[clamp(2.25rem,4.5vw,3.5rem)] text-accent leading-none">{target.value}</span>
+                <div className="flex flex-col sm:flex-row sm:items-baseline gap-1 sm:gap-4 mb-3">
+                  <span className="display text-[clamp(2.25rem,4.5vw,3.5rem)] text-accent leading-none whitespace-nowrap">{target.value}</span>
                   <span className="text-text-primary font-medium text-lg tracking-tight">{target.metric}</span>
                 </div>
                 <p className="text-text-muted text-sm leading-relaxed">{target.context}</p>
