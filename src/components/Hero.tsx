@@ -18,7 +18,7 @@ export function Hero() {
       <div className="absolute inset-0 bg-gradient-to-t from-bg via-bg/40 to-transparent pointer-events-none" />
 
       {/* Background gradient orb */}
-      <div className="absolute top-1/3 left-1/3 w-[600px] h-[600px] rounded-full bg-accent/[0.02] blur-[150px] pointer-events-none" />
+      <div className="absolute top-1/3 left-1/3 w-[300px] h-[300px] md:w-[600px] md:h-[600px] max-w-[80vw] rounded-full bg-accent/[0.02] blur-[150px] pointer-events-none" />
 
       {/* Corner brackets on the viewport */}
       <div className="absolute top-6 left-6 w-8 h-8 border-t border-l border-text-muted/20" />
@@ -52,7 +52,7 @@ export function Hero() {
           transition={{ duration: 1.2, delay: 0.5, ease: [0.22, 1, 0.36, 1] }}
           className="mb-10"
         >
-          <h1 className="text-[clamp(4rem,12vw,10rem)] font-bold leading-[0.85] tracking-[-0.05em]">
+          <h1 className="text-[clamp(2.5rem,12vw,10rem)] font-bold leading-[0.85] tracking-[-0.05em] break-words">
             <span className="block text-text-primary">{PROJECT.client.name}</span>
           </h1>
           <p className="text-[clamp(1rem,1.6vw,1.25rem)] font-mono tracking-[0.14em] text-text-muted/75 uppercase mt-6">
@@ -77,7 +77,7 @@ export function Hero() {
           </div>
 
           {/* Stats row */}
-          <div className="flex gap-12">
+          <div className="flex gap-6 sm:gap-12">
             {[
               { label: "Duration", value: PROJECT.project.duration },
               { label: "Start", value: PROJECT.project.startDate },

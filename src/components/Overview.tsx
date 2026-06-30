@@ -124,7 +124,7 @@ export function Overview() {
               </TiltCard>
             </ScrollReveal>
 
-            <div className="md:col-span-7 grid grid-cols-2 gap-5">
+            <div className="md:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-5">
               {PROJECT.overview.stats.slice(1).map((stat, i) => (
                 <ScrollReveal key={stat.label} delay={0.2 + i * 0.1} variant="scaleIn">
                   <TiltCard className="group h-full">
