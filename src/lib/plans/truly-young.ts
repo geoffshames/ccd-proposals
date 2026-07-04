@@ -236,7 +236,7 @@ export const trulyYoungPlan: StrategyPlanData = {
       navLabel: "Structure",
       title: "Proposal Structure",
       intro:
-        "Two ways to run the Dear Joshua cycle. The Core plan is the complete, self-sufficient machine at $30K all-in. The Expanded plan layers in Out-of-Home, Connected TV, and three bespoke creative swings, taking it to $50K all-in. Both carry a 15% media-management fee and no retainer. The full per-line math is in Section 13.",
+        "Two ways to run the Dear Joshua cycle. The Core plan is the complete, self-sufficient machine at $30K all-in. The Expanded plan layers in Out-of-Home, Connected TV, and three bespoke creative swings, taking it to $50K all-in. Both carry a 15% CCD fee taken off the top, and no retainer. The full per-line math is in Section 13.",
       tiers: [
         {
           label: "Core Plan",
@@ -245,7 +245,7 @@ export const trulyYoungPlan: StrategyPlanData = {
           goal:
             "The complete capture-and-convert machine for the cycle. Stands up pixel plus Laylo CRM, runs paid social and creator seeding against the single and EP, executes the DSP and reclassification push, and retargets the feature audience into owned follows and pre-saves. Everything needed to stop the leak and convert this cycle.",
           featured: true,
-          deployable: "$26,100 to media + creator",
+          deployable: "$25,500 to media + creator",
           includes: [
             "Capture, retargeting, and Laylo email plus SMS CRM (always-on)",
             "Paid Social across TikTok, Meta, and YouTube Shorts (single plus EP windows)",
@@ -261,7 +261,7 @@ export const trulyYoungPlan: StrategyPlanData = {
           name: "Dear Joshua Expanded",
           goal:
             "Everything in Core, plus the high-value scale layer: Interactive Out-of-Home that QR-drops into her web game, Connected TV brand presence, a timed 'Doggy' Platinum halo moment, and a Mix-Variant creator challenge. For the case where the cycle earns a bigger push.",
-          deployable: "$43,500 to media + creator",
+          deployable: "$42,500 to media + creator",
           includes: [
             "Everything in the Core plan",
             "Interactive OOH to game QR in LA plus one breakout market",
@@ -534,7 +534,7 @@ export const trulyYoungPlan: StrategyPlanData = {
       navLabel: "Additions",
       title: "Suggested Additions (Optional)",
       philosophy:
-        "Outside the $30K Core budget. These four layers take the plan from $30K to $50K all-in. Each is high-value, on-brand, and scoped separately. The 15% media-management fee applies to the media lines; production is quoted at cost.",
+        "Outside the $30K Core budget. These four layers take the plan from $30K to $50K all-in. Each is high-value, on-brand, and scoped separately. The 15% CCD fee is taken off the top of the total budget.",
       intro:
         "The first two (OOH and CTV) are the scale layer AWAL asked to see. The last two are bespoke creative swings built specifically around what only Truly can do: her existing web-game experience, the 'Doggy' Platinum moment, and the four-lane mix-variant system.",
       subBlocks: [
@@ -601,7 +601,7 @@ export const trulyYoungPlan: StrategyPlanData = {
         },
       ],
       footnote:
-        "All four are optional and scoped separately. Together they move the plan from $30K Core to $50K Expanded. Media lines carry the 15% fee; production is at cost.",
+        "All four are optional and scoped separately. Together they move the plan from $30K Core to $50K Expanded. The 15% CCD fee comes off the top of the total budget.",
     },
 
     // ===================================================================
@@ -614,7 +614,7 @@ export const trulyYoungPlan: StrategyPlanData = {
       title: "Proposed Media Flight",
       intro:
         "How the Core media pool deploys across the Dear Joshua cycle. July stands up capture and launches the single. Early August scales winners and pre-saves the EP. Late August through September releases the EP and converts the audience into owned follows. Phase budgets are directional; CCD reallocates weekly.",
-      totalBudget: "$26,100 to media + creator (Core)",
+      totalBudget: "$25,500 to media + creator (Core)",
       phases: [
         {
           label: "Capture Build + Single Launch",
@@ -647,7 +647,7 @@ export const trulyYoungPlan: StrategyPlanData = {
           window: "Late August to September / ~3 weeks",
           focus:
             "Release the EP on August 21 with the focus-track video and a paid drop stack. Deploy Marquee and Showcase on winners. Retarget everything into follows and pre-saves so the spike converts. Goal: turn the release into owned monthly listeners, not another leak.",
-          budget: "~$6,100",
+          budget: "~$5,500",
           tactics: [
             "EP (August 21) release stack: paid behind the focus-track MV",
             "Marquee and Showcase on proven winners",
@@ -853,9 +853,9 @@ export const trulyYoungPlan: StrategyPlanData = {
       navLabel: "Pricing",
       title: "Final Pricing",
       intro:
-        "Two tiers for the Dear Joshua cycle. Both carry a 15% media-management fee and no retainer. The fee sits inside the budget, not on top. Each release cycle authorizes its own budget on the same structure.",
+        "Two tiers for the Dear Joshua cycle. Both carry a 15% CCD fee taken off the top of the budget, and no retainer. On the Core plan that is $4,500, leaving $25,500 to deploy. Each release cycle authorizes its own budget on the same structure.",
       ccdNote:
-        "CCD is compensated at 15% of managed media, with no monthly retainer. Music-video production sits outside this plan and is already handled.",
+        "CCD is compensated at 15% of the total budget, taken off the top, with no monthly retainer. Music-video production sits outside this plan and is already handled.",
       tiers: [
         {
           label: "Core Plan",
@@ -864,18 +864,18 @@ export const trulyYoungPlan: StrategyPlanData = {
           tagline:
             "All-in. The complete capture-and-convert machine for the single plus EP cycle. 15% media management, no retainer.",
           featured: true,
-          deployable: "$26,100 to media + creator",
+          deployable: "$25,500 to media + creator",
           feeBreakdown: {
             retainer: "$0",
             retainerDetail: "No retainer on this engagement",
-            mediaManagement: "$3,900",
-            mediaManagementDetail: "15% on ~$26.1K managed media",
+            mediaManagement: "$4,500",
+            mediaManagementDetail: "15% of $30K, taken off the top",
           },
           breakdown: [
-            { vertical: "Capture, Retargeting + Laylo CRM", amount: "$6,100" },
+            { vertical: "Capture, Retargeting + Laylo CRM", amount: "$5,500" },
             { vertical: "Paid Social + Creator Seeding", amount: "$14,000" },
             { vertical: "DSP In-App (Marquee/Showcase) + Programmatic", amount: "$6,000" },
-            { vertical: "CCD Media Management (15%)", amount: "$3,900" },
+            { vertical: "CCD Fee (15%, off the top)", amount: "$4,500" },
           ],
         },
         {
@@ -884,25 +884,25 @@ export const trulyYoungPlan: StrategyPlanData = {
           name: "Dear Joshua Expanded",
           tagline:
             "Core plus the scale layer: Interactive OOH, Connected TV, the Platinum halo, and the Mix-Variant challenge. 15% media management, no retainer.",
-          deployable: "$43,500 to media + creator",
+          deployable: "$42,500 to media + creator",
           feeBreakdown: {
             retainer: "$0",
             retainerDetail: "No retainer on this engagement",
-            mediaManagement: "$6,500",
-            mediaManagementDetail: "15% on ~$43.5K managed media",
+            mediaManagement: "$7,500",
+            mediaManagementDetail: "15% of $50K, taken off the top",
           },
           breakdown: [
-            { vertical: "Core media pool (Capture, Paid, Creator, DSP)", amount: "$26,100" },
+            { vertical: "Core media pool (Capture, Paid, Creator, DSP)", amount: "$25,500" },
             { vertical: "Interactive OOH to Game QR", amount: "$8,500" },
             { vertical: "Connected TV (Hulu/Roku/Samsung+/YT TV)", amount: "$6,000" },
-            { vertical: "'Doggy' Platinum Halo (content + PR + paid)", amount: "$1,900" },
+            { vertical: "'Doggy' Platinum Halo (content + PR + paid)", amount: "$1,500" },
             { vertical: "Mix-Variant Creator Challenge", amount: "$1,000" },
-            { vertical: "CCD Media Management (15%)", amount: "$6,500" },
+            { vertical: "CCD Fee (15%, off the top)", amount: "$7,500" },
           ],
         },
       ],
       footnote:
-        "Fees sit inside each budget. Music-video production is out of scope and already handled. The next release, the tour, and any international push authorize fresh budgets on the same structure.",
+        "The CCD fee comes off the top of each budget. Music-video production is out of scope and already handled. The next release, the tour, and any international push authorize fresh budgets on the same structure.",
     },
   ],
 };
