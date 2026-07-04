@@ -54,7 +54,7 @@ export const trulyYoungPlan: StrategyPlanData = {
           "Convert: turn feature-driven and UGC reach into owned followers, pre-saves, and monthly listeners",
           "Amplify: point paid social and creator spend at the exact audience her music already reaches",
           "Compound: build owned inventory (fan channels, CRM, pixel pools) that carries into the next release",
-          "Optional add-ons (a la carte): OOH, Connected TV, a creator challenge, and a physical / D2C chart push, each stacking on Core",
+          "Optional add-ons (a la carte): OOH, Connected TV, a creator challenge, a physical / D2C chart push, and clipping, each stacking on Core",
         ],
       },
       footnote:
@@ -262,13 +262,14 @@ export const trulyYoungPlan: StrategyPlanData = {
           name: "Stack On Top of Core",
           goal:
             "Individually priced and selectable in any combination. Each stacks on the Core plan and carries the same 15% CCD fee off the top. Full descriptions in Section 10, per-line pricing in Section 13.",
-          deployable: "Selectable, +$1,500 to $27,500 plus",
+          deployable: "Selectable, $1,500 to $42,500 on top of Core",
           includes: [
             "Interactive OOH to game QR: $5,000",
             "Connected TV (Hulu / Roku / Samsung+ / YT TV): $6,000",
             "Mix-Variant creator challenge: $5,000 to $10,000",
             "Physical / D2C chart push: $5,000 to $10,000",
             "'Doggy' Platinum halo moment: $1,500",
+            "Clipping / seeding: $5,000 to $10,000",
           ],
         },
       ],
@@ -618,6 +619,22 @@ export const trulyYoungPlan: StrategyPlanData = {
             ],
           },
         },
+        {
+          label: "F",
+          title: "Clipping / Seeding",
+          budget: "$5,000 to $10,000",
+          objective:
+            "A clipping and seeding network to push raw short-form view velocity around the single and EP. The cheapest way to spike social-chart momentum and trigger algorithmic discovery, layered on top of the organic creator seeding in Core.",
+          components: {
+            heading: "How It Works",
+            items: [
+              "Clipping network deploys cutdowns across TikTok and Reels at volume",
+              "Realistically 4M to 6M plus short-form views per wave",
+              "Timed to the single (July 17) and the EP (August 21)",
+              "Feeds fresh TikTok pixel data into the paid retargeting pools",
+            ],
+          },
+        },
       ],
       footnote:
         "All add-ons are optional and priced a la carte. They stack on Core in any combination and can take the total past $50K. The 15% CCD fee comes off the top of each.",
@@ -678,7 +695,7 @@ export const trulyYoungPlan: StrategyPlanData = {
         },
       ],
       footnote:
-        "Phase budgets are directional and sum to the Core media pool. CCD reallocates between line items weekly based on what the pixel says is converting. Optional add-ons (OOH, CTV, creator challenge, physical chart push, halo) flight alongside the single and EP windows when selected.",
+        "Phase budgets are directional and sum to the Core media pool. CCD reallocates between line items weekly based on what the pixel says is converting. Optional add-ons (OOH, CTV, creator challenge, physical chart push, halo, clipping) flight alongside the single and EP windows when selected.",
     },
 
     // ===================================================================
@@ -910,6 +927,7 @@ export const trulyYoungPlan: StrategyPlanData = {
         { name: "Mix-Variant Creator Challenge", budget: "$5,000 to $10,000", description: "Duet-and-remix challenge across the four edits per track, with paid creator participation and whitelisting. $7,500 recommended. All-in, includes the 15% fee." },
         { name: "Physical / D2C Chart Push", budget: "$5,000 to $10,000", description: "Fund physical and D2C album sales to drive first-week chart position (Luminate-reportable). $7,500 recommended. All-in, includes the 15% fee." },
         { name: "'Doggy' Platinum Halo", budget: "$1,500", description: "Timed content, tastemaker PR, and a paid spike on the Platinum certification and reclassification moment. All-in, includes the 15% fee." },
+        { name: "Clipping / Seeding", budget: "$5,000 to $10,000", description: "Clipping and seeding network to push short-form view velocity (realistically 4M to 6M plus views across TikTok and Reels) and trigger algorithmic discovery. All-in, includes the 15% fee." },
       ],
       footnote:
         "The CCD fee comes off the top of each budget, Core and add-ons alike. Add-on prices are all-in and include their 15% fee. Music-video production is out of scope and already handled. The next release, the tour, and any international push authorize fresh budgets on the same structure.",
