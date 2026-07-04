@@ -54,7 +54,7 @@ export const trulyYoungPlan: StrategyPlanData = {
           "Convert: turn feature-driven and UGC reach into owned followers, pre-saves, and monthly listeners",
           "Amplify: point paid social and creator spend at the exact audience her music already reaches",
           "Compound: build owned inventory (fan channels, CRM, pixel pools) that carries into the next release",
-          "Optional add-ons (a la carte): Strive on both drops, OOH, Connected TV, a creator challenge, and a physical chart push, each stacking on Core",
+          "Optional add-ons (a la carte): OOH, Connected TV, a creator challenge, and a physical / D2C chart push, each stacking on Core",
         ],
       },
       footnote:
@@ -247,10 +247,11 @@ export const trulyYoungPlan: StrategyPlanData = {
           featured: true,
           deployable: "$25,500 to media + creator",
           includes: [
-            "Capture, retargeting, and Laylo email plus SMS CRM (always-on)",
-            "Paid Social across TikTok, Meta, and YouTube Shorts (single plus EP windows)",
+            "Pixel, attribution, and Laylo CRM as the always-on capture layer (setup, not a media line)",
+            "Paid Social by channel: TikTok Spark Ads, Meta Reels + Partnership, YouTube Shorts",
             "Creator seeding and whitelisting against the sounds already trending",
-            "DSP push: editorial pitching, Marquee and Showcase on winners, Discover Weekly and Release Radar",
+            "Strive FM on both the single and the EP",
+            "Spotify Marquee + Showcase on winners, plus Programmatic Display",
             "The 'Doggy' primary-artist reclassification, engineered to route stream-weight onto her profile",
             "Weekly optimization, attribution, and reporting",
           ],
@@ -260,10 +261,9 @@ export const trulyYoungPlan: StrategyPlanData = {
           budget: "A la carte",
           name: "Stack On Top of Core",
           goal:
-            "Individually priced and selectable in any combination. Each stacks on the Core plan and carries the same 15% CCD fee off the top. Strive is recommended on both the single and the EP. Full descriptions in Section 10, per-line pricing in Section 13.",
-          deployable: "Selectable, +$1,500 to $30,000 plus",
+            "Individually priced and selectable in any combination. Each stacks on the Core plan and carries the same 15% CCD fee off the top. Full descriptions in Section 10, per-line pricing in Section 13.",
+          deployable: "Selectable, +$1,500 to $27,500 plus",
           includes: [
-            "Strive FM on the single + EP: $5,000 (recommended)",
             "Interactive OOH to game QR: $5,000",
             "Connected TV (Hulu / Roku / Samsung+ / YT TV): $6,000",
             "Mix-Variant creator challenge: $5,000 to $10,000",
@@ -453,7 +453,7 @@ export const trulyYoungPlan: StrategyPlanData = {
             heading: "Targets",
             items: [
               "Pop Rising, New Music Friday, Fresh Finds Pop, Lorem, and alt-pop editorial",
-              "Strive FM playlist promotion on the single and EP (available as an add-on)",
+              "Strive FM playlist promotion on both the single and the EP",
               "Discover Weekly and Release Radar boost via Marquee and paid velocity",
               "Apple and Amazon editorial through AWAL relationships",
               "Non-genre and crossover playlists as penetration proof",
@@ -536,28 +536,12 @@ export const trulyYoungPlan: StrategyPlanData = {
       navLabel: "Additions",
       title: "Suggested Additions (Optional)",
       philosophy:
-        "Outside the $30K Core budget. An a la carte menu of optional layers, each individually priced and selectable in any combination. Every add-on carries the same 15% CCD fee off the top. Strive is recommended on both the single and the EP; the rest scale to appetite.",
+        "Outside the $30K Core budget. An a la carte menu of optional layers, each individually priced and selectable in any combination. Every add-on carries the same 15% CCD fee off the top and scales to appetite.",
       intro:
-        "Strive and the paid-media layers (OOH, CTV) are the scale AWAL asked to see. The creator challenge, physical chart push, and Platinum halo are bespoke swings built around what only Truly can do: her web-game experience, a chart-eligible physical push, and the four-lane mix-variant system.",
+        "OOH and Connected TV are the paid-media scale AWAL asked to see. The creator challenge, physical chart push, and Platinum halo are bespoke swings built around what only Truly can do: her web-game experience, a chart-eligible physical push, and the four-lane mix-variant system.",
       subBlocks: [
         {
           label: "A",
-          title: "Strive FM (Single + EP)",
-          budget: "$5,000 (recommended)",
-          objective:
-            "Deploy Strive streaming and playlist promotion on both the single and the EP. The most direct paid lever on the streaming lane she has never had, timed to compound with the DSP editorial push.",
-          components: {
-            heading: "How It Works",
-            items: [
-              "Strive campaign on the single (July 17) and again on the EP (August 21)",
-              "Playlist and streaming placement feeding Discover Weekly and Release Radar",
-              "Coordinated with the DSP editorial pitch and Marquee on winners",
-              "Recommended on both drops, not one",
-            ],
-          },
-        },
-        {
-          label: "B",
           title: "Interactive OOH to Game QR",
           budget: "$5,000",
           objective:
@@ -573,7 +557,7 @@ export const trulyYoungPlan: StrategyPlanData = {
           },
         },
         {
-          label: "C",
+          label: "B",
           title: "Connected TV",
           budget: "$6,000",
           objective:
@@ -588,7 +572,7 @@ export const trulyYoungPlan: StrategyPlanData = {
           },
         },
         {
-          label: "D",
+          label: "C",
           title: "Mix-Variant Creator Challenge",
           budget: "$5,000 to $10,000",
           objective:
@@ -604,7 +588,7 @@ export const trulyYoungPlan: StrategyPlanData = {
           },
         },
         {
-          label: "E",
+          label: "D",
           title: "Physical / D2C Chart Push",
           budget: "$5,000 to $10,000",
           objective:
@@ -620,7 +604,7 @@ export const trulyYoungPlan: StrategyPlanData = {
           },
         },
         {
-          label: "F",
+          label: "E",
           title: "'Doggy' Platinum Halo Moment",
           budget: "$1,500",
           objective:
@@ -636,7 +620,7 @@ export const trulyYoungPlan: StrategyPlanData = {
         },
       ],
       footnote:
-        "All add-ons are optional and priced a la carte. They stack on Core in any combination and can take the total past $50K. The 15% CCD fee comes off the top of each. Strive is recommended on both the single and the EP.",
+        "All add-ons are optional and priced a la carte. They stack on Core in any combination and can take the total past $50K. The 15% CCD fee comes off the top of each.",
     },
 
     // ===================================================================
@@ -660,6 +644,7 @@ export const trulyYoungPlan: StrategyPlanData = {
           tactics: [
             "Pixel plus Laylo CRM stand-up and retargeting pool build",
             "Single (July 17) paid launch: Spark Ads, Reels, Shorts in test mode",
+            "Strive FM campaign on the single",
             "Creator seeding wave one (micro-tier) on the trending sounds",
             "Pre-save flow live across bio, web game, and CRM",
           ],
@@ -685,6 +670,7 @@ export const trulyYoungPlan: StrategyPlanData = {
           budget: "~$5,500",
           tactics: [
             "EP (August 21) release stack: paid behind the focus-track MV",
+            "Strive FM campaign on the EP",
             "Marquee and Showcase on proven winners",
             "Full-funnel retargeting into follows, saves, and CRM capture",
             "Performance review and handoff into the next-cycle brief",
@@ -692,7 +678,7 @@ export const trulyYoungPlan: StrategyPlanData = {
         },
       ],
       footnote:
-        "Phase budgets are directional and sum to the Core media pool. CCD reallocates between line items weekly based on what the pixel says is converting. Optional add-ons (Strive, OOH, CTV, creator challenge, physical chart push, halo) flight alongside the single and EP windows when selected.",
+        "Phase budgets are directional and sum to the Core media pool. CCD reallocates between line items weekly based on what the pixel says is converting. Optional add-ons (OOH, CTV, creator challenge, physical chart push, halo) flight alongside the single and EP windows when selected.",
     },
 
     // ===================================================================
@@ -890,7 +876,7 @@ export const trulyYoungPlan: StrategyPlanData = {
       intro:
         "The Core plan is a single all-in budget with a 15% CCD fee taken off the top and no retainer. On Core that is $4,500, leaving $25,500 to deploy. Optional add-ons are priced a la carte below, each carrying the same 15% off the top, and stack on Core in any combination. Each release cycle authorizes its own budget on the same structure.",
       ccdNote:
-        "CCD is compensated at 15% of the total budget, taken off the top, with no monthly retainer. Music-video production sits outside this plan and is already handled.",
+        "CCD is compensated at 15% of the total budget, taken off the top, with no monthly retainer. Pixel, attribution, and the Laylo CRM platform are included in execution and setup, not billed as media. Music-video production sits outside this plan and is already handled.",
       tiers: [
         {
           label: "Core Plan",
@@ -907,17 +893,18 @@ export const trulyYoungPlan: StrategyPlanData = {
             mediaManagementDetail: "15% of $30K, taken off the top",
           },
           breakdown: [
-            { vertical: "Pixel, Attribution + Retargeting", amount: "$3,500" },
-            { vertical: "Laylo Email + SMS CRM", amount: "$2,500" },
-            { vertical: "Paid Social (TikTok / Meta / YT Shorts)", amount: "$10,500" },
-            { vertical: "Creator Seeding + Whitelisting", amount: "$4,000" },
-            { vertical: "DSP In-App (Marquee/Showcase) + Programmatic", amount: "$5,000" },
+            { vertical: "Paid Social - TikTok (Spark Ads)", amount: "$4,000" },
+            { vertical: "Paid Social - Meta (Reels + Partnership)", amount: "$2,500" },
+            { vertical: "Paid Social - YouTube (Shorts + In-Stream)", amount: "$2,000" },
+            { vertical: "Creator Seeding + Whitelisting", amount: "$8,000" },
+            { vertical: "Strive FM (Single + EP)", amount: "$5,000" },
+            { vertical: "Spotify Marquee + Showcase", amount: "$2,000" },
+            { vertical: "Programmatic Display", amount: "$2,000" },
             { vertical: "CCD Fee (15%, off the top)", amount: "$4,500" },
           ],
         },
       ],
       addOns: [
-        { name: "Strive FM (Single + EP)", budget: "$5,000", description: "Recommended. Strive streaming and playlist promotion on both the single and the EP. All-in, includes the 15% CCD fee off the top." },
         { name: "Interactive OOH to Game QR", budget: "$5,000", description: "LA plus one breakout market. Billboards and wild-postings that QR-drop into her web-game experience and pre-save gate. All-in, includes the 15% fee." },
         { name: "Connected TV", budget: "$6,000", description: "Hulu, Roku, Samsung TV+, YouTube TV. Brand awareness timed to the EP and focus-track video. All-in, includes the 15% fee." },
         { name: "Mix-Variant Creator Challenge", budget: "$5,000 to $10,000", description: "Duet-and-remix challenge across the four edits per track, with paid creator participation and whitelisting. $7,500 recommended. All-in, includes the 15% fee." },
