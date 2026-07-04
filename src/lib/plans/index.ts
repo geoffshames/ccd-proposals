@@ -9,8 +9,10 @@ import { temporexDeliverables } from "./temporex-deliverables";
 import { miguelTestSprint } from "./miguel-test-sprint";
 import { ekatorPlan } from "./ekator";
 import { ekatorPlanKorean } from "./ekator-ko";
+import { trulyYoungPlan } from "./truly-young";
 
 export const PLANS: Record<string, StrategyPlanData> = {
+  "truly-young": trulyYoungPlan,
   ekator: ekatorPlan,
   "ekator-ko": ekatorPlanKorean,
   "82major": eightyTwoMajorPlan,
