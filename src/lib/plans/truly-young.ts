@@ -54,7 +54,7 @@ export const trulyYoungPlan: StrategyPlanData = {
           "Convert: turn feature-driven and UGC reach into owned followers, pre-saves, and monthly listeners",
           "Amplify: point paid social and creator spend at the exact audience her music already reaches",
           "Compound: build owned inventory (fan channels, CRM, pixel pools) that carries into the next release",
-          "Optional scale: OOH, Connected TV, and three bespoke creative swings that take the plan to $50K",
+          "Optional add-ons (a la carte): Strive on both drops, OOH, Connected TV, a creator challenge, and a physical chart push, each stacking on Core",
         ],
       },
       footnote:
@@ -236,7 +236,7 @@ export const trulyYoungPlan: StrategyPlanData = {
       navLabel: "Structure",
       title: "Proposal Structure",
       intro:
-        "Two ways to run the Dear Joshua cycle. The Core plan is the complete, self-sufficient machine at $30K all-in. The Expanded plan layers in Out-of-Home, Connected TV, and three bespoke creative swings, taking it to $50K all-in. Both carry a 15% CCD fee taken off the top, and no retainer. The full per-line math is in Section 13.",
+        "The Core plan is the complete, self-sufficient machine at $30K all-in. On top of it sits an a la carte menu of optional add-ons, each individually priced and selectable in any combination, and stacking past $50K if the cycle earns it. Every budget carries a 15% CCD fee taken off the top, and no retainer. The full per-line math is in Section 13.",
       tiers: [
         {
           label: "Core Plan",
@@ -256,18 +256,19 @@ export const trulyYoungPlan: StrategyPlanData = {
           ],
         },
         {
-          label: "Expanded Plan",
-          budget: "$50,000",
-          name: "Dear Joshua Expanded",
+          label: "Optional Add-Ons",
+          budget: "A la carte",
+          name: "Stack On Top of Core",
           goal:
-            "Everything in Core, plus the high-value scale layer: Interactive Out-of-Home that QR-drops into her web game, Connected TV brand presence, a timed 'Doggy' Platinum halo moment, and a Mix-Variant creator challenge. For the case where the cycle earns a bigger push.",
-          deployable: "$42,500 to media + creator",
+            "Individually priced and selectable in any combination. Each stacks on the Core plan and carries the same 15% CCD fee off the top. Strive is recommended on both the single and the EP. Full descriptions in Section 10, per-line pricing in Section 13.",
+          deployable: "Selectable, +$1,500 to $30,000 plus",
           includes: [
-            "Everything in the Core plan",
-            "Interactive OOH to game QR in LA plus one breakout market",
-            "Connected TV: Hulu, Roku, Samsung TV+, YouTube TV",
-            "'Doggy' Platinum halo: content, tastemaker PR, and a paid spike on the certification moment",
-            "Mix-Variant creator challenge across the four edits per track",
+            "Strive FM on the single + EP: $5,000 (recommended)",
+            "Interactive OOH to game QR: $5,000",
+            "Connected TV (Hulu / Roku / Samsung+ / YT TV): $6,000",
+            "Mix-Variant creator challenge: $5,000 to $10,000",
+            "Physical / D2C chart push: $5,000 to $10,000",
+            "'Doggy' Platinum halo moment: $1,500",
           ],
         },
       ],
@@ -452,6 +453,7 @@ export const trulyYoungPlan: StrategyPlanData = {
             heading: "Targets",
             items: [
               "Pop Rising, New Music Friday, Fresh Finds Pop, Lorem, and alt-pop editorial",
+              "Strive FM playlist promotion on the single and EP (available as an add-on)",
               "Discover Weekly and Release Radar boost via Marquee and paid velocity",
               "Apple and Amazon editorial through AWAL relationships",
               "Non-genre and crossover playlists as penetration proof",
@@ -534,14 +536,30 @@ export const trulyYoungPlan: StrategyPlanData = {
       navLabel: "Additions",
       title: "Suggested Additions (Optional)",
       philosophy:
-        "Outside the $30K Core budget. These four layers take the plan from $30K to $50K all-in. Each is high-value, on-brand, and scoped separately. The 15% CCD fee is taken off the top of the total budget.",
+        "Outside the $30K Core budget. An a la carte menu of optional layers, each individually priced and selectable in any combination. Every add-on carries the same 15% CCD fee off the top. Strive is recommended on both the single and the EP; the rest scale to appetite.",
       intro:
-        "The first two (OOH and CTV) are the scale layer AWAL asked to see. The last two are bespoke creative swings built specifically around what only Truly can do: her existing web-game experience, the 'Doggy' Platinum moment, and the four-lane mix-variant system.",
+        "Strive and the paid-media layers (OOH, CTV) are the scale AWAL asked to see. The creator challenge, physical chart push, and Platinum halo are bespoke swings built around what only Truly can do: her web-game experience, a chart-eligible physical push, and the four-lane mix-variant system.",
       subBlocks: [
         {
           label: "A",
+          title: "Strive FM (Single + EP)",
+          budget: "$5,000 (recommended)",
+          objective:
+            "Deploy Strive streaming and playlist promotion on both the single and the EP. The most direct paid lever on the streaming lane she has never had, timed to compound with the DSP editorial push.",
+          components: {
+            heading: "How It Works",
+            items: [
+              "Strive campaign on the single (July 17) and again on the EP (August 21)",
+              "Playlist and streaming placement feeding Discover Weekly and Release Radar",
+              "Coordinated with the DSP editorial pitch and Marquee on winners",
+              "Recommended on both drops, not one",
+            ],
+          },
+        },
+        {
+          label: "B",
           title: "Interactive OOH to Game QR",
-          budget: "$8,500",
+          budget: "$5,000",
           objective:
             "Billboards and wild-postings in LA plus one breakout market that QR-drop straight into her existing web-game experience. Bridges the IRL buy to an owned, trackable destination instead of a dead impression.",
           components: {
@@ -555,7 +573,7 @@ export const trulyYoungPlan: StrategyPlanData = {
           },
         },
         {
-          label: "B",
+          label: "C",
           title: "Connected TV",
           budget: "$6,000",
           objective:
@@ -570,9 +588,41 @@ export const trulyYoungPlan: StrategyPlanData = {
           },
         },
         {
-          label: "C",
+          label: "D",
+          title: "Mix-Variant Creator Challenge",
+          budget: "$5,000 to $10,000",
+          objective:
+            "Turn the four edits per track into a duet-and-remix challenge with paid creator participation. Sped-up and club edits fuel the TikTok sound, and winners get whitelisted into paid. Sized to creator volume; $7,500 is the recommended starting point.",
+          components: {
+            heading: "Mechanics",
+            items: [
+              "Duet and remix prompts across the pop, electronic, rock, and alt lanes",
+              "Paid creator participation, not just organic prompts",
+              "Sped-up and club edits seeded to DJ and dance creators",
+              "Winners whitelisted into Spark and Partnership Ads",
+            ],
+          },
+        },
+        {
+          label: "E",
+          title: "Physical / D2C Chart Push",
+          budget: "$5,000 to $10,000",
+          objective:
+            "Fund physical and direct-to-consumer album sales through the store to drive a first-week chart position. Luminate-reportable units that convert the release moment into a chart story the reclassification and PR can point at.",
+          components: {
+            heading: "How It Works",
+            items: [
+              "D2C physical bundles (vinyl, CD, merch) through the owned store",
+              "Chart-eligible, Luminate-reportable first-week units",
+              "Timed to the EP release week for maximum chart impact",
+              "Sized to the unit target; $7,500 is the recommended starting point",
+            ],
+          },
+        },
+        {
+          label: "F",
           title: "'Doggy' Platinum Halo Moment",
-          budget: "$1,900",
+          budget: "$1,500",
           objective:
             "A timed content, tastemaker-PR, and paid spike engineered around the 'Doggy' Platinum certification and the primary-artist reclassification. Turn an industry milestone into a public moment that routes attention to her profile.",
           components: {
@@ -584,24 +634,9 @@ export const trulyYoungPlan: StrategyPlanData = {
             ],
           },
         },
-        {
-          label: "D",
-          title: "Mix-Variant Creator Challenge",
-          budget: "$1,000",
-          objective:
-            "Turn the four edits per track into a duet-and-remix challenge. Sped-up and club edits fuel the TikTok sound, and the winners get whitelisted into paid.",
-          components: {
-            heading: "Mechanics",
-            items: [
-              "Duet and remix prompts across the pop, electronic, rock, and alt lanes",
-              "Sped-up and club edits seeded to DJ and dance creators",
-              "Winners whitelisted into Spark and Partnership Ads",
-            ],
-          },
-        },
       ],
       footnote:
-        "All four are optional and scoped separately. Together they move the plan from $30K Core to $50K Expanded. The 15% CCD fee comes off the top of the total budget.",
+        "All add-ons are optional and priced a la carte. They stack on Core in any combination and can take the total past $50K. The 15% CCD fee comes off the top of each. Strive is recommended on both the single and the EP.",
     },
 
     // ===================================================================
@@ -657,7 +692,7 @@ export const trulyYoungPlan: StrategyPlanData = {
         },
       ],
       footnote:
-        "Phase budgets are directional and sum to the Core media pool. CCD reallocates between line items weekly based on what the pixel says is converting. Expanded-plan layers (OOH, CTV, halo, challenge) flight alongside the EP window.",
+        "Phase budgets are directional and sum to the Core media pool. CCD reallocates between line items weekly based on what the pixel says is converting. Optional add-ons (Strive, OOH, CTV, creator challenge, physical chart push, halo) flight alongside the single and EP windows when selected.",
     },
 
     // ===================================================================
@@ -853,7 +888,7 @@ export const trulyYoungPlan: StrategyPlanData = {
       navLabel: "Pricing",
       title: "Final Pricing",
       intro:
-        "Two tiers for the Dear Joshua cycle. Both carry a 15% CCD fee taken off the top of the budget, and no retainer. On the Core plan that is $4,500, leaving $25,500 to deploy. Each release cycle authorizes its own budget on the same structure.",
+        "The Core plan is a single all-in budget with a 15% CCD fee taken off the top and no retainer. On Core that is $4,500, leaving $25,500 to deploy. Optional add-ons are priced a la carte below, each carrying the same 15% off the top, and stack on Core in any combination. Each release cycle authorizes its own budget on the same structure.",
       ccdNote:
         "CCD is compensated at 15% of the total budget, taken off the top, with no monthly retainer. Music-video production sits outside this plan and is already handled.",
       tiers: [
@@ -862,7 +897,7 @@ export const trulyYoungPlan: StrategyPlanData = {
           budget: "$30,000",
           name: "Dear Joshua Core",
           tagline:
-            "All-in. The complete capture-and-convert machine for the single plus EP cycle. 15% media management, no retainer.",
+            "All-in. The complete capture-and-convert machine for the single plus EP cycle. 15% CCD fee off the top, no retainer.",
           featured: true,
           deployable: "$25,500 to media + creator",
           feeBreakdown: {
@@ -872,37 +907,25 @@ export const trulyYoungPlan: StrategyPlanData = {
             mediaManagementDetail: "15% of $30K, taken off the top",
           },
           breakdown: [
-            { vertical: "Capture, Retargeting + Laylo CRM", amount: "$5,500" },
-            { vertical: "Paid Social + Creator Seeding", amount: "$14,000" },
-            { vertical: "DSP In-App (Marquee/Showcase) + Programmatic", amount: "$6,000" },
+            { vertical: "Pixel, Attribution + Retargeting", amount: "$3,500" },
+            { vertical: "Laylo Email + SMS CRM", amount: "$2,500" },
+            { vertical: "Paid Social (TikTok / Meta / YT Shorts)", amount: "$10,500" },
+            { vertical: "Creator Seeding + Whitelisting", amount: "$4,000" },
+            { vertical: "DSP In-App (Marquee/Showcase) + Programmatic", amount: "$5,000" },
             { vertical: "CCD Fee (15%, off the top)", amount: "$4,500" },
           ],
         },
-        {
-          label: "Expanded Plan",
-          budget: "$50,000",
-          name: "Dear Joshua Expanded",
-          tagline:
-            "Core plus the scale layer: Interactive OOH, Connected TV, the Platinum halo, and the Mix-Variant challenge. 15% media management, no retainer.",
-          deployable: "$42,500 to media + creator",
-          feeBreakdown: {
-            retainer: "$0",
-            retainerDetail: "No retainer on this engagement",
-            mediaManagement: "$7,500",
-            mediaManagementDetail: "15% of $50K, taken off the top",
-          },
-          breakdown: [
-            { vertical: "Core media pool (Capture, Paid, Creator, DSP)", amount: "$25,500" },
-            { vertical: "Interactive OOH to Game QR", amount: "$8,500" },
-            { vertical: "Connected TV (Hulu/Roku/Samsung+/YT TV)", amount: "$6,000" },
-            { vertical: "'Doggy' Platinum Halo (content + PR + paid)", amount: "$1,500" },
-            { vertical: "Mix-Variant Creator Challenge", amount: "$1,000" },
-            { vertical: "CCD Fee (15%, off the top)", amount: "$7,500" },
-          ],
-        },
+      ],
+      addOns: [
+        { name: "Strive FM (Single + EP)", budget: "$5,000", description: "Recommended. Strive streaming and playlist promotion on both the single and the EP. All-in, includes the 15% CCD fee off the top." },
+        { name: "Interactive OOH to Game QR", budget: "$5,000", description: "LA plus one breakout market. Billboards and wild-postings that QR-drop into her web-game experience and pre-save gate. All-in, includes the 15% fee." },
+        { name: "Connected TV", budget: "$6,000", description: "Hulu, Roku, Samsung TV+, YouTube TV. Brand awareness timed to the EP and focus-track video. All-in, includes the 15% fee." },
+        { name: "Mix-Variant Creator Challenge", budget: "$5,000 to $10,000", description: "Duet-and-remix challenge across the four edits per track, with paid creator participation and whitelisting. $7,500 recommended. All-in, includes the 15% fee." },
+        { name: "Physical / D2C Chart Push", budget: "$5,000 to $10,000", description: "Fund physical and D2C album sales to drive first-week chart position (Luminate-reportable). $7,500 recommended. All-in, includes the 15% fee." },
+        { name: "'Doggy' Platinum Halo", budget: "$1,500", description: "Timed content, tastemaker PR, and a paid spike on the Platinum certification and reclassification moment. All-in, includes the 15% fee." },
       ],
       footnote:
-        "The CCD fee comes off the top of each budget. Music-video production is out of scope and already handled. The next release, the tour, and any international push authorize fresh budgets on the same structure.",
+        "The CCD fee comes off the top of each budget, Core and add-ons alike. Add-on prices are all-in and include their 15% fee. Music-video production is out of scope and already handled. The next release, the tour, and any international push authorize fresh budgets on the same structure.",
     },
   ],
 };
