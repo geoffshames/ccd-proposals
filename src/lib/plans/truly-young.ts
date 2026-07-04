@@ -633,15 +633,15 @@ export const trulyYoungPlan: StrategyPlanData = {
       navLabel: "Flight",
       title: "Proposed Media Flight",
       intro:
-        "How the Core media pool deploys across the Dear Joshua cycle. July stands up capture and launches the single. Early August scales winners and pre-saves the EP. Late August through September releases the EP and converts the audience into owned follows. Phase budgets are directional; CCD reallocates weekly.",
+        "How the Core media pool deploys across the Dear Joshua cycle. July stands up capture and launches the single. Early August scales winners and pre-saves the EP. Late August through September releases the EP and converts the audience into owned follows. Spend is weighted to the EP window: the single proves creative at measured spend, and the heaviest deployment lands once all six tracks are live and the reclassification is compounding. Phase budgets are directional; CCD reallocates weekly.",
       totalBudget: "$25,500 to media + creator (Core)",
       phases: [
         {
           label: "Capture Build + Single Launch",
           window: "July 2026 / ~3 weeks",
           focus:
-            "Stand up pixel and Laylo in week one. Build retargeting pools from the feature and 'Doggy' audience. Launch the single on July 17 with paid in test mode and creator seeding wave one. Goal: prove creative, capture the warm audience, and compound it into the EP.",
-          budget: "~$9,000",
+            "Stand up pixel and Laylo in week one. Build retargeting pools from the feature and 'Doggy' audience. Launch the single on July 17 with paid in test mode and creator seeding wave one. Goal: prove creative and capture the warm audience at measured spend, holding the heavier deployment for the EP.",
+          budget: "~$6,000",
           tactics: [
             "Pixel plus Laylo CRM stand-up and retargeting pool build",
             "Single (July 17) paid launch: Spark Ads, Reels, Shorts in test mode",
@@ -656,7 +656,7 @@ export const trulyYoungPlan: StrategyPlanData = {
           window: "Late July to mid-August / ~3 weeks",
           focus:
             "Scale winning single creative and retarget the captured pools. Announce the EP and open pre-saves. Creator seeding wave two (mid-tier). DSP editorial pitch and reclassification push. Goal: compound the single audience into the EP.",
-          budget: "~$11,000",
+          budget: "~$7,500",
           tactics: [
             "Paid Social scales behind proven creative, deep retargeting on warm pools",
             "EP pre-save push and Laylo drop-alert flows",
@@ -666,10 +666,10 @@ export const trulyYoungPlan: StrategyPlanData = {
         },
         {
           label: "EP Release + Sustain",
-          window: "Late August to September / ~3 weeks",
+          window: "Late August through September / ~4 weeks",
           focus:
-            "Release the EP on August 21 with the focus-track video and a paid drop stack. Launch Marquee and Showcase on the top-performing EP tracks. Retarget everything into follows and pre-saves so the spike converts. Goal: turn the release into owned, compounding monthly listeners.",
-          budget: "~$5,500",
+            "Release the EP on August 21 with the focus-track video and a paid drop stack. Launch Marquee and Showcase on the top-performing EP tracks. Retarget everything into follows and pre-saves so the spike converts. Goal: turn the release into owned, compounding monthly listeners. This is the heaviest phase of the flight, where the full catalog and the reclassification are working together.",
+          budget: "~$12,000",
           tactics: [
             "EP (August 21) release stack: paid behind the focus-track MV",
             "Strive FM campaign on the EP",
@@ -726,14 +726,14 @@ export const trulyYoungPlan: StrategyPlanData = {
           name: "Paid Social",
           cells: [
             { weekIndex: 2, intensity: "medium", label: "TEST" },
-            { weekIndex: 3, intensity: "high", label: "SCALE" },
-            { weekIndex: 4, intensity: "high" },
-            { weekIndex: 5, intensity: "high" },
+            { weekIndex: 3, intensity: "medium" },
+            { weekIndex: 4, intensity: "medium" },
+            { weekIndex: 5, intensity: "medium" },
             { weekIndex: 6, intensity: "high" },
-            { weekIndex: 7, intensity: "high" },
+            { weekIndex: 7, intensity: "high", label: "SCALE" },
             { weekIndex: 8, intensity: "high" },
-            { weekIndex: 9, intensity: "medium" },
-            { weekIndex: 10, intensity: "low" },
+            { weekIndex: 9, intensity: "high" },
+            { weekIndex: 10, intensity: "medium" },
           ],
         },
         {
