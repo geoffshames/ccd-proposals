@@ -54,7 +54,7 @@ export const trulyYoungPlan: StrategyPlanData = {
           "Convert: turn feature-driven and UGC reach into owned followers, pre-saves, and monthly listeners",
           "Amplify: point paid social and creator spend at the exact audience her music already reaches",
           "Compound: build owned inventory (fan channels, CRM, pixel pools) that carries into the next release",
-          "Optional add-ons (a la carte): OOH, Connected TV, a creator challenge, a physical / D2C chart push, and clipping, each stacking on Core",
+          "Optional add-ons (a la carte): OOH, Connected TV, mix-variant clipping, and a physical / D2C chart push, each stacking on Core",
         ],
       },
       footnote:
@@ -249,7 +249,7 @@ export const trulyYoungPlan: StrategyPlanData = {
           includes: [
             "Pixel, attribution, and Laylo CRM as the always-on capture layer (setup, not a media line)",
             "Paid Social by channel: TikTok Spark Ads, Meta Reels + Partnership, YouTube Shorts",
-            "Creator seeding and whitelisting against the sounds already trending",
+            "Creator seeding, whitelisting, and clipping against the sounds already trending",
             "Strive FM on both the single and the EP",
             "Spotify Marquee + Showcase on winners, plus Programmatic Display",
             "The 'Doggy' primary-artist reclassification, engineered to route stream-weight onto her profile",
@@ -262,14 +262,13 @@ export const trulyYoungPlan: StrategyPlanData = {
           name: "Stack On Top of Core",
           goal:
             "Individually priced and selectable in any combination. Each stacks on the Core plan and carries the same 15% CCD fee off the top. Full descriptions in Section 10, per-line pricing in Section 13.",
-          deployable: "Selectable, $1,500 to $42,500 on top of Core",
+          deployable: "Selectable, $2,500 to $38,500 on top of Core",
           includes: [
-            "Interactive OOH to game QR: $5,000",
+            "Interactive OOH to game QR (2 markets): $10,000",
             "Connected TV (Hulu / Roku / Samsung+ / YT TV): $6,000",
-            "Mix-Variant creator challenge: $5,000 to $10,000",
+            "Mix-Variant clipping: $5,000 to $10,000",
             "Physical / D2C chart push: $5,000 to $10,000",
-            "'Doggy' Platinum halo moment: $1,500",
-            "Clipping / seeding: $5,000 to $10,000",
+            "'Doggy' Platinum halo moment: $2,500",
           ],
         },
       ],
@@ -539,18 +538,18 @@ export const trulyYoungPlan: StrategyPlanData = {
       philosophy:
         "Outside the $30K Core budget. An a la carte menu of optional layers, each individually priced and selectable in any combination. Every add-on carries the same 15% CCD fee off the top and scales to appetite.",
       intro:
-        "OOH and Connected TV are the paid-media scale AWAL asked to see. The creator challenge, physical chart push, and Platinum halo are bespoke swings built around what only Truly can do: her web-game experience, a chart-eligible physical push, and the four-lane mix-variant system.",
+        "OOH and Connected TV are the paid-media scale AWAL asked to see. The mix-variant clipping, physical chart push, and Platinum halo are bespoke swings built around what only Truly can do: her web-game experience, a chart-eligible physical push, and the four-lane mix-variant system.",
       subBlocks: [
         {
           label: "A",
           title: "Interactive OOH to Game QR",
-          budget: "$5,000",
+          budget: "$10,000",
           objective:
-            "Billboards and wild-postings in LA plus one breakout market that QR-drop straight into her existing web-game experience. Bridges the IRL buy to an owned, trackable destination instead of a dead impression.",
+            "Billboards and wild-postings across two markets (LA plus one breakout) that QR-drop straight into her existing web-game experience. Bridges the IRL buy to an owned, trackable destination instead of a dead impression.",
           components: {
             heading: "How It Works",
             items: [
-              "LA plus one breakout-market OOH placement tied to the EP",
+              "Two-market OOH placement (LA plus one breakout) tied to the EP",
               "QR routes directly into the Dear Joshua web game and pre-save gate",
               "Every scan is pixeled, retargeted, and captured into Laylo",
               "Turns a brand-awareness spend into a measurable capture channel",
@@ -574,17 +573,17 @@ export const trulyYoungPlan: StrategyPlanData = {
         },
         {
           label: "C",
-          title: "Mix-Variant Creator Challenge",
+          title: "Mix-Variant Clipping",
           budget: "$5,000 to $10,000",
           objective:
-            "Turn the four edits per track into a duet-and-remix challenge with paid creator participation. Sped-up and club edits fuel the TikTok sound, and winners get whitelisted into paid. Sized to creator volume; $7,500 is the recommended starting point.",
+            "Clip the four edits per track (pop, electronic, rock, alt) and seed each into its own lane for raw view velocity. One song, four clipping campaigns, four ways into the same release. Sized to volume; $7,500 is the recommended starting point.",
           components: {
             heading: "Mechanics",
             items: [
-              "Duet and remix prompts across the pop, electronic, rock, and alt lanes",
-              "Paid creator participation, not just organic prompts",
-              "Sped-up and club edits seeded to DJ and dance creators",
-              "Winners whitelisted into Spark and Partnership Ads",
+              "Cutdowns across the pop, electronic, rock, and alt edits",
+              "Each variant clipped and seeded into its native lane",
+              "Sped-up and club edits pushed to DJ and dance clippers",
+              "Feeds fresh TikTok pixel data into the paid retargeting pools",
             ],
           },
         },
@@ -607,7 +606,7 @@ export const trulyYoungPlan: StrategyPlanData = {
         {
           label: "E",
           title: "'Doggy' Platinum Halo Moment",
-          budget: "$1,500",
+          budget: "$2,500",
           objective:
             "A timed content, tastemaker-PR, and paid spike engineered around the 'Doggy' Platinum certification and the primary-artist reclassification. Turn an industry milestone into a public moment that routes attention to her profile.",
           components: {
@@ -616,22 +615,6 @@ export const trulyYoungPlan: StrategyPlanData = {
               "Content stack staged for the certification announcement",
               "Tastemaker PR push on the independent-artist milestone",
               "Paid amplification behind the moment, retargeted into follows and pre-saves",
-            ],
-          },
-        },
-        {
-          label: "F",
-          title: "Clipping / Seeding",
-          budget: "$5,000 to $10,000",
-          objective:
-            "A clipping and seeding network to push raw short-form view velocity around the single and EP. The cheapest way to spike social-chart momentum and trigger algorithmic discovery, layered on top of the organic creator seeding in Core.",
-          components: {
-            heading: "How It Works",
-            items: [
-              "Clipping network deploys cutdowns across TikTok and Reels at volume",
-              "Realistically 4M to 6M plus short-form views per wave",
-              "Timed to the single (July 17) and the EP (August 21)",
-              "Feeds fresh TikTok pixel data into the paid retargeting pools",
             ],
           },
         },
@@ -663,6 +646,7 @@ export const trulyYoungPlan: StrategyPlanData = {
             "Single (July 17) paid launch: Spark Ads, Reels, Shorts in test mode",
             "Strive FM campaign on the single",
             "Creator seeding wave one (micro-tier) on the trending sounds",
+            "Clipping wave on the single for short-form view velocity",
             "Pre-save flow live across bio, web game, and CRM",
           ],
         },
@@ -689,13 +673,14 @@ export const trulyYoungPlan: StrategyPlanData = {
             "EP (August 21) release stack: paid behind the focus-track MV",
             "Strive FM campaign on the EP",
             "Marquee and Showcase on proven winners",
+            "Clipping wave on the EP for short-form view velocity",
             "Full-funnel retargeting into follows, saves, and CRM capture",
             "Performance review and handoff into the next-cycle brief",
           ],
         },
       ],
       footnote:
-        "Phase budgets are directional and sum to the Core media pool. CCD reallocates between line items weekly based on what the pixel says is converting. Optional add-ons (OOH, CTV, creator challenge, physical chart push, halo, clipping) flight alongside the single and EP windows when selected.",
+        "Phase budgets are directional and sum to the Core media pool. CCD reallocates between line items weekly based on what the pixel says is converting. Optional add-ons (OOH, CTV, mix-variant clipping, physical chart push, halo) flight alongside the single and EP windows when selected.",
     },
 
     // ===================================================================
@@ -767,8 +752,8 @@ export const trulyYoungPlan: StrategyPlanData = {
             { weekIndex: 4, intensity: "medium", label: "PITCH" },
             { weekIndex: 5, intensity: "medium" },
             { weekIndex: 6, intensity: "high" },
-            { weekIndex: 7, intensity: "high", label: "MARQUEE" },
-            { weekIndex: 8, intensity: "high" },
+            { weekIndex: 7, intensity: "high" },
+            { weekIndex: 8, intensity: "high", label: "MARQUEE" },
             { weekIndex: 9, intensity: "medium" },
           ],
         },
@@ -846,7 +831,7 @@ export const trulyYoungPlan: StrategyPlanData = {
           title: "EP release (August 21)",
           items: [
             "EP drops August 21 with the focus-track music video. Paid drop stack behind the MV.",
-            "Marquee and Showcase deploy on the proven winners from the single window.",
+            "Editorial and playlist push on the EP tracks at release; hold Marquee and Showcase for next week.",
             "Capture at full intensity: every surface converting reach into follows, saves, and CRM.",
           ],
         },
@@ -854,6 +839,7 @@ export const trulyYoungPlan: StrategyPlanData = {
           weekIndex: 8,
           title: "EP convert",
           items: [
+            "Launch Marquee and Showcase on the top-performing EP tracks, once release-week data shows the winners.",
             "Full-funnel retargeting into follows and pre-saves. Deep pools from the release-week spike.",
             "Creator wave two sustains; boost top-performing posts.",
             "DSP: push catalog activation so the whole profile lifts, not just the EP.",
@@ -913,8 +899,9 @@ export const trulyYoungPlan: StrategyPlanData = {
             { vertical: "Paid Social - TikTok (Spark Ads)", amount: "$4,000" },
             { vertical: "Paid Social - Meta (Reels + Partnership)", amount: "$2,500" },
             { vertical: "Paid Social - YouTube (Shorts + In-Stream)", amount: "$2,000" },
-            { vertical: "Creator Seeding + Whitelisting", amount: "$8,000" },
-            { vertical: "Strive FM (Single + EP)", amount: "$5,000" },
+            { vertical: "Creator Seeding + Whitelisting", amount: "$5,000" },
+            { vertical: "Clipping / Seeding", amount: "$5,000" },
+            { vertical: "Strive FM (Single + EP)", amount: "$3,000" },
             { vertical: "Spotify Marquee + Showcase", amount: "$2,000" },
             { vertical: "Programmatic Display", amount: "$2,000" },
             { vertical: "CCD Fee (15%, off the top)", amount: "$4,500" },
@@ -922,12 +909,11 @@ export const trulyYoungPlan: StrategyPlanData = {
         },
       ],
       addOns: [
-        { name: "Interactive OOH to Game QR", budget: "$5,000", description: "LA plus one breakout market. Billboards and wild-postings that QR-drop into her web-game experience and pre-save gate. All-in, includes the 15% fee." },
+        { name: "Interactive OOH to Game QR", budget: "$10,000", description: "Two markets (LA plus one breakout). Billboards and wild-postings that QR-drop into her web-game experience and pre-save gate. All-in, includes the 15% fee." },
         { name: "Connected TV", budget: "$6,000", description: "Hulu, Roku, Samsung TV+, YouTube TV. Brand awareness timed to the EP and focus-track video. All-in, includes the 15% fee." },
-        { name: "Mix-Variant Creator Challenge", budget: "$5,000 to $10,000", description: "Duet-and-remix challenge across the four edits per track, with paid creator participation and whitelisting. $7,500 recommended. All-in, includes the 15% fee." },
+        { name: "Mix-Variant Clipping", budget: "$5,000 to $10,000", description: "Clipping campaign across the four edits per track (pop, electronic, rock, alt), each cut and seeded into its own lane for view velocity. $7,500 recommended. All-in, includes the 15% fee." },
         { name: "Physical / D2C Chart Push", budget: "$5,000 to $10,000", description: "Fund physical and D2C album sales to drive first-week chart position (Luminate-reportable). $7,500 recommended. All-in, includes the 15% fee." },
-        { name: "'Doggy' Platinum Halo", budget: "$1,500", description: "Timed content, tastemaker PR, and a paid spike on the Platinum certification and reclassification moment. All-in, includes the 15% fee." },
-        { name: "Clipping / Seeding", budget: "$5,000 to $10,000", description: "Clipping and seeding network to push short-form view velocity (realistically 4M to 6M plus views across TikTok and Reels) and trigger algorithmic discovery. All-in, includes the 15% fee." },
+        { name: "'Doggy' Platinum Halo", budget: "$2,500", description: "Timed content, tastemaker PR, and a paid spike on the Platinum certification and reclassification moment. All-in, includes the 15% fee." },
       ],
       footnote:
         "The CCD fee comes off the top of each budget, Core and add-ons alike. Add-on prices are all-in and include their 15% fee. Music-video production is out of scope and already handled. The next release, the tour, and any international push authorize fresh budgets on the same structure.",
