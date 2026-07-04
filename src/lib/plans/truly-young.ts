@@ -248,10 +248,11 @@ export const trulyYoungPlan: StrategyPlanData = {
           deployable: "$25,500 to media + creator",
           includes: [
             "Pixel, attribution, and Laylo CRM as the always-on capture layer",
-            "Paid Social by channel: TikTok Spark Ads, Meta Reels + Partnership, YouTube Shorts",
+            "Paid Social by channel: TikTok Spark Ads, Meta Reels, YouTube Shorts",
             "Creator seeding, whitelisting, and clipping against the sounds already trending",
             "Strive FM on both the single and the EP",
-            "Spotify Marquee + Showcase on winners, plus Programmatic Display",
+            "Spotify Marquee + Showcase on proven winners",
+            "Programmatic Display",
             "The 'Doggy' primary-artist reclassification, engineered to route stream-weight onto her profile",
             "Weekly optimization, attribution, and reporting",
           ],
@@ -364,10 +365,10 @@ export const trulyYoungPlan: StrategyPlanData = {
           objective:
             "Scale winning creative against warm and lookalike audiences across the single and EP windows. Test into the single, scale what converts into the EP.",
           strategy:
-            "Spark Ads on TikTok, Reels and Partnership Ads on Meta, Shorts on YouTube. Test-and-learn creative pipeline: baseline CPV and cost-per-follow on the single, then move budget behind winners and retarget the pools built in Vertical 1. The two music videos become paid creative assets, not just organic posts.",
+            "Spark Ads on TikTok, Reels on Meta, Shorts on YouTube. Test-and-learn creative pipeline: baseline CPV and cost-per-follow on the single, then move budget behind winners and retarget the pools built in Vertical 1. The two music videos become paid creative assets, not just organic posts.",
           tactics: [
             "TikTok Spark Ads on the trending sounds and the single hook",
-            "Meta Reels and Partnership Ads against retargeting and lookalikes",
+            "Meta Reels against retargeting and lookalikes",
             "YouTube Shorts and In-Stream behind the two music videos",
             "Creative refresh cadence driven by what the pixel says is converting",
           ],
@@ -388,7 +389,7 @@ export const trulyYoungPlan: StrategyPlanData = {
             heading: "Components",
             items: [
               "Seeding wave one on the single (micro-tier), wave two on the EP (mid-tier)",
-              "Whitelisting and Spark or Partnership Ad rights secured at brief",
+              "Whitelisting and Spark Ad rights secured at brief",
               "Lane targeting: lip-sync, dance, culture, and sped-up or DJ edits",
               "Fast amplification path for any organic breakout",
             ],
@@ -897,7 +898,7 @@ export const trulyYoungPlan: StrategyPlanData = {
           },
           breakdown: [
             { vertical: "Paid Social - TikTok (Spark Ads)", amount: "$4,000" },
-            { vertical: "Paid Social - Meta (Reels + Partnership)", amount: "$2,500" },
+            { vertical: "Paid Social - Meta (Reels)", amount: "$2,500" },
             { vertical: "Paid Social - YouTube (Shorts + In-Stream)", amount: "$2,000" },
             { vertical: "Creator Seeding + Whitelisting", amount: "$5,000" },
             { vertical: "Clipping / Seeding", amount: "$5,000" },
