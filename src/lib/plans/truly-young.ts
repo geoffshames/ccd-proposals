@@ -9,7 +9,7 @@ export const trulyYoungPlan: StrategyPlanData = {
     label: "Dear Joshua EP · U.S. Digital Strategy",
     title: "TRULY YOUNG",
     subtitle:
-      "Converting proven reach into owned fandom across the Dear Joshua cycle. Lead single July 17, EP August 21. Discovery is already solved. This plan builds the machine that keeps it.",
+      "Converting proven reach into owned fandom across the Dear Joshua cycle. Lead single July 17, EP August 21. Discovery is already solved. This plan turns that reach into an audience she owns.",
     partnership: "Truly Young × Crowd Control Digital",
     prepared: "Crowd Control Digital · Prepared for AWAL Partnership Review",
     date: "July 2026",
@@ -32,10 +32,10 @@ export const trulyYoungPlan: StrategyPlanData = {
       navLabel: "Overview",
       title: "Overview & Objective",
       subtitle:
-        "A capture-and-convert plan for the Dear Joshua cycle. The discovery engine is already proven. The job of this budget is to catch the audience the music generates and turn it into an owned fanbase before the next spike, not after it.",
+        "A capture-and-convert plan for the Dear Joshua cycle. The discovery engine is already proven. This budget captures the audience the music generates and turns it into an owned, compounding fanbase across the release.",
       body: [
-        "Truly Young has done something most developing artists never do: she has generated real, repeatable, zero-spend reach. 20.97M feature-inclusive lifetime streams, a verse on 'Doggy' at 18.18M, Camp Flog Gnaw, The Greek, and a Texas run, all organic. What she has not had yet is the infrastructure to keep the audience that reach produces. In July 2025 a single feature moment pushed her Spotify profile to roughly 296K monthly listeners. With nothing built to catch them, 87% leaked back out. She sits at 37K today.",
-        "That is not a weakness in the artist. It is a missing machine. This plan builds it. The budget shown here is scoped to the Dear Joshua cycle: the lead single on July 17, the full EP on August 21, and the two music videos already in hand. It stands up the capture layer (pixel plus CRM), points paid and creator spend at the audience her music already reaches, and is engineered to convert the imminent 'Doggy' primary-artist reclassification into owned monthly listeners rather than another spike that drains away.",
+        "Truly Young has done something most developing artists never do: she has generated real, repeatable, zero-spend reach. 20.97M feature-inclusive lifetime streams, a verse on 'Doggy' at 18.18M, Camp Flog Gnaw, The Greek, and a Texas run, all organic. A single feature moment in July 2025 pushed her Spotify profile to roughly 296K monthly listeners, proof she can reach at scale on her own. Dear Joshua is the moment to convert that proven reach into an owned fanbase, with the infrastructure now in place to capture and compound every point of it.",
+        "This plan builds the machine that captures and compounds that reach. The budget shown here is scoped to the Dear Joshua cycle: the lead single on July 17, the full EP on August 21, and the two music videos already in hand. It stands up the capture layer (pixel plus CRM), points paid and creator spend at the audience her music already reaches, and is engineered to convert the imminent 'Doggy' primary-artist reclassification into owned, compounding monthly listeners.",
         "This is a per-cycle budget, not an annual one. The Dear Joshua cycle authorizes this spend. The next release, the tour routing, and any international push authorize fresh budgets on the same structure.",
       ],
       supports: {
@@ -50,7 +50,7 @@ export const trulyYoungPlan: StrategyPlanData = {
       goals: {
         heading: "Key Goals",
         items: [
-          "Capture: stand up pixel plus Laylo CRM and stop the leak that cost 260K listeners in 2025",
+          "Capture: stand up pixel plus Laylo CRM to hold and compound every point of reach the release generates",
           "Convert: turn feature-driven and UGC reach into owned followers, pre-saves, and monthly listeners",
           "Amplify: point paid social and creator spend at the exact audience her music already reaches",
           "Compound: build owned inventory (fan channels, CRM, pixel pools) that carries into the next release",
@@ -70,12 +70,12 @@ export const trulyYoungPlan: StrategyPlanData = {
       navLabel: "Philosophy",
       title: "Core Strategy & Philosophy",
       thesis:
-        "The discovery engine is proven. The conversion machine was missing. A single feature pushed 296K people to her profile with nothing built to catch them, and 87% leaked. The fans who stayed now convert at 20x the peak rate. Dear Joshua is the first owned moment to turn borrowed reach into an owned fanbase, and every dollar here builds the machine that keeps it.",
+        "The discovery engine is already proven. A single feature put 296K people on her profile, her catalog moves 20.97M streams, and 13,690 posts already use her sounds. Dear Joshua is the first owned moment to convert that borrowed reach into an owned, compounding fanbase, and every dollar here builds the machine that captures it.",
       hierarchy: [
         {
           label: "Capture (Foundation, Always-On)",
           description:
-            "The compounding layer, and the one that was missing in 2025. Tracking pixel on every surface, Laylo email and SMS CRM, retargeting pools built from the 'Doggy' and feature audience. This runs continuously, regardless of release date. Without it, every other dollar leaks the way the 2025 spike did.",
+            "The compounding layer, the one that makes every other dollar work harder. Tracking pixel on every surface, Laylo email and SMS CRM, retargeting pools built from the 'Doggy' and feature audience. This runs continuously, regardless of release date. It is what turns reach into an audience she owns.",
         },
         {
           label: "Convert (Paid + Creator Amplifier)",
@@ -97,7 +97,7 @@ export const trulyYoungPlan: StrategyPlanData = {
         "The capture layer is song-agnostic. It supports the single, the EP, and every release after.",
         "Continuous spend on capture. Episodic spend on the amplifiers, timed to July 17 and August 21.",
         "Position by cultural reach, not just owned monthly listeners. Her music already lives in Tier 1 rooms.",
-        "Do not repeat the 2025 leak. The reclassification and the EP will create a second spike; this time it converts.",
+        "The reclassification and the EP create the next spike, and this plan converts it into an owned, compounding fanbase.",
       ],
       footnote:
         "Capture spend is non-negotiable and continuous. Amplifier spend is calibrated to the single and EP windows.",
@@ -148,7 +148,7 @@ export const trulyYoungPlan: StrategyPlanData = {
       platformSignals: [
         {
           platform: "Spotify",
-          note: "37,273 monthly listeners, 3,383 followers, a 9.1% follow rate that has climbed 20x from the viral peak. Profile hit ~296K listeners in July 2025 off the 'Doggy' feature, then settled to a compounding core. The retention curve is the conversion proof, and followers are still rising ~5% per month.",
+          note: "37,273 monthly listeners and 3,383 followers, with the follow rate up 20x since the viral peak and followers still rising ~5% per month, a committed core compounding underneath the reach. The profile reached ~296K listeners in July 2025 off the 'Doggy' feature, proof of how fast it scales when the music travels.",
         },
         {
           platform: "TikTok",
@@ -212,7 +212,7 @@ export const trulyYoungPlan: StrategyPlanData = {
           label: "C",
           title: "Tier 3 / Her Current Owned Band",
           objective:
-            "Where her owned profile sits today, and the immediate peers she clears the moment the capture machine is live. Her reach already exceeds this tier; her profile has not caught up yet.",
+            "Where her owned profile sits today, and the immediate peers she clears as the capture machine compounds the release. Her cultural reach already operates two tiers up, and this plan brings the profile with it.",
           components: {
             heading: "The Starting Line",
             items: [
@@ -243,11 +243,11 @@ export const trulyYoungPlan: StrategyPlanData = {
           budget: "$30,000",
           name: "Dear Joshua Core",
           goal:
-            "The complete capture-and-convert machine for the cycle. Stands up pixel plus Laylo CRM, runs paid social and creator seeding against the single and EP, executes the DSP and reclassification push, and retargets the feature audience into owned follows and pre-saves. Everything needed to stop the leak and convert this cycle.",
+            "The complete capture-and-convert machine for the cycle. Stands up pixel plus Laylo CRM, runs paid social and creator seeding against the single and EP, executes the DSP and reclassification push, and retargets the feature audience into owned follows and pre-saves. Everything needed to convert this cycle into owned fandom.",
           featured: true,
           deployable: "$25,500 to media + creator",
           includes: [
-            "Pixel, attribution, and Laylo CRM as the always-on capture layer (setup, not a media line)",
+            "Pixel, attribution, and Laylo CRM as the always-on capture layer",
             "Paid Social by channel: TikTok Spark Ads, Meta Reels + Partnership, YouTube Shorts",
             "Creator seeding, whitelisting, and clipping against the sounds already trending",
             "Strive FM on both the single and the EP",
@@ -283,13 +283,13 @@ export const trulyYoungPlan: StrategyPlanData = {
       navLabel: "Capture",
       title: "Vertical 1 / Capture & Always-On Digital",
       philosophy:
-        "The layer that was missing in 2025. Continuous, song-agnostic, and the foundation every other dollar relies on. This is the machine that catches the spike instead of watching it drain.",
+        "The compounding foundation. Continuous, song-agnostic, and the layer every other dollar relies on. This is the machine that captures the spike and turns it into an audience she owns.",
       subBlocks: [
         {
           label: "A",
           title: "Pixel + Attribution Layer",
           objective:
-            "Instrument every surface so no reach goes unmeasured or uncaptured. The 2025 spike leaked because nothing was tracking or retargeting it. That does not happen this cycle.",
+            "Instrument every surface so every point of reach is measured and captured. Pixel, pools, and attribution live before the single, so paid compounds on warm audiences from day one.",
           strategy:
             "Deploy the tracking pixel across her site, the web-game experience, pre-save flows, and every paid destination on day one. Build retargeting pools from the 'Doggy' and feature audience, TikTok engagers, and profile visitors, so paid spend compounds on warm audiences instead of buying cold reach twice.",
           components: {
@@ -431,7 +431,7 @@ export const trulyYoungPlan: StrategyPlanData = {
           objective:
             "Move Truly from featured to primary artist on the 'Doggy' certification and credit, routing the track's stream-weight and its listener base onto her owned Spotify profile. This is in motion and is the imminent catalyst behind the monthly-listener step-up.",
           strategy:
-            "Execute the credit and certification change with AWAL and the Geezer or BLUSH rights holders as fast as the paperwork allows, timed to compound with the EP. When it lands, the capture machine from Vertical 1 is already live to convert the routed audience into follows and retention, instead of leaking it the way 2025 did.",
+            "Execute the credit and certification change with AWAL and the Geezer or BLUSH rights holders as fast as the paperwork allows, timed to compound with the EP. When it lands, the capture machine from Vertical 1 is already live to convert the routed audience into follows, retention, and owned monthly listeners.",
           components: {
             heading: "Why It Matters",
             items: [
@@ -639,7 +639,7 @@ export const trulyYoungPlan: StrategyPlanData = {
           label: "Capture Build + Single Launch",
           window: "July 2026 / ~3 weeks",
           focus:
-            "Stand up pixel and Laylo in week one. Build retargeting pools from the feature and 'Doggy' audience. Launch the single on July 17 with paid in test mode and creator seeding wave one. Goal: prove creative, capture the warm audience, and stop the leak before the EP.",
+            "Stand up pixel and Laylo in week one. Build retargeting pools from the feature and 'Doggy' audience. Launch the single on July 17 with paid in test mode and creator seeding wave one. Goal: prove creative, capture the warm audience, and compound it into the EP.",
           budget: "~$9,000",
           tactics: [
             "Pixel plus Laylo CRM stand-up and retargeting pool build",
@@ -667,7 +667,7 @@ export const trulyYoungPlan: StrategyPlanData = {
           label: "EP Release + Sustain",
           window: "Late August to September / ~3 weeks",
           focus:
-            "Release the EP on August 21 with the focus-track video and a paid drop stack. Deploy Marquee and Showcase on winners. Retarget everything into follows and pre-saves so the spike converts. Goal: turn the release into owned monthly listeners, not another leak.",
+            "Release the EP on August 21 with the focus-track video and a paid drop stack. Launch Marquee and Showcase on the top-performing EP tracks. Retarget everything into follows and pre-saves so the spike converts. Goal: turn the release into owned, compounding monthly listeners.",
           budget: "~$5,500",
           tactics: [
             "EP (August 21) release stack: paid behind the focus-track MV",
@@ -813,7 +813,7 @@ export const trulyYoungPlan: StrategyPlanData = {
           title: "Reclassification lands + creator wave two prep",
           items: [
             "Target window for the 'Doggy' reclassification to land and begin routing stream-weight to her profile.",
-            "Capture layer converts the routed audience into follows and CRM, the step that leaked in 2025.",
+            "Capture layer converts the routed audience into follows and CRM as the reclassification routes stream-weight to her profile.",
             "Prep creator seeding wave two (mid-tier) for the EP window.",
           ],
         },
@@ -851,7 +851,7 @@ export const trulyYoungPlan: StrategyPlanData = {
           items: [
             "Paid steps to evergreen plus retargeting on the strongest creative.",
             "Laylo re-engagement broadcast targeting non-openers.",
-            "Monitor monthly-listener retention against the 2025 leak benchmark.",
+            "Monitor monthly-listener retention and growth week over week.",
           ],
         },
         {
@@ -879,7 +879,7 @@ export const trulyYoungPlan: StrategyPlanData = {
       intro:
         "The Core plan is a single all-in budget with a 15% CCD fee taken off the top and no retainer. On Core that is $4,500, leaving $25,500 to deploy. Optional add-ons are priced a la carte below, each carrying the same 15% off the top, and stack on Core in any combination. Each release cycle authorizes its own budget on the same structure.",
       ccdNote:
-        "CCD is compensated at 15% of the total budget, taken off the top, with no monthly retainer. Pixel, attribution, and the Laylo CRM platform are included in execution and setup, not billed as media. Music-video production sits outside this plan and is already handled.",
+        "CCD is compensated at 15% of the total budget, taken off the top, with no monthly retainer. Pixel, attribution, and the Laylo CRM platform are included in setup and execution. Music-video production sits outside this plan and is already handled.",
       tiers: [
         {
           label: "Core Plan",
