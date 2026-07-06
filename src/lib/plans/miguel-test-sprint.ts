@@ -280,7 +280,7 @@ export const miguelTestSprint: StrategyPlanData = {
                             label: "B",
                             title: "Fan + Volume Page Network",
                             budget: "$3,750 (one page x 1.5 months)",
-                            objective: "Always-on trend supply on a page we control, posting 3 to 5 times daily across the proven lanes.",
+                            objective: "Always-on trend supply on a page we control, posting 1 to 2 times daily across the proven lanes.",
                             strategy: "One US-focused volume page on TikTok + IG Reels, always on the official sound, doubling as the distribution rail for clipping winners and the comment-seeding squad's home base. The Spanish-language page network is available as an add-on and slots into the LATAM bucket's posting lanes.",
                             kpis: [
                                           "Network pages contribute a measurable share of new damned creates by Day 30",
