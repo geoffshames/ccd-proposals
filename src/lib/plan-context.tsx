@@ -244,9 +244,34 @@ export type DeliverablesSection = {
   footnote?: string;
 };
 
+export type RoadmapCampaign = {
+  label: string;
+  name: string;
+  window: string;
+  budget: string;
+  budgetNote?: string;
+  objective: string;
+  compounds?: string[];
+  featured?: boolean;
+  detailAnchor?: string;
+  detailLabel?: string;
+};
+
+export type RoadmapSection = {
+  type: "roadmap";
+  number: string;
+  navLabel?: string;
+  title: string;
+  intro?: string;
+  compoundsLabel?: string;
+  campaigns: RoadmapCampaign[];
+  footnote?: string;
+};
+
 export type PlanSection =
   | OverviewSection
   | PhilosophySection
+  | RoadmapSection
   | AudienceSection
   | StructureSection
   | VerticalSection

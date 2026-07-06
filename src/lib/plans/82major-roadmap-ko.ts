@@ -95,11 +95,102 @@ export const eightyTwoMajorRoadmapKorean: StrategyPlanData = {
     },
 
     // ===================================================================
-    // 03. The LATAM Opportunity
+    // 03. The Release Arc
+    // ===================================================================
+    {
+      type: "roadmap",
+      number: "03",
+      navLabel: "릴리즈 아크",
+      title: "릴리즈 아크 / 다섯 개의 캠페인, 하나의 기계",
+      intro: "본 제안서는 캠페인 1의 비용을 산정합니다. 후속 네 개의 캠페인은 각각 동일한 구조에 따라 새로운 예산을 승인받으며, 이전 사이클의 인프라, 활성화된 팬층, 그리고 학습 내용을 계승합니다. 모든 지출 결정은 이 아크를 기준으로 판단하십시오. 본 제안의 어떤 것도 일회성으로 끝나지 않습니다.",
+      compoundsLabel: "향후 제공되는 것",
+      campaigns: [
+        {
+          label: "캠페인 1",
+          name: "Trophy Español / LATAM 진출",
+          window: "2026년 8월 - 10월 (약 12주)",
+          budget: "$20,000 / $40,000",
+          budgetNote: "본 제안서에 포함된 비용",
+          featured: true,
+          objective: "TROPHY의 스페인어 버전을 스페인어 사용권 LATAM (브라질은 Expansion 티어)에 출시하며, 멕시코 시티와 산티아고에 집중하고, 미디어 비용은 미국 요금의 일부만 부담합니다.",
+          compounds: [
+            "스페인어 팬 채널 네트워크 + Laylo ES 레인: 한 번 구축하면 이후 모든 사이클에서 활용 가능",
+            "9월 EP 출시를 위한 활성화된 LATAM 유료 팬층 및 검증된 크리에이티브",
+            "2027년 LATAM 의사결정을 안내할 시장 분석 (도시별 비용, 청취자 성장, Shazam 신호)",
+          ],
+          detailAnchor: "#section-05",
+          detailLabel: "캠페인 구조 보기",
+        },
+        {
+          label: "캠페인 2",
+          name: "9월 EP / 컴백",
+          window: "2026년 9월",
+          budget: "새로운 예산",
+          budgetNote: "EP 확정 시 별도 승인",
+          objective: "SIGN 이후 컴백 사이클: 영어 및 스페인어 사전 저장 메커니즘, 발매 주 전 검증된 크리에이티브, 다양한 플레이리스트 레인, 그리고 히트 트랙에 신속하게 예산을 배정하기 위한 전체 EP 시청 매트릭스.",
+          compounds: [
+            "캠페인 1은 현지화된 크리에이티브를 준비하여 출시 첫날부터 LATAM 잠재 고객에게 도달합니다.",
+            "EP 크리에이티브 우승작은 투어 기간 동안 각 시장별 푸시를 지원합니다.",
+            "사전 저장 및 출시 데이터는 4분기 타겟팅 결정을 더욱 날카롭게 합니다.",
+          ],
+          detailAnchor: "#section-10",
+          detailLabel: "9월 계획 보기",
+        },
+        {
+          label: "캠페인 3",
+          name: "4분기 미국 투어 기간",
+          window: "2026년 10월 - 11월",
+          budget: "새로운 예산",
+          budgetNote: "라우팅과 별도 승인",
+          objective: "계획된 4분기 라우팅에 따른 시장별 증폭: 도시별 시간 맞춤 유료 푸시, 실시간에 가까운 지오타겟팅된 라디오 및 언론 노출, 양 언어로 된 CRM에 공연장 정보 수집.",
+          compounds: [
+            "2025년 투어 효과에서 파생된 EP 및 백 카탈로그 전반의 투어 주간 카탈로그 상승.",
+            "라우팅상의 모든 시장에서 수집된 연락처 및 리타겟팅 풀.",
+            "1월 싱글 미디어 계획의 가격을 결정하는 실제 수요 신호.",
+          ],
+          detailAnchor: "#section-10",
+          detailLabel: "투어 증폭 보기",
+        },
+        {
+          label: "캠페인 4",
+          name: "1월 싱글",
+          window: "2027년 1월",
+          budget: "새로운 예산",
+          budgetNote: "싱글 확정 시 별도 승인",
+          objective: "12월 송캠프 결과물은 그룹이 보유했던 가장 강력한 위치에서 출시됩니다: 양 지역의 인프라 가동, 투어 관객 확보, 피처 래더의 진전.",
+          compounds: [
+            "출시 첫날부터 미국 및 LATAM 시스템이 가동되는 첫 번째 릴리스.",
+            "2월 EP를 위한 사전 저장 및 크리에이티브 런웨이를 구축합니다",
+            "월간 리스너가 증가함에 따라 피처 전략이 확대됩니다",
+          ],
+          detailAnchor: "#section-11",
+          detailLabel: "2027 Horizon 보기",
+        },
+        {
+          label: "캠페인 5",
+          name: "2월 EP / The Checkpoint",
+          window: "2027년 2월",
+          budget: "새로운 예산",
+          budgetNote: "EP 확정 시 별도 승인",
+          objective: "모든 버티컬은 두 지역에서 동시에 운영되며, 궤적 목표 대비 측정됩니다: 티어 3에서 벗어나 100만 명 이상의 월간 리스너 밴드를 향합니다.",
+          compounds: [
+            "복합적인 증거: 5개 사이클에 걸쳐 측정된 인프라 ROI",
+            "LATAM 점유율은 11-24% 동종 밴드 대비 측정됩니다",
+            "2027년 LATAM 라이브 라우팅 결정을 위한 데이터 근거",
+          ],
+          detailAnchor: "#section-11",
+          detailLabel: "2027 Horizon 보기",
+        },
+      ],
+      footnote: "예산은 연간이 아닌 사이클별로 책정됩니다. 인프라 투자는 캠페인 1에서 한 번 발생하며, 이후 모든 사이클은 한계 비용으로 이를 활용합니다.",
+    },
+
+    // ===================================================================
+    // 04. The LATAM Opportunity
     // ===================================================================
     {
       type: "audience",
-      number: "03",
+      number: "04",
       navLabel: "LATAM",
       title: "LATAM 기회",
       intro: "82MAJOR의 5개 핵심 LATAM 시장은 현재 월간 리스너 약 36.5K명(Chartmetric, 2026년 7월 기준)을 보유하고 있으며, 이는 한국과 거의 동일한 수준으로 LATAM 마케팅 없이 구축되었습니다. 격차가 곧 기회입니다: LATAM은 82MAJOR의 리스닝 지리에서 약 7%를 차지하는 반면, ATEEZ는 약 11%, KATSEYE는 약 12%, Stray Kids는 약 24%를 차지하며, Stray Kids의 경우 멕시코는 세계 2위 국가입니다. 또한 라틴 아메리카는 전 세계적으로 가장 빠르게 성장하는 음반 시장(+17.1% in 2025)이며, 브라질과 멕시코는 이제 세계 10위권 시장입니다. 이러한 비율은 초기 유료 타겟팅과 LATAM 채널 네트워크의 콘텐츠 입지를 설정합니다.",
@@ -155,7 +246,7 @@ export const eightyTwoMajorRoadmapKorean: StrategyPlanData = {
     // ===================================================================
     {
       type: "structure",
-      number: "04",
+      number: "05",
       navLabel: "구조",
       title: "캠페인 구조",
       intro: "Trophy Español 사이클(약 12주)을 위한 두 가지 올인원 예산 수준. CCD 리테이너 및 미디어 관리는 예산 내에 포함되며, 별도가 아닙니다. Foundation은 스페인어 사용 국가인 LATAM(멕시코, 칠레, 페루, 콜롬비아)에 전적으로 집중합니다. Expansion은 포르투갈어 자막 크리에이티브, 더 큰 규모의 크리에이터 프로그램, LATAM 음악 PR을 포함하여 브라질을 추가합니다. DSP 에디토리얼은 두 패키지 모두에서 Kakao의 유통 관계를 통해 동일하게 진행됩니다. 9월 EP 및 이후 모든 릴리스는 동일한 구조로 새로운 예산을 승인합니다.",
@@ -196,7 +287,7 @@ export const eightyTwoMajorRoadmapKorean: StrategyPlanData = {
     // ===================================================================
     {
       type: "vertical",
-      number: "05",
+      number: "06",
       navLabel: "팬덤",
       title: "버티컬 1 / LATAM 팬덤 & 인프라",
       philosophy: "스페인어로 구축된 복합적인 기반입니다. LATAM K팝 팬덤은 세계에서 가장 참여도가 높으며, 이를 활용할 수 있는 인프라가 존재합니다. (임대하는 것이 아니라)",
@@ -265,7 +356,7 @@ export const eightyTwoMajorRoadmapKorean: StrategyPlanData = {
     // ===================================================================
     {
       type: "vertical",
-      number: "06",
+      number: "07",
       navLabel: "디지털",
       title: "버티컬 2 / LATAM 디지털 마케팅",
       philosophy: "가장 저렴한 도달 범위를 목표로 하는 증폭기입니다. LATAM CPM은 이 캠페인에 구조적 이점을 제공합니다: 동일한 달러로 미국에서 구매하는 것보다 여러 배의 노출을 구매할 수 있습니다.",
@@ -333,7 +424,7 @@ export const eightyTwoMajorRoadmapKorean: StrategyPlanData = {
     // ===================================================================
     {
       type: "vertical",
-      number: "07",
+      number: "08",
       navLabel: "DSP",
       title: "버티컬 3 / DSP 전략 라틴 아메리카",
       philosophy: "Kakao의 유통 관계를 통해 주도되며 두 패키지 모두에서 동일한 디스커버리 레이어. 스페인어 릴리스는 LATAM 에디토리얼 팀이 글로벌 K-pop 범주를 넘어 K-pop 아티스트를 지원하는 데 필요한 자격 요건입니다.",
@@ -394,7 +485,7 @@ export const eightyTwoMajorRoadmapKorean: StrategyPlanData = {
     // ===================================================================
     {
       type: "vertical",
-      number: "08",
+      number: "09",
       navLabel: "PR",
       title: "버티컬 4 / PR & 미디어 LATAM",
       philosophy: "음원이 움직이기 시작하면 증폭. 스페인어 음악 미디어는 현지화 스토리를 보상하며, LATAM 리액터 문화는 그 자체로 유통 채널입니다.",
@@ -436,11 +527,11 @@ export const eightyTwoMajorRoadmapKorean: StrategyPlanData = {
     // ===================================================================
     {
       type: "vertical",
-      number: "09",
-      navLabel: "9월",
-      title: "9월 컴백 / SIGN 이후 계획",
-      philosophy: "LATAM 캠페인은 9월 EP의 우회로가 아닙니다. EP가 안착할 따뜻한 관객입니다. 이 섹션은 SIGN 캠페인이 증명한 것을 바탕으로 형성된 컴백 주기를 위한 단기 계획입니다.",
-      intro: "9월 EP는 본 문서가 수립한 구조에 따라 자체 예산을 승인합니다. 이어지는 내용은 해당 주기의 전략적 형태이므로 LATAM 캠페인, EP, 그리고 4분기 투어 기간이 하나의 연속적인 계획으로 읽히도록 합니다.",
+      number: "10",
+      navLabel: "EP + 투어",
+      title: "캠페인 2-3 / 9월 EP + 4분기 투어 기간",
+      philosophy: "LATAM 캠페인은 9월 EP에서 벗어난 것이 아닙니다. EP가 안착할 따뜻한 관객입니다. 이 섹션은 SIGN 캠페인이 증명한 것을 바탕으로 구성된 컴백 사이클 및 그 뒤를 잇는 투어 기간에 대한 단기 계획입니다.",
+      intro: "캠페인 2(9월 EP)와 캠페인 3(4분기 투어 기간)은 이 문서가 수립한 구조에 따라 자체 예산을 승인합니다. 이어지는 내용은 두 사이클의 전략적 형태를 보여주므로 LATAM 캠페인, EP, 투어가 하나의 연속적인 계획으로 읽히도록 합니다.",
       subBlocks: [
         {
           label: "A",
@@ -495,9 +586,9 @@ export const eightyTwoMajorRoadmapKorean: StrategyPlanData = {
     // ===================================================================
     {
       type: "vertical",
-      number: "10",
+      number: "11",
       navLabel: "2027",
-      title: "2027 Horizon / 1월 싱글 + 2월 EP",
+      title: "캠페인 4-5 / 1월 싱글 + 2월 EP",
       philosophy: "장기 계획은 동일한 구조로 누적됩니다. 각 사이클은 이전 사이클의 인프라, 활성화된 오디언스, 학습 내용을 계승합니다.",
       subBlocks: [
         {
@@ -542,7 +633,7 @@ export const eightyTwoMajorRoadmapKorean: StrategyPlanData = {
     // ===================================================================
     {
       type: "vertical",
-      number: "11",
+      number: "12",
       navLabel: "레이블",
       title: "Kakao / Great M에서 담당",
       philosophy: "레이블과 Kakao가 직접 소유하는 워크스트림입니다. CCD는 타이밍을 조율하고 조언하지만, 관계, 재능, 마스터 결정은 레이블 측을 통해 진행됩니다.",
@@ -584,7 +675,7 @@ export const eightyTwoMajorRoadmapKorean: StrategyPlanData = {
     // ===================================================================
     {
       type: "flight",
-      number: "12",
+      number: "13",
       navLabel: "플라이트",
       title: "제안 미디어 플라이트",
       intro: "각 단계별 약 12주간의 사이클 동안 배포 가능한 예산이 어떻게 운영되는지에 대한 설명입니다. 1단계는 스페인어(ES) 인프라를 구축하고 유료 광고를 테스트 모드로 실행하는 동안 에셋을 현지화합니다. 2단계는 전체 규모의 릴리스 기간입니다. 3단계는 유지보수하며, 9월 EP로 이어지고, 활성화된 LATAM 잠재 고객을 컴백 캠페인으로 연결합니다. 'Trophy Español'이 독립 싱글이 아닌 EP 트랙으로 출시될 경우, 2단계는 EP 주간으로 이동하고 1단계는 연장됩니다. 어느 경우든 구조는 유지됩니다.",
@@ -635,7 +726,7 @@ export const eightyTwoMajorRoadmapKorean: StrategyPlanData = {
     // ===================================================================
     {
       type: "timeline",
-      number: "13",
+      number: "14",
       navLabel: "타임라인",
       title: "실행 타임라인",
       intro: "Trophy Español 사이클을 위한 12주간의 배포 그리드로, 9월 EP 및 Q4 투어 기간까지 이어집니다. 아래 날짜는 8월 초 시작을 가정하며, 그리드는 확정된 릴리스 날짜에 맞춰 조정됩니다. W4는 유연한 Trophy Español 릴리스 슬롯(독립형 시나리오)을 나타내며, W6-7은 9월 EP 기간을, W10+는 투어 준비 기간을 나타냅니다.",
@@ -793,7 +884,7 @@ export const eightyTwoMajorRoadmapKorean: StrategyPlanData = {
     // ===================================================================
     {
       type: "pricing",
-      number: "14",
+      number: "15",
       navLabel: "가격 책정",
       title: "최종 가격 책정",
       intro: "Trophy Español 주기(~12주)에 대한 두 가지 올인 옵션이 있습니다. CCD 수수료는 예산 외 추가가 아닌 예산 내에 포함됩니다: 7,500달러의 주기 리테이너와 관리 지출의 15%에 해당하는 미디어 관리 수수료입니다. 나머지 모든 비용은 미디어, 크리에이터 및 LATAM 인프라에 배포됩니다. 9월 EP, 투어 기간 및 2027년 각 출시 건은 동일한 구조로 새로운 예산을 승인받습니다.",

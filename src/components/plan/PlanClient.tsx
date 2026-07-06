@@ -5,6 +5,7 @@ import { PlanCover } from "./PlanCover";
 import { PlanNavigation } from "./PlanNavigation";
 import { PlanOverview } from "./PlanOverview";
 import { PlanPhilosophy } from "./PlanPhilosophy";
+import { PlanRoadmap } from "./PlanRoadmap";
 import { PlanAudience } from "./PlanAudience";
 import { PlanStructure } from "./PlanStructure";
 import { PlanVertical } from "./PlanVertical";
@@ -54,6 +55,8 @@ export function PlanClient({ plan }: { plan: StrategyPlanData }) {
               return <PlanOverview key={i} section={section} />;
             case "philosophy":
               return <PlanPhilosophy key={i} section={section} />;
+            case "roadmap":
+              return <PlanRoadmap key={i} section={section} />;
             case "audience":
               return <PlanAudience key={i} section={section} />;
             case "structure":
