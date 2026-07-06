@@ -35,7 +35,7 @@ export const eightyTwoMajorRoadmap: StrategyPlanData = {
       body: [
         "Prepared at the request of GREAT M Entertainment. The $30,000 and $45,000 budget levels in this document fund one campaign: the Trophy Español LATAM launch. The rest of the release arc (the September EP, the October-November U.S. tour window, the January single, and the February EP) is mapped here strategically so every decision reads in context, and each of those campaigns authorizes its own budget when it locks.",
         "The strategic case is simple. The SIGN cycle proved that 82MAJOR converts the audience it reaches: Spotify followers grew from roughly 136K to 154K across the campaign while paid and organic discovery ran. Latin America is the largest audience 82MAJOR has never spent a dollar against. The group's five core LATAM markets (Brazil, Mexico, Chile, Peru, Colombia) already hold roughly the same monthly listener volume as South Korea, entirely organically. Trophy Español is the key that turns that latent audience into an owned one, at media costs a fraction of U.S. rates.",
-        "The budget shown here is scoped to the Trophy Español cycle (~12 weeks). The September EP, the tour window, and the 1H 2027 releases each authorize fresh budgets on the same structure. The LATAM infrastructure this campaign stands up (Spanish-language fan channels, LATAM CRM lane, warmed paid audiences) carries across every one of those cycles.",
+        "The budget shown here is scoped to the Trophy Español cycle (~12 weeks). The September EP, the tour window, and the 1H 2027 releases each authorize fresh budgets on the same structure. The LATAM infrastructure this campaign stands up (a briefed Spanish-language clipping network, the LATAM CRM lane, warmed paid audiences) carries across every one of those cycles.",
       ],
       supports: {
         heading: "What This Plan Supports",
@@ -50,7 +50,7 @@ export const eightyTwoMajorRoadmap: StrategyPlanData = {
         heading: "Key Goals",
         items: [
           "LATAM listener growth: from ~36.5K monthly listeners across the LATAM-5 toward 75K+ within two cycles",
-          "Owned LATAM fandom: Spanish-language fan channels and a LATAM CRM lane that compound across releases",
+          "Owned LATAM fandom: a Laylo ES CRM lane plus always-on Spanish-language distribution that compounds across releases",
           "Catalog leverage: Trophy Español extends a track that still streams organically nine months after release",
           "A repeatable structure: every future release drops into the same LATAM machine at marginal cost",
         ],
@@ -74,7 +74,7 @@ export const eightyTwoMajorRoadmap: StrategyPlanData = {
         },
         {
           label: "Fandom (Foundation, Always-On)",
-          description: "The same compounding layer the U.S. campaign runs, stood up in Spanish: LATAM-facing fan channels, a Spanish CRM lane on the existing Laylo stack, and fan engagement mechanics tuned to the most participatory fan culture in global K-pop. Built once, carried across every future cycle.",
+          description: "The same compounding layer the U.S. campaign runs, stood up in Spanish: a LATAM-facing clipping network, a Spanish CRM lane on the existing Laylo stack, and fan engagement mechanics tuned to the most participatory fan culture in global K-pop. Built once, carried across every future cycle.",
         },
         {
           label: "Digital (Amplifier)",
@@ -114,7 +114,7 @@ export const eightyTwoMajorRoadmap: StrategyPlanData = {
           featured: true,
           objective: "Launch the Spanish version of TROPHY into Spanish-speaking LATAM (Brazil at the Expansion tier), concentrated on Mexico City and Santiago, at media costs a fraction of U.S. rates.",
           compounds: [
-            "Spanish fan channel network + Laylo ES lane: built once, owned across every later cycle",
+            "Laylo ES CRM lane + a briefed LATAM clipping network: stood up once, reused across every later cycle",
             "Warmed LATAM paid audiences and proven creative for the September EP to land on",
             "Market reads (city costs, listener growth, Shazam signals) that guide the 2027 LATAM decisions",
           ],
@@ -255,11 +255,11 @@ export const eightyTwoMajorRoadmap: StrategyPlanData = {
           label: "Campaign 1 / Tier 1",
           budget: "$30,000",
           name: "LATAM Foundation",
-          goal: "Launch Trophy Español into Spanish-speaking LATAM with concentrated paid media (Mexico City + Santiago first), a micro-creator round, Spanish-language fan channels, and a LATAM CRM lane. Prove the market response and build the warmed audiences the September EP lands on.",
+          goal: "Launch Trophy Español into Spanish-speaking LATAM with concentrated paid media (Mexico City + Santiago first), a micro-creator round, a Spanish-language clipping network, and a LATAM CRM lane. Prove the market response and build the warmed audiences the September EP lands on.",
           includes: [
             "Paid Social LATAM (TikTok + Meta), concentrated on MX + CL, extending to PE + CO",
             "10-15 LATAM micro-creators (dance cover, fan-edit, reaction lanes)",
-            "Spanish-language fan channel network + Laylo ES lane",
+            "Spanish-language clipping network + Laylo ES CRM lane (CRM operational inside the retainer)",
             "DSP editorial coordination with Kakao: pitch packets, ES metadata, release-week follow-ups",
             "Dark-ads testing loop with winner handoff to official channels",
             "CCD strategic oversight, weekly reporting via the live dashboard",
@@ -290,28 +290,29 @@ export const eightyTwoMajorRoadmap: StrategyPlanData = {
       number: "05",
       navLabel: "Fandom",
       title: "Vertical 1 / LATAM Fandom & Infrastructure",
-      philosophy: "The compounding foundation, stood up in Spanish. LATAM K-pop fandom is the most participatory in the world; the infrastructure exists to capture it, not rent it.",
+      philosophy: "The compounding foundation, stood up in Spanish: distribution at volume through LATAM clip networks, captured into a CRM lane the artist team owns. LATAM K-pop fandom is the most participatory in the world; this layer meets it where it already lives.",
       subBlocks: [
         {
           label: "A",
-          title: "Spanish-Language Fan Channel Network",
-          objective: "Extend the fan-channel model from the U.S. campaign into an ES-native lane: TikTok + Instagram channels posting Spanish-captioned edits, translated lyric content, and LATAM-specific fan moments, so LATAM interest lands on channels the artist team controls.",
-          strategy: "Launch dedicated Spanish-language channels alongside the existing network (the reserved Trophy-branded handle activates here). Content mix: Spanish-subtitled performance edits, ES lyric visualizers, member-focus cuts, and LATAM fan-culture participation formats (dance cover duets, fan-art features). Human-translated Spanish only; machine-translated captions read instantly as inauthentic to this audience.",
+          title: "Spanish-Language Clipping Network",
+          budget: "$5,000 (both tiers, inside deployable)",
+          objective: "Distribution at volume: a briefed network of LATAM clip and fan accounts posting Spanish-captioned edits across TikTok and Reels, so Trophy Español shows up throughout the feeds LATAM K-pop fans actually scroll.",
+          strategy: "Brief the clipping network with the ES asset pack: Spanish-subtitled performance edits, chorus-forward cutdowns, ES lyric moments, and member-focus cuts. Pay on posting volume, not on promises. Human-translated Spanish only; machine-translated captions read instantly as inauthentic to this audience. Top-performing clips get paid boost behind them and feed the official channels' content rotation.",
           components: {
             heading: "What The Network Does",
             items: [
-              "Repurposes existing content with Spanish subtitles and LATAM-native framing",
-              "Publishes ES lyric and pronunciation content around Trophy Español",
-              "Runs LATAM fan participation formats (covers, duets, fan-art, streaming parties)",
-              "Captures LATAM fans onto owned channels ahead of the September EP",
-              "Feeds top-performing themes into the paid creative rotation",
+              "ES-captioned cutdowns posted at volume across TikTok + Reels in target markets",
+              "ES lyric and pronunciation moments around Trophy Español",
+              "Algorithmic surface area: dozens of concurrent posts training discovery toward LATAM audiences",
+              "Winners boosted with paid spend and handed to official channels",
+              "Every clip carrying localized CTAs toward the track and the Laylo ES lane",
             ],
           },
           kpis: [
-            "Follower growth on the ES channel network",
-            "Engagement rate versus the U.S. channel baseline",
+            "Clip volume and aggregate views versus brief",
+            "Cost per view against LATAM platform benchmarks",
             "Share of comments in Spanish on official posts (localization pull-through)",
-            "UGC volume on the campaign sounds",
+            "UGC copycat volume on the campaign sounds",
           ],
         },
         {
@@ -348,7 +349,7 @@ export const eightyTwoMajorRoadmap: StrategyPlanData = {
           ],
         },
       ],
-      footnote: "Built once, carried forward: the ES network and CRM lane serve the September EP, the tour window, and every 2027 release.",
+      footnote: "Stood up once, carried forward: the clipping network and CRM lane serve the September EP, the tour window, and every 2027 release.",
     },
 
     // ===================================================================
@@ -372,7 +373,7 @@ export const eightyTwoMajorRoadmap: StrategyPlanData = {
               "City-concentrated test phase: Mexico City + Santiago interest and lookalike stacks",
               "Spanish-first creative: ES captions, ES lyric moments, chorus-forward cutdowns",
               "Second-click conversion optimization to filter low-intent traffic",
-              "Retargeting pools from ES channel engagement and pivot-link traffic",
+              "Retargeting pools from clipping + creator engagement and pivot-link traffic",
               "Expansion tier: Brazil ad sets with Portuguese captions, YouTube in-stream on the ES assets",
             ],
           },
@@ -471,7 +472,7 @@ export const eightyTwoMajorRoadmap: StrategyPlanData = {
               "LATAM-5 monthly listeners and follower adds (Chartmetric)",
               "Trophy Español streams by market + parent-track lift",
               "Paid performance by city and country against the U.S. cost baseline",
-              "ES channel network growth and Laylo ES list size",
+              "Clipping output (posts + aggregate views) and Laylo ES list size",
               "Playlist adds and editorial status by DSP and market",
             ],
           },
@@ -498,7 +499,7 @@ export const eightyTwoMajorRoadmap: StrategyPlanData = {
             items: [
               "A self-producing K-pop group recorded a Spanish version for a region that found them organically",
               "The organic numbers: LATAM listener volume equal to the group's home market before any marketing",
-              "The commitment signal: dedicated Spanish channels, Spanish CRM, LATAM-first creative",
+              "The commitment signal: Spanish-language content at volume, a Spanish CRM lane, LATAM-first creative",
               "The bigger arc: LATAM as the group's next pillar region heading into the 2027 releases",
             ],
           },
@@ -540,7 +541,7 @@ export const eightyTwoMajorRoadmap: StrategyPlanData = {
             heading: "The Proven Playbook",
             items: [
               "Dark-ads testing loop with winner handoff to official channels",
-              "Fan channel network (U.S. + the new ES lane) at full cadence into release week",
+              "U.S. fan channel network at full cadence into release week, plus the ES clipping lane",
               "Laylo broadcasts and drop mechanics in both languages",
               "Micro-creator rounds with paid boost behind winners",
               "Live dashboard reporting as the single source of truth across all vendors",
@@ -684,11 +685,11 @@ export const eightyTwoMajorRoadmap: StrategyPlanData = {
         {
           label: "Localize + Seed",
           window: "Weeks 1-3",
-          focus: "ES asset pack finalized (captions, lyric assets, cutdowns). Spanish fan channels and Laylo ES lane live. Creator briefs out. Paid social launches in test mode against Mexico City + Santiago stacks using existing TROPHY content, building retargeting pools before the record drops.",
+          focus: "ES asset pack finalized (captions, lyric assets, cutdowns). Spanish-language clipping network briefed; Laylo ES lane live. Creator briefs out. Paid social launches in test mode against Mexico City + Santiago stacks using existing TROPHY content, building retargeting pools before the record drops.",
           budget: "~$4,500 / ~$7,000",
           tactics: [
             "Paid test phase: ES-captioned creatives, city-level audiences, second-click optimization",
-            "ES fan channel network launch + first Laylo ES broadcast",
+            "ES clipping network first posting wave + first Laylo ES broadcast",
             "Creator round briefed and scheduled against release week",
             "DSP pitch packets delivered per market; ES metadata verified",
           ],
@@ -757,7 +758,7 @@ export const eightyTwoMajorRoadmap: StrategyPlanData = {
           ],
         },
         {
-          name: "ES Fan Channels + Laylo ES",
+          name: "ES Clipping + Laylo ES",
           cells: [
             { weekIndex: 1, intensity: "medium", label: "BUILD" },
             { weekIndex: 2, intensity: "high", label: "LAUNCH" },
@@ -819,12 +820,12 @@ export const eightyTwoMajorRoadmap: StrategyPlanData = {
       weekBreakdowns: [
         { weekIndex: 1, title: "Localization + infrastructure build", items: [
           "ES asset pack production: captions, lyric assets, chorus-forward cutdowns from existing masters.",
-          "Spanish fan channels prepped (including the reserved Trophy-branded handle); Laylo ES welcome flow built.",
+          "Clipping network briefed with the ES asset pack; Laylo ES welcome flow built.",
           "DSP pitch packets out per market; ES metadata and lyric delivery verified with distribution.",
           "Creator shortlist locked; briefs translated and scheduled.",
         ] },
         { weekIndex: 2, title: "ES lane live + paid test", items: [
-          "ES fan channel network launches; first Laylo ES broadcast.",
+          "ES clipping network posting; first Laylo ES broadcast.",
           "Paid social live in test mode: ES creatives against Mexico City + Santiago stacks, second-click optimization from day one.",
           "Voicemail tease funnel live in Spanish.",
         ] },
@@ -855,7 +856,7 @@ export const eightyTwoMajorRoadmap: StrategyPlanData = {
         ] },
         { weekIndex: 8, title: "Compound + diversify", items: [
           "Playlist reach diversification push: multiple editorial and algorithmic lanes on the EP.",
-          "Paid rotation refreshed from fan-channel and creator winners.",
+          "Paid rotation refreshed from clipping and creator winners.",
           "Laylo ES re-engagement broadcast to non-openers.",
         ] },
         { weekIndex: 9, title: "Sustain", items: [
@@ -894,7 +895,7 @@ export const eightyTwoMajorRoadmap: StrategyPlanData = {
           label: "Campaign 1 / Tier 1",
           budget: "$30,000",
           name: "LATAM Foundation",
-          tagline: "All-in. Spanish-speaking LATAM (MX, CL, PE, CO). Concentrated paid + micro-creators + ES infrastructure.",
+          tagline: "All-in. Spanish-speaking LATAM (MX, CL, PE, CO). Concentrated paid + micro-creators + Spanish-language clipping.",
           deployable: "$19,600",
           feeBreakdown: {
             retainer: "$7,500",
@@ -903,9 +904,9 @@ export const eightyTwoMajorRoadmap: StrategyPlanData = {
             mediaManagementDetail: "Media management at 15% of managed spend",
           },
           breakdown: [
-            { vertical: "Paid Social LATAM (TikTok + Meta)", amount: "$12,000" },
+            { vertical: "Paid Social LATAM (TikTok + Meta)", amount: "$8,600" },
             { vertical: "LATAM Creator Program (10-15 micro)", amount: "$6,000" },
-            { vertical: "ES Fan Channels + Laylo ES", amount: "$1,600" },
+            { vertical: "Spanish-Language Clipping", amount: "$5,000" },
             { vertical: "CCD Retainer", amount: "$7,500" },
             { vertical: "Media Management (15%)", amount: "$2,900" },
           ],
@@ -924,10 +925,10 @@ export const eightyTwoMajorRoadmap: StrategyPlanData = {
             mediaManagementDetail: "Media management at 15% of managed spend",
           },
           breakdown: [
-            { vertical: "Paid Social LATAM (TikTok + Meta + YouTube)", amount: "$18,500" },
+            { vertical: "Paid Social LATAM (TikTok + Meta + YouTube)", amount: "$15,200" },
             { vertical: "LATAM Creator Program (micro + mid-tier + BR)", amount: "$9,000" },
             { vertical: "LATAM PR + Reactor Program", amount: "$3,500" },
-            { vertical: "ES/PT Fan Channels + Laylo ES", amount: "$1,700" },
+            { vertical: "Spanish-Language Clipping (+ PT for BR)", amount: "$5,000" },
             { vertical: "CCD Retainer", amount: "$7,500" },
             { vertical: "Media Management (15%)", amount: "$4,800" },
           ],

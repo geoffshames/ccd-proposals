@@ -35,7 +35,7 @@ export const eightyTwoMajorRoadmapKorean: StrategyPlanData = {
       body: [
         "GREAT M Entertainment의 요청에 따라 준비되었습니다. 본 문서의 $30,000 및 $45,000 예산 수준은 하나의 캠페인, 즉 Trophy Español LATAM 론칭만을 지원합니다. 릴리즈 아크의 나머지(9월 EP, 10-11월 미국 투어 기간, 1월 싱글, 2월 EP)는 모든 결정이 전체 맥락 속에서 읽히도록 전략적으로 함께 정리했으며, 각 캠페인은 확정 시점에 자체 예산을 승인받습니다.",
         "전략적 근거는 명확합니다. SIGN 사이클은 82MAJOR가 도달한 오디언스를 팬으로 전환한다는 것을 증명했습니다: 유료 및 오가닉 디스커버리가 진행되는 동안 Spotify 팔로워는 약 136K에서 154K로 성장했습니다. 라틴 아메리카는 82MAJOR가 아직 단 한 푼도 투자하지 않은 가장 큰 오디언스입니다. 그룹의 핵심 LATAM 5개 시장(브라질, 멕시코, 칠레, 페루, 콜롬비아)은 이미 완전히 오가닉하게 한국과 거의 동일한 월간 리스너 볼륨을 보유하고 있습니다. Trophy Español은 이 잠재 오디언스를 미국 대비 훨씬 낮은 미디어 비용으로 소유 오디언스로 전환하는 열쇠입니다.",
-        "여기에 표시된 예산은 Trophy Español 사이클(~12주)에 맞춰져 있습니다. 9월 EP, 투어 기간, 그리고 2027년 상반기 발매는 각각 동일한 구조로 새로운 예산을 승인받습니다. 본 캠페인이 구축하는 LATAM 인프라(스페인어 팬 채널, LATAM CRM 채널, 활성화된 유료 잠재 고객)는 이러한 모든 사이클에 걸쳐 적용됩니다.",
+        "본 예산은 Trophy Español 사이클(~12주)에 맞춰 책정되었습니다. 9월 EP, 투어 기간, 2027년 상반기 발매 각각은 동일한 구조로 새로운 예산을 승인받습니다. 본 캠페인이 구축하는 LATAM 인프라(브리핑된 스페인어 클리핑 네트워크, LATAM CRM 레인, 워밍업된 유료 오디언스)는 이 모든 사이클에 걸쳐 적용됩니다.",
       ],
       supports: {
         heading: "본 계획이 지원하는 사항",
@@ -50,7 +50,7 @@ export const eightyTwoMajorRoadmapKorean: StrategyPlanData = {
         heading: "주요 목표",
         items: [
           "LATAM 리스너 성장: LATAM-5 전역의 월간 리스너 약 36.5K에서 두 사이클 내 75K+ 달성",
-          "자체 LATAM 팬덤: 스페인어 팬 채널 및 릴리스 전반에 걸쳐 누적되는 LATAM CRM 레인",
+          "자체 보유 LATAM 팬덤: Laylo ES CRM 레인 및 상시 운영되는 스페인어 배포로, 발매를 거듭하며 누적됩니다.",
           "카탈로그 활용: \"Trophy Español\"은 발매 9개월 후에도 여전히 유기적으로 스트리밍되는 트랙을 연장합니다.",
           "반복 가능한 구조: 향후 모든 릴리스는 한계 비용으로 동일한 LATAM 머신에 투입됩니다.",
         ],
@@ -74,7 +74,7 @@ export const eightyTwoMajorRoadmapKorean: StrategyPlanData = {
         },
         {
           label: "팬덤 (기반, 상시)",
-          description: "미국 캠페인이 실행되는 것과 동일한 누적 레이어를 스페인어로 구축: LATAM 중심 팬 채널, 기존 Laylo 스택의 스페인어 CRM 레인, 그리고 글로벌 K팝에서 가장 참여적인 팬 문화에 맞춰진 팬 참여 메커니즘. 한 번 구축하면 모든 미래 사이클에 걸쳐 적용됩니다.",
+          description: "미국 캠페인이 운영되는 것과 동일한 누적 레이어를 스페인어로 구축: LATAM 대상 클리핑 네트워크, 기존 Laylo 스택의 스페인어 CRM 레인, 그리고 글로벌 K-pop에서 가장 참여적인 팬 문화에 맞춰진 팬 참여 메커니즘. 한 번 구축하면 모든 향후 사이클에 적용됩니다.",
         },
         {
           label: "디지털 (증폭기)",
@@ -114,7 +114,7 @@ export const eightyTwoMajorRoadmapKorean: StrategyPlanData = {
           featured: true,
           objective: "TROPHY의 스페인어 버전을 스페인어 사용권 LATAM (브라질은 Expansion 티어)에 출시하며, 멕시코 시티와 산티아고에 집중하고, 미디어 비용은 미국 요금의 일부만 부담합니다.",
           compounds: [
-            "스페인어 팬 채널 네트워크 + Laylo ES 레인: 한 번 구축하면 이후 모든 사이클에서 활용 가능",
+            "Laylo ES CRM 레인 + 브리핑된 LATAM 클리핑 네트워크: 한 번 구축하여 이후 모든 사이클에 재사용됩니다.",
             "9월 EP 출시를 위한 활성화된 LATAM 유료 팬층 및 검증된 크리에이티브",
             "2027년 LATAM 의사결정을 안내할 시장 분석 (도시별 비용, 청취자 성장, Shazam 신호)",
           ],
@@ -255,11 +255,11 @@ export const eightyTwoMajorRoadmapKorean: StrategyPlanData = {
           label: "캠페인 1 / 티어 1",
           budget: "$30,000",
           name: "LATAM Foundation",
-          goal: "Trophy Español을 스페인어권 LATAM 시장에 출시하며, 집중적인 유료 미디어(멕시코시티 + 산티아고 우선), 마이크로 크리에이터 라운드, 스페인어 팬 채널, LATAM CRM 레인을 활용합니다. 시장 반응을 입증하고 9월 EP 출시 시 따뜻한 반응을 얻을 잠재 고객층을 구축합니다.",
+          goal: "집중적인 유료 미디어(멕시코 시티 + 산티아고 우선), 마이크로 크리에이터 라운드, 스페인어 클리핑 네트워크, LATAM CRM 레인을 통해 스페인어 사용 LATAM 지역에 Trophy Español을 출시합니다. 시장 반응을 입증하고 9월 EP가 안착할 워밍업된 오디언스를 구축합니다.",
           includes: [
             "유료 소셜 LATAM (TikTok + Meta), MX + CL에 집중하며 PE + CO로 확장",
             "LATAM 마이크로 크리에이터 10-15명 (댄스 커버, 팬 에딧, 리액션 레인)",
-            "스페인어 팬 채널 네트워크 + Laylo ES 레인",
+            "스페인어 클리핑 네트워크 + Laylo ES CRM 레인 (CRM은 리테이너 내에서 운영)",
             "Kakao와의 DSP 에디토리얼 협업: 피치 팩, ES 메타데이터, 릴리스 주간 후속 조치",
             "당첨작을 공식 채널로 이관하는 다크 광고 테스트 루프",
             "CCD 전략적 감독, 실시간 대시보드를 통한 주간 보고",
@@ -290,28 +290,29 @@ export const eightyTwoMajorRoadmapKorean: StrategyPlanData = {
       number: "05",
       navLabel: "팬덤",
       title: "버티컬 1 / LATAM 팬덤 & 인프라",
-      philosophy: "스페인어로 구축된 복합적인 기반입니다. LATAM K팝 팬덤은 세계에서 가장 참여도가 높으며, 이를 활용할 수 있는 인프라가 존재합니다. (임대하는 것이 아니라)",
+      philosophy: "스페인어로 구축된 누적 기반: LATAM 클립 네트워크를 통한 대량 배포, 아티스트 팀이 소유한 CRM 레인으로 캡처. LATAM K-pop 팬덤은 세계에서 가장 참여적이며, 이 레이어는 팬들이 이미 활동하는 곳에서 만납니다.",
       subBlocks: [
         {
           label: "A",
-          title: "스페인어 팬 채널 네트워크",
-          objective: "미국 캠페인의 팬 채널 모델을 ES 네이티브 레인으로 확장: TikTok + Instagram 채널에서 스페인어 캡션 편집본, 번역된 가사 콘텐츠, LATAM 특정 팬 모먼트를 게시하여 LATAM의 관심이 아티스트 팀이 통제하는 채널로 유입되도록 합니다.",
-          strategy: "기존 네트워크와 함께 전용 스페인어 채널을 출시합니다 (예약된 Trophy 브랜드 핸들이 여기서 활성화됩니다). 콘텐츠 믹스: 스페인어 자막 공연 편집본, ES 가사 비주얼라이저, 멤버 중심 편집본, LATAM 팬 문화 참여 형식 (댄스 커버 듀엣, 팬 아트 기능). 오직 사람이 번역한 스페인어만 사용합니다. 기계 번역된 캡션은 이 청중에게 즉시 진정성 없게 읽힙니다.",
+          title: "스페인어 클리핑 네트워크",
+          budget: "$5,000 (both tiers, inside deployable)",
+          objective: "대량 배포: 브리핑된 LATAM 클립 및 팬 계정 네트워크가 TikTok 및 Reels 전반에 스페인어 자막 편집본을 게시하여, Trophy Español이 LATAM K-pop 팬들이 실제로 스크롤하는 피드 전반에 노출되도록 합니다.",
+          strategy: "ES 애셋 팩으로 클리핑 네트워크에 브리핑: 스페인어 자막 공연 편집본, 후렴구 중심 컷다운, ES 가사 순간, 멤버 중심 컷. 약속이 아닌 게시량에 따라 지급합니다. 오직 사람이 번역한 스페인어만 사용하며, 기계 번역된 자막은 이 오디언스에게 즉시 진정성 없게 느껴집니다. 성과가 좋은 클립에는 유료 부스트가 적용되어 공식 채널의 콘텐츠 로테이션에 포함됩니다.",
           components: {
             heading: "네트워크의 기능",
             items: [
-              "스페인어 자막 및 LATAM 네이티브 프레이밍으로 기존 콘텐츠 재활용",
-              "Trophy Español 관련 ES 가사 및 발음 콘텐츠 게시",
-              "LATAM 팬 참여 형식 운영 (커버, 듀엣, 팬 아트, 스트리밍 파티)",
-              "9월 EP 출시 전 LATAM 팬을 자체 채널로 유입",
-              "성과가 좋은 테마를 유료 크리에이티브 로테이션에 투입",
+              "타겟 시장의 TikTok + Reels 전반에 대량 게시되는 ES 자막 컷다운",
+              "Trophy Español 관련 ES 가사 및 발음 순간",
+              "알고리즘 노출 영역: 수십 개의 동시 게시물이 LATAM 오디언스를 향한 발견을 유도합니다.",
+              "우승작은 유료 집행으로 부스트되어 공식 채널에 전달됩니다.",
+              "모든 클립은 트랙 및 Laylo ES 레인을 향한 현지화된 CTA를 포함합니다.",
             ],
           },
           kpis: [
-            "ES 채널 네트워크의 팔로워 성장",
-            "미국 채널 기준 대비 참여율",
+            "클립 볼륨 및 총 조회수 대 브리핑",
+            "LATAM 플랫폼 벤치마크 대비 조회당 비용",
             "공식 게시물에 대한 스페인어 댓글 비율 (현지화 적용)",
-            "캠페인 사운드에 대한 UGC 볼륨",
+            "캠페인 사운드에 대한 UGC 모방 볼륨",
           ],
         },
         {
@@ -348,7 +349,7 @@ export const eightyTwoMajorRoadmapKorean: StrategyPlanData = {
           ],
         },
       ],
-      footnote: "한 번 구축하면 계속 사용 가능: ES 네트워크 및 CRM 레인은 9월 EP, 투어 기간, 그리고 2027년의 모든 릴리스에 활용됩니다.",
+      footnote: "한 번 구축하여 계속 활용: 클리핑 네트워크와 CRM 레인은 9월 EP, 투어 기간, 2027년 모든 발매에 활용됩니다.",
     },
 
     // ===================================================================
@@ -372,7 +373,7 @@ export const eightyTwoMajorRoadmapKorean: StrategyPlanData = {
               "도시 집중 테스트 단계: 멕시코 시티 + 산티아고 관심사 및 유사 잠재 고객 스택",
               "스페인어 우선 크리에이티브: ES 캡션, ES 가사 순간, 후렴구 중심 컷다운",
               "저의도 트래픽 필터링을 위한 세컨드 클릭 전환 최적화",
-              "ES 채널 참여 및 피봇 링크 트래픽으로부터의 리타겟팅 풀",
+              "클리핑 + 크리에이터 참여 및 피봇 링크 트래픽으로부터의 리타겟팅 풀",
               "확장 티어: 포르투갈어 캡션의 브라질 광고 세트, ES 애셋에 대한 유튜브 인스트림",
             ],
           },
@@ -471,7 +472,7 @@ export const eightyTwoMajorRoadmapKorean: StrategyPlanData = {
               "LATAM-5 월간 청취자 및 팔로워 증가 (Chartmetric)",
               "시장별 Trophy Español 스트림 + 원곡 트랙 리프트",
               "미국 비용 기준 대비 도시 및 국가별 유료 성과",
-              "ES 채널 네트워크 성장 및 Laylo ES 리스트 크기",
+              "클리핑 결과물(게시물 + 총 조회수) 및 Laylo ES 리스트 규모",
               "DSP 및 시장별 플레이리스트 추가 및 에디토리얼 상태",
             ],
           },
@@ -498,7 +499,7 @@ export const eightyTwoMajorRoadmapKorean: StrategyPlanData = {
             items: [
               "자체 프로듀싱 K팝 그룹이 유기적으로 자신들을 발견한 지역을 위해 스페인어 버전을 녹음했습니다.",
               "유기적 수치: 마케팅 이전 그룹의 본국 시장과 동등한 LATAM 청취자 규모",
-              "헌신의 신호: 전담 스페인어 채널, 스페인어 CRM, LATAM 우선 크리에이티브",
+              "확약 신호: 스페인어 콘텐츠 대량 생산, 스페인어 CRM 채널, LATAM 우선 크리에이티브",
               "더 큰 그림: 2027년 발매를 향해 그룹의 다음 핵심 지역으로 부상할 LATAM",
             ],
           },
@@ -540,7 +541,7 @@ export const eightyTwoMajorRoadmapKorean: StrategyPlanData = {
             heading: "입증된 플레이북",
             items: [
               "당첨작을 공식 채널로 이관하는 다크 광고 테스트 루프",
-              "팬 채널 네트워크 (미국 + 신규 ES 레인)가 발매 주간까지 완전한 속도로 운영",
+              "미국 팬 채널 네트워크를 릴리즈 주간까지 최대 가동하고, ES 클리핑 채널 추가",
               "Laylo 방송 및 드롭 메커니즘 (두 언어 모두)",
               "우승작에 대한 유료 부스트를 동반한 마이크로 크리에이터 라운드",
               "모든 공급업체에 걸쳐 단일 진실 공급원으로서의 라이브 대시보드 보고",
@@ -684,11 +685,11 @@ export const eightyTwoMajorRoadmapKorean: StrategyPlanData = {
         {
           label: "현지화 + 시드",
           window: "1-3주차",
-          focus: "스페인어(ES) 에셋 팩 완료 (캡션, 가사 에셋, 컷다운). 스페인어 팬 채널 및 Laylo ES 채널 활성화. 크리에이터 브리핑 배포. 기존 'TROPHY' 콘텐츠를 활용하여 멕시코 시티 + 산티아고 타겟에 유료 소셜 광고 테스트 모드 출시, 음원 발매 전 리타겟팅 풀 구축.",
+          focus: "ES 에셋 팩 완료(캡션, 가사 에셋, 컷다운). 스페인어 클리핑 네트워크 브리핑 완료; Laylo ES 채널 라이브. 크리에이터 브리핑 배포. 기존 TROPHY 콘텐츠를 활용하여 멕시코 시티 + 산티아고 타겟 대상 테스트 모드로 유료 소셜 광고 시작, 음반 발매 전 리타겟팅 풀 구축.",
           budget: "~$4,500 / ~$7,000",
           tactics: [
             "유료 테스트 단계: 스페인어(ES) 캡션 포함 광고 소재, 도시별 타겟팅, 두 번째 클릭 최적화",
-            "스페인어(ES) 팬 채널 네트워크 출시 + 첫 Laylo ES 방송",
+            "ES 클리핑 네트워크 첫 게시 웨이브 + 첫 Laylo ES 방송",
             "릴리즈 주간에 맞춰 크리에이터 라운드 브리핑 및 일정 조율 완료",
             "마켓별 DSP 피치 패킷 전달 완료; ES 메타데이터 검증 완료",
           ],
@@ -757,7 +758,7 @@ export const eightyTwoMajorRoadmapKorean: StrategyPlanData = {
           ],
         },
         {
-          name: "ES 팬 채널 + Laylo ES",
+          name: "ES 클리핑 + Laylo ES",
           cells: [
             { weekIndex: 1, intensity: "medium", label: "BUILD" },
             { weekIndex: 2, intensity: "high", label: "LAUNCH" },
@@ -819,12 +820,12 @@ export const eightyTwoMajorRoadmapKorean: StrategyPlanData = {
       weekBreakdowns: [
         { weekIndex: 1, title: "현지화 + 인프라 구축", items: [
           "스페인어 에셋 팩 제작: 기존 마스터에서 캡션, 가사 에셋, 코러스 중심 컷다운 제작.",
-          "스페인어 팬 채널 준비 완료 (예약된 Trophy 브랜드 핸들 포함); Laylo ES 환영 플로우 구축.",
+          "클리핑 네트워크에 ES 에셋 팩 브리핑 완료; Laylo ES 환영 플로우 구축.",
           "시장별 DSP 피치 팩 발송; 배포를 통해 스페인어 메타데이터 및 가사 전달 확인.",
           "크리에이터 최종 후보 확정; 브리프 번역 및 일정 조율 완료.",
         ] },
         { weekIndex: 2, title: "스페인어 채널 라이브 + 유료 테스트", items: [
-          "스페인어 팬 채널 네트워크 출시; 첫 Laylo ES 방송.",
+          "ES 클리핑 네트워크 게시 중; 첫 Laylo ES 방송.",
           "유료 소셜 라이브 테스트 모드: 멕시코 시티 + 산티아고 타겟 대상 스페인어 크리에이티브, 첫날부터 세컨드 클릭 최적화.",
           "음성 메시지 티저 퍼널 스페인어로 라이브.",
         ] },
@@ -855,7 +856,7 @@ export const eightyTwoMajorRoadmapKorean: StrategyPlanData = {
         ] },
         { weekIndex: 8, title: "복합화 + 다각화", items: [
           "플레이리스트 도달 다각화 푸시: EP에 대한 다수의 에디토리얼 및 알고리즘 채널 활용.",
-          "팬 채널 및 크리에이터 성공작으로부터 유료 로테이션 새로고침.",
+          "클리핑 및 크리에이터 당첨자로부터 유료 로테이션 업데이트.",
           "Laylo ES는 미오픈자들에게 재참여 방송.",
         ] },
         { weekIndex: 9, title: "유지", items: [
@@ -894,7 +895,7 @@ export const eightyTwoMajorRoadmapKorean: StrategyPlanData = {
           label: "캠페인 1 / 티어 1",
           budget: "$30,000",
           name: "LATAM Foundation",
-          tagline: "올인. 스페인어 사용 LATAM (MX, CL, PE, CO). 집중적인 유료 광고 + 마이크로 크리에이터 + ES 인프라.",
+          tagline: "총력전. 스페인어 사용 LATAM (MX, CL, PE, CO). 집중 유료 광고 + 마이크로 크리에이터 + 스페인어 클리핑.",
           deployable: "$19,600",
           feeBreakdown: {
             retainer: "$7,500",
@@ -903,9 +904,9 @@ export const eightyTwoMajorRoadmapKorean: StrategyPlanData = {
             mediaManagementDetail: "관리 지출의 15%에 해당하는 미디어 관리",
           },
           breakdown: [
-            { vertical: "유료 소셜 LATAM (TikTok + Meta)", amount: "$12,000" },
+            { vertical: "유료 소셜 LATAM (TikTok + Meta)", amount: "$8,600" },
             { vertical: "LATAM 크리에이터 프로그램 (마이크로 10-15명)", amount: "$6,000" },
-            { vertical: "ES 팬 채널 + Laylo ES", amount: "$1,600" },
+            { vertical: "스페인어 클리핑", amount: "$5,000" },
             { vertical: "CCD 리테이너", amount: "$7,500" },
             { vertical: "미디어 관리 (15%)", amount: "$2,900" },
           ],
@@ -924,10 +925,10 @@ export const eightyTwoMajorRoadmapKorean: StrategyPlanData = {
             mediaManagementDetail: "관리 지출의 15%에 해당하는 미디어 관리",
           },
           breakdown: [
-            { vertical: "유료 소셜 LATAM (TikTok + Meta + YouTube)", amount: "$18,500" },
+            { vertical: "유료 소셜 LATAM (TikTok + Meta + YouTube)", amount: "$15,200" },
             { vertical: "LATAM 크리에이터 프로그램 (마이크로 + 미드 티어 + BR)", amount: "$9,000" },
             { vertical: "LATAM PR + 리액터 프로그램", amount: "$3,500" },
-            { vertical: "ES/PT 팬 채널 + Laylo ES", amount: "$1,700" },
+            { vertical: "스페인어 클리핑 (+ BR 대상 PT)", amount: "$5,000" },
             { vertical: "CCD 리테이너", amount: "$7,500" },
             { vertical: "미디어 관리 (15%)", amount: "$4,800" },
           ],
