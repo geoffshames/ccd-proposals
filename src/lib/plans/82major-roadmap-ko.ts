@@ -1,0 +1,851 @@
+import type { StrategyPlanData } from "../plan-context";
+
+export const eightyTwoMajorRoadmapKorean: StrategyPlanData = {
+  accentColor: "#FD3737",
+  ogImage: "/images/82major-roadmap/og-image.png",
+  language: "ko",
+  languageAlternates: [{ slug: "82major-roadmap", label: "English", code: "EN" }],
+
+  cover: {
+    label: "LATAM 확장 + 로드맵",
+    title: "82MAJOR",
+    subtitle: "Trophy Español LATAM 캠페인, 9월 컴백, 그리고 2027년 상반기 발매까지의 로드맵. 현지화. 집중. 복합적.",
+    partnership: "GREAT M Entertainment × Kakao Entertainment Group × Crowd Control Digital",
+    prepared: "Geoff Shames / 공동 창립자, CCD",
+    date: "2026년 7월",
+    backgroundImage: "/images/82major-roadmap/82major-group.jpg",
+  },
+
+  approveCta: {
+    label: "승인",
+    sentLabel: "전송되었습니다. 저희 팀에서 연락드리겠습니다.",
+    caption: "승인 시 CROWD CONTROL DIGITAL에 알림",
+  },
+
+  sections: [
+    // ===================================================================
+    // 01. Overview / Objective
+    // ===================================================================
+    {
+      type: "overview",
+      number: "01",
+      navLabel: "개요",
+      title: "개요 및 목표",
+      subtitle: "SIGN 캠페인을 통해 입증된 인프라를 기반으로 구축된 Trophy Español의 LATAM 출시 계획으로, 9월 컴백, 4분기 미국 투어 기간, 그리고 2027년 초 발매 일정에 맞춰 순차적으로 진행됩니다.",
+      body: [
+        "GREAT M Entertainment의 요청에 따라 준비되었습니다. 본 계획은 TROPHY의 스페인어 버전을 전담 LATAM 캠페인으로 다루며, 두 가지 예산 수준($20,000 및 $40,000, 총액)으로 제시되고, 해당 캠페인을 전체 발매 아크 안에 배치합니다: 9월 EP, 10월-11월 미국 투어 기간, 1월 싱글, 그리고 2월 EP.",
+        "The strategic case is simple. The SIGN cycle proved that 82MAJOR converts the audience it reaches: Spotify followers grew from roughly 136K to 154K across the campaign while paid and organic discovery ran. Latin America is the largest audience 82MAJOR has never spent a dollar against. The group's five core LATAM markets (Brazil, Mexico, Chile, Peru, Colombia) already hold roughly the same monthly listener volume as South Korea, entirely organically. Trophy Español is the key that turns that latent audience into an owned one, at media costs a fraction of U.S. rates.",
+        "여기에 표시된 예산은 Trophy Español 사이클(~12주)에 맞춰져 있습니다. 9월 EP, 투어 기간, 그리고 2027년 상반기 발매는 각각 동일한 구조로 새로운 예산을 승인받습니다. 본 캠페인이 구축하는 LATAM 인프라(스페인어 팬 채널, LATAM CRM 채널, 활성화된 유료 잠재 고객)는 이러한 모든 사이클에 걸쳐 적용됩니다.",
+      ],
+      supports: {
+        heading: "본 계획이 지원하는 사항",
+        items: [
+          "Trophy Español 출시 및 LATAM 시장 진출",
+          "9월 EP 컴백 (SIGN 이후 사이클)",
+          "10월-11월 미국 투어 기간 증폭",
+          "2027년 상반기 아크: 1월 싱글 및 2월 EP",
+        ],
+      },
+      goals: {
+        heading: "주요 목표",
+        items: [
+          "LATAM 리스너 성장: LATAM-5 전역의 월간 리스너 약 36.5K에서 두 사이클 내 75K+ 달성",
+          "자체 LATAM 팬덤: 스페인어 팬 채널 및 릴리스 전반에 걸쳐 누적되는 LATAM CRM 레인",
+          "카탈로그 활용: \"Trophy Español\"은 발매 9개월 후에도 여전히 유기적으로 스트리밍되는 트랙을 연장합니다.",
+          "반복 가능한 구조: 향후 모든 릴리스는 한계 비용으로 동일한 LATAM 머신에 투입됩니다.",
+        ],
+      },
+      footnote: "\"Trophy Español\"의 릴리스 수단(EP 이전의 독립형 싱글 또는 EP 트랙)은 본 계획에서 유연합니다. 캠페인 그리드는 확정된 발매일에 고정되며, 두 시나리오 모두 미디어 플라이트 및 타임라인 섹션에서 다룹니다.",
+    },
+
+    // ===================================================================
+    // 02. Core Strategy + Philosophy
+    // ===================================================================
+    {
+      type: "philosophy",
+      number: "02",
+      navLabel: "철학",
+      title: "핵심 전략 및 철학",
+      thesis: "82MAJOR의 전환 머신은 작동합니다: 그룹이 도달하는 것은 유지됩니다. 다음 달러는 도달 비용이 가장 저렴하고 이미 잠재 고객이 존재하는 곳에서 도달 범위를 구매해야 합니다. 이미 청취 중인 LATAM 시장을 겨냥한 스페인어 음반은 현재 이 그룹에게 가장 높은 레버리지를 제공하는 발견 플레이입니다.",
+      hierarchy: [
+        {
+          label: "현지화 (언락)",
+          description: "스페인어 버전은 참신한 자산이 아닙니다. 이는 LATAM 잠재 고객과 LATAM 에디터가 보상하는 신호입니다: 이 그룹은 우리에게 말하고 있습니다. 스페인어 보컬 전달, 스페인어 캡션 및 가사 자산, 그리고 ES 네이티브 콘텐츠 레인은 82MAJOR를 LATAM 팬들이 수입하는 그룹에서 그들을 위해 나타나는 그룹으로 바꿉니다. 업계 방향은 이 레인을 확인시켜 줍니다: 가장 큰 K팝 회사들은 핵심 전략으로 라틴 중심 그룹과 스페인어 릴리스를 구축하고 있으며, 부수적인 베팅이 아닙니다.",
+        },
+        {
+          label: "팬덤 (기반, 상시)",
+          description: "미국 캠페인이 실행되는 것과 동일한 누적 레이어를 스페인어로 구축: LATAM 중심 팬 채널, 기존 Laylo 스택의 스페인어 CRM 레인, 그리고 글로벌 K팝에서 가장 참여적인 팬 문화에 맞춰진 팬 참여 메커니즘. 한 번 구축하면 모든 미래 사이클에 걸쳐 적용됩니다.",
+        },
+        {
+          label: "디지털 (증폭기)",
+          description: "유료 소셜 및 크리에이터는 밀도가 가장 높은 곳(멕시코 시티, 산티아고)과 비용이 가장 낮은 곳에 집중됩니다. LATAM CPM은 미국 요금의 일부로 운영되므로, 모든 유료 달러는 도달 범위를 여러 배로 구매합니다. SIGN 캠페인의 다크 광고 테스트 루프는 변경 없이 적용됩니다: 승자를 조용히 찾은 다음 공식 채널에 승자를 전달합니다.",
+        },
+        {
+          label: "DSP + PR (발견 및 신뢰도)",
+          description: "K팝 에디토리얼 지원이 강력하고 현지화된 음반이 자격 자산인 LATAM 시장을 겨냥한 에디토리얼 및 플레이리스트 인프라. PR은 모멘텀 앞에 오는 것이 아니라 위에 탑니다: 스페인어 음악 미디어 및 크리에이터 반응자는 음반이 움직이기 시작하면 증폭됩니다.",
+        },
+      ],
+      messaging: [
+        "LATAM 인프라는 노래에 구애받지 않습니다. \"Trophy Español\"로 출시되며 9월 EP, 투어 기간, 그리고 2027년의 모든 릴리스에 서비스를 제공합니다.",
+        "집중이 커버리지를 이깁니다. 처음에는 두 도시(멕시코 시티, 산티아고), 총 다섯 시장, 확장 티어에 브라질 추가.",
+        "사이클별 예산, 단일 구조. 각 릴리스 창은 동일한 시스템에 대한 새로운 지출을 승인합니다.",
+        "모든 추천은 벤치마킹됩니다: 82MAJOR의 LATAM 점유율이 현재 어디에 있는지, 동종 그룹이 어디에 있는지, 그리고 격차를 해소하는 것이 무엇인지.",
+      ],
+      footnote: "기초적인 LATAM 지출은 자체 인프라를 구축합니다. 앰플리파이어 지출은 릴리스 일정에 맞춰 조정됩니다.",
+    },
+
+    // ===================================================================
+    // 03. The LATAM Opportunity
+    // ===================================================================
+    {
+      type: "audience",
+      number: "03",
+      navLabel: "LATAM",
+      title: "LATAM 기회",
+      intro: "82MAJOR의 5개 핵심 LATAM 시장은 현재 월간 리스너 약 36.5K명(Chartmetric, 2026년 7월 기준)을 보유하고 있으며, 이는 한국과 거의 동일한 수준으로 LATAM 마케팅 없이 구축되었습니다. 격차가 곧 기회입니다: LATAM은 82MAJOR의 리스닝 지리에서 약 7%를 차지하는 반면, ATEEZ는 약 11%, KATSEYE는 약 12%, Stray Kids는 약 24%를 차지하며, Stray Kids의 경우 멕시코는 세계 2위 국가입니다. 또한 라틴 아메리카는 전 세계적으로 가장 빠르게 성장하는 음반 시장(+17.1% in 2025)이며, 브라질과 멕시코는 이제 세계 10위권 시장입니다. 이러한 비율은 초기 유료 타겟팅과 LATAM 채널 네트워크의 콘텐츠 입지를 설정합니다.",
+      metrosLabel: "주요 도시",
+      metros: [
+        { name: "멕시코시티, MX" },
+        { name: "산티아고, CL" },
+        { name: "리마, PE" },
+        { name: "보고타, CO" },
+        { name: "상파울루, BR" },
+        { name: "몬테레이, MX", tier: "secondary" },
+        { name: "과달라하라, MX", tier: "secondary" },
+        { name: "리우데자네이루, BR", tier: "secondary" },
+        { name: "부에노스아이레스, AR", tier: "secondary" },
+        { name: "메데인, CO", tier: "secondary" },
+      ],
+      ageDistribution: [
+        { bracket: "16-24", weight: 52 },
+        { bracket: "25-34", weight: 30 },
+        { bracket: "35-44", weight: 13 },
+        { bracket: "45+", weight: 5 },
+      ],
+      genderDistribution: { female: 70, male: 30 },
+      similarArtists: [
+        "Stray Kids",
+        "ATEEZ",
+        "TWICE",
+        "KATSEYE",
+        "NCT 127",
+        "ENHYPEN",
+        "BOYNEXTDOOR",
+        "RIIZE",
+        "ZEROBASEONE",
+        "XG",
+      ],
+      genres: [
+        "K-Pop",
+        "K-R&B",
+        "Pop en Español",
+        "Latin Pop",
+      ],
+      platformSignals: [
+        { platform: "Spotify", note: "LATAM-5 (BR, MX, CL, PE, CO) 월간 리스너 약 36.5K, 한국 볼륨과 유사, 완전 유기적. 산티아고는 상파울루와 멕시코시티를 앞서며 LATAM 청취 도시 1위를 차지했습니다. TROPHY는 발매 9개월 후에도 여전히 의미 있는 스트리밍을 기록하고 있으며, 카탈로그 내에서 가장 강력한 현지화 후보입니다." },
+        { platform: "TikTok", note: "LATAM의 CPM은 일반적으로 미국 $10-20에 비해 $1-3 수준입니다. 멕시코, 브라질, 칠레는 세계에서 가장 활발한 K팝 댄스 커버 및 팬 편집 커뮤니티를 보유하고 있습니다. 본 캠페인의 주요 발견 엔진입니다." },
+        { platform: "YouTube", note: "LATAM은 YouTube 중심의 음악 지역입니다. 스페인어 가사 비디오와 MV 컷다운은 핵심 자산이며, 저비용 인스트림 미디어는 미국과 비교할 수 없을 정도로 유료 광고 범위를 확장합니다." },
+        { platform: "Shazam", note: "실제 발견 프록시입니다. 캠페인 기간 동안 도시별 LATAM Shazam 성장은 향후 LATAM 라이브 공연 기획 결정의 선행 지표입니다." },
+      ],
+      footnote: "Chartmetric 및 플랫폼 데이터 기반의 방향성 타겟팅, 2026년 7월. 유료 테스트 단계 후 분할 재조정. 성장 목표: 두 주기 내에 LATAM-5 월간 리스너를 약 36.5K에서 75K 이상으로 증대 (티어별 속도 조절).",
+    },
+
+    // ===================================================================
+    // 04. Campaign Structure
+    // ===================================================================
+    {
+      type: "structure",
+      number: "04",
+      navLabel: "구조",
+      title: "캠페인 구조",
+      intro: "Trophy Español 사이클(~12주)을 위한 두 가지 올인 예산 수준. CCD 리테이너 및 미디어 관리는 예산 외 추가가 아닌 예산 내에 포함됩니다. Foundation은 스페인어 사용 LATAM(멕시코, 칠레, 페루, 콜롬비아)에 전적으로 집중합니다. Expansion은 포르투갈어 자막 크리에이티브, 더 큰 규모의 크리에이터 프로그램, LATAM 음악 PR 및 전체 DSP 푸시를 통해 브라질을 추가합니다. 9월 EP 및 이후 모든 릴리스는 동일한 구조로 새로운 예산을 승인합니다.",
+      tiers: [
+        {
+          label: "Tier 1",
+          budget: "$20,000",
+          name: "LATAM Foundation",
+          goal: "Trophy Español을 스페인어권 LATAM 시장에 출시하며, 집중적인 유료 미디어(멕시코시티 + 산티아고 우선), 마이크로 크리에이터 라운드, 스페인어 팬 채널, LATAM CRM 레인을 활용합니다. 시장 반응을 입증하고 9월 EP 출시 시 따뜻한 반응을 얻을 잠재 고객층을 구축합니다.",
+          includes: [
+            "유료 소셜 LATAM (TikTok + Meta), MX + CL에 집중하며 PE + CO로 확장",
+            "8-10명의 LATAM 마이크로 크리에이터 (댄스 커버, 팬 편집, 반응 콘텐츠)",
+            "스페인어 팬 채널 네트워크 + Laylo ES 레인",
+            "ES 메타데이터 포지셔닝을 활용한 DSP 플레이리스트 피칭",
+            "당첨작을 공식 채널로 이관하는 다크 광고 테스트 루프",
+            "CCD 전략적 감독, 실시간 대시보드를 통한 주간 보고",
+          ],
+        },
+        {
+          label: "티어 2",
+          budget: "$40,000",
+          name: "LATAM 확장",
+          goal: "Foundation의 모든 것을 포함하며, 가용 미디어 비중의 약 2.6배에 브라질을 추가합니다. 미드 티어 크리에이터, 스페인어 음악 PR 및 리액터 시딩, YouTube 인스트림 광고, 그리고 전체 LATAM DSP 에디토리얼 푸시를 추가합니다. Trophy Español을 단순한 테스트가 아닌 진정한 LATAM의 순간으로 만들기 위해 구축되었습니다.",
+          featured: true,
+          includes: [
+            "LATAM Foundation의 모든 것",
+            "브라질 추가: 포르투갈어 자막 크리에이티브 + BR 크리에이터 시딩",
+            "마이크로 라운드에 추가되는 2-3명의 미드 티어 LATAM 크리에이터",
+            "스페인어 음악 PR + YouTube 리액터 프로그램",
+            "ES 가사 비디오 및 MV 에셋에 대한 YouTube 인스트림 광고",
+            "Expanded DSP program across Spotify, YouTube Music, Apple Music, Deezer (BR)",
+          ],
+        },
+      ],
+    },
+
+    // ===================================================================
+    // 05. Vertical 1: LATAM Fandom & Infrastructure
+    // ===================================================================
+    {
+      type: "vertical",
+      number: "05",
+      navLabel: "팬덤",
+      title: "버티컬 1 / LATAM 팬덤 & 인프라",
+      philosophy: "스페인어로 구축된 복합적인 기반입니다. LATAM K팝 팬덤은 세계에서 가장 참여도가 높으며, 이를 활용할 수 있는 인프라가 존재합니다. (임대하는 것이 아니라)",
+      subBlocks: [
+        {
+          label: "A",
+          title: "스페인어 팬 채널 네트워크",
+          objective: "미국 캠페인의 팬 채널 모델을 ES 네이티브 레인으로 확장: TikTok + Instagram 채널에서 스페인어 캡션 편집본, 번역된 가사 콘텐츠, LATAM 특정 팬 모먼트를 게시하여 LATAM의 관심이 아티스트 팀이 통제하는 채널로 유입되도록 합니다.",
+          strategy: "기존 네트워크와 함께 전용 스페인어 채널을 출시합니다 (예약된 Trophy 브랜드 핸들이 여기서 활성화됩니다). 콘텐츠 믹스: 스페인어 자막 공연 편집본, ES 가사 비주얼라이저, 멤버 중심 편집본, LATAM 팬 문화 참여 형식 (댄스 커버 듀엣, 팬 아트 기능). 오직 사람이 번역한 스페인어만 사용합니다. 기계 번역된 캡션은 이 청중에게 즉시 진정성 없게 읽힙니다.",
+          components: {
+            heading: "네트워크의 기능",
+            items: [
+              "스페인어 자막 및 LATAM 네이티브 프레이밍으로 기존 콘텐츠 재활용",
+              "Trophy Español 관련 ES 가사 및 발음 콘텐츠 게시",
+              "LATAM 팬 참여 형식 운영 (커버, 듀엣, 팬 아트, 스트리밍 파티)",
+              "9월 EP 출시 전 LATAM 팬을 자체 채널로 유입",
+              "성과가 좋은 테마를 유료 크리에이티브 로테이션에 투입",
+            ],
+          },
+          kpis: [
+            "ES 채널 네트워크의 팔로워 성장",
+            "미국 채널 기준 대비 참여율",
+            "공식 게시물에 대한 스페인어 댓글 비율 (현지화 적용)",
+            "캠페인 사운드에 대한 UGC 볼륨",
+          ],
+        },
+        {
+          label: "B",
+          title: "Laylo ES: LATAM CRM 레인",
+          objective: "기존 Laylo CRM에 스페인어 레인을 추가하여 LATAM 팬들이 첫날부터 자신들의 언어로 드롭 알림, 방송 및 출시 메커니즘을 받을 수 있도록 합니다.",
+          strategy: "기존 스택에 스페인어 환영 흐름, 스페인어 방송 템플릿 및 LATAM 시간대에 맞춘 발송. 음성 메일 퍼널 형식은 자연스럽게 확장됩니다: Trophy Español을 위한 스페인어 티저 라인은 LATAM 팬들에게 전화 연결 순간을 제공하고 ES 레인으로 번호를 수집합니다. 나중에 투어 라우팅 정보 파악을 위해 국가 및 도시별로 세분화합니다.",
+          components: {
+            heading: "구성 요소",
+            items: [
+              "기존 Laylo 스택의 스페인어 환영 흐름 + 방송 템플릿",
+              "Trophy Español 출시 순간을 위한 ES 드롭 알림",
+              "향후 라우팅 결정을 위한 국가 및 도시 세분화 (MX, CL, PE, CO, BR)",
+              "스페인어 음성 메일 티저 퍼널 (전화 연결, 번호 수집, 자동 문자 등록)",
+              "사전 승인된 ES 회신 세트로, 레이블이 인바운드에 안전하게 참여할 수 있도록 합니다.",
+            ],
+          },
+          kpis: [
+            "LATAM 구독자 기반: 사이클 내 3천 명 이상",
+            "ES 방송 오픈율은 미국 기준선 이상입니다.",
+            "ES 드롭 알림에 대한 출시일 클릭률",
+          ],
+        },
+        {
+          label: "C",
+          title: "LATAM 팬 참여 메커니즘",
+          objective: "해당 지역의 참여적인 팬 문화를 가시적인 모멘텀으로 전환합니다: 스트리밍 파티, 커버 챌린지, 그리고 에디토리얼, 크리에이터, 언론이 볼 수 있는 팬 프로젝트 에너지를 활용합니다.",
+          tactics: [
+            "Release-week streaming parties hosted with LATAM fan bases (Stationhead + Spotify group sessions)",
+            "크리에이터 라운드를 통해 시작된 스페인어 가사 챌린지 및 댄스 커버 챌린지",
+            "팬 프로젝트 인정: 조직에 대한 보상으로 LATAM 팬 프로젝트의 공식 리포스트",
+            "해당 지역이 중요하다는 신호를 보내기 위해 LATAM에 가중치를 둔 경품 (사인 아이템, 영상 통화 슬롯)",
+            "모든 곳에 현지화된 CTA: 스페인어로 된 플레이리스트 추가 및 팔로우 프롬프트",
+          ],
+        },
+      ],
+      footnote: "한 번 구축하면 계속 사용 가능: ES 네트워크 및 CRM 레인은 9월 EP, 투어 기간, 그리고 2027년의 모든 릴리스에 활용됩니다.",
+    },
+
+    // ===================================================================
+    // 06. Vertical 2: LATAM Digital Marketing
+    // ===================================================================
+    {
+      type: "vertical",
+      number: "06",
+      navLabel: "디지털",
+      title: "버티컬 2 / LATAM 디지털 마케팅",
+      philosophy: "가장 저렴한 도달 범위를 목표로 하는 증폭기입니다. LATAM CPM은 이 캠페인에 구조적 이점을 제공합니다: 동일한 달러로 미국에서 구매하는 것보다 여러 배의 노출을 구매할 수 있습니다.",
+      subBlocks: [
+        {
+          label: "A",
+          title: "유료 소셜: 집중 지리 전략",
+          objective: "CPM 이점을 리스너 성장으로 전환하기 위해 가장 밀도가 높은 두 도시(멕시코 시티, 산티아고)에 먼저 지출을 집중하고, 크리에이티브 우승작이 등장함에 따라 전국(MX, CL, PE, CO) (및 확장 티어의 BR)으로 확대합니다.",
+          strategy: "TikTok과 Meta가 선도합니다. 1단계는 도시 수준의 잠재 고객을 대상으로 다크 광고 테스트 루프를 실행합니다: 여러 스페인어 캡션 크리에이티브, 낮은 일일 예산, 실제 의도를 필터링하기 위한 두 번째 클릭 최적화 (SIGN 캠페인과 동일한 전환 규율). 우승작은 전국 잠재 고객 및 LATAM 참여를 기반으로 구축된 유사 잠재 고객으로 확장됩니다. 공식 채널은 검증된 우승작을 유기적으로 게시하여 유료 미디어가 도달할 수 없는 잠재 고객을 전환합니다.",
+          components: {
+            heading: "구성 요소",
+            items: [
+              "도시 집중 테스트 단계: 멕시코 시티 + 산티아고 관심사 및 유사 잠재 고객 스택",
+              "스페인어 우선 크리에이티브: ES 캡션, ES 가사 순간, 후렴구 중심 컷다운",
+              "저의도 트래픽 필터링을 위한 세컨드 클릭 전환 최적화",
+              "ES 채널 참여 및 피봇 링크 트래픽으로부터의 리타겟팅 풀",
+              "확장 티어: 포르투갈어 캡션의 브라질 광고 세트, ES 애셋에 대한 유튜브 인스트림",
+            ],
+          },
+          kpis: [
+            "고의도 클릭당 비용 대 미국 캠페인 기준선",
+            "75,000+ 2회 주기 목표 대비 라탐 월간 리스너 성장",
+            "Spotify follower adds from LATAM-5 markets",
+            "미국 상당 지출 대비 포착된 CPM 델타",
+          ],
+        },
+        {
+          label: "B",
+          title: "라탐 크리에이터 프로그램",
+          objective: "K팝 발견이 실제로 일어나는 라탐 크리에이터 생태계 내에 트로피 에스파뇰을 배치: 멕시코, 칠레, 페루, 콜롬비아(확장 시 브라질 포함)의 댄스 커버 크루, 팬 편집 계정, 반응 크리에이터.",
+          strategy: "기반은 8-10명의 마이크로 크리에이터(높은 신뢰도, 커뮤니티 네이티브, 낮은 게시물당 비용)를 운영합니다. 확장은 도달 범위 급증과 브라질 시딩 웨이브를 위해 2-3명의 미드 티어 크리에이터를 추가합니다. 모든 브리프는 챌린지 중심입니다: 스페인어 코러스가 후크이고, 댄스 포인트가 형식입니다. 우승자는 크리에이터 자신의 게시물 뒤에 유료 지출로 홍보됩니다.",
+          components: {
+            heading: "프로그램 디자인",
+            items: [
+              "마이크로 라운드: 라탐 K팝 커뮤니티에 내장된 댄스 커버 + 팬 편집 크리에이터",
+              "미드 티어 라운드 (확장): 출시 주간 급증을 위한 광범위한 도달 크리에이터",
+              "스페인어 코러스와 반복 가능한 댄스 포인트를 기반으로 한 챌린지 브리프",
+              "우승 크리에이터 게시물에 대한 유료 홍보 (크레딧 및 모멘텀은 캠페인에 누적)",
+              "네트워크를 재점화하기 위해 9월 EP 주간에 개최된 두 번째 크리에이터 웨이브",
+            ],
+          },
+          kpis: [
+            "브리프 벤치마크 대비 크리에이터 게시물 조회수 및 참여도",
+            "캠페인 사운드에 대한 UGC 모방 볼륨",
+            "크리에이터 창에 기인하는 팔로워 및 리스너 증가",
+          ],
+        },
+        {
+          label: "C",
+          title: "콘텐츠 내러티브: 스페인어 스토리",
+          objective: "Trophy Español을 번역이 아닌 '헌신'으로 프레임화하십시오. 스토리는 저절로 써집니다: 자체 프로듀싱 그룹이 팬들을 위해 자신들의 대표곡 중 하나를 스페인어로 재녹음했습니다. 이 팬들은 아무런 대가 없이 응원해 주었습니다.",
+          tactics: [
+            "멤버 스페인어 학습 콘텐츠: 발음 연습, 가사 의미, 라틴 아메리카 팬들에게 직접 전하는 메시지",
+            "스페인어 보컬 세션의 녹음 비하인드 콘텐츠",
+            "팬 반응 형식: 멤버들이 라틴 아메리카 팬들의 커버 곡 및 프로젝트에 반응하는 모습",
+            "그룹의 실제 유기적인 라틴 아메리카 성장(팬들이 이뤄낸 성과)에 기반한 릴리스 내러티브",
+          ],
+        },
+      ],
+      footnote: "다크 광고 루프, 두 번째 클릭 최적화, 그리고 당첨작의 유기적 전환은 미국 라이브 캠페인에서 변경 없이 그대로 이어집니다. 이미 시스템은 가동 중이며, 이를 더 저렴한 시장으로 향하게 합니다.",
+    },
+
+    // ===================================================================
+    // 07. Vertical 3: DSP Strategy LATAM
+    // ===================================================================
+    {
+      type: "vertical",
+      number: "07",
+      navLabel: "DSP",
+      title: "버티컬 3 / DSP 전략 라틴 아메리카",
+      philosophy: "발견 레이어. 스페인어 릴리스는 라틴 아메리카 에디토리얼 팀이 K-pop 그룹을 글로벌 K-pop 범주를 넘어 지원하는 데 필요한 자격 요건입니다.",
+      subBlocks: [
+        {
+          label: "A",
+          title: "에디토리얼 및 플레이리스트 포지셔닝",
+          objective: "Trophy Español을 사용하여 한국어 릴리스로는 열 수 없는 라틴 아메리카 에디토리얼 채널을 개척하십시오: 글로벌 K-pop 생태계와 함께 스페인어 및 라틴 아메리카 현지 플레이리스트를 활용합니다.",
+          strategy: "시장별 현지화된 피치 패킷: 라틴 아메리카 유기적 성장 스토리, 스페인어 음원, 그리고 그 뒤에 숨겨진 캠페인 의지. 우선순위는 청취자 밀집도에 따라 멕시코, 칠레, 페루, 콜롬비아, 그리고 확장 단계에서 브라질 순으로 진행됩니다. 전달 시 스페인어 메타데이터 및 크레딧을 정확하게 기재하여 음원이 첫날부터 스페인어권 에디토리얼 고려 대상이 되도록 합니다.",
+          components: {
+            heading: "구성 요소",
+            items: [
+              "Spotify LATAM editorial pitching (K-pop verticals + ES pop and viral lanes)",
+              "YouTube Music and Apple Music LATAM playlist pitching",
+              "Deezer 브라질 확장 단계 푸시 (브라질 내 높은 점유율)",
+              "스페인어권 메타데이터, 크레딧, 가사 전달 사항은 릴리스 전에 검증됩니다.",
+              "인용 가능한 시장 성과를 위한 릴리스 주간에 맞춰진 iTunes 라틴 아메리카 차트 푸시",
+            ],
+          },
+          kpis: [
+            "릴리스 월 내 라틴 아메리카 에디토리얼 추가",
+            "플레이리스트 도달 범위 다각화 (단일 플레이스먼트에 의존하지 않음)",
+            "PR 레이어를 위한 멕시코 / 칠레 / 페루 iTunes 차트 최고 순위",
+          ],
+        },
+        {
+          label: "B",
+          title: "카탈로그 브릿지 & 알고리즘 신호",
+          objective: "스페인어 버전을 활용하여 원곡 TROPHY와 그 뒤에 있는 카탈로그를 재활성화합니다. 현지화된 버전은 청취자들이 이전 트랙을 탐색하면서 원곡 트랙을 일상적으로 끌어올립니다.",
+          tactics: [
+            "Trophy Español과 TROPHY를 패키징, 플레이리스트, 캔버스 에셋에서 상호 연결",
+            "두 가지 버전과 멜로딕 카탈로그 레인을 포함하는 ES 제목의 아티스트 플레이리스트 큐레이션",
+            "알고리즘 프라이밍: 해당 지역의 라디오 및 자동 재생 신호를 강화하기 위한 LATAM 저장 및 플레이리스트 추가 CTA",
+            "실제 발견 지표로서 LATAM 도시에서의 Shazam 및 검색 모니터링",
+          ],
+        },
+        {
+          label: "C",
+          title: "측정",
+          objective: "단일 진실 공급원. 미국 캠페인이 이미 제공하는 것과 동일한 라이브 대시보드 내 LATAM 성과 보고서이며, LATAM-5 분할은 매주 확인할 수 있습니다.",
+          components: {
+            heading: "주간 보고",
+            items: [
+              "LATAM-5 월간 청취자 및 팔로워 증가 (Chartmetric)",
+              "시장별 Trophy Español 스트림 + 원곡 트랙 리프트",
+              "미국 비용 기준 대비 도시 및 국가별 유료 성과",
+              "ES 채널 네트워크 성장 및 Laylo ES 리스트 크기",
+              "DSP 및 시장별 플레이리스트 추가 및 에디토리얼 상태",
+            ],
+          },
+        },
+      ],
+      footnote: "DSP 작업은 리테이너 내에서 운영되며, 사용되는 플레이리스트 지출은 배포 가능한 예산에서 나오며 대시보드에 라인별로 공개됩니다.",
+    },
+
+    // ===================================================================
+    // 08. Vertical 4: PR & Media LATAM
+    // ===================================================================
+    {
+      type: "vertical",
+      number: "08",
+      navLabel: "PR",
+      title: "버티컬 4 / PR & 미디어 LATAM",
+      philosophy: "음원이 움직이기 시작하면 증폭. 스페인어 음악 미디어는 현지화 스토리를 보상하며, LATAM 리액터 문화는 그 자체로 유통 채널입니다.",
+      subBlocks: [
+        {
+          label: "A",
+          title: "LATAM 미디어가 이해하는 스토리",
+          components: {
+            heading: "내러티브 앵커",
+            items: [
+              "자체 프로듀싱 K팝 그룹이 유기적으로 자신들을 발견한 지역을 위해 스페인어 버전을 녹음했습니다.",
+              "유기적 수치: 마케팅 이전 그룹의 본국 시장과 동등한 LATAM 청취자 규모",
+              "헌신의 신호: 전담 스페인어 채널, 스페인어 CRM, LATAM 우선 크리에이티브",
+              "더 큰 그림: 2027년 발매를 향해 그룹의 다음 핵심 지역으로 부상할 LATAM",
+            ],
+          },
+        },
+        {
+          label: "B",
+          title: "채널 및 타겟",
+          tactics: [
+            "스페인어 음악 및 K-컬처 언론 (주요 음악 매체의 LATAM판, 지역 K-pop 미디어)",
+            "YouTube 리액터 프로그램: MX, CL, PE, CO 전역에 첫 감상 및 MV 반응 영상 배치",
+            "모멘텀 구축에 따른 LATAM 엔터테인먼트 및 팝 컬처 팟캐스트 및 쇼",
+            "9월 컴백 프레스 기간 중 LATAM 매체와의 전화 및 화상 인터뷰",
+          ],
+        },
+        {
+          label: "C",
+          title: "단계별 범위",
+          objective: "Foundation 단계에서는 PR이 운영됩니다: 스토리 에셋 준비, 인바운드 처리, 리액터 유기적 배치. Expansion 단계에서는 PR에 자금이 지원됩니다: 유료 리액터 배치, 광범위한 아웃리치, 조정된 발매 주간 커버리지.",
+        },
+      ],
+      footnote: "PR 지출은 Expansion 단계에 집중됩니다. Foundation 단계에서는 스토리 에셋이 존재하고 성과가 증폭되지만, 아웃리치는 유기적 모멘텀에 의존합니다.",
+    },
+
+    // ===================================================================
+    // 09. September Comeback: The Post-SIGN Plan
+    // ===================================================================
+    {
+      type: "vertical",
+      number: "09",
+      navLabel: "9월",
+      title: "9월 컴백 / SIGN 이후 계획",
+      philosophy: "LATAM 캠페인은 9월 EP의 우회로가 아닙니다. EP가 안착할 따뜻한 관객입니다. 이 섹션은 SIGN 캠페인이 증명한 것을 바탕으로 형성된 컴백 주기를 위한 단기 계획입니다.",
+      intro: "9월 EP는 본 문서가 수립한 구조에 따라 자체 예산을 승인합니다. 이어지는 내용은 해당 주기의 전략적 형태이므로 LATAM 캠페인, EP, 그리고 4분기 투어 기간이 하나의 연속적인 계획으로 읽히도록 합니다.",
+      subBlocks: [
+        {
+          label: "A",
+          title: "SIGN에서 이어지는 것",
+          components: {
+            heading: "입증된 플레이북",
+            items: [
+              "당첨작을 공식 채널로 이관하는 다크 광고 테스트 루프",
+              "팬 채널 네트워크 (미국 + 신규 ES 레인)가 발매 주간까지 완전한 속도로 운영",
+              "Laylo 방송 및 드롭 메커니즘 (두 언어 모두)",
+              "우승작에 대한 유료 부스트를 동반한 마이크로 크리에이터 라운드",
+              "모든 공급업체에 걸쳐 단일 진실 공급원으로서의 라이브 대시보드 보고",
+            ],
+          },
+        },
+        {
+          label: "B",
+          title: "EP 관련 변경 사항",
+          components: {
+            heading: "SIGN 캠페인 학습을 통한 개선 사항",
+            items: [
+              "사전 저장(Pre-save) 메커니즘 재도입: Laylo 기반의 EN 및 ES 사전 저장 흐름을 통한 실제적인 사전 발매 기간 운영",
+              "발매일 전 크리에이티브 테스트: 사전 저장 기간 동안 광고 크리에이티브 및 캡션 검증을 통해 발매 주차에는 테스트가 아닌 확장에 집중",
+              "플레이리스트 도달 범위 다각화: EP 캠페인은 단일 주요 플레이스먼트에 의존하기보다 여러 에디토리얼 및 알고리즘 채널 구축",
+              "EP 전체 트랙 모니터링 매트릭스: 첫날부터 모든 트랙 모니터링을 통해 B-사이드 트랙의 유기적 인기가 몇 주가 아닌 며칠 내에 예산 지원을 받을 수 있도록 함",
+            ],
+          },
+        },
+        {
+          label: "C",
+          title: "4분기 투어 기간 증폭 (10월-11월)",
+          objective: "캠페인의 오프라인(IRL) 엔진으로 계획된 4분기 미국 투어 일정을 활용합니다. 2025년 투어 당시, 비활동 카탈로그 트랙들이 투어 기간 주간 스트림 수치가 기준치 대비 몇 배로 급증했습니다. 4분기 기간은 EP 규모에서 이러한 효과를 발휘하도록 설계되어야 합니다.",
+          tactics: [
+            "각 투어 도시 일정에 맞춰 시장별 유료 홍보 진행, 티켓 페이지 및 공연장 지역 타겟 오디언스 리타겟팅",
+            "도시별 라디오 및 언론 인터뷰 클립을 거의 실시간으로 지오타겟팅하여 활용",
+            "공연장 현장 확보: 모든 공연장에서 Laylo 가입 순간을 포착하여 양국어 CRM으로 전송",
+            "투어 콘텐츠 파이프라인을 팬 채널 네트워크 및 EP 유료 크리에이티브 로테이션에 공급",
+            "11월 동부 해안 프레스 홍보 기간을 투어 일정과 조율",
+          ],
+        },
+        {
+          label: "D",
+          title: "컴백 기간 중 LATAM 시장 공략",
+          objective: "EP 사이클 전반에 걸쳐 ES 인프라 지속 운영: 컴백 크리에이티브는 첫날 현지화, ES 사전 저장 흐름은 병행 운영, 활성화된 LATAM 유료 오디언스는 EP 발매 즉시 접근 가능",
+        },
+      ],
+      footnote: "9월 사이클 예산은 EP 구성 확정 후 별도 승인됩니다. 구조, 공급업체, 인프라는 본 캠페인에서 이미 구축되어 있습니다.",
+    },
+
+    // ===================================================================
+    // 10. The 2027 Horizon
+    // ===================================================================
+    {
+      type: "vertical",
+      number: "10",
+      navLabel: "2027",
+      title: "2027 Horizon / 1월 싱글 + 2월 EP",
+      philosophy: "장기 계획은 동일한 구조로 누적됩니다. 각 사이클은 이전 사이클의 인프라, 활성화된 오디언스, 학습 내용을 계승합니다.",
+      subBlocks: [
+        {
+          label: "A",
+          title: "1월 싱글: 준비 단계",
+          objective: "1월 싱글은 그룹 역사상 가장 강력한 포지션에서 출시됩니다: 미국 및 LATAM 팬 인프라 총동원, 4분기 투어 규모의 확보된 오디언스, 12월 송캠프를 통한 콘텐츠 공급.",
+          components: {
+            heading: "1월 사이클을 견인하는 요소",
+            items: [
+              "12월 LA 송캠프 결과 및 A리스트 R&B 프로듀서 세션을 통해 제작된 신규 레코드",
+              "4분기 투어 기간 중 잠재 고객 확보 (EN 및 ES 리타겟팅 풀 + CRM 리스트)",
+              "월간 리스너 증가에 따라 기존 단계에서 발전하는 피처링 전략",
+              "LATAM 시장 레인 완전 가동: 싱글은 출시 첫날부터 현지화되거나 스페인어권 대상 크리에이티브와 함께 출시됩니다.",
+            ],
+          },
+        },
+        {
+          label: "B",
+          title: "2월 EP: 복합적 검증 시점",
+          objective: "2월 EP는 구조가 스스로를 증명하는 시점입니다. 모든 버티컬이 두 지역에서 동시에 운영되며, 82MAJOR를 3티어 최상단에서 100만+ 월간 리스너 밴드로 이동시키려는 궤적 목표를 달성합니다.",
+          components: {
+            heading: "검증 시점 지표",
+            items: [
+              "2티어 목표 대비 글로벌 월간 리스너 궤적",
+              "11-24% 동종 업계 밴드 대비 LATAM-5 청취 지역 점유율",
+              "자체 보유 고객: EN + ES 통합 CRM 규모 및 참여도",
+              "이전 EP 대비 첫 주 성과 (팬덤 깊이 측정)",
+            ],
+          },
+        },
+        {
+          label: "C",
+          title: "LATAM 라이브 옵션",
+          objective: "Trophy Español 사이클이 검증된다면 (리스너 성장, ES CRM 규모, Shazam 도시 신호), 2027년 LATAM 팬미팅 또는 투어는 가장 높은 레버리지를 가진 전환 플레이가 될 것입니다. LATAM 점유율 20% 이상을 보유한 동종 그룹들은 라이브 활동을 통해 이를 구축했으며, 이번 캠페인의 데이터는 어떤 도시가 투어 경로를 정당화하는지 정확히 알려줍니다.",
+        },
+      ],
+      footnote: "2027년 각 릴리스는 이 구조에 따라 자체 예산을 승인받습니다. 인프라 투자는 이번 사이클에서 한 번만 이루어집니다.",
+    },
+
+    // ===================================================================
+    // 11. Handled by Kakao / Great M
+    // ===================================================================
+    {
+      type: "vertical",
+      number: "11",
+      navLabel: "레이블",
+      title: "Kakao / Great M에서 담당",
+      philosophy: "레이블과 Kakao가 직접 소유하는 워크스트림입니다. CCD는 타이밍을 조율하고 조언하지만, 관계, 재능, 마스터 결정은 레이블 측을 통해 진행됩니다.",
+      subBlocks: [
+        {
+          label: "A",
+          title: "스페인어 보컬 프로덕션",
+          objective: "녹음 자체: Trophy Español을 위한 스페인어 가사 각색, 발음 코칭, 보컬 프로덕션은 이미 레이블 측에서 관여하고 있는 네트워크를 통해 진행됩니다. 에셋 전달일은 캠페인 그리드를 고정하는 유일한 종속성입니다.",
+          components: {
+            heading: "CCD 지원 사항",
+            items: [
+              "팬 측 스페인어 가사 각색 검토 (원어민 감수: 가창 용이성 및 밈(meme) 위험성 평가)",
+              "릴리스 방식 가이드라인: EP 선공개 싱글 vs. EP 트랙, 각 방식별 캠페인 영향 고려",
+              "에셋 체크리스트: 스페인어(ES) 가사 비디오, 비주얼라이저, 커버 아트 변형, 캡션 팩 사양",
+            ],
+          },
+        },
+        {
+          label: "B",
+          title: "미국 라디오 (지속)",
+          objective: "미국 팝 라디오 프로그램은 자체 승인된 계획과 예산으로 계속 진행됩니다. 이번 사이클에서는 LATAM 라디오는 범위에서 제외됩니다. 유료 소셜 미디어가 훨씬 적은 비용으로 동일한 LATAM 잠재 고객에게 도달할 수 있으며, 현지 라디오는 향후 라이브 투어 결정과 함께 관련성이 생길 것입니다.",
+        },
+        {
+          label: "C",
+          title: "A&R / 피처링",
+          objective: "기존의 피처링 아티스트 선정 방식은 미국 싱글에 계속 적용됩니다. 특히 LATAM의 경우, 레이블 측에서 논의할 만한 한 가지 옵션은 'Trophy Español'에 라틴 아티스트 피처링 또는 리믹스를 추가하는 것입니다. 이는 단순 현지화를 넘어 파트너 팬덤을 확보하는 협업으로 전환될 것입니다. CCD는 요청 시 스트리밍 및 잠재 고객 중복 데이터를 기반으로 후보 리스트를 작성할 수 있으며, 논의, 경제적 측면, 최종 승인은 레이블과 Kakao가 담당합니다.",
+        },
+        {
+          label: "D",
+          title: "릴리스 물류 및 메타데이터",
+          objective: "LATAM 캠페인 실행을 가능하게 하는 배포 메커니즘: 음원 전달 시 스페인어 메타데이터 및 크레딧, DSP에 가사 전달(ES 가사 표시용), 사전 저장(pre-save) 기간 및 캠페인 일정을 확정할 수 있는 충분한 시간 확보를 위한 릴리스 날짜 고정.",
+        },
+      ],
+      footnote: "이 워크스트림은 $20,000 / $40,000 캠페인 예산 외부에 있습니다. CCD는 전략 및 조정을 제공하며, 레이블과 Kakao가 실행합니다.",
+    },
+
+    // ===================================================================
+    // 12. Proposed Media Flight
+    // ===================================================================
+    {
+      type: "flight",
+      number: "12",
+      navLabel: "플라이트",
+      title: "제안 미디어 플라이트",
+      intro: "각 단계별 약 12주간의 사이클 동안 배포 가능한 예산이 어떻게 운영되는지에 대한 설명입니다. 1단계는 스페인어(ES) 인프라를 구축하고 유료 광고를 테스트 모드로 실행하는 동안 에셋을 현지화합니다. 2단계는 전체 규모의 릴리스 기간입니다. 3단계는 유지보수하며, 9월 EP로 이어지고, 활성화된 LATAM 잠재 고객을 컴백 캠페인으로 연결합니다. 'Trophy Español'이 독립 싱글이 아닌 EP 트랙으로 출시될 경우, 2단계는 EP 주간으로 이동하고 1단계는 연장됩니다. 어느 경우든 구조는 유지됩니다.",
+      totalBudget: "$10,900 (Foundation) / $28,300 (Expansion) to media + creators",
+      phases: [
+        {
+          label: "현지화 + 시드",
+          window: "1-3주차",
+          focus: "스페인어(ES) 에셋 팩 완료 (캡션, 가사 에셋, 컷다운). 스페인어 팬 채널 및 Laylo ES 채널 활성화. 크리에이터 브리핑 배포. 기존 'TROPHY' 콘텐츠를 활용하여 멕시코 시티 + 산티아고 타겟에 유료 소셜 광고 테스트 모드 출시, 음원 발매 전 리타겟팅 풀 구축.",
+          budget: "~$2,500 / ~$6,000",
+          tactics: [
+            "유료 테스트 단계: 스페인어(ES) 캡션 포함 광고 소재, 도시별 타겟팅, 두 번째 클릭 최적화",
+            "스페인어(ES) 팬 채널 네트워크 출시 + 첫 Laylo ES 방송",
+            "릴리즈 주간에 맞춰 크리에이터 라운드 브리핑 및 일정 조율 완료",
+            "마켓별 DSP 피치 패킷 전달 완료; ES 메타데이터 검증 완료",
+          ],
+        },
+        {
+          label: "론칭 및 스케일업",
+          window: "4주차-8주차",
+          focus: "Trophy Español 릴리즈 기간. MX, CL, PE, CO (확장 시 BR 포함) 전역에서 검증된 크리에이티브에 유료 광고 집행. 1차 크리에이터 웨이브 라이브 및 우승자 대상 유료 부스트. 릴리즈 주간 스트리밍 파티, ES 드롭 알림, 플레이리스트 푸시 진행. 확장 단계에서 리액터 배치 및 YouTube 인스트림 광고 추가.",
+          budget: "~$5,500 / ~$15,000",
+          tactics: [
+            "풀퍼널 유료 광고 스케일업: 인지도 + 참여 + 우승자 리타겟팅",
+            "1차 크리에이터 웨이브 + 우승자 게시물 부스트",
+            "릴리즈 주간: 스트리밍 파티, iTunes LATAM 차트 푸시, 에디토리얼 후속 조치",
+            "확장: BR 광고 세트, 미드티어 크리에이터, 리액터 프로그램, 인스트림 광고 집행",
+          ],
+        },
+        {
+          label: "지속 및 EP 브릿지",
+          window: "9주차-12주차",
+          focus: "지출을 에버그린 + 리타겟팅으로 축소. 9월 EP 주간을 위해 2차 크리에이터 웨이브 준비. EP를 위한 LATAM 사전 저장 플로우 오픈. 캠페인 학습 결과, 워밍업된 잠재 고객, ES 인프라를 컴백 사이클로 이관.",
+          budget: "~$2,900 / ~$7,300",
+          tactics: [
+            "에버그린 + 상위 크리에이티브 리타겟팅; 카탈로그 교차 링크 푸시",
+            "EP 주간에 맞춰 진행되는 2차 크리에이터 웨이브",
+            "Laylo ES: EP 사전 저장 브로드캐스트 + 재참여 발송",
+            "인계 보고서: EP 캠페인 브리핑을 위한 크리에이티브 우승자, 잠재 고객 풀, 시장 분석",
+          ],
+        },
+      ],
+      footnote: "단계별 예산은 방향성을 제시하며, CCD는 주간 성과 신호에 따라 대시보드에 공개되는 예산 내 항목 간 재할당을 수행합니다.",
+    },
+
+    // ===================================================================
+    // 13. Execution Timeline
+    // ===================================================================
+    {
+      type: "timeline",
+      number: "13",
+      navLabel: "타임라인",
+      title: "실행 타임라인",
+      intro: "Trophy Español 사이클을 위한 12주간의 배포 그리드로, 9월 EP 및 Q4 투어 기간까지 이어집니다. 아래 날짜는 8월 초 시작을 가정하며, 그리드는 확정된 릴리스 날짜에 맞춰 조정됩니다. W4는 유연한 Trophy Español 릴리스 슬롯(독립형 시나리오)을 나타내며, W6-7은 9월 EP 기간을, W10+는 투어 준비 기간을 나타냅니다.",
+      weeks: [
+        { index: 1, label: "W1", dates: "8월 3일" },
+        { index: 2, label: "W2", dates: "8월 10일" },
+        { index: 3, label: "W3", dates: "8월 17일" },
+        { index: 4, label: "W4", dates: "8월 24일", highlight: true, note: "TROPHY ES (FLEX)" },
+        { index: 5, label: "W5", dates: "8월 31일" },
+        { index: 6, label: "W6", dates: "9월 7일", highlight: true, note: "EP 기간 (미정)" },
+        { index: 7, label: "W7", dates: "9월 14일" },
+        { index: 8, label: "W8", dates: "9월 21일" },
+        { index: 9, label: "W9", dates: "9월 28일" },
+        { index: 10, label: "W10", dates: "10월 5일", note: "투어 준비" },
+        { index: 11, label: "W11", dates: "10월 12일" },
+        { index: 12, label: "W12", dates: "10월 19일" },
+      ],
+      workstreams: [
+        {
+          name: "ES 에셋 및 현지화",
+          cells: [
+            { weekIndex: 1, intensity: "high", label: "BUILD" },
+            { weekIndex: 2, intensity: "high" },
+            { weekIndex: 3, intensity: "medium" },
+            { weekIndex: 4, intensity: "medium" },
+            { weekIndex: 6, intensity: "medium" },
+            { weekIndex: 7, intensity: "low" },
+          ],
+        },
+        {
+          name: "ES 팬 채널 + Laylo ES",
+          cells: [
+            { weekIndex: 1, intensity: "medium", label: "BUILD" },
+            { weekIndex: 2, intensity: "high", label: "LAUNCH" },
+            { weekIndex: 3, intensity: "high" },
+            { weekIndex: 4, intensity: "high" },
+            { weekIndex: 5, intensity: "high" },
+            { weekIndex: 6, intensity: "high" },
+            { weekIndex: 7, intensity: "high" },
+            { weekIndex: 8, intensity: "high" },
+            { weekIndex: 9, intensity: "medium" },
+            { weekIndex: 10, intensity: "medium" },
+            { weekIndex: 11, intensity: "medium" },
+            { weekIndex: 12, intensity: "medium" },
+          ],
+        },
+        {
+          name: "유료 소셜 LATAM",
+          cells: [
+            { weekIndex: 2, intensity: "medium", label: "TEST" },
+            { weekIndex: 3, intensity: "medium" },
+            { weekIndex: 4, intensity: "high", label: "SCALE" },
+            { weekIndex: 5, intensity: "high" },
+            { weekIndex: 6, intensity: "high" },
+            { weekIndex: 7, intensity: "high" },
+            { weekIndex: 8, intensity: "high" },
+            { weekIndex: 9, intensity: "medium" },
+            { weekIndex: 10, intensity: "medium" },
+            { weekIndex: 11, intensity: "medium" },
+            { weekIndex: 12, intensity: "low" },
+          ],
+        },
+        {
+          name: "LATAM 크리에이터",
+          cells: [
+            { weekIndex: 3, intensity: "medium", label: "SEEDING" },
+            { weekIndex: 4, intensity: "high", label: "WAVE 1" },
+            { weekIndex: 5, intensity: "high" },
+            { weekIndex: 6, intensity: "medium" },
+            { weekIndex: 7, intensity: "high", label: "WAVE 2" },
+            { weekIndex: 8, intensity: "medium" },
+          ],
+        },
+        {
+          name: "DSP 및 에디토리얼",
+          cells: [
+            { weekIndex: 1, intensity: "medium", label: "PITCH" },
+            { weekIndex: 2, intensity: "medium" },
+            { weekIndex: 3, intensity: "medium" },
+            { weekIndex: 4, intensity: "high", label: "PUSH" },
+            { weekIndex: 5, intensity: "medium" },
+            { weekIndex: 6, intensity: "high" },
+            { weekIndex: 7, intensity: "high" },
+            { weekIndex: 8, intensity: "medium" },
+            { weekIndex: 9, intensity: "low" },
+            { weekIndex: 10, intensity: "low" },
+          ],
+        },
+      ],
+      weekBreakdowns: [
+        { weekIndex: 1, title: "현지화 + 인프라 구축", items: [
+          "스페인어 에셋 팩 제작: 기존 마스터에서 캡션, 가사 에셋, 코러스 중심 컷다운 제작.",
+          "스페인어 팬 채널 준비 완료 (예약된 Trophy 브랜드 핸들 포함); Laylo ES 환영 플로우 구축.",
+          "시장별 DSP 피치 팩 발송; 배포를 통해 스페인어 메타데이터 및 가사 전달 확인.",
+          "크리에이터 최종 후보 확정; 브리프 번역 및 일정 조율 완료.",
+        ] },
+        { weekIndex: 2, title: "스페인어 채널 라이브 + 유료 테스트", items: [
+          "스페인어 팬 채널 네트워크 출시; 첫 Laylo ES 방송.",
+          "유료 소셜 라이브 테스트 모드: 멕시코 시티 + 산티아고 타겟 대상 스페인어 크리에이티브, 첫날부터 세컨드 클릭 최적화.",
+          "음성 메시지 티저 퍼널 스페인어로 라이브.",
+        ] },
+        { weekIndex: 3, title: "크리에이터 시딩 + 크리에이티브 리뷰", items: [
+          "크리에이터 라운드 에셋 수령; 릴리즈 슬롯에 맞춰 포스팅 일정 확정.",
+          "첫 유료 크리에이티브 리뷰: 우승자 식별, 탈락자 제외, 도시별 비용 기준선 기록.",
+          "LATAM 팬덤과 스트리밍 파티 계획 확정.",
+        ] },
+        { weekIndex: 4, title: "릴리즈 창 열림 (유동적)", items: [
+          "단독 시나리오: Trophy Español 출시. 스페인어 출시 알림 발동, 스트리밍 파티 진행, 크리에이터 웨이브 원 포스팅, 우승자 대상 유료 광고 확장.",
+          "EP 트랙 시나리오: 이번 주는 확장 테스트 + 사전 저장 오픈으로 진행되며, 아래 릴리즈 메커니즘은 EP 주간으로 이동합니다.",
+          "발매 주차 iTunes LATAM 차트 푸시 및 에디토리얼 후속 조치.",
+        ] },
+        { weekIndex: 5, title: "스케일 주차", items: [
+          "MX, CL, PE, CO 전역에서 전체 스케일로 유료 집행 (+ Expansion 단계의 BR).",
+          "성공적인 크리에이터 게시물에 예산 증액; 공식 채널은 검증된 성공작 게시.",
+          "Expansion: 리액터 배치 및 YouTube 인스트림 라이브.",
+        ] },
+        { weekIndex: 6, title: "9월 EP 윈도우 오픈", items: [
+          "EP 컴백 주차 (날짜 미정): LATAM 채널은 EP를 위한 당일 현지화된 크리에이티브를 발동합니다.",
+          "ES + EN 사전 저장 전환 흐름 완료; EP 크리에이티브로 워밍업된 LATAM 오디언스 재타겟팅.",
+          "EP 스토리를 가지고 LATAM DSP 담당자들에게 에디토리얼 후속 조치.",
+        ] },
+        { weekIndex: 7, title: "EP 2주차 + 크리에이터 2차 웨이브", items: [
+          "EP 모멘트에 대한 2차 크리에이터 웨이브 게시.",
+          "전체 EP 시청 매트릭스 라이브: 모든 트랙의 오가닉 반응 모니터링, 예산은 며칠 내로 지원.",
+          "Trophy Español은 EP 캠페인 내 LATAM 진입점으로 유지됩니다.",
+        ] },
+        { weekIndex: 8, title: "복합화 + 다각화", items: [
+          "플레이리스트 도달 다각화 푸시: EP에 대한 다수의 에디토리얼 및 알고리즘 채널 활용.",
+          "팬 채널 및 크리에이터 성공작으로부터 유료 로테이션 새로고침.",
+          "Laylo ES는 미오픈자들에게 재참여 방송.",
+        ] },
+        { weekIndex: 9, title: "유지", items: [
+          "영속화 + 재타겟팅을 위한 지출 단계; 카탈로그 교차 링크 푸시 (Trophy Español에서 TROPHY를 거쳐 멜로딕 채널로).",
+          "시장 분석 종합: 도시별 비용, 리스너 성장, Shazam 신호.",
+        ] },
+        { weekIndex: 10, title: "투어 준비 기간", items: [
+          "4분기 투어 기간 시작: EP 캠페인에 투어 도시별 유료 홍보를 추가합니다.",
+          "투어 콘텐츠 파이프라인이 모든 채널에 공급되며, 공연장 Laylo 라이브 캡처는 두 언어로 진행됩니다.",
+        ] },
+        { weekIndex: 11, title: "투어 홍보 강화", items: [
+          "도시별 인터뷰를 실시간에 가깝게 편집하여 지역 타겟팅합니다.",
+          "카탈로그 활성화 모니터링: 투어 주간 스트림 증가량을 2025년 기준 효과와 비교 추적합니다.",
+        ] },
+        { weekIndex: 12, title: "인계 + 다음 주기", items: [
+          "주기별 보고서: LATAM 성장률 대 목표치, 성공적인 크리에이티브, 잠재 고객 풀, 비용 기준선.",
+          "남은 투어 기간, 1월 싱글, 2월 EP 주기에 대한 권장 사항을 전달합니다.",
+          "LATAM 라이브 라우팅 분석: 2027년 LATAM 투어 논의를 위해 데이터가 뒷받침하는 도시.",
+        ] },
+      ],
+      footnote: "스프린트는 1주 단위로 진행됩니다. 일정은 확정된 Trophy Español 출시일과 최종 EP 날짜를 기준으로 하며, CCD는 양쪽 모두에서 매주 워크스트림별로 재할당됩니다.",
+    },
+
+    // ===================================================================
+    // 14. Final Pricing
+    // ===================================================================
+    {
+      type: "pricing",
+      number: "14",
+      navLabel: "가격 책정",
+      title: "최종 가격 책정",
+      intro: "Trophy Español 주기(~12주)에 대한 두 가지 올인 옵션이 있습니다. CCD 수수료는 예산 외 추가가 아닌 예산 내에 포함됩니다: 7,500달러의 주기 리테이너와 관리 지출의 15%에 해당하는 미디어 관리 수수료입니다. 나머지 모든 비용은 미디어, 크리에이터 및 LATAM 인프라에 배포됩니다. 9월 EP, 투어 기간 및 2027년 각 출시 건은 동일한 구조로 새로운 예산을 승인받습니다.",
+      ccdNote: "CCD 수수료는 예산 상한선 내에 포함됩니다. 아래 배포 가능 금액은 모든 수수료를 제외하고 미디어, 크리에이터 및 인프라에 도달하는 금액입니다.",
+      tiers: [
+        {
+          label: "Tier 1",
+          budget: "$20,000",
+          name: "LATAM Foundation",
+          tagline: "올인. 스페인어 사용 LATAM (MX, CL, PE, CO). 집중적인 유료 광고 + 마이크로 크리에이터 + ES 인프라.",
+          deployable: "$10,900",
+          feeBreakdown: {
+            retainer: "$7,500",
+            retainerDetail: "CCD 주기 리테이너(~12주): 전략, 실행, 공급업체 관리, 주간 대시보드 보고",
+            mediaManagement: "$1,600",
+            mediaManagementDetail: "관리 지출의 15%에 해당하는 미디어 관리",
+          },
+          breakdown: [
+            { vertical: "유료 소셜 LATAM (TikTok + Meta)", amount: "$6,000" },
+            { vertical: "LATAM 크리에이터 프로그램 (8-10명의 마이크로 크리에이터)", amount: "$3,000" },
+            { vertical: "ES 팬 채널 + Laylo ES", amount: "$1,000" },
+            { vertical: "DSP / 플레이리스트 푸시", amount: "$900" },
+            { vertical: "CCD 리테이너", amount: "$7,500" },
+            { vertical: "미디어 관리 (15%)", amount: "$1,600" },
+          ],
+        },
+        {
+          label: "티어 2",
+          budget: "$40,000",
+          name: "LATAM 확장",
+          tagline: "올인. 브라질, 미드 티어 크리에이터, 유료 PR + 리액터, YouTube 인스트림 광고, 그리고 2.6배의 집행 가능한 미디어 규모를 추가합니다.",
+          featured: true,
+          deployable: "$28,300",
+          feeBreakdown: {
+            retainer: "$7,500",
+            retainerDetail: "CCD 주기 리테이너(~12주): 전략, 실행, 공급업체 관리, 주간 대시보드 보고",
+            mediaManagement: "$4,200",
+            mediaManagementDetail: "관리 지출의 15%에 해당하는 미디어 관리",
+          },
+          breakdown: [
+            { vertical: "유료 소셜 LATAM (TikTok + Meta + YouTube)", amount: "$14,000" },
+            { vertical: "LATAM 크리에이터 프로그램 (마이크로 + 미드 티어 + BR)", amount: "$7,000" },
+            { vertical: "DSP / 플레이리스트 푸시", amount: "$3,000" },
+            { vertical: "LATAM PR + 리액터 프로그램", amount: "$2,800" },
+            { vertical: "ES/PT 팬 채널 + Laylo ES", amount: "$1,500" },
+            { vertical: "CCD 리테이너", amount: "$7,500" },
+            { vertical: "미디어 관리 (15%)", amount: "$4,200" },
+          ],
+        },
+      ],
+      footnote: "각 릴리즈 사이클마다 자체 승인이 필요합니다. 9월 EP는 Trophy Español 성과를 바탕으로 이 구조에 대한 새로운 예산 요청을 촉발하며, 투어 기간과 2027년 상반기 릴리즈도 마찬가지입니다. 이번 사이클에서 구축된 LATAM 인프라는 재구축 비용 없이 지속됩니다.",
+    },
+  ],
+};

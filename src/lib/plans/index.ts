@@ -10,12 +10,16 @@ import { miguelTestSprint } from "./miguel-test-sprint";
 import { ekatorPlan } from "./ekator";
 import { ekatorPlanKorean } from "./ekator-ko";
 import { trulyYoungPlan } from "./truly-young";
+import { eightyTwoMajorRoadmap } from "./82major-roadmap";
+import { eightyTwoMajorRoadmapKorean } from "./82major-roadmap-ko";
 
 export const PLANS: Record<string, StrategyPlanData> = {
   "truly-young": trulyYoungPlan,
   ekator: ekatorPlan,
   "ekator-ko": ekatorPlanKorean,
   "82major": eightyTwoMajorPlan,
+  "82major-roadmap": eightyTwoMajorRoadmap,
+  "82major-roadmap-ko": eightyTwoMajorRoadmapKorean,
   "82major-strategy": eightyTwoMajorPlanStrategy,
   "82major-ko": eightyTwoMajorPlanKorean,
   "82major-strategy-ko": eightyTwoMajorPlanStrategyKorean,
