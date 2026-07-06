@@ -187,12 +187,6 @@ export const miguelDamned: ProjectData = {
 
     targets: [
       {
-              metric: '"damned" Weekly Streams',
-              value: "+75%",
-              context:
-                        "Off the current baseline within 30 days. At 600K plus daily streams the record is past ignition; structured fuel aims it at a step-change, not a rounding error.",
-      },
-      {
               metric: "Official Sound Creates",
               value: "2.5K+",
               context:
@@ -227,7 +221,7 @@ export const miguelDamned: ProjectData = {
                       priceContext: "all-in · 30 days · exact line items below",
                       includes: [
                                   "Clipping program, $5,000 CPM cap: 40+ briefed clips and edits seeded across fan pages, edit pages, and R&B catalog accounts, official sound required for payout",
-                                  "Volume page, $3,750 (one page x 1.5 months): always-on trend supply posting 3 to 5 times daily on TikTok + IG Reels, home base for clip winners and comment seeding",
+                                  "Volume page, $3,750 (one page x 1.5 months): always-on trend supply posting 1 to 2 times daily on TikTok + IG Reels, home base for clip winners and comment seeding",
                                   "Strive.fm real-listener flight, $1,800 all-in: roughly 150K geo-distributed US streams from real listeners, no bots, feeding the algorithmic flywheel",
                                   "Engagement layer at no cost: first-hour saves and shares plus unique discovery comments naming the record on every seeded post",
                                   "Artist moment layer at no cost: trend reactions, UGC duets, and lightweight capture (studio session, stripped acoustic) briefed by CCD, produced by Miguel",
@@ -328,7 +322,7 @@ export const miguelDamned: ProjectData = {
                             name: "Dedicated Volume Page",
                             quantity: "$3,750 / 1.5 months",
                             description:
-                                          "One US-focused page on TikTok + IG Reels posting 3 to 5 times daily across the proven lanes, always on the official sound. Doubles as the distribution rail for clipping winners and the comment-seeding home base.",
+                                          "One US-focused page on TikTok + IG Reels posting 1 to 2 times daily across the proven lanes, always on the official sound. Doubles as the distribution rail for clipping winners and the comment-seeding home base.",
                 },
                       ],
       },
