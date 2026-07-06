@@ -158,7 +158,7 @@ export const eightyTwoMajorRoadmap: StrategyPlanData = {
       number: "04",
       navLabel: "Structure",
       title: "Campaign Structure",
-      intro: "Two all-in budget levels for the Trophy Español cycle (~12 weeks). CCD retainer and media management sit inside the budget, not on top. Foundation concentrates entirely on Spanish-speaking LATAM (Mexico, Chile, Peru, Colombia). Expansion adds Brazil with Portuguese-captioned creative, a larger creator program, LATAM music PR, and a full DSP push. The September EP and each subsequent release authorize fresh budgets on the same structure.",
+      intro: "Two all-in budget levels for the Trophy Español cycle (~12 weeks). CCD retainer and media management sit inside the budget, not on top. Foundation concentrates entirely on Spanish-speaking LATAM (Mexico, Chile, Peru, Colombia). Expansion adds Brazil with Portuguese-captioned creative, a larger creator program, and LATAM music PR. DSP editorial runs through Kakao's distribution relationships identically in both packages. The September EP and each subsequent release authorize fresh budgets on the same structure.",
       tiers: [
         {
           label: "Tier 1",
@@ -169,7 +169,7 @@ export const eightyTwoMajorRoadmap: StrategyPlanData = {
             "Paid Social LATAM (TikTok + Meta), concentrated on MX + CL, extending to PE + CO",
             "8-10 LATAM micro-creators (dance cover, fan-edit, reaction lanes)",
             "Spanish-language fan channel network + Laylo ES lane",
-            "DSP playlist pitching with ES metadata positioning",
+            "DSP editorial coordination with Kakao: pitch packets, ES metadata, release-week follow-ups",
             "Dark-ads testing loop with winner handoff to official channels",
             "CCD strategic oversight, weekly reporting via the live dashboard",
           ],
@@ -178,7 +178,7 @@ export const eightyTwoMajorRoadmap: StrategyPlanData = {
           label: "Tier 2",
           budget: "$40,000",
           name: "LATAM Expansion",
-          goal: "Everything in Foundation, at roughly 2.6x the deployable media weight, plus Brazil. Adds mid-tier creators, Spanish-language music PR and reactor seeding, YouTube in-stream, and a full LATAM DSP editorial push. Built to make Trophy Español a genuine LATAM moment, not a test.",
+          goal: "Everything in Foundation, at roughly 2.6x the deployable media weight, plus Brazil. Adds mid-tier creators, Spanish-language music PR and reactor seeding, and YouTube in-stream. Built to make Trophy Español a genuine LATAM moment, not a test.",
           featured: true,
           includes: [
             "Everything in LATAM Foundation",
@@ -186,7 +186,6 @@ export const eightyTwoMajorRoadmap: StrategyPlanData = {
             "2-3 mid-tier LATAM creators on top of the micro round",
             "Spanish-language music PR + YouTube reactor program",
             "YouTube in-stream against the ES lyric video and MV assets",
-            "Expanded DSP program across Spotify, YouTube Music, Apple Music, Deezer (BR)",
           ],
         },
       ],
@@ -337,19 +336,19 @@ export const eightyTwoMajorRoadmap: StrategyPlanData = {
       number: "07",
       navLabel: "DSP",
       title: "Vertical 3 / DSP Strategy LATAM",
-      philosophy: "The discovery layer. A Spanish-language release is the qualifying asset LATAM editorial teams need to support a K-pop act beyond the global K-pop bucket.",
+      philosophy: "The discovery layer, led through Kakao's distribution relationships and identical in both packages. A Spanish-language release is the qualifying asset LATAM editorial teams need to support a K-pop act beyond the global K-pop bucket.",
       subBlocks: [
         {
           label: "A",
           title: "Editorial & Playlist Positioning",
           objective: "Use Trophy Español to open LATAM editorial lanes that a Korean-language release cannot: Spanish-language and LATAM-local playlists alongside the global K-pop ecosystem.",
-          strategy: "Pitch packets localized per market: the LATAM organic-growth story, the Spanish-language asset, and the campaign commitment behind it. Priority order follows listener density: Mexico, Chile, Peru, Colombia, then Brazil at Expansion. Correct Spanish-language metadata and credits at delivery so the record is eligible for ES editorial consideration from day one.",
+          strategy: "Editorial outreach runs through Kakao's distribution relationships. CCD builds the localized pitch packets per market: the LATAM organic-growth story, the Spanish-language asset, and the campaign commitment behind it. Priority order follows listener density: Mexico, Chile, Peru, Colombia, then Brazil. Correct Spanish-language metadata and credits at delivery so the record is eligible for ES editorial consideration from day one.",
           components: {
             heading: "Components",
             items: [
               "Spotify LATAM editorial pitching (K-pop verticals + ES pop and viral lanes)",
               "YouTube Music and Apple Music LATAM playlist pitching",
-              "Deezer Brazil push at the Expansion tier (outsized share in BR)",
+              "Deezer coordination for Brazil (outsized share in BR)",
               "ES metadata, credits, and lyric delivery verified before release",
               "iTunes LATAM chart pushes timed to release week for citable market wins",
             ],
@@ -387,7 +386,7 @@ export const eightyTwoMajorRoadmap: StrategyPlanData = {
           },
         },
       ],
-      footnote: "DSP work is operational within the retainer; playlisting spend where used comes from the deployable budget, disclosed line-by-line on the dashboard.",
+      footnote: "DSP editorial runs through Kakao's distribution relationships and is identical in both packages. CCD supplies the pitch materials, metadata QC, catalog bridge, and measurement within the retainer.",
     },
 
     // ===================================================================
@@ -813,10 +812,9 @@ export const eightyTwoMajorRoadmap: StrategyPlanData = {
             mediaManagementDetail: "Media management at 15% of managed spend",
           },
           breakdown: [
-            { vertical: "Paid Social LATAM (TikTok + Meta)", amount: "$6,000" },
-            { vertical: "LATAM Creator Program (8-10 micro)", amount: "$3,000" },
+            { vertical: "Paid Social LATAM (TikTok + Meta)", amount: "$6,600" },
+            { vertical: "LATAM Creator Program (8-10 micro)", amount: "$3,300" },
             { vertical: "ES Fan Channels + Laylo ES", amount: "$1,000" },
-            { vertical: "DSP / Playlist Push", amount: "$900" },
             { vertical: "CCD Retainer", amount: "$7,500" },
             { vertical: "Media Management (15%)", amount: "$1,600" },
           ],
@@ -835,9 +833,8 @@ export const eightyTwoMajorRoadmap: StrategyPlanData = {
             mediaManagementDetail: "Media management at 15% of managed spend",
           },
           breakdown: [
-            { vertical: "Paid Social LATAM (TikTok + Meta + YouTube)", amount: "$14,000" },
-            { vertical: "LATAM Creator Program (micro + mid-tier + BR)", amount: "$7,000" },
-            { vertical: "DSP / Playlist Push", amount: "$3,000" },
+            { vertical: "Paid Social LATAM (TikTok + Meta + YouTube)", amount: "$16,000" },
+            { vertical: "LATAM Creator Program (micro + mid-tier + BR)", amount: "$8,000" },
             { vertical: "LATAM PR + Reactor Program", amount: "$2,800" },
             { vertical: "ES/PT Fan Channels + Laylo ES", amount: "$1,500" },
             { vertical: "CCD Retainer", amount: "$7,500" },

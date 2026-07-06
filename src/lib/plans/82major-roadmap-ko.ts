@@ -158,7 +158,7 @@ export const eightyTwoMajorRoadmapKorean: StrategyPlanData = {
       number: "04",
       navLabel: "구조",
       title: "캠페인 구조",
-      intro: "Trophy Español 사이클(~12주)을 위한 두 가지 올인 예산 수준. CCD 리테이너 및 미디어 관리는 예산 외 추가가 아닌 예산 내에 포함됩니다. Foundation은 스페인어 사용 LATAM(멕시코, 칠레, 페루, 콜롬비아)에 전적으로 집중합니다. Expansion은 포르투갈어 자막 크리에이티브, 더 큰 규모의 크리에이터 프로그램, LATAM 음악 PR 및 전체 DSP 푸시를 통해 브라질을 추가합니다. 9월 EP 및 이후 모든 릴리스는 동일한 구조로 새로운 예산을 승인합니다.",
+      intro: "Trophy Español 사이클(약 12주)을 위한 두 가지 올인원 예산 수준. CCD 리테이너 및 미디어 관리는 예산 내에 포함되며, 별도가 아닙니다. Foundation은 스페인어 사용 국가인 LATAM(멕시코, 칠레, 페루, 콜롬비아)에 전적으로 집중합니다. Expansion은 포르투갈어 자막 크리에이티브, 더 큰 규모의 크리에이터 프로그램, LATAM 음악 PR을 포함하여 브라질을 추가합니다. DSP 에디토리얼은 두 패키지 모두에서 Kakao의 유통 관계를 통해 동일하게 진행됩니다. 9월 EP 및 이후 모든 릴리스는 동일한 구조로 새로운 예산을 승인합니다.",
       tiers: [
         {
           label: "Tier 1",
@@ -169,7 +169,7 @@ export const eightyTwoMajorRoadmapKorean: StrategyPlanData = {
             "유료 소셜 LATAM (TikTok + Meta), MX + CL에 집중하며 PE + CO로 확장",
             "8-10명의 LATAM 마이크로 크리에이터 (댄스 커버, 팬 편집, 반응 콘텐츠)",
             "스페인어 팬 채널 네트워크 + Laylo ES 레인",
-            "ES 메타데이터 포지셔닝을 활용한 DSP 플레이리스트 피칭",
+            "Kakao와의 DSP 에디토리얼 협업: 피치 팩, ES 메타데이터, 릴리스 주간 후속 조치",
             "당첨작을 공식 채널로 이관하는 다크 광고 테스트 루프",
             "CCD 전략적 감독, 실시간 대시보드를 통한 주간 보고",
           ],
@@ -178,7 +178,7 @@ export const eightyTwoMajorRoadmapKorean: StrategyPlanData = {
           label: "티어 2",
           budget: "$40,000",
           name: "LATAM 확장",
-          goal: "Foundation의 모든 것을 포함하며, 가용 미디어 비중의 약 2.6배에 브라질을 추가합니다. 미드 티어 크리에이터, 스페인어 음악 PR 및 리액터 시딩, YouTube 인스트림 광고, 그리고 전체 LATAM DSP 에디토리얼 푸시를 추가합니다. Trophy Español을 단순한 테스트가 아닌 진정한 LATAM의 순간으로 만들기 위해 구축되었습니다.",
+          goal: "Foundation의 모든 것을 포함하며, 가용 미디어 비중은 약 2.6배 증가하고 브라질이 추가됩니다. 미들 티어 크리에이터, 스페인어 음악 PR 및 리액터 시딩, YouTube 인스트림이 추가됩니다. Trophy Español을 단순한 테스트가 아닌 진정한 LATAM의 순간으로 만들기 위해 구축되었습니다.",
           featured: true,
           includes: [
             "LATAM Foundation의 모든 것",
@@ -186,7 +186,6 @@ export const eightyTwoMajorRoadmapKorean: StrategyPlanData = {
             "마이크로 라운드에 추가되는 2-3명의 미드 티어 LATAM 크리에이터",
             "스페인어 음악 PR + YouTube 리액터 프로그램",
             "ES 가사 비디오 및 MV 에셋에 대한 YouTube 인스트림 광고",
-            "Expanded DSP program across Spotify, YouTube Music, Apple Music, Deezer (BR)",
           ],
         },
       ],
@@ -337,19 +336,19 @@ export const eightyTwoMajorRoadmapKorean: StrategyPlanData = {
       number: "07",
       navLabel: "DSP",
       title: "버티컬 3 / DSP 전략 라틴 아메리카",
-      philosophy: "발견 레이어. 스페인어 릴리스는 라틴 아메리카 에디토리얼 팀이 K-pop 그룹을 글로벌 K-pop 범주를 넘어 지원하는 데 필요한 자격 요건입니다.",
+      philosophy: "Kakao의 유통 관계를 통해 주도되며 두 패키지 모두에서 동일한 디스커버리 레이어. 스페인어 릴리스는 LATAM 에디토리얼 팀이 글로벌 K-pop 범주를 넘어 K-pop 아티스트를 지원하는 데 필요한 자격 요건입니다.",
       subBlocks: [
         {
           label: "A",
           title: "에디토리얼 및 플레이리스트 포지셔닝",
           objective: "Trophy Español을 사용하여 한국어 릴리스로는 열 수 없는 라틴 아메리카 에디토리얼 채널을 개척하십시오: 글로벌 K-pop 생태계와 함께 스페인어 및 라틴 아메리카 현지 플레이리스트를 활용합니다.",
-          strategy: "시장별 현지화된 피치 패킷: 라틴 아메리카 유기적 성장 스토리, 스페인어 음원, 그리고 그 뒤에 숨겨진 캠페인 의지. 우선순위는 청취자 밀집도에 따라 멕시코, 칠레, 페루, 콜롬비아, 그리고 확장 단계에서 브라질 순으로 진행됩니다. 전달 시 스페인어 메타데이터 및 크레딧을 정확하게 기재하여 음원이 첫날부터 스페인어권 에디토리얼 고려 대상이 되도록 합니다.",
+          strategy: "에디토리얼 아웃리치는 Kakao의 유통 관계를 통해 진행됩니다. CCD는 각 시장에 맞춰 현지화된 피치 팩을 구축합니다: LATAM 유기적 성장 스토리, 스페인어 음원, 그리고 그 뒤에 있는 캠페인 약속. 우선순위는 청취자 밀도를 따릅니다: 멕시코, 칠레, 페루, 콜롬비아, 그리고 브라질. 전달 시 올바른 스페인어 메타데이터 및 크레딧을 적용하여 출시 첫날부터 ES 에디토리얼 고려 대상이 되도록 합니다.",
           components: {
             heading: "구성 요소",
             items: [
               "Spotify LATAM editorial pitching (K-pop verticals + ES pop and viral lanes)",
               "YouTube Music and Apple Music LATAM playlist pitching",
-              "Deezer 브라질 확장 단계 푸시 (브라질 내 높은 점유율)",
+              "브라질을 위한 Deezer 협업 (BR에서의 비중이 큼)",
               "스페인어권 메타데이터, 크레딧, 가사 전달 사항은 릴리스 전에 검증됩니다.",
               "인용 가능한 시장 성과를 위한 릴리스 주간에 맞춰진 iTunes 라틴 아메리카 차트 푸시",
             ],
@@ -387,7 +386,7 @@ export const eightyTwoMajorRoadmapKorean: StrategyPlanData = {
           },
         },
       ],
-      footnote: "DSP 작업은 리테이너 내에서 운영되며, 사용되는 플레이리스트 지출은 배포 가능한 예산에서 나오며 대시보드에 라인별로 공개됩니다.",
+      footnote: "DSP 에디토리얼은 Kakao의 유통 관계를 통해 진행되며 두 패키지 모두에서 동일합니다. CCD는 리테이너 내에서 피치 자료, 메타데이터 QC, 카탈로그 브릿지 및 측정을 제공합니다.",
     },
 
     // ===================================================================
@@ -813,10 +812,9 @@ export const eightyTwoMajorRoadmapKorean: StrategyPlanData = {
             mediaManagementDetail: "관리 지출의 15%에 해당하는 미디어 관리",
           },
           breakdown: [
-            { vertical: "유료 소셜 LATAM (TikTok + Meta)", amount: "$6,000" },
-            { vertical: "LATAM 크리에이터 프로그램 (8-10명의 마이크로 크리에이터)", amount: "$3,000" },
+            { vertical: "유료 소셜 LATAM (TikTok + Meta)", amount: "$6,600" },
+            { vertical: "LATAM 크리에이터 프로그램 (8-10명의 마이크로 크리에이터)", amount: "$3,300" },
             { vertical: "ES 팬 채널 + Laylo ES", amount: "$1,000" },
-            { vertical: "DSP / 플레이리스트 푸시", amount: "$900" },
             { vertical: "CCD 리테이너", amount: "$7,500" },
             { vertical: "미디어 관리 (15%)", amount: "$1,600" },
           ],
@@ -835,9 +833,8 @@ export const eightyTwoMajorRoadmapKorean: StrategyPlanData = {
             mediaManagementDetail: "관리 지출의 15%에 해당하는 미디어 관리",
           },
           breakdown: [
-            { vertical: "유료 소셜 LATAM (TikTok + Meta + YouTube)", amount: "$14,000" },
-            { vertical: "LATAM 크리에이터 프로그램 (마이크로 + 미드 티어 + BR)", amount: "$7,000" },
-            { vertical: "DSP / 플레이리스트 푸시", amount: "$3,000" },
+            { vertical: "유료 소셜 LATAM (TikTok + Meta + YouTube)", amount: "$16,000" },
+            { vertical: "LATAM 크리에이터 프로그램 (마이크로 + 미드 티어 + BR)", amount: "$8,000" },
             { vertical: "LATAM PR + 리액터 프로그램", amount: "$2,800" },
             { vertical: "ES/PT 팬 채널 + Laylo ES", amount: "$1,500" },
             { vertical: "CCD 리테이너", amount: "$7,500" },
