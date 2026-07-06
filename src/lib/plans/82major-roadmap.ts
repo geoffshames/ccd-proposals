@@ -33,17 +33,17 @@ export const eightyTwoMajorRoadmap: StrategyPlanData = {
       title: "Overview & Objective",
       subtitle: "A LATAM launch plan for Trophy Español, built on the infrastructure the SIGN campaign proved, sequenced into the September comeback, the Q4 U.S. tour window, and the early-2027 releases.",
       body: [
-        "Prepared at the request of GREAT M Entertainment. This plan covers the Spanish-language version of TROPHY as a dedicated LATAM campaign, presented at two budget levels ($20,000 and $40,000, all-in), and places that campaign inside the full release arc: the September EP, the October-November U.S. tour window, the January single, and the February EP.",
+        "Prepared at the request of GREAT M Entertainment. The $20,000 and $40,000 budget levels in this document fund one campaign: the Trophy Español LATAM launch. The rest of the release arc (the September EP, the October-November U.S. tour window, the January single, and the February EP) is mapped here strategically so every decision reads in context, and each of those campaigns authorizes its own budget when it locks.",
         "The strategic case is simple. The SIGN cycle proved that 82MAJOR converts the audience it reaches: Spotify followers grew from roughly 136K to 154K across the campaign while paid and organic discovery ran. Latin America is the largest audience 82MAJOR has never spent a dollar against. The group's five core LATAM markets (Brazil, Mexico, Chile, Peru, Colombia) already hold roughly the same monthly listener volume as South Korea, entirely organically. Trophy Español is the key that turns that latent audience into an owned one, at media costs a fraction of U.S. rates.",
         "The budget shown here is scoped to the Trophy Español cycle (~12 weeks). The September EP, the tour window, and the 1H 2027 releases each authorize fresh budgets on the same structure. The LATAM infrastructure this campaign stands up (Spanish-language fan channels, LATAM CRM lane, warmed paid audiences) carries across every one of those cycles.",
       ],
       supports: {
         heading: "What This Plan Supports",
         items: [
-          "Trophy Español launch and LATAM market entry",
-          "September EP comeback (the post-SIGN cycle)",
-          "October-November U.S. tour window amplification",
-          "January single and February EP (1H 2027 arc)",
+          "Trophy Español launch and LATAM market entry (the campaign priced in this document)",
+          "September EP comeback (own budget, authorized at EP lock)",
+          "October-November U.S. tour window amplification (own budget, authorized with routing)",
+          "January single and February EP (own budgets, 1H 2027)",
         ],
       },
       goals: {
@@ -110,7 +110,7 @@ export const eightyTwoMajorRoadmap: StrategyPlanData = {
           name: "Trophy Español / LATAM Entry",
           window: "Aug - Oct 2026 (~12 weeks)",
           budget: "$20,000 / $40,000",
-          budgetNote: "Priced in this proposal",
+          budgetNote: "The only budget priced in this document",
           featured: true,
           objective: "Launch the Spanish version of TROPHY into Spanish-speaking LATAM (Brazil at the Expansion tier), concentrated on Mexico City and Santiago, at media costs a fraction of U.S. rates.",
           compounds: [
@@ -190,7 +190,7 @@ export const eightyTwoMajorRoadmap: StrategyPlanData = {
     // ===================================================================
     {
       type: "audience",
-      number: "04",
+      number: "03",
       navLabel: "LATAM",
       title: "The LATAM Opportunity",
       intro: "82MAJOR's five core LATAM markets hold ~36.5K monthly listeners today (Chartmetric, July 2026), roughly equal to South Korea, built with zero LATAM marketing. The gap is the opportunity: LATAM is ~7% of 82MAJOR's listening geography versus ~11% for ATEEZ, ~12% for KATSEYE, and ~24% for Stray Kids, for whom Mexico is the #2 country in the world. Latin America is also the fastest-growing recorded-music region globally (+17.1% in 2025), with Brazil and Mexico now top-10 world markets. These splits set initial paid targeting and the LATAM channel network's content posture.",
@@ -246,13 +246,13 @@ export const eightyTwoMajorRoadmap: StrategyPlanData = {
     // ===================================================================
     {
       type: "structure",
-      number: "05",
-      navLabel: "Structure",
-      title: "Campaign Structure",
-      intro: "Two all-in budget levels for the Trophy Español cycle (~12 weeks). CCD retainer and media management sit inside the budget, not on top. Foundation concentrates entirely on Spanish-speaking LATAM (Mexico, Chile, Peru, Colombia). Expansion adds Brazil with Portuguese-captioned creative, a larger creator program, and LATAM music PR. DSP editorial runs through Kakao's distribution relationships identically in both packages. The September EP and each subsequent release authorize fresh budgets on the same structure.",
+      number: "04",
+      navLabel: "C1 Budget",
+      title: "Campaign 1 Budget / Trophy Español",
+      intro: "This budget funds Campaign 1 only: the Trophy Español LATAM launch, ~12 weeks. It does not cover the September EP, the tour window, or the 2027 releases; each of those authorizes its own budget on this same structure. Two all-in levels. CCD retainer and media management sit inside the budget, not on top. Foundation concentrates entirely on Spanish-speaking LATAM (Mexico, Chile, Peru, Colombia). Expansion adds Brazil with Portuguese-captioned creative, a larger creator program, and LATAM music PR. DSP editorial runs through Kakao's distribution relationships identically in both packages.",
       tiers: [
         {
-          label: "Tier 1",
+          label: "Campaign 1 / Tier 1",
           budget: "$20,000",
           name: "LATAM Foundation",
           goal: "Launch Trophy Español into Spanish-speaking LATAM with concentrated paid media (Mexico City + Santiago first), a micro-creator round, Spanish-language fan channels, and a LATAM CRM lane. Prove the market response and build the warmed audiences the September EP lands on.",
@@ -266,13 +266,13 @@ export const eightyTwoMajorRoadmap: StrategyPlanData = {
           ],
         },
         {
-          label: "Tier 2",
+          label: "Campaign 1 / Tier 2",
           budget: "$40,000",
           name: "LATAM Expansion",
           goal: "Everything in Foundation, at roughly 2.6x the deployable media weight, plus Brazil. Adds mid-tier creators, Spanish-language music PR and reactor seeding, and YouTube in-stream. Built to make Trophy Español a genuine LATAM moment, not a test.",
           featured: true,
           includes: [
-            "Everything in LATAM Foundation",
+            "Everything in LATAM Foundation (Trophy Español campaign scope)",
             "Brazil added: Portuguese-captioned creative + BR creator seeding",
             "2-3 mid-tier LATAM creators on top of the micro round",
             "Spanish-language music PR + YouTube reactor program",
@@ -287,7 +287,7 @@ export const eightyTwoMajorRoadmap: StrategyPlanData = {
     // ===================================================================
     {
       type: "vertical",
-      number: "06",
+      number: "05",
       navLabel: "Fandom",
       title: "Vertical 1 / LATAM Fandom & Infrastructure",
       philosophy: "The compounding foundation, stood up in Spanish. LATAM K-pop fandom is the most participatory in the world; the infrastructure exists to capture it, not rent it.",
@@ -356,7 +356,7 @@ export const eightyTwoMajorRoadmap: StrategyPlanData = {
     // ===================================================================
     {
       type: "vertical",
-      number: "07",
+      number: "06",
       navLabel: "Digital",
       title: "Vertical 2 / LATAM Digital Marketing",
       philosophy: "The amplifier, aimed where reach is cheapest. LATAM CPMs give this campaign a structural advantage: the same dollar buys multiples of the impressions it buys in the U.S.",
@@ -424,7 +424,7 @@ export const eightyTwoMajorRoadmap: StrategyPlanData = {
     // ===================================================================
     {
       type: "vertical",
-      number: "08",
+      number: "07",
       navLabel: "DSP",
       title: "Vertical 3 / DSP Strategy LATAM",
       philosophy: "The discovery layer, led through Kakao's distribution relationships and identical in both packages. A Spanish-language release is the qualifying asset LATAM editorial teams need to support a K-pop act beyond the global K-pop bucket.",
@@ -485,7 +485,7 @@ export const eightyTwoMajorRoadmap: StrategyPlanData = {
     // ===================================================================
     {
       type: "vertical",
-      number: "09",
+      number: "08",
       navLabel: "PR",
       title: "Vertical 4 / PR & Media LATAM",
       philosophy: "Amplification once the record is moving. Spanish-language music media rewards the localization story, and LATAM reactor culture is a distribution channel in its own right.",
@@ -527,7 +527,7 @@ export const eightyTwoMajorRoadmap: StrategyPlanData = {
     // ===================================================================
     {
       type: "vertical",
-      number: "10",
+      number: "09",
       navLabel: "EP + Tour",
       title: "Campaigns 2-3 / September EP + Q4 Tour Window",
       philosophy: "The LATAM campaign is not a detour from the September EP. It is the warm audience the EP lands on. This section is the short-term plan for the comeback cycle and the tour window behind it, shaped by what the SIGN campaign proved.",
@@ -586,7 +586,7 @@ export const eightyTwoMajorRoadmap: StrategyPlanData = {
     // ===================================================================
     {
       type: "vertical",
-      number: "11",
+      number: "10",
       navLabel: "2027",
       title: "Campaigns 4-5 / January Single + February EP",
       philosophy: "The long-term plan is the same structure, compounding. Every cycle inherits the infrastructure, the warmed audiences, and the learnings of the one before it.",
@@ -633,7 +633,7 @@ export const eightyTwoMajorRoadmap: StrategyPlanData = {
     // ===================================================================
     {
       type: "vertical",
-      number: "12",
+      number: "11",
       navLabel: "Label",
       title: "Handled by Kakao / Great M",
       philosophy: "Workstreams the label and Kakao own directly. CCD coordinates timing and advises, but relationships, talent, and masters decisions run through the label side.",
@@ -675,11 +675,11 @@ export const eightyTwoMajorRoadmap: StrategyPlanData = {
     // ===================================================================
     {
       type: "flight",
-      number: "13",
+      number: "12",
       navLabel: "Flight",
-      title: "Proposed Media Flight",
-      intro: "How the deployable budget moves across the ~12-week cycle at each tier. Phase one localizes assets and stands up the ES infrastructure while paid runs in test mode. Phase two is the release window at full scale. Phase three sustains, bridges into the September EP, and hands the warmed LATAM audiences to the comeback campaign. If Trophy Español ships as an EP track rather than a standalone single, phase two slides to the EP week and phase one extends; the structure holds either way.",
-      totalBudget: "$10,900 (Foundation) / $28,300 (Expansion) to media + creators",
+      title: "Proposed Media Flight / Campaign 1",
+      intro: "How the Campaign 1 (Trophy Español) deployable budget moves across the ~12-week cycle at each tier. Phase one localizes assets and stands up the ES infrastructure while paid runs in test mode. Phase two is the release window at full scale. Phase three sustains, bridges into the September EP, and hands the warmed LATAM audiences to the comeback campaign. If Trophy Español ships as an EP track rather than a standalone single, phase two slides to the EP week and phase one extends; the structure holds either way.",
+      totalBudget: "Campaign 1 deployable: $10,900 (Foundation) / $28,300 (Expansion) to media + creators",
       phases: [
         {
           label: "Localize + Seed",
@@ -726,7 +726,7 @@ export const eightyTwoMajorRoadmap: StrategyPlanData = {
     // ===================================================================
     {
       type: "timeline",
-      number: "14",
+      number: "13",
       navLabel: "Timeline",
       title: "Execution Timeline",
       intro: "Twelve-week deployment grid for the Trophy Español cycle, running into the September EP and the Q4 tour window. Dates below assume an early-August start; the grid anchors to the locked release date and slides accordingly. W4 marks the flexible Trophy Español release slot (standalone scenario); W6-7 mark the September EP window; W10+ marks the tour run-in.",
@@ -884,14 +884,14 @@ export const eightyTwoMajorRoadmap: StrategyPlanData = {
     // ===================================================================
     {
       type: "pricing",
-      number: "15",
+      number: "14",
       navLabel: "Pricing",
-      title: "Final Pricing",
-      intro: "Two all-in options for the Trophy Español cycle (~12 weeks). CCD fees sit inside the budget, not on top: a $7,500 cycle retainer plus media management at 15% of managed spend. Everything else deploys to media, creators, and LATAM infrastructure. The September EP, the tour window, and each 2027 release authorize fresh budgets on the same structure.",
+      title: "Final Pricing / Campaign 1: Trophy Español",
+      intro: "This pricing covers Campaign 1 only: the Trophy Español LATAM launch (~12 weeks). The September EP, the Q4 tour window, and the 1H 2027 releases are not included in these numbers; each authorizes a fresh budget on this structure when it locks. CCD fees sit inside the budget, not on top: a $7,500 cycle retainer plus media management at 15% of managed spend. Everything else deploys to media, creators, and LATAM infrastructure.",
       ccdNote: "CCD fees are inside the budget ceiling. The deployable figure below is what reaches media, creators, and infrastructure after all fees.",
       tiers: [
         {
-          label: "Tier 1",
+          label: "Campaign 1 / Tier 1",
           budget: "$20,000",
           name: "LATAM Foundation",
           tagline: "All-in. Spanish-speaking LATAM (MX, CL, PE, CO). Concentrated paid + micro-creators + ES infrastructure.",
@@ -911,7 +911,7 @@ export const eightyTwoMajorRoadmap: StrategyPlanData = {
           ],
         },
         {
-          label: "Tier 2",
+          label: "Campaign 1 / Tier 2",
           budget: "$40,000",
           name: "LATAM Expansion",
           tagline: "All-in. Adds Brazil, mid-tier creators, funded PR + reactors, YouTube in-stream, and 2.6x the deployable media weight.",

@@ -33,17 +33,17 @@ export const eightyTwoMajorRoadmapKorean: StrategyPlanData = {
       title: "개요 및 목표",
       subtitle: "SIGN 캠페인을 통해 입증된 인프라를 기반으로 구축된 Trophy Español의 LATAM 출시 계획으로, 9월 컴백, 4분기 미국 투어 기간, 그리고 2027년 초 발매 일정에 맞춰 순차적으로 진행됩니다.",
       body: [
-        "GREAT M Entertainment의 요청에 따라 준비되었습니다. 본 계획은 TROPHY의 스페인어 버전을 전담 LATAM 캠페인으로 다루며, 두 가지 예산 수준($20,000 및 $40,000, 총액)으로 제시되고, 해당 캠페인을 전체 발매 아크 안에 배치합니다: 9월 EP, 10월-11월 미국 투어 기간, 1월 싱글, 그리고 2월 EP.",
+        "GREAT M Entertainment의 요청에 따라 준비되었습니다. 본 문서의 $20,000 및 $40,000 예산 수준은 하나의 캠페인, 즉 Trophy Español LATAM 출시를 지원합니다. 나머지 릴리스 아크(9월 EP, 10월-11월 미국 투어 기간, 1월 싱글, 2월 EP)는 모든 결정이 맥락 속에서 읽히도록 전략적으로 여기에 매핑되어 있으며, 각 캠페인은 잠금 시 자체 예산을 승인합니다.",
         "The strategic case is simple. The SIGN cycle proved that 82MAJOR converts the audience it reaches: Spotify followers grew from roughly 136K to 154K across the campaign while paid and organic discovery ran. Latin America is the largest audience 82MAJOR has never spent a dollar against. The group's five core LATAM markets (Brazil, Mexico, Chile, Peru, Colombia) already hold roughly the same monthly listener volume as South Korea, entirely organically. Trophy Español is the key that turns that latent audience into an owned one, at media costs a fraction of U.S. rates.",
         "여기에 표시된 예산은 Trophy Español 사이클(~12주)에 맞춰져 있습니다. 9월 EP, 투어 기간, 그리고 2027년 상반기 발매는 각각 동일한 구조로 새로운 예산을 승인받습니다. 본 캠페인이 구축하는 LATAM 인프라(스페인어 팬 채널, LATAM CRM 채널, 활성화된 유료 잠재 고객)는 이러한 모든 사이클에 걸쳐 적용됩니다.",
       ],
       supports: {
         heading: "본 계획이 지원하는 사항",
         items: [
-          "Trophy Español 출시 및 LATAM 시장 진출",
-          "9월 EP 컴백 (SIGN 이후 사이클)",
-          "10월-11월 미국 투어 기간 증폭",
-          "2027년 상반기 아크: 1월 싱글 및 2월 EP",
+          "Trophy Español 출시 및 LATAM 시장 진출 (본 문서에 가격이 명시된 캠페인)",
+          "9월 EP 컴백 (자체 예산, EP 잠금 시 승인)",
+          "10월-11월 미국 투어 기간 증폭 (자체 예산, 라우팅 시 승인)",
+          "1월 싱글 및 2월 EP (자체 예산, 2027년 상반기)",
         ],
       },
       goals: {
@@ -110,7 +110,7 @@ export const eightyTwoMajorRoadmapKorean: StrategyPlanData = {
           name: "Trophy Español / LATAM 진출",
           window: "2026년 8월 - 10월 (약 12주)",
           budget: "$20,000 / $40,000",
-          budgetNote: "본 제안서에 포함된 비용",
+          budgetNote: "본 문서에 가격이 명시된 유일한 예산",
           featured: true,
           objective: "TROPHY의 스페인어 버전을 스페인어 사용권 LATAM (브라질은 Expansion 티어)에 출시하며, 멕시코 시티와 산티아고에 집중하고, 미디어 비용은 미국 요금의 일부만 부담합니다.",
           compounds: [
@@ -190,7 +190,7 @@ export const eightyTwoMajorRoadmapKorean: StrategyPlanData = {
     // ===================================================================
     {
       type: "audience",
-      number: "04",
+      number: "03",
       navLabel: "LATAM",
       title: "LATAM 기회",
       intro: "82MAJOR의 5개 핵심 LATAM 시장은 현재 월간 리스너 약 36.5K명(Chartmetric, 2026년 7월 기준)을 보유하고 있으며, 이는 한국과 거의 동일한 수준으로 LATAM 마케팅 없이 구축되었습니다. 격차가 곧 기회입니다: LATAM은 82MAJOR의 리스닝 지리에서 약 7%를 차지하는 반면, ATEEZ는 약 11%, KATSEYE는 약 12%, Stray Kids는 약 24%를 차지하며, Stray Kids의 경우 멕시코는 세계 2위 국가입니다. 또한 라틴 아메리카는 전 세계적으로 가장 빠르게 성장하는 음반 시장(+17.1% in 2025)이며, 브라질과 멕시코는 이제 세계 10위권 시장입니다. 이러한 비율은 초기 유료 타겟팅과 LATAM 채널 네트워크의 콘텐츠 입지를 설정합니다.",
@@ -246,13 +246,13 @@ export const eightyTwoMajorRoadmapKorean: StrategyPlanData = {
     // ===================================================================
     {
       type: "structure",
-      number: "05",
-      navLabel: "구조",
-      title: "캠페인 구조",
-      intro: "Trophy Español 사이클(약 12주)을 위한 두 가지 올인원 예산 수준. CCD 리테이너 및 미디어 관리는 예산 내에 포함되며, 별도가 아닙니다. Foundation은 스페인어 사용 국가인 LATAM(멕시코, 칠레, 페루, 콜롬비아)에 전적으로 집중합니다. Expansion은 포르투갈어 자막 크리에이티브, 더 큰 규모의 크리에이터 프로그램, LATAM 음악 PR을 포함하여 브라질을 추가합니다. DSP 에디토리얼은 두 패키지 모두에서 Kakao의 유통 관계를 통해 동일하게 진행됩니다. 9월 EP 및 이후 모든 릴리스는 동일한 구조로 새로운 예산을 승인합니다.",
+      number: "04",
+      navLabel: "C1 예산",
+      title: "캠페인 1 예산 / Trophy Español",
+      intro: "이 예산은 캠페인 1, 즉 Trophy Español LATAM 출시(~12주)만을 지원합니다. 9월 EP, 투어 기간 또는 2027년 릴리스는 포함되지 않으며, 각 릴리스는 이와 동일한 구조로 자체 예산을 승인합니다. 두 가지 올인 레벨이 있습니다. CCD 리테이너 및 미디어 관리는 예산 내에 포함되며 추가되지 않습니다. Foundation은 스페인어 사용 국가인 LATAM(멕시코, 칠레, 페루, 콜롬비아)에 전적으로 집중합니다. Expansion은 포르투갈어 자막 크리에이티브, 더 큰 규모의 크리에이터 프로그램, LATAM 음악 PR을 포함하여 브라질을 추가합니다. DSP 에디토리얼은 두 패키지 모두에서 Kakao의 유통 관계를 통해 동일하게 운영됩니다.",
       tiers: [
         {
-          label: "Tier 1",
+          label: "캠페인 1 / 티어 1",
           budget: "$20,000",
           name: "LATAM Foundation",
           goal: "Trophy Español을 스페인어권 LATAM 시장에 출시하며, 집중적인 유료 미디어(멕시코시티 + 산티아고 우선), 마이크로 크리에이터 라운드, 스페인어 팬 채널, LATAM CRM 레인을 활용합니다. 시장 반응을 입증하고 9월 EP 출시 시 따뜻한 반응을 얻을 잠재 고객층을 구축합니다.",
@@ -266,13 +266,13 @@ export const eightyTwoMajorRoadmapKorean: StrategyPlanData = {
           ],
         },
         {
-          label: "티어 2",
+          label: "캠페인 1 / 티어 2",
           budget: "$40,000",
           name: "LATAM 확장",
           goal: "Foundation의 모든 것을 포함하며, 가용 미디어 비중은 약 2.6배 증가하고 브라질이 추가됩니다. 미들 티어 크리에이터, 스페인어 음악 PR 및 리액터 시딩, YouTube 인스트림이 추가됩니다. Trophy Español을 단순한 테스트가 아닌 진정한 LATAM의 순간으로 만들기 위해 구축되었습니다.",
           featured: true,
           includes: [
-            "LATAM Foundation의 모든 것",
+            "LATAM Foundation의 모든 것 (Trophy Español 캠페인 범위)",
             "브라질 추가: 포르투갈어 자막 크리에이티브 + BR 크리에이터 시딩",
             "마이크로 라운드에 추가되는 2-3명의 미드 티어 LATAM 크리에이터",
             "스페인어 음악 PR + YouTube 리액터 프로그램",
@@ -287,7 +287,7 @@ export const eightyTwoMajorRoadmapKorean: StrategyPlanData = {
     // ===================================================================
     {
       type: "vertical",
-      number: "06",
+      number: "05",
       navLabel: "팬덤",
       title: "버티컬 1 / LATAM 팬덤 & 인프라",
       philosophy: "스페인어로 구축된 복합적인 기반입니다. LATAM K팝 팬덤은 세계에서 가장 참여도가 높으며, 이를 활용할 수 있는 인프라가 존재합니다. (임대하는 것이 아니라)",
@@ -356,7 +356,7 @@ export const eightyTwoMajorRoadmapKorean: StrategyPlanData = {
     // ===================================================================
     {
       type: "vertical",
-      number: "07",
+      number: "06",
       navLabel: "디지털",
       title: "버티컬 2 / LATAM 디지털 마케팅",
       philosophy: "가장 저렴한 도달 범위를 목표로 하는 증폭기입니다. LATAM CPM은 이 캠페인에 구조적 이점을 제공합니다: 동일한 달러로 미국에서 구매하는 것보다 여러 배의 노출을 구매할 수 있습니다.",
@@ -424,7 +424,7 @@ export const eightyTwoMajorRoadmapKorean: StrategyPlanData = {
     // ===================================================================
     {
       type: "vertical",
-      number: "08",
+      number: "07",
       navLabel: "DSP",
       title: "버티컬 3 / DSP 전략 라틴 아메리카",
       philosophy: "Kakao의 유통 관계를 통해 주도되며 두 패키지 모두에서 동일한 디스커버리 레이어. 스페인어 릴리스는 LATAM 에디토리얼 팀이 글로벌 K-pop 범주를 넘어 K-pop 아티스트를 지원하는 데 필요한 자격 요건입니다.",
@@ -485,7 +485,7 @@ export const eightyTwoMajorRoadmapKorean: StrategyPlanData = {
     // ===================================================================
     {
       type: "vertical",
-      number: "09",
+      number: "08",
       navLabel: "PR",
       title: "버티컬 4 / PR & 미디어 LATAM",
       philosophy: "음원이 움직이기 시작하면 증폭. 스페인어 음악 미디어는 현지화 스토리를 보상하며, LATAM 리액터 문화는 그 자체로 유통 채널입니다.",
@@ -527,7 +527,7 @@ export const eightyTwoMajorRoadmapKorean: StrategyPlanData = {
     // ===================================================================
     {
       type: "vertical",
-      number: "10",
+      number: "09",
       navLabel: "EP + 투어",
       title: "캠페인 2-3 / 9월 EP + 4분기 투어 기간",
       philosophy: "LATAM 캠페인은 9월 EP에서 벗어난 것이 아닙니다. EP가 안착할 따뜻한 관객입니다. 이 섹션은 SIGN 캠페인이 증명한 것을 바탕으로 구성된 컴백 사이클 및 그 뒤를 잇는 투어 기간에 대한 단기 계획입니다.",
@@ -586,7 +586,7 @@ export const eightyTwoMajorRoadmapKorean: StrategyPlanData = {
     // ===================================================================
     {
       type: "vertical",
-      number: "11",
+      number: "10",
       navLabel: "2027",
       title: "캠페인 4-5 / 1월 싱글 + 2월 EP",
       philosophy: "장기 계획은 동일한 구조로 누적됩니다. 각 사이클은 이전 사이클의 인프라, 활성화된 오디언스, 학습 내용을 계승합니다.",
@@ -633,7 +633,7 @@ export const eightyTwoMajorRoadmapKorean: StrategyPlanData = {
     // ===================================================================
     {
       type: "vertical",
-      number: "12",
+      number: "11",
       navLabel: "레이블",
       title: "Kakao / Great M에서 담당",
       philosophy: "레이블과 Kakao가 직접 소유하는 워크스트림입니다. CCD는 타이밍을 조율하고 조언하지만, 관계, 재능, 마스터 결정은 레이블 측을 통해 진행됩니다.",
@@ -675,11 +675,11 @@ export const eightyTwoMajorRoadmapKorean: StrategyPlanData = {
     // ===================================================================
     {
       type: "flight",
-      number: "13",
+      number: "12",
       navLabel: "플라이트",
-      title: "제안 미디어 플라이트",
-      intro: "각 단계별 약 12주간의 사이클 동안 배포 가능한 예산이 어떻게 운영되는지에 대한 설명입니다. 1단계는 스페인어(ES) 인프라를 구축하고 유료 광고를 테스트 모드로 실행하는 동안 에셋을 현지화합니다. 2단계는 전체 규모의 릴리스 기간입니다. 3단계는 유지보수하며, 9월 EP로 이어지고, 활성화된 LATAM 잠재 고객을 컴백 캠페인으로 연결합니다. 'Trophy Español'이 독립 싱글이 아닌 EP 트랙으로 출시될 경우, 2단계는 EP 주간으로 이동하고 1단계는 연장됩니다. 어느 경우든 구조는 유지됩니다.",
-      totalBudget: "$10,900 (Foundation) / $28,300 (Expansion) to media + creators",
+      title: "제안된 미디어 플라이트 / 캠페인 1",
+      intro: "각 티어별 약 12주 주기에 걸쳐 캠페인 1(Trophy Español)의 집행 가능 예산이 어떻게 이동하는지에 대한 설명입니다. 1단계는 ES 인프라를 구축하고 유료 광고를 테스트 모드로 실행하는 동안 자산을 현지화합니다. 2단계는 전체 규모의 릴리스 기간입니다. 3단계는 지속하고, 9월 EP로 연결하며, 활성화된 LATAM 잠재 고객을 컴백 캠페인에 인계합니다. Trophy Español이 독립형 싱글이 아닌 EP 트랙으로 출시될 경우, 2단계는 EP 주간으로 이동하고 1단계는 연장됩니다. 어느 경우든 구조는 유지됩니다.",
+      totalBudget: "캠페인 1 집행 가능 예산: 미디어 + 크리에이터 대상 $10,900 (Foundation) / $28,300 (Expansion)",
       phases: [
         {
           label: "현지화 + 시드",
@@ -726,7 +726,7 @@ export const eightyTwoMajorRoadmapKorean: StrategyPlanData = {
     // ===================================================================
     {
       type: "timeline",
-      number: "14",
+      number: "13",
       navLabel: "타임라인",
       title: "실행 타임라인",
       intro: "Trophy Español 사이클을 위한 12주간의 배포 그리드로, 9월 EP 및 Q4 투어 기간까지 이어집니다. 아래 날짜는 8월 초 시작을 가정하며, 그리드는 확정된 릴리스 날짜에 맞춰 조정됩니다. W4는 유연한 Trophy Español 릴리스 슬롯(독립형 시나리오)을 나타내며, W6-7은 9월 EP 기간을, W10+는 투어 준비 기간을 나타냅니다.",
@@ -884,14 +884,14 @@ export const eightyTwoMajorRoadmapKorean: StrategyPlanData = {
     // ===================================================================
     {
       type: "pricing",
-      number: "15",
+      number: "14",
       navLabel: "가격 책정",
-      title: "최종 가격 책정",
-      intro: "Trophy Español 주기(~12주)에 대한 두 가지 올인 옵션이 있습니다. CCD 수수료는 예산 외 추가가 아닌 예산 내에 포함됩니다: 7,500달러의 주기 리테이너와 관리 지출의 15%에 해당하는 미디어 관리 수수료입니다. 나머지 모든 비용은 미디어, 크리에이터 및 LATAM 인프라에 배포됩니다. 9월 EP, 투어 기간 및 2027년 각 출시 건은 동일한 구조로 새로운 예산을 승인받습니다.",
+      title: "최종 가격 / 캠페인 1: Trophy Español",
+      intro: "이 가격은 캠페인 1, 즉 Trophy Español LATAM 출시(~12주)만을 포함합니다. 9월 EP, 4분기 투어 기간, 2027년 상반기 릴리스는 이 수치에 포함되지 않으며, 각 릴리스는 잠금 시 이 구조에 따라 새로운 예산을 승인합니다. CCD 수수료는 예산 내에 포함되며 추가되지 않습니다. 즉, 사이클 리테이너 $7,500에 관리 지출의 15%에 해당하는 미디어 관리가 포함됩니다. 나머지 모든 것은 미디어, 크리에이터 및 LATAM 인프라에 배포됩니다.",
       ccdNote: "CCD 수수료는 예산 상한선 내에 포함됩니다. 아래 배포 가능 금액은 모든 수수료를 제외하고 미디어, 크리에이터 및 인프라에 도달하는 금액입니다.",
       tiers: [
         {
-          label: "Tier 1",
+          label: "캠페인 1 / 티어 1",
           budget: "$20,000",
           name: "LATAM Foundation",
           tagline: "올인. 스페인어 사용 LATAM (MX, CL, PE, CO). 집중적인 유료 광고 + 마이크로 크리에이터 + ES 인프라.",
@@ -911,7 +911,7 @@ export const eightyTwoMajorRoadmapKorean: StrategyPlanData = {
           ],
         },
         {
-          label: "티어 2",
+          label: "캠페인 1 / 티어 2",
           budget: "$40,000",
           name: "LATAM 확장",
           tagline: "올인. 브라질, 미드 티어 크리에이터, 유료 PR + 리액터, YouTube 인스트림 광고, 그리고 2.6배의 집행 가능한 미디어 규모를 추가합니다.",
