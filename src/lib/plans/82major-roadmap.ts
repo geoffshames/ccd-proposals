@@ -33,7 +33,7 @@ export const eightyTwoMajorRoadmap: StrategyPlanData = {
       title: "Overview & Objective",
       subtitle: "A LATAM launch plan for Trophy Español, built on the infrastructure the SIGN campaign proved, sequenced into the September comeback, the Q4 U.S. tour window, and the early-2027 releases.",
       body: [
-        "Prepared at the request of GREAT M Entertainment. The $20,000 and $40,000 budget levels in this document fund one campaign: the Trophy Español LATAM launch. The rest of the release arc (the September EP, the October-November U.S. tour window, the January single, and the February EP) is mapped here strategically so every decision reads in context, and each of those campaigns authorizes its own budget when it locks.",
+        "Prepared at the request of GREAT M Entertainment. The $30,000 and $45,000 budget levels in this document fund one campaign: the Trophy Español LATAM launch. The rest of the release arc (the September EP, the October-November U.S. tour window, the January single, and the February EP) is mapped here strategically so every decision reads in context, and each of those campaigns authorizes its own budget when it locks.",
         "The strategic case is simple. The SIGN cycle proved that 82MAJOR converts the audience it reaches: Spotify followers grew from roughly 136K to 154K across the campaign while paid and organic discovery ran. Latin America is the largest audience 82MAJOR has never spent a dollar against. The group's five core LATAM markets (Brazil, Mexico, Chile, Peru, Colombia) already hold roughly the same monthly listener volume as South Korea, entirely organically. Trophy Español is the key that turns that latent audience into an owned one, at media costs a fraction of U.S. rates.",
         "The budget shown here is scoped to the Trophy Español cycle (~12 weeks). The September EP, the tour window, and the 1H 2027 releases each authorize fresh budgets on the same structure. The LATAM infrastructure this campaign stands up (Spanish-language fan channels, LATAM CRM lane, warmed paid audiences) carries across every one of those cycles.",
       ],
@@ -109,7 +109,7 @@ export const eightyTwoMajorRoadmap: StrategyPlanData = {
           label: "Campaign 1",
           name: "Trophy Español / LATAM Entry",
           window: "Aug - Oct 2026 (~12 weeks)",
-          budget: "$20,000 / $40,000",
+          budget: "$30,000 / $45,000",
           budgetNote: "The only budget priced in this document",
           featured: true,
           objective: "Launch the Spanish version of TROPHY into Spanish-speaking LATAM (Brazil at the Expansion tier), concentrated on Mexico City and Santiago, at media costs a fraction of U.S. rates.",
@@ -253,12 +253,12 @@ export const eightyTwoMajorRoadmap: StrategyPlanData = {
       tiers: [
         {
           label: "Campaign 1 / Tier 1",
-          budget: "$20,000",
+          budget: "$30,000",
           name: "LATAM Foundation",
           goal: "Launch Trophy Español into Spanish-speaking LATAM with concentrated paid media (Mexico City + Santiago first), a micro-creator round, Spanish-language fan channels, and a LATAM CRM lane. Prove the market response and build the warmed audiences the September EP lands on.",
           includes: [
             "Paid Social LATAM (TikTok + Meta), concentrated on MX + CL, extending to PE + CO",
-            "8-10 LATAM micro-creators (dance cover, fan-edit, reaction lanes)",
+            "10-15 LATAM micro-creators (dance cover, fan-edit, reaction lanes)",
             "Spanish-language fan channel network + Laylo ES lane",
             "DSP editorial coordination with Kakao: pitch packets, ES metadata, release-week follow-ups",
             "Dark-ads testing loop with winner handoff to official channels",
@@ -267,14 +267,14 @@ export const eightyTwoMajorRoadmap: StrategyPlanData = {
         },
         {
           label: "Campaign 1 / Tier 2",
-          budget: "$40,000",
+          budget: "$45,000",
           name: "LATAM Expansion",
-          goal: "Everything in Foundation, at roughly 2.6x the deployable media weight, plus Brazil. Adds mid-tier creators, Spanish-language music PR and reactor seeding, and YouTube in-stream. Built to make Trophy Español a genuine LATAM moment, not a test.",
+          goal: "Everything in Foundation, at roughly 1.7x the deployable media weight, plus Brazil. Adds mid-tier creators, Spanish-language music PR and reactor seeding, and YouTube in-stream. Built to make Trophy Español a genuine LATAM moment, not a test.",
           featured: true,
           includes: [
             "Everything in LATAM Foundation (Trophy Español campaign scope)",
             "Brazil added: Portuguese-captioned creative + BR creator seeding",
-            "2-3 mid-tier LATAM creators on top of the micro round",
+            "3-4 mid-tier LATAM creators on top of the micro round",
             "Spanish-language music PR + YouTube reactor program",
             "YouTube in-stream against the ES lyric video and MV assets",
           ],
@@ -387,7 +387,7 @@ export const eightyTwoMajorRoadmap: StrategyPlanData = {
           label: "B",
           title: "LATAM Creator Program",
           objective: "Put Trophy Español inside the LATAM creator ecosystems where K-pop discovery actually happens: dance cover crews, fan-edit accounts, and reaction creators in MX, CL, PE, CO (+ BR at Expansion).",
-          strategy: "Foundation runs 8-10 micro-creators (high-credibility, community-native, low cost per post). Expansion adds 2-3 mid-tier creators for reach spikes and a Brazil seeding wave. All briefs are challenge-forward: the Spanish chorus is the hook, the dance point is the format. Winners get boosted with paid spend behind the creator's own post.",
+          strategy: "Foundation runs 10-15 micro-creators (high-credibility, community-native, low cost per post). Expansion adds 3-4 mid-tier creators for reach spikes and a Brazil seeding wave. All briefs are challenge-forward: the Spanish chorus is the hook, the dance point is the format. Winners get boosted with paid spend behind the creator's own post.",
           components: {
             heading: "Program Design",
             items: [
@@ -667,7 +667,7 @@ export const eightyTwoMajorRoadmap: StrategyPlanData = {
           objective: "Distribution mechanics that make the LATAM campaign eligible to work: Spanish-language metadata and credits at delivery, lyric delivery to DSPs for ES lyric display, and release-date lock early enough to anchor the pre-save window and the campaign grid.",
         },
       ],
-      footnote: "These workstreams sit outside the $20,000 / $40,000 campaign budgets. CCD provides strategy and coordination; the label and Kakao execute.",
+      footnote: "These workstreams sit outside the $30,000 / $45,000 campaign budgets. CCD provides strategy and coordination; the label and Kakao execute.",
     },
 
     // ===================================================================
@@ -679,13 +679,13 @@ export const eightyTwoMajorRoadmap: StrategyPlanData = {
       navLabel: "Flight",
       title: "Proposed Media Flight / Campaign 1",
       intro: "How the Campaign 1 (Trophy Español) deployable budget moves across the ~12-week cycle at each tier. Phase one localizes assets and stands up the ES infrastructure while paid runs in test mode. Phase two is the release window at full scale. Phase three sustains, bridges into the September EP, and hands the warmed LATAM audiences to the comeback campaign. If Trophy Español ships as an EP track rather than a standalone single, phase two slides to the EP week and phase one extends; the structure holds either way.",
-      totalBudget: "Campaign 1 deployable: $10,900 (Foundation) / $28,300 (Expansion) to media + creators",
+      totalBudget: "Campaign 1 deployable: $19,600 (Foundation) / $32,700 (Expansion) to media + creators",
       phases: [
         {
           label: "Localize + Seed",
           window: "Weeks 1-3",
           focus: "ES asset pack finalized (captions, lyric assets, cutdowns). Spanish fan channels and Laylo ES lane live. Creator briefs out. Paid social launches in test mode against Mexico City + Santiago stacks using existing TROPHY content, building retargeting pools before the record drops.",
-          budget: "~$2,500 / ~$6,000",
+          budget: "~$4,500 / ~$7,000",
           tactics: [
             "Paid test phase: ES-captioned creatives, city-level audiences, second-click optimization",
             "ES fan channel network launch + first Laylo ES broadcast",
@@ -697,7 +697,7 @@ export const eightyTwoMajorRoadmap: StrategyPlanData = {
           label: "Launch + Scale",
           window: "Weeks 4-8",
           focus: "Trophy Español release window. Paid scales onto proven creative across MX, CL, PE, CO (+ BR at Expansion). Creator wave one live with paid boost behind winners. Streaming parties, ES drop alert, and playlist pushes fire in release week. Expansion adds reactor placements and YouTube in-stream.",
-          budget: "~$5,500 / ~$15,000",
+          budget: "~$10,500 / ~$17,500",
           tactics: [
             "Full-funnel paid scale: awareness + engagement + retargeting on winners",
             "Creator wave one + boosted winner posts",
@@ -709,7 +709,7 @@ export const eightyTwoMajorRoadmap: StrategyPlanData = {
           label: "Sustain + EP Bridge",
           window: "Weeks 9-12",
           focus: "Spend steps down to evergreen + retargeting. Second creator wave held for the September EP week. LATAM pre-save flow opens for the EP. Campaign learnings, warmed audiences, and the ES infrastructure hand off to the comeback cycle.",
-          budget: "~$2,900 / ~$7,300",
+          budget: "~$4,600 / ~$8,200",
           tactics: [
             "Evergreen + retargeting on top creatives; catalog cross-link push",
             "Second creator wave timed to the EP week",
@@ -892,44 +892,44 @@ export const eightyTwoMajorRoadmap: StrategyPlanData = {
       tiers: [
         {
           label: "Campaign 1 / Tier 1",
-          budget: "$20,000",
+          budget: "$30,000",
           name: "LATAM Foundation",
           tagline: "All-in. Spanish-speaking LATAM (MX, CL, PE, CO). Concentrated paid + micro-creators + ES infrastructure.",
-          deployable: "$10,900",
+          deployable: "$19,600",
           feeBreakdown: {
             retainer: "$7,500",
             retainerDetail: "CCD cycle retainer (~12 weeks): strategy, execution, vendor management, weekly dashboard reporting",
-            mediaManagement: "$1,600",
+            mediaManagement: "$2,900",
             mediaManagementDetail: "Media management at 15% of managed spend",
           },
           breakdown: [
-            { vertical: "Paid Social LATAM (TikTok + Meta)", amount: "$6,600" },
-            { vertical: "LATAM Creator Program (8-10 micro)", amount: "$3,300" },
-            { vertical: "ES Fan Channels + Laylo ES", amount: "$1,000" },
+            { vertical: "Paid Social LATAM (TikTok + Meta)", amount: "$12,000" },
+            { vertical: "LATAM Creator Program (10-15 micro)", amount: "$6,000" },
+            { vertical: "ES Fan Channels + Laylo ES", amount: "$1,600" },
             { vertical: "CCD Retainer", amount: "$7,500" },
-            { vertical: "Media Management (15%)", amount: "$1,600" },
+            { vertical: "Media Management (15%)", amount: "$2,900" },
           ],
         },
         {
           label: "Campaign 1 / Tier 2",
-          budget: "$40,000",
+          budget: "$45,000",
           name: "LATAM Expansion",
-          tagline: "All-in. Adds Brazil, mid-tier creators, funded PR + reactors, YouTube in-stream, and 2.6x the deployable media weight.",
+          tagline: "All-in. Adds Brazil, mid-tier creators, funded PR + reactors, YouTube in-stream, and 1.7x the deployable media weight.",
           featured: true,
-          deployable: "$28,300",
+          deployable: "$32,700",
           feeBreakdown: {
             retainer: "$7,500",
             retainerDetail: "CCD cycle retainer (~12 weeks): strategy, execution, vendor management, weekly dashboard reporting",
-            mediaManagement: "$4,200",
+            mediaManagement: "$4,800",
             mediaManagementDetail: "Media management at 15% of managed spend",
           },
           breakdown: [
-            { vertical: "Paid Social LATAM (TikTok + Meta + YouTube)", amount: "$16,000" },
-            { vertical: "LATAM Creator Program (micro + mid-tier + BR)", amount: "$8,000" },
-            { vertical: "LATAM PR + Reactor Program", amount: "$2,800" },
-            { vertical: "ES/PT Fan Channels + Laylo ES", amount: "$1,500" },
+            { vertical: "Paid Social LATAM (TikTok + Meta + YouTube)", amount: "$18,500" },
+            { vertical: "LATAM Creator Program (micro + mid-tier + BR)", amount: "$9,000" },
+            { vertical: "LATAM PR + Reactor Program", amount: "$3,500" },
+            { vertical: "ES/PT Fan Channels + Laylo ES", amount: "$1,700" },
             { vertical: "CCD Retainer", amount: "$7,500" },
-            { vertical: "Media Management (15%)", amount: "$4,200" },
+            { vertical: "Media Management (15%)", amount: "$4,800" },
           ],
         },
       ],

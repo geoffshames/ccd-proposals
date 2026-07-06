@@ -33,8 +33,8 @@ export const eightyTwoMajorRoadmapKorean: StrategyPlanData = {
       title: "개요 및 목표",
       subtitle: "SIGN 캠페인을 통해 입증된 인프라를 기반으로 구축된 Trophy Español의 LATAM 출시 계획으로, 9월 컴백, 4분기 미국 투어 기간, 그리고 2027년 초 발매 일정에 맞춰 순차적으로 진행됩니다.",
       body: [
-        "GREAT M Entertainment의 요청에 따라 준비되었습니다. 본 문서의 $20,000 및 $40,000 예산 수준은 하나의 캠페인, 즉 Trophy Español LATAM 출시를 지원합니다. 나머지 릴리스 아크(9월 EP, 10월-11월 미국 투어 기간, 1월 싱글, 2월 EP)는 모든 결정이 맥락 속에서 읽히도록 전략적으로 여기에 매핑되어 있으며, 각 캠페인은 잠금 시 자체 예산을 승인합니다.",
-        "The strategic case is simple. The SIGN cycle proved that 82MAJOR converts the audience it reaches: Spotify followers grew from roughly 136K to 154K across the campaign while paid and organic discovery ran. Latin America is the largest audience 82MAJOR has never spent a dollar against. The group's five core LATAM markets (Brazil, Mexico, Chile, Peru, Colombia) already hold roughly the same monthly listener volume as South Korea, entirely organically. Trophy Español is the key that turns that latent audience into an owned one, at media costs a fraction of U.S. rates.",
+        "GREAT M Entertainment의 요청에 따라 준비되었습니다. 본 문서의 $30,000 및 $45,000 예산 수준은 하나의 캠페인, 즉 Trophy Español LATAM 론칭만을 지원합니다. 릴리즈 아크의 나머지(9월 EP, 10-11월 미국 투어 기간, 1월 싱글, 2월 EP)는 모든 결정이 전체 맥락 속에서 읽히도록 전략적으로 함께 정리했으며, 각 캠페인은 확정 시점에 자체 예산을 승인받습니다.",
+        "전략적 근거는 명확합니다. SIGN 사이클은 82MAJOR가 도달한 오디언스를 팬으로 전환한다는 것을 증명했습니다: 유료 및 오가닉 디스커버리가 진행되는 동안 Spotify 팔로워는 약 136K에서 154K로 성장했습니다. 라틴 아메리카는 82MAJOR가 아직 단 한 푼도 투자하지 않은 가장 큰 오디언스입니다. 그룹의 핵심 LATAM 5개 시장(브라질, 멕시코, 칠레, 페루, 콜롬비아)은 이미 완전히 오가닉하게 한국과 거의 동일한 월간 리스너 볼륨을 보유하고 있습니다. Trophy Español은 이 잠재 오디언스를 미국 대비 훨씬 낮은 미디어 비용으로 소유 오디언스로 전환하는 열쇠입니다.",
         "여기에 표시된 예산은 Trophy Español 사이클(~12주)에 맞춰져 있습니다. 9월 EP, 투어 기간, 그리고 2027년 상반기 발매는 각각 동일한 구조로 새로운 예산을 승인받습니다. 본 캠페인이 구축하는 LATAM 인프라(스페인어 팬 채널, LATAM CRM 채널, 활성화된 유료 잠재 고객)는 이러한 모든 사이클에 걸쳐 적용됩니다.",
       ],
       supports: {
@@ -109,7 +109,7 @@ export const eightyTwoMajorRoadmapKorean: StrategyPlanData = {
           label: "캠페인 1",
           name: "Trophy Español / LATAM 진출",
           window: "2026년 8월 - 10월 (약 12주)",
-          budget: "$20,000 / $40,000",
+          budget: "$30,000 / $45,000",
           budgetNote: "본 문서에 가격이 명시된 유일한 예산",
           featured: true,
           objective: "TROPHY의 스페인어 버전을 스페인어 사용권 LATAM (브라질은 Expansion 티어)에 출시하며, 멕시코 시티와 산티아고에 집중하고, 미디어 비용은 미국 요금의 일부만 부담합니다.",
@@ -253,12 +253,12 @@ export const eightyTwoMajorRoadmapKorean: StrategyPlanData = {
       tiers: [
         {
           label: "캠페인 1 / 티어 1",
-          budget: "$20,000",
+          budget: "$30,000",
           name: "LATAM Foundation",
           goal: "Trophy Español을 스페인어권 LATAM 시장에 출시하며, 집중적인 유료 미디어(멕시코시티 + 산티아고 우선), 마이크로 크리에이터 라운드, 스페인어 팬 채널, LATAM CRM 레인을 활용합니다. 시장 반응을 입증하고 9월 EP 출시 시 따뜻한 반응을 얻을 잠재 고객층을 구축합니다.",
           includes: [
             "유료 소셜 LATAM (TikTok + Meta), MX + CL에 집중하며 PE + CO로 확장",
-            "8-10명의 LATAM 마이크로 크리에이터 (댄스 커버, 팬 편집, 반응 콘텐츠)",
+            "LATAM 마이크로 크리에이터 10-15명 (댄스 커버, 팬 에딧, 리액션 레인)",
             "스페인어 팬 채널 네트워크 + Laylo ES 레인",
             "Kakao와의 DSP 에디토리얼 협업: 피치 팩, ES 메타데이터, 릴리스 주간 후속 조치",
             "당첨작을 공식 채널로 이관하는 다크 광고 테스트 루프",
@@ -267,14 +267,14 @@ export const eightyTwoMajorRoadmapKorean: StrategyPlanData = {
         },
         {
           label: "캠페인 1 / 티어 2",
-          budget: "$40,000",
+          budget: "$45,000",
           name: "LATAM 확장",
-          goal: "Foundation의 모든 것을 포함하며, 가용 미디어 비중은 약 2.6배 증가하고 브라질이 추가됩니다. 미들 티어 크리에이터, 스페인어 음악 PR 및 리액터 시딩, YouTube 인스트림이 추가됩니다. Trophy Español을 단순한 테스트가 아닌 진정한 LATAM의 순간으로 만들기 위해 구축되었습니다.",
+          goal: "Foundation의 모든 것을 포함하며, 집행 가능한 미디어 규모는 약 1.7배로 확대되고 브라질이 추가됩니다. 미드 티어 크리에이터, 스페인어 음악 PR 및 리액터 시딩, YouTube 인스트림이 추가됩니다. Trophy Español을 테스트가 아닌 진정한 LATAM 모먼트로 만들기 위한 구성입니다.",
           featured: true,
           includes: [
             "LATAM Foundation의 모든 것 (Trophy Español 캠페인 범위)",
             "브라질 추가: 포르투갈어 자막 크리에이티브 + BR 크리에이터 시딩",
-            "마이크로 라운드에 추가되는 2-3명의 미드 티어 LATAM 크리에이터",
+            "마이크로 라운드에 더해 미드 티어 LATAM 크리에이터 3-4명",
             "스페인어 음악 PR + YouTube 리액터 프로그램",
             "ES 가사 비디오 및 MV 에셋에 대한 YouTube 인스트림 광고",
           ],
@@ -340,7 +340,7 @@ export const eightyTwoMajorRoadmapKorean: StrategyPlanData = {
           title: "LATAM 팬 참여 메커니즘",
           objective: "해당 지역의 참여적인 팬 문화를 가시적인 모멘텀으로 전환합니다: 스트리밍 파티, 커버 챌린지, 그리고 에디토리얼, 크리에이터, 언론이 볼 수 있는 팬 프로젝트 에너지를 활용합니다.",
           tactics: [
-            "Release-week streaming parties hosted with LATAM fan bases (Stationhead + Spotify group sessions)",
+            "LATAM 팬베이스와 함께하는 발매 주간 스트리밍 파티 (Stationhead + Spotify 그룹 세션)",
             "크리에이터 라운드를 통해 시작된 스페인어 가사 챌린지 및 댄스 커버 챌린지",
             "팬 프로젝트 인정: 조직에 대한 보상으로 LATAM 팬 프로젝트의 공식 리포스트",
             "해당 지역이 중요하다는 신호를 보내기 위해 LATAM에 가중치를 둔 경품 (사인 아이템, 영상 통화 슬롯)",
@@ -379,7 +379,7 @@ export const eightyTwoMajorRoadmapKorean: StrategyPlanData = {
           kpis: [
             "고의도 클릭당 비용 대 미국 캠페인 기준선",
             "75,000+ 2회 주기 목표 대비 라탐 월간 리스너 성장",
-            "Spotify follower adds from LATAM-5 markets",
+            "LATAM 5개 시장에서의 Spotify 팔로워 증가",
             "미국 상당 지출 대비 포착된 CPM 델타",
           ],
         },
@@ -387,7 +387,7 @@ export const eightyTwoMajorRoadmapKorean: StrategyPlanData = {
           label: "B",
           title: "라탐 크리에이터 프로그램",
           objective: "K팝 발견이 실제로 일어나는 라탐 크리에이터 생태계 내에 트로피 에스파뇰을 배치: 멕시코, 칠레, 페루, 콜롬비아(확장 시 브라질 포함)의 댄스 커버 크루, 팬 편집 계정, 반응 크리에이터.",
-          strategy: "기반은 8-10명의 마이크로 크리에이터(높은 신뢰도, 커뮤니티 네이티브, 낮은 게시물당 비용)를 운영합니다. 확장은 도달 범위 급증과 브라질 시딩 웨이브를 위해 2-3명의 미드 티어 크리에이터를 추가합니다. 모든 브리프는 챌린지 중심입니다: 스페인어 코러스가 후크이고, 댄스 포인트가 형식입니다. 우승자는 크리에이터 자신의 게시물 뒤에 유료 지출로 홍보됩니다.",
+          strategy: "Foundation은 마이크로 크리에이터 10-15명(높은 신뢰도, 커뮤니티 네이티브, 낮은 포스트당 비용)을 운영합니다. Expansion은 도달 스파이크를 위한 미드 티어 크리에이터 3-4명과 브라질 시딩 웨이브를 추가합니다. 모든 브리프는 챌린지 중심입니다: 스페인어 코러스가 훅이고, 댄스 포인트가 포맷입니다. 위너 콘텐츠는 크리에이터 본인의 포스트에 유료 부스트를 집행합니다.",
           components: {
             heading: "프로그램 디자인",
             items: [
@@ -437,8 +437,8 @@ export const eightyTwoMajorRoadmapKorean: StrategyPlanData = {
           components: {
             heading: "구성 요소",
             items: [
-              "Spotify LATAM editorial pitching (K-pop verticals + ES pop and viral lanes)",
-              "YouTube Music and Apple Music LATAM playlist pitching",
+              "Spotify LATAM 에디토리얼 피칭 (K-pop 버티컬 + 스페인어 팝 및 바이럴 레인)",
+              "YouTube Music 및 Apple Music LATAM 플레이리스트 피칭",
               "브라질을 위한 Deezer 협업 (BR에서의 비중이 큼)",
               "스페인어권 메타데이터, 크레딧, 가사 전달 사항은 릴리스 전에 검증됩니다.",
               "인용 가능한 시장 성과를 위한 릴리스 주간에 맞춰진 iTunes 라틴 아메리카 차트 푸시",
@@ -667,7 +667,7 @@ export const eightyTwoMajorRoadmapKorean: StrategyPlanData = {
           objective: "LATAM 캠페인 실행을 가능하게 하는 배포 메커니즘: 음원 전달 시 스페인어 메타데이터 및 크레딧, DSP에 가사 전달(ES 가사 표시용), 사전 저장(pre-save) 기간 및 캠페인 일정을 확정할 수 있는 충분한 시간 확보를 위한 릴리스 날짜 고정.",
         },
       ],
-      footnote: "이 워크스트림은 $20,000 / $40,000 캠페인 예산 외부에 있습니다. CCD는 전략 및 조정을 제공하며, 레이블과 Kakao가 실행합니다.",
+      footnote: "이 워크스트림들은 $30,000 / $45,000 캠페인 예산 외부에 있습니다. CCD는 전략과 코디네이션을 제공하며, 레이블과 Kakao가 실행합니다.",
     },
 
     // ===================================================================
@@ -679,13 +679,13 @@ export const eightyTwoMajorRoadmapKorean: StrategyPlanData = {
       navLabel: "플라이트",
       title: "제안된 미디어 플라이트 / 캠페인 1",
       intro: "각 티어별 약 12주 주기에 걸쳐 캠페인 1(Trophy Español)의 집행 가능 예산이 어떻게 이동하는지에 대한 설명입니다. 1단계는 ES 인프라를 구축하고 유료 광고를 테스트 모드로 실행하는 동안 자산을 현지화합니다. 2단계는 전체 규모의 릴리스 기간입니다. 3단계는 지속하고, 9월 EP로 연결하며, 활성화된 LATAM 잠재 고객을 컴백 캠페인에 인계합니다. Trophy Español이 독립형 싱글이 아닌 EP 트랙으로 출시될 경우, 2단계는 EP 주간으로 이동하고 1단계는 연장됩니다. 어느 경우든 구조는 유지됩니다.",
-      totalBudget: "캠페인 1 집행 가능 예산: 미디어 + 크리에이터 대상 $10,900 (Foundation) / $28,300 (Expansion)",
+      totalBudget: "캠페인 1 집행 가능 예산: 미디어 + 크리에이터 대상 $19,600 (Foundation) / $32,700 (Expansion)",
       phases: [
         {
           label: "현지화 + 시드",
           window: "1-3주차",
           focus: "스페인어(ES) 에셋 팩 완료 (캡션, 가사 에셋, 컷다운). 스페인어 팬 채널 및 Laylo ES 채널 활성화. 크리에이터 브리핑 배포. 기존 'TROPHY' 콘텐츠를 활용하여 멕시코 시티 + 산티아고 타겟에 유료 소셜 광고 테스트 모드 출시, 음원 발매 전 리타겟팅 풀 구축.",
-          budget: "~$2,500 / ~$6,000",
+          budget: "~$4,500 / ~$7,000",
           tactics: [
             "유료 테스트 단계: 스페인어(ES) 캡션 포함 광고 소재, 도시별 타겟팅, 두 번째 클릭 최적화",
             "스페인어(ES) 팬 채널 네트워크 출시 + 첫 Laylo ES 방송",
@@ -697,7 +697,7 @@ export const eightyTwoMajorRoadmapKorean: StrategyPlanData = {
           label: "론칭 및 스케일업",
           window: "4주차-8주차",
           focus: "Trophy Español 릴리즈 기간. MX, CL, PE, CO (확장 시 BR 포함) 전역에서 검증된 크리에이티브에 유료 광고 집행. 1차 크리에이터 웨이브 라이브 및 우승자 대상 유료 부스트. 릴리즈 주간 스트리밍 파티, ES 드롭 알림, 플레이리스트 푸시 진행. 확장 단계에서 리액터 배치 및 YouTube 인스트림 광고 추가.",
-          budget: "~$5,500 / ~$15,000",
+          budget: "~$10,500 / ~$17,500",
           tactics: [
             "풀퍼널 유료 광고 스케일업: 인지도 + 참여 + 우승자 리타겟팅",
             "1차 크리에이터 웨이브 + 우승자 게시물 부스트",
@@ -709,7 +709,7 @@ export const eightyTwoMajorRoadmapKorean: StrategyPlanData = {
           label: "지속 및 EP 브릿지",
           window: "9주차-12주차",
           focus: "지출을 에버그린 + 리타겟팅으로 축소. 9월 EP 주간을 위해 2차 크리에이터 웨이브 준비. EP를 위한 LATAM 사전 저장 플로우 오픈. 캠페인 학습 결과, 워밍업된 잠재 고객, ES 인프라를 컴백 사이클로 이관.",
-          budget: "~$2,900 / ~$7,300",
+          budget: "~$4,600 / ~$8,200",
           tactics: [
             "에버그린 + 상위 크리에이티브 리타겟팅; 카탈로그 교차 링크 푸시",
             "EP 주간에 맞춰 진행되는 2차 크리에이터 웨이브",
@@ -892,44 +892,44 @@ export const eightyTwoMajorRoadmapKorean: StrategyPlanData = {
       tiers: [
         {
           label: "캠페인 1 / 티어 1",
-          budget: "$20,000",
+          budget: "$30,000",
           name: "LATAM Foundation",
           tagline: "올인. 스페인어 사용 LATAM (MX, CL, PE, CO). 집중적인 유료 광고 + 마이크로 크리에이터 + ES 인프라.",
-          deployable: "$10,900",
+          deployable: "$19,600",
           feeBreakdown: {
             retainer: "$7,500",
             retainerDetail: "CCD 주기 리테이너(~12주): 전략, 실행, 공급업체 관리, 주간 대시보드 보고",
-            mediaManagement: "$1,600",
+            mediaManagement: "$2,900",
             mediaManagementDetail: "관리 지출의 15%에 해당하는 미디어 관리",
           },
           breakdown: [
-            { vertical: "유료 소셜 LATAM (TikTok + Meta)", amount: "$6,600" },
-            { vertical: "LATAM 크리에이터 프로그램 (8-10명의 마이크로 크리에이터)", amount: "$3,300" },
-            { vertical: "ES 팬 채널 + Laylo ES", amount: "$1,000" },
+            { vertical: "유료 소셜 LATAM (TikTok + Meta)", amount: "$12,000" },
+            { vertical: "LATAM 크리에이터 프로그램 (마이크로 10-15명)", amount: "$6,000" },
+            { vertical: "ES 팬 채널 + Laylo ES", amount: "$1,600" },
             { vertical: "CCD 리테이너", amount: "$7,500" },
-            { vertical: "미디어 관리 (15%)", amount: "$1,600" },
+            { vertical: "미디어 관리 (15%)", amount: "$2,900" },
           ],
         },
         {
           label: "캠페인 1 / 티어 2",
-          budget: "$40,000",
+          budget: "$45,000",
           name: "LATAM 확장",
-          tagline: "올인. 브라질, 미드 티어 크리에이터, 유료 PR + 리액터, YouTube 인스트림 광고, 그리고 2.6배의 집행 가능한 미디어 규모를 추가합니다.",
+          tagline: "올인. 브라질, 미드 티어 크리에이터, 유료 PR + 리액터, YouTube 인스트림 광고, 그리고 1.7배의 집행 가능한 미디어 규모를 추가합니다.",
           featured: true,
-          deployable: "$28,300",
+          deployable: "$32,700",
           feeBreakdown: {
             retainer: "$7,500",
             retainerDetail: "CCD 주기 리테이너(~12주): 전략, 실행, 공급업체 관리, 주간 대시보드 보고",
-            mediaManagement: "$4,200",
+            mediaManagement: "$4,800",
             mediaManagementDetail: "관리 지출의 15%에 해당하는 미디어 관리",
           },
           breakdown: [
-            { vertical: "유료 소셜 LATAM (TikTok + Meta + YouTube)", amount: "$16,000" },
-            { vertical: "LATAM 크리에이터 프로그램 (마이크로 + 미드 티어 + BR)", amount: "$8,000" },
-            { vertical: "LATAM PR + 리액터 프로그램", amount: "$2,800" },
-            { vertical: "ES/PT 팬 채널 + Laylo ES", amount: "$1,500" },
+            { vertical: "유료 소셜 LATAM (TikTok + Meta + YouTube)", amount: "$18,500" },
+            { vertical: "LATAM 크리에이터 프로그램 (마이크로 + 미드 티어 + BR)", amount: "$9,000" },
+            { vertical: "LATAM PR + 리액터 프로그램", amount: "$3,500" },
+            { vertical: "ES/PT 팬 채널 + Laylo ES", amount: "$1,700" },
             { vertical: "CCD 리테이너", amount: "$7,500" },
-            { vertical: "미디어 관리 (15%)", amount: "$4,200" },
+            { vertical: "미디어 관리 (15%)", amount: "$4,800" },
           ],
         },
       ],
