@@ -195,6 +195,7 @@ export type PricingSection = {
       retainerDetail: string;
       mediaManagement: string;
       mediaManagementDetail: string;
+      mediaManagementLabel?: string;
     };
     featured?: boolean;
   }[];

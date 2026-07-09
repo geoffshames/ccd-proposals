@@ -57,7 +57,7 @@ export function PlanPricing({ section }: { section: PricingSection }) {
                   </div>
                   <div className="bg-bg-card p-4">
                     <div className="text-[10px] font-mono tracking-[0.18em] uppercase text-text-muted/60 mb-2">
-                      Media Mgmt
+                      {tier.feeBreakdown.mediaManagementLabel ?? "Media Mgmt"}
                     </div>
                     <div className="text-[22px] md:text-[26px] font-bold text-text-primary leading-none"
                          style={{ fontFamily: "var(--font-heading), var(--font-sans), sans-serif" }}>

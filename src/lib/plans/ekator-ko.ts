@@ -37,8 +37,8 @@ export const ekatorPlanKorean: StrategyPlanData = {
         "아직 음악이 존재하지 않는 상태에서 EKATOR를 위한 홍보, 참여 및 자체 잠재고객을 구축하는 데뷔 전 캠페인으로, WAYF BOYS가 곡을 단 한 곡도 발매하지 않고도 거의 100만 명의 팔로워를 확보했던 것과 동일한 플레이북을 사용합니다.",
       body: [
         "EKATOR는 11월까지 음악이 없습니다. 기회는 그 앞에 놓인 7개월입니다. 7월에 주간 다큐멘터리 시리즈가 공개되며, 이 콘텐츠는 그룹이 데뷔하기도 전에 필연적으로 느껴지도록 설계된 인위적인 모멘텀 캠페인의 연료가 됩니다.",
-        "벤치마크는 명확합니다: WAYF BOYS. 그들은 거의 유료 미디어 없이, 유한하고 복제 가능한 플레이북을 실행하여 얼굴, 이름, 노래를 공개하기 전에 최상위 5세대 데뷔 궤적을 구축했습니다. 우리는 그 플레이북을 완전히 역공학했습니다. 이 계획은 의도적인 클리핑, 팬 페이지 네트워크, 우승작에 대한 유료 증폭, 그리고 홍보를 데이터, 유닛 및 차트 스토리로 전환하는 경험적 계층을 통해 더 타이트하고 유료 가속화된 버전으로 EKATOR에 이를 적용합니다.",
-        "11월 데뷔로 이어지는 데뷔 전 기간(7월부터 9월까지, 약 12주)의 총 프로그램은 $62,500이다: 워킹 미디어 $50,000와 CCD 수수료 $12,500. 아직 스트리밍할 음원이 없으므로, 성공은 데뷔 전에 실제로 성패가 갈리는 방식, 즉 팔로워 증가 속도, 참여율, 노출량, 대화 감성, 확보한 오디언스로 측정된다. 각 후속 단계(11월 싱글, 데뷔, 첫 컴백)는 동일한 구조로 새로운 예산을 승인한다.",
+        "벤치마크는 명확합니다: WAYF BOYS. 그들은 거의 유료 미디어 없이, 유한하고 복제 가능한 플레이북을 실행하여 얼굴, 이름, 노래를 공개하기 전에 최상위 5세대 데뷔 궤적을 구축했습니다. 우리는 그 플레이북을 완전히 역공학했습니다. 이 계획은 의도적인 클리핑, 팬 페이지 네트워크, 성과가 좋은 콘텐츠에 대한 유료 증폭, 그리고 홍보를 데이터, 유닛 및 차트 스토리로 전환하는 경험적 계층을 통해 더 타이트하고 유료 가속화된 버전으로 EKATOR에 이를 적용합니다.",
+        "11월 데뷔로 이어지는 데뷔 전 기간(7월부터 9월까지, 약 12주)의 총 프로그램은 $50,000이다. 이 중 $39,000는 Paid Social, YouTube, SWRM, Clipping, Discretionary 최적화에 투입 가능한 예산이며, $11,000는 CCD Retainer 및 Fees이다. 아직 스트리밍할 음원이 없으므로, 성공은 데뷔 전에 실제로 성패가 갈리는 방식, 즉 팔로워 증가 속도, 참여율, 노출량, 대화 감성, 확보한 오디언스로 측정된다. 각 후속 단계(11월 싱글, 데뷔, 첫 컴백)는 동일한 구조로 새로운 예산을 승인한다.",
       ],
       supports: {
         heading: "이 캠페인이 지원하는 것",
@@ -144,21 +144,21 @@ export const ekatorPlanKorean: StrategyPlanData = {
       navLabel: "구조",
       title: "제안 구조",
       intro:
-        "데뷔 전 기간(7월부터 9월까지)의 총 프로그램은 $62,500이다: 워킹 미디어 $50,000와 CCD 수수료 $12,500(정액 리테이너 $5,000와 15% 미디어 운용). 워킹 미디어는 7월에 클리핑, 팬 페이지 2개, Origin 게재 구매, 유료 소셜, SWRM을 가동하고, 8월에 성과가 검증된 항목을 확장하며, 11월 데뷔로 이어지는 활주로로서 9월까지 화제성을 유지한다. CCD 수수료는 워킹 미디어 안이 아니라 그 위에 부과된다. 11월 싱글과 데뷔는 각각 동일한 구조로 새로운 예산을 승인한다.",
+        "데뷔 전 기간(7월부터 9월까지)의 총 프로그램은 all-in $50,000이다. $39,000는 활성 채널에 투입 가능한 예산이고, $11,000는 CCD Retainer 및 Fees이다. 투입 가능 예산은 Clipping, Paid Social, YouTube, SWRM, 그리고 성과 데이터에 따라 팬 페이지 지원, 크리에이터/커뮤니티 테스트, 긴급 부스팅으로 이동할 수 있는 Discretionary 최적화 풀에 집중된다. 11월 싱글과 데뷔는 각각 동일한 구조로 새로운 예산을 승인한다.",
       tiers: [
         {
           label: "데뷔 전 기간 (7월~9월)",
-          budget: "$62,500",
+          budget: "$50,000",
           name: "총 프로그램",
           goal:
-            "$50,000 working media plus $12,500 CCD fees. Detonate in July alongside the documentary launch, scale the proven winners through August, and sustain hype into September. Twelve weeks of manufactured pre-debut velocity leading into the November single and official debut.",
+            "$39,000 deployable channel budget plus $11,000 CCD retainer and fees. Detonate in July alongside the documentary launch, scale the proven winners through August, and sustain hype into September. Twelve weeks of manufactured pre-debut velocity leading into the November single and official debut.",
           featured: true,
           includes: [
             "관리형 클리퍼 네트워크(18만 명 규모 서버)를 통한 클리핑 및 시딩",
-            "HQ 팬 페이지 2개 (IG 및 TikTok)",
-            "Origin을 통한 뉴미디어 게재 (축소, 1~2개월 테스트)",
-            "검증된 클립과 게시물에 대한 유료 소셜 증폭",
+            "검증된 클립과 게시물에 대한 Paid Social 증폭",
+            "다큐멘터리 순간 중심의 YouTube 및 Shorts 증폭",
             "전체 콘텐츠에 대한 SWRM 댓글 증폭",
+            "팬 페이지 지원, 크리에이터/커뮤니티 테스트, 신속 재배분을 위한 Discretionary 풀",
             "CCD 전략 총괄 및 주간 예산 재배분",
           ],
         },
@@ -179,11 +179,11 @@ export const ekatorPlanKorean: StrategyPlanData = {
         {
           label: "A",
           title: "관리형 클리퍼 네트워크",
-          budget: "$10,000 (working media)",
+          budget: "$15,000 (deployable channel budget)",
           objective:
             "EKATOR 다큐멘터리를 이번 사이클에서 가장 많이 클리핑되는 데뷔 전 콘텐츠로 만든다. 양을 위한 양이 아니라 의도적이고 영리하며 콘셉트에 부합하는 클리핑이다. WAYF는 좋은 클리핑이 많은 클리핑보다 낫다는 것을 입증했다.",
           strategy:
-            "CCD의 18만 명 규모 클리핑 서버를 포함한 관리형 클리퍼 네트워크 전반에 다큐멘터리 에피소드와 콘셉트 콘텐츠를 배포하되, 어떤 순간, 어떤 훅, 어떤 사운드를 쓸지에 대한 정교한 크리에이티브 디렉션을 적용한다. 클립이 추적 가능한 오디오 흔적을 남기도록 사운드 사용을 조율한다(특정 사운드를 누가 썼는지로 네트워크를 추적하는 것과 같은 방식이다). 이는 Origin과 병행 운영되어, 동일한 콘텐츠를 두 번째 각도에서 한 번 더 공략한다.",
+            "CCD의 18만 명 규모 클리핑 서버를 포함한 관리형 클리퍼 네트워크 전반에 다큐멘터리 에피소드와 콘셉트 콘텐츠를 배포하되, 어떤 순간, 어떤 훅, 어떤 사운드를 쓸지에 대한 정교한 크리에이티브 디렉션을 적용한다. 클립이 추적 가능한 오디오 흔적을 남기도록 사운드 사용을 조율한다(특정 사운드를 누가 썼는지로 네트워크를 추적하는 것과 같은 방식이다). Clipping은 핵심 네이티브 배포 엔진이 되며, 가장 강한 순간에는 Paid Social과 YouTube 증폭이 이를 지원한다.",
           components: {
             heading: "네트워크의 역할",
             items: [
@@ -235,12 +235,12 @@ export const ekatorPlanKorean: StrategyPlanData = {
         {
           label: "A",
           title: "두 개의 HQ 팬 페이지",
-          budget: "$15,000 (2 pages x $2,500/mo x 3 months)",
+          budget: "승인 시 Discretionary 풀에서 집행",
           timeline: "론칭 주차 1, 사전 데뷔 기간 동안 운영",
           objective:
             "첫날부터 신뢰할 수 있는 풀뿌리 기반을 구축하고, WAYF의 경우처럼 팬덤이 자체적으로 조직화될 때까지 기다리는 대신 유통을 직접 소유합니다.",
           strategy:
-            "Instagram과 TikTok 전반에 걸쳐 두 개의 전담 팬 페이지를 운영하며, 촬영 목록과 콘텐츠 요청을 사전에 제공받아 팬들의 추측이 아닌 자체 보유 재고처럼 운영됩니다. 이 페이지들은 다큐멘터리 콘텐츠를 미러링하고 리믹스하며, 일상적인 팬 서사를 구축하고, 유료 소셜 광고가 활용하는 리타겟팅 풀을 채웁니다. 세 달 동안 페이지당 월 $2,500씩, 총 두 페이지입니다.",
+            "팬 페이지 지원은 고정 채널 항목이 아니라 Discretionary 레버로 유지한다. 초기 콘텐츠 신호가 이를 정당화하면, 샷 리스트와 콘텐츠 요청을 기반으로 운영되는 전용 Instagram 및 TikTok 팬 스타일 페이지를 세워, 팬의 추측이 아니라 소유형 인벤토리처럼 작동하게 한다. 이 페이지들은 다큐멘터리 콘텐츠를 미러링하고 리믹스하며, 일상적 팬 내러티브를 구축하고 Paid Social이 활용할 리타겟팅 풀을 만든다.",
           components: {
             heading: "페이지의 역할",
             items: [
@@ -264,66 +264,24 @@ export const ekatorPlanKorean: StrategyPlanData = {
     },
 
     // ===================================================================
-    // 06. New Media Placements (Origin)
+    // 06. Paid Social, YouTube & SWRM
     // ===================================================================
     {
       type: "vertical",
       number: "06",
-      navLabel: "노출",
-      title: "세로 3 / 뉴미디어 노출",
+      navLabel: "Paid + YouTube + SWRM",
+      title: "버티컬 3 / Paid Social, YouTube 및 SWRM 증폭",
       philosophy:
-        "K팝 네이티브 채널 구매. Origin의 자체 페이지를 실제 강점을 발휘할 수 있도록 활용하며, 한두 달로 테스트 기간을 축소하고 자체 클리핑으로 보완하여 단독 의존하지 않습니다.",
-      subBlocks: [
-        {
-          label: "A",
-          title: "Origin 채널 네트워크",
-          budget: "$10,000 (working media)",
-          timeline: "1~2개월 테스트 후 성과 기반 재평가",
-          objective:
-            "Origin은 잘하는 한 가지, 즉 확립된 K-pop 페이지에 게시하는 것에 집중하여 활용합니다. 업셀이 아닌 게시물 구매에 집중합니다.",
-          strategy:
-            "Origin과 집중적인 브리핑을 진행합니다: 월별 K-pop 채널에 게시할 게시물 수를 정의하고, 그 외에는 아무것도 하지 않습니다. Origin의 제안은 K-pop을 잘 알고 페이지를 보유하고 있어 네이티브 신뢰도에 매우 유용하다는 것입니다. 월 20,000달러의 기존 약정에서 1~2개월 테스트로 축소하고, 팔로워 증가 속도 및 대화량 증가를 측정하며, 자체 클리핑 네트워크가 이를 보완하도록 합니다.",
-          components: {
-            heading: "Origin 활용 방안",
-            items: [
-              "월별 Origin K-pop 페이지 게시물 수 정의",
-              "번들 업셀 없음: 배치만, 당사의 크리에이티브 디렉션에 따름",
-              "1~2개월 테스트 기간으로 축소",
-              "관리형 클리퍼 네트워크로 보완 (대체 아님)",
-              "단순 게시물 수(vanity post counts)가 아닌 증가 속도 및 대화량으로 측정",
-            ],
-          },
-          kpis: [
-            "배치 주차에 따른 팔로워 증가 속도",
-            "테스트 기간 동안의 대화량 및 감성 변화",
-            "클리퍼 네트워크 대비 신규 팔로워당 비용",
-            "데뷔 사이클 지속 여부 결정 신호",
-          ],
-        },
-      ],
-      footnote:
-        "Origin은 전략이 아닌 채널 구매입니다. 이번 테스트는 Origin의 K-pop 페이지가 결과당 비용 기준으로 당사 자체 클리핑보다 우수한 성과를 내는지 여부를 판단할 것입니다.",
-    },
-
-    // ===================================================================
-    // 07. Paid Social & SWRM
-    // ===================================================================
-    {
-      type: "vertical",
-      number: "07",
-      navLabel: "유료 광고 + SWRM",
-      title: "버티컬 4 / 유료 소셜 및 SWRM 증폭",
-      philosophy:
-        "촉진제입니다. 유료 광고는 클리핑 및 팬 페이지에서 부상하는 히트작에 집중하고, SWRM은 모든 콘텐츠에 대한 대화 및 소셜 증거를 유도합니다. 이는 WAYF에는 필요하지 않았지만, 당사는 타임라인 압축을 위해 이를 활용합니다.",
+        "가속 장치다. Paid Social과 YouTube는 Clipping 및 팬 페이지 지원에서 드러난 성과가 좋은 콘텐츠를 증폭하고, SWRM은 모든 콘텐츠에서 대화와 소셜 증거를 만든다. WAYF에는 필요하지 않았지만, 우리는 타임라인을 압축하기 위해 이 레이어를 활용한다.",
       subBlocks: [
         {
           label: "A",
           title: "유료 소셜 부스팅",
-          budget: "$12,000 (working media)",
+          budget: "$10,000 (deployable channel budget)",
           objective:
             "유기적으로 이미 성과를 입증한 클립 및 게시물에 예산을 투입하여, 모든 관련 채널(TikTok, IG Reels, YouTube Shorts)에서 고성과 에셋이 유기적 한계를 넘어서도록 푸시합니다.",
           strategy:
-            "추측은 금물입니다. 유료 광고는 클리퍼 네트워크와 팬 페이지에서 이미 검증된 콘텐츠를 증폭시킵니다. 첫 주에는 소규모로 테스트한 후, 우승작이 나오면 예산을 상위 크리에이티브에 집중적으로 투입합니다. 유기적 클립 시청자와 팬 페이지 트래픽에서 리타겟팅 풀을 구축하여 광고비가 초기화되지 않고 누적되도록 합니다. 타겟팅은 콘셉트 및 경쟁자 분석 대상에서 시작하여, 축적되는 실제 픽셀 데이터를 기반으로 정교화됩니다.",
+            "추측은 금물입니다. 유료 광고는 클리퍼 네트워크와 팬 페이지에서 이미 검증된 콘텐츠를 증폭시킵니다. 첫 주에는 소규모로 테스트한 후, 성과가 좋은 콘텐츠가 나오면 예산을 상위 크리에이티브에 집중적으로 투입합니다. 유기적 클립 시청자와 팬 페이지 트래픽에서 리타겟팅 풀을 구축하여 광고비가 초기화되지 않고 누적되도록 합니다. 타겟팅은 콘셉트 및 경쟁자 분석 대상에서 시작하여, 축적되는 실제 픽셀 데이터를 기반으로 정교화됩니다.",
           tactics: [
             "검증된 클립을 홍보하고, 미검증 크리에이티브는 지양합니다",
             "다큐멘터리 에피소드 공개에 맞춰 성공작에 예산을 집중합니다",
@@ -334,8 +292,23 @@ export const ekatorPlanKorean: StrategyPlanData = {
         },
         {
           label: "B",
+          title: "YouTube 증폭",
+          budget: "$5,000 (deployable channel budget)",
+          objective:
+            "캠페인이 TikTok과 Reels에만 의존하지 않도록, 다큐멘터리와 Shorts 생태계에 YouTube 전용 지원을 제공한다.",
+          strategy:
+            "YouTube 예산은 다큐멘터리 인접 Shorts, 핵심 순간, 그리고 시청자 기반 리타겟팅 오디언스를 지원하는 데 사용한다. 멤버 정체성, 콘셉트 명확성, 댓글 속도가 가장 뚜렷한 순간을 우선하고, 이미 K-pop 발견형 콘텐츠를 소비하는 오디언스가 있는 Shorts 및 스킵 가능 인벤토리로 밀어 넣는다.",
+          tactics: [
+            "상위 다큐멘터리 순간을 YouTube Shorts로 부스팅",
+            "11월 리타겟팅을 위한 시청자 및 참여자 풀 구축",
+            "핵심 클립을 경량 YouTube 인벤토리로 지원",
+            "시청 완료율과 구독자/팔로워 전환 신호 측정",
+          ],
+        },
+        {
+          label: "C",
           title: "SWRM 댓글 증폭",
-          budget: "$3,000 (working media)",
+          budget: "$3,000 (deployable channel budget)",
           objective:
             "모든 EKATOR 콘텐츠와 그 주변에 배포된 클립 전반에 걸쳐 실제 사용자들의 대화와 사회적 증거를 유도합니다. 댓글은 데뷔 전의 기대감이 현실로 인식되는 공간입니다.",
           strategy:
@@ -356,15 +329,15 @@ export const ekatorPlanKorean: StrategyPlanData = {
     },
 
     // ===================================================================
-    // 08. World-Building & Experiential
+    // 07. World-Building & Experiential
     // ===================================================================
     {
       type: "vertical",
-      number: "08",
+      number: "07",
       navLabel: "체험형",
       title: "월드 빌딩 및 체험형 (선택 사항)",
       philosophy:
-        "$50K 운영 예산 위에 추가로 책정됩니다. 기대감을 데이터, 유닛, 차트 스토리로 전환하는 전환 계층입니다. 이곳에서 미국식 마케팅과 K팝 마케팅이 결합하여 어느 한쪽도 단독으로 달성할 수 없는 시너지를 창출합니다.",
+        "$50,000 총 프로그램 위에 별도로 스코프한다. 화제성을 데이터, 유닛, 차트 스토리로 전환하는 전환 레이어다. 여기서 미국식 마케팅과 K-pop 마케팅이 결합되어, 어느 한쪽만으로는 만들 수 없는 것을 만든다.",
       intro:
         "기대감이 형성된 후에는 체험형 활동이 판도를 바꾸고 WAYF가 놓친 가치를 포착합니다. 아래 각 항목은 선택 사항이며, 별도 가격으로 책정되고 7월과 8월의 신호 성과에 따라 필요에 따라 배포될 수 있습니다.",
       subBlocks: [
@@ -407,45 +380,44 @@ export const ekatorPlanKorean: StrategyPlanData = {
         },
       ],
       footnote:
-        "모든 경험형 항목은 $50,000 워킹 예산 밖에 있으며, 데뷔 전 성과 신호에 따라 개별적으로 산정 및 승인된다.",
+        "모든 경험형 항목은 $50,000 총 프로그램 밖에 있으며, 데뷔 전 성과 신호에 따라 개별적으로 스코프하고 승인한다.",
     },
 
     // ===================================================================
-    // 09. Media Flight
+    // 08. Media Flight
     // ===================================================================
     {
       type: "flight",
-      number: "09",
+      number: "08",
       navLabel: "플라이트",
       title: "제안 미디어 플라이트",
       intro:
-        "50,000달러의 운영 예산이 데뷔 전 기간에 걸쳐 어떻게 배분되는지. 7월은 다큐멘터리 출시와 함께 폭발하며 (클리핑, 팬 페이지, Origin, SWRM 모두 주간 에피소드에서 가동). 8월은 검증된 성공작 뒤에 유료 광고를 확장하고 Origin은 축소하는 동안 팬 페이지를 최대 가동으로 운영. 9월은 열기를 유지하고 11월 데뷔를 위한 체험형 결정과 런웨이를 설정.",
-      totalBudget: "$50,000 working media",
+        "$50,000 총 프로그램 안에서 $39,000의 투입 가능 채널 예산이 작동하는 방식. 7월은 다큐멘터리 론칭과 함께 Clipping, Paid Social, YouTube, SWRM, Discretionary 테스트가 주간 에피소드에 맞춰 동시에 점화된다. 8월은 성과가 좋은 콘텐츠 뒤에 Paid와 YouTube를 확장하고, Discretionary 풀은 가장 신호가 강한 지원 항목으로 이동한다. 9월은 화제성을 유지하고 경험형 결정 및 11월 데뷔로 이어지는 활주로를 만든다.",
+      totalBudget: "$39,000 deployable",
       phases: [
         {
           label: "폭발 + 다큐멘터리 출시",
           window: "2026년 7월 / 약 4주",
           focus:
-            "주간 다큐멘터리 에피소드에 모든 엔진이 가동됩니다. 클리퍼 네트워크와 Origin은 두 가지 각도에서 동일한 콘텐츠를 공격하고, 두 개의 팬 페이지가 출시되며, SWRM은 대화 밀도를 높이고, 유료 소셜 테스트는 초기 성공작을 찾기 위해 가동됩니다. 목표: 콘셉트가 통한다는 것을 증명하고 첫 팔로워 속도 곡선을 구축.",
-          budget: "~20,000달러",
+            "모든 활성 엔진이 주간 다큐멘터리 에피소드에 맞춰 가동된다. 클리퍼 네트워크는 콘텐츠를 전면적으로 공략하고, SWRM은 대화 밀도를 만들며, Paid Social과 YouTube는 초기 성과가 좋은 콘텐츠를 찾기 위해 가볍게 테스트한다. Discretionary 풀은 팬 페이지 지원 또는 빠른 재배분을 위해 대기한다. 목표: 콘셉트가 확산된다는 것을 증명하고 첫 팔로워 증가 속도 곡선을 만드는 것.",
+          budget: "~$17,000",
           tactics: [
             "클리퍼 네트워크와 180K 서버가 매주 에피소드를 공격",
-            "IG 및 TikTok에 두 개의 HQ 팬 페이지 출시",
-            "K-pop 페이지에서 Origin 배치 테스트 시작",
+            "콘셉트 및 비교군 오디언스를 대상으로 Paid Social과 YouTube 테스트",
             "에피소드 공개 시점에 맞춰 SWRM 댓글 커버리지",
-            "콘셉트 및 경쟁사 대상 유료 소셜 테스트 단계",
+            "빠른 팬 페이지 지원 또는 크리에이터/커뮤니티 테스트를 위해 Discretionary 풀 보류",
           ],
         },
         {
           label: "성공작 확장",
           window: "2026년 8월 / 약 4주",
           focus:
-            "7월에 검증된 클립과 게시물 뒤에 유료 소셜을 확장합니다. 팬 페이지는 리타겟팅 풀에 공급하며 최대 가동으로 운영됩니다. Origin은 결과당 비용에 따라 계속되거나 종료됩니다. 목표: 클리핑, 팬 페이지, 유료 광고를 단일 가속화되는 존재감으로 통합.",
-          budget: "~18,000달러",
+            "7월에 성과를 입증한 클립과 게시물 뒤에 Paid Social과 YouTube를 확장한다. Discretionary 지원은 팬 페이지 콘텐츠, 크리에이터/커뮤니티 테스트, 추가 부스팅 중 가장 신호가 강한 채널로 이동한다. 목표: Clipping, Paid, YouTube, SWRM을 하나의 가속되는 존재감으로 결합하는 것.",
+          budget: "~$14,000",
           tactics: [
-            "모든 채널에서 검증된 성공작에 대한 유료 소셜 확장",
-            "팬 페이지 최대 가동, 상위 테마 유료 광고로 전환",
-            "테스트 성과에 따른 Origin 진행 또는 중단 결정",
+            "모든 채널에서 검증된 성과가 좋은 콘텐츠에 대한 Paid Social 확장",
+            "YouTube가 가장 강한 Shorts 및 다큐멘터리 순간을 부스팅",
+            "Discretionary 풀이 가장 신호가 강한 지원 항목으로 재배분",
             "가장 높은 속도의 콘셉트를 우선시하며 클리핑 지속",
             "체험형 결정 시점: 팝업 및 웹 구축 승인",
           ],
@@ -455,7 +427,7 @@ export const ekatorPlanKorean: StrategyPlanData = {
           window: "2026년 9월 / 약 4주",
           focus:
             "11월 싱글 발매에 앞서 열기를 유지하며 이를 자체 팬덤으로 전환합니다. 유료 광고는 에버그린 및 리타겟팅으로 진행하고, 팬 페이지는 지속적으로 운영하며, 체험형 및 CRM(승인 시)은 캠페인 전반에 걸쳐 구축된 팬덤을 확보합니다. 목표: 11월 데뷔에 따뜻하고, 자체적이며, 화제가 되는 팬덤을 전달하는 것.",
-          budget: "~$12,000",
+          budget: "~$8,000",
           tactics: [
             "유료 소셜 광고는 에버그린 및 리타겟팅에만 집중",
             "팬 페이지는 성과가 좋은 콘텐츠를 중심으로 지속 운영",
@@ -465,19 +437,19 @@ export const ekatorPlanKorean: StrategyPlanData = {
         },
       ],
       footnote:
-        "단계별 예산은 방향성을 제시합니다. CCD는 팔로워 증가 속도 및 대화량 신호를 기반으로 클리핑, 팬 페이지, 플레이스먼트, 유료 광고, SWRM 전반에 걸쳐 매주 예산을 재분배합니다.",
+        "단계별 예산은 방향성 기준이며 $39,000의 투입 가능 채널 예산을 의미한다. CCD는 팔로워 증가 속도와 대화 신호를 기준으로 Clipping, Paid Social, YouTube, SWRM, Discretionary 지원 전반에 걸쳐 주 단위로 재배분한다.",
     },
 
     // ===================================================================
-    // 10. Execution Timeline
+    // 09. Execution Timeline
     // ===================================================================
     {
       type: "timeline",
-      number: "10",
+      number: "09",
       navLabel: "타임라인",
       title: "실행 타임라인",
       intro:
-        "데뷔 전 기간 동안 주별 실행 계획입니다. 6개의 다큐멘터리 에피소드는 7월과 8월 초에 집중됩니다(정확한 날짜는 Jane의 릴리스 및 콘텐츠 일정에 따라 달라집니다). 클리핑, 팬 페이지, SWRM은 1주차에 시작됩니다. Origin은 1~2개월간 테스트를 진행합니다. 유료 광고는 1주차에 테스트를 시작하여 3주차부터 확장됩니다. 체험형 콘텐츠 결정은 6~8주차에 이루어지며, 승인 시 9월에 실행됩니다. 이 기간은 11월 싱글 및 데뷔를 위한 준비 과정입니다.",
+        "데뷔 전 기간 동안 주별 실행 계획이다. 6개의 다큐멘터리 에피소드는 7월과 8월 초를 고정축으로 삼는다(정확한 날짜는 Jane의 릴리스 및 콘텐츠 일정에 따라 확정). Clipping, SWRM, Paid Social, YouTube는 1주차에 론칭한다. 초기 성과 판독이 들어오면 팬 페이지, 크리에이터/커뮤니티, 부스팅 재배분에 빠르게 대응할 수 있도록 Discretionary 지원을 보류한다. 경험형 결정은 6~8주차에 이루어지며, 승인 시 9월에 가동된다. 이 기간은 11월 싱글과 데뷔를 위한 활주로다.",
       weeks: [
         { index: 1, label: "W1", dates: "7월 6일", note: "EP1" },
         { index: 2, label: "W2", dates: "7월 13일", note: "EP2" },
@@ -539,20 +511,7 @@ export const ekatorPlanKorean: StrategyPlanData = {
           ],
         },
         {
-          name: "Origin 게재",
-          cells: [
-            { weekIndex: 1, intensity: "medium", label: "TEST" },
-            { weekIndex: 2, intensity: "medium" },
-            { weekIndex: 3, intensity: "high" },
-            { weekIndex: 4, intensity: "high" },
-            { weekIndex: 5, intensity: "high" },
-            { weekIndex: 6, intensity: "medium" },
-            { weekIndex: 7, intensity: "medium" },
-            { weekIndex: 8, intensity: "low" },
-          ],
-        },
-        {
-          name: "유료 소셜",
+          name: "Paid Social",
           cells: [
             { weekIndex: 1, intensity: "medium", label: "TEST" },
             { weekIndex: 2, intensity: "medium" },
@@ -565,6 +524,23 @@ export const ekatorPlanKorean: StrategyPlanData = {
             { weekIndex: 9, intensity: "high" },
             { weekIndex: 10, intensity: "medium" },
             { weekIndex: 11, intensity: "medium" },
+            { weekIndex: 12, intensity: "low" },
+          ],
+        },
+        {
+          name: "YouTube",
+          cells: [
+            { weekIndex: 1, intensity: "medium", label: "TEST" },
+            { weekIndex: 2, intensity: "medium" },
+            { weekIndex: 3, intensity: "medium" },
+            { weekIndex: 4, intensity: "high" },
+            { weekIndex: 5, intensity: "high" },
+            { weekIndex: 6, intensity: "high" },
+            { weekIndex: 7, intensity: "medium" },
+            { weekIndex: 8, intensity: "medium" },
+            { weekIndex: 9, intensity: "medium" },
+            { weekIndex: 10, intensity: "low" },
+            { weekIndex: 11, intensity: "low" },
             { weekIndex: 12, intensity: "low" },
           ],
         },
@@ -606,7 +582,7 @@ export const ekatorPlanKorean: StrategyPlanData = {
             "다큐멘터리 1화 공개. 클리퍼 네트워크와 18만 명 서버가 즉시 이를 훅을 앞세운 세로형 클립으로 편집해 네트워크 전반에 시딩한다.",
             "두 팬 페이지가 콘셉트 중심의 론칭 게시물과 함께 IG 및 TikTok에서 활동을 시작한다.",
             "SWRM 댓글 커버리지가 자체 게시물과 시딩된 클립 전반에서 가동된다.",
-            "Origin 게재 테스트를 시작한다. 유료 소셜은 콘셉트 및 비교군 오디언스를 대상으로 테스트 모드로 시작한다.",
+            "Paid Social과 YouTube는 콘셉트 및 비교군 오디언스를 대상으로 테스트 모드로 시작한다.",
           ],
         },
         {
@@ -625,7 +601,7 @@ export const ekatorPlanKorean: StrategyPlanData = {
           items: [
             "다큐멘터리 에피소드 3 공개.",
             "유료 소셜 광고는 테스트 단계에서 성과가 가장 좋은 클립을 중심으로 확장 단계로 전환됩니다.",
-            "오리진(Origin) 광고 집행은 최대 테스트 비중으로 진행되며, 확산 기여도가 추적됩니다.",
+            "시청 완료율과 댓글 속도가 가장 강한 다큐멘터리 순간 뒤에 YouTube 지원을 늘린다.",
             "클리핑은 가장 높은 확산력을 보이는 콘셉트를 우선적으로 선정합니다.",
           ],
         },
@@ -645,7 +621,7 @@ export const ekatorPlanKorean: StrategyPlanData = {
           items: [
             "다큐멘터리 에피소드 5 공개.",
             "모든 오가닉 및 유료 채널 성과가 누적됩니다.",
-            "오리진(Origin) 광고의 결과당 비용(Cost-per-result)을 기준으로 진행 또는 중단 신호가 형성됩니다.",
+            "Discretionary 배분 판독: 팬 페이지 지원, 크리에이터/커뮤니티 테스트, 추가 부스팅 중 다음 예산을 받을 항목을 결정한다.",
             "SWRM 밀도는 에피소드 공개 시점에 맞춰 조정됩니다.",
           ],
         },
@@ -655,7 +631,7 @@ export const ekatorPlanKorean: StrategyPlanData = {
           items: [
             "최종 다큐멘터리 에피소드 6 공개.",
             "체험형 결정 시점: 현재까지의 확산 속도를 기반으로 LA 및 NY 팝업 스토어와 웹사이트 구축을 승인합니다.",
-            "오리진(Origin) 테스트가 종료되며, 지속 또는 중단 여부를 결정합니다.",
+            "Discretionary 풀 검토: 신호가 정당화되는 경우에만 팬 페이지 또는 크리에이터/커뮤니티 지원을 지속한다.",
             "모든 워크스트림에 걸친 7월 성과 검토를 종합합니다.",
           ],
         },
@@ -675,7 +651,7 @@ export const ekatorPlanKorean: StrategyPlanData = {
           items: [
             "유료 광고 비중을 높이고, 최고의 팬 페이지 게시물에서 신규 크리에이티브를 순환시킵니다.",
             "체험형 콘텐츠 구축 진행 중 (웹 경험 및 팝업 스토어 운영 준비 포함).",
-            "오리진 캠페인은 완전히 종료하거나, 새로운 마이크로 브리핑을 통해 연장합니다.",
+            "Discretionary 풀을 가장 신호가 강한 지원 레인으로 완전히 재배분한다.",
             "데이터 수집 전에 CRM 인프라를 구축합니다.",
           ],
         },
@@ -719,42 +695,43 @@ export const ekatorPlanKorean: StrategyPlanData = {
         },
       ],
       footnote:
-        "다큐멘터리 일정은 Jane이 전달할 스케줄이 확정되기 전까지 예시이다. Origin은 1~2개월 테스트로 운영된다. 경험형은 선택 사항이며, 6~8주차 무렵 승인될 경우에만 가동된다. CCD는 모든 워크스트림에 걸쳐 주 단위로 예산을 재배분한다.",
+        "다큐멘터리 일정은 Jane이 전달할 스케줄이 확정되기 전까지 예시다. 경험형은 선택 사항이며, 6~8주차 무렵 승인될 경우에만 가동된다. CCD는 모든 워크스트림에 걸쳐 주 단위로 예산을 재배분한다.",
     },
 
     // ===================================================================
-    // 11. Investment
+    // 10. Investment
     // ===================================================================
     {
       type: "pricing",
-      number: "11",
+      number: "10",
       navLabel: "투자",
       title: "투자",
       intro:
-        "2026년 데뷔 전 기간(7월부터 9월까지)의 총 프로그램은 $62,500이다: 워킹 미디어 $50,000와 CCD 수수료 $12,500(정액 캠페인 리테이너 $5,000와 15% 미디어 운용). $50,000 전액이 워킹 미디어에 투입되며, 수수료는 차감되지 않고 그 위에 별도로 청구된다. 11월 싱글과 공식 데뷔는 각각 동일한 구조로 새로운 예산을 승인한다.",
+        "데뷔 전 기간(2026년 7월부터 9월까지)의 총 프로그램은 all-in $50,000이다. 활성 채널 예산은 Paid Social, YouTube, SWRM, Clipping, Discretionary 최적화 전반에 걸쳐 $39,000이다. 나머지 $11,000는 CCD Retainer 및 Fees를 포함한다. 11월 싱글과 공식 데뷔는 각각 동일한 구조로 새로운 예산을 승인한다.",
       tiers: [
         {
           label: "데뷔 전 기간 (7월~9월)",
-          budget: "$62,500",
+          budget: "$50,000",
           name: "총 프로그램",
           tagline:
-            "데뷔 전 기간 통합: 워킹 미디어 $50,000와 CCD 수수료 $12,500. 워킹 미디어는 전액 투입되며, CCD 수수료(정액 리테이너 $5,000와 15% 미디어 운용 $7,500)는 그 위에 별도로 청구된다.",
+            "데뷔 전 기간 all-in: 활성 채널에 투입 가능한 $39,000와 CCD Retainer 및 Fees $11,000. 채널 믹스는 Clipping, Paid Social, YouTube, SWRM, Discretionary 최적화 풀에 집중된다.",
           featured: true,
-          deployable: "$50,000",
+          deployable: "$39,000",
           feeBreakdown: {
             retainer: "$5,000",
-            retainerDetail: "정액 캠페인 리테이너, 데뷔 전 기간 전체 (약 3개월)",
-            mediaManagement: "$7,500",
-            mediaManagementDetail: "운용 워킹 미디어 지출 $50,000의 15%",
+            retainerDetail: "정액 캠페인 Retainer, 데뷔 전 기간 전체 (약 3개월)",
+            mediaManagementLabel: "Fees",
+            mediaManagement: "$6,000",
+            mediaManagementDetail: "데뷔 전 기간 전체의 캠페인 Fees",
           },
           breakdown: [
-            { vertical: "클리핑 및 시딩", amount: "$10,000" },
-            { vertical: "팬 페이지 네트워크 (2개)", amount: "$15,000" },
-            { vertical: "뉴미디어 게재 (Origin)", amount: "$10,000" },
-            { vertical: "유료 소셜 증폭", amount: "$12,000" },
-            { vertical: "SWRM 댓글 증폭", amount: "$3,000" },
-            { vertical: "CCD 리테이너", amount: "$5,000" },
-            { vertical: "CCD 미디어 운용 (15%)", amount: "$7,500" },
+            { vertical: "Paid Social", amount: "$10,000" },
+            { vertical: "YouTube", amount: "$5,000" },
+            { vertical: "SWRM", amount: "$3,000" },
+            { vertical: "Clipping", amount: "$15,000" },
+            { vertical: "Discretionary", amount: "$6,000" },
+            { vertical: "Retainer", amount: "$5,000" },
+            { vertical: "Fees", amount: "$6,000" },
           ],
         },
       ],
@@ -773,7 +750,7 @@ export const ekatorPlanKorean: StrategyPlanData = {
         },
       ],
       footnote:
-        "총 프로그램은 $62,500이다: 워킹 미디어 $50,000(전액 투입)와 CCD 수수료 $12,500(정액 리테이너 $5,000와 15% 미디어 운용 $7,500). 경험형 추가 항목은 별도로 산정 및 승인된다. 향후 각 사이클(11월 싱글, 데뷔, 첫 컴백)은 이 구조에 따라 개별적으로 예산을 승인받는다.",
+        "총 프로그램은 $50,000이다. $39,000는 투입 가능 채널 예산이고, $11,000는 CCD Retainer 및 Fees이다. 브레이크다운 합계는 정확히 $50,000이다. 경험형 애드온은 별도로 스코프하고 승인한다. 향후 각 사이클(11월 싱글, 데뷔, 첫 컴백)은 동일한 구조로 별도 승인을 받는다.",
     },
   ],
 };

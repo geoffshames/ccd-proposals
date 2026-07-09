@@ -38,7 +38,7 @@ export const ekatorPlan: StrategyPlanData = {
       body: [
         "EKATOR has no music until November. The opportunity is the seven months in front of it. A weekly documentary series launches in July, and that content is the fuel for a manufactured-momentum campaign designed to make the group feel inevitable before it ever debuts.",
         "The benchmark is explicit: WAYF BOYS. They built a top-tier 5th-gen launch trajectory before debuting a face, a name, or a song, on essentially zero paid media, by running a finite and replicable playbook. We reverse-engineered that playbook in full. This plan deploys it for EKATOR with a tighter, paid-accelerated version: intentional clipping, a fan-page network, paid amplification of the winners, and an experiential layer that converts hype into data, units, and a chart story.",
-        "The total program is $62,500 for the pre-debut window (July through September, roughly 12 weeks) leading into the November debut: $50,000 of working media plus $12,500 in CCD fees. There is no music to stream yet, so success is measured the way pre-debut is actually won: follower velocity, engagement rate, impression volume, conversation sentiment, and captured audience. Each subsequent phase (the November single, the debut, the first comeback) authorizes a fresh budget on the same structure.",
+        "The total program is $50,000 for the pre-debut window (July through September, roughly 12 weeks) leading into the November debut: $39,000 deployable across paid social, YouTube, SWRM, clipping, and discretionary optimization, plus $11,000 in CCD retainer and fees. There is no music to stream yet, so success is measured the way pre-debut is actually won: follower velocity, engagement rate, impression volume, conversation sentiment, and captured audience. Each subsequent phase (the November single, the debut, the first comeback) authorizes a fresh budget on the same structure.",
       ],
       supports: {
         heading: "What This Campaign Supports",
@@ -144,21 +144,21 @@ export const ekatorPlan: StrategyPlanData = {
       navLabel: "Structure",
       title: "Proposal Structure",
       intro:
-        "The total program for the pre-debut window (July through September) is $62,500: $50,000 of working media plus $12,500 in CCD fees (a flat $5,000 retainer and 15% media management). The working media stands up clipping, two fan pages, the Origin placement buy, paid social, and SWRM in July, scales the winners through August, and sustains the hype into September as the runway to the November debut. CCD fees sit on top of the working media, not inside it. The November single and the debut each authorize a fresh budget on the same structure.",
+        "The total program for the pre-debut window (July through September) is $50,000 all-in: $39,000 deployable across the active channels plus $11,000 in CCD retainer and fees. The deployable budget concentrates on clipping, paid social, YouTube, SWRM, and a discretionary optimization pool that can move into fan-page support, creator/community tests, or emergency boosts as performance data comes in. The November single and the debut each authorize a fresh budget on the same structure.",
       tiers: [
         {
           label: "Pre-Debut Window (Jul to Sep)",
-          budget: "$62,500",
+          budget: "$50,000",
           name: "Total Program",
           goal:
-            "$50,000 working media plus $12,500 CCD fees. Detonate in July alongside the documentary launch, scale the proven winners through August, and sustain hype into September. Twelve weeks of manufactured pre-debut velocity leading into the November single and official debut.",
+            "$39,000 deployable channel budget plus $11,000 CCD retainer and fees. Detonate in July alongside the documentary launch, scale the proven winners through August, and sustain hype into September. Twelve weeks of manufactured pre-debut velocity leading into the November single and official debut.",
           featured: true,
           includes: [
             "Clipping and seeding across the managed clipper network (180K-person server)",
-            "Two HQ fan pages (IG plus TikTok)",
-            "New media placements via Origin (reduced, one to two month test)",
             "Paid social amplification behind proven clips and posts",
+            "YouTube and Shorts amplification around documentary moments",
             "SWRM comment amplification across all content",
+            "Discretionary pool for fan-page support, creator/community tests, and rapid reallocations",
             "CCD strategic oversight and weekly reallocation",
           ],
         },
@@ -179,11 +179,11 @@ export const ekatorPlan: StrategyPlanData = {
         {
           label: "A",
           title: "Managed Clipper Network",
-          budget: "$10,000 (working media)",
+          budget: "$15,000 (deployable channel budget)",
           objective:
             "Make the EKATOR documentary the most-clipped pre-debut content of the cycle. Intentional, smart, on-concept clipping, not volume for volume's sake. WAYF proved good clipping beats more clipping.",
           strategy:
-            "Deploy the documentary episodes and concept content across the managed clipper network, including CCD's 180K-person clipping server, with tight creative direction: which moments, which hooks, which sounds. Coordinate sound usage so the clips seed a discoverable audio trail (the same way you trace a network by who used a sound). This runs in parallel with Origin, doubling down on the same content from a second angle.",
+            "Deploy the documentary episodes and concept content across the managed clipper network, including CCD's 180K-person clipping server, with tight creative direction: which moments, which hooks, which sounds. Coordinate sound usage so the clips seed a discoverable audio trail (the same way you trace a network by who used a sound). Clipping becomes the primary native-distribution engine, supported by paid social and YouTube amplification around the strongest moments.",
           components: {
             heading: "What The Network Does",
             items: [
@@ -235,12 +235,12 @@ export const ekatorPlan: StrategyPlanData = {
         {
           label: "A",
           title: "Two HQ Fan Pages",
-          budget: "$15,000 (2 pages x $2,500/mo x 3 months)",
+          budget: "Funded from discretionary pool as approved",
           timeline: "Launch week 1, run through the pre-debut window",
           objective:
             "Build a credible grassroots footprint from day one and own the distribution rather than waiting for an aggregator fandom to self-organize the way WAYF's did.",
           strategy:
-            "Run two dedicated fan pages across Instagram and TikTok, fed with shot lists and content requests in advance so they operate as owned inventory, not fan guesswork. They mirror and remix documentary content, build the everyday-fan narrative, and feed the retargeting pool that paid social draws from. Two pages at $2,500 per month each across the three-month window.",
+            "Keep fan-page support as a discretionary lever instead of a fixed channel line. When early content signals justify it, stand up dedicated Instagram and TikTok fan-style pages fed by shot lists and content requests so they operate as owned inventory, not fan guesswork. They mirror and remix documentary content, build the everyday-fan narrative, and feed the retargeting pool that paid social draws from.",
           components: {
             heading: "What The Pages Do",
             items: [
@@ -264,62 +264,20 @@ export const ekatorPlan: StrategyPlanData = {
     },
 
     // ===================================================================
-    // 06. New Media Placements (Origin)
+    // 06. Paid Social, YouTube & SWRM
     // ===================================================================
     {
       type: "vertical",
       number: "06",
-      navLabel: "Placements",
-      title: "Vertical 3 / New Media Placements",
+      navLabel: "Paid + YouTube + SWRM",
+      title: "Vertical 3 / Paid Social, YouTube & SWRM Amplification",
       philosophy:
-        "The K-pop-native channel buy. Origin's owned pages, used for what they are actually good at, reduced to a one-to-two-month test and complemented by our clipping rather than relying on them alone.",
-      subBlocks: [
-        {
-          label: "A",
-          title: "Origin Channel Network",
-          budget: "$10,000 (working media)",
-          timeline: "One to two month test, then reassess on performance",
-          objective:
-            "Use Origin for the one thing they do well: placement on their established K-pop pages. Buy the posts, not the upsell.",
-          strategy:
-            "Engage Origin on a focused brief: a defined number of posts across their K-pop channels per month, nothing else. Their pitch is that they know K-pop and have the pages, which is genuinely useful for native credibility. We reduce them from the standing 20K-per-month commitment to a one-to-two-month test, measure against follower velocity and conversation lift, and let our own clipping network carry the volume around them.",
-          components: {
-            heading: "How We Use Origin",
-            items: [
-              "Defined post volume on Origin's K-pop pages per month",
-              "No bundled upsell: placement only, on our creative direction",
-              "Reduced to a one-to-two-month test window",
-              "Complemented (not replaced) by the managed clipper network",
-              "Measured on velocity and conversation, not vanity post counts",
-            ],
-          },
-          kpis: [
-            "Follower velocity attributable to placement weeks",
-            "Conversation and sentiment lift during the test",
-            "Cost per net new follower versus the clipper network",
-            "Go or no-go signal for continuation into the debut cycle",
-          ],
-        },
-      ],
-      footnote:
-        "Origin is a channel buy, not a strategy. The test answers whether their K-pop pages out-perform our own clipping on a cost-per-result basis.",
-    },
-
-    // ===================================================================
-    // 07. Paid Social & SWRM
-    // ===================================================================
-    {
-      type: "vertical",
-      number: "07",
-      navLabel: "Paid + SWRM",
-      title: "Vertical 4 / Paid Social & SWRM Amplification",
-      philosophy:
-        "The accelerant. Paid rides the winners the clipping and fan pages surface; SWRM drives conversation and social proof on everything. This is the layer WAYF did not need but we use to compress the timeline.",
+        "The accelerant. Paid social and YouTube ride the winners the clipping and fan-page support surfaces; SWRM drives conversation and social proof on everything. This is the layer WAYF did not need but we use to compress the timeline.",
       subBlocks: [
         {
           label: "A",
           title: "Paid Social Boosting",
-          budget: "$12,000 (working media)",
+          budget: "$10,000 (deployable channel budget)",
           objective:
             "Put spend behind the clips and posts already proving themselves organically, across every applicable channel (TikTok, IG Reels, YouTube Shorts), to push high-performing assets past their organic ceiling.",
           strategy:
@@ -334,8 +292,23 @@ export const ekatorPlan: StrategyPlanData = {
         },
         {
           label: "B",
+          title: "YouTube Amplification",
+          budget: "$5,000 (deployable channel budget)",
+          objective:
+            "Give the documentary and Shorts ecosystem dedicated support on YouTube so the campaign is not dependent on TikTok and Reels alone.",
+          strategy:
+            "Use YouTube budget to support documentary-adjacent Shorts, hero moments, and retargeting audiences built from viewers. Prioritize the moments with the clearest member identity, concept clarity, and comment velocity, then push them into Shorts and skippable inventory where the audience is already consuming K-pop discovery content.",
+          tactics: [
+            "Boost top documentary moments into YouTube Shorts",
+            "Build viewer and engager pools for November retargeting",
+            "Support hero clips with lightweight YouTube inventory",
+            "Measure watch-through and subscriber/follower conversion signals",
+          ],
+        },
+        {
+          label: "C",
           title: "SWRM Comment Amplification",
-          budget: "$3,000 (working media)",
+          budget: "$3,000 (deployable channel budget)",
           objective:
             "Drive real-person conversation and social proof across all EKATOR content and the clips seeded around it. Comments are where pre-debut hype reads as real.",
           strategy:
@@ -356,15 +329,15 @@ export const ekatorPlan: StrategyPlanData = {
     },
 
     // ===================================================================
-    // 08. World-Building & Experiential
+    // 07. World-Building & Experiential
     // ===================================================================
     {
       type: "vertical",
-      number: "08",
+      number: "07",
       navLabel: "Experiential",
       title: "World-Building & Experiential (Optional)",
       philosophy:
-        "Scoped on top of the $50K working budget. The conversion layer that turns hype into data, units, and a chart story. This is where US-style marketing and K-pop marketing combine into something neither does alone.",
+        "Scoped on top of the $50,000 total program. The conversion layer that turns hype into data, units, and a chart story. This is where US-style marketing and K-pop marketing combine into something neither does alone.",
       intro:
         "Once hype exists, experiential is what moves the needle and captures the value WAYF left on the table. Each item below is optional, priced separately, and deployable on demand based on how the July and August signals perform.",
       subBlocks: [
@@ -407,45 +380,44 @@ export const ekatorPlan: StrategyPlanData = {
         },
       ],
       footnote:
-        "All experiential items sit outside the $50,000 working budget and are scoped and approved individually based on pre-debut performance signals.",
+        "All experiential items sit outside the $50,000 total program and are scoped and approved individually based on pre-debut performance signals.",
     },
 
     // ===================================================================
-    // 09. Media Flight
+    // 08. Media Flight
     // ===================================================================
     {
       type: "flight",
-      number: "09",
+      number: "08",
       navLabel: "Flight",
       title: "Proposed Media Flight",
       intro:
-        "How the $50,000 working budget deploys across the pre-debut window. July detonates alongside the documentary launch (clipping, fan pages, Origin, SWRM all firing on the weekly episodes). August scales paid behind the proven winners and runs the fan pages at full cadence while Origin tapers. September sustains the hype and sets the experiential decision and the runway into the November debut.",
-      totalBudget: "$50,000 working media",
+        "How the $39,000 deployable channel budget works inside the $50,000 total program. July detonates alongside the documentary launch with clipping, paid social, YouTube, SWRM, and discretionary tests firing on the weekly episodes. August scales paid and YouTube behind the winners while the discretionary pool moves toward the highest-signal support. September sustains the hype and sets the experiential decision and the runway into the November debut.",
+      totalBudget: "$39,000 deployable",
       phases: [
         {
           label: "Detonation + Documentary Launch",
           window: "July 2026 / ~4 weeks",
           focus:
-            "All engines fire on the weekly documentary episodes. The clipper network and Origin both attack the same content from two angles, the two fan pages launch, SWRM drives conversation density, and paid social tests light to find early winners. Goal: prove the concept travels and build the first follower-velocity curve.",
-          budget: "~$20,000",
+            "All active engines fire on the weekly documentary episodes. The clipper network attacks the content at full weight, SWRM drives conversation density, paid social and YouTube test light to find early winners, and the discretionary pool stays available for fan-page support or fast reallocations. Goal: prove the concept travels and build the first follower-velocity curve.",
+          budget: "~$17,000",
           tactics: [
             "Clipper network and 180K server attack each weekly episode",
-            "Two HQ fan pages launch on IG plus TikTok",
-            "Origin placement test begins on K-pop pages",
+            "Paid social and YouTube test against the concept-and-comp audience",
             "SWRM comment coverage timed to episode drops",
-            "Paid social test phase against the concept-and-comp audience",
+            "Discretionary pool held for fast fan-page support or creator/community tests",
           ],
         },
         {
           label: "Scale The Winners",
           window: "August 2026 / ~4 weeks",
           focus:
-            "Paid social scales behind the clips and posts that proved themselves in July. Fan pages run at full cadence feeding retargeting pools. Origin continues or sunsets based on its cost-per-result. Goal: compound clipping, fan pages, and paid into a single accelerating presence.",
-          budget: "~$18,000",
+            "Paid social and YouTube scale behind the clips and posts that proved themselves in July. Discretionary support shifts toward the highest-signal channel, whether that is fan-page content, creator/community tests, or additional boosts. Goal: compound clipping, paid, YouTube, and SWRM into a single accelerating presence.",
+          budget: "~$14,000",
           tactics: [
             "Paid social scales on proven winners across all channels",
-            "Fan pages at full cadence, top themes rotated into paid",
-            "Origin go or no-go decision on test performance",
+            "YouTube boosts the strongest Shorts and documentary moments",
+            "Discretionary pool reallocates to the highest-signal support",
             "Clipping continues, prioritizing the highest-velocity concepts",
             "Experiential decision point: greenlight pop-up and web build",
           ],
@@ -455,7 +427,7 @@ export const ekatorPlan: StrategyPlanData = {
           window: "September 2026 / ~4 weeks",
           focus:
             "Hold the hype at strength and convert it into owned audience ahead of the November single. Paid steps to evergreen plus retargeting, fan pages sustain, and the experiential and CRM layer (if greenlit) captures the audience the rest of the campaign built. Goal: hand the November debut a warm, owned, talked-about audience.",
-          budget: "~$12,000",
+          budget: "~$8,000",
           tactics: [
             "Paid social to evergreen plus retargeting only",
             "Fan pages sustain on top-performing concepts",
@@ -465,19 +437,19 @@ export const ekatorPlan: StrategyPlanData = {
         },
       ],
       footnote:
-        "Phase budgets are directional. CCD reallocates weekly across clipping, fan pages, placements, paid, and SWRM based on follower-velocity and conversation signals.",
+        "Phase budgets are directional and refer to the $39,000 deployable channel budget. CCD reallocates weekly across clipping, paid social, YouTube, SWRM, and discretionary support based on follower-velocity and conversation signals.",
     },
 
     // ===================================================================
-    // 10. Execution Timeline
+    // 09. Execution Timeline
     // ===================================================================
     {
       type: "timeline",
-      number: "10",
+      number: "09",
       navLabel: "Timeline",
       title: "Execution Timeline",
       intro:
-        "Week-by-week deployment across the pre-debut window. The six documentary episodes anchor July and early August (exact dates pending the release and content schedule from Jane). Clipping, fan pages, and SWRM launch in week 1. Origin runs a one-to-two-month test. Paid tests in week 1 and scales from week 3. The experiential decision lands around weeks 6 to 8 and, if greenlit, activates in September. The window is the runway into the November single and debut.",
+        "Week-by-week deployment across the pre-debut window. The six documentary episodes anchor July and early August (exact dates pending the release and content schedule from Jane). Clipping, SWRM, paid social, and YouTube launch in week 1. Discretionary support is held for fast fan-page, creator/community, or boost reallocations as the first performance reads come in. The experiential decision lands around weeks 6 to 8 and, if greenlit, activates in September. The window is the runway into the November single and debut.",
       weeks: [
         { index: 1, label: "W1", dates: "Jul 6", note: "EP1" },
         { index: 2, label: "W2", dates: "Jul 13", note: "EP2" },
@@ -539,19 +511,6 @@ export const ekatorPlan: StrategyPlanData = {
           ],
         },
         {
-          name: "Origin Placements",
-          cells: [
-            { weekIndex: 1, intensity: "medium", label: "TEST" },
-            { weekIndex: 2, intensity: "medium" },
-            { weekIndex: 3, intensity: "high" },
-            { weekIndex: 4, intensity: "high" },
-            { weekIndex: 5, intensity: "high" },
-            { weekIndex: 6, intensity: "medium" },
-            { weekIndex: 7, intensity: "medium" },
-            { weekIndex: 8, intensity: "low" },
-          ],
-        },
-        {
           name: "Paid Social",
           cells: [
             { weekIndex: 1, intensity: "medium", label: "TEST" },
@@ -565,6 +524,23 @@ export const ekatorPlan: StrategyPlanData = {
             { weekIndex: 9, intensity: "high" },
             { weekIndex: 10, intensity: "medium" },
             { weekIndex: 11, intensity: "medium" },
+            { weekIndex: 12, intensity: "low" },
+          ],
+        },
+        {
+          name: "YouTube",
+          cells: [
+            { weekIndex: 1, intensity: "medium", label: "TEST" },
+            { weekIndex: 2, intensity: "medium" },
+            { weekIndex: 3, intensity: "medium" },
+            { weekIndex: 4, intensity: "high" },
+            { weekIndex: 5, intensity: "high" },
+            { weekIndex: 6, intensity: "high" },
+            { weekIndex: 7, intensity: "medium" },
+            { weekIndex: 8, intensity: "medium" },
+            { weekIndex: 9, intensity: "medium" },
+            { weekIndex: 10, intensity: "low" },
+            { weekIndex: 11, intensity: "low" },
             { weekIndex: 12, intensity: "low" },
           ],
         },
@@ -606,7 +582,7 @@ export const ekatorPlan: StrategyPlanData = {
             "Documentary episode 1 drops. Clipper network and 180K server immediately cut it into hook-first verticals and seed across the network.",
             "Both fan pages launch on IG plus TikTok with concept-led launch posts.",
             "SWRM comment coverage goes live across owned posts and seeded clips.",
-            "Origin placement test begins. Paid social launches in test mode against the concept-and-comp audience.",
+            "Paid social and YouTube launch in test mode against the concept-and-comp audience.",
           ],
         },
         {
@@ -625,7 +601,7 @@ export const ekatorPlan: StrategyPlanData = {
           items: [
             "Documentary episode 3 drops.",
             "Paid social shifts from test to scale behind the top-performing clips.",
-            "Origin placement at full test weight; velocity attribution tracked.",
+            "YouTube support increases behind the documentary moments with the strongest watch-through and comment velocity.",
             "Clipping prioritizes the concepts showing the strongest travel.",
           ],
         },
@@ -645,7 +621,7 @@ export const ekatorPlan: StrategyPlanData = {
           items: [
             "Documentary episode 5 drops.",
             "All organic and paid engines compounding.",
-            "Origin go or no-go signal forming on cost-per-result.",
+            "Discretionary allocation readout: decide whether fan-page support, creator/community tests, or incremental boosts deserve the next dollars.",
             "SWRM density timed to the episode moment.",
           ],
         },
@@ -655,7 +631,7 @@ export const ekatorPlan: StrategyPlanData = {
           items: [
             "Final documentary episode 6 drops.",
             "Experiential decision point: greenlight the LA and NY pop-up and the web build based on velocity to date.",
-            "Origin test concludes; continue or sunset.",
+            "Discretionary pool review: continue fan-page or creator/community support only where the signal justifies it.",
             "Compile the July performance review across all workstreams.",
           ],
         },
@@ -675,7 +651,7 @@ export const ekatorPlan: StrategyPlanData = {
           items: [
             "Paid heavy; cycle in fresh creative from best fan-page posts.",
             "Experiential build underway (web experience plus pop-up logistics).",
-            "Origin fully sunset or extended on a fresh micro-brief.",
+            "Discretionary pool fully reallocated to the highest-signal support lane.",
             "CRM infrastructure stood up ahead of capture.",
           ],
         },
@@ -719,42 +695,43 @@ export const ekatorPlan: StrategyPlanData = {
         },
       ],
       footnote:
-        "Documentary dates are illustrative pending the schedule from Jane. Origin runs a one-to-two-month test. Experiential is optional and activates only if greenlit around week 6 to 8. CCD reallocates weekly across all workstreams.",
+        "Documentary dates are illustrative pending the schedule from Jane. Experiential is optional and activates only if greenlit around week 6 to 8. CCD reallocates weekly across all workstreams.",
     },
 
     // ===================================================================
-    // 11. Investment
+    // 10. Investment
     // ===================================================================
     {
       type: "pricing",
-      number: "11",
+      number: "10",
       navLabel: "Investment",
       title: "Investment",
       intro:
-        "The total program for the pre-debut window (July through September 2026) is $62,500: $50,000 of working media plus $12,500 in CCD fees (a flat $5,000 campaign retainer and 15% media management). The full $50,000 deploys to working media; the fees are billed on top, not deducted from it. The November single and the official debut each authorize a fresh budget on the same structure.",
+        "The total program for the pre-debut window (July through September 2026) is $50,000 all-in. The active channel budget is $39,000 across paid social, YouTube, SWRM, clipping, and discretionary optimization. The remaining $11,000 covers the CCD retainer and fees. The November single and the official debut each authorize a fresh budget on the same structure.",
       tiers: [
         {
           label: "Pre-Debut Window (Jul to Sep)",
-          budget: "$62,500",
+          budget: "$50,000",
           name: "Total Program",
           tagline:
-            "All-in for the pre-debut window: $50,000 working media plus $12,500 CCD fees. The working media deploys in full; CCD fees (flat $5,000 retainer plus 15% media management, $7,500) are billed on top.",
+            "All-in for the pre-debut window: $39,000 deployable across active channels plus $11,000 in CCD retainer and fees. The channel mix concentrates on clipping, paid social, YouTube, SWRM, and a discretionary optimization pool.",
           featured: true,
-          deployable: "$50,000",
+          deployable: "$39,000",
           feeBreakdown: {
             retainer: "$5,000",
             retainerDetail: "Flat campaign retainer, full pre-debut window (~3 months)",
-            mediaManagement: "$7,500",
-            mediaManagementDetail: "15% of $50,000 managed working-media spend",
+            mediaManagementLabel: "Fees",
+            mediaManagement: "$6,000",
+            mediaManagementDetail: "Campaign fees across the pre-debut window",
           },
           breakdown: [
-            { vertical: "Clipping & Seeding", amount: "$10,000" },
-            { vertical: "Fan Page Network (2 pages)", amount: "$15,000" },
-            { vertical: "New Media Placements (Origin)", amount: "$10,000" },
-            { vertical: "Paid Social Amplification", amount: "$12,000" },
-            { vertical: "SWRM Comment Amplification", amount: "$3,000" },
-            { vertical: "CCD Retainer", amount: "$5,000" },
-            { vertical: "CCD Media Management (15%)", amount: "$7,500" },
+            { vertical: "Paid Social", amount: "$10,000" },
+            { vertical: "YouTube", amount: "$5,000" },
+            { vertical: "SWRM", amount: "$3,000" },
+            { vertical: "Clipping", amount: "$15,000" },
+            { vertical: "Discretionary", amount: "$6,000" },
+            { vertical: "Retainer", amount: "$5,000" },
+            { vertical: "Fees", amount: "$6,000" },
           ],
         },
       ],
@@ -773,7 +750,7 @@ export const ekatorPlan: StrategyPlanData = {
         },
       ],
       footnote:
-        "Total program is $62,500: $50,000 working media (deploys in full) plus $12,500 CCD fees (flat $5,000 retainer plus $7,500 media management at 15%). Experiential add-ons are scoped and approved separately. Each future cycle (November single, debut, first comeback) gets its own authorization on this structure.",
+        "Total program is $50,000: $39,000 deployable channel budget plus $11,000 CCD retainer and fees. The breakdown totals exactly $50,000. Experiential add-ons are scoped and approved separately. Each future cycle (November single, debut, first comeback) gets its own authorization on this structure.",
     },
   ],
 };
