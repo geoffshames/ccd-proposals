@@ -2,7 +2,7 @@ import type { StrategyPlanData } from "../plan-context";
 
 export const sunChaserPlan: StrategyPlanData = {
   accentColor: "#FD3737",
-  ogImage: "/images/sun-chaser/og-image.png",
+  ogImage: "/images/sun-chaser-yt/og-image.png",
   language: "en",
 
   cover: {
@@ -13,7 +13,7 @@ export const sunChaserPlan: StrategyPlanData = {
     partnership: "Sun Chaser × Crowd Control Digital",
     prepared: "Geoff Shames / Co-Founder, Crowd Control Digital",
     date: "July 2026",
-    backgroundImage: "/images/sun-chaser/hero.jpg",
+    backgroundImage: "/images/sun-chaser-yt/hero.jpg",
     logo: "/brand/CC-LOGO-2024-WHITE.png",
   },
 
