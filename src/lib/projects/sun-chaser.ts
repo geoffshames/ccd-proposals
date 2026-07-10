@@ -1,7 +1,7 @@
 import type { ProjectData } from "../project-context";
 
 export const sunChaser: ProjectData = {
-  accentColor: "#F5A524",
+  accentColor: "#FD3737",
 
   client: {
     name: "Sun Chaser",
