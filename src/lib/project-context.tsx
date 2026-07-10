@@ -89,6 +89,34 @@ export type ProjectData = {
     value: string;
     context: string;
   }[];
+  mediaFlight?: {
+    heading?: string;
+    subheading?: string;
+    goal: { views: string; window: string; blendedCpv: string; totalBudget: string };
+    tracks: {
+      key: string;
+      role: string;
+      budget: string;
+      budgetPct: string;
+      cpv: string;
+      views: string;
+      viewsPct: string;
+      markets: string;
+      mix: string;
+      rationale: string;
+    }[];
+    dial: {
+      label: string;
+      budget: string;
+      views: string;
+      split: string;
+      note: string;
+      featured?: boolean;
+    }[];
+    exclusions: string[];
+    caveat: { heading: string; body: string };
+    pacingNote?: string;
+  };
   competitive?: {
     summary: string;
     competitors: {

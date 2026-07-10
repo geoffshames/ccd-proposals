@@ -32,9 +32,11 @@ import { armentaEs } from "./armenta-es";
 import { sublime } from "./sublime";
 import { hermes } from "./hermes";
 import { polkadotfx } from "./polkadotfx";
+import { sunChaser } from "./sun-chaser";
 import type { ProjectData } from "../project-context";
 
 export const PROJECTS: Record<string, ProjectData> = {
+  "sun-chaser": sunChaser,
   "polkadotfx": polkadotfx,
   "hermes": hermes,
   "sublime": sublime,

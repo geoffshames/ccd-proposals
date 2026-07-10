@@ -8,6 +8,7 @@ import { Philosophy } from "@/components/Philosophy";
 import { Overview } from "@/components/Overview";
 import { Audience } from "@/components/Audience";
 import { Targets } from "@/components/Targets";
+import { MediaFlight } from "@/components/MediaFlight";
 import { Competitive } from "@/components/Competitive";
 import { Tiers } from "@/components/Tiers";
 import { Timeline } from "@/components/Timeline";
@@ -34,6 +35,7 @@ export function ProposalClient({ project }: { project: ProjectData }) {
         <Overview />
         <Audience />
         <Targets />
+        <MediaFlight />
         <Competitive />
         <Tiers />
         <ImageBreak
