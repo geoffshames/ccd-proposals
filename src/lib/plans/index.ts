@@ -15,7 +15,7 @@ import { eightyTwoMajorRoadmapKorean } from "./82major-roadmap-ko";
 import { sunChaserPlan } from "./sun-chaser";
 
 export const PLANS: Record<string, StrategyPlanData> = {
-  "sun-chaser": sunChaserPlan,
+  "sun-chaser-yt": sunChaserPlan,
   "truly-young": trulyYoungPlan,
   ekator: ekatorPlan,
   "ekator-ko": ekatorPlanKorean,
