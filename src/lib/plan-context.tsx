@@ -183,6 +183,8 @@ export type PricingSection = {
   title: string;
   intro: string;
   ccdNote?: string;
+  breakdownLabel?: string;
+  deployableLabel?: string;
   tiers: {
     label: string;
     budget: string;

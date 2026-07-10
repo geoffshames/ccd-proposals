@@ -12,8 +12,10 @@ import { ekatorPlanKorean } from "./ekator-ko";
 import { trulyYoungPlan } from "./truly-young";
 import { eightyTwoMajorRoadmap } from "./82major-roadmap";
 import { eightyTwoMajorRoadmapKorean } from "./82major-roadmap-ko";
+import { sunChaserPlan } from "./sun-chaser";
 
 export const PLANS: Record<string, StrategyPlanData> = {
+  "sun-chaser": sunChaserPlan,
   "truly-young": trulyYoungPlan,
   ekator: ekatorPlan,
   "ekator-ko": ekatorPlanKorean,

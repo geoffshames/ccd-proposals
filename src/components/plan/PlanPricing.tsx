@@ -9,7 +9,7 @@ export function PlanPricing({ section }: { section: PricingSection }) {
       <div className="max-w-6xl mx-auto">
         <PlanSectionHeader number={section.number} title={section.title} intro={section.intro} />
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
+        <div className={`grid grid-cols-1 ${section.tiers.length > 1 ? "lg:grid-cols-2" : ""} gap-4`}>
           {section.tiers.map((tier, i) => (
             <motion.div
               key={i}
@@ -72,7 +72,7 @@ export function PlanPricing({ section }: { section: PricingSection }) {
 
               <div className="mt-8 pt-6 border-t border-text-muted/15">
                 <div className="text-[10px] font-mono tracking-[0.22em] uppercase text-text-muted/60 mb-4">
-                  Breakdown By Vertical
+                  {section.breakdownLabel ?? "Breakdown By Vertical"}
                 </div>
                 <div className="space-y-2">
                   {tier.breakdown.map((b, j) => (
@@ -86,7 +86,7 @@ export function PlanPricing({ section }: { section: PricingSection }) {
 
               <div className="mt-6 pt-4 border-t border-text-muted/15">
                 <div className="flex items-baseline justify-between gap-4 text-[13px]">
-                  <span className="text-text-muted/70 uppercase tracking-[0.12em] font-mono">Deployable Net of CCD Fee</span>
+                  <span className="text-text-muted/70 uppercase tracking-[0.12em] font-mono">{section.deployableLabel ?? "Deployable Net of CCD Fee"}</span>
                   <span className="font-mono tabular-nums text-accent font-bold">{tier.deployable}</span>
                 </div>
               </div>
