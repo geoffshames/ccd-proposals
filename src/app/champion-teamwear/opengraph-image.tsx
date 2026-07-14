@@ -15,7 +15,10 @@ export default function OpenGraphImage() {
           display: "flex",
           flexDirection: "column",
           justifyContent: "space-between",
-          background: "#07142f",
+          background: "#0A0A0A",
+          backgroundImage:
+            "linear-gradient(rgba(51,51,51,.16) 1px, transparent 1px), linear-gradient(90deg, rgba(51,51,51,.16) 1px, transparent 1px)",
+          backgroundSize: "80px 80px",
           color: "#ffffff",
           padding: "56px 66px",
           fontFamily: "Arial, sans-serif",
@@ -30,13 +33,19 @@ export default function OpenGraphImage() {
             width: 520,
             height: 520,
             borderRadius: 520,
-            border: "110px solid rgba(239, 49, 60, 0.18)",
+            border: "110px solid rgba(253, 55, 55, 0.16)",
             right: -150,
             top: -175,
           }}
         />
-        <div style={{ display: "flex", justifyContent: "space-between", fontSize: 17, letterSpacing: 3.5, textTransform: "uppercase" }}>
-          <span style={{ color: "#ef313c" }}>Crowd Control Digital</span>
+        <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", fontSize: 17, letterSpacing: 3.5, textTransform: "uppercase" }}>
+          <img
+            src="https://proposal.crowdcontroldigital.com/brand/CC-LOGO-2024-WHITE.png"
+            alt="Crowd Control Digital"
+            width="312"
+            height="44"
+            style={{ objectFit: "contain" }}
+          />
           <span style={{ color: "rgba(255,255,255,.55)" }}>Confidential · July 2026</span>
         </div>
 
@@ -44,7 +53,7 @@ export default function OpenGraphImage() {
           <div style={{ display: "flex", fontSize: 82, lineHeight: 0.94, fontWeight: 800, letterSpacing: -4, textTransform: "uppercase" }}>
             Champion
           </div>
-          <div style={{ display: "flex", fontSize: 82, lineHeight: 0.94, fontWeight: 800, letterSpacing: -4, color: "#ef313c", textTransform: "uppercase" }}>
+          <div style={{ display: "flex", fontSize: 82, lineHeight: 0.94, fontWeight: 800, letterSpacing: -4, color: "#FD3737", textTransform: "uppercase" }}>
             Teamwear
           </div>
           <div style={{ display: "flex", marginTop: 28, fontSize: 28, lineHeight: 1.25, color: "rgba(255,255,255,.74)" }}>

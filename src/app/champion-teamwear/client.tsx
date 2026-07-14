@@ -76,22 +76,38 @@ export function ChampionTeamwearClient() {
       <CursorGlow />
 
       <header className={styles.hero}>
-        <div className={styles.heroImage} aria-hidden>
-          <Image
-            src="/images/champion-teamwear/cheer-hero.png"
-            alt=""
-            fill
-            priority
-            sizes="100vw"
-          />
-        </div>
-        <div className={styles.heroOverlay} aria-hidden />
         <div className={styles.heroGrid} aria-hidden />
+        <div className={styles.heroGlow} aria-hidden />
+        <div className={styles.heroSystem} aria-hidden>
+          <div className={styles.systemTopline}>
+            <span>CCD / INTELLIGENCE UNIT</span>
+            <span>CTW—01</span>
+          </div>
+          <div className={styles.systemMark}>CTW</div>
+          <div className={styles.systemAxis}>
+            <span>Brand permission</span>
+            <span>Operating friction</span>
+          </div>
+          <div className={styles.systemReadout}>
+            <span>Signal</span>
+            <strong>Equity leakage</strong>
+          </div>
+        </div>
 
         <div className={styles.topline}>
-          <span>
-            <strong>Crowd Control Digital</strong> · Decision Dossier
-          </span>
+          <a
+            className={styles.topLogo}
+            href="https://crowdcontroldigital.com"
+            aria-label="Crowd Control Digital"
+          >
+            <Image
+              src="/brand/CC-LOGO-2024-WHITE.png"
+              alt="Crowd Control Digital"
+              width={2198}
+              height={307}
+              priority
+            />
+          </a>
           <span>{report.classification} · CTW / 2026-07</span>
         </div>
 
@@ -135,9 +151,18 @@ export function ChampionTeamwearClient() {
 
       <nav className={styles.nav} aria-label="Report sections">
         <div className={styles.navInner}>
-          <div className={styles.navBrand}>
-            Champion <span>Teamwear</span>
-          </div>
+          <a
+            className={styles.navLogo}
+            href="https://crowdcontroldigital.com"
+            aria-label="Crowd Control Digital"
+          >
+            <Image
+              src="/brand/CC-LOGO-2024-WHITE.png"
+              alt="Crowd Control Digital"
+              width={2198}
+              height={307}
+            />
+          </a>
           <div className={styles.navLinks}>
             {navItems.map(([label, href]) => (
               <a key={href} href={href}>
@@ -148,7 +173,7 @@ export function ChampionTeamwearClient() {
         </div>
       </nav>
 
-      <section id="read" className={styles.sectionLight}>
+      <section id="read" className={styles.sectionAlt}>
         <div className={styles.container}>
           <SectionHead
             code="§01"
@@ -226,7 +251,7 @@ export function ChampionTeamwearClient() {
         </div>
       </section>
 
-      <section className={styles.sectionLight}>
+      <section className={styles.sectionAlt}>
         <div className={styles.container}>
           <SectionHead
             code="§03"
@@ -265,19 +290,18 @@ export function ChampionTeamwearClient() {
         </div>
       </section>
 
-      <section className={styles.imageBand} aria-label="Champion Teamwear campaign imagery">
-        <Image
-          src="/images/champion-teamwear/home-hero.png"
-          alt="A collage of youth cheer, dance, and gymnastics teams wearing Champion Teamwear"
-          fill
-          sizes="100vw"
-        />
-        <div className={styles.imageCaption}>
-          <p>
-            Real teams are the most credible asset in the system. They need to become a
-            repeatable story engine—not a collage at the end of the funnel.
-          </p>
-          <span>Owned imagery · Champion Teamwear · 2025–26</span>
+      <section className={styles.signalBand} aria-label="Digital estate signal">
+        <div className={styles.signalInner}>
+          <div className={styles.signalCode}>Observed system signal / 01</div>
+          <div className={styles.signalNumber}>2,286</div>
+          <div className={styles.signalStatement}>
+            <span>Public URLs</span>
+            <p>One inherited estate. One repeated 2019 timestamp. No coherent source of truth.</p>
+          </div>
+          <div className={styles.signalRule}>
+            <span>Diagnosis</span>
+            <strong>Not a content problem. A system problem.</strong>
+          </div>
         </div>
       </section>
 
@@ -350,7 +374,7 @@ export function ChampionTeamwearClient() {
         </div>
       </section>
 
-      <section className={styles.sectionLight}>
+      <section className={styles.sectionAlt}>
         <div className={styles.container}>
           <SectionHead
             code="§05"
@@ -424,7 +448,7 @@ export function ChampionTeamwearClient() {
         </div>
       </section>
 
-      <section id="strategy" className={styles.sectionLight}>
+      <section id="strategy" className={styles.sectionAlt}>
         <div className={styles.container}>
           <SectionHead
             code="§07"
@@ -500,23 +524,24 @@ export function ChampionTeamwearClient() {
         </div>
       </section>
 
-      <section className={styles.imageBand} aria-label="Champion Teamwear customization imagery">
-        <Image
-          src="/images/champion-teamwear/decoration.png"
-          alt="A range of customized Champion Teamwear apparel showing different decoration techniques"
-          fill
-          sizes="100vw"
-        />
-        <div className={styles.imageCaption}>
-          <p>
-            The product already contains the expression. The brand system has to make
-            that capability visible, navigable, and desirable.
-          </p>
-          <span>Owned imagery · Decoration system</span>
+      <section className={`${styles.signalBand} ${styles.signalBandRed}`} aria-label="Team identity system">
+        <div className={styles.signalInnerAlt}>
+          <div className={styles.signalCode}>Strategic system / 02</div>
+          <div className={styles.signalStatementLarge}>
+            The expression is already in the product. The identity system has to make it visible.
+          </div>
+          <div className={styles.identityModes}>
+            {['Game day', 'Practice', 'Travel', 'Fandom'].map((mode, index) => (
+              <div key={mode}>
+                <span>0{index + 1}</span>
+                <strong>{mode}</strong>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
-      <section id="roadmap" className={styles.sectionLight}>
+      <section id="roadmap" className={styles.sectionAlt}>
         <div className={styles.container}>
           <SectionHead
             code="§09"
@@ -586,7 +611,7 @@ export function ChampionTeamwearClient() {
         </div>
       </section>
 
-      <section className={styles.sectionLight}>
+      <section className={styles.sectionAlt}>
         <div className={styles.container}>
           <SectionHead
             code="§11"
@@ -657,7 +682,14 @@ export function ChampionTeamwearClient() {
 
       <footer className={styles.footer}>
         <div className={styles.footerInner}>
-          <span><strong>Crowd Control Digital</strong> · {report.issued}</span>
+          <Image
+            className={styles.footerLogo}
+            src="/brand/CC-LOGO-2024-WHITE.png"
+            alt="Crowd Control Digital"
+            width={2198}
+            height={307}
+          />
+          <span>{report.issued}</span>
           <span>{report.classification} · Champion Teamwear only</span>
         </div>
       </footer>
