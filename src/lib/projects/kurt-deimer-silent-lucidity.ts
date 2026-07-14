@@ -43,7 +43,7 @@ export const kurtDeimerSilentLucidity: ProjectData = {
             {
                       label: "The Ramp, Then the Bleed",
                       finding:
-                                  "The single and album ran monthly listeners from 5.1K (April 4) to a 37.5K peak (May 13). Half of that is gone: roughly 19K today, dropping 200 to 300 a day, with zero Spotify playlist placements, editorial or algorithmic, holding it up.",
+                                  "The single and album ran monthly listeners from 5.1K (April 4) to a 37.5K peak (May 13). Half of that is gone: roughly 19K today, dropping 200 to 300 a day, with zero Spotify playlist placements of any kind holding it up.",
                       source: "Chartmetric daily listener series",
             },
             {
@@ -205,7 +205,7 @@ export const kurtDeimerSilentLucidity: ProjectData = {
           exclusions: [
                   "TikTok OFF: 11.3K followers, +6 last month, wrong demo",
                   "No chart play: charts are next-cycle by design",
-                  "No third-party playlisting in this budget (phase-two unlock)",
+                  "No playlist pitching or placement services: not something CCD offers",
                   "No bot inventory anywhere",
                   "Tour ticket media stays in the tour lane",
                 ],
@@ -281,7 +281,7 @@ export const kurtDeimerSilentLucidity: ProjectData = {
                   "Weekly lift reports and the day-30 readout with the next-cycle recommendation",
                 ],
           excluded: [
-                  "Third-party playlisting and DSP editorial pitching (phase-two unlock once the base proves)",
+                  "Playlist pitching and placement of any kind: not services CCD offers, on this flight or ever",
                   "Hellbilly Hollow film media: separate budget, owed by Regime; this flight hands it the warm audiences",
                   "Tour ticket advertising and radio/PR (Deborah owns press)",
                   "New video or content production: the official video is the asset; cutdowns included, shoots are not",
