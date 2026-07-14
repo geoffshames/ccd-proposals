@@ -168,7 +168,7 @@ export function PermissionGapPlot({
       <FigureHeader
         eyebrow="Brand health / evidence profile"
         title="Permission-to-delivery score gap"
-        subtitle="Evidence-weighted analyst judgments on a five-point scale—not survey results. Confidence reflects the quality and volume of supporting evidence."
+        subtitle="Evidence-weighted analyst judgments on a five-point scale, not survey results. Confidence reflects the quality and volume of supporting evidence."
         value={spread.toFixed(1)}
         valueLabel="point top-to-bottom spread"
       />

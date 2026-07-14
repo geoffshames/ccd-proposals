@@ -154,7 +154,7 @@ export function ChampionTeamwearClient() {
         <div className={styles.heroSystem} aria-hidden>
           <div className={styles.systemTopline}>
             <span>CCD / INTELLIGENCE UNIT</span>
-            <span>CTW—01</span>
+            <span>CTW / 01</span>
           </div>
           <div className={styles.systemMark}>CTW</div>
           <div className={styles.systemAxis}>
@@ -200,7 +200,7 @@ export function ChampionTeamwearClient() {
           </h1>
           <p className={styles.subtitle}>
             A Teamwear-specific diagnostic. Champion retail equity is treated as
-            halo—not as evidence of Teamwear performance.
+            halo, not as evidence of Teamwear performance.
           </p>
 
           <div className={styles.heroMeta}>
@@ -291,7 +291,7 @@ export function ChampionTeamwearClient() {
           <SectionHead
             code="§02"
             label="Brand health"
-            title="Equity is strongest where people touch people—and weakest where they touch the system."
+            title="Equity is strongest where people touch people. It is weakest where they touch the system."
             lede="Scores are evidence-weighted analyst judgments on a five-point scale, not survey results. Confidence indicates the quality and volume of the underlying evidence."
           />
 
@@ -317,7 +317,7 @@ export function ChampionTeamwearClient() {
             code="§03"
             label="Digital truth"
             title="The public footprint is a living record of every organization that came before ABA."
-            lede="The Shopware rebuild is necessary—but a new front end alone will not solve duplicate authority, customer-path confusion, legacy policies, or inconsistent ownership signals."
+            lede="The Shopware rebuild is necessary, but a new front end alone will not solve duplicate authority, customer-path confusion, legacy policies, or inconsistent ownership signals."
           />
 
           <div className={styles.findingList}>
@@ -399,7 +399,7 @@ export function ChampionTeamwearClient() {
 
           <SubsectionHead
             code="04.3 / Coded themes"
-            title="The strongest pattern is operating inconsistency—not broad brand rejection."
+            title="The strongest pattern is operating inconsistency, not broad brand rejection."
           />
 
           <div className={styles.themeGrid}>
@@ -417,7 +417,7 @@ export function ChampionTeamwearClient() {
 
           <SubsectionHead
             code="04.4 / Direct voices"
-            title="Relationship equity is real—and vulnerable to a single bad handoff."
+            title="Relationship equity is real but vulnerable to a single bad handoff."
           />
 
           <div className={styles.voices}>
@@ -464,7 +464,7 @@ export function ChampionTeamwearClient() {
           <SectionHead
             code="§06"
             label="Competitive system"
-            title="The market has eight visible competitors—but only five control groups that matter."
+            title="The market has eight visible competitors. Only five control groups matter."
             lede="Parent-company consolidation changes the strategic read. Varsity Spirit and BSN are different faces of one threat; Augusta, Alleson, Russell, and Under Armour Team share infrastructure through Momentec."
           />
 
@@ -522,7 +522,7 @@ export function ChampionTeamwearClient() {
             code="§07"
             label="Strategic choice"
             title="Do not become Champion retail with jerseys. Own a category no one has assembled."
-            lede="Champion Teamwear can combine the expression of a specialist, the breadth of a major performance brand, and the operational ease of a distributor—without asking one of those systems to impersonate the other."
+            lede="Champion Teamwear can combine the expression of a specialist, the breadth of a major performance brand, and the operational ease of a distributor without asking one of those systems to impersonate the other."
           />
 
           <ScrollReveal className={styles.strategyHero}>
@@ -614,7 +614,7 @@ export function ChampionTeamwearClient() {
           <SectionHead
             code="§09"
             label="90-day path"
-            title="Run the urgent work and the foundational work in parallel—not in conflict."
+            title="Run the urgent work and the foundational work in parallel, not in conflict."
             lede="The catalog cannot wait for the final brand bible. The website cannot responsibly launch without one. A two-track plan creates safe interim guardrails while the durable system is researched and approved."
           />
 
@@ -629,7 +629,7 @@ export function ChampionTeamwearClient() {
           <SectionHead
             code="§10"
             label="Ways to engage"
-            title="Three ways in—designed to stack, not compete."
+            title="Three ways in. Designed to stack, not compete."
             lede="Start with the fire, the foundation, or the operating partnership. Each path preserves the work beneath it so ABA is building reusable capability rather than buying a new one-off every quarter."
           />
 
@@ -654,7 +654,7 @@ export function ChampionTeamwearClient() {
           <div className={styles.commercialNote}>
             Commercial terms are intentionally held until the 6–12 month “dirty napkin”
             roadmap arrives. That one input determines whether these are fixed-fee sprints,
-            a phased program, or a fractional operating pod—and prevents false precision in
+            a phased program, or a fractional operating pod. It also prevents false precision in
             a proposal built before scope ownership is known.
           </div>
         </div>
@@ -692,7 +692,7 @@ export function ChampionTeamwearClient() {
           <SectionHead
             code="§12"
             label="Method + sources"
-            title="Evidence is separated by what it can—and cannot—prove."
+            title="Evidence is separated by the limits of what each source can prove."
             lede="The audit combines internal operating context, owned digital surfaces, technical checks, directly attributable Teamwear customer voice, category context, and primary competitor sources."
           />
 

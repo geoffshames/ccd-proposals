@@ -116,7 +116,7 @@ export const championTeamwearReport = {
       code: "D-02",
       title: "The sitemap says the entire estate stopped in 2019.",
       finding:
-        "The XML sitemap contains 2,286 URLs—2,154 of them product URLs—and every lastmod field is May 15, 2019, despite active 2025–2026 campaigns and products.",
+        "The XML sitemap contains 2,286 URLs. Of those, 2,154 are product URLs. Every lastmod field is May 15, 2019, despite active 2025–2026 campaigns and products.",
       implication:
         "Freshness, crawl prioritization, and confidence in the underlying catalog are all being suppressed by a solvable technical signal.",
       evidence: "championteamwear.com/sitemap.xml",
@@ -134,7 +134,7 @@ export const championTeamwearReport = {
       code: "D-04",
       title: "Three buying missions compete on almost every page.",
       finding:
-        "Customers are asked to shop stock, request custom, call a rep, open a TeamStore, use Coach's Assistant, view a catalog, request a mockup, or request a quote—with limited decision guidance.",
+        "Customers are asked to shop stock, request custom, call a rep, open a TeamStore, use Coach's Assistant, view a catalog, request a mockup, or request a quote. Decision guidance is limited.",
       implication:
         "Rebuild the journey around three explicit doors: buy now, design custom, or outfit/manage a team.",
       evidence: "Homepage and sport/category page review",
@@ -210,7 +210,7 @@ export const championTeamwearReport = {
         theme: "Rep relationship",
         direction: "Positive",
         evidence:
-          "Long-tenured customers repeatedly name their rep—not the website—as the reason they stay. Negative experiences often begin when ownership changes or disappears.",
+          "Long-tenured customers repeatedly name their rep, rather than the website, as the reason they stay. Negative experiences often begin when ownership changes or disappears.",
         action: "End the rep lottery: visible primary, named backup, response standard, and recovery owner.",
       },
       {
@@ -238,7 +238,7 @@ export const championTeamwearReport = {
         theme: "Athlete aspiration",
         direction: "Absent",
         evidence:
-          "Direct conversation focuses on price and service—not style, status, reveal moments, or athlete desire.",
+          "Direct conversation focuses on price and service, not style, status, reveal moments, or athlete desire.",
         action: "Build the missing demand side with athlete co-creation, reveals, creators, and event-native storytelling.",
       },
     ],
@@ -250,15 +250,21 @@ export const championTeamwearReport = {
         tone: "positive",
       },
       {
+        quote: "Champion uniforms were crap, in our experience.",
+        source: "Reddit / r/Cheerleading",
+        href: "https://www.reddit.com/r/Cheerleading/comments/1od69j6/cheer_uniform_help/",
+        tone: "negative",
+      },
+      {
         quote: "Our rep is amazing, and uniforms aren't overpriced.",
         source: "Reddit / r/Cheerleading",
         href: "https://www.reddit.com/r/Cheerleading/comments/1ji4m00/uniforms/",
         tone: "positive",
       },
       {
-        quote: "Champion uniforms were crap, in our experience.",
+        quote: "I was not impressed with the Champion ones we had one year.",
         source: "Reddit / r/Cheerleading",
-        href: "https://www.reddit.com/r/Cheerleading/comments/1od69j6/cheer_uniform_help/",
+        href: "https://www.reddit.com/r/Cheerleading/comments/1e7gpy1/new_cheer_coach/",
         tone: "negative",
       },
     ],
@@ -346,7 +352,7 @@ export const championTeamwearReport = {
   strategy: {
     whitespace: "Expressive team identity at multisport scale.",
     promise:
-      "One coherent identity for game day, practice, travel, and fandom—designed with athletes, controlled by coaches, and delivered with game-date certainty.",
+      "One coherent identity for game day, practice, travel, and fandom. It is designed with athletes, controlled by coaches, and delivered with game-date certainty.",
     architecture: [
       {
         lens: "Champion Culture",
@@ -360,7 +366,7 @@ export const championTeamwearReport = {
       },
     ],
     principles: [
-      "Borrow the masterbrand's codes—not its consumer proposition.",
+      "Borrow the masterbrand's codes without inheriting its consumer proposition.",
       "Design for two customers at once: the adult buyer and the athlete influencer.",
       "Make operational certainty part of the brand, not back-office plumbing.",
       "Treat every uniform reveal as content and every event as a distribution channel.",
