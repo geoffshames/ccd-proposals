@@ -9,6 +9,8 @@ import { ParallaxImage } from "./ParallaxImage";
 export function Deliverables() {
   const PROJECT = useProject();
 
+  if (!PROJECT.deliverables?.length) return null;
+
   return (
     <section id="deliverables" className="relative py-32 px-6">
       <div className="section-divider max-w-6xl mx-auto mb-32" />

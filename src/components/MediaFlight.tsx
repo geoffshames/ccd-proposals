@@ -50,50 +50,97 @@ export function MediaFlight() {
         </div>
 
         {/* Flight tracks */}
-        <div className={`grid gap-5 mt-5 ${mf.tracks.length === 3 ? "md:grid-cols-2 lg:grid-cols-3" : "md:grid-cols-2"}`}>
-          {mf.tracks.map((t, i) => (
-            <ScrollReveal key={i} delay={0.1 * i} variant={i === 0 ? "slideRight" : "slideLeft"}>
-              <TiltCard className="group h-full">
-                <div className="ccd-card rounded-none p-8 md:p-10 h-full">
-                  <div className="flex items-center justify-between mb-8">
-                    <div>
-                      <div className="text-[10px] font-mono tracking-[0.22em] text-accent/70 uppercase mb-2">
-                        Track {String.fromCharCode(65 + i)}
+        {mf.tracks.length >= 3 ? (
+          /* Stacked full-width rows: built for dense 3+ channel flights */
+          <div className="flex flex-col gap-5 mt-5">
+            {mf.tracks.map((t, i) => (
+              <ScrollReveal key={i} delay={0.08 * i}>
+                <div className="ccd-card rounded-none p-8 md:p-10">
+                  <div className="grid lg:grid-cols-[minmax(0,5fr)_minmax(0,7fr)] gap-8 lg:gap-12">
+                    {/* Identity + numbers */}
+                    <div className="min-w-0">
+                      <div className="flex flex-wrap items-center gap-3 mb-5">
+                        <span className="text-[10px] font-mono tracking-[0.22em] text-accent/70 uppercase">
+                          Track {String.fromCharCode(65 + i)}
+                        </span>
+                        <span className="text-[10px] font-mono tracking-[0.15em] uppercase text-text-muted border border-[#2a2a2a] px-3 py-1.5">
+                          {t.role}
+                        </span>
                       </div>
-                      <h3 className="text-[22px] font-bold text-text-primary tracking-tight">{t.key}</h3>
-                    </div>
-                    <span className="text-[10px] font-mono tracking-[0.15em] uppercase text-text-muted border border-[#2a2a2a] px-3 py-1.5">
-                      {t.role}
-                    </span>
-                  </div>
-
-                  <div className="flex items-end gap-6 mb-8">
-                    <div>
-                      <div className="display text-[clamp(2.4rem,6vw,3.6rem)] text-text-primary leading-none">
-                        {t.views}
+                      <h3 className="text-[22px] font-bold text-text-primary tracking-tight mb-6">{t.key}</h3>
+                      <div className="flex flex-wrap items-end gap-x-10 gap-y-4">
+                        <div className="min-w-0">
+                          <div className="display text-[clamp(2rem,4vw,2.8rem)] text-text-primary leading-none break-words">
+                            {t.views}
+                          </div>
+                          <div className="text-[11px] font-mono text-text-muted mt-2">{t.viewsPct}</div>
+                        </div>
+                        <div className="min-w-0">
+                          <div className="text-[24px] font-semibold text-accent leading-none">{t.budget}</div>
+                          <div className="text-[11px] font-mono text-text-muted mt-2">{t.budgetPct}</div>
+                        </div>
                       </div>
-                      <div className="text-[11px] font-mono text-text-muted mt-2">{t.viewsPct}</div>
                     </div>
-                    <div className="pb-1">
-                      <div className="text-[20px] font-semibold text-accent leading-none">{t.budget}</div>
-                      <div className="text-[11px] font-mono text-text-muted mt-2">{t.budgetPct}</div>
+                    {/* Details */}
+                    <div className="min-w-0 lg:border-l lg:border-[#222] lg:pl-12">
+                      <div className="grid sm:grid-cols-3 gap-6 pb-6 border-b border-[#222]">
+                        <Cell label={mf.cpvRowLabel ?? "Planning CPV"} value={t.cpv} />
+                        <Cell label="Markets" value={t.markets} />
+                        <Cell label="Campaign mix" value={t.mix} />
+                      </div>
+                      <p className="text-[13px] text-text-muted leading-[1.7] pt-6">{t.rationale}</p>
                     </div>
                   </div>
-
-                  <div className="space-y-4 border-t border-[#222] pt-6">
-                    <Row label={mf.cpvRowLabel ?? "Planning CPV"} value={t.cpv} />
-                    <Row label="Markets" value={t.markets} />
-                    <Row label="Campaign mix" value={t.mix} />
-                  </div>
-
-                  <p className="text-[13px] text-text-muted leading-[1.7] mt-6 pt-6 border-t border-[#222]">
-                    {t.rationale}
-                  </p>
                 </div>
-              </TiltCard>
-            </ScrollReveal>
-          ))}
-        </div>
+              </ScrollReveal>
+            ))}
+          </div>
+        ) : (
+          <div className="grid md:grid-cols-2 gap-5 mt-5">
+            {mf.tracks.map((t, i) => (
+              <ScrollReveal key={i} delay={0.1 * i} variant={i === 0 ? "slideRight" : "slideLeft"}>
+                <TiltCard className="group h-full">
+                  <div className="ccd-card rounded-none p-8 md:p-10 h-full">
+                    <div className="flex items-center justify-between mb-8">
+                      <div>
+                        <div className="text-[10px] font-mono tracking-[0.22em] text-accent/70 uppercase mb-2">
+                          Track {String.fromCharCode(65 + i)}
+                        </div>
+                        <h3 className="text-[22px] font-bold text-text-primary tracking-tight">{t.key}</h3>
+                      </div>
+                      <span className="text-[10px] font-mono tracking-[0.15em] uppercase text-text-muted border border-[#2a2a2a] px-3 py-1.5">
+                        {t.role}
+                      </span>
+                    </div>
+
+                    <div className="flex items-end gap-6 mb-8">
+                      <div>
+                        <div className="display text-[clamp(2.4rem,6vw,3.6rem)] text-text-primary leading-none">
+                          {t.views}
+                        </div>
+                        <div className="text-[11px] font-mono text-text-muted mt-2">{t.viewsPct}</div>
+                      </div>
+                      <div className="pb-1">
+                        <div className="text-[20px] font-semibold text-accent leading-none">{t.budget}</div>
+                        <div className="text-[11px] font-mono text-text-muted mt-2">{t.budgetPct}</div>
+                      </div>
+                    </div>
+
+                    <div className="space-y-4 border-t border-[#222] pt-6">
+                      <Row label={mf.cpvRowLabel ?? "Planning CPV"} value={t.cpv} />
+                      <Row label="Markets" value={t.markets} />
+                      <Row label="Campaign mix" value={t.mix} />
+                    </div>
+
+                    <p className="text-[13px] text-text-muted leading-[1.7] mt-6 pt-6 border-t border-[#222]">
+                      {t.rationale}
+                    </p>
+                  </div>
+                </TiltCard>
+              </ScrollReveal>
+            ))}
+          </div>
+        )}
 
         {/* Honesty caveat box */}
         <ScrollReveal delay={0.1}>
@@ -167,6 +214,15 @@ export function MediaFlight() {
         )}
       </div>
     </section>
+  );
+}
+
+function Cell({ label, value }: { label: string; value: string }) {
+  return (
+    <div className="min-w-0">
+      <div className="text-[10px] font-mono tracking-[0.18em] uppercase text-text-muted mb-2">{label}</div>
+      <div className="text-[13px] text-text-primary/90 leading-[1.6] break-words">{value}</div>
+    </div>
   );
 }
 

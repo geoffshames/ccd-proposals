@@ -14,6 +14,7 @@ const BASE_NAV_ITEMS = [
 ];
 
 const PRICING_NAV_ITEM = { label: "Pricing", href: "#tiers" };
+const FLIGHT_PRICING_NAV_ITEM = { label: "Pricing", href: "#media-flight" };
 const INVESTMENT_NAV_ITEM = { label: "Investment", href: "#investment" };
 
 export function Navigation() {
@@ -23,8 +24,14 @@ export function Navigation() {
   const PROJECT = useProject();
   const NAV_ITEMS = [
     BASE_NAV_ITEMS[0],
-    ...(PROJECT.tiers?.tiers?.length ? [PRICING_NAV_ITEM] : []),
-    ...BASE_NAV_ITEMS.slice(1),
+    ...(PROJECT.tiers?.tiers?.length
+      ? [PRICING_NAV_ITEM]
+      : PROJECT.mediaFlight
+        ? [FLIGHT_PRICING_NAV_ITEM]
+        : []),
+    ...BASE_NAV_ITEMS.slice(1).filter(
+      (item) => item.href !== "#deliverables" || !!PROJECT.deliverables?.length
+    ),
     ...(PROJECT.quote ? [INVESTMENT_NAV_ITEM] : []),
   ];
   const hasAlternates = !!PROJECT.languageAlternates?.length;

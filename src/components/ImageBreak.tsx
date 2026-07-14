@@ -11,6 +11,7 @@ export function ImageBreak({
   alt: string;
   caption?: string;
 }) {
+  if (!src) return null;
   return (
     <ScrollReveal variant="scaleIn" className="py-8">
       <div className="max-w-6xl mx-auto px-6">
