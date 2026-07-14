@@ -1,0 +1,666 @@
+"use client";
+
+import Image from "next/image";
+import { motion } from "framer-motion";
+import { ScrollReveal } from "@/components/ScrollReveal";
+import { CursorGlow } from "@/components/CursorGlow";
+import { championTeamwearReport as report } from "@/lib/reports/champion-teamwear";
+import styles from "./report.module.css";
+
+const navItems = [
+  ["Read", "#read"],
+  ["Diagnosis", "#diagnosis"],
+  ["Sentiment", "#sentiment"],
+  ["Landscape", "#landscape"],
+  ["Strategy", "#strategy"],
+  ["90 Days", "#roadmap"],
+  ["Paths", "#paths"],
+] as const;
+
+function SectionHead({
+  code,
+  label,
+  title,
+  lede,
+}: {
+  code: string;
+  label: string;
+  title: string;
+  lede?: string;
+}) {
+  return (
+    <ScrollReveal className={styles.sectionHead}>
+      <div className={styles.sectionCode}>
+        {code}
+        <span>{label}</span>
+      </div>
+      <div>
+        <h2 className={styles.sectionTitle}>{title}</h2>
+        {lede && <p className={styles.sectionLede}>{lede}</p>}
+      </div>
+    </ScrollReveal>
+  );
+}
+
+function MapPoint({
+  label,
+  breadth,
+  identity,
+  champion = false,
+  target = false,
+}: {
+  label: string;
+  breadth: number;
+  identity: number;
+  champion?: boolean;
+  target?: boolean;
+}) {
+  const left = 4 + ((breadth - 1) / 4) * 92;
+  const bottom = 5 + ((identity - 1) / 4) * 90;
+  return (
+    <div
+      className={styles.mapPoint}
+      data-champion={champion || undefined}
+      data-target={target || undefined}
+      style={{ left: `${left}%`, bottom: `${bottom}%` }}
+    >
+      <div className={styles.pointDot} />
+      <div className={styles.pointLabel}>{label}</div>
+    </div>
+  );
+}
+
+export function ChampionTeamwearClient() {
+  return (
+    <main className={styles.page}>
+      <CursorGlow />
+
+      <header className={styles.hero}>
+        <div className={styles.heroImage} aria-hidden>
+          <Image
+            src="/images/champion-teamwear/cheer-hero.png"
+            alt=""
+            fill
+            priority
+            sizes="100vw"
+          />
+        </div>
+        <div className={styles.heroOverlay} aria-hidden />
+        <div className={styles.heroGrid} aria-hidden />
+
+        <div className={styles.topline}>
+          <span>
+            <strong>Crowd Control Digital</strong> · Decision Dossier
+          </span>
+          <span>{report.classification} · CTW / 2026-07</span>
+        </div>
+
+        <motion.div
+          className={styles.heroContent}
+          initial={{ opacity: 0, y: 34 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.85, ease: [0.22, 1, 0.36, 1] }}
+        >
+          <div className={styles.eyebrow}>Brand + sentiment analysis</div>
+          <h1 className={styles.title}>
+            Champion
+            <span>Teamwear</span>
+          </h1>
+          <p className={styles.subtitle}>
+            A Teamwear-specific diagnostic. Champion retail equity is treated as
+            halo—not as evidence of Teamwear performance.
+          </p>
+
+          <div className={styles.heroMeta}>
+            <div className={styles.heroMetaItem}>
+              <span>Prepared for</span>
+              <strong>{report.preparedFor}</strong>
+            </div>
+            <div className={styles.heroMetaItem}>
+              <span>Issued</span>
+              <strong>{report.issued}</strong>
+            </div>
+            <div className={styles.heroMetaItem}>
+              <span>Scope</span>
+              <strong>Brand · customer voice · competition · 90-day path</strong>
+            </div>
+          </div>
+        </motion.div>
+
+        <div className={styles.heroFooter}>
+          <span>Good product-market permission. Inconsistent trust delivery.</span>
+          <span>Scroll to read ↓</span>
+        </div>
+      </header>
+
+      <nav className={styles.nav} aria-label="Report sections">
+        <div className={styles.navInner}>
+          <div className={styles.navBrand}>
+            Champion <span>Teamwear</span>
+          </div>
+          <div className={styles.navLinks}>
+            {navItems.map(([label, href]) => (
+              <a key={href} href={href}>
+                {label}
+              </a>
+            ))}
+          </div>
+        </div>
+      </nav>
+
+      <section id="read" className={styles.sectionLight}>
+        <div className={styles.container}>
+          <SectionHead
+            code="§01"
+            label="Executive read"
+            title="The brand is not the bottleneck. The system around it is."
+            lede="Champion Teamwear already has a viable commercial core: recognition, breadth, customization, smart value, and relationships. The task is to stop those assets from leaking at every digital and operational handoff."
+          />
+
+          <div className={styles.executiveGrid}>
+            <ScrollReveal className={styles.executiveThesis}>
+              <h2>{report.executiveRead.headline}</h2>
+              <p>{report.executiveRead.body}</p>
+            </ScrollReveal>
+            <ScrollReveal className={styles.decisionCard} delay={0.12}>
+              <span>Decision in one sentence</span>
+              <p>{report.executiveRead.decision}</p>
+            </ScrollReveal>
+          </div>
+
+          <div className={styles.factGrid}>
+            {report.facts.map((fact, index) => (
+              <ScrollReveal key={fact.label} delay={index * 0.06}>
+                <div className={styles.factCard} data-tone={fact.tone}>
+                  <div className={styles.factValue}>{fact.value}</div>
+                  <div>
+                    <div className={styles.factLabel}>{fact.label}</div>
+                    <div className={styles.factDetail}>{fact.detail}</div>
+                  </div>
+                </div>
+              </ScrollReveal>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section id="diagnosis" className={styles.section}>
+        <div className={styles.container}>
+          <SectionHead
+            code="§02"
+            label="Brand health"
+            title="Equity is strongest where people touch people—and weakest where they touch the system."
+            lede="Scores are evidence-weighted analyst judgments on a five-point scale, not survey results. Confidence indicates the quality and volume of the underlying evidence."
+          />
+
+          <div className={styles.scoreGrid}>
+            {report.diagnosis.map((item, index) => (
+              <ScrollReveal key={item.dimension} delay={(index % 2) * 0.08}>
+                <article className={styles.scoreCard}>
+                  <div className={styles.scoreTop}>
+                    <h3>{item.dimension}</h3>
+                    <div className={styles.scoreValue}>{item.score.toFixed(1)} / 5</div>
+                  </div>
+                  <div className={styles.scoreTrack} aria-hidden>
+                    <div
+                      className={styles.scoreBar}
+                      style={{ width: `${(item.score / 5) * 100}%` }}
+                    />
+                  </div>
+                  <p>{item.read}</p>
+                  <div className={styles.confidence}>Confidence · {item.confidence}</div>
+                </article>
+              </ScrollReveal>
+            ))}
+          </div>
+
+          <div className={styles.flow} aria-label="Equity conversion chain">
+            {report.equityLeak.map((item, index) => (
+              <div key={item.stage} className={styles.flowItem} data-status={item.status}>
+                <div className={styles.flowStage}>0{index + 1} · {item.stage}</div>
+                <strong className={styles.flowStatus}>{item.status}</strong>
+                <p>{item.detail}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className={styles.sectionLight}>
+        <div className={styles.container}>
+          <SectionHead
+            code="§03"
+            label="Digital truth"
+            title="The public footprint is a living record of every organization that came before ABA."
+            lede="The Shopware rebuild is necessary—but a new front end alone will not solve duplicate authority, customer-path confusion, legacy policies, or inconsistent ownership signals."
+          />
+
+          <div className={styles.findingList}>
+            {report.digitalTruths.map((finding) => (
+              <ScrollReveal key={finding.code}>
+                <article className={styles.finding}>
+                  <div className={styles.findingCode}>{finding.code}</div>
+                  <div>
+                    <h3>{finding.title}</h3>
+                    <p>{finding.finding}</p>
+                    <span className={styles.evidenceLabel}>{finding.evidence}</span>
+                  </div>
+                  <div className={styles.implication}>
+                    <strong>So what</strong>
+                    <p>{finding.implication}</p>
+                  </div>
+                </article>
+              </ScrollReveal>
+            ))}
+          </div>
+
+          <div className={styles.identityStrip} aria-label="Public identity layers">
+            {report.publicIdentity.map((item) => (
+              <div key={item.label} className={styles.identityItem}>
+                <span>{item.label}</span>
+                <strong>{item.value}</strong>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className={styles.imageBand} aria-label="Champion Teamwear campaign imagery">
+        <Image
+          src="/images/champion-teamwear/home-hero.png"
+          alt="A collage of youth cheer, dance, and gymnastics teams wearing Champion Teamwear"
+          fill
+          sizes="100vw"
+        />
+        <div className={styles.imageCaption}>
+          <p>
+            Real teams are the most credible asset in the system. They need to become a
+            repeatable story engine—not a collage at the end of the funnel.
+          </p>
+          <span>Owned imagery · Champion Teamwear · 2025–26</span>
+        </div>
+      </section>
+
+      <section id="sentiment" className={styles.section}>
+        <div className={styles.container}>
+          <SectionHead
+            code="§04"
+            label="Customer voice"
+            title="Consideration is healthy. Confidence is fragile."
+            lede={report.sentiment.sampleNote}
+          />
+
+          <div className={styles.modelEquation}>
+            <div className={styles.equationSide}>
+              <span>What wins consideration</span>
+              <strong>{report.sentiment.model.consideration}</strong>
+            </div>
+            <div className={styles.equationMark}>≠</div>
+            <div className={styles.equationSide}>
+              <span>What wins retention</span>
+              <strong>{report.sentiment.model.retention}</strong>
+            </div>
+          </div>
+
+          <div className={styles.sourceTiers}>
+            {report.sentiment.sourceTiers.map((source) => (
+              <ScrollReveal key={source.tier}>
+                <article className={styles.sourceTier}>
+                  <div className={styles.tierCode}>{source.tier}</div>
+                  <h3>{source.label}</h3>
+                  <p>{source.sample}</p>
+                  <p>{source.read}</p>
+                  <small>{source.confidence}</small>
+                </article>
+              </ScrollReveal>
+            ))}
+          </div>
+
+          <div className={styles.themeGrid}>
+            {report.sentiment.themes.map((theme, index) => (
+              <ScrollReveal key={theme.theme} delay={(index % 3) * 0.05}>
+                <article className={styles.themeCard}>
+                  <div className={styles.themeDirection}>{theme.direction}</div>
+                  <h3>{theme.theme}</h3>
+                  <div className={styles.sentimentTrack} aria-hidden>
+                    <div
+                      className={styles.sentimentBar}
+                      style={{ width: `${theme.strength}%` }}
+                    />
+                  </div>
+                  <p>{theme.evidence}</p>
+                  <p className={styles.themeAction}>{theme.action}</p>
+                </article>
+              </ScrollReveal>
+            ))}
+          </div>
+
+          <div className={styles.voices}>
+            {report.sentiment.voices.map((voice) => (
+              <ScrollReveal key={voice.quote}>
+                <figure className={styles.voice} data-tone={voice.tone}>
+                  <blockquote>{voice.quote}</blockquote>
+                  <a href={voice.href} target="_blank" rel="noreferrer">
+                    {voice.source} ↗
+                  </a>
+                </figure>
+              </ScrollReveal>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className={styles.sectionLight}>
+        <div className={styles.container}>
+          <SectionHead
+            code="§05"
+            label="Owned attention"
+            title="Team stories beat product posts. The future audience barely sees either."
+            lede="Public channel metrics were observed July 14, 2026 and will change. The strategic pattern matters more than the precise count: community proof works, while TikTok and durable video remain materially underbuilt."
+          />
+
+          <div className={styles.socialGrid}>
+            {report.social.map((item) => (
+              <ScrollReveal key={item.channel}>
+                <article className={styles.socialCard}>
+                  <span>{item.channel}</span>
+                  <strong>{item.scale}</strong>
+                  <em>{item.activity}</em>
+                  <p>{item.read}</p>
+                </article>
+              </ScrollReveal>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section id="landscape" className={styles.section}>
+        <div className={styles.container}>
+          <SectionHead
+            code="§06"
+            label="Competitive system"
+            title="The market has eight visible competitors—but only five control groups that matter."
+            lede="Parent-company consolidation changes the strategic read. Varsity Spirit and BSN are different faces of one threat; Augusta, Alleson, Russell, and Under Armour Team share infrastructure through Momentec."
+          />
+
+          <div className={styles.landscapeLayout}>
+            <ScrollReveal>
+              <div className={styles.map} aria-label="Competitive positioning map">
+                {report.competitors.map((competitor) => (
+                  <MapPoint
+                    key={competitor.name}
+                    label={competitor.name}
+                    breadth={competitor.breadth}
+                    identity={competitor.identity}
+                    champion={competitor.name === "Champion Teamwear"}
+                  />
+                ))}
+                <MapPoint
+                  label="CTW opportunity"
+                  breadth={5}
+                  identity={4.5}
+                  target
+                />
+              </div>
+            </ScrollReveal>
+
+            <div className={styles.competitorStack}>
+              {report.competitors.map((competitor) => (
+                <ScrollReveal key={competitor.name}>
+                  <article className={styles.competitorCard}>
+                    <div>
+                      <h3>{competitor.name}</h3>
+                      <span>{competitor.faces}</span>
+                    </div>
+                    <div>
+                      <p>{competitor.owns}</p>
+                      <p>Gap: {competitor.gap}</p>
+                    </div>
+                  </article>
+                </ScrollReveal>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="strategy" className={styles.sectionLight}>
+        <div className={styles.container}>
+          <SectionHead
+            code="§07"
+            label="Strategic choice"
+            title="Do not become Champion retail with jerseys. Own a category no one has assembled."
+            lede="Champion Teamwear can combine the expression of a specialist, the breadth of a major performance brand, and the operational ease of a distributor—without asking one of those systems to impersonate the other."
+          />
+
+          <ScrollReveal className={styles.strategyHero}>
+            <div className={styles.strategyCopy}>
+              <span>White-space position</span>
+              <h3>{report.strategy.whitespace}</h3>
+            </div>
+            <div className={styles.strategyPromise}>
+              <p>{report.strategy.promise}</p>
+            </div>
+          </ScrollReveal>
+
+          <div className={styles.architectureGrid}>
+            {report.strategy.architecture.map((item) => (
+              <ScrollReveal key={item.lens}>
+                <article className={styles.architectureCard}>
+                  <span>One vision · two lenses</span>
+                  <h3>{item.lens}</h3>
+                  <strong>{item.job}</strong>
+                  <p>{item.proof}</p>
+                </article>
+              </ScrollReveal>
+            ))}
+          </div>
+
+          <div className={styles.principles}>
+            {report.strategy.principles.map((principle, index) => (
+              <div key={principle} className={styles.principle}>
+                <span>0{index + 1}</span>
+                <p>{principle}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className={styles.section}>
+        <div className={styles.container}>
+          <SectionHead
+            code="§08"
+            label="Audience system"
+            title="The coach buys. The athlete creates demand. The parent absorbs risk. The rep carries trust."
+            lede="Brand work that speaks only to coaches becomes sales operations. Brand work that speaks only to athletes becomes expensive theater. The system has to make all four roles say yes."
+          />
+
+          <div className={styles.audienceGrid}>
+            {report.audiences.map((audience) => (
+              <ScrollReveal key={audience.role}>
+                <article className={styles.audienceCard}>
+                  <span>{audience.role}</span>
+                  <h3>{audience.people}</h3>
+                  <div className={styles.audienceQuestion}>{audience.asks}</div>
+                  <p className={styles.audienceWin}>{audience.win}</p>
+                </article>
+              </ScrollReveal>
+            ))}
+          </div>
+
+          <div className={styles.journey} aria-label="Recommended customer journey">
+            {report.futureJourney.map((step, index) => (
+              <div key={step} className={styles.journeyStep}>
+                <span>0{index + 1}</span>
+                <strong>{step}</strong>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className={styles.imageBand} aria-label="Champion Teamwear customization imagery">
+        <Image
+          src="/images/champion-teamwear/decoration.png"
+          alt="A range of customized Champion Teamwear apparel showing different decoration techniques"
+          fill
+          sizes="100vw"
+        />
+        <div className={styles.imageCaption}>
+          <p>
+            The product already contains the expression. The brand system has to make
+            that capability visible, navigable, and desirable.
+          </p>
+          <span>Owned imagery · Decoration system</span>
+        </div>
+      </section>
+
+      <section id="roadmap" className={styles.sectionLight}>
+        <div className={styles.container}>
+          <SectionHead
+            code="§09"
+            label="90-day path"
+            title="Run the urgent work and the foundational work in parallel—not in conflict."
+            lede="The catalog cannot wait for the final brand bible. The website cannot responsibly launch without one. A two-track plan creates safe interim guardrails while the durable system is researched and approved."
+          />
+
+          <div className={styles.roadmap}>
+            {report.roadmap.map((phase) => (
+              <ScrollReveal key={phase.window}>
+                <article className={styles.roadmapRow}>
+                  <div className={styles.roadmapWindow}>{phase.window}</div>
+                  <div className={styles.roadmapName}>{phase.name}</div>
+                  <div className={styles.lane}>
+                    <span>Operating track</span>
+                    <ul>
+                      {phase.operating.map((item) => <li key={item}>{item}</li>)}
+                    </ul>
+                  </div>
+                  <div className={styles.lane}>
+                    <span>Brand track</span>
+                    <ul>
+                      {phase.brand.map((item) => <li key={item}>{item}</li>)}
+                    </ul>
+                  </div>
+                </article>
+              </ScrollReveal>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section id="paths" className={styles.section}>
+        <div className={styles.container}>
+          <SectionHead
+            code="§10"
+            label="Ways to engage"
+            title="Three ways in—designed to stack, not compete."
+            lede="Start with the fire, the foundation, or the operating partnership. Each path preserves the work beneath it so ABA is building reusable capability rather than buying a new one-off every quarter."
+          />
+
+          <div className={styles.optionsGrid}>
+            {report.engagementPaths.map((path, index) => (
+              <ScrollReveal key={path.number} delay={index * 0.08}>
+                <article className={styles.optionCard} data-recommended={path.recommended || undefined}>
+                  {path.recommended && <div className={styles.recommendedBadge}>Recommended</div>}
+                  <div className={styles.optionNumber}>{path.number}</div>
+                  <h3>{path.title}</h3>
+                  <div className={styles.optionDuration}>{path.duration}</div>
+                  <p className={styles.optionFit}>{path.fit}</p>
+                  <p className={styles.optionOutcome}>{path.outcome}</p>
+                  <ul>
+                    {path.includes.map((item) => <li key={item}>{item}</li>)}
+                  </ul>
+                </article>
+              </ScrollReveal>
+            ))}
+          </div>
+
+          <div className={styles.commercialNote}>
+            Commercial terms are intentionally held until the 6–12 month “dirty napkin”
+            roadmap arrives. That one input determines whether these are fixed-fee sprints,
+            a phased program, or a fractional operating pod—and prevents false precision in
+            a proposal built before scope ownership is known.
+          </div>
+        </div>
+      </section>
+
+      <section className={styles.sectionLight}>
+        <div className={styles.container}>
+          <SectionHead
+            code="§11"
+            label="Inputs + gates"
+            title="Six inputs turn this diagnostic into a fixed scope."
+            lede="None requires a polished deck. A source folder, product grid, account access, and named decision owners are enough to move."
+          />
+
+          <div className={styles.decisionLayout}>
+            <ul className={styles.decisionList}>
+              {report.decisionsNeeded.map((item) => <li key={item}>{item}</li>)}
+            </ul>
+            <aside className={styles.ctaCard}>
+              <span>Recommended next move</span>
+              <p>
+                Lock a 45-minute working session when the roadmap and ABG asset package are
+                in hand. Leave with one chosen path, owners, dates, and a fixed commercial scope.
+              </p>
+              <a href="mailto:geoff@crowdcontroldigital.com?subject=Champion%20Teamwear%20working%20session">
+                Start the working session <span aria-hidden>→</span>
+              </a>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <section className={styles.section}>
+        <div className={styles.container}>
+          <SectionHead
+            code="§12"
+            label="Method + sources"
+            title="Evidence is separated by what it can—and cannot—prove."
+            lede="The audit combines internal operating context, owned digital surfaces, technical checks, directly attributable Teamwear customer voice, category context, and primary competitor sources."
+          />
+
+          <div className={styles.sourcesGrid}>
+            {report.sources.map((source) => (
+              <a
+                key={source.id}
+                className={styles.sourceLink}
+                href={source.href}
+                target="_blank"
+                rel="noreferrer"
+              >
+                <span>{source.id}</span>
+                <strong>{source.label}</strong>
+                <em>{source.type}</em>
+              </a>
+            ))}
+          </div>
+
+          <div className={styles.methodNote}>
+            <p>
+              <strong>Scope rule.</strong> Champion retail conversation was excluded from
+              Teamwear sentiment. Retail equity appears only as an expectation halo.
+            </p>
+            <p>
+              <strong>Sentiment rule.</strong> Reddit, review archives, BBB, and aggregators
+              were not pooled. Their sample frames and selection biases are materially different.
+            </p>
+            <p>
+              <strong>Competition rule.</strong> Customer-facing brands were mapped to their
+              control groups so one parent was not counted as several independent threats.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <footer className={styles.footer}>
+        <div className={styles.footerInner}>
+          <span><strong>Crowd Control Digital</strong> · {report.issued}</span>
+          <span>{report.classification} · Champion Teamwear only</span>
+        </div>
+      </footer>
+    </main>
+  );
+}
