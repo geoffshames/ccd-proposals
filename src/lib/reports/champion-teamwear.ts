@@ -6,7 +6,7 @@ export const championTeamwearReport = {
 
   executiveRead: {
     headline:
-      "Champion Teamwear has more brand permission than its current customer experience knows how to convert.",
+      "Champion Teamwear has more permission than its experience can convert.",
     body:
       "This is not a weak-brand problem. It is an equity-leakage problem. Champion brings recognition and heritage; the teamwear business adds broad product capability, customization, reps, and real value. But fragmented digital infrastructure, mixed fulfillment signals, and little youth-facing culture prevent those assets from compounding into preference.",
     decision:
@@ -48,7 +48,7 @@ export const championTeamwearReport = {
       read: "Champion supplies immediate recognition, heritage, and a credible performance vocabulary.",
     },
     {
-      dimension: "Rep + service equity",
+      dimension: "Rep and service equity",
       score: 4.0,
       confidence: "Medium",
       read: "Direct user anecdotes repeatedly praise long-tenured reps, flexibility, and personal support.",
@@ -88,7 +88,7 @@ export const championTeamwearReport = {
     {
       stage: "Product",
       status: "Capable",
-      detail: "Broad sport coverage, stock + custom, decoration, TeamStore",
+      detail: "Broad sport coverage, stock and custom, decoration, TeamStore",
     },
     {
       stage: "Experience",
@@ -110,7 +110,7 @@ export const championTeamwearReport = {
         "Exact-brand and category searches surface root, us, shop, page, connect, customer, cc, ecommerce, support, and other mirrors. Several return HTTP 200 and self-canonicalize instead of consolidating authority.",
       implication:
         "The new Shopware build needs a migration and redirect strategy, not just a visual redesign.",
-      evidence: "Public search results + live response checks, Jul. 14, 2026",
+      evidence: "Public search results and live response checks, Jul. 14, 2026",
     },
     {
       code: "D-02",
@@ -160,8 +160,8 @@ export const championTeamwearReport = {
     sampleNote:
       "Sentiment is directional, not statistically representative. Teamwear-specific evidence was coded separately from the much larger Champion retail conversation.",
     model: {
-      consideration: "Champion recognition + accessible price + assortment",
-      retention: "Rep quality + game-date certainty + fit/color continuity + recovery",
+      consideration: ["Champion recognition", "Accessible price", "Assortment"],
+      retention: ["Rep quality", "Game-date certainty", "Fit and color continuity", "Recovery"],
     },
     sourceTiers: [
       {
@@ -300,7 +300,7 @@ export const championTeamwearReport = {
   competitors: [
     {
       name: "Varsity Brands",
-      faces: "Varsity Spirit + BSN Sports",
+      faces: "Varsity Spirit and BSN Sports",
       breadth: 5.0,
       identity: 4.2,
       owns: "The closest thing to an end-to-end category operating system: culture, events, reps, team shops, and distribution.",
@@ -316,7 +316,7 @@ export const championTeamwearReport = {
     },
     {
       name: "Elite Sportswear",
-      faces: "GK Elite + GK Cheer + Omni",
+      faces: "GK Elite, GK Cheer, and Omni",
       breadth: 1.7,
       identity: 4.4,
       owns: "Gymnastics legitimacy, athlete icons, specialist fit, and a credible 3D design tool.",
@@ -332,7 +332,7 @@ export const championTeamwearReport = {
     },
     {
       name: "Momentec",
-      faces: "Augusta + Alleson + Russell + 11 more",
+      faces: "Augusta, Alleson, Russell, and 11 more",
       breadth: 4.9,
       identity: 2.0,
       owns: "Operational breadth, near-shore manufacturing, sublimation, value tiers, and dealer infrastructure.",
@@ -405,7 +405,7 @@ export const championTeamwearReport = {
     "Get inspired",
     "Choose a sport",
     "Design in 3D",
-    "See price + lead time",
+    "See price and lead time",
     "Build roster",
     "Approve",
     "Launch team store",
@@ -429,7 +429,7 @@ export const championTeamwearReport = {
     },
     {
       window: "Days 16–45",
-      name: "Listen + decide",
+      name: "Listen and decide",
       operating: [
         "Map every customer journey and backend handoff",
         "Prioritize Shopware migration and redirect requirements",
@@ -437,7 +437,7 @@ export const championTeamwearReport = {
       ],
       brand: [
         "Coach, rep, parent, and athlete interviews",
-        "Teamwear-only social listening + masterbrand halo analysis",
+        "Teamwear-only social listening and masterbrand halo analysis",
         "Lock positioning, audience hierarchy, and message house",
       ],
     },
@@ -494,18 +494,18 @@ export const championTeamwearReport = {
       fit: "When the brand bible must unlock every downstream build",
       outcome: "A research-backed brand foundation plus the tools to put it to work.",
       includes: [
-        "Audience interviews + social listening",
+        "Audience interviews and social listening",
         "Brand architecture, positioning, and message house",
         "Visual, verbal, photography, and content systems",
         "Catalog, sell-sheet, web, and social templates",
-        "Shopware UX principles + migration priorities",
+        "Shopware UX principles and migration priorities",
         "90-day measurement baseline",
       ],
       recommended: true,
     },
     {
       number: "03",
-      title: "Embed + scale",
+      title: "Embed and scale",
       duration: "90-day pilot",
       fit: "When a three-person team needs an operating partner",
       outcome: "The foundation, execution capacity, and first scalable internal tools.",
@@ -513,7 +513,7 @@ export const championTeamwearReport = {
         "Everything in the foundation engagement",
         "Fractional strategy, creative, and channel pod",
         "Personalized catalog-builder MVP",
-        "Always-on content + AI asset workflow",
+        "Always-on content and AI asset workflow",
         "December activation concept and production plan",
         "Traditional-sport go-to-market pilot",
       ],
@@ -557,7 +557,7 @@ export const championTeamwearReport = {
     },
     {
       id: "S05",
-      label: "Authentic's Champion acquisition + operating partners",
+      label: "Authentic's Champion acquisition and operating partners",
       href: "https://corporate.authentic.com/press-releases/authentic-acquires-champion-unveils-new-partners",
       type: "Primary corporate",
     },
@@ -617,7 +617,7 @@ export const championTeamwearReport = {
     },
     {
       id: "S15",
-      label: "BSN Sports + 2026 acquisitions",
+      label: "BSN Sports and 2026 acquisitions",
       href: "https://www.varsitybrands.com/newsroom/press-release/bsn-sports-announces-acquisitions-of-sports-endeavors-and-lax-com/",
       type: "Competitor / primary",
     },

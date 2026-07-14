@@ -22,6 +22,7 @@ const navItems = [
   ["Strategy", "#strategy"],
   ["90 Days", "#roadmap"],
   ["Paths", "#paths"],
+  ["Contact Us", "#contact"],
 ] as const;
 
 function SectionHead({
@@ -29,11 +30,13 @@ function SectionHead({
   label,
   title,
   lede,
+  feature = false,
 }: {
   code: string;
   label: string;
   title: string;
   lede?: string;
+  feature?: boolean;
 }) {
   return (
     <ScrollReveal className={styles.sectionHead}>
@@ -42,7 +45,11 @@ function SectionHead({
         <span>{label}</span>
       </div>
       <div>
-        <h2 className={styles.sectionTitle}>{title}</h2>
+        <h2
+          className={`${styles.sectionTitle} ${feature ? styles.sectionTitleFeature : ""}`}
+        >
+          {title}
+        </h2>
         {lede && <p className={styles.sectionLede}>{lede}</p>}
       </div>
     </ScrollReveal>
@@ -151,21 +158,6 @@ export function ChampionTeamwearClient() {
       <header className={styles.hero}>
         <div className={styles.heroGrid} aria-hidden />
         <div className={styles.heroGlow} aria-hidden />
-        <div className={styles.heroSystem} aria-hidden>
-          <div className={styles.systemTopline}>
-            <span>CCD / INTELLIGENCE UNIT</span>
-            <span>CTW / 01</span>
-          </div>
-          <div className={styles.systemMark}>CTW</div>
-          <div className={styles.systemAxis}>
-            <span>Brand permission</span>
-            <span>Operating friction</span>
-          </div>
-          <div className={styles.systemReadout}>
-            <span>Signal</span>
-            <strong>Equity leakage</strong>
-          </div>
-        </div>
 
         <div className={styles.topline}>
           <a
@@ -193,28 +185,46 @@ export function ChampionTeamwearClient() {
             ease: [0.22, 1, 0.36, 1],
           }}
         >
-          <div className={styles.eyebrow}>Brand + sentiment analysis</div>
-          <h1 className={styles.title}>
-            Champion
-            <span>Teamwear</span>
-          </h1>
-          <p className={styles.subtitle}>
-            A Teamwear-specific diagnostic. Champion retail equity is treated as
-            halo, not as evidence of Teamwear performance.
-          </p>
+          <div className={styles.heroCopy}>
+            <div className={styles.eyebrow}>Brand and sentiment analysis</div>
+            <h1 className={styles.title}>
+              Champion
+              <span>Teamwear</span>
+            </h1>
+            <p className={styles.subtitle}>
+              A Teamwear-specific diagnostic. Champion retail equity is treated as halo, not as
+              evidence of Teamwear performance.
+            </p>
 
-          <div className={styles.heroMeta}>
-            <div className={styles.heroMetaItem}>
-              <span>Prepared for</span>
-              <strong>{report.preparedFor}</strong>
+            <div className={styles.heroMeta}>
+              <div className={styles.heroMetaItem}>
+                <span>Prepared for</span>
+                <strong>{report.preparedFor}</strong>
+              </div>
+              <div className={styles.heroMetaItem}>
+                <span>Issued</span>
+                <strong>{report.issued}</strong>
+              </div>
+              <div className={styles.heroMetaItem}>
+                <span>Scope</span>
+                <strong>Brand · customer voice · competition · 90-day path</strong>
+              </div>
             </div>
-            <div className={styles.heroMetaItem}>
-              <span>Issued</span>
-              <strong>{report.issued}</strong>
+          </div>
+
+          <div className={styles.heroSystem} aria-hidden>
+            <div className={styles.systemTopline}>
+              <span>CCD / INTELLIGENCE UNIT</span>
+              <span>CTW / 01</span>
             </div>
-            <div className={styles.heroMetaItem}>
-              <span>Scope</span>
-              <strong>Brand · customer voice · competition · 90-day path</strong>
+            <div className={styles.systemMark}>CTW</div>
+            <div className={styles.systemAxis}>
+              <span>Brand permission</span>
+              <span>Operating friction</span>
+            </div>
+            <div className={styles.systemReadout}>
+              <span>Signal</span>
+              <strong>Equity leakage</strong>
             </div>
           </div>
         </motion.div>
@@ -255,12 +265,17 @@ export function ChampionTeamwearClient() {
           <SectionHead
             code="§01"
             label="Executive read"
+            feature
             title="The brand is not the bottleneck. The system around it is."
             lede="Champion Teamwear already has a viable commercial core: recognition, breadth, customization, smart value, and relationships. The task is to stop those assets from leaking at every digital and operational handoff."
           />
 
           <div className={styles.executiveGrid}>
             <ScrollReveal className={styles.executiveThesis}>
+              <div className={styles.thesisKicker}>
+                <span>Core diagnosis</span>
+                <span>Permission exceeds delivery</span>
+              </div>
               <h3>{report.executiveRead.headline}</h3>
               <p>{report.executiveRead.body}</p>
             </ScrollReveal>
@@ -291,7 +306,7 @@ export function ChampionTeamwearClient() {
           <SectionHead
             code="§02"
             label="Brand health"
-            title="Equity is strongest where people touch people. It is weakest where they touch the system."
+            title="Human equity is strong. System equity is weak."
             lede="Scores are evidence-weighted analyst judgments on a five-point scale, not survey results. Confidence indicates the quality and volume of the underlying evidence."
           />
 
@@ -316,7 +331,7 @@ export function ChampionTeamwearClient() {
           <SectionHead
             code="§03"
             label="Digital truth"
-            title="The public footprint is a living record of every organization that came before ABA."
+            title="The public footprint still carries every legacy operator."
             lede="The Shopware rebuild is necessary, but a new front end alone will not solve duplicate authority, customer-path confusion, legacy policies, or inconsistent ownership signals."
           />
 
@@ -378,12 +393,20 @@ export function ChampionTeamwearClient() {
           <div className={styles.modelEquation}>
             <div className={styles.equationSide}>
               <span>What wins consideration</span>
-              <strong>{report.sentiment.model.consideration}</strong>
+              <ul className={styles.equationList}>
+                {report.sentiment.model.consideration.map((signal) => (
+                  <li key={signal}>{signal}</li>
+                ))}
+              </ul>
             </div>
             <div className={styles.equationMark}>≠</div>
             <div className={styles.equationSide}>
               <span>What wins retention</span>
-              <strong>{report.sentiment.model.retention}</strong>
+              <ul className={styles.equationList}>
+                {report.sentiment.model.retention.map((signal) => (
+                  <li key={signal}>{signal}</li>
+                ))}
+              </ul>
             </div>
           </div>
 
@@ -440,7 +463,7 @@ export function ChampionTeamwearClient() {
           <SectionHead
             code="§05"
             label="Owned attention"
-            title="Team stories beat product posts. The future audience barely sees either."
+            title="Team stories win. The future audience rarely sees them."
             lede="Public channel metrics were observed July 14, 2026 and will change. The strategic pattern matters more than the precise count: community proof works, while TikTok and durable video remain materially underbuilt."
           />
 
@@ -464,7 +487,7 @@ export function ChampionTeamwearClient() {
           <SectionHead
             code="§06"
             label="Competitive system"
-            title="The market has eight visible competitors. Only five control groups matter."
+            title="Eight brands. Five control groups."
             lede="Parent-company consolidation changes the strategic read. Varsity Spirit and BSN are different faces of one threat; Augusta, Alleson, Russell, and Under Armour Team share infrastructure through Momentec."
           />
 
@@ -521,6 +544,7 @@ export function ChampionTeamwearClient() {
           <SectionHead
             code="§07"
             label="Strategic choice"
+            feature
             title="Do not become Champion retail with jerseys. Own a category no one has assembled."
             lede="Champion Teamwear can combine the expression of a specialist, the breadth of a major performance brand, and the operational ease of a distributor without asking one of those systems to impersonate the other."
           />
@@ -564,7 +588,7 @@ export function ChampionTeamwearClient() {
           <SectionHead
             code="§08"
             label="Audience system"
-            title="The coach buys. The athlete creates demand. The parent absorbs risk. The rep carries trust."
+            title="Four people have to say yes."
             lede="Brand work that speaks only to coaches becomes sales operations. Brand work that speaks only to athletes becomes expensive theater. The system has to make all four roles say yes."
           />
 
@@ -592,18 +616,52 @@ export function ChampionTeamwearClient() {
         </div>
       </section>
 
-      <section className={`${styles.signalBand} ${styles.signalBandRed}`} aria-label="Team identity system">
-        <div className={styles.signalInnerAlt}>
-          <div className={styles.signalCode}>Strategic system / 02</div>
-          <div className={styles.signalStatementLarge}>
-            The expression is already in the product. The identity system has to make it visible.
-          </div>
-          <div className={styles.identityModes}>
-            {['Game day', 'Practice', 'Travel', 'Fandom'].map((mode, index) => (
-              <div key={mode}>
-                <span>0{index + 1}</span>
-                <strong>{mode}</strong>
+      <section className={`${styles.signalBand} ${styles.identityBand}`} aria-label="Team identity system">
+        <div className={styles.identitySystem}>
+          <aside className={styles.identityRail}>
+            <div className={styles.identityRailLabel}>Strategic system / 02</div>
+            <div className={styles.identityRailMetrics} aria-label="One system across four team moments">
+              <div>
+                <strong>01</strong>
+                <span>System</span>
               </div>
+              <div>
+                <strong>04</strong>
+                <span>Team moments</span>
+              </div>
+            </div>
+          </aside>
+
+          <div className={styles.identityIntro}>
+            <span>System mandate</span>
+            <h2>The product already has expression.</h2>
+            <p>
+              The identity system must make that expression visible and recognizable across every
+              team moment.
+            </p>
+            <div className={styles.identityScope} aria-label="Identity system scope">
+              <span>One visual language</span>
+              <span>Four distinct expressions</span>
+            </div>
+          </div>
+
+          <div className={styles.identityModes}>
+            {[
+              { mode: "Game day", role: "Uniform reveal and competition" },
+              { mode: "Practice", role: "Daily utility and team rhythm" },
+              { mode: "Travel", role: "Arrival layers and public presence" },
+              { mode: "Fandom", role: "Supporter wear and social proof" },
+            ].map(({ mode, role }, index) => (
+              <article key={mode}>
+                <div className={styles.identityModeTop}>
+                  <span>0{index + 1}</span>
+                  <i aria-hidden />
+                </div>
+                <div>
+                  <strong>{mode}</strong>
+                  <p>{role}</p>
+                </div>
+              </article>
             ))}
           </div>
         </div>
@@ -614,7 +672,7 @@ export function ChampionTeamwearClient() {
           <SectionHead
             code="§09"
             label="90-day path"
-            title="Run the urgent work and the foundational work in parallel, not in conflict."
+            title="Run urgent and foundational work in parallel."
             lede="The catalog cannot wait for the final brand bible. The website cannot responsibly launch without one. A two-track plan creates safe interim guardrails while the durable system is researched and approved."
           />
 
@@ -660,11 +718,11 @@ export function ChampionTeamwearClient() {
         </div>
       </section>
 
-      <section className={styles.sectionAlt}>
+      <section id="contact" className={styles.sectionAlt}>
         <div className={styles.container}>
           <SectionHead
             code="§11"
-            label="Inputs + gates"
+            label="Inputs and gates"
             title="Six inputs turn this diagnostic into a fixed scope."
             lede="None requires a polished deck. A source folder, product grid, account access, and named decision owners are enough to move."
           />
@@ -680,7 +738,7 @@ export function ChampionTeamwearClient() {
                 in hand. Leave with one chosen path, owners, dates, and a fixed commercial scope.
               </p>
               <a href="mailto:geoff@crowdcontroldigital.com?subject=Champion%20Teamwear%20working%20session">
-                Start the working session <span aria-hidden>→</span>
+                CONTACT US
               </a>
             </aside>
           </div>
@@ -691,8 +749,8 @@ export function ChampionTeamwearClient() {
         <div className={styles.container}>
           <SectionHead
             code="§12"
-            label="Method + sources"
-            title="Evidence is separated by the limits of what each source can prove."
+            label="Method and sources"
+            title="Each source proves something different."
             lede="The audit combines internal operating context, owned digital surfaces, technical checks, directly attributable Teamwear customer voice, category context, and primary competitor sources."
           />
 

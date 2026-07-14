@@ -23,6 +23,7 @@ export const championTeamwearSections = [
   { label: "Strategy", href: "#strategy" },
   { label: "90 Days", href: "#roadmap" },
   { label: "Paths", href: "#paths" },
+  { label: "Contact Us", href: "#contact" },
 ] as const satisfies readonly MobileSectionItem[];
 
 type MobileSectionsNavProps = Readonly<{
@@ -87,21 +88,24 @@ export function MobileSectionsNav({
     if (targets.length === 0) return;
 
     const observer = new IntersectionObserver(
-      (entries) => {
-        const visible = entries
-          .filter((entry) => entry.isIntersecting)
-          .sort(
-            (a, b) =>
-              Math.abs(a.boundingClientRect.top - 72) -
-              Math.abs(b.boundingClientRect.top - 72),
-          );
+      () => {
+        const readingLine = 96;
+        const current = targets
+          .map((target) => ({ target, rect: target.getBoundingClientRect() }))
+          .filter(({ rect }) => rect.bottom > readingLine)
+          .sort((a, b) => {
+            const aContainsLine = a.rect.top <= readingLine;
+            const bContainsLine = b.rect.top <= readingLine;
 
-        const current = visible[0]?.target as HTMLElement | undefined;
+            if (aContainsLine !== bContainsLine) return aContainsLine ? -1 : 1;
+            return Math.abs(a.rect.top - readingLine) - Math.abs(b.rect.top - readingLine);
+          })[0]?.target;
+
         if (current?.id) setActiveHref(`#${current.id}`);
       },
       {
-        // Track the section occupying the reading zone immediately below the sticky nav.
-        rootMargin: "-72px 0px -75% 0px",
+        // Track the section occupying the first readable band below the sticky nav.
+        rootMargin: "-96px 0px -75% 0px",
         threshold: [0, 0.01],
       },
     );

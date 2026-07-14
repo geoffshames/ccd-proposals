@@ -60,9 +60,10 @@
   max-width: 780px;
   color: var(--viz-ink);
   font-family: var(--font-heading), var(--font-work-sans), sans-serif;
-  font-size: clamp(1.65rem, 3.2vw, 3.15rem);
-  line-height: 0.96;
+  font-size: clamp(1.65rem, 2.3vw, 2.25rem);
+  line-height: 1;
   letter-spacing: -0.025em;
+  text-wrap: balance;
 }
 
 .figureHeading p {
@@ -130,7 +131,8 @@
   grid-template-columns: minmax(170px, 30%) minmax(220px, 1fr) 36px;
   gap: 18px;
   align-items: center;
-  min-height: 94px;
+  min-height: 112px;
+  padding-block: 18px;
   border-bottom: 1px solid var(--viz-line);
 }
 
@@ -138,7 +140,8 @@
   display: flex;
   min-width: 0;
   flex-direction: column;
-  gap: 7px;
+  gap: 8px;
+  padding-right: 18px;
 }
 
 .dotLabel strong {
@@ -153,11 +156,12 @@
 }
 
 .dotLabel p {
-  max-width: 300px;
+  max-width: 320px;
   margin: 0;
   color: var(--viz-muted);
   font-size: 12.5px;
-  line-height: 1.45;
+  line-height: 1.55;
+  text-wrap: pretty;
 }
 
 .dotTrack {

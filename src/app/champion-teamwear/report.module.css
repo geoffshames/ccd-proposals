@@ -51,16 +51,17 @@
 }
 
 .heroSystem {
-  position: absolute;
-  z-index: 1;
-  right: max(48px, calc((100vw - 1180px) / 2));
-  top: 50%;
-  width: min(34vw, 430px);
+  position: relative;
+  z-index: 3;
+  width: 100%;
+  max-width: 430px;
   aspect-ratio: 1 / 1.08;
-  transform: translateY(-46%);
+  justify-self: end;
   border: 1px solid #2a2a2a;
   background: rgba(10, 10, 10, 0.78);
-  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.018);
+  box-shadow:
+    0 24px 80px rgba(0, 0, 0, 0.34),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.018);
 }
 
 .heroSystem::before,
@@ -164,9 +165,13 @@
 .heroContent,
 .heroFooter {
   position: relative;
-  z-index: 2;
   width: min(1180px, calc(100% - 48px));
   margin-inline: auto;
+}
+
+.topline,
+.heroFooter {
+  z-index: 4;
 }
 
 .topline {
@@ -194,12 +199,17 @@
 }
 
 .heroContent {
+  z-index: 2;
   flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(340px, 430px);
+  column-gap: clamp(40px, 5vw, 72px);
+  align-items: center;
   padding: 72px 0 86px;
-  padding-right: min(39vw, 470px);
+}
+
+.heroCopy {
+  min-width: 0;
 }
 
 .eyebrow {
@@ -222,8 +232,8 @@
 
 .title {
   margin: 0;
-  max-width: 900px;
-  font-size: clamp(4rem, 11vw, 9.6rem);
+  max-width: 100%;
+  font-size: clamp(4rem, 9vw, 8rem);
   line-height: 0.78;
   letter-spacing: -0.048em;
   color: #fff;
@@ -380,9 +390,15 @@
 .sectionTitle {
   margin: 0;
   max-width: 900px;
-  font-size: clamp(2.2rem, 5vw, 4.7rem);
-  line-height: 0.94;
+  font-size: clamp(2.25rem, 5vw, 3.5rem);
+  line-height: 0.98;
   letter-spacing: -0.032em;
+  text-wrap: balance;
+}
+
+.sectionTitleFeature {
+  font-size: clamp(2.5rem, 5vw, 4.25rem);
+  line-height: 0.94;
 }
 
 .sectionLede {
@@ -445,11 +461,30 @@
   background: #fff;
 }
 
+.thesisKicker {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  margin-bottom: 28px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid #303030;
+  font: 650 9px/1.4 var(--font-geist-mono), monospace;
+  text-transform: uppercase;
+  letter-spacing: 0.17em;
+  color: rgba(255, 255, 255, 0.38);
+}
+
+.thesisKicker span:first-child {
+  color: var(--ct-red);
+}
+
 .executiveThesis h3 {
   margin: 0;
-  font-size: clamp(2rem, 3.8vw, 3.75rem);
-  line-height: 1;
+  font-size: clamp(2rem, 2.9vw, 2.75rem);
+  line-height: 1.04;
   letter-spacing: -0.036em;
+  text-wrap: balance;
 }
 
 .executiveThesis p {
@@ -756,8 +791,7 @@
   pointer-events: none;
 }
 
-.signalInner,
-.signalInnerAlt {
+.signalInner {
   position: relative;
   z-index: 1;
   width: min(1180px, calc(100% - 48px));
@@ -816,62 +850,191 @@
   color: var(--ct-red);
 }
 
-.signalBandRed {
+.identityBand {
   padding-block: 0;
+  background:
+    linear-gradient(rgba(51, 51, 51, 0.07) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(51, 51, 51, 0.07) 1px, transparent 1px),
+    #0d0d0d;
+  background-size: 80px 80px;
+  color: #fafafa;
+}
+
+.identityBand::before {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  top: -1px;
+  left: 0;
+  width: min(32vw, 460px);
+  height: 2px;
   background: var(--ct-red);
-  color: #0a0a0a;
 }
 
-.signalBandRed::after {
-  display: none;
+.identityBand::after {
+  width: 440px;
+  height: 440px;
+  right: -180px;
+  top: -210px;
+  background: radial-gradient(circle, rgba(253, 55, 55, 0.1), transparent 68%);
 }
 
-.signalInnerAlt {
+.identitySystem {
+  position: relative;
+  z-index: 3;
+  width: min(1180px, calc(100% - 48px));
+  margin-inline: auto;
   display: grid;
-  grid-template-columns: 140px minmax(0, 1.1fr) minmax(420px, 0.9fr);
+  grid-template-columns: 150px minmax(300px, 0.9fr) minmax(440px, 1.1fr);
   align-items: stretch;
 }
 
-.signalBandRed .signalCode {
-  padding: 66px 24px 66px 0;
-  color: rgba(10, 10, 10, 0.55);
+.identityRail {
+  min-width: 0;
+  padding: 54px 26px 46px 0;
+  border-right: 1px solid #2a2a2a;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 48px;
 }
 
-.signalStatementLarge {
-  padding: 62px 48px;
-  border-left: 1px solid rgba(10, 10, 10, 0.22);
-  font-family: var(--font-heading), sans-serif;
-  font-size: clamp(2.7rem, 5vw, 5.4rem);
-  line-height: 0.9;
-  letter-spacing: -0.025em;
+.identityRailLabel,
+.identityIntro > span,
+.identityRailMetrics span,
+.identityScope span,
+.identityModeTop span {
+  font: 650 9px/1.45 var(--font-geist-mono), monospace;
   text-transform: uppercase;
+  letter-spacing: 0.17em;
+}
+
+.identityRailLabel,
+.identityIntro > span,
+.identityModeTop span {
+  color: var(--ct-red);
+}
+
+.identityRailMetrics {
+  display: grid;
+  gap: 22px;
+}
+
+.identityRailMetrics > div {
+  padding-top: 13px;
+  border-top: 1px solid #303030;
+}
+
+.identityRailMetrics strong {
+  display: block;
+  margin-bottom: 5px;
+  font-family: var(--font-heading), sans-serif;
+  font-size: 34px;
+  line-height: 0.9;
+  letter-spacing: -0.02em;
+}
+
+.identityRailMetrics span {
+  color: rgba(255, 255, 255, 0.38);
+}
+
+.identityIntro {
+  min-width: 0;
+  padding: 54px 48px 46px;
+  border-right: 1px solid #2a2a2a;
+  display: flex;
+  flex-direction: column;
+}
+
+.identityIntro h2 {
+  max-width: 520px;
+  margin: 28px 0 24px;
+  font-family: var(--font-heading), sans-serif;
+  font-size: clamp(2.8rem, 4.2vw, 4.25rem);
+  line-height: 0.94;
+  letter-spacing: -0.025em;
+  text-wrap: balance;
+}
+
+.identityIntro p {
+  max-width: 450px;
+  margin: 0;
+  color: rgba(255, 255, 255, 0.66);
+  font-size: 16px;
+  line-height: 1.58;
+  text-wrap: pretty;
+}
+
+.identityScope {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 18px;
+  margin-top: auto;
+  padding-top: 44px;
+}
+
+.identityScope span {
+  position: relative;
+  padding-left: 13px;
+  color: rgba(255, 255, 255, 0.42);
+}
+
+.identityScope span::before {
+  content: "";
+  position: absolute;
+  top: 0.43em;
+  left: 0;
+  width: 5px;
+  height: 5px;
+  background: var(--ct-red);
 }
 
 .identityModes {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  border-left: 1px solid rgba(10, 10, 10, 0.22);
-  border-top: 1px solid rgba(10, 10, 10, 0.22);
 }
 
-.identityModes > div {
-  min-height: 145px;
-  padding: 24px;
-  border-right: 1px solid rgba(10, 10, 10, 0.22);
-  border-bottom: 1px solid rgba(10, 10, 10, 0.22);
+.identityModes article {
+  min-height: 218px;
+  padding: 26px;
+  border-right: 1px solid #2a2a2a;
+  border-bottom: 1px solid #2a2a2a;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  background: rgba(255, 255, 255, 0.014);
 }
 
-.identityModes span {
-  font: 700 9px/1 var(--font-geist-mono), monospace;
-  color: rgba(10, 10, 10, 0.5);
+.identityModes article:nth-child(-n + 2) {
+  border-top: 1px solid #2a2a2a;
 }
 
 .identityModes strong {
-  font-size: 18px;
+  display: block;
+  font-size: 20px;
+  line-height: 1.1;
   text-transform: uppercase;
+}
+
+.identityModes p {
+  max-width: 190px;
+  margin: 9px 0 0;
+  color: rgba(255, 255, 255, 0.62);
+  font-size: 12.5px;
+  line-height: 1.45;
+  text-wrap: pretty;
+}
+
+.identityModeTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.identityModeTop i {
+  width: 7px;
+  height: 7px;
+  border: 1px solid var(--ct-red);
 }
 
 .modelEquation {
@@ -896,9 +1059,31 @@
   color: var(--ct-red);
 }
 
-.equationSide strong {
+.equationList {
+  display: grid;
+  gap: 12px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.equationList li {
+  position: relative;
+  padding-left: 20px;
   font-size: clamp(1.25rem, 2.5vw, 2rem);
-  line-height: 1.28;
+  line-height: 1.22;
+  font-weight: 650;
+  text-wrap: pretty;
+}
+
+.equationList li::before {
+  content: "";
+  position: absolute;
+  top: 0.52em;
+  left: 0;
+  width: 7px;
+  height: 7px;
+  background: var(--ct-red);
 }
 
 .equationMark {
@@ -1654,14 +1839,28 @@
 .ctaCard a {
   display: inline-flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 20px;
+  justify-content: center;
+  min-height: 48px;
   padding: 15px 17px;
   background: var(--ct-red);
   color: #fff;
-  font: 700 10px/1 var(--font-geist-mono), monospace;
+  font: 750 11px/1 var(--font-geist-mono), monospace;
   text-transform: uppercase;
-  letter-spacing: 0.13em;
+  letter-spacing: 0.16em;
+  text-align: center;
+  transition:
+    background-color 180ms ease,
+    color 180ms ease,
+    transform 120ms ease;
+}
+
+.ctaCard a:hover {
+  background: #fff;
+  color: #0a0a0a;
+}
+
+.ctaCard a:active {
+  transform: translateY(1px);
 }
 
 .sourcesGrid {
@@ -1873,13 +2072,20 @@
     grid-column: 2 / 4;
   }
 
-  .signalInnerAlt {
-    grid-template-columns: 120px minmax(0, 1fr);
+  .identitySystem {
+    grid-template-columns: 120px minmax(280px, 0.9fr) minmax(390px, 1.1fr);
   }
 
-  .identityModes {
-    grid-column: 1 / -1;
-    border-left: 0;
+  .identityRail {
+    padding-right: 20px;
+  }
+
+  .identityIntro {
+    padding-inline: 38px;
+  }
+
+  .identityModes article {
+    padding: 22px;
   }
 
   .factGrid,
@@ -1922,6 +2128,35 @@
   }
 }
 
+@media (max-width: 960px) {
+  .identitySystem {
+    grid-template-columns: 110px minmax(0, 1fr);
+  }
+
+  .identityRail {
+    padding-block: 44px 38px;
+  }
+
+  .identityIntro {
+    padding-block: 44px 38px;
+    border-right: 0;
+  }
+
+  .identityIntro h2 {
+    font-size: clamp(2.75rem, 7vw, 3.6rem);
+  }
+
+  .identityModes {
+    grid-column: 1 / -1;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .identityModes article {
+    min-height: 180px;
+    border-top: 1px solid #2a2a2a;
+  }
+}
+
 @media (max-width: 860px) {
   .topline,
   .heroContent,
@@ -1942,11 +2177,12 @@
   }
 
   .heroContent {
+    grid-template-columns: 1fr;
     padding-right: 0;
   }
 
   .signalInner,
-  .signalInnerAlt {
+  .identitySystem {
     width: min(100% - 48px, 1180px);
   }
 
@@ -1962,18 +2198,31 @@
     grid-column: 1 / -1;
   }
 
-  .signalInnerAlt {
-    grid-template-columns: 1fr;
+  .identitySystem {
+    grid-template-columns: 110px minmax(0, 1fr);
   }
 
-  .signalBandRed .signalCode {
-    padding: 34px 0 22px;
+  .identityRail {
+    padding-block: 44px 38px;
   }
 
-  .signalStatementLarge {
-    padding: 40px 0 46px;
-    border-top: 1px solid rgba(10, 10, 10, 0.22);
-    border-left: 0;
+  .identityIntro {
+    padding-block: 44px 38px;
+    border-right: 0;
+  }
+
+  .identityIntro h2 {
+    font-size: clamp(2.75rem, 7vw, 3.6rem);
+  }
+
+  .identityModes {
+    grid-column: 1 / -1;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .identityModes article {
+    min-height: 180px;
+    border-top: 1px solid #2a2a2a;
   }
 
   .navLinks {
@@ -2089,7 +2338,7 @@
   .container,
   .footerInner,
   .signalInner,
-  .signalInnerAlt {
+  .identitySystem {
     width: min(100% - 32px, 1180px);
   }
 
@@ -2239,6 +2488,10 @@
     padding: 58px 0 64px;
   }
 
+  .identityBand {
+    padding: 0;
+  }
+
   .signalInner {
     grid-template-columns: 1fr;
     gap: 28px;
@@ -2248,13 +2501,63 @@
     font-size: clamp(5.2rem, 28vw, 7rem);
   }
 
-  .signalStatementLarge {
-    font-size: clamp(2.5rem, 13vw, 4rem);
+  .identitySystem {
+    grid-template-columns: 1fr;
   }
 
-  .identityModes > div {
-    min-height: 120px;
+  .identityRail {
+    padding: 32px 0 26px;
+    border-right: 0;
+    border-bottom: 1px solid #2a2a2a;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 24px;
+  }
+
+  .identityRailLabel {
+    max-width: 110px;
+  }
+
+  .identityRailMetrics {
+    grid-template-columns: repeat(2, auto);
+    gap: 20px;
+  }
+
+  .identityRailMetrics > div {
+    min-width: 76px;
+  }
+
+  .identityRailMetrics strong {
+    font-size: 28px;
+  }
+
+  .identityIntro {
+    padding: 36px 0 38px;
+    border-bottom: 1px solid #2a2a2a;
+  }
+
+  .identityIntro h2 {
+    margin-block: 24px 20px;
+    font-size: clamp(2.45rem, 12vw, 3.2rem);
+  }
+
+  .identityScope {
+    margin-top: 34px;
+    padding-top: 0;
+  }
+
+  .identityModes {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .identityModes article {
+    min-height: 158px;
     padding: 18px;
+    border-top: 0;
+  }
+
+  .identityModes article:nth-child(-n + 2) {
+    border-top: 1px solid #2a2a2a;
   }
 
   .modelEquation {
