@@ -205,7 +205,7 @@ export const kurtDeimerSilentLucidity: ProjectData = {
           exclusions: [
                   "TikTok OFF: 11.3K followers, +6 last month, wrong demo",
                   "No chart play: charts are next-cycle by design",
-                  "No playlist pitching or placement services: not something CCD offers",
+                  "No DSP editorial playlist pitching, ever: not a CCD service",
                   "No bot inventory anywhere",
                   "Tour ticket media stays in the tour lane",
                 ],
@@ -263,7 +263,7 @@ export const kurtDeimerSilentLucidity: ProjectData = {
               tasks: [
                         "Full readout vs. baseline: streams, actives, geo, saves, costs, pool sizes",
                         "Warm audiences handed to the film announce and CD D2C push",
-                        "Scale-or-sustain call: next focus track, Marquee/Showcase check, Grogtober runway",
+                        "Scale-or-sustain call: next focus track, third-party playlisting decision, Marquee/Showcase check, Grogtober runway",
                       ],
       },
         ],
@@ -281,7 +281,8 @@ export const kurtDeimerSilentLucidity: ProjectData = {
                   "Weekly lift reports and the day-30 readout with the next-cycle recommendation",
                 ],
           excluded: [
-                  "Playlist pitching and placement of any kind: not services CCD offers, on this flight or ever",
+                  "Third-party playlisting: a CCD service, but scoped and priced separately once this flight's data proves the base",
+                  "DSP editorial playlist pitching: not a service CCD offers",
                   "Hellbilly Hollow film media: separate budget, owed by Regime; this flight hands it the warm audiences",
                   "Tour ticket advertising and radio/PR (Deborah owns press)",
                   "New video or content production: the official video is the asset; cutdowns included, shoots are not",
