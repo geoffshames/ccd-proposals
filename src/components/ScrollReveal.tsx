@@ -1,6 +1,6 @@
 "use client";
 
-import { motion, type Variants } from "framer-motion";
+import { motion, type Variants, useReducedMotion } from "framer-motion";
 import { type ReactNode } from "react";
 
 const variants: Record<string, Variants> = {
@@ -47,15 +47,17 @@ export function ScrollReveal({
   duration?: number;
   className?: string;
 }) {
+  const shouldReduceMotion = useReducedMotion();
+
   return (
     <motion.div
-      initial="hidden"
+      initial={shouldReduceMotion ? "visible" : "hidden"}
       whileInView="visible"
       viewport={{ once: true, margin: "-60px" }}
       variants={variants[variant]}
       transition={{
-        duration,
-        delay,
+        duration: shouldReduceMotion ? 0 : duration,
+        delay: shouldReduceMotion ? 0 : delay,
         ease: [0.22, 1, 0.36, 1],
       }}
       className={className}
@@ -74,12 +76,14 @@ export function StaggerContainer({
   className?: string;
   staggerDelay?: number;
 }) {
+  const shouldReduceMotion = useReducedMotion();
+
   return (
     <motion.div
-      initial="hidden"
+      initial={shouldReduceMotion ? "visible" : "hidden"}
       whileInView="visible"
       viewport={{ once: true, margin: "-40px" }}
-      transition={{ staggerChildren: staggerDelay }}
+      transition={{ staggerChildren: shouldReduceMotion ? 0 : staggerDelay }}
       className={className}
     >
       {children}
@@ -96,10 +100,12 @@ export function StaggerItem({
   className?: string;
   variant?: keyof typeof variants;
 }) {
+  const shouldReduceMotion = useReducedMotion();
+
   return (
     <motion.div
       variants={variants[variant]}
-      transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
+      transition={{ duration: shouldReduceMotion ? 0 : 0.7, ease: [0.22, 1, 0.36, 1] }}
       className={className}
     >
       {children}
@@ -116,13 +122,17 @@ export function TextReveal({
   className?: string;
   delay?: number;
 }) {
+  const shouldReduceMotion = useReducedMotion();
   const words = children.split(" ");
   return (
     <motion.span
-      initial="hidden"
+      initial={shouldReduceMotion ? "visible" : "hidden"}
       whileInView="visible"
       viewport={{ once: true, margin: "-40px" }}
-      transition={{ staggerChildren: 0.03, delayChildren: delay }}
+      transition={{
+        staggerChildren: shouldReduceMotion ? 0 : 0.03,
+        delayChildren: shouldReduceMotion ? 0 : delay,
+      }}
       className={className}
     >
       {words.map((word, i) => (
@@ -132,7 +142,10 @@ export function TextReveal({
             hidden: { opacity: 0, y: 10, filter: "blur(4px)" },
             visible: { opacity: 1, y: 0, filter: "blur(0px)" },
           }}
-          transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
+          transition={{
+            duration: shouldReduceMotion ? 0 : 0.4,
+            ease: [0.22, 1, 0.36, 1],
+          }}
           className="inline-block mr-[0.3em]"
         >
           {word}

@@ -161,6 +161,21 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
 }
 
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
 /* Gradient text */
 @keyframes gradient-shift {
   0%, 100% { background-position: 0% 50%; }

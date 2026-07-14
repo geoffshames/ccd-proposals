@@ -1,10 +1,17 @@
 "use client";
 
 import Image from "next/image";
-import { motion } from "framer-motion";
+import { motion, useReducedMotion } from "framer-motion";
 import { ScrollReveal } from "@/components/ScrollReveal";
 import { CursorGlow } from "@/components/CursorGlow";
 import { championTeamwearReport as report } from "@/lib/reports/champion-teamwear";
+import {
+  PermissionGapPlot,
+  SentimentTierBars,
+  TwoTrackRoadmap,
+  UrlEstateStrips,
+} from "./EvidenceVisuals";
+import { MobileSectionsNav } from "./MobileSectionsNav";
 import styles from "./report.module.css";
 
 const navItems = [
@@ -42,6 +49,26 @@ function SectionHead({
   );
 }
 
+function SubsectionHead({
+  code,
+  title,
+  takeaway,
+}: {
+  code: string;
+  title: string;
+  takeaway?: string;
+}) {
+  return (
+    <div className={styles.subsectionHead}>
+      <span>{code}</span>
+      <div>
+        <h3>{title}</h3>
+        {takeaway && <p>{takeaway}</p>}
+      </div>
+    </div>
+  );
+}
+
 function MapPoint({
   label,
   breadth,
@@ -70,10 +97,56 @@ function MapPoint({
   );
 }
 
+function MobileCompetitiveSummary() {
+  const competitors = [...report.competitors].sort(
+    (a, b) => b.identity - a.identity,
+  );
+
+  return (
+    <div
+      className={styles.mobileMapSummary}
+      role="group"
+      aria-label="Directional competitive positioning, ranked by teamwear-owned identity"
+    >
+      <div className={styles.mobileMapLegend}>
+        <span>Identity rank</span>
+        <span>Breadth / identity</span>
+      </div>
+      {competitors.map((competitor, index) => (
+        <article
+          key={competitor.name}
+          className={styles.mobileMapRow}
+          data-champion={competitor.name === "Champion Teamwear" || undefined}
+        >
+          <span className={styles.mobileMapRank}>0{index + 1}</span>
+          <div>
+            <h3>{competitor.name}</h3>
+            <p>{competitor.faces}</p>
+          </div>
+          <div
+            className={styles.mobileMapScores}
+            aria-label={`Breadth ${competitor.breadth.toFixed(1)} of 5; identity ${competitor.identity.toFixed(1)} of 5`}
+          >
+            <strong>{competitor.breadth.toFixed(1)}</strong>
+            <span aria-hidden="true">/</span>
+            <strong>{competitor.identity.toFixed(1)}</strong>
+          </div>
+        </article>
+      ))}
+      <div className={styles.mobileMapOpportunity}>
+        <span>CTW opportunity</span>
+        <strong>5.0 breadth / 4.5 identity</strong>
+      </div>
+    </div>
+  );
+}
+
 export function ChampionTeamwearClient() {
+  const shouldReduceMotion = useReducedMotion();
+
   return (
     <main className={styles.page}>
-      <CursorGlow />
+      {!shouldReduceMotion && <CursorGlow />}
 
       <header className={styles.hero}>
         <div className={styles.heroGrid} aria-hidden />
@@ -113,9 +186,12 @@ export function ChampionTeamwearClient() {
 
         <motion.div
           className={styles.heroContent}
-          initial={{ opacity: 0, y: 34 }}
+          initial={shouldReduceMotion ? false : { opacity: 0, y: 34 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.85, ease: [0.22, 1, 0.36, 1] }}
+          transition={{
+            duration: shouldReduceMotion ? 0 : 0.85,
+            ease: [0.22, 1, 0.36, 1],
+          }}
         >
           <div className={styles.eyebrow}>Brand + sentiment analysis</div>
           <h1 className={styles.title}>
@@ -170,6 +246,7 @@ export function ChampionTeamwearClient() {
               </a>
             ))}
           </div>
+          <MobileSectionsNav />
         </div>
       </nav>
 
@@ -184,7 +261,7 @@ export function ChampionTeamwearClient() {
 
           <div className={styles.executiveGrid}>
             <ScrollReveal className={styles.executiveThesis}>
-              <h2>{report.executiveRead.headline}</h2>
+              <h3>{report.executiveRead.headline}</h3>
               <p>{report.executiveRead.body}</p>
             </ScrollReveal>
             <ScrollReveal className={styles.decisionCard} delay={0.12}>
@@ -218,26 +295,9 @@ export function ChampionTeamwearClient() {
             lede="Scores are evidence-weighted analyst judgments on a five-point scale, not survey results. Confidence indicates the quality and volume of the underlying evidence."
           />
 
-          <div className={styles.scoreGrid}>
-            {report.diagnosis.map((item, index) => (
-              <ScrollReveal key={item.dimension} delay={(index % 2) * 0.08}>
-                <article className={styles.scoreCard}>
-                  <div className={styles.scoreTop}>
-                    <h3>{item.dimension}</h3>
-                    <div className={styles.scoreValue}>{item.score.toFixed(1)} / 5</div>
-                  </div>
-                  <div className={styles.scoreTrack} aria-hidden>
-                    <div
-                      className={styles.scoreBar}
-                      style={{ width: `${(item.score / 5) * 100}%` }}
-                    />
-                  </div>
-                  <p>{item.read}</p>
-                  <div className={styles.confidence}>Confidence · {item.confidence}</div>
-                </article>
-              </ScrollReveal>
-            ))}
-          </div>
+          <ScrollReveal>
+            <PermissionGapPlot items={report.diagnosis} />
+          </ScrollReveal>
 
           <div className={styles.flow} aria-label="Equity conversion chain">
             {report.equityLeak.map((item, index) => (
@@ -291,17 +351,13 @@ export function ChampionTeamwearClient() {
       </section>
 
       <section className={styles.signalBand} aria-label="Digital estate signal">
-        <div className={styles.signalInner}>
-          <div className={styles.signalCode}>Observed system signal / 01</div>
-          <div className={styles.signalNumber}>2,286</div>
-          <div className={styles.signalStatement}>
-            <span>Public URLs</span>
-            <p>One inherited estate. One repeated 2019 timestamp. No coherent source of truth.</p>
-          </div>
-          <div className={styles.signalRule}>
-            <span>Diagnosis</span>
-            <strong>Not a content problem. A system problem.</strong>
-          </div>
+        <div className={styles.container}>
+          <UrlEstateStrips
+            totalUrls={report.urlEstate.total}
+            productUrls={report.urlEstate.product}
+            sharedTimestampUrls={report.urlEstate.repeatedLastModified}
+            sharedTimestamp={report.urlEstate.lastModifiedDate}
+          />
         </div>
       </section>
 
@@ -312,6 +368,11 @@ export function ChampionTeamwearClient() {
             label="Customer voice"
             title="Consideration is healthy. Confidence is fragile."
             lede={report.sentiment.sampleNote}
+          />
+
+          <SubsectionHead
+            code="04.1 / Evidence model"
+            title="Consideration and retention are different jobs."
           />
 
           <div className={styles.modelEquation}>
@@ -326,19 +387,20 @@ export function ChampionTeamwearClient() {
             </div>
           </div>
 
-          <div className={styles.sourceTiers}>
-            {report.sentiment.sourceTiers.map((source) => (
-              <ScrollReveal key={source.tier}>
-                <article className={styles.sourceTier}>
-                  <div className={styles.tierCode}>{source.tier}</div>
-                  <h3>{source.label}</h3>
-                  <p>{source.sample}</p>
-                  <p>{source.read}</p>
-                  <small>{source.confidence}</small>
-                </article>
-              </ScrollReveal>
-            ))}
-          </div>
+          <SubsectionHead
+            code="04.2 / Evidence by source"
+            title="Channel context changes the meaning of the sentiment."
+            takeaway="Each tier remains separate because its sample frame and selection bias are materially different."
+          />
+
+          <ScrollReveal>
+            <SentimentTierBars tiers={report.sentiment.sourceTiers} />
+          </ScrollReveal>
+
+          <SubsectionHead
+            code="04.3 / Coded themes"
+            title="The strongest pattern is operating inconsistency—not broad brand rejection."
+          />
 
           <div className={styles.themeGrid}>
             {report.sentiment.themes.map((theme, index) => (
@@ -346,18 +408,17 @@ export function ChampionTeamwearClient() {
                 <article className={styles.themeCard}>
                   <div className={styles.themeDirection}>{theme.direction}</div>
                   <h3>{theme.theme}</h3>
-                  <div className={styles.sentimentTrack} aria-hidden>
-                    <div
-                      className={styles.sentimentBar}
-                      style={{ width: `${theme.strength}%` }}
-                    />
-                  </div>
                   <p>{theme.evidence}</p>
                   <p className={styles.themeAction}>{theme.action}</p>
                 </article>
               </ScrollReveal>
             ))}
           </div>
+
+          <SubsectionHead
+            code="04.4 / Direct voices"
+            title="Relationship equity is real—and vulnerable to a single bad handoff."
+          />
 
           <div className={styles.voices}>
             {report.sentiment.voices.map((voice) => (
@@ -409,23 +470,30 @@ export function ChampionTeamwearClient() {
 
           <div className={styles.landscapeLayout}>
             <ScrollReveal>
-              <div className={styles.map} aria-label="Competitive positioning map">
-                {report.competitors.map((competitor) => (
+              <div className={styles.mapWrap}>
+                <div className={styles.map} aria-label="Competitive positioning map">
+                  {report.competitors.map((competitor) => (
+                    <MapPoint
+                      key={competitor.name}
+                      label={competitor.name}
+                      breadth={competitor.breadth}
+                      identity={competitor.identity}
+                      champion={competitor.name === "Champion Teamwear"}
+                    />
+                  ))}
                   <MapPoint
-                    key={competitor.name}
-                    label={competitor.name}
-                    breadth={competitor.breadth}
-                    identity={competitor.identity}
-                    champion={competitor.name === "Champion Teamwear"}
+                    label="CTW opportunity"
+                    breadth={5}
+                    identity={4.5}
+                    target
                   />
-                ))}
-                <MapPoint
-                  label="CTW opportunity"
-                  breadth={5}
-                  identity={4.5}
-                  target
-                />
+                </div>
+                <p className={styles.mapNote}>
+                  Directional analyst positioning on a five-point scale; not measured
+                  market share or survey data.
+                </p>
               </div>
+              <MobileCompetitiveSummary />
             </ScrollReveal>
 
             <div className={styles.competitorStack}>
@@ -550,28 +618,9 @@ export function ChampionTeamwearClient() {
             lede="The catalog cannot wait for the final brand bible. The website cannot responsibly launch without one. A two-track plan creates safe interim guardrails while the durable system is researched and approved."
           />
 
-          <div className={styles.roadmap}>
-            {report.roadmap.map((phase) => (
-              <ScrollReveal key={phase.window}>
-                <article className={styles.roadmapRow}>
-                  <div className={styles.roadmapWindow}>{phase.window}</div>
-                  <div className={styles.roadmapName}>{phase.name}</div>
-                  <div className={styles.lane}>
-                    <span>Operating track</span>
-                    <ul>
-                      {phase.operating.map((item) => <li key={item}>{item}</li>)}
-                    </ul>
-                  </div>
-                  <div className={styles.lane}>
-                    <span>Brand track</span>
-                    <ul>
-                      {phase.brand.map((item) => <li key={item}>{item}</li>)}
-                    </ul>
-                  </div>
-                </article>
-              </ScrollReveal>
-            ))}
-          </div>
+          <ScrollReveal>
+            <TwoTrackRoadmap />
+          </ScrollReveal>
         </div>
       </section>
 

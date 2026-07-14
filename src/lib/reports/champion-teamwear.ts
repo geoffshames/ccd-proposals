@@ -148,6 +148,14 @@ export const championTeamwearReport = {
     { label: "Operating future", value: "ABA / FSG America" },
   ],
 
+  urlEstate: {
+    total: 2286,
+    product: 2154,
+    other: 132,
+    repeatedLastModified: 2286,
+    lastModifiedDate: "May 15, 2019",
+  },
+
   sentiment: {
     sampleNote:
       "Sentiment is directional, not statistically representative. Teamwear-specific evidence was coded separately from the much larger Champion retail conversation.",
@@ -161,6 +169,9 @@ export const championTeamwearReport = {
         label: "Direct use",
         sample: "5 unambiguous Reddit experiences",
         read: "4 positive · 1 negative",
+        positive: 4,
+        neutral: 0,
+        negative: 1,
         confidence: "Best available organic signal",
       },
       {
@@ -168,6 +179,9 @@ export const championTeamwearReport = {
         label: "Local review archive",
         sample: "14 customer texts",
         read: "6 positive · 8 negative",
+        positive: 6,
+        neutral: 0,
+        negative: 8,
         confidence: "Third-party archive; identities not independently verified",
       },
       {
@@ -175,6 +189,9 @@ export const championTeamwearReport = {
         label: "Complaint channel",
         sample: "3 BBB reviews",
         read: "0 positive · 3 negative · 1.0 / 5",
+        positive: 0,
+        neutral: 0,
+        negative: 3,
         confidence: "Very small and structurally negative-skewed",
       },
       {
@@ -182,6 +199,9 @@ export const championTeamwearReport = {
         label: "Review aggregator",
         sample: "23 accessible entries",
         read: "12 positive · 3 neutral · 8 negative · 3.48 / 5",
+        positive: 12,
+        neutral: 3,
+        negative: 8,
         confidence: "Low-confidence theme finder; headline says 25",
       },
     ],
@@ -189,7 +209,6 @@ export const championTeamwearReport = {
       {
         theme: "Rep relationship",
         direction: "Positive",
-        strength: 82,
         evidence:
           "Long-tenured customers repeatedly name their rep—not the website—as the reason they stay. Negative experiences often begin when ownership changes or disappears.",
         action: "End the rep lottery: visible primary, named backup, response standard, and recovery owner.",
@@ -197,7 +216,6 @@ export const championTeamwearReport = {
       {
         theme: "Price / value",
         direction: "Positive",
-        strength: 78,
         evidence:
           "Champion is framed as meaningfully less expensive than Varsity and Rebel, with enough breadth for budget-conscious programs.",
         action: "Own smart value without becoming the cheap option: transparent tiers, durable proof, reorder economics.",
@@ -205,7 +223,6 @@ export const championTeamwearReport = {
       {
         theme: "Product quality",
         direction: "Polarized",
-        strength: 49,
         evidence:
           "Some buyers recommend Champion for years; others cite poor quality, sizing variance, or inconsistent repeat orders.",
         action: "Create a proof system: fit data, material standards, wash tests, batch consistency, and make-good policy.",
@@ -213,7 +230,6 @@ export const championTeamwearReport = {
       {
         theme: "Operational certainty",
         direction: "Negative",
-        strength: 34,
         evidence:
           "The sharpest complaints center on updates, delivery timing, exchanges, samples, and getting the same item twice.",
         action: "Compete on game-date certainty: transparent milestones, alerts, ownership, and fill-in guarantees.",
@@ -221,7 +237,6 @@ export const championTeamwearReport = {
       {
         theme: "Athlete aspiration",
         direction: "Absent",
-        strength: 20,
         evidence:
           "Direct conversation focuses on price and service—not style, status, reveal moments, or athlete desire.",
         action: "Build the missing demand side with athlete co-creation, reveals, creators, and event-native storytelling.",
