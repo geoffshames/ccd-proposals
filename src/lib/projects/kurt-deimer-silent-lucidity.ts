@@ -280,7 +280,7 @@ export const kurtDeimerSilentLucidity: ProjectData = {
                       budget: "$300",
                       budgetPct: "10% of media · $10/day",
                       cpv: "$0.01–0.03 / view (planning)",
-                      views: "15–30K MV views",
+                      views: "10–30K MV views",
                       viewsPct: "on the official video",
                       markets:
                                   "US + Canada. In-feed discovery against Queensryche, Geoff Tate, and classic rock viewers, plus remarketing pre-roll on channel and site visitors.",
