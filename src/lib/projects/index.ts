@@ -33,9 +33,11 @@ import { sublime } from "./sublime";
 import { hermes } from "./hermes";
 import { polkadotfx } from "./polkadotfx";
 import { sunChaser } from "./sun-chaser";
+import { kurtDeimerSilentLucidity } from "./kurt-deimer-silent-lucidity";
 import type { ProjectData } from "../project-context";
 
 export const PROJECTS: Record<string, ProjectData> = {
+  "kurt-deimer-silent-lucidity": kurtDeimerSilentLucidity,
   "sun-chaser": sunChaser,
   "polkadotfx": polkadotfx,
   "hermes": hermes,

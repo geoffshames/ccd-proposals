@@ -12,10 +12,10 @@ export function MediaFlight() {
   if (!mf) return null;
 
   const goalStats = [
-    { label: "Views Target", value: mf.goal.views },
-    { label: "Blended CPV", value: mf.goal.blendedCpv },
-    { label: "Media Spend", value: mf.goal.totalBudget },
-    { label: "Flight Window", value: mf.goal.window },
+    { label: mf.goalLabels?.views ?? "Views Target", value: mf.goal.views },
+    { label: mf.goalLabels?.blendedCpv ?? "Blended CPV", value: mf.goal.blendedCpv },
+    { label: mf.goalLabels?.totalBudget ?? "Media Spend", value: mf.goal.totalBudget },
+    { label: mf.goalLabels?.window ?? "Flight Window", value: mf.goal.window },
   ];
 
   return (
@@ -49,8 +49,8 @@ export function MediaFlight() {
           ))}
         </div>
 
-        {/* Two tracks */}
-        <div className="grid md:grid-cols-2 gap-5 mt-5">
+        {/* Flight tracks */}
+        <div className={`grid gap-5 mt-5 ${mf.tracks.length === 3 ? "md:grid-cols-2 lg:grid-cols-3" : "md:grid-cols-2"}`}>
           {mf.tracks.map((t, i) => (
             <ScrollReveal key={i} delay={0.1 * i} variant={i === 0 ? "slideRight" : "slideLeft"}>
               <TiltCard className="group h-full">
@@ -81,7 +81,7 @@ export function MediaFlight() {
                   </div>
 
                   <div className="space-y-4 border-t border-[#222] pt-6">
-                    <Row label="Planning CPV" value={t.cpv} />
+                    <Row label={mf.cpvRowLabel ?? "Planning CPV"} value={t.cpv} />
                     <Row label="Markets" value={t.markets} />
                     <Row label="Campaign mix" value={t.mix} />
                   </div>
@@ -111,7 +111,8 @@ export function MediaFlight() {
           <div className="mt-20 mb-8">
             <span className="text-[10px] font-mono tracking-[0.2em] text-text-muted uppercase">Budget Dial</span>
             <p className="text-text-muted text-[15px] mt-3 max-w-2xl leading-relaxed">
-              The flight scales near-linearly once the test locks real CPV. Same 50/50 posture, three levels of ambition.
+              {mf.dialSubheading ??
+                "The flight scales near-linearly once the test locks real CPV. Same 50/50 posture, three levels of ambition."}
             </p>
           </div>
         </ScrollReveal>
@@ -134,7 +135,7 @@ export function MediaFlight() {
                   )}
                 </div>
                 <div className="display text-[clamp(2rem,5vw,2.8rem)] text-text-primary leading-none mb-2">{d.budget}</div>
-                <div className="text-[14px] text-accent font-semibold mb-5">{d.views} views</div>
+                <div className="text-[14px] text-accent font-semibold mb-5">{d.views} {mf.dialUnit ?? "views"}</div>
                 <div className="text-[12px] font-mono text-text-muted mb-5">{d.split}</div>
                 <p className="text-[13px] text-text-muted leading-[1.7] border-t border-[#222] pt-5">{d.note}</p>
               </div>

@@ -93,6 +93,14 @@ export type ProjectData = {
     heading?: string;
     subheading?: string;
     goal: { views: string; window: string; blendedCpv: string; totalBudget: string };
+    /** Optional display-label overrides for the goal stat row (e.g. streams instead of views). */
+    goalLabels?: { views?: string; window?: string; blendedCpv?: string; totalBudget?: string };
+    /** Optional override for the per-track "Planning CPV" row label. */
+    cpvRowLabel?: string;
+    /** Optional unit word rendered after dial values (defaults to "views"). */
+    dialUnit?: string;
+    /** Optional override for the hard-coded budget-dial subheading. */
+    dialSubheading?: string;
     tracks: {
       key: string;
       role: string;
