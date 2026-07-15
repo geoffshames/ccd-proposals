@@ -16,6 +16,7 @@ import { PlanFlight } from "./PlanFlight";
 import { PlanTimeline } from "./PlanTimeline";
 import { PlanPricing } from "./PlanPricing";
 import { PlanDeliverables } from "./PlanDeliverables";
+import { PlanContentAnalysis } from "./PlanContentAnalysis";
 import { PlanApprove } from "./PlanApprove";
 import { LanguageToggle } from "@/components/LanguageToggle";
 import { ProjectProvider, type ProjectData } from "@/lib/project-context";
@@ -80,6 +81,8 @@ export function PlanClient({ plan }: { plan: StrategyPlanData }) {
               return <PlanPricing key={i} section={section} />;
             case "deliverables":
               return <PlanDeliverables key={i} section={section} />;
+            case "contentAnalysis":
+              return <PlanContentAnalysis key={i} section={section} />;
             default:
               return null;
           }

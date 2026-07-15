@@ -432,6 +432,63 @@ export type RoadmapSection = {
   footnote?: string;
 };
 
+export type ContentExample = {
+  platform: "tiktok" | "instagram";
+  id: string; // TikTok video id or Instagram reel shortcode
+  label: string;
+  date?: string;
+  stat?: string;
+  note?: string;
+};
+
+export type ContentFinding = {
+  id: string;
+  title: string;
+  verdict: "confirmed" | "partial" | "refuted";
+  confidence?: string;
+  summary: string;
+  evidence: string[];
+  counterEvidence?: string[];
+  examples?: ContentExample[];
+  pivot: {
+    title: string;
+    actions: string[];
+  };
+};
+
+export type ContentMixRow = {
+  metric: string;
+  lolaAmour: string;
+  benchmark: string;
+  read: "ahead" | "inline" | "behind" | "neutral";
+  note?: string;
+};
+
+export type ContentCorpusStat = {
+  label: string;
+  value: string;
+  detail?: string;
+};
+
+export type ContentAnalysisSection = {
+  type: "contentAnalysis";
+  number: string;
+  navLabel?: string;
+  title: string;
+  intro?: string;
+  clientQuestion?: { attribution: string; question: string };
+  methodology?: { label: string; value: string }[];
+  corpusStats?: ContentCorpusStat[];
+  mixHeading?: string;
+  mixIntro?: string;
+  mixRows?: ContentMixRow[];
+  mixFootnote?: string;
+  findingsHeading?: string;
+  findingsIntro?: string;
+  findings: ContentFinding[];
+  footnote?: string;
+};
+
 export type PlanSection =
   | OverviewSection
   | PhilosophySection
@@ -445,7 +502,8 @@ export type PlanSection =
   | FlightSection
   | TimelineSection
   | PricingSection
-  | DeliverablesSection;
+  | DeliverablesSection
+  | ContentAnalysisSection;
 
 // Plan root -----------------------------------------------------------------
 

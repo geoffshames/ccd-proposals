@@ -15,6 +15,7 @@ export const lolaAmourPlan: StrategyPlanData = {
     prepared: "Geoff Shames / Co-Founder, Crowd Control Digital",
     date: "July 2026",
     backgroundImage: "/images/lola-amour/hero.jpg",
+    logo: "/brand/CC-LOGO-2024-WHITE.png",
   },
 
   approveCta: {
@@ -272,8 +273,464 @@ export const lolaAmourPlan: StrategyPlanData = {
     },
 
     {
-      type: "audience",
+      type: "contentAnalysis",
       number: "03",
+      navLabel: "Content Analysis",
+      title: "Deep Content Analysis / The Last 100 Posts",
+      intro:
+        "Before prescribing anything, Crowd Control Digital pulled the band's last 50 TikTok posts and last 50 Instagram reels, indexed every retrievable video into a dedicated Lola Amour intelligence store, and ran a multi-agent analysis across language, formats, performance, cultural context, platform mechanics, and posting mix. Every conclusion below was then attacked by independent adversarial passes before it earned a place on this page.",
+      clientQuestion: {
+        attribution: "The question from the July 14 working session with Mika Ordonez",
+        question: "Why is the content not connecting in the US?",
+      },
+      methodology: [
+        {
+          label: "Corpus pull",
+          value:
+            "The 50 most recent posts on each platform as of July 14, 2026 (@lolaamourmusic on TikTok, @lolaamourph on Instagram), with full engagement data, durations, captions, and machine transcripts for 99 of 100 posts.",
+        },
+        {
+          label: "Video intelligence",
+          value:
+            "92 of 100 posts indexed as watchable video into a dedicated Lola Amour knowledge store on TwelveLabs video AI, making every frame, on-screen text overlay, and spoken line queryable. One age-gated TikTok and four rate-limited reels are covered by transcript and stats only.",
+        },
+        {
+          label: "Multi-agent analysis",
+          value:
+            "Six specialist AI analysts examined the corpus in parallel: language accessibility, format census, performance statistics, cultural context load, platform distribution mechanics, and posting mix against 2026 benchmarks.",
+        },
+        {
+          label: "Adversarial review",
+          value:
+            "Each candidate explanation was then attacked by two independent adversarial passes: one hunting counterexamples inside the corpus itself, one testing it against documented platform mechanics and non-English crossover precedent. Only what survived is shown.",
+        },
+        {
+          label: "Benchmarks",
+          value:
+            "Buffer (11M+ TikTok posts), Dash Social (2.1M Instagram posts), Socialinsider (35M posts), platform guidance, TikTok Ads documentation, and documented crossover cases from Chartmetric and Billboard.",
+        },
+        {
+          label: "Honest limits",
+          value:
+            "Public post metrics carry no geography, so US-versus-Philippines audience share is not directly observable from outside. Geographic claims here are mechanical inferences from platform behavior and precedent, to be validated against first-party analytics in Month 1.",
+        },
+      ],
+      corpusStats: [
+        {
+          label: "Posts analyzed",
+          value: "100",
+          detail: "50 TikTok + 50 Instagram reels, May 13 to July 14, 2026",
+        },
+        {
+          label: "TikTok median plays",
+          value: "6,649",
+          detail: "1.6% of 413K followers sees the median post",
+        },
+        {
+          label: "Instagram median views",
+          value: "51,208",
+          detail: "26.8% of 191K followers. Instagram is the healthier surface today",
+        },
+        {
+          label: "Reels that mirror TikToks",
+          value: "45/50",
+          detail: "One content stream feeding two algorithms identical signals",
+        },
+      ],
+      mixHeading: "Posting Behavior vs 2026 Best Practice",
+      mixIntro:
+        "Cadence is not the problem. The band posts at growth-mode volume on both platforms; the question is what the volume is aimed at. Benchmarks below are drawn from the 2026 platform datasets and artist-marketing guidance cited in the methodology.",
+      mixRows: [
+        {
+          metric: "TikTok cadence",
+          lolaAmour: "5.5 posts per week",
+          benchmark: "2 to 5 per week is the efficiency point; 5 to 7+ in growth mode (Buffer, 11M posts)",
+          read: "ahead",
+          note: "Volume raises the viral ceiling, not the median. Their ceiling is proving it: the floor is the problem.",
+        },
+        {
+          metric: "Instagram reels cadence",
+          lolaAmour: "5.6 reels per week",
+          benchmark: "3 to 5 reels per week in growth guidance",
+          read: "ahead",
+        },
+        {
+          metric: "Instagram grid mix",
+          lolaAmour: "64% reels, 33% carousels, 2% photo over the last 40 days",
+          benchmark: "Reels are the only Instagram format pushed to non-followers; carousels and photos serve existing followers",
+          read: "inline",
+          note: "The mix is fine on paper. The catch: their carousels are press recaps, merch, and ticket announcements, which is follower service, and a third of grid output cannot reach a new US listener by design.",
+        },
+        {
+          metric: "US-legible discovery share",
+          lolaAmour: "About 27% of posts are fully legible to a viewer with no Tagalog and no band context; 88% of recent TikTok plays went to posts that viewer cannot parse",
+          benchmark: "70 to 80% discovery-oriented output for a growth-stage account (synthesis benchmark)",
+          read: "behind",
+        },
+        {
+          metric: "English access layer",
+          lolaAmour: "Tagalog talk and lyric posts ship without English translation; subtitles, where present, transcribe the Taglish verbatim. The one translating format is the Lyric Breakdown promo",
+          benchmark: "English on-screen text and captions double as accessibility and as a language signal the algorithms read",
+          read: "behind",
+        },
+        {
+          metric: "Dedicated non-follower lanes",
+          lolaAmour: "No official sped-up versions, no US-creator collabs or duets, no US-pointing paid activity visible, and no visible Trial Reels program (not externally observable, so unconfirmed)",
+          benchmark: "Trial Reels show only to non-followers and cost the grid nothing (2 to 3 per week is standard artist practice, with the caveat that they sample home-region non-followers). Sped-up official versions and target-market creator seeding are the documented crossover mechanics",
+          read: "behind",
+        },
+        {
+          metric: "Posting window",
+          lolaAmour: "Posts consistently ship 3pm to 8pm Manila time, which is 3am to 8am in New York",
+          benchmark: "The adversarial pass found hour-of-day causally inert for organic reach inside the current distribution (medians flat by hour; the 2.07M breakout fired at 4:14am Eastern), so this is hygiene for a future US lane, not the unlock",
+          read: "neutral",
+        },
+      ],
+      mixFootnote:
+        "Grid mix measured on the 45 non-pinned Instagram posts from June 5 to July 14. Cadence measured across the full 9-week corpus window on both platforms.",
+      findingsHeading: "Six Hypotheses, Adversarially Tested",
+      findingsIntro:
+        "We did not write down first impressions. The analysis formed competing explanations for the US gap, then tried to break each one twice: once against the corpus itself, once against market mechanics and crossover precedent. Open any card for the evidence, the counter-case we ran, real example posts, and the pivot.",
+      findings: [
+        {
+          id: "us-audition",
+          title: "The US never said no. The US was never auditioned",
+          verdict: "confirmed",
+          confidence: "High",
+          summary:
+            "The suspicion from the working session, sharpened: it is not that American viewers saw this content and passed. Nothing in the account's history has ever made the platforms run that test. Across all 99 posts there is no US-pointing lever of any kind, and the adversarial pass killed the comfortable version of the fix: cosmetic signal changes tested null inside the corpus. The audition has to be forced, and there is exactly one documented deterministic way to force it.",
+          evidence: [
+            "A sweep of all 99 captions and transcripts found zero US or international levers: no sped-up official versions, no duets or stitches, no US creator collabs, no US references at all. All five Instagram collab reels inject Philippine follower graphs (GCash, Sun Life Grepa, Prime Video PH, local bands and studios).",
+            "One mirrored pipeline: 45 of 49 TikToks have a same-day Instagram twin with the same caption and the same signals. There is no US lane, no platform-native experimentation, no paid geo-seeding visible anywhere in the window.",
+            "TikTok assigns distribution by account region (registration, follower graph, locale) and detected content language; distribution starts local. A Philippine-registered account with a Philippine-heavy graph auditions to the Philippines by default, regardless of what any single post does.",
+            "The result is a starved TikTok baseline: the median post reaches 1.6% of their own 413K followers (6,649 plays), the top 5 posts carry 85.5% of all plays, while Instagram (which serves the existing graph) delivers a healthy 26.8% median follower reach.",
+            "The roughly 113K US monthly listeners they already have accumulated without any of this machinery, which is the diaspora finding them on its own. US appetite beyond it is untested, not disproven.",
+          ],
+          counterEvidence: [
+            "The easy fix died in testing: the corpus already contains the natural experiment. English-led posts median slightly below the account median (5,680 vs 6,649), #opm-tagged posts distribute identically to untagged ones (6,866 vs 6,649), and a handful of US entities (Laufey, The Killers, a Marvel reference) moved nothing. Caption hygiene alone is not the lever.",
+            "Posting hour is causally inert inside the current box: median plays are flat across posting hours and the 2.07M breakout fired at 4:14am US Eastern. Time-shifting posts does not change who the algorithm tests first.",
+            "The box throttles the median, not the ceiling: the swim gag reached 5x their follower count from this exact account, so extreme content already leaks past the graph.",
+          ],
+          examples: [
+            {
+              platform: "tiktok",
+              id: "7658997719477931282",
+              label: "Lambing on the Wish Bus",
+              date: "Jul 5",
+              stat: "97.1K plays, 14.6x median",
+              note: "Same clip as the Instagram version below. Two algorithms, one asset, no US test on either.",
+            },
+            {
+              platform: "instagram",
+              id: "DaaKV_4J3Wd",
+              label: "Same Wish Bus clip on Instagram",
+              date: "Jul 5",
+              stat: "274K views, 2.8x the TikTok",
+              note: "Instagram out-delivers TikTok roughly 9x on matched pairs because it serves the existing fan graph. Neither number contains a US audition.",
+            },
+            {
+              platform: "tiktok",
+              id: "7661533863822232850",
+              label: "Mall show clip, caption-generic",
+              date: "Jul 12",
+              stat: "4.0K plays",
+              note: "The median experience on this account: shipped into the home graph, tested nowhere else.",
+            },
+          ],
+          pivot: {
+            title: "Run the audition on purpose",
+            actions: [
+              "Geo-seed the proven winners into US test markets with TikTok Spark Ads: boosted engagement accrues to the original post and the song's sound page, and location targeting is the one documented deterministic way to put this content in front of US viewers.",
+              "Stack the organic signals as support, not as the plan: English speech plus on-screen text plus captions on discovery cuts, US sounds and creator duets. None of these tested positive alone; together they are what lets a paid audition compound organically.",
+              "Break the mirror: platform-native cuts for Instagram and a standing Trial Reels program for non-follower testing (noting Trial Reels samples home-region non-followers, so it tests premise strength, not US geography).",
+              "Read the ground truth in Month 1: native platform analytics are the only place US impression share is actually visible. First checkpoint is simply whether meaningful US delivery exists today.",
+              "Treat US-daypart posting as hygiene for the paid lane only: the evidence says hour-of-day is not an organic unlock.",
+            ],
+          },
+        },
+        {
+          id: "language-lock",
+          title: "The hook baits in English, the payoff locks in Tagalog",
+          verdict: "confirmed",
+          confidence: "High",
+          summary:
+            "Their signature pattern is an English text hook over a Tagalog verbal payoff. A US viewer gets pulled in by 'live laugh yearn' and then cannot parse the moment that was supposed to convert them. No translation layer exists anywhere in the corpus outside one format.",
+          evidence: [
+            "Roughly 65% of burned-in opening text hooks are English while about 60% of posts open with Tagalog-containing speech or singing: the bait and the payoff are frequently in different languages (the biggest breakouts hook in Taglish, so the pattern understates at the very top).",
+            "53% of posts are fully premise-locked for a zero-Tagalog viewer and another 20% deliver the setup but lose the payoff; the census survived an adversarial recount (hardest deflation: 47%).",
+            "Zero English lyric translation exists on any Lambing, dahan-dahan, or Pwede Ba live clip; lyric overlays are Tagalog-only, and talk-format subtitles transcribe the Taglish verbatim rather than translating it. An independent sweep of all 99 transcripts confirmed exactly one translating format in the entire corpus.",
+            "Weighted by plays, roughly 90% of recent TikTok viewing went to locked posts (about 60 to 67% excluding the single 2.07M outlier); only 4 to 5% went to fully accessible posts.",
+            "Platform auto-translation does not rescue the lyrics: scraped English tracks render 'Lambing' as 'Long Ding' and destroy the swim gag's papel pun entirely (spoken confession content translates passably; sung wordplay dies).",
+            "The exception proves they can do it: the Lyric Breakdown format pairs the Tagalog lyric with a clean English gloss, and it is the only format in the corpus that truly translates.",
+          ],
+          counterEvidence: [
+            "Tagalog carries no penalty at home: locked posts hold median parity with accessible ones (7.5K vs 6.1K plays), and the 13 fully accessible posts show no lift, so comprehension is not what suppresses reach today. This finding matters at the moment of a US audition: it is what would squander one, not what is preventing one.",
+            "Delivery binds first, comprehension second: per the documented platform mechanics, fixing subtitles without fixing distribution changes nothing a US viewer ever sees.",
+            "The two best premise hooks in the corpus are functionally English ('Move on o ruin the friendship', 'live laugh yearn'), so the band already writes portable hooks when it wants to.",
+          ],
+          examples: [
+            {
+              platform: "tiktok",
+              id: "7660476038778014994",
+              label: "English bait, Tagalog payoff",
+              date: "Jul 9",
+              stat: "7.1K plays",
+              note: "Opens on English banter-tension text, pays off in Tagalog lyric. The exact pattern that strands a US viewer.",
+            },
+            {
+              platform: "tiktok",
+              id: "7651219896809835784",
+              label: "Lyric Breakdown promo",
+              date: "Jun 14",
+              stat: "6.6K plays",
+              note: "The one format that translates: Tagalog lyric plus clean English gloss. This is the access layer, already invented in-house.",
+            },
+            {
+              platform: "instagram",
+              id: "DZMDdmCpJBd",
+              label: "Lambing with Tagalog-only lyric overlay",
+              date: "Jun 5",
+              stat: "44.2K views",
+              note: "Burned lyrics, no translation line. Every live clip ships this way.",
+            },
+          ],
+          pivot: {
+            title: "Build the English access layer, translate nothing away",
+            actions: [
+              "Burn English subtitles into every Tagalog talk post: translated, not transliterated, so the joke survives.",
+              "Where the hook is currently Tagalog, add a 2-second English premise card up front; keep the Tagalog payoff, which is the identity.",
+              "Add a single English lyric-translation line to live clips of Tagalog songs, in the band's voice, using the Lyric Breakdown house style.",
+              "Treat the language pairing as a format rule, not a per-post decision: premise legible to strangers, payoff native.",
+            ],
+          },
+        },
+        {
+          id: "fandom-mix",
+          title: "Half the calendar serves people who already love the band",
+          verdict: "confirmed",
+          confidence: "High",
+          summary:
+            "50 of 99 posts assume you know the band, the song, a member, or a milestone: setlist questions, streaming thank-yous, anniversary lore, inside jokes for the Apos. That half earns 10% of TikTok plays and, on Instagram, a third of grid output is carousels that non-followers structurally never see.",
+          evidence: [
+            "Fandom-service posts (25 of 49 TikToks, 25 of 50 reels) median 6,091 plays and collect about 10% of total plays in the window.",
+            "The fandom name itself is a bilingual pun (Apos: grandchildren of Lola) that does not exist in English; captions like 'for the og Apos' and 'the Lola Amour national anthem' read as opaque concert clips to a stranger.",
+            "15 of 45 recent grid posts are carousels (press recaps, merch drops, ticket announcements): a format Instagram serves to existing followers, not to new audiences.",
+            "The Confession Booth reaction cuts, their most-produced original format family at roughly a fifth of TikTok output, median 4,241 plays: below plain live clips, and doubly inaccessible to a US stranger (Taglish hook, Taglish payload).",
+            "Their US-legible discovery share is roughly 27% of posts against guidance of 70 to 80% discovery-oriented output for growth accounts (a synthesis benchmark; the published diagnostic that matters is whether reels pull 40 to 60% of reach from non-followers, measurable in native analytics from Month 1).",
+          ],
+          counterEvidence: [
+            "Fandom service is doing its actual job well: the Raining in Manila anniversary montage did 127K plays on TikTok, 414K views on Instagram, and posted the corpus-best 4.9% share rate. The finding is about proportion, not existence.",
+            "A 55.3% Spotify follower-to-listener ratio says the fandom deserves real service; the fix is rebalancing and re-homing it, not cutting it.",
+          ],
+          examples: [
+            {
+              platform: "tiktok",
+              id: "7647482200396451079",
+              label: "1M streams thank-you",
+              date: "Jun 4",
+              stat: "12.4K plays, 0.3% share rate",
+              note: "Milestone content: meaningful to fans, invisible as discovery.",
+            },
+            {
+              platform: "instagram",
+              id: "Dac2ZcLJtGX",
+              label: "Should we bring Lost For Words back?",
+              date: "Jul 6",
+              stat: "55.7K views",
+              note: "A setlist question. Great fan service, zero premise for a stranger.",
+            },
+            {
+              platform: "instagram",
+              id: "DZj7IlcJAHO",
+              label: "Three Years of Raining in Manila",
+              date: "Jun 14",
+              stat: "414K views, corpus-best share rate",
+              note: "Proof fandom content can still travel when the song is the star: nostalgia with a universal frame.",
+            },
+          ],
+          pivot: {
+            title: "Rebalance the calendar toward strangers",
+            actions: [
+              "Move to 60 to 70% discovery-oriented output during the 90-day ramp, from roughly 27% US-legible today.",
+              "Re-home fandom service: Stories and carousels carry the recaps, milestones, and merch; reels and TikToks carry premises.",
+              "Reframe milestones as discovery: lead with the song and the feeling (the RIM anniversary formula), not the number.",
+              "Keep Confession Booth as a fandom franchise, subtitle it in English for spillover, and stop counting it as discovery output.",
+            ],
+          },
+        },
+        {
+          id: "humor-translates",
+          title: "The quirky humor does not translate",
+          verdict: "refuted",
+          confidence: "High",
+          summary:
+            "This was the working fear from the July 14 session, and the corpus refutes it in its strongest form. The band's physical, ensemble, and craft humor is their single best-traveling asset: the problem is specifically verbal Taglish humor, which is a language problem, not a humor problem.",
+          evidence: [
+            "The biggest post in the corpus by 13x is physical slapstick that traveled despite its words: the swim rest-day gag did 2.07M TikTok plays (5x their follower count) and 818K on the Instagram mirror while its joke is an untranslatable Tagalog pun. The body carried what the language could not.",
+            "The spin-class stunts (60.3K and 23.8K on TikTok, 241K and 236K on Instagram) are visually self-explanatory: on Instagram they are 2 of the top 5 reels in the corpus, ahead of every language-locked post except the two mega-outliers.",
+            "Craft-demo humor lands too: the 'why a 7-piece band' vocal isolation did 29.1K, the Whiplash rushing-or-dragging drummer bit 11K, both followable cold.",
+            "Speech density is the sharpest separator in the data: not one post above 1 spoken word per second reached 3x median on either platform. Their winners barely talk; when words carry a winner, they are sung.",
+            "The layer that fails is verbal: Taglish confession-reaction cuts cluster at 2.6K to 4.2K plays on TikTok, below even plain live clips, while depending entirely on wording a US viewer cannot access.",
+          ],
+          counterEvidence: [
+            "'Best-travelling' is a content-property claim, not a geography measurement: public metrics carry no geo, so the 2.07M plays are consistent with deeper Philippine and diaspora reach rather than US reach. What is measured is that visual formats consistently escape the follower graph and verbal ones never do.",
+            "The physical-comedy sample is small (3 posts in 10 weeks, one a 311x outlier) and even the winners carry Tagalog on-screen setups; the pattern's strength is its consistency across both platforms, not the spike.",
+            "The verbal formats' home failure is narrower than it looks: the two talkiest Confession Booth episode promos sat at or above median, and the reaction cuts run normal range on Instagram. The format is weak on TikTok and US-locked everywhere; it is not worthless.",
+          ],
+          examples: [
+            {
+              platform: "tiktok",
+              id: "7645966307850013959",
+              label: "Swim rest-day gag",
+              date: "May 31",
+              stat: "2.07M plays, 311x median",
+              note: "One member floats, another carries him underwater. No language required. Their proven exportable format.",
+            },
+            {
+              platform: "tiktok",
+              id: "7643795307242736904",
+              label: "Spin class invasion",
+              date: "May 25",
+              stat: "60.3K plays; 241K on IG",
+              note: "Physical premise plus English text. Instantly legible in any market.",
+            },
+            {
+              platform: "tiktok",
+              id: "7661184066217168135",
+              label: "Confession Booth: cuddling as friends",
+              date: "Jul 11",
+              stat: "4.2K plays",
+              note: "Their most-produced format: verbal Taglish humor, weakest performer even at home, doubly locked for a US viewer.",
+            },
+          ],
+          pivot: {
+            title: "Lead with the body, not the banter",
+            actions: [
+              "Make physical ensemble comedy a weekly franchise: they average one visual gag every three weeks, and it is their best discovery weapon.",
+              "Run craft demos as the second spearhead: vocal isolations, drum and horn cams, arrangement reveals; musicianship is language-independent proof of the live show.",
+              "Give the sitcom an on-ramp: recurring member intro cards in English so a stranger can learn the seven characters.",
+              "Keep the verbal humor for home and diaspora audiences, subtitled; do not spend discovery slots on it.",
+            ],
+          },
+        },
+        {
+          id: "premise-lever",
+          title: "Premise packaging is the strongest lever in their own data",
+          verdict: "confirmed",
+          confidence: "High",
+          summary:
+            "Live footage performs several times better when it ships with a situational text hook instead of a song-title caption, and the premise cluster hit 3x median on 8 of 9 attempts against 3 of 40 for everything else. The raw split reads 8.7x; the adversarial pass reclassified two miscoded comparisons and the honest gap is closer to 5x. Either number is the biggest lever on the account, and it is applied to a minority of live output.",
+          evidence: [
+            "Premise-hooked live clips median 49,366 plays; plain live clips median 5,680 (raw split 8.7x; roughly 5x after the adversarial pass moved borderline posts). Share rate: 1.83% vs 0.58%.",
+            "The hit rate survived a circularity attack: the premise cluster is defined by an ex ante visible feature (burned-in premise text in the first second, frame-verified), and it reached 3x median on 8 of 9 attempts while every other format managed 3 hits in 40 attempts.",
+            "The winning hooks are universal relationship language: 'Move on o ruin the friendship' (97.1K), 'live laugh yearn' (45.4K), 'relapse pro max' (22.3K). Situationship vocabulary is global.",
+            "The fully English proof of concept exists: the cycling-class invasion (English premise, English on-screen text) did 60.3K on TikTok and 241K on Instagram, their best non-outlier discovery post.",
+            "Duration is not a lever (correlation with plays is flat from 12s to 101s); what fills the first three seconds is.",
+          ],
+          counterEvidence: [
+            "The adversarial pass caught our own first cut overstating the pair comparisons: the cleanest 'plain' control actually opens with a POV premise hook, and reclassifying it and two others cuts the median gap to about 4.7x. The allocation asymmetry and the 8 of 9 hit rate survived every confound test.",
+            "Within-premise variance is large (9x spreads inside one song-and-venue cell), so packaging multiplies strong live moments rather than manufacturing them.",
+            "7 of 9 premise winners are still Tagalog-locked, so for the US lane this lever only counts when it ships together with the English access layer.",
+          ],
+          examples: [
+            {
+              platform: "tiktok",
+              id: "7658997719477931282",
+              label: "Premise-framed: Wish Bus Lambing",
+              date: "Jul 5",
+              stat: "97.1K plays",
+              note: "Situational hook over a live moment. This is the mechanic.",
+            },
+            {
+              platform: "tiktok",
+              id: "7643795307242736904",
+              label: "The English proof: cycling invasion",
+              date: "May 25",
+              stat: "60.3K plays; 241K on IG",
+              note: "Premise machine plus English packaging: their best non-outlier discovery post on both platforms.",
+            },
+            {
+              platform: "instagram",
+              id: "DaAZ3VtJHeq",
+              label: "live laugh yearn, Cozy Cove",
+              date: "Jun 25",
+              stat: "156K views",
+              note: "An English three-word premise carrying a Tagalog secret verse to 3x median.",
+            },
+          ],
+          pivot: {
+            title: "No live clip ships naked",
+            actions: [
+              "Every live clip gets a situational premise hook before it posts; plain cuts are demoted to Stories.",
+              "Build the hook bank in universal relationship language, where their best performers already live, with English-first phrasing for discovery cuts.",
+              "Pair the lever with the access layer by rule: for US-facing cuts, premise in English, payoff subtitled.",
+              "A/B premise variants on Instagram Trial Reels before committing the main post, and apply the same packaging to the 2026 Filipino releases now: the mechanic works in any language.",
+            ],
+          },
+        },
+        {
+          id: "tagalog-wall",
+          title: "Tagalog itself is the ceiling, so wait for the English songs",
+          verdict: "refuted",
+          confidence: "Medium-high",
+          summary:
+            "The fatalist read (nothing connects until 2027's English singles) fails against precedent and against their own data. Tagalog is a compounding friction, not a wall, and waiting wastes the twelve months in which the audience infrastructure should be built.",
+          evidence: [
+            "Cup of Joe's 'Multo', pure Tagalog OPM, hit #80 on the Billboard Global 200 in 2025 (the first Filipino act on that chart) off short-form edits: the language did not cap it.",
+            "'Gata Only' turned the language barrier itself into the meme ('POV: you don't speak Spanish but can't stop listening') on its way to US TikTok's top 10; FIFTY FIFTY paired a simultaneous English twin version with low-barrier UGC; both are playbooks, not accidents.",
+            "Their own corpus agrees: the 2.07M swim gag and the craft demos traveled without English songs, and the sung catalog already contains English-lyric material (Fallen, Lost For Words, Maybe Maybe) shipping today.",
+            "A quarter of their corpus is already English-led in the audio, almost entirely live clips of English-lyric songs: the raw material for a US-facing lane exists on the shelf.",
+          ],
+          counterEvidence: [
+            "Multo's global run skewed toward diaspora-heavy markets rather than the US core, so Tagalog is not costless for mainstream US reach: refuted as a wall, retained as friction that the access layer (subtitles, premise cards, visual formats) is designed to pay down.",
+            "No documented crossover case ran on subtitles alone: FIFTY FIFTY needed a product-level English version, Gata Only crossed as a third-party sound meme, and Multo rode fan edits. Owned-account fixes prepare the ground; the crossing itself runs through paid geo-seeding, creator UGC, and release strategy.",
+            "Their English-led posts currently median slightly below the account median inside the home graph, which is exactly why the English lane needs a US audition instead of more exposure to the Philippine feed.",
+            "The 2027 English songs remain the acceleration moment; this finding only kills the excuse for idling until they arrive.",
+          ],
+          examples: [
+            {
+              platform: "instagram",
+              id: "DY_v1BORgby",
+              label: "The proof post",
+              date: "May 31",
+              stat: "818K views on IG, 2.07M on TikTok",
+              note: "No English song required. Context-free content traveled today.",
+            },
+            {
+              platform: "tiktok",
+              id: "7647114328084155656",
+              label: "dahan-dahan Secret Verse",
+              date: "Jun 3",
+              stat: "154K plays, 2.3% share rate",
+              note: "Tagalog payoff at 23x median: emotional premise packaging moved a fully Tagalog song.",
+            },
+            {
+              platform: "tiktok",
+              id: "7660116174704954642",
+              label: "Fallen, live",
+              date: "Jul 8",
+              stat: "7.2K plays",
+              note: "English-lyric catalog shipping as plain fandom clips: an unopened US lane.",
+            },
+          ],
+          pivot: {
+            title: "Use language as a lever, not a fence",
+            actions: [
+              "Build the US audience infrastructure now with the formats that already travel, so the 2027 English singles land on warm ground instead of cold start.",
+              "Front the English-lyric catalog in the US-daypart lane: Fallen and the English deep cuts are discovery-ready today.",
+              "Prepare the 2027 releases with the crossover playbook: English hook with Tagalog payoff options, official sped-up versions, and US creator seeding briefs ready at delivery.",
+              "Let diaspora first movers ignite Tagalog-led moments (the Multo pattern), then geo-seed the winners beyond the diaspora with paid.",
+            ],
+          },
+        },
+      ],
+      footnote:
+        "Analysis completed July 15, 2026 by Crowd Control Digital using TwelveLabs video intelligence over a dedicated Lola Amour knowledge store, full-corpus transcript extraction, engagement statistics, and multi-agent adversarial review. Example posts embed from the live platforms; tap any card above to inspect the evidence behind it. Findings will be re-baselined against first-party platform analytics during Month 1 onboarding.",
+    },
+
+    {
+      type: "audience",
+      number: "04",
       navLabel: "Audience",
       title: "Audience Intelligence / The Bridge Beyond The Algorithm",
       intro:
@@ -499,7 +956,7 @@ export const lolaAmourPlan: StrategyPlanData = {
 
     {
       type: "competitive",
-      number: "04",
+      number: "05",
       navLabel: "Landscape",
       title: "Competitive and Cultural Landscape",
       intro:
@@ -598,7 +1055,7 @@ export const lolaAmourPlan: StrategyPlanData = {
 
     {
       type: "philosophy",
-      number: "05",
+      number: "06",
       navLabel: "Thesis",
       title: "Strategic Thesis / Translate, Do Not Americanize",
       thesis:
@@ -638,7 +1095,7 @@ export const lolaAmourPlan: StrategyPlanData = {
 
     {
       type: "structure",
-      number: "06",
+      number: "07",
       navLabel: "Working Model",
       title: "How We Work / Western Markets AOR",
       intro:
@@ -667,7 +1124,7 @@ export const lolaAmourPlan: StrategyPlanData = {
 
     {
       type: "vertical",
-      number: "07",
+      number: "08",
       navLabel: "Fan Data",
       title: "Fan Data, Sign-Ups and Community",
       philosophy:
@@ -748,7 +1205,7 @@ export const lolaAmourPlan: StrategyPlanData = {
 
     {
       type: "vertical",
-      number: "08",
+      number: "09",
       navLabel: "Content",
       title: "Content Narrative and Social System",
       philosophy:
@@ -836,7 +1293,7 @@ export const lolaAmourPlan: StrategyPlanData = {
 
     {
       type: "vertical",
-      number: "09",
+      number: "10",
       navLabel: "Paid + Creator",
       title: "Paid Media and Creator Testing",
       philosophy:
@@ -913,7 +1370,7 @@ export const lolaAmourPlan: StrategyPlanData = {
 
     {
       type: "vertical",
-      number: "10",
+      number: "11",
       navLabel: "DSP + Catalog",
       title: "DSP and Catalog Activation",
       philosophy:
@@ -986,7 +1443,7 @@ export const lolaAmourPlan: StrategyPlanData = {
 
     {
       type: "vertical",
-      number: "11",
+      number: "12",
       navLabel: "Industry + Live",
       title: "Industry, Festivals, Live and Cultural Partnerships",
       philosophy:
@@ -1051,7 +1508,7 @@ export const lolaAmourPlan: StrategyPlanData = {
 
     {
       type: "vertical",
-      number: "12",
+      number: "13",
       navLabel: "Handoffs",
       title: "Roles, Handoffs and Scope Boundaries",
       philosophy:
@@ -1163,7 +1620,7 @@ export const lolaAmourPlan: StrategyPlanData = {
 
     {
       type: "roadmap",
-      number: "13",
+      number: "14",
       navLabel: "Timeline",
       title: "Overall 6–12 Month Timeline",
       intro:
@@ -1198,7 +1655,7 @@ export const lolaAmourPlan: StrategyPlanData = {
 
     {
       type: "pricing",
-      number: "14",
+      number: "15",
       navLabel: "Investment",
       title: "Investment",
       intro:
