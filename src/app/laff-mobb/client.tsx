@@ -19,6 +19,7 @@ const IMG = {
   map: "https://cdn.gamma.app/w9o8gu9elbl53rf/generated-images/rAoLhUwyRrn8MqI1Fw0gU.png",
   regal: "https://cdn.gamma.app/w9o8gu9elbl53rf/generated-images/2t_BlQPJJRt22CP-fjIPx.png",
   bar: "https://cdn.gamma.app/w9o8gu9elbl53rf/generated-images/N1FlG0n6ARjKycdY0SYuW.png",
+  dean: "https://static.wixstatic.com/media/860f60_ffe78599020f484894a47523c46c81a5~mv2.jpg/v1/fill/w_900,h_1120,al_c,q_80,enc_auto/file.jpg",
 } as const;
 
 const NAV: [string, string][] = [
@@ -502,8 +503,18 @@ export function LaffMobbClient() {
           {/* THE DEAN */}
           <ScrollReveal variant="fadeUp">
             <div className="mt-12 overflow-hidden rounded-lg border border-accent/30 bg-bg-card">
-              <div className="grid gap-8 p-7 md:grid-cols-[0.85fr_1.15fr] md:p-9">
-                <div className="flex flex-col justify-between gap-6 border-b border-border pb-7 md:border-b-0 md:border-r md:pb-0 md:pr-8">
+              <div className="grid md:grid-cols-[0.82fr_1.18fr]">
+                <div
+                  className="relative min-h-[440px] border-b border-border md:min-h-full md:border-b-0 md:border-r"
+                  style={{
+                    backgroundImage: `url(${IMG.dean})`,
+                    backgroundSize: "cover",
+                    backgroundPosition: "center 30%",
+                  }}
+                  role="img"
+                  aria-label="Thomas, also known as Dope As Yola, performing stand-up at the Improv"
+                />
+                <div className="flex flex-col justify-center gap-6 p-7 md:p-9">
                   <div>
                     <div className="font-mono text-[11px] uppercase tracking-[0.18em] text-accent">
                       The Dean · Professor Yola
@@ -515,6 +526,17 @@ export function LaffMobbClient() {
                       Comedian. Podcaster. The face of the movement.
                     </div>
                   </div>
+                  <p className="text-[clamp(1.05rem,1.5vw,1.28rem)] leading-relaxed">
+                    Every movement needs a face. Ours is Thomas, better known as Dope As Yola: the rising comedian who
+                    runs FKD UP University as its Dean. He is not a spokesperson we hired. He is the content engine the
+                    tribe orbits, the voice they show up for, and the reason the University feels like a place instead of
+                    a campaign.
+                  </p>
+                  <p className="text-[15px] leading-relaxed text-text-muted">
+                    He speaks the exact language of the audience we are building, because he is of it. His stories set
+                    the tone, his cadence sets the calendar, and his following is the seed the movement grows from. As
+                    FKD UP! moves toward theaters, he is the one who carries the audience from the phone to the seat.
+                  </p>
                   <ul className="space-y-3">
                     {[
                       "A multi-format talent: stand-up, podcast, and screen, not a single-platform creator.",
@@ -528,19 +550,24 @@ export function LaffMobbClient() {
                     ))}
                   </ul>
                 </div>
-                <div className="flex flex-col justify-center gap-5">
-                  <p className="text-[clamp(1.05rem,1.5vw,1.28rem)] leading-relaxed">
-                    Every movement needs a face. Ours is Thomas, better known as Dope As Yola: the rising comedian who
-                    runs FKD UP University as its Dean. He is not a spokesperson we hired. He is the content engine the
-                    tribe orbits, the voice they show up for, and the reason the University feels like a place instead of
-                    a campaign.
-                  </p>
-                  <p className="text-[15px] leading-relaxed text-text-muted">
-                    He speaks the exact language of the audience we are building, because he is of it. His stories set
-                    the tone, his cadence sets the calendar, and his following is the seed the movement grows from. As
-                    FKD UP! moves toward theaters, he is the one who carries the audience from the phone to the seat.
-                  </p>
+              </div>
+              <div className="grid gap-6 border-t border-border p-7 md:grid-cols-[auto_1fr] md:items-center md:gap-12 md:p-9">
+                <div className="grid grid-cols-3 gap-8">
+                  {[
+                    { v: "1M+", l: "YouTube subscribers" },
+                    { v: "360K+", l: "TikTok followers" },
+                    { v: "5M+", l: "TikTok likes" },
+                  ].map((s) => (
+                    <div key={s.l}>
+                      <div className="display text-[clamp(1.6rem,3.2vw,2.4rem)] text-accent">{s.v}</div>
+                      <div className="mt-1 text-[12px] leading-snug text-text-muted">{s.l}</div>
+                    </div>
+                  ))}
                 </div>
+                <p className="text-[13px] leading-relaxed text-text-muted md:text-right">
+                  Forbes-featured and seen on TED, People, and USA Today, with a global fanbase built across TikTok,
+                  YouTube, and the Dope As Usual podcast.
+                </p>
               </div>
             </div>
           </ScrollReveal>
