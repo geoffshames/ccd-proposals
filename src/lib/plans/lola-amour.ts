@@ -564,7 +564,7 @@ export const lolaAmourPlan: StrategyPlanData = {
           verdict: "refuted",
           confidence: "High",
           summary:
-            "This was the working fear from the July 14 session, and the corpus refutes it in its strongest form. The band's physical, ensemble, and craft humor is their single best-traveling asset: the problem is specifically verbal Taglish humor, which is a language problem, not a humor problem.",
+            "This was the working fear from the July 14 session, and the corpus refutes it in its strongest form. The band's physical, ensemble, and craft humor is their most portable asset, the only class of content that consistently escapes their follower graph: the problem is specifically verbal Taglish humor, which is a language problem, not a humor problem.",
           evidence: [
             "The biggest post in the corpus by 13x is physical slapstick that traveled despite its words: the swim rest-day gag did 2.07M TikTok plays (5x their follower count) and 818K on the Instagram mirror while its joke is an untranslatable Tagalog pun. The body carried what the language could not.",
             "The spin-class stunts (60.3K and 23.8K on TikTok, 241K and 236K on Instagram) are visually self-explanatory: on Instagram they are 2 of the top 5 reels in the corpus, ahead of every language-locked post except the two mega-outliers.",
