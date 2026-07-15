@@ -98,19 +98,179 @@ export type AgeBracket = {
   weight: number;    // percentage (0-100)
 };
 
+export type AudiencePersona = {
+  name: string;
+  label?: string;
+  priority?: "primary" | "secondary" | "expansion";
+  profile: string;
+  psychographics?: string[];
+  motivations?: string[];
+  behaviors?: string[];
+  platforms?: { name: string; role: string }[];
+  barriers?: string[];
+  triggers?: string[];
+  conversionGoal?: string;
+};
+
+export type AudienceInsightGroup = {
+  label: string;
+  items: string[];
+};
+
+export type AudienceBehaviorSignal = {
+  behavior: string;
+  platforms?: string[];
+  implication?: string;
+};
+
+export type AudienceBarrier = {
+  barrier: string;
+  response: string;
+};
+
+export type AudienceTrigger = {
+  trigger: string;
+  implication: string;
+};
+
+export type AudienceFanQuote = {
+  quote: string;
+  source?: string;
+  insight?: string;
+  synthesized?: boolean;
+};
+
 export type AudienceSection = {
   type: "audience";
   number: string;
   navLabel?: string;
   title: string;
   intro?: string;
+  thesis?: string;
   metrosLabel?: string;
   metros?: { name: string; tier?: "primary" | "secondary" }[];
   ageDistribution?: AgeBracket[];
   genderDistribution?: { female: number; male: number };
+  personas?: AudiencePersona[];
+  psychographics?: AudienceInsightGroup[];
+  behaviorSignals?: AudienceBehaviorSignal[];
+  barriers?: AudienceBarrier[];
+  triggers?: AudienceTrigger[];
+  fanQuotes?: AudienceFanQuote[];
+  fanQuotesLabel?: string;
   similarArtists?: string[];
   genres?: string[];
   platformSignals?: { platform: string; note: string }[];
+  footnote?: string;
+};
+
+export type BrandAuditScore = {
+  dimension: string;
+  score: number;
+  maxScore?: number;
+  status?: string;
+  evidence: string;
+};
+
+export type BrandAuditFoundation = {
+  label: string;
+  value: string;
+  note?: string;
+};
+
+export type BrandAuditImage = {
+  src: string;
+  alt: string;
+  caption?: string;
+};
+
+export type BrandAuditSystem = {
+  label: string;
+  traits: string[];
+  direction?: string;
+};
+
+export type BrandAuditFinding = {
+  title: string;
+  detail: string;
+};
+
+export type BrandAuditGap = {
+  title: string;
+  finding: string;
+  opportunity: string;
+};
+
+export type BrandAuditTension = {
+  label: string;
+  brandSignal: string;
+  audienceTruth: string;
+  direction: string;
+};
+
+export type BrandAuditSection = {
+  type: "brandAudit";
+  number: string;
+  navLabel?: string;
+  title: string;
+  intro?: string;
+  verdict: string;
+  image?: BrandAuditImage;
+  scorecard: BrandAuditScore[];
+  foundations?: BrandAuditFoundation[];
+  systems?: BrandAuditSystem[];
+  strengths: BrandAuditFinding[];
+  gaps: BrandAuditGap[];
+  tensions?: BrandAuditTension[];
+  footnote?: string;
+};
+
+export type CompetitivePeer = {
+  name: string;
+  lane?: string;
+  proof?: string;
+  strength: string;
+  gap: string;
+  implication: string;
+};
+
+export type CompetitiveWhitespace = {
+  title: string;
+  description: string;
+};
+
+export type CompetitiveSection = {
+  type: "competitive";
+  number: string;
+  navLabel?: string;
+  title: string;
+  intro?: string;
+  thesis: string;
+  competitors: CompetitivePeer[];
+  whitespace?: CompetitiveWhitespace[];
+  principles?: string[];
+  footnote?: string;
+};
+
+export type KpiTarget = {
+  metric: string;
+  baseline: string;
+  target: string;
+  window: string;
+  rationale?: string;
+  measurement: string;
+  featured?: boolean;
+};
+
+export type TargetsSection = {
+  type: "targets";
+  number: string;
+  navLabel?: string;
+  title: string;
+  intro?: string;
+  targets: KpiTarget[];
+  measurementPrinciples?: string[];
+  disclaimer?: string;
   footnote?: string;
 };
 
@@ -276,6 +436,9 @@ export type PlanSection =
   | PhilosophySection
   | RoadmapSection
   | AudienceSection
+  | BrandAuditSection
+  | CompetitiveSection
+  | TargetsSection
   | StructureSection
   | VerticalSection
   | FlightSection
@@ -287,6 +450,7 @@ export type PlanSection =
 
 export type StrategyPlanData = {
   accentColor: string;
+  noIndex?: boolean;
 
   cover: {
     label: string;

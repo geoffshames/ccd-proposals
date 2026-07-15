@@ -7,6 +7,9 @@ import { PlanOverview } from "./PlanOverview";
 import { PlanPhilosophy } from "./PlanPhilosophy";
 import { PlanRoadmap } from "./PlanRoadmap";
 import { PlanAudience } from "./PlanAudience";
+import { PlanBrandAudit } from "./PlanBrandAudit";
+import { PlanCompetitive } from "./PlanCompetitive";
+import { PlanTargets } from "./PlanTargets";
 import { PlanStructure } from "./PlanStructure";
 import { PlanVertical } from "./PlanVertical";
 import { PlanFlight } from "./PlanFlight";
@@ -15,7 +18,7 @@ import { PlanPricing } from "./PlanPricing";
 import { PlanDeliverables } from "./PlanDeliverables";
 import { PlanApprove } from "./PlanApprove";
 import { LanguageToggle } from "@/components/LanguageToggle";
-import { ProjectProvider } from "@/lib/project-context";
+import { ProjectProvider, type ProjectData } from "@/lib/project-context";
 
 /**
  * Adapter: LanguageToggle reads useProject(). The plan format doesn't use
@@ -25,10 +28,10 @@ import { ProjectProvider } from "@/lib/project-context";
 function PlanLanguageToggle({ plan }: { plan: StrategyPlanData }) {
   if (!plan.languageAlternates || plan.languageAlternates.length === 0) return null;
   // Stub ProjectData with only what LanguageToggle reads.
-  const stub: any = {
+  const stub = {
     language: plan.language,
     languageAlternates: plan.languageAlternates,
-  };
+  } as ProjectData;
   return (
     <ProjectProvider data={stub}>
       <LanguageToggle />
@@ -59,6 +62,12 @@ export function PlanClient({ plan }: { plan: StrategyPlanData }) {
               return <PlanRoadmap key={i} section={section} />;
             case "audience":
               return <PlanAudience key={i} section={section} />;
+            case "brandAudit":
+              return <PlanBrandAudit key={i} section={section} />;
+            case "competitive":
+              return <PlanCompetitive key={i} section={section} />;
+            case "targets":
+              return <PlanTargets key={i} section={section} />;
             case "structure":
               return <PlanStructure key={i} section={section} />;
             case "vertical":

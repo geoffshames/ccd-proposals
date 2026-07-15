@@ -33,6 +33,7 @@ export async function generateMetadata({
     return {
       title,
       description,
+      ...(plan.noIndex && { robots: { index: false, follow: false } }),
       openGraph: {
         title,
         description,

@@ -17,7 +17,11 @@ export function PlanStructure({ section }: { section: StructureSection }) {
       <div className="max-w-6xl mx-auto">
         <PlanSectionHeader number={section.number} title={section.title} intro={section.intro} />
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 mt-8">
+        <div
+          className={`grid grid-cols-1 gap-4 mt-8 ${
+            section.tiers.length > 1 ? "lg:grid-cols-2" : ""
+          }`}
+        >
           {section.tiers.map((tier, i) => (
             <motion.div
               key={i}
