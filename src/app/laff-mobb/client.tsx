@@ -18,6 +18,7 @@ const IMG = {
   frat: "https://cdn.gamma.app/w9o8gu9elbl53rf/generated-images/AdAYDyDFOEsaNqaC4HwH5.png",
   map: "https://cdn.gamma.app/w9o8gu9elbl53rf/generated-images/rAoLhUwyRrn8MqI1Fw0gU.png",
   regal: "https://cdn.gamma.app/w9o8gu9elbl53rf/generated-images/2t_BlQPJJRt22CP-fjIPx.png",
+  bar: "https://cdn.gamma.app/w9o8gu9elbl53rf/generated-images/N1FlG0n6ARjKycdY0SYuW.png",
 } as const;
 
 const NAV: [string, string][] = [
@@ -49,6 +50,14 @@ const ECOSYSTEM: { t: string; d: string }[] = [
   { t: "Merch", d: "Identity people wear. A brand extension the tribe pays to represent." },
   { t: "Comedy Specials", d: "High-production stand-up and sketch that showcases the whole roster." },
   { t: "Viral Content", d: "Shareable moments that discover talent and feed the top of the funnel daily." },
+];
+
+const FLYWHEEL: { n: string; t: string; d: string }[] = [
+  { n: "01", t: "Discover", d: "The Improv stages and a daily social engine surface the next comedic voices. It is how Laff Mobb found Tiffany Haddish, Lil Rel, and Karlous Miller, and how we build the next roster." },
+  { n: "02", t: "Build", d: "FKD UP University, podcasts, and social turn that talent into a daily habit and an owned tribe, captured on email, SMS, and the story portal. The Dean is the engine." },
+  { n: "03", t: "Convert", d: "The tribe we built online shows up in seats. FKD UP! releases across Regal's college markets, fans request the showings, and word of mouth does the marketing." },
+  { n: "04", t: "Extend", d: "Improv live tie-ins, merch the tribe wears, specials, and podcast spin-offs deepen the moment and throw off more fans than we started with." },
+  { n: "05", t: "Compound", d: "Revenue and audience roll straight into the next film and the next comedian. The ambassadors, lists, and partnerships are reusable, so film two starts where film one peaked." },
 ];
 
 const UNI: { code: string; v: string; d: string }[] = [
@@ -367,6 +376,57 @@ export function LaffMobbClient() {
               </ScrollReveal>
             ))}
           </div>
+
+          {/* THE FLYWHEEL */}
+          <div className="mt-20">
+            <ScrollReveal>
+              <div className="flex flex-col gap-3 md:flex-row md:items-end md:justify-between">
+                <div>
+                  <div className="font-mono text-[11px] uppercase tracking-[0.2em] text-accent">The flywheel</div>
+                  <h3 className="mt-3 max-w-[18ch] text-[clamp(1.6rem,3.4vw,2.6rem)] leading-[1.02]">
+                    Every piece feeds the <span className="text-accent">next.</span>
+                  </h3>
+                </div>
+                <p className="max-w-[44ch] text-[14px] leading-relaxed text-text-muted md:text-right">
+                  The ecosystem is not a list of products. It is a loop. Each turn builds the audience, the talent, and
+                  the infrastructure that the next turn runs on.
+                </p>
+              </div>
+            </ScrollReveal>
+
+            <div className="mt-10 grid gap-4 md:grid-cols-5">
+              {FLYWHEEL.map((f, i) => (
+                <ScrollReveal key={f.n} variant="fadeUp" delay={i * 0.06}>
+                  <div className="ccd-card h-full rounded-lg p-5">
+                    <div className="flex items-center gap-2">
+                      <span className="font-mono text-[12px] text-accent">{f.n}</span>
+                      {i < FLYWHEEL.length - 1 ? (
+                        <span className="text-accent/40" aria-hidden>
+                          {"→"}
+                        </span>
+                      ) : (
+                        <span
+                          className="font-mono text-[10px] uppercase tracking-[0.12em] text-accent/70"
+                          aria-hidden
+                        >
+                          {"↺ back to 01"}
+                        </span>
+                      )}
+                    </div>
+                    <div className="display mt-3 text-lg text-text-primary">{f.t}</div>
+                    <p className="mt-2 text-[13px] leading-relaxed text-text-muted">{f.d}</p>
+                  </div>
+                </ScrollReveal>
+              ))}
+            </div>
+
+            <ScrollReveal>
+              <p className="mt-8 max-w-[68ch] text-[clamp(1.05rem,1.5vw,1.3rem)] leading-relaxed">
+                That is the flywheel. A brand partner does not buy one spin of it. They take a seat inside a machine
+                that keeps turning between films, and every turn makes the next one bigger.
+              </p>
+            </ScrollReveal>
+          </div>
         </div>
       </section>
 
@@ -412,13 +472,13 @@ export function LaffMobbClient() {
             code="04"
             label="The engine"
             title={<>FKD UP University: the movement is already <span className="text-accent">in session.</span></>}
-          lede={
-              'FKD UP University is the media arm that builds the audience the film converts. It runs as its own cultural world: a counterculture for a Gen Z rewriting party culture on its own terms, led by rising comedian Thomas "DopeAsYola" as the Dean. Real people submit their wildest stories through an owned portal, the best get animated and amplified, and the tribe grows itself. This is pull, not push.'
+            lede={
+              'FKD UP University is the media arm that builds the audience the film converts. It runs as its own cultural world: a counterculture for a Gen Z rewriting party culture on its own terms, led by rising comedian Thomas "Dope As Yola" as the Dean. Real people submit their wildest stories through an owned portal, the best get animated and amplified, and the tribe grows itself. This is pull, not push.'
             }
           />
           <div className="grid items-stretch gap-8 lg:grid-cols-[0.95fr_1.05fr]">
             <ScrollReveal variant="scaleIn">
-              <Photo src={IMG.studio} ratio="aspect-[4/5] lg:aspect-auto lg:h-full" />
+              <Photo src={IMG.frat} ratio="aspect-[4/5] lg:aspect-auto lg:h-full" />
             </ScrollReveal>
             <div className="grid grid-cols-2 gap-4">
               {UNI.map((u) => (
@@ -437,6 +497,52 @@ export function LaffMobbClient() {
               This is the always-on channel a brand lives inside between films: a tribe that opts in, not an audience
               you rent by the impression.
             </p>
+          </ScrollReveal>
+
+          {/* THE DEAN */}
+          <ScrollReveal variant="fadeUp">
+            <div className="mt-12 overflow-hidden rounded-lg border border-accent/30 bg-bg-card">
+              <div className="grid gap-8 p-7 md:grid-cols-[0.85fr_1.15fr] md:p-9">
+                <div className="flex flex-col justify-between gap-6 border-b border-border pb-7 md:border-b-0 md:border-r md:pb-0 md:pr-8">
+                  <div>
+                    <div className="font-mono text-[11px] uppercase tracking-[0.18em] text-accent">
+                      The Dean · Professor Yola
+                    </div>
+                    <div className="display mt-4 text-[clamp(2rem,4vw,3.2rem)] leading-[0.95]">
+                      Thomas <span className="text-accent">{'"Dope As Yola"'}</span>
+                    </div>
+                    <div className="mt-3 font-mono text-[12px] uppercase tracking-[0.12em] text-text-muted">
+                      Comedian. Podcaster. The face of the movement.
+                    </div>
+                  </div>
+                  <ul className="space-y-3">
+                    {[
+                      "A multi-format talent: stand-up, podcast, and screen, not a single-platform creator.",
+                      "Native credibility with Gen Z that no media buy can manufacture.",
+                      "The integration surface brands want: the tribe treats a brand he stands with as one of their own.",
+                    ].map((l) => (
+                      <li key={l} className="flex gap-3 text-[14px] leading-relaxed text-text-muted">
+                        <span className="font-mono text-[13px] text-accent">//</span>
+                        <span>{l}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+                <div className="flex flex-col justify-center gap-5">
+                  <p className="text-[clamp(1.05rem,1.5vw,1.28rem)] leading-relaxed">
+                    Every movement needs a face. Ours is Thomas, better known as Dope As Yola: the rising comedian who
+                    runs FKD UP University as its Dean. He is not a spokesperson we hired. He is the content engine the
+                    tribe orbits, the voice they show up for, and the reason the University feels like a place instead of
+                    a campaign.
+                  </p>
+                  <p className="text-[15px] leading-relaxed text-text-muted">
+                    He speaks the exact language of the audience we are building, because he is of it. His stories set
+                    the tone, his cadence sets the calendar, and his following is the seed the movement grows from. As
+                    FKD UP! moves toward theaters, he is the one who carries the audience from the phone to the seat.
+                  </p>
+                </div>
+              </div>
+            </div>
           </ScrollReveal>
         </div>
       </section>
@@ -470,7 +576,7 @@ export function LaffMobbClient() {
             </div>
           </div>
           <ScrollReveal variant="scaleIn">
-            <Photo src={IMG.frat} />
+            <Photo src={IMG.bar} />
           </ScrollReveal>
         </div>
       </section>
@@ -649,11 +755,19 @@ export function LaffMobbClient() {
               <ScrollReveal key={p.title} variant="fadeUp">
                 <div className="relative pb-12 last:pb-0">
                   <span
-                    className={`absolute -left-[33px] top-1.5 h-3 w-3 rounded-full border-2 ${p.done ? "border-success bg-success/30" : "border-accent bg-accent/25"}`}
+                    className={`absolute -left-[33px] top-1.5 h-3 w-3 rounded-full border-2 ${
+                      p.done ? "border-success bg-success/30" : "border-accent bg-accent/25"
+                    }`}
                   />
                   <div className="flex flex-wrap items-center gap-3">
                     <span className="font-mono text-[12px] tracking-[0.1em] text-text-muted">{p.when}</span>
-                    <span className={`rounded-full border px-2.5 py-0.5 font-mono text-[10px] uppercase tracking-[0.14em] ${p.done ? "border-success/40 bg-success/10 text-success" : "border-accent/40 bg-accent/10 text-accent"}`}>
+                    <span
+                      className={`rounded-full border px-2.5 py-0.5 font-mono text-[10px] uppercase tracking-[0.14em] ${
+                        p.done
+                          ? "border-success/40 bg-success/10 text-success"
+                          : "border-accent/40 bg-accent/10 text-accent"
+                      }`}
+                    >
                       {p.flag}
                     </span>
                   </div>
@@ -713,7 +827,9 @@ export function LaffMobbClient() {
               ].map((p, idx) => (
                 <span
                   key={p}
-                  className={`rounded-full border px-4 py-2 font-mono text-[12px] ${idx === 0 ? "border-accent text-accent" : "border-border text-text-primary"}`}
+                  className={`rounded-full border px-4 py-2 font-mono text-[12px] ${
+                    idx === 0 ? "border-accent text-accent" : "border-border text-text-primary"
+                  }`}
                 >
                   {p}
                 </span>
@@ -732,7 +848,7 @@ export function LaffMobbClient() {
           <SectionHead
             code="12"
             label="The people"
-            title={<>A decade of <span className="text-accent">building comedy brands.</span></>}
+            title={<>Decades of <span className="text-accent">building brands.</span></>}
             lede="Since 2012, Laff Mobb has produced Laff Mobb Presents specials for Showtime, BET, Dish, Vubiquity, and InDemand, and executive produced We Got Next on Aspire (24 episodes) and Laff Tracks on truTV (three seasons, 36 episodes). It helped bring urban stand-up back to national cable and developed talent including Tiffany Haddish, Karlous Miller, Lil Rel Howery, and Red Grant."
           />
           <div className="grid gap-5 md:grid-cols-3">
