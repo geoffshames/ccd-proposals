@@ -166,7 +166,7 @@ export type AudienceSection = {
 
 export type BrandAuditScore = {
   dimension: string;
-  score: number;
+  score?: number;
   maxScore?: number;
   status?: string;
   evidence: string;
@@ -411,11 +411,12 @@ export type RoadmapCampaign = {
   label: string;
   name: string;
   window: string;
-  budget: string;
+  budget?: string;
   budgetNote?: string;
   objective: string;
   compounds?: string[];
   featured?: boolean;
+  badge?: string;
   detailAnchor?: string;
   detailLabel?: string;
 };

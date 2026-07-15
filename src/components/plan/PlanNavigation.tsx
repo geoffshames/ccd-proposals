@@ -65,7 +65,7 @@ export function PlanNavigation() {
           className="fixed top-0 left-0 right-0 z-50 backdrop-blur-xl bg-bg/85 border-b border-text-muted/15"
           aria-label="Plan sections"
         >
-          <div className="max-w-7xl mx-auto px-4 md:px-6 h-12 md:h-14 flex items-center gap-3 md:gap-4 pr-16 md:pr-28 lg:pr-36">
+          <div className="max-w-7xl mx-auto px-4 md:px-6 h-12 md:h-14 flex items-center gap-3 md:gap-4">
             {/* Mobile hamburger - LEFT side so it clears the floating language toggle */}
             <button
               className="md:hidden p-2 -ml-2 flex-shrink-0 relative z-[70]"
@@ -88,38 +88,14 @@ export function PlanNavigation() {
               {PLAN.cover.title}
             </a>
 
-            {/* === Desktop nav (xl+): full labels with dot separators === */}
-            <div className="hidden xl:flex items-center flex-1 justify-center gap-0">
+            {/* Compact desktop nav: every section stays visible at the fixed max width. */}
+            <div className="hidden md:flex items-center flex-1 min-w-0 justify-center gap-0">
               {items.map((item, i) => (
-                <div key={item.href} className="flex items-center">
-                  <a
-                    href={item.href}
-                    className={`px-2 py-1 text-[10px] font-mono tracking-[0.12em] uppercase transition-colors whitespace-nowrap ${
-                      active === item.href
-                        ? "text-accent font-bold"
-                        : "text-text-muted hover:text-text-primary"
-                    }`}
-                    onClick={() => setActive(item.href)}
-                  >
-                    {item.label}
-                  </a>
-                  {i < items.length - 1 && (
-                    <span className="text-text-muted/25 text-[10px] select-none" aria-hidden="true">
-                      ·
-                    </span>
-                  )}
-                </div>
-              ))}
-            </div>
-
-            {/* === Mid nav (md to xl): numbers only + active label reveal === */}
-            <div className="hidden md:flex xl:hidden items-center flex-1 justify-center gap-0">
-              {items.map((item, i) => (
-                <div key={item.href} className="flex items-center">
+                <div key={item.href} className="flex items-center shrink-0">
                   <a
                     href={item.href}
                     title={item.label}
-                    className={`px-2 py-1 text-[10px] font-mono tracking-[0.12em] transition-colors whitespace-nowrap ${
+                    className={`px-1.5 lg:px-2 py-1 text-[10px] font-mono tracking-[0.12em] transition-colors whitespace-nowrap ${
                       active === item.href
                         ? "text-accent font-bold"
                         : "text-text-muted/70 hover:text-text-primary"
@@ -136,7 +112,7 @@ export function PlanNavigation() {
                 </div>
               ))}
               {activeItem && (
-                <span className="ml-3 text-[10px] font-mono tracking-[0.15em] uppercase text-accent whitespace-nowrap">
+                <span className="hidden xl:inline ml-3 shrink-0 text-[10px] font-mono tracking-[0.15em] uppercase text-accent whitespace-nowrap">
                   / {activeItem.label}
                 </span>
               )}

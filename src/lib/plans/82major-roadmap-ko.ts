@@ -112,6 +112,7 @@ export const eightyTwoMajorRoadmapKorean: StrategyPlanData = {
           budget: "$30,000 / $45,000",
           budgetNote: "본 문서에 가격이 명시된 유일한 예산",
           featured: true,
+          badge: "본 제안",
           objective: "TROPHY의 스페인어 버전을 스페인어 사용권 LATAM (브라질은 Expansion 티어)에 출시하며, 멕시코 시티와 산티아고에 집중하고, 미디어 비용은 미국 요금의 일부만 부담합니다.",
           compounds: [
             "Laylo ES CRM 레인 + 브리핑된 LATAM 클리핑 네트워크: 한 번 구축하여 이후 모든 사이클에 재사용됩니다.",

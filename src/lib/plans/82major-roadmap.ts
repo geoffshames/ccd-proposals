@@ -112,6 +112,7 @@ export const eightyTwoMajorRoadmap: StrategyPlanData = {
           budget: "$30,000 / $45,000",
           budgetNote: "The only budget priced in this document",
           featured: true,
+          badge: "This Proposal",
           objective: "Launch the Spanish version of TROPHY into Spanish-speaking LATAM (Brazil at the Expansion tier), concentrated on Mexico City and Santiago, at media costs a fraction of U.S. rates.",
           compounds: [
             "Laylo ES CRM lane + a briefed LATAM clipping network: stood up once, reused across every later cycle",

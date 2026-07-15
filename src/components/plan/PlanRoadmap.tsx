@@ -50,9 +50,9 @@ export function PlanRoadmap({ section }: { section: RoadmapSection }) {
                       : "border-text-muted/20 bg-bg-card"
                   }`}
                 >
-                  {c.featured && (
+                  {c.badge && (
                     <div className="absolute top-0 right-0 bg-accent text-white text-[10px] font-bold tracking-[0.2em] uppercase px-4 py-2">
-                      This Proposal
+                      {c.badge}
                     </div>
                   )}
 
@@ -72,22 +72,24 @@ export function PlanRoadmap({ section }: { section: RoadmapSection }) {
                     {c.name}
                   </h3>
 
-                  <div className="mt-4 flex flex-wrap items-center gap-3">
-                    <span
-                      className={`inline-block px-3 py-1.5 text-[12px] font-mono tracking-[0.12em] uppercase ${
-                        c.featured
-                          ? "bg-accent text-white font-bold"
-                          : "border border-text-muted/30 text-text-primary/85"
-                      }`}
-                    >
-                      {c.budget}
-                    </span>
-                    {c.budgetNote && (
-                      <span className="text-[11px] font-mono tracking-[0.14em] uppercase text-text-muted/70">
-                        {c.budgetNote}
+                  {c.budget && (
+                    <div className="mt-4 flex flex-wrap items-center gap-3">
+                      <span
+                        className={`inline-block px-3 py-1.5 text-[12px] font-mono tracking-[0.12em] uppercase ${
+                          c.featured
+                            ? "bg-accent text-white font-bold"
+                            : "border border-text-muted/30 text-text-primary/85"
+                        }`}
+                      >
+                        {c.budget}
                       </span>
-                    )}
-                  </div>
+                      {c.budgetNote && (
+                        <span className="text-[11px] font-mono tracking-[0.14em] uppercase text-text-muted/70">
+                          {c.budgetNote}
+                        </span>
+                      )}
+                    </div>
+                  )}
 
                   <p className="mt-5 text-text-primary/85 text-[15px] md:text-[16px] leading-relaxed">
                     {c.objective}

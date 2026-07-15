@@ -10,7 +10,7 @@ export const lolaAmourPlan: StrategyPlanData = {
     label: "Western Markets AOR Strategy",
     title: "LOLA AMOUR",
     subtitle:
-      "A 6–12 month Western Markets AOR plan led by Crowd Control Digital, beginning with a 90-day ramp and trial across the U.S., Canada, Europe, and LATAM to build measurable demand ahead of the 2027 tour.",
+      "A 6–12 month Western Markets AOR plan led by Crowd Control Digital, beginning with a 90-day ramp and trial across the U.S., Canada, and Europe to build measurable demand ahead of the 2027 tour.",
     partnership: "Lola Amour × Crowd Control Digital",
     prepared: "Geoff Shames / Co-Founder, Crowd Control Digital",
     date: "July 2026",
@@ -34,13 +34,13 @@ export const lolaAmourPlan: StrategyPlanData = {
       body: [
         "Lola Amour enters the Western-market conversation with rare underlying strength: a ten-year story, a distinctive seven-piece sound, two songs above 200 million Spotify streams, 2.1 million Spotify followers, and a live show capable of filling 3,000 and 10,000-capacity rooms in the Philippines. This is not artist development. It is market translation, discovery, and demand creation.",
         "The timing is unusually favorable. The band is independent, supported by a lean team that includes former Warner marketing and content leadership, and building toward two to three English songs before a tentative June and July 2027 North American tour. Filipino-language releases in 2026, Music Matters, and Singapore Formula 1 create immediate material for testing without forcing the band into an English-only identity.",
-        "The first 90 days are the ramp and fit-validation period inside a 6–12 month agency-of-record plan. Crowd Control Digital will own the Western-market strategy across the U.S., Canada, Europe, and LATAM, identify which songs, stories, formats, audiences, and cities can carry Lola Amour beyond the Filipino and OPM algorithmic box, then apply those findings to the 2027 English releases and tour runway.",
+        "The first 90 days are the ramp and fit-validation period inside a 6–12 month agency-of-record plan. Crowd Control Digital will own the Western-market strategy across the U.S., Canada, and Europe, identify which songs, stories, formats, audiences, and cities can carry Lola Amour beyond the Filipino and OPM algorithmic box, then apply those findings to the 2027 English releases and tour runway.",
       ],
       supports: {
         heading: "What This Strategy Supports",
         items: [
           "The remaining 2026 Filipino-language release cycle",
-          "A coordinated Western-markets AOR model across the U.S., Canada, Europe, and LATAM",
+          "A coordinated Western-markets AOR model across the U.S., Canada, and Europe",
           "Music Matters and the October 11 Singapore Formula 1 performance",
           "Two to three planned English songs before the 2027 tour",
           "A tentative June and July 2027 North American tour",
@@ -53,7 +53,7 @@ export const lolaAmourPlan: StrategyPlanData = {
           "Which catalog and forthcoming songs travel most efficiently by region",
           "Which parts of the band's humor translate immediately and which need context",
           "Which broader music-taste audiences convert beyond Filipino and OPM affinity",
-          "Which cities show enough repeat behavior and owned demand to influence routing",
+          "Which cities show enough repeat behavior and direct fan interest to influence routing",
           "Which proof points will help agents, promoters, festivals, and platforms understand the opportunity",
         ],
       },
@@ -67,7 +67,7 @@ export const lolaAmourPlan: StrategyPlanData = {
       navLabel: "Brand Audit",
       title: "Brand Audit / Heartbreak With Horns",
       intro:
-        "Lola Amour already has a compelling world. The opportunity is to make its most distinctive elements legible and repeatable for people who have never heard the words OPM or Apos.",
+        "Lola Amour already has a compelling world. The opportunity is to make its most distinctive elements legible and repeatable for people encountering the band outside the Philippine and OPM ecosystem.",
       verdict:
         "A seven-person heartbreak band with the energy of a great ensemble comedy: emotionally direct songs, brass-forward movement, and the chemistry of friends who never learned to take themselves too seriously.",
       image: {
@@ -78,59 +78,51 @@ export const lolaAmourPlan: StrategyPlanData = {
       scorecard: [
         {
           dimension: "Sonic Distinctiveness",
-          score: 9,
           status: "Defensible advantage",
           evidence:
             "Trumpet and saxophone operate as lead voices, not decoration. The brass, funk, city-pop, indie, and soul blend is identifiable within seconds and becomes even more differentiated live.",
         },
         {
           dimension: "Catalog and Cultural Proof",
-          score: 9,
           status: "Market proven",
           evidence:
             "Fallen and Raining in Manila each exceed 200 million Spotify streams. The catalog contains multiple additional songs above 30 million and 60 million streams.",
         },
         {
           dimension: "Live Proposition",
-          score: 9,
           status: "Primary conversion engine",
           evidence:
             "The band fills large rooms at home, sold out three Japan dates with mixed Filipino and local audiences, and turns arrangements, props, humor, and member chemistry into spectacle.",
         },
         {
           dimension: "Fandom and Community",
-          score: 8.5,
           status: "Deep, participatory",
           evidence:
-            "Apos is an ownable community identity rooted in the band's name. The 55.3 percent Spotify follower-to-listener ratio is a strong loyalty proxy, although it is not a platform conversion rate.",
+            "Fans consistently treat the band as an ensemble with member chemistry and shared history, not only as a catalog of songs. The 55.3 percent Spotify follower-to-listener ratio is a strong loyalty proxy, although it is not a platform conversion rate.",
         },
         {
           dimension: "Visual Coherence",
-          score: 7,
           status: "Strong campaigns, loose master system",
           evidence:
             "Warm new-vintage imagery, analog ephemera, retro type, tailoring, and playful ensemble portraits recur, but the system shifts by title and lacks a single global toolkit.",
         },
         {
           dimension: "Independent Team Readiness",
-          score: 7.5,
           status: "Lean and experienced",
           evidence:
             "The artist entity retained former Warner marketing and content leadership and uses its former A&R as a consultant. The team has expertise but needs one accountable AOR across the Western markets.",
         },
         {
           dimension: "Owned Data Activation",
-          score: 4,
           status: "Unverified and likely fragmented",
           evidence:
             "Capture may exist across the artist, former label, distributor, ticketing, commerce, and partners. Ownership, portability, consent, segmentation, and activation rights require an audit before any claim is made.",
         },
         {
           dimension: "Current Western-Market Awareness",
-          score: 2.5,
           status: "The central constraint",
           evidence:
-            "North American listening is a small share of a large global base, Europe and LATAM lack a shared baseline, current editorial support is Philippine and OPM-led, and there is little verified Western-market press or touring history.",
+            "North American listening is a small share of a large global base, Europe lacks a shared baseline, current editorial support is Philippine and OPM-led, and there is little verified Western-market press or touring history.",
         },
       ],
       foundations: [
@@ -151,8 +143,8 @@ export const lolaAmourPlan: StrategyPlanData = {
         },
         {
           label: "Community Idea",
-          value: "Apos everywhere",
-          note: "The name already turns fandom into family language without requiring a manufactured fan-club concept.",
+          value: "Belonging through the band",
+          note: "Member chemistry, fan recognition, and city-specific participation can create belonging without introducing a new fan-club concept.",
         },
       ],
       systems: [
@@ -285,37 +277,16 @@ export const lolaAmourPlan: StrategyPlanData = {
       navLabel: "Audience",
       title: "Audience Intelligence / The Bridge Beyond The Algorithm",
       intro:
-        "The first 90 days will test audience and market hypotheses rather than pretend public platform data can answer every question. The objective is to use the strongest Filipino diaspora and music-taste signals as entry points, then build broader demand across North America, Europe, and LATAM.",
+        "The first 90 days will test audience and market hypotheses rather than pretend public platform data can answer every question. The objective is to use the strongest Filipino diaspora and music-taste signals as entry points, then build broader demand across North America and Europe.",
       thesis:
         "Diaspora is the ignition layer, not the ceiling. The growth path moves from Filipino first movers into Asian indie and city-pop listeners, live-band audiences, and relationship-story creators, with each region earning investment through observed behavior.",
-      metrosLabel: "Priority and Exploratory Western-Market Tests",
-      metros: [
-        { name: "Los Angeles / Southern California" },
-        { name: "San Francisco Bay Area" },
-        { name: "New York / New Jersey" },
-        { name: "Toronto" },
-        { name: "Las Vegas", tier: "secondary" },
-        { name: "Honolulu", tier: "secondary" },
-        { name: "Seattle", tier: "secondary" },
-        { name: "Houston / Dallas", tier: "secondary" },
-        { name: "Vancouver", tier: "secondary" },
-        { name: "London", tier: "secondary" },
-        { name: "Paris", tier: "secondary" },
-        { name: "Amsterdam", tier: "secondary" },
-        { name: "Berlin", tier: "secondary" },
-        { name: "Madrid / Barcelona", tier: "secondary" },
-        { name: "Mexico City", tier: "secondary" },
-        { name: "São Paulo", tier: "secondary" },
-        { name: "Buenos Aires", tier: "secondary" },
-        { name: "Santiago", tier: "secondary" },
-      ],
       personas: [
         {
           name: "The Diaspora First Mover",
           label: "Beachhead",
           priority: "primary",
           profile:
-            "A Filipino listener in the U.S., Canada, Europe, or LATAM, usually 18 to 34, who may already recognize the biggest songs through family, social media, or trips home. They want pride and connection without being treated as one culturally uniform audience.",
+            "A Filipino listener in the U.S., Canada, or Europe who may already recognize the biggest songs through family, social media, or trips home. They want pride and connection without being treated as one culturally uniform audience.",
           psychographics: ["Culturally fluent", "Community-led", "Proud but discerning", "Experience-seeking"],
           motivations: [
             "Seeing a Filipino act win on an international stage",
@@ -333,15 +304,15 @@ export const lolaAmourPlan: StrategyPlanData = {
             { name: "YouTube", role: "Full performances, lyric utility, and catalog depth" },
           ],
           barriers: ["Assumed Tagalog fluency", "Generic diaspora marketing", "No persistent Western-market destination"],
-          triggers: ["City recognition", "Milestone proof", "Early access", "Apos community language"],
-          conversionGoal: "Verified city intent, repeat content consumption, and ticket-ready owned demand.",
+          triggers: ["City recognition", "Milestone proof", "Early access", "Artist-led fan recognition"],
+          conversionGoal: "Verified city interest, repeat content consumption, and ticket-ready fan sign-ups.",
         },
         {
           name: "The Asian Indie Explorer",
           label: "Crossover",
           priority: "primary",
           profile:
-            "An 18 to 29-year-old listener who follows Asian alternative, city pop, and independent live acts without requiring English lyrics. They discover through taste, collaborators, visual worlds, and shows rather than national identity alone.",
+            "A listener who follows Asian alternative, city pop, and independent live acts without requiring English lyrics. They discover through taste, collaborators, visual worlds, and shows rather than national identity alone.",
           psychographics: ["Taste-signaling", "Globally curious", "Visual-first", "Festival-minded"],
           motivations: [
             "Finding an act before broader Western audiences do",
@@ -367,7 +338,7 @@ export const lolaAmourPlan: StrategyPlanData = {
           label: "Scalable discovery",
           priority: "expansion",
           profile:
-            "A 16 to 28-year-old listener or creator who encounters the emotional premise before the band. They use songs to narrate ambiguity, longing, missed timing, friendship, and the relationships they cannot explain directly.",
+            "A listener or creator who encounters the emotional premise before the band. They use songs to narrate ambiguity, longing, missed timing, friendship, and the relationships they cannot explain directly.",
           psychographics: ["Emotion-led", "Participatory", "Narrative-minded", "Language-flexible"],
           motivations: [
             "Finding lyrics or sounds that say what they cannot",
@@ -418,7 +389,7 @@ export const lolaAmourPlan: StrategyPlanData = {
       psychographics: [
         {
           label: "Belonging",
-          items: ["A band world with member lore", "Apos as family language", "Communal live release"],
+          items: ["A band world with member lore", "Fan recognition and participation", "Communal live release"],
         },
         {
           label: "Emotional Recognition",
@@ -488,30 +459,9 @@ export const lolaAmourPlan: StrategyPlanData = {
         },
         {
           trigger: "Participation with a social reward",
-          implication: "Give Apos and creators a prompt, identity, or piece of lore worth passing forward.",
+          implication: "Give fans and creators a prompt, piece of lore, or moment worth passing forward.",
         },
       ],
-      fanQuotes: [
-        {
-          quote: "Recurring sentiment: the songs make private heartbreak feel communal rather than solitary.",
-          source: "Social-listening synthesis, 2021 to 2026",
-          insight: "Emotional recognition is the broadest non-diaspora acquisition lane.",
-          synthesized: true,
-        },
-        {
-          quote: "Recurring sentiment: the band's friendship and member lore make fans feel inside a long-running story.",
-          source: "Anniversary coverage and fan-community synthesis",
-          insight: "Member chemistry is a retention system, not background content.",
-          synthesized: true,
-        },
-        {
-          quote: "Recurring sentiment: live arrangements make familiar songs feel bigger and more participatory.",
-          source: "Concert coverage and audience recaps",
-          insight: "Performance footage should sit at the center of Western-market conversion creative.",
-          synthesized: true,
-        },
-      ],
-      fanQuotesLabel: "Audience sentiment synthesis",
       similarArtists: [
         "Cup of Joe",
         "IV OF SPADES",
@@ -532,7 +482,7 @@ export const lolaAmourPlan: StrategyPlanData = {
         },
         {
           platform: "TikTok",
-          note: "413K artist followers and approximately 1.52M tracked catalog posts. The sound-to-account conversion gap is the clearest opportunity.",
+          note: "413K artist followers and approximately 1.52M tracked catalog posts. Catalog activity suggests an opportunity to encourage more artist-account follows.",
         },
         {
           platform: "YouTube",
@@ -544,7 +494,7 @@ export const lolaAmourPlan: StrategyPlanData = {
         },
       ],
       footnote:
-        "Chartmetric geography experienced a broad methodology refresh on July 14. The plan uses the stable July 13 estimate of roughly 113K U.S. and 18K Canadian monthly listeners, then re-baselines during onboarding. Europe and LATAM receive an initial Week 1 scan and validated market maps by Month 2. Public demographic data does not replace first-party audience analytics.",
+        "Chartmetric geography experienced a broad methodology refresh on July 14. The plan uses the stable July 13 estimate of roughly 113K U.S. and 18K Canadian monthly listeners, then re-baselines during onboarding. Europe receives an initial Week 1 scan and validated market comparison during the ramp. Public demographic data does not replace first-party audience analytics.",
     },
 
     {
@@ -553,7 +503,7 @@ export const lolaAmourPlan: StrategyPlanData = {
       navLabel: "Landscape",
       title: "Competitive and Cultural Landscape",
       intro:
-        "The useful reference set is not one list. Philippine peers show the scale ladder. Global Asian-indie and live-band references show how audiences across North America, Europe, and LATAM may enter the story.",
+        "The useful reference set is not one list. Philippine peers show the scale ladder. Global Asian-indie and live-band references show how audiences across North America and Europe may enter the story.",
       thesis:
         "Lola Amour's Spotify follower-depth ratio is stronger than most adjacent breakout peers. The comparison is a loyalty proxy rather than a conversion measure; the clearer competitive gap is reach and global framing.",
       competitors: [
@@ -625,7 +575,7 @@ export const lolaAmourPlan: StrategyPlanData = {
       whitespace: [
         {
           title: "Fandom depth without Western-market saturation",
-          description: "The band shows flagship-peer follower depth while remaining underexposed across North America, Europe, and LATAM. New discovery has a substantial existing fandom layer beneath it.",
+          description: "The band shows flagship-peer follower depth while remaining underexposed across North America and Europe. New discovery has a substantial existing fandom layer beneath it.",
         },
         {
           title: "Romance first, musicianship second",
@@ -672,7 +622,7 @@ export const lolaAmourPlan: StrategyPlanData = {
         },
         {
           label: "Industry Conversion (Build The 2027 Case)",
-          description: "Winning creative, market, and audience evidence becomes the release, agent, promoter, festival, and ticketing story for the English songs, North American tour, and future Europe and LATAM opportunities.",
+          description: "Winning creative, market, and audience evidence becomes the release, agent, promoter, festival, and ticketing story for the English songs, North American tour, and future European opportunities.",
         },
       ],
       messaging: [
@@ -680,146 +630,48 @@ export const lolaAmourPlan: StrategyPlanData = {
         "Lola Amour is a sitcom: member chemistry, tour life, rehearsals, teasing, and recurring character dynamics.",
         "Your story on loop: confessions, relationship ambiguity, distance, timing, and fan-owned interpretations.",
         "Made in Manila: language, place, migration, weather, influences, and the details that should never be sanded away.",
-        "Apos everywhere: city demand, community recognition, fan spotlights, and the family idea behind the name.",
+        "Bring Lola Amour here: city interest, fan spotlights, and proof that the band can travel.",
       ],
       footnote:
         "The five content territories operate across Filipino and English releases. The language changes; the emotional and visual system remains coherent.",
     },
 
     {
-      type: "targets",
-      number: "06",
-      navLabel: "Targets",
-      title: "KPI Baseline and Directional Targets",
-      intro:
-        "The first month revalidates baselines after account access and the July Chartmetric geography refresh. Growth targets depend on approved working spend, asset delivery, release timing, and a live owned-capture experience.",
-      targets: [
-        {
-          metric: "Stable U.S. Monthly Listeners",
-          baseline: "~113K",
-          target: "+10-20%",
-          window: "Initial 90-day ramp",
-          rationale: "The objective is measured U.S. lift while preserving the strong follower-depth signal already present globally.",
-          measurement: "Revalidated platform geography, four-week rolling average, and matched campaign exposure cohorts.",
-          featured: true,
-        },
-        {
-          metric: "U.S. and Canada Listener Share",
-          baseline: "~3.5%",
-          target: "3.8-4.2%",
-          window: "Initial 90-day ramp",
-          rationale: "A share target prevents global growth from making a nominal North American gain look stronger than it is.",
-          measurement: "Stable country estimates divided by global monthly listeners, tracked weekly after re-baselining.",
-        },
-        {
-          metric: "Qualified Owned Demand",
-          baseline: "Audit W1",
-          target: "1.5K-4K",
-          window: "Initial 90-day ramp",
-          rationale: "Email, SMS, or city-demand actions are more useful for 2027 routing than anonymous reach alone.",
-          measurement: "Verified, consented contacts or city registrations, de-duplicated and segmented by market and source.",
-        },
-        {
-          metric: "Broader-Than-OPM Acquisition",
-          baseline: "Unknown",
-          target: "≥30%",
-          window: "By Month 3",
-          rationale: "The plan succeeds when a meaningful share of qualified actions comes from music-taste cohorts outside Filipino and OPM affinity.",
-          measurement: "Qualified actions by audience cohort at no more than 1.5 times the cost of OPM-adjacent cohorts.",
-        },
-        {
-          metric: "Winning Creative Hooks",
-          baseline: "Not tested",
-          target: "3+ winners",
-          window: "By Month 3",
-          rationale: "The campaign needs repeatable creative answers, not a one-off high-view post.",
-          measurement: "At least 20 percent above campaign median on completion, click, save, or qualified-action efficiency.",
-        },
-        {
-          metric: "Priority Market Proof",
-          baseline: "No shared score",
-          target: "6+ ranked markets",
-          window: "By Month 3",
-          rationale: "A comparable cross-region score gives the artist, AOR, booking, and global teams a stronger basis for investment, routing, room sizing, and on-sale decisions.",
-          measurement: "Weighted index of listeners, engagement, repeat exposure, capture, creator response, and ticket intent across North America, Europe, and LATAM.",
-        },
-        {
-          metric: "TikTok Artist Followers",
-          baseline: "413K",
-          target: "+3-5%",
-          window: "Initial 90-day ramp",
-          rationale: "The catalog has strong sound participation but weak recent account growth. The goal is to convert song usage into an artist relationship.",
-          measurement: "Native account analytics, post-level follower attribution where available, and exposed-versus-organic trend comparison.",
-        },
-        {
-          metric: "Europe and LATAM Market Baseline",
-          baseline: "Initial scan W1",
-          target: "2 validated maps",
-          window: "By Month 2",
-          rationale: "AOR accountability requires a consistent market view even where the first active release or tour spend remains concentrated in North America.",
-          measurement: "Country and city consumption, social affinity, diaspora concentration, creator response, partner input, and paid test efficiency.",
-        },
-        {
-          metric: "2027 Industry Evidence Pack",
-          baseline: "Fragmented",
-          target: "1 live system",
-          window: "By Month 3",
-          rationale: "Agents, promoters, festivals, and partners need one current narrative backed by comparable Western-market evidence and region-specific annexes.",
-          measurement: "Current EPK, audience dashboard, city ranking, live proof, release roadmap, and approved rights/contact map.",
-        },
-      ],
-      measurementPrinciples: [
-        "Revalidate public baselines against first-party analytics before locking final thresholds.",
-        "Measure qualified action and repeat behavior, not views in isolation.",
-        "Separate diaspora, OPM-adjacent, and broader music-taste cohorts so crossover is visible.",
-        "Report by city and region whenever the decision affects releases, touring, or partner outreach.",
-        "Treat editorial, press, festival, booking, and ticket outcomes as influenced external results, not guaranteed deliverables.",
-        "Reallocate working spend weekly toward the song, audience, market, and creative combinations producing the strongest signal.",
-      ],
-      disclaimer:
-        "Directional targets, not forecasts or guarantees. Final thresholds depend on platform access, media budget, asset cadence, release timing, capture approval, and the quality of existing audience data.",
-    },
-
-    {
       type: "structure",
-      number: "07",
-      navLabel: "Structure",
-      title: "Engagement Structure / Western Markets AOR",
+      number: "06",
+      navLabel: "Working Model",
+      title: "How We Work / Western Markets AOR",
       intro:
-        "A 6–12 month Western Markets AOR engagement beginning with a low-risk 90-day ramp and trial. Crowd Control Digital is accountable across the U.S., Canada, Europe, and LATAM while working alongside the global team. The monthly retainer covers strategy, direction, management, testing architecture, regional coordination, and measurement. Media, creators, tools, and production remain flexible and require approval before spend.",
+        "Crowd Control Digital will act as the accountable Western Markets AOR across the U.S., Canada, and Europe while working alongside Lola Amour's global team. The first 90 days establish access, baselines, priorities, and a shared operating rhythm for the intended 6–12 month relationship.",
       tiers: [
         {
-          label: "6–12 Month Plan / 90-Day Initial Ramp",
-          budget: "$5,000 / month",
-          name: "Western Markets AOR Retainer",
+          label: "6–12 Month Working Model",
+          budget: "Agency of Record",
+          name: "U.S., Canada and Europe",
           goal:
-            "Serve as the accountable AOR across the U.S., Canada, Europe, and LATAM. Identify the songs, stories, audiences, and markets most capable of carrying Lola Amour into the 2027 English releases and tour while coordinating with the rest of the global team.",
-          featured: true,
+            "Identify the songs, stories, audiences, and markets most capable of carrying Lola Amour into the 2027 English releases and tour, then manage the Western-market plan alongside the rest of the global team.",
           includes: [
-            "Western-market brand translation and regional positioning system",
-            "Audience, market, song, and content analysis across all four AOR regions",
-            "Paid and creator test architecture and management",
-            "Creative direction, up to four new campaign or edit briefs per month, and optimization notes for the existing content team",
-            "Owned-data, CRM, rights, and platform-access audit",
-            "Cross-region market demand scoring and reporting dashboard",
-            "Festival, booking, creator, media, and partner opportunity mapping",
-            "Coordination with Asia, distribution, content, booking, and other global partners",
-            "Up to four active paid or creator market cells at one time, sequenced by evidence and approved working budget",
-            "One consolidated weekly operating call and one monthly strategy and reporting review",
-            "A decision-ready 2027 English-release and tour-growth playbook",
+            "Western-market brand and audience strategy",
+            "Release and catalog planning with Lola Amour's team and New Levels",
+            "Paid media and creator campaign planning and management",
+            "Creative direction and briefs for the existing content team",
+            "Rights, audience data, platform access, and measurement audit",
+            "Market comparison and a shared reporting dashboard updated daily",
+            "Weekly marketing calls with Mika and the relevant global partners",
+            "Coordination with distribution, content, booking, press, and regional teams",
+            "Tour and industry support as dates and partners are confirmed",
           ],
-          deployable: "$5,000 monthly / initial 90-day ramp and trial",
         },
       ],
     },
 
     {
       type: "vertical",
-      number: "08",
-      navLabel: "Owned Demand",
-      title: "Owned Audience, Data and Community",
+      number: "07",
+      navLabel: "Fan Data",
+      title: "Fan Data, Sign-Ups and Community",
       philosophy:
-        "Platform scale is valuable. Portable, consented, city-level demand is what turns that scale into release and tour leverage.",
+        "Platform scale is valuable. Portable, consented, city-level fan interest is what turns that scale into release and tour leverage.",
       intro:
         "The proposal does not assume Lola Amour has no CRM. Month 1 determines what exists, who owns it, what can be exported, and how it can be activated alongside the distributor, former label, ticketing, commerce, and territory partners.",
       subBlocks: [
@@ -843,9 +695,8 @@ export const lolaAmourPlan: StrategyPlanData = {
         {
           label: "B",
           title: "Western-Market Demand Hub and City Intent",
-          budget: "Build and tools scoped separately if required",
           timeline: "Months 1 to 2",
-          objective: "Give listeners across the AOR territories one persistent destination for releases, city demand, tour updates, language preferences, and artist-owned contact capture.",
+          objective: "Give listeners across the U.S., Canada, and Europe one persistent destination for releases, city interest, tour updates, language preferences, and artist-owned contact capture.",
           strategy:
             "Use the lightest viable stack after the audit. A dedicated landing experience can connect song interest, language preference, city, email or SMS consent, and future ticket intent without creating a full website rebuild.",
           components: {
@@ -858,13 +709,13 @@ export const lolaAmourPlan: StrategyPlanData = {
               "Source, market, creative, and song attribution",
             ],
           },
-          kpis: ["1,500 to 4,000 qualified actions", "One ranked cross-region market map", "Consent, region, and source data on every record"],
+          kpis: ["Fan sign-ups and city interest", "Source attribution", "Consent and region data on every record"],
         },
         {
           label: "C",
-          title: "Apos Community Loop",
+          title: "Fan Community",
           timeline: "Always on",
-          objective: "Turn the existing community identity into a repeatable global participation system rather than a one-way broadcast audience.",
+          objective: "Turn the band's existing fan relationships into repeatable participation rather than a one-way broadcast audience.",
           tactics: [
             "City spotlights and fan proof tied to demand capture",
             "Fan-story prompts around relationships, distance, timing, and memory",
@@ -877,27 +728,27 @@ export const lolaAmourPlan: StrategyPlanData = {
         {
           label: "D",
           title: "Shared Growth Dashboard",
-          timeline: "Baseline W1 / weekly thereafter",
-          objective: "Give the artist team and partners one decision layer that separates reach, engagement, qualified demand, and market readiness.",
+          timeline: "Set up in Month 1 / updated daily",
+          objective: "Give the artist team and partners one shared dashboard, updated daily, that separates reach, engagement, direct fan sign-ups, and regional performance.",
           components: {
             heading: "Views",
             items: [
               "Song, format, hook, audience, and city performance",
               "Follower and listener movement by platform",
-              "Qualified actions and cost by cohort",
+              "Fan sign-ups and cost by cohort",
               "Creative learning log with current winners and fatigue",
-              "City-readiness index for release, agent, promoter, and tour decisions",
+              "City and market comparisons for release, agent, promoter, and tour decisions",
             ],
           },
         },
       ],
       footnote:
-        "Any new CRM, landing experience, or software subscription requires artist approval. The retainer covers strategy and management; development, tools, and production are scoped separately when needed.",
+        "Any new CRM, landing experience, software subscription, development, tooling, or production requires artist approval before work begins.",
     },
 
     {
       type: "vertical",
-      number: "09",
+      number: "08",
       navLabel: "Content",
       title: "Content Narrative and Social System",
       philosophy:
@@ -916,7 +767,7 @@ export const lolaAmourPlan: StrategyPlanData = {
               "One global biography system with region-specific context modules",
               "Member-introduction and role system for first-time viewers",
               "English master subtitle, caption, and cultural-context guidelines",
-              "Localization briefs for Spanish, Portuguese, French, and other priority-market partners",
+              "Localization briefs for French and other approved European-market partners",
               "Proof-point hierarchy for fans, platforms, press, and industry",
               "Current-era palette, typography, photography, and thumbnail rules",
               "Independent-era narrative and legacy-catalog bridge",
@@ -947,7 +798,7 @@ export const lolaAmourPlan: StrategyPlanData = {
             "Tour, rehearsal, studio, and travel episodes with a clear premise",
             "Instrument and personality swaps",
             "First-time-in-a-city and cultural-exchange formats",
-            "Apos prompts that invite fans to name, rank, or continue the joke",
+            "Fan prompts that invite people to name, rank, or continue the joke",
           ],
         },
         {
@@ -965,14 +816,14 @@ export const lolaAmourPlan: StrategyPlanData = {
         },
         {
           label: "E",
-          title: "Made in Manila / Apos Everywhere",
+          title: "Made in Manila",
           objective: "Make Filipino specificity a source of fascination and belonging without making ethnicity the only reason to listen.",
           components: {
             heading: "Series Ideas",
             items: [
               "Places, weather, language, food, migration, and city details inside the songs",
               "What Tagalog phrases mean emotionally rather than only literally",
-              "Apos city roll calls and fan spotlights",
+              "City roll calls and fan spotlights",
               "Japan, Music Matters, and Formula 1 proof recut for Western-market audiences",
               "English-release diaries that show the bridge into 2027 in real time",
             ],
@@ -980,18 +831,18 @@ export const lolaAmourPlan: StrategyPlanData = {
         },
       ],
       footnote:
-        "Hands-on shooting, editing, motion design, custom creative production, professional translation, transcreation, in-market copywriting, and local-language community management are outside the base retainer. Crowd Control provides the master system and localization briefs, then directs approved specialists or existing partners.",
+        "Hands-on shooting, editing, motion design, custom creative production, professional translation, transcreation, in-market copywriting, and local-language community management require separate approval. Crowd Control provides the master system and localization briefs, then directs approved specialists or existing partners.",
     },
 
     {
       type: "vertical",
-      number: "10",
+      number: "09",
       navLabel: "Paid + Creator",
-      title: "Paid Media, Creator and Algorithm-Escape Testing",
+      title: "Paid Media and Creator Testing",
       philosophy:
-        "The first media dollars should buy answers. Scale follows only after the campaign knows which song, story, audience, city, and format combination is producing qualified behavior.",
+        "The first paid tests should buy answers. Scale follows only after the campaign knows which song, story, audience, city, and format combination is producing qualified behavior.",
       intro:
-        "Working media, creator, clipping, and other managed activation spend is not embedded in the $5,000 monthly retainer. Those dollars are pre-approved and managed at 15 percent, allowing investment to rise only where the tests show signal. Tools and specialist partner fees are direct or separately scoped unless Crowd Control is explicitly asked to administer them.",
+        "Paid media, creator, clipping, and other activation costs require written approval before launch. Crowd Control will recommend where to test, what to measure, when to reallocate, and when the evidence supports scaling. Tools and specialist partners also require approval before commitment.",
       subBlocks: [
         {
           label: "A",
@@ -1005,7 +856,7 @@ export const lolaAmourPlan: StrategyPlanData = {
               "Hooks: relationship premise, horn payoff, live moment, member chemistry, cultural detail",
               "Audiences: Filipino and OPM, Asian indie and city pop, live-band and funk, relationship-story cohorts",
               "North American anchors: Los Angeles, Bay Area, New York and New Jersey, and Toronto",
-              "Europe and LATAM validation: small cells across London, Paris, Amsterdam, Berlin, Madrid or Barcelona, Mexico City, São Paulo, Buenos Aires, and Santiago as budget and signal allow",
+              "European tests selected after account access, baseline review, and working-budget approval",
               "Outcomes: view quality, save, follow, stream, owned action, and repeat exposure",
             ],
           },
@@ -1013,10 +864,9 @@ export const lolaAmourPlan: StrategyPlanData = {
         {
           label: "B",
           title: "Paid Social and Retargeting",
-          budget: "Client-approved spend + 15% management",
-          objective: "Create new behavioral signals across North America, Europe, and LATAM, then convert the strongest discovery moments into repeat relationships.",
+          objective: "Create new behavioral signals across North America and Europe, then convert the strongest discovery moments into repeat relationships.",
           strategy:
-            "Start with controlled TikTok, Meta, and YouTube tests. Prioritize the U.S. and Canada around the 2027 tour, use lower-cost validation screens to rank Europe and LATAM, separate diaspora and broader taste cohorts, and rotate budget weekly toward qualified efficiency rather than cheapest views.",
+            "Start with controlled TikTok, Meta, and YouTube tests. Prioritize the U.S. and Canada around the 2027 tour, add European tests after the baseline review, separate diaspora and broader taste cohorts, and rotate budget toward meaningful fan actions rather than cheapest views.",
           tactics: [
             "TikTok Spark Ads and native short-form tests",
             "Meta video-view, engagement, and qualified-action sequences",
@@ -1029,7 +879,6 @@ export const lolaAmourPlan: StrategyPlanData = {
         {
           label: "C",
           title: "Creator, Clipping and Whitelisting",
-          budget: "Client-approved creator spend + 15% management",
           objective: "Borrow context and trust from relationship storytellers, Asian-indie tastemakers, musicians, and city-specific creators.",
           tactics: [
             "Small seeded test groups before any broad creator wave",
@@ -1043,17 +892,17 @@ export const lolaAmourPlan: StrategyPlanData = {
         },
         {
           label: "D",
-          title: "Weekly Learning and Reallocation",
+          title: "Weekly Marketing Review and Optimization",
           timeline: "Weekly",
           objective: "Make the campaign progressively smarter instead of repeating a fixed media plan throughout the initial ramp.",
           components: {
             heading: "Decision Cadence",
             items: [
-              "Weekly audience, city, song, and creative scorecard",
+              "Dashboard updated daily with audience, city, song, and creative results",
               "Winner, challenger, fatigue, and stop classifications",
               "Budget reallocation recommendations with an audit trail",
               "New brief requests for the existing content team",
-              "Monthly executive readout and next-month test plan",
+              "Weekly marketing call covering results, priorities, and next actions",
             ],
           },
         },
@@ -1064,13 +913,13 @@ export const lolaAmourPlan: StrategyPlanData = {
 
     {
       type: "vertical",
-      number: "11",
+      number: "10",
       navLabel: "DSP + Catalog",
       title: "DSP and Catalog Activation",
       philosophy:
         "The catalog is both proof and acquisition inventory. The job is to use that inventory to open the independent chapter and build evidence for the planned English releases.",
       intro:
-        "New Levels remains the distribution and DSP-delivery lead. Crowd Control supplies Western-market positioning, regional song data, creative support, audience evidence, and partner coordination across the U.S., Canada, Europe, and LATAM. Editorial pitching is not represented as a guaranteed Crowd Control deliverable.",
+        "New Levels remains the distribution and DSP-delivery lead. Crowd Control supplies Western-market positioning, regional song data, creative support, audience evidence, and partner coordination across the U.S., Canada, and Europe. Editorial pitching is not represented as a guaranteed Crowd Control deliverable.",
       subBlocks: [
         {
           label: "A",
@@ -1080,7 +929,7 @@ export const lolaAmourPlan: StrategyPlanData = {
           components: {
             heading: "Scoring Inputs",
             items: [
-              "Current North American consumption and follower depth, plus Europe and LATAM baselines",
+              "Current North American consumption and follower depth, plus a European baseline",
               "Playlist, algorithmic, search, Shazam, and creator-use signals",
               "Lyric premise and English-context requirements",
               "Performance and short-form creative inventory",
@@ -1110,7 +959,7 @@ export const lolaAmourPlan: StrategyPlanData = {
             heading: "Packet",
             items: [
               "Heartbreak-with-horns positioning and current biography",
-              "North American audience evidence plus Europe and LATAM market annexes",
+              "North American audience evidence plus European market notes",
               "Japan and Philippine live proof",
               "English and Filipino release roadmap",
               "Creative and creator traction by song",
@@ -1137,13 +986,13 @@ export const lolaAmourPlan: StrategyPlanData = {
 
     {
       type: "vertical",
-      number: "12",
+      number: "11",
       navLabel: "Industry + Live",
       title: "Industry, Festivals, Live and Cultural Partnerships",
       philosophy:
         "Turn streaming and social proof into a live-market case. Selective introductions are useful only when the positioning, evidence, and next step are ready.",
       intro:
-        "Mika is actively seeking Western-market booking representation and wants the 2027 tour to reach beyond Filipino-community routing. As AOR for the U.S., Canada, Europe, and LATAM, Crowd Control will prepare the market case, coordinate regional plans and partner materials, and make selective introductions. Crowd Control is not the booking agent, publicist, or festival submitter of record unless separately appointed for those services.",
+        "Mika is actively seeking Western-market booking representation and wants the 2027 tour to reach beyond Filipino-community routing. As AOR for the U.S., Canada, and Europe, Crowd Control will prepare the market case, coordinate regional plans and partner materials, and make selective introductions. Crowd Control is not the booking agent, publicist, or festival submitter of record unless separately appointed for those services.",
       subBlocks: [
         {
           label: "A",
@@ -1151,12 +1000,12 @@ export const lolaAmourPlan: StrategyPlanData = {
           timeline: "Months 1 to 3",
           objective: "Package a credible room, city, and audience story for agents, promoters, festivals, and strategic partners.",
           components: {
-            heading: "Evidence Stack",
+            heading: "Included Materials",
             items: [
               "Philippine 3,000 and 10,000-capacity live proof",
               "Three sold-out Japan rooms with mixed Filipino and local audiences",
-              "Current and revalidated listening across North America, Europe, and LATAM",
-              "Priority-city engagement, owned demand, and repeat exposure",
+              "Current and revalidated listening across North America and Europe",
+              "Priority-city engagement, direct fan sign-ups and city interest, and repeat exposure",
               "2026 showcase footage and 2027 English-release calendar",
               "Current seven-member EPK, stage plot, team map, and approved contacts",
             ],
@@ -1167,7 +1016,7 @@ export const lolaAmourPlan: StrategyPlanData = {
           title: "Booking and Festival Opportunity Map",
           objective: "Prioritize the agents, promoters, festivals, support slots, sessions, showcases, and cultural events that fit the actual stage of each AOR region.",
           tactics: [
-            "Agency, agent, promoter, and festival landscape across the U.S., Canada, Europe, and LATAM",
+            "Agency, agent, promoter, and festival landscape across the U.S., Canada, and Europe",
             "Filipino-community promoters separated from broader indie and festival buyers",
             "Region and market-level room, support-slot, and partnership hypotheses",
             "Submission windows, requirements, and relationship owners",
@@ -1184,7 +1033,7 @@ export const lolaAmourPlan: StrategyPlanData = {
         },
         {
           label: "D",
-          title: "Showcase-to-Western-Markets Proof System",
+          title: "Showcase Content Plan",
           timeline: "Music Matters and Singapore F1 through Month 3",
           objective: "Capture 2026 international activity in formats that strengthen the Western-market story instead of producing only recap content.",
           tactics: [
@@ -1202,13 +1051,13 @@ export const lolaAmourPlan: StrategyPlanData = {
 
     {
       type: "vertical",
-      number: "13",
+      number: "12",
       navLabel: "Handoffs",
       title: "Roles, Handoffs and Scope Boundaries",
       philosophy:
         "The lean independent structure is an advantage when every partner has a clear lane, shared calendar, and single approval path.",
       intro:
-        "Crowd Control Digital serves as agency of record across the U.S., Canada, Europe, and LATAM, working alongside the artist's existing marketing, content, distribution, Asia, booking, and press partners. One global calendar and clear territorial ownership keep the system coordinated.",
+        "Crowd Control Digital serves as agency of record across the U.S., Canada, and Europe, working alongside the artist's existing marketing, content, distribution, Asia, booking, and press partners. One global calendar and clear territorial ownership keep the system coordinated.",
       subBlocks: [
         {
           label: "CROWD CONTROL",
@@ -1216,13 +1065,13 @@ export const lolaAmourPlan: StrategyPlanData = {
           components: {
             heading: "Owns",
             items: [
-              "Master strategy and AOR accountability across the U.S., Canada, Europe, and LATAM",
+              "Master strategy and AOR accountability across the U.S., Canada, and Europe",
               "Regional brand translation, audience research, release planning, and campaign architecture",
               "Song, content, market, paid, and creator testing strategy by territory",
               "Creative direction and briefs for the existing content team",
               "Managed paid and creator activity, reporting, and optimization",
               "Regional partner coordination, opportunity mapping, and selective introductions",
-              "90-day findings and the 2027 release and tour-growth playbook",
+              "90-day findings and the months 4–12 marketing recommendations",
             ],
           },
         },
@@ -1295,7 +1144,7 @@ export const lolaAmourPlan: StrategyPlanData = {
           label: "OUTSIDE BASE",
           title: "Separately Scoped Work",
           components: {
-            heading: "Not Included In The $5K Monthly Retainer",
+            heading: "Outside The Base Scope",
             items: [
               "Media, creator, clipping, tool, platform, travel, and other third-party spend",
               "Hands-on shooting, editing, design, motion, web development, and production",
@@ -1309,306 +1158,51 @@ export const lolaAmourPlan: StrategyPlanData = {
         },
       ],
       footnote:
-        "Crowd Control owns the Western-market plan. A single weekly global operating call, shared action log, regional workplans, and named approval owner on each team prevent the partner structure from becoming a coordination tax.",
+        "Crowd Control owns the Western-market plan. Weekly marketing calls, a dashboard updated daily, a shared action log, regional workplans, and named approval owners keep the partner structure coordinated.",
     },
 
     {
       type: "roadmap",
-      number: "14",
-      navLabel: "6–12 Months",
-      title: "6–12 Month AOR Growth Plan",
+      number: "13",
+      navLabel: "Timeline",
+      title: "Overall 6–12 Month Timeline",
       intro:
-        "The initial 90-day ramp and trial create the answer key. Months 4–6 apply it to the English-release runway, market development, and tour announcement. Months 7–12 extend the strongest systems through on-sale, ticket conversion, regional expansion, and post-tour retention. The engagement is designed as a 6–12 month plan at the same $5,000 monthly strategy and campaign retainer, plus approved working spend and production.",
-      compoundsLabel: "Builds On",
+        "The first 90 days establish access, baselines, working processes, and the first campaign learnings. Months 4–6 apply those learnings to the release and tour runway. Months 7–12 support confirmed releases, on-sale moments, touring, and continued market development. Exact timing follows the artist's approved release and touring calendars.",
+      compoundsLabel: "Key Outcomes",
       campaigns: [
         {
-          label: "Bridge",
-          name: "Showcase Proof and English-Release Sequence",
-          window: "November to December 2026",
-          budget: "$5,000 / month + approved spend",
-          objective: "Turn Music Matters and Formula 1 evidence into Western-market assets, lock the English-song sequence, and carry the winning creative and audience systems forward through region-specific plans.",
-          compounds: ["90-day findings", "Showcase assets", "Priority markets", "Validated hooks"],
+          label: "Initial Ramp and Trial",
+          name: "Access, Baselines and First Tests",
+          window: "Months 1–3",
+          objective: "Audit rights, data, platforms, assets, and partner responsibilities; establish the shared dashboard and weekly marketing rhythm; then launch the first approved creative, audience, paid media, and creator tests.",
+          compounds: ["Approved access and responsibility map", "Brand and audience findings", "First campaign learnings", "Priority-market recommendations"],
         },
         {
-          label: "Release 1",
-          name: "First English-Song Acquisition Cycle",
-          window: "January to March 2027",
-          budget: "$5,000 / month + approved spend",
-          objective: "Launch the first English release into proven cohorts across the AOR territories, expand city-level capture, and test where the new music accelerates broader-than-OPM conversion.",
-          compounds: ["Retargeting pools", "Song-fit scorecard", "Creator roster", "Owned demand"],
-          featured: true,
+          label: "Growth Cycle",
+          name: "Release and Tour Preparation",
+          window: "Months 4–6",
+          objective: "Apply the strongest songs, stories, audiences, and regional findings to the English-release sequence, North American tour preparation, European market development, and partner conversations.",
+          compounds: ["Release campaign plans", "Creative briefs and testing roadmap", "Fan and retargeting audiences", "Agent, promoter, and platform materials"],
         },
         {
-          label: "On-Sale",
-          name: "English Releases, Tour Announcement and Regional Expansion",
-          window: "April to May 2027",
-          budget: "$5,000 / month + approved spend",
-          objective: "Support the next releases, North American tour announcement and on-sale, plus Europe and LATAM market development, with investment weighted by regional readiness.",
-          compounds: ["Release-one learning", "Agent and promoter inputs", "City scoring", "Ticketing data"],
-        },
-        {
-          label: "Tour",
-          name: "North American Tour Conversion / Europe and LATAM Growth",
-          window: "June to July 2027",
-          budget: "$5,000 / month + approved spend",
-          objective: "Run North American media, retargeting, fan referral, live capture, and last-mile ticket conversion while using the release and tour moment to grow Europe and LATAM demand for the next routing cycle.",
-          compounds: ["Ticketing audiences", "Creator proof", "Tour content", "Apos referrals"],
-        },
-        {
-          label: "Retention",
-          name: "Post-Tour Audience Ownership",
-          window: "After the tour",
-          budget: "Re-scope after final show",
-          objective: "Convert temporary tour attention into followers, owned contacts, repeat catalog consumption, current-era listening, and future market demand.",
-          compounds: ["Live capture", "Ticket buyers", "City cohorts", "Tour learnings"],
+          label: "Campaign and Tour Support",
+          name: "Releases, On-Sale, Touring and Retention",
+          window: "Months 7–12",
+          objective: "Support confirmed releases and tour moments with paid media, creator activity, fan capture, partner coordination, and live-content amplification, then retain the audiences created during the cycle.",
+          compounds: ["Release and ticketing performance", "City and market comparisons", "Live and creator assets", "Post-tour audience plan"],
         },
       ],
       footnote:
-        "The 90-day checkpoint is a mutual fit and scope review, not the end of the strategy. The recommended engagement horizon is at least six months, extendable through month 12, with months 4–12 authorized monthly and calibrated to confirmed release dates, routing, results, and working spend.",
-    },
-
-    {
-      type: "flight",
-      number: "15",
-      navLabel: "Initial Ramp",
-      title: "Initial 90-Day Operating Ramp",
-      intro:
-        "The first 90 days are the ramp and trial inside the larger 6–12 month plan. A target August start allows the third month to use Music Matters and the October 11 Singapore Formula 1 performance as real-time proof. Dates shift with agreement, access, asset delivery, and the final release calendar.",
-      totalBudget: "$15,000 initial-ramp retainer / working spend approved separately",
-      phases: [
-        {
-          label: "Diagnose and Instrument",
-          window: "Month 1 / August 2026",
-          focus: "Map the global team, rights, catalog, audience, data, platform access, and current creative. Establish the Western-market positioning, regional priorities, song and audience hypotheses, dashboard, and minimum viable owned-demand system.",
-          budget: "$5,000 retainer + approved setup costs",
-          tactics: [
-            "Brand, audience, catalog, rights, CRM, and channel audit",
-            "Western-market positioning, regional roles, and five content territories",
-            "Song × story × audience test matrix",
-            "North American priority-city design plus Europe and LATAM validation screens",
-            "Analytics baseline, event map, and dashboard",
-          ],
-        },
-        {
-          label: "Test and Learn",
-          window: "Month 2 / September 2026",
-          focus: "Launch approved paid, creator, organic, and capture tests. Compare songs, hooks, formats, audiences, and cities. Feed weekly learning into the existing content team and begin the agent, promoter, and festival opportunity map.",
-          budget: "$5,000 retainer + approved working spend",
-          tactics: [
-            "Paid and creator test cells across priority audiences",
-            "Legacy-to-current content and retargeting",
-            "Owned-demand capture and city scoring",
-            "Weekly creative briefs and reallocation",
-            "Industry evidence and opportunity mapping",
-          ],
-        },
-        {
-          label: "Codify and Bridge",
-          window: "Month 3 / October 2026",
-          focus: "Apply the strongest findings to Music Matters and Formula 1, convert international activity into Western-market proof, rank markets by region, package the booking and festival case, and deliver the 2027 release and tour-growth playbook.",
-          budget: "$5,000 retainer + approved working spend",
-          tactics: [
-            "Showcase shot lists and fast-turn regional edits",
-            "Scale winning song, audience, market, and creative pairings",
-            "Finalize city-readiness rankings and audience cohorts",
-            "Deliver current EPK and industry evidence pack",
-            "Confirm months 4–12 scope, calendar, and working budget",
-          ],
-        },
-      ],
-      footnote:
-        "Retainer is fixed. Approved media, creator, clipping, and other activation spend that Crowd Control places or administers is billed at cost plus a 15 percent management fee. Tools and specialist partner fees are direct or separately scoped unless administration is explicitly quoted. Creative production is $120 per hour or an approved fixed scope.",
-    },
-
-    {
-      type: "timeline",
-      number: "16",
-      navLabel: "Timeline",
-      title: "Initial 90-Day Ramp Timeline",
-      intro:
-        "Illustrative August through October deployment. Week 10 aligns with the October 11 Singapore Formula 1 performance. The calendar shifts to the actual start date and confirmed Music Matters, release, asset, and access deadlines.",
-      weeks: [
-        { index: 1, label: "W1", dates: "Aug 3" },
-        { index: 2, label: "W2", dates: "Aug 10" },
-        { index: 3, label: "W3", dates: "Aug 17" },
-        { index: 4, label: "W4", dates: "Aug 24" },
-        { index: 5, label: "W5", dates: "Aug 31" },
-        { index: 6, label: "W6", dates: "Sep 7" },
-        { index: 7, label: "W7", dates: "Sep 14" },
-        { index: 8, label: "W8", dates: "Sep 21" },
-        { index: 9, label: "W9", dates: "Sep 28" },
-        { index: 10, label: "W10", dates: "Oct 5", highlight: true, note: "F1 OCT 11" },
-        { index: 11, label: "W11", dates: "Oct 12" },
-        { index: 12, label: "W12", dates: "Oct 19" },
-      ],
-      workstreams: [
-        {
-          name: "Audit + Strategy",
-          cells: [
-            { weekIndex: 1, intensity: "high", label: "AUDIT" },
-            { weekIndex: 2, intensity: "high", label: "FRAME" },
-            { weekIndex: 3, intensity: "medium" },
-            { weekIndex: 4, intensity: "low" },
-            { weekIndex: 8, intensity: "low" },
-            { weekIndex: 12, intensity: "high", label: "PLAYBK" },
-          ],
-        },
-        {
-          name: "Content System",
-          cells: [
-            { weekIndex: 1, intensity: "medium" },
-            { weekIndex: 2, intensity: "high", label: "BRIEF" },
-            { weekIndex: 3, intensity: "high" },
-            { weekIndex: 4, intensity: "high", label: "TEST" },
-            { weekIndex: 5, intensity: "high" },
-            { weekIndex: 6, intensity: "high" },
-            { weekIndex: 7, intensity: "high" },
-            { weekIndex: 8, intensity: "high" },
-            { weekIndex: 9, intensity: "high" },
-            { weekIndex: 10, intensity: "high", label: "LIVE" },
-            { weekIndex: 11, intensity: "high" },
-            { weekIndex: 12, intensity: "medium" },
-          ],
-        },
-        {
-          name: "Paid + Creator",
-          cells: [
-            { weekIndex: 2, intensity: "low", label: "SETUP" },
-            { weekIndex: 3, intensity: "medium", label: "TEST" },
-            { weekIndex: 4, intensity: "medium" },
-            { weekIndex: 5, intensity: "high", label: "SCALE" },
-            { weekIndex: 6, intensity: "high" },
-            { weekIndex: 7, intensity: "high" },
-            { weekIndex: 8, intensity: "high" },
-            { weekIndex: 9, intensity: "high" },
-            { weekIndex: 10, intensity: "high", label: "F1" },
-            { weekIndex: 11, intensity: "medium" },
-            { weekIndex: 12, intensity: "medium" },
-          ],
-        },
-        {
-          name: "Data + Capture",
-          cells: [
-            { weekIndex: 1, intensity: "high", label: "MAP" },
-            { weekIndex: 2, intensity: "high", label: "BUILD" },
-            { weekIndex: 3, intensity: "medium" },
-            { weekIndex: 4, intensity: "medium" },
-            { weekIndex: 5, intensity: "medium" },
-            { weekIndex: 6, intensity: "medium" },
-            { weekIndex: 7, intensity: "medium" },
-            { weekIndex: 8, intensity: "medium" },
-            { weekIndex: 9, intensity: "medium" },
-            { weekIndex: 10, intensity: "medium" },
-            { weekIndex: 11, intensity: "medium" },
-            { weekIndex: 12, intensity: "high", label: "SCORE" },
-          ],
-        },
-        {
-          name: "Industry + Live",
-          cells: [
-            { weekIndex: 3, intensity: "low", label: "MAP" },
-            { weekIndex: 4, intensity: "medium" },
-            { weekIndex: 5, intensity: "medium" },
-            { weekIndex: 6, intensity: "medium" },
-            { weekIndex: 7, intensity: "medium" },
-            { weekIndex: 8, intensity: "medium" },
-            { weekIndex: 9, intensity: "high", label: "PACK" },
-            { weekIndex: 10, intensity: "high", label: "PROOF" },
-            { weekIndex: 11, intensity: "high" },
-            { weekIndex: 12, intensity: "high", label: "HANDOFF" },
-          ],
-        },
-        {
-          name: "Reporting",
-          cells: [
-            { weekIndex: 1, intensity: "high", label: "BASE" },
-            { weekIndex: 2, intensity: "low" },
-            { weekIndex: 3, intensity: "low" },
-            { weekIndex: 4, intensity: "high", label: "READ" },
-            { weekIndex: 5, intensity: "low" },
-            { weekIndex: 6, intensity: "low" },
-            { weekIndex: 7, intensity: "low" },
-            { weekIndex: 8, intensity: "high", label: "READ" },
-            { weekIndex: 9, intensity: "low" },
-            { weekIndex: 10, intensity: "low" },
-            { weekIndex: 11, intensity: "low" },
-            { weekIndex: 12, intensity: "high", label: "FINAL" },
-          ],
-        },
-      ],
-      weekBreakdowns: [
-        {
-          weekIndex: 1,
-          title: "Access, truth, and baseline",
-          items: [
-            "Team, partner, rights, data, platform, catalog, asset, and calendar intake",
-            "Revalidate U.S. and Canada baselines and establish an initial comparable Europe and LATAM market scan",
-            "Inventory current CRM, capture, ticketing, commerce, and former-label records without assuming ownership",
-            "Set weekly operating call, shared action log, and approval owners",
-          ],
-        },
-        {
-          weekIndex: 3,
-          title: "Translation system and first test cells",
-          items: [
-            "Deliver Western-market positioning, global biography, regional context modules, proof hierarchy, and five content territories",
-            "Lock initial song, hook, audience, city, and outcome matrix",
-            "Brief the existing content team on first variants and platform-native edits",
-            "Stand up the reporting and city-scoring structure",
-          ],
-        },
-        {
-          weekIndex: 5,
-          title: "Test read and controlled scale",
-          items: [
-            "Move approved spend behind the first song, audience, and creative combinations producing qualified signal",
-            "Launch or refine city-demand capture and retargeting pools",
-            "Open the booking, promoter, festival, and partnership opportunity map",
-            "Refresh content briefs from observed behavior rather than opinion",
-          ],
-        },
-        {
-          weekIndex: 7,
-          title: "Crossover proof",
-          items: [
-            "Measure broader-than-OPM action share and acquisition efficiency",
-            "Develop legacy-to-current handoffs around the strongest hooks",
-            "Rank preliminary priority cities and document remaining data gaps",
-            "Prepare showcase shot lists and fast-turn edit requirements",
-          ],
-        },
-        {
-          weekIndex: 9,
-          title: "Showcase bridge",
-          items: [
-            "Lock Formula 1 and Music Matters content capture against the Western-market proof gaps",
-            "Prepare region-facing release, live, and partner materials",
-            "Build the current EPK, cross-region market evidence, and English-release narrative",
-            "Identify qualified introduction targets and required next steps",
-          ],
-        },
-        {
-          weekIndex: 12,
-          title: "Answer key and 2027 handoff",
-          items: [
-            "Deliver validated song, story, audience, creator, and city combinations",
-            "Finalize the audience dashboard and ranked market map",
-            "Deliver the booking and festival evidence pack",
-            "Present the 2027 English-release and tour-growth playbook, months 4–12 scope, and recommended working budget",
-          ],
-        },
-      ],
-      footnote:
-        "Illustrative calendar. Paid and creator launch timing depends on access, approved spend, and asset delivery. Music Matters and release dates replace the placeholder cells once confirmed.",
+        "The 90-day checkpoint is a mutual fit and scope review inside the intended 6–12 month relationship. Months 4–12 are calibrated to confirmed release dates, routing, results, and approved working spend.",
     },
 
     {
       type: "pricing",
-      number: "17",
+      number: "14",
       navLabel: "Investment",
       title: "Investment",
       intro:
-        "A monthly AOR structure designed for a 6–12 month engagement, beginning with a 90-day ramp and trial, that keeps responsibility across the U.S., Canada, Europe, and LATAM clear while letting the artist team control external investment. The retainer covers strategy, direction, management, regional coordination, and measurement. Media, creators, production, and tools remain flexible.",
+        "A monthly AOR structure designed for an intended 6–12 month relationship, beginning with a 90-day ramp and trial. Crowd Control Digital is responsible for the U.S., Canada, and Europe while the artist team retains control of every external investment. The retainer covers strategy, direction, management, regional coordination, and measurement. Media, creators, production, and tools remain flexible.",
       breakdownLabel: "Commercial Structure",
       deployableLabel: "Planning Horizon",
       tiers: [
@@ -1617,24 +1211,14 @@ export const lolaAmourPlan: StrategyPlanData = {
           budget: "$5,000 / month",
           name: "Western Markets AOR Retainer",
           tagline:
-            "A 6–12 month Western Markets AOR plan covering the U.S., Canada, Europe, and LATAM, beginning with a 90-day ramp and trial billed monthly. The end-of-ramp review confirms fit, priorities, and the months 4–12 plan at the same monthly retainer.",
+            "Covers the U.S., Canada, and Europe. The end-of-ramp review confirms fit, priorities, and the months 4–12 plan at the same monthly retainer.",
           featured: true,
-          deployable: "6–12 months / $5,000 monthly",
-          feeBreakdown: {
-            retainer: "$5,000/mo",
-            retainerDetail: "90-day ramp, then monthly continuation",
-            mediaManagement: "15%",
-            mediaManagementDetail: "Approved activation spend Crowd Control administers",
-            mediaManagementLabel: "Managed Spend",
-          },
+          deployable: "90-day ramp / intended 6–12 months",
           breakdown: [
-            { vertical: "Western Markets AOR Retainer", amount: "$5,000/mo" },
-            { vertical: "Initial Ramp and Trial", amount: "90 days / $15,000" },
-            { vertical: "Recommended Plan", amount: "6–12 months" },
-            { vertical: "6-Month Agency Fees", amount: "$30,000" },
-            { vertical: "12-Month Agency Fees", amount: "$60,000" },
+            { vertical: "Initial Ramp and Trial", amount: "First 90 days" },
+            { vertical: "Intended Relationship", amount: "6–12 months" },
             { vertical: "Media and Creator Spend", amount: "Client-approved" },
-            { vertical: "Managed Activation Fee", amount: "15% of actual" },
+            { vertical: "Managed Activation Fee", amount: "Cost + 15%" },
             { vertical: "Crowd Control Creative", amount: "$120/hr or fixed" },
             { vertical: "Tools and Specialists", amount: "Direct or scoped" },
           ],

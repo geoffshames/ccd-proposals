@@ -76,14 +76,14 @@ export function PlanBrandAudit({ section }: { section: BrandAuditSection }) {
         )}
 
         <div className="mb-14 md:mb-18">
-          <Eyebrow>Readiness scorecard</Eyebrow>
+          <Eyebrow>Readiness observations</Eyebrow>
           <div className="mt-4 grid grid-cols-1 md:grid-cols-2 gap-3">
             {section.scorecard.map((item, i) => {
+              const hasScore = typeof item.score === "number";
               const maxScore = item.maxScore ?? 10;
-              const percentage = Math.max(
-                0,
-                Math.min(100, (item.score / maxScore) * 100),
-              );
+              const percentage = hasScore
+                ? Math.max(0, Math.min(100, (item.score! / maxScore) * 100))
+                : 0;
 
               return (
                 <motion.div
@@ -105,35 +105,41 @@ export function PlanBrandAudit({ section }: { section: BrandAuditSection }) {
                         </div>
                       )}
                     </div>
-                    <div className="flex items-baseline gap-1 text-accent tabular-nums flex-shrink-0">
-                      <span
-                        className="text-[32px] md:text-[38px] font-bold leading-none"
-                        style={{
-                          fontFamily:
-                            "var(--font-heading), var(--font-sans), sans-serif",
+                    {hasScore && (
+                      <div className="flex items-baseline gap-1 text-accent tabular-nums flex-shrink-0">
+                        <span
+                          className="text-[32px] md:text-[38px] font-bold leading-none"
+                          style={{
+                            fontFamily:
+                              "var(--font-heading), var(--font-sans), sans-serif",
+                          }}
+                        >
+                          {item.score}
+                        </span>
+                        <span className="text-[11px] font-mono text-text-muted/70">
+                          /{maxScore}
+                        </span>
+                      </div>
+                    )}
+                  </div>
+                  {hasScore && (
+                    <div className="mt-5 h-1.5 bg-text-muted/10 overflow-hidden">
+                      <motion.div
+                        initial={{ width: 0 }}
+                        whileInView={{ width: `${percentage}%` }}
+                        viewport={{ once: true }}
+                        transition={{
+                          duration: 0.8,
+                          delay: 0.1 + i * 0.04,
+                          ease: [0.22, 1, 0.36, 1],
                         }}
-                      >
-                        {item.score}
-                      </span>
-                      <span className="text-[11px] font-mono text-text-muted/70">
-                        /{maxScore}
-                      </span>
+                        className="h-full bg-accent"
+                      />
                     </div>
-                  </div>
-                  <div className="mt-5 h-1.5 bg-text-muted/10 overflow-hidden">
-                    <motion.div
-                      initial={{ width: 0 }}
-                      whileInView={{ width: `${percentage}%` }}
-                      viewport={{ once: true }}
-                      transition={{
-                        duration: 0.8,
-                        delay: 0.1 + i * 0.04,
-                        ease: [0.22, 1, 0.36, 1],
-                      }}
-                      className="h-full bg-accent"
-                    />
-                  </div>
-                  <p className="mt-4 text-[13px] md:text-[14px] leading-relaxed text-text-muted">
+                  )}
+                  <p
+                    className={`${hasScore ? "mt-4" : "mt-5"} text-[13px] md:text-[14px] leading-relaxed text-text-muted`}
+                  >
                     {item.evidence}
                   </p>
                 </motion.div>
