@@ -37,7 +37,7 @@ export function Investment() {
             {q.introMode ? "What We Do" : (q.model === "retainer" ? "Total Investment" : "Project Investment")}
           </h2>
           <p className="text-[16px] text-text-secondary leading-[1.8] mb-20 max-w-2xl tracking-[-0.01em]">
-            {q.investmentSubheading ? q.investmentSubheading : (q.introMode ? "Six workstreams CCD operates in a full-service engagement of this shape. Final scope and pricing are calibrated to your priorities on a 30-minute intro call." : (q.model === "retainer" ? "Committed retainer shown below. Any production, media, engineering, event, talent, travel, or third-party costs are scoped and approved separately before spend is committed." : "Transparent pricing with milestone-based payments aligned to delivery."))}
+            {q.investmentSubheading ? q.investmentSubheading : (q.introMode ? "Six workstreams Crowd Control operates in a full-service engagement of this shape. Final scope and pricing are calibrated to your priorities on a 30-minute intro call." : (q.model === "retainer" ? "Committed retainer shown below. Any production, media, engineering, event, talent, travel, or third-party costs are scoped and approved separately before spend is committed." : "Transparent pricing with milestone-based payments aligned to delivery."))}
           </p>
         </ScrollReveal>
 

@@ -10,7 +10,7 @@ export const lolaAmourPlan: StrategyPlanData = {
     label: "Western Markets AOR Strategy",
     title: "LOLA AMOUR",
     subtitle:
-      "A 90-day foundation for CCD to serve as agency of record across the U.S., Canada, Europe, and LATAM, building measurable demand ahead of the 2027 tour.",
+      "A 6–12 month Western Markets AOR plan led by Crowd Control Digital, beginning with a 90-day ramp and trial across the U.S., Canada, Europe, and LATAM to build measurable demand ahead of the 2027 tour.",
     partnership: "Lola Amour × Crowd Control Digital",
     prepared: "Geoff Shames / Co-Founder, Crowd Control Digital",
     date: "July 2026",
@@ -34,7 +34,7 @@ export const lolaAmourPlan: StrategyPlanData = {
       body: [
         "Lola Amour enters the Western-market conversation with rare underlying strength: a ten-year story, a distinctive seven-piece sound, two songs above 200 million Spotify streams, 2.1 million Spotify followers, and a live show capable of filling 3,000 and 10,000-capacity rooms in the Philippines. This is not artist development. It is market translation, discovery, and demand creation.",
         "The timing is unusually favorable. The band is independent, supported by a lean team that includes former Warner marketing and content leadership, and building toward two to three English songs before a tentative June and July 2027 North American tour. Filipino-language releases in 2026, Music Matters, and Singapore Formula 1 create immediate material for testing without forcing the band into an English-only identity.",
-        "The first 90 days are therefore a foundation period for a broader agency-of-record relationship. CCD will own the Western-market strategy across the U.S., Canada, Europe, and LATAM, identify which songs, stories, formats, audiences, and cities can carry Lola Amour beyond the Filipino and OPM algorithmic box, then turn those findings into the operating plan for the 2027 English releases and tour.",
+        "The first 90 days are the ramp and fit-validation period inside a 6–12 month agency-of-record plan. Crowd Control Digital will own the Western-market strategy across the U.S., Canada, Europe, and LATAM, identify which songs, stories, formats, audiences, and cities can carry Lola Amour beyond the Filipino and OPM algorithmic box, then apply those findings to the 2027 English releases and tour runway.",
       ],
       supports: {
         heading: "What This Strategy Supports",
@@ -48,7 +48,7 @@ export const lolaAmourPlan: StrategyPlanData = {
         ],
       },
       goals: {
-        heading: "What The First 90 Days Must Prove",
+        heading: "What The Initial 90-Day Ramp Must Prove",
         items: [
           "Which catalog and forthcoming songs travel most efficiently by region",
           "Which parts of the band's humor translate immediately and which need context",
@@ -652,7 +652,7 @@ export const lolaAmourPlan: StrategyPlanData = {
       navLabel: "Thesis",
       title: "Strategic Thesis / Translate, Do Not Americanize",
       thesis:
-        "Use the next 90 days to identify the songs, stories, cities, and audiences that can carry Lola Amour into 2027. Preserve the humor, Tagalog, Manila identity, and seven-person chemistry. Add the context and systems that make them easy to enter.",
+        "Use the initial 90-day ramp to identify the songs, stories, cities, and audiences that can carry Lola Amour into a 6–12 month Western growth cycle. Preserve the humor, Tagalog, Manila identity, and seven-person chemistry. Add the context and systems that make them easy to enter, then compound the strongest signals through the 2027 release and tour runway.",
       hierarchy: [
         {
           label: "Proof (Already Exists)",
@@ -698,7 +698,7 @@ export const lolaAmourPlan: StrategyPlanData = {
           metric: "Stable U.S. Monthly Listeners",
           baseline: "~113K",
           target: "+10-20%",
-          window: "Initial 90 days",
+          window: "Initial 90-day ramp",
           rationale: "The objective is measured U.S. lift while preserving the strong follower-depth signal already present globally.",
           measurement: "Revalidated platform geography, four-week rolling average, and matched campaign exposure cohorts.",
           featured: true,
@@ -707,7 +707,7 @@ export const lolaAmourPlan: StrategyPlanData = {
           metric: "U.S. and Canada Listener Share",
           baseline: "~3.5%",
           target: "3.8-4.2%",
-          window: "Initial 90 days",
+          window: "Initial 90-day ramp",
           rationale: "A share target prevents global growth from making a nominal North American gain look stronger than it is.",
           measurement: "Stable country estimates divided by global monthly listeners, tracked weekly after re-baselining.",
         },
@@ -715,7 +715,7 @@ export const lolaAmourPlan: StrategyPlanData = {
           metric: "Qualified Owned Demand",
           baseline: "Audit W1",
           target: "1.5K-4K",
-          window: "Initial 90 days",
+          window: "Initial 90-day ramp",
           rationale: "Email, SMS, or city-demand actions are more useful for 2027 routing than anonymous reach alone.",
           measurement: "Verified, consented contacts or city registrations, de-duplicated and segmented by market and source.",
         },
@@ -747,7 +747,7 @@ export const lolaAmourPlan: StrategyPlanData = {
           metric: "TikTok Artist Followers",
           baseline: "413K",
           target: "+3-5%",
-          window: "Initial 90 days",
+          window: "Initial 90-day ramp",
           rationale: "The catalog has strong sound participation but weak recent account growth. The goal is to convert song usage into an artist relationship.",
           measurement: "Native account analytics, post-level follower attribution where available, and exposed-versus-organic trend comparison.",
         },
@@ -786,10 +786,10 @@ export const lolaAmourPlan: StrategyPlanData = {
       navLabel: "Structure",
       title: "Engagement Structure / Western Markets AOR",
       intro:
-        "A low-risk initial term that establishes CCD as agency of record across the U.S., Canada, Europe, and LATAM while answering the questions that should govern the larger 2027 investment. The monthly retainer covers strategy, direction, management, testing architecture, regional coordination, and measurement. Media, creators, tools, and production remain flexible and require approval before spend.",
+        "A 6–12 month Western Markets AOR engagement beginning with a low-risk 90-day ramp and trial. Crowd Control Digital is accountable across the U.S., Canada, Europe, and LATAM while working alongside the global team. The monthly retainer covers strategy, direction, management, testing architecture, regional coordination, and measurement. Media, creators, tools, and production remain flexible and require approval before spend.",
       tiers: [
         {
-          label: "Initial 90-Day Term",
+          label: "6–12 Month Plan / 90-Day Initial Ramp",
           budget: "$5,000 / month",
           name: "Western Markets AOR Retainer",
           goal:
@@ -808,7 +808,7 @@ export const lolaAmourPlan: StrategyPlanData = {
             "One consolidated weekly operating call and one monthly strategy and reporting review",
             "A decision-ready 2027 English-release and tour-growth playbook",
           ],
-          deployable: "$5,000 billed monthly for three months",
+          deployable: "$5,000 monthly / initial 90-day ramp and trial",
         },
       ],
     },
@@ -903,7 +903,7 @@ export const lolaAmourPlan: StrategyPlanData = {
       philosophy:
         "Mika's question is not whether the band's humor works. It is which framing makes the humor, musicianship, and emotional world work for somebody seeing Lola Amour for the first time.",
       intro:
-        "CCD directs the Western-market content system and produces the master narrative, regional briefs, edit maps, tests, and performance learning. Lola Amour's existing content team remains the source-production and publishing engine unless separate creative production is approved.",
+        "Crowd Control directs the Western-market content system and produces the master narrative, regional briefs, edit maps, tests, and performance learning. Lola Amour's existing content team remains the source-production and publishing engine unless separate creative production is approved.",
       subBlocks: [
         {
           label: "A",
@@ -980,7 +980,7 @@ export const lolaAmourPlan: StrategyPlanData = {
         },
       ],
       footnote:
-        "Hands-on shooting, editing, motion design, custom creative production, professional translation, transcreation, in-market copywriting, and local-language community management are outside the base retainer. CCD provides the master system and localization briefs, then directs approved specialists or existing partners.",
+        "Hands-on shooting, editing, motion design, custom creative production, professional translation, transcreation, in-market copywriting, and local-language community management are outside the base retainer. Crowd Control provides the master system and localization briefs, then directs approved specialists or existing partners.",
     },
 
     {
@@ -991,7 +991,7 @@ export const lolaAmourPlan: StrategyPlanData = {
       philosophy:
         "The first media dollars should buy answers. Scale follows only after the campaign knows which song, story, audience, city, and format combination is producing qualified behavior.",
       intro:
-        "Working media, creator, clipping, and other managed activation spend is not embedded in the $5,000 monthly retainer. Those dollars are pre-approved and managed at 15 percent, allowing investment to rise only where the tests show signal. Tools and specialist partner fees are direct or separately scoped unless CCD is explicitly asked to administer them.",
+        "Working media, creator, clipping, and other managed activation spend is not embedded in the $5,000 monthly retainer. Those dollars are pre-approved and managed at 15 percent, allowing investment to rise only where the tests show signal. Tools and specialist partner fees are direct or separately scoped unless Crowd Control is explicitly asked to administer them.",
       subBlocks: [
         {
           label: "A",
@@ -1045,7 +1045,7 @@ export const lolaAmourPlan: StrategyPlanData = {
           label: "D",
           title: "Weekly Learning and Reallocation",
           timeline: "Weekly",
-          objective: "Make the campaign progressively smarter instead of repeating a fixed media plan for three months.",
+          objective: "Make the campaign progressively smarter instead of repeating a fixed media plan throughout the initial ramp.",
           components: {
             heading: "Decision Cadence",
             items: [
@@ -1059,7 +1059,7 @@ export const lolaAmourPlan: StrategyPlanData = {
         },
       ],
       footnote:
-        "CCD never guarantees platform reclassification. The strategy creates the volume, consistency, audience separation, and behavioral evidence required to give the algorithms new information.",
+        "Crowd Control never guarantees platform reclassification. The strategy creates the volume, consistency, audience separation, and behavioral evidence required to give the algorithms new information.",
     },
 
     {
@@ -1070,7 +1070,7 @@ export const lolaAmourPlan: StrategyPlanData = {
       philosophy:
         "The catalog is both proof and acquisition inventory. The job is to use that inventory to open the independent chapter and build evidence for the planned English releases.",
       intro:
-        "New Levels remains the distribution and DSP-delivery lead. CCD supplies Western-market positioning, regional song data, creative support, audience evidence, and partner coordination across the U.S., Canada, Europe, and LATAM. Editorial pitching is not represented as a guaranteed CCD deliverable.",
+        "New Levels remains the distribution and DSP-delivery lead. Crowd Control supplies Western-market positioning, regional song data, creative support, audience evidence, and partner coordination across the U.S., Canada, Europe, and LATAM. Editorial pitching is not represented as a guaranteed Crowd Control deliverable.",
       subBlocks: [
         {
           label: "A",
@@ -1132,7 +1132,7 @@ export const lolaAmourPlan: StrategyPlanData = {
         },
       ],
       footnote:
-        "Playlist and editorial outcomes depend on platform and distributor decisions. CCD supports the market case, assets, timing, and data; New Levels and the artist team own delivery and final platform relationships.",
+        "Playlist and editorial outcomes depend on platform and distributor decisions. Crowd Control supports the market case, assets, timing, and data; New Levels and the artist team own delivery and final platform relationships.",
     },
 
     {
@@ -1143,7 +1143,7 @@ export const lolaAmourPlan: StrategyPlanData = {
       philosophy:
         "Turn streaming and social proof into a live-market case. Selective introductions are useful only when the positioning, evidence, and next step are ready.",
       intro:
-        "Mika is actively seeking Western-market booking representation and wants the 2027 tour to reach beyond Filipino-community routing. As AOR for the U.S., Canada, Europe, and LATAM, CCD will prepare the market case, coordinate regional plans and partner materials, and make selective introductions. CCD is not the booking agent, publicist, or festival submitter of record unless separately appointed for those services.",
+        "Mika is actively seeking Western-market booking representation and wants the 2027 tour to reach beyond Filipino-community routing. As AOR for the U.S., Canada, Europe, and LATAM, Crowd Control will prepare the market case, coordinate regional plans and partner materials, and make selective introductions. Crowd Control is not the booking agent, publicist, or festival submitter of record unless separately appointed for those services.",
       subBlocks: [
         {
           label: "A",
@@ -1177,9 +1177,9 @@ export const lolaAmourPlan: StrategyPlanData = {
         {
           label: "C",
           title: "Selective Introduction Support",
-          objective: "Open conversations only where CCD has a credible relationship and the materials support a clear ask.",
+          objective: "Open conversations only where Crowd Control has a credible relationship and the materials support a clear ask.",
           strategy:
-            "A possible UTA introduction and other booking or partnership conversations are relationship opportunities, not guaranteed placements. CCD will prepare the narrative, route materials, and support follow-up when a fit exists.",
+            "A possible UTA introduction and other booking or partnership conversations are relationship opportunities, not guaranteed placements. Crowd Control will prepare the narrative, route materials, and support follow-up when a fit exists.",
           kpis: ["Qualified conversations", "Actionable feedback", "Clear next steps", "No premature mass outreach"],
         },
         {
@@ -1208,10 +1208,10 @@ export const lolaAmourPlan: StrategyPlanData = {
       philosophy:
         "The lean independent structure is an advantage when every partner has a clear lane, shared calendar, and single approval path.",
       intro:
-        "CCD serves as agency of record across the U.S., Canada, Europe, and LATAM, working alongside the artist's existing marketing, content, distribution, Asia, booking, and press partners. One global calendar and clear territorial ownership keep the system coordinated.",
+        "Crowd Control Digital serves as agency of record across the U.S., Canada, Europe, and LATAM, working alongside the artist's existing marketing, content, distribution, Asia, booking, and press partners. One global calendar and clear territorial ownership keep the system coordinated.",
       subBlocks: [
         {
-          label: "CCD",
+          label: "CROWD CONTROL",
           title: "Western Markets Agency of Record",
           components: {
             heading: "Owns",
@@ -1249,7 +1249,7 @@ export const lolaAmourPlan: StrategyPlanData = {
               "Distribution, release operations, metadata, and DSP delivery",
               "Editorial pitching and platform relationship management",
               "Release deadlines, asset requirements, and reporting access",
-              "Coordination with CCD on Western-market narrative, regional evidence, and creative support",
+              "Coordination with Crowd Control on Western-market narrative, regional evidence, and creative support",
             ],
           },
         },
@@ -1261,7 +1261,7 @@ export const lolaAmourPlan: StrategyPlanData = {
             items: [
               "China, Asia, Australia, and other territory-specific execution within each partner's agreement",
               "Local opportunities, language, platforms, relationships, and reporting",
-              "Shared global calendar, asset coordination, and audience learning with CCD to avoid duplicated outreach or conflicting narratives",
+              "Shared global calendar, asset coordination, and audience learning with Crowd Control to avoid duplicated outreach or conflicting narratives",
             ],
           },
         },
@@ -1271,10 +1271,10 @@ export const lolaAmourPlan: StrategyPlanData = {
           components: {
             heading: "Owns",
             items: [
-              "Professional translation and transcreation beyond CCD's English master and localization briefs",
+              "Professional translation and transcreation beyond Crowd Control's English master and localization briefs",
               "Local-language copywriting, community management, media relations, and cultural review",
               "Market-specific creator, publicity, radio, platform, and field relationships where approved",
-              "Delivery and reporting through CCD's shared Western-market strategy and calendar",
+              "Delivery and reporting through Crowd Control's shared Western-market strategy and calendar",
             ],
           },
         },
@@ -1287,7 +1287,7 @@ export const lolaAmourPlan: StrategyPlanData = {
               "Routing, offers, festival submissions, ticketing, settlement, and tour logistics",
               "Traditional media relations, press pitching, interviews, and coverage follow-up",
               "Specialist budgets, commissions, approvals, and reporting",
-              "Coordination with CCD on market evidence, timing, creative, and amplification",
+              "Coordination with Crowd Control on market evidence, timing, creative, and amplification",
             ],
           },
         },
@@ -1309,16 +1309,16 @@ export const lolaAmourPlan: StrategyPlanData = {
         },
       ],
       footnote:
-        "CCD owns the Western-market plan. A single weekly global operating call, shared action log, regional workplans, and named approval owner on each team prevent the partner structure from becoming a coordination tax.",
+        "Crowd Control owns the Western-market plan. A single weekly global operating call, shared action log, regional workplans, and named approval owner on each team prevent the partner structure from becoming a coordination tax.",
     },
 
     {
       type: "roadmap",
       number: "14",
-      navLabel: "2027 Runway",
-      title: "Optional Continuation Into The 2027 Tour",
+      navLabel: "6–12 Months",
+      title: "6–12 Month AOR Growth Plan",
       intro:
-        "The initial term creates the answer key. Continuation applies it to the English releases, tour announcement, ticket conversion, and post-tour retention. Each period is re-scoped to the confirmed calendar at the same $5,000 monthly strategy and campaign retainer, plus approved working spend and production.",
+        "The initial 90-day ramp and trial create the answer key. Months 4–6 apply it to the English-release runway, market development, and tour announcement. Months 7–12 extend the strongest systems through on-sale, ticket conversion, regional expansion, and post-tour retention. The engagement is designed as a 6–12 month plan at the same $5,000 monthly strategy and campaign retainer, plus approved working spend and production.",
       compoundsLabel: "Builds On",
       campaigns: [
         {
@@ -1364,17 +1364,17 @@ export const lolaAmourPlan: StrategyPlanData = {
         },
       ],
       footnote:
-        "Continuation is optional and authorized monthly. Release dates, routing, and working spend replace these planning windows once confirmed.",
+        "The 90-day checkpoint is a mutual fit and scope review, not the end of the strategy. The recommended engagement horizon is at least six months, extendable through month 12, with months 4–12 authorized monthly and calibrated to confirmed release dates, routing, results, and working spend.",
     },
 
     {
       type: "flight",
       number: "15",
-      navLabel: "90-Day Flight",
-      title: "Proposed 90-Day Operating Flight",
+      navLabel: "Initial Ramp",
+      title: "Initial 90-Day Operating Ramp",
       intro:
-        "A target August start allows the third month to use Music Matters and the October 11 Singapore Formula 1 performance as real-time proof. Dates shift with agreement, access, asset delivery, and the final release calendar.",
-      totalBudget: "$15,000 retainer / working spend approved separately",
+        "The first 90 days are the ramp and trial inside the larger 6–12 month plan. A target August start allows the third month to use Music Matters and the October 11 Singapore Formula 1 performance as real-time proof. Dates shift with agreement, access, asset delivery, and the final release calendar.",
+      totalBudget: "$15,000 initial-ramp retainer / working spend approved separately",
       phases: [
         {
           label: "Diagnose and Instrument",
@@ -1412,19 +1412,19 @@ export const lolaAmourPlan: StrategyPlanData = {
             "Scale winning song, audience, market, and creative pairings",
             "Finalize city-readiness rankings and audience cohorts",
             "Deliver current EPK and industry evidence pack",
-            "Recommend continuation scope, calendar, and working budget",
+            "Confirm months 4–12 scope, calendar, and working budget",
           ],
         },
       ],
       footnote:
-        "Retainer is fixed. Approved media, creator, clipping, and other activation spend that CCD places or administers is billed at cost plus a 15 percent management fee. Tools and specialist partner fees are direct or separately scoped unless administration is explicitly quoted. Creative production is $120 per hour or an approved fixed scope.",
+        "Retainer is fixed. Approved media, creator, clipping, and other activation spend that Crowd Control places or administers is billed at cost plus a 15 percent management fee. Tools and specialist partner fees are direct or separately scoped unless administration is explicitly quoted. Creative production is $120 per hour or an approved fixed scope.",
     },
 
     {
       type: "timeline",
       number: "16",
       navLabel: "Timeline",
-      title: "90-Day Execution Timeline",
+      title: "Initial 90-Day Ramp Timeline",
       intro:
         "Illustrative August through October deployment. Week 10 aligns with the October 11 Singapore Formula 1 performance. The calendar shifts to the actual start date and confirmed Music Matters, release, asset, and access deadlines.",
       weeks: [
@@ -1594,7 +1594,7 @@ export const lolaAmourPlan: StrategyPlanData = {
             "Deliver validated song, story, audience, creator, and city combinations",
             "Finalize the audience dashboard and ranked market map",
             "Deliver the booking and festival evidence pack",
-            "Present the 2027 English-release and tour-growth playbook, continuation scope, and recommended working budget",
+            "Present the 2027 English-release and tour-growth playbook, months 4–12 scope, and recommended working budget",
           ],
         },
       ],
@@ -1608,32 +1608,34 @@ export const lolaAmourPlan: StrategyPlanData = {
       navLabel: "Investment",
       title: "Investment",
       intro:
-        "A simple monthly AOR structure that keeps responsibility across the U.S., Canada, Europe, and LATAM clear while letting the artist team control external investment. The retainer covers strategy, direction, management, regional coordination, and measurement. Media, creators, production, and tools remain flexible.",
+        "A monthly AOR structure designed for a 6–12 month engagement, beginning with a 90-day ramp and trial, that keeps responsibility across the U.S., Canada, Europe, and LATAM clear while letting the artist team control external investment. The retainer covers strategy, direction, management, regional coordination, and measurement. Media, creators, production, and tools remain flexible.",
       breakdownLabel: "Commercial Structure",
-      deployableLabel: "Initial 90-Day Billing",
+      deployableLabel: "Planning Horizon",
       tiers: [
         {
-          label: "Initial 90-Day Foundation",
+          label: "6–12 Month Plan / 90-Day Initial Ramp",
           budget: "$5,000 / month",
           name: "Western Markets AOR Retainer",
           tagline:
-            "Three-month initial term covering the U.S., Canada, Europe, and LATAM, billed monthly. Optional continuation at the same monthly retainer, re-scoped around the confirmed English-release and tour calendar.",
+            "A 6–12 month Western Markets AOR plan covering the U.S., Canada, Europe, and LATAM, beginning with a 90-day ramp and trial billed monthly. The end-of-ramp review confirms fit, priorities, and the months 4–12 plan at the same monthly retainer.",
           featured: true,
-          deployable: "$5,000 monthly × 3",
+          deployable: "6–12 months / $5,000 monthly",
           feeBreakdown: {
             retainer: "$5,000/mo",
-            retainerDetail: "Billed monthly for three months",
+            retainerDetail: "90-day ramp, then monthly continuation",
             mediaManagement: "15%",
-            mediaManagementDetail: "Approved activation spend CCD administers",
+            mediaManagementDetail: "Approved activation spend Crowd Control administers",
             mediaManagementLabel: "Managed Spend",
           },
           breakdown: [
             { vertical: "Western Markets AOR Retainer", amount: "$5,000/mo" },
-            { vertical: "Billing Cadence", amount: "3 monthly invoices" },
-            { vertical: "Initial Term Value", amount: "$15,000" },
+            { vertical: "Initial Ramp and Trial", amount: "90 days / $15,000" },
+            { vertical: "Recommended Plan", amount: "6–12 months" },
+            { vertical: "6-Month Agency Fees", amount: "$30,000" },
+            { vertical: "12-Month Agency Fees", amount: "$60,000" },
             { vertical: "Media and Creator Spend", amount: "Client-approved" },
             { vertical: "Managed Activation Fee", amount: "15% of actual" },
-            { vertical: "CCD Creative Production", amount: "$120/hr or fixed" },
+            { vertical: "Crowd Control Creative", amount: "$120/hr or fixed" },
             { vertical: "Tools and Specialists", amount: "Direct or scoped" },
           ],
         },
@@ -1642,12 +1644,12 @@ export const lolaAmourPlan: StrategyPlanData = {
         {
           name: "Creative Production",
           budget: "$120 / hour",
-          description: "Shooting, editing, design, motion, and production by CCD when the existing content team needs added capacity. Fixed scopes are available by brief.",
+          description: "Shooting, editing, design, motion, and production by Crowd Control when the existing content team needs added capacity. Fixed scopes are available by brief.",
         },
         {
           name: "Paid and Creator Spend",
           budget: "+15% mgmt",
-          description: "Media, creators, clipping, and other activation spend that CCD places or administers is approved before commitment and billed separately at cost plus management.",
+          description: "Media, creators, clipping, and other activation spend that Crowd Control places or administers is approved before commitment and billed separately at cost plus management.",
         },
         {
           name: "Web or Capture Build",
@@ -1661,7 +1663,7 @@ export const lolaAmourPlan: StrategyPlanData = {
         },
       ],
       footnote:
-        "Approval sends a notification to Crowd Control Digital and begins final SOW, access, calendar, and working-budget alignment. The retainer is billed monthly; invoice timing, payment terms, and termination terms are confirmed in the SOW. Proposal acceptance collects no payment, and no external spend is committed without written approval.",
+        "Approval sends a notification to Crowd Control Digital and begins final SOW, access, calendar, and working-budget alignment. The 6–12 month plan begins with the 90-day ramp and trial, billed monthly. Invoice timing, payment terms, continuation, and termination terms are confirmed in the SOW. Proposal acceptance collects no payment, and no external spend is committed without written approval.",
     },
   ],
 };

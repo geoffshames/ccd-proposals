@@ -192,7 +192,7 @@ function ItemCard({
 
 // Shared checklist state: every viewer of the page reads and writes the same
 // rows in Supabase (anon key + RLS scoped to this table), so the client team
-// and CCD see one source of truth instead of per-browser localStorage.
+// and Crowd Control see one source of truth instead of per-browser localStorage.
 const SB_URL = "https://hcyjlwbmrqcgbbizirzl.supabase.co";
 const SB_KEY = "sb_publishable_E1PXDuHKsBxmfbGfeYjbAw_63kK0p1y";
 const SB_TABLE = "proposal_checklist_state";

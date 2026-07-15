@@ -45,7 +45,7 @@ export function PlanPricing({ section }: { section: PricingSection }) {
                 <div className="mt-8 grid grid-cols-2 gap-px bg-text-muted/15 border border-text-muted/15">
                   <div className="bg-bg-card p-4">
                     <div className="text-[10px] font-mono tracking-[0.18em] uppercase text-text-muted/60 mb-2">
-                      CCD Retainer
+                      Crowd Control Retainer
                     </div>
                     <div className="text-[22px] md:text-[26px] font-bold text-text-primary leading-none"
                          style={{ fontFamily: "var(--font-heading), var(--font-sans), sans-serif" }}>
@@ -86,7 +86,7 @@ export function PlanPricing({ section }: { section: PricingSection }) {
 
               <div className="mt-6 pt-4 border-t border-text-muted/15">
                 <div className="flex items-baseline justify-between gap-4 text-[13px]">
-                  <span className="text-text-muted/70 uppercase tracking-[0.12em] font-mono">{section.deployableLabel ?? "Deployable Net of CCD Fee"}</span>
+                  <span className="text-text-muted/70 uppercase tracking-[0.12em] font-mono">{section.deployableLabel ?? "Deployable Net of Agency Fee"}</span>
                   <span className="font-mono tabular-nums text-accent font-bold">{tier.deployable}</span>
                 </div>
               </div>
