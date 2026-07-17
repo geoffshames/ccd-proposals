@@ -14,8 +14,10 @@ import { eightyTwoMajorRoadmap } from "./82major-roadmap";
 import { eightyTwoMajorRoadmapKorean } from "./82major-roadmap-ko";
 import { sunChaserPlan } from "./sun-chaser";
 import { lolaAmourPlan } from "./lola-amour";
+import { uberHitcPlan } from "./uber-hitc";
 
 export const PLANS: Record<string, StrategyPlanData> = {
+  "hitc-la-uber-26": uberHitcPlan,
   "lola-amour": lolaAmourPlan,
   "sun-chaser-yt": sunChaserPlan,
   "truly-young": trulyYoungPlan,

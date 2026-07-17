@@ -511,6 +511,13 @@ export type StrategyPlanData = {
   accentColor: string;
   noIndex?: boolean;
 
+  /**
+   * Optional custom render key. When set, the [slug] route renders a dedicated
+   * client component (e.g. the Uber × HITC bespoke experience) instead of the
+   * generic PlanClient section renderer.
+   */
+  customRender?: "uber-hitc";
+
   cover: {
     label: string;
     title: string;

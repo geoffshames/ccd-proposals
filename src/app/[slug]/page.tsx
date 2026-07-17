@@ -4,6 +4,7 @@ import { getProject, getAllSlugs } from "@/lib/projects";
 import { getPlan, getAllPlanSlugs } from "@/lib/plans";
 import { ProposalClient } from "./client";
 import { PlanClient } from "@/components/plan/PlanClient";
+import { UberHitcClient } from "@/components/uber-hitc/UberHitcClient";
 import { isNdaSignedForSlug } from "@/lib/nda/verify";
 import { NdaGate } from "@/components/nda/NdaGate";
 
@@ -25,7 +26,9 @@ export async function generateMetadata({
   // Plan-format metadata (Kakao-style strategy plans).
   const plan = getPlan(slug);
   if (plan) {
-    const title = `${plan.cover.title} - ${plan.cover.label}`;
+    const title = plan.customRender
+      ? plan.cover.title
+      : `${plan.cover.title} - ${plan.cover.label}`;
     const description = plan.cover.subtitle;
     const ogImage = plan.ogImage
       ? `https://proposal.crowdcontroldigital.com${plan.ogImage}`
@@ -103,6 +106,10 @@ export default async function ProposalPage({
   // Plan format (Kakao-style strategy plans) takes precedence.
   const plan = getPlan(slug);
   if (plan) {
+    // Bespoke render path for the Uber × HITC custom experience.
+    if (plan.customRender === "uber-hitc") {
+      return <UberHitcClient />;
+    }
     return <PlanClient plan={plan} />;
   }
 
