@@ -2,9 +2,7 @@
 
 import Image from "next/image";
 import {
-  ArrowDown,
   ArrowUpRight,
-  CarFront,
   Check,
   ChevronRight,
   ExternalLink,
@@ -28,7 +26,6 @@ import {
   useRef,
   useState,
   type CSSProperties,
-  type MouseEvent as ReactMouseEvent,
   type ReactNode,
 } from "react";
 import {
@@ -43,14 +40,22 @@ import {
   scenarios,
   sources,
 } from "@/lib/uber-hitc-2026";
+import {
+  BrandIntersection,
+  BudgetRing,
+  CampaignReveal,
+  CinematicHero,
+  FrictionJourney,
+  KineticBand,
+} from "./motion";
 import styles from "./uber-hitc.module.css";
 
 const navItems = [
-  ["Idea", "#idea"],
-  ["Experience", "#experience"],
+  ["Opportunity", "#opportunity"],
   ["Audience", "#audience"],
+  ["Platform", "#platform"],
+  ["Experience", "#experience"],
   ["Media", "#media"],
-  ["Forecast", "#forecast"],
   ["Investment", "#investment"],
 ] as const;
 
@@ -99,10 +104,10 @@ function Reveal({ children, delay = 0, className = "" }: { children: ReactNode; 
   return (
     <motion.div
       className={className}
-      initial={reduce ? false : { opacity: 0, y: 28 }}
-      whileInView={reduce ? undefined : { opacity: 1, y: 0 }}
-      viewport={{ once: true, amount: 0.16 }}
-      transition={{ duration: 0.65, delay, ease: [0.22, 1, 0.36, 1] }}
+      initial={reduce ? false : { opacity: 0, y: 72, clipPath: "inset(0 0 28% 0)" }}
+      whileInView={reduce ? undefined : { opacity: 1, y: 0, clipPath: "inset(0 0 0% 0)" }}
+      viewport={{ once: true, amount: 0.12 }}
+      transition={{ duration: 0.92, delay, ease: [0.16, 1, 0.3, 1] }}
     >
       {children}
     </motion.div>
@@ -132,55 +137,6 @@ function RouteRail({ progress }: { progress: MotionValue<number> }) {
   );
 }
 
-function HeroRoad() {
-  const reduce = useReducedMotion();
-  const [position, setPosition] = useState({ x: 0, y: 0 });
-
-  const move = (event: ReactMouseEvent<HTMLDivElement>) => {
-    if (reduce) return;
-    const box = event.currentTarget.getBoundingClientRect();
-    setPosition({
-      x: ((event.clientX - box.left) / box.width - 0.5) * 2,
-      y: ((event.clientY - box.top) / box.height - 0.5) * 2,
-    });
-  };
-
-  const heroStyle = {
-    "--road-x": `${position.x * 7}deg`,
-    "--road-y": `${position.y * -4}deg`,
-    "--hitc-art": `url(${officialArt.background})`,
-    "--hitc-clouds": `url(${officialArt.clouds})`,
-  } as CSSProperties;
-
-  return (
-    <div className={styles.heroScene} onMouseMove={move} onMouseLeave={() => setPosition({ x: 0, y: 0 })} style={heroStyle}>
-      <div className={styles.heroSky} />
-      <div className={styles.heroClouds} />
-      <div className={styles.horizonGlow} />
-      <div className={styles.roadPlane}>
-        <div className={styles.roadAsphalt}>
-          <span className={styles.roadEdgeLeft} />
-          <span className={styles.roadEdgeRight} />
-          <span className={styles.roadDash} />
-          <span className={`${styles.roadStop} ${styles.roadStopOne}`}>
-            <b>01</b><small>PAID SOCIAL</small>
-          </span>
-          <span className={`${styles.roadStop} ${styles.roadStopTwo}`}>
-            <b>02</b><small>BRANDED FLEET</small>
-          </span>
-          <span className={`${styles.roadStop} ${styles.roadStopThree}`}>
-            <b>03</b><small>LOT H</small>
-          </span>
-          <span className={styles.roadCar}>
-            <CarFront size={24} strokeWidth={1.5} />
-          </span>
-        </div>
-      </div>
-      <div className={styles.sceneLabel}>INTERACTIVE ROUTE / MOVE POINTER</div>
-    </div>
-  );
-}
-
 function PudoDiagram() {
   return (
     <div className={styles.pudoDiagram} aria-label="Conceptual Lot H pickup and dropoff flow diagram">
@@ -203,8 +159,16 @@ function PudoDiagram() {
 }
 
 function VehicleConcept() {
+  const reduce = useReducedMotion();
   return (
-    <div className={styles.vehicleStage} aria-label="Conceptual branded vehicle visualization">
+    <motion.div
+      className={styles.vehicleStage}
+      aria-label="Conceptual branded vehicle visualization"
+      initial={reduce ? false : { opacity: 0, x: 140, rotateY: -16 }}
+      whileInView={reduce ? undefined : { opacity: 1, x: 0, rotateY: 0 }}
+      viewport={{ once: true, amount: 0.3 }}
+      transition={{ duration: 1.15, ease: [0.16, 1, 0.3, 1] }}
+    >
       <div className={styles.vehicleNote}>CONCEPTUAL VISUALIZATION / FINAL LOCKUP PENDING</div>
       <div className={styles.vehicleShadow} />
       <div className={styles.vehicleBody}>
@@ -222,15 +186,22 @@ function VehicleConcept() {
         <i />
         <span>LOT H</span>
       </div>
-    </div>
+    </motion.div>
   );
 }
 
 function SocialMockup({ platform }: { platform: "Meta" | "TikTok" }) {
   const isMeta = platform === "Meta";
+  const reduce = useReducedMotion();
 
   return (
-    <div className={styles.socialMockup}>
+    <motion.div
+      key={platform}
+      className={styles.socialMockup}
+      initial={reduce ? false : { opacity: 0, x: isMeta ? -56 : 56, rotate: isMeta ? -1.5 : 1.5 }}
+      animate={reduce ? undefined : { opacity: 1, x: 0, rotate: 0 }}
+      transition={{ duration: 0.62, ease: [0.16, 1, 0.3, 1] }}
+    >
       <div className={styles.socialTop}>
         <span>{isMeta ? "INSTAGRAM REELS" : "TIKTOK FOR YOU"}</span>
         <span>9:16</span>
@@ -250,7 +221,7 @@ function SocialMockup({ platform }: { platform: "Meta" | "TikTok" }) {
         <span>{isMeta ? "Save the plan before festival day." : "POV: your festival starts before the gates."}</span>
         <span>00:08</span>
       </div>
-    </div>
+    </motion.div>
   );
 }
 
@@ -320,7 +291,8 @@ function SourceDrawer({ open, focusId, close }: { open: boolean; focusId: string
 
 export function UberHitcClient() {
   const reduce = useReducedMotion();
-  const { scrollYProgress } = useScroll();
+  const pageRef = useRef<HTMLElement>(null);
+  const { scrollYProgress } = useScroll({ target: pageRef, offset: ["start start", "end end"] });
   const routeProgress = useSpring(scrollYProgress, { stiffness: 90, damping: 25, mass: 0.4 });
   const [menuOpen, setMenuOpen] = useState(false);
   const [drawerOpen, setDrawerOpen] = useState(false);
@@ -346,7 +318,7 @@ export function UberHitcClient() {
   };
 
   return (
-    <main className={styles.page}>
+    <main ref={pageRef} className={styles.page}>
       <a className={styles.skipLink} href="#main-content">Skip to proposal</a>
       {!reduce ? <RouteRail progress={routeProgress} /> : null}
 
@@ -371,37 +343,11 @@ export function UberHitcClient() {
         ) : null}
       </nav>
 
-      <header id="top" className={styles.hero}>
-        <HeroRoad />
-        <div className={styles.heroContent}>
-          <Reveal>
-            <div className={styles.heroMeta}>
-              <span>UBER × HEAD IN THE CLOUDS 2026</span>
-              <span>PAID MEDIA + PARTNERSHIP CAMPAIGN</span>
-            </div>
-          </Reveal>
-          <Reveal delay={0.08}>
-            <h1>THE FIRST STAGE<br />IS <span>THE RIDE.</span></h1>
-          </Reveal>
-          <Reveal delay={0.16}>
-            <div className={styles.heroLede}>
-              <p>
-                A movement-first campaign that connects the street, the screen, and the designated rideshare lot before one artist takes the stage.
-              </p>
-              <a href="#idea">Enter the route <ArrowDown size={18} /></a>
-            </div>
-          </Reveal>
-        </div>
-        <div className={styles.heroStats}>
-          <div><strong>{days}</strong><span>days to event</span></div>
-          <div><strong>AUG 08</strong><span>Brookside at The Rose Bowl</span></div>
-          <div><strong>LOT H</strong><span>designated rideshare</span></div>
-          <div><strong>$15K</strong><span>paid media</span></div>
-        </div>
-      </header>
+      <CinematicHero days={days} />
+      <KineticBand />
 
       <div id="main-content">
-        <section id="idea" className={styles.section}>
+        <section id="opportunity" className={`${styles.section} ${styles.opportunitySection}`}>
           <SectionHeader
             number="01"
             eyebrow="THE PREMISE"
@@ -449,32 +395,7 @@ export function UberHitcClient() {
           </div>
         </section>
 
-        <section id="experience" className={`${styles.section} ${styles.sectionDark}`}>
-          <SectionHeader
-            number="02"
-            eyebrow="THE EXPERIENCE"
-            title={<>ONE IDEA. <span className={styles.red}>THREE SURFACES.</span></>}
-            body="Each pillar has a distinct job, but all three read as one connected route from Los Angeles to Lot H."
-          />
-          <div className={styles.pillarStack}>
-            {pillars.map((pillar, index) => (
-              <article key={pillar.number} className={styles.pillar}>
-                <Reveal className={styles.pillarCopy}>
-                  <div className={styles.pillarNumber}>{pillar.number}</div>
-                  <span className={styles.monoLabel}>{pillar.eyebrow}</span>
-                  <h3>{pillar.title}</h3>
-                  <p>{pillar.body}</p>
-                  <ul>{pillar.deliverables.map((item) => <li key={item}><Check size={14} />{item}</li>)}</ul>
-                </Reveal>
-                <Reveal delay={0.08} className={styles.pillarVisual}>
-                  {index === 0 ? <PudoDiagram /> : null}
-                  {index === 1 ? <VehicleConcept /> : null}
-                  {index === 2 ? <SocialMockup platform="TikTok" /> : null}
-                </Reveal>
-              </article>
-            ))}
-          </div>
-        </section>
+        <BrandIntersection />
 
         <section id="audience" className={styles.section}>
           <SectionHeader
@@ -492,6 +413,27 @@ export function UberHitcClient() {
                 <p>{signal.label}</p>
                 <SourceButton id={signal.source} open={openSources} />
               </Reveal>
+            ))}
+          </div>
+          <div className={styles.personaIntro}>
+            <span>WORKING PERSONAS / BEHAVIOR-LED, NOT DEMOGRAPHIC STEREOTYPES</span>
+            <p>Three modes of intent shape when the story should inspire, clarify, and convert.</p>
+          </div>
+          <div className={styles.personaGrid}>
+            {[
+              ["01", "THE CREW COORDINATOR", "Turns the group chat into a plan.", "Saves practical information · shares story frames · values one meeting point", "Make Lot H guidance easy to repeat."],
+              ["02", "THE CULTURE CHASER", "Arrives through artists, fashion, food, and community.", "TikTok-native discovery · creator cues · identity-forward sharing", "Lead with culture. Let the code follow."],
+              ["03", "THE INTENTIONAL TRAVELER", "Compares parking, shuttle, Metro, and rideshare.", "Advance planner · clarity-led · responsive to warm retargeting", "Give one simple destination and complete terms."],
+            ].map(([number, name, role, signals, need], index) => (
+              <motion.article
+                key={name}
+                initial={reduce ? false : { opacity: 0, x: index === 1 ? 0 : index === 0 ? -120 : 120 }}
+                whileInView={reduce ? undefined : { opacity: 1, x: 0 }}
+                viewport={{ once: true, amount: 0.25 }}
+                transition={{ duration: 0.9, delay: index * 0.08, ease: [0.16, 1, 0.3, 1] }}
+              >
+                <span>{number}</span><h3>{name}</h3><strong>{role}</strong><p>{signals}</p><b>{need}</b>
+              </motion.article>
             ))}
           </div>
           <div className={styles.audienceGrid}>
@@ -529,9 +471,70 @@ export function UberHitcClient() {
           </div>
         </section>
 
+        <FrictionJourney />
+
+        <section id="precedents" className={styles.section}>
+          <SectionHeader
+            number="05"
+            eyebrow="CATEGORY PRECEDENTS"
+            title={<>WHAT THE BEST <span className={styles.red}>MAKE EASIER.</span></>}
+            body="The strongest festival mobility programs pair a clear physical route with useful waiting conditions, repeatable instructions, and an offer that does not obscure the utility."
+          />
+          <div className={styles.precedentGrid}>
+            {precedents.map((precedent, index) => (
+              <Reveal key={precedent.name} delay={index * 0.06} className={styles.precedentCard}>
+                <div><span>0{index + 1}</span><h3>{precedent.name}</h3></div>
+                <p>{precedent.behavior}</p>
+                <div className={styles.takeLine}><Check size={15} /><span><b>TAKE</b>{precedent.take}</span></div>
+                <div className={styles.avoidLine}><X size={15} /><span><b>AVOID</b>{precedent.avoid}</span></div>
+                <SourceButton id={precedent.source} open={openSources} />
+              </Reveal>
+            ))}
+          </div>
+          <div className={styles.optionalInventory}>
+            <div>
+              <span className={styles.monoLabel}>OPTIONAL EXPANSION / NOT IN $15K</span>
+              <h3>UBER-OWNED INVENTORY CAN EXTEND THE ROUTE LATER.</h3>
+            </div>
+            <p>
+              Current Journey Takeover capability shows how branded maps, moving icons, and destination context can create a full-trip story. This is a future negotiation path, not a line item in the included paid-social plan.
+            </p>
+            <SourceButton id="uber-takeover" open={openSources} />
+          </div>
+        </section>
+
+        <CampaignReveal />
+
+        <section id="experience" className={`${styles.section} ${styles.sectionDark}`}>
+          <SectionHeader
+            number="07"
+            eyebrow="THE EXPERIENCE"
+            title={<>ONE PLATFORM. <span className={styles.red}>THREE CHAPTERS.</span></>}
+            body="Each chapter has a distinct job, but all three read as one connected route from Los Angeles to Lot H."
+          />
+          <div className={styles.pillarStack}>
+            {pillars.map((pillar, index) => (
+              <article key={pillar.number} className={styles.pillar}>
+                <Reveal className={styles.pillarCopy}>
+                  <div className={styles.pillarNumber}>{pillar.number}</div>
+                  <span className={styles.monoLabel}>{pillar.eyebrow}</span>
+                  <h3>{pillar.title}</h3>
+                  <p>{pillar.body}</p>
+                  <ul>{pillar.deliverables.map((item) => <li key={item}><Check size={14} />{item}</li>)}</ul>
+                </Reveal>
+                <Reveal delay={0.08} className={styles.pillarVisual}>
+                  {index === 0 ? <PudoDiagram /> : null}
+                  {index === 1 ? <VehicleConcept /> : null}
+                  {index === 2 ? <SocialMockup platform="TikTok" /> : null}
+                </Reveal>
+              </article>
+            ))}
+          </div>
+        </section>
+
         <section id="creative" className={`${styles.section} ${styles.creativeSection}`}>
           <SectionHeader
-            number="04"
+            number="08"
             eyebrow="CREATIVE SYSTEM"
             title={<>BUILT FOR THE FEED. <span className={styles.red}>USEFUL IN THE WORLD.</span></>}
             body="The platform turns one strategic idea into culture edits, transport utility, and offer reminders without forcing identical executions across Meta and TikTok."
@@ -586,16 +589,14 @@ export function UberHitcClient() {
 
         <section id="media" className={styles.section}>
           <SectionHeader
-            number="05"
+            number="09"
             eyebrow="MEDIA FLIGHT"
             title={<>$15K. TWO PLATFORMS. <span className={styles.red}>ONE JOB.</span></>}
             body="Maximize qualified awareness around the event and make the code and Lot H easier to remember as plans lock."
           />
           <div className={styles.splitGrid}>
             <Reveal className={styles.splitVisual}>
-              <div className={styles.donut} role="img" aria-label="Media budget: 55 percent Meta and 45 percent TikTok">
-                <div><strong>$15K</strong><span>MEDIA</span></div>
-              </div>
+              <BudgetRing />
               <div className={styles.splitLegend}>
                 {platforms.map((item) => (
                   <div key={item.name}>
@@ -630,8 +631,20 @@ export function UberHitcClient() {
                 <strong>{money.format(phase.total)}</strong>
                 <p>{phase.job}</p>
                 <div className={styles.phaseSplit}>
-                  <span style={{ width: "55%" }}>META {money.format(phase.meta)}</span>
-                  <span style={{ width: "45%" }}>TIKTOK {money.format(phase.tiktok)}</span>
+                  <motion.span
+                    style={{ width: "55%", transformOrigin: "left" }}
+                    initial={reduce ? false : { scaleX: 0 }}
+                    whileInView={reduce ? undefined : { scaleX: 1 }}
+                    viewport={{ once: true, amount: 0.7 }}
+                    transition={{ duration: 0.85, ease: [0.16, 1, 0.3, 1] }}
+                  >META {money.format(phase.meta)}</motion.span>
+                  <motion.span
+                    style={{ width: "45%", transformOrigin: "left" }}
+                    initial={reduce ? false : { scaleX: 0 }}
+                    whileInView={reduce ? undefined : { scaleX: 1 }}
+                    viewport={{ once: true, amount: 0.7 }}
+                    transition={{ duration: 0.85, delay: 0.18, ease: [0.16, 1, 0.3, 1] }}
+                  >TIKTOK {money.format(phase.tiktok)}</motion.span>
                 </div>
               </Reveal>
             ))}
@@ -645,7 +658,7 @@ export function UberHitcClient() {
 
         <section id="forecast" className={`${styles.section} ${styles.sectionDark}`}>
           <SectionHeader
-            number="06"
+            number="10"
             eyebrow="DELIVERY FORECAST"
             title={<>A RANGE, <span className={styles.red}>NOT A PROMISE.</span></>}
             body="Three scenarios expose the assumptions behind delivery. The centerline uses $11.50 Meta CPM, $7.50 TikTok CPM, and 2.3 gross platform frequency."
@@ -666,7 +679,15 @@ export function UberHitcClient() {
                   <span>META CPM <b>${scenario.metaCpm.toFixed(2)}</b></span>
                   <span>TIKTOK CPM <b>${scenario.tiktokCpm.toFixed(2)}</b></span>
                 </div>
-                <div className={styles.scenarioBar}><span style={{ width: `${scenario.impressions / 2_197_861 * 100}%` }} /></div>
+                <div className={styles.scenarioBar}>
+                  <motion.span
+                    style={{ width: `${scenario.impressions / 2_197_861 * 100}%`, transformOrigin: "left" }}
+                    initial={reduce ? false : { scaleX: 0 }}
+                    whileInView={reduce ? undefined : { scaleX: 1 }}
+                    viewport={{ once: true, amount: 0.7 }}
+                    transition={{ duration: 1, delay: index * 0.1, ease: [0.16, 1, 0.3, 1] }}
+                  />
+                </div>
               </Reveal>
             ))}
           </div>
@@ -677,39 +698,9 @@ export function UberHitcClient() {
           </div>
         </section>
 
-        <section id="precedents" className={styles.section}>
-          <SectionHeader
-            number="07"
-            eyebrow="CATEGORY PRECEDENTS"
-            title={<>WHAT THE BEST <span className={styles.red}>MAKE EASIER.</span></>}
-            body="The strongest festival mobility programs pair a clear physical route with useful waiting conditions, repeatable instructions, and an offer that does not obscure the utility."
-          />
-          <div className={styles.precedentGrid}>
-            {precedents.map((precedent, index) => (
-              <Reveal key={precedent.name} delay={index * 0.06} className={styles.precedentCard}>
-                <div><span>0{index + 1}</span><h3>{precedent.name}</h3></div>
-                <p>{precedent.behavior}</p>
-                <div className={styles.takeLine}><Check size={15} /><span><b>TAKE</b>{precedent.take}</span></div>
-                <div className={styles.avoidLine}><X size={15} /><span><b>AVOID</b>{precedent.avoid}</span></div>
-                <SourceButton id={precedent.source} open={openSources} />
-              </Reveal>
-            ))}
-          </div>
-          <div className={styles.optionalInventory}>
-            <div>
-              <span className={styles.monoLabel}>OPTIONAL EXPANSION / NOT IN $15K</span>
-              <h3>UBER-OWNED INVENTORY CAN EXTEND THE ROUTE LATER.</h3>
-            </div>
-            <p>
-              Current Journey Takeover capability shows how branded maps, moving icons, and destination context can create a full-trip story. This is a future negotiation path, not a line item in the included paid-social plan.
-            </p>
-            <SourceButton id="uber-takeover" open={openSources} />
-          </div>
-        </section>
-
         <section id="measurement" className={`${styles.section} ${styles.measurementSection}`}>
           <SectionHeader
-            number="08"
+            number="11"
             eyebrow="MEASUREMENT"
             title={<>KNOW WHAT MOVED. <span className={styles.red}>KNOW WHAT TO DO NEXT.</span></>}
             body="The framework separates paid delivery, creative attention, code behavior, and operational signals so one metric never carries more meaning than it should."
@@ -734,7 +725,7 @@ export function UberHitcClient() {
 
         <section id="activation" className={styles.section}>
           <SectionHeader
-            number="09"
+            number="12"
             eyebrow="ACTIVATION PLAN"
             title={<>FAST ENOUGH TO MOVE. <span className={styles.red}>CONTROLLED ENOUGH TO TRUST.</span></>}
             body="The compressed runway requires one approval chain, one claims owner, and a daily creative and media rhythm after launch."
@@ -781,9 +772,28 @@ export function UberHitcClient() {
           </div>
         </section>
 
+        <section className={styles.ccdProof} aria-labelledby="ccd-proof-title">
+          <div>
+            <span>13 / WHY CROWD CONTROL DIGITAL</span>
+            <h2 id="ccd-proof-title">BUILT BY PEOPLE WHO KNOW<br /><em>LIVE MOMENTS.</em></h2>
+          </div>
+          <motion.div
+            className={styles.ccdProofRail}
+            initial={reduce ? false : { x: "18%", opacity: 0 }}
+            whileInView={reduce ? undefined : { x: 0, opacity: 1 }}
+            viewport={{ once: true, amount: 0.35 }}
+            transition={{ duration: 1.1, ease: [0.16, 1, 0.3, 1] }}
+          >
+            <div><strong>$350M+</strong><span>ATTRIBUTABLE REVENUE</span></div>
+            <div><strong>10M+</strong><span>TICKETS MARKETED</span></div>
+            <div><strong>LIVE × DIGITAL</strong><span>ONE OPERATING RHYTHM</span></div>
+          </motion.div>
+          <p>CCD connects creative, paid media, and on-the-ground realities under one approval chain—so the idea survives contact with event day.</p>
+        </section>
+
         <section id="investment" className={`${styles.section} ${styles.investmentSection}`}>
           <SectionHeader
-            number="10"
+            number="14"
             eyebrow="INVESTMENT"
             title={<>A FOCUSED PLAN FOR <span className={styles.red}>A FIXED MOMENT.</span></>}
             body="Paid media is held to the approved $15,000. CCD management is calculated at 15 percent."
@@ -812,6 +822,12 @@ export function UberHitcClient() {
             <span>LOS ANGELES → PASADENA → LOT H</span>
             <h2>THE FIRST STAGE<br />IS THE RIDE.</h2>
             <p>Prepared by Crowd Control Digital for the 88rising team. July 17, 2026.</p>
+            <a
+              className={styles.productionCta}
+              href="mailto:geoff@crowdcontroldigital.com?subject=Uber%20%C3%97%20Head%20In%20The%20Clouds%202026%20campaign%20direction&body=Let%E2%80%99s%20move%20The%20First%20Stage%20Is%20The%20Ride%20into%20production."
+            >
+              MOVE INTO PRODUCTION <ArrowUpRight size={20} />
+            </a>
           </div>
         </section>
       </div>
