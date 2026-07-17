@@ -14,14 +14,6 @@ export const metadata: Metadata = {
     type: "website",
     siteName: "Crowd Control Digital",
     url: "https://proposal.crowdcontroldigital.com/laff-mobb",
-    images: [
-      {
-        url: "https://cdn.gamma.app/w9o8gu9elbl53rf/generated-images/mcJtmTI2Jm0WTYY4VLdbI.png",
-        width: 1200,
-        height: 630,
-        alt: "FKD UP! / Laff Mobb Studios",
-      },
-    ],
   },
   twitter: {
     card: "summary_large_image",
