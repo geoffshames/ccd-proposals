@@ -31,6 +31,17 @@ type Body = {
 
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
+const CUSTOM_NDA_PROPOSALS: Record<
+  string,
+  { subjectName: string; studioName: string; legalName: string }
+> = {
+  "champion-teamwear-proposal": {
+    subjectName: "Champion Teamwear",
+    studioName: "Crowd Control Digital",
+    legalName: "Athletic Brands Alliance",
+  },
+};
+
 export async function POST(req: NextRequest) {
   let body: Body;
   try {
@@ -51,15 +62,26 @@ export async function POST(req: NextRequest) {
 
   const project = getProject(slug);
   const dossier = getDossier(slug);
-  if (!project && !dossier) return NextResponse.json({ error: "Unknown proposal." }, { status: 404 });
+  const customProposal = CUSTOM_NDA_PROPOSALS[slug];
+  if (!project && !dossier && !customProposal) {
+    return NextResponse.json({ error: "Unknown proposal." }, { status: 404 });
+  }
 
   // Unified resolver: either format can require NDA. Both expose the fields we need.
-  const subjectName = project ? project.client.name : dossier!.subject.name;
-  const studioName = project ? project.studio.name : "Crowd Control Digital";
-  const requireNda = project ? project.requireNda : dossier!.requireNda;
+  const subjectName = project
+    ? project.client.name
+    : dossier
+      ? dossier.subject.name
+      : customProposal.subjectName;
+  const studioName = project
+    ? project.studio.name
+    : customProposal?.studioName ?? "Crowd Control Digital";
+  const requireNda = project ? project.requireNda : dossier ? dossier.requireNda : true;
   const legalName = project
     ? (project.clientLegalName ?? project.client.name)
-    : (dossier!.clientLegalName ?? dossier!.subject.name);
+    : dossier
+      ? (dossier.clientLegalName ?? dossier.subject.name)
+      : customProposal.legalName;
 
   if (!requireNda) {
     return NextResponse.json({ error: "This proposal does not require an NDA." }, { status: 400 });
