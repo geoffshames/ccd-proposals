@@ -58,6 +58,7 @@ export default async function ChampionTeamwearProposalPage() {
         companyDefinitionTerm="Client"
         effectiveDate={today}
         accentColor="#FD3737"
+        plainPunctuation
       />
     );
   }

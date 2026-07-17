@@ -26,6 +26,7 @@ type Props = {
   companyDefinitionTerm: string; // usually "Client"
   effectiveDate: string;        // human-readable, e.g. "May 3, 2026"
   accentColor: string;          // hex
+  plainPunctuation?: boolean;   // avoids em dashes in proposal-specific brand systems
 };
 
 export function NdaGate({
@@ -35,6 +36,7 @@ export function NdaGate({
   companyDefinitionTerm,
   effectiveDate,
   accentColor,
+  plainPunctuation = false,
 }: Props) {
   const [fullName, setFullName] = useState("");
   const [company, setCompany] = useState(clientLegalName);
@@ -43,6 +45,7 @@ export function NdaGate({
   const [submitting, setSubmitting] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [success, setSuccess] = useState(false);
+  const separator = plainPunctuation ? "/" : "—";
 
   const tokens = useMemo(
     () => ({
@@ -128,7 +131,7 @@ export function NdaGate({
           transition={{ duration: 0.6, ease: [0.2, 0.8, 0.2, 1] }}
         >
           <div className="font-mono uppercase tracking-[0.2em] text-[11px] text-white/55 mb-6">
-            Step 01 — Mutual Non-Disclosure
+            Step 01 {separator} Mutual Non-Disclosure
           </div>
           <h1
             className="font-bold uppercase leading-[0.95] tracking-tight"
@@ -142,8 +145,11 @@ export function NdaGate({
           <p className="mt-6 max-w-[640px] text-[16px] sm:text-[17px] leading-[1.7] text-white/75">
             The materials behind this gate include strategy, pricing, and creative direction
             built specifically for <strong className="text-white">{proposalTitle}</strong>. Please
-            review and sign the mutual NDA below to continue. Both parties — you and Crowd
-            Control Digital, LLC — are bound by the same confidentiality obligations.
+            review and sign the mutual NDA below to continue. {plainPunctuation ? (
+              <>Both you and Crowd Control Digital, LLC are bound by the same confidentiality obligations.</>
+            ) : (
+              <>Both parties — you and Crowd Control Digital, LLC — are bound by the same confidentiality obligations.</>
+            )}
           </p>
         </motion.div>
 
@@ -198,7 +204,7 @@ export function NdaGate({
         <form ref={formRef} onSubmit={handleSubmit} className="mt-12">
           <div className="border border-white/[0.12] bg-white/[0.03] p-7 sm:p-10">
             <div className="font-mono uppercase tracking-[0.2em] text-[11px] text-white/55 mb-5">
-              Sign — {companyDefinitionTerm}
+              Sign {separator} {companyDefinitionTerm}
             </div>
             <p className="text-[13.5px] leading-[1.65] text-white/65 mb-7 max-w-[640px]">
               Per Section 9, your typed Full Name and Email Address below together
@@ -277,7 +283,7 @@ export function NdaGate({
                 </div>
               </div>
               <div className="mt-4 flex flex-col sm:flex-row sm:items-center sm:gap-3 gap-1 font-mono text-[11.5px] text-white/55 uppercase tracking-[0.16em]">
-                <span>x — {email.trim() || "—"}</span>
+                <span>x {separator} {email.trim() || (plainPunctuation ? "PENDING" : "—")}</span>
                 <span className="hidden sm:inline text-white/25">·</span>
                 <span>{effectiveDate}</span>
               </div>
@@ -325,7 +331,9 @@ export function NdaGate({
                 }}
               >
                 {success
-                  ? "Signed — Loading proposal…"
+                  ? plainPunctuation
+                    ? "Signed / Loading proposal..."
+                    : "Signed — Loading proposal…"
                   : submitting
                   ? "Signing…"
                   : "Sign & Continue"}
