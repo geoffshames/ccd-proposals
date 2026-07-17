@@ -186,15 +186,23 @@ const journeySteps = [
 
 function JourneyNode({ progress, index }: { progress: MotionValue<number>; index: number }) {
   const reduce = useReducedMotion();
-  const start = 0.05 + index * 0.105;
-  const opacity = useTransform(progress, [start, start + 0.08, start + 0.2], [0.22, 1, 0.58]);
-  const scale = useTransform(progress, [start, start + 0.08], [0.92, 1]);
+  const center = index / (journeySteps.length - 1);
+  const before = center - 0.085;
+  const enter = center - 0.04;
+  const leave = center + 0.04;
+  const after = center + 0.085;
+  const scale = useTransform(progress, [before, enter, leave, after], [1, 1.035, 1.035, 1]);
+  const y = useTransform(progress, [before, enter, leave, after], [0, -18, -18, 0]);
+  const isActive = (value: number) => Math.round(value * (journeySteps.length - 1)) === index;
+  const backgroundColor = useTransform(progress, (value) => isActive(value) ? "#fd3737" : "#111111");
+  const color = useTransform(progress, (value) => isActive(value) ? "#050505" : "#f4f1e9");
+  const markerBackground = useTransform(progress, (value) => isActive(value) ? "#050505" : "#252525");
   const step = journeySteps[index];
 
   return (
-    <motion.li style={reduce ? undefined : { opacity, scale }}>
-      <span>{String(index + 1).padStart(2, "0")}</span>
-      <div><strong>{step[0]}</strong><p>{step[1]}</p><b>{step[2]}</b></div>
+    <motion.li style={reduce ? undefined : { scale, y, backgroundColor, color }}>
+      <motion.span style={reduce ? undefined : { backgroundColor: markerBackground }}>{String(index + 1).padStart(2, "0")}</motion.span>
+      <div><small>FAN MOMENT</small><strong>{step[0]}</strong><p>{step[1]}</p><b>{step[2]}</b></div>
     </motion.li>
   );
 }
@@ -204,20 +212,20 @@ export function FrictionJourney() {
   const reduce = useReducedMotion();
   const { scrollYProgress } = useScroll({ target: ref, offset: ["start start", "end end"] });
   const lineScale = useTransform(scrollYProgress, [0.04, 0.92], [0, 1]);
+  const trackX = useTransform(scrollYProgress, [0.02, 0.98], ["0vw", "-154vw"]);
 
   return (
-    <section ref={ref} className={styles.frictionStory}>
+    <section id="journey" ref={ref} className={styles.frictionStory}>
       <div className={styles.frictionSticky}>
         <div className={styles.frictionStoryHead}>
           <span>04 / THE FRICTION MAP</span>
-          <h2>EIGHT MOMENTS.<br /><em>ONE CONNECTED ROUTE.</em></h2>
+          <h2><span>8 MOMENTS.</span><em>ONE ROUTE.</em></h2>
           <p>Transportation uncertainty starts long before booking and returns at the exact moment demand peaks.</p>
         </div>
         <div className={styles.journeyCanvas}>
-          <motion.div className={styles.journeyLine} style={reduce ? undefined : { scaleX: lineScale }} />
-          <ol>{journeySteps.map((step, index) => <JourneyNode key={step[0]} progress={scrollYProgress} index={index} />)}</ol>
+          <motion.ol style={reduce ? undefined : { x: trackX }}>{journeySteps.map((step, index) => <JourneyNode key={step[0]} progress={scrollYProgress} index={index} />)}</motion.ol>
         </div>
-        <div className={styles.journeyLegend}><span>FAN QUESTION</span><span>PARTNERSHIP RESPONSE</span></div>
+        <div className={styles.journeyProgress}><span>DISCOVER</span><motion.i style={reduce ? undefined : { scaleX: lineScale }} /><span>RETURN</span></div>
       </div>
     </section>
   );

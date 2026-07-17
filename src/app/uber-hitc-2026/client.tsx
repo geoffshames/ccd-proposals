@@ -8,9 +8,7 @@ import {
   ExternalLink,
   Eye,
   Info,
-  MapPin,
   Menu,
-  Route,
   Target,
   X,
 } from "lucide-react";
@@ -25,7 +23,6 @@ import {
   useEffect,
   useRef,
   useState,
-  type CSSProperties,
   type ReactNode,
 } from "react";
 import {
@@ -33,7 +30,6 @@ import {
   audienceSignals,
   flight,
   investment,
-  officialArt,
   pillars,
   platforms,
   precedents,
@@ -139,54 +135,39 @@ function RouteRail({ progress }: { progress: MotionValue<number> }) {
 
 function PudoDiagram() {
   return (
-    <div className={styles.pudoDiagram} aria-label="Conceptual Lot H pickup and dropoff flow diagram">
-      <div className={styles.mapGrid} />
-      <div className={styles.mapRoseBowl}>ROSE BOWL</div>
-      <div className={styles.mapVenue}>FESTIVAL</div>
-      <div className={styles.mapLot}>
-        <MapPin size={20} />
-        <span>LOT H</span>
-        <small>DESIGNATED RIDESHARE</small>
-      </div>
-      <svg viewBox="0 0 600 390" role="img" aria-label="Path from the festival to the Lot H rideshare zone">
-        <path d="M365 88 C470 120 435 210 334 226 C248 240 216 286 154 328" />
-      </svg>
-      <div className={styles.mapStepOne}>01 / EXIT</div>
-      <div className={styles.mapStepTwo}>02 / FOLLOW ROUTE</div>
-      <div className={styles.mapStepThree}>03 / MATCH</div>
-    </div>
+    <figure
+      className={styles.routeScene}
+      aria-label="Concept direction for the Los Angeles to Lot H route system"
+    >
+      <Image src="/images/uber-hitc-2026/hero-route.jpg" alt="Los Angeles at dusk with red light trails moving toward Pasadena" fill sizes="(max-width: 820px) 100vw, 55vw" />
+      <div className={styles.routeSceneShade} />
+      <div className={styles.routeSceneMeta}><span>01 / ROUTE SYSTEM</span><span>LA → PASADENA</span></div>
+      <figcaption>
+        <span>ONE DESTINATION / REPEATED EARLY</span>
+        <strong>LOT H.</strong>
+        <p>Build recognition before event day, then repeat the same destination language at arrival and exit.</p>
+        <div className={styles.routeStops}>
+          <span>LOS ANGELES</span><i /><span>PASADENA</span><i /><b>LOT H</b>
+        </div>
+      </figcaption>
+    </figure>
   );
 }
 
 function VehicleConcept() {
-  const reduce = useReducedMotion();
   return (
-    <motion.div
+    <figure
       className={styles.vehicleStage}
-      aria-label="Conceptual branded vehicle visualization"
-      initial={reduce ? false : { opacity: 0, x: 140, rotateY: -16 }}
-      whileInView={reduce ? undefined : { opacity: 1, x: 0, rotateY: 0 }}
-      viewport={{ once: true, amount: 0.3 }}
-      transition={{ duration: 1.15, ease: [0.16, 1, 0.3, 1] }}
+      aria-label="Premium vehicle lighting and fleet identity concept direction"
     >
-      <div className={styles.vehicleNote}>CONCEPTUAL VISUALIZATION / FINAL LOCKUP PENDING</div>
-      <div className={styles.vehicleShadow} />
-      <div className={styles.vehicleBody}>
-        <span className={styles.windshield} />
-        <span className={styles.vehicleWindow} />
-        <span className={styles.vehicleGraphic}>THE FIRST STAGE</span>
-        <span className={styles.vehicleGraphicTwo}>IS THE RIDE.</span>
-        <span className={`${styles.wheel} ${styles.frontWheel}`} />
-        <span className={`${styles.wheel} ${styles.backWheel}`} />
+      <div className={styles.vehicleMedia}>
+        <Image src="/images/uber-hitc-2026/concept-vehicle.jpg" alt="Black vehicle with a continuous red light signature in a dark studio" fill sizes="(max-width: 820px) 100vw, 55vw" />
+        <div className={styles.vehicleMediaShade} />
+        <div className={styles.vehicleNote}>CONCEPT DIRECTION / FINAL VEHICLE + LOCKUP SUBJECT TO APPROVAL</div>
+        <div className={styles.vehicleSignal}><span>THE FIRST STAGE</span><strong>IS THE RIDE.</strong></div>
       </div>
-      <div className={styles.vehicleRoute}>
-        <span>LA</span>
-        <i />
-        <Route size={18} />
-        <i />
-        <span>LOT H</span>
-      </div>
-    </motion.div>
+      <figcaption><span>FLEET IDENTITY</span><strong>BLACK FLEET. ONE RED SIGNAL.</strong><p>A restrained light-line system makes the vehicles recognizable without turning them into novelty props.</p></figcaption>
+    </figure>
   );
 }
 
@@ -195,33 +176,31 @@ function SocialMockup({ platform }: { platform: "Meta" | "TikTok" }) {
   const reduce = useReducedMotion();
 
   return (
-    <motion.div
+    <motion.figure
       key={platform}
-      className={styles.socialMockup}
-      initial={reduce ? false : { opacity: 0, x: isMeta ? -56 : 56, rotate: isMeta ? -1.5 : 1.5 }}
-      animate={reduce ? undefined : { opacity: 1, x: 0, rotate: 0 }}
-      transition={{ duration: 0.62, ease: [0.16, 1, 0.3, 1] }}
+      className={styles.creativeFilm}
+      initial={reduce ? false : { opacity: 0, x: isMeta ? -80 : 80, clipPath: isMeta ? "inset(0 100% 0 0)" : "inset(0 0 0 100%)" }}
+      animate={reduce ? undefined : { opacity: 1, x: 0, clipPath: "inset(0 0 0 0)" }}
+      transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
     >
-      <div className={styles.socialTop}>
-        <span>{isMeta ? "INSTAGRAM REELS" : "TIKTOK FOR YOU"}</span>
-        <span>9:16</span>
+      <Image
+        src={isMeta ? "/images/uber-hitc-2026/festival-dusk.jpg" : "/images/uber-hitc-2026/street-trails.jpg"}
+        alt={isMeta ? "Festival crowd facing a glowing stage at dusk" : "Los Angeles street at night with red and white light trails"}
+        fill
+        sizes="(max-width: 820px) 100vw, 45vw"
+      />
+      <div className={styles.creativeFilmShade} />
+      <div className={styles.creativeFilmMeta}>
+        <span>{isMeta ? "META / REELS" : "TIKTOK / VERTICAL"}</span><span>9:16 / 00:08</span>
       </div>
-      <div className={styles.socialCanvas} style={{ "--lineup-art": `url(${officialArt.lineup})` } as CSSProperties}>
-        <div className={styles.socialArt} />
-        <div className={styles.socialShade} />
-        <span className={styles.socialKicker}>LA → LOT H</span>
-        <strong>THE FIRST<br />STAGE IS<br /><em>THE RIDE.</em></strong>
-        <div className={styles.socialCode}>
-          <span>USE</span>
-          <b>[EVENT CODE]</b>
-          <small>[OFFER DETAILS]</small>
-        </div>
+      <div className={styles.creativeFilmCopy}>
+        <span>LA → LOT H</span><strong>THE FIRST STAGE<br />IS THE <em>RIDE.</em></strong>
       </div>
-      <div className={styles.socialCaption}>
-        <span>{isMeta ? "Save the plan before festival day." : "POV: your festival starts before the gates."}</span>
-        <span>00:08</span>
+      <div className={styles.creativeFilmCode}>
+        <span>USE [EVENT CODE]</span><small>[OFFER DETAILS]</small>
       </div>
-    </motion.div>
+      <figcaption>{isMeta ? "Save the plan before festival day." : "POV: the festival begins when the door closes."}</figcaption>
+    </motion.figure>
   );
 }
 
@@ -357,41 +336,28 @@ export function UberHitcClient() {
           <div className={styles.premiseGrid}>
             <Reveal className={styles.situationCard}>
               <span className={styles.cardIndex}>SITUATION / 01</span>
-              <h3>A cultural tentpole with a transport decision built in.</h3>
+              <h3>One festival. One rideshare destination.</h3>
               <p>
-                Head In The Clouds returns to Pasadena for one day. The site identifies Lot H as the designated rideshare lot, while parking, Metro, and shuttle choices compete for attention.
+                Head In The Clouds returns to Pasadena for one day. Lot H is the named rideshare lot—and the clearest piece of utility Uber can own.
               </p>
               <SourceButton id="hitc-getting-here" open={openSources} />
             </Reveal>
             <Reveal delay={0.08} className={styles.situationCard}>
               <span className={styles.cardIndex}>STRATEGY / 02</span>
-              <h3>Own the journey, not only the offer.</h3>
+              <h3>Lead with culture. Close with clarity.</h3>
               <p>
-                Lead with culture. Repeat useful Lot H guidance. Introduce [EVENT CODE] only when it can help a fan act, always with [OFFER DETAILS] present.
+                Build anticipation first. Repeat Lot H guidance. Surface [EVENT CODE] only when the audience is ready to act.
               </p>
               <SourceButton id="uber-guidelines" open={openSources} />
             </Reveal>
             <Reveal delay={0.16} className={`${styles.situationCard} ${styles.situationOutcome}`}>
               <span className={styles.cardIndex}>OUTCOME / 03</span>
-              <h3>Uber becomes part of how the day begins.</h3>
+              <h3>Uber enters before the booking moment.</h3>
               <p>
-                One platform line links the vehicle fleet, paid social, and PUDO utility without requiring paid Uber app inventory inside the $15,000 media plan.
+                One platform connects paid social, the fleet, and the physical arrival experience.
               </p>
               <div className={styles.includedFlag}>INCLUDED: META + TIKTOK ONLY</div>
             </Reveal>
-          </div>
-          <div className={styles.frictionRail} aria-label="Fan journey friction and campaign response">
-            <div className={styles.frictionHeader}><span>FAN JOURNEY</span><span>CAMPAIGN RESPONSE</span></div>
-            {[
-              ["Plans forming", "What is the easiest route?", "Culture-led reveal"],
-              ["Arrival", "Where does the ride end?", "Lot H made explicit"],
-              ["Festival day", "Where is the code?", "Simple offer reminder"],
-              ["Exit", "Where do we meet?", "Repeated pickup guidance"],
-            ].map(([stage, friction, response], index) => (
-              <div key={stage} className={styles.frictionRow}>
-                <span>0{index + 1}</span><strong>{stage}</strong><p>{friction}</p><ChevronRight /><b>{response}</b>
-              </div>
-            ))}
           </div>
         </section>
 
@@ -421,9 +387,9 @@ export function UberHitcClient() {
           </div>
           <div className={styles.personaGrid}>
             {[
-              ["01", "THE CREW COORDINATOR", "Turns the group chat into a plan.", "Saves practical information · shares story frames · values one meeting point", "Make Lot H guidance easy to repeat."],
-              ["02", "THE CULTURE CHASER", "Arrives through artists, fashion, food, and community.", "TikTok-native discovery · creator cues · identity-forward sharing", "Lead with culture. Let the code follow."],
-              ["03", "THE INTENTIONAL TRAVELER", "Compares parking, shuttle, Metro, and rideshare.", "Advance planner · clarity-led · responsive to warm retargeting", "Give one simple destination and complete terms."],
+              ["01", "THE CREW COORDINATOR", "Turns the group chat into a plan.", "Saves the plan · aligns the crew", "Repeatable Lot H guidance."],
+              ["02", "THE CULTURE CHASER", "Arrives through artists, fashion, food, and community.", "Discovers · shares · signals identity", "Culture first. Code second."],
+              ["03", "THE INTENTIONAL TRAVELER", "Compares every way in and out.", "Plans early · values certainty", "One destination. Complete terms."],
             ].map(([number, name, role, signals, need], index) => (
               <motion.article
                 key={name}
@@ -574,16 +540,6 @@ export function UberHitcClient() {
                 <SourceButton id="uber-guidelines" open={openSources} />
               </div>
             </div>
-          </div>
-          <div className={styles.assetMatrix}>
-            <div className={styles.matrixHead}><span>ASSET</span><span>ROLE</span><span>RATIO</span><span>VARIANTS</span></div>
-            {[
-              ["Hero motion", "Reveal + platform", "9:16 / 4:5", "3 hooks × 2 endings"],
-              ["Creator POV", "Culture + context", "9:16", "3 creator structures"],
-              ["Lot H utility", "Arrival + exit", "9:16 / 1:1", "Day / event day"],
-              ["Code reminder", "Action cue", "9:16 / 4:5", "Meta / TikTok"],
-              ["Fleet capture", "Proof in motion", "9:16", "Exterior / rider POV"],
-            ].map((row) => <div key={row[0]}>{row.map((cell) => <span key={cell}>{cell}</span>)}</div>)}
           </div>
         </section>
 
