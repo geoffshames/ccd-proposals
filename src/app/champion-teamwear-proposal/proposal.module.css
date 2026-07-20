@@ -13,9 +13,9 @@
   --red: #fd3737;
   --line: rgba(244, 242, 237, 0.1);
   --line-2: rgba(244, 242, 237, 0.22);
-  --mut: rgba(244, 242, 237, 0.68);
-  --dim: rgba(244, 242, 237, 0.52);
-  --faint: rgba(244, 242, 237, 0.34);
+  --mut: rgba(244, 242, 237, 0.8);
+  --dim: rgba(244, 242, 237, 0.64);
+  --faint: rgba(244, 242, 237, 0.47);
   --px: clamp(24px, 6vw, 96px);
   --ease: cubic-bezier(0.32, 0.72, 0, 1);
   --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
@@ -579,7 +579,7 @@
 
 .head h2 em {
   font-style: normal;
-  color: rgba(244, 242, 237, 0.42);
+  color: rgba(244, 242, 237, 0.58);
 }
 
 .headBody {
@@ -1127,7 +1127,7 @@
   line-height: 1;
   letter-spacing: -0.01em;
   text-transform: uppercase;
-  color: rgba(244, 242, 237, 0.38);
+  color: rgba(244, 242, 237, 0.52);
 }
 
 .shiftCell small {
@@ -2184,7 +2184,7 @@
 
 .closing h2 em {
   font-style: normal;
-  color: rgba(244, 242, 237, 0.45);
+  color: rgba(244, 242, 237, 0.6);
 }
 
 .closingBody {
