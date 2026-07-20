@@ -434,7 +434,7 @@ export const frameworkHomeRemodeling: ProjectData = {
     ],
     paymentTerms:
       "The committed cost is the $6,844/mo management fee ($20,532 across the 90-day flight), which is 15% of the $45,625 average monthly ad spend. Ad spend is funded by Framework and billed directly to Meta and Reddit; if we adjust daily budgets together, the fee adjusts proportionally. Invoices due 7 days from issue.",
-    paymentLink: "#",
+    paymentLink: "https://buy.stripe.com/14A00i99O5UB9r3cfTa7C0k",
   },
 
   nextSteps: [
