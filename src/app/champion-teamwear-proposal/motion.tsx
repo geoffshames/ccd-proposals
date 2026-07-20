@@ -226,15 +226,18 @@ export function CinematicHero() {
 
 const phraseParts = ["Game day", "Practice", "Travel", "Fandom", "One teamwear system"];
 
-function MarqueePhrase() {
+function MarqueeRun() {
   return (
-    <span>
-      {phraseParts.map((part) => (
-        <span key={part}>
-          {part} <b>/</b>{" "}
-        </span>
-      ))}
-    </span>
+    <div className={styles.marqueeRun}>
+      {[0, 1, 2].map((repeat) =>
+        phraseParts.map((part) => (
+          <span key={`${repeat}-${part}`}>
+            {part}
+            <b>/</b>
+          </span>
+        )),
+      )}
+    </div>
   );
 }
 
@@ -251,16 +254,8 @@ export function KineticRosterBand() {
         animate={reduce ? undefined : { x: ["0%", "-50%"] }}
         transition={{ duration: 42, repeat: Infinity, ease: "linear" }}
       >
-        <span>
-          <MarqueePhrase />
-          <MarqueePhrase />
-          <MarqueePhrase />
-        </span>
-        <span aria-hidden="true">
-          <MarqueePhrase />
-          <MarqueePhrase />
-          <MarqueePhrase />
-        </span>
+        <MarqueeRun />
+        <MarqueeRun />
       </motion.div>
     </div>
   );

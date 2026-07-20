@@ -1,10 +1,24 @@
 import { ImageResponse } from "next/og";
+import { readFile } from "node:fs/promises";
+import path from "node:path";
 
-export const alt = "Champion Teamwear growth partnership proposal by Crowd Control Digital";
+export const alt =
+  "Champion Teamwear growth partnership proposal by Crowd Control Digital";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
-export default function OpenGraphImage() {
+const pub = (file: string) => path.join(process.cwd(), "public", file);
+
+export default async function OpenGraphImage() {
+  const [n27, logo, texture] = await Promise.all([
+    readFile(pub("brand/N27-Bold.otf")),
+    readFile(pub("champion-proposal/og-logo.png")),
+    readFile(pub("champion-proposal/og-texture.jpg")),
+  ]);
+
+  const logoSrc = `data:image/png;base64,${logo.toString("base64")}`;
+  const textureSrc = `data:image/jpeg;base64,${texture.toString("base64")}`;
+
   return new ImageResponse(
     (
       <div
@@ -13,72 +27,137 @@ export default function OpenGraphImage() {
           width: "100%",
           height: "100%",
           display: "flex",
-          flexDirection: "column",
-          justifyContent: "space-between",
-          overflow: "hidden",
-          padding: "54px 62px",
-          color: "#fafafa",
-          background: "#080808",
-          fontFamily: "Arial, Helvetica, sans-serif",
+          color: "#f4f2ed",
+          background: "#070707",
+          fontFamily: "N27",
         }}
       >
+        {/* Texture panel, right */}
         <div
           style={{
             position: "absolute",
-            inset: 0,
+            top: 0,
+            right: 0,
+            width: 470,
+            height: 630,
             display: "flex",
-            backgroundImage:
-              "linear-gradient(rgba(255,255,255,.07) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.07) 1px, transparent 1px)",
-            backgroundSize: "76px 76px",
+            borderLeft: "1px solid rgba(244,242,237,0.14)",
           }}
-        />
-        <div
-          style={{
-            position: "absolute",
-            right: "-170px",
-            top: "-250px",
-            width: "650px",
-            height: "650px",
-            display: "flex",
-            border: "2px solid #FD3737",
-            borderRadius: "50%",
-            opacity: 0.55,
-          }}
-        />
-        <div
-          style={{
-            position: "absolute",
-            right: "-40px",
-            bottom: "80px",
-            width: "520px",
-            height: "2px",
-            display: "flex",
-            background: "#FD3737",
-            transform: "rotate(-18deg)",
-          }}
-        />
-
-        <div style={{ zIndex: 2, display: "flex", justifyContent: "space-between", fontSize: 18, letterSpacing: 4 }}>
-          <span>[ CROWD CONTROL ]</span>
-          <span style={{ color: "#FD3737" }}>CONFIDENTIAL / 2026</span>
+        >
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src={textureSrc}
+            alt=""
+            width={470}
+            height={630}
+            style={{ objectFit: "cover", width: 470, height: 630 }}
+          />
+          <div
+            style={{
+              position: "absolute",
+              inset: 0,
+              display: "flex",
+              background:
+                "linear-gradient(90deg, #070707 0%, rgba(7,7,7,0) 42%)",
+            }}
+          />
+          <div
+            style={{
+              position: "absolute",
+              inset: 0,
+              display: "flex",
+              background:
+                "linear-gradient(0deg, rgba(7,7,7,0.6) 0%, rgba(7,7,7,0) 30%)",
+            }}
+          />
         </div>
 
-        <div style={{ zIndex: 2, display: "flex", flexDirection: "column", gap: 6 }}>
-          <span style={{ color: "#FD3737", fontSize: 20, letterSpacing: 5 }}>GROWTH PARTNERSHIP PROPOSAL</span>
-          <div style={{ display: "flex", flexDirection: "column", fontWeight: 900, fontSize: 92, lineHeight: 0.86, letterSpacing: -5 }}>
-            <span>CHAMPION</span>
-            <span style={{ color: "#FD3737" }}>TEAMWEAR</span>
+        {/* Copy column */}
+        <div
+          style={{
+            position: "relative",
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "space-between",
+            width: 760,
+            padding: "48px 0 44px 60px",
+          }}
+        >
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src={logoSrc} alt="" width={216} height={30} />
+
+          <div style={{ display: "flex", flexDirection: "column" }}>
+            <div
+              style={{
+                display: "flex",
+                alignItems: "center",
+                gap: 16,
+                marginBottom: 30,
+              }}
+            >
+              <div
+                style={{
+                  width: 40,
+                  height: 3,
+                  display: "flex",
+                  background: "#fd3737",
+                }}
+              />
+              <span
+                style={{
+                  fontSize: 16,
+                  letterSpacing: 3,
+                  color: "rgba(244,242,237,0.66)",
+                }}
+              >
+                CHAMPION TEAMWEAR × CROWD CONTROL
+              </span>
+            </div>
+            <div
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                fontSize: 78,
+                lineHeight: 0.94,
+                letterSpacing: -2,
+              }}
+            >
+              <span>TURN BRAND</span>
+              <span>PERMISSION</span>
+              <span style={{ display: "flex" }}>
+                INTO&nbsp;<span style={{ color: "#fd3737" }}>MOMENTUM.</span>
+              </span>
+            </div>
           </div>
-        </div>
 
-        <div style={{ zIndex: 2, display: "flex", justifyContent: "space-between", alignItems: "flex-end", fontSize: 18 }}>
-          <span style={{ maxWidth: 650, color: "rgba(255,255,255,.7)", lineHeight: 1.4 }}>
-            Build the brand, growth, channel, and activation system for the next phase.
-          </span>
-          <span style={{ letterSpacing: 3 }}>CTW / CCD</span>
+          <div
+            style={{
+              display: "flex",
+              justifyContent: "space-between",
+              width: 640,
+              paddingTop: 18,
+              borderTop: "1px solid rgba(244,242,237,0.16)",
+              fontSize: 14,
+              letterSpacing: 2.5,
+              color: "rgba(244,242,237,0.56)",
+            }}
+          >
+            <span>GROWTH PARTNERSHIP PROPOSAL</span>
+            <span>PRIVATE + CONFIDENTIAL / 2026</span>
+          </div>
         </div>
       </div>
     ),
-    size,
+    {
+      ...size,
+      fonts: [
+        {
+          name: "N27",
+          data: n27,
+          weight: 700,
+          style: "normal",
+        },
+      ],
+    },
   );
 }
