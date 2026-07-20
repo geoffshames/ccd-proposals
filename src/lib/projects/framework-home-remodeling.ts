@@ -243,7 +243,7 @@ export const frameworkHomeRemodeling: ProjectData = {
       tasks: [
         "Meta Business Manager audit, pixel + Conversions API install, and Reddit Ads account + pixel setup",
         "Qualification funnel architecture: gated instant forms (owner-occupied, zip, roof age, timeline) wired to Framework's CRM with speed-to-lead alerts",
-        "Creative Sprint 1: 12 launch ads built from the competitor teardown (insurance angle, energy math, storm readiness, crew craftsmanship)",
+        "Creative Sprint 1: 25-50 launch ads built from the competitor teardown (insurance angle, energy math, storm readiness, crew craftsmanship)",
         "Landing alignment: estimate-booking flow QA and CRO recommendations on frameworkservices.com",
       ],
     },
@@ -348,7 +348,7 @@ export const frameworkHomeRemodeling: ProjectData = {
       items: [
         {
           name: "Ad Creative Sprints",
-          quantity: "12+/mo",
+          quantity: "50-100/mo",
           description:
             "Statics, motion, and video cutdowns produced in-house from Framework's job-site footage, reviews, and AI-assisted production. Hooks reverse-engineered from the competitor teardown.",
         },
@@ -386,7 +386,7 @@ export const frameworkHomeRemodeling: ProjectData = {
     included: [
       "Full Meta and Reddit strategy, campaign builds, and daily management of $1,500/day in spend",
       "Qualification funnel architecture: gated lead forms, estimate-booking flow, CRM wiring, speed-to-lead alerts",
-      "Ad creative production (12+ new ads monthly: statics, motion, video cutdowns from Framework footage and AI-assisted builds)",
+      "Ad creative production (50-100 new ads tested monthly: statics, motion, video cutdowns from Framework footage and AI-assisted builds)",
       "Pixel, Conversions API, Reddit pixel, and offline conversion tracking setup",
       "Lead-quality feedback loop with weekly grading against estimate outcomes",
       "Weekly reporting, monthly strategy calls, and the full 90-day attribution readout",
