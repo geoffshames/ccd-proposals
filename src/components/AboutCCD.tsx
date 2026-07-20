@@ -68,6 +68,7 @@ export function AboutCCD() {
         </ScrollReveal>
 
         {/* Case study header */}
+        {CASE_STUDIES.length > 0 && (<>
         <ScrollReveal delay={0.15}>
           <div className="mb-10">
             <h3 className="text-[clamp(1.4rem,2.5vw,1.8rem)] font-bold tracking-[-0.02em] text-text-primary leading-[1.2]">
@@ -94,6 +95,7 @@ export function AboutCCD() {
             </ScrollReveal>
           ))}
         </div>
+        </>)}
 
         {/* Client marquee */}
         <ScrollReveal delay={0.2}>

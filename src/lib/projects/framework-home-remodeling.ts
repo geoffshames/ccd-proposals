@@ -496,10 +496,5 @@ export const frameworkHomeRemodeling: ProjectData = {
     brutalistCaption: "FRAMEWORK × Crowd Control Digital",
   },
 
-  caseStudies: [
-    { client: "MALBON GOLF", metric: "$5M+", description: "REVENUE DRIVEN" },
-    { client: "KAPPA", metric: "10X", description: "ROAS" },
-    { client: "FOOT LOCKER", metric: "-30%", description: "LOWER CPA" },
-    { client: "OASIS WYNWOOD", metric: "+42%", description: "LOWER CPA" },
-  ],
+  caseStudies: [],
 };
