@@ -73,7 +73,7 @@ export const proposalMeta = {
   document: "Growth Strategy Partnership",
   issued: "July 17, 2026",
   classification: "Confidential proposal",
-  ndaRequired: true,
+  ndaRequired: false,
   initialTerm: "Proposed 6-month runway",
   roadmapHorizon: "6 to 12 months",
 } as const;
@@ -104,7 +104,7 @@ export const proposalHero = {
 export const engagementPremise = {
   title: "Build the decision system before scaling the output.",
   body:
-    "Champion Teamwear is managing a brand transition, an ambitious category expansion, and a compressed internal team at the same time. The engagement starts by establishing a shared fact base, then turns that evidence into positioning, growth priorities, channel roles, and activation choices. Tactical support remains modular so execution follows the strategy instead of outrunning it.",
+    "Champion Teamwear is managing a brand transition, an ambitious category expansion, and a compressed internal team at the same time. The engagement starts by establishing a shared fact base, then turns that evidence into positioning, growth priorities, channel roles, and activation choices. Social and CRM execution runs inside the core team, while paid media, production, and platform work stay modular so execution follows the strategy instead of outrunning it.",
   priorWorkNote:
     "The July brand and sentiment diagnostic is orientation, not completion. The paid engagement includes a new working audit, direct audience discovery, stakeholder input, data review, and validation of the hypotheses below.",
 } as const;
@@ -175,6 +175,7 @@ export const engagementPhases: readonly EngagementPhase[] = [
       "Create the paid, decision-grade foundation for the engagement. Validate what is known, expose what is missing, and separate masterbrand equity from Teamwear performance.",
     outputs: [
       "Working brand, audience, channel, and customer-experience audit",
+      "Social and CRM channel takeover with a keep-the-lights-on calendar",
       "Champion and ABG material review with rights and approval questions logged",
       "Leadership, sales, service, and customer discovery",
       "Teamwear-specific sentiment and social listening update",
@@ -272,6 +273,18 @@ export const workstreams: readonly Workstream[] = [
   },
   {
     number: "04",
+    title: "Social and CRM engine",
+    role: "Run the owned channels that carry the brand day to day.",
+    deliverables: [
+      "Channel strategy, content calendars, and publishing cadence",
+      "Day-to-day social content creation and community management",
+      "Email and SMS lifecycle flows, campaigns, and segmentation",
+      "List growth, deliverability, and performance reporting",
+    ],
+    outcome: "Owned channels that compound: consistent presence, growing lists, and a measurable contribution to demand.",
+  },
+  {
+    number: "05",
     title: "Campaign and activation platform",
     role: "Build culturally relevant ideas that can still serve commercial priorities.",
     deliverables: [
@@ -283,7 +296,7 @@ export const workstreams: readonly Workstream[] = [
     outcome: "A pipeline of ideas with a reason to exist, a role in growth, and a testable next step.",
   },
   {
-    number: "05",
+    number: "06",
     title: "Operating and measurement system",
     role: "Make the strategy usable by a lean internal team and repeatable across ABA.",
     deliverables: [
@@ -501,10 +514,10 @@ export const dependencies: readonly Dependency[] = [
 
 export const investment: readonly InvestmentLine[] = [
   {
-    label: "Core strategy and growth partnership",
+    label: "Core partnership: strategy, social and CRM",
     amount: "$10,000 per month",
     numericAmount: 10_000,
-    note: "Recommended six-month operating runway. Final term is confirmed in the engagement agreement.",
+    note: "Strategy and growth leadership plus hands-on social and CRM management. Recommended six-month operating runway; final term is confirmed in the engagement agreement.",
   },
   {
     label: "Paid media management",
@@ -537,6 +550,8 @@ export const coreScope = {
     "Positioning, ICPs, messaging, and proof framework",
     "Growth opportunity map and prioritization model",
     "Channel and go-to-market strategy",
+    "Social media management: channel strategy, calendars, publishing, and community",
+    "CRM and lifecycle management: email and SMS flows, campaigns, and list growth",
     "Campaign and activation ideation",
     "Six- to twelve-month roadmap and monthly calibration",
     "Measurement framework, decision log, and executive readouts",
@@ -544,8 +559,7 @@ export const coreScope = {
   ],
   excludedTitle: "Scoped and funded separately",
   excluded: [
-    "Daily social, community, CRM, or website operations",
-    "Creative design, copy production, photo, video, motion, and content production",
+    "Campaign creative, photo, video, and motion production beyond day-to-day social content",
     "Media spend, creator fees, talent, usage, licensing, and paid partnerships",
     "Website design, development, migration, quality assurance, and ongoing maintenance",
     "Event production, fabrication, printing, shipping, travel, and on-site staffing",
@@ -556,9 +570,9 @@ export const coreScope = {
 
 export const proposalCta = {
   eyebrow: "Recommended next move",
-  headline: "Start with the strategy partnership. Add execution where the evidence earns it.",
+  headline: "Start with the core partnership. Scale execution where the evidence earns it.",
   body:
-    "With the mutual NDA in place, Crowd Control will schedule kickoff as soon as the engagement agreement is confirmed, issue the access and discovery request, and begin the new paid audit. The first phase ends with a shared fact base and a leadership decision on where Champion Teamwear will focus first.",
+    "Crowd Control will schedule kickoff as soon as the engagement agreement is confirmed, issue the access and discovery request, and take over the social and CRM calendar while the new paid audit runs. The first phase ends with a shared fact base and a leadership decision on where Champion Teamwear will focus first.",
   primaryLabel: "CONTACT US",
   primaryHref: "mailto:geoff@crowdcontroldigital.com?subject=Champion%20Teamwear%20Partnership",
   contact: "geoff@crowdcontroldigital.com",

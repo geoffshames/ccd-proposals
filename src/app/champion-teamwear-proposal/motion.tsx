@@ -303,7 +303,7 @@ export function FeeBar() {
     {
       className: styles.feeCore,
       amount: "$10,000",
-      label: "Core strategy retainer / month",
+      label: "Strategy + social + CRM / month",
     },
     {
       className: styles.feeMedia,

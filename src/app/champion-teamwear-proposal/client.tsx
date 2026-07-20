@@ -439,10 +439,10 @@ export function ChampionTeamwearProposalClient() {
             note="$10K / month core"
             title={
               <>
-                Five workstreams. <em>One accountable rhythm.</em>
+                Six workstreams. <em>One accountable rhythm.</em>
               </>
             }
-            body="The core retainer covers the strategic layer connecting brand, growth, channels, activation and measurement. Execution is added only where the roadmap creates a clear reason to invest."
+            body="The core retainer pairs the strategic layer with hands-on social and CRM execution. Paid media, production and platform work are added only where the roadmap creates a clear reason to invest."
           />
 
           <Reveal>
@@ -559,7 +559,7 @@ export function ChampionTeamwearProposalClient() {
                 Add capability <em>when the strategy calls for it.</em>
               </>
             }
-            body="The core engagement stays focused on direction, prioritization and advisory. Tactical modules activate with a separate scope, fee, owner and definition of success."
+            body="The core engagement covers strategy plus social and CRM operations. Additional tactical modules activate with a separate scope, fee, owner and definition of success."
           />
 
           {featured ? (
@@ -749,7 +749,7 @@ export function ChampionTeamwearProposalClient() {
                 A lean core. <em>Flexible execution.</em>
               </>
             }
-            body="One monthly strategy and growth retainer keeps the engagement focused. Media management, creative production and optional modules are visible additions, never hidden inside the fee."
+            body="One monthly retainer covers strategy, social and CRM. Media management, creative production and optional modules are visible additions, never hidden inside the fee."
           />
 
           <Reveal>
@@ -811,8 +811,8 @@ export function ChampionTeamwearProposalClient() {
                 {proposalCta.eyebrow}
               </p>
               <h2>
-                Start with the strategy partnership.{" "}
-                <em>Add execution where the evidence earns it.</em>
+                Start with the core partnership.{" "}
+                <em>Scale execution where the evidence earns it.</em>
               </h2>
               <p className={styles.closingBody}>{proposalCta.body}</p>
               <Magnetic>
