@@ -1,19 +1,20 @@
 import { ImageResponse } from "next/og";
-import { readFile } from "node:fs/promises";
-import path from "node:path";
 
 export const alt =
   "Champion Teamwear growth partnership proposal by Crowd Control Digital";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
-const pub = (file: string) => path.join(process.cwd(), "public", file);
+async function asset(url: URL): Promise<Buffer> {
+  const response = await fetch(url);
+  return Buffer.from(await response.arrayBuffer());
+}
 
 export default async function OpenGraphImage() {
   const [n27, logo, texture] = await Promise.all([
-    readFile(pub("brand/N27-Bold.otf")),
-    readFile(pub("champion-proposal/og-logo.png")),
-    readFile(pub("champion-proposal/og-texture.jpg")),
+    asset(new URL("./n27-bold.otf", import.meta.url)),
+    asset(new URL("./og-logo.png", import.meta.url)),
+    asset(new URL("./og-texture.jpg", import.meta.url)),
   ]);
 
   const logoSrc = `data:image/png;base64,${logo.toString("base64")}`;
