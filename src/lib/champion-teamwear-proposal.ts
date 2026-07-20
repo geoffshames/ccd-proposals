@@ -578,7 +578,7 @@ export const proposalCta = {
   contact: "geoff@crowdcontroldigital.com",
   firstSteps: [
     "Confirm the engagement agreement and operating runway",
-    "Name the executive sponsor and working team",
+    "Tell us who signs off and who we work with day to day",
     "Schedule the kickoff and access intake",
     "Begin the paid audit and discovery phase",
   ],

@@ -411,7 +411,7 @@
   position: absolute;
   z-index: 2;
   left: 26px;
-  bottom: 24px;
+  bottom: 92px;
   display: flex;
   align-items: center;
   gap: 12px;
@@ -2444,6 +2444,10 @@
     margin: 0 var(--px);
     flex-wrap: wrap;
     gap: 10px;
+  }
+
+  .heroMediaTag {
+    bottom: 20px;
   }
 
   .heroStats {
