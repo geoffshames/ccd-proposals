@@ -40,8 +40,7 @@ export const frameworkHomeRemodeling: ProjectData = {
       "Claim the local trust position on Meta before another Houston roofer wakes up to the vacuum",
       "Build a qualification-first funnel (insurance-angle hooks, gated forms, estimate booking) that filters before it fills",
       "Turn Reddit's contractor-recommendation culture into a proprietary low-CPM lead channel no competitor is using",
-      "Wire a lead-quality feedback loop from Framework's sales outcomes back into platform optimization",
-      "Prove cost-per-booked-estimate economics that justify scaling past $1,500/day",
+      "Wire a lead-quality feedback loop from Framework's sales outcomes back into platform optimization, proving the cost-per-booked-estimate economics that justify scaling past $1,500/day",
     ],
     stats: [
       { value: 45, suffix: "K+", label: "Monthly ad spend managed across Meta and Reddit, optimized to booked in-home estimates" },
