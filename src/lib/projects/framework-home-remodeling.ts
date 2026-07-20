@@ -460,7 +460,7 @@ export const frameworkHomeRemodeling: ProjectData = {
       step: 4,
       title: "Creative Sprint 1",
       description:
-        "We pull job-site photos, reviews, and warranty documentation from your team and build the 12-ad launch set across the four angles.",
+        "We pull job-site photos, reviews, and warranty documentation from your team and build the 25-50 ad launch set across the four angles.",
     },
     {
       step: 5,
