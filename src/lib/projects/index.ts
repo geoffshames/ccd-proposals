@@ -1,4 +1,5 @@
 import { littleTokyoReborn } from "./little-tokyo-reborn";
+import { frameworkHomeRemodeling } from "./framework-home-remodeling";
 import { ykNiece } from "./yk-niece";
 import { suicideboys } from "./suicideboys";
 import { monstaX } from "./monsta-x";
@@ -37,6 +38,7 @@ import { kurtDeimerSilentLucidity } from "./kurt-deimer-silent-lucidity";
 import type { ProjectData } from "../project-context";
 
 export const PROJECTS: Record<string, ProjectData> = {
+  "framework-home-remodeling": frameworkHomeRemodeling,
   "kurt-deimer-silent-lucidity": kurtDeimerSilentLucidity,
   "sun-chaser": sunChaser,
   "polkadotfx": polkadotfx,
