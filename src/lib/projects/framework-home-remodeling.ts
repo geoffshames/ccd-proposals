@@ -44,7 +44,7 @@ export const frameworkHomeRemodeling: ProjectData = {
     ],
     stats: [
       { value: 45, suffix: "K+", label: "Monthly ad spend managed across Meta and Reddit, optimized to booked in-home estimates" },
-      { value: 12, suffix: "+", label: "New Ads Tested / Mo" },
+      { value: 50, suffix: "+", label: "New Ads Tested / Mo" },
       { value: 100, suffix: "+", label: "Booked Estimates / Mo Target" },
       { value: 6, label: "Counties Covered" },
     ],
