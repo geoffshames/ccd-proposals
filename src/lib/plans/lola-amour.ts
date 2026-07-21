@@ -460,7 +460,7 @@ export const lolaAmourPlan: StrategyPlanData = {
             "53% of posts are fully premise-locked for a zero-Tagalog viewer and another 20% deliver the setup but lose the payoff; the census survived an adversarial recount (hardest deflation: 47%).",
             "Zero English lyric translation exists on any Lambing, dahan-dahan, or Pwede Ba live clip; lyric overlays are Tagalog-only, and talk-format subtitles transcribe the Taglish verbatim rather than translating it. An independent sweep of all 99 transcripts confirmed exactly one translating format in the entire corpus.",
             "Weighted by plays, roughly 90% of recent TikTok viewing went to locked posts (about 60 to 67% excluding the single 2.07M outlier); only 4 to 5% went to fully accessible posts.",
-            "Platform auto-translation does not rescue the lyrics: scraped English tracks render 'Lambing' as 'Long Ding' and destroy the swim gag's papel pun entirely (spoken confession content translates passably; sung wordplay dies).",
+            "Platform auto-translation does not rescue the wordplay: scraped English tracks render 'Lambing' as 'Long Ding', and the swim gag's spoken 'papel' pun (a Tagalog play on papel as both paper and one's role in life) collapses in machine translation. Plain spoken confession lines survive passably; puns and sung lyrics do not.",
             "The exception proves they can do it: the Lyric Breakdown format pairs the Tagalog lyric with a clean English gloss, and it is the only format in the corpus that truly translates.",
           ],
           counterEvidence: [
@@ -584,7 +584,7 @@ export const lolaAmourPlan: StrategyPlanData = {
               label: "Swim rest-day gag",
               date: "May 31",
               stat: "2.07M plays, 311x median",
-              note: "One member floats, another carries him underwater. No language required. Their proven exportable format.",
+              note: "One member floats, another tows him across the pool. No language required. Their proven exportable format.",
             },
             {
               platform: "tiktok",
@@ -729,8 +729,270 @@ export const lolaAmourPlan: StrategyPlanData = {
     },
 
     {
-      type: "audience",
+      type: "contentAnalysis",
       number: "04",
+      navLabel: "Member Chemistry",
+      title: "Member Chemistry / Seven Players, One Camera",
+      intro:
+        "The seven-member chemistry is one of the band's core assets, so Crowd Control Digital ran a second video-AI pass over the same 92-video Lola Amour intelligence store, this time to read the band as characters: who the camera actually shows, who gets introduced as themselves, which members pair off on screen, and which chemistry travels. Member identities were anchored from posts that feature a single member, then tracked across the corpus by role and instrument. Every read below is tied to specific posts and the real reach behind them, and the limits of face recognition are stated up front.",
+      methodology: [
+        {
+          label: "Same corpus",
+          value:
+            "The 92 indexed Lola Amour videos from the content analysis (the band's last 50 TikToks and 50 Instagram reels, May to July 2026). No new content was pulled; this is a second read of the same store.",
+        },
+        {
+          label: "Name to face",
+          value:
+            "Identities were anchored from posts that spotlight one member (Pio on the disco-ball bit, the Maybe Maybe guitar cam, the sax-solo posts, the drum cams), then tracked across the corpus by role, instrument, and stage position.",
+        },
+        {
+          label: "Two layers",
+          value:
+            "First a camera map: how often each member appears and who gets individual focus versus wide-band coverage. Second, interaction: who drives the comedy, who reacts, and which members recur as an on-camera pair.",
+        },
+        {
+          label: "Performance join",
+          value:
+            "Every member and pairing read is checked against the post's real plays and engagement from the store, so who the camera loves is measured against what actually traveled.",
+        },
+        {
+          label: "Honest limits",
+          value:
+            "Face recognition on short, fast-cut live footage is not certain. The frontman, the lead guitarist (glasses), the saxophonist, the bearded keyboardist, and the drummer (glasses, headphones) are reliably tracked. The two trumpet players, Angelo Mesina and Manu Dumayas, look alike on camera and are not consistently separable, so horn-line calls are made by role and flagged where individual identity is uncertain.",
+        },
+      ],
+      corpusStats: [
+        {
+          label: "Biggest post is a two-person gag",
+          value: "2.07M",
+          detail: "The pool bit, a two-member physical joke, beat the next-biggest TikTok post by 13x. Paired physical comedy is the ceiling.",
+        },
+        {
+          label: "Face the band runs on",
+          value: "1",
+          detail: "Pio fronts and drives nearly every post; the other six mostly react around him.",
+        },
+        {
+          label: "Members never singled out",
+          value: "2 of 7",
+          detail: "No post is built around the keyboardist or the bassist: David Yuhico (keys) and Manu Dumayas (bass, second trumpet, and Pio's brother) never arrive as individuals.",
+        },
+        {
+          label: "Top instrument-cam post",
+          value: "71.4K",
+          detail: "A drum cam, from one of the least-shown members, above the Instagram median. The one introducer format that works is underused.",
+        },
+      ],
+      findingsHeading: "What The Camera Shows, And What It Hides",
+      findingsIntro:
+        "Four reads on how Lola Amour presents its seven members, and what to change so a US newcomer meets the whole band instead of one face. Open any card for the evidence, the counter-case we ran, example posts, and the pivot.",
+      findings: [
+        {
+          id: "one-face",
+          title: "One face carries the whole band",
+          verdict: "partial",
+          confidence: "High",
+          summary:
+            "Pio is the default focal point and the comedic engine of almost every post. That concentration is an asset for a fast, recognizable US introduction and a risk at the same time: six of seven members are close to invisible as individuals, so the ensemble the live show sells is not the ensemble the feed shows.",
+          evidence: [
+            "Across the corpus the frontman is centered or fronting in the clear majority of posts. The rough on-camera order after him is the lead guitarist, then the horn line, with the drummer and keyboardist most often supporting players in the frame.",
+            "Pio is also the comedic engine: in the studio, banter, stunt, and skit posts he initiates or escalates the bit while the rest of the band commits seriously around him.",
+            "His individual features overperform for the account: the disco-ball bit did 169.5K on Instagram, above the 51.2K median, and 53.4K on TikTok, roughly 8x the TikTok median.",
+          ],
+          counterEvidence: [
+            "A single recognizable face is not a flaw for cold-market discovery; it gives a US newcomer one person to latch onto, which most seven-pieces never establish. The finding is about the other six being missing, not about Pio being present.",
+            "Face tracking on fast live cuts is imperfect, so who is centered is a strong pattern rather than an exact frame count.",
+          ],
+          examples: [
+            {
+              platform: "instagram",
+              id: "DYzJPMmxKT-",
+              label: "Pio, the disco-ball bit",
+              date: "May 26",
+              stat: "169.5K views",
+              note: "The frontman feature, a pinned post that keeps accruing views, well above the account's Instagram median.",
+            },
+            {
+              platform: "tiktok",
+              id: "7644152955494485255",
+              label: "The same bit on TikTok",
+              date: "May 26",
+              stat: "53.4K plays, ~8x median",
+              note: "The face works. It is just the only one the feed introduces.",
+            },
+            {
+              platform: "tiktok",
+              id: "7642268387170585864",
+              label: "Boys at the lunch table who started a band",
+              date: "May 21",
+              stat: "5.4K plays",
+              note: "The rare ensemble-identity post: shared history, not one face. Underused as a format.",
+            },
+          ],
+          pivot: {
+            title: "Turn one face into seven characters",
+            actions: [
+              "Add recurring English member intro cards to discovery cuts so a stranger starts learning the seven names, not just Pio's.",
+              "Build ensemble-identity content (the lunch-table origin frame) into a repeatable format; the live show is a seven-piece and the feed should say so.",
+              "Keep Pio as the front door, then hand off: let posts that star him also feature one other member in a defined role.",
+            ],
+          },
+        },
+        {
+          id: "two-unseen",
+          title: "Two of seven never get introduced",
+          verdict: "partial",
+          confidence: "Medium-high",
+          summary:
+            "David Yuhico (keys) and Manu Dumayas (bass and second trumpet) have zero individual feature posts and are the least-visible members in the frame. Manu is also Pio's brother, a built-in story the account has never told. To a US viewer meeting the band cold, two of the seven simply do not exist.",
+          evidence: [
+            "No post in the 92-video corpus is built around the keyboardist or gives him a feature; on camera he is the least clearly shown member, usually tucked into ensemble shots.",
+            "The band's second horn and its bass parts are played by Manu, who never appears as himself in a feature and, on trumpet, is not visually separable from Angelo in the footage.",
+            "The brother relationship between Pio and Manu is never used on camera, even though the frontman is the account's most-watched person.",
+          ],
+          counterEvidence: [
+            "Some of this is role-driven: keys and bass are less natural cam instruments than drums, guitar, or sax, so the absence is partly format, not neglect.",
+            "Because the two trumpet players are hard to tell apart on camera, Manu is never featured is an identity-by-role read; the safe, checkable version is that no post is built around the keyboardist or the bassist.",
+          ],
+          examples: [
+            {
+              platform: "tiktok",
+              id: "7654900480908201234",
+              label: "Why a 7-piece band",
+              date: "Jun 24",
+              stat: "29.1K plays, ~4x median",
+              note: "Introduces the arrangement, not the people. The appetite to meet the band is there; the names are not.",
+            },
+            {
+              platform: "instagram",
+              id: "DZ9uo97JRza",
+              label: "Why a 7-piece band, on Instagram",
+              date: "Jun 24",
+              stat: "66.8K views",
+              note: "The roster is the hook, and it still leaves keys and bass without a face or a name.",
+            },
+          ],
+          pivot: {
+            title: "Give the quiet members a reason to be on camera",
+            actions: [
+              "Introduce David and Manu with dedicated bits: a keys-cam on a recognizable hook, a bass-cam on a groove, in the same house style as the drum and sax cams that already work.",
+              "Tell the brother story on camera; it is free narrative the account has left on the table.",
+              "Use the roster-explainer appetite (the 7-piece posts) to launch a recurring meet-the-band beat aimed at strangers.",
+            ],
+          },
+        },
+        {
+          id: "paired-chemistry",
+          title: "The chemistry that travels is physical and paired",
+          verdict: "confirmed",
+          confidence: "High",
+          summary:
+            "The band's biggest reach never comes from a solo. It comes from two or more members doing something physical together: the pool gag, the spin-class stunts, the drummer heckle. Ensemble chemistry, not individual musicianship, is the exportable asset, which lines up exactly with the content analysis finding that physical humor is what escapes the follower graph.",
+          evidence: [
+            "The single biggest post in the corpus is a two-member physical bit: the pool gag did 2.07M on TikTok and 818K on Instagram, more than 13x the next-biggest TikTok post. One member floats, another tows him; no language required.",
+            "The spin-class stunt, an ensemble physical premise, is two of the top five Instagram reels in the corpus (240.9K and 236.1K) and 60.3K on TikTok.",
+            "Comedy pairing matches or beats solo musicianship on the same platform: the drummer bit the band captions 'was Angelo rushing or dragging' (a trumpet player heckling Raffy on the kit) did 48.2K on Instagram, ahead of the solo sax feature (44.2K) and near the guitar cam (50.5K), and on TikTok it ran with the drum cams, above the account median.",
+          ],
+          counterEvidence: [
+            "The pool gag is a single 311x outlier, and three physical bits in ten weeks is a thin sample; the ceiling is proven, the frequency is not.",
+            "Public metrics carry no geography, so travels means escapes the follower graph, not reached the US specifically. What is measured is that paired physical bits consistently outrun solos on both platforms.",
+            "Who is in the pool is read by role rather than certain identity: the floater reads as the frontman, the tow as a rhythm-section member.",
+          ],
+          examples: [
+            {
+              platform: "tiktok",
+              id: "7645966307850013959",
+              label: "The pool gag",
+              date: "May 31",
+              stat: "2.07M plays",
+              note: "Two members, one physical joke, zero language. The band's biggest asset is its chemistry, not any solo.",
+            },
+            {
+              platform: "instagram",
+              id: "DYwqQH2JoKX",
+              label: "Spin-class invasion",
+              date: "May 25",
+              stat: "240.9K views",
+              note: "Ensemble physical premise, legible in any market. Top-tier reach on Instagram.",
+            },
+            {
+              platform: "instagram",
+              id: "DZzb6G9J75O",
+              label: "The drummer bit: was Angelo rushing or dragging?",
+              date: "Jun 20",
+              stat: "48.2K views",
+              note: "A two-hander (a trumpet player heckling Raffy on drums) that beat the solo sax feature. Interaction over isolation.",
+            },
+          ],
+          pivot: {
+            title: "Book the pairs, not just the solos",
+            actions: [
+              "Make paired and ensemble physical comedy a weekly franchise; it is the band's highest-ceiling, most-portable format and it currently fires only occasionally.",
+              "Cast on purpose: the frontman-and-drummer contrast and the horn-line unit are the strongest on-camera pairs, so write bits around them.",
+              "Keep the instrument cams, but frame them as duos where possible (two members in the bit) rather than lone solos.",
+            ],
+          },
+        },
+        {
+          id: "instrument-cam",
+          title: "The one franchise that works is underbuilt",
+          verdict: "partial",
+          confidence: "High",
+          summary:
+            "The band's single recurring individual-feature format, the instrument cam, works, and the least-visible rhythm members over-index on it. Raffy's drum cams are the best-performing instrument features in the corpus, yet the format fires only occasionally and skips the two members who most need the introduction.",
+          evidence: [
+            "Drum cams are the top instrument-cam performers: 71.4K and 62.6K on Instagram, both above the 51.2K median, from a member who is otherwise one of the least-shown in the frame.",
+            "The sax and guitar cams land just under the same Instagram median (44.2K and 50.5K), so even outside drums the format reliably lifts a single member toward the account's Instagram ceiling and well above its TikTok floor.",
+            "The format currently covers four roles (front, guitar, sax, drums) and never covers keys or bass, the exact two members with no individual presence.",
+          ],
+          counterEvidence: [
+            "Instrument-cam numbers sit well below the physical-ensemble ceiling, so this is a steady introducer, not a breakout engine; its job is roster legibility, not virality.",
+            "Some drum-cam reach is helped by guest and collab hooks (Laufey, mix-breakdown prompts), so not all of the lift is the member alone.",
+          ],
+          examples: [
+            {
+              platform: "instagram",
+              id: "DZXKvVlp4_u",
+              label: "Drum cam: mix breakdown",
+              date: "Jun 9",
+              stat: "71.4K views",
+              note: "The least-framed member posts the best instrument-cam number in the corpus. Give him more.",
+            },
+            {
+              platform: "instagram",
+              id: "DZ7Re4dpTao",
+              label: "Sax solo: even Jeff makes mistakes",
+              date: "Jun 23",
+              stat: "44.2K views",
+              note: "Jeff's feature lands just under the account's usual Instagram reach. The format works per member.",
+            },
+            {
+              platform: "instagram",
+              id: "DZpJxTUpmmL",
+              label: "Guitar cam: the Maybe Maybe intro",
+              date: "Jun 16",
+              stat: "50.5K views",
+              note: "Zoe at the Instagram median. A reliable single-member introducer, and it still skips keys and bass.",
+            },
+          ],
+          pivot: {
+            title: "Run the instrument cam as a full-roster rotation",
+            actions: [
+              "Extend the instrument-cam format to keys and bass so all seven members get a recurring individual moment.",
+              "Give the drummer more cams; he over-indexes on the format despite being under-shown everywhere else.",
+              "Standardize each cam with an English member-name card so it doubles as an introduction for a cold audience.",
+            ],
+          },
+        },
+      ],
+      footnote:
+        "Member chemistry pass completed July 21, 2026 by Crowd Control Digital using TwelveLabs video intelligence over the same dedicated Lola Amour store as the content analysis. Member identities were built from single-member posts and tracked by role and instrument; the two trumpet players are noted as not reliably separable, and horn-line calls are flagged accordingly. Reach figures are the posts' own platform metrics. Tap any card to inspect the evidence.",
+    },
+
+    {
+      type: "audience",
+      number: "05",
       navLabel: "Audience",
       title: "Audience Intelligence / The Bridge Beyond The Algorithm",
       intro:
@@ -956,7 +1218,7 @@ export const lolaAmourPlan: StrategyPlanData = {
 
     {
       type: "competitive",
-      number: "05",
+      number: "06",
       navLabel: "Landscape",
       title: "Competitive and Cultural Landscape",
       intro:
@@ -1055,7 +1317,7 @@ export const lolaAmourPlan: StrategyPlanData = {
 
     {
       type: "philosophy",
-      number: "06",
+      number: "07",
       navLabel: "Thesis",
       title: "Strategic Thesis / Translate, Do Not Americanize",
       thesis:
@@ -1095,7 +1357,7 @@ export const lolaAmourPlan: StrategyPlanData = {
 
     {
       type: "structure",
-      number: "07",
+      number: "08",
       navLabel: "Working Model",
       title: "How We Work / Western Markets AOR",
       intro:
@@ -1124,7 +1386,7 @@ export const lolaAmourPlan: StrategyPlanData = {
 
     {
       type: "vertical",
-      number: "08",
+      number: "09",
       navLabel: "Fan Data",
       title: "Fan Data, Sign-Ups and Community",
       philosophy:
@@ -1205,7 +1467,7 @@ export const lolaAmourPlan: StrategyPlanData = {
 
     {
       type: "vertical",
-      number: "09",
+      number: "10",
       navLabel: "Content",
       title: "Content Narrative and Social System",
       philosophy:
@@ -1293,7 +1555,7 @@ export const lolaAmourPlan: StrategyPlanData = {
 
     {
       type: "vertical",
-      number: "10",
+      number: "11",
       navLabel: "Paid + Creator",
       title: "Paid Media and Creator Testing",
       philosophy:
@@ -1370,7 +1632,7 @@ export const lolaAmourPlan: StrategyPlanData = {
 
     {
       type: "vertical",
-      number: "11",
+      number: "12",
       navLabel: "DSP + Catalog",
       title: "DSP and Catalog Activation",
       philosophy:
@@ -1443,7 +1705,7 @@ export const lolaAmourPlan: StrategyPlanData = {
 
     {
       type: "vertical",
-      number: "12",
+      number: "13",
       navLabel: "Industry + Live",
       title: "Industry, Festivals, Live and Cultural Partnerships",
       philosophy:
@@ -1508,7 +1770,7 @@ export const lolaAmourPlan: StrategyPlanData = {
 
     {
       type: "vertical",
-      number: "13",
+      number: "14",
       navLabel: "Handoffs",
       title: "Roles, Handoffs and Scope Boundaries",
       philosophy:
@@ -1620,7 +1882,7 @@ export const lolaAmourPlan: StrategyPlanData = {
 
     {
       type: "roadmap",
-      number: "14",
+      number: "15",
       navLabel: "Timeline",
       title: "Overall 6–12 Month Timeline",
       intro:
@@ -1655,7 +1917,7 @@ export const lolaAmourPlan: StrategyPlanData = {
 
     {
       type: "pricing",
-      number: "15",
+      number: "16",
       navLabel: "Investment",
       title: "Investment",
       intro:
