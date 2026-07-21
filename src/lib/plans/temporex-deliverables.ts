@@ -71,7 +71,7 @@ export const temporexDeliverables: StrategyPlanData = {
       intro:
         "Every post, asset drop and paid moment across the Fantastic Machines cycle, laid out by day so the whole rollout can be built and scheduled ahead. Water Holes is done; Real Time is the next live push. Every release date is locked off the plan we walked through together, and each single runs the same 14-day cadence around it.",
       cadenceNote:
-        "Every single runs the same 14-day arc: T-14 pre-save + single-art announce, then a teaser a couple of days later, then a harder pre-save hit, then release-day out-now hero plus Spotify Marquee, then paid amplifies the winners a couple of days after (run dark), then a live clip points back seven days later, then straight into the next single. The album is the exception: its tail keeps pushing 4 to 8 weeks, not two.",
+        "Every single runs the same 14-day arc: T-14 pre-save + single-art announce, then a teaser a couple of days later, then a harder pre-save hit, then release-day out-now hero plus Spotify Marquee, then paid amplifies the winners a couple of days after (run dark), then a live clip points back two weeks after release, then straight into the next single. The album is the exception: its tail keeps pushing 4 to 8 weeks, not two.",
       postingRules: [
         "Cap organic at 1 to 2 posts a week. Paid carries the frequency, so you never have to over-post.",
         "Post midday-ish, 1 to 2 hours before your Instagram-reported peak, so social proof builds into the peak window. Skip early-morning slots while U.S. fans are asleep.",
@@ -114,7 +114,7 @@ export const temporexDeliverables: StrategyPlanData = {
         {
           key: "real-time",
           title: "Single 2 · Real Time",
-          window: "Jul 30 – Aug 21",
+          window: "Jul 30 – Aug 28",
           releaseDate: "Fri Aug 14",
           format: "Music-video single",
           status: "next",
@@ -123,18 +123,18 @@ export const temporexDeliverables: StrategyPlanData = {
           entries: [
             { date: "Thu Jul 30", kind: "asset", label: "Real Time MV delivered", detail: "Full music video delivered by Joseph + Luis, with cutdowns, ahead of the pre-save window.", status: "upcoming" },
             { date: "Sat Aug 1", kind: "presave", channel: ["Instagram", "TikTok"], time: "Midday", label: "Pre-save + single art: 'Real Time is coming'", detail: "T-14 announce: single artwork + pre-save go live. Platform, Facade and Engine-parts assets also due today; Real Time live cutdowns delivered to CCD (minimum).", cta: "Pre-save", status: "upcoming" },
-            { date: "Aug 1–14", kind: "content", channel: ["Instagram", "TikTok", "Meta", "YouTube"], label: "Promo-snippets window (teaser then pre-save hits)", detail: "Locked 8/1–8/14 window: a music-video teaser a couple of days after the announce, then escalating pre-save pushes on warm audiences with Ababa snippets in rotation; boost the winners. Music-video single, so paid leans YouTube.", cta: "Pre-save", status: "upcoming" },
+            { date: "Aug 1–14", kind: "content", channel: ["Instagram", "TikTok", "Meta", "YouTube"], label: "Promo-snippets window (teaser then pre-save hits)", detail: "Locked 8/1–8/14 window: a music-video teaser a couple of days after the announce, then escalating pre-save pushes on warm audiences with MV and live snippets in rotation; boost the winners. Music-video single, so paid leans YouTube.", cta: "Pre-save", status: "upcoming" },
             { date: "Fri Aug 14", kind: "release", channel: ["YouTube", "Instagram", "TikTok"], time: "Midday", label: "RELEASE DAY: Real Time + music video", detail: "Video premieres on YouTube; out-now hero asset; CTAs flip to stream-now; Spotify Marquee fires. Paid amplifies the winners a couple of days later, run dark.", cta: "Out now, stream", status: "upcoming" },
             { date: "Fri Aug 14", kind: "asset", label: "All live-shoot deliverables in", detail: "Everything from the 7/19 live shoot delivered to CCD: a full-length performance + two ~30s teasers per track.", status: "upcoming" },
             { date: "Sun Aug 16", kind: "asset", label: "Album artwork due", detail: "Final square album artwork delivered for the 8/17 album pre-save launch.", status: "upcoming" },
             { date: "Mon Aug 17", kind: "presave", channel: ["Instagram", "TikTok"], label: "ALBUM pre-save opens", detail: "Standalone, splashy album pre-save announce (Fantastic Machines), decoupled from any single CTA so 'stream single' and 'pre-save album' never compete.", cta: "Pre-save the album", status: "upcoming" },
-            { date: "Fri Aug 21", kind: "live", channel: ["YouTube", "Instagram", "TikTok"], label: "Real Time live clip (T+7)", detail: "Deploy the Real Time live-performance clip pointing back to the single; full live performance video long-form on YouTube.", status: "upcoming" },
+            { date: "Fri Aug 28", kind: "live", channel: ["YouTube", "Instagram", "TikTok"], label: "Real Time live clip (2 wks post)", detail: "Deploy the Real Time live-performance clip pointing back to the single; full live performance video long-form on YouTube.", status: "upcoming" },
           ],
         },
         {
           key: "sibn",
           title: "Single 3 · Somewhere I'm Better Now",
-          window: "Sep 4 – Sep 25",
+          window: "Sep 4 – Oct 2",
           releaseDate: "Fri Sep 18",
           format: "Non-video single",
           status: "upcoming",
@@ -145,13 +145,13 @@ export const temporexDeliverables: StrategyPlanData = {
             { date: "Fri Sep 4", kind: "presave", channel: ["Instagram", "TikTok"], time: "Midday", label: "Pre-save + single art announce (T-14)", detail: "Single artwork + pre-save go live. Because the album is already on pre-save, the CTA leans on the whole-album countdown.", cta: "Pre-save", status: "upcoming" },
             { date: "Sep 4–17", kind: "paid", channel: ["Meta", "TikTok"], label: "Ababa snippets + teasers", detail: "Snippets in rotation, boost the winners. Non-video single, so the higher Meta budget sits here. Skip Labor Day (Mon Sep 7) for posting.", status: "upcoming" },
             { date: "Fri Sep 18", kind: "release", channel: ["Instagram", "TikTok"], time: "Midday", label: "RELEASE DAY: Somewhere I'm Better Now", detail: "Out-now + stream-now; Spotify Marquee. The push continues into the album countdown.", cta: "Out now, stream", status: "upcoming" },
-            { date: "Fri Sep 25", kind: "live", channel: ["YouTube", "Instagram"], label: "SIBN live clip (T+7)", detail: "Live-performance clip points back to the single; full live video long-form on YouTube.", status: "upcoming" },
+            { date: "Fri Oct 2", kind: "live", channel: ["YouTube", "Instagram"], label: "SIBN live clip (2 wks post)", detail: "Live-performance clip points back to the single; full live video long-form on YouTube.", status: "upcoming" },
           ],
         },
         {
           key: "fantastic-machine",
           title: "Single 4 · Fantastic Machine (title track)",
-          window: "Oct 9 – Oct 30",
+          window: "Oct 9 – Nov 6",
           releaseDate: "Fri Oct 23",
           format: "Music-video single · hero",
           status: "upcoming",
@@ -162,7 +162,7 @@ export const temporexDeliverables: StrategyPlanData = {
             { date: "Fri Oct 9", kind: "presave", channel: ["Instagram", "TikTok"], time: "Midday", label: "Announce + pre-save + single art (T-14)", detail: "Hero announce; single artwork + pre-save go live. Starts the final ~30-day hard push on the album pre-save.", cta: "Pre-save", status: "upcoming" },
             { date: "Oct 9–22", kind: "paid", channel: ["Meta", "YouTube", "TikTok"], label: "MV teasers + album push", detail: "Music-video teasers + Ababa snippets; hammer the album pre-save. Music-video single, so spend leans YouTube.", status: "upcoming" },
             { date: "Fri Oct 23", kind: "release", channel: ["YouTube", "Instagram", "TikTok"], time: "Midday", label: "RELEASE DAY: Fantastic Machine + music video", detail: "Single out; music video premieres on release day and runs all month as the album lead magnet. Marquee fires.", cta: "Out now, stream", status: "upcoming" },
-            { date: "Fri Oct 30", kind: "live", channel: ["YouTube", "Instagram"], label: "Fantastic Machine live clip (T+7)", detail: "Live clip points back to the title track; full live video long-form on YouTube.", status: "upcoming" },
+            { date: "Fri Nov 6", kind: "live", channel: ["YouTube", "Instagram"], label: "Fantastic Machine live clip (2 wks post)", detail: "Live clip points back to the title track; full live video long-form on YouTube.", status: "upcoming" },
           ],
         },
         {
@@ -184,7 +184,7 @@ export const temporexDeliverables: StrategyPlanData = {
         },
       ],
       footnote:
-        "Every release date is locked: Water Holes 7/10, Real Time 8/14 (MV), album pre-save 8/17, Somewhere I'm Better Now 9/18, Fantastic Machine 10/23 (MV), album 11/20. Promo and live-clip beats follow the fixed cadence around those anchors (announce 14 days out, live clip 7 days after each single). Physical / activation plays (the Machine Room web game, fan-sourced assembly, a Heavy Manners workshop) are scoped separately and not shown here.",
+        "Every release date is locked: Water Holes 7/10, Real Time 8/14 (MV), album pre-save 8/17, Somewhere I'm Better Now 9/18, Fantastic Machine 10/23 (MV), album 11/20. Promo and live-clip beats follow the fixed cadence around those anchors (announce 14 days out, live clip 2 weeks after each single). Physical / activation plays (the Machine Room web game, fan-sourced assembly, a Heavy Manners workshop) are scoped separately and not shown here.",
     },
 
     // ===================================================================
@@ -199,7 +199,7 @@ export const temporexDeliverables: StrategyPlanData = {
         "The actual asset list for the rollout, per release, mapped to who makes each piece. Check items off as they land so the whole team sees live status. Water Holes is fully delivered; everything else maps to the calendar above.",
       storageKey: "temporex-asset-checklist",
       standardNote:
-        "Every release needs the same core: single artwork (1:1), a no-text Spotify Canvas, a full-length 16:9 visualizer (the music video covers this on Real Time and Fantastic Machine), and one paid CTA set (Coming Soon / Release Date / Out Now / Stream Now), each built in 1:1 and 9:16 with a static, 15s and 30s cut. Then as many extra out-now cuts as we can make (studio, animated, live, iPhone-speaker classic) plus the live-shoot cutdowns (a full performance and two ~30s teasers per track).",
+        "Every release needs the same core: single artwork (1:1), a no-text Spotify Canvas, a full-length 16:9 visualizer (the music video covers this on Real Time and Fantastic Machine), and one paid CTA set (Coming Soon / Release Date / Out Now / Stream Now), each built in 1:1 and 9:16 with a static, 15s and 30s cut. Then as many extra out-now cuts as we can make (studio, animated, live, iPhone-speaker classic) plus the live-shoot cutdowns (a full performance and two ~30s teasers per track). Ababa’s animated assets cover Waterhole, Somewhere I’m Better Now and the album; Real Time and Fantastic Machine lead with music videos (DIY and full-production).",
       ownerLegend: [
         { owner: "Joseph + Luis", label: "artist team: MV + live edits" },
         { owner: "Ababa", label: "animation: canvas, visualizers, 3D" },
@@ -228,11 +228,11 @@ export const temporexDeliverables: StrategyPlanData = {
           status: "next",
           description: "The music video covers the full-length visualizer. This is the control set; refine the list off its actuals for the singles after.",
           items: [
-            { id: "rt-mv", label: "Music video, full-length (16:9) + cutdowns", formats: ["16:9", "cutdowns"], owner: "Joseph + Luis", status: "in-progress", note: "Due 7/30. Satisfies the full-length visualizer; cutdowns feed the paid units." },
+            { id: "rt-mv", label: "Music video (DIY), full-length (16:9) + cutdowns", formats: ["16:9", "cutdowns"], owner: "Joseph + Luis", status: "in-progress", note: "Due 7/30 (Joseph + Luis DIY video). Satisfies the full-length visualizer; cutdowns feed the paid units." },
             { id: "rt-art", label: "Single artwork (1:1)", formats: ["1:1"], owner: "Label", status: "needed" },
-            { id: "rt-canvas", label: "Spotify Canvas (no text)", formats: ["9:16 · 6s"], owner: "Ababa", status: "needed" },
+            { id: "rt-canvas", label: "Spotify Canvas (no text)", formats: ["9:16 · 6s"], owner: "Joseph + Luis", status: "needed", note: "Cut from the DIY video (Real Time is not an Ababa animated release)." },
             { id: "rt-paid", label: "Paid CTA set: Coming Soon / Release Date 8/14 / Out Now / Stream Now", formats: ["1:1 + 9:16", "static/15s/30s"], owner: "CCD", status: "needed", note: "Cut from the MV + Ababa assets + single art. Vertical with a center-safe box." },
-            { id: "rt-live", label: "Live-shoot cutdowns: full performance + two ~30s teasers", formats: ["16:9 + 9:16"], owner: "Joseph + Luis", status: "needed", note: "From the 7/19 shoot. Real Time cut min by 8/1; all tracks by 8/14. Deploys T+7 (8/21)." },
+            { id: "rt-live", label: "Live-shoot cutdowns: full performance + two ~30s teasers", formats: ["16:9 + 9:16"], owner: "Joseph + Luis", status: "needed", note: "From the 7/19 shoot. Real Time cut min by 8/1; all tracks by 8/14. Deploys 2 weeks after release (8/28)." },
             { id: "rt-extra", label: "Extra out-now cuts (studio / animated / live / iPhone-speaker)", formats: ["9:16 · 15–30s"], owner: "CCD + Joseph", status: "needed", note: "As many as we can make; whatever format overperforms gets 3 varied versions." },
           ],
         },
@@ -258,11 +258,10 @@ export const temporexDeliverables: StrategyPlanData = {
           status: "upcoming",
           description: "The hero. MV delivered super-early (8/20) and held to ship with the single, then run all month as the album lead magnet.",
           items: [
-            { id: "fm-mv", label: "Music video (16:9) + cutdowns", formats: ["16:9", "cutdowns"], owner: "Joseph + Luis", status: "in-progress", note: "Directors David + Joe; delivered 8/20, ships with the single 10/23. Satisfies the full-length." },
+            { id: "fm-mv", label: "Music video (full production, 16:9) + cutdowns", formats: ["16:9", "cutdowns"], owner: "Directors / Luis", status: "in-progress", note: "Full-production video by directors David + Joe; delivered 8/20, ships with the single 10/23. Satisfies the full-length." },
             { id: "fm-art", label: "Single artwork (1:1)", formats: ["1:1"], owner: "Label", status: "needed" },
-            { id: "fm-canvas", label: "Spotify Canvas (no text)", formats: ["9:16 · 6s"], owner: "Ababa", status: "needed" },
+            { id: "fm-canvas", label: "Spotify Canvas (no text)", formats: ["9:16 · 6s"], owner: "Joseph + Luis", status: "needed", note: "Cut from the full-production video." },
             { id: "fm-paid", label: "Paid CTA set: Coming Soon / Release Date 10/23 / Out Now / Stream Now", formats: ["1:1 + 9:16", "static/15s/30s"], owner: "CCD", status: "needed" },
-            { id: "fm-ababa", label: "Ababa hero animations (3D components, presenter)", formats: ["16:9 + 9:16"], owner: "Ababa", status: "in-progress" },
             { id: "fm-live", label: "Live-shoot cutdowns: full performance + two ~30s teasers", formats: ["16:9 + 9:16"], owner: "Joseph + Luis", status: "needed" },
           ],
         },
