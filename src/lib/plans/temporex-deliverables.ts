@@ -6,12 +6,12 @@ export const temporexDeliverables: StrategyPlanData = {
   language: "en",
 
   cover: {
-    label: "Single One / Paid Social Deliverables",
+    label: "Album Rollout / Deliverables + Content Calendar",
     title: "TEMPOREX",
-    subtitle: "The paid-ad creative checklist for the July single push: every asset in vertical and square masters, grounded in what is working for bedroom pop and indie artists in the U.S. right now.",
+    subtitle: "The standing hub for the Fantastic Machines rollout: the paid-ad asset checklist we need per release, plus a day-by-day content calendar from Water Holes through the album, so every post can be built and scheduled ahead.",
     partnership: "Independent Co. × Crowd Control Digital",
     prepared: "Geoff Shames / Co-Founder, CCD",
-    date: "June 2026",
+    date: "July 2026",
     backgroundImage: "/images/temporex-deliverables/temporex-hero.jpg",
   },
 
@@ -30,9 +30,9 @@ export const temporexDeliverables: StrategyPlanData = {
       number: "01",
       navLabel: "Overview",
       title: "Overview & Context",
-      subtitle: "The first single of the album cycle drops in July. Paid creative needs to be approved and in edit now so the pre-save window opens with assets live, not in production.",
+      subtitle: "Water Holes is out and reading healthy on organics. Real Time is the next drop (release 8/14), and its paid creative needs to be approved and in edit now so the pre-save window opens 8/1 with assets live, not in production. The content calendar in the next section maps every post across the full cycle.",
       body: [
-        "This page is the production checklist for CCD-driven paid-ad creative on the July single. It covers paid units only: the animated presenter and Fantastic Machine assets are produced through the animation partner's pipeline, and the physical campaign (wheatpaste, El Cid, the Animation Booth) is scoped separately. What this list does is turn the source material from both of those tracks into ad-ready cuts with spend behind them.",
+        "This page is the standing production hub for CCD-driven paid-ad creative across the Fantastic Machines cycle. It covers paid units only: the animated presenter and Fantastic Machine assets are produced through the animation partner's pipeline, and the physical campaign (wheatpaste, El Cid, the Animation Booth) is scoped separately. What this list does is turn the source material from both of those tracks into ad-ready cuts with spend behind them.",
         "Two rules from the artist side govern everything here and are treated as binding: no generative AI anywhere in the creative, and Joseph never appears on camera as the promoter. Neither is a limitation in this lane. Hand-made is currently a headline marketing angle (Gorillaz led their 2026 album campaign with a fully hand-drawn film), and the single most shareable post in our peer analysis contains no artist face at all.",
         "Every video concept ships as a 9:16 vertical master plus a 1:1 square so one approval covers TikTok, Reels, Shorts, and Meta feed placements. Each line item carries the reasoning: what the hook is, what the CTA is, and a playable reference example from a peer artist showing the format working in the U.S. market, grounded in frame-level video-AI analysis of ten top-performing peer posts plus current platform documentation.",
         "Checking items on this page marks them for production. The Approve button at the bottom sends the selected state to our team and greenlights the build.",
@@ -55,15 +55,144 @@ export const temporexDeliverables: StrategyPlanData = {
           "Enough hook variants per concept to let the platforms pick winners, not us",
         ],
       },
-      footnote: "Scope: the July single only. Singles two through four and the November album each authorize a fresh list on the same structure, so the formats proven here compound across the cycle.",
+      footnote: "Scope: the full Fantastic Machines cycle. The asset checklist below is built on Single One as the control; the content calendar covers every release from Water Holes through the album, and each new single refines the list off the prior single\u2019s actuals.",
     },
 
     // ===================================================================
-    // 02. Creative Principles
+    // 02. Content Calendar
+    // ===================================================================
+    {
+      type: "calendar",
+      number: "02",
+      navLabel: "Calendar",
+      title: "The Content Calendar",
+      intro:
+        "Every post, asset drop and paid moment across the Fantastic Machines cycle, laid out by day so the whole rollout can be built and scheduled ahead. Water Holes is done and reading healthy; Real Time is the next live push. Release dates are locked off the plan we walked through together; the near term is day-by-day and the later singles hold the same 14-day cadence.",
+      cadenceNote:
+        "Every single runs the same 14-day arc: T-14 pre-save + single-art announce, then a teaser a couple of days later, then a harder pre-save hit, then release-day out-now hero plus Spotify Marquee, then paid amplifies the winners a couple of days after (run dark), then a live clip points back around a week later, then straight into the next single. The album is the exception: its tail keeps pushing 4 to 8 weeks, not two.",
+      postingRules: [
+        "Cap organic at 1 to 2 posts a week. Paid carries the frequency, so you never have to over-post.",
+        "Post midday-ish, 1 to 2 hours before your Instagram-reported peak, so social proof builds into the peak window. Skip early-morning slots while U.S. fans are asleep.",
+        "On every release day, all pre-save CTAs flip to listen-now / stream-now.",
+        "Boost the organic winners to your existing followers to convert the ~90% the post did not reach (Water Holes’ organic announce did ~900 likes and ~300 pre-saves on its own).",
+      ],
+      channelNote:
+        "Meta is heaviest overall. The non-video singles (Water Holes, Somewhere I’m Better Now) carry the higher Meta budget; the music-video singles (Real Time, Fantastic Machine) shift spend to YouTube. Spotify Marquee + Showcase are held for release moments. Strive FM rideshare (~$1.6K / ~150K streams) sits on the album as the passive streaming backbone. TikTok runs top-funnel. ~$2K is held in reserve to double down on whatever overperforms.",
+      legend: [
+        { kind: "release", label: "Release day" },
+        { kind: "presave", label: "Pre-save / announce" },
+        { kind: "content", label: "Organic post" },
+        { kind: "paid", label: "Paid / boost" },
+        { kind: "asset", label: "Asset deadline" },
+        { kind: "live", label: "Live-shoot content" },
+        { kind: "milestone", label: "Milestone" },
+      ],
+      phases: [
+        {
+          key: "water-holes",
+          title: "Single 1 · Water Holes",
+          window: "Jul 6 – Jul 17",
+          releaseDate: "Fri Jul 10",
+          format: "Visualizer single (no MV)",
+          status: "done",
+          summary:
+            "Out now and holding ~1,200 streams/day on pure organics: a 10–15% save rate, ~1.5 streams per listener, 757 playlist adds. Ads were held the first days to read decay, then relaunched 7/14.",
+          entries: [
+            { date: "Mon Jul 6", kind: "asset", label: "Water Holes release assets due", detail: "ababa + Luis deliver the release asset package (per the 6/29 delivery schedule).", status: "done" },
+            { date: "Mon Jul 6", kind: "content", channel: ["Instagram", "TikTok"], time: "Midday", label: "Organic pre-save announce", detail: "Fully organic announce post. Landed ~900 likes, ~70 comments and ~300 pre-saves (+13,000%).", cta: "Pre-save", status: "done" },
+            { date: "Wed Jul 8", kind: "asset", label: "Spotify Canvas delivered", detail: "6-second, no-text Canvas delivered to Spotify.", status: "done" },
+            { date: "Thu Jul 9", kind: "asset", label: "Visualizer + Out-Now asset", detail: "Full-length 16:9 visualizer and the out-now asset built and loaded.", status: "done" },
+            { date: "Fri Jul 10", kind: "release", channel: ["Instagram", "TikTok"], time: "Midday", label: "RELEASE DAY — Water Holes out", detail: "Out-now post; pre-save flips to listen-now. Light paid launches the same day as a cold-start demand read.", cta: "Out now — stream", status: "done" },
+            { date: "Jul 10–13", kind: "paid", label: "Ads held to read decay", detail: "Paid deliberately held the first days to measure organic decay against a no-ads baseline.", status: "done" },
+            { date: "Mon Jul 13", kind: "content", channel: ["Instagram", "TikTok"], label: "Condensed visualizer cutdown", detail: "Short condensed cut of the visualizer posted organically.", status: "done" },
+            { date: "Tue Jul 14", kind: "paid", channel: ["Meta", "YouTube"], label: "Relaunch paid on the visualizer", detail: "Meta traffic + YouTube against the live visualizer; boost the organic winner to existing followers.", status: "done" },
+            { date: "Fri Jul 17", kind: "milestone", label: "Week 1 read", detail: "Spotify Indie brandneu add (#17), Apple New in Indie (#13); ~1,200 streams/day holding near-flat.", status: "done" },
+          ],
+        },
+        {
+          key: "real-time",
+          title: "Single 2 · Real Time",
+          window: "Jul 30 – Aug 21",
+          releaseDate: "Fri Aug 14",
+          format: "Music-video single",
+          status: "next",
+          summary:
+            "The music-video single, and the control for the deliverables list. MV done 7/30, pre-save opens 8/1, video premieres on release day 8/14. The standalone album pre-save opens 8/17.",
+          entries: [
+            { date: "Wed Jul 30", kind: "asset", label: "Real Time MV delivered", detail: "Full music video fully delivered by Joseph + Luis, with cutdowns, ahead of the pre-save window.", status: "upcoming" },
+            { date: "Fri Aug 1", kind: "presave", channel: ["Instagram", "TikTok"], time: "Midday", label: "Pre-save + single art — ‘Real Time is coming’", detail: "T-14 announce: single artwork + pre-save go live. Platform, Facade and Engine-parts assets also due today; Real Time live cutdowns delivered to CCD (minimum).", cta: "Pre-save", status: "upcoming" },
+            { date: "~Mon Aug 4", kind: "content", channel: ["Instagram", "TikTok"], label: "Music-video teaser", detail: "A couple of days after the announce: tease that a music video is coming.", cta: "Pre-save", status: "upcoming" },
+            { date: "~Wed Aug 6", kind: "paid", channel: ["Meta", "TikTok"], label: "Aggressive pre-save hit", detail: "Second push: another animated clip / ababa snippet with a harder pre-save ask on warm audiences.", cta: "Pre-save", status: "upcoming" },
+            { date: "Aug 1–13", kind: "paid", channel: ["Meta", "YouTube", "TikTok"], label: "Promo snippets run", detail: "ababa animated snippets + teasers in rotation; boost the winners. Music-video single, so spend leans YouTube.", status: "upcoming" },
+            { date: "Fri Aug 14", kind: "release", channel: ["YouTube", "Instagram", "TikTok"], time: "Midday", label: "RELEASE DAY — Real Time + music video", detail: "Video premieres on YouTube; out-now hero asset; CTAs flip to stream-now; Spotify Marquee fires. Paid amplifies the winners a couple of days later, run dark.", cta: "Out now — stream", status: "upcoming" },
+            { date: "Thu Aug 14", kind: "asset", label: "All live-shoot deliverables in", detail: "Everything from the 7/19 live shoot delivered to CCD: a full-length performance + two ~30s teasers per track.", status: "upcoming" },
+            { date: "Sat Aug 16", kind: "asset", label: "Album artwork due", detail: "Final square album artwork delivered for the 8/17 album pre-save launch.", status: "upcoming" },
+            { date: "Mon Aug 17", kind: "presave", channel: ["Instagram", "TikTok"], label: "ALBUM pre-save opens", detail: "Standalone, splashy album pre-save announce (Fantastic Machines), decoupled from any single CTA so ‘stream single’ and ‘pre-save album’ never compete.", cta: "Pre-save the album", status: "upcoming" },
+            { date: "~Fri Aug 21", kind: "live", channel: ["YouTube", "Instagram", "TikTok"], label: "Real Time live clip (T+7)", detail: "Deploy the Real Time live-performance clip pointing back to the single; full live performance video long-form on YouTube.", status: "upcoming" },
+          ],
+        },
+        {
+          key: "sibn",
+          title: "Single 3 · Somewhere I’m Better Now",
+          window: "Sep 4 – Sep 25",
+          releaseDate: "Fri Sep 18",
+          format: "Non-video single",
+          status: "upcoming",
+          summary:
+            "Non-video single, with the deliverables list refined off Real Time’s actuals. The album is already on pre-save, so this push drives the whole-album countdown, not just the single.",
+          entries: [
+            { date: "Fri Aug 15", kind: "asset", label: "SIBN release assets due", detail: "ababa delivers the Somewhere I’m Better Now asset package.", status: "upcoming" },
+            { date: "Thu Sep 4", kind: "presave", channel: ["Instagram", "TikTok"], time: "Midday", label: "Pre-save + single art announce (T-14)", detail: "Single artwork + pre-save go live. Because the album is already on pre-save, the CTA leans on the whole-album countdown.", cta: "Pre-save", status: "upcoming" },
+            { date: "Sep 4–17", kind: "paid", channel: ["Meta", "TikTok"], label: "ababa snippets + teasers", detail: "Snippets in rotation, boost the winners. Non-video single, so the higher Meta budget sits here. Skip Labor Day (Mon Sep 7) for posting.", status: "upcoming" },
+            { date: "Fri Sep 18", kind: "release", channel: ["Instagram", "TikTok"], time: "Midday", label: "RELEASE DAY — Somewhere I’m Better Now", detail: "Out-now + stream-now; Spotify Marquee. The push continues into the album countdown.", cta: "Out now — stream", status: "upcoming" },
+            { date: "~Fri Sep 25", kind: "live", channel: ["YouTube", "Instagram"], label: "SIBN live clip (T+7)", detail: "Live-performance clip points back to the single; full live video long-form on YouTube.", status: "upcoming" },
+          ],
+        },
+        {
+          key: "fantastic-machine",
+          title: "Single 4 · Fantastic Machine (title track)",
+          window: "Oct 9 – Oct 30",
+          releaseDate: "Fri Oct 23",
+          format: "Music-video single · hero",
+          status: "upcoming",
+          summary:
+            "The title-track hero. Its music video is delivered super-early (8/20) and held to ship with the single, then run all month as the album’s lead magnet. This kicks the final 30-day pre-save punch into the album.",
+          entries: [
+            { date: "Wed Aug 20", kind: "asset", label: "Fantastic Machine MV delivered (early)", detail: "Music video delivered super-early by the directors (David + Joe). Held to premiere with the single.", status: "upcoming" },
+            { date: "Thu Oct 9", kind: "presave", channel: ["Instagram", "TikTok"], time: "Midday", label: "Announce + pre-save + single art (T-14)", detail: "Hero announce; single artwork + pre-save go live. Starts the final ~30-day hard push on the album pre-save.", cta: "Pre-save", status: "upcoming" },
+            { date: "Oct 9–22", kind: "paid", channel: ["Meta", "YouTube", "TikTok"], label: "MV teasers + album push", detail: "Music-video teasers + ababa snippets; hammer the album pre-save. Music-video single, so spend leans YouTube.", status: "upcoming" },
+            { date: "Fri Oct 23", kind: "release", channel: ["YouTube", "Instagram", "TikTok"], time: "Midday", label: "RELEASE DAY — Fantastic Machine + music video", detail: "Single out; music video premieres on release day and runs all month as the album lead magnet. Marquee fires.", cta: "Out now — stream", status: "upcoming" },
+            { date: "~Fri Oct 30", kind: "live", channel: ["YouTube", "Instagram"], label: "Fantastic Machine live clip (T+7)", detail: "Live clip points back to the title track; full live video long-form on YouTube.", status: "upcoming" },
+          ],
+        },
+        {
+          key: "album",
+          title: "Album · Fantastic Machines",
+          window: "Aug 17 pre-save → release + 4–8 wks",
+          releaseDate: "~mid–late Nov (TBC)",
+          format: "Album",
+          status: "upcoming",
+          summary:
+            "Pre-save opens 8/17 and runs the whole cycle as a standalone countdown, with a 30-day hard push into release. Unlike the singles, the album tail keeps pushing 4 to 8 weeks after it lands.",
+          entries: [
+            { date: "Fri Aug 15", kind: "asset", label: "Fantastic Machine single + album assets due", detail: "ababa delivers the title-track single and album asset package.", status: "upcoming" },
+            { date: "Mon Aug 17", kind: "presave", channel: ["Instagram", "TikTok"], label: "Album pre-save opens", detail: "The standalone album pre-save countdown begins and runs underneath every single push through release.", cta: "Pre-save the album", status: "upcoming" },
+            { date: "Sep – Nov", kind: "paid", channel: ["Meta", "TikTok"], label: "Album countdown backdrop", detail: "Every single’s push doubles as an album-countdown push. The final ~30 days before release is the hardest pre-save punch of the cycle.", status: "upcoming" },
+            { date: "Release week", kind: "release", channel: ["YouTube", "Instagram", "TikTok"], label: "ALBUM out — Fantastic Machines", detail: "Album release. Full-length live performance videos roll out as the second creative wave (long-form YouTube). Spotify Marquee + Showcase; Strive FM rideshare (~150K streams) as the passive streaming backbone.", cta: "Out now — stream", status: "upcoming" },
+            { date: "Release +4–8 wks", kind: "milestone", label: "Sustained album tail", detail: "Keep pushing the album for 4 to 8 weeks: boost the winners, and revisit live cutdowns to point back to the full body of work.", status: "upcoming" },
+          ],
+        },
+      ],
+      footnote:
+        "Release dates are locked off the plan; the album date is roughly four weeks after the Fantastic Machine single and still to be confirmed. Dates marked ~ are derived from the fixed 14-day cadence and may shift a day or two around weekends and holidays. Physical / activation plays (the Machine Room web game, fan-sourced assembly, a Heavy Manners workshop) are scoped separately and not shown here.",
+    },
+
+    // ===================================================================
+    // 03. Creative Principles
     // ===================================================================
     {
       type: "vertical",
-      number: "02",
+      number: "03",
       navLabel: "Principles",
       title: "Creative Principles",
       intro: "Five rules govern every asset on this list. They come from frame-level analysis of the highest-performing posts by U.S. bedroom pop and indie peers (Malcolm Todd, sombr, The Marias, Ginger Root, Wallows) plus the no-face ceiling case (Gorillaz), and from current platform guidance.",
@@ -120,11 +249,11 @@ export const temporexDeliverables: StrategyPlanData = {
     },
 
     // ===================================================================
-    // 03. Formats & Specs
+    // 04. Formats & Specs
     // ===================================================================
     {
       type: "vertical",
-      number: "03",
+      number: "04",
       navLabel: "Specs",
       title: "Master Formats & Specs",
       intro: "Two master formats cover every placement. Vertical 9:16 is the primary deliverable; the 1:1 square is derived from it where framing allows, or re-framed where it does not.",
@@ -172,11 +301,11 @@ export const temporexDeliverables: StrategyPlanData = {
     },
 
     // ===================================================================
-    // 04. The Deliverables Checklist
+    // 05. The Deliverables Checklist
     // ===================================================================
     {
       type: "deliverables",
-      number: "04",
+      number: "05",
       navLabel: "Checklist",
       title: "The Asset Checklist",
       intro: "Thirteen deliverables across four groups. Each card carries the hook and CTA logic plus playable peer references. Check the items to approve; the button at the bottom sends the list to our team.",
@@ -531,11 +660,11 @@ export const temporexDeliverables: StrategyPlanData = {
     },
 
     // ===================================================================
-    // 05. Production Notes
+    // 06. Production Notes
     // ===================================================================
     {
       type: "vertical",
-      number: "05",
+      number: "06",
       navLabel: "Production",
       title: "Production Notes & Dependencies",
       intro: "What we need, what it produces, and how spend follows the winners.",

@@ -489,6 +489,54 @@ export type ContentAnalysisSection = {
   footnote?: string;
 };
 
+export type CalendarEntryKind =
+  | "release"
+  | "presave"
+  | "announce"
+  | "content"
+  | "paid"
+  | "asset"
+  | "live"
+  | "milestone";
+
+export type CalendarEntry = {
+  date: string;
+  kind: CalendarEntryKind;
+  label: string;
+  detail?: string;
+  channel?: string[];
+  time?: string;
+  cta?: string;
+  status?: "done" | "next" | "upcoming";
+};
+
+export type CalendarPhase = {
+  key: string;
+  title: string;
+  window?: string;
+  releaseDate?: string;
+  format?: string;
+  status?: "done" | "next" | "upcoming";
+  summary?: string;
+  entries: CalendarEntry[];
+};
+
+export type CalendarLegendItem = { kind: string; label: string };
+
+export type CalendarSection = {
+  type: "calendar";
+  number: string;
+  navLabel?: string;
+  title: string;
+  intro?: string;
+  cadenceNote?: string;
+  postingRules?: string[];
+  channelNote?: string;
+  legend?: CalendarLegendItem[];
+  phases: CalendarPhase[];
+  footnote?: string;
+};
+
 export type PlanSection =
   | OverviewSection
   | PhilosophySection
@@ -503,7 +551,8 @@ export type PlanSection =
   | TimelineSection
   | PricingSection
   | DeliverablesSection
-  | ContentAnalysisSection;
+  | ContentAnalysisSection
+  | CalendarSection;
 
 // Plan root -----------------------------------------------------------------
 
