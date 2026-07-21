@@ -17,6 +17,7 @@ import { PlanTimeline } from "./PlanTimeline";
 import { PlanPricing } from "./PlanPricing";
 import { PlanDeliverables } from "./PlanDeliverables";
 import { PlanCalendar } from "./PlanCalendar";
+import { PlanAssetChecklist } from "./PlanAssetChecklist";
 import { PlanContentAnalysis } from "./PlanContentAnalysis";
 import { PlanApprove } from "./PlanApprove";
 import { LanguageToggle } from "@/components/LanguageToggle";
@@ -84,6 +85,8 @@ export function PlanClient({ plan }: { plan: StrategyPlanData }) {
               return <PlanDeliverables key={i} section={section} />;
             case "calendar":
               return <PlanCalendar key={i} section={section} />;
+            case "assetChecklist":
+              return <PlanAssetChecklist key={i} section={section} />;
             case "contentAnalysis":
               return <PlanContentAnalysis key={i} section={section} />;
             default:

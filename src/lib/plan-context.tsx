@@ -489,6 +489,37 @@ export type ContentAnalysisSection = {
   footnote?: string;
 };
 
+export type AssetChecklistItem = {
+  id: string;
+  label: string;
+  formats?: string[];
+  owner?: string;
+  note?: string;
+  status?: "have" | "in-progress" | "needed";
+};
+
+export type AssetChecklistGroup = {
+  heading: string;
+  release?: string;
+  format?: string;
+  status?: "done" | "next" | "upcoming";
+  description?: string;
+  items: AssetChecklistItem[];
+};
+
+export type AssetChecklistSection = {
+  type: "assetChecklist";
+  number: string;
+  navLabel?: string;
+  title: string;
+  intro?: string;
+  storageKey?: string;
+  standardNote?: string;
+  ownerLegend?: { owner: string; label: string }[];
+  groups: AssetChecklistGroup[];
+  footnote?: string;
+};
+
 export type CalendarEntryKind =
   | "release"
   | "presave"
@@ -552,7 +583,8 @@ export type PlanSection =
   | PricingSection
   | DeliverablesSection
   | ContentAnalysisSection
-  | CalendarSection;
+  | CalendarSection
+  | AssetChecklistSection;
 
 // Plan root -----------------------------------------------------------------
 
