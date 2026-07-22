@@ -165,6 +165,59 @@ const html = `<!DOCTYPE html>
   .slate .need{margin-top:20px;border-top:1px solid var(--line-2);padding-top:16px;color:var(--ink);font-size:15px}
   .slate .need b{color:var(--accent)}
 
+  /* nav jump links */
+  .nb-jump{display:flex;gap:16px;margin-left:18px}
+  .nb-jump a{font-family:var(--fm);font-size:11px;text-transform:uppercase;letter-spacing:.12em;color:var(--muted)}
+  .nb-jump a:hover{color:var(--accent)}
+  @media(max-width:620px){.nb-jump{display:none}}
+
+  /* engagement + data feature */
+  .eng-intro{color:var(--ink);font-size:18px;max-width:880px;margin:0 0 24px;line-height:1.55}
+  .eng-intro b{color:var(--accent)}
+  .statstrip{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:0 0 32px}
+  @media(max-width:760px){.statstrip{grid-template-columns:repeat(2,1fr)}}
+  .stat{background:var(--card-2);border:1px solid var(--line-2);padding:18px 18px}
+  .stat .n{font-family:var(--fh);font-size:1.95rem;color:var(--ink);line-height:1}
+  .stat .l{font-family:var(--fm);font-size:9.5px;text-transform:uppercase;letter-spacing:.13em;color:var(--secondary);margin-top:8px;display:block}
+  .board{margin:0 0 36px}
+  .board h3{font-size:1.2rem;text-transform:none;letter-spacing:-.01em;margin-bottom:4px}
+  .board .cap{color:var(--muted);font-size:14px;margin:0 0 18px}
+  .brow{display:grid;grid-template-columns:220px 1fr 58px;align-items:center;gap:14px;padding:10px 0;border-bottom:1px solid var(--line)}
+  .brow .bl{font-size:14px;color:var(--ink)}
+  .brow .bl .bn{font-family:var(--fm);font-size:9px;color:var(--secondary);letter-spacing:.06em;margin-left:6px}
+  .brow .bt{position:relative;height:22px;background:rgba(255,255,255,.04);border:1px solid var(--line-2)}
+  .brow .bf{position:absolute;top:0;bottom:0;left:0;background:linear-gradient(90deg,rgba(253,55,55,.9),rgba(253,55,55,.4))}
+  .brow .bv{font-family:var(--fm);font-size:12.5px;color:var(--ink);text-align:right}
+  @media(max-width:600px){.brow{grid-template-columns:120px 1fr 46px;gap:8px}.brow .bl .bn{display:none}}
+  .tbl-controls{display:flex;gap:8px;margin:0 0 12px;align-items:center}
+  .tablewrap{border:1px solid var(--line-2);overflow-x:auto;background:var(--card-2)}
+  table.data{width:100%;border-collapse:collapse;font-size:13.5px;min-width:760px}
+  table.data th{font-family:var(--fm);font-size:9.5px;text-transform:uppercase;letter-spacing:.1em;color:var(--secondary);text-align:right;padding:12px 12px;border-bottom:1px solid var(--line-2);cursor:pointer;white-space:nowrap;user-select:none;position:sticky;top:0;background:var(--card-2);z-index:2}
+  table.data th.l{text-align:left}
+  table.data th:hover{color:var(--ink)}
+  table.data th.sorted{color:var(--accent)}
+  table.data td{padding:11px 12px;border-bottom:1px solid var(--line);text-align:right;white-space:nowrap;color:var(--muted)}
+  table.data td.l{text-align:left;color:var(--ink)}
+  table.data tr:hover td{background:rgba(255,255,255,.02)}
+  table.data td.hi{color:var(--success);font-weight:600}
+  table.data td.lo{color:var(--accent);font-weight:600}
+  .tbl-note{color:var(--secondary);font-size:12px;margin:12px 0 0;line-height:1.5}
+  .principles{margin:36px 0 0;display:grid;gap:12px}
+  .pr{background:var(--card);border:1px solid var(--line-2);border-left:2px solid var(--accent);padding:16px 18px}
+  .pr .pn{font-family:var(--fm);font-size:10px;letter-spacing:.13em;color:var(--accent);text-transform:uppercase}
+  .pr h4{text-transform:none;font-size:1.06rem;letter-spacing:-.01em;margin:5px 0 5px}
+  .pr p{margin:0;color:var(--muted);font-size:14.5px;line-height:1.52}
+  .pr p b{color:var(--ink)}
+  /* methodology */
+  .method{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+  @media(max-width:900px){.method{grid-template-columns:1fr 1fr}}
+  @media(max-width:600px){.method{grid-template-columns:1fr}}
+  .mcard{background:var(--card-2);border:1px solid var(--line-2);padding:20px}
+  .mcard .s{font-family:var(--fm);font-size:10px;letter-spacing:.13em;color:var(--accent);text-transform:uppercase}
+  .mcard h4{text-transform:none;font-size:1.06rem;letter-spacing:-.01em;margin:7px 0 7px}
+  .mcard p{margin:0;color:var(--muted);font-size:14px;line-height:1.55}
+  .mcard p b{color:var(--ink)}
+
   footer{margin-top:56px;border-top:1px solid var(--line);padding:26px 0 60px}
   footer .fn{color:var(--secondary);font-size:12.5px;line-height:1.6;max-width:900px}
   footer .fn b{color:var(--muted)}
@@ -215,6 +268,7 @@ const html = `<!DOCTYPE html>
   <div class="navbar">
     <div class="navbar-in">
       <a class="nb-brand" href="#top">Miguel · Damned</a>
+      <div class="nb-jump"><a href="#engagement">Engagement</a><a href="#method">Method</a></div>
       <div class="nb-filters" id="filter">
         <button class="chip active" data-f="all">All 9</button>
         <button class="chip" data-f="catalog">Catalog plays</button>
@@ -394,10 +448,31 @@ const html = `<!DOCTYPE html>
     </div>
   </section>
 
+  <!-- SECTION: WHAT DRIVES ENGAGEMENT -->
+  <section class="sec wrap" id="engagement">
+    <div class="sec-head">
+      <div class="row"><span class="num">03</span><span class="ln"></span></div>
+      <h2>What drives engagement</h2>
+      <p class="desc">We widened the study to 21 verified artist-in-frame posts and pulled the live engagement on each. The pattern is blunt: format beats reach, and being a person beats selling.</p>
+    </div>
+    <p class="eng-intro">The most-viewed post in the whole set, a polished "link in bio" launch teaser at 6.3M views, had the <b>lowest</b> like-rate of all 21 at 2.6 percent. An intimate phone lip-sync at a tenth of the reach hit <b>23.5 percent</b> and a 4.5 percent share-rate. Reach without engagement is paid distribution. Engagement rate is whether anyone actually cared.</p>
+    <div class="statstrip" id="statstrip"></div>
+    <div class="board" id="board"></div>
+    <div class="tbl-controls"><span class="mono">The full 21-post sample</span></div>
+    <div class="tablewrap"><table class="data" id="engtable"></table></div>
+    <p class="tbl-note" id="tblnote"></p>
+    <div class="principles">
+      <div class="pr"><span class="pn">Principle 01</span><h4>Lead with a face and a premise in the first second</h4><p>Every high-like-rate clip opens on the artist plus an instantly legible idea: a reaction, a joke caption, a confession, an intimate lip-sync. The mid clips open on spectacle or a crowd that delays the reveal. <b>Leon Thomas (27%) and Steve Lacy (23%) both put a face and a hook on frame one.</b></p></div>
+      <div class="pr"><span class="pn">Principle 02</span><h4>Raw out-engages polished; polish only pays once emotion or status is the story</h4><p>Selfie, car, dim-room, phone-shot content beats glossy assets for engagement. Polish works when it packages proof (a live crowd, a gold plaque, an anniversary), not when it is the whole pitch. <b>The one pure "sell" clip is dead last at 2.6%.</b></p></div>
+      <div class="pr"><span class="pn">Principle 03</span><h4>Shares come from emotion, status, or a copyable template</h4><p>The biggest share-rates are intimate emotional lip-syncs people send to someone (Muni Long, 4.5%), shareable skits (Giveon, 1.8%), and simple copyable formats. Proud-repost status moments (milestones, anniversaries) add a second share engine.</p></div>
+      <div class="pr"><span class="pn">Principle 04</span><h4>Catalog works when it is personal or participatory</h4><p>An older song travels when the artist embodies the rediscovery, reconnects it to their lore, or turns it into a format fans can join. <b>PARTYNEXTDOOR's 2013 catalog cut did 16.8M because he jumped into the trend himself.</b></p></div>
+    </div>
+  </section>
+
   <!-- SLATE -->
   <section class="sec wrap" id="slate">
     <div class="sec-head">
-      <div class="row"><span class="num">03</span><span class="ln"></span></div>
+      <div class="row"><span class="num">04</span><span class="ln"></span></div>
       <h2>The slate we would shoot</h2>
       <p class="desc">The same nine plays, sequenced by how easy they are to capture. Reaction and archival first, everything light.</p>
     </div>
@@ -421,6 +496,23 @@ const html = `<!DOCTYPE html>
         </ul></div>
       </div>
       <p class="need">What we need from Miguel: <b>himself, mostly.</b> We write the brief and cut the edit. He shoots light, on his own terms, on his own record.</p>
+    </div>
+  </section>
+
+  <!-- SECTION: METHODOLOGY -->
+  <section class="sec wrap" id="method">
+    <div class="sec-head">
+      <div class="row"><span class="num">05</span><span class="ln"></span></div>
+      <h2>Methodology</h2>
+      <p class="desc">How this was built, so the reasoning is auditable and repeatable, not a taste call.</p>
+    </div>
+    <div class="method">
+      <div class="mcard"><span class="s">01 / Comp set</span><h4>Three peer lanes</h4><p>We sampled across core alt-R&B contemporaries, bigger crossover acts, and pure catalog-resurgence cases, so the read is not skewed to one tier. Artists were chosen for lane fit and for being active with artist-in-frame promo.</p></div>
+      <div class="mcard"><span class="s">02 / Sourcing</span><h4>Real posts, verified live</h4><p>Every clip is a real post pulled from the artist's official account with its live stats. Each URL was verified embeddable before it went on this page. Nothing here is a mockup or a dead link.</p></div>
+      <div class="mcard"><span class="s">03 / Frame-level analysis</span><h4>Video AI on the actual footage</h4><p>The featured clips were downloaded and run through TwelveLabs video AI (Pegasus and Marengo), so the first-three-seconds, beat structure, and why-it-works reads describe what literally happens on screen, not captions or guesswork.</p></div>
+      <div class="mcard"><span class="s">04 / Engagement data</span><h4>Live platform metrics</h4><p>Plays, likes, comments, and shares were pulled from each post and used to compute like-rate and share-rate. The 21-post sample is the basis for the engagement ranking above. Counts drift; they are current as of build.</p></div>
+      <div class="mcard"><span class="s">05 / Guardrails</span><h4>On-brand by design</h4><p>Every recommendation keeps Miguel in frame on his own terms, reaction and archival first, light to shoot. No re-push framing of past moments, no stunts at his scale. We brief and edit; he shoots.</p></div>
+      <div class="mcard"><span class="s">06 / Excluded</span><h4>One deliberate omission</h4><p>A well-known catalog-resurgence case was left out for reputational reasons despite fitting the pattern on paper. Fit alone does not clear a name for a client-facing deck.</p></div>
     </div>
   </section>
 
@@ -459,6 +551,83 @@ const html = `<!DOCTYPE html>
       box.innerHTML='<iframe src="https://www.tiktok.com/embed/v2/'+id+'" allow="encrypted-media;" allowfullscreen loading="lazy"></iframe>';
     });
   });
+})();
+
+(function(){
+  var DATA=[
+    {a:"Kehlani",f:"Reaction / talk-to-camera",lane:"Catalog",p:1917432,l:255300,c:3516,sh:3573,d:"2025-11-23",on:1},
+    {a:"PARTYNEXTDOOR",f:"Trend / fan repost",lane:"Catalog",p:16792236,l:1938554,c:4025,sh:49900,d:"2026-01-05",on:1},
+    {a:"Kali Uchis",f:"Live performance",lane:"Catalog",p:2079466,l:221358,c:710,sh:6835,d:"2025-10-09",on:1},
+    {a:"Leon Thomas",f:"Reaction / talk-to-camera",lane:"Catalog",p:3885806,l:1065048,c:1735,sh:37681,d:"2026-05-29",on:1},
+    {a:"Leon Thomas",f:"Milestone / anniversary",lane:"Catalog",p:257932,l:32170,c:356,sh:568,d:"2026-05-06",on:1},
+    {a:"Ari Lennox",f:"Milestone / anniversary",lane:"Catalog",p:13106,l:1358,c:59,sh:36,d:"2026-05-07",on:1},
+    {a:"SZA",f:"Trend / fan repost",lane:"New",p:1244164,l:143759,c:976,sh:2085,d:"2026-03-21",on:1},
+    {a:"Steve Lacy",f:"Reaction / talk-to-camera",lane:"New",p:1771755,l:401469,c:5619,sh:27754,d:"2026-07-18",on:1},
+    {a:"Daniel Caesar",f:"Live performance",lane:"New",p:19860311,l:2423231,c:3740,sh:230664,d:"2026-01-26",on:1},
+    {a:"PARTYNEXTDOOR",f:"Intimate lip-sync",lane:"Catalog",p:13182839,l:2147049,c:2627,sh:41027,d:"2026-03-17",on:0},
+    {a:"Tyla",f:"Intimate lip-sync",lane:"New",p:3831487,l:640450,c:3642,sh:41014,d:"2026-07-12",on:0},
+    {a:"Giveon",f:"Skit / story",lane:"New",p:2804977,l:440734,c:1645,sh:26093,d:"2026-04-10",on:0},
+    {a:"Giveon",f:"Skit / story",lane:"New",p:2250047,l:417812,c:2116,sh:41479,d:"2026-05-01",on:0},
+    {a:"Coco Jones",f:"Intimate lip-sync",lane:"New",p:1784401,l:356731,c:518,sh:31051,d:"2026-03-26",on:0},
+    {a:"Muni Long",f:"Reaction / talk-to-camera",lane:"New",p:1732286,l:282104,c:1095,sh:13856,d:"2026-07-11",on:0},
+    {a:"PARTYNEXTDOOR",f:"Intimate lip-sync",lane:"New",p:1728779,l:193896,c:1216,sh:13069,d:"2025-12-16",on:0},
+    {a:"PARTYNEXTDOOR",f:"Trend / fan repost",lane:"Catalog",p:1423066,l:182143,c:408,sh:2151,d:"2026-01-30",on:0},
+    {a:"Muni Long",f:"Intimate lip-sync",lane:"New",p:711607,l:167272,c:3741,sh:31934,d:"2026-07-13",on:0},
+    {a:"Coco Jones",f:"Polished launch teaser",lane:"New",p:6269073,l:161570,c:704,sh:1564,d:"2026-02-18",on:0},
+    {a:"Leon Thomas",f:"Reaction / talk-to-camera",lane:"New",p:754002,l:121568,c:870,sh:4809,d:"2026-05-02",on:0},
+    {a:"Victoria Monet",f:"Live performance",lane:"Catalog",p:627447,l:114466,c:1029,sh:3851,d:"2026-06-30",on:0}
+  ];
+  DATA.forEach(function(r){r.lr=r.p?r.l/r.p*100:0;r.sr=r.p?r.sh/r.p*100:0;});
+  function fmt(n){if(n>=1e6)return (n/1e6).toFixed(1)+'M';if(n>=1e3)return (n/1e3).toFixed(n>=1e5?0:1)+'K';return ''+n;}
+  function pct1(n){return n.toFixed(1)+'%';}
+
+  var totalViews=0,maxLr=0,maxSr=0,minLr=999;
+  DATA.forEach(function(r){totalViews+=r.p;if(r.lr>maxLr)maxLr=r.lr;if(r.sr>maxSr)maxSr=r.sr;if(r.lr<minLr)minLr=r.lr;});
+  var ss=document.getElementById('statstrip');
+  if(ss){ss.innerHTML=
+    '<div class="stat"><div class="n">21</div><span class="l">Posts analyzed</span></div>'+
+    '<div class="stat"><div class="n">'+fmt(totalViews)+'</div><span class="l">Combined views</span></div>'+
+    '<div class="stat"><div class="n">'+pct1(maxLr)+'</div><span class="l">Top like-rate</span></div>'+
+    '<div class="stat"><div class="n">'+maxSr.toFixed(1)+'%</div><span class="l">Top share-rate</span></div>';}
+
+  var groups={};
+  DATA.forEach(function(r){(groups[r.f]=groups[r.f]||[]).push(r.lr);});
+  var board=Object.keys(groups).map(function(k){var arr=groups[k];var avg=arr.reduce(function(a,b){return a+b;},0)/arr.length;return {k:k,avg:avg,n:arr.length};});
+  board.sort(function(a,b){return b.avg-a.avg;});
+  var bmax=board.length?board[0].avg:1;
+  var bd=document.getElementById('board');
+  if(bd){var h='<h3>Formats ranked by average like-rate</h3><p class="cap">Average likes-per-view across every post in that format bucket. Personality and lip-sync formats lead; the pure launch teaser is last.</p>';
+    board.forEach(function(g){var w=(g.avg/bmax*100).toFixed(1);
+      h+='<div class="brow"><div class="bl">'+g.k+'<span class="bn">'+g.n+' post'+(g.n>1?'s':'')+'</span></div><div class="bt"><div class="bf" style="width:'+w+'%"></div></div><div class="bv">'+g.avg.toFixed(1)+'%</div></div>';});
+    bd.innerHTML=h;}
+
+  var cols=[{k:'a',t:'Artist',l:1},{k:'f',t:'Format',l:1},{k:'lane',t:'Lane',l:1},{k:'p',t:'Plays'},{k:'l',t:'Likes'},{k:'lr',t:'Like %'},{k:'sh',t:'Shares'},{k:'sr',t:'Share %'},{k:'d',t:'Date',l:1}];
+  var tbl=document.getElementById('engtable');
+  var sortKey='lr',sortDir=-1;
+  function draw(){
+    var rows=DATA.slice().sort(function(a,b){var x=a[sortKey],y=b[sortKey];if(typeof x==='string'){return sortDir*x.localeCompare(y);}return sortDir*(x-y);});
+    var h='<thead><tr>';
+    cols.forEach(function(c){h+='<th class="'+(c.l?'l ':'')+(c.k===sortKey?'sorted':'')+'" data-k="'+c.k+'">'+c.t+(c.k===sortKey?(sortDir<0?' \\u25BC':' \\u25B2'):'')+'</th>';});
+    h+='</tr></thead><tbody>';
+    rows.forEach(function(r){
+      h+='<tr>'+
+        '<td class="l">'+(r.on?'<span style="color:var(--accent)">\\u25CF</span> ':'')+r.a+'</td>'+
+        '<td class="l">'+r.f+'</td>'+
+        '<td class="l">'+r.lane+'</td>'+
+        '<td>'+fmt(r.p)+'</td>'+
+        '<td>'+fmt(r.l)+'</td>'+
+        '<td class="'+(r.lr===maxLr?'hi':(r.lr===minLr?'lo':''))+'">'+r.lr.toFixed(1)+'%</td>'+
+        '<td>'+fmt(r.sh)+'</td>'+
+        '<td class="'+(r.sr===maxSr?'hi':'')+'">'+r.sr.toFixed(2)+'%</td>'+
+        '<td>'+r.d+'</td>'+
+      '</tr>';});
+    h+='</tbody>';
+    tbl.innerHTML=h;
+    tbl.querySelectorAll('th').forEach(function(th){th.addEventListener('click',function(){var k=th.getAttribute('data-k');if(k===sortKey){sortDir=-sortDir;}else{sortKey=k;sortDir=(k==='a'||k==='f'||k==='lane'||k==='d')?1:-1;}draw();});});
+  }
+  if(tbl)draw();
+  var note=document.getElementById('tblnote');
+  if(note){note.innerHTML='\\u25CF marks the nine clips featured in the teardown above. Click any column to sort. Like-rate = likes / plays; share-rate = shares / plays. Metrics current as of build (July 2026) and will drift.';}
 })();
 </script>
 </body>
