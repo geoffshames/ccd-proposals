@@ -37,7 +37,7 @@ export const ekatorPlanKorean: StrategyPlanData = {
         "아직 음악이 존재하지 않는 상태에서 EKATOR를 위한 홍보, 참여 및 자체 잠재고객을 구축하는 데뷔 전 캠페인으로, WAYF BOYS가 곡을 단 한 곡도 발매하지 않고도 거의 100만 명의 팔로워를 확보했던 것과 동일한 플레이북을 사용합니다.",
       body: [
         "EKATOR는 11월까지 음악이 없습니다. 기회는 그 앞에 놓인 7개월입니다. 7월에 주간 다큐멘터리 시리즈가 공개되며, 이 콘텐츠는 그룹이 데뷔하기도 전에 필연적으로 느껴지도록 설계된 인위적인 모멘텀 캠페인의 연료가 됩니다.",
-        "벤치마크는 명확합니다: WAYF BOYS. 그들은 거의 유료 미디어 없이, 유한하고 복제 가능한 플레이북을 실행하여 얼굴, 이름, 노래를 공개하기 전에 최상위 5세대 데뷔 궤적을 구축했습니다. 우리는 그 플레이북을 완전히 역공학했습니다. 이 계획은 의도적인 클리핑, 팬 페이지 네트워크, 성과가 좋은 콘텐츠에 대한 유료 증폭, 그리고 홍보를 데이터, 유닛 및 차트 스토리로 전환하는 경험적 계층을 통해 더 타이트하고 유료 가속화된 버전으로 EKATOR에 이를 적용합니다.",
+        "벤치마크는 명확합니다: WAYF BOYS. 그들은 거의 유료 미디어 없이, 유한하고 복제 가능한 플레이북을 실행하여 얼굴, 이름, 노래를 공개하기 전에 최상위 5세대 데뷔 궤적을 구축했습니다. 우리는 그 플레이북을 완전히 역공학했습니다. 이 계획은 의도적인 Clipping, 타이밍을 맞춘 Paid Media, SWRM 대화 지원, 그리고 홍보를 데이터, 유닛 및 차트 스토리로 전환하는 경험적 계층을 통해 더 타이트하고 유료 가속화된 버전으로 EKATOR에 이를 적용합니다.",
         "11월 데뷔로 이어지는 데뷔 전 기간(7월부터 9월까지, 약 12주)의 총 프로그램은 $50,000이다. 이 중 $39,000는 Paid Social, YouTube, SWRM, Clipping, Discretionary 최적화에 투입 가능한 예산이며, $11,000는 CCD Retainer 및 Fees이다. 아직 스트리밍할 음원이 없으므로, 성공은 데뷔 전에 실제로 성패가 갈리는 방식, 즉 팔로워 증가 속도, 참여율, 노출량, 대화 감성, 확보한 오디언스로 측정된다. 각 후속 단계(11월 싱글, 데뷔, 첫 컴백)는 동일한 구조로 새로운 예산을 승인한다.",
       ],
       supports: {
@@ -54,7 +54,7 @@ export const ekatorPlanKorean: StrategyPlanData = {
         items: [
           "음악 공개 전에 WAYF 수준의 성장 속도를 만들어낸다. 눈에 띄고, 어디에나 있으며, 회자되는 상태를 구축한다.",
           "다큐멘터리를 이번 사이클에서 가장 많이 클리핑되는 데뷔 전 콘텐츠로 만든다.",
-          "팬 페이지 네트워크를 자체 보유 유통 채널로 구축한다.",
+          "데뷔 전 리타겟팅 및 CRM 경로를 구축한다.",
           "관심을 끌기 쉬운 지금 시점에 전화번호와 이메일을 확보한다.",
           "팬들이 참여하고 클리핑하려 경쟁하는 경험형 순간을 하나 만든다.",
         ],
@@ -73,7 +73,7 @@ export const ekatorPlanKorean: StrategyPlanData = {
       title: "오디언스 및 포지셔닝",
       metrosLabel: "주요 글로벌 시장",
       intro:
-        "아직 음원이나 픽셀 데이터가 없기 때문에 데뷔 전 타기팅은 데이터 기반이 아니라 콘셉트와 비교군 기반으로 설정한다. K-pop 보이그룹 팬덤은 첫날부터 글로벌하며, 그 지형은 미국 중심이 아니다. 유사한 하드 콘셉트 그룹(RIIZE, BOYNEXTDOOR, TWS, CORTIS) 전반에서 동남아시아와 라틴아메리카가 가장 높은 참여도와 대화량을 견인하고, 한국과 일본이 신뢰도와 시청 시간을 뒷받침하며, 미국은 의미 있지만 부차적인 시장이다. 이 그룹의 오디언스는 매우 어리고 압도적으로 여성에 치우쳐 있다. 이 분포는 초기 클리핑 방향, 팬 페이지 콘텐츠 방향, 유료 소셜 타기팅을 설정하며, 7월 다큐멘터리와 소셜 계정이 실제 픽셀 데이터를 만들어내면 빠르게 재조정된다.",
+        "아직 음원이나 픽셀 데이터가 없기 때문에 데뷔 전 타기팅은 데이터 기반이 아니라 콘셉트와 비교군 기반으로 설정한다. K-pop 보이그룹 팬덤은 첫날부터 글로벌하며, 그 지형은 미국 중심이 아니다. 유사한 하드 콘셉트 그룹(RIIZE, BOYNEXTDOOR, TWS, CORTIS) 전반에서 동남아시아와 라틴아메리카가 가장 높은 참여도와 대화량을 견인하고, 한국과 일본이 신뢰도와 시청 시간을 뒷받침하며, 미국은 의미 있지만 부차적인 시장이다. 이 그룹의 오디언스는 매우 어리고 압도적으로 여성에 치우쳐 있다. 이 분포는 초기 클리핑 방향, 유료 크리에이티브 방향, 유료 소셜 타기팅을 설정하며, 7월 다큐멘터리와 소셜 계정이 실제 픽셀 데이터를 만들어내면 빠르게 재조정된다.",
       metros: [
         { name: "인도네시아 자카르타" },
         { name: "태국 방콕" },
@@ -124,7 +124,7 @@ export const ekatorPlanKorean: StrategyPlanData = {
         },
         {
           platform: "Instagram Reels",
-          note: "듀얼 엔진: TikTok 영상의 미러링과 라이프스타일 및 콘셉트 캐러셀을 결합합니다. 멤버 편애 문화를 조장하고 스트리트웨어 콘셉트가 의존하는 패션 포지셔닝을 강화합니다. 팬 페이지 네트워크는 이곳과 TikTok에서 운영되며, 일본, 인도네시아, 라틴 아메리카로부터 가장 강력한 참여를 이끌어냅니다.",
+          note: "듀얼 엔진: TikTok 영상의 미러링과 라이프스타일 및 콘셉트 캐러셀을 결합합니다. 멤버 편애 문화를 조장하고 스트리트웨어 콘셉트가 의존하는 패션 포지셔닝을 강화합니다. Paid 및 자체 보유 콘텐츠는 TikTok과 함께 이 레인을 활용해야 하며, 일본, 인도네시아, 라틴 아메리카에서 가장 강한 참여가 나온다.",
         },
         {
           platform: "X / 애그리게이터",
@@ -144,7 +144,7 @@ export const ekatorPlanKorean: StrategyPlanData = {
       navLabel: "구조",
       title: "제안 구조",
       intro:
-        "데뷔 전 기간(7월부터 9월까지)의 총 프로그램은 all-in $50,000이다. $39,000는 활성 채널에 투입 가능한 예산이고, $11,000는 CCD Retainer 및 Fees이다. 투입 가능 예산은 Clipping, Paid Social, YouTube, SWRM, 그리고 성과 데이터에 따라 팬 페이지 지원, 크리에이터/커뮤니티 테스트, 긴급 부스팅으로 이동할 수 있는 Discretionary 최적화 풀에 집중된다. 11월 싱글과 데뷔는 각각 동일한 구조로 새로운 예산을 승인한다.",
+        "데뷔 전 기간(7월부터 9월까지)의 총 프로그램은 all-in $50,000이다. $39,000는 활성 채널에 투입 가능한 예산이고, $11,000는 CCD Retainer 및 Fees이다. 투입 가능 예산은 Clipping, Paid Social, YouTube, SWRM, 그리고 성과 데이터에 따라 크리에이터/커뮤니티 테스트 또는 긴급 부스팅으로 이동할 수 있는 Discretionary 최적화 풀에 집중된다. 11월 싱글과 데뷔는 각각 동일한 구조로 새로운 예산을 승인한다.",
       tiers: [
         {
           label: "데뷔 전 기간 (7월~9월)",
@@ -158,7 +158,7 @@ export const ekatorPlanKorean: StrategyPlanData = {
             "검증된 클립과 게시물에 대한 Paid Social 증폭",
             "다큐멘터리 순간 중심의 YouTube 및 Shorts 증폭",
             "전체 콘텐츠에 대한 SWRM 댓글 증폭",
-            "팬 페이지 지원, 크리에이터/커뮤니티 테스트, 신속 재배분을 위한 Discretionary 풀",
+            "크리에이터/커뮤니티 테스트, 신속 부스팅, 재배분을 위한 Discretionary 풀",
             "CCD 전략 총괄 및 주간 예산 재배분",
           ],
         },
@@ -222,57 +222,15 @@ export const ekatorPlanKorean: StrategyPlanData = {
     },
 
     // ===================================================================
-    // 05. Fan Page Network
+    // 05. Paid Social, YouTube & SWRM
     // ===================================================================
     {
       type: "vertical",
       number: "05",
-      navLabel: "팬 페이지",
-      title: "세로 2 / 팬 페이지 네트워크",
-      philosophy:
-        "우선순위 2. 복합적인 자체 유통 채널. 아티스트 팀의 확장으로서 운영되는 두 개의 전담 페이지.",
-      subBlocks: [
-        {
-          label: "A",
-          title: "두 개의 HQ 팬 페이지",
-          budget: "승인 시 Discretionary 풀에서 집행",
-          timeline: "론칭 주차 1, 사전 데뷔 기간 동안 운영",
-          objective:
-            "첫날부터 신뢰할 수 있는 풀뿌리 기반을 구축하고, WAYF의 경우처럼 팬덤이 자체적으로 조직화될 때까지 기다리는 대신 유통을 직접 소유합니다.",
-          strategy:
-            "팬 페이지 지원은 고정 채널 항목이 아니라 Discretionary 레버로 유지한다. 초기 콘텐츠 신호가 이를 정당화하면, 샷 리스트와 콘텐츠 요청을 기반으로 운영되는 전용 Instagram 및 TikTok 팬 스타일 페이지를 세워, 팬의 추측이 아니라 소유형 인벤토리처럼 작동하게 한다. 이 페이지들은 다큐멘터리 콘텐츠를 미러링하고 리믹스하며, 일상적 팬 내러티브를 구축하고 Paid Social이 활용할 리타겟팅 풀을 만든다.",
-          components: {
-            heading: "페이지의 역할",
-            items: [
-              "관리되는 일정에 따라 게시 (페이지당 IG 주 3회, TikTok 주 4회 수준)",
-              "다큐멘터리 순간들을 팬 친화적인 형식으로 리믹스",
-              "데뷔 전 '이 그룹은 이미 사랑받고 있다'는 인식을 구축",
-              "유료 소셜 레이어를 위한 리타겟팅 풀 채우기",
-              "클리퍼 네트워크와 공유 콘셉트에 대해 협력",
-            ],
-          },
-          kpis: [
-            "페이지 팔로워 성장 통합",
-            "참여율 (저장, 공유, 댓글)",
-            "유료 광고에 기여한 리타겟팅 풀 규모",
-            "비교 대상 사전 데뷔 그룹 대비 대화 점유율",
-          ],
-        },
-      ],
-      footnote:
-        "두 페이지가 시작점입니다. 해당 기간 동안의 성과에 따라 데뷔 사이클이 네트워크를 더 확장할지 여부가 결정됩니다.",
-    },
-
-    // ===================================================================
-    // 06. Paid Social, YouTube & SWRM
-    // ===================================================================
-    {
-      type: "vertical",
-      number: "06",
       navLabel: "Paid + YouTube + SWRM",
-      title: "버티컬 3 / Paid Social, YouTube 및 SWRM 증폭",
+      title: "버티컬 2 / Paid Social, YouTube 및 SWRM 증폭",
       philosophy:
-        "가속 장치다. Paid Social과 YouTube는 Clipping 및 팬 페이지 지원에서 드러난 성과가 좋은 콘텐츠를 증폭하고, SWRM은 모든 콘텐츠에서 대화와 소셜 증거를 만든다. WAYF에는 필요하지 않았지만, 우리는 타임라인을 압축하기 위해 이 레이어를 활용한다.",
+        "가속 장치다. Paid Social과 YouTube는 Clipping, 다큐멘터리 참여, 플랫폼 신호에서 드러난 성과가 좋은 콘텐츠를 증폭하고, SWRM은 모든 콘텐츠에서 대화와 소셜 증거를 만든다. WAYF에는 필요하지 않았지만, 우리는 타임라인을 압축하기 위해 이 레이어를 활용한다.",
       subBlocks: [
         {
           label: "A",
@@ -281,13 +239,13 @@ export const ekatorPlanKorean: StrategyPlanData = {
           objective:
             "유기적으로 이미 성과를 입증한 클립 및 게시물에 예산을 투입하여, 모든 관련 채널(TikTok, IG Reels, YouTube Shorts)에서 고성과 에셋이 유기적 한계를 넘어서도록 푸시합니다.",
           strategy:
-            "추측은 금물입니다. 유료 광고는 클리퍼 네트워크와 팬 페이지에서 이미 검증된 콘텐츠를 증폭시킵니다. 첫 주에는 소규모로 테스트한 후, 성과가 좋은 콘텐츠가 나오면 예산을 상위 크리에이티브에 집중적으로 투입합니다. 유기적 클립 시청자와 팬 페이지 트래픽에서 리타겟팅 풀을 구축하여 광고비가 초기화되지 않고 누적되도록 합니다. 타겟팅은 콘셉트 및 경쟁자 분석 대상에서 시작하여, 축적되는 실제 픽셀 데이터를 기반으로 정교화됩니다.",
+            "추측은 금물입니다. Paid Media는 7월 21일에 론칭하며, 이미 신호가 드러난 다큐멘터리 순간, 자체 게시물, 초기 참여 신호를 증폭한다. 깔끔한 테스트로 시작한 뒤, 성과가 좋은 콘텐츠가 나오면 예산을 상위 크리에이티브에 집중적으로 투입한다. 다음 주 Clipping이 론칭되면 영상 시청자, 프로필 참여자, 클립 시청자로부터 리타겟팅 풀을 구축하여 광고비가 초기화되지 않고 누적되도록 한다. 타기팅은 콘셉트 및 비교군 오디언스에서 시작해, 축적되는 실제 픽셀 데이터를 기반으로 정교화된다.",
           tactics: [
-            "검증된 클립을 홍보하고, 미검증 크리에이티브는 지양합니다",
-            "다큐멘터리 에피소드 공개에 맞춰 성공작에 예산을 집중합니다",
-            "클립 시청자와 팬 페이지 트래픽을 리타겟팅합니다",
-            "TikTok, IG Reels, YouTube Shorts 전반에 걸쳐 실행합니다",
-            "수신되는 픽셀 데이터를 기반으로 타겟팅을 매주 정교화합니다",
+            "7월 21일 콘셉트 및 비교군 오디언스를 대상으로 Paid Media 론칭",
+            "다큐멘터리 에피소드 공개에 맞춰 성과가 좋은 콘텐츠에 예산 집중",
+            "영상 시청자, 프로필 참여자, 클립 시청자를 리타겟팅",
+            "TikTok, IG Reels, YouTube Shorts 전반에 걸쳐 실행",
+            "수신되는 픽셀 데이터를 기반으로 타기팅을 매주 정교화",
           ],
         },
         {
@@ -329,11 +287,11 @@ export const ekatorPlanKorean: StrategyPlanData = {
     },
 
     // ===================================================================
-    // 07. World-Building & Experiential
+    // 06. World-Building & Experiential
     // ===================================================================
     {
       type: "vertical",
-      number: "07",
+      number: "06",
       navLabel: "체험형",
       title: "월드 빌딩 및 체험형 (선택 사항)",
       philosophy:
@@ -384,35 +342,35 @@ export const ekatorPlanKorean: StrategyPlanData = {
     },
 
     // ===================================================================
-    // 08. Media Flight
+    // 07. Media Flight
     // ===================================================================
     {
       type: "flight",
-      number: "08",
+      number: "07",
       navLabel: "플라이트",
       title: "제안 미디어 플라이트",
       intro:
-        "$50,000 총 프로그램 안에서 $39,000의 투입 가능 채널 예산이 작동하는 방식. 7월은 다큐멘터리 론칭과 함께 Clipping, Paid Social, YouTube, SWRM, Discretionary 테스트가 주간 에피소드에 맞춰 동시에 점화된다. 8월은 성과가 좋은 콘텐츠 뒤에 Paid와 YouTube를 확장하고, Discretionary 풀은 가장 신호가 강한 지원 항목으로 이동한다. 9월은 화제성을 유지하고 경험형 결정 및 11월 데뷔로 이어지는 활주로를 만든다.",
+        "$50,000 총 프로그램 안에서 $39,000의 투입 가능 채널 예산이 작동하는 방식. 7월은 먼저 세팅과 신호 수집으로 시작하고, 7월 21일에 Paid Media와 SWRM이 함께 론칭하며, 그 다음 주인 7월 28일에 Clipping이 론칭한다. 8월은 가장 강한 Paid, YouTube, SWRM, Clipping 신호를 확장하고, Discretionary 풀은 크리에이터/커뮤니티 테스트 또는 추가 부스팅으로 이동한다. 9월은 화제성을 유지하고 경험형 결정 및 11월 데뷔로 이어지는 활주로를 만든다.",
       totalBudget: "$39,000 deployable",
       phases: [
         {
           label: "폭발 + 다큐멘터리 출시",
           window: "2026년 7월 / 약 4주",
           focus:
-            "모든 활성 엔진이 주간 다큐멘터리 에피소드에 맞춰 가동된다. 클리퍼 네트워크는 콘텐츠를 전면적으로 공략하고, SWRM은 대화 밀도를 만들며, Paid Social과 YouTube는 초기 성과가 좋은 콘텐츠를 찾기 위해 가볍게 테스트한다. Discretionary 풀은 팬 페이지 지원 또는 빠른 재배분을 위해 대기한다. 목표: 콘셉트가 확산된다는 것을 증명하고 첫 팔로워 증가 속도 곡선을 만드는 것.",
+            "7월 첫 두 주는 세팅과 신호 수집이다. Paid Media와 SWRM은 7월 21일에 함께 론칭하고, Clipping 및 Seeding은 그 다음 주인 7월 28일에 론칭한다. 목표: 콘셉트가 확산된다는 것을 증명하고, 첫 팔로워 증가 속도 곡선을 만들며, 콘텐츠 시스템이 준비되기 전에 예산을 쓰지 않는 것.",
           budget: "~$17,000",
           tactics: [
-            "클리퍼 네트워크와 180K 서버가 매주 에피소드를 공격",
-            "콘셉트 및 비교군 오디언스를 대상으로 Paid Social과 YouTube 테스트",
-            "에피소드 공개 시점에 맞춰 SWRM 댓글 커버리지",
-            "빠른 팬 페이지 지원 또는 크리에이터/커뮤니티 테스트를 위해 Discretionary 풀 보류",
+            "7월 21일 콘셉트 및 비교군 오디언스를 대상으로 Paid Media와 SWRM 론칭",
+            "YouTube 지원도 7월 21일 Paid Media와 함께 시작",
+            "7월 28일 클리퍼 네트워크와 180K 서버를 통한 Clipping 론칭",
+            "크리에이터/커뮤니티 테스트 또는 추가 부스팅을 위해 Discretionary 풀 보류",
           ],
         },
         {
           label: "성공작 확장",
           window: "2026년 8월 / 약 4주",
           focus:
-            "7월에 성과를 입증한 클립과 게시물 뒤에 Paid Social과 YouTube를 확장한다. Discretionary 지원은 팬 페이지 콘텐츠, 크리에이터/커뮤니티 테스트, 추가 부스팅 중 가장 신호가 강한 채널로 이동한다. 목표: Clipping, Paid, YouTube, SWRM을 하나의 가속되는 존재감으로 결합하는 것.",
+            "7월 21일과 7월 28일 론칭 이후 성과를 입증한 클립과 게시물 뒤에 Paid Social과 YouTube를 확장한다. Discretionary 지원은 크리에이터/커뮤니티 테스트 또는 추가 부스팅 중 가장 신호가 강한 채널로 이동한다. 목표: Clipping, Paid, YouTube, SWRM을 하나의 가속되는 존재감으로 결합하는 것.",
           budget: "~$14,000",
           tactics: [
             "모든 채널에서 검증된 성과가 좋은 콘텐츠에 대한 Paid Social 확장",
@@ -426,11 +384,11 @@ export const ekatorPlanKorean: StrategyPlanData = {
           label: "유지 + 데뷔 런웨이",
           window: "2026년 9월 / 약 4주",
           focus:
-            "11월 싱글 발매에 앞서 열기를 유지하며 이를 자체 팬덤으로 전환합니다. 유료 광고는 에버그린 및 리타겟팅으로 진행하고, 팬 페이지는 지속적으로 운영하며, 체험형 및 CRM(승인 시)은 캠페인 전반에 걸쳐 구축된 팬덤을 확보합니다. 목표: 11월 데뷔에 따뜻하고, 자체적이며, 화제가 되는 팬덤을 전달하는 것.",
+            "11월 싱글 발매에 앞서 열기를 유지하며 이를 자체 팬덤으로 전환한다. Paid는 에버그린 및 리타겟팅으로 전환하고, Clipping은 가장 강한 콘셉트 중심으로 지속하며, 체험형 및 CRM(승인 시)은 캠페인 전반에 걸쳐 구축된 팬덤을 확보한다. 목표: 11월 데뷔에 따뜻하고, 자체적이며, 화제가 되는 팬덤을 전달하는 것.",
           budget: "~$8,000",
           tactics: [
-            "유료 소셜 광고는 에버그린 및 리타겟팅에만 집중",
-            "팬 페이지는 성과가 좋은 콘텐츠를 중심으로 지속 운영",
+            "Paid는 에버그린 및 리타겟팅 중심으로 전환",
+            "Clipping은 성과가 좋은 콘셉트를 중심으로 지속",
             "자체 채널 및 웹 구축을 통한 CRM 확보 강화",
             "11월 싱글 브리프, 에셋 목록, 팬덤 인수인계 준비 완료",
           ],
@@ -441,20 +399,20 @@ export const ekatorPlanKorean: StrategyPlanData = {
     },
 
     // ===================================================================
-    // 09. Execution Timeline
+    // 08. Execution Timeline
     // ===================================================================
     {
       type: "timeline",
-      number: "09",
+      number: "08",
       navLabel: "타임라인",
       title: "실행 타임라인",
       intro:
-        "데뷔 전 기간 동안 주별 실행 계획이다. 6개의 다큐멘터리 에피소드는 7월과 8월 초를 고정축으로 삼는다(정확한 날짜는 Jane의 릴리스 및 콘텐츠 일정에 따라 확정). Clipping, SWRM, Paid Social, YouTube는 1주차에 론칭한다. 초기 성과 판독이 들어오면 팬 페이지, 크리에이터/커뮤니티, 부스팅 재배분에 빠르게 대응할 수 있도록 Discretionary 지원을 보류한다. 경험형 결정은 6~8주차에 이루어지며, 승인 시 9월에 가동된다. 이 기간은 11월 싱글과 데뷔를 위한 활주로다.",
+        "데뷔 전 기간 동안 주별 실행 계획이다. 7월 첫 두 주는 세팅, 신호 수집, 크리에이티브 QA에 집중한다. Paid Media와 SWRM은 7월 21일에 론칭한다. Clipping 및 Seeding은 그 다음 주인 7월 28일에 론칭한다. 별도의 페이지 네트워크는 포함하지 않으므로, Discretionary 풀은 성과 판독이 들어오는 대로 크리에이터/커뮤니티 테스트 또는 부스팅 재배분을 위해 보류한다. 경험형 결정은 6~8주차에 이루어지며, 승인 시 9월에 가동된다. 이 기간은 11월 싱글과 데뷔를 위한 활주로다.",
       weeks: [
         { index: 1, label: "W1", dates: "7월 6일", note: "EP1" },
         { index: 2, label: "W2", dates: "7월 13일", note: "EP2" },
-        { index: 3, label: "W3", dates: "7월 20일", note: "EP3" },
-        { index: 4, label: "W4", dates: "7월 27일", note: "EP4" },
+        { index: 3, label: "W3", dates: "7월 21일", note: "PAID + SWRM" },
+        { index: 4, label: "W4", dates: "7월 28일", note: "CLIPPING" },
         { index: 5, label: "W5", dates: "8월 3일", note: "EP5" },
         { index: 6, label: "W6", dates: "8월 10일", note: "EP6" },
         { index: 7, label: "W7", dates: "8월 17일" },
@@ -479,10 +437,7 @@ export const ekatorPlanKorean: StrategyPlanData = {
         {
           name: "클리핑 및 시딩",
           cells: [
-            { weekIndex: 1, intensity: "high", label: "LAUNCH" },
-            { weekIndex: 2, intensity: "high" },
-            { weekIndex: 3, intensity: "high" },
-            { weekIndex: 4, intensity: "high" },
+            { weekIndex: 4, intensity: "high", label: "7/28" },
             { weekIndex: 5, intensity: "high" },
             { weekIndex: 6, intensity: "high" },
             { weekIndex: 7, intensity: "high" },
@@ -494,28 +449,9 @@ export const ekatorPlanKorean: StrategyPlanData = {
           ],
         },
         {
-          name: "팬 페이지",
-          cells: [
-            { weekIndex: 1, intensity: "high", label: "LAUNCH" },
-            { weekIndex: 2, intensity: "high" },
-            { weekIndex: 3, intensity: "high" },
-            { weekIndex: 4, intensity: "high" },
-            { weekIndex: 5, intensity: "high" },
-            { weekIndex: 6, intensity: "high" },
-            { weekIndex: 7, intensity: "high" },
-            { weekIndex: 8, intensity: "high" },
-            { weekIndex: 9, intensity: "high" },
-            { weekIndex: 10, intensity: "high" },
-            { weekIndex: 11, intensity: "medium" },
-            { weekIndex: 12, intensity: "medium" },
-          ],
-        },
-        {
           name: "Paid Social",
           cells: [
-            { weekIndex: 1, intensity: "medium", label: "TEST" },
-            { weekIndex: 2, intensity: "medium" },
-            { weekIndex: 3, intensity: "high", label: "SCALE" },
+            { weekIndex: 3, intensity: "high", label: "7/21" },
             { weekIndex: 4, intensity: "high" },
             { weekIndex: 5, intensity: "high" },
             { weekIndex: 6, intensity: "high" },
@@ -530,9 +466,7 @@ export const ekatorPlanKorean: StrategyPlanData = {
         {
           name: "YouTube",
           cells: [
-            { weekIndex: 1, intensity: "medium", label: "TEST" },
-            { weekIndex: 2, intensity: "medium" },
-            { weekIndex: 3, intensity: "medium" },
+            { weekIndex: 3, intensity: "medium", label: "7/21" },
             { weekIndex: 4, intensity: "high" },
             { weekIndex: 5, intensity: "high" },
             { weekIndex: 6, intensity: "high" },
@@ -547,9 +481,7 @@ export const ekatorPlanKorean: StrategyPlanData = {
         {
           name: "SWRM 댓글",
           cells: [
-            { weekIndex: 1, intensity: "high", label: "ON" },
-            { weekIndex: 2, intensity: "high" },
-            { weekIndex: 3, intensity: "high" },
+            { weekIndex: 3, intensity: "high", label: "7/21" },
             { weekIndex: 4, intensity: "high" },
             { weekIndex: 5, intensity: "high" },
             { weekIndex: 6, intensity: "high" },
@@ -577,101 +509,101 @@ export const ekatorPlanKorean: StrategyPlanData = {
       weekBreakdowns: [
         {
           weekIndex: 1,
-          title: "폭발적 시작: 다큐멘터리 EP1 + 모든 엔진 가동",
+          title: "세팅: 다큐멘터리 EP1 + 론칭 준비",
           items: [
-            "다큐멘터리 1화 공개. 클리퍼 네트워크와 18만 명 서버가 즉시 이를 훅을 앞세운 세로형 클립으로 편집해 네트워크 전반에 시딩한다.",
-            "두 팬 페이지가 콘셉트 중심의 론칭 게시물과 함께 IG 및 TikTok에서 활동을 시작한다.",
-            "SWRM 댓글 커버리지가 자체 게시물과 시딩된 클립 전반에서 가동된다.",
-            "Paid Social과 YouTube는 콘셉트 및 비교군 오디언스를 대상으로 테스트 모드로 시작한다.",
+            "다큐멘터리 1화 공개. 첫 크리에이티브 선별을 위한 신호 소스가 된다.",
+            "7월 21일 론칭을 위한 Paid Media 오디언스, 트래킹, 픽셀, UTM, 크리에이티브 QA를 확정한다.",
+            "7월 21일 론칭을 위한 SWRM 가드레일, 댓글 테마, 에스컬레이션 룰을 확정한다.",
+            "7월 28일 Clipping 론칭을 위한 클리퍼 브리프와 소스 에셋 시스템을 준비한다.",
           ],
         },
         {
           weekIndex: 2,
-          title: "EP2 + 초기 성과 확인",
+          title: "EP2 + 최종 론칭 QA",
           items: [
-            "다큐멘터리 2화 공개, 다음 클립 웨이브에 공급한다.",
-            "자체 계정의 첫 팔로워 증가 속도 및 참여도 측정.",
-            "유료 테스트 학습 내용을 기록하고, 초기 성과 항목을 확장 대상으로 표시한다.",
-            "팬 페이지는 론칭 주기로 운영되며 리타기팅 풀을 구축한다.",
+            "다큐멘터리 2화 공개. Paid와 Clipping 후보군을 위한 다음 신호를 만든다.",
+            "자체 계정의 첫 팔로워 증가 속도 및 참여도 판독.",
+            "Paid Media와 YouTube 론칭 크리에이티브 세트를 확정한다.",
+            "다음 주 Clipping 론칭 전 클리퍼 배정, 훅, 사운드 방향, 콘텐츠 요청을 확정한다.",
           ],
         },
         {
           weekIndex: 3,
-          title: "EP3 + 유료 광고 확장",
+          title: "EP3 + 7월 21일 Paid Media/SWRM 론칭",
           items: [
-            "다큐멘터리 에피소드 3 공개.",
-            "유료 소셜 광고는 테스트 단계에서 성과가 가장 좋은 클립을 중심으로 확장 단계로 전환됩니다.",
-            "시청 완료율과 댓글 속도가 가장 강한 다큐멘터리 순간 뒤에 YouTube 지원을 늘린다.",
-            "클리핑은 가장 높은 확산력을 보이는 콘셉트를 우선적으로 선정합니다.",
+            "다큐멘터리 3화 공개. 첫 Paid 및 SWRM 활성화 순간과 맞물린다.",
+            "Paid Social이 7월 21일 콘셉트 및 비교군 오디언스를 대상으로 론칭한다.",
+            "YouTube 지원이 7월 21일 다큐멘터리 인접 Shorts와 핵심 순간 뒤에서 론칭한다.",
+            "SWRM 댓글 커버리지가 7월 21일 자체 게시물과 더 넓은 콘텐츠 풋프린트 전반에서 론칭한다.",
           ],
         },
         {
           weekIndex: 4,
-          title: "EP4 + 중간 성과 누적",
+          title: "EP4 + 7월 28일 Clipping 론칭",
           items: [
-            "다큐멘터리 에피소드 4 공개.",
-            "유료 광고는 확장된 예산으로 집행되며, 리타겟팅 대상에는 팬 페이지 트래픽이 포함됩니다.",
-            "팬 페이지는 주요 테마를 유료 광고 크리에이티브 세트에 순환 적용합니다.",
-            "소셜 리스닝 결과: 대화량 및 감성 트렌드.",
+            "다큐멘터리 4화 공개.",
+            "Clipping 및 Seeding이 7월 28일 관리형 클리퍼 네트워크와 180K 서버를 통해 론칭한다.",
+            "Paid Media는 영상 시청자, 프로필 참여자, 초기 클립 시청자를 리타겟팅하기 시작한다.",
+            "소셜 리스닝 판독: 대화량 및 감성 트렌드.",
           ],
         },
         {
           weekIndex: 5,
           title: "EP5 + 유지",
           items: [
-            "다큐멘터리 에피소드 5 공개.",
-            "모든 오가닉 및 유료 채널 성과가 누적됩니다.",
-            "Discretionary 배분 판독: 팬 페이지 지원, 크리에이터/커뮤니티 테스트, 추가 부스팅 중 다음 예산을 받을 항목을 결정한다.",
-            "SWRM 밀도는 에피소드 공개 시점에 맞춰 조정됩니다.",
+            "다큐멘터리 5화 공개.",
+            "Paid Media, YouTube, SWRM, Clipping이 함께 누적되기 시작한다.",
+            "Discretionary 배분 판독: 크리에이터/커뮤니티 테스트 또는 추가 부스팅 중 다음 예산을 받을 항목을 결정한다.",
+            "SWRM 밀도는 에피소드 공개 시점에 맞춰 조정된다.",
           ],
         },
         {
           weekIndex: 6,
-          title: "EP6 + 체험형 결정",
+          title: "EP6 + 경험형 결정",
           items: [
             "최종 다큐멘터리 에피소드 6 공개.",
-            "체험형 결정 시점: 현재까지의 확산 속도를 기반으로 LA 및 NY 팝업 스토어와 웹사이트 구축을 승인합니다.",
-            "Discretionary 풀 검토: 신호가 정당화되는 경우에만 팬 페이지 또는 크리에이터/커뮤니티 지원을 지속한다.",
-            "모든 워크스트림에 걸친 7월 성과 검토를 종합합니다.",
+            "체험형 결정 시점: 현재까지의 확산 속도를 기반으로 LA 및 NY 팝업 스토어와 웹사이트 구축을 승인한다.",
+            "Discretionary 풀 검토: 신호가 정당화되는 경우에만 크리에이터/커뮤니티 지원 또는 추가 부스팅을 지속한다.",
+            "모든 워크스트림에 걸친 7월 성과 검토를 종합한다.",
           ],
         },
         {
           weekIndex: 7,
-          title: "성공 사례 확대",
+          title: "성과가 좋은 콘텐츠 확장",
           items: [
-            "검증된 크리에이티브를 활용한 유료 소셜 광고를 모든 채널에서 전면적으로 집행합니다.",
-            "팬 페이지 활동을 최대치로 유지합니다.",
-            "가장 높은 반응을 얻고 있는 콘텐츠를 중심으로 클리핑을 지속합니다.",
-            "승인될 경우, 체험형 콘텐츠 사전 제작에 착수합니다.",
+            "검증된 크리에이티브를 활용한 Paid Social을 모든 채널에서 전면적으로 집행한다.",
+            "Clipping은 가장 반응이 강한 콘셉트를 중심으로 지속한다.",
+            "SWRM 밀도는 성과가 가장 좋은 콘텐츠 포켓을 따라간다.",
+            "승인될 경우, 체험형 콘텐츠 사전 제작에 착수한다.",
           ],
         },
         {
           weekIndex: 8,
-          title: "확대 + 체험형 콘텐츠 구축",
+          title: "확장 + 경험형 구축",
           items: [
-            "유료 광고 비중을 높이고, 최고의 팬 페이지 게시물에서 신규 크리에이티브를 순환시킵니다.",
+            "Paid를 강하게 집행하고, 가장 강한 다큐멘터리 및 Clipping 신호에서 새로운 크리에이티브를 순환시킨다.",
             "체험형 콘텐츠 구축 진행 중 (웹 경험 및 팝업 스토어 운영 준비 포함).",
             "Discretionary 풀을 가장 신호가 강한 지원 레인으로 완전히 재배분한다.",
-            "데이터 수집 전에 CRM 인프라를 구축합니다.",
+            "데이터 수집 전에 CRM 인프라를 구축한다.",
           ],
         },
         {
           weekIndex: 9,
           title: "유지",
           items: [
-            "유료 광고 지출을 유지하며, 영상 시청자 및 프로필 방문자를 대상으로 심층적인 리타겟팅을 진행합니다.",
-            "콘셉트별 편집본 및 팬 제작 UGC 컴필레이션 콘텐츠를 팬 페이지에 게시합니다.",
-            "체험형 콘텐츠 구축은 팝업 스토어 운영 시점에 맞춰 계속 진행됩니다.",
+            "Paid 지출을 유지하며, 영상 시청자 및 프로필 방문자를 대상으로 심층적인 리타겟팅을 진행한다.",
+            "Clipping 및 자체 채널은 콘셉트별 편집본과 팬 제작 UGC 컴필레이션에 집중한다.",
+            "체험형 콘텐츠 구축은 팝업 스토어 운영 시점에 맞춰 계속 진행된다.",
           ],
         },
         {
           weekIndex: 10,
           title: "팝업 스토어 운영 (승인 시)",
           items: [
-            "LA 및 NY 팝업 스토어를 한정판 실물 굿즈와 함께 운영합니다.",
-            "현장에서 CRM으로의 데이터 수집 및 현장 판매를 진행합니다.",
-            "팬들이 촬영한 수천 개의 콘텐츠를 수집하고 클리핑합니다.",
-            "팝업 스토어 현장 영상을 즉시 클리핑 및 유료 광고 집행에 활용합니다.",
+            "LA 및 NY 팝업 스토어를 한정판 실물 굿즈와 함께 운영한다.",
+            "현장에서 CRM으로의 데이터 수집 및 현장 판매를 진행한다.",
+            "팬들이 촬영한 수천 개의 콘텐츠를 수집하고 클리핑한다.",
+            "팝업 스토어 현장 영상을 즉시 클리핑 및 Paid 집행에 활용한다.",
           ],
         },
         {
@@ -679,8 +611,8 @@ export const ekatorPlanKorean: StrategyPlanData = {
           title: "팝업 스토어 홍보 강화",
           items: [
             "최고 성과의 팝업 콘텐츠를 전 채널에서 부스팅한다.",
-            "유료는 에버그린 및 리타기팅 중심으로 전환한다.",
-            "팬 페이지가 액티베이션과 그 UGC를 증폭한다.",
+            "Paid는 에버그린 및 리타겟팅 중심으로 전환한다.",
+            "자체 채널, Clipping, Paid가 액티베이션과 UGC를 증폭한다.",
           ],
         },
         {
@@ -699,11 +631,11 @@ export const ekatorPlanKorean: StrategyPlanData = {
     },
 
     // ===================================================================
-    // 10. Investment
+    // 09. Investment
     // ===================================================================
     {
       type: "pricing",
-      number: "10",
+      number: "09",
       navLabel: "투자",
       title: "투자",
       intro:
