@@ -123,11 +123,13 @@ const html = `<!DOCTYPE html>
   .play-sub b{color:var(--ink)}
 
   /* embed */
-  .embed{position:relative;background:#000;border:1px solid var(--line-2);border-radius:2px;min-height:150px;display:flex;align-items:center;justify-content:center;overflow:hidden;margin-bottom:16px}
+  .embed{position:relative;background:#000;border:1px solid var(--line-2);border-radius:2px;min-height:170px;display:flex;align-items:center;justify-content:center;overflow:hidden;margin-bottom:16px}
+  .embed.loaded{display:block;min-height:0;border:0;background:transparent;overflow:visible}
   .embed-btn{background:rgba(253,55,55,.12);border:1px solid rgba(253,55,55,.5);color:#fff;font-family:var(--fm);font-size:12px;text-transform:uppercase;letter-spacing:.12em;padding:12px 18px;cursor:pointer;transition:background .2s;display:inline-flex;align-items:center;gap:9px}
   .embed-btn:hover{background:rgba(253,55,55,.24)}
   .embed-meta{position:absolute;bottom:8px;left:10px;font-family:var(--fm);font-size:9.5px;letter-spacing:.1em;color:var(--muted);text-transform:uppercase}
-  .embed iframe{width:100%;max-width:340px;height:560px;border:0;display:block}
+  .embed iframe{display:block;width:100%;max-width:325px;height:750px;margin:0 auto;border:0;background:#000;border-radius:2px}
+  @media(max-width:360px){.embed iframe{height:720px}}
 
   /* teardown */
   .tear{display:flex;flex-direction:column;gap:12px;margin-bottom:16px}
@@ -447,6 +449,7 @@ const html = `<!DOCTYPE html>
     if(!btn)return;
     btn.addEventListener('click',function(){
       var id=box.getAttribute('data-id');
+      box.classList.add('loaded');
       box.innerHTML='<iframe src="https://www.tiktok.com/embed/v2/'+id+'" allow="encrypted-media;" allowfullscreen loading="lazy"></iframe>';
     });
   });
