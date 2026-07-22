@@ -218,6 +218,23 @@ const html = `<!DOCTYPE html>
   .mcard p{margin:0;color:var(--muted);font-size:14px;line-height:1.55}
   .mcard p b{color:var(--ink)}
 
+  /* react-ready live section */
+  .react-momentum{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:0 0 28px}
+  @media(max-width:760px){.react-momentum{grid-template-columns:repeat(2,1fr)}}
+  .rm{background:var(--card-2);border:1px solid var(--line-2);border-left:2px solid var(--accent);padding:15px 16px}
+  .rm .rn{font-family:var(--fh);font-size:1.6rem;color:var(--ink);line-height:1}
+  .rm .rl{font-family:var(--fm);font-size:9px;text-transform:uppercase;letter-spacing:.12em;color:var(--secondary);margin-top:7px;display:block;line-height:1.4}
+  .react-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+  @media(max-width:960px){.react-grid{grid-template-columns:repeat(2,1fr)}}
+  @media(max-width:640px){.react-grid{grid-template-columns:1fr}}
+  .rplat{font-family:var(--fm);font-size:9px;text-transform:uppercase;letter-spacing:.12em;padding:3px 8px;border:1px solid var(--line-hover);color:var(--muted)}
+  .rmeta{display:flex;align-items:baseline;justify-content:space-between;gap:8px;margin:14px 0 2px}
+  .rmeta .rh{font-size:14.5px;color:var(--ink);font-weight:600}
+  .rmeta .rv{font-family:var(--fm);font-size:11px;color:var(--accent);white-space:nowrap}
+  .rdate{font-family:var(--fm);font-size:10px;color:var(--secondary);letter-spacing:.06em;text-transform:uppercase;margin-bottom:11px}
+  .rwhy{margin:0;font-size:14px;color:var(--muted);line-height:1.5}
+  .rwhy b{color:var(--ink)}
+
   footer{margin-top:56px;border-top:1px solid var(--line);padding:26px 0 60px}
   footer .fn{color:var(--secondary);font-size:12.5px;line-height:1.6;max-width:900px}
   footer .fn b{color:var(--muted)}
@@ -268,7 +285,7 @@ const html = `<!DOCTYPE html>
   <div class="navbar">
     <div class="navbar-in">
       <a class="nb-brand" href="#top">Miguel · Damned</a>
-      <div class="nb-jump"><a href="#engagement">Engagement</a><a href="#method">Method</a></div>
+      <div class="nb-jump"><a href="#react">React-Ready</a><a href="#engagement">Engagement</a><a href="#method">Method</a></div>
       <div class="nb-filters" id="filter">
         <button class="chip active" data-f="all">All 9</button>
         <button class="chip" data-f="catalog">Catalog plays</button>
@@ -287,6 +304,102 @@ const html = `<!DOCTYPE html>
       <div class="ctx-card"><span class="k">What it takes from him</span><p>Mostly himself. Phone quality. Reaction and archival first. We brief and edit; he shoots light.</p></div>
     </div>
     <p class="rule-line">Each teardown below is grounded in <b>frame-level video AI</b> run on the actual clip: what literally happens in the first three seconds, how it is built, and why it works. View counts are current as of build.</p>
+  </section>
+
+  <!-- SECTION: REACT-READY (LIVE) -->
+  <section class="sec wrap" id="react">
+    <div class="sec-head">
+      <div class="row"><span class="num">LIVE</span><span class="ln"></span></div>
+      <h2>React-Ready: Damned In The Wild</h2>
+      <p class="desc">The top posts using the Damned sound in the last 14 days, ranked by views. These are the ones for Miguel to react to, stitch, or duet while the moment is hot.</p>
+    </div>
+    <div class="react-momentum">
+      <div class="rm"><div class="rn">+580K</div><span class="rl">New posts on the sound this month (+83%)</span></div>
+      <div class="rm"><div class="rn">+20.3M</div><span class="rl">Spotify streams added this month (+51%)</span></div>
+      <div class="rm"><div class="rn">+57%</div><span class="rl">Shazams this month</span></div>
+      <div class="rm"><div class="rn">344M</div><span class="rl">Views across top posts on the sound</span></div>
+    </div>
+    <div class="react-grid">
+
+      <article class="card">
+        <div class="embed" data-platform="ig" data-code="Dap_cMixty2"><button class="embed-btn" type="button">&#9654; Load the clip</button><span class="embed-meta">Instagram &middot; @ava.rrosee_</span></div>
+        <div class="rmeta"><span class="rh">@ava.rrosee_</span><span class="rv">4.8M views</span></div>
+        <div class="rdate">Instagram &middot; Posted Jul 11</div>
+        <p class="rwhy"><b>React angle:</b> a couple's milestone edit set to the hook. The song is already the soundtrack to real love stories. A quote or duet with a line about writing it lands.</p>
+      </article>
+
+      <article class="card">
+        <div class="embed" data-platform="ig" data-code="DayD3jVukoB"><button class="embed-btn" type="button">&#9654; Load the clip</button><span class="embed-meta">Instagram &middot; @eviekking</span></div>
+        <div class="rmeta"><span class="rh">@eviekking</span><span class="rv">3.7M views</span></div>
+        <div class="rdate">Instagram &middot; Posted Jul 18</div>
+        <p class="rwhy"><b>React angle:</b> a playful, self-aware post riding the sound. Easy to stitch with a knowing reaction.</p>
+      </article>
+
+      <article class="card">
+        <div class="embed" data-platform="tt" data-id="7663902163596234016"><button class="embed-btn" type="button">&#9654; Load the clip</button><span class="embed-meta">TikTok &middot; @brownsugarr_tee</span></div>
+        <div class="rmeta"><span class="rh">@brownsugarr_tee</span><span class="rv">2.6M &middot; 55K shares</span></div>
+        <div class="rdate">TikTok &middot; Posted Jul 18</div>
+        <p class="rwhy"><b>React angle:</b> the most-shared clip on the sound right now. Do the format yourself and it travels.</p>
+      </article>
+
+      <article class="card">
+        <div class="embed" data-platform="tt" data-id="7660656541548170516"><button class="embed-btn" type="button">&#9654; Load the clip</button><span class="embed-meta">TikTok &middot; @user3553097774</span></div>
+        <div class="rmeta"><span class="rh">@user3553097774</span><span class="rv">2.6M views</span></div>
+        <div class="rdate">TikTok &middot; Posted Jul 9</div>
+        <p class="rwhy"><b>React angle:</b> one of the dances driving the sound. Trying it on camera is instant participation.</p>
+      </article>
+
+      <article class="card">
+        <div class="embed" data-platform="tt" data-id="7663360046604324117"><button class="embed-btn" type="button">&#9654; Load the clip</button><span class="embed-meta">TikTok &middot; @kaitlyn_nkosazana</span></div>
+        <div class="rmeta"><span class="rh">@kaitlyn_nkosazana</span><span class="rv">2.0M views</span></div>
+        <div class="rdate">TikTok &middot; Posted Jul 17</div>
+        <p class="rwhy"><b>React angle:</b> a fan tagging Miguel directly, pure love for the song. The warmest, easiest one to co-sign.</p>
+      </article>
+
+      <article class="card">
+        <div class="embed" data-platform="tt" data-id="7664693832973421854"><button class="embed-btn" type="button">&#9654; Load the clip</button><span class="embed-meta">TikTok &middot; @stupid4188</span></div>
+        <div class="rmeta"><span class="rh">@stupid4188</span><span class="rv">1.4M views</span></div>
+        <div class="rdate">TikTok &middot; Posted Jul 20</div>
+        <p class="rwhy"><b>React angle:</b> a fresh clip still climbing. Get on it early while it is rising.</p>
+      </article>
+
+      <article class="card">
+        <div class="embed" data-platform="tt" data-id="7664100646861294878"><button class="embed-btn" type="button">&#9654; Load the clip</button><span class="embed-meta">TikTok &middot; @lovelyjuice23</span></div>
+        <div class="rmeta"><span class="rh">@lovelyjuice23</span><span class="rv">1.4M views</span></div>
+        <div class="rdate">TikTok &middot; Posted Jul 19</div>
+        <p class="rwhy"><b>React angle:</b> a light dance take on the sound. Duet it or try the move.</p>
+      </article>
+
+      <article class="card">
+        <div class="embed" data-platform="tt" data-id="7660023889451306254"><button class="embed-btn" type="button">&#9654; Load the clip</button><span class="embed-meta">TikTok &middot; @threeohfine</span></div>
+        <div class="rmeta"><span class="rh">@threeohfine</span><span class="rv">1.2M views</span></div>
+        <div class="rdate">TikTok &middot; Posted Jul 8</div>
+        <p class="rwhy"><b>React angle:</b> a yearning edit that tags Miguel by name. The emotional lane the song lives in.</p>
+      </article>
+
+      <article class="card">
+        <div class="embed" data-platform="tt" data-id="7660588814468943135"><button class="embed-btn" type="button">&#9654; Load the clip</button><span class="embed-meta">TikTok &middot; @gottaluvemman</span></div>
+        <div class="rmeta"><span class="rh">@gottaluvemman</span><span class="rv">1.1M views</span></div>
+        <div class="rdate">TikTok &middot; Posted Jul 9</div>
+        <p class="rwhy"><b>React angle:</b> the hook used straight and sincere. A simple to-camera reaction honors it.</p>
+      </article>
+
+      <article class="card">
+        <div class="embed" data-platform="tt" data-id="7661389074678189326"><button class="embed-btn" type="button">&#9654; Load the clip</button><span class="embed-meta">TikTok &middot; @mckinley.edwards</span></div>
+        <div class="rmeta"><span class="rh">@mckinley.edwards</span><span class="rv">1.1M views</span></div>
+        <div class="rdate">TikTok &middot; Posted Jul 11</div>
+        <p class="rwhy"><b>React angle:</b> a relatable everyday clip carrying the sound. Reacting keeps the song in the feed.</p>
+      </article>
+
+      <article class="card">
+        <div class="embed" data-platform="tt" data-id="7659991851331554590"><button class="embed-btn" type="button">&#9654; Load the clip</button><span class="embed-meta">TikTok &middot; @_user09808</span></div>
+        <div class="rmeta"><span class="rh">@_user09808</span><span class="rv">1.1M views</span></div>
+        <div class="rdate">TikTok &middot; Posted Jul 8</div>
+        <p class="rwhy"><b>React angle:</b> a relationship post in the song's romance lane. Quote it with a line about the record.</p>
+      </article>
+
+    </div>
+    <p class="tbl-note">Snapshot of the top posts using the Damned sound over the last 14 days, ranked by views (current as of July 21, 2026). This set moves fast and should be refreshed weekly.</p>
   </section>
 
   <!-- SECTION 1: CATALOG PLAYS -->
@@ -530,7 +643,7 @@ const html = `<!DOCTYPE html>
 
   // filters
   var chips=document.querySelectorAll('#filter .chip');
-  var cards=document.querySelectorAll('.card');
+  var cards=document.querySelectorAll('#grid-catalog .card, #grid-format .card');
   var secCat=document.getElementById('catalog'), secFmt=document.getElementById('format');
   chips.forEach(function(c){c.addEventListener('click',function(){
     chips.forEach(function(x){x.classList.remove('active');});c.classList.add('active');
@@ -545,9 +658,14 @@ const html = `<!DOCTYPE html>
     var btn=box.querySelector('.embed-btn');
     if(!btn)return;
     btn.addEventListener('click',function(){
-      var id=box.getAttribute('data-id');
       box.classList.add('loaded');
-      box.innerHTML='<iframe src="https://www.tiktok.com/embed/v2/'+id+'" allow="encrypted-media;" allowfullscreen loading="lazy"></iframe>';
+      if(box.getAttribute('data-platform')==='ig'){
+        var code=box.getAttribute('data-code');
+        box.innerHTML='<iframe src="https://www.instagram.com/p/'+code+'/embed" allowtransparency="true" allowfullscreen loading="lazy" style="width:100%;max-width:340px;height:640px;border:0;margin:0 auto;display:block;background:#000;border-radius:2px"></iframe>';
+      } else {
+        var id=box.getAttribute('data-id');
+        box.innerHTML='<iframe src="https://www.tiktok.com/embed/v2/'+id+'" allow="encrypted-media;" allowfullscreen loading="lazy"></iframe>';
+      }
     });
   });
 })();
