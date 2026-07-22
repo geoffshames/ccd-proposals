@@ -283,8 +283,8 @@ const html = `<!DOCTYPE html>
     <p class="lead">"Damned" caught fire on its own. That is rare and it is <b>perishable</b>. The job is to get Miguel's face on the surge before fan edits own the moment, and to point that attention back at the catalog and the owned list. Everything below is a peer doing exactly that with one of their own records.</p>
     <div class="ctx-grid">
       <div class="ctx-card"><span class="k">The situation</span><p>An older Miguel record is outstreaming his new work, unpushed. The window to act like it is a moment, not an accident, is short.</p></div>
-      <div class="ctx-card"><span class="k">The one rule</span><p>Not a repeat of any past viral moment and not a label re-push. Every reference here is an artist leaning into <b>their own</b> song, <b>their own</b> way: a reaction, a story, a live take, a milestone.</p></div>
-      <div class="ctx-card"><span class="k">What it takes from him</span><p>Mostly himself. Phone quality. Reaction and archival first. We brief and edit; he shoots light. No stunts, nothing that needs a production.</p></div>
+      <div class="ctx-card"><span class="k">The approach</span><p>Every reference here is an artist leaning into <b>their own</b> song, <b>their own</b> way: a reaction, a story, a live take, a milestone. Artist-led and authentic, not a polished ad.</p></div>
+      <div class="ctx-card"><span class="k">What it takes from him</span><p>Mostly himself. Phone quality. Reaction and archival first. We brief and edit; he shoots light.</p></div>
     </div>
     <p class="rule-line">Each teardown below is grounded in <b>frame-level video AI</b> run on the actual clip: what literally happens in the first three seconds, how it is built, and why it works. View counts are current as of build.</p>
   </section>
@@ -411,7 +411,7 @@ const html = `<!DOCTYPE html>
           <div class="tblock"><span class="tl">How it is built</span><p>The prompt hooks, then she answers with hyper-specific childhood photos (snorkel mask, witch costume, family shots). The record does the branding in the background.</p></div>
           <div class="tblock why"><span class="tl">Why it works</span><p>The song rides under a format people already want to watch and share. She looks meme-literate and personal, and the track gets the reach of the trend.</p></div>
         </div>
-        <div class="mig"><span class="ml">Make it "Damned"</span><p>Miguel answers the "Damned" moment with his own archive: a trend prompt over old footage from that era, his record underneath. He looks in on the joke and the song travels on a native format. Steal the structure, not the cover trick.</p></div>
+        <div class="mig"><span class="ml">Make it "Damned"</span><p>Miguel answers the "Damned" moment with his own archive: a trend prompt over old footage from that era, his record underneath. He looks in on the joke and the song travels on a native format. Adapt the format, not the cover itself.</p></div>
         <div class="card-foot"><span class="also"></span><a class="src" href="https://www.tiktok.com/@sza/video/7619854402848918814" target="_blank" rel="noopener">View original &#8599;</a></div>
       </article>
 
@@ -511,13 +511,12 @@ const html = `<!DOCTYPE html>
       <div class="mcard"><span class="s">02 / Sourcing</span><h4>Real posts, verified live</h4><p>Every clip is a real post pulled from the artist's official account with its live stats. Each URL was verified embeddable before it went on this page. Nothing here is a mockup or a dead link.</p></div>
       <div class="mcard"><span class="s">03 / Frame-level analysis</span><h4>Video AI on the actual footage</h4><p>The featured clips were downloaded and run through TwelveLabs video AI (Pegasus and Marengo), so the first-three-seconds, beat structure, and why-it-works reads describe what literally happens on screen, not captions or guesswork.</p></div>
       <div class="mcard"><span class="s">04 / Engagement data</span><h4>Live platform metrics</h4><p>Plays, likes, comments, and shares were pulled from each post and used to compute like-rate and share-rate. The 21-post sample is the basis for the engagement ranking above. Counts drift; they are current as of build.</p></div>
-      <div class="mcard"><span class="s">05 / Guardrails</span><h4>On-brand by design</h4><p>Every recommendation keeps Miguel in frame on his own terms, reaction and archival first, light to shoot. No re-push framing of past moments, no stunts at his scale. We brief and edit; he shoots.</p></div>
-      <div class="mcard"><span class="s">06 / Excluded</span><h4>One deliberate omission</h4><p>A well-known catalog-resurgence case was left out for reputational reasons despite fitting the pattern on paper. Fit alone does not clear a name for a client-facing deck.</p></div>
+      <div class="mcard"><span class="s">05 / Approach</span><h4>Artist-led by design</h4><p>Every recommendation keeps Miguel in frame on his own terms, reaction and archival first, and light to shoot. We brief and edit; he shoots.</p></div>
     </div>
   </section>
 
   <footer class="wrap">
-    <p class="fn"><b>Notes.</b> View counts are current as of July 21, 2026 and will drift. Every clip was verified live and embeddable at build. Frame-level teardowns were produced with TwelveLabs video AI (Pegasus and Marengo) run on the downloaded clips, not on captions or vibes. Format-steal examples are not strictly catalog records; they are included because the structure travels. One well-known catalog-resurgence case (d4vd, "Here With Me") was deliberately left off for reputational reasons.</p>
+    <p class="fn"><b>Notes.</b> View counts are current as of July 21, 2026 and will drift. Every clip was verified live and embeddable at build. Frame-level teardowns were produced with TwelveLabs video AI (Pegasus and Marengo) run on the downloaded clips, not on captions alone. Format-steal examples are not strictly catalog records; they are included because the structure travels.</p>
   </footer>
 </div>
 
