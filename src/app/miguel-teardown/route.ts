@@ -65,7 +65,12 @@ const html = `<!DOCTYPE html>
   body.unlocked .shell{opacity:1}
 
   /* cover */
-  .cover{position:relative;min-height:88vh;display:flex;flex-direction:column;justify-content:space-between;padding:80px clamp(24px,5vw,96px) 56px;max-width:1340px;margin:0 auto}
+  .cover{position:relative;min-height:88vh;display:flex;flex-direction:column;justify-content:space-between;padding:80px clamp(24px,5vw,96px) 56px;max-width:1340px;margin:0 auto;overflow:hidden}
+  .cover-hero{position:absolute;inset:0;z-index:0;pointer-events:none}
+  .cover-hero::before{content:"";position:absolute;inset:0;background:url('/images/miguel-damned/hero-bg.jpg') right center/cover no-repeat;filter:grayscale(.4) contrast(1.05) brightness(.92);opacity:.30;-webkit-mask-image:linear-gradient(90deg,transparent 0%,transparent 34%,rgba(0,0,0,.55) 64%,#000 100%);mask-image:linear-gradient(90deg,transparent 0%,transparent 34%,rgba(0,0,0,.55) 64%,#000 100%)}
+  .cover-hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,var(--bg) 0%,transparent 20%,transparent 60%,var(--bg) 100%),radial-gradient(120% 85% at 82% 42%,rgba(253,55,55,.12),transparent 60%)}
+  .cover-top,.cover-mid,.cover-foot{position:relative;z-index:1}
+  @media(max-width:700px){.cover-hero::before{opacity:.18}}
   .cover-top{display:flex;justify-content:space-between;gap:18px}
   .cover-mid{flex:1;display:flex;flex-direction:column;justify-content:center;padding:44px 0}
   .cover-title{font-family:var(--fh);font-size:clamp(3.2rem,12vw,10.5rem);line-height:.9;letter-spacing:-.02em}
@@ -191,6 +196,7 @@ const html = `<!DOCTYPE html>
 <div class="shell">
   <!-- COVER -->
   <section class="cover" id="top">
+    <div class="cover-hero" aria-hidden="true"></div>
     <div class="cover-top"><span class="mono">Competitive Teardown / Content References</span><span class="mono">July 2026</span></div>
     <div class="cover-mid">
       <h1 class="cover-title">MIGUEL<span class="sm">"DAMNED" / WHAT YOUR PEERS ARE DOING</span></h1>
