@@ -327,6 +327,81 @@ export default function HellbillyHollowClient() {
         </div>
       </section>
 
+      {/* ─── Assets Needed ─── */}
+      <section className="px-6 md:px-12 lg:px-20 py-20 md:py-28 max-w-4xl mx-auto">
+        <div className="text-[11px] font-mono text-accent tracking-[0.2em] uppercase mb-4">
+          Assets Needed
+        </div>
+        <h2 className="text-[clamp(1.5rem,3.5vw,2.5rem)] font-bold leading-tight mb-3">
+          WHAT WE NEED FROM YOU
+        </h2>
+        <p className="text-[14px] md:text-[15px] text-text-muted leading-relaxed mb-10 max-w-2xl">
+          To execute this campaign, we'll need the following assets delivered. Please provide the highest resolution files available — we can always downscale, but we can't upscale.
+        </p>
+
+        <div className="space-y-3">
+          {/* Logo */}
+          <div className="flex items-start gap-4 p-5 bg-bg-card border border-[#1e1e1e] hover:border-[#333] transition-colors group">
+            <div className="shrink-0 w-7 h-7 border border-accent/40 flex items-center justify-center mt-0.5">
+              <span className="text-accent text-[12px]">☐</span>
+            </div>
+            <div className="flex-1 min-w-0">
+              <div className="flex items-baseline gap-3 flex-wrap mb-1">
+                <h3 className="text-[16px] md:text-[18px] font-bold text-text-primary">Logo Image</h3>
+                <span className="text-[12px] font-mono text-accent">1080×1080</span>
+              </div>
+              <p className="text-[13px] text-text-muted leading-relaxed">PSD file needed — layered source with transparent background</p>
+            </div>
+          </div>
+
+          {/* Facebook */}
+          <div className="p-5 bg-bg-card border border-[#1e1e1e] hover:border-[#333] transition-colors">
+            <div className="flex items-center gap-3 mb-4">
+              <div className="shrink-0 w-7 h-7 border border-accent/40 flex items-center justify-center">
+                <span className="text-accent text-[12px]">☐</span>
+              </div>
+              <h3 className="text-[16px] md:text-[18px] font-bold text-text-primary">Facebook</h3>
+            </div>
+            <div className="ml-10 space-y-3">
+              <div className="flex items-baseline gap-3 flex-wrap">
+                <span className="text-[14px] text-text-muted">Cover Photo</span>
+                <span className="text-[12px] font-mono text-accent">820×312</span>
+              </div>
+              <div className="flex items-baseline gap-3 flex-wrap">
+                <span className="text-[14px] text-text-muted">Event Cover</span>
+                <span className="text-[12px] font-mono text-accent">1920×1005</span>
+              </div>
+            </div>
+          </div>
+
+          {/* Twitter */}
+          <div className="flex items-start gap-4 p-5 bg-bg-card border border-[#1e1e1e] hover:border-[#333] transition-colors group">
+            <div className="shrink-0 w-7 h-7 border border-accent/40 flex items-center justify-center mt-0.5">
+              <span className="text-accent text-[12px]">☐</span>
+            </div>
+            <div className="flex-1 min-w-0">
+              <div className="flex items-baseline gap-3 flex-wrap mb-1">
+                <h3 className="text-[16px] md:text-[18px] font-bold text-text-primary">Twitter Cover Photo</h3>
+                <span className="text-[12px] font-mono text-accent">1500×500</span>
+              </div>
+            </div>
+          </div>
+
+          {/* YouTube */}
+          <div className="flex items-start gap-4 p-5 bg-bg-card border border-[#1e1e1e] hover:border-[#333] transition-colors group">
+            <div className="shrink-0 w-7 h-7 border border-accent/40 flex items-center justify-center mt-0.5">
+              <span className="text-accent text-[12px]">☐</span>
+            </div>
+            <div className="flex-1 min-w-0">
+              <div className="flex items-baseline gap-3 flex-wrap mb-1">
+                <h3 className="text-[16px] md:text-[18px] font-bold text-text-primary">YouTube Banner</h3>
+                <span className="text-[12px] font-mono text-accent">2560×1440</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* ─── Footer ─── */}
       <footer className="border-t border-[#1a1a1a] px-6 md:px-12 lg:px-20 py-10">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
