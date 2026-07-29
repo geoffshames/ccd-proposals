@@ -842,90 +842,8 @@ export const bhaviViajeDeIdaPlan: StrategyPlanData = {
     },
 
     {
-      type: "targets",
-      number: "09",
-      navLabel: "Outcomes",
-      title: "Directional Outcome Model",
-      intro:
-        "The model separates what ad platforms can count from what the release must ultimately achieve. Landing-page views, DSP outclicks, and TrueView views are forecastable. Actual streaming lift is read against the pre-campaign DSP baseline and cannot be guaranteed from ad clicks.",
-      targets: [
-        {
-          metric: "Release-Page Landings",
-          baseline: "0 paid",
-          target: "~37K base",
-          window: "July 30–September 17",
-          rationale:
-            "Modeled range is approximately 26K to 56K across Meta and TikTok. The base case combines lower-cost LATAM delivery with a protected higher-cost U.S. pool.",
-          measurement:
-            "Platform landing-page-view events reconciled with smart-link sessions, UTMs, market, network, and creative.",
-          featured: true,
-        },
-        {
-          metric: "Outbound DSP Clicks",
-          baseline: "Event not live",
-          target: "~24K base",
-          window: "Campaign total",
-          rationale:
-            "The base case assumes 65% of measured release-page landings continue to a DSP. The broader modeled range is approximately 16K to 39K at 60–70% outclick rates.",
-          measurement:
-            "Smart-link outbound click event by DSP, source, market, and release state. This is a streaming-intent proxy, not a counted stream.",
-        },
-        {
-          metric: "CUANTO VALE YouTube Views",
-          baseline: "0 paid",
-          target: "~103K base",
-          window: "August 6–September 17",
-          rationale:
-            "The planning range is approximately 69K to 154K counted Google Ads views based on region-specific CPV assumptions and protected U.S. spend.",
-          measurement:
-            "Google Ads TrueView views and CPV, reconciled with YouTube Analytics, public-counter movement, view rate, and completion.",
-        },
-        {
-          metric: "Streaming Trajectory",
-          baseline: "3.85M ML / +2.1% 30D",
-          target: "Beat prelaunch trend",
-          window: "7, 14, and 21 days post-EP",
-          rationale:
-            "Bhavi is recovering from a May listener peak rather than starting from zero. The campaign should extend that rebound and increase release-track share without claiming every stream as paid.",
-          measurement:
-            "Daily artist listeners and streams versus the 28-day pre-campaign baseline; EP track mix, saves, streams per listener, country lift, and second-week retention.",
-        },
-        {
-          metric: "Owned-Audience Growth",
-          baseline: "Capture July 30",
-          target: "Positive net growth",
-          window: "Campaign total",
-          rationale:
-            "Follower and subscriber gains are secondary, but they determine whether this spend creates an asset for the next release rather than only a one-week spike.",
-          measurement:
-            "Net Spotify followers, Instagram followers, TikTok followers, YouTube subscribers, profile visits, saves, and warm-audience pool size.",
-        },
-        {
-          metric: "U.S. Learning Pool",
-          baseline: "No protected flight",
-          target: "30% spend held",
-          window: "Every phase",
-          rationale:
-            "U.S. Hispanic delivery will cost more than LATAM. The strategic read disappears if platforms are allowed to reallocate those dollars toward cheaper countries.",
-          measurement:
-            "Spend delivery, qualified landing cost, DSP outclicks, video quality, and listener trend reported separately for the United States.",
-        },
-      ],
-      measurementPrinciples: [
-        "Forecasts are directional planning scenarios, not auction or streaming guarantees.",
-        "A DSP outclick is not a stream. Streaming success is validated in DSP and artist analytics.",
-        "Regional budget protection is evaluated on spend; outcome share is expected to skew toward LATAM.",
-        "The first 72 hours calibrate costs and creative. The 7-, 14-, and 21-day reads evaluate release quality and retention.",
-      ],
-      disclaimer:
-        "Base planning assumptions: Meta landing-page view cost of $0.18 LATAM / $0.55 U.S.; TikTok landing-page view cost of $0.22 LATAM / $0.70 U.S.; YouTube CPV of $0.012 LATAM / $0.040 U.S. Low and high scenarios use wider region-specific cost bands.",
-      footnote:
-        "Confidence is medium-low before launch because no Bhavi-specific paid campaign history was supplied. Assumptions should be replaced with observed costs after the first 72 hours.",
-    },
-
-    {
       type: "pricing",
-      number: "10",
+      number: "09",
       navLabel: "Investment",
       title: "$12,000 All-In Investment",
       intro:
@@ -957,7 +875,7 @@ export const bhaviViajeDeIdaPlan: StrategyPlanData = {
 
     {
       type: "vertical",
-      number: "11",
+      number: "10",
       navLabel: "Launch",
       title: "Launch Controls, Dependencies & Sources",
       philosophy:
