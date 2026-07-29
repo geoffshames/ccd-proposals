@@ -7,10 +7,13 @@ export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
 export default async function OpenGraphImage() {
+  const assetPath = (name: string) =>
+    decodeURIComponent(new URL(name, import.meta.url).pathname);
+
   const [n27, logo, texture] = await Promise.all([
-    readFile(new URL("./n27-bold.otf", import.meta.url)),
-    readFile(new URL("./og-logo.png", import.meta.url)),
-    readFile(new URL("./og-texture.jpg", import.meta.url)),
+    readFile(assetPath("./n27-bold.otf")),
+    readFile(assetPath("./og-logo.png")),
+    readFile(assetPath("./og-texture.jpg")),
   ]);
 
   const logoSrc = `data:image/png;base64,${logo.toString("base64")}`;
