@@ -267,7 +267,7 @@ const html = `<!DOCTYPE html>
   <!-- COVER -->
   <section class="cover" id="top">
     <div class="cover-hero" aria-hidden="true"></div>
-    <div class="cover-top"><span class="mono">Competitive Teardown / Content References</span><span class="mono">July 2026</span></div>
+    <div class="cover-top"><span class="mono">Competitive Teardown / Content References</span><span class="mono">August 2026</span></div>
     <div class="cover-mid">
       <h1 class="cover-title">MIGUEL<span class="sm">"DAMNED" / WHAT YOUR PEERS ARE DOING</span></h1>
       <div class="cover-subwrap">
@@ -311,56 +311,63 @@ const html = `<!DOCTYPE html>
     <div class="sec-head">
       <div class="row"><span class="num">LIVE</span><span class="ln"></span></div>
       <h2>React-Ready: Damned In The Wild</h2>
-      <p class="desc">The top posts using the Damned sound in the last 14 days, ranked by views. These are the ones for Miguel to react to, stitch, or duet while the moment is hot.</p>
+      <p class="desc">The top posts using the Damned sound right now, ranked by views. These are the ones for Miguel to react to, stitch, or duet while the moment is hot.</p>
     </div>
     <div class="react-momentum">
-      <div class="rm"><div class="rn">+580K</div><span class="rl">New posts on the sound this month (+83%)</span></div>
-      <div class="rm"><div class="rn">+20.3M</div><span class="rl">Spotify streams added this month (+51%)</span></div>
-      <div class="rm"><div class="rn">+57%</div><span class="rl">Shazams this month</span></div>
-      <div class="rm"><div class="rn">344M</div><span class="rl">Views across top posts on the sound</span></div>
+      <div class="rm"><div class="rn">172,515</div><span class="rl">New posts on the sound, last 14 days</span></div>
+      <div class="rm"><div class="rn">14.7M</div><span class="rl">Streams in the last 14 days</span></div>
+      <div class="rm"><div class="rn">1.51M</div><span class="rl">Lifetime posts using the sound</span></div>
+      <div class="rm"><div class="rn">+57%</div><span class="rl">Shazams month over month</span></div>
     </div>
     <div class="react-grid">
 
       <article class="card">
-        <div class="embed" data-platform="ig" data-code="Dap_cMixty2"><button class="embed-btn" type="button">&#9654; Load the clip</button><span class="embed-meta">Instagram &middot; @ava.rrosee_</span></div>
-        <div class="rmeta"><span class="rh">@ava.rrosee_</span><span class="rv">4.8M views</span></div>
-        <div class="rdate">Instagram &middot; Posted Jul 11</div>
-        <p class="rwhy"><b>React angle:</b> a couple's milestone edit set to the hook. The song is already the soundtrack to real love stories. A quote or duet with a line about writing it lands.</p>
+        <div class="embed" data-platform="tt" data-id="7667529904593882398"><button class="embed-btn" type="button">&#9654; Load the clip</button><span class="embed-meta">TikTok &middot; @shootbyshelking</span></div>
+        <div class="rmeta"><span class="rh">@shootbyshelking</span><span class="rv">32.1M &middot; 456K shares</span></div>
+        <div class="rdate">TikTok &middot; Posted Jul 28 &middot; 18.5% like rate</div>
+        <p class="rwhy"><b>Start here.</b> A photographer's graduation shoot, captioned "when you trusted the photographer with less than 300 followers." The biggest post on the sound by a wide margin, with 19K comments of people in their feelings. A warm co-sign from Miguel lands in the middle of all of it.</p>
       </article>
 
       <article class="card">
-        <div class="embed" data-platform="ig" data-code="DayD3jVukoB"><button class="embed-btn" type="button">&#9654; Load the clip</button><span class="embed-meta">Instagram &middot; @eviekking</span></div>
-        <div class="rmeta"><span class="rh">@eviekking</span><span class="rv">3.7M views</span></div>
-        <div class="rdate">Instagram &middot; Posted Jul 18</div>
-        <p class="rwhy"><b>React angle:</b> a playful, self-aware post riding the sound. Easy to stitch with a knowing reaction.</p>
+        <div class="embed" data-platform="tt" data-id="7665375081379482902"><button class="embed-btn" type="button">&#9654; Load the clip</button><span class="embed-meta">TikTok &middot; @secretspama00</span></div>
+        <div class="rmeta"><span class="rh">@secretspama00</span><span class="rv">3.0M &middot; 55K shares</span></div>
+        <div class="rdate">TikTok &middot; Posted Jul 22 &middot; 21.3% like rate</div>
+        <p class="rwhy"><b>React angle:</b> tagged #damned outright, on the "just friends" ache the song lives in. 75K saves means people are keeping it. Quote it with a line about writing the record.</p>
       </article>
 
       <article class="card">
-        <div class="embed" data-platform="tt" data-id="7663902163596234016"><button class="embed-btn" type="button">&#9654; Load the clip</button><span class="embed-meta">TikTok &middot; @brownsugarr_tee</span></div>
-        <div class="rmeta"><span class="rh">@brownsugarr_tee</span><span class="rv">2.6M &middot; 55K shares</span></div>
-        <div class="rdate">TikTok &middot; Posted Jul 18</div>
-        <p class="rwhy"><b>React angle:</b> the most-shared clip on the sound right now. Do the format yourself and it travels.</p>
+        <div class="embed" data-platform="tt" data-id="7666138239371332885"><button class="embed-btn" type="button">&#9654; Load the clip</button><span class="embed-meta">TikTok &middot; @sx.vcid</span></div>
+        <div class="rmeta"><span class="rh">@sx.vcid</span><span class="rv">2.9M &middot; 36K shares</span></div>
+        <div class="rdate">TikTok &middot; Posted Jul 24 &middot; 20.0% like rate</div>
+        <p class="rwhy"><b>React angle:</b> a yearning text-thread post, the single most on-theme use of the hook. This is the lane the song owns.</p>
       </article>
 
       <article class="card">
-        <div class="embed" data-platform="tt" data-id="7660656541548170516"><button class="embed-btn" type="button">&#9654; Load the clip</button><span class="embed-meta">TikTok &middot; @user3553097774</span></div>
-        <div class="rmeta"><span class="rh">@user3553097774</span><span class="rv">2.6M views</span></div>
-        <div class="rdate">TikTok &middot; Posted Jul 9</div>
-        <p class="rwhy"><b>React angle:</b> one of the dances driving the sound. Trying it on camera is instant participation.</p>
-      </article>
-
-      <article class="card">
-        <div class="embed" data-platform="tt" data-id="7663360046604324117"><button class="embed-btn" type="button">&#9654; Load the clip</button><span class="embed-meta">TikTok &middot; @kaitlyn_nkosazana</span></div>
-        <div class="rmeta"><span class="rh">@kaitlyn_nkosazana</span><span class="rv">2.0M views</span></div>
-        <div class="rdate">TikTok &middot; Posted Jul 17</div>
-        <p class="rwhy"><b>React angle:</b> a fan tagging Miguel directly, pure love for the song. The warmest, easiest one to co-sign.</p>
+        <div class="embed" data-platform="tt" data-id="7666345553596452117"><button class="embed-btn" type="button">&#9654; Load the clip</button><span class="embed-meta">TikTok &middot; @sx.vcid</span></div>
+        <div class="rmeta"><span class="rh">@sx.vcid</span><span class="rv">2.4M &middot; 61K saves</span></div>
+        <div class="rdate">TikTok &middot; Posted Jul 25 &middot; 25.1% like rate</div>
+        <p class="rwhy"><b>React angle:</b> the highest like rate of any post on the sound. Small reach, enormous resonance. Proof the quiet, personal format outperforms the loud one.</p>
       </article>
 
       <article class="card">
         <div class="embed" data-platform="tt" data-id="7664693832973421854"><button class="embed-btn" type="button">&#9654; Load the clip</button><span class="embed-meta">TikTok &middot; @stupid4188</span></div>
-        <div class="rmeta"><span class="rh">@stupid4188</span><span class="rv">1.4M views</span></div>
+        <div class="rmeta"><span class="rh">@stupid4188</span><span class="rv">5.1M views</span></div>
         <div class="rdate">TikTok &middot; Posted Jul 20</div>
-        <p class="rwhy"><b>React angle:</b> a fresh clip still climbing. Get on it early while it is rising.</p>
+        <p class="rwhy"><b>React angle:</b> a carnival claw-machine moment, "thanks mom for saying no." Light, funny, and still climbing. Easy to duet.</p>
+      </article>
+
+      <article class="card">
+        <div class="embed" data-platform="tt" data-id="7663902163596234016"><button class="embed-btn" type="button">&#9654; Load the clip</button><span class="embed-meta">TikTok &middot; @brownsugarr_tee</span></div>
+        <div class="rmeta"><span class="rh">@brownsugarr_tee</span><span class="rv">5.2M views</span></div>
+        <div class="rdate">TikTok &middot; Posted Jul 18</div>
+        <p class="rwhy"><b>React angle:</b> one of the most-shared clips on the sound. Do the format yourself and it travels.</p>
+      </article>
+
+      <article class="card">
+        <div class="embed" data-platform="ig" data-code="DayD3jVukoB"><button class="embed-btn" type="button">&#9654; Load the clip</button><span class="embed-meta">Instagram &middot; @eviekking</span></div>
+        <div class="rmeta"><span class="rh">@eviekking</span><span class="rv">4.5M views</span></div>
+        <div class="rdate">Instagram &middot; Posted Jul 18</div>
+        <p class="rwhy"><b>React angle:</b> the biggest Instagram post on the sound. Covers the Reels side, where the song is growing fastest off a small base.</p>
       </article>
 
       <article class="card">
@@ -371,37 +378,22 @@ const html = `<!DOCTYPE html>
       </article>
 
       <article class="card">
-        <div class="embed" data-platform="tt" data-id="7660023889451306254"><button class="embed-btn" type="button">&#9654; Load the clip</button><span class="embed-meta">TikTok &middot; @threeohfine</span></div>
-        <div class="rmeta"><span class="rh">@threeohfine</span><span class="rv">1.2M views</span></div>
-        <div class="rdate">TikTok &middot; Posted Jul 8</div>
-        <p class="rwhy"><b>React angle:</b> a yearning edit that tags Miguel by name. The emotional lane the song lives in.</p>
+        <div class="embed" data-platform="tt" data-id="7663360046604324117"><button class="embed-btn" type="button">&#9654; Load the clip</button><span class="embed-meta">TikTok &middot; @kaitlyn_nkosazana</span></div>
+        <div class="rmeta"><span class="rh">@kaitlyn_nkosazana</span><span class="rv">2.6M views</span></div>
+        <div class="rdate">TikTok &middot; Posted Jul 17</div>
+        <p class="rwhy"><b>React angle:</b> a fan tagging Miguel directly, pure love for the song. The warmest, easiest one to co-sign.</p>
       </article>
 
       <article class="card">
-        <div class="embed" data-platform="tt" data-id="7660588814468943135"><button class="embed-btn" type="button">&#9654; Load the clip</button><span class="embed-meta">TikTok &middot; @gottaluvemman</span></div>
-        <div class="rmeta"><span class="rh">@gottaluvemman</span><span class="rv">1.1M views</span></div>
-        <div class="rdate">TikTok &middot; Posted Jul 9</div>
-        <p class="rwhy"><b>React angle:</b> the hook used straight and sincere. A simple to-camera reaction honors it.</p>
-      </article>
-
-      <article class="card">
-        <div class="embed" data-platform="tt" data-id="7661389074678189326"><button class="embed-btn" type="button">&#9654; Load the clip</button><span class="embed-meta">TikTok &middot; @mckinley.edwards</span></div>
-        <div class="rmeta"><span class="rh">@mckinley.edwards</span><span class="rv">1.1M views</span></div>
-        <div class="rdate">TikTok &middot; Posted Jul 11</div>
-        <p class="rwhy"><b>React angle:</b> a relatable everyday clip carrying the sound. Reacting keeps the song in the feed.</p>
-      </article>
-
-      <article class="card">
-        <div class="embed" data-platform="tt" data-id="7659991851331554590"><button class="embed-btn" type="button">&#9654; Load the clip</button><span class="embed-meta">TikTok &middot; @_user09808</span></div>
-        <div class="rmeta"><span class="rh">@_user09808</span><span class="rv">1.1M views</span></div>
-        <div class="rdate">TikTok &middot; Posted Jul 8</div>
-        <p class="rwhy"><b>React angle:</b> a relationship post in the song's romance lane. Quote it with a line about the record.</p>
+        <div class="embed" data-platform="tt" data-id="7667667167646715167"><button class="embed-btn" type="button">&#9654; Load the clip</button><span class="embed-meta">TikTok &middot; @shootbyshelking</span></div>
+        <div class="rmeta"><span class="rh">@shootbyshelking</span><span class="rv">573K views</span></div>
+        <div class="rdate">TikTok &middot; Posted Jul 28</div>
+        <p class="rwhy"><b>React angle:</b> the follow-up to the 32M post, answering the critics. A live thread Miguel can step into rather than a one-off.</p>
       </article>
 
     </div>
-    <p class="tbl-note">Snapshot of the top posts using the Damned sound over the last 14 days, ranked by views (current as of July 21, 2026). This set moves fast and should be refreshed weekly.</p>
+    <p class="tbl-note">Top posts using the Damned sound, ranked by views, current as of August 5, 2026. This set moves fast and is worth refreshing before each push.</p>
   </section>
-
   <!-- SECTION 1: CATALOG PLAYS -->
   <section class="sec wrap" id="catalog">
     <div class="sec-head">
@@ -629,7 +621,7 @@ const html = `<!DOCTYPE html>
   </section>
 
   <footer class="wrap">
-    <p class="fn"><b>Notes.</b> View counts are current as of July 21, 2026 and will drift. Every clip was verified live and embeddable at build. Frame-level teardowns were produced with TwelveLabs video AI (Pegasus and Marengo) run on the downloaded clips, not on captions alone. Format-steal examples are not strictly catalog records; they are included because the structure travels.</p>
+    <p class="fn"><b>Notes.</b> View counts are current as of August 5, 2026 and will drift. Every clip was verified live and embeddable at build. Frame-level teardowns were produced with TwelveLabs video AI (Pegasus and Marengo) run on the downloaded clips, not on captions alone. Format-steal examples are not strictly catalog records; they are included because the structure travels.</p>
   </footer>
 </div>
 
@@ -744,7 +736,7 @@ const html = `<!DOCTYPE html>
   }
   if(tbl)draw();
   var note=document.getElementById('tblnote');
-  if(note){note.innerHTML='\\u25CF marks the nine clips featured in the teardown above. Click any column to sort. Like-rate = likes / plays; share-rate = shares / plays. Metrics current as of build (July 2026) and will drift.';}
+  if(note){note.innerHTML='\\u25CF marks the nine clips featured in the teardown above. Click any column to sort. Like-rate = likes / plays; share-rate = shares / plays. Metrics current as of build (August 2026) and will drift.';}
 })();
 </script>
 </body>
