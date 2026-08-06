@@ -273,6 +273,20 @@ tbody tr:last-child td{border-bottom:none}
   color:var(--m28)}
 .vsrc.pub{color:var(--ok)}
 
+/* forthcoming */
+.forth{border:1px solid var(--bd);border-top:none;background:var(--elev);padding:38px;
+  position:relative}
+.forth:before{content:'';position:absolute;top:0;left:0;right:0;height:2px;
+  background:repeating-linear-gradient(90deg,var(--accent) 0 16px,transparent 16px 28px)}
+.forth .eyebrow{margin-bottom:18px}
+.forth h3{font-size:24px;margin-bottom:14px}
+.forth>p{font-size:14.5px;color:var(--m70);line-height:1.74;max-width:78ch;margin-bottom:30px}
+.fgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(272px,1fr));gap:1px;
+  background:var(--bd);border:1px solid var(--bd)}
+.fitem{background:var(--card);padding:26px}
+.fitem h4{font-size:15px;margin-bottom:11px;color:var(--fg)}
+.fitem p{font-size:13px;color:var(--m55);line-height:1.68}
+
 /* brave feature */
 .brave{display:grid;grid-template-columns:1.15fr 1fr;gap:1px;background:var(--bd);
   border:1px solid var(--bd)}
@@ -529,7 +543,7 @@ footer{padding:74px 0 52px;border-top:1px solid var(--bd)}
     <div class="shead reveal">
       <div class="eyebrow"><i></i>05 <s>/</s> Inventory Board</div>
       <h2>What is actually buyable.</h2>
-      <p class="sdek">Every property that will take a non-custodial swap advertiser, with rates, entry minimums and how to transact. Rates marked <span class="vsrc pub">PUBLISHED</span> were read off a live rate card or product page. Rates marked <span class="vsrc">REPORTED</span> come from third-party sources and need confirming on the insertion order.</p>
+      <p class="sdek">Every property that will take a non-custodial swap advertiser, with rates, entry minimums and how to transact. Rates marked <span class="vsrc pub">PUBLISHED</span> were read off a live rate card or product page. Rates marked <span class="vsrc">REPORTED</span> come from third-party sources and need confirming on the insertion order. <strong>This is the first release of the board and it will keep growing.</strong></p>
     </div>
     <div class="filters reveal" id="filters"></div>
     <div class="tblwrap reveal">
@@ -540,6 +554,17 @@ footer{padding:74px 0 52px;border-top:1px solid var(--bd)}
         </tr></thead>
         <tbody id="invbody"></tbody>
       </table>
+    </div>
+
+    <div class="forth reveal">
+      <div class="eyebrow"><i></i>In Progress</div>
+      <h3>More inventory is on the way.</h3>
+      <p>The board above covers what has been priced, verified and can be booked against a 30-day window starting now. Several further workstreams are already underway and will be released as separate proposals as pricing is confirmed.</p>
+      <div class="fgrid">
+        <div class="fitem"><h4>Programmatic</h4><p>Open-exchange and PMP display, online video, connected TV and digital audio, with on-chain and privacy-tech audience segments built for this advertiser. Scoped as its own proposal with its own measurement design.</p></div>
+        <div class="fitem"><h4>Extended endemic</h4><p>Additional terminals, explorers, wallets and aggregator surfaces beyond the set priced here, including direct placements that require negotiation rather than a rate card.</p></div>
+        <div class="fitem"><h4>Channel-specific builds</h4><p>Deeper proposals for the lanes that earn budget once the first flight reads, including affiliate and revenue-share, SEO and content, and the Partner API integration programme.</p></div>
+      </div>
     </div>
   </div>
 </section>
