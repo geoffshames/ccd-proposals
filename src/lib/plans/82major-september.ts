@@ -313,11 +313,11 @@ export const eightyTwoMajorSeptember: StrategyPlanData = {
           label: "Digital / Tier 1",
           budget: "$30,000",
           name: "Core",
-          goal: "Run the proven SIGN machine against HEAT with a genuine pre-release window. Paid social concentrated on the U.S., one creator and clipping round, the fan channel network held at cadence, and the CRM lane driving pre-saves. This is the level that protects the release without extending it.",
+          goal: "Run the proven SIGN machine against HEAT with a genuine pre-release window. Paid social and the creator round funded at roughly the levels that produced the SIGN results, the fan channel network held at daily cadence through release, and the CRM lane driving pre-saves. This is the level that protects the release without extending it.",
           includes: [
             "Paid social (Meta + TikTok), U.S. concentrated, dark-test into release week",
-            "One creator and clipping round on culture-first edits",
-            "Fan channel network held at daily cadence through the cycle",
+            "One creator and clipping round on culture-first edits, sized to the round that returned $0.0024 per view",
+            "Fan channel network at daily cadence for two months, covering pre-release through release plus four weeks",
             "CRM lane: pre-save flow, release-day drop, broadcast mechanics",
             "DSP editorial coordination with Kakao: pitch packets, metadata QC, release-week follow-ups",
             "Full-record watch matrix from day one, so organic B-side heat gets budget in days",
@@ -333,6 +333,7 @@ export const eightyTwoMajorSeptember: StrategyPlanData = {
           includes: [
             "Everything in Core, at roughly 1.9x deployable media",
             "Paid social roughly doubled, with sustained post-release scaling rather than a release-week spike",
+            "Fan channel network at daily cadence across the full cycle, three months rather than two",
             "Creator and clipping round expanded, including paid boost behind organic winners",
             "Playlist network lane added for streaming floor support through the decay window",
             "Retargeting pools from the SIGN flight activated against the pre-save and release push",
@@ -400,7 +401,7 @@ export const eightyTwoMajorSeptember: StrategyPlanData = {
           ],
         },
       ],
-      footnote: "The CRM lane is operational inside the CCD retainer. Fan channel network cost is a line item in both tiers.",
+      footnote: "The CRM lane is operational inside the CCD retainer. The fan channel network is a monthly engagement at $4,000 per month across the network, so its line item scales with duration: two months at Core, three at Full. Extending it beyond the cycle is a separate monthly authorization.",
     },
 
     // ===================================================================
@@ -727,7 +728,7 @@ export const eightyTwoMajorSeptember: StrategyPlanData = {
           ],
         },
       ],
-      footnote: "Phase budgets sum to the Full tier total. They are directional. Weekly reallocation across creative, audience, and lane is the mechanism that produced the cost improvements in the SIGN flight, and it requires the latitude to move money between these phases.",
+      footnote: "Phase budgets sum to the Full tier total. They are directional with one exception: the fan channel network bills at a fixed $4,000 per month and cannot be reallocated, so roughly $4,000 of each month sits outside the weekly optimization. Everything else moves. Weekly reallocation across creative, audience, and lane is the mechanism that produced the cost improvements in the SIGN flight, and it requires the latitude to move money between these phases.",
     },
 
     // ===================================================================
@@ -929,7 +930,7 @@ export const eightyTwoMajorSeptember: StrategyPlanData = {
           ],
         },
       ],
-      footnote: "Weeks 9 through 12 assume Q4 routing lands in that window. Tour-specific spend authorizes its own budget once dates confirm; what is shown here is the campaign work that continues through it.",
+      footnote: "The grid shows the Full tier. At Core the fan channel row runs for two months and ends after week 8, and the playlist lane does not run. Weeks 9 through 12 assume Q4 routing lands in that window. Tour-specific spend authorizes its own budget once dates confirm; what is shown here is the campaign work that continues through it.",
     },
 
     // ===================================================================
@@ -946,7 +947,7 @@ export const eightyTwoMajorSeptember: StrategyPlanData = {
           label: "Digital / Tier 1",
           budget: "$30,000",
           name: "Core",
-          tagline: "Protect the release. Run the proven machine with a real pre-launch window.",
+          tagline: "Protect the release. Proven spend levels, with a real pre-launch window.",
           deployable: "$19,600",
           feeBreakdown: {
             retainer: "$7,500",
@@ -958,16 +959,16 @@ export const eightyTwoMajorSeptember: StrategyPlanData = {
           breakdown: [
             { vertical: "CCD Cycle Retainer", amount: "$7,500" },
             { vertical: "Media Management (15%)", amount: "$2,900" },
-            { vertical: "Paid Social (Meta + TikTok)", amount: "$9,600" },
-            { vertical: "Creator + Clipping Round", amount: "$6,000" },
-            { vertical: "Fan Channel Network", amount: "$4,000" },
+            { vertical: "Paid Social (Meta + TikTok)", amount: "$6,600" },
+            { vertical: "Creator + Clipping Round", amount: "$5,000" },
+            { vertical: "Fan Channel Network (2 mo at $4,000/mo)", amount: "$8,000" },
           ],
         },
         {
           label: "Digital / Tier 2",
           budget: "$50,000",
           name: "Full",
-          tagline: "Extend the release. Roughly 1.9x deployable weight, plus streaming floor support.",
+          tagline: "Extend the release. Roughly 1.9x deployable weight, full-cycle always-on, plus floor support.",
           featured: true,
           deployable: "$37,000",
           feeBreakdown: {
@@ -980,10 +981,10 @@ export const eightyTwoMajorSeptember: StrategyPlanData = {
           breakdown: [
             { vertical: "CCD Cycle Retainer", amount: "$7,500" },
             { vertical: "Media Management (15%)", amount: "$5,500" },
-            { vertical: "Paid Social (Meta + TikTok)", amount: "$19,000" },
-            { vertical: "Creator + Clipping Round", amount: "$10,000" },
-            { vertical: "Fan Channel Network", amount: "$4,000" },
-            { vertical: "Playlist Network Lane", amount: "$4,000" },
+            { vertical: "Paid Social (Meta + TikTok)", amount: "$14,000" },
+            { vertical: "Creator + Clipping Round", amount: "$8,000" },
+            { vertical: "Fan Channel Network (3 mo at $4,000/mo)", amount: "$12,000" },
+            { vertical: "Playlist Network Lane", amount: "$3,000" },
           ],
         },
       ],
@@ -1004,7 +1005,7 @@ export const eightyTwoMajorSeptember: StrategyPlanData = {
           description: "Specced and delivered on the Kakao side, outside the CCD budget. CCD asks that any activation carries a capture mechanic and produces vertical-native, paid-usable creative.",
         },
       ],
-      footnote: "Budgets are scoped to the September release cycle. The Q4 tour window and the 1H 2027 releases each authorize fresh budgets on this same structure, and inherit the infrastructure, warmed audiences, and tested creative this campaign produces.",
+      footnote: "The fan channel network bills monthly at $4,000 per month, so its line scales with how many months of the cycle it runs: two months at Core, the full three at Full. It is the one fixed cost in the plan and is not reallocatable week to week. Budgets are scoped to the September release cycle. The Q4 tour window and the 1H 2027 releases each authorize fresh budgets on this same structure, and inherit the infrastructure, warmed audiences, and tested creative this campaign produces.",
     },
   ],
 };
