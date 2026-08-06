@@ -237,40 +237,41 @@ export const concepts: Concept[] = [
     window: "21 days per market",
     markets: "Venice Beach, Las Vegas, NYC",
     mechanic: [
-      "Three machines, publicly sited, each stocked with sealed product and a visible top-tier grail suspended at the back.",
+      "Three machines sited in public — boardwalk, strip, sidewalk — not in a warehouse. Each stocked with sealed product and a visible top-tier grail at the back.",
       "Queue from anywhere in the US. Your turn is a 45-second live control window over a low-latency feed.",
       "The stream is always on and the queue is public — the anticipation of watching strangers fail is the content.",
-      "Passersby can play in person, which puts a permanent crowd around the machine and feeds the stream.",
+      "Passersby play in person for free. The in-person crowd is the point: they are live witnesses that the machine, the product and the wins are real, and they appear in every frame of the stream.",
       "An automatic clip engine cuts every win and every near-miss for immediate distribution.",
     ],
     why:
-      "Avry flagged vending and claw machines and he is right that they always work — but a machine you can only play by being in Venice reaches Venice. Making it remote-playable turns a local prop into a national one, and turns a 21-day installation into continuous scheduled programming. It is also the cheapest way on this list to manufacture the specific feeling the product sells: the near-miss.",
+      "Remote-play claw is a solved problem — Toreba, Clawee, Claw Toys and Claw Plus have all been running real machines under live remote control for years, which means we license a proven stack rather than engineer one. The novelty is not the remote control, it is the address. Every existing operator hides their machines in a climate-controlled warehouse; we put ours on a boardwalk. That gets us the one thing a warehouse cannot produce — a physical crowd standing around the machine, which is itself the proof that the machine is real. It is also the cheapest way on this list to manufacture the specific feeling the product sells: the near-miss.",
     earned:
       "Highest content-per-dollar of the seven. A permanent unmanned set producing streamable moments around the clock. Failure is as watchable as success, which means the content engine never runs dry.",
     proof: {
       claim:
-        "Custom vending and prize machine builds run roughly $5K–$30K per unit for branded activation work, so the spend concentrates in robotics, latency and placement rather than fabrication.",
-      source: "VMFS USA / Digital Media Vending, 2026 custom machine pricing",
+        "Remote-controlled claw is commercially proven at scale — Toreba has run live remote machines with international prize fulfilment for years, and Clawpara launched Claw Plus on March 1, 2026 for worldwide remote operation of licensed-IP machines. The control stack is licensable, not experimental.",
+      source: "Toreba service documentation; Clawpara / Claw Plus launch, March 2026",
     },
     build: [
-      "3× custom machines with remote-actuated claw and sub-200ms control loop",
-      "Queue infrastructure, session management, anti-abuse",
-      "Low-latency multi-angle streaming per machine",
-      "Public siting with permits and daily attendant coverage",
-      "Automated highlight clip engine",
+      "Licensed white-label remote-claw platform — control loop, queue, session management, fulfilment",
+      "3× machines in hardened outdoor enclosures — weather sealing, climate control, anti-tamper",
+      "Hardwired fibre with redundant failover at each site (never cellular)",
+      "Published claw-strength calibration, fixed for the run and independently verified",
+      "Low-latency multi-angle streaming and automated highlight clip engine",
     ],
     budget: [
-      { item: "Machine build ×3 — robotics, remote control, latency rig", amount: 68000 },
-      { item: "Streaming and queue infrastructure", amount: 42000 },
-      { item: "Placement — 3 markets, 21 days each", amount: 45000 },
+      { item: "Remote-claw platform licence + white-label integration", amount: 34000 },
+      { item: "3× machines — hardened outdoor enclosure, climate seal, anti-tamper", amount: 52000 },
+      { item: "Site connectivity — fibre install and redundant failover, 3 sites", amount: 28000 },
+      { item: "Placement — 3 markets, 21 days each (permits, siting, power)", amount: 45000 },
       { item: "Prize inventory", amount: 30000 },
-      { item: "On-site staffing and security", amount: 18000 },
+      { item: "On-site staffing, restock and security", amount: 22000 },
       { item: "Content capture and clip engine", amount: 12000 },
       { item: "PR", amount: 5000 },
     ],
-    total: 220000,
+    total: 228000,
     risk:
-      "Latency is the whole experience — a laggy claw kills it instantly. Budget assumes hardwired connectivity, not cellular, at every site.",
+      "This is the one concept here where the mechanic argues with the strategy. Claw machines are notorious for adjustable claw strength, and rigging accusations are the single most common complaint levelled at every online claw platform — so a stunt built on 'the pull is real' is picking the one prize format the audience already assumes is fixed. It is survivable, but only if we publish the claw calibration up front, fix it for the full run, and let the in-person crowd verify it against the stream. If the client will not commit to that, run a different concept. Secondary: latency is the whole experience, so every site needs hardwired fibre, never cellular.",
   },
   {
     id: "national",
@@ -396,8 +397,8 @@ export const lanes: Lane[] = [
   {
     code: "LANE B",
     name: "THE SPREAD",
-    total: 460000,
-    spend: "$460,000",
+    total: 468000,
+    spend: "$468,000",
     picks: ["THE CLAW", "THE STASH"],
     rationale:
       "Two mechanics across thirteen markets. Lower ceiling than the vault, far wider footprint, and the highest total participation of any combination on this page.",
@@ -462,4 +463,6 @@ export const sources = [
   { title: "Experiential Event Activations", publisher: "National Experiential", url: "https://www.nationalexperiential.com/experiential-event-activations" },
   { title: "Cannes Lions 2025 — Brand Experience & Activation winners", publisher: "Contagious", url: "https://www.contagious.com/en/article/news-and-views/cannes-lions-2025-brand-experience-activation-winners" },
   { title: "The Real Cost of Mobile Marketing Tours 2026", publisher: "Premier Staff", url: "https://premierstaff.com/blog/mobile-marketing-tours-2/" },
+  { title: "Toreba — remote-controlled live claw machine service", publisher: "CyberStep", url: "https://www.toreba.net/en/service" },
+  { title: "Claw Plus launches one-stop online claw machine platform", publisher: "Clawpara, March 2026", url: "https://markets.financialcontent.com/woonsocketcall/article/getnews-2026-3-4-claw-plus-introduces-one-stop-online-claw-machine-platform-featuring-popular-character-ip-prizes" },
 ];
