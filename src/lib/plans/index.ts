@@ -16,6 +16,7 @@ import { sunChaserPlan } from "./sun-chaser";
 import { lolaAmourPlan } from "./lola-amour";
 import { uberHitcPlan } from "./uber-hitc";
 import { bhaviViajeDeIdaPlan } from "./bhavi-viaje-de-ida";
+import { eightyTwoMajorSeptember } from "./82major-september";
 
 export const PLANS: Record<string, StrategyPlanData> = {
   "bhavi-viaje-de-ida": bhaviViajeDeIdaPlan,
@@ -26,6 +27,7 @@ export const PLANS: Record<string, StrategyPlanData> = {
   ekator: ekatorPlan,
   "ekator-ko": ekatorPlanKorean,
   "82major": eightyTwoMajorPlan,
+  "82major-september": eightyTwoMajorSeptember,
   "82major-roadmap": eightyTwoMajorRoadmap,
   "82major-roadmap-ko": eightyTwoMajorRoadmapKorean,
   "82major-strategy": eightyTwoMajorPlanStrategy,
