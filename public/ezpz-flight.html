@@ -106,7 +106,7 @@ h1 em{font-style:normal;color:var(--accent)}
 @media(max-width:820px){.hstats{grid-template-columns:repeat(2,1fr)}}
 
 /* sections */
-section{padding:100px 0;border-top:1px solid var(--bd)}
+section{padding:100px 0;border-top:1px solid var(--bd);scroll-margin-top:62px}
 .shead{margin-bottom:54px;max-width:80ch}
 .shead .eyebrow{margin-bottom:20px}
 h2{font-size:clamp(30px,4.4vw,52px);margin-bottom:22px}
@@ -148,10 +148,19 @@ h2{font-size:clamp(30px,4.4vw,52px);margin-bottom:22px}
 .blegend i{width:9px;height:9px;display:inline-block;margin-right:8px}
 
 /* policy wall */
-.wall{display:grid;grid-template-columns:repeat(auto-fill,minmax(276px,1fr));gap:1px;
-  background:var(--bd);border:1px solid var(--bd)}
+.wall{display:flex;flex-direction:column;gap:40px}
+.wband .wgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(272px,1fr));gap:1px;
+  background:transparent}
+.wbhead{display:flex;align-items:baseline;gap:16px;margin-bottom:18px;padding-bottom:14px;
+  border-bottom:1px solid var(--bd);flex-wrap:wrap}
+.wbhead h4{font-size:16px;margin:0}
+.wbhead .ct{font-family:var(--mono);font-size:9.5px;letter-spacing:.15em;text-transform:uppercase;
+  font-weight:600}
+.wbhead .dk{font-size:12.5px;color:var(--m40);margin-left:auto;line-height:1.5}
+@media(max-width:700px){.wbhead .dk{margin-left:0;flex-basis:100%}}
 .pcard{background:var(--elev);padding:26px;cursor:pointer;transition:background .22s;
-  position:relative;min-height:198px;display:flex;flex-direction:column}
+  position:relative;min-height:206px;display:flex;flex-direction:column;
+  box-shadow:0 0 0 1px var(--bd)}
 .pcard:before{content:'';position:absolute;top:0;left:0;right:0;height:2px;
   background:var(--accent);opacity:0;transition:opacity .22s}
 .pcard:hover{background:var(--card)}
@@ -317,8 +326,8 @@ tbody tr:last-child td{border-bottom:none}
 .forth h3{font-size:24px;margin-bottom:14px}
 .forth>p{font-size:14.5px;color:var(--m70);line-height:1.74;max-width:78ch;margin-bottom:30px}
 .fgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(272px,1fr));gap:1px;
-  background:var(--bd);border:1px solid var(--bd)}
-.fitem{background:var(--card);padding:26px}
+  background:transparent}
+.fitem{background:var(--card);padding:26px;box-shadow:0 0 0 1px var(--bd)}
 .fitem h4{font-size:15px;margin-bottom:11px;color:var(--fg)}
 .fitem p{font-size:13px;color:var(--m55);line-height:1.68}
 
@@ -379,8 +388,8 @@ tbody tr:last-child td{border-bottom:none}
 
 /* measure */
 .megrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(288px,1fr));gap:1px;
-  background:var(--bd);border:1px solid var(--bd)}
-.mitem{background:var(--elev);padding:30px;position:relative}
+  background:transparent}
+.mitem{background:var(--elev);padding:30px;position:relative;box-shadow:0 0 0 1px var(--bd)}
 .mitem:before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:var(--accent)}
 .mitem .ic{font-family:var(--mono);font-size:9.5px;color:var(--accent);letter-spacing:.16em;
   margin-bottom:16px;text-transform:uppercase}
@@ -449,7 +458,7 @@ footer{padding:74px 0 52px;border-top:1px solid var(--bd)}
   <div class="wrap">
     <div class="eyebrow"><i></i>Launch Media Flight <s>/</s> ezpz.org <s>/</s> 30-Day Blitz <s>/</s> August 2026</div>
     <h1>Buy the <em>integration</em>, not the impression.</h1>
-    <p class="sub">Four of the six mainstream ad platforms are closed to a no-KYC, non-custodial swap. That is not a constraint to work around. It is the reason the winners in this category built distribution instead of funnels, and it is the shape this flight should take. <strong>Three builds at $50K, $100K and $250K, all crypto-native, all buyable this month.</strong></p>
+    <p class="sub">Three of the six mainstream ad platforms are closed outright to a no-KYC, non-custodial swap, and a fourth is discretionary. That is not a constraint to work around. It is the reason the winners in this category built distribution instead of funnels, and it is the shape this flight should take. <strong>Three builds at $50K, $100K and $250K, all crypto-native, all buyable this month.</strong></p>
     <div class="hstats">
       <div class="hstat"><div class="n">~89%</div><div class="l">Of category leader volume<br>originating off its own site</div></div>
       <div class="hstat"><div class="n" style="color:var(--accent)">57M</div><div class="l">Brave monthly actives, a<br>self-selected privacy audience</div></div>
@@ -811,14 +820,14 @@ const PLATFORMS=[
  imp:'Fund at every tier. $5,000 at $50K as a push and search test, $12,000 at $100K adding a New Tab Takeover negotiation, $35,000 at $250K as a full-stack buy. Open the account in week 0 because creative goes through human review.',
  src:['https://brave.com/blog/self-serve-ads/','https://ads.brave.com/']},
 
-{n:'CoinMarketCap',v:'open',vl:'Open, managed, premium',
+{n:'CoinMarketCap',v:'open',vl:'Open, managed',
  why:'A billion monthly page views and 30 million monthly users, taking payment in USDT. No self-serve, and one measurement limitation worth planning around.',
  quote:'Our managed advertising program typically starts from a $20,000 minimum upfront commitment. GIF creatives require a minimum of $50,000. Third-party tracking pixel integration is not currently supported.',
  body:'<p>The best mainstream-scale crypto property available to this advertiser, and it settles in BTC, ETH, USDT or USDC.</p><p>Three planning constraints. <strong>Entry is $20,000</strong> and every campaign is managed by a BD lead. <strong>Creative is static PNG or JPG</strong> below a $50,000 commitment, so animated concepts only unlock at the top tier. <strong>Third-party pixels are not supported</strong>, only UTM parameters, which makes the ref-code architecture mandatory rather than optional.</p><p>Lead time is five to ten business days from signed insertion order, payment received and creative approved.</p>',
  imp:'Anchor the flight here at all three tiers. At $250K the $50,000 commitment unlocks animated creative, a genuine performance difference on terminal placements.',
  src:['https://coinmarketcap.com/ads/']},
 
-{n:'X',v:'open',vl:'Open, conditions do not bite',
+{n:'X',v:'open',vl:'Open, few restrictions',
  why:'Crypto came off the prohibited industries list. The February 2026 restrictions target token promotion and yield claims, and ezpz has neither a token nor a yield product.',
  quote:'Ads promoting specific token purchases are prohibited unless the token is listed on at least two regulated exchanges in the advertiser\'s home jurisdiction.',
  body:'<p>The two headline restrictions from the February 2026 rewrite are the token-listing rule and a requirement that any mention of yield, APY or staking returns carry a methodology disclaimer and a capital-at-risk warning.</p><p><strong>Neither applies.</strong> ezpz sells a service, not an asset, and offers no yield. Rules written to constrain token marketers leave a swap service comparatively unencumbered.</p><p>The separate Paid Partnership disclosure framework does apply to the KOL layer, and every sponsored post must carry the label. Non-disclosure escalates to account suspension.</p>',
@@ -832,18 +841,18 @@ const PLATFORMS=[
  imp:'Fund at every tier inside the privacy cluster. Small line item, disproportionately relevant audience, and the cheapest place to test creative before committing to terminal inventory.',
  src:['https://www.stackmatix.com/blog/reddit-ads-minimum-budget-requirements-2026']},
 
-{n:'Snapchat',v:'cond',vl:'Conditional, worth pursuing',
+{n:'Snapchat',v:'cond',vl:'Conditional',
  why:'The policy asks for prior approval rather than a named licence. That is a discretionary gate, which can be argued, and the AML policy is the argument.',
  quote:'Ads for certain complex financial products, which may include cryptocurrency wallets and trading platforms, require prior approval from Snap.',
  body:'<p>The softest door among the restrictive mainstream platforms, and the distinction matters. Google and Meta ask for documents that do not exist for this entity. <strong>Snap asks for a decision from a human reviewer.</strong></p><p>The prohibited list targets deceptive framing rather than category: get-rich-quick offers, guaranteed returns on speculative investments, promotion of particular securities, insider tips. None describes ezpz, whose site leads with fee transparency and explicitly refuses to overclaim on anonymity.</p><p>The application should lead with the AML policy, the OFAC screening, the reject-and-refund rule and the 0.3% flag rate, geo-targeted and age-gated to 18+ from the start.</p>',
  imp:'Submit in week 0. Pre-allocate nothing. Pilot at $10K to $25K only on written approval, and cap total Snap exposure at 16% of tier regardless of how large the match looks.',
  src:['https://values.snap.com/policy/ads-category-requirements/financial-products-services']},
 
-{n:'Telegram Ads',v:'cond',vl:'Open via reseller, one hard constraint',
- why:'Direct access requires a EUR 2M commitment. Resellers open the same inventory from around $1,500. But sponsored messages cannot link off-platform.',
- quote:'All links in a sponsored message must link to a channel or bot on Telegram. Links to external sites are not allowed.',
- body:'<p>Two different things are both called Telegram advertising and they behave differently.</p><p><strong>The official Ad Platform</strong> sells CPM sponsored messages in public channels. Direct access requires a commitment far beyond this budget, but official resellers open the same inventory from roughly $1,500. The constraint is that the ad cannot link to ezpz.org.</p><p><strong>Direct channel sponsorship</strong> is a negotiated post with a channel admin and carries no such restriction. Rates run roughly $15 to $50 CPM on reads, with 50K to 200K-subscriber channels the efficiency band.</p><p>ezpz already runs a Telegram presence, so the official funnel works with one extra hop. Budget the conversion math accordingly.</p>',
- imp:'Fund heavily at every tier. This is where the audience lives. Weight toward direct channel buys, which link out freely, and use the official platform to drive channel subscriptions rather than swaps.',
+{n:'Telegram Ads',v:'open',vl:'Open, no minimum',
+ why:'Self-serve from any Telegram account. No minimum deposit, a floor CPM of 0.1 Toncoin, and channel-level targeting. The only hard constraint is that sponsored messages cannot link off-platform.',
+ quote:'All links included in the Text and URL field must link to a channel or bot on Telegram, using the format t.me/link or @link. Links to external sites are not allowed.',
+ body:'<p>The Telegram Ad Platform is materially more accessible than its reputation suggests. Logging in requires a Telegram account and a phone number. <strong>The published minimum CPM is 0.1 Toncoin and there is no stated minimum deposit</strong>, with the documentation explicitly noting that ads can be published without a budget to get a feel for the platform. Widely repeated agency figures of a two-million-euro entry point describe a legacy enterprise arrangement, not the platform as it is documented today.</p><p>The real constraint is the link rule quoted above. <strong>A sponsored message cannot point at ezpz.org</strong>, only at a t.me channel or bot, so the funnel carries one extra hop and the conversion maths has to account for it. ezpz already runs a Telegram presence, which makes that hop cheap.</p><p>Two mechanics worth planning around. Targeting parameters are locked once an ad is created, so variants are built with the clone function rather than edited, and budgets can be increased but never decreased. Ads pass through human review with an explicit Declined state, so creative should go up before launch week.</p><p><strong>One unexpected advantage.</strong> The platform reports how many users joined the channel or started the bot after viewing a sponsored message. That is a real conversion event measured without a cookie, which is rare in this plan and fits a product built to keep nothing.</p>',
+ imp:'Fund at every tier and run it self-serve rather than through a reseller. Weight toward direct channel sponsorship for anything that must link straight to the site, and use the official platform to grow the ezpz channel, where the built-in join tracking gives a clean read.',
  src:['https://ads.telegram.org/getting-started','https://telega.io/catalog']},
 
 
@@ -869,13 +878,27 @@ const PLATFORMS=[
  src:['https://coinzilla.com/blog/crypto-advertising-regulations/']}
 ];
 const VMAP={open:['v-open'],cond:['v-cond'],shut:['v-shut']};
-document.getElementById('wallgrid').innerHTML=PLATFORMS.map((p,i)=>`
-<div class="pcard" onclick="openModal(${i})">
-  <h4>${p.n}</h4>
-  <div class="vd ${VMAP[p.v][0]}">${p.vl}</div>
-  <div class="why">${p.why}</div>
-  <div class="more">Read the policy &rarr;</div>
-</div>`).join('');
+const WBANDS=[
+ ['open','Open','var(--ok)','Buyable now. No category gate to clear beyond standard creative review.'],
+ ['cond','Conditional','var(--warn)','Buyable once a discretionary approval or a structural constraint is handled.'],
+ ['shut','Closed','var(--accent)','Not buyable for this entity, and not a next-quarter problem to solve.']
+];
+document.getElementById('wallgrid').innerHTML=WBANDS.map(([k,title,col,dek])=>{
+  const set=PLATFORMS.map((p,i)=>[p,i]).filter(([p])=>p.v===k);
+  return `<div class="wband">
+    <div class="wbhead">
+      <h4>${title}</h4>
+      <span class="ct" style="color:${col}">${String(set.length).padStart(2,'0')} of ${PLATFORMS.length}</span>
+      <span class="dk">${dek}</span>
+    </div>
+    <div class="wgrid">${set.map(([p,i])=>`
+      <div class="pcard" onclick="openModal(${i})">
+        <h4>${p.n}</h4>
+        <div class="vd ${VMAP[p.v][0]}">${p.vl}</div>
+        <div class="why">${p.why}</div>
+        <div class="more">Read the policy &rarr;</div>
+      </div>`).join('')}</div>
+  </div>`;}).join('');
 function openModal(i){const p=PLATFORMS[i];
   document.getElementById('mcontent').innerHTML=`<h3>${p.n}</h3>
     <div class="vd ${VMAP[p.v][0]}">${p.vl}</div>
@@ -907,7 +930,7 @@ const TIERS=[
  lines:[
   ['CoinMarketCap managed display','Expanded placement set including search bar and watchlist inventory',28000],
   ['X KOL layer','Ten creators at 25K to 100K plus one anchor at 100K to 500K, all Paid Partnership labelled',16000],
-  ['Telegram, official plus direct','Reseller-bought sponsored messages driving channel growth, plus direct buys linking to site',13000],
+  ['Telegram, platform plus direct','Self-serve sponsored messages growing the ezpz channel, plus direct channel buys linking to site',13000],
   ['Brave full funnel','Push and Search at scale plus a first New Tab Takeover negotiation with the direct team',12000],
   ['CoinGecko banner network','Run-of-network display at reported $8 to $12 CPM with geo weighting',9000],
   ['Etherscan and Blockscan family','CPM sponsorship across Etherscan, BscScan, Arbiscan and Basescan',7000],
@@ -923,7 +946,7 @@ const TIERS=[
   ['CoinMarketCap managed display','$50K commitment unlocks animated GIF creative across the full placement set',50000],
   ['X KOL programme','Fifteen mid-tier creators, three at 100K to 500K, and two branded Spaces sessions',40000],
   ['Brave full stack','New Tab Takeover bought direct, plus Push and Brave Search at full weight',35000],
-  ['Telegram at scale','Official platform via reseller plus roughly forty direct channel buys across languages',32000],
+  ['Telegram at scale','Self-serve platform at full weight plus roughly forty direct channel buys across languages',32000],
   ['Wallet-targeted display and networks','Slise, Blockchain-Ads wallet segments and a programmatic retargeting floor',22000],
   ['Newsletter layer','Token Dispatch, Web3 Daily, Crypto Briefing and one premium list at published rates',20000],
   ['CoinGecko','Expanded banner buy with country targeting',18000],
@@ -1050,7 +1073,7 @@ const INV=[
 ['social','Reddit Ads','reddit.com','Subreddit-targeted display and promoted posts','$3 to $12 CPM, crypto CPC $2 to $4','$25 lifetime','Self-serve','hi','r/Monero 372K members. r/CryptoCurrency 9.5M. Do not post organically.','pub'],
 ['social','Snapchat Ads','snapchat.com','Full Snap ad suite','Auction','Prior approval','Managed or self-serve','md','Requires written category approval. Match terms need confirming before allocation.','pub'],
 
-['telegram','Telegram Ad Platform','ads.telegram.org','CPM sponsored messages','~2 to 2.5 TON per 1,000 in EN','~$1,500 via reseller','Official reseller','hi','Cannot link off-platform. Drives channel subscriptions, not direct swaps.','pub'],
+['telegram','Telegram Ad Platform','ads.telegram.org','CPM sponsored messages in 1,000+ sub channels','Floor CPM 0.1 TON, set your own bid','None stated','ads.telegram.org, self-serve','hi','Cannot link off-platform. Reports channel joins and bot starts per ad, a cookie-free conversion event.','pub'],
 ['telegram','Telega.io','telega.io','Direct channel post marketplace','$1.20 to $114+ per post','Per placement','Self-serve','hi','6,700+ vetted channels. Best price discovery for direct buys.','pub'],
 ['telegram','Direct channel sponsorship','Negotiated','Pinned or in-feed post','$15 to $50 CPM on reads','Per post','Direct to admin','hi','50K to 200K subscriber channels are the efficiency band. Links out freely.','rep'],
 ['telegram','Adsgram','adsgram.ai','Mini App and bot inventory','CPM from 2 USDT','$100 deposit','Self-serve','md','Cheap volume, low intent. Useful for retargeting rather than prospecting.','pub'],
