@@ -273,6 +273,41 @@ tbody tr:last-child td{border-bottom:none}
   color:var(--m28)}
 .vsrc.pub{color:var(--ok)}
 
+/* programmatic */
+.excl{border:1px solid rgba(253,55,55,.34);background:linear-gradient(135deg,rgba(253,55,55,.07),transparent 62%);
+  padding:36px;margin-bottom:44px;position:relative}
+.excl:before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:var(--accent)}
+.excl .eyebrow{margin-bottom:18px}
+.excl h3{font-size:23px;margin-bottom:26px}
+.exgrid{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--bd);border:1px solid var(--bd);
+  margin-bottom:26px}
+@media(max-width:820px){.exgrid{grid-template-columns:1fr}}
+.exitem{background:var(--card);padding:24px}
+.exitem .lbl{font-family:var(--mono);font-size:9px;letter-spacing:.15em;text-transform:uppercase;
+  color:var(--accent);margin-bottom:14px}
+.exitem .q{font-size:13.5px;color:var(--fg);line-height:1.7;font-style:italic;
+  border-left:2px solid var(--accent);padding-left:16px;margin-bottom:12px}
+.exitem .q b{font-style:normal;font-weight:700}
+.exitem .s{font-family:var(--mono);font-size:9px;letter-spacing:.12em;text-transform:uppercase;color:var(--m28)}
+.exnote{font-size:14px;color:var(--m70);line-height:1.74;max-width:84ch}
+.exnote strong{color:var(--fg);font-weight:500}
+
+.ratecard{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--bd);border:1px solid var(--bd)}
+@media(max-width:760px){.ratecard{grid-template-columns:repeat(2,1fr)}}
+.rc{background:var(--elev);padding:24px;position:relative}
+.rc:before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:var(--accent)}
+.rc .n{font-family:var(--mono);font-size:26px;font-weight:600;letter-spacing:-.035em;margin-bottom:8px}
+.rc .l{font-family:var(--mono);font-size:8.5px;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--m40);line-height:1.6}
+
+.stack{border:1px solid var(--bd);background:var(--elev);padding:38px;margin-top:44px;position:relative}
+.stack:before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:var(--accent)}
+.stack .eyebrow{margin-bottom:18px}
+.stack h3{font-size:23px;margin-bottom:16px}
+.stack p{font-size:14.5px;color:var(--m70);line-height:1.76;max-width:84ch;margin-bottom:16px}
+.stack p:last-child{margin-bottom:0}
+.stack p strong{color:var(--fg);font-weight:500}
+
 /* forthcoming */
 .forth{border:1px solid var(--bd);border-top:none;background:var(--elev);padding:38px;
   position:relative}
@@ -410,6 +445,7 @@ footer{padding:74px 0 52px;border-top:1px solid var(--bd)}
       <a href="#wall">The Wall</a>
       <a href="#brave">Brave</a>
       <a href="#flights">Flights</a>
+      <a href="#programmatic">Programmatic</a>
       <a href="#inventory">Inventory</a>
       <a href="#credits">Credits</a>
       <a href="#runway">Run Of Show</a>
@@ -528,7 +564,7 @@ footer{padding:74px 0 52px;border-top:1px solid var(--bd)}
     <div class="shead reveal">
       <div class="eyebrow"><i></i>04 <s>/</s> The Builds</div>
       <h2>Three flights.</h2>
-      <p class="sdek">Thirty days of working media. Every figure is cash out the door, with the Snap match and X credit treated as additive and handled separately in section 06. <strong>Select a tier.</strong></p>
+      <p class="sdek">Thirty days of working media. Every figure is cash out the door, with the Snap match and X credit treated as additive and handled separately in section 07. <strong>Select a tier.</strong></p>
     </div>
     <div class="tiersw reveal" id="tiersw"></div>
     <div class="tsummary reveal" id="tsum"></div>
@@ -538,10 +574,62 @@ footer{padding:74px 0 52px;border-top:1px solid var(--bd)}
   </div>
 </section>
 
+<section id="programmatic">
+  <div class="wrap">
+    <div class="shead reveal">
+      <div class="eyebrow"><i></i>05 <s>/</s> Programmatic</div>
+      <h2>The Nexxen layer.</h2>
+      <p class="sdek">A live plan is on the table from Nexxen dated 7 August, scoped 1 September to 31 October, National US, targeting in-market crypto, Web3 and privacy audiences through Nexxen Discovery, TV Audiences, Smart Contextual, behavioural and retargeting. Four options were quoted. <strong>Two of the spec tabs contain something that would have broken the flight, and it is worth dealing with that before comparing prices.</strong></p>
+    </div>
+
+    <div class="excl reveal">
+      <div class="eyebrow"><i></i>Write These Into The Insertion Order</div>
+      <h3>Two inventory sources in this plan cannot run this advertiser.</h3>
+      <div class="exgrid">
+        <div class="exitem">
+          <div class="lbl">YouTube inventory</div>
+          <p class="q">"Prohibited categories include but are not limited to: alcohol, <b>cryptocurrencies and related products</b>, dangerous products, dating and companionship, gambling and games, political content..."</p>
+          <p class="s">YouTube Specs tab</p>
+        </div>
+        <div class="exitem">
+          <div class="lbl">Pause Ad inventory</div>
+          <p class="q">"<b>Cryptocurrency</b>, Political, Cannabis/CBD/Hemp, Tobacco/Nicotine, MVPD/vMVPD/AVOD/SVOD verticals <b>are not allowed</b>."</p>
+          <p class="s">Video Specs tab, Pause Ad guidelines</p>
+        </div>
+      </div>
+      <p class="exnote">Nexxen's own Content Guidelines do not prohibit cryptocurrency, so the DSP is open to this advertiser. These are two specific supply sources inside it that are not. <strong>If they are not excluded in writing before launch, creative clears at the DSP and then gets rejected at the publisher, which shows up as an unexplained delivery shortfall two weeks in.</strong> Ask Nexxen to confirm the exclusion on the insertion order and to name any other publisher-level crypto restrictions in the supply path. Peacock and Paramount both carry their own creative approval, and Peacock adds two business days for QA.</p>
+    </div>
+
+    <div class="ratecard reveal">
+      <div class="rc"><div class="n">$21.00</div><div class="l">Connected TV<br>CPM</div></div>
+      <div class="rc"><div class="n">$16.00</div><div class="l">Online Video<br>CPM</div></div>
+      <div class="rc"><div class="n">$13.50</div><div class="l">DOOH Display<br>CPM</div></div>
+      <div class="rc"><div class="n">$4.50</div><div class="l">Multiscreen Display<br>CPM</div></div>
+    </div>
+
+    <div class="shead reveal" style="margin:64px 0 34px">
+      <h3 style="font-size:26px;margin-bottom:14px">Every option, compared.</h3>
+      <p class="sdek">Impressions and blended eCPM computed from the quoted rates and budgets in the workbook. <strong>Select a plan.</strong></p>
+    </div>
+    <div class="tiersw reveal" id="npsw"></div>
+    <div class="tsummary reveal" id="npsum"></div>
+    <div class="alloc reveal" id="nalloc"></div>
+    <div class="atotal reveal" id="natot"></div>
+    <div class="tnote reveal" id="nnote"></div>
+
+    <div class="stack reveal">
+      <div class="eyebrow"><i></i>How It Stacks</div>
+      <h3>Additive, and it should lag by two weeks.</h3>
+      <p>Nexxen does not replace the crypto-native flight, it sits underneath it. The crypto-native layer buys intent from people already looking for a swap. Nexxen buys reach and, more usefully, <strong>the room to explain a product that needs explaining</strong>. No accounts, no logs, reject-and-refund, 24-hour deletion. That story does not fit a 300x250, and it does fit a :30 online video.</p>
+      <p><strong>One sequencing point worth holding to.</strong> The $4.50 Multiscreen Display line is the best value in the plan and the easiest to waste. It earns its rate as a retargeting floor, not as prospecting. Running it in week 1 against an empty pool spends 28% of the budget reaching strangers with a banner. Start online video on day one, hold display until the crypto-native flight and the video layer have built something to retarget, then turn it on and let it compound.</p>
+    </div>
+  </div>
+</section>
+
 <section id="inventory">
   <div class="wrap">
     <div class="shead reveal">
-      <div class="eyebrow"><i></i>05 <s>/</s> Inventory Board</div>
+      <div class="eyebrow"><i></i>06 <s>/</s> Inventory Board</div>
       <h2>What is actually buyable.</h2>
       <p class="sdek">Every property that will take a non-custodial swap advertiser, with rates, entry minimums and how to transact. Rates marked <span class="vsrc pub">PUBLISHED</span> were read off a live rate card or product page. Rates marked <span class="vsrc">REPORTED</span> come from third-party sources and need confirming on the insertion order. <strong>This is the first release of the board and it will keep growing.</strong></p>
     </div>
@@ -559,9 +647,9 @@ footer{padding:74px 0 52px;border-top:1px solid var(--bd)}
     <div class="forth reveal">
       <div class="eyebrow"><i></i>In Progress</div>
       <h3>More inventory is on the way.</h3>
-      <p>The board above covers what has been priced, verified and can be booked against a 30-day window starting now. Several further workstreams are already underway and will be released as separate proposals as pricing is confirmed.</p>
+      <p>The board above covers what has been priced, verified and can be booked against a 30-day window starting now. The Nexxen programmatic plan in section 05 is the first of these to land. Several further workstreams are underway and will be released as pricing is confirmed.</p>
       <div class="fgrid">
-        <div class="fitem"><h4>Programmatic</h4><p>Open-exchange and PMP display, online video, connected TV and digital audio, with on-chain and privacy-tech audience segments built for this advertiser. Scoped as its own proposal with its own measurement design.</p></div>
+        <div class="fitem"><h4>Additional programmatic supply</h4><p>Second and third DSP quotes to benchmark the Nexxen rates, plus digital audio, which is priced but absent from the current plan and worth testing against a product that explains well in voice.</p></div>
         <div class="fitem"><h4>Extended endemic</h4><p>Additional terminals, explorers, wallets and aggregator surfaces beyond the set priced here, including direct placements that require negotiation rather than a rate card.</p></div>
         <div class="fitem"><h4>Channel-specific builds</h4><p>Deeper proposals for the lanes that earn budget once the first flight reads, including affiliate and revenue-share, SEO and content, and the Partner API integration programme.</p></div>
       </div>
@@ -572,7 +660,7 @@ footer{padding:74px 0 52px;border-top:1px solid var(--bd)}
 <section id="credits">
   <div class="wrap">
     <div class="shead reveal">
-      <div class="eyebrow"><i></i>06 <s>/</s> The Credits</div>
+      <div class="eyebrow"><i></i>07 <s>/</s> The Credits</div>
       <h2>Snap and X, sized honestly.</h2>
       <p class="sdek">Both are worth having. Neither should carry the flight, and one of them is smaller than it sounds.</p>
     </div>
@@ -612,7 +700,7 @@ footer{padding:74px 0 52px;border-top:1px solid var(--bd)}
 <section id="runway">
   <div class="wrap">
     <div class="shead reveal">
-      <div class="eyebrow"><i></i>07 <s>/</s> Run Of Show</div>
+      <div class="eyebrow"><i></i>08 <s>/</s> Run Of Show</div>
       <h2>Thirty days, plus the two before them.</h2>
       <p class="sdek">CoinMarketCap needs five to ten business days from signed insertion order to live. DexScreener needs corporate KYC. Snap needs written category approval. Brave runs human review on every campaign. <strong>The pre-flight window is not optional, and skipping it costs a third of the flight.</strong></p>
     </div>
@@ -675,7 +763,7 @@ footer{padding:74px 0 52px;border-top:1px solid var(--bd)}
 <section id="measure">
   <div class="wrap">
     <div class="shead reveal">
-      <div class="eyebrow"><i></i>08 <s>/</s> Measurement</div>
+      <div class="eyebrow"><i></i>09 <s>/</s> Measurement</div>
       <h2>Measuring a product built not to be measurable.</h2>
       <p class="sdek">No accounts. No tracking cookies. Order records deleted at 24 hours. CoinMarketCap does not support third-party tracking pixels and Brave is architecturally anti-tracking. <strong>Standard attribution is unavailable, and pretending otherwise is how this flight would fail its own reporting.</strong></p>
     </div>
@@ -699,7 +787,7 @@ footer{padding:74px 0 52px;border-top:1px solid var(--bd)}
 <section id="risk">
   <div class="wrap">
     <div class="shead reveal">
-      <div class="eyebrow"><i></i>09 <s>/</s> Risk Register</div>
+      <div class="eyebrow"><i></i>10 <s>/</s> Risk Register</div>
       <h2>What could go wrong, and what absorbs it.</h2>
     </div>
     <div class="risks reveal" id="risks"></div>
@@ -709,7 +797,7 @@ footer{padding:74px 0 52px;border-top:1px solid var(--bd)}
 <section id="open">
   <div class="wrap">
     <div class="shead reveal">
-      <div class="eyebrow"><i></i>10 <s>/</s> Open Items</div>
+      <div class="eyebrow"><i></i>11 <s>/</s> Open Items</div>
       <h2>Four answers that would sharpen this.</h2>
       <p class="sdek">Each changes an allocation, not just a detail.</p>
     </div>
@@ -898,7 +986,86 @@ function render(){const t=TIERS[cur];
   requestAnimationFrame(()=>{document.querySelectorAll('.fill').forEach(f=>f.style.width=f.dataset.w+'%')});}
 render();
 
+/* ---- Nexxen programmatic plans ---- */
+const NPLANS=[
+{label:'$50K V1',name:'Nexxen quote',budget:50000,av:1500,
+ lines:[['Online Video','Desktop and mobile, :15 and :30, contextual onto crypto, Web3 and privacy content',30000,16],
+        ['Multiscreen Display','Social Extension static, 160x600, 300x250, 728x90, 320x50, 300x600',20000,4.5]],
+ kpis:[['6.41M','Total impressions','Including added value'],['$7.80','Blended eCPM','Cheapest of the four'],
+       ['60%','In video','The rest is static display'],['3%','Added value','$1,500 in bonus OLV']],
+ note:'<strong>The cheapest impressions and the weakest launch.</strong> Forty percent of budget sits in $4.50 static display, which at launch has no retargeting pool to work against and is therefore buying strangers a banner for a product that needs a sentence of explanation. The eCPM looks excellent precisely because the mix is weighted to the unit that will not do the explaining. Good structure for month three, wrong structure for month one.'},
+
+{label:'$50K V2',name:'Nexxen quote',budget:50000,av:1500,
+ lines:[['Connected TV Video','CTV, :15 and :30, Nexxen TV Audiences and Smart Contextual',30000,21],
+        ['Online Video','Desktop and mobile, :15 and :30',20000,16]],
+ kpis:[['2.77M','Total impressions','Including added value'],['$18.04','Blended eCPM','Most expensive of the four'],
+       ['100%','In video','No display at all'],['3%','Added value','$1,500 in bonus OLV']],
+ note:'<strong>All video, and over-weighted to the one screen the product cannot be used on.</strong> Sixty percent of budget goes to national CTV at $21, reaching a general US audience through inferred behavioural and contextual signals for a product with a narrow, self-selecting user base. CTV is the right instrument for a brand with mass appeal. This one has an audience that declares itself elsewhere, and a swap cannot be completed from a television.'},
+
+{label:'$100K V1',name:'Nexxen quote',budget:100000,av:5000,
+ lines:[['Online Video','Desktop and mobile, :15 and :30',30000,16],
+        ['Multiscreen Display','Social Extension static, five standard sizes',25000,4.5],
+        ['DOOH Display','Entertainment, bars, gyms, financial, urban panels, cannabis screens',25000,13.5],
+        ['Connected TV Video','CTV, :15 and :30',20000,21]],
+ kpis:[['10.55M','Total impressions','Including added value'],['$9.48','Blended eCPM','Strong headline rate'],
+       ['50%','In video','Split four ways overall'],['5%','Added value','$5,000 in bonus OLV']],
+ note:'<strong>Four channels, and the newest quarter of it cannot be targeted or verified.</strong> DOOH takes 25% of budget and its own row in the workbook states the constraint plainly: no audience targeting is possible, only geo. Its spec tab adds that third-party ad servers have no invalid-traffic or brand-safety solution for out-of-home and routinely bucket the impressions as invalid. For an advertiser whose entire measurement design is ref-code attribution, that is the wrong first dollar.'},
+
+{label:'$100K V2',name:'Nexxen quote',budget:100000,av:5000,
+ lines:[['Connected TV Video','CTV, :15 and :30, Nexxen TV Audiences and Smart Contextual',40000,21],
+        ['DOOH Display','Entertainment, bars, gyms, financial, urban panels, cannabis screens',30000,13.5],
+        ['Online Video','Desktop and mobile, :15 and :30',30000,16]],
+ kpis:[['6.31M','Total impressions','Including added value'],['$15.84','Blended eCPM','Stated in the workbook'],
+       ['70%','In video','No display retargeting'],['5%','Added value','$5,000 in bonus OLV']],
+ note:'<strong>The two least targetable lines take 70% of the budget.</strong> CTV at $40,000 and DOOH at $30,000 are both reach instruments, and neither can be pointed at declared crypto behaviour. Dropping Multiscreen Display also removes the only retargeting unit in the plan, which means nothing recaptures the people the video layer reaches. Highest spend on the weakest signal.'},
+
+{label:'$50K CCD',name:'Recommended',budget:50000,av:1500,
+ lines:[['Online Video','Desktop and mobile, weighted hard to contextual crypto, Web3 and privacy inventory',36000,16],
+        ['Multiscreen Display','Retargeting floor, lagged two weeks behind the video layer',14000,4.5]],
+ kpis:[['5.45M','Total impressions','Including added value'],['$9.17','Blended eCPM','Within 18% of the cheapest'],
+       ['72%','In video','Where the explaining happens'],['0','In untargetable units','No CTV, no DOOH at this level']],
+ note:'<strong>Online video carries the launch, display recaptures it.</strong> At $16 CPM with contextual targeting onto crypto and privacy content, OLV runs on the two screens where a swap actually gets completed and buys enough seconds to explain reject-and-refund. Display stays in at a reduced weight and switches on in week three, once the video layer and the crypto-native flight have built a pool worth retargeting. CTV is excluded here on purpose: below roughly $25,000 a national CTV buy is too thin to read, so a token line would spend real money to learn nothing.'},
+
+{label:'$100K CCD',name:'Recommended',budget:100000,av:5000,
+ lines:[['Online Video','Desktop and mobile, contextual crypto, Web3 and privacy, primary prospecting engine',50000,16],
+        ['Connected TV Video','CTV at a weight large enough to read, held to a quarter of budget',25000,21],
+        ['Multiscreen Display','Retargeting floor across five standard sizes, lagged two weeks',25000,4.5]],
+ kpis:[['10.18M','Total impressions','Within 4% of the largest'],['$9.82','Blended eCPM','Competitive with V1'],
+       ['75%','In video','Highest of any option'],['0','In DOOH','Reallocated to trackable units']],
+ note:'<strong>Same impression volume as the largest option, with every unit trackable.</strong> This build matches V1 on delivery to within 4% while moving the DOOH quarter into inventory that can be targeted and attributed. CTV enters here rather than at $50K because $25,000 is the point where a national buy produces a readable result. Revisit DOOH as a brand moment, a conference activation or a financial-district geo burst, where its lack of targeting matters less because the location is doing the targeting.'}
+];
+let np=4;
+document.getElementById('npsw').innerHTML=NPLANS.map((p,i)=>`
+<button class="tbtn ${i===np?'on':''}" onclick="setNP(${i})">
+  <span class="amt" style="font-size:21px">${p.label}</span><span class="nm">${p.name}</span></button>`).join('');
+function setNP(i){np=i;document.querySelectorAll('#npsw .tbtn').forEach((b,j)=>b.classList.toggle('on',j===i));renderNP();}
+function renderNP(){const p=NPLANS[np];
+  document.getElementById('npsum').innerHTML=p.kpis.map(k=>
+    `<div class="tsum"><div class="n">${k[0]}</div><div class="l">${k[1]}<br><span style="opacity:.62">${k[2]}</span></div></div>`).join('');
+  const avi=p.av/16*1000;
+  const rows=p.lines.map(l=>{const imps=l[2]/l[3]*1000,pc=l[2]/p.budget*100;
+    return `<div class="arow"><div class="nm">${l[0]}<small>${l[1]}</small></div>
+      <div class="amt">${fmt(l[2])}<br><span style="font-size:10.5px;font-weight:400;color:var(--m40)">$${l[3].toFixed(2)} CPM</span></div>
+      <div class="pct">${pc.toFixed(1)}%<br><span style="color:var(--m28)">${(imps/1e6).toFixed(2)}M</span></div>
+      <div class="track"><div class="fill" style="width:0%" data-w="${pc}"></div></div></div>`;}).join('');
+  const avrow=`<div class="arow"><div class="nm">Added value, bonus online video<small>${p.av===1500?'3%':'5%'} of budget delivered as bonus OLV impressions at $16 CPM</small></div>
+      <div class="amt" style="color:var(--ok)">+${fmt(p.av)}<br><span style="font-size:10.5px;font-weight:400;color:var(--m40)">no charge</span></div>
+      <div class="pct" style="color:var(--m28)">${(avi/1e6).toFixed(2)}M</div>
+      <div class="track"><div class="fill" style="width:0%;background:var(--ok)" data-w="${p.av/p.budget*100}"></div></div></div>`;
+  document.getElementById('nalloc').innerHTML=rows+avrow;
+  const tot=p.lines.reduce((a,l)=>a+l[2]/l[3]*1000,0)+avi;
+  document.getElementById('natot').innerHTML=
+    `<span>Working media ${fmt(p.budget)} <span style="color:var(--m28)">/</span> ${(tot/1e6).toFixed(2)}M impressions</span><b>$${(p.budget/tot*1000).toFixed(2)} eCPM</b>`;
+  document.getElementById('nnote').innerHTML=p.note;
+  requestAnimationFrame(()=>{document.querySelectorAll('#nalloc .fill').forEach(f=>f.style.width=f.dataset.w+'%')});}
+renderNP();
+
 const INV=[
+['prog','Nexxen, Online Video','nexxen.com','Desktop and mobile OLV, :15 and :30','$16.00 CPM','Per plan','Kevin Maggi, Nexxen','hi','Contextual onto crypto, Web3 and privacy content. The workhorse of the programmatic layer.','pub'],
+['prog','Nexxen, Multiscreen Display','nexxen.com','Static display, five standard sizes','$4.50 CPM','Per plan','Kevin Maggi, Nexxen','hi','Best value in the plan as a retargeting floor. Weak as prospecting.','pub'],
+['prog','Nexxen, Connected TV','nexxen.com','CTV video, :15 and :30','$21.00 CPM','Per plan','Kevin Maggi, Nexxen','md','Reach instrument. Needs roughly $25K to produce a readable result.','pub'],
+['prog','Nexxen, DOOH','nexxen.com','Out-of-home display and video','$13.50 CPM','Per plan','Kevin Maggi, Nexxen','lo','Geo targeting only, no audience layer, and third-party servers bucket OOH impressions as invalid.','pub'],
+['prog','Nexxen, Audio','nexxen.com','Recorded audio, :15, :30, :60','Quote','Per plan','Kevin Maggi, Nexxen','md','Not in the current quote. Companion banner 640x640 or 300x250. Worth pricing.','pub'],
 ['brave','Brave Ads, Push','brave.com','Push notification, self-serve','CPM or CPC, quantity discounts over $50K/mo','$500 / month','ads.brave.com self-serve','hi','57M monthly actives who chose a privacy browser. Pays in BAT, SOL, USDT, USDC or card.','pub'],
 ['brave','Brave Search Ads','search.brave.com','Paid search placements','Quote','Quote','adsales@brave.com','hi','23M daily queries. The only paid-search inventory realistically open to this client.','pub'],
 ['brave','Brave New Tab Takeover','brave.com','Premium new-tab placement','Quote','Quote','adsales@brave.com, direct only','hi','Not available self-serve. The placement worth negotiating at the top tier.','pub'],
@@ -944,7 +1111,7 @@ const INV=[
 ['b2b','Hackathon integration track','ETHGlobal','Sponsored prize track','$10,000 to $20,000 prize pool','Quote','Direct','hi','Puts the Partner API in front of builders with a reason to integrate it.','rep'],
 ['b2b','Developer newsletter','TLDR and peers','Newsletter slot','$5,000 to $15,000 per issue','1 issue','Direct','md','Broad developer reach. Less crypto-specific than The Block.','pub']
 ];
-const CATS=[['all','All inventory'],['brave','Brave'],['terminal','Terminals and data'],['network','Ad networks'],
+const CATS=[['all','All inventory'],['prog','Programmatic'],['brave','Brave'],['terminal','Terminals and data'],['network','Ad networks'],
   ['telegram','Telegram'],['kol','KOL and audio'],['news','Media and newsletters'],
   ['social','Social platforms'],['b2b','Partner API']];
 let fcur='all';
