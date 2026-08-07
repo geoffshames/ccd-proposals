@@ -276,7 +276,7 @@ const html = `<!DOCTYPE html>
       </div>
     </div>
     <div class="cover-foot">
-      <div><div class="mono dim">The moment</div><div class="cv">"Damned" is doing roughly 650K streams a day, organically</div></div>
+      <div><div class="mono dim">The moment</div><div class="cv">"Damned" is doing over 850K streams a day on Spotify alone, organically</div></div>
       <div><div class="mono dim">Prepared By</div><div class="cv">Geoff Shames / Co-Founder, CCD</div></div>
     </div>
   </section>
@@ -314,10 +314,10 @@ const html = `<!DOCTYPE html>
       <p class="desc">The top posts using the Damned sound right now, ranked by views. These are the ones for Miguel to react to, stitch, or duet while the moment is hot.</p>
     </div>
     <div class="react-momentum">
-      <div class="rm"><div class="rn">172,515</div><span class="rl">New posts on the sound, last 14 days</span></div>
-      <div class="rm"><div class="rn">14.7M</div><span class="rl">Streams in the last 14 days</span></div>
-      <div class="rm"><div class="rn">1.51M</div><span class="rl">Lifetime posts using the sound</span></div>
-      <div class="rm"><div class="rn">+57%</div><span class="rl">Shazams month over month</span></div>
+      <div class="rm"><div class="rn">857K</div><span class="rl">Spotify streams per day, 7 day average</span></div>
+      <div class="rm"><div class="rn">+23.0M</div><span class="rl">Spotify streams added this month (+46%)</span></div>
+      <div class="rm"><div class="rn">1.57M</div><span class="rl">Lifetime posts using the sound (+530K this month)</span></div>
+      <div class="rm"><div class="rn">+44%</div><span class="rl">Shazams month over month</span></div>
     </div>
     <div class="react-grid">
 
@@ -392,7 +392,7 @@ const html = `<!DOCTYPE html>
       </article>
 
     </div>
-    <p class="tbl-note">Top posts using the Damned sound, ranked by views, current as of August 5, 2026. This set moves fast and is worth refreshing before each push.</p>
+    <p class="tbl-note">Top posts using the Damned sound, ranked by views, current as of August 7, 2026. This set moves fast and is worth refreshing before each push.</p>
   </section>
   <!-- SECTION 1: CATALOG PLAYS -->
   <section class="sec wrap" id="catalog">
@@ -621,7 +621,7 @@ const html = `<!DOCTYPE html>
   </section>
 
   <footer class="wrap">
-    <p class="fn"><b>Notes.</b> View counts are current as of August 5, 2026 and will drift. Every clip was verified live and embeddable at build. Frame-level teardowns were produced with TwelveLabs video AI (Pegasus and Marengo) run on the downloaded clips, not on captions alone. Format-steal examples are not strictly catalog records; they are included because the structure travels.</p>
+    <p class="fn"><b>Notes.</b> View counts are current as of August 7, 2026 and will drift. Every clip was verified live and embeddable at build. Frame-level teardowns were produced with TwelveLabs video AI (Pegasus and Marengo) run on the downloaded clips, not on captions alone. Format-steal examples are not strictly catalog records; they are included because the structure travels.</p>
   </footer>
 </div>
 
