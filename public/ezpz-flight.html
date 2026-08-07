@@ -352,12 +352,14 @@ tbody tr:last-child td{border-bottom:none}
 .brow .bl small{display:block;font-family:var(--mono);font-size:9.5px;letter-spacing:.06em;
   color:var(--m28);margin-top:3px}
 .brow input[type=range]{width:100%;accent-color:var(--accent);cursor:pointer;height:3px}
-.brow input[type=number]{width:100%;background:var(--bg);border:1px solid var(--bd2);color:var(--fg);
-  font-family:var(--mono);font-size:12.5px;padding:8px 9px;outline:none;text-align:right}
-.brow input[type=number]:focus{border-color:var(--accent)}
+.brow input[type=text]{width:100%;background:var(--bg);border:1px solid var(--bd2);color:var(--fg);
+  font-family:var(--mono);font-size:12.5px;font-weight:600;padding:9px 10px;outline:none;
+  text-align:right;-webkit-appearance:none;appearance:none;border-radius:0}
+.brow input[type=text]:focus{border-color:var(--accent);background:#000}
+.brow input[type=text]::selection{background:var(--accent);color:#fff}
 .brow .imp{font-family:var(--mono);font-size:11.5px;color:var(--m55);text-align:right}
 .brow .imp b{display:block;color:var(--fg);font-size:12.5px;font-weight:600}
-.brow.under input[type=number]{border-color:var(--warn)}
+.brow.under input[type=text]{border-color:var(--warn);color:var(--warn)}
 @media(max-width:760px){
   .brow{grid-template-columns:1fr 100px;gap:10px}
   .brow input[type=range]{grid-column:1/-1}
