@@ -1467,6 +1467,7 @@ document.getElementById('risks').innerHTML=RISKS.map(r=>`<div class="risk">
   <div class="mit"><b>Absorbed by</b>${r[3]}</div></div>`).join('');
 
 /* ============ CAMPAIGN BUILDER ============ */
+const nImp=v=>v>=1e9?(v/1e9).toFixed(2)+'B':v>=1e6?(v/1e6).toFixed(2)+'M':Math.round(v).toLocaleString();
 const LINES=[
  // layer, key, label, note, cpm, min, sliderMax
  ['cn','cmc','CoinMarketCap','Display, managed. $20,000 entry minimum',6.00,20000,80000],
@@ -1540,7 +1541,7 @@ function recalc(){
     const v=B[k]||0, im=cpm>0?v/cpm*1000:0;
     per[lk]+=v; imps[lk]+=im;
     const el=document.getElementById('imp-'+k);
-    if(el) el.innerHTML=`<b>${im>=1e6?(im/1e6).toFixed(2)+'M':Math.round(im).toLocaleString()}</b>impressions`;
+    if(el) el.innerHTML=`<b>${nImp(im)}</b>impressions`;
     const row=document.getElementById('row-'+k);
     if(row){row.classList.toggle('active',v>0); row.classList.toggle('under',v>0&&min>0&&v<min);}
   });
@@ -1575,7 +1576,7 @@ function recalc(){
     ${per.og>0?`<div class="borow fee"><span>Partner fee, ${prate}%</span><b>${fmt(pfee)}</b></div>`:''}
     <div class="borow fee"><span>CCD management, 15%</span><b>${fmt(ccd)}</b></div>
     <div class="borow grand"><span>Total investment</span><b>${fmt(total)}</b></div>
-    <div class="borow"><span>Delivered impressions</span><b>${totalImp>=1e6?(totalImp/1e6).toFixed(2)+'M':Math.round(totalImp).toLocaleString()}</b></div>
+    <div class="borow"><span>Delivered impressions</span><b>${nImp(totalImp)}</b></div>
     <div class="borow"><span>Blended eCPM on media</span><b>${ecpm>0?'$'+ecpm.toFixed(2):'&mdash;'}</b></div>
     ${warns.length?`<div class="bwarn"><div class="l">${warns.length} flag${warns.length>1?'s':''} to resolve</div><ul>${warns.map(w=>`<li>${w}</li>`).join('')}</ul></div>`
       :(media>0?'<div class="bok">No flags. Build is clean.</div>':'')}`;
@@ -1610,7 +1611,7 @@ function buildSummary(){
     if(!rows.length) continue;
     out+=LAYERS[lk][0].toUpperCase()+'  '+fmt(per[lk])+'\n';
     rows.forEach(([,k,label,,cpm])=>{const v=B[k],im=v/cpm*1000;
-      out+='  '+label.padEnd(30)+fmt(v).padStart(10)+'   '+(im>=1e6?(im/1e6).toFixed(2)+'M':Math.round(im).toLocaleString())+' imps\n';});
+      out+='  '+label.padEnd(30)+fmt(v).padStart(10)+'   '+nImp(im)+' imps\n';});
     out+='\n';}
   out+='Working media'.padEnd(32)+fmt(media)+'\n';
   if(per.og>0) out+=('Partner fee, '+prate+'%').padEnd(32)+fmt(pfee)+'\n';
