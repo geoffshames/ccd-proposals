@@ -317,6 +317,18 @@ tbody tr:last-child td{border-bottom:none}
 .stack p:last-child{margin-bottom:0}
 .stack p strong{color:var(--fg);font-weight:500}
 
+/* fee bar */
+.feebar{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:1px;
+  background:var(--bd2);border:1px solid var(--bd2);border-top:none}
+.feecell{background:var(--card);padding:20px 22px}
+.feecell span{display:block;font-family:var(--mono);font-size:8.5px;letter-spacing:.14em;
+  text-transform:uppercase;color:var(--m40);margin-bottom:9px;line-height:1.5}
+.feecell b{font-family:var(--mono);font-size:19px;font-weight:600;letter-spacing:-.025em}
+.feecell.fee b{color:var(--warn)}
+.feecell.tot{background:var(--accent)}
+.feecell.tot span{color:rgba(255,255,255,.78)}
+.feecell.tot b{color:#fff;font-size:22px}
+
 /* organic amplification */
 .cheap{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--bd);border:1px solid var(--bd)}
 @media(max-width:900px){.cheap{grid-template-columns:1fr}}
@@ -526,7 +538,7 @@ footer{padding:74px 0 52px;border-top:1px solid var(--bd)}
 
     <div class="thesis reveal">
       <div class="eyebrow"><i></i>Recommendation</div>
-      <p>Fund media to build the credibility that makes wallets take the integration call. Fund the Partner API lane to convert that into distribution. <em>Volume follows the second, not the first.</em></p>
+      <p>This plan buys the credibility that makes wallets take the integration call. Business development converts that into distribution and is run as a separate workstream. <em>Volume follows the second, and the second is not possible without the first.</em></p>
     </div>
 
     <div class="mgrid reveal">
@@ -610,12 +622,12 @@ footer{padding:74px 0 52px;border-top:1px solid var(--bd)}
     <div class="shead reveal">
       <div class="eyebrow"><i></i>04 <s>/</s> The Builds</div>
       <h2>Three flights.</h2>
-      <p class="sdek">Thirty days of working media. Every figure is cash out the door, with the Snap match and X credit treated as additive and handled separately in section 09. <strong>Select a tier.</strong></p>
+      <p class="sdek">Thirty days of working media. <strong>CCD management is 15% on top of every buy and is shown in the total.</strong> The Snap match and X credit are additive and handled separately in section 09. <strong>Select a tier.</strong></p>
     </div>
     <div class="tiersw reveal" id="tiersw"></div>
     <div class="tsummary reveal" id="tsum"></div>
     <div class="alloc reveal" id="alloc"></div>
-    <div class="atotal reveal" id="atot"></div>
+    <div class="feebar reveal" id="atot"></div>
     <div class="tnote reveal" id="tnote"></div>
   </div>
 </section>
@@ -655,12 +667,12 @@ footer{padding:74px 0 52px;border-top:1px solid var(--bd)}
 
     <div class="shead reveal" style="margin:64px 0 34px">
       <h3 style="font-size:26px;margin-bottom:14px">Every option, compared.</h3>
-      <p class="sdek">Impressions and blended eCPM computed from the quoted rates and budgets in the workbook. <strong>Select a plan.</strong></p>
+      <p class="sdek">Impressions and blended eCPM computed from the quoted rates and budgets in the partner workbook. CCD management is 15% on top. <strong>Select a plan.</strong></p>
     </div>
     <div class="tiersw reveal" id="npsw"></div>
     <div class="tsummary reveal" id="npsum"></div>
     <div class="alloc reveal" id="nalloc"></div>
-    <div class="atotal reveal" id="natot"></div>
+    <div class="feebar reveal" id="natot"></div>
     <div class="tnote reveal" id="nnote"></div>
 
     <div class="stack reveal">
@@ -695,7 +707,7 @@ footer{padding:74px 0 52px;border-top:1px solid var(--bd)}
 
     <div class="shead reveal" style="margin:64px 0 30px">
       <h3 style="font-size:26px;margin-bottom:14px">Five products, three tiers each.</h3>
-      <p class="sdek">Budget tiers line up exactly with the flight tiers in section 04. <strong>Management fee sits on top of the media and is not included in the figures below.</strong> Select a product.</p>
+      <p class="sdek">Budget tiers line up exactly with the flight tiers in section 04. <strong>Two fees sit on top of the media here: the partner&#39;s own management fee, and CCD at 15%.</strong> Both are shown per tier. Select a product.</p>
     </div>
     <div class="tiersw reveal" id="orgsw"></div>
     <div class="orgwrap reveal" id="orggrid"></div>
@@ -720,11 +732,11 @@ footer{padding:74px 0 52px;border-top:1px solid var(--bd)}
     <div class="shead reveal">
       <div class="eyebrow"><i></i>07 <s>/</s> The Blend</div>
       <h2>Three layers, one number.</h2>
-      <p class="sdek">Each layer buys something the others cannot. Crypto-native buys intent, programmatic buys comprehension, amplification buys scale. <strong>Every figure below is total cost including the amplification partner&#39;s management fee.</strong> Select a level.</p>
+      <p class="sdek">Each layer buys something the others cannot. Crypto-native buys intent, programmatic buys comprehension, amplification buys scale. <strong>Totals include the amplification partner&#39;s management fee and CCD at 15%.</strong> Select a level.</p>
     </div>
     <div class="tiersw reveal" id="blsw"></div>
     <div class="blendwrap reveal" id="blgrid"></div>
-    <div class="atotal reveal" id="bltot"></div>
+    <div class="feebar reveal" id="bltot"></div>
     <div class="tnote reveal" id="blnote"></div>
   </div>
 </section>
@@ -734,7 +746,7 @@ footer{padding:74px 0 52px;border-top:1px solid var(--bd)}
     <div class="shead reveal">
       <div class="eyebrow"><i></i>08 <s>/</s> Inventory Board</div>
       <h2>What is actually buyable.</h2>
-      <p class="sdek">Every property that will take a non-custodial swap advertiser, with rates, entry minimums and how to transact. Rates marked <span class="vsrc pub">PUBLISHED</span> were read off a live rate card or product page. Rates marked <span class="vsrc">REPORTED</span> come from third-party sources and need confirming on the insertion order. <strong>This is the first release of the board and it will keep growing.</strong></p>
+      <p class="sdek">Every property that will take a non-custodial swap advertiser, with rates, entry minimums and how to transact. Rates marked <span class="vsrc pub">PUBLISHED</span> were read off a live rate card or product page. Rates marked <span class="vsrc">REPORTED</span> come from third-party sources and need confirming on the insertion order. <strong>Everything here is either self-serve or a direct sales order.</strong> Inventory that requires cultivating a relationship before it can be bought, including podcast sponsorships, community placements and event activations, is deliberately excluded. <strong>CCD management is 15% on top of every buy.</strong></p>
     </div>
     <div class="filters reveal" id="filters"></div>
     <div class="tblwrap reveal">
@@ -835,8 +847,8 @@ footer{padding:74px 0 52px;border-top:1px solid var(--bd)}
         <h4>Voice layer</h4>
         <ul>
           <li><strong>KOL wave one</strong>, weighted to 25K to 100K accounts</li>
-          <li><strong>Monero commerce cluster</strong> goes live, the highest-fit inventory in the plan</li>
-          <li>Newsletters land mid-week for the open-rate peak</li>
+          <li><strong>Newsletter layer</strong> books against published rate cards, no negotiation</li>
+          <li>Placements land mid-week for the open-rate peak</li>
           <li><strong>Cut the bottom quartile</strong> of week-one channels on cost per first swap</li>
         </ul>
       </div>
@@ -1016,49 +1028,55 @@ document.addEventListener('keydown',e=>{if(e.key==='Escape')closeModal()});
 
 const TIERS=[
 {amt:50000,label:'$50,000',name:'Beachhead',
- kpis:[['1','Anchor property','CoinMarketCap at minimum buy'],['~30','Placements','Across seven channels'],
+ kpis:[['1','Anchor property','CoinMarketCap at minimum buy'],['5 of 6','Self-serve','Live without a sales call'],
        ['0%','In closed platforms','No wasted approval cycles'],['$0','Pre-allocated to Snap','Approval first, budget after']],
  lines:[
-  ['CoinMarketCap managed display','Coin detail side banners and app placements, static creative, geo-targeted to priority markets',20000],
-  ['X KOL layer, wave one','Six to eight creators in the 25K to 100K band, bundled for the multi-post discount',8000],
-  ['Telegram direct channel buys','Fifteen to twenty privacy and trading channels bought on measured reads',7000],
-  ['Brave push and search','Self-serve push notifications plus Brave Search, the cheapest clean read available',5000],
-  ['Monero commerce cluster','Monero Talk sponsor segments plus r/Monero and r/privacy Reddit Ads',5000],
-  ['Wallet-targeted display','Always-on floor via Slise or Coinzilla, weighted to in-wallet placements',3000],
-  ['Partner API lane','One developer-audience placement to open the integration conversation',2000]],
- note:'<strong>What this tier is for.</strong> Not a full launch. A wedge that proves the thesis cheaply: one premium anchor, the highest-fit privacy inventory, and enough Brave, KOL and Telegram volume to generate a real cost-per-first-swap read. CoinMarketCap consumes 40% at its own $20,000 minimum, which is the one concentration this tier cannot avoid. If the ref-code data comes back clean, this tier is the argument for the next one.'},
+  ['CoinMarketCap managed display','Coin detail side banners and app placements, static creative, geo-targeted. Signed insertion order',20000],
+  ['X KOL layer, wave one','Six to eight creators in the 25K to 100K band, bought through a single marketplace or agency order',9000],
+  ['Telegram','Self-serve sponsored messages plus channel buys through the Telega marketplace',8000],
+  ['Brave push and search','Self-serve at $500 a month minimum, paid in USDC. Live the day creative clears review',6000],
+  ['Reddit Ads','Self-serve, subreddit-targeted across the trading communities. $25 lifetime minimum',3000],
+  ['Wallet-targeted networks','Self-serve floor via Slise, Coinzilla or Cointraffic, weighted to in-wallet placements',4000]],
+ note:'<strong>What this tier is for.</strong> Not a full launch. A wedge that proves the thesis cheaply: one premium anchor and enough Brave, Telegram, Reddit and KOL volume to generate a real cost-per-first-swap read. Five of the six lines are self-serve and can be live within days of creative approval. CoinMarketCap consumes 40% at its own $20,000 minimum, which is the one concentration this tier cannot avoid. If the ref-code data comes back clean, this tier is the argument for the next one.'},
 
 {amt:100000,label:'$100,000',name:'Two-Front',
- kpis:[['4','Terminal properties','CMC, CoinGecko, Etherscan, Blockscan'],['~65','Placements','Across nine channels'],
-       ['$10K','Snap pilot ceiling','Released only on written approval'],['2','Funnels running','Consumer and Partner API']],
+ kpis:[['4','Terminal properties','CMC, CoinGecko, Etherscan, Blockscan'],['~65','Placements','Across eight channels'],
+       ['$10K','Snap pilot ceiling','Released only on written approval'],['3','Direct sales orders','CoinGecko, Etherscan, Brave takeover']],
  lines:[
   ['CoinMarketCap managed display','Expanded placement set including search bar and watchlist inventory',28000],
-  ['X KOL layer','Ten creators at 25K to 100K plus one anchor at 100K to 500K, all Paid Partnership labelled',16000],
-  ['Telegram, platform plus direct','Self-serve sponsored messages growing the ezpz channel, plus direct channel buys linking to site',13000],
-  ['Brave full funnel','Push and Search at scale plus a first New Tab Takeover negotiation with the direct team',12000],
-  ['CoinGecko banner network','Run-of-network display at reported $8 to $12 CPM with geo weighting',9000],
-  ['Etherscan and Blockscan family','CPM sponsorship across Etherscan, BscScan, Arbiscan and Basescan',7000],
-  ['Monero and privacy commerce cluster','Monero Talk multi-episode, Reddit, and privacy-wallet community placements',7000],
-  ['Wallet-targeted display and networks','Slise in-wallet inventory plus a Coinzilla or Cointraffic retargeting floor',5000],
-  ['Partner API lane','Developer newsletter placement plus a trade-press credibility buy',3000]],
- note:'<strong>What changes at this level.</strong> The terminal layer becomes a real presence rather than a single placement, which is the point at which a wallet BD team recognises the name. Brave moves from test to funnel, including the first New Tab Takeover conversation. The Partner API funnel gets its own budget instead of borrowing from consumer. And Snap becomes worth piloting, at $10,000 and not a dollar more until the cost per first swap justifies it.'},
+  ['X KOL layer','Ten creators at 25K to 100K plus one anchor at 100K to 500K, bought on one agency order',17000],
+  ['Telegram, platform plus marketplace','Self-serve sponsored messages growing the ezpz channel, plus Telega marketplace channel buys',14000],
+  ['Brave full funnel','Push and Search at scale plus a New Tab Takeover bought direct from the ad sales team',13000],
+  ['CoinGecko banner network','Run-of-network display at reported $8 to $12 CPM with geo weighting. Direct sales order',10000],
+  ['Etherscan and Blockscan family','CPM sponsorship across Etherscan, BscScan, Arbiscan and Basescan. Direct sales order',8000],
+  ['Wallet-targeted display and networks','Slise in-wallet inventory plus a Coinzilla or Cointraffic retargeting floor',6000],
+  ['Reddit Ads','Self-serve across the trading communities, scaled off the cheapest creative test in the plan',4000]],
+ note:'<strong>What changes at this level.</strong> The terminal layer becomes a real presence rather than a single placement, which is the point at which a wallet BD team recognises the name. Brave moves from test to funnel, including the first New Tab Takeover conversation. Three lines move from self-serve to a direct sales order, which is the only added friction at this level and is measured in days rather than relationships. And Snap becomes worth piloting, at $10,000 and not a dollar more until the cost per first swap justifies it.'},
 
 {amt:250000,label:'$250,000',name:'Category Claim',
  kpis:[['$50K','CMC commitment','Unlocks animated creative'],['~150','Placements','Across nine channels'],
        ['$25K','Snap pilot ceiling','Scaling to $40K on performance'],['3','Layers funded','Distribution, demand, mainstream']],
  lines:[
   ['CoinMarketCap managed display','$50K commitment unlocks animated GIF creative across the full placement set',50000],
-  ['X KOL programme','Fifteen mid-tier creators, three at 100K to 500K, and two branded Spaces sessions',40000],
-  ['Brave full stack','New Tab Takeover bought direct, plus Push and Brave Search at full weight',35000],
-  ['Telegram at scale','Self-serve platform at full weight plus roughly forty direct channel buys across languages',32000],
-  ['Wallet-targeted display and networks','Slise, Blockchain-Ads wallet segments and a programmatic retargeting floor',22000],
-  ['Newsletter layer','Token Dispatch, Web3 Daily, Crypto Briefing and one premium list at published rates',20000],
-  ['CoinGecko','Expanded banner buy with country targeting',18000],
-  ['Partner API lane','Trade-press placement, a co-hosted side event, and a hackathon integration track',18000],
-  ['Monero and privacy commerce cluster','Full-flight Monero Talk sponsorship plus the privacy community set',15000]],
- note:'<strong>Where the top tier concentrates.</strong> CoinMarketCap at $50,000 unlocks animated creative, a real performance difference on terminal placements and only available at this level. Brave goes full stack across New Tab Takeover, Push and Search. Telegram runs at roughly forty direct channels across languages. The Partner API lane gets a co-hosted side event and a hackathon integration track, which is where the integration thesis in section 01 gets executed rather than argued. No single line exceeds 20% of budget.'}
+  ['X KOL programme','Fifteen mid-tier creators, three at 100K to 500K, and two branded Spaces, on one agency order',40000],
+  ['Brave full stack','New Tab Takeover bought direct, plus Push and Brave Search at full weight',36000],
+  ['Telegram at scale','Self-serve platform at full weight plus roughly forty marketplace channel buys across languages',32000],
+  ['Reddit and wallet-targeted networks','Reddit Ads at scale plus Slise, Blockchain-Ads segments and a retargeting floor',24000],
+  ['Newsletter layer','Token Dispatch, Web3 Daily, Crypto Briefing and one premium list, all at published rates',22000],
+  ['CoinGecko','Expanded banner buy with country targeting',20000],
+  ['Trade press','Institutional and developer placements against a wallet-owning audience. Direct sales order',14000],
+  ['Etherscan and Blockscan family','Expanded CPM sponsorship across the explorer network',12000]],
+ note:'<strong>Where the top tier concentrates.</strong> CoinMarketCap at $50,000 unlocks animated creative, a real performance difference on terminal placements and only available at this level. Brave goes full stack across New Tab Takeover, Push and Search. Telegram runs at roughly forty direct channels across languages. Trade press carries the credibility buy against a wallet-owning audience, which is what makes the integration conversation in section 01 possible. No single line exceeds 20% of budget.'}
 ];
 let cur=1;const fmt=n=>'$'+n.toLocaleString();
+const CCD_FEE=0.15;
+function feecells(media,partnerFee){
+  const ccd=Math.round(media*CCD_FEE), tot=media+(partnerFee||0)+ccd;
+  let c=`<div class="feecell"><span>Working media</span><b>${fmt(media)}</b></div>`;
+  if(partnerFee) c+=`<div class="feecell fee"><span>Partner management fee</span><b>${fmt(partnerFee)}</b></div>`;
+  c+=`<div class="feecell fee"><span>CCD management, 15%</span><b>${fmt(ccd)}</b></div>`;
+  c+=`<div class="feecell tot"><span>Total investment</span><b>${fmt(tot)}</b></div>`;
+  return c;}
 document.getElementById('tiersw').innerHTML=TIERS.map((t,i)=>`
 <button class="tbtn ${i===cur?'on':''}" onclick="setTier(${i})">
   <span class="amt">${t.label}</span><span class="nm">${t.name}</span></button>`).join('');
@@ -1070,7 +1088,7 @@ function render(){const t=TIERS[cur];
     return `<div class="arow"><div class="nm">${l[0]}<small>${l[1]}</small></div>
       <div class="amt">${fmt(l[2])}</div><div class="pct">${p.toFixed(1)}%</div>
       <div class="track"><div class="fill" style="width:0%" data-w="${p}"></div></div></div>`;}).join('');
-  document.getElementById('atot').innerHTML=`<span>Total working media, 30 days</span><b>${fmt(t.amt)}</b>`;
+  document.getElementById('atot').innerHTML=feecells(t.amt,0);
   document.getElementById('tnote').innerHTML=t.note;
   requestAnimationFrame(()=>{document.querySelectorAll('.fill').forEach(f=>f.style.width=f.dataset.w+'%')});}
 render();
@@ -1144,7 +1162,9 @@ function renderNP(){const p=NPLANS[np];
   document.getElementById('nalloc').innerHTML=rows+avrow;
   const tot=p.lines.reduce((a,l)=>a+l[2]/l[3]*1000,0)+avi;
   document.getElementById('natot').innerHTML=
-    `<span>Working media ${fmt(p.budget)} <span style="color:var(--m28)">/</span> ${(tot/1e6).toFixed(2)}M impressions</span><b>$${(p.budget/tot*1000).toFixed(2)} eCPM</b>`;
+    `<div class="feecell"><span>Delivered impressions</span><b>${(tot/1e6).toFixed(2)}M</b></div>`+
+    `<div class="feecell"><span>Blended eCPM</span><b>$${(p.budget/tot*1000).toFixed(2)}</b></div>`+
+    feecells(p.budget,0);
   document.getElementById('nnote').innerHTML=p.note;
   requestAnimationFrame(()=>{document.querySelectorAll('#nalloc .fill').forEach(f=>f.style.width=f.dataset.w+'%')});}
 renderNP();
@@ -1193,7 +1213,9 @@ function renderOG(){const p=ORG[og];
         <dt>Views</dt><dd>${views}</dd>
         <dt>Eff CPM</dt><dd>${cpm}</dd>
         <dt>Scope</dt><dd>${extra}</dd>
-        <dt>All in</dt><dd>${fmt(Math.round(b*(1+parseFloat(fee.replace(/[+%]/g,''))/100)))}<small>media plus fee</small></dd>
+        <dt>Partner fee</dt><dd>${fmt(Math.round(b*parseFloat(fee.replace(/[+%]/g,''))/100))}</dd>
+        <dt>CCD 15%</dt><dd>${fmt(Math.round(b*CCD_FEE))}</dd>
+        <dt>Total</dt><dd>${fmt(b+Math.round(b*parseFloat(fee.replace(/[+%]/g,''))/100)+Math.round(b*CCD_FEE))}<small>media plus both fees</small></dd>
       </dl>
     </div>`).join('');
   document.getElementById('orgnote').innerHTML=p.note;}
@@ -1201,18 +1223,18 @@ renderOG();
 
 /* ---- blended builds ---- */
 const BLEND=[
-{label:'$157.5K',name:'Entry blend',
+{label:'$180K',name:'Entry blend',
  rows:[['Crypto-native flight',50000,0,'Section 04 Beachhead','CoinMarketCap anchor, Brave, Telegram, KOL and the Monero cluster. <strong>Buys intent.</strong> This is the only layer where someone arrives already looking for a swap.'],
        ['Programmatic',50000,0,'Section 05 recommended','Online video weighted to contextual crypto and privacy inventory, with a lagged display retargeting floor. <strong>Buys comprehension.</strong> Thirty seconds is enough to explain reject-and-refund.'],
        ['Organic amplification',50000,15,'Reddit Kickoff','36+ guaranteed threads across the trading subreddits, 15m to 30m views, and an SEO position that keeps compounding after the flight. <strong>Buys trust.</strong>']],
  note:'<strong>The smallest blend where all three layers are live.</strong> Each partner sits at its own entry minimum, so nothing is bought at a weight too thin to read. The amplification layer goes to Reddit rather than logo placement because at this level the brand has no recognition to amplify, and the search result is the thing standing between a stranger and a first swap.'},
-{label:'$312.5K',name:'Growth blend',
- rows:[['Crypto-native flight',100000,0,'Section 04 Two-Front','Four terminal properties, Brave full funnel, Telegram at weight, and the Partner API lane funded separately from consumer. <strong>Buys intent and opens the integration conversation.</strong>'],
+{label:'$357.5K',name:'Growth blend',
+ rows:[['Crypto-native flight',100000,0,'Section 04 Two-Front','Four terminal properties, Brave full funnel, Telegram at weight and Reddit at scale, all self-serve or direct order. <strong>Buys intent and opens the integration conversation.</strong>'],
        ['Programmatic',100000,0,'Section 05 recommended','Online video at $50K, CTV entering at a readable $25K, display retargeting at $25K. No DOOH. <strong>Buys comprehension at national scale.</strong>'],
        ['Organic amplification',100000,12.5,'Reddit Growth plus X','85+ threads and 40m to 80m views, with X amplification landing on the KOL posts the flight is already paying for. <strong>Buys trust and multiplies committed budget.</strong>']],
  note:'<strong>The level where the layers start compounding rather than just coexisting.</strong> X amplification lands on KOL posts already funded in the crypto-native layer, programmatic display retargets everyone the other two layers touched, and the Reddit position built here keeps returning long after the flight closes. Splitting the amplification budget across two products means each still clears its own entry minimum.'},
-{label:'$625K',name:'Category blend',
- rows:[['Crypto-native flight',250000,0,'Section 04 Category Claim','CoinMarketCap at $50K unlocking animated creative, Brave full stack, forty Telegram channels, and a hackathon integration track. <strong>Buys intent at category-leading weight.</strong>'],
+{label:'$715K',name:'Category blend',
+ rows:[['Crypto-native flight',250000,0,'Section 04 Category Claim','CoinMarketCap at $50K unlocking animated creative, Brave full stack, forty Telegram channels, and a trade-press credibility buy. <strong>Buys intent at category-leading weight.</strong>'],
        ['Programmatic',100000,0,'Section 05 recommended','The quote tops out here. Same 10.18M impressions as the largest option the partner proposed, with every unit trackable. <strong>Buys comprehension.</strong>'],
        ['Organic amplification',250000,10,'Logo Dominance','1.25B+ guaranteed views at a tenth of a cent, plus three to twelve months of bonus delivery at no cost. <strong>Buys unavoidability, once the other two layers have taught the market what ezpz is.</strong>']],
  note:'<strong>This is the level where logo placement finally makes sense.</strong> By the time this blend is running, the crypto-native and programmatic layers have established what the product does, so a logo in a clip has something to attach to. 1.25B guaranteed views is more delivery than every other line in this document combined, at a cost per impression between 60 and 160 times lower. Programmatic stays at $100K because that is where the partner quote ends, and the surplus goes where it compounds.'}
@@ -1230,9 +1252,9 @@ function renderBL(){const b=BLEND[bl];
       <div class="sub">${fee?'plus '+fee+'% fee, '+fmt(Math.round(amt*fee/100)):'no agency fee on media'}</div>
       <div class="buys">${buys}</div>
     </div>`).join('');
-  const tot=b.rows.reduce((a,r)=>a+r[1]+Math.round(r[1]*r[2]/100),0);
-  document.getElementById('bltot').innerHTML=
-    `<span>Total cost, all layers, fees included</span><b>${fmt(tot)}</b>`;
+  const media=b.rows.reduce((a,r)=>a+r[1],0);
+  const pfee=b.rows.reduce((a,r)=>a+Math.round(r[1]*r[2]/100),0);
+  document.getElementById('bltot').innerHTML=feecells(media,pfee);
   document.getElementById('blnote').innerHTML=b.note;}
 renderBL();
 
@@ -1276,8 +1298,7 @@ const INV=[
 
 ['kol','X KOL, 25K to 100K','Per creator','Post or thread','$1,000 to $5,000, $20 to $100 CPM','Per creator','Direct or marketplace','hi','The efficiency band. Bundling three or more posts cuts 20% to 40%.','rep'],
 ['kol','X KOL, 100K to 500K','Per creator','Post or thread','$5,000 to $25,000','Per creator','Direct or agency','md','Use sparingly as an anchor. Verify real impressions, not follower counts.','rep'],
-['kol','X Spaces, branded','Per creator','Co-hosted session','$1,000 to $15,000','Per session','Direct','hi','Format suits an explainer product. Good fit for the AML and privacy story.','rep'],
-['kol','Monero Talk','monerotalk.live','Host-read sponsor segments','Quote','Quote','monerotopia@protonmail.com','hi','Current sponsors include Exolix, Cake Wallet, WizardSwap and Trocador. Proven channel fit.','rep'],
+['kol','X Spaces, branded','Per creator','Co-hosted session','$1,000 to $15,000','Per session','Marketplace or agency','hi','Format suits an explainer product. Booked on the same order as the KOL posts.','rep'],
 ['kol','Bankless podcast','bankless.com','45s host read plus visual roll','$30,000 / mo at $30 CPM','2 weeks, $15,000','sponsors.bankless.com','md','1M monthly downloads. Premium but broad rather than privacy-specific.','pub'],
 
 ['news','The Token Dispatch','tokendispatch.com','Exclusive daily sponsorship','$2,000 / day','1 day','passionfroot.me','hi','170K subscribers at 30% open. One advertiser per issue.','pub'],
@@ -1287,13 +1308,11 @@ const INV=[
 ['news','The Defiant','thedefiant.io','Sponsored article','$400 via reseller','1 unit','Reseller','md','Cheap DeFi-native placement. Useful for SEO surface as much as reach.','rep'],
 ['news','The Block','theblock.co','Sponsored posts, research, newsletter','Quote','Quote','theblock.co/advertise','hi','30% of its audience has a crypto wallet installed. The Partner API credibility buy.','pub'],
 
-['b2b','Co-hosted side event','Blockchain week','Two-hour hosted session','~$40 per guest co-hosted','~$10,000','Direct','hi','Roughly 50 minutes of attention per guest. Beats a booth for wallet BD.','rep'],
-['b2b','Hackathon integration track','ETHGlobal','Sponsored prize track','$10,000 to $20,000 prize pool','Quote','Direct','hi','Puts the Partner API in front of builders with a reason to integrate it.','rep'],
-['b2b','Developer newsletter','TLDR and peers','Newsletter slot','$5,000 to $15,000 per issue','1 issue','Direct','md','Broad developer reach. Less crypto-specific than The Block.','pub']
+['news','Developer newsletter','TLDR and peers','Newsletter slot','$5,000 to $15,000 per issue','1 issue','Direct sales','md','Broad developer reach. Published slot pricing, standard insertion order.','pub']
 ];
 const CATS=[['all','All inventory'],['prog','Programmatic'],['org','Amplification'],['brave','Brave'],['terminal','Terminals and data'],['network','Ad networks'],
-  ['telegram','Telegram'],['kol','KOL and audio'],['news','Media and newsletters'],
-  ['social','Social platforms'],['b2b','Partner API']];
+  ['telegram','Telegram'],['kol','KOL'],['news','Media and newsletters'],
+  ['social','Social platforms']];
 let fcur='all';
 document.getElementById('filters').innerHTML=CATS.map(c=>
   `<button class="fbtn ${c[0]==='all'?'on':''}" data-c="${c[0]}" onclick="setF('${c[0]}')">${c[1]}</button>`).join('');
