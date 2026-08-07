@@ -317,6 +317,51 @@ tbody tr:last-child td{border-bottom:none}
 .stack p:last-child{margin-bottom:0}
 .stack p strong{color:var(--fg);font-weight:500}
 
+/* organic amplification */
+.cheap{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--bd);border:1px solid var(--bd)}
+@media(max-width:900px){.cheap{grid-template-columns:1fr}}
+.cheapcell{background:var(--elev);padding:36px;position:relative}
+.cheapcell:before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:var(--accent)}
+.cheapcell p{font-size:14px;color:var(--m70);line-height:1.72}
+.cheapcell p strong{color:var(--fg);font-weight:500}
+
+.orgwrap{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:1px;
+  background:transparent}
+.orgcard{background:var(--elev);padding:28px;position:relative;box-shadow:0 0 0 1px var(--bd)}
+.orgcard:before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:var(--accent)}
+.orgcard .tier{font-family:var(--mono);font-size:9px;letter-spacing:.15em;text-transform:uppercase;
+  color:var(--accent);margin-bottom:12px}
+.orgcard .bud{font-family:var(--mono);font-size:30px;font-weight:600;letter-spacing:-.035em;
+  margin-bottom:4px}
+.orgcard .fee{font-family:var(--mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;
+  color:var(--warn);margin-bottom:20px}
+.orgcard dl{display:grid;grid-template-columns:auto 1fr;gap:9px 16px;font-size:13px;margin:0}
+.orgcard dt{font-family:var(--mono);font-size:9px;letter-spacing:.12em;text-transform:uppercase;
+  color:var(--m40);padding-top:3px;white-space:nowrap}
+.orgcard dd{margin:0;color:var(--fg);font-weight:500;line-height:1.5}
+.orgcard dd small{display:block;color:var(--m40);font-weight:400;font-size:12px;margin-top:2px}
+
+.warn{border:1px solid rgba(240,180,41,.34);background:rgba(240,180,41,.05);padding:22px;margin-top:22px}
+.warn .l{font-family:var(--mono);font-size:9px;letter-spacing:.15em;text-transform:uppercase;
+  color:var(--warn);margin-bottom:11px}
+.warn p{font-size:13.5px;color:var(--m70);line-height:1.74;margin:0;max-width:none}
+.warn p strong{color:var(--fg);font-weight:500}
+
+/* blend */
+.blendwrap{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:transparent}
+@media(max-width:900px){.blendwrap{grid-template-columns:1fr}}
+.blcard{background:var(--elev);padding:30px;position:relative;box-shadow:0 0 0 1px var(--bd)}
+.blcard:before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:var(--accent)}
+.blcard h4{font-size:16px;margin-bottom:6px}
+.blcard .role{font-family:var(--mono);font-size:9px;letter-spacing:.13em;text-transform:uppercase;
+  color:var(--m40);margin-bottom:20px}
+.blcard .amt{font-family:var(--mono);font-size:31px;font-weight:600;letter-spacing:-.035em;
+  margin-bottom:6px}
+.blcard .sub{font-family:var(--mono);font-size:10px;letter-spacing:.08em;color:var(--warn);
+  margin-bottom:18px;text-transform:uppercase}
+.blcard .buys{font-size:13px;color:var(--m70);line-height:1.7}
+.blcard .buys strong{color:var(--fg);font-weight:500}
+
 /* forthcoming */
 .forth{border:1px solid var(--bd);border-top:none;background:var(--elev);padding:38px;
   position:relative}
@@ -445,6 +490,8 @@ footer{padding:74px 0 52px;border-top:1px solid var(--bd)}
       <a href="#brave">Brave</a>
       <a href="#flights">Flights</a>
       <a href="#programmatic">Programmatic</a>
+      <a href="#organic">Organic</a>
+      <a href="#blend">The Blend</a>
       <a href="#inventory">Inventory</a>
       <a href="#credits">Credits</a>
       <a href="#runway">Run Of Show</a>
@@ -563,7 +610,7 @@ footer{padding:74px 0 52px;border-top:1px solid var(--bd)}
     <div class="shead reveal">
       <div class="eyebrow"><i></i>04 <s>/</s> The Builds</div>
       <h2>Three flights.</h2>
-      <p class="sdek">Thirty days of working media. Every figure is cash out the door, with the Snap match and X credit treated as additive and handled separately in section 07. <strong>Select a tier.</strong></p>
+      <p class="sdek">Thirty days of working media. Every figure is cash out the door, with the Snap match and X credit treated as additive and handled separately in section 09. <strong>Select a tier.</strong></p>
     </div>
     <div class="tiersw reveal" id="tiersw"></div>
     <div class="tsummary reveal" id="tsum"></div>
@@ -577,8 +624,8 @@ footer{padding:74px 0 52px;border-top:1px solid var(--bd)}
   <div class="wrap">
     <div class="shead reveal">
       <div class="eyebrow"><i></i>05 <s>/</s> Programmatic</div>
-      <h2>The Nexxen layer.</h2>
-      <p class="sdek">A live plan is on the table from Nexxen dated 7 August, scoped 1 September to 31 October, National US, targeting in-market crypto, Web3 and privacy audiences through Nexxen Discovery, TV Audiences, Smart Contextual, behavioural and retargeting. Four options were quoted. <strong>Two of the spec tabs contain something that would have broken the flight, and it is worth dealing with that before comparing prices.</strong></p>
+      <h2>The programmatic layer.</h2>
+      <p class="sdek">A live plan is on the table from a tier-one programmatic partner, dated 7 August and scoped 1 September to 31 October, National US, targeting in-market crypto, Web3 and privacy audiences through the partner&#39;s discovery, TV audience, smart contextual, behavioural and retargeting stack. Four options were quoted. <strong>Two of the spec tabs contain something that would have broken the flight, and it is worth dealing with that before comparing prices.</strong></p>
     </div>
 
     <div class="excl reveal">
@@ -596,7 +643,7 @@ footer{padding:74px 0 52px;border-top:1px solid var(--bd)}
           <p class="s">Video Specs tab, Pause Ad guidelines</p>
         </div>
       </div>
-      <p class="exnote">Nexxen's own Content Guidelines do not prohibit cryptocurrency, so the DSP is open to this advertiser. These are two specific supply sources inside it that are not. <strong>If they are not excluded in writing before launch, creative clears at the DSP and then gets rejected at the publisher, which shows up as an unexplained delivery shortfall two weeks in.</strong> Ask Nexxen to confirm the exclusion on the insertion order and to name any other publisher-level crypto restrictions in the supply path. Peacock and Paramount both carry their own creative approval, and Peacock adds two business days for QA.</p>
+      <p class="exnote">The partner&#39;s own content guidelines do not prohibit cryptocurrency, so the DSP itself is open to this advertiser. These are two specific supply sources inside it that are not. <strong>If they are not excluded in writing before launch, creative clears at the DSP and then gets rejected at the publisher, which shows up as an unexplained delivery shortfall two weeks in.</strong> Ask the partner to confirm the exclusion on the insertion order and to name any other publisher-level crypto restrictions in the supply path. Peacock and Paramount both carry their own creative approval, and Peacock adds two business days for QA.</p>
     </div>
 
     <div class="ratecard reveal">
@@ -619,16 +666,73 @@ footer{padding:74px 0 52px;border-top:1px solid var(--bd)}
     <div class="stack reveal">
       <div class="eyebrow"><i></i>How It Stacks</div>
       <h3>Additive, and it should lag by two weeks.</h3>
-      <p>Nexxen does not replace the crypto-native flight, it sits underneath it. The crypto-native layer buys intent from people already looking for a swap. Nexxen buys reach and, more usefully, <strong>the room to explain a product that needs explaining</strong>. No accounts, no logs, reject-and-refund, 24-hour deletion. That story does not fit a 300x250, and it does fit a :30 online video.</p>
+      <p>Programmatic does not replace the crypto-native flight, it sits underneath it. The crypto-native layer buys intent from people already looking for a swap. Programmatic buys reach and, more usefully, <strong>the room to explain a product that needs explaining</strong>. No accounts, no logs, reject-and-refund, 24-hour deletion. That story does not fit a 300x250, and it does fit a :30 online video.</p>
       <p><strong>One sequencing point worth holding to.</strong> The $4.50 Multiscreen Display line is the best value in the plan and the easiest to waste. It earns its rate as a retargeting floor, not as prospecting. Running it in week 1 against an empty pool spends 28% of the budget reaching strangers with a banner. Start online video on day one, hold display until the crypto-native flight and the video layer have built something to retarget, then turn it on and let it compound.</p>
     </div>
+  </div>
+</section>
+
+<section id="organic">
+  <div class="wrap">
+    <div class="shead reveal">
+      <div class="eyebrow"><i></i>06 <s>/</s> Organic Amplification</div>
+      <h2>The cheapest reach on the board, by two orders of magnitude.</h2>
+      <p class="sdek">A second partner quote covers paid amplification of organic social: brand placement inside creator clips, seeded discussion, and amplification of owned posts. <strong>This is the vendor behind a large share of the awareness campaigns run by the major prediction markets</strong>, which is the closest available comp to ezpz. Same problem, a finance product that mainstream platforms restrict, solved by buying attention where the restrictions do not apply.</p>
+    </div>
+
+    <div class="cheap reveal">
+      <div class="cheapcell">
+        <div class="mlbl">Logo placement, effective CPM</div>
+        <div class="bigfig acc">$0.10</div>
+        <p>At the top tier. Against <strong>$6.00 on the leading crypto terminal</strong> and <strong>$16.00 for programmatic online video</strong>, this is between 60 and 160 times cheaper per impression than anything else priced in this plan.</p>
+      </div>
+      <div class="cheapcell">
+        <div class="mlbl">Views guaranteed at the top tier</div>
+        <div class="bigfig">1.25B</div>
+        <p>Minimum, with the partner guaranteeing a floor rather than estimating. Posts continue earning <strong>three to twelve months of bonus views at no additional cost</strong>, so delivery keeps compounding after the flight closes.</p>
+      </div>
+    </div>
+
+    <div class="shead reveal" style="margin:64px 0 30px">
+      <h3 style="font-size:26px;margin-bottom:14px">Five products, three tiers each.</h3>
+      <p class="sdek">Budget tiers line up exactly with the flight tiers in section 04. <strong>Management fee sits on top of the media and is not included in the figures below.</strong> Select a product.</p>
+    </div>
+    <div class="tiersw reveal" id="orgsw"></div>
+    <div class="orgwrap reveal" id="orggrid"></div>
+    <div class="tnote reveal" id="orgnote"></div>
+
+    <div class="stack reveal">
+      <div class="eyebrow"><i></i>Recommendation</div>
+      <h3>Reddit first, then X amplification. Logo last.</h3>
+      <p><strong>The cheapest line is not the first line.</strong> Logo placement at a tenth of a cent per view is remarkable value for a brand people already recognise, which is exactly why it works for prediction markets that have already bought their awareness. A logo burned into a clip teaches nobody what a non-custodial swap is. Hold it until comprehension exists, then use it to make the name unavoidable.</p>
+      <p><strong>Start with the discussion layer, because trust is this product&#39;s actual constraint.</strong> Nobody sends funds to a no-KYC swap without searching whether it is legitimate first. The Reddit product publishes into that search result and, per the partner, drives domain authority and keyword position within one to thirty days, with views compounding for months and years after. For a service whose main objection is "is this a scam", owning that surface is worth more than a hundred million anonymous views.</p>
+      <p><strong>X amplification compounds with budget already committed.</strong> The flight funds a KOL layer and ezpz holds a premium X account. Amplifying owned and earned posts multiplies work that is being paid for anyway rather than buying a separate audience.</p>
+      <div class="warn">
+        <div class="l">One conflict to resolve before signing</div>
+        <p>Section 02 of this plan advises buying Reddit ads and leaving the threads alone, because r/Monero and r/privacy are heavily moderated and hostile to vendor posting. The partner&#39;s Reddit product is thread seeding, which is precisely that. <strong>Both statements are correct, and they apply to different subreddits.</strong> Scope the campaign to r/CryptoCurrency, r/CryptoMarkets, r/defi, r/ethereum and r/solana, and exclude the privacy communities in writing. Seeding those specific subreddits would burn the brand with the audience that matters most to it, and it is not recoverable.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="blend">
+  <div class="wrap">
+    <div class="shead reveal">
+      <div class="eyebrow"><i></i>07 <s>/</s> The Blend</div>
+      <h2>Three layers, one number.</h2>
+      <p class="sdek">Each layer buys something the others cannot. Crypto-native buys intent, programmatic buys comprehension, amplification buys scale. <strong>Every figure below is total cost including the amplification partner&#39;s management fee.</strong> Select a level.</p>
+    </div>
+    <div class="tiersw reveal" id="blsw"></div>
+    <div class="blendwrap reveal" id="blgrid"></div>
+    <div class="atotal reveal" id="bltot"></div>
+    <div class="tnote reveal" id="blnote"></div>
   </div>
 </section>
 
 <section id="inventory">
   <div class="wrap">
     <div class="shead reveal">
-      <div class="eyebrow"><i></i>06 <s>/</s> Inventory Board</div>
+      <div class="eyebrow"><i></i>08 <s>/</s> Inventory Board</div>
       <h2>What is actually buyable.</h2>
       <p class="sdek">Every property that will take a non-custodial swap advertiser, with rates, entry minimums and how to transact. Rates marked <span class="vsrc pub">PUBLISHED</span> were read off a live rate card or product page. Rates marked <span class="vsrc">REPORTED</span> come from third-party sources and need confirming on the insertion order. <strong>This is the first release of the board and it will keep growing.</strong></p>
     </div>
@@ -646,9 +750,9 @@ footer{padding:74px 0 52px;border-top:1px solid var(--bd)}
     <div class="forth reveal">
       <div class="eyebrow"><i></i>In Progress</div>
       <h3>More inventory is on the way.</h3>
-      <p>The board above covers what has been priced, verified and can be booked against a 30-day window starting now. The Nexxen programmatic plan in section 05 is the first of these to land. Several further workstreams are underway and will be released as pricing is confirmed.</p>
+      <p>The board above covers what has been priced, verified and can be booked against a 30-day window starting now. The programmatic and organic amplification plans in sections 05 and 06 are the first of these to land. Several further workstreams are underway and will be released as pricing is confirmed.</p>
       <div class="fgrid">
-        <div class="fitem"><h4>Additional programmatic supply</h4><p>Second and third DSP quotes to benchmark the Nexxen rates, plus digital audio, which is priced but absent from the current plan and worth testing against a product that explains well in voice.</p></div>
+        <div class="fitem"><h4>Additional programmatic supply</h4><p>Second and third DSP quotes to benchmark the rates in section 05, plus digital audio, which is priced but absent from the current plan and worth testing against a product that explains well in voice.</p></div>
         <div class="fitem"><h4>Extended endemic</h4><p>Additional terminals, explorers, wallets and aggregator surfaces beyond the set priced here, including direct placements that require negotiation rather than a rate card.</p></div>
         <div class="fitem"><h4>Channel-specific builds</h4><p>Deeper proposals for the lanes that earn budget once the first flight reads, including affiliate and revenue-share, SEO and content, and the Partner API integration programme.</p></div>
       </div>
@@ -659,7 +763,7 @@ footer{padding:74px 0 52px;border-top:1px solid var(--bd)}
 <section id="credits">
   <div class="wrap">
     <div class="shead reveal">
-      <div class="eyebrow"><i></i>07 <s>/</s> The Credits</div>
+      <div class="eyebrow"><i></i>09 <s>/</s> The Credits</div>
       <h2>Snap and X, sized honestly.</h2>
       <p class="sdek">Both are worth having. Neither should carry the flight, and one of them is smaller than it sounds.</p>
     </div>
@@ -699,9 +803,9 @@ footer{padding:74px 0 52px;border-top:1px solid var(--bd)}
 <section id="runway">
   <div class="wrap">
     <div class="shead reveal">
-      <div class="eyebrow"><i></i>08 <s>/</s> Run Of Show</div>
+      <div class="eyebrow"><i></i>10 <s>/</s> Run Of Show</div>
       <h2>Thirty days, plus the two before them.</h2>
-      <p class="sdek">CoinMarketCap needs five to ten business days from signed insertion order to live. Nexxen needs three business days, five for DOOH and Peacock. Snap needs written category approval. Brave runs human review on every campaign. <strong>The pre-flight window is not optional, and skipping it costs a third of the flight.</strong></p>
+      <p class="sdek">CoinMarketCap needs five to ten business days from signed insertion order to live. The DSP needs three business days, five for DOOH and premium CTV. Snap needs written category approval. Brave runs human review on every campaign. <strong>The pre-flight window is not optional, and skipping it costs a third of the flight.</strong></p>
     </div>
     <div class="weeks reveal">
       <div class="wk">
@@ -712,7 +816,7 @@ footer{padding:74px 0 52px;border-top:1px solid var(--bd)}
           <li>Open the <strong>Brave self-serve account</strong> and submit creative for human review</li>
           <li>Sign the <strong>CoinMarketCap insertion order</strong>, pay in USDT, submit static creative</li>
           <li>Build the <strong>ref-code taxonomy</strong>, one per placement, before anything runs</li>
-          <li>Get the <strong>YouTube and Pause Ad exclusions</strong> written onto the Nexxen insertion order</li>
+          <li>Get the <strong>YouTube and Pause Ad exclusions</strong> written onto the DSP insertion order</li>
           <li>Complete <strong>X advertiser review</strong> and confirm the credit balance</li>
         </ul>
       </div>
@@ -763,7 +867,7 @@ footer{padding:74px 0 52px;border-top:1px solid var(--bd)}
 <section id="measure">
   <div class="wrap">
     <div class="shead reveal">
-      <div class="eyebrow"><i></i>09 <s>/</s> Measurement</div>
+      <div class="eyebrow"><i></i>11 <s>/</s> Measurement</div>
       <h2>Measuring a product built not to be measurable.</h2>
       <p class="sdek">No accounts. No tracking cookies. Order records deleted at 24 hours. CoinMarketCap does not support third-party tracking pixels and Brave is architecturally anti-tracking. <strong>Standard attribution is unavailable, and pretending otherwise is how this flight would fail its own reporting.</strong></p>
     </div>
@@ -787,7 +891,7 @@ footer{padding:74px 0 52px;border-top:1px solid var(--bd)}
 <section id="risk">
   <div class="wrap">
     <div class="shead reveal">
-      <div class="eyebrow"><i></i>10 <s>/</s> Risk Register</div>
+      <div class="eyebrow"><i></i>12 <s>/</s> Risk Register</div>
       <h2>What could go wrong, and what absorbs it.</h2>
     </div>
     <div class="risks reveal" id="risks"></div>
@@ -971,23 +1075,23 @@ function render(){const t=TIERS[cur];
   requestAnimationFrame(()=>{document.querySelectorAll('.fill').forEach(f=>f.style.width=f.dataset.w+'%')});}
 render();
 
-/* ---- Nexxen programmatic plans ---- */
+/* ---- programmatic partner plans ---- */
 const NPLANS=[
-{label:'$50K V1',name:'Nexxen quote',budget:50000,av:1500,
+{label:'$50K V1',name:'Partner quote',budget:50000,av:1500,
  lines:[['Online Video','Desktop and mobile, :15 and :30, contextual onto crypto, Web3 and privacy content',30000,16],
         ['Multiscreen Display','Social Extension static, 160x600, 300x250, 728x90, 320x50, 300x600',20000,4.5]],
  kpis:[['6.41M','Total impressions','Including added value'],['$7.80','Blended eCPM','Cheapest of the four'],
        ['60%','In video','The rest is static display'],['3%','Added value','$1,500 in bonus OLV']],
  note:'<strong>The cheapest impressions and the weakest launch.</strong> Forty percent of budget sits in $4.50 static display, which at launch has no retargeting pool to work against and is therefore buying strangers a banner for a product that needs a sentence of explanation. The eCPM looks excellent precisely because the mix is weighted to the unit that will not do the explaining. Good structure for month three, wrong structure for month one.'},
 
-{label:'$50K V2',name:'Nexxen quote',budget:50000,av:1500,
- lines:[['Connected TV Video','CTV, :15 and :30, Nexxen TV Audiences and Smart Contextual',30000,21],
+{label:'$50K V2',name:'Partner quote',budget:50000,av:1500,
+ lines:[['Connected TV Video','CTV, :15 and :30, partner TV audiences and smart contextual',30000,21],
         ['Online Video','Desktop and mobile, :15 and :30',20000,16]],
  kpis:[['2.77M','Total impressions','Including added value'],['$18.04','Blended eCPM','Most expensive of the four'],
        ['100%','In video','No display at all'],['3%','Added value','$1,500 in bonus OLV']],
  note:'<strong>All video, and over-weighted to the one screen the product cannot be used on.</strong> Sixty percent of budget goes to national CTV at $21, reaching a general US audience through inferred behavioural and contextual signals for a product with a narrow, self-selecting user base. CTV is the right instrument for a brand with mass appeal. This one has an audience that declares itself elsewhere, and a swap cannot be completed from a television.'},
 
-{label:'$100K V1',name:'Nexxen quote',budget:100000,av:5000,
+{label:'$100K V1',name:'Partner quote',budget:100000,av:5000,
  lines:[['Online Video','Desktop and mobile, :15 and :30',30000,16],
         ['Multiscreen Display','Social Extension static, five standard sizes',25000,4.5],
         ['DOOH Display','Entertainment, bars, gyms, financial, urban panels, cannabis screens',25000,13.5],
@@ -996,8 +1100,8 @@ const NPLANS=[
        ['50%','In video','Split four ways overall'],['5%','Added value','$5,000 in bonus OLV']],
  note:'<strong>Four channels, and the newest quarter of it cannot be targeted or verified.</strong> DOOH takes 25% of budget and its own row in the workbook states the constraint plainly: no audience targeting is possible, only geo. Its spec tab adds that third-party ad servers have no invalid-traffic or brand-safety solution for out-of-home and routinely bucket the impressions as invalid. For an advertiser whose entire measurement design is ref-code attribution, that is the wrong first dollar.'},
 
-{label:'$100K V2',name:'Nexxen quote',budget:100000,av:5000,
- lines:[['Connected TV Video','CTV, :15 and :30, Nexxen TV Audiences and Smart Contextual',40000,21],
+{label:'$100K V2',name:'Partner quote',budget:100000,av:5000,
+ lines:[['Connected TV Video','CTV, :15 and :30, partner TV audiences and smart contextual',40000,21],
         ['DOOH Display','Entertainment, bars, gyms, financial, urban panels, cannabis screens',30000,13.5],
         ['Online Video','Desktop and mobile, :15 and :30',30000,16]],
  kpis:[['6.31M','Total impressions','Including added value'],['$15.84','Blended eCPM','Stated in the workbook'],
@@ -1045,12 +1149,104 @@ function renderNP(){const p=NPLANS[np];
   requestAnimationFrame(()=>{document.querySelectorAll('#nalloc .fill').forEach(f=>f.style.width=f.dataset.w+'%')});}
 renderNP();
 
+/* ---- organic amplification partner ---- */
+const ORG=[
+{k:'reddit',label:'Reddit',rec:1,
+ note:'<strong>The trust surface, and the first line to buy.</strong> A no-KYC swap lives or dies on whether a stranger believes it is legitimate, and that judgement is formed in a search result. The partner guarantees a thread floor rather than an estimate, and states that domain authority, keyword position and SEO start showing inside one to thirty days, with views compounding for weeks, months and years afterwards. Every other line in this plan stops delivering the day it stops paying. This one does not. <strong>Scope it to the trading subreddits and exclude r/Monero and r/privacy in writing.</strong>',
+ tiers:[[50000,'+15%','15m to 30m+','$1.50 to $3.50','36+ guaranteed threads'],
+        [100000,'+12.5%','40m to 80m+','$1.25 to $2.50','85+ guaranteed threads'],
+        [250000,'+10%','115m to 250m+','$1.00 to $2.25','300+ guaranteed threads']]},
+{k:'x',label:'X Amplification',rec:2,
+ note:'<strong>Multiplies budget already committed.</strong> The flight funds a KOL layer and ezpz holds a premium X account, so this amplifies owned and earned posts rather than buying a separate audience. The partner drives quotes, reposts and comments onto specific targeted tweets, turning a post that would have reached its own followers into one that reaches millions. Sequence it directly behind the KOL waves in section 10 so the amplification lands on posts that are already live.',
+ tiers:[[50000,'+15%','12.5m to 25m','$2.00 to $4.00','2 to 5+ tweets amplified'],
+        [100000,'+12.5%','26m to 57m','$1.75 to $3.75','5 to 10+ tweets amplified'],
+        [250000,'+10%','71m to 166m','$1.50 to $3.50','10 to 25+ tweets amplified']]},
+{k:'clip',label:'Clipping',rec:3,
+ note:'<strong>Actual content about the product, at a tenth of terminal CPM.</strong> Clipping puts ezpz inside creator content rather than beside it, which matters for a product that needs a sentence of explanation before it makes sense. Slower to deliver than the discussion products at two to four weeks, and the creative direction has to carry the reject-and-refund story rather than just the name. Strong third line once Reddit and X are running.',
+ tiers:[[50000,'+15%','20m to 35m','$1.50 to $2.50','2 to 4 weeks delivery'],
+        [100000,'+12.5%','40m to 80m','$1.25 to $2.50','3 to 4 weeks delivery'],
+        [250000,'+10%','110m to 250m','$1.00 to $2.25','3 to 6 weeks delivery']]},
+{k:'spr',label:'Social PR',rec:4,
+ note:'<strong>Overlaps heavily with budget already allocated.</strong> The mega placements at a million-plus followers are genuinely valuable, but the flight already funds fifteen mid-tier and three large KOL placements at the top tier, and this buys a similar shape of coverage through a different door. Worth pricing as a replacement for part of the KOL line rather than as an addition to it, and worth comparing on cost per placement before doing either.',
+ tiers:[[50000,'+15%','12m to 50m','$1.00 to $4.00','70+ placements, 20+ mega'],
+        [100000,'+12.5%','28m to 100m','$1.00 to $3.50','160+ placements, 45+ mega'],
+        [250000,'+10%','80m to 250m','$1.00 to $3.00','450+ placements, 125+ mega']]},
+{k:'logo',label:'Logo Placement',rec:5,
+ note:'<strong>The cheapest impression available anywhere in this plan, and the last one to buy.</strong> A tenth of a cent per view is extraordinary, and it is the right instrument for a brand people already recognise, which is exactly why it performs for prediction markets that spent the previous year buying awareness. A logo burned into a clip cannot explain non-custodial, no-KYC or reject-and-refund. <strong>Buy comprehension first, then use this to make the name unavoidable.</strong> At the top tier it delivers more views than the rest of the plan combined.',
+ tiers:[[50000,'+15%','200m+ guaranteed','$0.15 to $0.24','2 to 3 weeks delivery'],
+        [100000,'+12.5%','450m+ guaranteed','$0.12 to $0.22','2 to 5 weeks delivery'],
+        [250000,'+10%','1.25B+ guaranteed','$0.10 to $0.19','3 to 6 weeks delivery']]}
+];
+let og=0;
+document.getElementById('orgsw').innerHTML=ORG.map((p,i)=>`
+<button class="tbtn ${i===og?'on':''}" onclick="setOG(${i})">
+  <span class="amt" style="font-size:18px">${p.label}</span>
+  <span class="nm">${p.rec===1?'Recommended first':'Priority '+p.rec}</span></button>`).join('');
+function setOG(i){og=i;document.querySelectorAll('#orgsw .tbtn').forEach((b,j)=>b.classList.toggle('on',j===i));renderOG();}
+function renderOG(){const p=ORG[og];
+  document.getElementById('orggrid').innerHTML=p.tiers.map(([b,fee,views,cpm,extra],i)=>`
+    <div class="orgcard">
+      <div class="tier">${['Kickoff','Growth','Dominance'][i]}</div>
+      <div class="bud">${fmt(b)}</div>
+      <div class="fee">${fee} management fee on top</div>
+      <dl>
+        <dt>Views</dt><dd>${views}</dd>
+        <dt>Eff CPM</dt><dd>${cpm}</dd>
+        <dt>Scope</dt><dd>${extra}</dd>
+        <dt>All in</dt><dd>${fmt(Math.round(b*(1+parseFloat(fee.replace(/[+%]/g,''))/100)))}<small>media plus fee</small></dd>
+      </dl>
+    </div>`).join('');
+  document.getElementById('orgnote').innerHTML=p.note;}
+renderOG();
+
+/* ---- blended builds ---- */
+const BLEND=[
+{label:'$157.5K',name:'Entry blend',
+ rows:[['Crypto-native flight',50000,0,'Section 04 Beachhead','CoinMarketCap anchor, Brave, Telegram, KOL and the Monero cluster. <strong>Buys intent.</strong> This is the only layer where someone arrives already looking for a swap.'],
+       ['Programmatic',50000,0,'Section 05 recommended','Online video weighted to contextual crypto and privacy inventory, with a lagged display retargeting floor. <strong>Buys comprehension.</strong> Thirty seconds is enough to explain reject-and-refund.'],
+       ['Organic amplification',50000,15,'Reddit Kickoff','36+ guaranteed threads across the trading subreddits, 15m to 30m views, and an SEO position that keeps compounding after the flight. <strong>Buys trust.</strong>']],
+ note:'<strong>The smallest blend where all three layers are live.</strong> Each partner sits at its own entry minimum, so nothing is bought at a weight too thin to read. The amplification layer goes to Reddit rather than logo placement because at this level the brand has no recognition to amplify, and the search result is the thing standing between a stranger and a first swap.'},
+{label:'$312.5K',name:'Growth blend',
+ rows:[['Crypto-native flight',100000,0,'Section 04 Two-Front','Four terminal properties, Brave full funnel, Telegram at weight, and the Partner API lane funded separately from consumer. <strong>Buys intent and opens the integration conversation.</strong>'],
+       ['Programmatic',100000,0,'Section 05 recommended','Online video at $50K, CTV entering at a readable $25K, display retargeting at $25K. No DOOH. <strong>Buys comprehension at national scale.</strong>'],
+       ['Organic amplification',100000,12.5,'Reddit Growth plus X','85+ threads and 40m to 80m views, with X amplification landing on the KOL posts the flight is already paying for. <strong>Buys trust and multiplies committed budget.</strong>']],
+ note:'<strong>The level where the layers start compounding rather than just coexisting.</strong> X amplification lands on KOL posts already funded in the crypto-native layer, programmatic display retargets everyone the other two layers touched, and the Reddit position built here keeps returning long after the flight closes. Splitting the amplification budget across two products means each still clears its own entry minimum.'},
+{label:'$625K',name:'Category blend',
+ rows:[['Crypto-native flight',250000,0,'Section 04 Category Claim','CoinMarketCap at $50K unlocking animated creative, Brave full stack, forty Telegram channels, and a hackathon integration track. <strong>Buys intent at category-leading weight.</strong>'],
+       ['Programmatic',100000,0,'Section 05 recommended','The quote tops out here. Same 10.18M impressions as the largest option the partner proposed, with every unit trackable. <strong>Buys comprehension.</strong>'],
+       ['Organic amplification',250000,10,'Logo Dominance','1.25B+ guaranteed views at a tenth of a cent, plus three to twelve months of bonus delivery at no cost. <strong>Buys unavoidability, once the other two layers have taught the market what ezpz is.</strong>']],
+ note:'<strong>This is the level where logo placement finally makes sense.</strong> By the time this blend is running, the crypto-native and programmatic layers have established what the product does, so a logo in a clip has something to attach to. 1.25B guaranteed views is more delivery than every other line in this document combined, at a cost per impression between 60 and 160 times lower. Programmatic stays at $100K because that is where the partner quote ends, and the surplus goes where it compounds.'}
+];
+let bl=1;
+document.getElementById('blsw').innerHTML=BLEND.map((b,i)=>`
+<button class="tbtn ${i===bl?'on':''}" onclick="setBL(${i})">
+  <span class="amt">${b.label}</span><span class="nm">${b.name}</span></button>`).join('');
+function setBL(i){bl=i;document.querySelectorAll('#blsw .tbtn').forEach((b,j)=>b.classList.toggle('on',j===i));renderBL();}
+function renderBL(){const b=BLEND[bl];
+  document.getElementById('blgrid').innerHTML=b.rows.map(([nm,amt,fee,src,buys])=>`
+    <div class="blcard">
+      <h4>${nm}</h4><div class="role">${src}</div>
+      <div class="amt">${fmt(amt)}</div>
+      <div class="sub">${fee?'plus '+fee+'% fee, '+fmt(Math.round(amt*fee/100)):'no agency fee on media'}</div>
+      <div class="buys">${buys}</div>
+    </div>`).join('');
+  const tot=b.rows.reduce((a,r)=>a+r[1]+Math.round(r[1]*r[2]/100),0);
+  document.getElementById('bltot').innerHTML=
+    `<span>Total cost, all layers, fees included</span><b>${fmt(tot)}</b>`;
+  document.getElementById('blnote').innerHTML=b.note;}
+renderBL();
+
 const INV=[
-['prog','Nexxen, Online Video','nexxen.com','Desktop and mobile OLV, :15 and :30','$16.00 CPM','Per plan','Kevin Maggi, Nexxen','hi','Contextual onto crypto, Web3 and privacy content. The workhorse of the programmatic layer.','pub'],
-['prog','Nexxen, Multiscreen Display','nexxen.com','Static display, five standard sizes','$4.50 CPM','Per plan','Kevin Maggi, Nexxen','hi','Best value in the plan as a retargeting floor. Weak as prospecting.','pub'],
-['prog','Nexxen, Connected TV','nexxen.com','CTV video, :15 and :30','$21.00 CPM','Per plan','Kevin Maggi, Nexxen','md','Reach instrument. Needs roughly $25K to produce a readable result.','pub'],
-['prog','Nexxen, DOOH','nexxen.com','Out-of-home display and video','$13.50 CPM','Per plan','Kevin Maggi, Nexxen','lo','Geo targeting only, no audience layer, and third-party servers bucket OOH impressions as invalid.','pub'],
-['prog','Nexxen, Audio','nexxen.com','Recorded audio, :15, :30, :60','Quote','Per plan','Kevin Maggi, Nexxen','md','Not in the current quote. Companion banner 640x640 or 300x250. Worth pricing.','pub'],
+['org','Amplification, Reddit','organic partner','Seeded threads plus SEO','$1.00 to $3.50 CPM','$50,000 +fee','Direct, via CCD','hi','Guaranteed thread floor. Compounds for months after the flight. Exclude privacy subreddits.','pub'],
+['org','Amplification, X','organic partner','Quotes, reposts and comments on targeted posts','$1.50 to $4.00 CPM','$50,000 +fee','Direct, via CCD','hi','Amplifies owned and KOL posts the flight already funds.','pub'],
+['org','Amplification, Clipping','organic partner','Brand inside creator clip content','$1.00 to $2.50 CPM','$50,000 +fee','Direct, via CCD','hi','Content about the product rather than beside it. Two to six weeks to deliver.','pub'],
+['org','Amplification, Social PR','organic partner','Placements across creator accounts','$1.00 to $4.00 CPM','$50,000 +fee','Direct, via CCD','md','Overlaps the KOL line. Price as a substitute, not an addition.','pub'],
+['org','Amplification, Logo','organic partner','Brand logo inside organic clips','$0.10 to $0.24 CPM','$50,000 +fee','Direct, via CCD','md','Cheapest impression in the plan by 60x. Needs existing brand comprehension to work.','pub'],
+['prog','Programmatic, Online Video','tier-one DSP','Desktop and mobile OLV, :15 and :30','$16.00 CPM','Per plan','Direct, via CCD','hi','Contextual onto crypto, Web3 and privacy content. The workhorse of the programmatic layer.','pub'],
+['prog','Programmatic, Multiscreen Display','tier-one DSP','Static display, five standard sizes','$4.50 CPM','Per plan','Direct, via CCD','hi','Best value in the plan as a retargeting floor. Weak as prospecting.','pub'],
+['prog','Programmatic, Connected TV','tier-one DSP','CTV video, :15 and :30','$21.00 CPM','Per plan','Direct, via CCD','md','Reach instrument. Needs roughly $25K to produce a readable result.','pub'],
+['prog','Programmatic, DOOH','tier-one DSP','Out-of-home display and video','$13.50 CPM','Per plan','Direct, via CCD','lo','Geo targeting only, no audience layer, and third-party servers bucket OOH impressions as invalid.','pub'],
+['prog','Programmatic, Audio','tier-one DSP','Recorded audio, :15, :30, :60','Quote','Per plan','Direct, via CCD','md','Priced in the partner specs but absent from the quote. Companion banner 640x640 or 300x250. Worth requesting.','pub'],
 ['brave','Brave Ads, Push','brave.com','Push notification, self-serve','CPM or CPC, quantity discounts over $50K/mo','$500 / month','ads.brave.com self-serve','hi','57M monthly actives who chose a privacy browser. Pays in BAT, SOL, USDT, USDC or card.','pub'],
 ['brave','Brave Search Ads','search.brave.com','Paid search placements','Quote','Quote','adsales@brave.com','hi','23M daily queries. The only paid-search inventory realistically open to this client.','pub'],
 ['brave','Brave New Tab Takeover','brave.com','Premium new-tab placement','Quote','Quote','adsales@brave.com, direct only','hi','Not available self-serve. The placement worth negotiating at the top tier.','pub'],
@@ -1095,7 +1291,7 @@ const INV=[
 ['b2b','Hackathon integration track','ETHGlobal','Sponsored prize track','$10,000 to $20,000 prize pool','Quote','Direct','hi','Puts the Partner API in front of builders with a reason to integrate it.','rep'],
 ['b2b','Developer newsletter','TLDR and peers','Newsletter slot','$5,000 to $15,000 per issue','1 issue','Direct','md','Broad developer reach. Less crypto-specific than The Block.','pub']
 ];
-const CATS=[['all','All inventory'],['prog','Programmatic'],['brave','Brave'],['terminal','Terminals and data'],['network','Ad networks'],
+const CATS=[['all','All inventory'],['prog','Programmatic'],['org','Amplification'],['brave','Brave'],['terminal','Terminals and data'],['network','Ad networks'],
   ['telegram','Telegram'],['kol','KOL and audio'],['news','Media and newsletters'],
   ['social','Social platforms'],['b2b','Partner API']];
 let fcur='all';
@@ -1118,7 +1314,9 @@ const RISKS=[
 ['h','Snap match may not be reachable','The match pays against dollars spent, so the stated ceiling requires matching cash into the single least crypto-native channel available, and it is contingent on a discretionary approval that has not yet been granted.','Zero pre-allocation. Approval submitted in week 0 with budget held elsewhere. Pilot capped at 16% of tier and released only against a written approval and a proven cost per first swap.'],
 ['m','Measurement is structurally constrained','No accounts, no tracking cookies, 24-hour record deletion, and CoinMarketCap does not accept third-party pixels. Conventional conversion tracking is unavailable.','Ref-code architecture built before week 1, one code per placement. Quote requests as the fast optimisation signal. Aggregate counters written before the shred. Staggered launches for incremental reads.'],
 ['m','Terminal traffic quality','A meaningful share of DEX-terminal and aggregator traffic is automated. Impression and CTR reporting will overstate human reach.','Impressions treated as pacing diagnostics only. No renewal decision made on delivery numbers. Every channel judged on ref-code conversions.'],
-['m','Publisher-level creative rejection','Nexxen&#39;s own content guidelines permit cryptocurrency, but two supply sources inside the plan do not. YouTube and Pause Ads both name crypto as a prohibited category, so creative can clear the DSP and still be rejected downstream, surfacing as an unexplained delivery shortfall rather than an error.','Both exclusions written onto the insertion order before launch, with Nexxen asked to name any other publisher-level crypto restrictions in the supply path. Peacock and Paramount creative submitted early, since both carry their own approval and Peacock adds two business days for QA.'],
+['m','Publisher-level creative rejection','The DSP&#39;s own content guidelines permit cryptocurrency, but two supply sources inside the plan do not. YouTube and Pause Ads both name crypto as a prohibited category, so creative can clear the DSP and still be rejected downstream, surfacing as an unexplained delivery shortfall rather than an error.','Both exclusions written onto the insertion order before launch, with the partner asked to name any other publisher-level crypto restrictions in the supply path. Peacock and Paramount creative submitted early, since both carry their own approval and Peacock adds two business days for QA.'],
+['m','Amplification measures views, not intent','The organic partner prices and guarantees on views. A view of a logo inside a creator clip is the least qualified impression in this plan, and at the top tier it would represent more delivery than every other line combined, which will distort any blended CPM or cost-per-impression reporting.','Amplification reported on its own line and never blended into the crypto-native or programmatic efficiency numbers. Judged on assisted lift and ref-code conversions, with logo placement held until the other two layers have established comprehension.'],
+['m','Management fee sits outside the media','The amplification partner charges 15% at $50K, 12.5% at $100K and 10% at $250K on top of the working media, so a $250K line is a $275K commitment. Tier budgets elsewhere in this plan are cash out the door with no fee on top.','Every blend figure in section 07 is stated inclusive of the fee. The fee is confirmed on the insertion order before any budget is committed, along with whether it applies to bonus delivery.'],
 ['l','Creative format ceilings','CoinMarketCap accepts static PNG and JPG only below a $50,000 commitment, and Brave runs human review on every campaign before it goes live.','Static-first creative brief for terminal placements, animated concepts held for the $250K tier. Brave creative submitted in week 0 so review time falls outside the flight.'],
 ['l','Mainstream certification is permanent','The Panamanian entity and the deliberate absence of consumer KYC mean Google and Meta certification is not a next-quarter problem to solve.','Planned around rather than budgeted against. Brave Search absorbs the paid-search intent, and the Partner API absorbs the demand paid social would otherwise capture.']
 ];
