@@ -3,6 +3,14 @@ import { motion } from "framer-motion";
 import { PlanSectionHeader } from "./PlanSectionHeader";
 import type { PricingSection } from "@/lib/plan-context";
 
+// Literal class strings so the Tailwind JIT can see them.
+const ADDON_COLS: Record<1 | 2 | 3 | 4, string> = {
+  1: "lg:grid-cols-2",
+  2: "lg:grid-cols-2",
+  3: "lg:grid-cols-3",
+  4: "lg:grid-cols-4",
+};
+
 export function PlanPricing({ section }: { section: PricingSection }) {
   return (
     <section id={`section-${section.number}`} className="px-6 md:px-12 lg:px-24 py-24 md:py-32 bg-bg-card/30">
@@ -105,16 +113,28 @@ export function PlanPricing({ section }: { section: PricingSection }) {
             <div className="text-[11px] font-mono tracking-[0.22em] uppercase text-text-muted/70 mb-4">
               Optional Add-Ons (Outside The Tier)
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+            <div
+              className={`grid grid-cols-1 sm:grid-cols-2 gap-4 ${
+                ADDON_COLS[Math.min(section.addOns.length, 4) as 1 | 2 | 3 | 4]
+              }`}
+            >
               {section.addOns.map((a, i) => (
-                <div key={i} className="border border-text-muted/20 bg-bg-card p-5">
-                  <div className="flex items-baseline justify-between mb-2 gap-2">
-                    <span className="text-[14px] md:text-[15px] font-bold text-text-primary leading-tight">
-                      {a.name}
+                <div
+                  key={i}
+                  className="flex h-full flex-col border border-text-muted/20 bg-bg-card p-6"
+                >
+                  <h4 className="text-[15px] md:text-[16px] font-bold text-text-primary leading-snug tracking-tight">
+                    {a.name}
+                  </h4>
+                  <div className="mt-3 flex items-center gap-3">
+                    <span className="text-[15px] md:text-[17px] font-mono tabular-nums font-bold text-accent whitespace-nowrap">
+                      {a.budget}
                     </span>
-                    <span className="text-[12px] font-mono text-accent">{a.budget}</span>
+                    <span aria-hidden className="h-px flex-1 bg-text-muted/15" />
                   </div>
-                  <p className="text-text-muted text-[13px] leading-relaxed">{a.description}</p>
+                  <p className="mt-4 text-text-muted text-[13px] leading-relaxed">
+                    {a.description}
+                  </p>
                 </div>
               ))}
             </div>
