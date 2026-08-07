@@ -317,6 +317,83 @@ tbody tr:last-child td{border-bottom:none}
 .stack p:last-child{margin-bottom:0}
 .stack p strong{color:var(--fg);font-weight:500}
 
+/* campaign builder */
+.bctrl{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap;
+  margin-bottom:26px}
+.bpresets{display:flex;gap:8px;flex-wrap:wrap}
+.bactions{display:flex;gap:8px}
+.bbtn{font-family:var(--mono);font-size:9.5px;letter-spacing:.13em;text-transform:uppercase;
+  padding:11px 16px;background:var(--elev);border:1px solid var(--bd2);color:var(--m55);
+  cursor:pointer;transition:all .18s}
+.bbtn:hover{color:var(--fg);border-color:var(--m40)}
+.bbtn.on{background:var(--accent);border-color:var(--accent);color:#fff}
+.bbtn.lock{background:var(--accent);border-color:var(--accent);color:#fff;font-weight:600}
+.bbtn.lock:hover{opacity:.86;color:#fff}
+.bbtn.lock.done{background:var(--ok);border-color:var(--ok);color:#0a0a0a}
+.bbtn.ghost{background:transparent}
+
+.bgrid{display:grid;grid-template-columns:1fr 372px;gap:32px;align-items:start}
+@media(max-width:1080px){.bgrid{grid-template-columns:1fr}}
+.bpanel{border:1px solid var(--bd)}
+.blayer{border-bottom:1px solid var(--bd)}
+.blayer:last-child{border-bottom:none}
+.blhead{display:flex;align-items:baseline;gap:14px;padding:16px 22px;background:var(--card);
+  border-bottom:1px solid var(--bd);flex-wrap:wrap}
+.blhead h4{font-size:14px;margin:0}
+.blhead .sum{font-family:var(--mono);font-size:12px;color:var(--accent);font-weight:600;
+  margin-left:auto}
+.blhead .hint{font-family:var(--mono);font-size:8.5px;letter-spacing:.12em;text-transform:uppercase;
+  color:var(--m28)}
+.brow{display:grid;grid-template-columns:1fr 150px 108px 92px;gap:14px;align-items:center;
+  padding:13px 22px;border-bottom:1px solid var(--bd);background:var(--elev)}
+.brow:last-child{border-bottom:none}
+.brow.active{background:var(--card)}
+.brow .bl{font-size:13.5px;font-weight:500}
+.brow .bl small{display:block;font-family:var(--mono);font-size:9.5px;letter-spacing:.06em;
+  color:var(--m28);margin-top:3px}
+.brow input[type=range]{width:100%;accent-color:var(--accent);cursor:pointer;height:3px}
+.brow input[type=number]{width:100%;background:var(--bg);border:1px solid var(--bd2);color:var(--fg);
+  font-family:var(--mono);font-size:12.5px;padding:8px 9px;outline:none;text-align:right}
+.brow input[type=number]:focus{border-color:var(--accent)}
+.brow .imp{font-family:var(--mono);font-size:11.5px;color:var(--m55);text-align:right}
+.brow .imp b{display:block;color:var(--fg);font-size:12.5px;font-weight:600}
+.brow.under input[type=number]{border-color:var(--warn)}
+@media(max-width:760px){
+  .brow{grid-template-columns:1fr 100px;gap:10px}
+  .brow input[type=range]{grid-column:1/-1}
+  .brow .imp{grid-column:2;text-align:right}
+}
+
+.bside{position:sticky;top:78px}
+.bout{border:1px solid var(--bd2);background:var(--elev)}
+.boh{padding:20px 22px;background:var(--card);border-bottom:1px solid var(--bd2)}
+.boh .l{font-family:var(--mono);font-size:8.5px;letter-spacing:.15em;text-transform:uppercase;
+  color:var(--m40);margin-bottom:8px}
+.boh .v{font-family:var(--mono);font-size:34px;font-weight:600;letter-spacing:-.035em;line-height:1}
+.borow{display:flex;justify-content:space-between;align-items:baseline;gap:14px;padding:12px 22px;
+  border-bottom:1px solid var(--bd);font-size:13px}
+.borow span{font-family:var(--mono);font-size:9.5px;letter-spacing:.1em;text-transform:uppercase;
+  color:var(--m40)}
+.borow b{font-family:var(--mono);font-size:14px;font-weight:600}
+.borow.fee b{color:var(--warn)}
+.borow.grand{background:var(--accent);border-bottom:none;padding:18px 22px}
+.borow.grand span{color:rgba(255,255,255,.8)}
+.borow.grand b{color:#fff;font-size:21px}
+.bwarn{padding:16px 22px;border-top:1px solid var(--bd2);background:rgba(240,180,41,.06)}
+.bwarn .l{font-family:var(--mono);font-size:8.5px;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--warn);margin-bottom:10px}
+.bwarn ul{list-style:none;font-size:12.5px;color:var(--m70);line-height:1.6}
+.bwarn li{padding-left:13px;position:relative;margin-bottom:8px}
+.bwarn li:last-child{margin-bottom:0}
+.bwarn li:before{content:'';position:absolute;left:0;top:7px;width:4px;height:4px;background:var(--warn)}
+.bok{padding:16px 22px;border-top:1px solid var(--bd2);font-family:var(--mono);font-size:9.5px;
+  letter-spacing:.12em;text-transform:uppercase;color:var(--ok)}
+@media print{
+  nav,.bctrl,.bside{position:static}
+  section:not(#builder){display:none}
+  .brow input[type=range]{display:none}
+}
+
 /* fee bar */
 .feebar{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:1px;
   background:var(--bd2);border:1px solid var(--bd2);border-top:none}
@@ -508,6 +585,7 @@ footer{padding:74px 0 52px;border-top:1px solid var(--bd)}
       <a href="#programmatic">Programmatic</a>
       <a href="#organic">Organic</a>
       <a href="#blend">The Blend</a>
+      <a href="#builder">Builder</a>
       <a href="#inventory">Inventory</a>
       <a href="#credits">Credits</a>
       <a href="#runway">Run Of Show</a>
@@ -626,7 +704,7 @@ footer{padding:74px 0 52px;border-top:1px solid var(--bd)}
     <div class="shead reveal">
       <div class="eyebrow"><i></i>04 <s>/</s> The Builds</div>
       <h2>Three flights.</h2>
-      <p class="sdek">Thirty days of working media. <strong>CCD management is 15% on top of every buy and is shown in the total.</strong> The Snap match and X credit are additive and handled separately in section 09. <strong>Select a tier.</strong></p>
+      <p class="sdek">Thirty days of working media. <strong>CCD management is 15% on top of every buy and is shown in the total.</strong> The Snap match and X credit are additive and handled separately in section 10. <strong>Select a tier.</strong></p>
     </div>
     <div class="tiersw reveal" id="tiersw"></div>
     <div class="tsummary reveal" id="tsum"></div>
@@ -745,10 +823,35 @@ footer{padding:74px 0 52px;border-top:1px solid var(--bd)}
   </div>
 </section>
 
+<section id="builder">
+  <div class="wrap">
+    <div class="shead reveal">
+      <div class="eyebrow"><i></i>08 <s>/</s> Campaign Builder</div>
+      <h2>Build it live.</h2>
+      <p class="sdek">Every line below is priced at its real rate. Move a budget and impressions, fees, blended efficiency and warnings all recompute. <strong>Load a preset to start, adjust in the room, then lock it in.</strong> Locking writes the configuration into the page address and copies a plain-text summary, so the version agreed in the meeting is the version that gets sent.</p>
+    </div>
+
+    <div class="bctrl reveal">
+      <div class="bpresets" id="bpresets"></div>
+      <div class="bactions">
+        <button class="bbtn ghost" onclick="resetBuild()">Clear all</button>
+        <button class="bbtn lock" id="blockbtn" onclick="lockBuild()">Lock in this build</button>
+      </div>
+    </div>
+
+    <div class="bgrid reveal">
+      <div class="bpanel" id="binputs"></div>
+      <aside class="bside">
+        <div class="bout" id="bout"></div>
+      </aside>
+    </div>
+  </div>
+</section>
+
 <section id="inventory">
   <div class="wrap">
     <div class="shead reveal">
-      <div class="eyebrow"><i></i>08 <s>/</s> Inventory Board</div>
+      <div class="eyebrow"><i></i>09 <s>/</s> Inventory Board</div>
       <h2>What is actually buyable.</h2>
       <p class="sdek">Every property that will take a non-custodial swap advertiser, with rates, entry minimums and how to transact. Rates marked <span class="vsrc pub">PUBLISHED</span> were read off a live rate card or product page. Rates marked <span class="vsrc">REPORTED</span> come from third-party sources and need confirming on the insertion order. <strong>Everything here is either self-serve or a direct sales order.</strong> Inventory that requires cultivating a relationship before it can be bought, including podcast sponsorships, community placements and event activations, is deliberately excluded. <strong>CCD management is 15% on top of every buy.</strong></p>
     </div>
@@ -779,7 +882,7 @@ footer{padding:74px 0 52px;border-top:1px solid var(--bd)}
 <section id="credits">
   <div class="wrap">
     <div class="shead reveal">
-      <div class="eyebrow"><i></i>09 <s>/</s> The Credits</div>
+      <div class="eyebrow"><i></i>10 <s>/</s> The Credits</div>
       <h2>Snap and X, sized honestly.</h2>
       <p class="sdek">Both are worth having. Neither should carry the flight, and one of them is smaller than it sounds.</p>
     </div>
@@ -819,7 +922,7 @@ footer{padding:74px 0 52px;border-top:1px solid var(--bd)}
 <section id="runway">
   <div class="wrap">
     <div class="shead reveal">
-      <div class="eyebrow"><i></i>10 <s>/</s> Run Of Show</div>
+      <div class="eyebrow"><i></i>11 <s>/</s> Run Of Show</div>
       <h2>Thirty days, plus the two before them.</h2>
       <p class="sdek">CoinMarketCap needs five to ten business days from signed insertion order to live. The DSP needs three business days, five for DOOH and premium CTV. Snap needs written category approval. Brave runs human review on every campaign. <strong>The pre-flight window is not optional, and skipping it costs a third of the flight.</strong></p>
     </div>
@@ -883,7 +986,7 @@ footer{padding:74px 0 52px;border-top:1px solid var(--bd)}
 <section id="measure">
   <div class="wrap">
     <div class="shead reveal">
-      <div class="eyebrow"><i></i>11 <s>/</s> Measurement</div>
+      <div class="eyebrow"><i></i>12 <s>/</s> Measurement</div>
       <h2>Measuring a product built not to be measurable.</h2>
       <p class="sdek">No accounts. No tracking cookies. Order records deleted at 24 hours. CoinMarketCap does not support third-party tracking pixels and Brave is architecturally anti-tracking. <strong>Standard attribution is unavailable, and pretending otherwise is how this flight would fail its own reporting.</strong></p>
     </div>
@@ -907,7 +1010,7 @@ footer{padding:74px 0 52px;border-top:1px solid var(--bd)}
 <section id="risk">
   <div class="wrap">
     <div class="shead reveal">
-      <div class="eyebrow"><i></i>12 <s>/</s> Risk Register</div>
+      <div class="eyebrow"><i></i>13 <s>/</s> Risk Register</div>
       <h2>What could go wrong, and what absorbs it.</h2>
     </div>
     <div class="risks reveal" id="risks"></div>
@@ -950,7 +1053,7 @@ const PLATFORMS=[
 {n:'Programmatic DSP',v:'open',vl:'Open, quote in hand',
  why:'A tier-one demand-side platform with a live quote on the table. Connected TV, online video, DOOH, display and audio at fixed CPMs, National US, targeted to in-market crypto and privacy audiences.',
  quote:'Online Video $16.00. Connected TV $21.00. DOOH Display $13.50. Multiscreen Display $4.50. All CPM, National US, three business days from signed insertion order, five for DOOH and premium CTV.',
- body:'<p>The partner&#39;s own content guidelines do not list cryptocurrency as a prohibited category, which makes the DSP itself open to this advertiser. That is unusual enough in this plan to be worth stating plainly.</p><p><strong>Two supply sources inside it are closed, and they have to be excluded in writing.</strong> YouTube inventory and Pause Ad inventory both name crypto as prohibited in their own specification tabs. Creative clears the DSP and then gets rejected at the publisher, which surfaces as an unexplained delivery shortfall rather than an error. Section 05 covers the full detail and the exclusion language.</p><p>Premium CTV publishers carry their own creative approval on top, with one adding two business days for quality assurance. Third-party tracking is variously restricted across the supply path, which is why the ref-code architecture in section 11 is mandatory rather than optional.</p>',
+ body:'<p>The partner&#39;s own content guidelines do not list cryptocurrency as a prohibited category, which makes the DSP itself open to this advertiser. That is unusual enough in this plan to be worth stating plainly.</p><p><strong>Two supply sources inside it are closed, and they have to be excluded in writing.</strong> YouTube inventory and Pause Ad inventory both name crypto as prohibited in their own specification tabs. Creative clears the DSP and then gets rejected at the publisher, which surfaces as an unexplained delivery shortfall rather than an error. Section 05 covers the full detail and the exclusion language.</p><p>Premium CTV publishers carry their own creative approval on top, with one adding two business days for quality assurance. Third-party tracking is variously restricted across the supply path, which is why the ref-code architecture in section 12 is mandatory rather than optional.</p>',
  imp:'The comprehension layer of the plan. Online video is the workhorse at $16, display is the retargeting floor at $4.50, CTV enters at $100K and above. Full allocation and the recommended build are in section 05.',
  src:['Partner rate card and specification pack, on file with CCD']},
 
@@ -1195,7 +1298,7 @@ const ORG=[
         [100000,'+12.5%','40m to 80m+','$1.25 to $2.50','85+ guaranteed threads'],
         [250000,'+10%','115m to 250m+','$1.00 to $2.25','300+ guaranteed threads']]},
 {k:'x',label:'X Amplification',rec:2,
- note:'<strong>Multiplies budget already committed.</strong> The flight funds a KOL layer and ezpz holds a premium X account, so this amplifies owned and earned posts rather than buying a separate audience. The partner drives quotes, reposts and comments onto specific targeted tweets, turning a post that would have reached its own followers into one that reaches millions. Sequence it directly behind the KOL waves in section 10 so the amplification lands on posts that are already live.',
+ note:'<strong>Multiplies budget already committed.</strong> The flight funds a KOL layer and ezpz holds a premium X account, so this amplifies owned and earned posts rather than buying a separate audience. The partner drives quotes, reposts and comments onto specific targeted tweets, turning a post that would have reached its own followers into one that reaches millions. Sequence it directly behind the KOL waves in section 11 so the amplification lands on posts that are already live.',
  tiers:[[50000,'+15%','12.5m to 25m','$2.00 to $4.00','2 to 5+ tweets amplified'],
         [100000,'+12.5%','26m to 57m','$1.75 to $3.75','5 to 10+ tweets amplified'],
         [250000,'+10%','71m to 166m','$1.50 to $3.50','10 to 25+ tweets amplified']]},
@@ -1362,6 +1465,178 @@ document.getElementById('risks').innerHTML=RISKS.map(r=>`<div class="risk">
   <div class="lv lv-${r[0]}">${r[0]==='h'?'High':r[0]==='m'?'Med':'Low'}</div>
   <div><div class="t">${r[1]}</div><div class="d">${r[2]}</div></div>
   <div class="mit"><b>Absorbed by</b>${r[3]}</div></div>`).join('');
+
+/* ============ CAMPAIGN BUILDER ============ */
+const LINES=[
+ // layer, key, label, note, cpm, min, sliderMax
+ ['cn','cmc','CoinMarketCap','Display, managed. $20,000 entry minimum',6.00,20000,80000],
+ ['cn','gecko','CoinGecko','Banner network, direct order',10.00,0,40000],
+ ['cn','scan','Etherscan and Blockscan','CPM sponsorship across the explorer network',8.00,0,30000],
+ ['cn','brave','Brave','Push, Search and New Tab Takeover',8.00,500,60000],
+ ['cn','tg','Telegram','Self-serve platform plus marketplace channel buys',25.00,0,50000],
+ ['cn','reddit','Reddit Ads','Self-serve, subreddit targeted',6.00,0,20000],
+ ['cn','net','Wallet-targeted networks','Slise, Coinzilla, Cointraffic, Blockchain-Ads',8.00,0,40000],
+ ['cn','kol','X KOL programme','Marketplace or agency order',60.00,0,60000],
+ ['cn','news','Newsletter layer','Published rate cards',80.00,0,30000],
+ ['cn','press','Trade press','Institutional and developer placements',40.00,0,20000],
+ ['pg','polv','Online Video','Desktop and mobile, contextual crypto and privacy',16.00,0,80000],
+ ['pg','pctv','Connected TV','Needs roughly $25,000 to produce a readable result',21.00,0,60000],
+ ['pg','pdisp','Multiscreen Display','Retargeting floor, lag two weeks behind video',4.50,0,40000],
+ ['pg','pdooh','DOOH','Geo targeting only, no audience layer, no verification',13.50,0,40000],
+ ['og','oreddit','Reddit, seeded threads','$50,000 entry. Exclude the privacy subreddits',2.00,50000,250000],
+ ['og','ox','X amplification','$50,000 entry. Amplifies owned and KOL posts',2.60,50000,250000],
+ ['og','oclip','Clipping','$50,000 entry. Brand inside creator content',1.75,50000,250000],
+ ['og','ospr','Social PR','$50,000 entry. Overlaps the KOL line',2.25,50000,250000],
+ ['og','ologo','Logo placement','$50,000 entry. Needs existing brand comprehension',0.17,50000,250000]
+];
+const LAYERS={cn:['Crypto-native','Self-serve or direct sales order'],
+              pg:['Programmatic','Partner quote, fixed CPMs'],
+              og:['Organic amplification','Partner fee applies on this layer']};
+const PRESETS=[
+ ['Beachhead $50K',{cmc:20000,kol:9000,tg:8000,brave:6000,reddit:3000,net:4000}],
+ ['Two-Front $100K',{cmc:28000,kol:17000,tg:14000,brave:13000,gecko:10000,scan:8000,net:6000,reddit:4000}],
+ ['Category $250K',{cmc:50000,kol:40000,brave:36000,tg:32000,reddit:14000,net:10000,news:22000,gecko:20000,press:14000,scan:12000}],
+ ['Entry blend $180K',{cmc:20000,kol:9000,tg:8000,brave:6000,reddit:3000,net:4000,polv:36000,pdisp:14000,oreddit:50000}],
+ ['Growth blend $357K',{cmc:28000,kol:17000,tg:14000,brave:13000,gecko:10000,scan:8000,net:6000,reddit:4000,polv:50000,pctv:25000,pdisp:25000,oreddit:50000,ox:50000}],
+ ['Category blend $715K',{cmc:50000,kol:40000,brave:36000,tg:32000,reddit:14000,net:10000,news:22000,gecko:20000,press:14000,scan:12000,polv:50000,pctv:25000,pdisp:25000,ologo:250000}]
+];
+let B={}; LINES.forEach(l=>B[l[1]]=0);
+
+document.getElementById('bpresets').innerHTML=
+ PRESETS.map((p,i)=>`<button class="bbtn" onclick="loadPreset(${i})">${p[0]}</button>`).join('');
+
+function buildInputs(){
+  let html='';
+  for(const lk of ['cn','pg','og']){
+    const rows=LINES.filter(l=>l[0]===lk);
+    html+=`<div class="blayer"><div class="blhead"><h4>${LAYERS[lk][0]}</h4>
+      <span class="hint">${LAYERS[lk][1]}</span><span class="sum" id="sum-${lk}">$0</span></div>`;
+    html+=rows.map(([,k,label,note,cpm,min,max])=>`
+      <div class="brow" id="row-${k}">
+        <div class="bl">${label}<small>$${cpm.toFixed(2)} CPM${min?' / min $'+min.toLocaleString():''}</small></div>
+        <input type="range" min="0" max="${max}" step="500" value="0" id="rng-${k}"
+               oninput="setLine('${k}',this.value)">
+        <input type="number" min="0" step="500" value="0" id="num-${k}"
+               oninput="setLine('${k}',this.value)">
+        <div class="imp" id="imp-${k}"><b>0</b>impressions</div>
+      </div>`).join('');
+    html+='</div>';}
+  document.getElementById('binputs').innerHTML=html;}
+buildInputs();
+
+function setLine(k,v){
+  v=Math.max(0,Math.round((parseFloat(v)||0)));
+  B[k]=v;
+  const r=document.getElementById('rng-'+k), nu=document.getElementById('num-'+k);
+  if(r) r.value=Math.min(v,parseInt(r.max));
+  if(nu && document.activeElement!==nu) nu.value=v;
+  recalc();}
+
+function partnerRate(orgTotal){return orgTotal>=250000?10:orgTotal>=100000?12.5:15;}
+
+function recalc(){
+  const per={cn:0,pg:0,og:0}, imps={cn:0,pg:0,og:0};
+  LINES.forEach(([lk,k,label,note,cpm,min])=>{
+    const v=B[k]||0, im=cpm>0?v/cpm*1000:0;
+    per[lk]+=v; imps[lk]+=im;
+    const el=document.getElementById('imp-'+k);
+    if(el) el.innerHTML=`<b>${im>=1e6?(im/1e6).toFixed(2)+'M':Math.round(im).toLocaleString()}</b>impressions`;
+    const row=document.getElementById('row-'+k);
+    if(row){row.classList.toggle('active',v>0); row.classList.toggle('under',v>0&&min>0&&v<min);}
+  });
+  ['cn','pg','og'].forEach(lk=>{const e=document.getElementById('sum-'+lk); if(e)e.textContent=fmt(per[lk]);});
+
+  const media=per.cn+per.pg+per.og;
+  const prate=partnerRate(per.og);
+  const pfee=Math.round(per.og*prate/100);
+  const ccd=Math.round(media*CCD_FEE);
+  const total=media+pfee+ccd;
+  const totalImp=imps.cn+imps.pg+imps.og;
+  const ecpm=totalImp>0?media/totalImp*1000:0;
+
+  const warns=[];
+  LINES.forEach(([,k,label,,,min])=>{const v=B[k]||0;
+    if(v>0&&min>0&&v<min) warns.push(`<b>${label}</b> is below its $${min.toLocaleString()} entry minimum.`);});
+  if(per.og>0&&per.og<50000) warns.push('Organic amplification lines are sold per product at $50,000 each.');
+  if(media>0){
+    const big=LINES.map(([,k,label])=>[label,B[k]||0]).sort((a,b)=>b[1]-a[1])[0];
+    if(big[1]/media>0.4) warns.push(`<b>${big[0]}</b> is ${(big[1]/media*100).toFixed(0)}% of working media. Above 40% concentrates the flight in one channel.`);}
+  if(B.pctv>0&&B.pctv<25000) warns.push('Connected TV below $25,000 is generally too thin nationally to produce a readable result.');
+  if(B.pdooh>0) warns.push('DOOH carries geo targeting only, and third-party servers bucket out-of-home impressions as invalid.');
+  if(B.ologo>0&&(per.cn+per.pg)<50000) warns.push('Logo placement works once comprehension exists. Fund the crypto-native and programmatic layers first.');
+  if(media>0&&per.cn===0) warns.push('No crypto-native spend. That is the only layer where someone arrives already looking for a swap.');
+
+  document.getElementById('bout').innerHTML=`
+    <div class="boh"><div class="l">Total investment</div><div class="v">${fmt(total)}</div></div>
+    <div class="borow"><span>Crypto-native</span><b>${fmt(per.cn)}</b></div>
+    <div class="borow"><span>Programmatic</span><b>${fmt(per.pg)}</b></div>
+    <div class="borow"><span>Organic amplification</span><b>${fmt(per.og)}</b></div>
+    <div class="borow"><span>Working media</span><b>${fmt(media)}</b></div>
+    ${per.og>0?`<div class="borow fee"><span>Partner fee, ${prate}%</span><b>${fmt(pfee)}</b></div>`:''}
+    <div class="borow fee"><span>CCD management, 15%</span><b>${fmt(ccd)}</b></div>
+    <div class="borow grand"><span>Total investment</span><b>${fmt(total)}</b></div>
+    <div class="borow"><span>Delivered impressions</span><b>${totalImp>=1e6?(totalImp/1e6).toFixed(2)+'M':Math.round(totalImp).toLocaleString()}</b></div>
+    <div class="borow"><span>Blended eCPM on media</span><b>${ecpm>0?'$'+ecpm.toFixed(2):'&mdash;'}</b></div>
+    ${warns.length?`<div class="bwarn"><div class="l">${warns.length} flag${warns.length>1?'s':''} to resolve</div><ul>${warns.map(w=>`<li>${w}</li>`).join('')}</ul></div>`
+      :(media>0?'<div class="bok">No flags. Build is clean.</div>':'')}`;
+  const lb=document.getElementById('blockbtn');
+  if(lb){lb.classList.remove('done'); lb.textContent='Lock in this build';}}
+
+function loadPreset(i){
+  LINES.forEach(l=>B[l[1]]=0);
+  Object.entries(PRESETS[i][1]).forEach(([k,v])=>{B[k]=v;});
+  LINES.forEach(([,k])=>{const r=document.getElementById('rng-'+k),nu=document.getElementById('num-'+k);
+    if(r)r.value=Math.min(B[k],parseInt(r.max)); if(nu)nu.value=B[k];});
+  document.querySelectorAll('#bpresets .bbtn').forEach((b,j)=>b.classList.toggle('on',j===i));
+  recalc();}
+
+function resetBuild(){
+  LINES.forEach(l=>{B[l[1]]=0;
+    const r=document.getElementById('rng-'+l[1]),nu=document.getElementById('num-'+l[1]);
+    if(r)r.value=0; if(nu)nu.value=0;});
+  document.querySelectorAll('#bpresets .bbtn').forEach(b=>b.classList.remove('on'));
+  history.replaceState(null,'',location.pathname+location.search);
+  recalc();}
+
+function buildSummary(){
+  const per={cn:0,pg:0,og:0};
+  LINES.forEach(([lk,k])=>per[lk]+=B[k]||0);
+  const media=per.cn+per.pg+per.og, prate=partnerRate(per.og);
+  const pfee=Math.round(per.og*prate/100), ccd=Math.round(media*CCD_FEE);
+  let out='ezpz LAUNCH MARKETING, BUILD SUMMARY\n';
+  out+='Crowd Control Digital, '+new Date().toLocaleDateString('en-GB',{day:'numeric',month:'long',year:'numeric'})+'\n\n';
+  for(const lk of ['cn','pg','og']){
+    const rows=LINES.filter(l=>l[0]===lk&&(B[l[1]]||0)>0);
+    if(!rows.length) continue;
+    out+=LAYERS[lk][0].toUpperCase()+'  '+fmt(per[lk])+'\n';
+    rows.forEach(([,k,label,,cpm])=>{const v=B[k],im=v/cpm*1000;
+      out+='  '+label.padEnd(30)+fmt(v).padStart(10)+'   '+(im>=1e6?(im/1e6).toFixed(2)+'M':Math.round(im).toLocaleString())+' imps\n';});
+    out+='\n';}
+  out+='Working media'.padEnd(32)+fmt(media)+'\n';
+  if(per.og>0) out+=('Partner fee, '+prate+'%').padEnd(32)+fmt(pfee)+'\n';
+  out+='CCD management, 15%'.padEnd(32)+fmt(ccd)+'\n';
+  out+='TOTAL INVESTMENT'.padEnd(32)+fmt(media+pfee+ccd)+'\n\n';
+  out+=location.href;
+  return out;}
+
+function encodeBuild(){return LINES.map(l=>B[l[1]]||0).join('.');}
+function decodeBuild(s){const v=s.split('.');LINES.forEach((l,i)=>{B[l[1]]=parseInt(v[i])||0;});}
+
+function lockBuild(){
+  const hash='#build='+encodeBuild();
+  history.replaceState(null,'',location.pathname+location.search+hash);
+  const btn=document.getElementById('blockbtn');
+  navigator.clipboard.writeText(buildSummary()).then(()=>{
+    btn.classList.add('done'); btn.textContent='Locked, summary copied';
+  }).catch(()=>{btn.classList.add('done'); btn.textContent='Locked, address updated';});}
+
+(function initBuild(){
+  const m=location.hash.match(/build=([\d.]+)/);
+  if(m){decodeBuild(m[1]);
+    LINES.forEach(([,k])=>{const r=document.getElementById('rng-'+k),nu=document.getElementById('num-'+k);
+      if(r)r.value=Math.min(B[k],parseInt(r.max)); if(nu)nu.value=B[k];});
+    recalc();}
+  else loadPreset(1);})();
 
 const io=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},
   {threshold:.06,rootMargin:'0px 0px -40px 0px'});
