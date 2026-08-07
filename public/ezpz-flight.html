@@ -344,7 +344,7 @@ tbody tr:last-child td{border-bottom:none}
   margin-left:auto}
 .blhead .hint{font-family:var(--mono);font-size:8.5px;letter-spacing:.12em;text-transform:uppercase;
   color:var(--m28)}
-.brow{display:grid;grid-template-columns:1fr 150px 108px 92px;gap:14px;align-items:center;
+.brow{display:grid;grid-template-columns:1fr 140px 120px 92px;gap:14px;align-items:center;
   padding:13px 22px;border-bottom:1px solid var(--bd);background:var(--elev)}
 .brow:last-child{border-bottom:none}
 .brow.active{background:var(--card)}
@@ -1517,20 +1517,31 @@ function buildInputs(){
         <div class="bl">${label}<small>$${cpm.toFixed(2)} CPM${min?' / min $'+min.toLocaleString():''}</small></div>
         <input type="range" min="0" max="${max}" step="500" value="0" id="rng-${k}"
                oninput="setLine('${k}',this.value)">
-        <input type="number" min="0" step="500" value="0" id="num-${k}"
-               oninput="setLine('${k}',this.value)">
+        <input type="text" inputmode="numeric" autocomplete="off" value="$0" id="num-${k}"
+               oninput="typeLine('${k}',this)" onblur="blurLine('${k}',this)"
+               onfocus="this.select()">
         <div class="imp" id="imp-${k}"><b>0</b>impressions</div>
       </div>`).join('');
     html+='</div>';}
   document.getElementById('binputs').innerHTML=html;}
 buildInputs();
 
+function money(v){return '$'+(v||0).toLocaleString();}
+function writeNum(k){const nu=document.getElementById('num-'+k);
+  if(nu && document.activeElement!==nu) nu.value=money(B[k]||0);}
+function typeLine(k,el){
+  const v=parseInt(el.value.replace(/[^\d]/g,''))||0;
+  B[k]=v;
+  const r=document.getElementById('rng-'+k);
+  if(r) r.value=Math.min(v,parseInt(r.max));
+  recalc();}
+function blurLine(k,el){el.value=money(B[k]||0);}
 function setLine(k,v){
   v=Math.max(0,Math.round((parseFloat(v)||0)));
   B[k]=v;
-  const r=document.getElementById('rng-'+k), nu=document.getElementById('num-'+k);
+  const r=document.getElementById('rng-'+k);
   if(r) r.value=Math.min(v,parseInt(r.max));
-  if(nu && document.activeElement!==nu) nu.value=v;
+  writeNum(k);
   recalc();}
 
 function partnerRate(orgTotal){return orgTotal>=250000?10:orgTotal>=100000?12.5:15;}
@@ -1586,15 +1597,15 @@ function recalc(){
 function loadPreset(i){
   LINES.forEach(l=>B[l[1]]=0);
   Object.entries(PRESETS[i][1]).forEach(([k,v])=>{B[k]=v;});
-  LINES.forEach(([,k])=>{const r=document.getElementById('rng-'+k),nu=document.getElementById('num-'+k);
-    if(r)r.value=Math.min(B[k],parseInt(r.max)); if(nu)nu.value=B[k];});
+  LINES.forEach(([,k])=>{const r=document.getElementById('rng-'+k);
+    if(r)r.value=Math.min(B[k],parseInt(r.max)); writeNum(k);});
   document.querySelectorAll('#bpresets .bbtn').forEach((b,j)=>b.classList.toggle('on',j===i));
   recalc();}
 
 function resetBuild(){
   LINES.forEach(l=>{B[l[1]]=0;
-    const r=document.getElementById('rng-'+l[1]),nu=document.getElementById('num-'+l[1]);
-    if(r)r.value=0; if(nu)nu.value=0;});
+    const r=document.getElementById('rng-'+l[1]);
+    if(r)r.value=0; writeNum(l[1]);});
   document.querySelectorAll('#bpresets .bbtn').forEach(b=>b.classList.remove('on'));
   history.replaceState(null,'',location.pathname+location.search);
   recalc();}
@@ -1634,8 +1645,8 @@ function lockBuild(){
 (function initBuild(){
   const m=location.hash.match(/build=([\d.]+)/);
   if(m){decodeBuild(m[1]);
-    LINES.forEach(([,k])=>{const r=document.getElementById('rng-'+k),nu=document.getElementById('num-'+k);
-      if(r)r.value=Math.min(B[k],parseInt(r.max)); if(nu)nu.value=B[k];});
+    LINES.forEach(([,k])=>{const r=document.getElementById('rng-'+k);
+      if(r)r.value=Math.min(B[k],parseInt(r.max)); writeNum(k);});
     recalc();}
   else loadPreset(1);})();
 
