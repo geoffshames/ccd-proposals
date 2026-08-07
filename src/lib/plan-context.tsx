@@ -361,7 +361,7 @@ export type PricingSection = {
     };
     featured?: boolean;
   }[];
-  addOns?: { name: string; budget: string; description: string }[];
+  addOns?: { name: string; subtitle?: string; budget: string; description: string }[];
   footnote?: string;
 };
 

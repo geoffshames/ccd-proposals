@@ -126,6 +126,11 @@ export function PlanPricing({ section }: { section: PricingSection }) {
                   <h4 className="text-[15px] md:text-[16px] font-bold text-text-primary leading-snug tracking-tight">
                     {a.name}
                   </h4>
+                  {a.subtitle && (
+                    <div className="mt-1.5 text-[13px] md:text-[14px] font-medium text-text-muted leading-snug">
+                      {a.subtitle}
+                    </div>
+                  )}
                   <div className="mt-3 flex items-center gap-3">
                     <span className="text-[15px] md:text-[17px] font-mono tabular-nums font-bold text-accent whitespace-nowrap">
                       {a.budget}

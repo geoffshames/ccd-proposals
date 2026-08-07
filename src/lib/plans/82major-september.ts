@@ -990,19 +990,22 @@ export const eightyTwoMajorSeptember: StrategyPlanData = {
       ],
       addOns: [
         {
-          name: "Radio / Option A: SIGN at tier 2",
+          name: "Radio / Option A",
+          subtitle: "SIGN At Tier 2",
           budget: "~$20,000",
           description: "Take SIGN from the fifties into second-tier rotation. Contracted promoter-side through Kakao, no CCD management fee. Pairs with Core digital and the experiential add-on inside a ~$70,000 ceiling.",
         },
         {
-          name: "Radio / Option B: new campaign on HEAT",
+          name: "Radio / Option B",
+          subtitle: "New Campaign On HEAT",
           budget: "$40,000 to $45,000",
           description: "Full radio campaign on the new single. Contracted promoter-side through Kakao, no CCD management fee. Requires a higher ceiling or a materially reduced digital tier. Contingent on a promoter read on the new music.",
         },
         {
           name: "Experiential Add-On",
+          subtitle: "Kakao-Side Activation",
           budget: "$10,000 to $15,000",
-          description: "Specced and delivered on the Kakao side, outside the CCD budget. CCD asks that any activation carries a capture mechanic and produces vertical-native, paid-usable creative.",
+          description: "Sits outside the CCD budget and is not funded by either digital tier. CCD asks that any activation carries a capture mechanic and produces vertical-native, paid-usable creative.",
         },
       ],
       footnote: "The fan channel network bills monthly at $4,000 per month, so its line scales with how many months of the cycle it runs: two months at Core, the full three at Full. It is the one fixed cost in the plan and is not reallocatable week to week. Budgets are scoped to the September release cycle. The Q4 tour window and the 1H 2027 releases each authorize fresh budgets on this same structure, and inherit the infrastructure, warmed audiences, and tested creative this campaign produces.",
