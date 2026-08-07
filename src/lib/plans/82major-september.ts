@@ -307,7 +307,7 @@ export const eightyTwoMajorSeptember: StrategyPlanData = {
       number: "05",
       navLabel: "Budget",
       title: "Campaign Budget / September Release",
-      intro: "Two all-in digital levels for the September cycle, roughly 12 weeks. CCD retainer and media management sit inside the budget, not on top. Both tiers cover the full record, not the lead single alone. Radio is scoped separately in Section 10 and is not funded by either tier. The Kakao experiential add-on described in Section 11 also sits outside these numbers. Core holds the machine that is already running and gives the release a real pre-launch window. Full adds the weight that turns a solid comeback into a market moment.",
+      intro: "Three all-in digital levels for the September cycle, roughly 12 weeks. CCD retainer and media management sit inside the budget, not on top. All three cover the full record, not the lead single alone. Radio is scoped separately in Section 10 and is not funded by any of them. The Kakao experiential add-on described in Section 11 also sits outside these numbers. The two $50,000 builds are the same money aimed differently: one keeps the always-on fan channel layer, the other retires it and moves that weight into the two lanes with the hardest proven costs behind them.",
       tiers: [
         {
           label: "Digital / Tier 1",
@@ -325,19 +325,31 @@ export const eightyTwoMajorSeptember: StrategyPlanData = {
           ],
         },
         {
-          label: "Digital / Tier 2",
+          label: "Digital / Tier 2A",
           budget: "$50,000",
-          name: "Full",
-          goal: "Everything in Core at roughly 1.9x the deployable weight, plus a playlist network lane and a materially larger creator round. Built so release week scales hard against pre-warmed audiences and the campaign still has fuel when the Q4 tour window opens.",
-          featured: true,
+          name: "Full, Always-On",
+          goal: "Everything in Core at roughly 1.9x the deployable weight, with the fan channel network held at full cadence across the whole cycle and Strive added for streaming floor support. This is the build that keeps the owned always-on layer growing through the release.",
           includes: [
             "Everything in Core, at roughly 1.9x deployable media",
-            "Paid social roughly doubled, with sustained post-release scaling rather than a release-week spike",
             "Fan channel network at daily cadence across the full cycle, three months rather than two",
-            "Creator and clipping round expanded, including paid boost behind organic winners",
-            "Playlist network lane added for streaming floor support through the decay window",
+            "Paid social and the creator round both scaled above Core",
+            "Strive playlist network added for streaming floor support through the decay window",
             "Retargeting pools from the SIGN flight activated against the pre-save and release push",
             "Creative library built and validated pre-release, carried into the tour window",
+          ],
+        },
+        {
+          label: "Digital / Tier 2B",
+          budget: "$50,000",
+          name: "Full, Media-Weighted",
+          goal: "The same $50,000 with the fan channel network retired for this cycle and its $12,000 moved into paid social and the creator round. Paid social rises from $12,000 to $20,000 and the creator round from $7,000 to $11,000, concentrating the budget in the two lanes with measured costs behind them: a $0.07 second click and $0.0024 per view.",
+          includes: [
+            "No fan channel network for this cycle, which frees $12,000",
+            "Paid social at $20,000, roughly 67 percent above the always-on build",
+            "Creator and clipping round at $11,000, roughly 57 percent above the always-on build",
+            "Strive playlist network for streaming floor support through the decay window",
+            "CRM lane, DSP coordination, watch matrix, and reporting all unchanged from Core",
+            "Fan channels can be restarted at $4,000 per month whenever the label wants them back",
           ],
         },
       ],
@@ -401,7 +413,7 @@ export const eightyTwoMajorSeptember: StrategyPlanData = {
           ],
         },
       ],
-      footnote: "The CRM lane is operational inside the CCD retainer. The fan channel network is a monthly engagement at $4,000 per month across the network, so its line item scales with duration: two months at Core, three at Full. Extending it beyond the cycle is a separate monthly authorization.",
+      footnote: "The CRM lane is operational inside the CCD retainer and runs in every tier. The fan channel network is a monthly engagement at $4,000 per month across the network, so its line scales with duration: two months at Core, three at Full Always-On, and none at Full Media-Weighted, where that $12,000 moves into paid social and the creator round instead. It can be restarted at $4,000 per month at any point in the cycle.",
     },
 
     // ===================================================================
@@ -493,15 +505,15 @@ export const eightyTwoMajorSeptember: StrategyPlanData = {
         },
         {
           label: "B",
-          title: "Streaming Floor Support",
+          title: "Strive: Streaming Floor Support",
           objective: "Hold the daily floor through the post-release decay window, which is when most campaigns quietly lose the gains they paid for.",
-          strategy: "A playlist network lane runs in the Full tier as floor support, reported separately from total streams so its contribution is visible rather than blended. It is a self-operated network using Spotify as the stream source, not a platform partnership, and delivery is subject to available inventory.",
+          strategy: "Strive runs in both $50,000 builds as floor support, billed on monthly insertion across the cycle. It is a self-operated playlist network using Spotify as the stream source, not a Spotify partnership. Strive reports its attributed daily streams separately from total streams, which gives a clean isolated view of what it contributed rather than a blended number.",
           components: {
             heading: "Reporting Discipline",
             items: [
-              "Attributed streams reported separately from total streams",
-              "Volume framed as a delivery range subject to inventory, not as a guarantee",
-              "Layered onto the live dashboard alongside paid and organic lanes",
+              "Attributed streams reported separately from total streams, so the contribution is never blended into the headline",
+              "Volume is a delivery range subject to available inventory, not a guaranteed stream count. Any monthly figure quoted onward should carry that caveat with it",
+              "Layered onto the live dashboard alongside the paid and organic lanes",
             ],
           },
         },
@@ -685,7 +697,7 @@ export const eightyTwoMajorSeptember: StrategyPlanData = {
       number: "12",
       navLabel: "Flight",
       title: "Proposed Media Flight",
-      intro: "Phasing shown at the Full tier. Core runs the same three phases at roughly half the deployable weight, with the playlist network lane removed and the creator round reduced. Phase budgets are directional. CCD reallocates weekly against live cost per second click, which is how the SIGN flight got from $0.114 to $0.078 per click on flat spend.",
+      intro: "Phasing shown at the Full Always-On tier. Full Media-Weighted runs the same three phases on the same $50,000 with the fan channel line removed and roughly $12,000 more sitting in paid social and creators, which weights Phases 2 and 3 more heavily. Core runs the same shape at roughly half the deployable weight, with Strive removed. Phase budgets are directional. CCD reallocates weekly against live cost per second click, which is how the SIGN flight got from $0.114 to $0.078 per click on flat spend.",
       totalBudget: "$50,000",
       phases: [
         {
@@ -728,7 +740,7 @@ export const eightyTwoMajorSeptember: StrategyPlanData = {
           ],
         },
       ],
-      footnote: "Phase budgets sum to the Full tier total. They are directional with one exception: the fan channel network bills at a fixed $4,000 per month and cannot be reallocated, so roughly $4,000 of each month sits outside the weekly optimization. Everything else moves. Weekly reallocation across creative, audience, and lane is the mechanism that produced the cost improvements in the SIGN flight, and it requires the latitude to move money between these phases.",
+      footnote: "Phase budgets sum to the $50,000 total. They are directional with one exception: where the fan channel network runs it bills at a fixed $4,000 per month and cannot be reallocated, so roughly $4,000 of each month sits outside the weekly optimization. On the Media-Weighted build that constraint disappears and the full deployable is live to weekly reallocation. Everything else moves in both. Weekly reallocation across creative, audience, and lane is the mechanism that produced the cost improvements in the SIGN flight, and it requires the latitude to move money between these phases.",
     },
 
     // ===================================================================
@@ -930,7 +942,7 @@ export const eightyTwoMajorSeptember: StrategyPlanData = {
           ],
         },
       ],
-      footnote: "The grid shows the Full tier. At Core the fan channel row runs for two months and ends after week 8, and the playlist lane does not run. Weeks 9 through 12 assume Q4 routing lands in that window. Tour-specific spend authorizes its own budget once dates confirm; what is shown here is the campaign work that continues through it.",
+      footnote: "The grid shows the Full Always-On tier. At Core the fan channel row ends after week 8 and Strive does not run. At Full Media-Weighted the fan channel row does not run at all, and the paid and creator rows carry proportionally more weight from week 4 onward. Weeks 9 through 12 assume Q4 routing lands in that window. Tour-specific spend authorizes its own budget once dates confirm; what is shown here is the campaign work that continues through it.",
     },
 
     // ===================================================================
@@ -941,7 +953,7 @@ export const eightyTwoMajorSeptember: StrategyPlanData = {
       number: "14",
       navLabel: "Pricing",
       title: "Final Pricing",
-      intro: "Both digital tiers are all-in for the September cycle, roughly 12 weeks. The CCD retainer and media management fee are line items inside the budget, not additions to it. Everything below the fee lines is deployable to media, creators, and channels. Optional lanes at the bottom sit outside both tiers and are contracted separately.",
+      intro: "All three levels are all-in for the September cycle, roughly 12 weeks. The CCD retainer and media management fee are line items inside the budget, not additions to it. Everything below the fee lines is deployable to media, creators, and channels. The two $50,000 builds carry identical totals, identical fees, and identical deployable; they differ only in where that deployable goes. Optional lanes at the bottom sit outside every tier and are contracted separately.",
       tiers: [
         {
           label: "Digital / Tier 1",
@@ -965,11 +977,10 @@ export const eightyTwoMajorSeptember: StrategyPlanData = {
           ],
         },
         {
-          label: "Digital / Tier 2",
+          label: "Digital / Tier 2A",
           budget: "$50,000",
-          name: "Full",
-          tagline: "Extend the release. Roughly 1.9x deployable weight, full-cycle always-on, plus floor support.",
-          featured: true,
+          name: "Full, Always-On",
+          tagline: "Keep the owned layer growing. Fan channels at full cadence across the cycle.",
           deployable: "$37,000",
           feeBreakdown: {
             retainer: "$7,500",
@@ -981,10 +992,31 @@ export const eightyTwoMajorSeptember: StrategyPlanData = {
           breakdown: [
             { vertical: "CCD Cycle Retainer", amount: "$7,500" },
             { vertical: "Media Management (15%)", amount: "$5,500" },
-            { vertical: "Paid Social (Meta + TikTok)", amount: "$14,000" },
-            { vertical: "Creator + Clipping Round", amount: "$8,000" },
+            { vertical: "Paid Social (Meta + TikTok)", amount: "$12,000" },
+            { vertical: "Creator + Clipping Round", amount: "$7,000" },
             { vertical: "Fan Channel Network (3 mo at $4,000/mo)", amount: "$12,000" },
-            { vertical: "Playlist Network Lane", amount: "$3,000" },
+            { vertical: "Strive Playlist Network", amount: "$6,000" },
+          ],
+        },
+        {
+          label: "Digital / Tier 2B",
+          budget: "$50,000",
+          name: "Full, Media-Weighted",
+          tagline: "Same money, no fan channels. $12,000 moved into paid and creators.",
+          deployable: "$37,000",
+          feeBreakdown: {
+            retainer: "$7,500",
+            retainerDetail: "Cycle retainer, ~12 weeks",
+            mediaManagement: "$5,500",
+            mediaManagementLabel: "Media Management",
+            mediaManagementDetail: "15% on ~$37,000 managed media",
+          },
+          breakdown: [
+            { vertical: "CCD Cycle Retainer", amount: "$7,500" },
+            { vertical: "Media Management (15%)", amount: "$5,500" },
+            { vertical: "Paid Social (Meta + TikTok)", amount: "$20,000" },
+            { vertical: "Creator + Clipping Round", amount: "$11,000" },
+            { vertical: "Strive Playlist Network", amount: "$6,000" },
           ],
         },
       ],
@@ -1008,7 +1040,7 @@ export const eightyTwoMajorSeptember: StrategyPlanData = {
           description: "Sits outside the CCD budget and is not funded by either digital tier. CCD asks that any activation carries a capture mechanic and produces vertical-native, paid-usable creative.",
         },
       ],
-      footnote: "The fan channel network bills monthly at $4,000 per month, so its line scales with how many months of the cycle it runs: two months at Core, the full three at Full. It is the one fixed cost in the plan and is not reallocatable week to week. Budgets are scoped to the September release cycle. The Q4 tour window and the 1H 2027 releases each authorize fresh budgets on this same structure, and inherit the infrastructure, warmed audiences, and tested creative this campaign produces.",
+      footnote: "The fan channel network bills monthly at $4,000 per month, so its line scales with how many months it runs: two at Core, three at Full Always-On, none at Full Media-Weighted. It is the one fixed, non-reallocatable cost in the plan, which is why removing it frees the most flexible $12,000 in the budget. Strive bills on monthly insertion and its volume is a delivery range subject to inventory, not a guaranteed stream count. Budgets are scoped to the September release cycle. The Q4 tour window and the 1H 2027 releases each authorize fresh budgets on this same structure, and inherit the infrastructure, warmed audiences, and tested creative this campaign produces.",
     },
   ],
 };

@@ -4,8 +4,8 @@ import { PlanSectionHeader } from "./PlanSectionHeader";
 import type { PricingSection } from "@/lib/plan-context";
 
 // Literal class strings so the Tailwind JIT can see them.
-const ADDON_COLS: Record<1 | 2 | 3 | 4, string> = {
-  1: "lg:grid-cols-2",
+const TIER_COLS: Record<1 | 2 | 3 | 4, string> = {
+  1: "",
   2: "lg:grid-cols-2",
   3: "lg:grid-cols-3",
   4: "lg:grid-cols-4",
@@ -17,7 +17,11 @@ export function PlanPricing({ section }: { section: PricingSection }) {
       <div className="max-w-6xl mx-auto">
         <PlanSectionHeader number={section.number} title={section.title} intro={section.intro} />
 
-        <div className={`grid grid-cols-1 ${section.tiers.length > 1 ? "lg:grid-cols-2" : ""} gap-4`}>
+        <div
+          className={`grid grid-cols-1 gap-4 ${
+            TIER_COLS[Math.min(section.tiers.length, 4) as 1 | 2 | 3 | 4]
+          }`}
+        >
           {section.tiers.map((tier, i) => (
             <motion.div
               key={i}
@@ -115,7 +119,7 @@ export function PlanPricing({ section }: { section: PricingSection }) {
             </div>
             <div
               className={`grid grid-cols-1 sm:grid-cols-2 gap-4 ${
-                ADDON_COLS[Math.min(section.addOns.length, 4) as 1 | 2 | 3 | 4]
+                TIER_COLS[Math.max(2, Math.min(section.addOns.length, 4)) as 2 | 3 | 4]
               }`}
             >
               {section.addOns.map((a, i) => (

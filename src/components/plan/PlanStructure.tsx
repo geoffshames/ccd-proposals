@@ -4,6 +4,14 @@ import { PlanSectionHeader } from "./PlanSectionHeader";
 import { usePlan } from "@/lib/plan-context";
 import type { StructureSection, PricingSection } from "@/lib/plan-context";
 
+// Literal class strings so the Tailwind JIT can see them.
+const TIER_COLS: Record<1 | 2 | 3 | 4, string> = {
+  1: "",
+  2: "lg:grid-cols-2",
+  3: "lg:grid-cols-3",
+  4: "lg:grid-cols-4",
+};
+
 export function PlanStructure({ section }: { section: StructureSection }) {
   const PLAN = usePlan();
   // Locate the pricing section so the anchor button knows where to jump.
@@ -19,7 +27,7 @@ export function PlanStructure({ section }: { section: StructureSection }) {
 
         <div
           className={`grid grid-cols-1 gap-4 mt-8 ${
-            section.tiers.length > 1 ? "lg:grid-cols-2" : ""
+            TIER_COLS[Math.min(section.tiers.length, 4) as 1 | 2 | 3 | 4]
           }`}
         >
           {section.tiers.map((tier, i) => (
