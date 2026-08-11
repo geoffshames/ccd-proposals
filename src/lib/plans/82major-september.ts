@@ -31,10 +31,10 @@ export const eightyTwoMajorSeptember: StrategyPlanData = {
       number: "01",
       navLabel: "Overview",
       title: "Overview & Objective",
-      subtitle: "A digital campaign for the September 1 comeback, priced at two levels, with radio scoped separately so the release cycle and the radio decision can be judged on their own terms.",
+      subtitle: "A digital campaign for the September 1 comeback, priced at three levels, built from the measured unit costs the SIGN cycle produced.",
       body: [
         "This plan funds the digital campaign for the September release, lead single HEAT, out September 1 at 6:00 PM KST. The cycle runs roughly 12 weeks, from pre-release build through the Q4 U.S. tour window.",
-        "The strategic case is that the SIGN cycle already answered the hard question. It proved 82MAJOR converts the audience it reaches, at a cost per action that most K-pop campaigns do not hit. Spotify followers moved from 149,716 at campaign start to 161,196 today, an all-time high, while the fandom conversion ratio recovered to 0.46, the strongest reading of the campaign. The United States went from a secondary market to the group's largest Spotify market at 70,205 monthly listeners, up roughly 27 percent across the window, while worldwide listeners declined on the normal post-release curve. Los Angeles is now a top-ten city for the group. Eight months ago the top five cities were all in Southeast Asia with no Western city on the board.",
+        "The strategic case is that the SIGN cycle already answered the hard question. Section 02 sets out what every lane returned, measured rather than estimated, and every number in this plan traces back to it. It proved 82MAJOR converts the audience it reaches, at a cost per action that most K-pop campaigns do not hit. Spotify followers moved from 149,716 at campaign start to 161,196 today, an all-time high, while the fandom conversion ratio recovered to 0.46, the strongest reading of the campaign. The United States went from a secondary market to the group's largest Spotify market at 70,205 monthly listeners, up roughly 27 percent across the window, while worldwide listeners declined on the normal post-release curve. Los Angeles is now a top-ten city for the group. Eight months ago the top five cities were all in Southeast Asia with no Western city on the board.",
         "SIGN was a campaign run against a record that was already out, with no pre-release window, no pre-save mechanic, and creative that had to be tested live. HEAT gives back all three. The single biggest efficiency gain available in this cycle is simply having three weeks before release day to validate creative, warm audiences, and build a pre-save base, so release week scales what already works instead of discovering it.",
         "Budgets here are scoped to this cycle only. The Q4 tour window and the 1H 2027 releases each authorize fresh budgets on the same structure. The infrastructure this campaign runs on, the fan channel network, the CRM lane, the warmed paid audiences, and the tested creative library, carries forward into all of them at marginal cost.",
       ],
@@ -57,7 +57,7 @@ export const eightyTwoMajorSeptember: StrategyPlanData = {
           "Deliver a tested creative library and warmed audiences the tour window and the 2027 album inherit",
         ],
       },
-      footnote: "Release date confirmed publicly as September 1, 6:00 PM KST. Radio is scoped in Section 10 and sits outside both digital tiers. The Kakao experiential add-on is described in Section 11 and also sits outside the CCD ceiling.",
+      footnote: "Release date confirmed publicly as September 1, 6:00 PM KST. The Kakao experiential add-on described in Section 10 sits outside the CCD ceiling. Against a ~$70,000 overall ceiling, Core plus a $15,000 experiential add-on lands at $45,000 and either $50,000 build plus the same add-on lands at $65,000, so every configuration in this document fits with headroom remaining.",
     },
 
     // ===================================================================
@@ -66,77 +66,137 @@ export const eightyTwoMajorSeptember: StrategyPlanData = {
     {
       type: "vertical",
       number: "02",
-      navLabel: "Proof",
+      navLabel: "Evidence",
       title: "What The SIGN Cycle Proved",
-      philosophy: "Every number in this section is measured, not modelled. The September plan is built from what actually worked, and priced against costs we have already paid in market.",
-      intro: "The SIGN campaign ran from June 15 with no pre-release runway. These are the results it produced, and the reason the September plan is shaped the way it is.",
+      philosophy: "Every figure in this section is measured, not modelled, and every recommendation in this document is traceable back to one of them. The SIGN campaign was the first time this group's audience was bought against at scale in the United States, which means the September plan does not have to guess at what a dollar buys. It already knows.",
+      intro: "The campaign has run since June 15 with roughly $13,400 of paid media across TikTok and Meta, a $5,000 creator and clipping round, and an always-on fan channel network. What follows is what each of those lanes returned, what the streaming and fandom data did underneath them, and what that evidence says about how the September budget should be shaped.",
       subBlocks: [
         {
           label: "A",
           title: "The Conversion Machine Works",
-          objective: "82MAJOR keeps the audience it reaches. This is the metric the whole strategy rests on, and it improved across the campaign.",
+          objective: "82MAJOR keeps the audience it reaches. This is the metric the entire strategy rests on, and it improved every month of the campaign.",
+          strategy: "The fandom conversion ratio (Spotify followers divided by monthly listeners) measures whether reach turns into a relationship or evaporates. It fell to 0.23 at the release listener spike, which is normal: a release pulls in casual listeners faster than it converts fans. It has since recovered to 0.46, above the 0.44 pre-campaign baseline, while followers hit an all-time high. That combination, followers climbing while the ratio climbs, is the signature of a campaign converting rather than renting.",
           components: {
-            heading: "Measured Across The Window",
+            heading: "Measured Across The Campaign Window",
             items: [
-              "Spotify followers 149,716 to 161,196, an all-time high, rising every week of the campaign",
-              "Fandom conversion ratio recovered from 0.23 at the release listener spike to 0.46 today, above the pre-campaign baseline of 0.44",
-              "U.S. monthly listeners 55,421 to 70,205, roughly 27 percent growth, making the U.S. the group's largest Spotify market",
-              "Los Angeles entered the top ten cities, the first Western city to do so",
+              "Spotify followers 149,716 to 161,196, an all-time high, up 7.7 percent and rising every week",
+              "Fandom conversion ratio 0.23 at the release trough, 0.44 pre-campaign baseline, 0.46 today",
+              "U.S. monthly listeners 55,421 to 70,205, up roughly 27 percent, now the group's largest market ahead of Indonesia at 38,547",
+              "Los Angeles entered the global top ten cities, the first Western city ever to do so. Eight months ago the top five were all Southeast Asian",
+              "Worldwide monthly listeners 469,822 to 349,510 across the same window, the normal post-release curve",
             ],
           },
           kpis: [
-            "Followers: 161,196 (all-time high)",
-            "Conversion ratio: 0.46",
-            "U.S. monthly listeners: 70,205 (#1 market)",
+            "Followers 161,196, all-time high",
+            "Conversion ratio 0.46",
+            "U.S. listeners 70,205, #1 market",
           ],
+          timeline: "Implication for September: the CRM and pre-save lane is the mechanism behind this number, and it runs in every tier. It is not the lane to cut.",
         },
         {
           label: "B",
-          title: "Paid Social Found A Cost Floor",
-          objective: "The optimization target is the second click, the deliberate tap through the pivot page to Spotify, not the ad click. It is a far stricter measure of intent and it got cheaper as the campaign learned.",
+          title: "Paid Social Found Its Floor On Both Platforms",
+          objective: "Roughly $13,400 of paid media, all U.S. and Canada, across a TikTok traffic flight, a TikTok conversion flight, and a Meta Instagram conversion flight. The unit costs below are what the September paid budget buys.",
+          strategy: "The optimization target is the second click, the deliberate tap through the pivot page to a DSP, rather than the ad click. TikTok traffic delivers the cheapest volume and Meta delivers the higher engagement rate and the retargetable pool. Both improved as the campaign learned: Meta weekly cost per click fell from $0.114 to $0.078 with clicks up 47 percent on flat spend after the conversion event was swapped.",
           components: {
-            heading: "Where The Cost Landed",
+            heading: "Platform By Platform, Campaign To Date",
             items: [
-              "Second click to Spotify at roughly $0.07 in the U.S., $0.11 blended, down from $0.12 earlier in the flight",
-              "Top creative sustained above 5 percent click-through and drove roughly 4,300 people to Spotify on its own",
-              "Weekly cost per click fell from $0.114 to $0.078 with clicks up 47 percent on flat spend after the conversion swap",
-              "Geo delivery matched targeting almost exactly, roughly 86 percent U.S. and 13 percent Canada",
+              "TikTok traffic flight: $7,509 spend, 1,597,106 impressions, 94,556 clicks, 5.92 percent CTR, $0.08 per click, $4.70 CPM, 869,187 reach",
+              "TikTok conversion flight: $2,527 spend, 407,250 impressions, 490 conversions at $5.16, $6.21 CPM",
+              "Meta Instagram conversion flight: $3,361 spend, 462,872 impressions, 268,934 reach, 6.42 percent CTR, $0.113 per click, $0.111 per landing-page view, $7.26 CPM",
+              "Blended across both platforms: roughly $13,400 spend, 2.47M impressions, 131,615 clicks, about $0.10 per click and a $5.43 CPM",
+              "Meta engagement alongside the clicks: 34,129 reactions, 1,330 saves, 197,832 video views",
             ],
           },
-          kpis: ["$0.07 U.S. second click", "5%+ CTR on best creative", "47% more clicks on flat spend"],
+          kpis: ["$0.08 TikTok CPC", "6.42% Meta CTR", "$5.43 blended CPM"],
+          timeline: "Implication for September: this is the most efficient reach the account buys and the only lane that also builds a retargetable audience. Every additional dollar here has a known return.",
         },
         {
           label: "C",
-          title: "Creator And Clipping Economics",
-          objective: "The clipping and creator lane produced the cheapest reach on the account, with a clear lesson about how that reach concentrates.",
+          title: "Creator And Clipping Bought The Cheapest Reach",
+          objective: "A $5,000 creator and clipping commitment returned roughly 2.09 million views, the strongest cost per view recorded on this account.",
+          strategy: "Culture-first edits carried the round. The top single edit reached 337,560 views by attaching the song to a show with independent search demand, and one creator's posts on that theme hit 8 to 9 percent engagement. The lesson is not that clipping is reliable, it is that clipping is cheap enough that a small number of outliers pays for the whole round. The plan therefore budgets for volume rather than for a blended average.",
           components: {
-            heading: "What The Round Delivered",
+            heading: "What The Rounds Returned",
             items: [
-              "Roughly 2.09M views on a $5,000 commitment, about $0.0024 per view, the strongest cost per view recorded on this account",
-              "A later edits round delivered roughly 1.5M views at about $2.50 CPM and 1.27 percent engagement",
-              "Culture-first edits carried the round: the top single edit hit 337,560 views by attaching to a show with independent search demand",
-              "Concentration is real. Roughly a third to 40 percent of views came from about five posts, so the plan budgets for volume and expects a small number of outliers to carry it",
+              "Roughly 2.09M views on $5,000, about $0.0024 per view, a $2.39 CPM",
+              "A later edits round delivered roughly 1.5M views at about a $3.33 CPM and 1.27 percent engagement",
+              "Concentration is real: roughly a third to 40 percent of views came from about five posts",
+              "Two creators picked the song up organically, unpaid, which is the campaign stirring movement it did not buy",
             ],
           },
-          kpis: ["$0.0024 per view", "~2.09M views on $5K", "1.27% engagement"],
+          kpis: ["$0.0024 per view", "2.09M views on $5K", "$2.39 CPM"],
+          timeline: "Implication for September: size the round for enough shots on goal rather than for an average, and put paid behind organic winners through partner codes at no creator cost.",
         },
         {
           label: "D",
+          title: "The Fan Channel Network, Measured Honestly",
+          objective: "The always-on fan channel network is the one lane whose measured return does not currently justify its cost, and the September budget should be set with that on the table rather than around it.",
+          strategy: "Two accounts have been running since mid-June at $4,000 per month across the network, roughly $6,800 committed to date. Every figure below was pulled directly from TikTok, so unlike the creator numbers it is platform-measured rather than vendor-reported. The pages are executing the brief: 63 posts, daily cadence, culture-first creative. The reach simply is not arriving at a cost that competes with the other lanes.",
+          components: {
+            heading: "Pulled Directly From TikTok",
+            items: [
+              "@82de.fan: 68 followers, 33 posts, roughly 27,300 total views, median post 725 views, best post 4,546",
+              "@82major.lyrics: 46 followers, 30 posts, roughly 8,800 total views, median post 180 views, best post 1,353",
+              "Network total: 114 followers and roughly 38,200 views across 63 posts",
+              "At roughly $6,800 committed, that is about $0.18 per view, a $178 CPM, and roughly $60 per follower",
+              "For scale, the official 82MAJOR TikTok carries 1.7M followers and 36.6M likes",
+            ],
+          },
+          kpis: ["114 followers", "~38,200 views", "$0.18 per view"],
+          timeline: "Implication for September: this is the $12,000 line the Media-Weighted build reallocates. The counterargument is real and stated in the next block.",
+        },
+        {
+          label: "E",
+          title: "Cost Per Outcome, Side By Side",
+          objective: "The same question asked of every lane: what did a dollar buy? This comparison is the single clearest input into how the September budget should be shaped.",
+          components: {
+            heading: "Effective CPM By Lane, Campaign To Date",
+            items: [
+              "Creator and clipping network: $2.39 CPM (vendor-reported views)",
+              "TikTok paid traffic: $4.70 CPM (platform-reported)",
+              "Blended paid social across TikTok and Meta: $5.43 CPM (platform-reported)",
+              "Meta Instagram conversion flight: $7.26 CPM (platform-reported)",
+              "Fan channel network: roughly $178 CPM (platform-measured)",
+              "The fan channel network is running at roughly 33 times the blended paid CPM and roughly 74 times the clipping CPM",
+            ],
+          },
+          strategy: "Three honest caveats travel with this comparison. First, the creator and clipping view counts are vendor-reported off their own dashboards and are not independently audited, while the fan channel and paid figures are platform-measured, so the cheapest lane carries the weakest verification. Second, paid social delivers a click and a retargetable audience rather than only a view, so its CPM understates what it returns. Third, fan channels are an owned asset that in principle compounds, where paid and clipping rent reach that stops the day spend stops. That compounding case is the strongest argument for keeping them. At 114 followers after roughly two months, it has not started compounding yet.",
+          kpis: ["Clipping $2.39", "Blended paid $5.43", "Fan channels ~$178"],
+        },
+        {
+          label: "F",
           title: "Decay Stopped Above The Prior Two Releases",
-          objective: "SIGN is now behaving like catalog rather than a decaying single, and it is doing so at a higher absolute floor than either of the two releases before it.",
+          objective: "SIGN is now behaving like catalog rather than a decaying single, and it is doing so at a higher absolute floor than either release before it.",
+          strategy: "The brief was to keep SIGN alive into September. That was satisfied before the playlist floor-support lane had even started serving. The decline flattened while U.S. streams continued to rise, which is the signature of a single-region campaign holding a globally decaying track. It is also the cleanest attribution the campaign has: the region that was bought grew, the regions that were not decayed.",
           components: {
             heading: "The Retention Picture",
             items: [
-              "SIGN retained 22.6 percent of its peak at week 12, against a mid-tier K-pop norm of 5 to 10 percent",
+              "SIGN retained 22.6 percent of its peak at week 12, against a mid-tier K-pop benchmark of 5 to 10 percent",
               "On absolute daily streams SIGN leads both prior releases at every week of the curve",
-              "The decline flattened with U.S. streams still rising, which is the signature of a single-region campaign holding a globally decaying track",
-              "The brief was to keep SIGN alive into September. That was satisfied before the playlist network lane even started serving",
+              "U.S. streams rising while worldwide listeners fell roughly 26 percent across the same window",
+              "One editorial placement drove roughly 89 percent of playlist reach at one point, which is the campaign's clearest structural risk",
             ],
           },
           kpis: ["22.6% W12 retention", "2-4x the category norm", "Flat, not declining"],
+          timeline: "Implication for September: the playlist concentration finding is why the DSP section builds multiple independent reach lanes rather than chasing one anchor placement.",
+        },
+        {
+          label: "G",
+          title: "What The Evidence Says About The September Build",
+          objective: "Reading all six findings together, four conclusions shape every number in this proposal.",
+          components: {
+            heading: "From Evidence To Plan",
+            items: [
+              "Fund the lanes with known unit costs. Paid social and the creator round are the only two lanes with measured, repeatable costs per outcome, which is why they carry the majority of deployable spend in every tier.",
+              "Protect the CRM and conversion lane. The conversion ratio is the thesis metric and it improved throughout. Pre-save mechanics, absent on SIGN because the record was already out, are the single largest new lever available in September.",
+              "Diversify DSP reach deliberately. A campaign one playlist decision away from losing most of its reach is a campaign with an unpriced risk in it.",
+              "Put the fan channel question on the table rather than around it. The Media-Weighted build exists because the measured return does not currently justify the line, and the decision belongs to the people reading this, not buried in a budget.",
+            ],
+          },
         },
       ],
-      footnote: "Streaming figures are Chartmetric daily series pulled August 6, 2026. Paid figures are platform-reported. Creator and clipping view counts are vendor-reported off their own dashboards and are not independently verified, so cost per view should be read as a planning benchmark rather than an audited rate.",
+      footnote: "Streaming, audience, and fan channel figures pulled 2026-08-10 from Chartmetric and directly from TikTok. Paid figures are platform-reported from the TikTok and Meta ad accounts for the campaign window. Creator and clipping view counts are vendor-reported off the vendor's own dashboards and are not independently verified, so that lane's cost per view should be read as a planning benchmark rather than an audited rate.",
     },
 
     // ===================================================================
@@ -307,7 +367,7 @@ export const eightyTwoMajorSeptember: StrategyPlanData = {
       number: "05",
       navLabel: "Budget",
       title: "Campaign Budget / September Release",
-      intro: "Three all-in digital levels for the September cycle, roughly 12 weeks. CCD retainer and media management sit inside the budget, not on top. All three cover the full record, not the lead single alone. Radio is scoped separately in Section 10 and is not funded by any of them. The Kakao experiential add-on described in Section 11 also sits outside these numbers. The two $50,000 builds are the same money aimed differently: one keeps the always-on fan channel layer, the other retires it and moves that weight into the two lanes with the hardest proven costs behind them.",
+      intro: "Three all-in digital levels for the September cycle, roughly 12 weeks. CCD retainer and media management sit inside the budget, not on top. All three cover the full record, not the lead single alone. The Kakao experiential add-on described in Section 10 sits outside these numbers. The two $50,000 builds are the same money aimed differently: one keeps the always-on fan channel layer, the other retires it and moves that weight into the two lanes with the hardest proven costs behind them.",
       tiers: [
         {
           label: "Digital / Tier 1",
@@ -581,79 +641,11 @@ export const eightyTwoMajorSeptember: StrategyPlanData = {
     },
 
     // ===================================================================
-    // 10. Radio (Optional Lane, Outside The Digital Tiers)
+    // 10. Handled by Kakao
     // ===================================================================
     {
       type: "vertical",
       number: "10",
-      navLabel: "Radio",
-      title: "Radio / Optional Lane, Outside The Digital Tiers",
-      philosophy: "Radio is priced here as its own decision because it does not compete with the digital campaign on outcome and should not compete with it on budget by default. Neither digital tier funds radio. Selecting a radio option is an additive decision with a direct consequence for the overall ceiling, and that consequence is stated plainly below.",
-      intro: "Two viable radio paths for this cycle. They are mutually exclusive in practice: available budget funds one, not both. Phase 1 radio on SIGN was a relationship-building campaign rather than a rotation push, which is why the numbers below start where they do.",
-      subBlocks: [
-        {
-          label: "A",
-          title: "Option A / Continue SIGN At Tier 2",
-          budget: "~$20,000",
-          objective: "Push SIGN, currently charting in the fifties, into second-tier rotation rather than starting a new record at radio from zero.",
-          strategy: "The relationship groundwork is already paid for and the record is already on the board. Taking an existing charting single up a tier is a materially cheaper move than opening a new campaign, and it runs concurrently with a digital-first campaign on HEAT without the two competing for the same attention. It also keeps SIGN, which is now behaving as catalog at a high absolute floor, working through the September window.",
-          components: {
-            heading: "The Case For It",
-            items: [
-              "Lowest-cost path to a real rotation outcome this cycle",
-              "Builds on a record already charting rather than starting cold",
-              "Runs alongside a digital-first HEAT campaign without splitting focus",
-              "Fits inside the overall ceiling when paired with the Core digital tier",
-            ],
-          },
-          kpis: ["Chart movement from the fifties", "Weekly spin count", "Station count added"],
-        },
-        {
-          label: "B",
-          title: "Option B / New Campaign On HEAT",
-          budget: "$40,000 to $45,000",
-          objective: "Open a full radio campaign on the new single, targeting meaningful rotation from release.",
-          strategy: "This is the number required for a campaign that can actually move rotation on a new record, as opposed to a presence campaign. It is the strongest available radio outcome and the most expensive line in this document by a wide margin. It cannot coexist with the Full digital tier and the experiential add-on inside the current ceiling.",
-          components: {
-            heading: "What It Requires",
-            items: [
-              "A promoter read on the new music before commitment, which has not happened yet",
-              "Displacing digital spend, raising the ceiling, or deferring the experiential add-on",
-              "Release-week timing, which compresses the decision window",
-            ],
-          },
-          kpis: ["Adds at release", "Rotation tier reached", "Spins per week at peak"],
-        },
-        {
-          label: "C",
-          title: "How Each Option Fits The Ceiling",
-          objective: "The arithmetic, stated directly, so the radio decision is made against real headroom rather than against intent.",
-          components: {
-            heading: "Against A ~$70,000 Overall Ceiling",
-            items: [
-              "Core digital $30,000 plus experiential $15,000 equals $45,000. Roughly $25,000 of headroom remains.",
-              "Core digital $30,000 plus experiential $15,000 plus Option A radio $20,000 equals $65,000. This fits, with headroom remaining. It is the only configuration in this document that funds radio without exceeding the ceiling.",
-              "Full digital $50,000 plus experiential $15,000 equals $65,000. This fits, with no room left for any radio line.",
-              "Full digital plus experiential plus Option A radio equals $85,000, which is roughly $15,000 over.",
-              "Full digital plus experiential plus Option B radio equals roughly $107,500, which is roughly $37,500 over.",
-            ],
-          },
-          tactics: [
-            "If radio is the priority this cycle, Core digital plus Option A is the configuration that works",
-            "If digital weight is the priority, Full digital plus experiential uses the ceiling with no radio line",
-            "Option B requires either a higher ceiling or deferring both the experiential add-on and most of the digital tier",
-          ],
-        },
-      ],
-      footnote: "Radio budgets are promoter-side figures and are not managed by CCD, so no CCD management fee applies to them. Option B is contingent on a promoter read on the new music, which is outstanding.",
-    },
-
-    // ===================================================================
-    // 11. Handled by Kakao
-    // ===================================================================
-    {
-      type: "vertical",
-      number: "11",
       navLabel: "Kakao",
       title: "Handled by Kakao",
       philosophy: "These workstreams sit outside the CCD digital ceiling. They are mapped here so the full September picture reads in one place and the ceiling arithmetic in Section 10 is complete.",
@@ -679,22 +671,16 @@ export const eightyTwoMajorSeptember: StrategyPlanData = {
           objective: "Feature and A&R conversations continue on the Kakao and label side and are not funded by this campaign.",
           strategy: "Feature economics were mapped in earlier planning and remain available as an accelerator on a future cycle. Nothing in the September plan depends on a feature landing.",
         },
-        {
-          label: "C",
-          title: "Radio Contracting",
-          objective: "Radio is contracted promoter-side through Kakao, not through CCD.",
-          strategy: "CCD supplies campaign data, clipped assets, and geo-targeted amplification behind radio activity, including localized paid pushes in high-spin markets. The contract, the budget, and the promoter relationship remain on the Kakao side.",
-        },
       ],
       footnote: "None of the workstreams in this section are funded by the digital tiers in Section 05. They are included so the overall ceiling can be assessed against the full picture.",
     },
 
     // ===================================================================
-    // 12. Proposed Media Flight
+    // 11. Proposed Media Flight
     // ===================================================================
     {
       type: "flight",
-      number: "12",
+      number: "11",
       navLabel: "Flight",
       title: "Proposed Media Flight",
       intro: "Phasing shown at the Full Always-On tier. Full Media-Weighted runs the same three phases on the same $50,000 with the fan channel line removed and roughly $12,000 more sitting in paid social and creators, which weights Phases 2 and 3 more heavily. Core runs the same shape at roughly half the deployable weight, with Strive removed. Phase budgets are directional. CCD reallocates weekly against live cost per second click, which is how the SIGN flight got from $0.114 to $0.078 per click on flat spend.",
@@ -744,11 +730,11 @@ export const eightyTwoMajorSeptember: StrategyPlanData = {
     },
 
     // ===================================================================
-    // 13. Execution Timeline
+    // 12. Execution Timeline
     // ===================================================================
     {
       type: "timeline",
-      number: "13",
+      number: "12",
       navLabel: "Timeline",
       title: "Execution Timeline",
       intro: "Twelve weeks from build to the tour window, anchored to the September 1 release. The teaser calendar in the first three weeks follows the label asset schedule. Week 4 is release week. The final four weeks carry into Q4 tour routing, which authorizes its own budget as dates confirm.",
@@ -853,7 +839,7 @@ export const eightyTwoMajorSeptember: StrategyPlanData = {
           ],
         },
         {
-          name: "PR + Radio",
+          name: "PR",
           cells: [
             { weekIndex: 1, intensity: "low" },
             { weekIndex: 2, intensity: "low", label: "PITCH" },
@@ -946,11 +932,11 @@ export const eightyTwoMajorSeptember: StrategyPlanData = {
     },
 
     // ===================================================================
-    // 14. Final Pricing
+    // 13. Final Pricing
     // ===================================================================
     {
       type: "pricing",
-      number: "14",
+      number: "13",
       navLabel: "Pricing",
       title: "Final Pricing",
       intro: "All three levels are all-in for the September cycle, roughly 12 weeks. The CCD retainer and media management fee are line items inside the budget, not additions to it. Everything below the fee lines is deployable to media, creators, and channels. The two $50,000 builds carry identical totals, identical fees, and identical deployable; they differ only in where that deployable goes. Optional lanes at the bottom sit outside every tier and are contracted separately.",
@@ -1021,18 +1007,6 @@ export const eightyTwoMajorSeptember: StrategyPlanData = {
         },
       ],
       addOns: [
-        {
-          name: "Radio / Option A",
-          subtitle: "SIGN At Tier 2",
-          budget: "~$20,000",
-          description: "Take SIGN from the fifties into second-tier rotation. Contracted promoter-side through Kakao, no CCD management fee. Pairs with Core digital and the experiential add-on inside a ~$70,000 ceiling.",
-        },
-        {
-          name: "Radio / Option B",
-          subtitle: "New Campaign On HEAT",
-          budget: "$40,000 to $45,000",
-          description: "Full radio campaign on the new single. Contracted promoter-side through Kakao, no CCD management fee. Requires a higher ceiling or a materially reduced digital tier. Contingent on a promoter read on the new music.",
-        },
         {
           name: "Experiential Add-On",
           subtitle: "Kakao-Side Activation",
