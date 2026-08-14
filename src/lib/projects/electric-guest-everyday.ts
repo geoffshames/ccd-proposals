@@ -143,8 +143,8 @@ export const electricGuestEveryday: ProjectData = {
         cpv: "Judged on watch-through",
         views: "Spark behind the organic winner",
         viewsPct: "kill date September 2",
-        markets: "US led, spark-eligible organic first",
-        mix: "Spark ads applied behind whatever posts organically best",
+        markets: "US led, organic posts first.",
+        mix: "Spark boosts only, no standalone ad creative",
         rationale:
           "The only surface where a rap feature can break without spend behind it. Funded as a probe with a hard kill date, not dressed up as a channel. If nothing organic clears the bar by September 2, the money moves to YouTube.",
       },
@@ -156,7 +156,7 @@ export const electricGuestEveryday: ProjectData = {
         cpv: "~6.5% conversion",
         views: "374K follower reach",
         viewsPct: "release week only",
-        markets: "US, UK and Australia",
+        markets: "US, UK and Australia.",
         mix: "Full-screen sponsored recommendation",
         rationale:
           "Proven on this exact artist at 6.5% conversion and 9.1% intent during the deluxe cycle. It reaches people who already know Electric Guest, so it serves the catalog and retention objective rather than the crossover one, and it is the highest-certainty spend in the plan.",
@@ -169,8 +169,8 @@ export const electricGuestEveryday: ProjectData = {
         cpv: "Allocated September 2",
         views: "Moves behind the winning cell",
         viewsPct: "held until the read",
-        markets: "Follows the data",
-        mix: "Whichever cell wins",
+        markets: "Follows the data.",
+        mix: "Allocated to whichever cell wins",
         rationale:
           "Deliberately unspent until the September 2 read. Committing the action in advance, and holding money back to fund it, is what keeps a test from turning into a story told after the fact.",
       },
@@ -284,9 +284,9 @@ export const electricGuestEveryday: ProjectData = {
     },
     {
       step: 2,
-      title: "Confirm the asset tier",
+      title: "Confirm the assets",
       description:
-        "Tell us which of the three content tiers is real. Static art alone is a complete plan. Anything beyond it is upside we will put to work.",
+        "Static art alone is a complete plan. Stills of the two artists together, or anything either of them shoots on a phone, is upside we will put to work. Tell us what will exist by August 26.",
     },
     {
       step: 3,
