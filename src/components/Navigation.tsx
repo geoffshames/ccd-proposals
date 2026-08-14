@@ -22,16 +22,25 @@ export function Navigation() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const scrolled = useScrolled(100);
   const PROJECT = useProject();
+  const hasOverview =
+    !!PROJECT.overview?.summary || (PROJECT.overview?.objectives?.length ?? 0) > 0;
   const NAV_ITEMS = [
-    BASE_NAV_ITEMS[0],
+    ...(hasOverview ? [BASE_NAV_ITEMS[0]] : []),
     ...(PROJECT.tiers?.tiers?.length
       ? [PRICING_NAV_ITEM]
       : PROJECT.mediaFlight
         ? [FLIGHT_PRICING_NAV_ITEM]
         : []),
-    ...BASE_NAV_ITEMS.slice(1).filter(
-      (item) => item.href !== "#deliverables" || !!PROJECT.deliverables?.length
-    ),
+    ...BASE_NAV_ITEMS.slice(1).filter((item) => {
+      if (item.href === "#deliverables") return !!PROJECT.deliverables?.length;
+      if (item.href === "#timeline") return !!PROJECT.timeline?.length;
+      if (item.href === "#scope")
+        return (
+          (PROJECT.scope?.included?.length ?? 0) > 0 ||
+          (PROJECT.scope?.excluded?.length ?? 0) > 0
+        );
+      return true;
+    }),
     ...(PROJECT.quote ? [INVESTMENT_NAV_ITEM] : []),
   ];
   const hasAlternates = !!PROJECT.languageAlternates?.length;

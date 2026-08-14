@@ -10,6 +10,7 @@ import { ParallaxImage } from "./ParallaxImage";
 
 export function Timeline() {
   const PROJECT = useProject();
+  if (!PROJECT.timeline?.length) return null;
   const [expanded, setExpanded] = useState<number | null>(0);
 
   return (

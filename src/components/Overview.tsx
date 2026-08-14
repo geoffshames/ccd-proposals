@@ -9,6 +9,9 @@ import { ParallaxImage } from "./ParallaxImage";
 
 export function Overview() {
   const PROJECT = useProject();
+  const hasOverview =
+    !!PROJECT.overview?.summary || (PROJECT.overview?.objectives?.length ?? 0) > 0;
+  if (!hasOverview) return null;
   return (
     <section id="overview" className="relative py-32 px-6">
       <div className="max-w-6xl mx-auto">

@@ -8,6 +8,7 @@ import { ParallaxImage } from "./ParallaxImage";
 
 export function Deliverables() {
   const PROJECT = useProject();
+  if (!PROJECT.deliverables?.length) return null;
 
   if (!PROJECT.deliverables?.length) return null;
 
