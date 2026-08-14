@@ -35,9 +35,11 @@ import { hermes } from "./hermes";
 import { polkadotfx } from "./polkadotfx";
 import { sunChaser } from "./sun-chaser";
 import { kurtDeimerSilentLucidity } from "./kurt-deimer-silent-lucidity";
+import { electricGuestEveryday } from "./electric-guest-everyday";
 import type { ProjectData } from "../project-context";
 
 export const PROJECTS: Record<string, ProjectData> = {
+  "electric-guest-everyday": electricGuestEveryday,
   "framework-home-remodeling": frameworkHomeRemodeling,
   "kurt-deimer-silent-lucidity": kurtDeimerSilentLucidity,
   "sun-chaser": sunChaser,
