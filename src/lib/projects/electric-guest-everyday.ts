@@ -34,6 +34,7 @@ export const electricGuestEveryday: ProjectData = {
   },
 
   discovery: {
+    sectionNumber: "01",
     heading: "What We Found",
     summary:
       "Before allocating a dollar we audited the track's existing streaming history, both artists' editorial footprints, the listener adjacency around La Reezy, and Electric Guest's own paid benchmarks across the 10K cycle. Five findings shaped this plan.",
@@ -74,6 +75,7 @@ export const electricGuestEveryday: ProjectData = {
   },
 
   mediaFlight: {
+    sectionNumber: "02",
     heading: "The Media Flight",
     subheading:
       "Every dollar is working media and Crowd Control takes no fee. Four channels, one funded head-to-head, and a hard decision point on September 2 that moves the reserve into whatever is winning.",
@@ -213,6 +215,7 @@ export const electricGuestEveryday: ProjectData = {
   },
 
   quote: {
+    sectionNumber: "03",
     model: "project" as const,
     investmentSubheading:
       "There is no Crowd Control fee on this flight. The full $2,500 is working media and DSP placement, billed to the platforms.",
@@ -267,6 +270,7 @@ export const electricGuestEveryday: ProjectData = {
     paymentLink: "#",
   },
 
+  nextStepsSectionNumber: "04",
   nextSteps: [
     {
       step: 1,

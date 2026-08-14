@@ -29,7 +29,7 @@ export function Investment() {
 
       <div className="max-w-6xl mx-auto">
         <ScrollReveal>
-          <SectionLabel number="10" label="Investment" />
+          <SectionLabel number={PROJECT.quote?.sectionNumber || "10"} label="Investment" />
         </ScrollReveal>
 
         <ScrollReveal delay={0.1}>

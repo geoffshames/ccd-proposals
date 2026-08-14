@@ -48,6 +48,7 @@ export type ProjectData = {
     stats?: { value: number; suffix?: string; label: string; description?: string }[];
   };
   discovery?: {
+    sectionNumber?: string;
     heading?: string;
     summary: string;
     insights: {
@@ -90,6 +91,7 @@ export type ProjectData = {
     context: string;
   }[];
   mediaFlight?: {
+    sectionNumber?: string;
     heading?: string;
     subheading?: string;
     goal: { views: string; window: string; blendedCpv: string; totalBudget: string };
@@ -186,6 +188,7 @@ export type ProjectData = {
     subheading?: string;
   };
   quote?: {
+    sectionNumber?: string;
     model?: "project" | "retainer";
     introMode?: boolean;
     investmentSubheading?: string;
@@ -241,6 +244,7 @@ export type ProjectData = {
     paymentTerms: string;
     paymentLink: string;
   };
+  nextStepsSectionNumber?: string;
   nextSteps: {
     step: number;
     title: string;

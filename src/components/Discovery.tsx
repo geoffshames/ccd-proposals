@@ -12,7 +12,7 @@ export function Discovery() {
     <section id="discovery" className="relative py-32 px-6 md:px-12 lg:px-24 overflow-hidden">
       <div className="max-w-6xl mx-auto">
         <ScrollReveal>
-          <SectionLabel number="01" label="Research" />
+          <SectionLabel number={PROJECT.discovery?.sectionNumber || "01"} label="Research" />
           <h2 className="text-[clamp(2rem,5vw,3.5rem)] font-bold text-text-primary leading-[1.1] tracking-tight mt-4">{heading || "What We Found"}</h2>
           <p className="text-text-muted text-lg md:text-xl max-w-3xl mt-6 leading-relaxed">{summary}</p>
         </ScrollReveal>

@@ -22,7 +22,7 @@ export function MediaFlight() {
     <section id="media-flight" className="relative py-32 px-6 md:px-12 lg:px-24 overflow-hidden">
       <div className="max-w-6xl mx-auto">
         <ScrollReveal>
-          <SectionLabel number="06" label="Media Flight" />
+          <SectionLabel number={mf.sectionNumber || "06"} label="Media Flight" />
           <h2 className="text-[clamp(2rem,5vw,3.5rem)] font-bold text-text-primary leading-[1.05] tracking-tight mt-4">
             {mf.heading || "The Media Flight"}
           </h2>
