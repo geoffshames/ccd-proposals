@@ -85,7 +85,7 @@ export const electricGuestEveryday: ProjectData = {
       {
         label: "The Constraint Is Assets, Not Budget",
         finding:
-          "Across the whole 10K cycle the recurring blocker has been fresh artist content rather than spend, and the account has separately proved that deliberately raw phone footage outperforms produced assets here. The content plan is therefore tiered and built to run at full strength on static art, with everything else treated as upside rather than a dependency.",
+          "Across the whole 10K cycle the recurring blocker has been fresh artist content rather than spend. Produced assets have repeatedly stalled on availability and cost, including a photographer search that ran several weeks and returned one $3,000 quote. The content plan is therefore tiered and built to run at full strength on static art, with everything beyond it treated as upside rather than a dependency.",
         source: "10K campaign history",
       },
     ],
@@ -131,7 +131,7 @@ export const electricGuestEveryday: ProjectData = {
     psychographics: [
       "The hip-hop side buys the feature before the song. Who is on it is what decides whether the four-second scroll stops.",
       "The Electric Guest side buys the band, not the single. Catalog affinity is why they press play, which means a feature needs framing rather than a hard sell.",
-      "Both sides read polish as advertising. Raw reads as real, and this account has now confirmed that three separate times.",
+      "Neither audience needs the collaboration explained, but both need it made visible. What decides the scroll is whether the two artists appear together, not how well the frame is lit.",
       "Verse-level lyricism is La Reezy's entire proposition. His audience engages with words, which makes text-forward creative unusually cheap and unusually effective here.",
     ],
     painPoints: [
@@ -183,33 +183,6 @@ export const electricGuestEveryday: ProjectData = {
       },
     ],
   },
-
-  targets: [
-    {
-      metric: "Crossover Share",
-      value: "25%+",
-      context:
-        "Share of \"Everyday\" listeners in the flight window with no prior 10K stream. This is the north star and the number that sets the fall budget.",
-    },
-    {
-      metric: "Cold Cell CTR",
-      value: "3.5%+",
-      context:
-        "The La Reezy adjacency cell has to hold close to the benchmark Electric Guest's own audience already delivers on this account, or it fails honestly and we say so.",
-    },
-    {
-      metric: "YouTube Cost Per View",
-      value: "$0.012 or under",
-      context:
-        "The account has run at roughly $0.01 with a 58% to 75% view rate across the 10K cycle. A colder, rap-adjacent audience should cost slightly more, not multiples more.",
-    },
-    {
-      metric: "Net New Spotify Followers",
-      value: "+3,000",
-      context:
-        "Followers, not streams. Streams end with the flight. Followers carry into whatever comes next in the cycle.",
-    },
-  ],
 
   mediaFlight: {
     heading: "The Media Flight",
@@ -534,7 +507,7 @@ export const electricGuestEveryday: ProjectData = {
           name: "Raw Collaboration Clip",
           quantity: "30-60 sec",
           description:
-            "One phone, one take, both artists in frame. Deliberately unpolished, which this account has now confirmed three separate times outperforms produced footage.",
+            "One phone, one take, both artists in frame. The value is that it can be captured and shipped the same day, which is exactly what produced assets have not managed across this cycle.",
         },
         {
           name: "Verse-Origin Cut",
