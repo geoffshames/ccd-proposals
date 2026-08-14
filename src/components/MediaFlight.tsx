@@ -105,6 +105,8 @@ export function MediaFlight() {
           </ScrollReveal>
 
           {/* Budget dial */}
+          {mf.dial.length > 0 && (
+          <>
           <ScrollReveal>
             <div className="mt-20 mb-8">
               <span className="text-[10px] font-mono tracking-[0.2em] text-text-muted uppercase">Budget Dial</span>
@@ -136,6 +138,8 @@ export function MediaFlight() {
               </StaggerItem>
             ))}
           </StaggerContainer>
+          </>
+          )}
 
           {/* Quality controls */}
           <ScrollReveal>

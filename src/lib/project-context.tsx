@@ -42,7 +42,7 @@ export type ProjectData = {
     startDate: string;
     endDate: string;
     duration: string;
-    status: "Awaiting Approval";
+    status: "Awaiting Approval" | "Approved";
   };
   overview: {
     summary: string;

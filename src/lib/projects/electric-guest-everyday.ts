@@ -21,12 +21,12 @@ export const electricGuestEveryday: ProjectData = {
   project: {
     name: "EVERYDAY (FEAT. LA REEZY)",
     tagline:
-      "A $2,500 release flight for Electric Guest's \"Everyday\" featuring La Reezy, out August 28. Every dollar is working media with no Crowd Control fee. The goal is a clean, funded answer to one question: do hip-hop-adjacent audiences convert for Electric Guest, and at what cost.",
+      "A $2,500 release flight for Electric Guest's \"Everyday\" featuring La Reezy, out August 28. Four channels, one funded head-to-head, and one question answered by September 2: do hip-hop-adjacent audiences convert for Electric Guest, and at what cost.",
     type: "Release Flight + Content Strategy",
     startDate: "August 18, 2026",
     endDate: "September 12, 2026",
     duration: "4 Weeks",
-    status: "Awaiting Approval" as const,
+    status: "Approved" as const,
   },
 
   overview: {
@@ -81,18 +81,15 @@ export const electricGuestEveryday: ProjectData = {
     layout: "ledger",
     heading: "The Media Flight",
     subheading:
-      "Every dollar is working media and Crowd Control takes no fee. Four channels, one funded head-to-head, and a hard decision point on September 2 that moves the reserve into whatever is winning.",
-    goal: { views: "$2,500", window: "4 Weeks", blendedCpv: "$0", totalBudget: "Sept 2" },
+      "Four channels, one funded head-to-head, and a hard decision point on September 2 that moves the reserve into whatever is winning.",
+    goal: { views: "$2,500", window: "4 Weeks", blendedCpv: "Aug 28", totalBudget: "Sept 2" },
     goalLabels: {
       views: "Working Media",
       window: "Flight Window",
-      blendedCpv: "Crowd Control Fee",
+      blendedCpv: "Release Day",
       totalBudget: "Decision Point",
     },
     cpvRowLabel: "Planning Cost",
-    dialUnit: "",
-    dialSubheading:
-      "What each budget level actually buys. The recommendation is the level where the crossover read is trustworthy.",
     tracks: [
       {
         key: "Meta / Cell A. Electric Guest Pool",
@@ -175,25 +172,7 @@ export const electricGuestEveryday: ProjectData = {
           "Deliberately unspent until the September 2 read. Committing the action in advance, and holding money back to fund it, is what keeps a test from turning into a story told after the fact.",
       },
     ],
-    dial: [
-      {
-        label: "Lean",
-        budget: "$1,500",
-        views: "A directional read",
-        split: "$800 Meta / $450 YouTube / $250 Spotify",
-        note:
-          "Both Meta cells drop to $400, which is under the threshold where a cold-audience read can be trusted. TikTok comes out entirely. Cheaper, and the answer gets considerably softer.",
-      },
-      {
-        label: "As Scoped",
-        budget: "$2,500",
-        views: "The clean read",
-        split: "$1,200 Meta / $600 YouTube / $300 TikTok / $250 Spotify / $150 held",
-        note:
-          "Enough to answer the crossover question with confidence and keep the catalog warm alongside it. It will not create a moment on its own, and this plan does not claim otherwise.",
-        featured: true,
-      },
-    ],
+    dial: [],
     exclusions: [
       "Canada excluded. Tested this cycle, ate spend, produced no streaming lift.",
       "Mexico excluded. Dedicated breakout campaign killed in June on CTR cost.",
@@ -222,7 +201,7 @@ export const electricGuestEveryday: ProjectData = {
     sectionNumber: "03",
     model: "project" as const,
     investmentSubheading:
-      "There is no Crowd Control fee on this flight. The full $2,500 is working media and DSP placement, billed to the platforms.",
+      "The full $2,500 is working media and DSP placement, billed to the platforms.",
     currency: "USD",
     lineItems: [
       {
@@ -263,14 +242,14 @@ export const electricGuestEveryday: ProjectData = {
     totalLabel: "Total Working Media",
     paymentSchedule: [
       {
-        milestone: "Full media budget on approval",
+        milestone: "Full media budget",
         percentage: 100,
         amount: 2500,
-        due: "Before the August 26 launch",
+        due: "Billed ahead of the August 26 launch",
       },
     ],
     paymentTerms:
-      "Billed to the platforms and DSP tools directly. No Crowd Control management fee applies to this flight.",
+      "Billed to the platforms and DSP tools directly.",
     paymentLink: "#",
   },
 
@@ -278,30 +257,24 @@ export const electricGuestEveryday: ProjectData = {
   nextSteps: [
     {
       step: 1,
-      title: "Approve the flight",
-      description:
-        "Sign off on the $2,500 split so campaigns can be built the week of August 18 and live by August 26.",
-    },
-    {
-      step: 2,
       title: "Confirm the assets",
       description:
         "Static art alone is a complete plan. Stills of the two artists together, or anything either of them shoots on a phone, is upside we will put to work. Tell us what will exist by August 26.",
     },
     {
-      step: 3,
+      step: 2,
       title: "Lock the La Reezy side",
       description:
         "Cross-posting agreement, tagging, and whatever assets his team can share. His accounts are free reach into the audience we are otherwise paying to reach.",
     },
     {
-      step: 4,
+      step: 3,
       title: "Confirm platform access",
       description:
         "Meta and Spotify for Artists access on the Electric Guest side, so the pixel pool and follower data are live before build starts.",
     },
     {
-      step: 5,
+      step: 4,
       title: "Hold September 2",
       description:
         "Thirty minutes on the read. The decision on which cell survives is already committed, so the call is about what the result means for the fall.",
@@ -311,7 +284,7 @@ export const electricGuestEveryday: ProjectData = {
   cta: {
     headline: "From Approval to September 2",
     body:
-      "Electric Guest has spent twelve weeks proving 10K works on its own audience. \"Everyday\" is the first real chance to find out whether it works on somebody else's. Approve the flight and there will be an answer by September 2.",
+      "Electric Guest has spent twelve weeks proving 10K works on its own audience. \"Everyday\" is the first real chance to find out whether it works on somebody else's. Build starts the week of August 18 and there will be an answer by September 2.",
     email: "geoff@crowdcontroldigital.com",
   },
 
