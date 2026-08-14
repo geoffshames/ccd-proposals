@@ -60,6 +60,7 @@ export function NextSteps() {
         </StaggerContainer>
 
         {/* Contact CTA */}
+        {!PROJECT.internal && (
         <ScrollReveal delay={0.3} variant="scaleIn" className="mt-16">
           <TiltCard className="group max-w-xl mx-auto">
             <div className="ccd-card rounded-none p-10 text-center hover:bg-bg-card-hover transition-all duration-500">
@@ -80,6 +81,7 @@ export function NextSteps() {
             </div>
           </TiltCard>
         </ScrollReveal>
+        )}
       </div>
     </section>
   );

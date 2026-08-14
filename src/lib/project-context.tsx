@@ -4,6 +4,11 @@ import { createContext, useContext, type ReactNode } from "react";
 
 export type ProjectData = {
   /**
+   * Internal-team page: strips outbound sales furniture (nav Contact button,
+   * Get in Touch CTA card, AboutCCD section, Investment mailto buttons).
+   */
+  internal?: boolean;
+  /**
    * Optional NDA gate. When true, the proposal page is hidden behind a mutual NDA
    * signing flow until the visitor signs (verified by signed cookie + Supabase row).
    * See /api/nda/sign and /components/NdaGate.
@@ -49,6 +54,8 @@ export type ProjectData = {
   };
   discovery?: {
     sectionNumber?: string;
+    /** "lede" renders the first insight full-width, the rest in a balanced 2-col grid. */
+    layout?: "lede";
     heading?: string;
     summary: string;
     insights: {
@@ -92,6 +99,8 @@ export type ProjectData = {
   }[];
   mediaFlight?: {
     sectionNumber?: string;
+    /** "ledger" renders tracks as a compact ruled table instead of stacked display cards. */
+    layout?: "ledger";
     heading?: string;
     subheading?: string;
     goal: { views: string; window: string; blendedCpv: string; totalBudget: string };
@@ -106,6 +115,7 @@ export type ProjectData = {
     tracks: {
       key: string;
       role: string;
+      featured?: boolean;
       budget: string;
       budgetPct: string;
       cpv: string;

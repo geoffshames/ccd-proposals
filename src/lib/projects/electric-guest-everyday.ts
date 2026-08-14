@@ -1,6 +1,7 @@
 import type { ProjectData } from "../project-context";
 
 export const electricGuestEveryday: ProjectData = {
+  internal: true,
   requireNda: false,
   accentColor: "#FD3737",
 
@@ -35,39 +36,40 @@ export const electricGuestEveryday: ProjectData = {
 
   discovery: {
     sectionNumber: "01",
+    layout: "lede",
     heading: "What We Found",
     summary:
       "Before allocating a dollar we audited the track's existing streaming history, both artists' editorial footprints, the listener adjacency around La Reezy, and Electric Guest's own paid benchmarks across the 10K cycle. Five findings shaped this plan.",
     insights: [
       {
-        label: "The Track Already Has History",
+        label: "Track History",
         finding:
           "\"Everyday\" is track nine on 10K (Deluxe), released June 5. This is a feature version of a record that has been live for twelve weeks, so it starts with playlist context, catalog adjacency and an existing listener base rather than from zero. That is an advantage on retention and a constraint on novelty, and the plan is built for both.",
         source: "Spotify catalog audit",
       },
       {
-        label: "The Asymmetry Runs Backwards",
+        label: "The Asymmetry",
         finding:
-          "Electric Guest sits at 1.25M monthly listeners and 374K followers. La Reezy sits at 128K and 39K. On raw reach the feature is a step down. On cultural position it is a step up: 2026 XXL Freshman, Camp Flog Gnaw, a Little Simz support run at the Hollywood Palladium, and public co-signs from Kendrick Lamar, Tyler, the Creator, J. Cole and Nas. What is being traded here is credibility, not audience size, and the media plan should follow the credibility.",
+          "Electric Guest sits at 1.25M monthly listeners and 374K followers. La Reezy sits at 128K and 39K. On raw reach the feature is a step down. On cultural position it is a step up: 2026 XXL Freshman, Camp Flog Gnaw, a Little Simz support run, and co-signs from Kendrick Lamar, Tyler, the Creator, J. Cole and Nas. What is being traded is credibility, not audience size, and the media plan follows the credibility.",
         source: "Spotify, XXL, Pitchfork, NME",
       },
       {
-        label: "Two Audiences That Never Touch",
+        label: "Assets, Not Budget",
+        finding:
+          "Across the whole 10K cycle the recurring blocker has been fresh artist content rather than spend. Produced assets have repeatedly stalled on availability and cost, including a photographer search that ran several weeks and returned one $3,000 quote. This flight is therefore built to run at full strength on the static art alone, with stills of the two artists together, and anything either of them can shoot on a phone, treated as upside rather than a dependency.",
+        source: "10K campaign history",
+      },
+      {
+        label: "Zero Overlap",
         finding:
           "The editorial surfaces do not overlap at all. Electric Guest sits on Feel-Good Indie Rock and Indie Rock Road Trip. La Reezy sits on Fresh Finds Hip-Hop, Mellow Bars, The Flow and Northern Bars. There is no shared listener pool to lean on, which is exactly why this is worth testing with funded spend rather than assuming it works.",
         source: "Spotify editorial placement audit",
       },
       {
-        label: "The Target Cluster Is Mappable",
+        label: "The Target Cluster",
         finding:
           "La Reezy's listener adjacency resolves to a specific, targetable set rather than a vague genre guess: Chris Patrick at 257K monthly listeners and a fellow 2026 XXL Freshman, reggie at 153K, Ovrkast. at 146K, plus MARCO PLUS, SWAVAY and Kaicrewsade. This is the interest cluster the cold cell gets built against.",
         source: "Spotify related-artist mapping",
-      },
-      {
-        label: "The Constraint Is Assets, Not Budget",
-        finding:
-          "Across the whole 10K cycle the recurring blocker has been fresh artist content rather than spend. Produced assets have repeatedly stalled on availability and cost, including a photographer search that ran several weeks and returned one $3,000 quote. This flight is therefore built to run at full strength on the static art alone, with stills of the two artists together, and anything either of them can shoot on a phone, treated as upside rather than a dependency.",
-        source: "10K campaign history",
       },
     ],
     marketContext:
@@ -76,18 +78,19 @@ export const electricGuestEveryday: ProjectData = {
 
   mediaFlight: {
     sectionNumber: "02",
+    layout: "ledger",
     heading: "The Media Flight",
     subheading:
       "Every dollar is working media and Crowd Control takes no fee. Four channels, one funded head-to-head, and a hard decision point on September 2 that moves the reserve into whatever is winning.",
-    goal: { views: "~10,000", window: "4 Weeks", blendedCpv: "$0.12", totalBudget: "$2,500" },
+    goal: { views: "$2,500", window: "4 Weeks", blendedCpv: "$0", totalBudget: "Sept 2" },
     goalLabels: {
-      views: "Planned Meta Clicks",
+      views: "Working Media",
       window: "Flight Window",
-      blendedCpv: "Planning CPC",
-      totalBudget: "Working Media",
+      blendedCpv: "Crowd Control Fee",
+      totalBudget: "Decision Point",
     },
     cpvRowLabel: "Planning Cost",
-    dialUnit: "outcome",
+    dialUnit: "",
     dialSubheading:
       "What each budget level actually buys. The recommendation is the level where the crossover read is trustworthy.",
     tracks: [
@@ -98,7 +101,7 @@ export const electricGuestEveryday: ProjectData = {
         budgetPct: "24% of budget",
         cpv: "~$0.12 / click",
         views: "~5,000 clicks",
-        viewsPct: "50% of Meta",
+        viewsPct: "50% of Meta spend",
         markets: "US, UK and Australia. Retargeting off the 10K cycle pixel plus a follower lookalike.",
         mix: "Dark posts, 9:16 and 1:1",
         rationale:
@@ -107,16 +110,17 @@ export const electricGuestEveryday: ProjectData = {
       {
         key: "Meta / Cell B. La Reezy Adjacency",
         role: "The Test",
+        featured: true,
         budget: "$600",
         budgetPct: "24% of budget",
         cpv: "~$0.12 to $0.18 / click",
         views: "~3,500 to 5,000 clicks",
-        viewsPct: "50% of Meta",
+        viewsPct: "50% of Meta spend",
         markets:
           "US, UK and Australia. Interest cluster built on Chris Patrick, reggie, Ovrkast., MARCO PLUS, SWAVAY and Kaicrewsade, plus a La Reezy engager lookalike.",
         mix: "Dark posts, feature-forward creative, 9:16 and 1:1",
         rationale:
-          "The entire thesis, funded at parity with the control so the read is honest. Cold audiences run more expensive by default, so this cell is judged on whether it holds close to the control's CTR, not on beating it.",
+          "The entire thesis, funded at parity with the control so the comparison holds. Cold audiences run more expensive by default, so this cell is judged on whether it stays close to the control's CTR, not on beating it.",
       },
       {
         key: "YouTube",
@@ -125,7 +129,7 @@ export const electricGuestEveryday: ProjectData = {
         budgetPct: "24% of budget",
         cpv: "~$0.012 / view",
         views: "~50,000 views",
-        viewsPct: "Cheapest unit on the account",
+        viewsPct: "at the proven $0.01 benchmark",
         markets: "US, UK and Australia. In-feed and Shorts led.",
         mix: "Motion-from-static or visualizer, plus the verse cut",
         rationale:
@@ -137,12 +141,12 @@ export const electricGuestEveryday: ProjectData = {
         budget: "$300",
         budgetPct: "12% of budget",
         cpv: "Judged on watch-through",
-        views: "Break or die",
-        viewsPct: "Kill date September 2",
+        views: "Spark behind the organic winner",
+        viewsPct: "kill date September 2",
         markets: "US led, spark-eligible organic first",
         mix: "Spark ads applied behind whatever posts organically best",
         rationale:
-          "The only surface where a rap feature can move without spend behind it. Funded honestly as a probe with a hard kill date rather than presented as a channel. If nothing organic clears the bar by September 2, the money moves to YouTube.",
+          "The only surface where a rap feature can break without spend behind it. Funded as a probe with a hard kill date, not dressed up as a channel. If nothing organic clears the bar by September 2, the money moves to YouTube.",
       },
       {
         key: "Spotify Release-Week Placement",
@@ -150,8 +154,8 @@ export const electricGuestEveryday: ProjectData = {
         budget: "$250",
         budgetPct: "10% of budget",
         cpv: "~6.5% conversion",
-        views: "374K follower pool",
-        viewsPct: "Release week only",
+        views: "374K follower reach",
+        viewsPct: "release week only",
         markets: "US, UK and Australia",
         mix: "Full-screen sponsored recommendation",
         rationale:
@@ -163,8 +167,8 @@ export const electricGuestEveryday: ProjectData = {
         budget: "$150",
         budgetPct: "6% of budget",
         cpv: "Allocated September 2",
-        views: "Winner takes it",
-        viewsPct: "Unallocated at launch",
+        views: "Moves behind the winning cell",
+        viewsPct: "held until the read",
         markets: "Follows the data",
         mix: "Whichever cell wins",
         rationale:
@@ -175,7 +179,7 @@ export const electricGuestEveryday: ProjectData = {
       {
         label: "Lean",
         budget: "$1,500",
-        views: "Directional only",
+        views: "A directional read",
         split: "$800 Meta / $450 YouTube / $250 Spotify",
         note:
           "Both Meta cells drop to $400, which is under the threshold where a cold-audience read can be trusted. TikTok comes out entirely. Cheaper, and the answer gets considerably softer.",
@@ -183,7 +187,7 @@ export const electricGuestEveryday: ProjectData = {
       {
         label: "As Scoped",
         budget: "$2,500",
-        views: "A clean read",
+        views: "The clean read",
         split: "$1,200 Meta / $600 YouTube / $300 TikTok / $250 Spotify / $150 held",
         note:
           "Enough to answer the crossover question with confidence and keep the catalog warm alongside it. It will not create a moment on its own, and this plan does not claim otherwise.",
@@ -200,7 +204,7 @@ export const electricGuestEveryday: ProjectData = {
     caveat: {
       heading: "What $2,500 Buys, And What It Does Not",
       body:
-        "This budget is enough to answer one question properly. It is not enough to manufacture a moment around a track that has been live since June. Spread across five channels it would produce five numbers all too small to act on, which is why the plan concentrates on a single funded head-to-head and treats everything else as either a proven floor or an honest probe. The output that matters here is not the stream count. It is knowing, by September 2, whether hip-hop-adjacent audiences convert for Electric Guest at a cost worth paying, because that answer is what sets the fall budget.",
+        "This budget is enough to answer one question properly. It is not enough to manufacture a moment around a track that has been live since June. Spread across five channels it would produce five numbers all too small to act on, which is why the plan concentrates on a single funded head-to-head and treats everything else as either a proven floor or a probe with a kill date. The output that matters here is not the stream count. It is knowing, by September 2, whether hip-hop-adjacent audiences convert for Electric Guest at a cost worth paying, because that answer is what sets the fall budget.",
     },
     pacingNote:
       "Creative runs on whatever exists. The floor is the single art cut to motion, verse cards pulled from La Reezy's lines, and audio-led shorts, which is a complete campaign on its own. A still of the two artists together becomes the lead creative in Cell B the day it lands, and any phone footage goes out organically first so the audience picks the paid creative before spend goes behind it. Pacing: campaigns build the week of August 18 and go live August 26 to warm delivery ahead of release, then run at full weight from release day. Both Meta cells hold at parity through September 2 with no optimisation between them. Spotify placement fires release week only. The September 2 review kills the losing cell, allocates the reserve, and decides TikTok's fate.",
@@ -305,7 +309,7 @@ export const electricGuestEveryday: ProjectData = {
   ],
 
   cta: {
-    headline: "Answer the question this release is actually asking",
+    headline: "From Approval to September 2",
     body:
       "Electric Guest has spent twelve weeks proving 10K works on its own audience. \"Everyday\" is the first real chance to find out whether it works on somebody else's. Approve the flight and there will be an answer by September 2.",
     email: "geoff@crowdcontroldigital.com",

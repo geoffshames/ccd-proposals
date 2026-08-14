@@ -18,6 +18,153 @@ export function MediaFlight() {
     { label: mf.goalLabels?.window ?? "Flight Window", value: mf.goal.window },
   ];
 
+  if (mf.layout === "ledger") {
+    return (
+      <section id="media-flight" className="relative py-32 px-6 md:px-12 lg:px-24 overflow-hidden">
+        <div className="max-w-6xl mx-auto">
+          <ScrollReveal>
+            <SectionLabel number={mf.sectionNumber || "06"} label="Media Flight" />
+            <h2 className="text-[clamp(2rem,5vw,3.5rem)] font-bold text-text-primary leading-[1.05] tracking-tight mt-4">
+              {mf.heading || "The Media Flight"}
+            </h2>
+            {mf.subheading && (
+              <p className="text-text-muted text-lg md:text-xl max-w-3xl mt-6 leading-relaxed">
+                {mf.subheading}
+              </p>
+            )}
+          </ScrollReveal>
+
+          {/* Goal bar */}
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-px mt-14 bg-[#222] border border-[#222]">
+            {goalStats.map((s, i) => (
+              <ScrollReveal key={i} delay={0.05 * i} variant="scaleIn">
+                <div className="bg-bg-card p-6 md:p-8 h-full">
+                  <div className="text-[10px] font-mono tracking-[0.2em] text-text-muted uppercase mb-3">
+                    {s.label}
+                  </div>
+                  <div className="display text-[clamp(1.6rem,3.5vw,2.4rem)] text-accent leading-none">
+                    {s.value}
+                  </div>
+                </div>
+              </ScrollReveal>
+            ))}
+          </div>
+
+          {/* Ledger */}
+          <ScrollReveal>
+            <div className="hidden md:grid md:grid-cols-12 gap-x-8 mt-16 pb-4 border-b border-[#2a2a2a]">
+              <div className="md:col-span-5 text-[10px] font-mono tracking-[0.2em] uppercase text-text-muted">Channel</div>
+              <div className="md:col-span-2 text-[10px] font-mono tracking-[0.2em] uppercase text-text-muted">Budget</div>
+              <div className="md:col-span-2 text-[10px] font-mono tracking-[0.2em] uppercase text-text-muted">{mf.cpvRowLabel ?? "Planning CPV"}</div>
+              <div className="md:col-span-3 text-[10px] font-mono tracking-[0.2em] uppercase text-text-muted">Expected</div>
+            </div>
+          </ScrollReveal>
+          <div className="mt-2 md:mt-0">
+            {mf.tracks.map((t, i) => (
+              <ScrollReveal key={i} delay={0.05 * i}>
+                <div className="py-8 border-b border-[#1e1e1e]">
+                  <div className="grid grid-cols-1 md:grid-cols-12 gap-x-8 gap-y-4 items-start">
+                    <div className="md:col-span-5 min-w-0">
+                      <div className="flex flex-wrap items-center gap-3">
+                        <h3 className="text-[17px] font-bold text-text-primary tracking-tight">{t.key}</h3>
+                        <span className={`text-[9px] font-mono tracking-[0.15em] uppercase px-2.5 py-1 ${t.featured ? "bg-accent text-bg font-bold" : "border border-[#2a2a2a] text-text-muted"}`}>
+                          {t.role}
+                        </span>
+                      </div>
+                      <div className="text-[12px] font-mono text-text-muted/80 mt-2 leading-[1.7]">
+                        {t.markets} {t.mix}
+                      </div>
+                    </div>
+                    <div className="md:col-span-2">
+                      <div className="text-[20px] font-mono font-semibold text-text-primary tabular-nums leading-none">{t.budget}</div>
+                      <div className="text-[11px] font-mono text-text-muted mt-2">{t.budgetPct}</div>
+                    </div>
+                    <div className="md:col-span-2">
+                      <div className="text-[14px] font-mono text-text-secondary tabular-nums leading-snug">{t.cpv}</div>
+                    </div>
+                    <div className="md:col-span-3 min-w-0">
+                      <div className="text-[14px] text-text-primary/90 leading-snug">{t.views}</div>
+                      <div className="text-[11px] font-mono text-text-muted mt-2">{t.viewsPct}</div>
+                    </div>
+                  </div>
+                  <p className="text-[13px] text-text-muted leading-[1.7] mt-4 max-w-4xl">{t.rationale}</p>
+                </div>
+              </ScrollReveal>
+            ))}
+          </div>
+
+          {/* Caveat */}
+          <ScrollReveal delay={0.1}>
+            <div className="mt-14 p-8 md:p-10 bg-white/[0.06] border border-white/[0.10]">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="w-2 h-2 bg-accent" />
+                <span className="text-[10px] font-mono tracking-[0.22em] text-accent uppercase">{mf.caveat.heading}</span>
+              </div>
+              <p className="text-[15px] text-text-primary/90 leading-[1.8] max-w-4xl">{mf.caveat.body}</p>
+            </div>
+          </ScrollReveal>
+
+          {/* Budget dial */}
+          <ScrollReveal>
+            <div className="mt-20 mb-8">
+              <span className="text-[10px] font-mono tracking-[0.2em] text-text-muted uppercase">Budget Dial</span>
+              <p className="text-text-muted text-[15px] mt-3 max-w-2xl leading-relaxed">
+                {mf.dialSubheading ??
+                  "The flight scales near-linearly once the test locks real CPV."}
+              </p>
+            </div>
+          </ScrollReveal>
+          <StaggerContainer className={`grid gap-5 ${mf.dial.length === 2 ? "md:grid-cols-2" : "md:grid-cols-3"}`} staggerDelay={0.1}>
+            {mf.dial.map((d, i) => (
+              <StaggerItem key={i}>
+                <div className={`rounded-none p-8 md:p-10 h-full ${d.featured ? "bg-white/[0.06] border border-white/[0.14]" : "ccd-card"}`}>
+                  <div className="flex items-center justify-between mb-6">
+                    <span className="text-[11px] font-mono tracking-[0.18em] uppercase text-text-muted">{d.label}</span>
+                    {d.featured && (
+                      <span className="text-[9px] font-mono tracking-[0.15em] uppercase text-bg bg-accent px-2 py-1">
+                        Recommended
+                      </span>
+                    )}
+                  </div>
+                  <div className="flex items-baseline gap-4 mb-5">
+                    <div className="display text-[clamp(2rem,5vw,2.8rem)] text-text-primary leading-none">{d.budget}</div>
+                    <div className="text-[13px] text-accent font-semibold">{d.views}</div>
+                  </div>
+                  <div className="text-[12px] font-mono text-text-muted mb-5">{d.split}</div>
+                  <p className="text-[13px] text-text-muted leading-[1.7] border-t border-[#222] pt-5">{d.note}</p>
+                </div>
+              </StaggerItem>
+            ))}
+          </StaggerContainer>
+
+          {/* Quality controls */}
+          <ScrollReveal>
+            <div className="mt-16">
+              <span className="text-[10px] font-mono tracking-[0.2em] text-text-muted uppercase">Quality Controls (Non-Negotiable)</span>
+              <div className="grid md:grid-cols-2 gap-x-12 mt-4">
+                {mf.exclusions.map((ex, i) => (
+                  <div key={i} className="flex items-start gap-3 py-4 border-t border-[#1e1e1e]">
+                    <div className="w-1.5 h-1.5 bg-accent mt-[7px] flex-shrink-0" />
+                    <span className="text-[13px] text-text-primary/85 leading-relaxed">{ex}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </ScrollReveal>
+
+          {mf.pacingNote && (
+            <ScrollReveal>
+              <div className="mt-14">
+                <span className="text-[10px] font-mono tracking-[0.2em] text-text-muted uppercase">Execution Notes</span>
+                <p className="text-[13px] text-text-muted leading-[1.8] mt-4 max-w-4xl">{mf.pacingNote}</p>
+              </div>
+            </ScrollReveal>
+          )}
+        </div>
+      </section>
+    );
+  }
+
   return (
     <section id="media-flight" className="relative py-32 px-6 md:px-12 lg:px-24 overflow-hidden">
       <div className="max-w-6xl mx-auto">

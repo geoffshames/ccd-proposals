@@ -45,6 +45,7 @@ export function ProposalClient({ project }: { project: ProjectData }) {
         />
         <Timeline />
         <Deliverables />
+        {(project.timeline.length > 0 || project.deliverables.length > 0) && (
         <ImageBreak
           src={project.images.brutalist}
           alt="Visual reference"
@@ -53,10 +54,11 @@ export function ProposalClient({ project }: { project: ProjectData }) {
             `${project.client.name} × ${project.studio.name}`
           }
         />
+        )}
         <Scope />
         <Investment />
         <NextSteps />
-        <AboutCCD />
+        {!project.internal && <AboutCCD />}
         <Footer />
       </main>
     </ProjectProvider>

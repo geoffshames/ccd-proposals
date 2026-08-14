@@ -76,10 +76,12 @@ export function Investment() {
 
                 {!q.introMode && (
                 <div className="border-t border-border bg-bg-elevated/30">
+                  {((q.discount && q.discount.amount > 0) || q.setupFee || q.mediaBudget) && (
                   <div className="px-10 py-4 flex items-center justify-between">
                     <span className="text-[13px] text-text-muted">Subtotal</span>
                     <span className="text-[14px] font-mono text-text-secondary tabular-nums">{formatCurrency(q.subtotal)}</span>
                   </div>
+                  )}
                   {q.discount && q.discount.amount > 0 && (
                     <div className="px-10 py-4 flex items-center justify-between border-t border-border">
                       <span className="text-[13px] text-success">{q.discount.label} ({q.discount.percentage}%)</span>
@@ -158,7 +160,7 @@ export function Investment() {
           </ScrollReveal>
 
           {/* Right column: payment schedule (paid mode) OR intro-call card (intro mode) */}
-          <ScrollReveal delay={0.25} variant="slideLeft" className="lg:col-span-2">
+          <ScrollReveal delay={0.25} variant="slideLeft" className={q.paymentSchedule.length === 1 ? "lg:col-span-2 lg:self-start" : "lg:col-span-2"}>
           {q.introMode ? (
             <TiltCard className="group h-full">
               <div className="card frame bg-bg-card rounded-none p-10 h-full flex flex-col hover:bg-bg-card-hover transition-all duration-500">
@@ -209,6 +211,17 @@ export function Investment() {
                   Payment Schedule
                 </span>
 
+                {q.paymentSchedule.length === 1 ? (
+                  <div className="flex-1">
+                    <div className="display text-[34px] text-text-primary tabular-nums tracking-[-0.02em] leading-none">
+                      {formatCurrency(q.paymentSchedule[0].amount)}
+                    </div>
+                    <div className="text-[14px] font-medium text-text-primary mt-4 tracking-[-0.01em]">
+                      {q.paymentSchedule[0].milestone}
+                    </div>
+                    <div className="text-[12px] font-mono text-text-muted mt-1.5">{q.paymentSchedule[0].due}</div>
+                  </div>
+                ) : (
                 <div className="space-y-8 flex-1">
                   {q.paymentSchedule.map((payment, i) => (
                     <div key={i} className="relative">
@@ -232,9 +245,12 @@ export function Investment() {
                     </div>
                   ))}
                 </div>
+                )}
 
                 <div className="mt-12 pt-8 border-t border-border">
-                  {q.paymentLink === "#approve" ? (
+                  {PROJECT.internal ? (
+                    <p className="text-[12px] text-text-muted leading-[1.8]">{q.paymentTerms}</p>
+                  ) : q.paymentLink === "#approve" ? (
                     <ApproveButton />
                   ) : q.paymentLink === "#" || q.paymentLink === "" ? (
                     <>
