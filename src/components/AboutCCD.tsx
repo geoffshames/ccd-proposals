@@ -60,7 +60,7 @@ export function AboutCCD() {
             </h2>
             <p className="text-[16px] text-text-muted leading-[1.8]">
               Crowd Control Digital is a full-service marketing agency that works with
-              creators and brands of all sizes — from independent artists to Fortune 500
+              creators and brands of all sizes, from independent artists to Fortune 500
               companies. We craft and execute campaigns across paid media, influencer
               marketing, creative strategy, billboards & OOH, and event production.
             </p>

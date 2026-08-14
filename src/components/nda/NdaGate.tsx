@@ -148,7 +148,7 @@ export function NdaGate({
             review and sign the mutual NDA below to continue. {plainPunctuation ? (
               <>Both you and Crowd Control Digital, LLC are bound by the same confidentiality obligations.</>
             ) : (
-              <>Both parties — you and Crowd Control Digital, LLC — are bound by the same confidentiality obligations.</>
+              <>Both parties, you and Crowd Control Digital, LLC, are bound by the same confidentiality obligations.</>
             )}
           </p>
         </motion.div>

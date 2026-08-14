@@ -188,7 +188,7 @@ export function Investment() {
                 </div>
                 <div className="mt-auto pt-8 border-t border-border">
                   <motion.a
-                    href={`mailto:${PROJECT.cta.email}?subject=${encodeURIComponent(`Re: Duck Club × Crowd Control Digital — Intro Call`)}`}
+                    href={`mailto:${PROJECT.cta.email}?subject=${encodeURIComponent(`Re: ${PROJECT.client.name} × Crowd Control Digital: Intro Call`)}`}
                     whileHover={{ scale: 1.02 }}
                     whileTap={{ scale: 0.98 }}
                     className="block w-full text-center bg-accent text-bg font-semibold text-[14px] py-4 rounded-none tracking-[-0.01em]"
@@ -239,7 +239,7 @@ export function Investment() {
                   ) : q.paymentLink === "#" || q.paymentLink === "" ? (
                     <>
                       <motion.a
-                        href={`mailto:${PROJECT.cta.email}?subject=${encodeURIComponent(`${PROJECT.client.name} × Crowd Control Digital — Let's Get Started`)}`}
+                        href={`mailto:${PROJECT.cta.email}?subject=${encodeURIComponent(`${PROJECT.client.name} × Crowd Control Digital: Let's Get Started`)}`}
                         whileHover={{ scale: 1.02 }}
                         whileTap={{ scale: 0.98 }}
                         className="block w-full text-center bg-accent text-bg font-semibold text-[14px] py-4 rounded-none tracking-[-0.01em]"

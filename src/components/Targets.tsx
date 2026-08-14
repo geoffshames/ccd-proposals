@@ -13,7 +13,7 @@ export function Targets() {
         <ScrollReveal>
           <SectionLabel number="05" label="Targets" />
           <h2 className="text-[clamp(2rem,5vw,3.5rem)] font-bold text-text-primary leading-[1.1] tracking-tight mt-4">Strategic KPIs</h2>
-          <p className="text-text-muted text-lg md:text-xl max-w-3xl mt-6 leading-relaxed">Directional targets based on competitive benchmarks and market analysis — not guarantees, but the outcomes we're engineering toward.</p>
+          <p className="text-text-muted text-lg md:text-xl max-w-3xl mt-6 leading-relaxed">Directional targets based on competitive benchmarks and market analysis. Not guarantees, but the outcomes we're engineering toward.</p>
         </ScrollReveal>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-16">
           {PROJECT.targets.map((target, i) => (
@@ -28,7 +28,7 @@ export function Targets() {
             </ScrollReveal>
           ))}
         </div>
-        <p className="text-text-muted/50 text-xs font-mono mt-8 text-center">These are directional targets informed by market research and competitive analysis — not contractual guarantees.</p>
+        <p className="text-text-muted/50 text-xs font-mono mt-8 text-center">These are directional targets informed by market research and competitive analysis, not contractual guarantees.</p>
       </div>
     </section>
   );

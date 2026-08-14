@@ -217,7 +217,7 @@ export function Audience() {
                     &ldquo;{quote.text}&rdquo;
                   </p>
                   <p className="text-text-muted/60 text-xs font-mono tracking-wider">
-                    — {quote.source}
+                    {quote.source}
                   </p>
                 </motion.div>
               ))}

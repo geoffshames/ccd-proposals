@@ -14,7 +14,7 @@ export function Footer() {
           </span>
         </div>
         <div className="text-[12px] text-text-muted font-mono">
-          Confidential · Prepared {new Date().toLocaleDateString("en-US", {
+          Confidential / Prepared {new Date().toLocaleDateString("en-US", {
             month: "long",
             day: "numeric",
             year: "numeric",
