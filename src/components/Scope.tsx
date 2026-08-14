@@ -7,6 +7,10 @@ import { TiltCard } from "./TiltCard";
 
 export function Scope() {
   const PROJECT = useProject();
+  const hasScope =
+    (PROJECT.scope?.included?.length ?? 0) > 0 ||
+    (PROJECT.scope?.excluded?.length ?? 0) > 0;
+  if (!hasScope) return null;
   return (
     <section id="scope" className="relative py-32 px-6">
       <div className="section-divider max-w-6xl mx-auto mb-32" />

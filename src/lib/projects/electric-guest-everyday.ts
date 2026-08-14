@@ -298,14 +298,6 @@ export const electricGuestEveryday: ProjectData = {
           "Enough to answer the crossover question with confidence and keep the catalog warm alongside it. It will not create a moment on its own, and this plan does not claim otherwise.",
         featured: true,
       },
-      {
-        label: "Stretch",
-        budget: "$5,000",
-        views: "A read plus real reach",
-        split: "$2,400 Meta / $1,200 YouTube / $600 TikTok / $500 Spotify / $300 creator seeding",
-        note:
-          "Doubles both cells so the crossover read holds at segment level rather than in aggregate, funds TikTok past probe stage, and adds a hip-hop creator seeding line. This is the version that could make the release a moment rather than a measurement.",
-      },
     ],
     exclusions: [
       "Canada excluded. Tested this cycle, ate spend, produced no streaming lift.",
@@ -550,25 +542,8 @@ export const electricGuestEveryday: ProjectData = {
   ],
 
   scope: {
-    subheading: "Everything covered by this flight, and where the lines sit.",
-    included: [
-      "Paid media strategy, build and daily management across Meta, YouTube, TikTok and Spotify",
-      "Audience construction, including the La Reezy adjacency cluster and all lookalike modelling",
-      "Creative cutdowns and resizing from supplied assets across every placement and ratio",
-      "Content strategy and the tiered production plan, with a dated ask list for the artist side",
-      "Laylo capture setup and pre-save routing",
-      "Daily performance monitoring through release week",
-      "September 2 decision memo and the end-of-flight crossover report",
-      "Coordination with the La Reezy team on cross-posting and shared assets",
-    ],
-    excluded: [
-      "PR, press outreach and label-side editorial pitching, which sit with Independent Co.",
-      "Original photography and videography (available as an add-on, scoped and quoted separately)",
-      "Music video production and animation (available as an add-on, scoped and quoted separately)",
-      "Influencer and creator seeding fees",
-      "Radio, sync and physical product",
-      "Master and publishing clearance",
-    ],
+    included: [],
+    excluded: [],
   },
 
   quote: {
@@ -676,6 +651,6 @@ export const electricGuestEveryday: ProjectData = {
     heroBg: "/images/electric-guest-everyday/hero-bg.jpg",
     ogImage: "/images/electric-guest-everyday/og-image.png",
     hero1Caption: "Everyday (feat. La Reezy) / Out August 28",
-    brutalistCaption: "Two audiences, one crossing point",
+    brutalistCaption: "Release week / August 28 to September 12",
   },
 };
