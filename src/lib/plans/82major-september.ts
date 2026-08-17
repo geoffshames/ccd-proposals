@@ -57,7 +57,7 @@ export const eightyTwoMajorSeptember: StrategyPlanData = {
           "Deliver a tested creative library and warmed audiences the tour window and the 2027 album inherit",
         ],
       },
-      footnote: "Release date confirmed publicly as September 1, 6:00 PM KST. The Kakao experiential add-on described in Section 10 sits outside the CCD ceiling. Against a ~$70,000 overall ceiling, this $50,000 campaign plus a $10,000 to $15,000 experiential add-on lands between $60,000 and $65,000, leaving headroom.",
+      footnote: "Release date confirmed publicly as September 1, 6:00 PM KST. A $4,000 discount secured on the previous cycle carries forward into this one, so the campaign deploys $54,000 of activity against a $50,000 authorization. The Kakao experiential add-on described in Section 10 sits outside the CCD ceiling. Against a ~$70,000 overall ceiling, this $50,000 campaign plus a $10,000 to $15,000 experiential add-on lands between $60,000 and $65,000, leaving headroom.",
     },
 
     // ===================================================================
@@ -385,7 +385,7 @@ export const eightyTwoMajorSeptember: StrategyPlanData = {
       number: "05",
       navLabel: "Budget",
       title: "Campaign Budget / September Release",
-      intro: "One all-in digital budget for the September cycle, roughly 12 weeks. CCD retainer and media management sit inside the budget, not on top. It covers the full record, not the lead single alone. The Kakao experiential add-on described in Section 10 sits outside this number, and at $10,000 to $15,000 the combined total lands between $60,000 and $65,000. Two structural changes carry through from the last cycle: the fan channels move in-house at half their prior monthly rate with tour content as their new remit, and the creator budget splits into a creator program and a separate edits budget, because the two performed very differently and deserve to be managed as different lanes.",
+      intro: "One all-in digital budget for the September cycle, roughly 12 weeks. CCD retainer and media management sit inside the budget, not on top. It covers the full record, not the lead single alone. The Kakao experiential add-on described in Section 10 sits outside this number, and at $10,000 to $15,000 the combined total lands between $60,000 and $65,000. On top of the authorized budget, $4,000 carries forward unspent from the SIGN flight, so the campaign runs $54,000 of activity against a $50,000 authorization. Two structural changes carry through from the last cycle: the fan channels move in-house at half their prior monthly rate with tour content as their new remit, and the creator budget splits into a creator program and a separate edits budget, because the two performed very differently and deserve to be managed as different lanes.",
       tiers: [
         {
           label: "September Campaign",
@@ -394,11 +394,12 @@ export const eightyTwoMajorSeptember: StrategyPlanData = {
           featured: true,
           goal: "Fund the two lanes with measured unit costs at real weight, split the creator budget so the better-performing format gets the larger share, run the fan channels on tour content at half their prior rate, and hold a streaming floor through the decay window. Built so release week scales proven creative against pre-warmed audiences and the campaign still has fuel when the Q4 tour opens.",
           includes: [
-            "Paid social $18,000 (Meta + TikTok), U.S. concentrated, dark-test into release week then scale",
+            "Paid social $18,000 (Meta + TikTok), U.S. concentrated, dark-test into release week then scale, working at $20,000 with the carried-forward funds applied",
             "Creator program $5,000, briefed culture-first from day one",
             "Edits $6,000 across two flights, the format that returned a $2.94 CPM last cycle",
-            "Fan pages $2,000 per month on tour content, in-house at half the prior external rate",
+            "Fan pages $2,000 per month on tour content, in-house at half the prior external rate, extended to the full cycle by the carried-forward funds",
             "Strive $4,000 for streaming floor support through the decay window",
+            "$4,000 carried forward from the SIGN flight, applied to paid social and a third month of fan pages at no additional fee",
             "CRM lane: pre-save flow, release-day drop, broadcast mechanics, inside the retainer",
             "DSP editorial coordination with Kakao, full-record watch matrix, weekly dashboard reporting",
           ],
@@ -448,7 +449,7 @@ export const eightyTwoMajorSeptember: StrategyPlanData = {
               "Reshare fan-shot video from the Q4 tour, which is the single largest source of authentic content the cycle will produce and the moment these channels earn their keep",
               "Cover member-level and pair angles at a cadence the official account will not run",
               "Carry the participation prompts and signup mechanics that feed the CRM lane",
-              "Run in-house at $2,000 per month, half the prior external rate, budgeted for two months and concentrated on the release and tour windows",
+              "Run in-house at $2,000 per month, half the prior external rate, across the full three-month cycle once the carried-forward funds are applied",
             ],
           },
           kpis: [
@@ -470,7 +471,7 @@ export const eightyTwoMajorSeptember: StrategyPlanData = {
           ],
         },
       ],
-      footnote: "The CRM lane is operational inside the CCD retainer. The fan channels carry a $2,000 per month line, budgeted at $4,000 across the release and tour windows. Extending them across the full cycle, or returning them to an external growth engagement at the prior rate, are both available as separately priced options if the label wants owned-audience growth as an objective in its own right. This plan does not recommend either for this cycle.",
+      footnote: "The CRM lane is operational inside the CCD retainer. The fan channels carry a $2,000 per month line, authorized at $4,000 and extended to $6,000, the full three-month cycle, by the funds carried forward from the SIGN flight. Returning them to an external growth engagement at the prior rate remains available as a separately priced option if the label wants owned-audience growth as an objective in its own right. This plan does not recommend it for this cycle.",
     },
 
     // ===================================================================
@@ -547,7 +548,7 @@ export const eightyTwoMajorSeptember: StrategyPlanData = {
           },
         },
       ],
-      footnote: "Paid social is the largest deployable line at $18,000, with edits at $6,000 across two flights and the creator program at $5,000. Paid social is reallocated weekly against live cost per click; the two creator lines are committed per flight.",
+      footnote: "Paid social is the largest deployable line at $18,000 authorized, working at $20,000 once the funds carried forward from the SIGN flight are applied, with edits at $6,000 across two flights and the creator program at $5,000. Paid social is reallocated weekly against live cost per click; the two creator lines are committed per flight.",
     },
 
     // ===================================================================
@@ -741,7 +742,7 @@ export const eightyTwoMajorSeptember: StrategyPlanData = {
           ],
         },
       ],
-      footnote: "Phase budgets sum to the $50,000 total and are directional. Paid social moves weekly against live cost per click. The edits budget is committed per flight, the fan page line bills monthly, and the Strive line runs on its own delivery schedule that extends past the campaign window. Weekly reallocation across creative, audience, and lane is the mechanism that produced the cost improvements in the SIGN flight, and it requires the latitude to move money between these phases.",
+      footnote: "Phase budgets sum to the $50,000 authorized total and are directional. The $4,000 carried forward from the SIGN flight is deployed across Phases 2 and 3 on top of these figures. Paid social moves weekly against live cost per click. The edits budget is committed per flight, the fan page line bills monthly, and the Strive line runs on its own delivery schedule that extends past the campaign window. Weekly reallocation across creative, audience, and lane is the mechanism that produced the cost improvements in the SIGN flight, and it requires the latitude to move money between these phases.",
     },
 
     // ===================================================================
@@ -828,8 +829,8 @@ export const eightyTwoMajorSeptember: StrategyPlanData = {
             { weekIndex: 4, intensity: "high", label: "CLIP" },
             { weekIndex: 5, intensity: "medium", label: "CLIP" },
             { weekIndex: 6, intensity: "medium", label: "CLIP" },
-            { weekIndex: 7, intensity: "low" },
-            { weekIndex: 8, intensity: "low" },
+            { weekIndex: 7, intensity: "medium", label: "CLIP" },
+            { weekIndex: 8, intensity: "medium", label: "CLIP" },
             { weekIndex: 9, intensity: "high", label: "TOUR" },
             { weekIndex: 10, intensity: "high", label: "TOUR" },
             { weekIndex: 11, intensity: "high", label: "TOUR" },
@@ -971,7 +972,7 @@ export const eightyTwoMajorSeptember: StrategyPlanData = {
       number: "13",
       navLabel: "Pricing",
       title: "Final Pricing",
-      intro: "One all-in budget for the September cycle, roughly 12 weeks. The CCD retainer and media management fee are line items inside the budget, not additions to it. Everything below the fee lines is deployable to media, creators, and channels. The creator budget is split into two lines because the two formats performed very differently last cycle and are managed as separate lanes.",
+      intro: "One all-in budget for the September cycle, roughly 12 weeks. The CCD retainer and media management fee are line items inside the budget, not additions to it. Everything below the fee lines is deployable to media, creators, and channels. The creator budget is split into two lines because the two formats performed very differently last cycle and are managed as separate lanes. Separately, $4,000 carries forward unspent from the SIGN flight and is applied on top of these figures; the arithmetic is set out in full beneath the table.",
       tiers: [
         {
           label: "September Campaign",
@@ -1006,7 +1007,7 @@ export const eightyTwoMajorSeptember: StrategyPlanData = {
           description: "Sits outside the CCD budget and is not funded by either digital tier. CCD asks that any activation carries a capture mechanic and produces vertical-native, paid-usable creative.",
         },
       ],
-      footnote: "The fan page line runs in-house at $2,000 per month, half the prior external rate, budgeted across the release and tour windows. The creator budget is split because the two formats returned very different results last cycle: edits at a $2.94 CPM against the creator-led round at $10.73, which is why edits carry the larger share. Strive is sized at $4,000 against a delivery pace that currently runs to roughly 20 weeks, and the campaign is not extended to wait on it. Budgets are scoped to the September release cycle. The Q4 tour window and the 1H 2027 releases each authorize fresh budgets on this same structure, and inherit the infrastructure, warmed audiences, and tested creative this campaign produces.",
+      footnote: "CARRIED FORWARD FROM THE SIGN FLIGHT. A negotiated discount on the fan page engagement left $4,000 unspent on the previous cycle. Rather than absorb it, that $4,000 is applied to this campaign: $2,000 to paid social, taking it from $18,000 to $20,000, and $2,000 to fan pages, taking them from $4,000 to $6,000, which extends them from two months to the full three-month cycle. No additional CCD management fee applies to the carried amount, because the fee was already taken on the SIGN cycle budget. Working deployable therefore rises from $37,000 to $41,000, and the campaign runs $54,000 of activity against a $50,000 authorization. The fan page line runs in-house at $2,000 per month, half the prior external rate. The creator budget is split because the two formats returned very different results last cycle: edits at a $2.94 CPM against the creator-led round at $10.73, which is why edits carry the larger share. Strive is sized at $4,000 against a delivery pace that currently runs to roughly 20 weeks, and the campaign is not extended to wait on it. Budgets are scoped to the September release cycle. The Q4 tour window and the 1H 2027 releases each authorize fresh budgets on this same structure, and inherit the infrastructure, warmed audiences, and tested creative this campaign produces.",
     },
   ],
 };
