@@ -385,7 +385,7 @@ export const eightyTwoMajorSeptember: StrategyPlanData = {
       number: "05",
       navLabel: "Budget",
       title: "Campaign Budget / September Release",
-      intro: "One all-in digital budget for the September cycle, roughly 12 weeks. CCD retainer and media management sit inside the budget, not on top. It covers the full record, not the lead single alone. The Kakao experiential add-on described in Section 10 sits outside this number, and at $10,000 to $15,000 the combined total lands between $60,000 and $65,000. On top of the authorized budget, $4,000 carries forward unspent from the SIGN flight, so the campaign runs $54,000 of activity against a $50,000 authorization. Two structural changes carry through from the last cycle: the fan channels move in-house at half their prior monthly rate with tour content as their new remit, and the creator budget splits into a creator program and a separate edits budget, because the two performed very differently and deserve to be managed as different lanes.",
+      intro: "One all-in digital budget for the September cycle, roughly 12 weeks. CCD retainer and media management sit inside the budget, not on top. It covers the full record, not the lead single alone. The Kakao experiential add-on described in Section 10 sits outside this number, and at $10,000 to $15,000 the combined total lands between $60,000 and $65,000. Two structural changes carry through from the last cycle: the fan channels move in-house at half their prior monthly rate with tour content as their new remit, and the creator budget splits into a creator program and a separate edits budget, because the two performed very differently and deserve to be managed as different lanes.",
       tiers: [
         {
           label: "September Campaign",
@@ -394,12 +394,11 @@ export const eightyTwoMajorSeptember: StrategyPlanData = {
           featured: true,
           goal: "Fund the two lanes with measured unit costs at real weight, split the creator budget so the better-performing format gets the larger share, run the fan channels on tour content at half their prior rate, and hold a streaming floor through the decay window. Built so release week scales proven creative against pre-warmed audiences and the campaign still has fuel when the Q4 tour opens.",
           includes: [
-            "Paid social $18,000 (Meta + TikTok), U.S. concentrated, dark-test into release week then scale, working at $20,000 with the carried-forward funds applied",
+            "Paid social $18,000 (Meta + TikTok), U.S. concentrated, dark-test into release week then scale",
             "Creator program $5,000, briefed culture-first from day one",
             "Edits $6,000 across two flights, the format that returned a $2.94 CPM last cycle",
-            "Fan pages $2,000 per month on tour content, in-house at half the prior external rate, extended to the full cycle by the carried-forward funds",
+            "Fan pages $2,000 per month on tour content, in-house at half the prior external rate",
             "Strive $4,000 for streaming floor support through the decay window",
-            "$4,000 carried forward from the SIGN flight, applied to paid social and a third month of fan pages at no additional fee",
             "CRM lane: pre-save flow, release-day drop, broadcast mechanics, inside the retainer",
             "DSP editorial coordination with Kakao, full-record watch matrix, weekly dashboard reporting",
           ],
@@ -449,7 +448,7 @@ export const eightyTwoMajorSeptember: StrategyPlanData = {
               "Reshare fan-shot video from the Q4 tour, which is the single largest source of authentic content the cycle will produce and the moment these channels earn their keep",
               "Cover member-level and pair angles at a cadence the official account will not run",
               "Carry the participation prompts and signup mechanics that feed the CRM lane",
-              "Run in-house at $2,000 per month, half the prior external rate, across the full three-month cycle once the carried-forward funds are applied",
+              "Run in-house at $2,000 per month, half the prior external rate, across the full three-month cycle",
             ],
           },
           kpis: [
@@ -972,7 +971,7 @@ export const eightyTwoMajorSeptember: StrategyPlanData = {
       number: "13",
       navLabel: "Pricing",
       title: "Final Pricing",
-      intro: "One all-in budget for the September cycle, roughly 12 weeks. The CCD retainer and media management fee are line items inside the budget, not additions to it. Everything below the fee lines is deployable to media, creators, and channels. The creator budget is split into two lines because the two formats performed very differently last cycle and are managed as separate lanes. Separately, $4,000 carries forward unspent from the SIGN flight and is applied on top of these figures; the arithmetic is set out in full beneath the table.",
+      intro: "One all-in budget for the September cycle, roughly 12 weeks. The CCD retainer and media management fee are line items inside the budget, not additions to it. Everything below the fee lines is deployable to media, creators, and channels. The creator budget is split into two lines because the two formats performed very differently last cycle and are managed as separate lanes. Funds carried forward from the SIGN flight are applied on top of these figures, noted beneath the table.",
       tiers: [
         {
           label: "September Campaign",
