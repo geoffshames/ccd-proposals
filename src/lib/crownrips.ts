@@ -20,6 +20,13 @@ export type Concept = {
   budget: BudgetLine[];
   total: number;
   risk: string;
+  totalLabel?: string;
+  setList?: { tier: string; count: string; behaviour: string }[];
+  media?: {
+    headline: string;
+    note: string;
+    rows: { label: string; impressions: string; spend: string; tag?: string }[];
+  };
 };
 
 export const concepts: Concept[] = [
@@ -371,6 +378,74 @@ export const concepts: Concept[] = [
     total: 185000,
     risk:
       "Requires the client to actually stand behind published odds for fourteen straight days. That is a business decision before it is a creative one.",
+  },
+  {
+    id: "chase",
+    number: "08",
+    name: "THE CHASE",
+    hook: "New York's rarest card is doing 30 in a bus lane.",
+    logline:
+      "Twenty-five cab-topper creatives, structured as a real card set with real rarity tiers. Scan a taxi, that card enters your binder. Commons are everywhere. The Secret Rare surfaces on a handful of cabs, in one neighbourhood, three times in the whole flight. Complete all twenty-five and you take The Chain.",
+    image: "/images/crownrips/chase.jpg",
+    imageAlt:
+      "Rain-slicked Manhattan avenue at night, a line of yellow taxis with glowing red rooftop displays, people on the sidewalk running with phones raised",
+    scale: "HERO",
+    format: "Geo-fenced DOOH game across NYC taxi network",
+    window: "3 weeks",
+    markets: "Five boroughs",
+    mechanic: [
+      "The 25 creatives are a set list, not a rotation. Each carries its own QR and its own rarity, and the rarity is enforced in the media schedule — commons run everywhere all flight, the Secret Rare runs in one neighbourhood for three short windows total.",
+      "Scan a topper and that card enters your binder in-app. Instant digital pack on every valid scan; completing a rarity tier ships something physical.",
+      "The 8-second flip is the difficulty setting. A single screen face cycles 450 slots an hour, so you cannot plan a scan — you react to one, from a moving vehicle, in traffic.",
+      "A published drop calendar tells you the zone and the window but never the cab. You go to Dumbo at 7pm knowing the Ultra Rare is live somewhere in it, then you hunt.",
+      "The Secret Rare windows are locked in the media schedule weeks out but announced to fans 60 minutes ahead by push. Media ops always knows; the city never does.",
+      "Complete all 25 and the binder unlocks the grail from concept 03 — the same chain, the same one-of-one, claimed by a New Yorker who scanned a taxi.",
+    ],
+    why:
+      "The audience already thinks in rarity tiers — set completion is the exact behaviour Pokémon has trained into them for thirty years, and it is a far stronger engine than a sweepstakes entry. Mapping 25 creatives onto a set list turns a media buy into a collection mechanic that people voluntarily grind. The scheduling constraint is the gift here, not the limitation: because the schedule is locked in advance, the backend knows precisely which creative was live in which zone at which minute, which is what makes a scan verifiable. And the taxi is doing something no static board can — it moves, so the card genuinely has to be chased.",
+    earned:
+      "The footage is people running down a Manhattan sidewalk after a taxi, which is a scene rather than an ad. Drop windows create scheduled, repeatable, filmable convergences in a named neighbourhood — three weeks of appointment moments instead of one launch beat. Set-completion progress is inherently postable, so the binder does distribution for us.",
+    proof: {
+      claim:
+        "At the negotiated $8 CPM the 100M daily impression ceiling represents roughly $800K of inventory per day, so even a heavy three-week buy runs at a low single-digit percentage of network capacity — leaving deep headroom to concentrate delivery into short, high-intensity drop windows.",
+      source: "Derived from the quoted $8 CPM and 100M/day network capacity",
+    },
+    setList: [
+      { tier: "COMMON", count: "13", behaviour: "Always live, five boroughs, full flight" },
+      { tier: "RARE", count: "7", behaviour: "Dayparted by borough, schedule published weekly" },
+      { tier: "ULTRA RARE", count: "4", behaviour: "90-minute windows, one neighbourhood, announced 24h ahead" },
+      { tier: "SECRET RARE", count: "1", behaviour: "Three windows all flight, announced 60 minutes ahead" },
+    ],
+    media: {
+      headline: "Media — billed separately",
+      note:
+        "Cab-topper media is additive to the activation budget and billed at the negotiated $8 CPM, down from $10 rate card. The recommended weight saves $50,000 against rate card on the same delivery.",
+      rows: [
+        { label: "Light", impressions: "12.5M impressions", spend: "$100,000" },
+        { label: "Recommended", impressions: "25M impressions", spend: "$200,000", tag: "RECOMMENDED" },
+        { label: "Heavy", impressions: "37.5M impressions", spend: "$300,000" },
+      ],
+    },
+    build: [
+      "25 creative executions designed as a set list, built to read and scan inside 8 seconds at distance",
+      "In-app binder with rarity tiers, completion tracking and tier-reward fulfilment",
+      "Three-factor scan validation — device GPS inside the live zone, timestamp inside the scheduled window, one credit per card per device",
+      "Public drop calendar plus 60-minute push alerts for Secret Rare windows",
+      "Live set-tracker showing which cards are still uncollected city-wide",
+    ],
+    budget: [
+      { item: "Creative production — 25 set designs, 8-second motion builds", amount: 38000 },
+      { item: "In-app build — binder, scan resolution, rarity and tier logic", amount: 52000 },
+      { item: "Geo-fence and time-window scan validation (anti-fraud)", amount: 26000 },
+      { item: "Drop calendar, live set tracker, push notification system", amount: 22000 },
+      { item: "Prize pool — instant digital packs + physical tier fulfilment", amount: 40000 },
+      { item: "Drop-night content capture (3 nights)", amount: 18000 },
+      { item: "PR and launch", amount: 9000 },
+    ],
+    total: 205000,
+    totalLabel: "Production — excl. media",
+    risk:
+      "The QR codes are fixed per creative, so the moment someone photographs the Secret Rare and posts it, the code itself is public. That is survivable but only because scan validation is three-factor: a credit requires device GPS inside the live zone and a timestamp inside that creative's scheduled window, so a couch scan in Ohio fails on geography and a late scan in the right neighbourhood fails on time. Build that layer or the game is over in day one. Secondary: scan rates on DOOH QR are low in absolute terms — judge this on depth of play per participant, not on scans as a proxy for reach.",
   },
 ];
 

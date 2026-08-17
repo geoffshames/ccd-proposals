@@ -23,6 +23,7 @@ const money = new Intl.NumberFormat("en-US", {
 const navItems = [
   ["Premise", "#premise"],
   ["Concepts", "#concepts"],
+  ["The Chase", "#chase"],
   ["Spend", "#spend"],
   ["Sources", "#sources"],
 ] as const;
@@ -133,14 +134,14 @@ export function CrownRipsClient() {
               IS <em>REAL.</em>
             </h1>
             <p className={styles.heroBody}>
-              Seven experiential concepts for the CrownRips launch — each one built to
+              Eight experiential concepts for the CrownRips launch — each one built to
               make a digital rip produce a physical, witnessable consequence in the real
               world. Costed, scoped, and ready to greenlight one at a time.
             </p>
             <div className={styles.heroMeta}>
               <div>
                 <span>Concepts</span>
-                <strong>7 BUILDS</strong>
+                <strong>8 BUILDS</strong>
               </div>
               <div>
                 <span>Investment range</span>
@@ -215,7 +216,7 @@ export function CrownRipsClient() {
             eyebrow="THE MENU"
             title={
               <>
-                SEVEN WAYS TO MAKE IT <em>PHYSICAL.</em>
+                EIGHT WAYS TO MAKE IT <em>PHYSICAL.</em>
               </>
             }
             body="Each concept stands alone and can be greenlit independently. Costs are CCD planning estimates built from current market rates and quoted vendor bands — not fixed quotes. Every image is an AI-generated concept visual, not a photograph of an existing build."
@@ -259,7 +260,7 @@ export function CrownRipsClient() {
                       <strong>{concept.markets}</strong>
                     </div>
                     <div>
-                      <span>All-in</span>
+                      <span>{concept.media ? "Production" : "All-in"}</span>
                       <strong>{money.format(concept.total)}</strong>
                     </div>
                   </div>
@@ -277,6 +278,21 @@ export function CrownRipsClient() {
                       </li>
                     ))}
                   </ul>
+
+                  {concept.setList ? (
+                    <>
+                      <span className={styles.blockLabel}>THE SET LIST</span>
+                      <div className={styles.setTable}>
+                        {concept.setList.map((row) => (
+                          <div key={row.tier}>
+                            <b>{row.tier}</b>
+                            <em>{row.count}</em>
+                            <p>{row.behaviour}</p>
+                          </div>
+                        ))}
+                      </div>
+                    </>
+                  ) : null}
 
                   <span className={styles.blockLabel}>WHY IT WORKS</span>
                   <p className={styles.why}>{concept.why}</p>
@@ -305,10 +321,37 @@ export function CrownRipsClient() {
                       </div>
                     ))}
                     <div className={styles.budgetTotal}>
-                      <span>All-in</span>
+                      <span>{concept.totalLabel ?? "All-in"}</span>
                       <strong>{money.format(concept.total)}</strong>
                     </div>
                   </div>
+
+                  {concept.media ? (
+                    <div className={styles.mediaCard}>
+                      <div className={styles.mediaHead}>
+                        <span>{concept.media.headline}</span>
+                        <b>$8 CPM</b>
+                      </div>
+                      {concept.media.rows.map((row) => (
+                        <div
+                          key={row.label}
+                          className={
+                            row.tag ? `${styles.mediaRow} ${styles.mediaRowFlag}` : styles.mediaRow
+                          }
+                        >
+                          <div>
+                            <strong>{row.label}</strong>
+                            <small>{row.impressions}</small>
+                          </div>
+                          <div className={styles.mediaSpend}>
+                            <b>{row.spend}</b>
+                            {row.tag ? <i>{row.tag}</i> : null}
+                          </div>
+                        </div>
+                      ))}
+                      <p className={styles.mediaNote}>{concept.media.note}</p>
+                    </div>
+                  ) : null}
 
                   <span className={styles.blockLabel} style={{ marginTop: 34, display: "block" }}>
                     WHAT WE BUILD

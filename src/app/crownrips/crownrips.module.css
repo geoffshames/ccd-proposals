@@ -332,3 +332,60 @@
   max-width: 1500px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 56px) 64px;
   font-size: 13px; line-height: 1.65; color: rgba(255,255,255,0.42);
 }
+
+/* ---------- SET LIST (The Chase) ---------- */
+.setTable { margin: 0 0 40px; border-top: 1px solid #171717; }
+.setTable > div {
+  display: grid; grid-template-columns: 118px 44px 1fr; gap: 14px; align-items: baseline;
+  padding: 15px 0; border-bottom: 1px solid #171717;
+}
+.setTable b {
+  font-family: var(--font-mono); font-size: 10.5px; letter-spacing: 0.14em;
+  text-transform: uppercase; color: var(--color-accent); font-weight: 400;
+}
+.setTable em {
+  font-style: normal; font-family: var(--font-heading), sans-serif;
+  font-size: 20px; line-height: 1; color: rgba(255,255,255,0.9);
+}
+.setTable p { font-size: 14.5px; line-height: 1.55; color: rgba(255,255,255,0.66); }
+@media (max-width: 620px) {
+  .setTable > div { grid-template-columns: 1fr 44px; }
+  .setTable p { grid-column: 1 / -1; }
+}
+
+/* ---------- MEDIA CARD (The Chase) ---------- */
+.mediaCard { margin-top: 22px; border: 1px solid #1f1f1f; background: #0a0a0a; }
+.mediaHead {
+  padding: 20px 24px; border-bottom: 1px solid #1f1f1f;
+  display: flex; justify-content: space-between; align-items: baseline; gap: 14px;
+}
+.mediaHead span {
+  font-family: var(--font-mono); font-size: 10px; letter-spacing: 0.2em;
+  text-transform: uppercase; color: rgba(255,255,255,0.4);
+}
+.mediaHead b {
+  font-family: var(--font-mono); font-size: 10px; letter-spacing: 0.12em;
+  color: var(--color-accent); font-weight: 400;
+}
+.mediaRow {
+  display: flex; justify-content: space-between; align-items: center; gap: 20px;
+  padding: 16px 24px; border-bottom: 1px solid #141414;
+}
+.mediaRowFlag { background: #101010; }
+.mediaRow strong { display: block; font-size: 14px; color: rgba(255,255,255,0.9); font-weight: 600; }
+.mediaRow small {
+  display: block; margin-top: 5px; font-family: var(--font-mono);
+  font-size: 11px; letter-spacing: 0.08em; color: rgba(255,255,255,0.5);
+}
+.mediaSpend { text-align: right; white-space: nowrap; }
+.mediaSpend b {
+  display: block; font-family: var(--font-heading), sans-serif;
+  font-size: 20px; letter-spacing: -0.01em; color: #fff; font-weight: 700;
+}
+.mediaSpend i {
+  display: block; margin-top: 5px; font-style: normal; font-family: var(--font-mono);
+  font-size: 9px; letter-spacing: 0.16em; color: var(--color-accent);
+}
+.mediaNote {
+  padding: 18px 24px; font-size: 13px; line-height: 1.6; color: rgba(255,255,255,0.55);
+}
