@@ -31,7 +31,7 @@ export const eightyTwoMajorSeptember: StrategyPlanData = {
       number: "01",
       navLabel: "Overview",
       title: "Overview & Objective",
-      subtitle: "A digital campaign for the September 1 comeback, priced at two levels, built from the measured unit costs the SIGN cycle produced.",
+      subtitle: "A digital campaign for the September 1 comeback, priced at $50,000 all-in, with every line sized against a measured unit cost from the SIGN cycle.",
       body: [
         "This plan funds the digital campaign for the September release, lead single HEAT, out September 1 at 6:00 PM KST. The cycle runs roughly 12 weeks, from pre-release build through the Q4 U.S. tour window.",
         "The strategic case is that the SIGN cycle already answered the hard question. Section 02 sets out what every lane returned, measured rather than estimated, and every number in this plan traces back to it. It proved 82MAJOR converts the audience it reaches, at a cost per action that most K-pop campaigns do not hit. Spotify followers moved from 149,716 at campaign start to 162,218 today, an all-time high, while the fandom conversion ratio recovered from 0.32 to 0.46. The United States went from a secondary market to the group's largest Spotify market at 70,698 monthly listeners, up 27.6 percent across the window, while worldwide listeners fell 25.1 percent on the normal post-release curve. The one market bought against is the one market that grew. Los Angeles is now a top-ten city for the group. Eight months ago the top five cities were all in Southeast Asia with no Western city on the board.",
@@ -57,7 +57,7 @@ export const eightyTwoMajorSeptember: StrategyPlanData = {
           "Deliver a tested creative library and warmed audiences the tour window and the 2027 album inherit",
         ],
       },
-      footnote: "Release date confirmed publicly as September 1, 6:00 PM KST. The Kakao experiential add-on described in Section 10 sits outside the CCD ceiling. Against a ~$70,000 overall ceiling, Core plus a $15,000 experiential add-on lands at $45,000 and Full plus the same add-on lands at $65,000, so both configurations fit with headroom remaining.",
+      footnote: "Release date confirmed publicly as September 1, 6:00 PM KST. The Kakao experiential add-on described in Section 10 sits outside the CCD ceiling. Against a ~$70,000 overall ceiling, this $50,000 campaign plus a $10,000 to $15,000 experiential add-on lands between $60,000 and $65,000, leaving headroom.",
     },
 
     // ===================================================================
@@ -88,7 +88,7 @@ export const eightyTwoMajorSeptember: StrategyPlanData = {
             ],
           },
           kpis: ["Followers 162,218 ATH", "Ratio 0.32 to 0.46", "U.S. +27.6%"],
-          timeline: "Implication for September: the CRM and pre-save lane is the mechanism behind this number and it runs in every tier. It is not the lane to cut.",
+          timeline: "Implication for September: the CRM and pre-save lane is the mechanism behind this number, and it runs inside the retainer rather than as a media line. It is not the lane to cut.",
         },
         {
           label: "B",
@@ -142,7 +142,7 @@ export const eightyTwoMajorSeptember: StrategyPlanData = {
             ],
           },
           kpis: ["$10K deployed", "~2.17M views", "$4.61 blended CPM"],
-          timeline: "Implication for September: brief culture-first from day one, and size the round for enough shots that outliers can carry it.",
+          timeline: "Implication for September: brief culture-first from day one, and split the budget so the two formats are managed as separate lanes. The edits line gets the larger share because it returned 3.6 times the reach for the same money.",
         },
         {
           label: "E",
@@ -160,7 +160,7 @@ export const eightyTwoMajorSeptember: StrategyPlanData = {
             ],
           },
           kpis: ["226x plays per post", "$178 fan-channel CPM", "$60 per follower"],
-          timeline: "Implication for September: this is why the fan channels move in-house. They stop being a paid growth play and become a clipping and tour-resharing surface, and the money that funded them externally moves into paid social and the creator round. Section 06 sets out the new remit.",
+          timeline: "Implication for September: this is why the fan channels move in-house at half the rate. They stop being a paid growth play and become a clipping and tour-resharing surface, and the savings move into the lanes with measured unit costs. Section 06 sets out the new remit.",
         },
         {
           label: "F",
@@ -205,11 +205,11 @@ export const eightyTwoMajorSeptember: StrategyPlanData = {
           components: {
             heading: "From Evidence To Plan",
             items: [
-              "Fund the lanes with known unit costs. Paid social and the creator round are the only lanes with measured, repeatable costs per outcome, which is why they carry the majority of deployable spend in every tier.",
+              "Fund the lanes with known unit costs. Paid social and the two creator lines are the only lanes with measured, repeatable costs per outcome, which is why they carry $29,000 of the $37,000 deployable.",
               "Concentrate rather than spread. The one market bought against was the one market that grew at scale while the rest of the world decayed.",
               "Brief culture-first from day one. The same $5,000 returned 3.6 times the reach in Phase 2 once the creative led with the trend rather than the group.",
               "Protect the CRM and conversion lane. The conversion ratio is the thesis metric and it recovered throughout. Pre-save mechanics, impossible on SIGN because the record was already out, are the largest new lever available in September.",
-              "Change what the fan channels are for. The measured return does not justify paying externally to grow them, but it does justify running them in-house as a clipping and tour-resharing surface. The fee comes out, the channels stay, and the money goes where the unit costs are known.",
+              "Change what the fan channels are for. The measured return does not justify paying an external rate to grow them from zero, but it does justify running them in-house at half that rate as a clipping and tour-resharing surface.",
             ],
           },
         },
@@ -385,36 +385,22 @@ export const eightyTwoMajorSeptember: StrategyPlanData = {
       number: "05",
       navLabel: "Budget",
       title: "Campaign Budget / September Release",
-      intro: "Two all-in digital levels for the September cycle, roughly 12 weeks. CCD retainer and media management sit inside the budget, not on top. Both cover the full record, not the lead single alone. The Kakao experiential add-on described in Section 10 sits outside these numbers. One structural change from the last cycle carries through both tiers: the fan channel network moves from a paid external engagement to an internally managed function, and the money that funded it moves into paid social and the creator round. Section 06 sets out why and what the channels do instead.",
+      intro: "One all-in digital budget for the September cycle, roughly 12 weeks. CCD retainer and media management sit inside the budget, not on top. It covers the full record, not the lead single alone. The Kakao experiential add-on described in Section 10 sits outside this number, and at $10,000 to $15,000 the combined total lands between $60,000 and $65,000. Two structural changes carry through from the last cycle: the fan channels move in-house at half their prior monthly rate with tour content as their new remit, and the creator budget splits into a creator program and a separate edits budget, because the two performed very differently and deserve to be managed as different lanes.",
       tiers: [
         {
-          label: "Digital / Tier 1",
-          budget: "$30,000",
-          name: "Core",
-          goal: "Run the proven machine against HEAT with a genuine pre-release window. Paid social and the creator round both funded well above the levels that produced the SIGN results, the CRM lane driving pre-saves, and the fan channels running internally as a clipping and resharing surface. This is the level that protects the release without extending it.",
-          includes: [
-            "Paid social (Meta + TikTok), U.S. concentrated, dark-test into release week",
-            "One creator and clipping round briefed culture-first, the approach that returned a $2.94 CPM in Phase 2",
-            "Fan channels run internally: clipping, resharing fan and tour video, no external monthly fee",
-            "CRM lane: pre-save flow, release-day drop, broadcast mechanics",
-            "DSP editorial coordination with Kakao: pitch packets, metadata QC, release-week follow-ups",
-            "Full-record watch matrix from day one, so organic B-side heat gets budget in days",
-            "Weekly reporting through the live dashboard as single source of truth",
-          ],
-        },
-        {
-          label: "Digital / Tier 2",
+          label: "September Campaign",
           budget: "$50,000",
-          name: "Full",
-          goal: "Everything in Core at roughly 1.9x the deployable weight. Paid social at $20,000 and the creator round at $11,000 put the budget where the measured unit costs are, with Strive added as conditional floor support through the decay window. Built so release week scales against pre-warmed audiences and the campaign still has fuel when the Q4 tour window opens.",
+          name: "All-In, ~12 Weeks",
           featured: true,
+          goal: "Fund the two lanes with measured unit costs at real weight, split the creator budget so the better-performing format gets the larger share, run the fan channels on tour content at half their prior rate, and hold a streaming floor through the decay window. Built so release week scales proven creative against pre-warmed audiences and the campaign still has fuel when the Q4 tour opens.",
           includes: [
-            "Everything in Core, at roughly 1.9x deployable media",
-            "Paid social at $20,000, sustained post-release rather than a release-week spike",
-            "Creator and clipping round at $11,000, including paid boost behind organic winners",
-            "Strive floor support through the decay window, conditional on the live insertion proving delivery",
-            "Retargeting pools from the SIGN flight activated against the pre-save and release push",
-            "Creative library built and validated pre-release, carried into the tour window",
+            "Paid social $18,000 (Meta + TikTok), U.S. concentrated, dark-test into release week then scale",
+            "Creator program $5,000, briefed culture-first from day one",
+            "Edits $6,000 across two flights, the format that returned a $2.94 CPM last cycle",
+            "Fan pages $2,000 per month on tour content, in-house at half the prior external rate",
+            "Strive $4,000 for streaming floor support through the decay window",
+            "CRM lane: pre-save flow, release-day drop, broadcast mechanics, inside the retainer",
+            "DSP editorial coordination with Kakao, full-record watch matrix, weekly dashboard reporting",
           ],
         },
       ],
@@ -453,7 +439,7 @@ export const eightyTwoMajorSeptember: StrategyPlanData = {
         {
           label: "B",
           title: "Fan Channels, Repositioned For This Cycle",
-          objective: "A deliberate change of purpose. The fan channels stop being a paid audience-growth play and become an internally run clipping and resharing surface, with the tour as their primary feed. The external monthly fee comes out of the budget entirely and that money moves into paid social and the creator round.",
+          objective: "A deliberate change of purpose and a halved rate. The fan channels stop being a paid audience-growth play and become an internally run clipping and resharing surface, with the tour as their primary feed. The monthly cost drops from $4,000 to $2,000 because the work changes from growing channels from zero to servicing content that already exists.",
           strategy: "The evidence in Section 02 makes the case plainly. Over the same window, on the same creative brief, the official channel returned roughly 137,000 plays per post and the fan network returned roughly 606. Growing a channel from zero against an account that already has 1.6 million followers is the expensive way to buy reach, and the measured cost per view bore that out. What the channels are genuinely good at is being a second and third surface for content that already works: clipped moments, resharing fan-shot video, and covering angles the official account will not post. That is a production function, not a media buy, so it moves in-house.",
           components: {
             heading: "What The Channels Do Now",
@@ -462,7 +448,7 @@ export const eightyTwoMajorSeptember: StrategyPlanData = {
               "Reshare fan-shot video from the Q4 tour, which is the single largest source of authentic content the cycle will produce and the moment these channels earn their keep",
               "Cover member-level and pair angles at a cadence the official account will not run",
               "Carry the participation prompts and signup mechanics that feed the CRM lane",
-              "Run inside the CCD retainer as a managed function, with no external monthly fee in either tier",
+              "Run in-house at $2,000 per month, half the prior external rate, budgeted for two months and concentrated on the release and tour windows",
             ],
           },
           kpis: [
@@ -484,7 +470,7 @@ export const eightyTwoMajorSeptember: StrategyPlanData = {
           ],
         },
       ],
-      footnote: "Both the CRM lane and the fan channels are operational inside the CCD retainer and run in every tier, with no external monthly fee attached to either. Returning the channels to an external monthly growth engagement remains available as a separately priced option if the label wants to pursue owned-audience growth as an objective in its own right, but this plan does not recommend it for this cycle.",
+      footnote: "The CRM lane is operational inside the CCD retainer. The fan channels carry a $2,000 per month line, budgeted at $4,000 across the release and tour windows. Extending them across the full cycle, or returning them to an external growth engagement at the prior rate, are both available as separately priced options if the label wants owned-audience growth as an objective in its own right. This plan does not recommend either for this cycle.",
     },
 
     // ===================================================================
@@ -516,22 +502,38 @@ export const eightyTwoMajorSeptember: StrategyPlanData = {
         },
         {
           label: "B",
-          title: "Creator & Clipping Network",
-          objective: "Buy the cheapest reach available to the account, on culture-first creative, with enough volume that concentration works in the campaign's favour rather than against it.",
-          strategy: "Briefs go out on trending shows, films, and audio with HEAT as the bed, matching the pattern that produced the top-performing edits in the SIGN cycle. Volume is budgeted with the expectation that a small number of posts carry most of the reach, so the round is sized for enough shots rather than for a blended average.",
+          title: "Edits, Two Flights ($6,000)",
+          objective: "The cheapest reach the account buys, and the larger of the two creator lines because it earned it. Run as two separate flights rather than one round.",
+          strategy: "Culture-first edits attach the song to shows, films, and trending audio with independent search demand, and let the song be discovered inside something the viewer already came for. That brief returned a $2.94 CPM last cycle against $10.73 on the creator-led round, roughly 3.6 times the reach for the same money. Splitting the budget into two flights means the first can read the market around release and the second can be briefed off what actually broke, rather than committing the whole budget to a single set of assumptions.",
           components: {
-            heading: "Approach",
+            heading: "How The Two Flights Run",
             items: [
-              "Culture-first briefs: trending shows, films, and audio, group woven in",
-              "Round sized for volume, because roughly five posts carried a third or more of the last round",
-              "Paid boost behind organic winners through creator partner codes, which adds reach at no creator cost",
-              "Organic creator pickup treated as a campaign signal and reported as lift, not as leakage",
+              "Flight 1 at release: briefs issued pre-release so posting lands from day one, sized for volume because a small number of outliers carries the round",
+              "Flight 2 in the tour window: rebriefed on the themes that broke in Flight 1, with tour footage available as new source material",
+              "Paid boost behind organic winners through partner codes, which adds reach at no creator cost",
+              "Trending shows and films only, no rival-group content, the guardrail that produced the top-performing edits last cycle",
             ],
           },
-          kpis: ["CPM against the $2.94 Phase 2 benchmark", "Engagement rate", "Number of posts above 250K views"],
+          kpis: ["CPM against the $2.94 benchmark", "Posts above 250K views", "Flight 2 lift over Flight 1"],
         },
         {
           label: "C",
+          title: "Creator Program ($5,000)",
+          objective: "A smaller, sharper creator round than last cycle, briefed on the lesson the last one taught.",
+          strategy: "The creator-led round returned a $10.73 CPM against the edits format at $2.94, so this line is deliberately the smaller of the two. It is kept because creators do something edits cannot: they put a face and a voice on the record, which is what converts a viewer into a follower rather than a play. The round is briefed culture-first for the same reason the edits are, and the creators are selected for the audience they bring rather than for follower count.",
+          components: {
+            heading: "Approach",
+            items: [
+              "Micro-tier creators selected on audience fit rather than follower count",
+              "Culture-first briefs, the same guardrail the edits run on",
+              "Organic creator pickup treated as a campaign signal and reported as lift, not leakage",
+              "Winners handed to the official channel and the fan pages rather than left to run once",
+            ],
+          },
+          kpis: ["Cost per view against the creator benchmark", "Follower conversion off creator posts", "Organic pickup"],
+        },
+        {
+          label: "D",
           title: "Creative Direction",
           objective: "Give the paid and creator lanes assets that already match what wins, rather than adapting album assets after the fact.",
           components: {
@@ -545,7 +547,7 @@ export const eightyTwoMajorSeptember: StrategyPlanData = {
           },
         },
       ],
-      footnote: "Paid social and the creator round are the two largest deployable lines in both tiers. Both are reallocated weekly against live cost per second click.",
+      footnote: "Paid social is the largest deployable line at $18,000, with edits at $6,000 across two flights and the creator program at $5,000. Paid social is reallocated weekly against live cost per click; the two creator lines are committed per flight.",
     },
 
     // ===================================================================
@@ -578,22 +580,17 @@ export const eightyTwoMajorSeptember: StrategyPlanData = {
           label: "B",
           title: "Strive: Streaming Floor Support",
           objective: "Hold the daily floor through the post-release decay window, which is when most campaigns quietly lose the gains they paid for.",
-          strategy: "Strive runs in both $50,000 builds as floor support, billed on monthly insertion across the cycle. It is a self-operated in-ride audio network using Spotify as the stream source, not a Spotify partnership. Strive reports its attributed daily streams separately from total streams, which gives a clean isolated view of what it contributed rather than a blended number. The first insertion is live and its delivery pace is the open question, addressed directly below.",
+          strategy: "Strive runs at $4,000 as floor support, billed on insertion. It is a self-operated in-ride audio network using Spotify as the stream source, not a Spotify partnership, and it reports attributed daily streams separately from total streams, which gives a clean isolated view of its contribution rather than a blended number. The line is sized down from the original plan because the first insertion is serving more slowly than expected, and the delivery position is stated openly below rather than assumed away.",
           components: {
-            heading: "First Insertion, Measured",
+            heading: "Delivery Position, Stated Openly",
             items: [
-              "The first insertion went live August 4 at $1,844 against a 150,000 impression goal",
-              "Through August 10 it had served 5,632 impressions and 5,604 streams, roughly 3.8 percent of goal in the first six days",
-              "If it completes in full it lands at about a $12.29 CPM, which would place it between the paid and creator lanes on cost",
-              "At the current pace it would not complete inside a twelve-week cycle, so the September line is recommended as conditional rather than assumed",
+              "The first insertion went live August 4 and is serving more slowly than the network projected",
+              "At the pace observed so far, this budget delivers in full over approximately 20 weeks rather than inside the 12-week campaign",
+              "We are working with the network to accelerate delivery and expect to improve on that pace",
+              "The campaign does not extend beyond that window on account of this lane. If delivery runs long, the tail completes on its own rather than holding the rest of the plan open",
+              "Volume is a delivery range subject to available inventory, never a guaranteed stream count, and that caveat travels with any figure quoted onward",
             ],
           },
-          tactics: [
-            "Hold the September Strive line until the first insertion demonstrates it can deliver against its impression goal",
-            "If delivery does not accelerate materially, move the line into paid social where the unit cost is measured and the delivery is certain",
-            "Report attributed streams separately from total streams, so the contribution is never blended into the headline",
-            "Treat volume as a delivery range subject to available inventory, never as a guaranteed stream count, and carry that caveat with any figure quoted onward",
-          ],
         },
         {
           label: "C",
@@ -610,7 +607,7 @@ export const eightyTwoMajorSeptember: StrategyPlanData = {
           },
         },
       ],
-      footnote: "DSP editorial carries no budget line in any tier. It runs through Kakao's distribution relationships identically in every package, with CCD supplying strategy, assets, and measurement inside the retainer. The Strive line in the two $50,000 builds is conditional on the current insertion proving it can deliver; if it does not, that $6,000 moves to paid social rather than repeating the buy.",
+      footnote: "DSP editorial carries no budget line. It runs through Kakao's distribution relationships with CCD supplying strategy, assets, and measurement inside the retainer. Strive is sized at $4,000 rather than a larger commitment specifically because of the delivery pace on the current insertion, and the campaign timeline is not extended to wait on it.",
     },
 
     // ===================================================================
@@ -701,7 +698,7 @@ export const eightyTwoMajorSeptember: StrategyPlanData = {
       number: "11",
       navLabel: "Flight",
       title: "Proposed Media Flight",
-      intro: "Phasing shown at the Full tier. Core runs the same three phases at roughly half the deployable weight, with Strive removed. Phase budgets are directional. CCD reallocates weekly against live cost per click, which is how the SIGN traffic flight moved from $0.114 per click in week one to $0.094 by week three while weekly clicks rose from 12,278 to 14,917.",
+      intro: "Three phases across the ~12-week cycle. Phase budgets are directional. CCD reallocates weekly against live cost per click, which is how the SIGN traffic flight moved from $0.114 per click in week one to $0.094 by week three while weekly clicks rose from 12,278 to 14,917.",
       totalBudget: "$50,000",
       phases: [
         {
@@ -744,7 +741,7 @@ export const eightyTwoMajorSeptember: StrategyPlanData = {
           ],
         },
       ],
-      footnote: "Phase budgets sum to the $50,000 total and are directional. With the fan channel fee out of the budget there is no fixed, non-reallocatable line left in the plan, so the full deployable is live to weekly optimization. Weekly reallocation across creative, audience, and lane is the mechanism that produced the cost improvements in the SIGN flight, and it requires the latitude to move money between these phases.",
+      footnote: "Phase budgets sum to the $50,000 total and are directional. Paid social moves weekly against live cost per click. The edits budget is committed per flight, the fan page line bills monthly, and the Strive line runs on its own delivery schedule that extends past the campaign window. Weekly reallocation across creative, audience, and lane is the mechanism that produced the cost improvements in the SIGN flight, and it requires the latitude to move money between these phases.",
     },
 
     // ===================================================================
@@ -789,10 +786,27 @@ export const eightyTwoMajorSeptember: StrategyPlanData = {
           ],
         },
         {
-          name: "Creator + Clipping",
+          name: "Edits",
           cells: [
             { weekIndex: 1, intensity: "low", label: "BRIEF" },
             { weekIndex: 2, intensity: "low", label: "BRIEF" },
+            { weekIndex: 3, intensity: "medium", label: "SEED" },
+            { weekIndex: 4, intensity: "high", label: "FLT 1" },
+            { weekIndex: 5, intensity: "high", label: "FLT 1" },
+            { weekIndex: 6, intensity: "medium", label: "FLT 1" },
+            { weekIndex: 7, intensity: "low" },
+            { weekIndex: 8, intensity: "low", label: "BRIEF" },
+            { weekIndex: 9, intensity: "high", label: "FLT 2" },
+            { weekIndex: 10, intensity: "high", label: "FLT 2" },
+            { weekIndex: 11, intensity: "medium", label: "FLT 2" },
+            { weekIndex: 12, intensity: "low" },
+          ],
+        },
+        {
+          name: "Creator Program",
+          cells: [
+            { weekIndex: 1, intensity: "low", label: "BRIEF" },
+            { weekIndex: 2, intensity: "low" },
             { weekIndex: 3, intensity: "medium", label: "SEED" },
             { weekIndex: 4, intensity: "high", label: "POST" },
             { weekIndex: 5, intensity: "high", label: "POST" },
@@ -800,13 +814,13 @@ export const eightyTwoMajorSeptember: StrategyPlanData = {
             { weekIndex: 7, intensity: "low" },
             { weekIndex: 8, intensity: "low" },
             { weekIndex: 9, intensity: "medium", label: "TOUR" },
-            { weekIndex: 10, intensity: "medium" },
+            { weekIndex: 10, intensity: "low" },
             { weekIndex: 11, intensity: "low" },
             { weekIndex: 12, intensity: "low" },
           ],
         },
         {
-          name: "Fan Channels",
+          name: "Fan Pages",
           cells: [
             { weekIndex: 1, intensity: "low", label: "SETUP" },
             { weekIndex: 2, intensity: "low" },
@@ -900,7 +914,7 @@ export const eightyTwoMajorSeptember: StrategyPlanData = {
             "Dark creative tests open at low spend, optimizing to the second click",
             "Fan channel network flips to teaser content on the label asset calendar",
             "Pre-save flow built and staged for the CRM lane",
-            "Creator briefs drafted against culture-first themes, allowing for creator ramp time",
+            "Edit and creator briefs drafted against culture-first themes, allowing for ramp time on both",
           ],
         },
         {
@@ -911,7 +925,7 @@ export const eightyTwoMajorSeptember: StrategyPlanData = {
             "Pre-save push at full weight across fan channels and owned socials",
             "Retargeting pools rebuilt and sized off the SIGN high-intent click audience",
             "DSP pitch packet delivered ahead of the release-week window",
-            "Creator posting scheduled to land from release day forward",
+            "Edits Flight 1 and the creator round both scheduled to land from release day forward",
           ],
         },
         {
@@ -920,7 +934,7 @@ export const eightyTwoMajorSeptember: StrategyPlanData = {
           items: [
             "Proven creative scaled hard from day one across Meta and TikTok",
             "Release-day CRM drop to the owned list, followed by a release-week sequence",
-            "Creator and clipping posting concentrated across the week",
+            "Edits Flight 1 and creator posting concentrated across the week",
             "Full-record watch matrix live, monitoring every track for organic movement",
             "Daily reporting cadence through the week rather than weekly",
           ],
@@ -930,7 +944,7 @@ export const eightyTwoMajorSeptember: StrategyPlanData = {
           title: "Scale and read the record",
           items: [
             "Paid scaling against the best-performing creative and audience combinations",
-            "Paid boost applied behind organic winners through creator partner codes",
+            "Paid boost applied behind organic winners through partner codes, and Flight 2 briefs written off what broke",
             "Any B-side showing organic movement gets budget within days, not weeks",
             "Playlist reach assessed for concentration risk, with additional lanes worked if one placement dominates",
           ],
@@ -946,7 +960,7 @@ export const eightyTwoMajorSeptember: StrategyPlanData = {
           ],
         },
       ],
-      footnote: "The grid shows the Full tier. At Core the same rows run with Strive removed and proportionally lighter paid and creator weight. The fan channel row carries no media cost in either tier and runs heaviest across the tour window, when the fan video it reshares is actually being shot. Weeks 9 through 12 assume Q4 routing lands in that window. Tour-specific spend authorizes its own budget once dates confirm; what is shown here is the campaign work that continues through it.",
+      footnote: "The fan page row runs heaviest across the tour window, when the fan video it reshares is actually being shot. The edits row shows two distinct flights, the second rebriefed on what broke in the first. Strive continues serving past week 12 on its own delivery schedule without holding the campaign open. Weeks 9 through 12 assume Q4 routing lands in that window. Tour-specific spend authorizes its own budget once dates confirm; what is shown here is the campaign work that continues through it.",
     },
 
     // ===================================================================
@@ -957,33 +971,13 @@ export const eightyTwoMajorSeptember: StrategyPlanData = {
       number: "13",
       navLabel: "Pricing",
       title: "Final Pricing",
-      intro: "Both levels are all-in for the September cycle, roughly 12 weeks. The CCD retainer and media management fee are line items inside the budget, not additions to it. Everything below the fee lines is deployable to media and creators. Neither tier carries a fan channel line: those channels now run internally, and the roughly $8,000 to $12,000 that funded them externally has moved into paid social and the creator round. The optional lane at the bottom sits outside both tiers and is contracted separately.",
+      intro: "One all-in budget for the September cycle, roughly 12 weeks. The CCD retainer and media management fee are line items inside the budget, not additions to it. Everything below the fee lines is deployable to media, creators, and channels. The creator budget is split into two lines because the two formats performed very differently last cycle and are managed as separate lanes.",
       tiers: [
         {
-          label: "Digital / Tier 1",
-          budget: "$30,000",
-          name: "Core",
-          tagline: "Protect the release. Both proven lanes funded above SIGN levels.",
-          deployable: "$19,600",
-          feeBreakdown: {
-            retainer: "$7,500",
-            retainerDetail: "Cycle retainer, ~12 weeks",
-            mediaManagement: "$2,900",
-            mediaManagementLabel: "Media Management",
-            mediaManagementDetail: "15% on ~$19,600 managed media",
-          },
-          breakdown: [
-            { vertical: "CCD Cycle Retainer", amount: "$7,500" },
-            { vertical: "Media Management (15%)", amount: "$2,900" },
-            { vertical: "Paid Social (Meta + TikTok)", amount: "$12,600" },
-            { vertical: "Creator + Clipping Round", amount: "$7,000" },
-          ],
-        },
-        {
-          label: "Digital / Tier 2",
+          label: "September Campaign",
           budget: "$50,000",
-          name: "Full",
-          tagline: "Extend the release. Roughly 1.9x deployable, plus conditional floor support.",
+          name: "All-In, ~12 Weeks",
+          tagline: "Every line sized against a measured unit cost from the last cycle.",
           featured: true,
           deployable: "$37,000",
           feeBreakdown: {
@@ -996,9 +990,11 @@ export const eightyTwoMajorSeptember: StrategyPlanData = {
           breakdown: [
             { vertical: "CCD Cycle Retainer", amount: "$7,500" },
             { vertical: "Media Management (15%)", amount: "$5,500" },
-            { vertical: "Paid Social (Meta + TikTok)", amount: "$20,000" },
-            { vertical: "Creator + Clipping Round", amount: "$11,000" },
-            { vertical: "Strive Playlist Network", amount: "$6,000" },
+            { vertical: "Paid Social (Meta + TikTok)", amount: "$18,000" },
+            { vertical: "Edits (Two Flights)", amount: "$6,000" },
+            { vertical: "Creator Program", amount: "$5,000" },
+            { vertical: "Fan Pages, Tour Content ($2,000/mo)", amount: "$4,000" },
+            { vertical: "Strive Playlist Network", amount: "$4,000" },
           ],
         },
       ],
@@ -1010,7 +1006,7 @@ export const eightyTwoMajorSeptember: StrategyPlanData = {
           description: "Sits outside the CCD budget and is not funded by either digital tier. CCD asks that any activation carries a capture mechanic and produces vertical-native, paid-usable creative.",
         },
       ],
-      footnote: "Neither tier carries a fan channel line. Those channels run in-house inside the retainer as a clipping and tour-resharing surface, which removes the only fixed, non-reallocatable cost the plan had and leaves the full deployable open to weekly optimization. Strive bills on monthly insertion and its volume is a delivery range subject to inventory, not a guaranteed stream count. Its line is conditional on the live insertion proving delivery, and reallocates to paid social if it does not. Budgets are scoped to the September release cycle. The Q4 tour window and the 1H 2027 releases each authorize fresh budgets on this same structure, and inherit the infrastructure, warmed audiences, and tested creative this campaign produces.",
+      footnote: "The fan page line runs in-house at $2,000 per month, half the prior external rate, budgeted across the release and tour windows. The creator budget is split because the two formats returned very different results last cycle: edits at a $2.94 CPM against the creator-led round at $10.73, which is why edits carry the larger share. Strive is sized at $4,000 against a delivery pace that currently runs to roughly 20 weeks, and the campaign is not extended to wait on it. Budgets are scoped to the September release cycle. The Q4 tour window and the 1H 2027 releases each authorize fresh budgets on this same structure, and inherit the infrastructure, warmed audiences, and tested creative this campaign produces.",
     },
   ],
 };
