@@ -276,7 +276,7 @@ const html = `<!DOCTYPE html>
       </div>
     </div>
     <div class="cover-foot">
-      <div><div class="mono dim">The moment</div><div class="cv">"Damned" is doing over 850K streams a day on Spotify alone, organically</div></div>
+      <div><div class="mono dim">The moment</div><div class="cv">"Damned" is doing over 930K streams a day on Spotify alone, organically</div></div>
       <div><div class="mono dim">Prepared By</div><div class="cv">Geoff Shames / Co-Founder, CCD</div></div>
     </div>
   </section>
@@ -314,18 +314,25 @@ const html = `<!DOCTYPE html>
       <p class="desc">The top posts using the Damned sound right now, ranked by views. These are the ones for Miguel to react to, stitch, or duet while the moment is hot.</p>
     </div>
     <div class="react-momentum">
-      <div class="rm"><div class="rn">857K</div><span class="rl">Spotify streams per day, 7 day average</span></div>
-      <div class="rm"><div class="rn">+23.0M</div><span class="rl">Spotify streams added this month (+46%)</span></div>
-      <div class="rm"><div class="rn">1.57M</div><span class="rl">Lifetime posts using the sound (+530K this month)</span></div>
-      <div class="rm"><div class="rn">+44%</div><span class="rl">Shazams month over month</span></div>
+      <div class="rm"><div class="rn">935K</div><span class="rl">Spotify streams per day, 7 day average</span></div>
+      <div class="rm"><div class="rn">+24.3M</div><span class="rl">Spotify streams added this month (+42%)</span></div>
+      <div class="rm"><div class="rn">1.71M</div><span class="rl">Lifetime posts using the sound (+453K this month)</span></div>
+      <div class="rm"><div class="rn">511M</div><span class="rl">Views on top posts (+179M this month)</span></div>
     </div>
     <div class="react-grid">
 
       <article class="card">
         <div class="embed" data-platform="tt" data-id="7667529904593882398"><button class="embed-btn" type="button">&#9654; Load the clip</button><span class="embed-meta">TikTok &middot; @shootbyshelking</span></div>
-        <div class="rmeta"><span class="rh">@shootbyshelking</span><span class="rv">32.1M &middot; 456K shares</span></div>
-        <div class="rdate">TikTok &middot; Posted Jul 28 &middot; 18.5% like rate</div>
-        <p class="rwhy"><b>Start here.</b> A photographer's graduation shoot, captioned "when you trusted the photographer with less than 300 followers." The biggest post on the sound by a wide margin, with 19K comments of people in their feelings. A warm co-sign from Miguel lands in the middle of all of it.</p>
+        <div class="rmeta"><span class="rh">@shootbyshelking</span><span class="rv">38M &middot; 6.9M likes</span></div>
+        <div class="rdate">TikTok &middot; Posted Jul 28 &middot; still climbing</div>
+        <p class="rwhy"><b>Start here.</b> A photographer's graduation shoot, captioned "when you trusted the photographer with less than 300 followers." The biggest post on the sound by a wide margin, and it has added 6M views since we first flagged it. 21K comments of people in their feelings. A warm co-sign from Miguel lands in the middle of all of it.</p>
+      </article>
+
+      <article class="card">
+        <div class="embed" data-platform="tt" data-id="7670242227322506527"><button class="embed-btn" type="button">&#9654; Load the clip</button><span class="embed-meta">TikTok &middot; @the_only_wyatt</span></div>
+        <div class="rmeta"><span class="rh">@the_only_wyatt</span><span class="rv">9.7M &middot; 766K likes</span></div>
+        <div class="rdate">TikTok &middot; Posted Aug 4 &middot; newest big one</div>
+        <p class="rwhy"><b>React angle:</b> self-deprecating tattoo humor, "the tattoo I got before my frontal lobe developed," set to the official sound. The biggest post to break out in the last two weeks and the funniest one on the board. A quick "wait, that is my song" reaction fits it perfectly.</p>
       </article>
 
       <article class="card">
@@ -351,7 +358,7 @@ const html = `<!DOCTYPE html>
 
       <article class="card">
         <div class="embed" data-platform="tt" data-id="7664693832973421854"><button class="embed-btn" type="button">&#9654; Load the clip</button><span class="embed-meta">TikTok &middot; @stupid4188</span></div>
-        <div class="rmeta"><span class="rh">@stupid4188</span><span class="rv">5.1M views</span></div>
+        <div class="rmeta"><span class="rh">@stupid4188</span><span class="rv">5.6M views</span></div>
         <div class="rdate">TikTok &middot; Posted Jul 20</div>
         <p class="rwhy"><b>React angle:</b> a carnival claw-machine moment, "thanks mom for saying no." Light, funny, and still climbing. Easy to duet.</p>
       </article>
@@ -365,7 +372,7 @@ const html = `<!DOCTYPE html>
 
       <article class="card">
         <div class="embed" data-platform="ig" data-code="DayD3jVukoB"><button class="embed-btn" type="button">&#9654; Load the clip</button><span class="embed-meta">Instagram &middot; @eviekking</span></div>
-        <div class="rmeta"><span class="rh">@eviekking</span><span class="rv">4.5M views</span></div>
+        <div class="rmeta"><span class="rh">@eviekking</span><span class="rv">4.7M views</span></div>
         <div class="rdate">Instagram &middot; Posted Jul 18</div>
         <p class="rwhy"><b>React angle:</b> the biggest Instagram post on the sound. Covers the Reels side, where the song is growing fastest off a small base.</p>
       </article>
@@ -392,7 +399,7 @@ const html = `<!DOCTYPE html>
       </article>
 
     </div>
-    <p class="tbl-note">Top posts using the Damned sound, ranked by views, current as of August 7, 2026. This set moves fast and is worth refreshing before each push.</p>
+    <p class="tbl-note">Top posts using the Damned sound, ranked by views, current as of August 17, 2026. This set moves fast and is worth refreshing before each push.</p>
   </section>
   <!-- SECTION 1: CATALOG PLAYS -->
   <section class="sec wrap" id="catalog">
@@ -621,7 +628,7 @@ const html = `<!DOCTYPE html>
   </section>
 
   <footer class="wrap">
-    <p class="fn"><b>Notes.</b> View counts are current as of August 7, 2026 and will drift. Every clip was verified live and embeddable at build. Frame-level teardowns were produced with TwelveLabs video AI (Pegasus and Marengo) run on the downloaded clips, not on captions alone. Format-steal examples are not strictly catalog records; they are included because the structure travels.</p>
+    <p class="fn"><b>Notes.</b> View counts are current as of August 17, 2026 and will drift. Every clip was verified live and embeddable at build. Frame-level teardowns were produced with TwelveLabs video AI (Pegasus and Marengo) run on the downloaded clips, not on captions alone. Format-steal examples are not strictly catalog records; they are included because the structure travels.</p>
   </footer>
 </div>
 
