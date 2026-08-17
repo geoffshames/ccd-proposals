@@ -36,7 +36,7 @@ export function Tiers() {
                   whileHover={{ y: -2, transition: { duration: 0.2 } }}
                 >
                   {isFeatured && (
-                    <div className="absolute top-0 right-0 bg-accent text-white text-[11px] font-bold tracking-[0.18em] uppercase px-4 py-2">
+                    <div className="absolute top-0 right-0 bg-accent text-[color:var(--on-accent)] text-[11px] font-bold tracking-[0.18em] uppercase px-4 py-2">
                       Recommended
                     </div>
                   )}
@@ -109,7 +109,7 @@ export function Tiers() {
                     )}&body=${encodeURIComponent(
                       `Hi Geoff,\n\nWe'd like to get started with the "${tier.name}" option for ${PROJECT.client.name}. Let's set it up.\n\nThanks`
                     )}`}
-                    className="mt-8 block w-full text-center bg-accent text-white font-semibold text-[14px] py-4 rounded-none tracking-[-0.01em] hover:opacity-90 transition-opacity"
+                    className="mt-8 block w-full text-center bg-accent text-[color:var(--on-accent)] font-semibold text-[14px] py-4 rounded-none tracking-[-0.01em] hover:opacity-90 transition-opacity"
                   >
                     Get Started
                   </a>

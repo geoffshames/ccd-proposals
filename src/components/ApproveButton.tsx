@@ -62,7 +62,7 @@ export function ApproveButton({
             ? "bg-white/[0.08] text-text-primary cursor-default"
             : isErr
             ? "bg-white/[0.08] text-text-primary"
-            : "bg-accent text-white"
+            : "bg-accent text-[color:var(--on-accent)]"
         }`}
       >
         {state === "loading"

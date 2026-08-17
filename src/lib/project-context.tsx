@@ -22,6 +22,11 @@ export type ProjectData = {
   clientLegalName?: string;
 
   accentColor: string;
+  /**
+   * Optional text color used ON TOP of accent-filled elements (buttons, badges).
+   * Defaults to white. Set to a dark value for light accents (e.g. yellow).
+   */
+  onAccent?: string;
   client: {
     name: string;
     logo: string;

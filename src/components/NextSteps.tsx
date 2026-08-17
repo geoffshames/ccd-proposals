@@ -74,7 +74,7 @@ export function NextSteps() {
                 href={`mailto:${PROJECT.studio.email}`}
                 whileHover={{ scale: 1.03 }}
                 whileTap={{ scale: 0.97 }}
-                className="inline-block bg-accent text-white font-semibold text-[15px] px-10 py-4 rounded-none hover:bg-accent/90 transition-colors"
+                className="inline-block bg-accent text-[color:var(--on-accent)] font-semibold text-[15px] px-10 py-4 rounded-none hover:bg-accent/90 transition-colors"
               >
                 Get in Touch
               </motion.a>

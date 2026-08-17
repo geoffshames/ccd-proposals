@@ -36,7 +36,7 @@ export function LanguageSwitch({ compact = false }: { compact?: boolean }) {
 
   return (
     <div className="flex items-center text-[11px] font-mono tracking-[0.14em] uppercase backdrop-blur-xl bg-bg/70 border border-text-muted/25 shrink-0">
-      <span className={`${pad} bg-accent text-white font-bold`} aria-current="true">
+      <span className={`${pad} bg-accent text-[color:var(--on-accent)] font-bold`} aria-current="true">
         {currentCode}
       </span>
       {alts.map((alt) => (
