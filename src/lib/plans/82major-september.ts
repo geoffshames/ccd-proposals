@@ -516,12 +516,13 @@ export const eightyTwoMajorSeptember: StrategyPlanData = {
             ],
           },
           examples: [
-            "Partner estimate at this budget: 50 to 500 posts and 2M to 5M views across the two flights",
-            "At the low end that is a $3.00 CPM, effectively the $2.94 the same format delivered last cycle, so the floor of the range is grounded in measured performance rather than projection",
-            "At the high end it is a $1.20 CPM, roughly 2.4 times last cycle's efficiency",
+            "Partner estimate at this budget: 2M to 5M views across the two flights, delivered across 50 to 500 posts",
+            "The buy is priced on CPM, so views are what the budget purchases and the post count is the residual. A lower post count at the same view total means each post carried more, so the bottom of that range is the stronger creative outcome, not the weaker one",
+            "At 50 posts the range implies 40,000 to 100,000 views per post, at or above the 34,000 per post the format averaged last cycle. At 500 posts it implies 4,000 to 10,000, meaning volume compensating for softer individual creative",
+            "At the low end of the view range that is a $3.00 CPM, effectively the $2.94 the same format delivered last cycle, so the floor is grounded in measured performance rather than projection. At the high end it is a $1.20 CPM",
             "For reference, last cycle delivered 1.70M views across 50 posts on $5,000",
           ],
-          kpis: ["2M to 5M views projected", "CPM against the $2.94 benchmark", "Flight 2 lift over Flight 1"],
+          kpis: ["2M to 5M views projected", "Views per post against 34,000", "CPM against the $2.94 benchmark"],
         },
         {
           label: "C",
@@ -560,7 +561,7 @@ export const eightyTwoMajorSeptember: StrategyPlanData = {
           },
         },
       ],
-      footnote: "Paid social is the largest deployable line at $18,000 authorized, working at $20,000 once the funds carried forward from the SIGN flight are applied, with edits at $6,000 across two flights and the creator program at $5,000. Together those two lines project 2.5M to 7M views on $11,000, against 2.17M delivered on $10,000 last cycle, so even the floor of the range improves on what was measured. View ranges are estimates supplied by the clipping and creator partners and are not guaranteed delivery; they are reported here because the low end of each sits at a rate this account has already achieved. Paid social is reallocated weekly against live cost per click; the two creator lines are committed per flight.",
+      footnote: "Paid social is the largest deployable line at $18,000 authorized, working at $20,000 once the funds carried forward from the SIGN flight are applied, with edits at $6,000 across two flights and the creator program at $5,000. Together those two lines project 2.5M to 7M views on $11,000, against 2.17M delivered on $10,000 last cycle, so even the floor of the range improves on what was measured. Both lanes are bought on CPM, which means views are the unit the budget purchases and post and creator counts are the residual: fewer posts at the same view total is the better result, because it means each one carried more. View ranges are estimates supplied by the clipping and creator partners and are not guaranteed delivery; they are reported here because the low end of each sits at a rate this account has already achieved. Paid social is reallocated weekly against live cost per click; the two creator lines are committed per flight.",
     },
 
     // ===================================================================
