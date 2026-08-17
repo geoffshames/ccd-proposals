@@ -36,11 +36,9 @@ import { polkadotfx } from "./polkadotfx";
 import { sunChaser } from "./sun-chaser";
 import { kurtDeimerSilentLucidity } from "./kurt-deimer-silent-lucidity";
 import { electricGuestEveryday } from "./electric-guest-everyday";
-import { ponziBot } from "./ponzi-bot";
 import type { ProjectData } from "../project-context";
 
 export const PROJECTS: Record<string, ProjectData> = {
-  "ponzi-bot": ponziBot,
   "electric-guest-everyday": electricGuestEveryday,
   "framework-home-remodeling": frameworkHomeRemodeling,
   "kurt-deimer-silent-lucidity": kurtDeimerSilentLucidity,
