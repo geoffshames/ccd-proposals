@@ -515,7 +515,13 @@ export const eightyTwoMajorSeptember: StrategyPlanData = {
               "Trending shows and films only, no rival-group content, the guardrail that produced the top-performing edits last cycle",
             ],
           },
-          kpis: ["CPM against the $2.94 benchmark", "Posts above 250K views", "Flight 2 lift over Flight 1"],
+          examples: [
+            "Partner estimate at this budget: 50 to 500 posts and 2M to 5M views across the two flights",
+            "At the low end that is a $3.00 CPM, effectively the $2.94 the same format delivered last cycle, so the floor of the range is grounded in measured performance rather than projection",
+            "At the high end it is a $1.20 CPM, roughly 2.4 times last cycle's efficiency",
+            "For reference, last cycle delivered 1.70M views across 50 posts on $5,000",
+          ],
+          kpis: ["2M to 5M views projected", "CPM against the $2.94 benchmark", "Flight 2 lift over Flight 1"],
         },
         {
           label: "C",
@@ -531,7 +537,13 @@ export const eightyTwoMajorSeptember: StrategyPlanData = {
               "Winners handed to the official channel and the fan pages rather than left to run once",
             ],
           },
-          kpis: ["Cost per view against the creator benchmark", "Follower conversion off creator posts", "Organic pickup"],
+          examples: [
+            "Partner estimate at this budget: 6 to 10 creators and 500K to 2M views",
+            "At the low end that is a $10.00 CPM, in line with the $10.73 the creator round delivered last cycle",
+            "At the high end it is a $2.50 CPM, which would put creator-led content on par with the edits format for the first time",
+            "For reference, last cycle delivered roughly 466K views across 7 creators on $5,000",
+          ],
+          kpis: ["500K to 2M views projected", "Follower conversion off creator posts", "Organic pickup"],
         },
         {
           label: "D",
@@ -548,7 +560,7 @@ export const eightyTwoMajorSeptember: StrategyPlanData = {
           },
         },
       ],
-      footnote: "Paid social is the largest deployable line at $18,000 authorized, working at $20,000 once the funds carried forward from the SIGN flight are applied, with edits at $6,000 across two flights and the creator program at $5,000. Paid social is reallocated weekly against live cost per click; the two creator lines are committed per flight.",
+      footnote: "Paid social is the largest deployable line at $18,000 authorized, working at $20,000 once the funds carried forward from the SIGN flight are applied, with edits at $6,000 across two flights and the creator program at $5,000. Together those two lines project 2.5M to 7M views on $11,000, against 2.17M delivered on $10,000 last cycle, so even the floor of the range improves on what was measured. View ranges are estimates supplied by the clipping and creator partners and are not guaranteed delivery; they are reported here because the low end of each sits at a rate this account has already achieved. Paid social is reallocated weekly against live cost per click; the two creator lines are committed per flight.",
     },
 
     // ===================================================================
