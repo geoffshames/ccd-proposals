@@ -285,7 +285,7 @@ const html = `<!DOCTYPE html>
   <div class="navbar">
     <div class="navbar-in">
       <a class="nb-brand" href="#top">Miguel · Damned</a>
-      <div class="nb-jump"><a href="#react">React-Ready</a><a href="#engagement">Engagement</a><a href="#method">Method</a></div>
+      <div class="nb-jump"><a href="#react">React-Ready</a><a href="#philippines">Philippines</a><a href="#engagement">Engagement</a><a href="#method">Method</a></div>
       <div class="nb-filters" id="filter">
         <button class="chip active" data-f="all">All 9</button>
         <button class="chip" data-f="catalog">Catalog plays</button>
@@ -400,6 +400,53 @@ const html = `<!DOCTYPE html>
 
     </div>
     <p class="tbl-note">Top posts using the Damned sound, ranked by views, current as of August 17, 2026. This set moves fast and is worth refreshing before each push.</p>
+  </section>
+
+  <!-- SECTION: PHILIPPINES -->
+  <section class="sec wrap" id="philippines">
+    <div class="sec-head">
+      <div class="row"><span class="num">PH</span><span class="ln"></span></div>
+      <h2>Philippines</h2>
+      <p class="desc">The song's third-biggest market and the fastest-moving one. Spotify added it to Viral Hits Philippines on August 13, where it sits at number 7. The posts below out-engage almost everything above.</p>
+    </div>
+    <div class="react-momentum">
+      <div class="rm"><div class="rn">#3</div><span class="rl">Market for the sound, behind the US and UK</span></div>
+      <div class="rm"><div class="rn">73K</div><span class="rl">Posts using the sound in the Philippines</span></div>
+      <div class="rm"><div class="rn">149M</div><span class="rl">Views on Philippine posts</span></div>
+      <div class="rm"><div class="rn">#7</div><span class="rl">Position on Viral Hits Philippines</span></div>
+    </div>
+    <div class="react-grid">
+
+      <article class="card">
+        <div class="embed" data-platform="tt" data-id="7664068605587295496"><button class="embed-btn" type="button">&#9654; Load the clip</button><span class="embed-meta">TikTok &middot; @heyyyychangg</span></div>
+        <div class="rmeta"><span class="rh">@heyyyychangg</span><span class="rv">3.1M &middot; 736K likes</span></div>
+        <div class="rdate">TikTok &middot; Posted Jul 19 &middot; 23.4% like rate</div>
+        <p class="rwhy"><b>React angle:</b> the biggest Philippine post on the sound, and it runs on the official audio so the streams route back correctly. A 23% like rate beats anything in the main set.</p>
+      </article>
+
+      <article class="card">
+        <div class="embed" data-platform="tt" data-id="7669206652335246613"><button class="embed-btn" type="button">&#9654; Load the clip</button><span class="embed-meta">TikTok &middot; @yana.snoopie</span></div>
+        <div class="rmeta"><span class="rh">@yana.snoopie</span><span class="rv">3.0M &middot; 97K shares</span></div>
+        <div class="rdate">TikTok &middot; Posted Aug 1 &middot; 24.6% like rate</div>
+        <p class="rwhy"><b>React angle:</b> the highest like rate of any post on the sound in any market, plus a 3.2% share rate. People are not just watching this one, they are sending it to each other.</p>
+      </article>
+
+      <article class="card">
+        <div class="embed" data-platform="tt" data-id="7670600337274817813"><button class="embed-btn" type="button">&#9654; Load the clip</button><span class="embed-meta">TikTok &middot; @sumatcham</span></div>
+        <div class="rmeta"><span class="rh">@sumatcham</span><span class="rv">1.2M &middot; 49K shares</span></div>
+        <div class="rdate">TikTok &middot; Posted Aug 5 &middot; 4.0% share rate</div>
+        <p class="rwhy"><b>React angle:</b> a boyfriend post on the official audio with the highest share rate on the whole board. The romance lane travels further here than anywhere else.</p>
+      </article>
+
+      <article class="card">
+        <div class="embed" data-platform="tt" data-id="7669097703560760596"><button class="embed-btn" type="button">&#9654; Load the clip</button><span class="embed-meta">TikTok &middot; @sumatcham</span></div>
+        <div class="rmeta"><span class="rh">@sumatcham</span><span class="rv">1.0M &middot; 39K shares</span></div>
+        <div class="rdate">TikTok &middot; Posted Aug 1 &middot; 3.8% share rate</div>
+        <p class="rwhy"><b>React angle:</b> the same creator hitting twice in a week on the same format. A reply or duet reaches an audience already posting about the song repeatedly.</p>
+      </article>
+
+    </div>
+    <p class="tbl-note">Philippine posts and market figures current as of August 17, 2026. Other Philippine creators worth watching on this sound: @meganthe14u, @cyrentyiha, @xo.dr3, @dn_soundzz.</p>
   </section>
   <!-- SECTION 1: CATALOG PLAYS -->
   <section class="sec wrap" id="catalog">
