@@ -457,10 +457,12 @@ function MagneticButton({
   href,
   children,
   invert = false,
+  arrow = false,
 }: {
   href: string;
   children: ReactNode;
   invert?: boolean;
+  arrow?: boolean;
 }) {
   const x = useSpring(useMotionValue(0), { stiffness: 220, damping: 18 });
   const y = useSpring(useMotionValue(0), { stiffness: 220, damping: 18 });
@@ -480,13 +482,27 @@ function MagneticButton({
       href={href}
       onPointerMove={onMove}
       onPointerLeave={onLeave}
-      style={{ x, y, fontFamily: MONO, background: invert ? "transparent" : YELLOW, color: invert ? YELLOW : INK }}
+      style={{
+        x,
+        y,
+        fontFamily: MONO,
+        letterSpacing: "0.12em",
+        background: invert ? "transparent" : YELLOW,
+        color: invert ? YELLOW : INK,
+      }}
       whileTap={{ scale: 0.97 }}
-      className={`inline-block px-10 py-5 text-[13px] font-bold tracking-[0.2em] uppercase ${
-        invert ? "border border-[#EAFF00]" : ""
+      className={`group inline-flex h-14 w-full sm:w-auto items-center justify-center gap-3 px-8 text-[12px] font-bold uppercase whitespace-nowrap leading-none transition-[filter,background-color] duration-300 ${
+        invert
+          ? "border border-[#EAFF00] hover:bg-[#EAFF00]/10"
+          : "hover:brightness-110"
       }`}
     >
-      {children}
+      <span className="pt-px">{children}</span>
+      {arrow && (
+        <span aria-hidden className="text-[14px] transition-transform duration-300 group-hover:translate-x-1">
+          →
+        </span>
+      )}
     </motion.a>
   );
 }
@@ -1289,12 +1305,15 @@ function Execute() {
               if the bot wins. That's the most honest pitch in crypto — and it deserves to be heard
               from the sidewalk outside the New York Stock Exchange.
             </p>
-            <div className="flex flex-col sm:flex-row gap-5">
-              <MagneticButton href="mailto:geoff@crowdcontroldigital.com?subject=APPROVED%3A%20Ponzi%20Takes%20Wall%20Street%20(%24115K)&body=Trucks%20roll.%20Send%20the%20mobilization%20invoice.">
-                APPROVE — TRUCKS ROLL
+            <div className="flex flex-col sm:flex-row gap-4">
+              <MagneticButton
+                href="mailto:geoff@crowdcontroldigital.com?subject=APPROVED%3A%20Ponzi%20Takes%20Wall%20Street%20(%24115K)&body=Trucks%20roll.%20Send%20the%20mobilization%20invoice."
+                arrow
+              >
+                Approve · Trucks Roll
               </MagneticButton>
               <MagneticButton href="mailto:geoff@crowdcontroldigital.com?subject=Ponzi%20Takes%20Wall%20Street%20—%20Questions" invert>
-                TALK FIRST
+                Talk First
               </MagneticButton>
             </div>
             <MonoTag className="block mt-8 text-white/35">
