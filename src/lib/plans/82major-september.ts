@@ -34,7 +34,7 @@ export const eightyTwoMajorSeptember: StrategyPlanData = {
       subtitle: "A digital campaign for the September 1 comeback, priced at $50,000 all-in, with every line sized against a measured unit cost from the SIGN cycle.",
       body: [
         "This plan funds the digital campaign for the September release, lead single HEAT, out September 1 at 6:00 PM KST. The cycle runs roughly 12 weeks, from pre-release build through the Q4 U.S. tour window.",
-        "The strategic case is that the SIGN cycle already answered the hard question. Section 02 sets out what every lane returned, measured rather than estimated, and every number in this plan traces back to it. It proved 82MAJOR converts the audience it reaches, at a cost per action that most K-pop campaigns do not hit. Spotify followers moved from 149,716 at campaign start to 162,218 today, an all-time high, while the fandom conversion ratio recovered from 0.32 to 0.46. The United States went from a secondary market to the group's largest Spotify market at 70,698 monthly listeners, up 27.6 percent across the window, while worldwide listeners fell 25.1 percent on the normal post-release curve. The one market bought against is the one market that grew. Los Angeles is now a top-ten city for the group. Eight months ago the top five cities were all in Southeast Asia with no Western city on the board.",
+        "The strategic case starts with an honest read on the last cycle. SIGN launched as a single-song push on the assumption that the U.S. audience was warm and activatable. Mid-campaign data said otherwise, so the campaign pivoted into a broader awareness and audience-building effort. That pivot is why the numbers below exist: we were building an audience rather than activating one. September is the first cycle with an audience worth activating as well as building on. Section 02 sets out what every lane returned, measured rather than estimated, and every number in this plan traces back to it. The SIGN cycle proved 82MAJOR converts the audience it reaches, at a cost per action that most K-pop campaigns do not hit. Spotify followers moved from 149,716 at campaign start to 162,218 today, an all-time high, while the fandom conversion ratio recovered from 0.32 to 0.46. The United States went from a secondary market to the group's largest Spotify market at 70,698 monthly listeners, up 27.6 percent across the window, while worldwide listeners fell 25.1 percent on the normal post-release curve. The one market bought against is the one market that grew. Los Angeles is now a top-ten city for the group. Eight months ago the top five cities were all in Southeast Asia with no Western city on the board.",
         "SIGN was a campaign run against a record that was already out, with no pre-release window, no pre-save mechanic, and creative that had to be tested live. HEAT gives back all three. The single biggest efficiency gain available in this cycle is simply having three weeks before release day to validate creative, warm audiences, and build a pre-save base, so release week scales what already works instead of discovering it.",
         "Budgets here are scoped to this cycle only. The Q4 tour window and the 1H 2027 releases each authorize fresh budgets on the same structure. The infrastructure this campaign runs on, the fan channel network, the CRM lane, the warmed paid audiences, and the tested creative library, carries forward into all of them at marginal cost.",
       ],
@@ -75,7 +75,7 @@ export const eightyTwoMajorSeptember: StrategyPlanData = {
           label: "A",
           title: "The Conversion Machine Works",
           objective: "82MAJOR keeps the audience it reaches. This is the metric the entire strategy rests on, and it recovered to near its pre-release high while the audience base grew.",
-          strategy: "The fandom conversion ratio (Spotify followers per monthly listener) measures whether reach becomes a relationship or evaporates. It sat at 0.48 before the release, fell to 0.23 at the release listener peak, which is normal because a release pulls casual listeners faster than it converts fans, and stood at 0.32 when the campaign began. It is now 0.46. Followers climbing while the ratio climbs is the signature of a campaign converting rather than renting.",
+          strategy: "The fandom conversion ratio (Spotify followers per monthly listener) measures whether reach becomes a relationship or evaporates. It sat at 0.48 before the release, fell to 0.23 at the release listener peak, which is normal because a release pulls casual listeners faster than it converts fans, and stood at 0.32 when the campaign began. It is now 0.46. Followers climbing while the ratio climbs is the signature of a campaign converting rather than renting. This is also the number that justified the mid-cycle pivot: once the data showed the audience was passive rather than warm, the campaign moved from pushing a single song to building the base, and the ratio is the proof that the base being built is real.",
           components: {
             heading: "Campaign Window, June 15 To Today",
             items: [
@@ -205,6 +205,7 @@ export const eightyTwoMajorSeptember: StrategyPlanData = {
           components: {
             heading: "From Evidence To Plan",
             items: [
+              "Activate before building. The last cycle had no warm base to work, so every dollar went to reach. This one opens with followers at an all-time high, retargetable click pools, and a CRM lane, so the pre-release window activates what exists before new reach is bought on top.",
               "Fund the lanes with known unit costs. Paid social and the two creator lines are the only lanes with measured, repeatable costs per outcome, which is why they carry $29,000 of the $37,000 deployable.",
               "Concentrate rather than spread. The one market bought against was the one market that grew at scale while the rest of the world decayed.",
               "Brief culture-first from day one. The same $5,000 returned 3.6 times the reach in Phase 2 once the creative led with the trend rather than the group.",
@@ -225,11 +226,11 @@ export const eightyTwoMajorSeptember: StrategyPlanData = {
       number: "03",
       navLabel: "Philosophy",
       title: "Core Strategy & Philosophy",
-      thesis: "SIGN proved the machine converts. HEAT is the first release where that machine gets a running start. The entire gain available this cycle comes from moving work that happened after release day to before it: test the creative, warm the audience, and build the pre-save base, so release week scales instead of learns.",
+      thesis: "The SIGN cycle opened on the assumption that this audience was warm and ready to be activated. The data said otherwise, so the campaign pivoted mid-cycle from a single-song push into a broader awareness and audience-building effort. That was the right call, and what it proved is that once reached, this audience converts efficiently. So the honest read on the last cycle is that we were building an audience rather than activating one. The difference in September is that there is now something to activate. A follower base at an all-time high, retargetable pools of high-intent clickers, and a CRM lane that did not exist in June. HEAT is the first release that gets to do both at once, and this plan is built to do both.",
       hierarchy: [
         {
-          label: "Pre-Release Advantage (The Unlock)",
-          description: "SIGN was worked cold on a record already in market. HEAT has a three-week runway against a published asset calendar. That window is spent validating ad creative in dark tests, building a pre-save flow in the CRM, and warming the paid audiences that release week will retarget. Release week then deploys proven creative against an audience that already knows the record is coming. This is the single largest efficiency gain in the plan and it costs almost nothing extra to capture.",
+          label: "Activate, Then Build (The Unlock)",
+          description: "SIGN was worked cold on a record already in market, against an audience that turned out to be passive rather than warm. HEAT starts from the opposite position. There is an owned base to activate first: followers at an all-time high, the high-intent click pools the last flight produced, and a CRM lane ready to carry a pre-save flow. The three-week runway against the published asset calendar is where that activation happens, and it is also where new creative gets validated in dark tests so release week scales proven assets rather than discovering them. Activate what has been cultivated, then keep building on top of it. Both, in that order.",
         },
         {
           label: "Fandom (Foundation, Always-On)",
@@ -245,6 +246,7 @@ export const eightyTwoMajorSeptember: StrategyPlanData = {
         },
       ],
       messaging: [
+        "Activate what has been cultivated, then build on top of it. The last cycle had to create an audience; this one starts with one.",
         "Move the work forward. Everything SIGN had to learn during release week, HEAT learns before it.",
         "Spend where the audience already moved. The U.S. is now the largest market, so it is where the concentration goes.",
         "Own the audience, do not rent it. Paid drives to the CRM and the follow, not only to the play.",
