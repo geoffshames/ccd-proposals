@@ -372,7 +372,8 @@ function Marquee({
       aria-hidden
     >
       <motion.div
-        className="flex whitespace-nowrap will-change-transform"
+        className="flex whitespace-nowrap"
+        style={{ backfaceVisibility: "hidden" }}
         animate={{ x: ["0%", "-50%"] }}
         transition={{ duration, ease: "linear", repeat: Infinity }}
       >
@@ -382,8 +383,7 @@ function Marquee({
             className="text-[13px] font-bold tracking-[0.22em] pr-4"
             style={{
               fontFamily: MONO,
-              color: dark ? "transparent" : INK,
-              WebkitTextStroke: dark ? `1px ${YELLOW}` : undefined,
+              color: dark ? YELLOW : INK,
             }}
           >
             {text.repeat(3)}
