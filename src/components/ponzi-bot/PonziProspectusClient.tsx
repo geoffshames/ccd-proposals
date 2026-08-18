@@ -50,7 +50,7 @@ const hazard = (size = 12) => ({
  * ------------------------------------------------------------------------- */
 
 const TICKER_TOP =
-  "CAMPAIGN PROSPECTUS ▲ $100K WORKING BUDGET ▲ 6 TRUCK DOMINATION DAYS ▲ 60 CAB TOPS ▲ $50K SOCIAL PR FLIGHT ▲ 50M+ EARNED TARGET ▲ GENESIS WEEK ▲ EXPECT NOTHING. PLAN EVERYTHING. ▲ ";
+  "CAMPAIGN PROSPECTUS ▲ $100K WORKING BUDGET ▲ 6 TRUCK DOMINATION DAYS ▲ 60 CAB TOPS ▲ $57.5K SOCIAL PR FLIGHT ▲ 50M+ EARNED TARGET ▲ GENESIS WEEK ▲ EXPECT NOTHING. PLAN EVERYTHING. ▲ ";
 
 const TICKER_MID =
   "ADVERTISE THE JOKE. NOT THE OFFER. ▲ IF IT DOESN'T SCREENSHOT, IT DIDN'T HAPPEN ▲ EARNED IS THE PRODUCT. PAID IS THE INSURANCE. ▲ ";
@@ -148,20 +148,20 @@ const DROPS = [
 const PAID = [
   {
     name: "X ADS TAKEOVER",
-    amount: 12000,
-    pct: 48,
+    amount: 9000,
+    pct: 51,
     body: "Promoted stunt content against CT, fintwit, and finance-adjacent audiences — the platform where the narrative actually trades.",
   },
   {
     name: "PROGRAMMATIC + REDDIT",
-    amount: 8000,
-    pct: 32,
+    amount: 5500,
+    pct: 31,
     body: "Nexxen-run video and display plus natives into r/solana and r/CryptoCurrency. Reach beyond the timeline — arguments included.",
   },
   {
     name: "CRYPTO-NATIVE PLACEMENTS",
-    amount: 5000,
-    pct: 20,
+    amount: 3000,
+    pct: 18,
     body: "Dexscreener and CoinGecko inventory catching watchlist traffic at the exact moment curiosity becomes a chart tab.",
   },
 ];
@@ -220,15 +220,15 @@ const PROCEEDS = [
   },
   {
     name: "SOCIAL PR — VENDOR FLIGHT",
-    desc: "Social PR — native content distributed through a mass-reach social publishing network, sequenced to the stunt. Billed at cost; CCD briefs, sequences, and QCs the flight.",
-    amount: 50000,
-    pct: 43.5,
+    desc: "Native content distributed through a mass-reach social publishing network, sequenced to the stunt. $50,000 vendor distribution at cost plus a 15% management fee ($7,500); CCD briefs, sequences, and QCs the flight.",
+    amount: 57500,
+    pct: 50.0,
   },
   {
     name: "PAID AMPLIFICATION",
     desc: "X Ads, Nexxen programmatic, Reddit, crypto-native placements, full retargeting stack. Billed at cost.",
-    amount: 25000,
-    pct: 21.7,
+    amount: 17500,
+    pct: 15.2,
   },
   {
     name: "CCD CAMPAIGN COMMAND",
@@ -240,7 +240,7 @@ const PROCEEDS = [
 
 const FOOTNOTES = [
   ["1", "Incremental media beyond the committed $100K working budget scales at cost + 15% management."],
-  ["2", "Vendor scope beyond the committed $50K Social PR flight is optioned transparently and contracted only on client approval."],
+  ["2", "Vendor scope beyond the committed Social PR flight is optioned transparently and contracted only on client approval."],
   ["3", "Second-market flights (Miami, Austin, London) bolt on using the same creative system and vendor stack, at cost + 15%."],
   ["4", "Unspent working budget is credited or rolled at client's option. No hidden margin on media, talent, or steel."],
   ["5", "Not in scope: traditional press pitching and production shoot days — both available as add-ons, scoped and quoted separately."],
@@ -250,7 +250,7 @@ const RISKS = [
   {
     n: "RF-01",
     title: "Attention is volatile.",
-    body: "Memecoin cycles compress without warning; a competing narrative can eat the week. Mitigation: the $25K paid layer makes reach a floor, not a prayer — and the drop sequence is built to peak inside 24 hours, not across a month.",
+    body: "Memecoin cycles compress without warning; a competing narrative can eat the week. Mitigation: the $17.5K paid layer makes reach a floor, not a prayer — and the drop sequence is built to peak inside 24 hours, not across a month.",
   },
   {
     n: "RF-02",
@@ -925,7 +925,7 @@ function Machine() {
 
   return (
     <section className="px-6 md:px-12 py-28 md:py-40 max-w-[1400px] mx-auto">
-      <SectionHead index="004" title="The Machine" right="$50,000 · SOCIAL PR" />
+      <SectionHead index="004" title="The Machine" right="$57,500 · SOCIAL PR" />
       <div className="grid lg:grid-cols-[1fr_360px] gap-16">
         <div ref={ref} className="relative">
           {/* progress spine */}
@@ -953,7 +953,7 @@ function Machine() {
 
         <div className="space-y-6">
           {[
-            ["$50K", "SOCIAL PR FLIGHT", "Native content pushed through a mass-reach social publishing network, sequenced to the stunt. Billed at cost — CCD takes no margin on the flight."],
+            ["$57.5K", "SOCIAL PR FLIGHT", "$50K vendor distribution at cost plus a 15% management fee ($7,500). CCD briefs, sequences, and QCs every post."],
             ["100M+", "NETWORK REACH", "Aggregate follower base the Social PR flight distributes across — native cuts of the stunt land in feeds, not press releases."],
             ["5", "WAR ROOM DAYS", "CCD's daily command cycle across client, vendor, and paid while the moment is live."],
             ["100%", "DISCLOSURE QC", "Every network post runs against the brief before it drops — the joke stays compliant, the posture stays clean."],
@@ -980,14 +980,14 @@ function Amplifier() {
   return (
     <section className="border-y border-[#1e1e1e] bg-[#0d0d0d]">
       <div className="px-6 md:px-12 py-28 md:py-40 max-w-[1400px] mx-auto">
-        <SectionHead index="005" title="The Amplifier" right="$25,000 · PAID MEDIA" />
+        <SectionHead index="005" title="The Amplifier" right="$17,500 · PAID MEDIA" />
         <div className="space-y-px bg-[#1e1e1e] border border-[#1e1e1e]">
           {PAID.map((p, i) => (
             <Reveal key={p.name} delay={i * 0.06} className="bg-[#0a0a0a] p-8 md:p-10 grid md:grid-cols-[220px_1fr_140px] gap-6 items-center">
               <div>
                 <MonoTag className="text-white/80 block">{p.name}</MonoTag>
                 <span className="text-[30px] font-bold" style={{ fontFamily: SERIF, color: YELLOW }}>
-                  ${(p.amount / 1000).toFixed(0)}K
+                  ${p.amount % 1000 === 0 ? p.amount / 1000 : (p.amount / 1000).toFixed(1)}K
                 </span>
               </div>
               <div>
