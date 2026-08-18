@@ -402,7 +402,7 @@ export const eightyTwoMajorSeptember: StrategyPlanData = {
             "Fan pages $2,000 per month on tour content, half the prior rate, across a wider channel network",
             "Strive $4,000 for streaming floor support through the decay window",
             "Plus $4,000 carried forward from the SIGN flight, deployed into paid social and a third month of fan pages at no additional fee",
-            "CRM lane: pre-save flow, release-day drop, broadcast mechanics, inside the retainer",
+            "CRM lane: pre-save flow, release-day drop, broadcast mechanics, inside the retainer, with platform message credits billed on usage (projection in Section 06)",
             "DSP editorial coordination with Kakao, full-record watch matrix, weekly dashboard reporting",
           ],
         },
@@ -441,6 +441,55 @@ export const eightyTwoMajorSeptember: StrategyPlanData = {
         },
         {
           label: "B",
+          title: "CRM Messaging Costs",
+          budget: "$0.002 per credit, usage-based",
+          timeline: "Rates current as of August 18, 2026",
+          objective:
+            "The CRM platform (Laylo) bills per message sent rather than as a flat fee, so this line scales with exactly two things: how fast the list grows and how often it is messaged. This block sets out the unit math so the cost is visible before it is incurred, and the projection in the next block turns it into a budget line.",
+          strategy:
+            "The list stood at 2,157 fans on August 18 with 1,338 added in the last seven days, roughly 190 per day, at $2.05 in paid media per signup. Messaging is billed in credits at $150 per 75,000, which is $0.002 per credit, and every message type has a fixed credit price. Each new signup also consumes roughly 59 credits of automated onboarding across the Instagram DM reply, the welcome text, and the contact card, which is the observed rate across all 127,436 credits consumed to date. The messaging line is therefore a success cost: it rises only because acquisition is working and the list is being put to use.",
+          components: {
+            heading: "The Unit Math",
+            items: [
+              "Platform rate: $150 per 75,000 credits, or $0.002 per credit, billed at the platform's published pricing",
+              "Per message: email 1 credit ($0.002), U.S. and Canada text 10 credits per 160-character segment ($0.02), photo MMS 20 credits ($0.04), international text 25 credits per segment ($0.05), Instagram DM 10 credits ($0.02)",
+              "Onboarding automation: roughly 59 credits, about $0.12, per new signup. Observed across 127,436 credits and 2,157 fans to date, and it adds about six percent to the $2.05 paid acquisition cost",
+              "A text drop costs about 10 credits ($0.02) per fan at the current list mix of roughly 75 percent U.S. phone, 10 percent international, 15 percent email",
+              "Per 1,000 fans per drop: about $20 for a text, $35 for a photo MMS, $2 for an email",
+              "Copy discipline is a real lever: 160 characters is one segment, emoji copy segments at 70 characters, and a drop written long bills as two or three segments",
+              "International texts bill at 2.5 times the U.S. rate, so the blended cost rises as the global fanbase joins through the group's own channels. The mix is monitored monthly",
+              "Credit subscription pricing runs about 12 percent below the pay-as-you-go rate and is the recommended purchasing route",
+            ],
+          },
+        },
+        {
+          label: "C",
+          title: "Messaging Cost Projection Through December",
+          budget: "$4,600 to $12,000 through Dec 31",
+          timeline: "Sits alongside the $50,000 authorization",
+          objective:
+            "Every figure below runs one formula: monthly cost equals new signups times 59 onboarding credits, plus list size times drops per month times the per-fan drop rate. Three scenarios run that formula against different growth and cadence assumptions so the label can choose the budget line rather than discover it.",
+          strategy:
+            "Growth moves the range more than cadence does. The steady case extends the current 190 signups per day; the surge case assumes release week and the tour lift acquisition to 250 per day; the lean case models paid spend easing back to 150 per day on a lighter drop rhythm. Cadence follows the drop plan being built with the label: the steady and surge cases assume a weekly rhythm averaging three text drops and one photo drop per month, and the lean case two text drops per month. These figures sit alongside the $50,000 campaign authorization rather than inside it, because messaging is a usage cost that scales with the list the campaign is building.",
+          components: {
+            heading: "Scenario Math, September Through December",
+            items: [
+              "Lean: list reaches roughly 22,000 by December 31 at 150 signups per day, two text drops per month. September $790, October $990, November $1,160, December $1,370. Total roughly $4,600",
+              "Steady: list reaches roughly 28,000 at the current 190 signups per day, weekly cadence. September $1,400, October $1,980, November $2,520, December $3,100. Total roughly $9,400",
+              "Surge: list reaches roughly 36,000 at 250 signups per day through release and tour, weekly cadence. September $1,770, October $2,530, November $3,230, December $4,000. Total roughly $12,000",
+              "On credit subscription pricing the three totals drop to roughly $4,100, $8,200, and $10,600",
+              "Every scenario carries onboarding for each new signup plus drops to the full list at the blended per-fan rates in the block above",
+              "Consumed to date for reference: 127,436 credits, about $255, covering onboarding automation for the first 2,157 fans ahead of the first broadcast",
+            ],
+          },
+          kpis: [
+            "Cost per fan per text drop held at or under $0.02",
+            "Onboarding automation tuned from 59 toward 35 credits per signup, which cuts the acquisition side of the line by roughly 40 percent",
+            "International share and segment counts reviewed monthly against the projection",
+          ],
+        },
+        {
+          label: "D",
           title: "Fan Channels, Repositioned For This Cycle",
           objective: "A deliberate change of purpose and a halved rate. The fan channels stop being a paid audience-growth play and become a clipping and resharing surface with the tour as their primary feed. The engagement is restructured at $2,000 per month against the prior $4,000, because the work changes from growing channels from zero to servicing content that already exists.",
           strategy: "The evidence in Section 02 makes the case plainly. Over the same window, on the same creative brief, the official channel returned roughly 137,000 plays per post and the fan network returned roughly 606. Growing a channel from zero against an account that already has 1.6 million followers is the expensive way to buy reach, and the measured cost per view bore that out. What the channels are genuinely good at is being a second and third surface for content that already works: clipped moments, resharing fan-shot video, and covering angles the official account will not post. That is a production function rather than a media buy, so the engagement is rebuilt around it at half the cost.",
@@ -463,7 +512,7 @@ export const eightyTwoMajorSeptember: StrategyPlanData = {
           timeline: "The channels stay live throughout, at low weight through release week and heaviest across the October and November tour window when the fan video is actually being shot.",
         },
         {
-          label: "C",
+          label: "E",
           title: "Engagement Mechanics",
           objective: "Convert passive reach into participation, which is what moves the conversion ratio rather than just the stream count.",
           tactics: [
@@ -474,7 +523,7 @@ export const eightyTwoMajorSeptember: StrategyPlanData = {
           ],
         },
       ],
-      footnote: "The CRM lane is operational inside the CCD retainer. The fan channels carry a $2,000 per month line, authorized at $4,000 and extended to $6,000, the full three-month cycle, by the funds carried forward from the SIGN flight. That is half the prior monthly rate for a wider network and a changed remit. Returning to a growth-focused engagement at the prior rate remains available as a separately priced option if the label wants owned-audience growth as an objective in its own right. This plan does not recommend it for this cycle.",
+      footnote: "The CRM lane is operational inside the CCD retainer, and platform message credits are billed on usage at the platform's published rates, with the unit math and projection carried in blocks B and C above. The fan channels carry a $2,000 per month line, authorized at $4,000 and extended to $6,000, the full three-month cycle, by the funds carried forward from the SIGN flight. That is half the prior monthly rate for a wider network and a changed remit. Returning to a growth-focused engagement at the prior rate remains available as a separately priced option if the label wants owned-audience growth as an objective in its own right. This plan does not recommend it for this cycle.",
     },
 
     // ===================================================================
