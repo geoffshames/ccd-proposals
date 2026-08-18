@@ -131,7 +131,7 @@ const DROPS = [
   {
     t: "T+2H",
     who: "NETWORK IGNITION",
-    body: "Social PR's page network pushes native cuts of the stunt into feeds across its 450M-follower reach. The timeline decides this is real, and that it is funny.",
+    body: "The Social PR network pushes native cuts of the stunt into feeds across a mass-reach page network. The timeline decides this is real, and that it is funny.",
   },
   {
     t: "T+6H",
@@ -182,7 +182,7 @@ const PHASES = [
     n: "P-01",
     name: "LOAD THE CANNON",
     date: "SEP 1 – SEP 11",
-    body: "Hazard-stripe suite to full production. Steel booked and routed. Social PR (socialpr.com) locked and briefed under embargo. Pixels, UTMs, and the counsel sign-off loop live.",
+    body: "Hazard-stripe suite to full production. Steel booked and routed. Social PR flight locked and briefed under embargo. Pixels, UTMs, and the counsel sign-off loop live.",
   },
   {
     n: "P-02",
@@ -220,7 +220,7 @@ const PROCEEDS = [
   },
   {
     name: "SOCIAL PR — VENDOR FLIGHT",
-    desc: "Social PR (socialpr.com) — native content distributed through a 450M+ follower publishing network, sequenced to the stunt. Vendor billed at cost; CCD briefs, sequences, and QCs the flight.",
+    desc: "Social PR — native content distributed through a mass-reach social publishing network, sequenced to the stunt. Billed at cost; CCD briefs, sequences, and QCs the flight.",
     amount: 50000,
     pct: 43.5,
   },
@@ -916,7 +916,7 @@ function Machine() {
 
   return (
     <section className="px-6 md:px-12 py-28 md:py-40 max-w-[1400px] mx-auto">
-      <SectionHead index="004" title="The Machine" right="$50,000 · SOCIALPR.COM" />
+      <SectionHead index="004" title="The Machine" right="$50,000 · SOCIAL PR" />
       <div className="grid lg:grid-cols-[1fr_360px] gap-16">
         <div ref={ref} className="relative">
           {/* progress spine */}
@@ -944,8 +944,8 @@ function Machine() {
 
         <div className="space-y-6">
           {[
-            ["$50K", "SOCIALPR.COM", "The social-publishing network behind launches for Polymarket, Kick × UFC, and Higgsfield. Billed at cost — CCD takes no margin on the flight."],
-            ["450M+", "NETWORK REACH", "Follower base across Social PR's page network — native cuts of the stunt land in feeds, not press releases."],
+            ["$50K", "SOCIAL PR FLIGHT", "Native content pushed through a mass-reach social publishing network, sequenced to the stunt. Billed at cost — CCD takes no margin on the flight."],
+            ["100M+", "NETWORK REACH", "Aggregate follower base the Social PR flight distributes across — native cuts of the stunt land in feeds, not press releases."],
             ["5", "WAR ROOM DAYS", "CCD's daily command cycle across client, vendor, and paid while the moment is live."],
             ["100%", "DISCLOSURE QC", "Every network post runs against the brief before it drops — the joke stays compliant, the posture stays clean."],
           ].map(([v, k, d2], i) => (
