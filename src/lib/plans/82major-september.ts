@@ -402,7 +402,7 @@ export const eightyTwoMajorSeptember: StrategyPlanData = {
             "Fan pages $2,000 per month on tour content, half the prior rate, across a wider channel network",
             "Strive $4,000 for streaming floor support through the decay window",
             "Plus $4,000 carried forward from the SIGN flight, deployed into paid social and a third month of fan pages at no additional fee",
-            "CRM lane: pre-save flow, release-day drop, broadcast mechanics, inside the retainer, with platform message credits billed on usage (projection in Section 07)",
+            "CRM lane: pre-save flow, release-day drop, broadcast mechanics, inside the retainer, with platform message credits passed through at cost (projection in Section 07)",
             "DSP editorial coordination with Kakao, full-record watch matrix, weekly dashboard reporting",
           ],
         },
@@ -475,7 +475,7 @@ export const eightyTwoMajorSeptember: StrategyPlanData = {
           ],
         },
       ],
-      footnote: "The CRM lane is operational inside the CCD retainer, and platform message credits are billed on usage at the platform's published rates, with the unit math and projection carried in Section 07. The fan channels carry a $2,000 per month line, authorized at $4,000 and extended to $6,000, the full three-month cycle, by the funds carried forward from the SIGN flight. That is half the prior monthly rate for a wider network and a changed remit. Returning to a growth-focused engagement at the prior rate remains available as a separately priced option if the label wants owned-audience growth as an objective in its own right. This plan does not recommend it for this cycle.",
+      footnote: "The CRM lane is operational inside the CCD retainer, and platform message credits are passed through at cost with no CCD fee, billed on usage at the platform's published rates; the unit math and projection are carried in Section 07. The fan channels carry a $2,000 per month line, authorized at $4,000 and extended to $6,000, the full three-month cycle, by the funds carried forward from the SIGN flight. That is half the prior monthly rate for a wider network and a changed remit. Returning to a growth-focused engagement at the prior rate remains available as a separately priced option if the label wants owned-audience growth as an objective in its own right. This plan does not recommend it for this cycle.",
     },
 
     // ===================================================================
@@ -497,7 +497,7 @@ export const eightyTwoMajorSeptember: StrategyPlanData = {
         { label: "Instagram DM", value: "$0.02", unit: "per message" },
       ],
       rateCaption:
-        "Platform rate: $150 per 75,000 credits, or $0.002 per credit, billed on usage at published pricing. A credit subscription runs roughly 12 percent below these figures and is the recommended purchasing route.",
+        "Platform rate: $150 per 75,000 credits, or $0.002 per credit, billed on usage at published pricing and passed through at cost, with no CCD fee on messaging credits. A credit subscription runs roughly 12 percent below these figures and is the recommended purchasing route.",
       dropHeading: "What One Drop Costs, Per 1,000 Fans",
       dropBars: [
         { label: "Email drop", value: 2, display: "$2" },
