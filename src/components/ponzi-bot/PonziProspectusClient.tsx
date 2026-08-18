@@ -221,25 +221,25 @@ const PROCEEDS = [
     name: "THE WALL STREET TAKEOVER",
     desc: "LED truck domination, taxi-top flight, hazard-stripe creative suite, stunt capture. Pass-through at cost.",
     amount: 25000,
-    pct: 20.8,
+    pct: 21.7,
   },
   {
     name: "THE SOCIAL PR MACHINE",
     desc: "Contracted KOL network, crypto + business press, launch war room, X Spaces, $5K meme bounty pool. Pass-through at cost.",
     amount: 50000,
-    pct: 41.7,
+    pct: 43.5,
   },
   {
     name: "PAID AMPLIFICATION",
     desc: "X Ads, Nexxen programmatic, Reddit, crypto-native placements, full retargeting stack. Billed at cost.",
     amount: 25000,
-    pct: 20.8,
+    pct: 21.7,
   },
   {
     name: "CCD CAMPAIGN COMMAND",
-    desc: "Strategy, creative direction, buying, trafficking, compliance guardrails, war room, reporting. Flat fee — 20% of working.",
-    amount: 20000,
-    pct: 16.7,
+    desc: "Strategy, creative direction, buying, trafficking, compliance guardrails, war room, reporting. Flat fee — 15% of working.",
+    amount: 15000,
+    pct: 13.0,
   },
 ];
 
@@ -316,8 +316,8 @@ function SectionHead({
 }) {
   return (
     <div className="mb-14 md:mb-20">
-      <div className="flex items-baseline justify-between border-b border-[#1e1e1e] pb-4">
-        <MonoTag className="text-[#EAFF00]">
+      <div className="flex flex-wrap items-baseline justify-between gap-x-6 gap-y-1 border-b border-[#1e1e1e] pb-4">
+        <MonoTag className="text-[#EAFF00] whitespace-nowrap">
           {"// "}
           {index} / {total}
         </MonoTag>
@@ -587,7 +587,7 @@ function Hero() {
         >
           {[
             ["WORKING BUDGET", "$100,000"],
-            ["CCD COMMAND FEE", "$20,000"],
+            ["CCD COMMAND FEE", "$15,000"],
             ["FLIGHT", "8 WEEKS · SEP–OCT 2026"],
             ["STATUS", "AWAITING APPROVAL"],
           ].map(([k, v]) => (
@@ -682,7 +682,7 @@ function Thesis() {
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img src="/images/ponzi-bot/editorial.png" alt="" className="w-full h-full object-cover" />
       </div>
-      <div ref={ref} className="px-6 md:px-12 py-28 md:py-44 max-w-[1400px] mx-auto relative">
+      <div ref={ref} className="px-6 md:px-12 py-24 md:py-32 max-w-[1400px] mx-auto relative">
         <div className="flex items-baseline justify-between mb-14">
           <MonoTag className="text-[#EAFF00]">{"// 002 / 010"}</MonoTag>
           <MonoTag className="text-white/35">OPERATING THESIS</MonoTag>
@@ -762,12 +762,14 @@ function LedTruck() {
         </div>
         {/* undercarriage */}
         <div className="flex items-center justify-between px-2 pt-3">
-          <div className="flex gap-3">
+          <div className="flex gap-3 shrink-0">
             <span className="w-8 h-8 md:w-10 md:h-10 rounded-full border-[3px] border-[#2a2a2a] bg-[#111]" />
             <span className="w-8 h-8 md:w-10 md:h-10 rounded-full border-[3px] border-[#2a2a2a] bg-[#111]" />
           </div>
-          <MonoTag className="text-white/30">MOBILE UNIT 01 · NYSE LOOP · MON–FRI 09:30–16:00</MonoTag>
-          <div className="flex gap-3">
+          <MonoTag className="text-white/30 flex-1 text-center px-3 hidden sm:block">
+            MOBILE UNIT 01 · NYSE LOOP · MKT HOURS
+          </MonoTag>
+          <div className="flex gap-3 shrink-0">
             <span className="w-8 h-8 md:w-10 md:h-10 rounded-full border-[3px] border-[#2a2a2a] bg-[#111]" />
             <span className="w-8 h-8 md:w-10 md:h-10 rounded-full border-[3px] border-[#2a2a2a] bg-[#111]" />
           </div>
@@ -783,7 +785,7 @@ function Stunt() {
   const y = useTransform(scrollYProgress, [0, 1], ["-8%", "8%"]);
 
   const routeRef = useRef<HTMLDivElement>(null);
-  const { scrollYProgress: routeProg } = useScroll({ target: routeRef, offset: ["start 0.9", "end 0.55"] });
+  const { scrollYProgress: routeProg } = useScroll({ target: routeRef, offset: ["start 0.9", "start 0.35"] });
   const pathLength = useSpring(routeProg, { stiffness: 90, damping: 24 });
 
   return (
@@ -796,7 +798,12 @@ function Stunt() {
       <div ref={imgRef} className="relative h-[54vh] md:h-[74vh] overflow-hidden border-y border-[#1e1e1e]">
         <motion.div style={{ y }} className="absolute inset-[-10%_0]">
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/images/ponzi-bot/hero1.png" alt="LED billboard truck in the Financial District" className="w-full h-full object-cover" />
+          <img
+            src="/images/ponzi-bot/hero1.png"
+            alt="LED billboard truck in the Financial District"
+            className="w-full h-full object-cover"
+            style={{ filter: "brightness(1.25) contrast(1.02)" }}
+          />
         </motion.div>
         <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-transparent to-transparent" />
         <div className="absolute bottom-6 left-6 md:left-12">
@@ -809,31 +816,42 @@ function Stunt() {
         <div ref={routeRef}>
           <div className="border border-[#1e1e1e] bg-[#0d0d0d] p-8 mb-10">
             <MonoTag className="text-white/40 block mb-6">DOMINATION LOOP · MARKET HOURS ONLY</MonoTag>
-            <svg viewBox="0 0 400 190" className="w-full">
+            <svg viewBox="0 0 400 200" className="w-full">
+              {/* faint street grid */}
+              {[40, 96, 152].map((gy) => (
+                <line key={gy} x1="0" y1={gy} x2="400" y2={gy} stroke="#1a1a1a" strokeWidth="1" />
+              ))}
+              {[110, 220, 330].map((gx) => (
+                <line key={gx} x1={gx} y1="0" x2={gx} y2="200" stroke="#1a1a1a" strokeWidth="1" />
+              ))}
               <motion.path
-                d="M 30 155 L 130 155 L 130 85 L 250 85 L 250 35 L 370 35"
+                d="M 30 160 L 150 160 L 150 96 L 260 96 L 260 40 L 372 40"
                 fill="none"
                 stroke={YELLOW}
                 strokeWidth="2.5"
                 style={{ pathLength }}
               />
-              {[
-                [30, 155, "BOWLING GREEN"],
-                [130, 85, "NYSE · 11 WALL ST"],
-                [250, 35, "FEDERAL HALL"],
-                [370, 35, "WATER ST"],
-              ].map(([x, y2, label]) => (
-                <g key={label as string}>
-                  <rect x={(x as number) - 4} y={(y2 as number) - 4} width="8" height="8" fill={YELLOW} />
+              {/* waypoints — labels placed in quadrants the path never enters */}
+              {(
+                [
+                  { x: 30, y: 160, label: "BOWLING GREEN", tx: 30, ty: 184, anchor: "start" },
+                  { x: 150, y: 96, label: "NYSE · 11 WALL ST", tx: 142, ty: 84, anchor: "end" },
+                  { x: 260, y: 96, label: "FEDERAL HALL", tx: 268, ty: 118, anchor: "start" },
+                  { x: 372, y: 40, label: "WATER ST", tx: 372, ty: 24, anchor: "end" },
+                ] as const
+              ).map((p) => (
+                <g key={p.label}>
+                  <rect x={p.x - 4} y={p.y - 4} width="8" height="8" fill={YELLOW} />
                   <text
-                    x={(x as number) - 2}
-                    y={(y2 as number) + 24}
-                    fill="rgba(255,255,255,0.5)"
+                    x={p.tx}
+                    y={p.ty}
+                    textAnchor={p.anchor}
+                    fill="rgba(255,255,255,0.55)"
                     fontSize="9"
                     fontFamily="monospace"
                     letterSpacing="1.5"
                   >
-                    {label}
+                    {p.label}
                   </text>
                 </g>
               ))}
@@ -899,7 +917,7 @@ function Machine() {
           <div className="space-y-14 pl-12">
             {DROPS.map((d, i) => (
               <Reveal key={d.t} delay={i * 0.05} className="relative">
-                <span className="absolute -left-[45px] top-1.5 w-4 h-4" style={{ background: i === 0 ? YELLOW : "#1e1e1e", outline: `1px solid ${i === 0 ? YELLOW : "#333"}` }} />
+                <span className="absolute -left-[48px] top-1.5 w-4 h-4" style={{ background: i === 0 ? YELLOW : "#1e1e1e", outline: `1px solid ${i === 0 ? YELLOW : "#333"}` }} />
                 <div className="flex items-baseline gap-5 mb-2">
                   <span className="text-[26px] md:text-[34px] font-bold" style={{ fontFamily: SERIF, color: YELLOW }}>
                     {d.t}
@@ -999,12 +1017,12 @@ function Calendar() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-60px" }}
             transition={{ delay: i * 0.05, duration: 0.6, ease: EASE }}
-            className="p-5 text-center relative overflow-hidden"
+            className="p-3 md:p-5 text-center relative overflow-hidden"
             style={{ background: w.hot ? YELLOW : "#0a0a0a" }}
           >
             <MonoTag className={w.hot ? "text-black/60" : "text-white/35"}>{w.w}</MonoTag>
             <div
-              className="mt-2 text-[13px] font-bold tracking-[0.12em]"
+              className="mt-2 text-[9px] md:text-[13px] font-bold tracking-[0.04em] md:tracking-[0.12em]"
               style={{ fontFamily: MONO, color: w.hot ? INK : "rgba(255,255,255,0.75)" }}
             >
               {w.phase}
@@ -1124,7 +1142,7 @@ function Proceeds() {
               TOTAL — WORKING BUDGET + FEE
             </span>
             <span className="text-[34px] md:text-[40px] font-bold leading-none" style={{ fontFamily: SERIF, color: INK }}>
-              $<Counter value={120000} />
+              $<Counter value={115000} />
             </span>
           </div>
         </Reveal>
@@ -1135,8 +1153,8 @@ function Proceeds() {
         <Reveal className="border border-[#1e1e1e] bg-[#0d0d0d] p-8">
           <MonoTag className="text-white/40 block mb-6">PAYMENT SCHEDULE</MonoTag>
           {[
-            ["50%", "$60,000", "MOBILIZATION", "On approval — creative sprint begins, steel + talent booked"],
-            ["50%", "$60,000", "DETONATION", "Before launch week — trucks roll, wave one drops"],
+            ["50%", "$57,500", "MOBILIZATION", "On approval — creative sprint begins, steel + talent booked"],
+            ["50%", "$57,500", "DETONATION", "Before launch week — trucks roll, wave one drops"],
           ].map(([pct, amt, k, d]) => (
             <div key={k} className="flex items-start gap-5 py-4 border-b border-[#1a1a1a] last:border-0">
               <span className="text-[26px] font-bold shrink-0" style={{ fontFamily: SERIF, color: YELLOW }}>
@@ -1211,13 +1229,18 @@ function Risks() {
 function Execute() {
   return (
     <section id="execute" className="relative overflow-hidden">
-      <div className="absolute inset-0 opacity-[0.14] pointer-events-none">
+      <div className="absolute inset-0 opacity-[0.2] pointer-events-none">
         {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src="/images/ponzi-bot/brutalist.png" alt="" className="w-full h-full object-cover" />
-        <div className="absolute inset-0 bg-gradient-to-b from-[#0a0a0a] via-[#0a0a0a]/70 to-[#0a0a0a]" />
+        <img
+          src="/images/ponzi-bot/brutalist.png"
+          alt=""
+          className="w-full h-full object-cover"
+          style={{ filter: "brightness(1.3)" }}
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#0a0a0a] via-[#0a0a0a]/60 to-[#0a0a0a]" />
       </div>
 
-      <div className="relative px-6 md:px-12 py-28 md:py-44 max-w-[1400px] mx-auto">
+      <div className="relative px-6 md:px-12 py-24 md:py-36 max-w-[1400px] mx-auto">
         <SectionHead index="010" title="Execution" right="FIVE STEPS · ONE SIGNATURE" />
 
         <div className="grid lg:grid-cols-[1fr_420px] gap-16 items-start">
@@ -1267,7 +1290,7 @@ function Execute() {
               from the sidewalk outside the New York Stock Exchange.
             </p>
             <div className="flex flex-col sm:flex-row gap-5">
-              <MagneticButton href="mailto:geoff@crowdcontroldigital.com?subject=APPROVED%3A%20Ponzi%20Takes%20Wall%20Street%20(%24120K)&body=Trucks%20roll.%20Send%20the%20mobilization%20invoice.">
+              <MagneticButton href="mailto:geoff@crowdcontroldigital.com?subject=APPROVED%3A%20Ponzi%20Takes%20Wall%20Street%20(%24115K)&body=Trucks%20roll.%20Send%20the%20mobilization%20invoice.">
                 APPROVE — TRUCKS ROLL
               </MagneticButton>
               <MagneticButton href="mailto:geoff@crowdcontroldigital.com?subject=Ponzi%20Takes%20Wall%20Street%20—%20Questions" invert>
