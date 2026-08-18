@@ -281,6 +281,7 @@ const CASES = [
   ["BBNO$", "1.4B+", "TIKTOK VIEWS"],
   ["PESO PLUMA", "8.5B+", "SPOTIFY STREAMS"],
   ["MALBON GOLF", "$10M+", "IN SALES"],
+  ["GS WARRIORS", "#1", "SPORTS NFT"],
   ["ILLENIUM", "70K+", "TICKETS SOLD"],
 ];
 
@@ -1342,7 +1343,7 @@ function Credentials() {
           <MonoTag className="text-white/40">THE HOUSE — CROWD CONTROL DIGITAL</MonoTag>
           <MonoTag className="text-white/30">10 YEARS BREAKING THROUGH THE NOISE</MonoTag>
         </div>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-px bg-[#1e1e1e] border border-[#1e1e1e]">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-px bg-[#1e1e1e] border border-[#1e1e1e]">
           {CASES.map(([who, num, what], i) => (
             <Reveal key={who} delay={i * 0.05} className="bg-[#0a0a0a] p-7">
               <MonoTag className="text-[#EAFF00] block mb-4">{who}</MonoTag>
@@ -1363,16 +1364,19 @@ function Footer() {
     <footer className="border-t border-[#1e1e1e]">
       <div className="px-6 md:px-12 py-12 max-w-[1400px] mx-auto flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
         <div>
-          <span className="text-[15px] font-bold text-white tracking-wide" style={{ fontFamily: MONO }}>
-            CROWD CONTROL DIGITAL
-          </span>
-          <MonoTag className="block mt-2 text-white/40">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="/brand/CC-LOGO-2024-WHITE.png"
+            alt="Crowd Control Digital"
+            className="h-7 w-auto mb-4 opacity-90"
+          />
+          <MonoTag className="block text-white/40">
             PREPARED BY GEOFF SHAMES / CO-FOUNDER · GEOFF@CROWDCONTROLDIGITAL.COM
           </MonoTag>
         </div>
         <MonoTag className="text-white/30 max-w-md md:text-right leading-relaxed">
           THIS IS A MARKETING PROPOSAL, NOT AN OFFERING DOCUMENT. NOTHING HEREIN IS FINANCIAL
-          ADVICE — OBVIOUSLY.
+          ADVICE. OBVIOUSLY.
         </MonoTag>
       </div>
       <div className="h-[14px] w-full" style={hazard()} />
