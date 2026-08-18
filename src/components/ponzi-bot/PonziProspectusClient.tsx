@@ -684,9 +684,16 @@ function Situation() {
  * ------------------------------------------------------------------------- */
 
 function Thesis() {
-  const ref = useRef<HTMLDivElement>(null);
-  const { scrollYProgress } = useScroll({ target: ref, offset: ["start 0.85", "end 0.45"] });
+  const pRef = useRef<HTMLParagraphElement>(null);
+  // Anchor the scrub to the paragraph itself (not the tall padded section) so the
+  // words fill in as the line rises into the middle of the viewport and finish
+  // while it's centered — not as you scroll past it.
+  const { scrollYProgress } = useScroll({ target: pRef, offset: ["start 0.9", "end 0.7"] });
   const words = THESIS.split(" ");
+  const n = words.length;
+  // Compress the per-word ramp into the first 88% of progress so the last word
+  // lands slightly before the paragraph reaches center — feels resolved, not late.
+  const SPAN = 0.88;
 
   return (
     <section className="relative border-y border-[#1e1e1e] bg-[#0d0d0d] overflow-hidden">
@@ -694,12 +701,13 @@ function Thesis() {
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img src="/images/ponzi-bot/editorial.png" alt="" className="w-full h-full object-cover" />
       </div>
-      <div ref={ref} className="px-6 md:px-12 py-24 md:py-32 max-w-[1400px] mx-auto relative">
+      <div className="px-6 md:px-12 py-24 md:py-32 max-w-[1400px] mx-auto relative">
         <div className="flex items-baseline justify-between mb-14">
           <MonoTag className="text-[#EAFF00]">{"// 002 / 010"}</MonoTag>
           <MonoTag className="text-white/35">OPERATING THESIS</MonoTag>
         </div>
         <p
+          ref={pRef}
           className="text-[clamp(2rem,5.2vw,4.6rem)] leading-[1.12] font-bold max-w-5xl"
           style={{ fontFamily: SERIF, letterSpacing: "-0.015em" }}
         >
@@ -708,7 +716,7 @@ function Thesis() {
               key={i}
               word={w}
               progress={scrollYProgress}
-              range={[i / words.length, Math.min(1, (i + 1.6) / words.length)]}
+              range={[(i / n) * SPAN, Math.min(1, ((i + 1.6) / n) * SPAN)]}
             />
           ))}
         </p>
