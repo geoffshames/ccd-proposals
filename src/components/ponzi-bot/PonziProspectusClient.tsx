@@ -1103,7 +1103,6 @@ function Targets() {
         <Reveal delay={0.15}>
           <p className="mt-6 text-[12px] text-white/35" style={{ fontFamily: MONO }}>
             Targets are strategic benchmarks based on comparable campaigns — directional, not promised.
-            (The client, of all clients, will appreciate the disclaimer.)
           </p>
         </Reveal>
       </div>
