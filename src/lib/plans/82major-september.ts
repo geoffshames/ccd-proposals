@@ -57,7 +57,7 @@ export const eightyTwoMajorSeptember: StrategyPlanData = {
           "Deliver a tested creative library and warmed audiences the tour window and the 2027 album inherit",
         ],
       },
-      footnote: "Release date confirmed publicly as September 1, 6:00 PM KST. A $4,000 discount secured on the previous cycle carries forward into this one, so the campaign deploys $54,000 of activity against a $50,000 authorization. The Kakao experiential add-on described in Section 10 sits outside the CCD ceiling. Against a ~$70,000 overall ceiling, this $50,000 campaign plus a $10,000 to $15,000 experiential add-on lands between $60,000 and $65,000, leaving headroom.",
+      footnote: "Release date confirmed publicly as September 1, 6:00 PM KST. A $4,000 discount secured on the previous cycle carries forward into this one, so the campaign deploys $54,000 of activity against a $50,000 authorization. The Kakao experiential add-on described in Section 11 sits outside the CCD ceiling. Against a ~$70,000 overall ceiling, this $50,000 campaign plus a $10,000 to $15,000 experiential add-on lands between $60,000 and $65,000, leaving headroom.",
     },
 
     // ===================================================================
@@ -387,7 +387,7 @@ export const eightyTwoMajorSeptember: StrategyPlanData = {
       number: "05",
       navLabel: "Budget",
       title: "Campaign Budget / September Release",
-      intro: "One all-in digital budget for the September cycle, roughly 12 weeks. CCD retainer and media management sit inside the budget, not on top. It covers the full record, not the lead single alone. The Kakao experiential add-on described in Section 10 sits outside this number, and at $10,000 to $15,000 the combined total lands between $60,000 and $65,000. A $4,000 discount secured on the previous cycle carries forward into this one and is deployed on top of the budget below, so the campaign runs $54,000 of activity against a $50,000 authorization. Two structural changes carry through from the last cycle: the fan channel engagement is restructured at half its prior monthly rate with tour content as its new remit, and the creator budget splits into a creator program and a separate edits budget, because the two performed very differently and deserve to be managed as different lanes.",
+      intro: "One all-in digital budget for the September cycle, roughly 12 weeks. CCD retainer and media management sit inside the budget, not on top. It covers the full record, not the lead single alone. The Kakao experiential add-on described in Section 11 sits outside this number, and at $10,000 to $15,000 the combined total lands between $60,000 and $65,000. A $4,000 discount secured on the previous cycle carries forward into this one and is deployed on top of the budget below, so the campaign runs $54,000 of activity against a $50,000 authorization. Two structural changes carry through from the last cycle: the fan channel engagement is restructured at half its prior monthly rate with tour content as its new remit, and the creator budget splits into a creator program and a separate edits budget, because the two performed very differently and deserve to be managed as different lanes.",
       tiers: [
         {
           label: "September Campaign",
@@ -402,7 +402,7 @@ export const eightyTwoMajorSeptember: StrategyPlanData = {
             "Fan pages $2,000 per month on tour content, half the prior rate, across a wider channel network",
             "Strive $4,000 for streaming floor support through the decay window",
             "Plus $4,000 carried forward from the SIGN flight, deployed into paid social and a third month of fan pages at no additional fee",
-            "CRM lane: pre-save flow, release-day drop, broadcast mechanics, inside the retainer, with platform message credits billed on usage (projection in Section 06)",
+            "CRM lane: pre-save flow, release-day drop, broadcast mechanics, inside the retainer, with platform message credits billed on usage (projection in Section 07)",
             "DSP editorial coordination with Kakao, full-record watch matrix, weekly dashboard reporting",
           ],
         },
@@ -422,6 +422,7 @@ export const eightyTwoMajorSeptember: StrategyPlanData = {
         {
           label: "A",
           title: "CRM Lane: Pre-Save, Drop, Broadcast",
+          timeline: "Messaging costs: Section 07",
           objective: "SIGN had no pre-save mechanic because the record was already out. HEAT gets the full flow, and the CRM list becomes the asset the tour window and the 2027 album inherit.",
           strategy: "The pre-release window runs a pre-save flow across the fan channels and the group's own socials, capturing phone and email into the owned list. Release day fires a drop broadcast to that list. Through the cycle the lane runs reply-first and broadcast-light, which is what kept engagement healthy rather than training people to ignore it.",
           components: {
@@ -441,55 +442,6 @@ export const eightyTwoMajorSeptember: StrategyPlanData = {
         },
         {
           label: "B",
-          title: "CRM Messaging Costs",
-          budget: "$0.002 per credit, usage-based",
-          timeline: "Rates current as of August 18, 2026",
-          objective:
-            "The CRM platform (Laylo) bills per message sent rather than as a flat fee, so this line scales with exactly two things: how fast the list grows and how often it is messaged. This block sets out the unit math so the cost is visible before it is incurred, and the projection in the next block turns it into a budget line.",
-          strategy:
-            "The list stood at 2,157 fans on August 18 with 1,338 added in the last seven days, roughly 190 per day, at $2.05 in paid media per signup. Messaging is billed in credits at $150 per 75,000, which is $0.002 per credit, and every message type has a fixed credit price. Each new signup also consumes roughly 59 credits of automated onboarding across the Instagram DM reply, the welcome text, and the contact card, which is the observed rate across all 127,436 credits consumed to date. The messaging line is therefore a success cost: it rises only because acquisition is working and the list is being put to use.",
-          components: {
-            heading: "The Unit Math",
-            items: [
-              "Platform rate: $150 per 75,000 credits, or $0.002 per credit, billed at the platform's published pricing",
-              "Per message: email 1 credit ($0.002), U.S. and Canada text 10 credits per 160-character segment ($0.02), photo MMS 20 credits ($0.04), international text 25 credits per segment ($0.05), Instagram DM 10 credits ($0.02)",
-              "Onboarding automation: roughly 59 credits, about $0.12, per new signup. Observed across 127,436 credits and 2,157 fans to date, and it adds about six percent to the $2.05 paid acquisition cost",
-              "A text drop costs about 10 credits ($0.02) per fan at the current list mix of roughly 75 percent U.S. phone, 10 percent international, 15 percent email",
-              "Per 1,000 fans per drop: about $20 for a text, $35 for a photo MMS, $2 for an email",
-              "Copy discipline is a real lever: 160 characters is one segment, emoji copy segments at 70 characters, and a drop written long bills as two or three segments",
-              "International texts bill at 2.5 times the U.S. rate, so the blended cost rises as the global fanbase joins through the group's own channels. The mix is monitored monthly",
-              "Credit subscription pricing runs about 12 percent below the pay-as-you-go rate and is the recommended purchasing route",
-            ],
-          },
-        },
-        {
-          label: "C",
-          title: "Messaging Cost Projection Through December",
-          budget: "$4,600 to $12,000 through Dec 31",
-          timeline: "Sits alongside the $50,000 authorization",
-          objective:
-            "Every figure below runs one formula: monthly cost equals new signups times 59 onboarding credits, plus list size times drops per month times the per-fan drop rate. Three scenarios run that formula against different growth and cadence assumptions so the label can choose the budget line rather than discover it.",
-          strategy:
-            "Growth moves the range more than cadence does. The steady case extends the current 190 signups per day; the surge case assumes release week and the tour lift acquisition to 250 per day; the lean case models paid spend easing back to 150 per day on a lighter drop rhythm. Cadence follows the drop plan being built with the label: the steady and surge cases assume a weekly rhythm averaging three text drops and one photo drop per month, and the lean case two text drops per month. These figures sit alongside the $50,000 campaign authorization rather than inside it, because messaging is a usage cost that scales with the list the campaign is building.",
-          components: {
-            heading: "Scenario Math, September Through December",
-            items: [
-              "Lean: list reaches roughly 22,000 by December 31 at 150 signups per day, two text drops per month. September $790, October $990, November $1,160, December $1,370. Total roughly $4,600",
-              "Steady: list reaches roughly 28,000 at the current 190 signups per day, weekly cadence. September $1,400, October $1,980, November $2,520, December $3,100. Total roughly $9,400",
-              "Surge: list reaches roughly 36,000 at 250 signups per day through release and tour, weekly cadence. September $1,770, October $2,530, November $3,230, December $4,000. Total roughly $12,000",
-              "On credit subscription pricing the three totals drop to roughly $4,100, $8,200, and $10,600",
-              "Every scenario carries onboarding for each new signup plus drops to the full list at the blended per-fan rates in the block above",
-              "Consumed to date for reference: 127,436 credits, about $255, covering onboarding automation for the first 2,157 fans ahead of the first broadcast",
-            ],
-          },
-          kpis: [
-            "Cost per fan per text drop held at or under $0.02",
-            "Onboarding automation tuned from 59 toward 35 credits per signup, which cuts the acquisition side of the line by roughly 40 percent",
-            "International share and segment counts reviewed monthly against the projection",
-          ],
-        },
-        {
-          label: "D",
           title: "Fan Channels, Repositioned For This Cycle",
           objective: "A deliberate change of purpose and a halved rate. The fan channels stop being a paid audience-growth play and become a clipping and resharing surface with the tour as their primary feed. The engagement is restructured at $2,000 per month against the prior $4,000, because the work changes from growing channels from zero to servicing content that already exists.",
           strategy: "The evidence in Section 02 makes the case plainly. Over the same window, on the same creative brief, the official channel returned roughly 137,000 plays per post and the fan network returned roughly 606. Growing a channel from zero against an account that already has 1.6 million followers is the expensive way to buy reach, and the measured cost per view bore that out. What the channels are genuinely good at is being a second and third surface for content that already works: clipped moments, resharing fan-shot video, and covering angles the official account will not post. That is a production function rather than a media buy, so the engagement is rebuilt around it at half the cost.",
@@ -512,7 +464,7 @@ export const eightyTwoMajorSeptember: StrategyPlanData = {
           timeline: "The channels stay live throughout, at low weight through release week and heaviest across the October and November tour window when the fan video is actually being shot.",
         },
         {
-          label: "E",
+          label: "C",
           title: "Engagement Mechanics",
           objective: "Convert passive reach into participation, which is what moves the conversion ratio rather than just the stream count.",
           tactics: [
@@ -523,15 +475,109 @@ export const eightyTwoMajorSeptember: StrategyPlanData = {
           ],
         },
       ],
-      footnote: "The CRM lane is operational inside the CCD retainer, and platform message credits are billed on usage at the platform's published rates, with the unit math and projection carried in blocks B and C above. The fan channels carry a $2,000 per month line, authorized at $4,000 and extended to $6,000, the full three-month cycle, by the funds carried forward from the SIGN flight. That is half the prior monthly rate for a wider network and a changed remit. Returning to a growth-focused engagement at the prior rate remains available as a separately priced option if the label wants owned-audience growth as an objective in its own right. This plan does not recommend it for this cycle.",
+      footnote: "The CRM lane is operational inside the CCD retainer, and platform message credits are billed on usage at the platform's published rates, with the unit math and projection carried in Section 07. The fan channels carry a $2,000 per month line, authorized at $4,000 and extended to $6,000, the full three-month cycle, by the funds carried forward from the SIGN flight. That is half the prior monthly rate for a wider network and a changed remit. Returning to a growth-focused engagement at the prior rate remains available as a separately priced option if the label wants owned-audience growth as an objective in its own right. This plan does not recommend it for this cycle.",
     },
 
     // ===================================================================
-    // 07. Vertical 2: Digital Marketing
+    // 07. CRM Messaging Costs (visual cost model)
+    // ===================================================================
+    {
+      type: "costModel",
+      number: "07",
+      navLabel: "CRM Costs",
+      title: "CRM Messaging Costs",
+      intro:
+        "The CRM platform (Laylo) bills per message sent rather than as a flat fee, so the cost of this lane scales with exactly two things the campaign controls: how large the list grows and how often it is messaged. This section carries the whole model: the published rates, what one drop costs at this list's channel mix, and the monthly spend those rates produce as the list compounds through release week and the Q4 tour. These figures sit alongside the $50,000 campaign authorization rather than inside it.",
+      rateHeading: "The Published Rates, Per Message Sent",
+      rateCards: [
+        { label: "Email", value: "$0.002", unit: "1 credit per message" },
+        { label: "U.S. Text", value: "$0.02", unit: "per 160-character segment" },
+        { label: "Photo MMS", value: "$0.04", unit: "per message" },
+        { label: "Intl Text", value: "$0.05", unit: "per segment" },
+        { label: "Instagram DM", value: "$0.02", unit: "per message" },
+      ],
+      rateCaption:
+        "Platform rate: $150 per 75,000 credits, or $0.002 per credit, billed on usage at published pricing. A credit subscription runs roughly 12 percent below these figures and is the recommended purchasing route.",
+      dropHeading: "What One Drop Costs, Per 1,000 Fans",
+      dropBars: [
+        { label: "Email drop", value: 2, display: "$2" },
+        { label: "Text drop", value: 20, display: "$20" },
+        { label: "Photo MMS drop", value: 35, display: "$35" },
+      ],
+      dropCaption:
+        "Blended at the current list mix, roughly 75 percent U.S. phone, 10 percent international, 15 percent email. A full-list text drop runs about $0.02 per fan, so the entire list as it stands today can be texted for roughly $44.",
+      formulaHeading: "How The Monthly Number Is Built",
+      formulaParts: ["List size", "Drops per month", "Rate per fan"],
+      formulaResult: "Monthly cost",
+      growthHeading: "Where The List Is Heading",
+      growthPoints: [
+        { label: "Aug 18", day: 0 },
+        { label: "Aug 31", day: 13 },
+        { label: "Sep 30", day: 43 },
+        { label: "Oct 31", day: 74 },
+        { label: "Nov 30", day: 104 },
+        { label: "Dec 31", day: 135 },
+      ],
+      growthSeries: [
+        { name: "Lean", values: [2157, 4107, 8607, 13257, 17757, 22407] },
+        { name: "Steady", values: [2157, 4640, 10370, 16291, 22021, 27942], emphasis: true },
+        { name: "Surge", values: [2157, 5407, 12907, 20657, 28157, 35907], dashed: true },
+      ],
+      growthMax: 40000,
+      growthCaption:
+        "From 2,157 fans on August 18, growing at roughly 190 signups per day on the current paid flight, with release week and the Q4 tour as the compounding moments. Three growth cases bracket the range.",
+      costHeading: "Projected Monthly Spend, September Through December",
+      costMonths: ["Sept", "Oct", "Nov", "Dec"],
+      costCaption:
+        "Each bar is the formula above applied to that month's list size and cadence, covering all platform messaging at pay-as-you-go rates. The number grows because the list does: a rising messaging line is the receipt for a compounding owned audience.",
+      scenarios: [
+        {
+          name: "Lean",
+          assumption: "150 signups per day with paid easing back, two text drops per month.",
+          monthly: [790, 990, 1160, 1370],
+          monthlyDisplay: ["$790", "$990", "$1.2K", "$1.4K"],
+          total: "$4,600",
+          subscriptionTotal: "$4,100 on subscription",
+          listEnd: "List at Dec 31: ~22,000",
+        },
+        {
+          name: "Steady",
+          badge: "Current trajectory",
+          assumption: "190 signups per day, the current rate, on a weekly cadence averaging three text drops and one photo drop per month.",
+          monthly: [1400, 1980, 2520, 3100],
+          monthlyDisplay: ["$1.4K", "$2.0K", "$2.5K", "$3.1K"],
+          total: "$9,400",
+          subscriptionTotal: "$8,200 on subscription",
+          listEnd: "List at Dec 31: ~28,000",
+          emphasis: true,
+        },
+        {
+          name: "Surge",
+          assumption: "250 signups per day through release week and the tour, weekly cadence.",
+          monthly: [1770, 2530, 3230, 4000],
+          monthlyDisplay: ["$1.8K", "$2.5K", "$3.2K", "$4.0K"],
+          total: "$12,000",
+          subscriptionTotal: "$10,600 on subscription",
+          listEnd: "List at Dec 31: ~36,000",
+          dashed: true,
+        },
+      ],
+      leversHeading: "What Keeps The Number Down",
+      levers: [
+        "Copy discipline. 160 characters is one segment and emoji copy segments at 70 characters, so a drop written long bills as two or three segments. Drop copy is written to a single segment by default.",
+        "International mix. International texts bill at 2.5 times the U.S. rate. The channel mix is reviewed monthly and the blend repriced if the international share moves.",
+        "Purchasing route. A credit subscription runs roughly 12 percent below pay-as-you-go, worth about $1,200 across the steady case.",
+      ],
+      footnote:
+        "Rates are the platform's published pricing as of August 18, 2026, billed on usage. Projections are all-in for every message the platform sends across signup and drops, at the current channel mix and pay-as-you-go rates. Cadence follows the drop plan being finalized with the label; the scenarios bracket the range so the budget line can be chosen rather than discovered.",
+    },
+
+    // ===================================================================
+    // 08. Vertical 2: Digital Marketing
     // ===================================================================
     {
       type: "vertical",
-      number: "07",
+      number: "08",
       navLabel: "Digital",
       title: "Vertical 2 / Digital Marketing",
       philosophy: "This is the amplifier, and it is the lane with the hardest numbers behind it. Both platforms are broken out below with their own budget, their own job, and their own measured benchmarks from the SIGN flights, so each can be planned and judged on its own terms.",
@@ -633,11 +679,11 @@ export const eightyTwoMajorSeptember: StrategyPlanData = {
     },
 
     // ===================================================================
-    // 08. Vertical 3: DSP Strategy
+    // 09. Vertical 3: DSP Strategy
     // ===================================================================
     {
       type: "vertical",
-      number: "08",
+      number: "09",
       navLabel: "DSP",
       title: "Vertical 3 / DSP Strategy",
       philosophy: "The clearest structural risk the SIGN cycle exposed was reach concentration. At one point a single editorial placement carried roughly 89 percent of playlist reach. Reach has since broadened to 1,411,076 with a new algorithmic add, which is the direction to keep pushing rather than a problem solved.",
@@ -693,11 +739,11 @@ export const eightyTwoMajorSeptember: StrategyPlanData = {
     },
 
     // ===================================================================
-    // 09. Vertical 4: PR
+    // 10. Vertical 4: PR
     // ===================================================================
     {
       type: "vertical",
-      number: "09",
+      number: "10",
       navLabel: "PR",
       title: "Vertical 4 / PR & Media",
       philosophy: "PR rides momentum rather than creating it. The role in this cycle is to convert the release moment and the Q4 tour routing into coverage that compounds the paid and organic work already running.",
@@ -738,14 +784,14 @@ export const eightyTwoMajorSeptember: StrategyPlanData = {
     },
 
     // ===================================================================
-    // 10. Handled by Kakao
+    // 11. Handled by Kakao
     // ===================================================================
     {
       type: "vertical",
-      number: "10",
+      number: "11",
       navLabel: "Kakao",
       title: "Handled by Kakao",
-      philosophy: "These workstreams sit outside the CCD digital ceiling. They are mapped here so the full September picture reads in one place and the ceiling arithmetic in Section 10 is complete.",
+      philosophy: "These workstreams sit outside the CCD digital ceiling. They are mapped here so the full September picture reads in one place and the ceiling arithmetic in Section 11 is complete.",
       subBlocks: [
         {
           label: "A",
@@ -773,11 +819,11 @@ export const eightyTwoMajorSeptember: StrategyPlanData = {
     },
 
     // ===================================================================
-    // 11. Proposed Media Flight
+    // 12. Proposed Media Flight
     // ===================================================================
     {
       type: "flight",
-      number: "11",
+      number: "12",
       navLabel: "Flight",
       title: "Proposed Media Flight",
       intro: "Three phases across the ~12-week cycle. Phase budgets are directional. CCD reallocates weekly against live cost per click, which is how the SIGN traffic flight moved from $0.114 per click in week one to $0.094 by week three while weekly clicks rose from 12,278 to 14,917.",
@@ -827,11 +873,11 @@ export const eightyTwoMajorSeptember: StrategyPlanData = {
     },
 
     // ===================================================================
-    // 12. Execution Timeline
+    // 13. Execution Timeline
     // ===================================================================
     {
       type: "timeline",
-      number: "12",
+      number: "13",
       navLabel: "Timeline",
       title: "Execution Timeline",
       intro: "Twelve weeks from build to the tour window, anchored to the September 1 release. The teaser calendar in the first three weeks follows the label asset schedule. Week 4 is release week. The final four weeks carry into Q4 tour routing, which authorizes its own budget as dates confirm.",
@@ -1063,11 +1109,11 @@ export const eightyTwoMajorSeptember: StrategyPlanData = {
     },
 
     // ===================================================================
-    // 13. Final Pricing
+    // 14. Final Pricing
     // ===================================================================
     {
       type: "pricing",
-      number: "13",
+      number: "14",
       navLabel: "Pricing",
       title: "Final Pricing",
       intro: "One all-in budget for the September cycle, roughly 12 weeks. The CCD retainer and media management fee are line items inside the budget, not additions to it. Everything below the fee lines is deployable to media, creators, and channels. The creator budget is split into two lines because the two formats performed very differently last cycle and are managed as separate lanes. On top of these figures, $4,000 carried forward from the SIGN flight is deployed into paid social and fan pages, taking working deployable to $41,000. The arithmetic is set out beneath the table.",

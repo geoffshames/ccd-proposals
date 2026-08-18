@@ -19,6 +19,7 @@ import { PlanDeliverables } from "./PlanDeliverables";
 import { PlanCalendar } from "./PlanCalendar";
 import { PlanAssetChecklist } from "./PlanAssetChecklist";
 import { PlanContentAnalysis } from "./PlanContentAnalysis";
+import { PlanCostModel } from "./PlanCostModel";
 import { PlanApprove } from "./PlanApprove";
 import { LanguageToggle } from "@/components/LanguageToggle";
 import { ProjectProvider, type ProjectData } from "@/lib/project-context";
@@ -89,6 +90,8 @@ export function PlanClient({ plan }: { plan: StrategyPlanData }) {
               return <PlanAssetChecklist key={i} section={section} />;
             case "contentAnalysis":
               return <PlanContentAnalysis key={i} section={section} />;
+            case "costModel":
+              return <PlanCostModel key={i} section={section} />;
             default:
               return null;
           }

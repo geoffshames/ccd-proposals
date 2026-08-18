@@ -568,6 +568,68 @@ export type CalendarSection = {
   footnote?: string;
 };
 
+export type CostModelRateCard = {
+  label: string;
+  value: string;
+  unit?: string;
+};
+
+export type CostModelBar = {
+  label: string;
+  value: number;
+  display: string;
+};
+
+export type CostModelSeries = {
+  name: string;
+  values: number[];
+  emphasis?: boolean;
+  dashed?: boolean;
+};
+
+export type CostModelScenario = {
+  name: string;
+  badge?: string;
+  assumption: string;
+  monthly: number[];
+  monthlyDisplay: string[];
+  total: string;
+  subscriptionTotal?: string;
+  listEnd: string;
+  emphasis?: boolean;
+  dashed?: boolean;
+};
+
+export type CostModelSection = {
+  type: "costModel";
+  number: string;
+  navLabel?: string;
+  title: string;
+  intro?: string;
+  rateHeading?: string;
+  rateCards: CostModelRateCard[];
+  rateCaption?: string;
+  dropHeading?: string;
+  dropBars: CostModelBar[];
+  dropCaption?: string;
+  formulaHeading?: string;
+  formulaParts?: string[];
+  formulaResult?: string;
+  growthHeading?: string;
+  growthPoints: { label: string; day: number }[];
+  growthSeries: CostModelSeries[];
+  growthMax?: number;
+  growthCaption?: string;
+  costHeading?: string;
+  costMonths: string[];
+  costCaption?: string;
+  scenarioHeading?: string;
+  scenarios: CostModelScenario[];
+  leversHeading?: string;
+  levers?: string[];
+  footnote?: string;
+};
+
 export type PlanSection =
   | OverviewSection
   | PhilosophySection
@@ -584,7 +646,8 @@ export type PlanSection =
   | DeliverablesSection
   | ContentAnalysisSection
   | CalendarSection
-  | AssetChecklistSection;
+  | AssetChecklistSection
+  | CostModelSection;
 
 // Plan root -----------------------------------------------------------------
 
