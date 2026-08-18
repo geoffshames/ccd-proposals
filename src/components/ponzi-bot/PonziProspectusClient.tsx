@@ -50,7 +50,7 @@ const hazard = (size = 12) => ({
  * ------------------------------------------------------------------------- */
 
 const TICKER_TOP =
-  "CAMPAIGN PROSPECTUS ▲ $100K WORKING BUDGET ▲ 6 TRUCK DOMINATION DAYS ▲ 20 CAB TOPS ▲ 20+ KOL VOICES ▲ 50M+ EARNED TARGET ▲ GENESIS WEEK ▲ EXPECT NOTHING. PLAN EVERYTHING. ▲ ";
+  "CAMPAIGN PROSPECTUS ▲ $100K WORKING BUDGET ▲ 6 TRUCK DOMINATION DAYS ▲ 60 CAB TOPS ▲ $50K SOCIAL PR FLIGHT ▲ 50M+ EARNED TARGET ▲ GENESIS WEEK ▲ EXPECT NOTHING. PLAN EVERYTHING. ▲ ";
 
 const TICKER_MID =
   "ADVERTISE THE JOKE. NOT THE OFFER. ▲ IF IT DOESN'T SCREENSHOT, IT DIDN'T HAPPEN ▲ EARNED IS THE PRODUCT. PAID IS THE INSURANCE. ▲ ";
@@ -112,13 +112,8 @@ const STUNT_BEATS = [
   },
   {
     k: "AMBIENT",
-    title: "20 taxi tops × 4 weeks",
-    body: "TLC-permitted rooftop units running citywide with FiDi weighting — the layer that keeps the joke in frame long after launch week.",
-  },
-  {
-    k: "CAPTURE",
-    title: "2 production shoot days",
-    body: "Photo + video crew treating the stunt as a content shoot. The master assets every KOL, press outlet, and paid placement runs on — cut same-day.",
+    title: "60 taxi tops × 2 weeks",
+    body: "TLC-permitted rooftops at blanket density across a tight window — FiDi-weighted, in the frame of every street shot while the story is live. Roughly 750K impressions at the ~$10 CPM planning rate.",
   },
   {
     k: "CREATIVE",
@@ -130,22 +125,22 @@ const STUNT_BEATS = [
 const DROPS = [
   {
     t: "T-0H",
-    who: "PRESS EXCLUSIVES",
-    body: "Embargo lifts. Crypto trades run the story with capture-crew assets — the stunt is the press release.",
+    who: "THE STREET",
+    body: "Trucks hit the loop at the opening bell. The first posts come from the sidewalk itself — commuters, tourists, and finance interns with camera phones.",
   },
   {
     t: "T+2H",
-    who: "ANCHOR VOICES ×3",
-    body: "Authority accounts post the sighting. The timeline decides this is real, and that it is funny.",
+    who: "NETWORK IGNITION",
+    body: "Social PR's page network pushes native cuts of the stunt into feeds across its 450M-follower reach. The timeline decides this is real, and that it is funny.",
   },
   {
     t: "T+6H",
-    who: "MID TIER ×8",
-    body: "Velocity wave. Quote-tweet chains, reaction takes, first memes of the memes.",
+    who: "VELOCITY WAVE",
+    body: "Quote-tweet chains, reaction takes, first memes of the memes — spreading from crypto pages into culture pages.",
   },
   {
     t: "T+24H",
-    who: "MICRO FLOOD ×12+",
+    who: "SATURATION",
     body: "Ubiquity wave plus Telegram alpha groups. The moment now looks organic everywhere at once — because by this point, it is.",
   },
 ];
@@ -187,19 +182,19 @@ const PHASES = [
     n: "P-01",
     name: "LOAD THE CANNON",
     date: "SEP 1 – SEP 11",
-    body: "Hazard-stripe suite to full production. Steel booked and routed. 20+ voices contracted under embargo. Press exclusives offered. Pixels, UTMs, and the counsel sign-off loop live.",
+    body: "Hazard-stripe suite to full production. Steel booked and routed. Social PR (socialpr.com) locked and briefed under embargo. Pixels, UTMs, and the counsel sign-off loop live.",
   },
   {
     n: "P-02",
     name: "DETONATE",
     date: "SEP 14 – SEP 18",
-    body: "Trucks circle the NYSE Monday–Friday, open to close. Capture crew rolls. Exclusives and KOL waves drop in sequence. Daily war room steers the narrative in real time.",
+    body: "Trucks circle the NYSE Monday–Friday, open to close; 60 taxi tops saturate the grid. Social PR waves drop in sequence. Daily war room steers the narrative in real time.",
   },
   {
     n: "P-03",
     name: "TAX THE COVERAGE",
     date: "SEP 21 – OCT 9",
-    body: "Reactive meme wave, X Spaces, community bounty. Paid scales proven hooks; FiDi geo-audiences and stunt engagers move into retargeting.",
+    body: "Social PR wave two rides the coverage cycle. Paid scales proven hooks; FiDi geo-audiences and stunt engagers move into retargeting.",
   },
   {
     n: "P-04",
@@ -210,8 +205,8 @@ const PHASES = [
 ];
 
 const TARGETS: { value: number; suffix: string; label: string; note: string; prefix?: string }[] = [
-  { value: 50, suffix: "M+", label: "EARNED IMPRESSIONS", note: "X, TikTok, Reddit + press — benchmarked vs. comparable crypto OOH moments" },
-  { value: 15, suffix: "+", label: "PRESS PICKUPS", note: "Crypto trades + business desks drawn by the NYSE optics" },
+  { value: 50, suffix: "M+", label: "EARNED IMPRESSIONS", note: "X, TikTok, Reddit — benchmarked vs. comparable crypto OOH moments" },
+  { value: 1000, suffix: "+", label: "DERIVATIVE POSTS", note: "Memes, reposts, and reaction content of the stunt tracked across X and TikTok" },
   { value: 10, suffix: "×", label: "@PONZIBOTWTF GROWTH", note: "The owned asset that compounds after the campaign ends" },
   { value: 5, prefix: "<$", suffix: "", label: "BLENDED PAID CPM", note: "Earned momentum drives paid efficiency under cold-traffic benchmarks" },
 ];
@@ -219,13 +214,13 @@ const TARGETS: { value: number; suffix: string; label: string; note: string; pre
 const PROCEEDS = [
   {
     name: "THE WALL STREET TAKEOVER",
-    desc: "LED truck domination, taxi-top flight, hazard-stripe creative suite, stunt capture. Pass-through at cost.",
+    desc: "LED truck domination days, 60-unit taxi-top flight, hazard-stripe creative suite. Pass-through at cost.",
     amount: 25000,
     pct: 21.7,
   },
   {
-    name: "THE SOCIAL PR MACHINE",
-    desc: "Contracted KOL network, crypto + business press, launch war room, X Spaces, $5K meme bounty pool. Pass-through at cost.",
+    name: "SOCIAL PR — VENDOR FLIGHT",
+    desc: "Social PR (socialpr.com) — native content distributed through a 450M+ follower publishing network, sequenced to the stunt. Vendor billed at cost; CCD briefs, sequences, and QCs the flight.",
     amount: 50000,
     pct: 43.5,
   },
@@ -245,9 +240,10 @@ const PROCEEDS = [
 
 const FOOTNOTES = [
   ["1", "Incremental media beyond the committed $100K working budget scales at cost + 15% management."],
-  ["2", "Anchor voices above the committed pool are optioned transparently and contracted only on client approval."],
+  ["2", "Vendor scope beyond the committed $50K Social PR flight is optioned transparently and contracted only on client approval."],
   ["3", "Second-market flights (Miami, Austin, London) bolt on using the same creative system and vendor stack, at cost + 15%."],
   ["4", "Unspent working budget is credited or rolled at client's option. No hidden margin on media, talent, or steel."],
+  ["5", "Not in scope: traditional press pitching and production shoot days — both available as add-ons, scoped and quoted separately."],
 ];
 
 const RISKS = [
@@ -276,8 +272,8 @@ const RISKS = [
 const NEXT_STEPS = [
   ["01", "APPROVE THE SCOPE", "Green-light the plan, lock the genesis-aligned window. The 8-week clock starts on mobilization."],
   ["02", "CREATIVE SPRINT + COUNSEL LOOP", "Hazard-stripe suite to full production in week one; every execution through client counsel."],
-  ["03", "BOOK THE STEEL, CONTRACT THE VOICES", "Trucks, cabs, and 20+ voices locked under embargo — sequenced to the hour."],
-  ["04", "DETONATE ON GENESIS WEEK", "Trucks circle the NYSE. Capture rolls. Exclusives drop. The war room runs daily."],
+  ["03", "BOOK THE STEEL, LOCK THE VENDOR", "Trucks and 60 cabs booked; the Social PR flight contracted and briefed under embargo — sequenced to the hour."],
+  ["04", "DETONATE ON GENESIS WEEK", "Trucks circle the NYSE. Social PR waves drop. The war room runs daily."],
   ["05", "TAX, COMPOUND, REPORT", "Five weeks of amplification and retargeting, then a wrap with earned-media valuation."],
 ];
 
@@ -898,7 +894,7 @@ function Stunt() {
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img src="/images/ponzi-bot/hero2.png" alt="NYC taxi with glowing rooftop unit" className="w-full h-[280px] md:h-[340px] object-cover" />
             <div className="absolute bottom-0 left-0 right-0 flex items-center justify-between px-5 py-3 bg-[#0a0a0a]/85 backdrop-blur-sm">
-              <MonoTag className="text-white/60">FIG. 02 — AMBIENT LAYER · 20 UNITS · 4 WEEKS</MonoTag>
+              <MonoTag className="text-white/60">FIG. 02 — AMBIENT LAYER · 60 UNITS · 2 WEEKS</MonoTag>
               <MonoTag className="text-[#EAFF00]">TLC PERMITTED</MonoTag>
             </div>
           </Reveal>
@@ -920,7 +916,7 @@ function Machine() {
 
   return (
     <section className="px-6 md:px-12 py-28 md:py-40 max-w-[1400px] mx-auto">
-      <SectionHead index="004" title="The Machine" right="$50,000 · SOCIAL PR" />
+      <SectionHead index="004" title="The Machine" right="$50,000 · SOCIALPR.COM" />
       <div className="grid lg:grid-cols-[1fr_360px] gap-16">
         <div ref={ref} className="relative">
           {/* progress spine */}
@@ -948,10 +944,10 @@ function Machine() {
 
         <div className="space-y-6">
           {[
-            ["20+", "CONTRACTED VOICES", "Anchor ×3 · Mid ×8 · Micro ×12+ — tiered, embargoed, sequenced to the hour."],
-            ["15+", "PRESS TARGETS", "Cointelegraph / Decrypt / The Block tier, plus business desks who can't resist the optics."],
-            ["5", "WAR ROOM DAYS", "Daily command cycle across client, KOLs, press, and paid while the moment is live."],
-            ["$5K", "MEME BOUNTY", "The timeline gets paid to out-create the agency. It will."],
+            ["$50K", "SOCIALPR.COM", "The social-publishing network behind launches for Polymarket, Kick × UFC, and Higgsfield. Billed at cost — CCD takes no margin on the flight."],
+            ["450M+", "NETWORK REACH", "Follower base across Social PR's page network — native cuts of the stunt land in feeds, not press releases."],
+            ["5", "WAR ROOM DAYS", "CCD's daily command cycle across client, vendor, and paid while the moment is live."],
+            ["100%", "DISCLOSURE QC", "Every network post runs against the brief before it drops — the joke stays compliant, the posture stays clean."],
           ].map(([v, k, d2], i) => (
             <Reveal key={k} delay={i * 0.06} className="border border-[#1e1e1e] bg-[#0d0d0d] p-7">
               <span className="text-[40px] font-bold leading-none" style={{ fontFamily: SERIF, color: YELLOW }}>
