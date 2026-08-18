@@ -512,7 +512,7 @@ export const eightyTwoMajorSeptember: StrategyPlanData = {
       growthHeading: "Where The List Is Heading",
       growthPoints: [
         { label: "Aug 18", day: 0 },
-        { label: "Aug 31", day: 13 },
+        { label: "", day: 13 },
         { label: "Sep 30", day: 43 },
         { label: "Oct 31", day: 74 },
         { label: "Nov 30", day: 104 },

@@ -79,19 +79,21 @@ function GrowthChart({
         );
       })}
       <line x1={L} y1={B} x2={R} y2={B} stroke={GRID} strokeWidth={1} />
-      {points.map((p, i) => (
-        <text
-          key={i}
-          x={x(p.day)}
-          y={B + 22}
-          textAnchor={i === 0 ? "start" : "middle"}
-          fontSize={11}
-          fill={MUTED}
-          fontFamily="monospace"
-        >
-          {p.label}
-        </text>
-      ))}
+      {points.map((p, i) =>
+        p.label ? (
+          <text
+            key={i}
+            x={x(p.day)}
+            y={B + 22}
+            textAnchor={i === 0 ? "start" : "middle"}
+            fontSize={11}
+            fill={MUTED}
+            fontFamily="monospace"
+          >
+            {p.label}
+          </text>
+        ) : null
+      )}
       {series.map((s, si) => (
         <polyline
           key={si}
@@ -118,7 +120,7 @@ function GrowthChart({
         );
       })}
       <circle cx={x(points[0].day)} cy={y(series[0].values[0])} r={3.5} fill="var(--color-accent)" />
-      <text x={x(points[0].day) + 8} y={y(series[0].values[0]) - 8} fontSize={11} fill={MUTED} fontFamily="monospace">
+      <text x={x(points[0].day) + 10} y={y(series[0].values[0]) - 14} fontSize={11} fill={MUTED} fontFamily="monospace">
         Today {series[0].values[0].toLocaleString("en-US")}
       </text>
     </svg>
