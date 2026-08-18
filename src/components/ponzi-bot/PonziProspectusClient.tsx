@@ -280,7 +280,7 @@ const NEXT_STEPS = [
 const CASES = [
   ["BBNO$", "1.4B+", "TIKTOK VIEWS"],
   ["PESO PLUMA", "8.5B+", "SPOTIFY STREAMS"],
-  ["KSI", "125M+", "CAMPAIGN REACH"],
+  ["MALBON GOLF", "$10M+", "IN SALES"],
   ["ILLENIUM", "70K+", "TICKETS SOLD"],
 ];
 
