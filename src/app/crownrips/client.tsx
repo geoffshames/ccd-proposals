@@ -145,7 +145,7 @@ export function CrownRipsClient() {
               </div>
               <div>
                 <span>Investment range</span>
-                <strong>$185K — $385K</strong>
+                <strong>$28K — $385K</strong>
               </div>
               <div>
                 <span>Market</span>
@@ -260,7 +260,7 @@ export function CrownRipsClient() {
                       <strong>{concept.markets}</strong>
                     </div>
                     <div>
-                      <span>{concept.media ? "Production" : "All-in"}</span>
+                      <span>{concept.media ? "CCD scope" : "All-in"}</span>
                       <strong>{money.format(concept.total)}</strong>
                     </div>
                   </div>
@@ -330,7 +330,7 @@ export function CrownRipsClient() {
                     <div className={styles.mediaCard}>
                       <div className={styles.mediaHead}>
                         <span>{concept.media.headline}</span>
-                        <b>$8 CPM</b>
+                        <b>{concept.media.rate}</b>
                       </div>
                       {concept.media.rows.map((row) => (
                         <div
@@ -364,6 +364,25 @@ export function CrownRipsClient() {
                       </li>
                     ))}
                   </ul>
+
+                  {concept.clientSide ? (
+                    <>
+                      <span
+                        className={styles.blockLabel}
+                        style={{ marginTop: 34, display: "block" }}
+                      >
+                        BUILT CLIENT-SIDE
+                      </span>
+                      <ul className={styles.clientList}>
+                        {concept.clientSide.map((c) => (
+                          <li key={c}>
+                            <i />
+                            <span>{c}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </>
+                  ) : null}
 
                   <div className={styles.riskNote}>
                     <Info size={15} aria-hidden="true" />

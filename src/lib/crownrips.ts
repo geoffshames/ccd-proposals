@@ -22,8 +22,10 @@ export type Concept = {
   risk: string;
   totalLabel?: string;
   setList?: { tier: string; count: string; behaviour: string }[];
+  clientSide?: string[];
   media?: {
     headline: string;
+    rate: string;
     note: string;
     rows: { label: string; impressions: string; spend: string; tag?: string }[];
   };
@@ -407,8 +409,8 @@ export const concepts: Concept[] = [
       "The footage is people running down a Manhattan sidewalk after a taxi, which is a scene rather than an ad. Drop windows create scheduled, repeatable, filmable convergences in a named neighbourhood — three weeks of appointment moments instead of one launch beat. Set-completion progress is inherently postable, so the binder does distribution for us.",
     proof: {
       claim:
-        "At the negotiated $8 CPM the 100M daily impression ceiling represents roughly $800K of inventory per day, so even a heavy three-week buy runs at a low single-digit percentage of network capacity — leaving deep headroom to concentrate delivery into short, high-intensity drop windows.",
-      source: "Derived from the quoted $8 CPM and 100M/day network capacity",
+        "At $10 CPM the 100M daily impression ceiling represents roughly $1,000,000 of inventory per day, so even a heavy three-week buy runs at a low single-digit percentage of network capacity — leaving deep headroom to concentrate delivery into short, high-intensity drop windows.",
+      source: "Derived from the quoted $10 CPM and 100M/day network capacity",
     },
     setList: [
       { tier: "COMMON", count: "13", behaviour: "Always live, five boroughs, full flight" },
@@ -418,34 +420,36 @@ export const concepts: Concept[] = [
     ],
     media: {
       headline: "Media — billed separately",
+      rate: "$10 CPM",
       note:
-        "Cab-topper media is additive to the activation budget and billed at the negotiated $8 CPM, down from $10 rate card. The recommended weight saves $50,000 against rate card on the same delivery.",
+        "Cab-topper media is additive and billed at $10 CPM. Weight is fully dialable — the mechanic works at any of these levels, it only changes how saturated the city feels.",
       rows: [
-        { label: "Light", impressions: "12.5M impressions", spend: "$100,000" },
-        { label: "Recommended", impressions: "25M impressions", spend: "$200,000", tag: "RECOMMENDED" },
-        { label: "Heavy", impressions: "37.5M impressions", spend: "$300,000" },
+        { label: "Light", impressions: "12.5M impressions", spend: "$125,000" },
+        { label: "Recommended", impressions: "25M impressions", spend: "$250,000", tag: "RECOMMENDED" },
+        { label: "Heavy", impressions: "37.5M impressions", spend: "$375,000" },
       ],
     },
     build: [
       "25 creative executions designed as a set list, built to read and scan inside 8 seconds at distance",
-      "In-app binder with rarity tiers, completion tracking and tier-reward fulfilment",
+      "Rarity architecture and the geo + daypart media schedule that enforces it",
+      "Drop calendar design and the reveal cadence for Ultra and Secret Rare windows",
+      "Drop-night content capture across three surge windows",
+    ],
+    clientSide: [
+      "In-app binder — rarity tiers, completion tracking, tier-reward fulfilment",
       "Three-factor scan validation — device GPS inside the live zone, timestamp inside the scheduled window, one credit per card per device",
-      "Public drop calendar plus 60-minute push alerts for Secret Rare windows",
+      "Drop calendar surface and 60-minute push alerts for Secret Rare windows",
       "Live set-tracker showing which cards are still uncollected city-wide",
+      "Prize pool and fulfilment — instant digital packs plus physical tier rewards",
     ],
     budget: [
-      { item: "Creative production — 25 set designs, 8-second motion builds", amount: 38000 },
-      { item: "In-app build — binder, scan resolution, rarity and tier logic", amount: 52000 },
-      { item: "Geo-fence and time-window scan validation (anti-fraud)", amount: 26000 },
-      { item: "Drop calendar, live set tracker, push notification system", amount: 22000 },
-      { item: "Prize pool — instant digital packs + physical tier fulfilment", amount: 40000 },
+      { item: "Creative production — 25 set designs, 8-second motion builds", amount: 10000 },
       { item: "Drop-night content capture (3 nights)", amount: 18000 },
-      { item: "PR and launch", amount: 9000 },
     ],
-    total: 205000,
-    totalLabel: "Production — excl. media",
+    total: 28000,
+    totalLabel: "CCD production — excl. media",
     risk:
-      "The QR codes are fixed per creative, so the moment someone photographs the Secret Rare and posts it, the code itself is public. That is survivable but only because scan validation is three-factor: a credit requires device GPS inside the live zone and a timestamp inside that creative's scheduled window, so a couch scan in Ohio fails on geography and a late scan in the right neighbourhood fails on time. Build that layer or the game is over in day one. Secondary: scan rates on DOOH QR are low in absolute terms — judge this on depth of play per participant, not on scans as a proxy for reach.",
+      "The single hard dependency sits on the client side. QR codes are fixed per creative, so the moment someone photographs the Secret Rare and posts it, the code is public — and the only thing between that and a dead game is three-factor scan validation in the app: device GPS inside the live zone, timestamp inside that creative's scheduled window, one credit per card per device. A couch scan in Ohio then fails on geography, a late scan in the right neighbourhood fails on time. That layer is not optional and it is not in CCD scope, so it needs to be confirmed on the CrownRips build roadmap before media is committed. Secondary: scan rates on DOOH QR are low in absolute terms — judge this on depth of play per participant, not on scans as a proxy for reach.",
   },
 ];
 
