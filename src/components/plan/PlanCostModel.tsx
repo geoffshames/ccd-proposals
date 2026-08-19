@@ -101,17 +101,21 @@ function GrowthChart({
   points,
   series,
   maxY,
+  markers,
+  bands,
 }: {
   points: { label: string; day: number }[];
   series: CostModelSeries[];
   maxY: number;
+  markers?: { day: number; label: string }[];
+  bands?: { from: number; to: number; label: string }[];
 }) {
   const W = 760;
-  const H = 300;
+  const H = 312;
   const L = 56;
   const R = 636;
-  const T = 18;
-  const B = 250;
+  const T = 30;
+  const B = 262;
   const maxDay = Math.max(...points.map((p) => p.day)) || 1;
   const x = (d: number) => L + (d / maxDay) * (R - L);
   const y = (v: number) => B - (v / maxY) * (B - T);
@@ -123,6 +127,25 @@ function GrowthChart({
 
   return (
     <svg viewBox={`0 0 ${W} ${H}`} className="w-full h-auto" role="img">
+      <defs>
+        <linearGradient id="cmGrowthFill" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stopColor="var(--color-accent)" stopOpacity="0.24" />
+          <stop offset="100%" stopColor="var(--color-accent)" stopOpacity="0" />
+        </linearGradient>
+      </defs>
+
+      {/* context bands */}
+      {bands?.map((b, i) => (
+        <g key={i}>
+          <rect x={x(b.from)} y={T} width={x(b.to) - x(b.from)} height={B - T} fill="rgba(255,255,255,0.028)" />
+          <line x1={x(b.from)} y1={T} x2={x(b.from)} y2={B} stroke={GRID} strokeWidth={1} />
+          <line x1={x(b.to)} y1={T} x2={x(b.to)} y2={B} stroke={GRID} strokeWidth={1} />
+          <ChartText x={(x(b.from) + x(b.to)) / 2} y={18} anchor="middle" size={9.5} fill={MUTED_SOFT} spacing="0.16em">
+            {b.label}
+          </ChartText>
+        </g>
+      ))}
+
       {/* grid */}
       {gridSteps.map((f, i) => {
         const gv = maxY * f;
@@ -153,12 +176,33 @@ function GrowthChart({
         ) : null
       )}
 
-      {/* area under the emphasized series */}
+      {/* event markers */}
+      {markers?.map((m, i) => (
+        <g key={i}>
+          <line x1={x(m.day)} y1={24} x2={x(m.day)} y2={B} stroke="var(--color-accent)" strokeOpacity={0.45} strokeWidth={1} strokeDasharray="3 4" />
+          <ChartText x={x(m.day)} y={18} anchor="middle" size={9.5} fill="var(--color-accent)" spacing="0.16em">
+            {m.label}
+          </ChartText>
+        </g>
+      ))}
+
+      {/* gradient area under the emphasized series */}
       {emphasized && (
         <polygon
           points={`${linePoints(emphasized)} ${x(points[points.length - 1].day).toFixed(1)},${B} ${x(points[0].day).toFixed(1)},${B}`}
-          fill="var(--color-accent)"
-          fillOpacity={0.07}
+          fill="url(#cmGrowthFill)"
+        />
+      )}
+
+      {/* glow underlay for the emphasized line */}
+      {emphasized && (
+        <polyline
+          fill="none"
+          stroke="var(--color-accent)"
+          strokeOpacity={0.22}
+          strokeWidth={7}
+          strokeLinecap="round"
+          points={linePoints(emphasized)}
         />
       )}
 
@@ -174,6 +218,22 @@ function GrowthChart({
           points={linePoints(s)}
         />
       ))}
+
+      {/* per-point markers on the emphasized line */}
+      {emphasized &&
+        emphasized.values.map((v, i) =>
+          i > 0 && i < emphasized.values.length - 1 ? (
+            <circle
+              key={i}
+              cx={x(points[i].day)}
+              cy={y(v)}
+              r={3}
+              fill={CARD_BG}
+              stroke="var(--color-accent)"
+              strokeWidth={1.6}
+            />
+          ) : null
+        )}
 
       {/* endpoint dots + labels */}
       {series.map((s, si) => {
@@ -196,9 +256,6 @@ function GrowthChart({
 
       {/* start marker */}
       <circle cx={x(points[0].day)} cy={y(series[0].values[0])} r={4} fill="var(--color-accent)" />
-      <ChartText x={x(points[0].day) + 12} y={y(series[0].values[0]) - 16} size={11} fill={LABEL}>
-        {`Today ${series[0].values[0].toLocaleString("en-US")}`}
-      </ChartText>
     </svg>
   );
 }
@@ -362,9 +419,59 @@ export function PlanCostModel({ section }: { section: CostModelSection }) {
 
           {/* List growth projection */}
           <motion.div {...reveal(0.04)}>
-            {section.growthHeading && <Heading>{section.growthHeading}</Heading>}
-            <div className="border border-text-muted/15 p-4 md:p-8" style={{ background: CARD_BG }}>
-              <GrowthChart points={section.growthPoints} series={section.growthSeries} maxY={growthMax} />
+            <div
+              className="relative border border-text-muted/15"
+              style={{
+                background:
+                  "radial-gradient(720px 260px at 84% 0%, color-mix(in srgb, var(--color-accent) 7%, transparent), transparent 70%), linear-gradient(165deg, #191a1e 0%, #141518 55%, #101114 100%)",
+              }}
+            >
+              <span className="pointer-events-none absolute top-0 left-0 w-3.5 h-3.5 border-t border-l border-accent/50" />
+              <span className="pointer-events-none absolute top-0 right-0 w-3.5 h-3.5 border-t border-r border-accent/50" />
+              <span className="pointer-events-none absolute bottom-0 left-0 w-3.5 h-3.5 border-b border-l border-accent/50" />
+              <span className="pointer-events-none absolute bottom-0 right-0 w-3.5 h-3.5 border-b border-r border-accent/50" />
+
+              <div className="flex flex-wrap items-center justify-between gap-3 px-5 md:px-8 pt-6 pb-5 border-b border-text-muted/10">
+                <div className="text-[10px] font-mono tracking-[0.22em] uppercase text-text-muted/70">
+                  {section.growthHeading}
+                </div>
+                {section.growthChip && (
+                  <div className="px-2.5 py-1 border border-accent/40 bg-accent/[0.06] text-[10px] font-mono tracking-[0.16em] uppercase text-accent whitespace-nowrap">
+                    {section.growthChip}
+                  </div>
+                )}
+              </div>
+
+              {section.growthStats && section.growthStats.length > 0 && (
+                <div className="grid grid-cols-3 border-b border-text-muted/10">
+                  {section.growthStats.map((st, i) => (
+                    <div key={i} className={"px-5 md:px-8 py-5" + (i > 0 ? " border-l border-text-muted/10" : "")}>
+                      <div className="text-[9px] font-mono tracking-[0.2em] uppercase text-text-muted/55">
+                        {st.label}
+                      </div>
+                      <div
+                        className={
+                          "mt-1.5 text-[19px] md:text-[24px] font-bold leading-none " +
+                          (st.accent ? "text-accent" : "text-text-primary")
+                        }
+                        style={{ fontFamily: "var(--font-heading), var(--font-sans), sans-serif" }}
+                      >
+                        {st.value}
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              )}
+
+              <div className="px-3 md:px-6 pt-5 pb-4">
+                <GrowthChart
+                  points={section.growthPoints}
+                  series={section.growthSeries}
+                  maxY={growthMax}
+                  markers={section.growthMarkers}
+                  bands={section.growthBands}
+                />
+              </div>
             </div>
             {section.growthCaption && <Caption>{section.growthCaption}</Caption>}
           </motion.div>

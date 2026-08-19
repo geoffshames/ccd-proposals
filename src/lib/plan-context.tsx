@@ -616,8 +616,12 @@ export type CostModelSection = {
   formulaParts?: string[];
   formulaResult?: string;
   growthHeading?: string;
+  growthChip?: string;
+  growthStats?: { label: string; value: string; accent?: boolean }[];
   growthPoints: { label: string; day: number }[];
   growthSeries: CostModelSeries[];
+  growthMarkers?: { day: number; label: string }[];
+  growthBands?: { from: number; to: number; label: string }[];
   growthMax?: number;
   growthCaption?: string;
   costHeading?: string;

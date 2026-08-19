@@ -510,6 +510,12 @@ export const eightyTwoMajorSeptember: StrategyPlanData = {
       formulaParts: ["List size", "Drops per month", "Rate per fan"],
       formulaResult: "Monthly cost",
       growthHeading: "Where The List Is Heading",
+      growthChip: "+190 signups/day",
+      growthStats: [
+        { label: "Today", value: "2,157" },
+        { label: "Current rate", value: "+190/day", accent: true },
+        { label: "Dec 31, steady case", value: "~28,000" },
+      ],
       growthPoints: [
         { label: "Aug 18", day: 0 },
         { label: "", day: 13 },
@@ -523,6 +529,8 @@ export const eightyTwoMajorSeptember: StrategyPlanData = {
         { name: "Steady", values: [2157, 4640, 10370, 16291, 22021, 27942], emphasis: true },
         { name: "Surge", values: [2157, 5407, 12907, 20657, 28157, 35907], dashed: true },
       ],
+      growthMarkers: [{ day: 14, label: "HEAT SEPT 1" }],
+      growthBands: [{ from: 58, to: 104, label: "Q4 TOUR WINDOW" }],
       growthMax: 40000,
       growthCaption:
         "From 2,157 fans on August 18, growing at roughly 190 signups per day on the current paid flight, with release week and the Q4 tour as the compounding moments. Three growth cases bracket the range.",
