@@ -1,5 +1,5 @@
 "use client";
-import { Fragment } from "react";
+import { Fragment, type ReactNode } from "react";
 import { motion } from "framer-motion";
 import { PlanSectionHeader } from "./PlanSectionHeader";
 import type {
@@ -9,6 +9,8 @@ import type {
 } from "@/lib/plan-context";
 
 const CARD_BG = "#141518";
+const CARD_GRADIENT =
+  "radial-gradient(720px 260px at 84% 0%, color-mix(in srgb, var(--color-accent) 7%, transparent), transparent 70%), linear-gradient(165deg, #191a1e 0%, #141518 55%, #101114 100%)";
 const MUTED = "rgba(163,163,173,0.75)";
 const MUTED_SOFT = "rgba(163,163,173,0.45)";
 const GRID = "rgba(163,163,173,0.14)";
@@ -30,34 +32,11 @@ function fmtMoneyK(v: number): string {
   return v >= 1000 ? `$${v / 1000}K` : `$${v}`;
 }
 
-function Heading({ children }: { children: string }) {
-  return (
-    <div className="text-[10px] font-mono tracking-[0.22em] uppercase text-text-muted/60 mb-4">
-      {children}
-    </div>
-  );
-}
-
 function Caption({ children }: { children: string }) {
   return (
     <p className="mt-4 text-[13px] text-text-muted/80 leading-relaxed max-w-3xl">
       {children}
     </p>
-  );
-}
-
-function Legend({ items }: { items: { name: string; color: string }[] }) {
-  return (
-    <div className="flex flex-wrap gap-x-6 gap-y-2">
-      {items.map((it, i) => (
-        <div key={i} className="flex items-center gap-2">
-          <span className="inline-block w-3 h-3" style={{ background: it.color }} />
-          <span className="text-[10px] font-mono tracking-[0.18em] uppercase text-text-muted/70">
-            {it.name}
-          </span>
-        </div>
-      ))}
-    </div>
   );
 }
 
@@ -67,6 +46,71 @@ const reveal = (delay = 0) => ({
   viewport: { once: true, margin: "-80px" as const },
   transition: { duration: 0.6, delay },
 });
+
+/** Shared elevated card shell for every chart in the section. */
+function ChartCard({
+  heading,
+  chip,
+  stats,
+  children,
+  bodyClassName,
+}: {
+  heading?: string;
+  chip?: string;
+  stats?: { label: string; value: string; accent?: boolean; swatch?: string }[];
+  children: ReactNode;
+  bodyClassName?: string;
+}) {
+  return (
+    <div className="relative border border-text-muted/15" style={{ background: CARD_GRADIENT }}>
+      <span className="pointer-events-none absolute top-0 left-0 w-3.5 h-3.5 border-t border-l border-accent/50" />
+      <span className="pointer-events-none absolute top-0 right-0 w-3.5 h-3.5 border-t border-r border-accent/50" />
+      <span className="pointer-events-none absolute bottom-0 left-0 w-3.5 h-3.5 border-b border-l border-accent/50" />
+      <span className="pointer-events-none absolute bottom-0 right-0 w-3.5 h-3.5 border-b border-r border-accent/50" />
+
+      {(heading || chip) && (
+        <div className="flex flex-wrap items-center justify-between gap-3 px-5 md:px-8 pt-6 pb-5 border-b border-text-muted/10">
+          <div className="text-[10px] font-mono tracking-[0.22em] uppercase text-text-muted/70">
+            {heading}
+          </div>
+          {chip && (
+            <div className="px-2.5 py-1 border border-accent/40 bg-accent/[0.06] text-[10px] font-mono tracking-[0.16em] uppercase text-accent whitespace-nowrap">
+              {chip}
+            </div>
+          )}
+        </div>
+      )}
+
+      {stats && stats.length > 0 && (
+        <div className="grid grid-cols-3 border-b border-text-muted/10">
+          {stats.map((st, i) => (
+            <div key={i} className={"px-5 md:px-8 py-5" + (i > 0 ? " border-l border-text-muted/10" : "")}>
+              <div className="flex items-center gap-2">
+                {st.swatch && (
+                  <span className="inline-block w-2.5 h-2.5 flex-shrink-0" style={{ background: st.swatch }} />
+                )}
+                <div className="text-[9px] font-mono tracking-[0.2em] uppercase text-text-muted/55">
+                  {st.label}
+                </div>
+              </div>
+              <div
+                className={
+                  "mt-1.5 text-[19px] md:text-[24px] font-bold leading-none " +
+                  (st.accent ? "text-accent" : "text-text-primary")
+                }
+                style={{ fontFamily: "var(--font-heading), var(--font-sans), sans-serif" }}
+              >
+                {st.value}
+              </div>
+            </div>
+          ))}
+        </div>
+      )}
+
+      <div className={bodyClassName ?? "px-3 md:px-6 pt-5 pb-4"}>{children}</div>
+    </div>
+  );
+}
 
 /** SVG text that knocks out chart lines behind it. */
 function ChartText(props: {
@@ -330,7 +374,12 @@ function MonthlyBars({
 export function PlanCostModel({ section }: { section: CostModelSection }) {
   const maxDrop = Math.max(...section.dropBars.map((b) => b.value)) || 1;
   const growthMax = section.growthMax ?? Math.max(...section.growthSeries.flatMap((s) => s.values));
-  const legendItems = section.scenarios.map((s) => ({ name: s.name, color: seriesColor(s) }));
+  const costStats = section.scenarios.map((s) => ({
+    label: `${s.name} total`,
+    value: s.total,
+    accent: s.emphasis,
+    swatch: seriesColor(s),
+  }));
 
   return (
     <section id={`section-${section.number}`} className="px-6 md:px-12 lg:px-24 py-24 md:py-32">
@@ -340,7 +389,11 @@ export function PlanCostModel({ section }: { section: CostModelSection }) {
         <div className="space-y-16 mt-8">
           {/* Published rates */}
           <motion.div {...reveal(0)}>
-            {section.rateHeading && <Heading>{section.rateHeading}</Heading>}
+            {section.rateHeading && (
+              <div className="text-[10px] font-mono tracking-[0.22em] uppercase text-text-muted/60 mb-4">
+                {section.rateHeading}
+              </div>
+            )}
             <div className="grid grid-cols-2 md:grid-cols-5 gap-3">
               {section.rateCards.map((c, i) => (
                 <div key={i} className="border border-text-muted/15 bg-bg-card p-5">
@@ -366,38 +419,47 @@ export function PlanCostModel({ section }: { section: CostModelSection }) {
 
           {/* Cost per drop bars */}
           <motion.div {...reveal(0.04)}>
-            {section.dropHeading && <Heading>{section.dropHeading}</Heading>}
-            <div className="space-y-3 max-w-3xl">
-              {section.dropBars.map((b, i) => (
-                <div key={i} className="flex items-center gap-4">
-                  <div className="w-28 md:w-36 flex-shrink-0 text-[11px] font-mono tracking-[0.14em] uppercase text-text-muted/75 text-right">
-                    {b.label}
+            <ChartCard
+              heading={section.dropHeading}
+              chip={section.dropChip}
+              bodyClassName="px-5 md:px-8 py-7 md:py-8"
+            >
+              <div className="space-y-4">
+                {section.dropBars.map((b, i) => (
+                  <div key={i} className="flex items-center gap-4">
+                    <div className="w-28 md:w-36 flex-shrink-0 text-[11px] font-mono tracking-[0.14em] uppercase text-text-muted/75 text-right">
+                      {b.label}
+                    </div>
+                    <div className="flex-1 h-8 bg-white/[0.045] relative overflow-hidden">
+                      <motion.div
+                        initial={{ width: 0 }}
+                        whileInView={{ width: `${(b.value / maxDrop) * 100}%` }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.8, delay: 0.1 + i * 0.08, ease: [0.22, 1, 0.36, 1] }}
+                        className="h-full bg-accent"
+                      />
+                    </div>
+                    <div
+                      className="w-14 flex-shrink-0 text-right text-[18px] md:text-[20px] font-bold text-text-primary"
+                      style={{ fontFamily: "var(--font-heading), var(--font-sans), sans-serif" }}
+                    >
+                      {b.display}
+                    </div>
                   </div>
-                  <div className="flex-1 h-8 bg-white/[0.045] relative overflow-hidden">
-                    <motion.div
-                      initial={{ width: 0 }}
-                      whileInView={{ width: `${(b.value / maxDrop) * 100}%` }}
-                      viewport={{ once: true }}
-                      transition={{ duration: 0.8, delay: 0.1 + i * 0.08, ease: [0.22, 1, 0.36, 1] }}
-                      className="h-full bg-accent"
-                    />
-                  </div>
-                  <div
-                    className="w-14 flex-shrink-0 text-right text-[18px] md:text-[20px] font-bold text-text-primary"
-                    style={{ fontFamily: "var(--font-heading), var(--font-sans), sans-serif" }}
-                  >
-                    {b.display}
-                  </div>
-                </div>
-              ))}
-            </div>
+                ))}
+              </div>
+            </ChartCard>
             {section.dropCaption && <Caption>{section.dropCaption}</Caption>}
           </motion.div>
 
           {/* Formula strip */}
           {section.formulaParts && section.formulaParts.length > 0 && (
             <motion.div {...reveal(0.04)}>
-              {section.formulaHeading && <Heading>{section.formulaHeading}</Heading>}
+              {section.formulaHeading && (
+                <div className="text-[10px] font-mono tracking-[0.22em] uppercase text-text-muted/60 mb-4">
+                  {section.formulaHeading}
+                </div>
+              )}
               <div className="flex flex-wrap items-stretch gap-2 md:gap-3">
                 {section.formulaParts.map((p, i) => (
                   <Fragment key={i}>
@@ -419,78 +481,33 @@ export function PlanCostModel({ section }: { section: CostModelSection }) {
 
           {/* List growth projection */}
           <motion.div {...reveal(0.04)}>
-            <div
-              className="relative border border-text-muted/15"
-              style={{
-                background:
-                  "radial-gradient(720px 260px at 84% 0%, color-mix(in srgb, var(--color-accent) 7%, transparent), transparent 70%), linear-gradient(165deg, #191a1e 0%, #141518 55%, #101114 100%)",
-              }}
-            >
-              <span className="pointer-events-none absolute top-0 left-0 w-3.5 h-3.5 border-t border-l border-accent/50" />
-              <span className="pointer-events-none absolute top-0 right-0 w-3.5 h-3.5 border-t border-r border-accent/50" />
-              <span className="pointer-events-none absolute bottom-0 left-0 w-3.5 h-3.5 border-b border-l border-accent/50" />
-              <span className="pointer-events-none absolute bottom-0 right-0 w-3.5 h-3.5 border-b border-r border-accent/50" />
-
-              <div className="flex flex-wrap items-center justify-between gap-3 px-5 md:px-8 pt-6 pb-5 border-b border-text-muted/10">
-                <div className="text-[10px] font-mono tracking-[0.22em] uppercase text-text-muted/70">
-                  {section.growthHeading}
-                </div>
-                {section.growthChip && (
-                  <div className="px-2.5 py-1 border border-accent/40 bg-accent/[0.06] text-[10px] font-mono tracking-[0.16em] uppercase text-accent whitespace-nowrap">
-                    {section.growthChip}
-                  </div>
-                )}
-              </div>
-
-              {section.growthStats && section.growthStats.length > 0 && (
-                <div className="grid grid-cols-3 border-b border-text-muted/10">
-                  {section.growthStats.map((st, i) => (
-                    <div key={i} className={"px-5 md:px-8 py-5" + (i > 0 ? " border-l border-text-muted/10" : "")}>
-                      <div className="text-[9px] font-mono tracking-[0.2em] uppercase text-text-muted/55">
-                        {st.label}
-                      </div>
-                      <div
-                        className={
-                          "mt-1.5 text-[19px] md:text-[24px] font-bold leading-none " +
-                          (st.accent ? "text-accent" : "text-text-primary")
-                        }
-                        style={{ fontFamily: "var(--font-heading), var(--font-sans), sans-serif" }}
-                      >
-                        {st.value}
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              )}
-
-              <div className="px-3 md:px-6 pt-5 pb-4">
-                <GrowthChart
-                  points={section.growthPoints}
-                  series={section.growthSeries}
-                  maxY={growthMax}
-                  markers={section.growthMarkers}
-                  bands={section.growthBands}
-                />
-              </div>
-            </div>
+            <ChartCard heading={section.growthHeading} chip={section.growthChip} stats={section.growthStats}>
+              <GrowthChart
+                points={section.growthPoints}
+                series={section.growthSeries}
+                maxY={growthMax}
+                markers={section.growthMarkers}
+                bands={section.growthBands}
+              />
+            </ChartCard>
             {section.growthCaption && <Caption>{section.growthCaption}</Caption>}
           </motion.div>
 
           {/* Monthly cost bars */}
           <motion.div {...reveal(0.04)}>
-            {section.costHeading && <Heading>{section.costHeading}</Heading>}
-            <div className="border border-text-muted/15 p-4 md:p-8" style={{ background: CARD_BG }}>
-              <div className="mb-6">
-                <Legend items={legendItems} />
-              </div>
+            <ChartCard heading={section.costHeading} chip={section.costChip} stats={costStats}>
               <MonthlyBars months={section.costMonths} scenarios={section.scenarios} />
-            </div>
+            </ChartCard>
             {section.costCaption && <Caption>{section.costCaption}</Caption>}
           </motion.div>
 
           {/* Scenario cards */}
           <motion.div {...reveal(0.04)}>
-            {section.scenarioHeading && <Heading>{section.scenarioHeading}</Heading>}
+            {section.scenarioHeading && (
+              <div className="text-[10px] font-mono tracking-[0.22em] uppercase text-text-muted/60 mb-4">
+                {section.scenarioHeading}
+              </div>
+            )}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
               {section.scenarios.map((s, i) => (
                 <div
@@ -547,7 +564,11 @@ export function PlanCostModel({ section }: { section: CostModelSection }) {
           {/* Levers */}
           {section.levers && section.levers.length > 0 && (
             <motion.div {...reveal(0.04)}>
-              {section.leversHeading && <Heading>{section.leversHeading}</Heading>}
+              {section.leversHeading && (
+                <div className="text-[10px] font-mono tracking-[0.22em] uppercase text-text-muted/60 mb-4">
+                  {section.leversHeading}
+                </div>
+              )}
               <ul className="space-y-2 max-w-3xl">
                 {section.levers.map((it, i) => (
                   <li key={i} className="flex gap-3 text-[14px] md:text-[15px] text-text-primary/85 leading-relaxed">

@@ -499,6 +499,7 @@ export const eightyTwoMajorSeptember: StrategyPlanData = {
       rateCaption:
         "Platform rate: $150 per 75,000 credits, or $0.002 per credit, billed on usage at published pricing and passed through at cost, with no CCD fee on messaging credits. A credit subscription runs roughly 12 percent below these figures and is the recommended purchasing route.",
       dropHeading: "What One Drop Costs, Per 1,000 Fans",
+      dropChip: "About $0.02 per fan",
       dropBars: [
         { label: "Email drop", value: 2, display: "$2" },
         { label: "Text drop", value: 20, display: "$20" },
@@ -535,6 +536,7 @@ export const eightyTwoMajorSeptember: StrategyPlanData = {
       growthCaption:
         "From 2,157 fans on August 18, growing at roughly 190 signups per day on the current paid flight, with release week and the Q4 tour as the compounding moments. Three growth cases bracket the range.",
       costHeading: "Projected Monthly Spend, September Through December",
+      costChip: "Pay-as-you-go rates",
       costMonths: ["Sept", "Oct", "Nov", "Dec"],
       costCaption:
         "Each bar is the formula above applied to that month's list size and cadence, covering all platform messaging at pay-as-you-go rates. The number grows because the list does: a rising messaging line is the receipt for a compounding owned audience.",

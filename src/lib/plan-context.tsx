@@ -610,6 +610,7 @@ export type CostModelSection = {
   rateCards: CostModelRateCard[];
   rateCaption?: string;
   dropHeading?: string;
+  dropChip?: string;
   dropBars: CostModelBar[];
   dropCaption?: string;
   formulaHeading?: string;
@@ -625,6 +626,7 @@ export type CostModelSection = {
   growthMax?: number;
   growthCaption?: string;
   costHeading?: string;
+  costChip?: string;
   costMonths: string[];
   costCaption?: string;
   scenarioHeading?: string;
