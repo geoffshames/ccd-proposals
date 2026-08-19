@@ -385,9 +385,9 @@ export const concepts: Concept[] = [
     id: "chase",
     number: "08",
     name: "THE CHASE",
-    hook: "New York's rarest card is doing 30 in a bus lane.",
+    hook: "New York’s rarest card is doing 30 in a bus lane.",
     logline:
-      "Twenty-five cab-topper creatives, structured as a real card set with real rarity tiers. Scan a taxi, that card enters your binder. Commons are everywhere. The Secret Rare surfaces on a handful of cabs, in one neighbourhood, three times in the whole flight. Complete all twenty-five and you take The Chain.",
+      "Twenty-five cab-topper creatives, structured as a real card set with real rarity tiers. Each carries its own QR pointing at a web randomizer that rolls the odds on the spot — no app, no install, no account. Scan a taxi on a Manhattan sidewalk and you know inside two seconds whether you hit. Complete all twenty-five and you take The Chain.",
     image: "/images/crownrips/chase.jpg",
     imageAlt:
       "Rain-slicked Manhattan avenue at night, a line of yellow taxis with glowing red rooftop displays, people on the sidewalk running with phones raised",
@@ -396,20 +396,21 @@ export const concepts: Concept[] = [
     window: "3 weeks",
     markets: "Five boroughs",
     mechanic: [
-      "The 25 creatives are a set list, not a rotation. Each carries its own QR and its own rarity, and the rarity is enforced in the media schedule — commons run everywhere all flight, the Secret Rare runs in one neighbourhood for three short windows total.",
-      "Scan a topper and that card enters your binder in-app. Instant digital pack on every valid scan; completing a rarity tier ships something physical.",
+      "The 25 creatives are a set list, not a rotation. Each carries its own QR resolving to its own URL on a web randomizer, and each has its own rarity — enforced in the media schedule, not in software. Commons run everywhere all flight; the Secret Rare runs in one neighbourhood for three short windows total.",
+      "Scan and the randomizer validates before it rolls: is this creative scheduled live in this zone at this minute, is the device physically here, has it already claimed this card. Only then does it spin the odds for that card’s tier.",
+      "The result lands on the street, in the browser, in about two seconds. No app, no install, no account to play — the download is the reward for winning, not the toll for entering.",
       "The 8-second flip is the difficulty setting. A single screen face cycles 450 slots an hour, so you cannot plan a scan — you react to one, from a moving vehicle, in traffic.",
       "A published drop calendar tells you the zone and the window but never the cab. You go to Dumbo at 7pm knowing the Ultra Rare is live somewhere in it, then you hunt.",
       "The Secret Rare windows are locked in the media schedule weeks out but announced to fans 60 minutes ahead by push. Media ops always knows; the city never does.",
-      "Complete all 25 and the binder unlocks the grail from concept 03 — the same chain, the same one-of-one, claimed by a New Yorker who scanned a taxi.",
+      "Complete all 25 and the set unlocks the grail from concept 03 — the same chain, the same one-of-one, claimed by a New Yorker who scanned a taxi.",
     ],
     why:
-      "The audience already thinks in rarity tiers — set completion is the exact behaviour Pokémon has trained into them for thirty years, and it is a far stronger engine than a sweepstakes entry. Mapping 25 creatives onto a set list turns a media buy into a collection mechanic that people voluntarily grind. The scheduling constraint is the gift here, not the limitation: because the schedule is locked in advance, the backend knows precisely which creative was live in which zone at which minute, which is what makes a scan verifiable. And the taxi is doing something no static board can — it moves, so the card genuinely has to be chased.",
+      "The audience already thinks in rarity tiers — set completion is the exact behaviour Pokémon has trained into them for thirty years, and it is a far stronger engine than a sweepstakes entry. Mapping 25 creatives onto a set list turns a media buy into a collection mechanic people voluntarily grind. Putting the roll on web rather than behind an install is what makes it work at street level: nobody standing in the rain on Lafayette is downloading an app to find out whether they hit, but everybody will scan a code. And the scheduling constraint is the gift here, not the limitation — because the flight is locked weeks out, the randomizer knows exactly which creative was live in which zone at which minute, which is the only reason a fixed QR can be trusted at all. The taxi then does what no static board can: it moves, so the card genuinely has to be chased.",
     earned:
-      "The footage is people running down a Manhattan sidewalk after a taxi, which is a scene rather than an ad. Drop windows create scheduled, repeatable, filmable convergences in a named neighbourhood — three weeks of appointment moments instead of one launch beat. Set-completion progress is inherently postable, so the binder does distribution for us.",
+      "The footage is people running down a Manhattan sidewalk after a taxi, which is a scene rather than an ad. Drop windows create scheduled, repeatable, filmable convergences in a named neighbourhood — three weeks of appointment moments instead of one launch beat. Set-completion progress is inherently postable, so the collection does distribution for us.",
     proof: {
       claim:
-        "At $10 CPM the 100M daily impression ceiling represents roughly $1,000,000 of inventory per day, so even a heavy three-week buy runs at a low single-digit percentage of network capacity — leaving deep headroom to concentrate delivery into short, high-intensity drop windows.",
+        "At $10 CPM the 100M daily impression ceiling represents roughly $1,000,000 of inventory per day, so even a heavy three-week buy runs at a low single-digit percentage of network capacity — leaving deep headroom to concentrate delivery into short, high-intensity drop windows. And because every roll resolves through one server-side randomizer, that same feed is publishable: it is the exact data source concept 07 puts on the board.",
       source: "Derived from the quoted $10 CPM and 100M/day network capacity",
     },
     setList: [
@@ -432,14 +433,15 @@ export const concepts: Concept[] = [
     build: [
       "25 creative executions designed as a set list, built to read and scan inside 8 seconds at distance",
       "Rarity architecture and the geo + daypart media schedule that enforces it",
+      "25 QR destinations mapped to the set list, plus the machine-readable flight schedule the randomizer validates every scan against",
       "Drop calendar design and the reveal cadence for Ultra and Secret Rare windows",
       "Drop-night content capture across three surge windows",
     ],
     clientSide: [
-      "In-app binder — rarity tiers, completion tracking, tier-reward fulfilment",
-      "Three-factor scan validation — device GPS inside the live zone, timestamp inside the scheduled window, one credit per card per device",
+      "The web randomizer — the endpoint each QR resolves to, holding the odds table and rolling the outcome server-side",
+      "Three-factor validation at that endpoint, executed before the roll — device geo inside the live zone, timestamp inside the scheduled window, one claim per card per device",
+      "Result page and set progress — what you hit, what is still missing, when the next window opens",
       "Drop calendar surface and 60-minute push alerts for Secret Rare windows",
-      "Live set-tracker showing which cards are still uncollected city-wide",
       "Prize pool and fulfilment — instant digital packs plus physical tier rewards",
     ],
     budget: [
@@ -449,7 +451,7 @@ export const concepts: Concept[] = [
     total: 28000,
     totalLabel: "CCD production — excl. media",
     risk:
-      "The single hard dependency sits on the client side. QR codes are fixed per creative, so the moment someone photographs the Secret Rare and posts it, the code is public — and the only thing between that and a dead game is three-factor scan validation in the app: device GPS inside the live zone, timestamp inside that creative's scheduled window, one credit per card per device. A couch scan in Ohio then fails on geography, a late scan in the right neighbourhood fails on time. That layer is not optional and it is not in CCD scope, so it needs to be confirmed on the CrownRips build roadmap before media is committed. Secondary: scan rates on DOOH QR are low in absolute terms — judge this on depth of play per participant, not on scans as a proxy for reach.",
+      "Moving the roll to a web randomizer fixes the leak that fixed QR codes would otherwise create: a posted code now resolves to an endpoint that checks geo and schedule before it rolls, so a couch scan in Ohio returns nothing rather than a prize. That makes the randomizer the single point of failure for the entire game. If it is slow, down, or permissive during a Secret Rare window, the concept fails in public with a crowd watching — so it needs load headroom sized for a surge, not for average traffic. Prize determination also almost certainly has to sit inside CrownRips’ own audited stack rather than ours, since it is the same logic that governs their sweeps compliance, which is why it is scoped client-side here. Say the word if you would rather CCD build and host it. Secondary: scan rates on DOOH QR are low in absolute terms — judge this on depth of play per participant, not on scans as a proxy for reach.",
   },
 ];
 
