@@ -6,6 +6,7 @@ import type {
   CostModelSection,
   CostModelSeries,
   CostModelScenario,
+  DropCalendarPhase,
 } from "@/lib/plan-context";
 
 const CARD_BG = "#141518";
@@ -371,6 +372,74 @@ function MonthlyBars({
   );
 }
 
+const KIND_LABEL: Record<string, string> = {
+  full: "Full list",
+  mms: "Full list / photo",
+  geo: "Segmented",
+};
+
+function DropPhase({ phase, last }: { phase: DropCalendarPhase; last: boolean }) {
+  return (
+    <div className={"relative pl-6 md:pl-8 " + (last ? "" : "pb-9")}>
+      {!last && <span className="absolute left-[3px] top-3 bottom-0 w-px bg-text-muted/15" />}
+      <span className="absolute left-0 top-1.5 w-[7px] h-[7px] bg-accent" />
+
+      <div className="text-[10px] font-mono tracking-[0.2em] uppercase text-accent">
+        {phase.window}
+      </div>
+      <h4
+        className="mt-1.5 text-[17px] md:text-[19px] font-bold text-text-primary leading-tight"
+        style={{ fontFamily: "var(--font-heading), var(--font-sans), sans-serif" }}
+      >
+        {phase.title}
+      </h4>
+
+      <ul className="mt-4 space-y-2.5">
+        {phase.entries.map((e, i) => (
+          <li key={i} className="flex flex-wrap items-baseline gap-x-3 gap-y-1">
+            <span className="w-20 flex-shrink-0 text-[11px] font-mono tracking-[0.06em] text-text-muted/70">
+              {e.date}
+            </span>
+            <span className="flex-1 min-w-[200px] text-[14px] md:text-[15px] text-text-primary/85 leading-relaxed">
+              {e.label}
+            </span>
+            <span
+              className={
+                "px-2 py-0.5 text-[9px] font-mono tracking-[0.14em] uppercase whitespace-nowrap border " +
+                (e.kind === "geo"
+                  ? "border-text-muted/25 text-text-muted/70"
+                  : "border-accent/40 text-accent")
+              }
+            >
+              {KIND_LABEL[e.kind]}
+            </span>
+          </li>
+        ))}
+      </ul>
+
+      {phase.markets && phase.markets.length > 0 && (
+        <div className="mt-5 border border-text-muted/15 bg-white/[0.02] p-4">
+          {phase.marketsLabel && (
+            <div className="text-[9px] font-mono tracking-[0.2em] uppercase text-text-muted/55 mb-3">
+              {phase.marketsLabel}
+            </div>
+          )}
+          <div className="flex flex-wrap gap-1.5">
+            {phase.markets.map((m, i) => (
+              <span
+                key={i}
+                className="px-2 py-1 border border-text-muted/20 text-[10px] font-mono tracking-[0.08em] text-text-primary/75 whitespace-nowrap"
+              >
+                {m}
+              </span>
+            ))}
+          </div>
+        </div>
+      )}
+    </div>
+  );
+}
+
 export function PlanCostModel({ section }: { section: CostModelSection }) {
   const maxDrop = Math.max(...section.dropBars.map((b) => b.value)) || 1;
   const growthMax = section.growthMax ?? Math.max(...section.growthSeries.flatMap((s) => s.values));
@@ -560,6 +629,47 @@ export function PlanCostModel({ section }: { section: CostModelSection }) {
               ))}
             </div>
           </motion.div>
+
+          {/* Drop calendar */}
+          {section.calendarPhases && section.calendarPhases.length > 0 && (
+            <motion.div {...reveal(0.04)}>
+              <ChartCard
+                heading={section.calendarHeading}
+                chip={section.calendarChip}
+                stats={section.calendarStats}
+                bodyClassName="px-5 md:px-8 py-8"
+              >
+                <div>
+                  {section.calendarPhases.map((p, i) => (
+                    <DropPhase
+                      key={i}
+                      phase={p}
+                      last={i === (section.calendarPhases?.length ?? 0) - 1}
+                    />
+                  ))}
+                </div>
+              </ChartCard>
+              {section.calendarCaption && <Caption>{section.calendarCaption}</Caption>}
+
+              {section.calendarPrinciples && section.calendarPrinciples.length > 0 && (
+                <div className="mt-8">
+                  {section.calendarPrinciplesHeading && (
+                    <div className="text-[10px] font-mono tracking-[0.22em] uppercase text-text-muted/60 mb-4">
+                      {section.calendarPrinciplesHeading}
+                    </div>
+                  )}
+                  <ul className="space-y-2 max-w-3xl">
+                    {section.calendarPrinciples.map((it, i) => (
+                      <li key={i} className="flex gap-3 text-[14px] md:text-[15px] text-text-primary/85 leading-relaxed">
+                        <span className="text-accent/60 flex-shrink-0">▸</span>
+                        <span>{it}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+            </motion.div>
+          )}
 
           {/* Levers */}
           {section.levers && section.levers.length > 0 && (

@@ -572,6 +572,97 @@ export const eightyTwoMajorSeptember: StrategyPlanData = {
           dashed: true,
         },
       ],
+      calendarHeading: "Tentative Drop Calendar",
+      calendarChip: "Roughly one drop per week",
+      calendarStats: [
+        { label: "Full-list drops", value: "22" },
+        { label: "Show-day drops", value: "18 markets" },
+        { label: "Cost of all 18", value: "$327", accent: true },
+      ],
+      calendarPhases: [
+        {
+          window: "Aug 21 to Aug 31",
+          title: "Pre-Release Warm-Up",
+          entries: [
+            { date: "Aug 21", label: "First contact, member-voiced, no ask, asks where fans are watching from so home city is captured at the start", kind: "full" },
+            { date: "Aug 27", label: "HEAT pre-save, one link and one ask", kind: "full" },
+          ],
+        },
+        {
+          window: "Sept 1 to Sept 7",
+          title: "Release Week",
+          entries: [
+            { date: "Sept 1", label: "Release drop with cover art, sent at the 6:00 PM KST release moment", kind: "mms" },
+            { date: "Sept 3", label: "Which-track reply prompt, answered from the pre-approved reply bank", kind: "full" },
+            { date: "Sept 5", label: "Music video or performance cut", kind: "full" },
+          ],
+        },
+        {
+          window: "Sept 8 to Sept 30",
+          title: "Sustain And Tour Announce",
+          entries: [
+            { date: "Sept 12", label: "Behind the scenes from release week", kind: "full" },
+            { date: "Sept 19", label: "Fan service, no ask", kind: "full" },
+            { date: "Sept 26", label: "Tour announce and presale signup, timed to the on-sale date", kind: "mms" },
+          ],
+        },
+        {
+          window: "October",
+          title: "Ticket Push",
+          entries: [
+            { date: "Oct 2", label: "Presale codes to the owned list before general availability", kind: "mms" },
+            { date: "Oct 9", label: "General on-sale", kind: "full" },
+            { date: "Oct 16", label: "Content drop carrying the upgrade tiers", kind: "full" },
+            { date: "Oct 23", label: "Ticket nudge into slower markets only", kind: "geo" },
+            { date: "Oct 30", label: "Content, no ask", kind: "full" },
+          ],
+        },
+        {
+          window: "Nov 1 to Nov 16",
+          title: "Pre-Tour",
+          entries: [
+            { date: "Nov 6", label: "Upgrade inventory push on the finite tiers, sent to ticket holders first", kind: "full" },
+            { date: "Nov 13", label: "Tour prep content, vlog series announced", kind: "full" },
+            { date: "Nov 16", label: "Tour-eve kickoff on fly-in day", kind: "full" },
+          ],
+        },
+        {
+          window: "Nov 17 to Dec 16",
+          title: "On Tour",
+          entries: [
+            { date: "Every show", label: "Show-day drop into the market playing that night, doors and set time", kind: "geo" },
+            { date: "Tuesdays", label: "Tour vlog episode, the standing non-promotional send that carries the week", kind: "full" },
+            { date: "Nov 23-24", label: "New York run club RSVP across the two NYC promo days", kind: "geo" },
+            { date: "Dec 11-12", label: "Los Angeles run club RSVP into the LA show week", kind: "geo" },
+          ],
+          marketsLabel: "18 markets, show-day drop in each",
+          markets: [
+            "Nov 17 Orlando", "Nov 19 Atlanta", "Nov 20 Charlotte", "Nov 22 Washington DC",
+            "Nov 25 New York", "Nov 26 Boston", "Nov 28 Columbus", "Nov 29 Detroit",
+            "Dec 1 Chicago", "Dec 3 Minneapolis", "Dec 5 Kansas City", "Dec 7 Dallas",
+            "Dec 9 San Antonio", "Dec 11 Phoenix", "Dec 12 Los Angeles", "Dec 13 San Diego",
+            "Dec 15 San Jose", "Dec 16 Sacramento",
+          ],
+        },
+        {
+          window: "Dec 17 to Dec 31",
+          title: "Cycle Close",
+          entries: [
+            { date: "Dec 18", label: "Tour recap and vlog finale", kind: "full" },
+            { date: "Dec 23", label: "Year-end thank-you, no ask, sets up the 2027 cycle", kind: "full" },
+          ],
+        },
+      ],
+      calendarCaption:
+        "Dates follow the current North American routing. The tour earns more full-list sends than a normal month, so a cycle run at this cadence lands around $10,700, between the steady and surge cases above and inside the range already priced. The eighteen show-day drops account for $327 of that, because each one reaches a single metro rather than the whole list.",
+      calendarPrinciplesHeading: "Rules The Calendar Follows",
+      calendarPrinciples: [
+        "Never two asks in a row. Every ticket or pre-save drop is followed by a send that asks for nothing, which is what keeps a list answering rather than muting.",
+        "Home city is captured on first contact, months before it is needed, because it is what makes every show-day drop possible.",
+        "The vlog is the engine, not filler. During tour most messages are ticket asks, so a weekly episode is the standing reason to text that costs the audience nothing, and an episodic rhythm trains fans to expect it.",
+        "Show-day drops go to one market at a time. The whole tour texts for less than a single national send.",
+        "Replies are answered. A pre-approved reply bank covers release week and every show day so inbound lands quickly without an approval loop per message.",
+      ],
       leversHeading: "What Keeps The Number Down",
       levers: [
         "Copy discipline. 160 characters is one segment and emoji copy segments at 70 characters, so a drop written long bills as two or three segments. Drop copy is written to a single segment by default.",
@@ -579,7 +670,7 @@ export const eightyTwoMajorSeptember: StrategyPlanData = {
         "Purchasing route. A credit subscription runs roughly 12 percent below pay-as-you-go, worth about $1,200 across the steady case.",
       ],
       footnote:
-        "Rates are the platform's published pricing as of August 18, 2026, billed on usage. Projections are all-in for every message the platform sends across signup and drops, at the current channel mix and pay-as-you-go rates. Cadence follows the drop plan being finalized with the label; the scenarios bracket the range so the budget line can be chosen rather than discovered.",
+        "Rates are the platform's published pricing as of August 18, 2026, billed on usage. Projections are all-in for every message the platform sends across signup and drops, at the current channel mix and pay-as-you-go rates. The drop calendar below sets the proposed cadence against the current tour routing; the scenarios bracket the range so the budget line can be chosen rather than discovered.",
     },
 
     // ===================================================================

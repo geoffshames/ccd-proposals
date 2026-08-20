@@ -631,9 +631,30 @@ export type CostModelSection = {
   costCaption?: string;
   scenarioHeading?: string;
   scenarios: CostModelScenario[];
+  calendarHeading?: string;
+  calendarChip?: string;
+  calendarStats?: { label: string; value: string; accent?: boolean; swatch?: string }[];
+  calendarPhases?: DropCalendarPhase[];
+  calendarCaption?: string;
+  calendarPrinciplesHeading?: string;
+  calendarPrinciples?: string[];
   leversHeading?: string;
   levers?: string[];
   footnote?: string;
+};
+
+export type DropCalendarEntry = {
+  date: string;
+  label: string;
+  kind: "full" | "mms" | "geo";
+};
+
+export type DropCalendarPhase = {
+  window: string;
+  title: string;
+  entries: DropCalendarEntry[];
+  marketsLabel?: string;
+  markets?: string[];
 };
 
 export type PlanSection =
