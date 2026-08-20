@@ -362,7 +362,7 @@ const html = `<!DOCTYPE html>
           <div class="tblock"><span class="tl">What actually went out</span><p>A three word caption in Tagalog and a sound named as a preview, owned by the group's own account. They then reused the same sound twice more in February, before the announcement.</p></div>
           <div class="tblock why"><span class="tl">Why it works</span><p>This is the closest structural match to 82MAJOR in the set: an Asian boy group signed to a major, posting from the official group account, with the label's release calendar still intact behind it.</p></div>
         </div>
-        <div class="mig"><span class="ml">For HEAT</span><p>Naming the sound "preview" rather than hiding it is the conservative version. The label keeps the framing, the audience still gets the song first.</p></div>
+        <div class="mig"><span class="ml">For HEAT</span><p>Naming the sound as a preview keeps the label's own framing intact and still puts the record in front of the audience first.</p></div>
         <div class="card-foot"><span class="also"></span><a class="src" href="https://www.tiktok.com/@officialsb19/video/7596325204503170322" target="_blank" rel="noopener">View original &#8599;</a></div>
       </article>
 
@@ -436,7 +436,7 @@ const html = `<!DOCTYPE html>
         <div class="embed" data-id="7642746442880175391"><button class="embed-btn" type="button">&#9654; Load the clip</button><span class="embed-meta">TikTok / @chucktimely</span></div>
         <div class="tear">
           <div class="tblock"><span class="tl">What actually went out</span><p>An unnamed sound on a small side account, <b>1.4 million plays</b>. Three days later the artist's main account posted on the <b>same sound object</b>, not a copy, at 2.6 million. The official introduction came on June 3.</p></div>
-          <div class="tblock why"><span class="tl">Why it works</span><p>The side account absorbs any risk of the tease reading as a botched announcement, and the main account converts it once the reaction is known. Both posts feed one sound.</p></div>
+          <div class="tblock why"><span class="tl">Why it works</span><p>The side account carries the first post and the main account joins once the reaction is known. Both posts feed the same sound.</p></div>
         </div>
         <div class="mig"><span class="ml">For HEAT</span><p>If posting from the official account is the sticking point, the sound can start somewhere smaller and be adopted once it performs.</p></div>
         <div class="card-foot"><span class="also">Main account on the same sound, <a href="https://www.tiktok.com/@rolemodel/video/7643866589372108063" target="_blank" rel="noopener">2.6M</a></span><a class="src" href="https://www.tiktok.com/@chucktimely/video/7642746442880175391" target="_blank" rel="noopener">View original &#8599;</a></div>
@@ -454,7 +454,7 @@ const html = `<!DOCTYPE html>
           <div class="tblock"><span class="tl">What actually went out</span><p>An artist-owned sound explicitly named as a snippet, reused across the month. The February post did <b>6.3 million</b> and this March post, captioned as a question, did <b>2.9 million</b>, both before the record was available.</p></div>
           <div class="tblock why"><span class="tl">Why it works</span><p>Calling it a snippet sets expectations honestly and still holds the release. It is the least aggressive framing available and it kept a full month of runway.</p></div>
         </div>
-        <div class="mig"><span class="ml">For HEAT</span><p>Another conservative naming option if an untitled sound is a step too far.</p></div>
+        <div class="mig"><span class="ml">For HEAT</span><p>A second naming option: the sound says snippet, the release date stays private.</p></div>
         <div class="card-foot"><span class="also"></span><a class="src" href="https://www.tiktok.com/@cocojones/video/7614956633856281869" target="_blank" rel="noopener">View original &#8599;</a></div>
       </article>
 

@@ -362,7 +362,7 @@ const html = `<!DOCTYPE html>
           <div class="tblock"><span class="tl">실제 공개분</span><p>타갈로그어 세 단어 캡션과 그룹 자체 계정이 소유한 미리보기로 명명된 사운드. 그들은 발표 전에 2월에 같은 사운드를 두 번 더 재사용했다.</p></div>
           <div class="tblock why"><span class="tl">효과적인 이유</span><p>이는 이 세트에서 82MAJOR와 가장 유사한 구조적 일치 사례이다. 메이저 레이블과 계약한 아시아 보이그룹이 공식 그룹 계정에서 게시하고, 레이블의 발매 일정은 그대로 유지된다.</p></div>
         </div>
-        <div class="mig"><span class="ml">HEAT를 위해</span><p>사운드를 숨기는 대신 "preview"라고 명명하는 것이 보수적인 방식이다. 레이블은 프레이밍을 유지하고, 대중은 여전히 곡을 가장 먼저 접한다.</p></div>
+        <div class="mig"><span class="ml">HEAT를 위해</span><p>사운드를 프리뷰로 명명하는 것은 레이블 자체의 프레이밍을 유지하면서도 음반을 대중에게 가장 먼저 선보이는 효과가 있다.</p></div>
         <div class="card-foot"><span class="also"></span><a class="src" href="https://www.tiktok.com/@officialsb19/video/7596325204503170322" target="_blank" rel="noopener">원본 보기 &#8599;</a></div>
       </article>
 
@@ -436,7 +436,7 @@ const html = `<!DOCTYPE html>
         <div class="embed" data-id="7642746442880175391"><button class="embed-btn" type="button">&#9654; 클립 로드</button><span class="embed-meta">TikTok / @chucktimely</span></div>
         <div class="tear">
           <div class="tblock"><span class="tl">실제 공개분</span><p>작은 서브 계정의 이름 없는 사운드가 <b>140만 회 재생</b>되었다. 3일 후 아티스트의 메인 계정에서 복사본이 아닌 <b>동일한 사운드 객체</b>로 게시하여 260만 회를 기록했다. 공식 소개는 6월 3일에 이루어졌다.</p></div>
-          <div class="tblock why"><span class="tl">효과적인 이유</span><p>서브 계정은 티저가 실패한 발표로 읽힐 수 있는 모든 위험을 흡수하고, 메인 계정은 반응이 확인되면 이를 전환한다. 두 게시물 모두 하나의 사운드를 사용한다.</p></div>
+          <div class="tblock why"><span class="tl">효과적인 이유</span><p>서브 계정이 첫 게시물을 올리고 반응이 확인되면 메인 계정이 합류한다. 두 게시물 모두 동일한 사운드를 사용한다.</p></div>
         </div>
         <div class="mig"><span class="ml">HEAT를 위해</span><p>공식 계정에서 게시하는 것이 걸림돌이라면, 사운드는 더 작은 곳에서 시작하여 성과를 보이면 채택될 수 있다.</p></div>
         <div class="card-foot"><span class="also">동일한 사운드를 사용한 본계정, <a href="https://www.tiktok.com/@rolemodel/video/7643866589372108063" target="_blank" rel="noopener">2.6M</a></span><a class="src" href="https://www.tiktok.com/@chucktimely/video/7642746442880175391" target="_blank" rel="noopener">원본 보기 &#8599;</a></div>
@@ -454,7 +454,7 @@ const html = `<!DOCTYPE html>
           <div class="tblock"><span class="tl">실제 공개분</span><p>스니펫으로 명시적으로 이름이 지정된 아티스트 소유 사운드가 한 달 내내 재사용되었다. 2월 게시물은 <b>630만 회</b>, 질문 형식의 캡션이 달린 3월 게시물은 <b>290만 회</b>를 기록했으며, 두 게시물 모두 음원이 공개되기 전이었다.</p></div>
           <div class="tblock why"><span class="tl">효과적인 이유</span><p>이를 스니펫이라고 부르는 것은 기대를 솔직하게 설정하고 여전히 발매를 유지한다. 이는 가장 공격적이지 않은 프레이밍이며 한 달간의 홍보 기간을 확보했다.</p></div>
         </div>
-        <div class="mig"><span class="ml">HEAT를 위해</span><p>제목 없는 사운드가 너무 과하다고 생각될 경우, 또 다른 보수적인 명명 옵션이다.</p></div>
+        <div class="mig"><span class="ml">HEAT를 위해</span><p>두 번째 명명 옵션은 사운드를 스니펫으로 표기하고 발매일은 비공개로 유지하는 것이다.</p></div>
         <div class="card-foot"><span class="also"></span><a class="src" href="https://www.tiktok.com/@cocojones/video/7614956633856281869" target="_blank" rel="noopener">원본 보기 &#8599;</a></div>
       </article>
 
