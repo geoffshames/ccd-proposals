@@ -575,7 +575,7 @@ export const eightyTwoMajorSeptember: StrategyPlanData = {
       calendarHeading: "Tentative Drop Calendar",
       calendarChip: "Roughly one drop per week",
       calendarStats: [
-        { label: "Full-list drops", value: "22" },
+        { label: "Full-list drops", value: "23" },
         { label: "Show-day drops", value: "18 markets" },
         { label: "Cost of all 18", value: "$327", accent: true },
       ],
@@ -632,8 +632,8 @@ export const eightyTwoMajorSeptember: StrategyPlanData = {
           entries: [
             { date: "Every show", label: "Show-day drop into the market playing that night, doors and set time", kind: "geo" },
             { date: "Tuesdays", label: "Tour vlog episode, the standing non-promotional send that carries the week", kind: "full" },
-            { date: "Nov 23-24", label: "New York run club RSVP across the two NYC promo days", kind: "geo" },
-            { date: "Dec 11-12", label: "Los Angeles run club RSVP into the LA show week", kind: "geo" },
+            { date: "Nov 24", label: "New York run club RSVP on the promo day before the show, while the market is filling up", kind: "geo" },
+            { date: "Dec 12", label: "Los Angeles run club RSVP, Saturday show-day morning in the largest room of the tour", kind: "geo" },
           ],
           marketsLabel: "18 markets, show-day drop in each",
           markets: [
@@ -649,12 +649,13 @@ export const eightyTwoMajorSeptember: StrategyPlanData = {
           title: "Cycle Close",
           entries: [
             { date: "Dec 18", label: "Tour recap and vlog finale", kind: "full" },
+            { date: "Dec 19-20", label: "Los Angeles promo window, content capture with no ask", kind: "full" },
             { date: "Dec 23", label: "Year-end thank-you, no ask, sets up the 2027 cycle", kind: "full" },
           ],
         },
       ],
       calendarCaption:
-        "Dates follow the current North American routing. The tour earns more full-list sends than a normal month, so a cycle run at this cadence lands around $10,700, between the steady and surge cases above and inside the range already priced. The eighteen show-day drops account for $327 of that, because each one reaches a single metro rather than the whole list.",
+        "Dates follow the confirmed North American routing. The tour earns more full-list sends than a normal month, so a cycle run at this cadence lands around $10,700, between the steady and surge cases above and inside the range already priced. The eighteen show-day drops account for $327 of that, because each one reaches a single metro rather than the whole list.",
       calendarPrinciplesHeading: "Rules The Calendar Follows",
       calendarPrinciples: [
         "Never two asks in a row. Every ticket or pre-save drop is followed by a send that asks for nothing, which is what keeps a list answering rather than muting.",
