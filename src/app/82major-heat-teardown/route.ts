@@ -63,6 +63,10 @@ const html = `<!DOCTYPE html>
   .nb-jump a{font-family:var(--fm);font-size:11px;text-transform:uppercase;letter-spacing:.12em;color:var(--muted)}
   .nb-jump a:hover{color:var(--accent)}
   @media(max-width:760px){.nb-jump{display:none}}
+  .nb-lang{display:flex;gap:10px;margin-left:16px}
+  .nb-lang a{font-family:var(--fm);font-size:11px;letter-spacing:.12em;color:var(--secondary);border-bottom:1px solid transparent}
+  .nb-lang a:hover{color:var(--ink)}
+  .nb-lang a.on{color:var(--accent);border-bottom-color:var(--accent)}
   .nb-filters{display:flex;gap:8px;flex-wrap:wrap;margin-left:auto}
   .chip{background:transparent;border:1px solid var(--line-2);color:var(--muted);font-family:var(--fm);font-size:11px;text-transform:uppercase;letter-spacing:.12em;padding:8px 13px;cursor:pointer;transition:all .2s}
   .chip:hover{border-color:var(--line-hover);color:var(--ink)}
@@ -222,6 +226,7 @@ const html = `<!DOCTYPE html>
   <div class="navbar">
     <div class="navbar-in">
       <a class="nb-brand" href="#top">82MAJOR / HEAT</a>
+      <div class="nb-lang"><a href="/82major-heat-teardown" class="on">EN</a><a href="/82major-heat-teardown-ko">KO</a></div>
       <div class="nb-jump"><a href="#tiktok">TikTok First</a><a href="#korea">Korean Majors</a><a href="#now">Running Now</a><a href="#west">Western Pop</a><a href="#table">The Gaps</a><a href="#play">The Play</a></div>
       <div class="nb-filters" id="filter">
         <button class="chip active" data-f="all">All cases</button>
@@ -341,7 +346,7 @@ const html = `<!DOCTYPE html>
           <div class="tblock"><span class="tl">What actually went out</span><p>Every member debuted an unreleased solo across the opening run at KSPO Dome from August 24. The clips lived on YouTube and TikTok for almost three months with no release attached to them. Bang Chan's solo alone holds 1.19 million views on fan footage.</p></div>
           <div class="tblock why"><span class="tl">Why it works</span><p>Eighty three days is long enough for the songs to be learned, ranked and argued about before there is anything to buy. HOP then entered at <b>number one on the Billboard 200</b> with 187,000 units and sold <b>1,989,508 copies</b> on the Circle Album Chart.</p></div>
         </div>
-        <div class="mig"><span class="ml">For HEAT</span><p>The longest gap in this set produced the largest sales result in it. Time in public is not a leak risk being tolerated, it is the mechanism doing the work.</p></div>
+        <div class="mig"><span class="ml">For HEAT</span><p>The longest gap in this set produced the largest sales result in it. Time in public is the mechanism, not a side effect of it.</p></div>
         <div class="card-foot"><span class="also"></span><a class="src" href="https://www.youtube.com/watch?v=a8qxAMkv5x4" target="_blank" rel="noopener">View original &#8599;</a></div>
       </article>
 
@@ -355,7 +360,7 @@ const html = `<!DOCTYPE html>
           <div class="tblock"><span class="tl">What actually went out</span><p>The group performed the full unreleased English song on the 88rising stage. The advance billing said only that a new song would be premiered. Fancams carried the audio out of the desert the same weekend, five weeks before SM announced anything.</p></div>
           <div class="tblock why"><span class="tl">Why it works</span><p>It puts the first hearing in the market the record is aimed at rather than the home market, which is the same reason a US-facing tease matters for a group whose fastest growth is happening outside Korea.</p></div>
         </div>
-        <div class="mig"><span class="ml">For HEAT</span><p>SM is the most conservative reference point available, and it ran a 39 day pre-announcement window on a title track in a foreign market.</p></div>
+        <div class="mig"><span class="ml">For HEAT</span><p>SM Entertainment ran a 39 day pre-announcement window on a title track and premiered it outside Korea, in the market the record was aimed at.</p></div>
         <div class="card-foot"><span class="also"></span><a class="src" href="https://www.youtube.com/watch?v=O26XBLe0i-E" target="_blank" rel="noopener">View original &#8599;</a></div>
       </article>
 
