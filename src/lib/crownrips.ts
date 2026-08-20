@@ -104,7 +104,7 @@ export const concepts: Concept[] = [
       "The crowd films the whole thing from underneath. Every attendee is a camera operator.",
     ],
     why:
-      "Avry's sky-drop instinct is right, but scattering product into a crowd produces a scrum, an injury risk, and footage that looks like a riot. Targeted delivery inverts it: instead of a hundred people fighting for product, a hundred people are individually found by a machine in front of thousands of witnesses. It reads as generous rather than chaotic, and it films infinitely better — you get both the god's-eye formation shot and the intimate one-to-one landing.",
+      "Scattering product into a crowd produces a scrum, an injury risk, and footage that looks like a riot. Targeted delivery inverts it: instead of a hundred people fighting for product, a hundred people are individually found by a machine in front of thousands of witnesses. It reads as generous rather than chaotic, and it films infinitely better — you get both the god's-eye formation shot and the intimate one-to-one landing.",
     earned:
       "Drone shows are inherently shareable and the formation-into-tear sequence is a genuinely novel piece of choreography. Every one of the hundred recipients becomes a content node with a personal story. Aerial hero footage carries the campaign for months afterward as paid creative.",
     proof: {
@@ -154,7 +154,7 @@ export const concepts: Concept[] = [
       "If nobody claims it in a week, it moves to the next holder and the pot visibly ages.",
     ],
     why:
-      "Avry called this one and it is the cheapest route to genuine status currency. Jewelry is how this culture already signals a win — it is native, not imposed. The design move is making it takeable. A prize in a vitrine is an ad; a prize on someone's neck that a stranger can come and claim is a running storyline with a built-in cliffhanger every single week.",
+      "This is the cheapest route to genuine status currency. Jewelry is how this culture already signals a win — it is native, not imposed. The design move is making it takeable. A prize in a vitrine is an ad; a prize on someone's neck that a stranger can come and claim is a running storyline with a built-in cliffhanger every single week.",
     earned:
       "Jewelry photographs better than almost any other prize and travels natively on hobby, hip-hop, and streetwear accounts simultaneously. Six handoffs means six discrete content moments rather than one. The reveal-and-claim format is inherently clippable.",
     proof: {
@@ -280,7 +280,7 @@ export const concepts: Concept[] = [
     ],
     total: 228000,
     risk:
-      "This is the one concept here where the mechanic argues with the strategy. Claw machines are notorious for adjustable claw strength, and rigging accusations are the single most common complaint levelled at every online claw platform — so a stunt built on 'the pull is real' is picking the one prize format the audience already assumes is fixed. It is survivable, but only if we publish the claw calibration up front, fix it for the full run, and let the in-person crowd verify it against the stream. If the client will not commit to that, run a different concept. Secondary: latency is the whole experience, so every site needs hardwired fibre, never cellular.",
+      "This is the one concept here where the mechanic argues with the strategy. Claw machines are notorious for adjustable claw strength, and rigging accusations are the single most common complaint levelled at every online claw platform — so a stunt built on 'the pull is real' is picking the one prize format the audience already assumes is fixed. It is survivable, but only if we publish the claw calibration up front, fix it for the full run, and let the in-person crowd verify it against the stream. If that commitment is not on the table, this is the wrong concept to run. Secondary: latency is the whole experience, so every site needs hardwired fibre, never cellular.",
   },
   {
     id: "national",
@@ -379,7 +379,7 @@ export const concepts: Concept[] = [
     ],
     total: 185000,
     risk:
-      "Requires the client to actually stand behind published odds for fourteen straight days. That is a business decision before it is a creative one.",
+      "This only works if the numbers can stand in public, unedited, for fourteen straight days. That is a business decision before it is a creative one.",
   },
   {
     id: "chase",
@@ -451,7 +451,7 @@ export const concepts: Concept[] = [
     total: 28000,
     totalLabel: "CCD production — excl. media",
     risk:
-      "Moving the roll to a web randomizer fixes the leak that fixed QR codes would otherwise create: a posted code now resolves to an endpoint that checks geo and schedule before it rolls, so a couch scan in Ohio returns nothing rather than a prize. That makes the randomizer the single point of failure for the entire game. If it is slow, down, or permissive during a Secret Rare window, the concept fails in public with a crowd watching — so it needs load headroom sized for a surge, not for average traffic. Prize determination also almost certainly has to sit inside CrownRips’ own audited stack rather than ours, since it is the same logic that governs their sweeps compliance, which is why it is scoped client-side here. Say the word if you would rather CCD build and host it. Secondary: scan rates on DOOH QR are low in absolute terms — judge this on depth of play per participant, not on scans as a proxy for reach.",
+      "Moving the roll to a web randomizer fixes the leak that fixed QR codes would otherwise create: a posted code now resolves to an endpoint that checks geo and schedule before it rolls, so a couch scan in Ohio returns nothing rather than a prize. That makes the randomizer the single point of failure for the entire game. If it is slow, down, or permissive during a Secret Rare window, the concept fails in public with a crowd watching — so it needs load headroom sized for a surge rather than for average traffic, and should be load-tested against peak before media is committed. Prize determination sits inside the CrownRips stack, governed by the same logic as sweeps compliance, so the odds table and the roll live alongside the existing prize infrastructure rather than beside the media. Secondary: scan rates on DOOH QR are low in absolute terms — judge this on depth of play per participant, not on scans as a proxy for reach.",
   },
 ];
 
