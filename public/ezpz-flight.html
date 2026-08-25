@@ -3,10 +3,10 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>ezpz Launch Marketing, Crowd Control Digital</title>
-<meta name="description" content="ezpz launch marketing. A 30-day media flight covering crypto-native inventory, platform policy, programmatic, and three budget builds at $50K, $100K and $250K.">
+<title>ezpz Launch Marketing, NFT.NYC and CBC Summit</title>
+<meta name="description" content="ezpz launch marketing. Two event-anchored campaigns: $50K in New York around NFT.NYC and a $100K tentpole in Washington DC around the CBC Summit.">
 <meta property="og:title" content="ezpz Launch Marketing">
-<meta property="og:description" content="A 30-day media flight. Crypto-native inventory, platform policy, programmatic, and three budget builds.">
+<meta property="og:description" content="Two event-anchored campaigns. $50K around NFT.NYC, $100K around the CBC Summit.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://proposal.crowdcontroldigital.com/ezpz-flight">
 <meta property="og:image" content="https://proposal.crowdcontroldigital.com/ezpz-flight/og-image.png">
@@ -14,7 +14,7 @@
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="ezpz Launch Marketing">
-<meta name="twitter:description" content="A 30-day media flight at three budget levels.">
+<meta name="twitter:description" content="NFT.NYC and CBC Summit, two markets, two arguments.">
 <meta name="twitter:image" content="https://proposal.crowdcontroldigital.com/ezpz-flight/og-image.png">
 <meta name="theme-color" content="#0a0a0a">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -138,6 +138,15 @@ h2{font-size:clamp(30px,4.4vw,52px);margin-bottom:22px}
 .mcell p strong{color:var(--fg);font-weight:500}
 
 .mfoot{border:1px solid var(--bd);border-top:none;background:var(--elev);padding:36px}
+.splitbar{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--bd2);
+  border:1px solid var(--bd2);margin:20px 0 0}
+@media(max-width:760px){.splitbar{grid-template-columns:1fr}}
+.sb{background:var(--card);padding:24px}
+.sb.dc{background:rgba(253,55,55,.07)}
+.sb b{font-family:var(--head);text-transform:uppercase;font-size:17px;display:block;margin-bottom:12px}
+.sb span{display:block;font-size:16px;color:var(--fg);line-height:1.45;margin-bottom:12px;font-weight:300}
+.sb em{font-style:normal;font-family:var(--mono);font-size:9px;letter-spacing:.15em;
+  text-transform:uppercase;color:var(--accent)}
 .bar{height:36px;display:flex;margin:20px 0 14px;border:1px solid var(--bd2);overflow:hidden}
 .bseg{display:flex;align-items:center;justify-content:center;font-family:var(--mono);
   font-size:9.5px;letter-spacing:.1em;text-transform:uppercase}
@@ -316,6 +325,23 @@ tbody tr:last-child td{border-bottom:none}
 .stack p{font-size:14.5px;color:var(--m70);line-height:1.76;max-width:84ch;margin-bottom:16px}
 .stack p:last-child{margin-bottom:0}
 .stack p strong{color:var(--fg);font-weight:500}
+
+/* out of home */
+.oohgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:1px;
+  background:transparent}
+.oohcard{background:var(--elev);padding:26px;position:relative;box-shadow:0 0 0 1px var(--bd)}
+.oohcard:before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:var(--accent)}
+.oohcard h4{font-size:16px;margin-bottom:14px}
+.oohcard .cpm{font-family:var(--mono);font-size:27px;font-weight:600;letter-spacing:-.035em;
+  margin-bottom:5px}
+.oohcard .scr{font-family:var(--mono);font-size:9px;letter-spacing:.13em;text-transform:uppercase;
+  color:var(--m40);margin-bottom:18px}
+.oohcard .verdict{font-family:var(--mono);font-size:8.5px;letter-spacing:.13em;text-transform:uppercase;
+  padding:5px 9px;border:1px solid;display:inline-block;margin-bottom:14px}
+.oohcard p{font-size:12.5px;color:var(--m70);line-height:1.66}
+.v-more{color:var(--ok);border-color:rgba(94,233,160,.34)}
+.v-hold{color:var(--warn);border-color:rgba(240,180,41,.34)}
+.v-cut{color:var(--accent);border-color:rgba(253,55,55,.34)}
 
 /* campaign builder */
 .bctrl{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap;
@@ -583,7 +609,8 @@ footer{padding:74px 0 52px;border-top:1px solid var(--bd)}
       <a href="#thesis">Thesis</a>
       <a href="#wall">The Wall</a>
       <a href="#brave">Brave</a>
-      <a href="#flights">Flights</a>
+      <a href="#flights">Campaigns</a>
+      <a href="#ooh">Out Of Home</a>
       <a href="#programmatic">Programmatic</a>
       <a href="#organic">Organic</a>
       <a href="#blend">The Blend</a>
@@ -599,14 +626,14 @@ footer{padding:74px 0 52px;border-top:1px solid var(--bd)}
 
 <header>
   <div class="wrap">
-    <div class="eyebrow"><i></i>Media Flight <s>/</s> 30-Day Blitz <s>/</s> Prepared August 2026</div>
+    <div class="eyebrow"><i></i>Two Markets <s>/</s> NFT.NYC and CBC Summit <s>/</s> Prepared 25 August 2026</div>
     <h1>ezpz Launch Marketing</h1>
-    <p class="sub">Three of the six mainstream ad platforms are closed outright to a no-KYC, non-custodial swap, and a fourth is discretionary. That narrows where the money goes, not what it can do. The inventory left standing is cheaper per impression, better targeted and closer to the buyer than anything the closed platforms would have sold. <strong>Three builds at $50K, $100K and $250K, all crypto-native, all buyable this month.</strong></p>
+    <p class="sub">Two event-anchored campaigns, three weeks apart, each with a business development partner already working the room. <strong>$50,000 in New York around NFT.NYC on 1 to 3 September, then a $100,000 tentpole in Washington DC around the CBC Summit on 17 September.</strong> The media does not replace the handshake. It makes ezpz look established before the partner walks in, and it carries the moment to everyone who was not in the room.</p>
     <div class="hstats">
-      <div class="hstat"><div class="n">1.25B</div><div class="l">Guaranteed views available<br>at the top blend</div></div>
-      <div class="hstat"><div class="n" style="color:var(--accent)">57M</div><div class="l">Brave monthly actives, a<br>self-selected privacy audience</div></div>
-      <div class="hstat"><div class="n">$0.10</div><div class="l">Lowest verified CPM<br>in the plan</div></div>
-      <div class="hstat"><div class="n">2</div><div class="l">Supply sources in the programmatic<br>plan that prohibit crypto</div></div>
+      <div class="hstat"><div class="n">7</div><div class="l">Days until NFT.NYC<br>opens in Times Square</div></div>
+      <div class="hstat"><div class="n" style="color:var(--accent)">341</div><div class="l">Targetable DC screens<br>inside the summit radius</div></div>
+      <div class="hstat"><div class="n">200+</div><div class="l">Executives, regulators and<br>legislators at CBC Summit</div></div>
+      <div class="hstat"><div class="n">$0.10</div><div class="l">Lowest verified CPM<br>available to amplify both</div></div>
     </div>
   </div>
 </header>
@@ -616,39 +643,35 @@ footer{padding:74px 0 52px;border-top:1px solid var(--bd)}
   <div class="wrap">
     <div class="shead reveal">
       <div class="eyebrow"><i></i>01 <s>/</s> The Position</div>
-      <h2>One dollar, two returns.</h2>
-      <p class="sdek">Growth in instant-swap compounds in a way most categories do not, and it changes what a media dollar is worth here. The category leader gives the clearest read available on why.</p>
+      <h2>Buy the room, then buy everyone who was not in it.</h2>
+      <p class="sdek">A business development partner in market can reach a few dozen people properly. Media is what makes those conversations start warm, and what carries the moment to the tens of thousands who never made it to the venue. Both campaigns are built around that division of labour.</p>
     </div>
 
     <div class="thesis reveal">
       <div class="eyebrow"><i></i>Recommendation</div>
-      <p>Every impression in this plan is paid for once and works twice: it converts a swap now, and it builds the recognition that converts into distribution later. <em>No other line on a marketing budget returns on both.</em></p>
+      <p>Media arrives first and makes ezpz look established. The partner closes the room. Amplification turns one week in one city into a quarter of visibility. <em>Each layer makes the next one cheaper.</em></p>
     </div>
 
     <div class="mgrid reveal">
       <div class="mcell">
-        <div class="mlbl">ChangeNOW, the category leader</div>
-        <div class="bigfig">$1B+</div>
-        <p>Monthly transaction volume, from <strong>20,000 daily exchanges</strong> across <strong>5 million clients</strong>. Live integrations include Ledger, Trezor, Edge Wallet, Cake Wallet, Bitcoin.com and Guarda.</p>
+        <div class="mlbl">New York <s>/</s> NFT.NYC <s>/</s> 1 to 3 September</div>
+        <div class="bigfig">$50K</div>
+        <p>Edison Ballroom in Times Square, a Web3 and creator audience with <strong>200,000 alumni across nine editions</strong>. The conference puts on-chain art on Times Square screens itself, so the medium is already native to the room.</p>
       </div>
       <div class="mcell">
-        <div class="mlbl">Its distribution network</div>
-        <div class="bigfig acc">5,000</div>
-        <p>API partners routing volume, against 637,000 monthly visits to its own site (Similarweb, January 2026). <strong>Both channels run at scale, and both were built on the same brand presence.</strong></p>
+        <div class="mlbl">Washington DC <s>/</s> CBC Summit <s>/</s> 17 September</div>
+        <div class="bigfig acc">$100K</div>
+        <p>National Press Club, one day, <strong>200 or so banking executives, compliance officers, regulators and legislators</strong>. Small room, high stakes, and a completely different argument to make than the one that works in New York.</p>
       </div>
     </div>
 
     <div class="mfoot reveal">
-      <div class="mlbl">What a media dollar buys in this category</div>
-      <div class="bar">
-        <div class="bseg a" style="width:46%">Direct return, swaps now</div>
-        <div class="bseg b" style="width:54%">Compounding return, distribution later</div>
+      <div class="mlbl">Two markets, two arguments</div>
+      <div class="splitbar">
+        <div class="sb nyc"><b>New York</b><span>No accounts. No logs. Nothing kept.</span><em>Privacy as the product</em></div>
+        <div class="sb dc"><b>Washington DC</b><span>Screened, refunded, never custodied.</span><em>Compliance as the product</em></div>
       </div>
-      <div class="blegend">
-        <span><i style="background:var(--accent)"></i>Measured on cost per first swap, in-flight</span>
-        <span><i style="background:var(--card);border:1px solid var(--bd2)"></i>Measured on partner pipeline, and it keeps paying after the flight</span>
-      </div>
-      <p style="font-size:14px;color:var(--m70);line-height:1.74;margin-top:26px;max-width:82ch">A wallet integrates the swap provider its users already recognise, and recognition is bought. That is what makes this category unusually efficient to advertise into: <strong style="color:var(--fg);font-weight:500">the same impression that wins a swap this week is the reason a wallet takes the integration call next quarter, and the second outcome is worth many multiples of the first.</strong> Every line below is selected to do both, and the plan reports on both.</p>
+      <p style="font-size:14px;color:var(--m70);line-height:1.74;margin-top:26px;max-width:84ch">Running one creative across both markets would waste the more valuable of the two. <strong style="color:var(--fg);font-weight:500">The NFT.NYC crowd buys privacy and reads verification as friction. The CBC Summit room contains the people who write and enforce the rules, and to them an unqualified privacy pitch reads as a red flag rather than a feature.</strong> The same product answers both, but only if DC leads with the AML policy: OFAC screening on every deposit, flagged orders auto-refunded rather than frozen, a 0.3% flag rate and a 41-minute median refund. That document is the most useful asset ezpz owns in Washington, and it is wasted in Times Square.</p>
     </div>
   </div>
 </section>
@@ -704,9 +727,9 @@ footer{padding:74px 0 52px;border-top:1px solid var(--bd)}
 <section id="flights">
   <div class="wrap">
     <div class="shead reveal">
-      <div class="eyebrow"><i></i>04 <s>/</s> The Builds</div>
-      <h2>Three flights.</h2>
-      <p class="sdek">Thirty days of working media. <strong>CCD management is 15% on top of every buy and is shown in the total.</strong> The Snap match and X credit are additive and handled separately in section 10. <strong>Select a tier.</strong></p>
+      <div class="eyebrow"><i></i>04 <s>/</s> The Campaigns</div>
+      <h2>Two campaigns.</h2>
+      <p class="sdek">Two campaigns, three weeks apart, each priced as working media. <strong>CCD management is 15% on top of every buy and is shown in the total.</strong> The Snap match and X credit are additive and handled separately in section 11. <strong>Select a market.</strong></p>
     </div>
     <div class="tiersw reveal" id="tiersw"></div>
     <div class="tsummary reveal" id="tsum"></div>
@@ -716,10 +739,33 @@ footer{padding:74px 0 52px;border-top:1px solid var(--bd)}
   </div>
 </section>
 
+<section id="ooh">
+  <div class="wrap">
+    <div class="shead reveal">
+      <div class="eyebrow"><i></i>05 <s>/</s> Out-Of-Home</div>
+      <h2>The DC screens, and how the vendor plan should change.</h2>
+      <p class="sdek">A live out-of-home plan is on the table for Washington, scoped 16 to 20 September against a $50,000 budget at $10,000 a day. It forecasts <strong>2.1 million impressions across 341 targetable screens at a $23.82 blended CPM</strong>. The venue mix is where it needs work.</p>
+    </div>
+
+    <div class="oohgrid reveal" id="oohgrid"></div>
+
+    <div class="stack reveal">
+      <div class="eyebrow"><i></i>Recommendation</div>
+      <h3>Move the money down the CPM curve, and buy the spectacular for the photograph.</h3>
+      <p><strong>Urban panels and hotel screens are being under-bought and airport is being over-bought.</strong> Urban panel runs at $11.40 with 126 screens and hotel at $9.37, both of which can be clustered inside a few blocks of the National Press Club, K Street and the Hill. That is where 200 delegates physically are for forty-eight hours. Airport at $28.75 across 66 screens is the second most expensive venue in the plan and mostly reaches people who are not attending anything, so it should be dayparted hard to the 16th and 17th and treated as an arrival-day impression rather than a five-day buy.</p>
+      <p><strong>The spectacular is the one line that should not be judged on CPM at all.</strong> At $40.84 it is the most expensive inventory here by some distance, and buying it for reach against a 200-person summit makes no sense. Buying one, on summit day, positioned where delegates and press will walk past it, makes a great deal of sense, because what it produces is a photograph. The partner points out of a window. The photograph runs through the amplification layer for a month. Priced as a content asset rather than a reach buy, it is the best value in this section.</p>
+      <div class="warn">
+        <div class="l">Verify before the insertion order</div>
+        <p>Out-of-home carries a measurement caveat that matters more than usual for this advertiser. Third-party ad servers have no invalid-traffic or brand-safety solution for out-of-home and routinely bucket the impressions as invalid, and audience targeting is not available on this inventory at all, only geo. <strong>Confirm the screen list against a map of the Press Club, the conference hotels and the Hill before signing, and get creative approved early.</strong> Standard out-of-home creative approval runs three business days, and spectaculars and airport inventory run seven.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section id="programmatic">
   <div class="wrap">
     <div class="shead reveal">
-      <div class="eyebrow"><i></i>05 <s>/</s> Programmatic</div>
+      <div class="eyebrow"><i></i>06 <s>/</s> Programmatic</div>
       <h2>The programmatic layer.</h2>
       <p class="sdek">A live plan is on the table from a tier-one programmatic partner, dated 7 August and scoped 1 September to 31 October, National US, targeting in-market crypto, Web3 and privacy audiences through the partner&#39;s discovery, TV audience, smart contextual, behavioural and retargeting stack. Four options were quoted. <strong>Two of the spec tabs contain something that would have broken the flight, and it is worth dealing with that before comparing prices.</strong></p>
     </div>
@@ -771,7 +817,7 @@ footer{padding:74px 0 52px;border-top:1px solid var(--bd)}
 <section id="organic">
   <div class="wrap">
     <div class="shead reveal">
-      <div class="eyebrow"><i></i>06 <s>/</s> Organic Amplification</div>
+      <div class="eyebrow"><i></i>07 <s>/</s> Organic Amplification</div>
       <h2>The cheapest reach on the board, by two orders of magnitude.</h2>
       <p class="sdek">A second partner quote covers paid amplification of organic social: brand placement inside creator clips, seeded discussion, and amplification of owned posts. <strong>This is the vendor behind a large share of the awareness campaigns run by the major prediction markets</strong>, which is the closest available comp to ezpz. Same problem, a finance product that mainstream platforms restrict, solved by buying attention where the restrictions do not apply.</p>
     </div>
@@ -791,7 +837,7 @@ footer{padding:74px 0 52px;border-top:1px solid var(--bd)}
 
     <div class="shead reveal" style="margin:64px 0 30px">
       <h3 style="font-size:26px;margin-bottom:14px">Five products, three tiers each.</h3>
-      <p class="sdek">Budget tiers line up exactly with the flight tiers in section 04. <strong>Two fees sit on top of the media here: the partner&#39;s own management fee, and CCD at 15%.</strong> Both are shown per tier. Select a product.</p>
+      <p class="sdek">Budget tiers are per product and independent of the market budgets in section 04. <strong>Two fees sit on top of the media here: the partner&#39;s own management fee, and CCD at 15%.</strong> Both are shown per tier. Select a product.</p>
     </div>
     <div class="tiersw reveal" id="orgsw"></div>
     <div class="orgwrap reveal" id="orggrid"></div>
@@ -814,9 +860,9 @@ footer{padding:74px 0 52px;border-top:1px solid var(--bd)}
 <section id="blend">
   <div class="wrap">
     <div class="shead reveal">
-      <div class="eyebrow"><i></i>07 <s>/</s> The Blend</div>
-      <h2>Three layers, one number.</h2>
-      <p class="sdek">Each layer buys something the others cannot. Crypto-native buys intent, programmatic buys comprehension, amplification buys scale. <strong>Totals include the amplification partner&#39;s management fee and CCD at 15%.</strong> Select a level.</p>
+      <div class="eyebrow"><i></i>08 <s>/</s> The Blend</div>
+      <h2>What happens on 18 September.</h2>
+      <p class="sdek">Two events three weeks apart is a moment, not a campaign. What decides whether it becomes one is whether anything is funded to carry it afterwards. <strong>Totals include the amplification partner&#39;s management fee and CCD at 15%.</strong> Select a level.</p>
     </div>
     <div class="tiersw reveal" id="blsw"></div>
     <div class="blendwrap reveal" id="blgrid"></div>
@@ -828,9 +874,9 @@ footer{padding:74px 0 52px;border-top:1px solid var(--bd)}
 <section id="builder">
   <div class="wrap">
     <div class="shead reveal">
-      <div class="eyebrow"><i></i>08 <s>/</s> Campaign Builder</div>
+      <div class="eyebrow"><i></i>09 <s>/</s> Campaign Builder</div>
       <h2>Build it live.</h2>
-      <p class="sdek">Every line below is priced at its real rate. Move a budget and impressions, fees, blended efficiency and warnings all recompute. <strong>Load a preset to start, adjust in the room, then lock it in.</strong> Locking writes the configuration into the page address and copies a plain-text summary, so the version agreed in the meeting is the version that gets sent.</p>
+      <p class="sdek">Every line below is priced at its real rate, including the out-of-home venue CPMs from the live vendor plan. Move a budget and impressions, fees, blended efficiency and warnings all recompute. <strong>Load a market to start, adjust in the room, then lock it in.</strong> Locking writes the configuration into the page address and copies a plain-text summary, so the version agreed in the meeting is the version that gets sent.</p>
     </div>
 
     <div class="bctrl reveal">
@@ -853,7 +899,7 @@ footer{padding:74px 0 52px;border-top:1px solid var(--bd)}
 <section id="inventory">
   <div class="wrap">
     <div class="shead reveal">
-      <div class="eyebrow"><i></i>09 <s>/</s> Inventory Board</div>
+      <div class="eyebrow"><i></i>10 <s>/</s> Inventory Board</div>
       <h2>What is actually buyable.</h2>
       <p class="sdek">Every property that will take a non-custodial swap advertiser, with rates, entry minimums and how to transact. Rates marked <span class="vsrc pub">PUBLISHED</span> were read off a live rate card or product page. Rates marked <span class="vsrc">REPORTED</span> come from third-party sources and need confirming on the insertion order. <strong>Everything here is either self-serve or a direct sales order.</strong> Inventory that requires cultivating a relationship before it can be bought, including podcast sponsorships, community placements and event activations, is deliberately excluded. <strong>CCD management is 15% on top of every buy.</strong></p>
     </div>
@@ -884,7 +930,7 @@ footer{padding:74px 0 52px;border-top:1px solid var(--bd)}
 <section id="credits">
   <div class="wrap">
     <div class="shead reveal">
-      <div class="eyebrow"><i></i>10 <s>/</s> The Credits</div>
+      <div class="eyebrow"><i></i>11 <s>/</s> The Credits</div>
       <h2>Snap and X, sized honestly.</h2>
       <p class="sdek">Both are worth having. Neither should carry the flight, and one of them is smaller than it sounds.</p>
     </div>
@@ -924,61 +970,60 @@ footer{padding:74px 0 52px;border-top:1px solid var(--bd)}
 <section id="runway">
   <div class="wrap">
     <div class="shead reveal">
-      <div class="eyebrow"><i></i>11 <s>/</s> Run Of Show</div>
-      <h2>Thirty days, plus the two before them.</h2>
-      <p class="sdek">CoinMarketCap needs five to ten business days from signed insertion order to live. The DSP needs three business days, five for DOOH and premium CTV. Snap needs written category approval. Brave runs human review on every campaign. <strong>The pre-flight window is not optional, and skipping it costs a third of the flight.</strong></p>
+      <div class="eyebrow"><i></i>12 <s>/</s> Run Of Show</div>
+      <h2>Twenty-six days, two cities.</h2>
+      <p class="sdek">NFT.NYC opens in seven days. Out-of-home creative approval runs three business days and seven for spectaculars and airport inventory. Brave runs human review on every campaign. CoinMarketCap needs five to ten business days from signed insertion order, which is why it is absent from New York and present in the quarter build. <strong>The New York campaign has to be booked this week or it does not happen.</strong></p>
     </div>
     <div class="weeks reveal">
       <div class="wk">
-        <div class="n">Week 0 <s>/</s> Pre-flight</div>
-        <h4>Clear the gates</h4>
+        <div class="n">25 to 29 Aug</div>
+        <h4>New York, book it now</h4>
         <ul>
-          <li>Submit <strong>Snap category approval</strong> with the AML policy attached</li>
-          <li>Open the <strong>Brave self-serve account</strong> and submit creative for human review</li>
-          <li>Sign the <strong>CoinMarketCap insertion order</strong>, pay in USDT, submit static creative</li>
-          <li>Build the <strong>ref-code taxonomy</strong>, one per placement, before anything runs</li>
-          <li>Get the <strong>YouTube and Pause Ad exclusions</strong> written onto the DSP insertion order</li>
-          <li>Complete <strong>X advertiser review</strong> and confirm the credit balance</li>
+          <li><strong>Geo-fence live by Friday.</strong> DOOH creative needs three business days for approval</li>
+          <li>Open <strong>Brave</strong> and submit creative, human review runs on their clock not ours</li>
+          <li>Book <strong>Web3 KOLs</strong> on one agency order, briefed to post from the floor</li>
+          <li>Launch <strong>Telegram, Reddit and wallet networks</strong>, all self-serve and instant</li>
+          <li>Sign the <strong>DC out-of-home insertion order</strong> with the revised venue mix</li>
         </ul>
       </div>
       <div class="wk">
-        <div class="n">Week 1</div>
-        <h4>Staggered ignition</h4>
+        <div class="n">1 to 3 Sep</div>
+        <h4>NFT.NYC</h4>
         <ul>
-          <li><strong>CoinMarketCap live</strong> across coin detail and app placements</li>
-          <li><strong>Brave push and search live</strong>, the cheapest clean read in the plan</li>
-          <li><strong>Telegram direct channels</strong> live in waves of five, not all at once</li>
-          <li>Hold KOLs back a week so the terminal read stays clean</li>
+          <li><strong>Times Square screens live</strong>, dayparted to conference hours</li>
+          <li>KOLs posting from the venue, amplified same-day</li>
+          <li><strong>Capture everything.</strong> The footage is the DC campaign&#39;s creative</li>
+          <li>Partner works the floor with a market that has already seen the name</li>
         </ul>
       </div>
       <div class="wk">
-        <div class="n">Week 2</div>
-        <h4>Voice layer</h4>
+        <div class="n">4 to 15 Sep</div>
+        <h4>Carry and pivot</h4>
         <ul>
-          <li><strong>KOL wave one</strong>, weighted to 25K to 100K accounts</li>
-          <li><strong>Newsletter layer</strong> books against published rate cards, no negotiation</li>
-          <li>Placements land mid-week for the open-rate peak</li>
-          <li><strong>Cut the bottom quartile</strong> of week-one channels on cost per first swap</li>
+          <li><strong>Retarget the New York fence</strong> for a fortnight while intent is warm</li>
+          <li>Cut the New York channels that underdelivered, reallocate to DC</li>
+          <li><strong>Switch the creative argument</strong> from privacy to compliance</li>
+          <li>Trade press books, DC programmatic fences go live 15 Sep</li>
         </ul>
       </div>
       <div class="wk">
-        <div class="n">Week 3</div>
-        <h4>Scale and open the second front</h4>
+        <div class="n">16 to 20 Sep</div>
+        <h4>CBC Summit</h4>
         <ul>
-          <li>Reallocate cut budget into the top three performing refs</li>
-          <li><strong>KOL wave two</strong> plus a branded Spaces session</li>
-          <li><strong>Partner API push</strong> to every wallet whose users appeared in the ref data</li>
-          <li>Snap pilot launches only if written approval landed</li>
+          <li><strong>Airport screens on arrival days only</strong>, 16 and 17 September</li>
+          <li>Urban panels and hotel screens across the Press Club radius</li>
+          <li><strong>Spectacular runs on the 17th.</strong> Photograph it properly, that is the deliverable</li>
+          <li>Partner works the room against a city covered in the name</li>
         </ul>
       </div>
       <div class="wk">
-        <div class="n">Week 4</div>
-        <h4>Consolidate and convert</h4>
+        <div class="n">18 Sep onward</div>
+        <h4>The part that compounds</h4>
         <ul>
-          <li>Collapse spend into the <strong>top three channels</strong> only</li>
-          <li>Retargeting via the X credit against everyone the flight touched</li>
-          <li><strong>Integration follow-up</strong> on every wallet BD thread opened in week 3</li>
-          <li>Lock the read: cost per first swap by ref, and API keys issued</li>
+          <li><strong>Push the spectacular photograph</strong> through the amplification layer</li>
+          <li>Seeded discussion builds the search result attendees find next week</li>
+          <li><strong>Partner follow-up</strong> against everyone both rooms produced</li>
+          <li>Read both markets on branded search lift and partner pipeline, not swaps</li>
         </ul>
       </div>
     </div>
@@ -988,21 +1033,21 @@ footer{padding:74px 0 52px;border-top:1px solid var(--bd)}
 <section id="measure">
   <div class="wrap">
     <div class="shead reveal">
-      <div class="eyebrow"><i></i>12 <s>/</s> Measurement</div>
-      <h2>Measuring a product built not to be measurable.</h2>
-      <p class="sdek">No accounts. No tracking cookies. Order records deleted at 24 hours. CoinMarketCap does not support third-party tracking pixels and Brave is architecturally anti-tracking. <strong>Standard attribution is unavailable, and pretending otherwise is how this flight would fail its own reporting.</strong></p>
+      <div class="eyebrow"><i></i>13 <s>/</s> Measurement</div>
+      <h2>Measuring a halo.</h2>
+      <p class="sdek">No accounts. No tracking cookies. Order records deleted at 24 hours. Out-of-home cannot be verified and Brave is architecturally anti-tracking. <strong>On top of that, the objective here is not a swap. It is a warmer room for a partner and a market that recognises the name.</strong> Reporting has to measure that rather than pretend it measured something else.</p>
     </div>
     <div class="megrid reveal">
-      <div class="mitem"><div class="ic">01</div><h4>Ref codes, not pixels</h4>
-        <p>ezpz already issues ref codes through the partner account layer. <strong>Every placement gets its own.</strong> Server-side, cookie-free, and it survives a product that keeps nothing. This is the entire attribution spine and it must exist before week one.</p></div>
+      <div class="mitem"><div class="ic">01</div><h4>One ref code per market</h4>
+        <p>ezpz already issues ref codes through the partner account layer. <strong>New York and Washington get their own, and every placement inside them gets a child code.</strong> Server-side, cookie-free, and it survives a product that keeps nothing. This has to exist before the fence goes live on Friday.</p></div>
       <div class="mitem"><div class="ic">02</div><h4>Quotes as the primary event</h4>
         <p>A quote request is countable at the edge without retaining anything about who made it. <strong>Quote volume by ref is the fast signal</strong>, completed swaps the slow one. Optimise weekly on quotes, judge the flight on swaps.</p></div>
       <div class="mitem"><div class="ic">03</div><h4>Roll up before the shred</h4>
         <p>Aggregate, non-identifying counters by ref and by day: quotes, deposits detected, orders completed. <strong>Written to the counter, then the order record shreds on schedule.</strong> The 24-hour policy stays intact and the flight still gets a read.</p></div>
-      <div class="mitem"><div class="ic">04</div><h4>Stagger for incrementality</h4>
-        <p>Channels launch in waves rather than together. <strong>Each wave's lift is legible against the prior baseline</strong>, which is the only clean causal read available without user-level tracking.</p></div>
-      <div class="mitem"><div class="ic">05</div><h4>Two funnels, reported separately</h4>
-        <p>Consumer runs on cost per first swap. <strong>Partner API runs on keys issued, first sandbox call, and sandbox-to-production conversion.</strong> Blending them hides the thing the flight is built to produce.</p></div>
+      <div class="mitem"><div class="ic">04</div><h4>Branded search is the halo read</h4>
+        <p>Out-of-home and event presence show up as people typing the name, not clicking a banner. <strong>Track branded search and direct traffic in each metro against a national baseline</strong> across both event windows. It is the cleanest available proxy for whether the city noticed.</p></div>
+      <div class="mitem"><div class="ic">05</div><h4>The partner is a measurement channel</h4>
+        <p>The business development partner is in both rooms and is the only instrument that can report on quality. <strong>Log meetings taken, whether the prospect had already seen the name, and what they had seen.</strong> Unprompted recall in a partner meeting is the most valuable data point either campaign produces.</p></div>
       <div class="mitem"><div class="ic">06</div><h4>Discount the impression counts</h4>
         <p>A meaningful share of DEX-terminal traffic is automated. <strong>Impressions and CTR are pacing diagnostics, never success metrics.</strong> No channel gets renewed on delivery numbers alone.</p></div>
     </div>
@@ -1012,7 +1057,7 @@ footer{padding:74px 0 52px;border-top:1px solid var(--bd)}
 <section id="risk">
   <div class="wrap">
     <div class="shead reveal">
-      <div class="eyebrow"><i></i>13 <s>/</s> Risk Register</div>
+      <div class="eyebrow"><i></i>14 <s>/</s> Risk Register</div>
       <h2>What could go wrong, and what absorbs it.</h2>
     </div>
     <div class="risks reveal" id="risks"></div>
@@ -1025,7 +1070,7 @@ footer{padding:74px 0 52px;border-top:1px solid var(--bd)}
   <div class="wrap fin">
     <div class="fbrand">
       <img class="flogo" src="data:image/png;base64,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" alt="Crowd Control Digital">
-      <p>ezpz Launch Marketing<br>Prepared August 2026<br>Rates verified at time of writing and subject to insertion order</p>
+      <p>ezpz Launch Marketing<br>NFT.NYC and CBC Summit, September 2026<br>Rates verified at time of writing and subject to insertion order</p>
     </div>
     <a class="cta" href="mailto:geoff@crowdcontroldigital.com?subject=ezpz%20media%20flight">Approve a tier &rarr;</a>
   </div>
@@ -1055,14 +1100,14 @@ const PLATFORMS=[
 {n:'Programmatic DSP',v:'open',vl:'Open, quote in hand',
  why:'A tier-one demand-side platform with a live quote on the table. Connected TV, online video, DOOH, display and audio at fixed CPMs, National US, targeted to in-market crypto and privacy audiences.',
  quote:'Online Video $16.00. Connected TV $21.00. DOOH Display $13.50. Multiscreen Display $4.50. All CPM, National US, three business days from signed insertion order, five for DOOH and premium CTV.',
- body:'<p>The partner&#39;s own content guidelines do not list cryptocurrency as a prohibited category, which makes the DSP itself open to this advertiser. That is unusual enough in this plan to be worth stating plainly.</p><p><strong>Two supply sources inside it are closed, and they have to be excluded in writing.</strong> YouTube inventory and Pause Ad inventory both name crypto as prohibited in their own specification tabs. Creative clears the DSP and then gets rejected at the publisher, which surfaces as an unexplained delivery shortfall rather than an error. Section 05 covers the full detail and the exclusion language.</p><p>Premium CTV publishers carry their own creative approval on top, with one adding two business days for quality assurance. Third-party tracking is variously restricted across the supply path, which is why the ref-code architecture in section 12 is mandatory rather than optional.</p>',
- imp:'The comprehension layer of the plan. Online video is the workhorse at $16, display is the retargeting floor at $4.50, CTV enters at $100K and above. Full allocation and the recommended build are in section 05.',
+ body:'<p>The partner&#39;s own content guidelines do not list cryptocurrency as a prohibited category, which makes the DSP itself open to this advertiser. That is unusual enough in this plan to be worth stating plainly.</p><p><strong>Two supply sources inside it are closed, and they have to be excluded in writing.</strong> YouTube inventory and Pause Ad inventory both name crypto as prohibited in their own specification tabs. Creative clears the DSP and then gets rejected at the publisher, which surfaces as an unexplained delivery shortfall rather than an error. Section 06 covers the full detail and the exclusion language.</p><p>Premium CTV publishers carry their own creative approval on top, with one adding two business days for quality assurance. Third-party tracking is variously restricted across the supply path, which is why the ref-code architecture in section 13 is mandatory rather than optional.</p>',
+ imp:'The comprehension layer of the plan. Online video is the workhorse at $16, display is the retargeting floor at $4.50, CTV enters at $100K and above. Full allocation and the recommended build are in section 06.',
  src:['Partner rate card and specification pack, on file with CCD']},
 
 {n:'Organic Amplification',v:'open',vl:'Open, guaranteed delivery',
  why:'The vendor behind a large share of the awareness campaigns run by the major prediction markets. Five products across seeded discussion, post amplification, creator clips and logo placement, with guaranteed minimum delivery.',
  quote:'Logo placement $0.10 to $0.24 CPM against guaranteed minimum views. Reddit, X amplification, clipping and social PR from $1.00 to $4.00 CPM. Entry $50,000 per product. Launches two to four days after budget is confirmed.',
- body:'<p>The cheapest verified inventory anywhere in this plan by a wide margin, and the only partner here that guarantees a delivery floor rather than estimating one. Posts continue earning bonus views for three to twelve months after the campaign closes at no additional cost.</p><p><strong>The closest available comp to ezpz.</strong> Prediction markets faced the same structural problem, a finance product that mainstream platforms restrict, and solved it by buying attention in places the restrictions do not reach. That is precisely the position ezpz is in.</p><p>Two things to hold in mind. The partner charges its own management fee on top of media, at 15% falling to 10% by the top tier. And its Reddit product is thread seeding, which must be scoped to the trading subreddits and kept out of the privacy communities. Section 06 covers both.</p>',
+ body:'<p>The cheapest verified inventory anywhere in this plan by a wide margin, and the only partner here that guarantees a delivery floor rather than estimating one. Posts continue earning bonus views for three to twelve months after the campaign closes at no additional cost.</p><p><strong>The closest available comp to ezpz.</strong> Prediction markets faced the same structural problem, a finance product that mainstream platforms restrict, and solved it by buying attention in places the restrictions do not reach. That is precisely the position ezpz is in.</p><p>Two things to hold in mind. The partner charges its own management fee on top of media, at 15% falling to 10% by the top tier. And its Reddit product is thread seeding, which must be scoped to the trading subreddits and kept out of the privacy communities. Section 07 covers both.</p>',
  imp:'The scale layer. Reddit first because trust is this product&#39;s real constraint, then X amplification because it multiplies KOL budget already committed. Logo placement last, once the other layers have established what ezpz does.',
  src:['Partner campaign overview and rate card, on file with CCD']},
 
@@ -1150,46 +1195,35 @@ document.getElementById('modal').addEventListener('click',e=>{if(e.target.id==='
 document.addEventListener('keydown',e=>{if(e.key==='Escape')closeModal()});
 
 const TIERS=[
-{amt:50000,label:'$50,000',name:'Beachhead',
- kpis:[['1','Anchor property','CoinMarketCap at minimum buy'],['5 of 6','Self-serve','Live without a sales call'],
-       ['0%','In closed platforms','No wasted approval cycles'],['$0','Pre-allocated to Snap','Approval first, budget after']],
+{amt:50000,label:'$50,000',name:'New York',
+ kpis:[['1 to 3 Sep','NFT.NYC','Edison Ballroom, Times Square'],
+       ['7 days','To first impression','Everything here books this week'],
+       ['5 of 7','Self-serve','Live without a sales call'],
+       ['Privacy','Creative angle','No accounts, no logs, nothing kept']],
  lines:[
-  ['CoinMarketCap Managed Display','Coin detail side banners and app placements, static creative, geo-targeted. Signed insertion order',20000],
-  ['X KOL Layer, Wave One','Six to eight creators in the 25K to 100K band, bought through a single marketplace or agency order',9000],
-  ['Telegram','Self-serve sponsored messages plus channel buys through the Telega marketplace',8000],
-  ['Brave Push and Search','Self-serve at $500 a month minimum, paid in USDC. Live the day creative clears review',6000],
-  ['Reddit Ads','Self-serve, subreddit-targeted across the trading communities. $25 lifetime minimum',3000],
-  ['Wallet-Targeted Networks','Self-serve floor via Slise, Coinzilla or Cointraffic, weighted to in-wallet placements',4000]],
- note:'<strong>What this tier is for.</strong> Not a full launch. A wedge that proves the thesis cheaply: one premium anchor and enough Brave, Telegram, Reddit and KOL volume to generate a real cost-per-first-swap read. Five of the six lines are self-serve and can be live within days of creative approval. CoinMarketCap consumes 40% at its own $20,000 minimum, which is the one concentration this tier cannot avoid. If the ref-code data comes back clean, this tier is the argument for the next one.'},
+  ['Geo-Fenced DOOH, Times Square','Urban panels and screens within a half-mile of the Edison Ballroom, dayparted to conference hours',14000],
+  ['X KOL Layer','Six to eight Web3 creators posting live from the floor, on one agency order',9000],
+  ['Telegram','Self-serve sponsored messages plus marketplace buys into NFT and Web3 channels',7000],
+  ['Brave','Push and Search, geo-targeted to the New York metro',6000],
+  ['Geo-Fenced Programmatic','Online video and display fenced to Midtown Manhattan and the venue radius',6000],
+  ['Reddit Ads','r/NFT, r/CryptoCurrency and r/ethereum, geo-weighted to New York',4000],
+  ['Wallet-Targeted Networks','In-wallet placements via Slise and Coinzilla, retargeting anyone the fence touched',4000]],
+ note:'<strong>This is a seven-day build, and that constraint decides the channel list.</strong> Everything above can be live inside a week. CoinMarketCap is deliberately absent, not because it is wrong but because a signed insertion order takes five to ten business days and the conference is over before the first impression serves. The geo-fence is the spine: catch attendees in Times Square, retarget them for the following fortnight, and hand the partner a market that has already seen the name.'},
 
-{amt:100000,label:'$100,000',name:'Two-Front',
- kpis:[['4','Terminal properties','CMC, CoinGecko, Etherscan, Blockscan'],['~65','Placements','Across eight channels'],
-       ['$10K','Snap pilot ceiling','Released only on written approval'],['3','Direct sales orders','CoinGecko, Etherscan, Brave takeover']],
+{amt:100000,label:'$100,000',name:'Washington DC',
+ kpis:[['17 Sep','CBC Summit','National Press Club'],
+       ['23 days','To first impression','Comfortable booking runway'],
+       ['341','Targetable screens','Inside the summit radius'],
+       ['Compliance','Creative angle','Screened, refunded, never custodied']],
  lines:[
-  ['CoinMarketCap Managed Display','Expanded placement set including search bar and watchlist inventory',28000],
-  ['X KOL Layer','Ten creators at 25K to 100K plus one anchor at 100K to 500K, bought on one agency order',17000],
-  ['Telegram, Platform Plus Marketplace','Self-serve sponsored messages growing the ezpz channel, plus Telega marketplace channel buys',14000],
-  ['Brave Full Funnel','Push and Search at scale plus a New Tab Takeover bought direct from the ad sales team',13000],
-  ['CoinGecko Banner Network','Run-of-network display at reported $8 to $12 CPM with geo weighting. Direct sales order',10000],
-  ['Etherscan and Blockscan Family','CPM sponsorship across Etherscan, BscScan, Arbiscan and Basescan. Direct sales order',8000],
-  ['Wallet-Targeted Display and Networks','Slise in-wallet inventory plus a Coinzilla or Cointraffic retargeting floor',6000],
-  ['Reddit Ads','Self-serve across the trading communities, scaled off the cheapest creative test in the plan',4000]],
- note:'<strong>What changes at this level.</strong> The terminal layer becomes a real presence rather than a single placement, which is the point at which a wallet BD team recognises the name. Brave moves from test to funnel, including the first New Tab Takeover conversation. Three lines move from self-serve to a direct sales order, which is the only added friction at this level and is measured in days rather than relationships. And Snap becomes worth piloting, at $10,000 and not a dollar more until the cost per first swap justifies it.'},
-
-{amt:250000,label:'$250,000',name:'Category Claim',
- kpis:[['$50K','CMC commitment','Unlocks animated creative'],['~150','Placements','Across nine channels'],
-       ['$25K','Snap pilot ceiling','Scaling to $40K on performance'],['3','Layers funded','Distribution, demand, mainstream']],
- lines:[
-  ['CoinMarketCap Managed Display','$50K commitment unlocks animated GIF creative across the full placement set',50000],
-  ['X KOL Programme','Fifteen mid-tier creators, three at 100K to 500K, and two branded Spaces, on one agency order',40000],
-  ['Brave Full Stack','New Tab Takeover bought direct, plus Push and Brave Search at full weight',36000],
-  ['Telegram at Scale','Self-serve platform at full weight plus roughly forty marketplace channel buys across languages',32000],
-  ['Reddit and Wallet-Targeted Networks','Reddit Ads at scale plus Slise, Blockchain-Ads segments and a retargeting floor',24000],
-  ['Newsletter Layer','Token Dispatch, Web3 Daily, Crypto Briefing and one premium list, all at published rates',22000],
-  ['CoinGecko','Expanded banner buy with country targeting',20000],
-  ['Trade Press','Institutional and developer placements against a wallet-owning audience. Direct sales order',14000],
-  ['Etherscan and Blockscan Family','Expanded CPM sponsorship across the explorer network',12000]],
- note:'<strong>Where the top tier concentrates.</strong> CoinMarketCap at $50,000 unlocks animated creative, a real performance difference on terminal placements and only available at this level. Brave goes full stack across New Tab Takeover, Push and Search. Telegram runs at roughly forty direct channels across languages. Trade press carries the credibility buy against a wallet-owning audience, which is what makes the integration conversation in section 01 possible. No single line exceeds 20% of budget.'}
+  ['Out-of-Home, Summit Radius','Urban panels, rideshare interiors and hotel screens clustered on the Press Club and the Hill',34000],
+  ['Spectacular, One Day','A single high-impact placement on 17 September, bought to be photographed rather than for reach',16000],
+  ['Geo-Fenced Programmatic','Online video and display fenced to the Press Club, K Street and Capitol Hill',15000],
+  ['Trade Press','Institutional and policy titles the summit audience reads before and after',12000],
+  ['X KOL and Amplification','Policy and institutional voices, plus amplification of the partner&#39;s own posts',10000],
+  ['Brave','Push and Search across the DC metro, weighted to the week of the summit',7000],
+  ['Airport, Arrival Days','DCA and IAD screens dayparted to 16 and 17 September only',6000]],
+ note:'<strong>The tentpole is one day, so the money buys the week around it.</strong> Out-of-home carries this market because the audience is physically concentrated in about a square mile for forty-eight hours. The spectacular is not bought on CPM and should not be judged on it. It is bought so the partner can point out a window, and so the photograph of it can run through the amplification layer for a month afterwards. Airport is held to arrival days only, which is the difference between reaching attendees and reaching everyone who flies through Washington.'}
 ];
 let cur=1;const fmt=n=>'$'+n.toLocaleString();
 const CCD_FEE=0.15;
@@ -1300,7 +1334,7 @@ const ORG=[
         [100000,'+12.5%','40m to 80m+','$1.25 to $2.50','85+ guaranteed threads'],
         [250000,'+10%','115m to 250m+','$1.00 to $2.25','300+ guaranteed threads']]},
 {k:'x',label:'X Amplification',rec:2,
- note:'<strong>Multiplies budget already committed.</strong> The flight funds a KOL layer and ezpz holds a premium X account, so this amplifies owned and earned posts rather than buying a separate audience. The partner drives quotes, reposts and comments onto specific targeted tweets, turning a post that would have reached its own followers into one that reaches millions. Sequence it directly behind the KOL waves in section 11 so the amplification lands on posts that are already live.',
+ note:'<strong>Multiplies budget already committed.</strong> The flight funds a KOL layer and ezpz holds a premium X account, so this amplifies owned and earned posts rather than buying a separate audience. The partner drives quotes, reposts and comments onto specific targeted tweets, turning a post that would have reached its own followers into one that reaches millions. Sequence it directly behind the KOL waves in section 12 so the amplification lands on posts that are already live.',
  tiers:[[50000,'+15%','12.5m to 25m','$2.00 to $4.00','2 to 5+ tweets amplified'],
         [100000,'+12.5%','26m to 57m','$1.75 to $3.75','5 to 10+ tweets amplified'],
         [250000,'+10%','71m to 166m','$1.50 to $3.50','10 to 25+ tweets amplified']]},
@@ -1346,21 +1380,24 @@ renderOG();
 
 /* ---- blended builds ---- */
 const BLEND=[
-{label:'$180K',name:'Entry Blend',
- rows:[['Crypto-Native Flight',50000,0,'Section 04 Beachhead','CoinMarketCap anchor, Brave, Telegram, KOL and the Monero cluster. <strong>Buys intent.</strong> This is the only layer where someone arrives already looking for a swap.'],
-       ['Programmatic',50000,0,'Section 05 recommended','Online video weighted to contextual crypto and privacy inventory, with a lagged display retargeting floor. <strong>Buys comprehension.</strong> Thirty seconds is enough to explain reject-and-refund.'],
-       ['Organic Amplification',50000,15,'Reddit Kickoff','36+ guaranteed threads across the trading subreddits, 15m to 30m views, and an SEO position that keeps compounding after the flight. <strong>Buys trust.</strong>']],
- note:'<strong>The smallest blend where all three layers are live.</strong> Each partner sits at its own entry minimum, so nothing is bought at a weight too thin to read. The amplification layer goes to Reddit rather than logo placement because at this level the brand has no recognition to amplify, and the search result is the thing standing between a stranger and a first swap.'},
-{label:'$357.5K',name:'Growth Blend',
- rows:[['Crypto-Native Flight',100000,0,'Section 04 Two-Front','Four terminal properties, Brave full funnel, Telegram at weight and Reddit at scale, all self-serve or direct order. <strong>Buys intent and opens the integration conversation.</strong>'],
-       ['Programmatic',100000,0,'Section 05 recommended','Online video at $50K, CTV entering at a readable $25K, display retargeting at $25K. No DOOH. <strong>Buys comprehension at national scale.</strong>'],
-       ['Organic Amplification',100000,12.5,'Reddit Growth plus X','85+ threads and 40m to 80m views, with X amplification landing on the KOL posts the flight is already paying for. <strong>Buys trust and multiplies committed budget.</strong>']],
- note:'<strong>The level where the layers start compounding rather than just coexisting.</strong> X amplification lands on KOL posts already funded in the crypto-native layer, programmatic display retargets everyone the other two layers touched, and the Reddit position built here keeps returning long after the flight closes. Splitting the amplification budget across two products means each still clears its own entry minimum.'},
-{label:'$715K',name:'Category Blend',
- rows:[['Crypto-Native Flight',250000,0,'Section 04 Category Claim','CoinMarketCap at $50K unlocking animated creative, Brave full stack, forty Telegram channels, and a trade-press credibility buy. <strong>Buys intent at category-leading weight.</strong>'],
-       ['Programmatic',100000,0,'Section 05 recommended','The quote tops out here. Same 10.18M impressions as the largest option the partner proposed, with every unit trackable. <strong>Buys comprehension.</strong>'],
-       ['Organic Amplification',250000,10,'Logo Dominance','1.25B+ guaranteed views at a tenth of a cent, plus three to twelve months of bonus delivery at no cost. <strong>Buys unavoidability, once the other two layers have taught the market what ezpz is.</strong>']],
- note:'<strong>This is the level where logo placement finally makes sense.</strong> By the time this blend is running, the crypto-native and programmatic layers have established what the product does, so a logo in a clip has something to attach to. 1.25B guaranteed views is more delivery than every other line in this document combined, at a cost per impression between 60 and 160 times lower. Programmatic stays at $100K because that is where the partner quote ends, and the surplus goes where it compounds.'}
+{label:'$172.5K',name:'Both Markets',
+ rows:[['New York, NFT.NYC',50000,0,'1 to 3 September','Geo-fenced Times Square DOOH, Web3 KOLs posting from the floor, Telegram and Brave across the metro. <strong>Privacy creative.</strong> Seven days to live, so self-serve carries it.'],
+       ['Washington DC, CBC Summit',100000,0,'17 September','Out-of-home clustered on the Press Club and the Hill, one spectacular on summit day, trade press and geo-fenced programmatic. <strong>Compliance creative.</strong>'],
+       ['Cross-Market Amplification',0,0,'Not funded here','Both campaigns run only their own social layer inside the market budgets, and stop when the venues empty.']],
+ note:'<strong>The two campaigns as scoped, and nothing else.</strong> $150,000 of working media plus CCD management. This delivers both moments properly but leaves the footage, the photographs and the partner conversations to decay naturally once each event closes. It is a complete plan. It is just not a compounding one.'},
+
+{label:'$237.5K',name:'Both Plus Amplification',
+ rows:[['New York, NFT.NYC',50000,0,'1 to 3 September','As scoped. The geo-fence also builds the retargeting pool the DC campaign reuses three weeks later.'],
+       ['Washington DC, CBC Summit',100000,0,'17 September','As scoped, with the spectacular timed for the photograph rather than the reach.'],
+       ['Cross-Market Amplification',50000,15,'1 Sep to 15 Oct','Seeded discussion and post amplification carrying both events well past their dates. <strong>This is what turns two weeks into a quarter.</strong>']],
+ note:'<strong>The recommended shape.</strong> The marginal $50,000 does more than either event budget because it is the only line still working after the venue empties. Footage from Times Square and a photograph of the DC spectacular become the creative, the partner conversations become the proof points, and the search result built here is what CBC attendees find when they look ezpz up the following week. Without it, both campaigns end the day the conference does.'},
+
+{label:'$415K',name:'Full Quarter',
+ rows:[['New York, NFT.NYC',50000,0,'1 to 3 September','Both event campaigns run as scoped.'],
+       ['Washington DC, CBC Summit',100000,0,'17 September','Both event campaigns run as scoped.'],
+       ['Always-On National',100000,0,'1 Sep to 30 Nov','CoinMarketCap, CoinGecko, the explorer network and wallet-targeted programmatic running nationally underneath both events, booked now with proper lead time.'],
+       ['Cross-Market Amplification',100000,12.5,'1 Sep to 30 Nov','Reddit and X amplification at Growth weight, compounding across the full quarter.']],
+ note:'<strong>Treats the two events as the opening of a quarter rather than the whole of it.</strong> The always-on national layer is the piece the event budgets cannot buy, because CoinMarketCap and the terminal network need lead time the NFT.NYC date does not allow. Booked now, it is live for DC and still running in November. If there is appetite beyond the two events, this is the version that stops the momentum ending on 18 September.'}
 ];
 let bl=1;
 document.getElementById('blsw').innerHTML=BLEND.map((b,i)=>`
@@ -1453,8 +1490,10 @@ function drawInv(){const rows=INV.filter(r=>fcur==='all'||r[0]===fcur);
 drawInv();
 
 const RISKS=[
-['h','Category enforcement risk','A no-KYC swap service was seized by German federal police in April 2025 after roughly $1.9B of lifetime volume, with $38M and 8TB of data taken. Every platform reviewer assessing this category now has that precedent in mind, and an approval granted in week 1 can be reversed in week 3.','No single channel above 30% of budget at the $100K and $250K tiers. Crypto-native inventory cannot be switched off by a mainstream platform policy team, which is the structural reason it anchors the plan. The published AML policy leads every application. At $50K, CoinMarketCap\'s own $20,000 entry minimum forces a 40% concentration, which is the strongest argument for stepping up to $100K.'],
-['h','Snap match may not be reachable','The match pays against dollars spent, so the stated ceiling requires matching cash into the single least crypto-native channel available, and it is contingent on a discretionary approval that has not yet been granted.','Zero pre-allocation. Approval submitted in week 0 with budget held elsewhere. Pilot capped at 16% of tier and released only against a written approval and a proven cost per first swap.'],
+['h','Seven days to New York','NFT.NYC opens on 1 September. Out-of-home creative approval runs three business days, Brave runs human review, and any line requiring a signed insertion order will not serve before the conference closes. A slow approval on the client side removes the New York campaign rather than shrinking it.','Channel list restricted to what can genuinely be live inside a week, with five of seven New York lines self-serve. Creative locked and submitted by Wednesday 27 August. CoinMarketCap excluded from New York and held for the quarter build where the lead time works.'],
+['h','The DC room contains regulators','CBC Summit is a crypto banking and compliance event attended by regulators and legislators. A no-KYC swap advertising into that audience with an unqualified privacy message invites exactly the scrutiny the category attracted when a comparable service was seized by German federal police in April 2025.','Washington creative leads with the AML policy rather than the privacy claim: OFAC screening, auto-refund rather than freeze, 0.3% flag rate, non-custodial by design. Separate creative from New York, reviewed before booking. The compliance story is true, documented, and the strongest thing ezpz can say in that city.'],
+['m','Category enforcement risk','A no-KYC swap service was seized by German federal police in April 2025 after roughly $1.9B of lifetime volume, with $38M and 8TB of data taken. Every platform reviewer assessing this category now has that precedent in mind, and an approval granted in week 1 can be reversed in week 3.','No single line exceeds 34% of either market budget, and the largest is out-of-home, which no mainstream platform policy team can switch off. Crypto-native and out-of-home inventory anchor both campaigns for exactly that reason. The published AML policy leads every platform application and every piece of Washington creative.'],
+['m','Snap match may not be reachable','The match pays against dollars spent, so the stated ceiling requires matching cash into the single least crypto-native channel available, and it is contingent on a discretionary approval that has not yet been granted.','Zero pre-allocation. Approval submitted in week 0 with budget held elsewhere. Pilot capped at 16% of tier and released only against a written approval and a proven cost per first swap.'],
 ['m','Measurement is structurally constrained','No accounts, no tracking cookies, 24-hour record deletion, and CoinMarketCap does not accept third-party pixels. Conventional conversion tracking is unavailable.','Ref-code architecture built before week 1, one code per placement. Quote requests as the fast optimisation signal. Aggregate counters written before the shred. Staggered launches for incremental reads.'],
 ['m','Terminal traffic quality','A meaningful share of DEX-terminal and aggregator traffic is automated. Impression and CTR reporting will overstate human reach.','Impressions treated as pacing diagnostics only. No renewal decision made on delivery numbers. Every channel judged on ref-code conversions.'],
 ['m','Publisher-level creative rejection','The DSP&#39;s own content guidelines permit cryptocurrency, but two supply sources inside the plan do not. YouTube and Pause Ads both name crypto as a prohibited category, so creative can clear the DSP and still be rejected downstream, surfacing as an unexplained delivery shortfall rather than an error.','Both exclusions written onto the insertion order before launch, with the partner asked to name any other publisher-level crypto restrictions in the supply path. Peacock and Paramount creative submitted early, since both carry their own approval and Peacock adds two business days for QA.'],
@@ -1467,6 +1506,23 @@ document.getElementById('risks').innerHTML=RISKS.map(r=>`<div class="risk">
   <div class="lv lv-${r[0]}">${r[0]==='h'?'High':r[0]==='m'?'Med':'Low'}</div>
   <div><div class="t">${r[1]}</div><div class="d">${r[2]}</div></div>
   <div class="mit"><b>Absorbed by</b>${r[3]}</div></div>`).join('');
+
+/* ============ OUT OF HOME ============ */
+const OOH=[
+ ['Urban Panel',11.40,126,'more','Buy More','Cheapest scaled inventory in the plan and the easiest to cluster tightly around the Press Club, K Street and the Hill. This should carry the market.'],
+ ['Hotel',9.37,9,'more','Buy All','Lowest CPM on the board. Only nine screens, so take the whole footprint and confirm they sit in the conference hotels.'],
+ ['Taxi / Rideshare Interior',24.12,117,'hold','Hold','Captive and genuinely on-audience, since delegates move between hotel, venue and the Hill all day. Worth its CPM on the 16th and 17th, less so either side.'],
+ ['Airport',28.75,66,'hold','Daypart','Second most expensive venue and mostly reaches non-attendees. Restrict to arrival days and treat as a first-impression buy, not a five-day one.'],
+ ['Spectacular',40.84,23,'cut','Buy One','Wrong instrument for reach against 200 people, right instrument for a photograph. One placement, summit day, then amplify the image for a month.']
+];
+document.getElementById('oohgrid').innerHTML=OOH.map(([nm,cpm,scr,v,vl,txt])=>`
+  <div class="oohcard">
+    <h4>${nm}</h4>
+    <div class="cpm">$${cpm.toFixed(2)}</div>
+    <div class="scr">Forecast CPM <s>/</s> ${scr} screens</div>
+    <div class="verdict v-${v}">${vl}</div>
+    <p>${txt}</p>
+  </div>`).join('');
 
 /* ============ CAMPAIGN BUILDER ============ */
 const nImp=v=>v>=1e9?(v/1e9).toFixed(2)+'B':v>=1e6?(v/1e6).toFixed(2)+'M':Math.round(v).toLocaleString();
@@ -1481,8 +1537,12 @@ const LINES=[
  ['cn','net','Wallet-Targeted Networks','Slise, Coinzilla, Cointraffic, Blockchain-Ads',8.00,0,40000],
  ['cn','kol','X KOL Programme','Marketplace or agency order',60.00,0,60000],
  ['cn','news','Newsletter Layer','Published rate cards',80.00,0,30000],
- ['cn','press','Trade Press','Institutional and developer placements',40.00,0,20000],
- ['pg','polv','Online Video','Desktop and mobile, contextual crypto and privacy',16.00,0,80000],
+ ['cn','press','Trade Press','Institutional and policy titles',40.00,0,20000],
+ ['cn','oohny','Geo-Fenced DOOH, Times Square','Half-mile of the Edison Ballroom, conference hours',18.00,0,40000],
+ ['cn','oohdc','Out-Of-Home, Summit Radius','Urban panel, hotel and rideshare around the Press Club',14.00,0,60000],
+ ['cn','spec','Spectacular, One Day','Summit day placement, bought to be photographed',40.84,0,40000],
+ ['cn','air','Airport, Arrival Days','DCA and IAD, dayparted to 16 and 17 September',28.75,0,30000],
+ ['pg','polv','Online Video','Geo-fenced, contextual crypto and privacy',16.00,0,80000],
  ['pg','pctv','Connected TV','Needs roughly $25,000 to produce a readable result',21.00,0,60000],
  ['pg','pdisp','Multiscreen Display','Retargeting floor, lag two weeks behind video',4.50,0,40000],
  ['pg','pdooh','DOOH','Geo targeting only, no audience layer, no verification',13.50,0,40000],
@@ -1496,12 +1556,11 @@ const LAYERS={cn:['Crypto-native','Self-serve or direct sales order'],
               pg:['Programmatic','Partner quote, fixed CPMs'],
               og:['Organic Amplification','Partner fee applies on this layer']};
 const PRESETS=[
- ['Beachhead $50K',{cmc:20000,kol:9000,tg:8000,brave:6000,reddit:3000,net:4000}],
- ['Two-Front $100K',{cmc:28000,kol:17000,tg:14000,brave:13000,gecko:10000,scan:8000,net:6000,reddit:4000}],
- ['Category $250K',{cmc:50000,kol:40000,brave:36000,tg:32000,reddit:14000,net:10000,news:22000,gecko:20000,press:14000,scan:12000}],
- ['Entry Blend $180K',{cmc:20000,kol:9000,tg:8000,brave:6000,reddit:3000,net:4000,polv:36000,pdisp:14000,oreddit:50000}],
- ['Growth Blend $357K',{cmc:28000,kol:17000,tg:14000,brave:13000,gecko:10000,scan:8000,net:6000,reddit:4000,polv:50000,pctv:25000,pdisp:25000,oreddit:50000,ox:50000}],
- ['Category Blend $715K',{cmc:50000,kol:40000,brave:36000,tg:32000,reddit:14000,net:10000,news:22000,gecko:20000,press:14000,scan:12000,polv:50000,pctv:25000,pdisp:25000,ologo:250000}]
+ ['New York $50K',{oohny:14000,kol:9000,tg:7000,brave:6000,polv:4000,pdisp:2000,reddit:4000,net:4000}],
+ ['Washington DC $100K',{oohdc:34000,spec:16000,polv:10000,pdisp:5000,press:12000,kol:10000,brave:7000,air:6000}],
+ ['Both Markets $150K',{oohny:14000,kol:19000,tg:7000,brave:13000,polv:14000,pdisp:7000,reddit:4000,net:4000,oohdc:34000,spec:16000,press:12000,air:6000}],
+ ['Both Plus Amplification',{oohny:14000,kol:19000,tg:7000,brave:13000,polv:14000,pdisp:7000,reddit:4000,net:4000,oohdc:34000,spec:16000,press:12000,air:6000,oreddit:50000}],
+ ['Full Quarter',{oohny:14000,kol:19000,tg:7000,brave:13000,polv:14000,pdisp:7000,reddit:4000,net:4000,oohdc:34000,spec:16000,press:12000,air:6000,cmc:40000,gecko:20000,scan:15000,pctv:25000,oreddit:50000,ox:50000}]
 ];
 let B={}; LINES.forEach(l=>B[l[1]]=0);
 
@@ -1578,7 +1637,11 @@ function recalc(){
   if(B.pctv>0&&B.pctv<25000) warns.push('Connected TV below $25,000 is generally too thin nationally to produce a readable result.');
   if(B.pdooh>0) warns.push('DOOH carries geo targeting only, and third-party servers bucket out-of-home impressions as invalid.');
   if(B.ologo>0&&(per.cn+per.pg)<50000) warns.push('Logo placement works once comprehension exists. Fund the crypto-native and programmatic layers first.');
-  if(media>0&&per.cn===0) warns.push('No crypto-native spend. That is the only layer where someone arrives already looking for a swap.');
+  if(media>0&&per.cn===0) warns.push('No market layer funded. That is where both events actually happen.');
+  if(B.cmc>0) warns.push('CoinMarketCap needs five to ten business days from signed insertion order, so it cannot serve before NFT.NYC closes on 3 September.');
+  if(B.spec>0&&B.spec<12000) warns.push('A spectacular below roughly $12,000 is unlikely to secure a placement worth photographing. Buy one properly or not at all.');
+  if(B.air>0&&!B.oohdc) warns.push('Airport without the summit-radius buy reaches arrivals and then loses them. Fund the Press Club cluster first.');
+  if(((B.oohny||0)+(B.oohdc||0)+(B.spec||0)+(B.air||0))>media*0.5&&media>0) warns.push('Out-of-home is over half of working media. It cannot be audience-targeted or verified, so pair it with a trackable digital layer.');
 
   document.getElementById('bout').innerHTML=`
     <div class="boh"><div class="l">Total investment</div><div class="v">${fmt(total)}</div></div>
