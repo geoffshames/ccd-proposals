@@ -911,6 +911,7 @@ export const irationPlan: StrategyPlanData = {
             "Static photo share of the TikTok calendar reduced from 30 percent",
             "Response rate and time on managed channels",
           ],
+          timeline: "Calendar live from week 3, then continuous.",
         },
         {
           label: "Workstream 02",
@@ -957,6 +958,7 @@ export const irationPlan: StrategyPlanData = {
             "Click-through rate on iration.fm routed links",
             "Free-tier to paid-tier conversion once the free step exists",
           ],
+          timeline: "Routing live week 3. CTA on every recap from week 4.",
         },
         {
           label: "Module",

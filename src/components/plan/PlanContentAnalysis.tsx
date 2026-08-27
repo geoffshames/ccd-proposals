@@ -452,7 +452,7 @@ export function PlanContentAnalysis({ section }: { section: ContentAnalysisSecti
             </h3>
           )}
           {section.findingsIntro && (
-            <p className="mt-3 text-[14px] md:text-[15px] text-text-muted leading-relaxed max-w-3xl">
+            <p className="mt-3 text-[14px] md:text-[15px] text-text-muted leading-relaxed max-w-[72ch]">
               {section.findingsIntro}
             </p>
           )}
@@ -490,7 +490,7 @@ export function PlanContentAnalysis({ section }: { section: ContentAnalysisSecti
                     {f.summary}
                   </p>
                   <div className="mt-5 text-[11px] font-mono tracking-[0.18em] uppercase text-text-muted/60 group-hover:text-accent transition-colors">
-                    Evidence + pivot ↗
+                    Evidence and recommendation ↗
                   </div>
                 </motion.button>
               );
