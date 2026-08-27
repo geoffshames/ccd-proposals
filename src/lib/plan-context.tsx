@@ -19,6 +19,7 @@ export type OverviewSection = {
     heading: string;
     items: string[];
   };
+  charts?: PlanChartSpec[];
   footnote?: string;
 };
 
@@ -65,6 +66,23 @@ export type FeatureArtistTier = {
   artists: FeatureArtist[];
 };
 
+
+export type ChartPoint = { x: string; y: number | null };
+export type ChartSeries = { name: string; color?: string; points: ChartPoint[] };
+export type PlanChartSpec = {
+  kind: "line" | "area" | "bars" | "hbars" | "grouped";
+  title: string;
+  subtitle?: string;
+  unit?: string;
+  series: ChartSeries[];
+  markers?: { x: string; label: string }[];
+  highlightX?: string[];
+  yMax?: number;
+  note?: string;
+  source?: string;
+  tall?: boolean;
+};
+
 export type VerticalSubBlock = {
   label: string;
   title: string;
@@ -80,6 +98,7 @@ export type VerticalSubBlock = {
   featureTiersHeading?: string;
   links?: { label: string; url: string }[];
   linksHeading?: string;
+  charts?: PlanChartSpec[];
 };
 
 export type VerticalSection = {
@@ -484,6 +503,7 @@ export type ContentAnalysisSection = {
   mixIntro?: string;
   mixRows?: ContentMixRow[];
   mixFootnote?: string;
+  charts?: PlanChartSpec[];
   findingsHeading?: string;
   findingsIntro?: string;
   findings: ContentFinding[];

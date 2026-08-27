@@ -1,6 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
 import { PlanSectionHeader } from "./PlanSectionHeader";
+import { PlanChart } from "./PlanChart";
 import type { OverviewSection } from "@/lib/plan-context";
 
 export function PlanOverview({ section }: { section: OverviewSection }) {
@@ -71,6 +72,13 @@ export function PlanOverview({ section }: { section: OverviewSection }) {
           )}
         </div>
 
+        {section.charts && section.charts.length > 0 && (
+          <div className="mt-14 space-y-6">
+            {section.charts.map((c, ci) => (
+              <PlanChart key={ci} spec={c} />
+            ))}
+          </div>
+        )}
         {section.footnote && (
           <motion.p
             initial={{ opacity: 0 }}

@@ -10,7 +10,7 @@ export const kiiikiiiPlan: StrategyPlanData = {
     label: "Brand Audit & Growth Strategy",
     title: "KiiiKiii",
     subtitle: "A consumption-first audit of where KiiiKiii stands against its class, and the conversion strategy that turns general-public heat into owned fandom.",
-    partnership: "Starship Entertainment × Crowd Control Digital",
+    partnership: "Transparent Arts × Crowd Control Digital",
     prepared: "Geoff Shames / Co-Founder, Crowd Control Digital",
     date: "August 2026",
     backgroundImage: "/images/kiiikiii/kiiikiii-group.jpg",
@@ -34,16 +34,16 @@ export const kiiikiiiPlan: StrategyPlanData = {
       subtitle: "The general public found KiiiKiii before their fandom did. This document audits that gap in detail, then closes it.",
       body: [
         "Eighteen months after debut, KiiiKiii has the consumption profile of a group a tier above its infrastructure. \"404 (New Era)\" reached No. 1 on Melon through a 16-day climb and became Billboard's top-ranked K-pop song of 2026 at the year's midpoint. \"Pop Off Pop Off\" is repeating the same pattern now: No. 1 on Spotify Korea within ten days of release, all six album tracks charting, and Spotify monthly listeners at an all-time high of 3.96M and still climbing at the date of this audit. Critics, editorial playlists, and the Korean general public have all arrived.",
-        "What has not yet been built is the layer that captures that attention and converts it: the CRM, the U.S. owned-channel network, the membership and retail moments, the member-level content franchises, and the live footprint that peers at comparable heat already operate. The audit half of this document measures that gap precisely, across streaming, social, video intelligence, and infrastructure. The strategy half prescribes the conversion machine, scoped to run alongside the current Pop Off Pop Off cycle and to compound into every release after it.",
+        "What has not yet been built is the layer that captures that attention and converts it: the CRM, the U.S. owned-channel network, the membership and retail moments, the member-level content franchises, and the live footprint that peers at comparable heat already operate. The audit half of this document measures that gap precisely, across streaming, decay behavior, social, video intelligence, and infrastructure. The strategy half prescribes the conversion machine, scoped to run alongside the current Pop Off Pop Off cycle and to compound into every release after it.",
       ],
       supports: {
         heading: "What This Document Covers",
         items: [
           "Market position against the 2024-2026 girl group class, tiered on live consumption data",
-          "Consumption analysis: streaming trajectory, fandom-conversion ratio, physical-digital divergence, playlist ecosystem",
+          "Spotify consumption and decay analysis: track-level retention curves, era-aligned launch curves, listener-floor economics",
           "Video intelligence: a frame-level analysis of 113 KiiiKiii and competitor videos with performance data joined",
-          "Infrastructure audit: fan platform stack, live business, retail, Japan groundwork, brand pipeline",
-          "The conversion strategy: four execution verticals, Starship-led workstreams, and a 12-week timeline",
+          "Infrastructure audit: fan platform stack, CRM verification, live business, retail, Japan groundwork",
+          "The conversion strategy: four execution verticals, partner-led workstreams, and a 12-week timeline",
         ],
       },
       goals: {
@@ -57,7 +57,36 @@ export const kiiikiiiPlan: StrategyPlanData = {
           "Japan: formal debut supported digitally, converting groundwork already in place",
         ],
       },
-      footnote: "All data in this document was pulled August 26, 2026 unless dated otherwise. Sources: Chartmetric, Hanteo and Circle published tallies, platform data, and a dedicated KiiiKiii video intelligence store.",
+      charts: [
+        {
+          kind: "area",
+          title: "18 Months of Spotify Consumption",
+          subtitle: "Weekly monthly-listener and follower readings since debut. Followers have never declined a single week; each era resets the listener floor higher.",
+          series: [
+            {
+              name: "Monthly listeners",
+              points: [
+                { x: "2/26/25", y: 42075 }, { x: "3/5/25", y: 303137 }, { x: "3/12/25", y: 709813 }, { x: "3/19/25", y: 1030302 }, { x: "3/26/25", y: 1394572 }, { x: "4/2/25", y: 1690844 }, { x: "4/9/25", y: 1800939 }, { x: "4/16/25", y: 1816555 }, { x: "4/23/25", y: 1773572 }, { x: "4/30/25", y: 1622513 }, { x: "5/7/25", y: 1496555 }, { x: "5/14/25", y: 1429595 }, { x: "5/21/25", y: 1394789 }, { x: "5/28/25", y: 1316870 }, { x: "6/4/25", y: 1230975 }, { x: "6/11/25", y: 1142456 }, { x: "6/18/25", y: 1041609 }, { x: "6/25/25", y: 1021772 }, { x: "7/2/25", y: 997039 }, { x: "7/9/25", y: 980630 }, { x: "7/16/25", y: 957721 }, { x: "7/23/25", y: 880930 }, { x: "7/30/25", y: 812380 }, { x: "8/6/25", y: 750756 }, { x: "8/13/25", y: 865993 }, { x: "8/20/25", y: 1070541 }, { x: "8/27/25", y: 1257338 }, { x: "9/3/25", y: 1377135 }, { x: "9/10/25", y: 1381161 }, { x: "9/17/25", y: 1317092 }, { x: "9/24/25", y: 1190848 }, { x: "10/1/25", y: 1113362 }, { x: "10/8/25", y: 1058594 }, { x: "10/15/25", y: 1001243 }, { x: "10/22/25", y: 926214 }, { x: "10/29/25", y: 866735 }, { x: "11/5/25", y: 820899 }, { x: "11/12/25", y: 833001 }, { x: "11/19/25", y: 893196 }, { x: "11/26/25", y: 905834 }, { x: "12/3/25", y: 927667 }, { x: "12/10/25", y: 887948 }, { x: "12/17/25", y: 857681 }, { x: "12/24/25", y: 842081 }, { x: "12/31/25", y: 831721 }, { x: "1/7/26", y: 824649 }, { x: "1/14/26", y: 841397 }, { x: "1/21/26", y: 867873 }, { x: "1/28/26", y: 914832 }, { x: "2/4/26", y: 1588505 }, { x: "2/11/26", y: 2110587 }, { x: "2/18/26", y: 2721359 }, { x: "2/25/26", y: 3209569 }, { x: "3/4/26", y: 3503311 }, { x: "3/11/26", y: 3647896 }, { x: "3/18/26", y: 3718365 }, { x: "3/25/26", y: 3723676 }, { x: "4/1/26", y: 3746821 }, { x: "4/8/26", y: 3793821 }, { x: "4/15/26", y: 3822040 }, { x: "4/22/26", y: 3819436 }, { x: "4/29/26", y: 3800789 }, { x: "5/6/26", y: 3786215 }, { x: "5/13/26", y: 3757944 }, { x: "5/20/26", y: 3686434 }, { x: "5/27/26", y: 3686581 }, { x: "6/3/26", y: 3691572 }, { x: "6/10/26", y: 3681357 }, { x: "6/17/26", y: 3687714 }, { x: "6/24/26", y: 3617541 }, { x: "7/1/26", y: 3537890 }, { x: "7/8/26", y: 3447737 }, { x: "7/15/26", y: 3346487 }, { x: "7/22/26", y: 3291450 }, { x: "7/29/26", y: 3232246 }, { x: "8/5/26", y: 3226604 }, { x: "8/12/26", y: 3234105 }, { x: "8/19/26", y: 3525926 }, { x: "8/26/26", y: 3960609 },
+              ],
+            },
+            {
+              name: "Followers",
+              points: [
+                { x: "2/26/25", y: 16158 }, { x: "3/5/25", y: 44281 }, { x: "3/12/25", y: 59917 }, { x: "3/19/25", y: 71360 }, { x: "3/26/25", y: 84666 }, { x: "4/2/25", y: 98878 }, { x: "4/9/25", y: 109584 }, { x: "4/16/25", y: 117936 }, { x: "4/23/25", y: 125179 }, { x: "4/30/25", y: 133975 }, { x: "5/7/25", y: 141541 }, { x: "5/14/25", y: 148227 }, { x: "5/21/25", y: 154121 }, { x: "5/28/25", y: 159259 }, { x: "6/4/25", y: 165037 }, { x: "6/11/25", y: 170615 }, { x: "6/18/25", y: 176263 }, { x: "6/25/25", y: 181143 }, { x: "7/2/25", y: 185506 }, { x: "7/9/25", y: 189862 }, { x: "7/16/25", y: 194902 }, { x: "7/23/25", y: 199644 }, { x: "7/30/25", y: 204291 }, { x: "8/6/25", y: 210694 }, { x: "8/13/25", y: 219269 }, { x: "8/20/25", y: 226242 }, { x: "8/27/25", y: 233343 }, { x: "9/3/25", y: 238914 }, { x: "9/10/25", y: 243369 }, { x: "9/17/25", y: 249136 }, { x: "9/24/25", y: 254488 }, { x: "10/1/25", y: 259829 }, { x: "10/8/25", y: 264792 }, { x: "10/15/25", y: 269834 }, { x: "10/22/25", y: 274744 }, { x: "10/29/25", y: 279911 }, { x: "11/5/25", y: 284526 }, { x: "11/12/25", y: 290233 }, { x: "11/19/25", y: 295210 }, { x: "11/26/25", y: 301912 }, { x: "12/3/25", y: 307750 }, { x: "12/10/25", y: 316882 }, { x: "12/17/25", y: 322149 }, { x: "12/24/25", y: 328364 }, { x: "12/31/25", y: 335502 }, { x: "1/7/26", y: 342836 }, { x: "1/14/26", y: 350353 }, { x: "1/21/26", y: 362144 }, { x: "1/28/26", y: 375502 }, { x: "2/4/26", y: 396989 }, { x: "2/11/26", y: 414802 }, { x: "2/18/26", y: 433293 }, { x: "2/25/26", y: 452981 }, { x: "3/4/26", y: 472884 }, { x: "3/11/26", y: 494508 }, { x: "3/18/26", y: 515583 }, { x: "3/25/26", y: 538285 }, { x: "4/1/26", y: 560361 }, { x: "4/8/26", y: 582755 }, { x: "4/15/26", y: 602358 }, { x: "4/22/26", y: 624096 }, { x: "4/29/26", y: 644971 }, { x: "5/6/26", y: 664489 }, { x: "5/13/26", y: 682384 }, { x: "5/20/26", y: 700695 }, { x: "5/27/26", y: 718797 }, { x: "6/3/26", y: 736458 }, { x: "6/10/26", y: 754557 }, { x: "6/17/26", y: 771708 }, { x: "6/24/26", y: 788641 }, { x: "7/1/26", y: 805011 }, { x: "7/8/26", y: 819365 }, { x: "7/15/26", y: 839117 }, { x: "7/22/26", y: 855740 }, { x: "7/29/26", y: 876272 }, { x: "8/5/26", y: 893075 }, { x: "8/12/26", y: 918742 }, { x: "8/19/26", y: 948394 }, { x: "8/26/26", y: 973161 },
+              ],
+            },
+          ],
+          markers: [
+            { x: "3/26/25", label: "DEBUT" },
+            { x: "8/6/25", label: "DANCING ALONE" },
+            { x: "1/21/26", label: "404" },
+            { x: "8/12/26", label: "POP OFF" },
+          ],
+          tall: true,
+          source: "Chartmetric, weekly readings, Feb 26 2025 to Aug 26 2026",
+        },
+      ],
+      footnote: "All data in this document was pulled August 26, 2026 unless dated otherwise. Sources: Chartmetric, Spotify weekly and daily chart archives, Hanteo and Circle published tallies, platform data, and a dedicated KiiiKiii video intelligence store.",
     },
 
     // ===================================================================
@@ -69,7 +98,7 @@ export const kiiikiiiPlan: StrategyPlanData = {
       navLabel: "Market",
       title: "Market Position",
       philosophy: "Positioning is only defensible when it is tiered on live consumption, not reputation. Eleven artists, one metric spine, three tiers.",
-      intro: "The comparison set below spans the groups KiiiKiii is measured against commercially and creatively: the direct 2024-2025 rookie class, the established fourth-generation acts, and the global-format outlier. Spotify monthly listeners (Chartmetric, Aug 2026) is the spine; the notes carry what each peer does well and what KiiiKiii can take from the contrast.",
+      intro: "The comparison set spans the groups KiiiKiii is measured against commercially and creatively: the direct 2024-2025 rookie class, the established fourth-generation acts, and the global-format outlier. Spotify monthly listeners (Chartmetric, Aug 2026) is the spine; the notes carry what each peer does well and what KiiiKiii can take from the contrast.",
       subBlocks: [
         {
           label: "A",
@@ -138,7 +167,7 @@ export const kiiikiiiPlan: StrategyPlanData = {
                   monthlyListeners: "5.8M Monthly Listeners",
                   instagram: "7.6M Spotify Followers",
                   reference: "Six Perfect All-Kills through 2026; No. 1 girl group brand reputation",
-                  note: "The in-house precedent: general-public digital hits first, fandom physicals second, member-level brand equity third, touring fourth. KiiiKiii is two steps into the same sequence.",
+                  note: "The in-house precedent at KiiiKiii's own label: general-public digital hits first, fandom physicals second, member-level brand equity third, touring fourth. KiiiKiii is two steps into the same sequence.",
                 },
               ],
             },
@@ -169,19 +198,70 @@ export const kiiikiiiPlan: StrategyPlanData = {
               ],
             },
           ],
+          charts: [
+            {
+              kind: "hbars",
+              title: "The Set by Spotify Monthly Listeners",
+              series: [
+                {
+                  name: "Monthly listeners",
+                  points: [
+                    { x: "KATSEYE", y: 38493596 },
+                    { x: "ILLIT", y: 21538086 },
+                    { x: "LE SSERAFIM", y: 20649268 },
+                    { x: "NewJeans", y: 13792357 },
+                    { x: "aespa", y: 11376735 },
+                    { x: "Hearts2Hearts", y: 8080148 },
+                    { x: "BABYMONSTER", y: 7790398 },
+                    { x: "IVE", y: 5809149 },
+                    { x: "MEOVV", y: 4975284 },
+                    { x: "KiiiKiii", y: 3960609 },
+                    { x: "izna", y: 1532470 },
+                  ],
+                },
+              ],
+              highlightX: ["KiiiKiii"],
+              source: "Chartmetric, Aug 26 2026",
+            },
+            {
+              kind: "hbars",
+              title: "Fandom Conversion: Followers per Monthly Listener",
+              subtitle: "The audit's headline gap. Every artist above 0.40 monetizes fandom reliably; mature acts sit above 1.0. KiiiKiii is last in the set while listeners sit at an all-time high.",
+              series: [
+                {
+                  name: "Ratio",
+                  points: [
+                    { x: "KiiiKiii", y: 0.246 },
+                    { x: "Hearts2Hearts", y: 0.301 },
+                    { x: "KATSEYE", y: 0.325 },
+                    { x: "ILLIT", y: 0.351 },
+                    { x: "MEOVV", y: 0.4 },
+                    { x: "izna", y: 0.425 },
+                    { x: "LE SSERAFIM", y: 0.538 },
+                    { x: "NewJeans", y: 0.972 },
+                    { x: "aespa", y: 1.035 },
+                    { x: "BABYMONSTER", y: 1.117 },
+                    { x: "IVE", y: 1.315 },
+                  ],
+                },
+              ],
+              highlightX: ["KiiiKiii"],
+              source: "Chartmetric, Aug 26 2026",
+            },
+          ],
         },
         {
           label: "B",
           title: "How the Set Splits",
           objective: "Two lanes run through this class, and KiiiKiii currently sits between them.",
-          strategy: "The set divides into a U.S.-streaming lane (KATSEYE far ahead, LE SSERAFIM established, ILLIT cooling) and a Korea-and-Asia physical lane where Hearts2Hearts is the fastest riser and BABYMONSTER the scale leader. KiiiKiii's consumption pattern, digital-first with the general public leading, matches the U.S.-streaming lane; its promo footprint to date has stayed almost entirely in the Korea lane. The U.S. is already the group's largest listener market without ever having been promoted to. That mismatch is the single largest untapped asset in this audit.",
+          strategy: "The set divides into a U.S.-streaming lane (KATSEYE far ahead, LE SSERAFIM established, ILLIT cooling) and a Korea-and-Asia physical lane where Hearts2Hearts is the fastest riser and BABYMONSTER the scale leader. KiiiKiii's consumption pattern matches the U.S.-streaming lane; its promo footprint to date has stayed almost entirely in the Korea lane. The U.S. is already the group's largest listener market without ever having been promoted to. That mismatch is the single largest untapped asset in this audit.",
           components: {
             heading: "What the Tiering Says",
             items: [
               "The listener gap to Tier 2 is one strong cycle wide: KiiiKiii added 728K monthly listeners in the 16 days after Pop Off Pop Off released",
               "The conversion gap is the real distance: every group above KiiiKiii converts listeners to followers at a higher rate",
               "Hearts2Hearts holds the rookie crown and 6x the first-week sales, but has no U.S. presence; KiiiKiii has already played a U.S. main stage",
-              "The current bar for a winning rookie cycle in this market: a 400-600K first week plus a Circle Digital top 10. KiiiKiii clears the digital bar and not yet the physical one",
+              "The current bar for a winning rookie cycle: a 400-600K first week plus a Circle Digital top 10. KiiiKiii clears the digital bar and not yet the physical one",
             ],
           },
         },
@@ -190,77 +270,267 @@ export const kiiikiiiPlan: StrategyPlanData = {
     },
 
     // ===================================================================
-    // 03. Consumption Analysis
+    // 03. Consumption & Decay Analysis
     // ===================================================================
     {
       type: "vertical",
       number: "03",
       navLabel: "Consumption",
-      title: "Consumption Analysis",
-      philosophy: "One metric explains this group: the follower-to-listener ratio. The funnel is full. The capture layer is not.",
-      intro: "KiiiKiii's Spotify follower-to-monthly-listener ratio is 0.246: for every four people listening this month, fewer than one has committed to following. That is the lowest ratio in the entire eleven-artist comparison set, at the exact moment monthly listeners sit at an all-time high. Read together with the physical-sales curve and the playlist ecosystem, it describes a group whose discovery engine works exceptionally and whose conversion machinery has not been built yet.",
+      title: "Consumption & Decay Analysis",
+      philosophy: "The class decays from week one. KiiiKiii's hit multiplied for a month and still runs at double its launch week seven months later. That behavior, not any single chart peak, is the asset this strategy invests behind.",
+      intro: "This section reads KiiiKiii's Spotify consumption at three depths: the fandom-conversion ratio, track-level weekly decay against the class's biggest recent hits, and the listener-floor economics between eras. Stream series come from the Spotify weekly and daily South Korea chart archives; listener series from Chartmetric daily data.",
       subBlocks: [
         {
           label: "A",
-          title: "The Conversion Ratio",
+          title: "Fandom Conversion Ratio",
           objective: "Measure fandom capture against the peer set, and against KiiiKiii's own history.",
-          strategy: "The ratio has climbed steadily since the debut cycle (0.058 in April 2025 to 0.246 today) and Spotify followers have never declined in a single month: 28K at debut to 973K now. The machinery underneath is healthy; it has simply never been fed by dedicated conversion infrastructure. Peers show what the number looks like when it is: Hearts2Hearts 0.301, ILLIT 0.351, LE SSERAFIM 0.538, and mature fandom acts above 1.0.",
-          components: {
-            heading: "Ratio Trajectory (Chartmetric, Aug 2026)",
-            items: [
-              "Apr 2025, debut cycle: 1.67M listeners, 97K followers, ratio 0.058",
-              "Jan 2026, pre-404: 830K listeners, 337K followers, ratio 0.405 (listeners decayed between cycles; followers kept compounding)",
-              "Mar 2026, 404 era: 3.41M listeners, 464K followers, ratio 0.136 (discovery wave arrives faster than capture)",
-              "Aug 26, 2026, Pop Off era: 3.96M listeners, 973K followers, ratio 0.246 and climbing",
-              "The pattern: each hit floods the funnel, then conversion slowly catches up. The strategy's job is to collapse that lag",
-            ],
-          },
-          kpis: [
-            "Target ratio: 0.40+ within 12 months, roughly 3M followers against 8M active-cycle listeners",
+          strategy: "The ratio is 0.246: for every four people listening this month, fewer than one has committed to following. That is the lowest figure in the eleven-artist set, at the exact moment listeners sit at an all-time high. The trajectory underneath is healthy: followers have climbed every single week since debut (16K to 973K) and the ratio recovers between eras, then dips each time a hit floods the funnel faster than capture can absorb it. The machinery works; it has never been fed by dedicated conversion infrastructure.",
+          charts: [
+            {
+              kind: "line",
+              title: "Follower-to-Listener Ratio by Month",
+              subtitle: "Each discovery wave (404, Pop Off) knocks the ratio down, then conversion climbs it back. The strategy's job is to collapse that lag.",
+              unit: "",
+              series: [
+                {
+                  name: "Ratio",
+                  points: [
+                    { x: "4/25", y: 0.058 }, { x: "5/25", y: 0.084 }, { x: "6/25", y: 0.129 }, { x: "7/25", y: 0.185 }, { x: "8/25", y: 0.261 }, { x: "9/25", y: 0.176 }, { x: "10/25", y: 0.233 }, { x: "11/25", y: 0.334 }, { x: "12/25", y: 0.33 }, { x: "1/26", y: 0.405 }, { x: "2/26", y: 0.328 }, { x: "3/26", y: 0.136 }, { x: "4/26", y: 0.15 }, { x: "5/26", y: 0.172 }, { x: "6/26", y: 0.198 }, { x: "7/26", y: 0.228 }, { x: "8/26", y: 0.246 },
+                  ],
+                },
+              ],
+              markers: [
+                { x: "3/26", label: "404 WAVE" },
+                { x: "8/26", label: "POP OFF" },
+              ],
+              note: "Target: 0.40+ within 12 months, roughly 3M followers against 8M active-cycle listeners.",
+              source: "Chartmetric monthly readings, Apr 2025 to Aug 2026",
+            },
           ],
         },
         {
           label: "B",
-          title: "Two Sleeper Climbs Prove the Engine",
-          objective: "Document the consumption pattern that now defines this group: slow entry, general-public adoption, sustained climb.",
-          strategy: "\"404 (New Era)\" entered Circle Digital at No. 47 and reached Melon TOP100 No. 1 on day 16, took Circle Digital's monthly No. 1 for February, spent 8 consecutive weeks on Billboard Global Excl. US, and became the group's first Billboard Global 200 entry. \"Pop Off Pop Off\" is repeating the shape at a faster clip: Bugs No. 1 on day one, all six album tracks into Melon HOT100, No. 1 on Spotify Korea by day 10 on 450K+ daily streams, and the MV to No. 1 on YouTube's worldwide trending music chart. Monthly listeners rose 22.7% in the 16 days after release with no plateau at the date of this pull. This is not challenge-dependent virality; it is general-public song adoption, the rarest and most durable consumption pattern in the market.",
-          components: {
-            heading: "Catalog Depth (All-Time Spotify Streams)",
-            items: [
-              "404 (New Era): 76.9M, released Jan 2026",
-              "I DO ME: 40.4M, the debut single",
-              "Delulu: 23.2M, plus a 21.4M track film, a B-side ecosystem behaving like singles",
-              "DANCING ALONE: 17.6M; BTG: 13.3M; UNDERDOGS: 5.9M",
-              "Pop Off Pop Off: 5.4M in its first 16 days, popularity 75 and rising",
-            ],
-          },
+          title: "Track Decay Analysis",
+          objective: "Compare how KiiiKiii's hit retains streams week over week against the class's defining recent hits, on identical chart data.",
+          strategy: "Every benchmark hit in the set decays from week one. \"404 (New Era)\" inverts the curve: by week 4 it ran at 4.8x its launch week, and at week 26 it still runs at 1.8x, averaging 35.6K streams per day in South Korea alone seven months after release. Magnetic, the class's biggest debut-era hit, retained 16% of launch week at the same age; RUDE!, the strongest comp on retention, held 63%. This is catalog behavior of a kind the class does not produce, and it is the strongest single argument in this audit: attention compounds around this group when a song connects. The strategy's job is to make each future launch land on infrastructure that captures that compounding.",
+          charts: [
+            {
+              kind: "line",
+              title: "Weekly Stream Retention vs Launch Week",
+              subtitle: "Weekly South Korea streams indexed to each track's first full chart week. The class decays; 404 multiplies.",
+              unit: "x",
+              series: [
+                {
+                  name: "404 (New Era)",
+                  points: [
+                    { x: "W1", y: 1.0 }, { x: "W4", y: 4.83 }, { x: "W8", y: 3.01 }, { x: "W12", y: 2.13 }, { x: "W16", y: 1.79 }, { x: "W20", y: 2.25 }, { x: "W24", y: 1.84 },
+                  ],
+                },
+                {
+                  name: "RUDE! (Hearts2Hearts)",
+                  points: [
+                    { x: "W1", y: 1.0 }, { x: "W4", y: 1.21 }, { x: "W8", y: 0.85 }, { x: "W12", y: 0.75 }, { x: "W16", y: 0.71 }, { x: "W20", y: 0.65 }, { x: "W24", y: 0.63 },
+                  ],
+                },
+                {
+                  name: "SPAGHETTI (LSF)",
+                  points: [
+                    { x: "W1", y: 1.0 }, { x: "W4", y: 0.75 }, { x: "W8", y: 0.56 }, { x: "W12", y: 0.53 }, { x: "W16", y: 0.41 }, { x: "W20", y: 0.35 }, { x: "W24", y: null },
+                  ],
+                },
+                {
+                  name: "Magnetic (ILLIT)",
+                  points: [
+                    { x: "W1", y: 1.0 }, { x: "W4", y: 0.68 }, { x: "W8", y: 0.38 }, { x: "W12", y: 0.34 }, { x: "W16", y: 0.23 }, { x: "W20", y: 0.2 }, { x: "W24", y: 0.16 },
+                  ],
+                },
+              ],
+              note: "SPAGHETTI left the South Korea weekly chart after week 23. All four tracks measured on the same chart source.",
+              source: "Spotify weekly South Korea chart archives, pulled Aug 26 2026",
+              tall: true,
+            },
+            {
+              kind: "bars",
+              title: "404 (New Era): 26 Weeks of KR Streams",
+              subtitle: "Weekly South Korea streams in thousands. Launch week 134K; peak 647K in week 4; week 26 still at 252K, 1.9x the launch week.",
+              unit: "K",
+              series: [
+                {
+                  name: "Weekly streams (K)",
+                  points: [
+                    { x: "W1", y: 134 }, { x: "W2", y: 419 }, { x: "W3", y: 566 }, { x: "W4", y: 647 }, { x: "W5", y: 586 }, { x: "W6", y: 485 }, { x: "W7", y: 445 }, { x: "W8", y: 404 }, { x: "W9", y: 367 }, { x: "W10", y: 323 }, { x: "W11", y: 291 }, { x: "W12", y: 286 }, { x: "W13", y: 265 }, { x: "W14", y: 253 }, { x: "W15", y: 241 }, { x: "W16", y: 240 }, { x: "W17", y: 262 }, { x: "W18", y: 304 }, { x: "W19", y: 303 }, { x: "W20", y: 301 }, { x: "W21", y: 296 }, { x: "W22", y: 284 }, { x: "W23", y: 273 }, { x: "W24", y: 246 }, { x: "W25", y: 254 }, { x: "W26", y: 252 },
+                  ],
+                },
+              ],
+              note: "The week 17-21 re-lift is organic catalog re-entry, not promo: no release or broadcast event sits under it.",
+              source: "Spotify weekly South Korea chart archive, Jan 2026 to Aug 2026",
+              tall: true,
+            },
+          ],
         },
         {
           label: "C",
-          title: "The Physical-Digital Divergence",
-          objective: "Name the gap precisely: the audience grew while the buying fandom shrank, then began recovering.",
-          strategy: "First-week physicals ran 206,712 (Uncut Gem, Mar 2025), 41,125 (Delulu Pack, Jan 2026), 81,881 (WhyKiiiKiii, Aug 2026) per Hanteo. Cumulative Circle totals: roughly 210K, 122K, 93K. Digital moved in the opposite direction the entire time, and WhyKiiiKiii's doubling of the prior first week came from sustained demand across the week rather than day-one fandom bulk. The read is structural, not creative: album-buying in this market is manufactured by fandom infrastructure (memberships, versions, fansigns, retail moments, lightstick-era touring), and that machinery is exactly what has not yet been stood up around this group. The audience that streams a No. 1 song has never been given the products, moments, and owned channels that turn listeners into buyers.",
-          kpis: [
-            "Target: 150K+ first week on the next full cycle, driven by conversion infrastructure rather than by asking the current fandom to buy more copies",
+          title: "Launch Curves, Era Over Era",
+          objective: "Test whether the sleeper-climb pattern is a one-off or the group's repeatable consumption signature.",
+          strategy: "It repeats, faster. \"404\" reached No. 1 on the Spotify Korea daily chart on day 15 and was still setting new daily-stream highs on day 29. \"Pop Off Pop Off\" hit No. 1 on day 9 and is tracking at or above 404's same-day-index streams through day 16, the date of this pull. Slow entry, general-public adoption, sustained climb: this is now a twice-proven signature, and it is the rarest consumption pattern in the market because it does not depend on fandom bulk-streaming or challenge spikes. Weeks 2 through 6, not release day, are where this group's hits are made, and the DSP vertical operationalizes exactly that window.",
+          charts: [
+            {
+              kind: "line",
+              title: "Daily KR Streams by Day Since Release",
+              subtitle: "404 (Jan 2026) vs Pop Off Pop Off (Aug 2026), aligned by day index, in thousands.",
+              unit: "K",
+              series: [
+                {
+                  name: "Pop Off Pop Off",
+                  points: [
+                    { x: "D1", y: 29.8 }, { x: "D2", y: 52.5 }, { x: "D3", y: 54.6 }, { x: "D4", y: 58.2 }, { x: "D5", y: 64.7 }, { x: "D6", y: 66.1 }, { x: "D7", y: 63.1 }, { x: "D8", y: 73.5 }, { x: "D9", y: 77.6 }, { x: "D10", y: 71.1 }, { x: "D11", y: 67.8 }, { x: "D12", y: 61.0 }, { x: "D13", y: 62.9 }, { x: "D14", y: 67.1 }, { x: "D15", y: 67.7 }, { x: "D16", y: 64.3 }, { x: "D17", y: null }, { x: "D18", y: null }, { x: "D19", y: null }, { x: "D20", y: null }, { x: "D21", y: null }, { x: "D22", y: null }, { x: "D23", y: null }, { x: "D24", y: null }, { x: "D25", y: null }, { x: "D26", y: null }, { x: "D27", y: null }, { x: "D28", y: null }, { x: "D29", y: null }, { x: "D30", y: null },
+                  ],
+                },
+                {
+                  name: "404 (New Era)",
+                  points: [
+                    { x: "D1", y: null }, { x: "D2", y: null }, { x: "D3", y: null }, { x: "D4", y: null }, { x: "D5", y: null }, { x: "D6", y: null }, { x: "D7", y: null }, { x: "D8", y: null }, { x: "D9", y: null }, { x: "D10", y: null }, { x: "D11", y: 54.6 }, { x: "D12", y: 59.6 }, { x: "D13", y: 60.2 }, { x: "D14", y: 68.1 }, { x: "D15", y: 71.5 }, { x: "D16", y: 73.6 }, { x: "D17", y: 70.6 }, { x: "D18", y: 69.2 }, { x: "D19", y: 78.5 }, { x: "D20", y: 79.3 }, { x: "D21", y: 96.6 }, { x: "D22", y: 98.7 }, { x: "D23", y: 102.8 }, { x: "D24", y: 93.6 }, { x: "D25", y: 89.1 }, { x: "D26", y: 83.5 }, { x: "D27", y: 82.7 }, { x: "D28", y: 91.3 }, { x: "D29", y: 104.3 }, { x: "D30", y: 99.4 },
+                  ],
+                },
+              ],
+              markers: [
+                { x: "D9", label: "POP OFF KR No. 1" },
+                { x: "D15", label: "404 KR No. 1" },
+              ],
+              note: "404's days 1-10 fall outside the daily chart archive's retention window; the track was already top 3 at first retrievable reading. Pop Off data runs through Aug 25, day 16.",
+              source: "Spotify daily South Korea chart archive, pulled Aug 26 2026",
+              tall: true,
+            },
           ],
         },
         {
           label: "D",
-          title: "Playlist Ecosystem and the Crossover Signal",
-          objective: "Read where DSP editorial has already placed this group, because it is ahead of the promo footprint.",
-          strategy: "66 current track placements across 33 Spotify playlists with 10.3M total reach. The composition is the finding: alongside the expected K-pop shelves (KimBops! 1.1M, K-Pop Rising 884K, Hot Hits Korea 944K), KiiiKiii holds non-K-pop editorial placements including It's a Hit! (2.2M followers), poses (625K), Stargirl vibes (469K), and market editorial in Taiwan and Indonesia. Editors are already treating Pop Off Pop Off as a pop record, not a K-pop-shelf record. The DSP vertical in this plan exists to press that advantage deliberately.",
-          components: {
-            heading: "Geographic Footprint (Top Markets, Chartmetric)",
-            items: [
-              "United States: 677K monthly listeners, the group's largest market, never directly promoted to",
-              "Indonesia 376K, South Korea 357K, Philippines 325K, Malaysia 323K: a Southeast Asian block that mirrors the touring map of the class's Asia lane",
-              "Top cities: Seoul, Taipei, Singapore, Kuala Lumpur, Jakarta, Bangkok, Tokyo, Sydney, Los Angeles",
-              "Cross-platform 90-day growth: roughly +18% on every social platform, against 27-48% for the two fastest-growing comps: healthy, but not yet compounding at winner rate",
-            ],
-          },
+          title: "Listener Floor Between Eras",
+          objective: "Measure what each era leaves behind after the promotional wave passes: the decay rate and the floor.",
+          strategy: "In year one, KiiiKiii's monthly listeners decayed 5 to 6% per week between releases and bottomed at 824K. After 404, the decay rate collapsed to 1.1% per week and the floor rose to 3.22M: 3.9x higher, on a curve five times flatter. The audience 404 built did not pass through; it stayed. This is the quantitative case that the group has crossed from promo-driven listening into retained catalog listening, and it is why the 12-month listener target (8M+ in active cycles) is a projection from measured behavior rather than a hope.",
+          charts: [
+            {
+              kind: "bars",
+              title: "Average Weekly Listener Decay Between Releases",
+              subtitle: "Percent of monthly listeners lost per week from each era's peak to its trough.",
+              unit: "%",
+              series: [
+                {
+                  name: "Weekly decay rate",
+                  points: [
+                    { x: "Post-debut\nApr-Aug 2025", y: 5.31 },
+                    { x: "Post-Dancing Alone\nSep 2025-Jan 2026", y: 6.01 },
+                    { x: "Post-404\nApr-Aug 2026", y: 1.09 },
+                  ],
+                },
+              ],
+              highlightX: ["Post-404\nApr-Aug 2026"],
+              note: "Post-404 window ran 15.7 weeks, the longest gap yet, at one fifth the decay rate of year one.",
+              source: "Chartmetric daily listener series, computed peak to trough per window",
+            },
+            {
+              kind: "bars",
+              title: "The Listener Floor, Era Over Era",
+              subtitle: "Lowest monthly-listener reading between eras. The 404 era raised the floor 3.9x.",
+              series: [
+                {
+                  name: "Floor",
+                  points: [
+                    { x: "Pre-404 floor\nJan 5 2026", y: 823571 },
+                    { x: "Post-404 floor\nJul 31 2026", y: 3220632 },
+                  ],
+                },
+              ],
+              highlightX: ["Post-404 floor\nJul 31 2026"],
+              source: "Chartmetric daily listener series",
+            },
+          ],
+        },
+        {
+          label: "E",
+          title: "Physical vs Digital",
+          objective: "Name the divergence precisely: the audience grew while the buying fandom shrank, then began recovering.",
+          strategy: "First-week physicals ran 206.7K, 41.1K, 81.9K across the three EPs while digital moved the opposite direction the whole time. WhyKiiiKiii's doubling of the prior first week came from sustained demand across the week rather than day-one fandom bulk. The read is structural, not creative: album volume in this market is manufactured by fandom infrastructure (memberships, versions, retail moments, lightstick-era touring), and that machinery has not been stood up around this group. The audience that streams a No. 1 song has never been offered the products and moments that turn listeners into buyers.",
+          charts: [
+            {
+              kind: "grouped",
+              title: "Album Sales by Release",
+              subtitle: "First-week and cumulative physical sales per EP.",
+              series: [
+                {
+                  name: "First week (Hanteo)",
+                  points: [
+                    { x: "Uncut Gem\nMar 2025", y: 206712 },
+                    { x: "Delulu Pack\nJan 2026", y: 41125 },
+                    { x: "WhyKiiiKiii\nAug 2026", y: 81881 },
+                  ],
+                },
+                {
+                  name: "Cumulative (Circle)",
+                  points: [
+                    { x: "Uncut Gem\nMar 2025", y: 210484 },
+                    { x: "Delulu Pack\nJan 2026", y: 121674 },
+                    { x: "WhyKiiiKiii\nAug 2026", y: 93318 },
+                  ],
+                },
+              ],
+              note: "WhyKiiiKiii cumulative is 16 days old and still accruing. Target: 150K+ first week on the next full cycle, driven by conversion infrastructure rather than asking the current fandom to buy more copies.",
+              source: "Hanteo and Circle published tallies, Aug 2026",
+            },
+          ],
+        },
+        {
+          label: "F",
+          title: "Markets, Playlists, Catalog Scale",
+          objective: "Read where the consumption lives geographically, where editorial has placed the group, and how much catalog the growth engine has to work with.",
+          strategy: "The U.S. is the largest listener market at 677K and has never been directly promoted to. Editorial is ahead of the promo footprint: 66 current placements across 33 Spotify playlists with 10.3M reach, including non-K-pop editorial (It's a Hit! at 2.2M followers, poses, Stargirl vibes) that treats Pop Off Pop Off as a pop record rather than a K-pop-shelf record. The catalog itself is young: 213M total artist streams across 27 tracks against 683M for Hearts2Hearts and multi-billion catalogs for the HYBE comps, which means catalog-scale gaps close through exactly the kind of hit-retention behavior section B documents.",
+          charts: [
+            {
+              kind: "hbars",
+              title: "Top Markets by Monthly Listeners",
+              series: [
+                {
+                  name: "Listeners",
+                  points: [
+                    { x: "United States", y: 677615 },
+                    { x: "Indonesia", y: 375644 },
+                    { x: "South Korea", y: 357262 },
+                    { x: "Philippines", y: 325021 },
+                    { x: "Malaysia", y: 323429 },
+                    { x: "Taiwan", y: 223855 },
+                    { x: "Australia", y: 140881 },
+                    { x: "United Kingdom", y: 108243 },
+                    { x: "Brazil", y: 96718 },
+                  ],
+                },
+              ],
+              highlightX: ["United States"],
+              note: "The largest market is the one with zero dedicated infrastructure. Top cities: Seoul, Taipei, Singapore, Kuala Lumpur, Jakarta, Bangkok, Tokyo, Sydney, Los Angeles.",
+              source: "Chartmetric, Aug 26 2026",
+            },
+            {
+              kind: "bars",
+              title: "Total Catalog Streams vs the Deep Comps",
+              subtitle: "All-time Spotify streams across each artist's full catalog.",
+              series: [
+                {
+                  name: "Catalog streams",
+                  points: [
+                    { x: "KiiiKiii\n27 tracks", y: 213492629 },
+                    { x: "Hearts2Hearts\n22 tracks", y: 682846489 },
+                    { x: "ILLIT\n64 tracks", y: 2925619629 },
+                    { x: "LE SSERAFIM\n145 tracks", y: 6513250053 },
+                  ],
+                },
+              ],
+              highlightX: ["KiiiKiii\n27 tracks"],
+              note: "Single-hit scale inside those catalogs: 404 at 76M vs RUDE! 162M, SPAGHETTI 296M, Magnetic 870M. The retention curve in section B is how that gap closes.",
+              source: "Spotify catalog totals via public chart archives, Aug 23-26 2026",
+            },
+          ],
         },
       ],
-      footnote: "Streaming and playlist data: Chartmetric, pulled Aug 26, 2026. Chart histories: Circle, Melon, and Billboard published charts. Sales: Hanteo and Circle published tallies.",
+      footnote: "Stream series: Spotify weekly and daily South Korea top 200 chart archives (chart-coverage gaps treated as gaps, never zeros). Listener and follower series: Chartmetric daily data. Sales: Hanteo and Circle published tallies. All pulled Aug 26, 2026.",
     },
 
     // ===================================================================
@@ -430,6 +700,123 @@ export const kiiikiiiPlan: StrategyPlanData = {
         },
       ],
       mixFootnote: "Owned mix measured on the 68-video analyzed corpus and the full August posting window. Competitor columns describe each group's top-15 set and are a winners' benchmark by construction.",
+      charts: [
+        {
+          kind: "grouped",
+          title: "Format Share: Output vs Top Decile",
+          subtitle: "What the account posts vs what actually reaches the top 10% of the corpus.",
+          unit: "%",
+          series: [
+            {
+              name: "Share of output",
+              points: [
+                { x: "Challenge clips", y: 50 },
+                { x: "Stage + release", y: 16 },
+                { x: "Everything else", y: 34 },
+              ],
+            },
+            {
+              name: "Share of top decile",
+              points: [
+                { x: "Challenge clips", y: 14 },
+                { x: "Stage + release", y: 57 },
+                { x: "Everything else", y: 29 },
+              ],
+            },
+          ],
+          source: "KiiiKiii video intelligence corpus, Aug 2026",
+        },
+        {
+          kind: "bars",
+          title: "Median Views by Content Lane",
+          subtitle: "TikTok medians in thousands across the analyzed corpus.",
+          unit: "K",
+          series: [
+            {
+              name: "Median views (K)",
+              points: [
+                { x: "Template\nguest posts", y: 246 },
+                { x: "Account\nmedian", y: 590 },
+                { x: "Gag\nlane", y: 939 },
+                { x: "Member\nsolo posts", y: 1220 },
+              ],
+            },
+          ],
+          highlightX: ["Member\nsolo posts"],
+          note: "The most-produced lane earns the least; the least-produced lanes earn the most.",
+          source: "KiiiKiii video intelligence corpus, performance join, Aug 2026",
+        },
+        {
+          kind: "grouped",
+          title: "Same Post, Two Platforms",
+          subtitle: "Identical edits published to both platforms, views in thousands.",
+          unit: "K",
+          series: [
+            {
+              name: "TikTok",
+              points: [
+                { x: "Guest trio bit", y: 307 },
+                { x: "Variety guest bit", y: 246 },
+                { x: "9-second gag", y: 535 },
+                { x: "LED sneakers gag", y: 1016 },
+              ],
+            },
+            {
+              name: "Instagram",
+              points: [
+                { x: "Guest trio bit", y: 1530 },
+                { x: "Variety guest bit", y: 1010 },
+                { x: "9-second gag", y: 856 },
+                { x: "LED sneakers gag", y: 1066 },
+              ],
+            },
+          ],
+          note: "Instagram out-earns TikTok on three of four verified identical pairs, on a follower base a quarter the size of peers'.",
+          source: "Platform metrics, verified identical edits, Aug 2026",
+        },
+        {
+          kind: "grouped",
+          title: "90-Day Follower Growth Rate by Platform",
+          subtitle: "May 28 to Aug 26, 2026. Healthy, but not yet compounding at winner rate.",
+          unit: "%",
+          series: [
+            {
+              name: "KiiiKiii",
+              color: "#FD3737",
+              points: [
+                { x: "YouTube subs", y: 17.8 },
+                { x: "TikTok", y: 17.7 },
+                { x: "Instagram", y: 18.0 },
+              ],
+            },
+            {
+              name: "ILLIT",
+              points: [
+                { x: "YouTube subs", y: 48.2 },
+                { x: "TikTok", y: 29.2 },
+                { x: "Instagram", y: 17.6 },
+              ],
+            },
+            {
+              name: "Hearts2Hearts",
+              points: [
+                { x: "YouTube subs", y: 42.6 },
+                { x: "TikTok", y: 26.8 },
+                { x: "Instagram", y: 17.1 },
+              ],
+            },
+            {
+              name: "LE SSERAFIM",
+              points: [
+                { x: "YouTube subs", y: 16.0 },
+                { x: "TikTok", y: 9.1 },
+                { x: "Instagram", y: 6.3 },
+              ],
+            },
+          ],
+          source: "Chartmetric, 90-day deltas, Aug 26 2026",
+        },
+      ],
       findingsHeading: "Six Findings, Cross-Checked",
       findingsIntro: "Each card carries the verdict, the evidence with real posts and their numbers, the counter-case where one exists, and the pivot. Open any card for the example posts behind it.",
       findings: [
@@ -516,7 +903,7 @@ export const kiiikiiiPlan: StrategyPlanData = {
             actions: [
               "Stand up a weekly member-solo slot with a repeatable grammar: one member, one setup, one payoff",
               "Lead with the proven anchors, and use the slot to build the two members with no solo presence yet",
-              "This is also the fastest route to member-level brand equity, the asset the in-house precedent monetized hardest",
+              "This is also the fastest route to member-level brand equity, the asset the label's own precedent monetized hardest",
             ],
           },
         },
@@ -616,21 +1003,22 @@ export const kiiikiiiPlan: StrategyPlanData = {
       number: "06",
       navLabel: "Infrastructure",
       title: "Infrastructure Audit",
-      philosophy: "Consumption is tier-two. The conversion stack underneath it is a tier below. This section is the itemized gap.",
+      philosophy: "Consumption is tier-two. The conversion stack underneath it is a tier below. This section is the itemized gap, verified surface by surface.",
       intro: "Everything below is what a fandom monetizes through. Peers at comparable heat operate most of this list; KiiiKiii operates almost none of it. Each item is an opportunity already earned by the consumption data, not a bet.",
       subBlocks: [
         {
           label: "A",
           title: "Fan Platform and CRM Stack",
-          objective: "Map where fan relationships live today and where owned capture is missing.",
-          strategy: "KiiiKiii is native to Berriz, Kakao Entertainment's global fan platform, with group and member profiles from debut day, fan-club-only lives, and Berriz Shop. The TiiiKiii paid membership opened in March 2026. In August 2026 the group joined Weverse solely to house its new Japan official fan club, with a members-first lottery for the announced Japan fan concert. What the stack lacks is a direct-response layer: no drop-based email and SMS capture, no owned U.S. fan-data asset, and no bridge between viral reach moments and a list the team controls. The strategy layers that on without disturbing the platforms already in place.",
+          objective: "Map where fan relationships live today and verify, not assume, where owned capture is missing.",
+          strategy: "KiiiKiii is native to Berriz, the group's global fan-community platform, with group and member profiles from debut day, fan-club-only lives, and a shop. The TiiiKiii paid membership opened in March 2026, and a Weverse fan club opened in August 2026 solely to house the Japan membership. What the stack lacks is a direct-response layer, and that absence is verified rather than assumed: on August 26, 2026 Crowd Control Digital checked every owned surface (the official site and its code, the label shop, link-in-bio destinations, YouTube channel links, the fan platforms, and U.S. retail) and found no active email or SMS capture anywhere. One historical exception sharpens the point: for roughly three months in late 2025 the official site ran an email signup that fed a partner label's fan-CRM system; the form was removed by January 2026 and whatever list it built sits outside the artist team's direct control. As of today, a No. 1 artist's owned direct-response list is effectively zero.",
           components: {
-            heading: "Current State",
+            heading: "Verified Current State (Aug 26, 2026)",
             items: [
-              "Berriz: group + member profiles since debut day, memberships, shop",
-              "TiiiKiii paid membership: opened March 2026, used for concert verification",
-              "Weverse: Japan official fan club opened August 2026",
-              "No drop CRM, no email and SMS capture, no U.S.-owned fan data",
+              "Berriz: group + member profiles since debut day, memberships, shop. Platform-owned relationship",
+              "TiiiKiii paid membership since March 2026; Weverse Japan fan club since August 2026. Both platform accounts, not owned lists",
+              "Official site: no signup of any kind; the ticket-form page collects no contact field",
+              "Link-in-bio, YouTube links, U.S. retail: no artist-level capture anywhere; store newsletters are store-owned",
+              "Historical: a site email form ran roughly Aug-Nov 2025 into a partner label's CRM, dormant since",
             ],
           },
         },
@@ -671,7 +1059,7 @@ export const kiiikiiiPlan: StrategyPlanData = {
           strategy: "The endorsement cadence has climbed steadily in weight class: a first-ever bank ambassadorship at debut, fast-food and fashion campaigns through 2025, then in 2026 a New Era collection keyed to the group's own hit, Pandora, a Coach ambassadorship, and a two-year Seoul district ambassadorship. On the IP side, a 53-episode web novel starring the members ran on Korea's largest story platform with a produced OST and audiobook, and the group took a major short-form platform's rising-artist award in 2025. Commercial partners are already pricing KiiiKiii as a rising mainstream brand; the fandom infrastructure this plan builds is what lets the group capture that value rather than just validate it.",
         },
       ],
-      footnote: "Infrastructure facts verified against platform notices, ticketing listings, and published coverage, August 2026.",
+      footnote: "Infrastructure facts verified against live sites, site code, archived captures, platform notices, ticketing listings, and published coverage, August 26, 2026.",
     },
 
     // ===================================================================
@@ -682,7 +1070,7 @@ export const kiiikiiiPlan: StrategyPlanData = {
       number: "07",
       navLabel: "Philosophy",
       title: "Core Strategy & Philosophy",
-      thesis: "The discovery engine already works: two sleeper-climb hits prove it. Every dollar in this plan either widens that discovery or converts it into fandom the team owns. Nothing here asks the music to change. The strategy builds the machine the songs have already earned.",
+      thesis: "The discovery engine already works: two sleeper-climb hits and a catalog that compounds where the class decays. Every dollar in this plan either widens that discovery or converts it into fandom the team owns. Nothing here asks the music to change. The strategy builds the machine the songs have already earned.",
       hierarchy: [
         {
           label: "Conversion Infrastructure (Foundation, Always-On)",
@@ -694,7 +1082,7 @@ export const kiiikiiiPlan: StrategyPlanData = {
         },
         {
           label: "DSP Compounding (Amplifier)",
-          description: "Defend and extend the sleeper-climb pattern: pop-editorial expansion beyond the K-pop shelf, release-window sustain mechanics, and catalog activation around the breakthrough hit. The discovery layer where this group already over-performs its tier.",
+          description: "Defend and extend the sleeper-climb pattern: pop-editorial expansion beyond the K-pop shelf, weeks-2-through-6 sustain mechanics, and catalog activation around the breakthrough hit. The discovery layer where this group already over-performs its tier.",
         },
         {
           label: "PR and Cultural Moments (Amplifier)",
@@ -723,8 +1111,8 @@ export const kiiikiiiPlan: StrategyPlanData = {
         {
           label: "A",
           title: "Drop CRM: Email + SMS",
-          objective: "Build the owned-audience layer that turns viral moments into a list the team controls, complementing Berriz rather than competing with it.",
-          strategy: "Stand up a drop-based CRM as the U.S. and global capture layer: release-window drops, content unlocks, first-access mechanics for retail and live moments. Capture runs at every touchpoint: link-in-bio and pinned comments (wired in the short-form engine), festival and pop-up foot traffic, and pre-save campaigns. Segment by geography, engagement tier, and purchase behavior; run retention flows timed to the release calendar. Berriz remains the fan-community home; the CRM is the direct-response asset that K-pop platform stacks do not provide.",
+          objective: "Build the owned-audience layer that turns viral moments into a list the team controls, complementing the existing fan platforms rather than competing with them.",
+          strategy: "Stand up a drop-based CRM as the U.S. and global capture layer: release-window drops, content unlocks, first-access mechanics for retail and live moments. Capture runs at every touchpoint: link-in-bio and pinned comments (wired in the short-form engine), festival and pop-up foot traffic, and pre-save campaigns. Segment by geography, engagement tier, and purchase behavior; run retention flows tied to the release calendar. The starting point is zero by verification, not assumption: the only list ever built ran through a partner label's CRM for roughly three months in late 2025 and has been dormant since, which also proves signup demand existed the one time it was asked for. Berriz remains the fan-community home; the CRM is the direct-response asset the platform stack does not provide.",
           components: {
             heading: "Components",
             items: [
@@ -763,8 +1151,8 @@ export const kiiikiiiPlan: StrategyPlanData = {
         {
           label: "C",
           title: "Membership, Retail, and Product Moments",
-          objective: "Give the audience the fandom products and moments it has never been offered, sequenced with Starship's product calendar.",
-          strategy: "Coordinate the fandom-infrastructure moments the audit flagged: support the lightstick launch as a full campaign moment when Starship schedules it, build a first U.S. retail drop with an exclusive version through the established U.S. K-pop retail network, and wire membership benefits into the CRM so every purchase deepens the owned relationship. Two eras of proof (the debut record and the current recovery) say the buying audience exists; it has been under-served, not absent.",
+          objective: "Give the audience the fandom products and moments it has never been offered, sequenced with the label's product calendar.",
+          strategy: "Coordinate the fandom-infrastructure moments the audit flagged: support the lightstick launch as a full campaign moment when it is scheduled, build a first U.S. retail drop with an exclusive version through the established U.S. K-pop retail network, and wire membership benefits into the CRM so every purchase deepens the owned relationship. Two eras of proof (the debut record and the current recovery) say the buying audience exists; it has been under-served, not absent.",
           components: {
             heading: "Components",
             items: [
@@ -845,7 +1233,7 @@ export const kiiikiiiPlan: StrategyPlanData = {
           label: "A",
           title: "Pop-Editorial Expansion",
           objective: "Position KiiiKiii to pop editors as a pop act with K-pop infrastructure, extending placements beyond the K-pop shelf.",
-          strategy: "Build cycle-specific pitch packets around the documented crossover proof: the non-K-pop editorial placements already held, the U.S.-first listener base, and the sleeper-climb consumption pattern editors read as durability. Develop named editorial relationships at each major DSP, with one platform championed per cycle for a full-cycle program. Anchor the K-pop shelf placements as the floor, not the ceiling.",
+          strategy: "Build cycle-specific pitch packets around the documented crossover proof: the non-K-pop editorial placements already held, the U.S.-first listener base, and the retention curves in section 03 that editors read as durability. Develop named editorial relationships at each major DSP, with one platform championed per cycle for a full-cycle program. Anchor the K-pop shelf placements as the floor, not the ceiling.",
           components: {
             heading: "Components",
             items: [
@@ -860,7 +1248,7 @@ export const kiiikiiiPlan: StrategyPlanData = {
           label: "B",
           title: "Sleeper-Climb Defense",
           objective: "Institutionalize the weeks-2-through-6 sustain window where this group's hits are actually made.",
-          strategy: "Both hits broke after release week, which means the sustain window, not release day, is where spend and effort concentrate. Run listening-party moments with fan hosts during climb weeks, time UGC and creator waves to chart momentum triggers, and hold paid streaming support in reserve for the climb rather than exhausting it at release. The pattern is now twice-proven; the plan operationalizes it.",
+          strategy: "Both hits broke after release week: 404 hit daily No. 1 on day 15 and its best streaming day on day 29; Pop Off hit No. 1 on day 9 and is still climbing. The sustain window, not release day, is where spend and effort concentrate. Run listening-party moments with fan hosts during climb weeks, time UGC and creator waves to chart momentum triggers, and hold paid streaming support in reserve for the climb rather than exhausting it at release. The pattern is now twice-proven; the plan operationalizes it.",
           tactics: [
             "Stationhead-style listening parties hosted with fan accounts during climb weeks",
             "Momentum-triggered creator and UGC waves (chart position, daily-stream thresholds)",
@@ -872,7 +1260,7 @@ export const kiiikiiiPlan: StrategyPlanData = {
           label: "C",
           title: "Catalog Activation",
           objective: "Work the breakthrough hit as the permanent front door it has become, and lift the B-side ecosystem behind it.",
-          strategy: "The breakthrough hit remains a top-30 domestic streamer seven months after release, which makes it the group's Love Dive: the track new listeners enter through. Keep it dressed (Canvas video, clip refreshes, playlist placements) and route its listeners deeper: B-side ecosystem playlisting, the OST and collaboration catalog, and era-lore content that converts a song listener into a group follower. Catalog behavior is already present in the streaming data; activation makes it compound.",
+          strategy: "404 still runs 252K weekly KR streams in week 26, 1.9x its launch week, with an organic re-lift in weeks 17-21 that no promo event explains: it is the track new listeners enter through. Keep it dressed (Canvas video, clip refreshes, playlist placements) and route its listeners deeper: B-side ecosystem playlisting, the OST and collaboration catalog, and era-lore content that converts a song listener into a group follower. Catalog behavior is already present in the streaming data; activation makes it compound.",
         },
         {
           label: "D",
@@ -940,42 +1328,42 @@ export const kiiikiiiPlan: StrategyPlanData = {
     },
 
     // ===================================================================
-    // 12. Starship-Led Workstreams
+    // 12. Partner-Led Workstreams
     // ===================================================================
     {
       type: "vertical",
       number: "12",
-      navLabel: "Starship",
-      title: "Starship-Led Workstreams",
-      philosophy: "Workstreams Starship and Kakao own directly. Crowd Control Digital coordinates and amplifies; the label runs point.",
-      intro: "The plan is built to slot into the infrastructure Starship already operates, not to duplicate it. Each workstream below stays label-led, with the CCD verticals wired to amplify it.",
+      navLabel: "Partners",
+      title: "Partner-Led Workstreams",
+      philosophy: "Workstreams Starship Entertainment and Transparent Arts own directly. Crowd Control Digital coordinates and amplifies; the partners run point.",
+      intro: "The plan is built to slot into the infrastructure the label and its U.S. partner already operate, not to duplicate it. U.S.-side coordination runs through Transparent Arts; label-side workstreams stay with Starship Entertainment. Each workstream below stays partner-led, with the CCD verticals wired to amplify it.",
       subBlocks: [
         {
           label: "A",
-          title: "Berriz, Membership, and Product Calendar",
-          objective: "Platform, membership, lightstick, and album products remain Starship-scheduled; the plan wires its CRM, retail, and content moments to that calendar.",
-          strategy: "CCD's conversion infrastructure treats Berriz as the fandom home and routes deepest-intent fans toward it, while the drop CRM handles direct-response capture the platform stack does not cover. Product moments (lightstick, versions, membership pushes) get full campaign support across the verticals whenever Starship schedules them.",
+          title: "Fan Platform, Membership, and Product Calendar",
+          objective: "Platform, membership, lightstick, and album products remain label-scheduled; the plan wires its CRM, retail, and content moments to that calendar.",
+          strategy: "CCD's conversion infrastructure treats Berriz as the fandom home and routes deepest-intent fans toward it, while the drop CRM handles direct-response capture the platform stack does not cover. Product moments (lightstick, versions, membership pushes) get full campaign support across the verticals whenever they are scheduled.",
         },
         {
           label: "B",
           title: "Japan Debut",
-          objective: "The formal Japan debut, label partner selection, and release timing are Starship-led; the plan amplifies the groundwork digitally.",
+          objective: "The formal Japan debut, label partner selection, and release timing are label-led; the plan amplifies the groundwork digitally.",
           strategy: "Japan is the group's second-largest social audience and the site of its most distinctive live groundwork. When the debut is scheduled, the fan-page network extends to a Japan lane, the CRM segments Japan natively, and the paid program adds Japan flights. Until then, the Japan fan-club and fan-concert moments get content and drop support.",
         },
         {
           label: "C",
           title: "Brand Partnerships",
-          objective: "Endorsement deal flow stays with Starship; the plan maximizes each partnership's audience value.",
+          objective: "Endorsement deal flow stays with the partners; the plan maximizes each partnership's audience value.",
           strategy: "Each brand moment becomes a content and capture opportunity: partnership announcements routed through owned channels with CRM hooks, member-level campaigns feeding the member franchises, and U.S.-relevant partners amplified into the U.S. press program. The rising deal cadence is itself a narrative asset the PR vertical uses.",
         },
         {
           label: "D",
           title: "A&R and Release Calendar",
-          objective: "Music, comeback timing, and creative direction are entirely Starship's. The plan is deliberately song-agnostic.",
+          objective: "Music, comeback timing, and creative direction are entirely the label's. The plan is deliberately song-agnostic.",
           strategy: "Every workstream in this document runs regardless of what the next single sounds like. The infrastructure compounds across eras; release windows set the amplifier calendar, and each new cycle authorizes its own campaign plan on the same foundation.",
         },
       ],
-      footnote: "Crowd Control Digital provides strategy, coordination, and execution in its verticals; Starship Entertainment executes and approves label-side workstreams.",
+      footnote: "Crowd Control Digital provides strategy, coordination, and execution in its verticals; Starship Entertainment and Transparent Arts execute and approve partner-side workstreams.",
     },
 
     // ===================================================================
@@ -1110,7 +1498,7 @@ export const kiiikiiiPlan: StrategyPlanData = {
           items: [
             "Drop CRM stands up: capture flows, welcome sequence, first drop templated. Link-in-bio and pinned-comment routing goes live on owned channels.",
             "DSP sustain program runs at full intensity while Pop Off Pop Off is still climbing: listening-party moment scheduled, momentum triggers defined, weekly chart reporting begins.",
-            "Short-form audit week: lock the rebalanced weekly mix, the member-franchise format, and the end-card templates with the Starship content team.",
+            "Short-form audit week: lock the rebalanced weekly mix, the member-franchise format, and the end-card templates with the content team.",
             "U.S. fan-page operators briefed; content sourcing and cadence locked for the W2 launch.",
           ],
         },

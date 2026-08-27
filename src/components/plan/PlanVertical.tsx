@@ -1,6 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
 import { PlanSectionHeader } from "./PlanSectionHeader";
+import { PlanChart } from "./PlanChart";
 import type { VerticalSection, VerticalSubBlock } from "@/lib/plan-context";
 
 function SubBlock({ block, idx }: { block: VerticalSubBlock; idx: number }) {
@@ -171,6 +172,13 @@ function SubBlock({ block, idx }: { block: VerticalSubBlock; idx: number }) {
                   </li>
                 ))}
               </ul>
+            </div>
+          )}
+          {block.charts && block.charts.length > 0 && (
+            <div className="space-y-6 pt-2">
+              {block.charts.map((c, ci) => (
+                <PlanChart key={ci} spec={c} />
+              ))}
             </div>
           )}
         </div>

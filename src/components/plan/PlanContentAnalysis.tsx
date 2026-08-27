@@ -1,5 +1,6 @@
 "use client";
 import { useEffect, useState } from "react";
+import { PlanChart } from "./PlanChart";
 import { motion, AnimatePresence } from "framer-motion";
 import { PlanSectionHeader } from "./PlanSectionHeader";
 import type {
@@ -435,6 +436,13 @@ export function PlanContentAnalysis({ section }: { section: ContentAnalysisSecti
         )}
 
         <div>
+          {section.charts && section.charts.length > 0 && (
+            <div className="mt-12 grid grid-cols-1 lg:grid-cols-2 gap-6">
+              {section.charts.map((c, ci) => (
+                <PlanChart key={ci} spec={c} />
+              ))}
+            </div>
+          )}
           {section.findingsHeading && (
             <h3
               className="text-[22px] md:text-[26px] font-bold text-text-primary leading-tight"
