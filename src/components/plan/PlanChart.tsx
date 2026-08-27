@@ -66,7 +66,7 @@ function LineChart({ spec }: { spec: PlanChartSpec }) {
       ))}
       <line x1={padL} x2={W - padR} y1={padT + ih} y2={padT + ih} stroke="rgba(255,255,255,0.18)" strokeWidth={1} />
       {labels.map((l, i) =>
-        i % tickEvery === 0 || i === n - 1 ? (
+        (i % tickEvery === 0 && n - 1 - i > tickEvery * 0.6) || i === n - 1 ? (
           <text key={i} x={xAt(i)} y={H - 10} textAnchor={i === n - 1 ? "end" : "middle"} fontSize={9} fill={AXIS} fontFamily="var(--font-mono), monospace">
             {l}
           </text>
