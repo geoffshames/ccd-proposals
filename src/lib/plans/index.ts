@@ -19,8 +19,10 @@ import { bhaviViajeDeIdaPlan } from "./bhavi-viaje-de-ida";
 import { eightyTwoMajorSeptember } from "./82major-september";
 import { kiiikiiiPlan } from "./kiiikiii";
 import { kiiikiiiPlanKorean } from "./kiiikiii-ko";
+import { irationPlan } from "./iration";
 
 export const PLANS: Record<string, StrategyPlanData> = {
+  iration: irationPlan,
   kiiikiii: kiiikiiiPlan,
   "kiiikiii-ko": kiiikiiiPlanKorean,
   "bhavi-viaje-de-ida": bhaviViajeDeIdaPlan,

@@ -1,0 +1,1243 @@
+import type { StrategyPlanData } from "../plan-context";
+
+export const irationPlan: StrategyPlanData = {
+  accentColor: "#E8823C",
+  ogImage: "/images/iration/og-image.png",
+  language: "en",
+  noIndex: true,
+
+  cover: {
+    label: "Social Media Management",
+    title: "IRATION",
+    subtitle:
+      "A social media management engagement covering Instagram, TikTok, and short-form video, with an optional email and SMS layer built on the Hive account Iration already owns.",
+    partnership: "Iration × Crowd Control Digital",
+    prepared: "Geoff Shames / Co-Founder, Crowd Control Digital",
+    date: "August 2026",
+    logo: "/brand/CC-LOGO-2024-WHITE.png",
+  },
+
+  approveCta: {
+    label: "Approve This Scope",
+    sentLabel: "Sent. Our team will be in touch.",
+    caption: "APPROVAL NOTIFIES CROWD CONTROL DIGITAL. NO PAYMENT IS COLLECTED.",
+  },
+
+  sections: [
+    {
+      type: "overview",
+      number: "01",
+      navLabel: "Scope",
+      title: "Scope",
+      subtitle:
+        "The output is already there. What is missing is a format discipline and a place for the attention to land.",
+      body: [
+        "Iration is twenty-two years in, independent, self-released through Three Prong Records, and coming off a fourteen-track album and a thirty-four date headline run. The band posts constantly: 813 videos on TikTok, 5,107 posts on Instagram, roughly twenty-five Instagram posts and twelve TikToks in the last thirty days. Effort is not the constraint.",
+        "We pulled the last fifty posts from each platform and coded every one by format, timing, length, and call to action. Two things came out of it. The formats that work are a small and identifiable subset of what gets posted, and almost nothing that gets posted asks the audience for anything. Three posts out of a hundred point to a destination Iration owns. Zero carry an email signup, an SMS keyword, or a link to join the fan club.",
+        "That second number is the expensive one, because the infrastructure is already paid for. Iration runs Hive for city-level tour sweepstakes, a paid membership on The Chorus, a Shopify store, ToneDen smart links, and an SMS consent form. Six vendors are collecting fan data and the content calendar feeds none of them.",
+        "This proposal covers social media management only. Instagram and TikTok as the core, short-form video as the medium, and a fan-capture layer wired into the formats that already earn reach. Email and SMS on Hive is scoped and priced as a separate module so it can be approved on its own timing.",
+      ],
+      supports: {
+        heading: "What This Engagement Covers",
+        items: [
+          "Instagram and TikTok channel management, calendar, packaging, and publishing",
+          "Short-form video editing and format development from footage the band already captures",
+          "Community management and comment response on managed channels",
+          "A fan-capture layer built into the formats that already perform",
+          "Monthly performance reporting against the baselines established in this document",
+          "Optional email and SMS on the existing Hive account, priced separately",
+        ],
+      },
+      goals: {
+        heading: "What The First 90 Days Establish",
+        items: [
+          "A repeatable production line for the recap format, so it survives the end of a tour cycle",
+          "A tested replacement for the 30 percent of the TikTok calendar currently spent on static photo posts",
+          "A measured baseline for how much owned-audience capture social can actually drive",
+          "A consolidated view of what the six existing fan-data vendors are each holding",
+          "Whether TikTok can be moved off the genre floor, answered with data rather than assumption",
+        ],
+      },
+      footnote:
+        "Corpus pulled August 27, 2026: last 50 TikTok posts (May 2 to August 26) and last 50 Instagram posts (June 24 to August 25). Streaming figures from Chartmetric, August 27, 2026. Platform baselines current as of the same date.",
+    },
+
+    {
+      type: "brandAudit",
+      number: "02",
+      navLabel: "Brand Audit",
+      title: "Brand Audit",
+      intro:
+        "Where the band is strong, where the channel work is not keeping up, and which gaps are cheap to close.",
+      verdict:
+        "A live-first catalog band with unusually high ticket-buying intent per listener, running a social calendar that documents the shows rather than recruiting for them.",
+      scorecard: [
+        {
+          dimension: "Live Demand",
+          status: "Primary strength",
+          evidence:
+            "523,000 Bandsintown followers, ahead of Stick Figure's 438,000 despite Stick Figure carrying roughly 4.5 times the Spotify monthly listeners. A 34-date self-headlined run in 2026 with a two-night Denver stand, the second night sold out.",
+        },
+        {
+          dimension: "Audience Quality",
+          status: "Above genre average",
+          evidence:
+            "466,037 Spotify followers against 1,539,087 monthly listeners, a 30.3 percent ratio. Higher than Stick Figure (14.4 percent), Dirty Heads (26.1 percent), and Slightly Stoopid (26.6 percent). This is a loyalty and depth proxy, not a conversion rate.",
+        },
+        {
+          dimension: "Geographic Coherence",
+          status: "Defensible advantage",
+          evidence:
+            "All ten top listening cities are US touring markets: Los Angeles, San Diego, Honolulu, Denver, Phoenix, Sacramento, Seattle, Chicago, Dallas, New York. Listener geography and tour routing describe the same map, which is not true of every act in the genre.",
+        },
+        {
+          dimension: "Instagram Performance",
+          status: "Genuine relative strength",
+          evidence:
+            "Median 1,858 likes against 314,901 followers, a 0.590 percent rate that ranks third of seven in the peer set and runs at 1.54 times the genre median. Instagram is working harder than it is being credited for.",
+        },
+        {
+          dimension: "TikTok Performance",
+          status: "Below genre floor",
+          evidence:
+            "Median 2,707 plays against 61,700 followers, a 4.4 percent rate that ranks sixth of seven and runs at 0.66 times the genre median. Only Slightly Stoopid performs worse per follower.",
+        },
+        {
+          dimension: "Format Discipline",
+          status: "The addressable gap",
+          evidence:
+            "30 percent of TikTok output is static photo posts, the highest share in the peer set, where comparable acts sit between zero and four percent. A further 22 percent goes to lyric and song clips, the weakest video format in the corpus at 0.77 times the account median.",
+        },
+        {
+          dimension: "Owned-Audience Capture",
+          status: "Built but disconnected",
+          evidence:
+            "Three of the last hundred posts carry a call to action pointing to a destination Iration owns. Zero carry an email signup, an SMS keyword, or a fan club link. Ticket calls to action route to venue domains rather than through iration.fm, which the band already controls.",
+        },
+        {
+          dimension: "Fan Data Infrastructure",
+          status: "Present and fragmented",
+          evidence:
+            "Hive runs 32 separate city-level tour sweepstakes. The Chorus carries a paid IRATORS VIP tier at $6.99 per month. Shopify, ToneDen, a Squarespace form with live SMS consent, Constant Contact, and Discord each hold a slice. No evidence of a unified profile across them.",
+        },
+      ],
+      foundations: [
+        { label: "Spotify Monthly Listeners", value: "1,539,087", note: "Chartmetric, August 27, 2026" },
+        { label: "Spotify Followers", value: "466,037", note: "30.3 percent follower-to-listener ratio" },
+        { label: "Instagram", value: "314,901", note: "@iration, verified, 5,107 posts" },
+        { label: "TikTok", value: "61,700", note: "@iration, 813 videos" },
+        { label: "Bandsintown", value: "523,000", note: "Fourth in the peer set, ahead of Stick Figure" },
+        { label: "Top Listening City", value: "Los Angeles", note: "51,924 listeners, followed by San Diego at 34,065" },
+      ],
+      strengths: [
+        {
+          title: "The recap format already works and nobody else in the genre owns it",
+          detail:
+            "Post-show recap posts are the top-performing format on both platforms. In August, TikTok recaps ran a median of 8,070 plays against 1,262 for everything else, a 6.4x separation. On Instagram the same month, 3,808 against 1,268. The band found a format that fits who they are. It is not being treated as a production line.",
+        },
+        {
+          title: "One shoot is already producing two platform wins",
+          detail:
+            "The Super Girl Pro recap ran as the same creative on both channels and placed near the top of each: 8,877 plays on TikTok with the highest share rate in the corpus outside the single viral post, and 8,160 likes on Instagram, the best non-outlier post in the window. The cross-posting instinct is right and under-exploited.",
+        },
+        {
+          title: "The audience answers when asked a real question",
+          detail:
+            "A four-word Instagram post reading \"I miss my dog\" produced the highest comment rate in the entire corpus at 178 comments per thousand likes. A setlist question ahead of the Ventura show drew 195 comments on 1,482 likes. The band does not need a bigger audience to get a response. It needs to ask more often.",
+        },
+        {
+          title: "Listener geography and tour routing already agree",
+          detail:
+            "Honolulu ranks third and Denver fourth among listening cities, corroborating both the origin story and the sold-out second Denver night. Every top-ten city is a market the band can play. Comparable acts carry large passive listener bases in cities they never route through.",
+        },
+      ],
+      gaps: [
+        {
+          title: "Nothing on the calendar asks for anything",
+          finding:
+            "79 of the last 100 posts carry no call to action at all. Three point to an owned destination. Zero point to email, SMS, or the fan club. The recap format that earns three to six times normal reach currently asks the audience for nothing.",
+          opportunity:
+            "Attach a single owned-destination call to action to the recap format and the highest-reach asset on the calendar starts feeding the list. The fan club presale is referenced in captions twice without ever being linked.",
+        },
+        {
+          title: "Static photo posts are consuming a third of the TikTok calendar",
+          finding:
+            "30 percent of TikTok output is photo or slideshow, running at 0.98 times the account median while video formats carry the account. Peer accounts run this format at zero to four percent.",
+          opportunity:
+            "Reallocating that share to the formats that already outperform is a scheduling decision, not a production cost. It is the cheapest available lift on the weakest channel.",
+        },
+        {
+          title: "Six vendors hold fan data and none of them talk to each other",
+          finding:
+            "Hive holds the sweepstakes records, The Chorus holds paid members, Shopify holds buyers, ToneDen holds pre-save and pixel audiences, Constant Contact holds the press list, and Discord holds the community. There is no evidence of a unified profile or lifecycle flows across them.",
+          opportunity:
+            "Hive is already in the stack and is built for exactly this. The consolidation work is scoped in the email and SMS module rather than assumed inside the social retainer.",
+        },
+        {
+          title: "The paid membership has no free tier above it",
+          finding:
+            "Presale access sits behind a $6.99 per month paid fan club with no free capture layer feeding it. Pepper charges $10 per month on the same platform with a third of Iration's monthly listeners, and runs a free list capture on top of it because the free list is what feeds the paid tier.",
+          opportunity:
+            "A free capture step between social reach and the paid tier converts attention the band is already earning into a list it can address for nothing.",
+        },
+      ],
+      tensions: [
+        {
+          label: "Volume against format",
+          brandSignal:
+            "Twelve TikToks and twenty-five Instagram posts in thirty days. The band is publishing at genuine professional cadence.",
+          audienceTruth:
+            "TikTok per-follower engagement sits sixth of seven in the peer set. Output is not the variable that moves it.",
+          direction:
+            "Hold cadence, change allocation. Move the static-photo and lyric-clip share into formats the corpus already shows performing.",
+        },
+        {
+          label: "Short-form orthodoxy against this account's data",
+          brandSignal:
+            "Standard short-form advice is to cut everything under fifteen seconds.",
+          audienceTruth:
+            "In this corpus the opposite holds. TikTok posts over sixty seconds run 1.33 times the account median. Posts under fifteen seconds run 0.56 times, the worst bucket on the platform. The effect survives removing the single viral outlier.",
+          direction:
+            "Build for length where the footage supports it. Do not cut the recap format down to fit a convention this account's own data contradicts.",
+        },
+        {
+          label: "Documenting the show against recruiting for it",
+          brandSignal:
+            "The calendar reads as a tour diary: thank-yous, live clips, and announcements.",
+          audienceTruth:
+            "The tour diary is the strongest thing on the account. It is also the thing that stops working the moment the tour does.",
+          direction:
+            "Treat the recap as a format rather than a byproduct, so it can be produced in months without shows. That is the difference between a channel and a scrapbook.",
+        },
+      ],
+      footnote:
+        "Peer figures from Chartmetric, August 27, 2026. Social baselines pulled the same date. Bandsintown follower counts are publicly rendered and were read directly.",
+    },
+
+    {
+      type: "contentAnalysis",
+      number: "03",
+      navLabel: "Content",
+      title: "Content Analysis",
+      intro:
+        "One hundred posts, coded by format, timing, length, and call to action, then run against a refutation pass designed to kill the findings before they reached this page.",
+      clientQuestion: {
+        attribution: "The question this section answers",
+        question:
+          "The band is posting more than most of its peers. Why is TikTok still running below the genre floor, and what should change first?",
+      },
+      methodology: [
+        { label: "Corpus", value: "Last 50 TikTok posts (May 2 to August 26, 2026) and last 50 Instagram posts (June 24 to August 25, 2026)" },
+        { label: "Coding", value: "Every post classified by format, show timing, length bucket, and call-to-action type" },
+        { label: "Transcription", value: "70 videos submitted for transcription, 70 returned" },
+        { label: "Refutation", value: "Every finding tested against recency, seasonality, tour-window, outlier, and confounding explanations before publication" },
+        { label: "Benchmark", value: "Last 25 TikTok and last 12 Instagram posts each from Rebelution, Stick Figure, Slightly Stoopid, Dirty Heads, Pepper, and The Movement" },
+        { label: "Known limits", value: "Instagram view counts are not exposed by the API, so likes are the Instagram engagement proxy. Instagram durations were unavailable, so length analysis is TikTok only. Eight Instagram posts returned null likes and are excluded from likes math." },
+      ],
+      corpusStats: [
+        { label: "Posts Coded", value: "100", detail: "50 TikTok, 50 Instagram" },
+        { label: "TikTok Median", value: "2,764", detail: "plays, 4.5 percent of followers" },
+        { label: "Instagram Median", value: "1,575", detail: "likes, 0.50 percent of followers" },
+        { label: "Owned-Destination CTAs", value: "3 of 100", detail: "zero email, SMS, or fan club" },
+        { label: "Posts With No CTA", value: "79 of 100", detail: "across both platforms" },
+        { label: "Videos With Spoken Audio", value: "3 of 20 sampled", detail: "captions carry the narrative" },
+      ],
+      mixHeading: "Format Mix Against The Peer Set",
+      mixIntro:
+        "How the TikTok calendar is allocated, measured against the same window for six reggae-rock peers.",
+      mixColumnLabel: "Iration",
+      mixRows: [
+        {
+          metric: "Static photo share of TikTok calendar",
+          lolaAmour: "30%",
+          benchmark: "0% to 4%",
+          read: "behind",
+          note: "Highest in the peer set by a wide margin. Rebelution, Dirty Heads, and Slightly Stoopid are effectively at zero.",
+        },
+        {
+          metric: "Personality and behind-the-scenes share",
+          lolaAmour: "9%",
+          benchmark: "12% to 48%",
+          read: "behind",
+          note: "Lowest in the peer set. Slightly Stoopid runs 48 percent, Pepper 44 percent.",
+        },
+        {
+          metric: "Live and recap share",
+          lolaAmour: "35%",
+          benchmark: "0% to 68%",
+          read: "ahead",
+          note: "Second only to Rebelution. This is the band's strongest allocation decision.",
+        },
+        {
+          metric: "TikTok median plays per follower",
+          lolaAmour: "4.4%",
+          benchmark: "6.7% genre median",
+          read: "behind",
+          note: "Sixth of seven. Only Slightly Stoopid ranks lower.",
+        },
+        {
+          metric: "Instagram median likes per follower",
+          lolaAmour: "0.590%",
+          benchmark: "0.384% genre median",
+          read: "ahead",
+          note: "Third of seven, at 1.54 times the genre median.",
+        },
+        {
+          metric: "TikTok followers as share of Instagram followers",
+          lolaAmour: "19.6%",
+          benchmark: "19.6% genre median",
+          read: "inline",
+          note: "Exactly the genre median. Audience size is not the TikTok problem.",
+        },
+        {
+          metric: "TikTok posts per 30 days",
+          lolaAmour: "12",
+          benchmark: "6 to 25",
+          read: "inline",
+          note: "Mid-pack cadence. Rebelution runs roughly double.",
+        },
+      ],
+      mixFootnote:
+        "Peer corpora pulled August 27, 2026. Instagram pagination limited peer samples to twelve posts each, so Instagram peer figures carry wider error bars than the TikTok figures.",
+      findingsHeading: "Verdicts",
+      findingsIntro:
+        "Six findings, each tested against the corpus and against the most plausible alternative explanation. Two did not survive, and both are published here with the correction.",
+      findings: [
+        {
+          id: "recap",
+          title: "The post-show recap is the strongest repeatable format",
+          verdict: "confirmed",
+          confidence: "High on direction, moderate on magnitude",
+          summary:
+            "Post-show recaps are the top format on Instagram likes and the top format on TikTok among any with a meaningful sample. The separation is clearest after the tour ended, which is the opposite of what a tour-window artifact would produce.",
+          evidence: [
+            "August TikTok: recap median 8,070 plays against 1,262 for everything else, a 6.4x separation. The top four TikTok posts of the month are all recaps.",
+            "August Instagram: recap median 3,808 likes against 1,268, a 3.0x separation.",
+            "Pooled across the full window, recaps lead on Instagram likes at 2,108 (1.34x the account median) and on TikTok plays at 3,532 (1.28x).",
+            "Recaps rose while everything else fell. TikTok non-recap median moved 4,578 to 2,135 to 3,068 to 1,262 across May through August. Recaps moved 10,464 to 2,390 to 6,000 to 8,070.",
+          ],
+          counterEvidence: [
+            "Pooled TikTok lift drops to 1.14x once the single viral post is removed. The honest pooled number is modest.",
+            "In June the effect disappears entirely: 1.12x on TikTok and 0.84x on Instagram, where recaps actually lost.",
+            "In a matched two-week window, band-personality content beat recaps on both platforms.",
+            "Monthly sample sizes are small, between two and eight posts.",
+          ],
+          examples: [
+            { platform: "tiktok", id: "7669076452469460238", label: "THANK YOU VENTURA", date: "August 2026", stat: "13,464 plays, 4.9x account median", note: "A county fair, not an amphitheater. The format carries small rooms." },
+            { platform: "tiktok", id: "7677095374665813261", label: "THANK YOU Super Girl Pro", date: "August 2026", stat: "8,877 plays, 88 shares", note: "Highest share rate in the corpus outside the single viral post." },
+            { platform: "instagram", id: "DcXibnoCDre", label: "THANK YOU Super Girl Pro", date: "August 2026", stat: "8,160 likes, 154 comments", note: "Same creative as the TikTok above. One shoot, two platform wins." },
+          ],
+          pivot: {
+            title: "Make the recap a production line rather than a byproduct",
+            actions: [
+              "Build a fixed recap template: capture list, edit structure, caption pattern, and turnaround window, so the format ships within 24 hours of every show",
+              "Extend the format to non-show months using archive footage, rehearsal, and studio material, so the channel does not go quiet between tours",
+              "Cut one recap per show for both platforms from a single shoot, which the Super Girl Pro pair already proves out",
+              "Attach the owned-destination call to action here first, because this is the highest-reach asset on the calendar",
+            ],
+          },
+        },
+        {
+          id: "capture",
+          title: "The calendar does not feed the fan-data stack the band already pays for",
+          verdict: "confirmed",
+          confidence: "High",
+          summary:
+            "Three posts out of a hundred point to a destination Iration owns. None of them point to email, SMS, or the fan club. The infrastructure exists across six vendors and the content calendar connects to none of it.",
+          evidence: [
+            "Owned-destination calls to action: 1 of 50 on TikTok, 2 of 50 on Instagram. All three point to the Shopify store.",
+            "Email signups: zero. SMS keywords: zero. Fan club join links: zero.",
+            "79 of 100 posts carry no call to action of any kind.",
+            "Ticket calls to action that do exist point at venue domains rather than iration.fm, which the band controls and which already carries a Meta pixel.",
+            "The IRATORS VIP presale is referenced in two captions as a password gate without ever being linked.",
+          ],
+          counterEvidence: [
+            "Link-in-bio traffic is invisible to this method and may be carrying more load than the post-level data shows.",
+            "The audience does punish undressed selling. The one hard-sell merch post is the worst-performing Instagram post in the corpus at 442 likes, 0.28 times the median.",
+          ],
+          examples: [
+            { platform: "instagram", id: "DbBwrHfSbD7", label: "Merch post", date: "July 2026", stat: "442 likes, 0.28x median", note: "The cost of an undressed hard sell. Worst post in the Instagram corpus." },
+            { platform: "instagram", id: "DaG549JvTQU", label: "Announce with a personal story", date: "July 2026", stat: "9,104 likes, 197 comments", note: "Top Instagram post in the window, and it is an announcement. Framing is the variable, not the ask." },
+          ],
+          pivot: {
+            title: "Put the ask inside the formats that already earn reach",
+            actions: [
+              "Attach one owned-destination call to action to every recap post, routed through iration.fm so it is tracked and retargetable",
+              "Run an SMS keyword in-caption on high-reach posts, the single tactic with proven results elsewhere in this genre",
+              "Link the fan club rather than referencing it, and put a free capture step in front of the paid tier",
+              "Keep the ask attached to a moment the audience already wants, which is what separates the 9,104-like announcement from the 442-like merch post",
+            ],
+          },
+        },
+        {
+          id: "photo",
+          title: "Static photo posts are the cheapest available lift on TikTok",
+          verdict: "confirmed",
+          confidence: "High",
+          summary:
+            "Thirty percent of the TikTok calendar goes to a format the rest of the genre has abandoned, while the video formats carry the account.",
+          evidence: [
+            "Static photo and slideshow posts make up 30 percent of TikTok output, running at 0.98 times the account median.",
+            "Peer accounts run this format between zero and four percent. Rebelution, Dirty Heads, and Slightly Stoopid post effectively none.",
+            "A further 22 percent goes to lyric and song clips, the weakest video format at 0.77 times the account median.",
+            "Together those two formats consume 52 percent of the TikTok calendar and neither beats the median.",
+          ],
+          counterEvidence: [
+            "Photo posts are close to the account median rather than far below it, so this is reallocation upside rather than damage being done.",
+            "Photo mode is cheap to produce, and the analysis cannot see whether it is serving a purpose that does not show up in plays.",
+          ],
+          pivot: {
+            title: "Reallocate half the calendar without spending more on production",
+            actions: [
+              "Move the static-photo share into recap and live formats, which already outperform inside this account",
+              "Test scenery and location footage with a lyric caption, the format carrying the highest-performing account in the genre",
+              "Keep lyric clips but cut their share, and package them over live or location footage rather than static frames",
+              "Hold cadence at twelve to fifteen TikToks per month while the allocation changes, so the variable being tested is format rather than volume",
+            ],
+          },
+        },
+        {
+          id: "length",
+          title: "Longer posts outperform shorter ones on this account",
+          verdict: "confirmed",
+          confidence: "Moderate",
+          summary:
+            "The standard short-form instruction to cut everything tight is contradicted by this account's own data, in both directions and after outlier removal.",
+          evidence: [
+            "TikTok posts over 60 seconds run at 1.33 times the account median.",
+            "Posts under 15 seconds run at 0.56 times, the worst length bucket on the platform.",
+            "The effect survives removing the single viral post: over-60s moves to 1.36x, under-15s to 0.57x.",
+            "The 15-to-30 and 30-to-60 buckets sit close to the median at 1.06x and 1.08x.",
+          ],
+          counterEvidence: [
+            "Length correlates with format. Recaps tend to be long and photo posts have no duration, so part of this is a format effect wearing a length costume.",
+            "The under-15s bucket has only five posts, so that end of the finding is thin.",
+            "Instagram durations were unavailable, so this holds for TikTok only.",
+          ],
+          examples: [
+            { platform: "tiktok", id: "7644349485929237773", label: "Our favorite part is YOU", date: "June 2026", stat: "17,396 plays, 12.24 percent engagement rate", note: "Second-biggest post in the corpus, and it names no city. The emotional beat travels without the venue." },
+          ],
+          pivot: {
+            title: "Build to the length the footage earns",
+            actions: [
+              "Stop trimming recaps to fit a fifteen-second convention this account's data contradicts",
+              "Treat 30 to 90 seconds as the working range for recap and live content",
+              "Reserve short cuts for formats that genuinely need them rather than applying the rule across the calendar",
+            ],
+          },
+        },
+        {
+          id: "platform",
+          title: "TikTok outperforms Instagram on this account",
+          verdict: "refuted",
+          confidence: "High",
+          summary:
+            "This was the first read of the data and it is wrong. It compared TikTok plays, an impression metric, against Instagram likes, an engagement metric. Corrected like for like, Instagram is the stronger channel and by a clear margin.",
+          evidence: [
+            "The apparent 9x TikTok advantage compares plays to likes. It is not a valid comparison and should not be used.",
+            "Like for like, TikTok's per-follower like rate is 0.353 percent against Instagram's 0.500 percent. Instagram is 1.42 times better.",
+            "In absolute volume Instagram delivers 7.2 times more likes per post: 1,575 against 218.",
+            "Against the peer set, Instagram ranks third of seven at 1.54 times the genre median while TikTok ranks sixth of seven at 0.66 times.",
+          ],
+          counterEvidence: [
+            "TikTok converts the viewers it does reach at a high rate, with a median 7.9 percent of viewers liking a post.",
+            "The genre as a whole does run better on TikTok, with a median 1.3x advantage on likes per follower. Iration is one of only two acts in the set where Instagram wins, and the only one where that is because TikTok is weak rather than because Instagram is exceptional.",
+            "TikTok median plays sit at 4.5 percent of followers, so the platform is not functioning as a discovery engine on this account either. Neither channel is currently reaching much beyond the core.",
+          ],
+          pivot: {
+            title: "Weight the work toward Instagram while fixing TikTok's allocation",
+            actions: [
+              "Treat Instagram as the primary channel for the first 90 days, because it is where the account already beats its genre",
+              "Fix TikTok through format reallocation rather than volume or spend, since the follower count sits at exactly the genre median",
+              "Report both platforms on per-follower rates rather than raw counts, so the comparison stays honest",
+            ],
+          },
+        },
+        {
+          id: "outlier",
+          title: "One post is distorting every TikTok number",
+          verdict: "partial",
+          confidence: "High on TikTok, refuted on Instagram",
+          summary:
+            "A single May post accounts for nearly half of all TikTok plays in the corpus. Instagram carries no equivalent distortion, which is why the Instagram findings are the structurally sound ones.",
+          evidence: [
+            "One TikTok post carries 190,151 plays, which is 48.2 percent of every play across all 50 posts and 59.8 percent of all likes.",
+            "The top five TikTok posts account for 61.2 percent of plays. The TikTok mean of 7,894 is 2.9 times the median of 2,764, so the mean should never be quoted.",
+            "Removing it drops the recap format lift from 1.28x to 1.14x.",
+            "On Instagram the top post is 10.3 percent of corpus likes. Removing it moves the median from 1,575 to 1,485 and changes no format's rank.",
+          ],
+          counterEvidence: [
+            "Removing the outlier barely moves the TikTok account median itself, from 2,764 to 2,707, so the baseline is stable even though the format lifts are not.",
+            "The album released May 1 and May posts run 2.1 times the June-onward median, so release-week attention inflated the corpus ceiling. The Instagram window begins June 24 and contains no release-month posts, and the recap effect still holds there.",
+          ],
+          examples: [
+            { platform: "tiktok", id: "7635188585888615694", label: "Huntington Beach", date: "May 2026", stat: "190,151 plays, 2,669 shares", note: "The ceiling case, landed in album release week. Useful as proof of what is possible, never as a baseline." },
+          ],
+          pivot: {
+            title: "Report medians, publish both figures, and never plan against the outlier",
+            actions: [
+              "Quote median rather than mean on TikTok for the duration of the engagement",
+              "Publish every TikTok format lift with its outlier-excluded figure alongside it",
+              "Set targets against the outlier-excluded baseline so progress is measured against something reproducible",
+            ],
+          },
+        },
+      ],
+      footnote:
+        "Findings that failed refutation are published with the correction rather than removed. Instagram engagement is measured in likes because the platform does not expose view counts through this method.",
+    },
+
+    {
+      type: "competitive",
+      number: "04",
+      navLabel: "Benchmark",
+      title: "Competitive Benchmark",
+      intro:
+        "Six reggae-rock peers, measured on the same window and the same metrics, so the comparison is like for like.",
+      thesis:
+        "Iration sits mid-pack on audience size and above the genre on Instagram, but sixth of seven on TikTok per-follower engagement. The gap is format allocation, not audience size, because the TikTok-to-Instagram follower ratio is exactly the genre median.",
+      competitors: [
+        {
+          name: "Stick Figure / 6,988,882 Monthly Listeners",
+          lane: "The genre ceiling",
+          proof: "251,200 TikTok followers, 660,432 Instagram. 13.6 percent TikTok plays per follower, 2.333 percent Instagram likes per follower, roughly four times the genre median.",
+          strength:
+            "The only act in the genre with a signature visual format. Forty percent of output is scenery and travel footage with a lyric caption and no band members on camera. His highest-performing posts are personal rather than musical.",
+          gap: "No membership product and no owned data asset. The reach lands in a Facebook Group and a presale that leaks codes to aggregator sites.",
+          implication:
+            "The scenery-and-lyric format is the cheapest content in the genre to produce and it carries the best-performing account. It is directly testable for Iration at near-zero production cost.",
+        },
+        {
+          name: "Rebelution / 2,164,051 Monthly Listeners",
+          lane: "Best fanbase quality",
+          proof: "984,399 Spotify followers, a 45.5 percent follower-to-listener ratio, the highest in the set. 183,700 TikTok followers at 7.0 percent plays per follower.",
+          strength:
+            "Discipline and saturation. Short live clips of seven to twenty-four seconds beat their own long recaps of the same show by eleven to twenty-six times, and they run eight posts around a single event in six days.",
+          gap: "The right tactics land in a Mailchimp list. No membership layer, no fan club, no artist-run presale.",
+          implication:
+            "Their event-saturation model maps directly onto Iration's recap strength. Iration posts one recap per show where Rebelution posts several.",
+        },
+        {
+          name: "Dirty Heads / 3,599,079 Monthly Listeners",
+          lane: "Owned identity graph",
+          proof: "129,000 TikTok followers, 436,556 Instagram. One post at 332,297 plays, roughly fifty times their median.",
+          strength:
+            "The only first-party identity graph in the genre. A native fan-club app owned by the band entity, collecting email, phone, and device identity. Also the only act running true curiosity-gap hooks.",
+          gap: "The infrastructure is ahead of the audience. The app carries nine ratings six months after launch, and 129,000 TikTok followers produce a median around 6,700 plays.",
+          implication:
+            "Proof that owned infrastructure without a top-of-funnel does not fill itself. Iration's paid fan club has the same shape and the same problem.",
+        },
+        {
+          name: "Slightly Stoopid / 3,329,480 Monthly Listeners",
+          lane: "Largest touring equity",
+          proof: "83,400 TikTok followers producing a 2.6 percent play rate, the worst in the set. Owns two destination events.",
+          strength:
+            "Deepest touring equity in the genre and the highest personality content share at 48 percent. The formats they are running are the right ones.",
+          gap: "Correct formats, dead distribution. A default newsletter block on the website and no SMS anywhere on the band's own site.",
+          implication:
+            "The cautionary case. Personality content alone does not fix a channel, and 3.3 million listeners feeding a default signup box is the same disconnect Iration has, at larger scale.",
+        },
+        {
+          name: "Pepper / 1,376,243 Monthly Listeners",
+          lane: "Best capture funnel",
+          proof: "26,400 TikTok followers, 208,761 Instagram, the smallest audience in the core set.",
+          strength:
+            "The only act running a free-list capture and a paid membership together. A discount traded for a phone number at the top, a $10 per month fan club at the bottom, on the same platform Iration uses.",
+          gap: "649 TikTok videos have bought 26,400 followers. Volume without format.",
+          implication:
+            "Pepper charges 43 percent more than Iration for the same fan club feature set with a third of the monthly listeners, and runs a free capture on top because the free list is what feeds the paid tier.",
+        },
+        {
+          name: "The Movement / 1,265,129 Monthly Listeners",
+          lane: "Best capture UX, smallest reach",
+          proof: "7,475 TikTok followers at 22.3 percent plays per follower, the highest rate in the set on the smallest base.",
+          strength:
+            "Cleanest email and SMS capture UX in the genre, and 60 percent live-clip output with a credited videographer on every post. Their top post is a fan brought on stage.",
+          gap: "No membership, no presale gate, and an audience too small to move the genre.",
+          implication:
+            "Proof that cadence and craft alone do not scale in this genre. It also shows fan-as-subject content outperforming band-as-subject content, which Iration currently runs only as thank-you recaps.",
+        },
+      ],
+      whitespace: [
+        {
+          title: "Nobody runs the free list into the paid membership",
+          description:
+            "The genre splits cleanly. Stick Figure, Rebelution, and The Movement have proper capture and nothing to join. Iration and Dirty Heads have real memberships and almost no top of funnel. Only Pepper runs both, at a fraction of everyone's scale.",
+        },
+        {
+          title: "Almost nobody uses short-form to drive list signup",
+          description:
+            "One clear example exists in the entire peer set: a reel reading \"Text ENJOYTHERIDE to 619-202-8190 for early access\" that pulled 241,712 views. Two screenshot-gated ticket mechanics are the only other instances, and neither has anywhere permanent to bank the result.",
+        },
+        {
+          title: "Nobody has a signature format except one act",
+          description:
+            "Seven of eight accounts post interchangeable live clips and city thank-yous. There is no recurring bit, series, or character anywhere in the genre. The format space is open.",
+        },
+        {
+          title: "Nobody is mining archive",
+          description:
+            "Where archive content has been tested in this genre it substantially outperforms current material. Iration has been touring since 2004 and is not using it.",
+        },
+      ],
+      principles: [
+        "Compare on per-follower rates rather than raw counts, because the accounts differ by an order of magnitude in size",
+        "Treat Instagram as the channel where this account already beats its genre, and TikTok as the channel where allocation is the fixable variable",
+        "Copy formats that are cheap to produce before formats that require new production budget",
+        "Do not plan against a TikTok breakout. No act in this genre has produced one in the last three years, and the largest recent listener gain in the set came from a crossover feature rather than a platform moment",
+      ],
+      footnote:
+        "Streaming figures from Chartmetric, August 27, 2026. Social figures pulled the same date from the last 25 TikTok and last 12 Instagram posts per act. Instagram pagination limited peer samples, so those figures carry wider error bars.",
+    },
+
+    {
+      type: "audience",
+      number: "05",
+      navLabel: "Audience",
+      title: "Audience",
+      intro:
+        "Who is actually on the other end of these channels, and what that means for where the work should go.",
+      thesis:
+        "This is a live-first audience in its thirties that never left Instagram and Facebook, discovered the genre between 2007 and 2012, and converts on access and scarcity rather than on discovery. Planning a channel strategy around reaching teenagers on TikTok would be planning against the evidence.",
+      metrosLabel: "Top Listening Markets",
+      metros: [
+        { name: "Los Angeles", tier: "primary" },
+        { name: "San Diego", tier: "primary" },
+        { name: "Honolulu", tier: "primary" },
+        { name: "Denver", tier: "primary" },
+        { name: "Phoenix", tier: "primary" },
+        { name: "Sacramento", tier: "secondary" },
+        { name: "Seattle", tier: "secondary" },
+        { name: "Chicago", tier: "secondary" },
+        { name: "Dallas", tier: "secondary" },
+        { name: "New York", tier: "secondary" },
+      ],
+      personas: [
+        {
+          name: "The Tenured Irator",
+          label: "Core",
+          priority: "primary",
+          profile:
+            "Found the band between 2007 and 2012, likely in a California college town or through a friend's playlist. Now in their early-to-mid thirties, often with kids, and buys tickets the day they go on sale. Uses the music for mood rather than for taste signalling.",
+          psychographics: [
+            "Treats the catalog as personal history rather than as current listening",
+            "Values the band's consistency over reinvention",
+            "Comfortable spending on experience, less interested in merch volume",
+          ],
+          platforms: [
+            { name: "Instagram", role: "Primary daily surface. Where they see and engage with the band." },
+            { name: "Facebook", role: "Still active, unusually so for a music audience. Group and event surfaces matter here." },
+            { name: "Email", role: "Opens it. This cohort is the reason an email list is worth building." },
+          ],
+          barriers: ["Ticket cost and fees", "Show timing against family schedules"],
+          triggers: ["Presale access", "A hometown or nearby date announced", "Anniversary and archive content"],
+          conversionGoal: "Onto the owned list, then into the presale, then into a repeat ticket buy",
+        },
+        {
+          name: "The Festival Regular",
+          label: "Growth",
+          priority: "secondary",
+          profile:
+            "Buys the weekend rather than the band. Attends California Roots, Reggae Rise Up, or a destination event, and treats the lineup as a bundle. Knows three or four Iration songs and would know more with one good live moment.",
+          psychographics: [
+            "Loyal to the scene rather than to any single act",
+            "Plans travel around one or two events a year",
+            "Discovers new acts almost entirely through live exposure",
+          ],
+          platforms: [
+            { name: "Instagram", role: "Follows festivals and photographers more than bands. Reachable through tagged and reposted content." },
+            { name: "TikTok", role: "Present but passive for this genre. Not where they discover reggae-rock." },
+          ],
+          barriers: ["Sees Iration as one of several similar acts", "No reason to follow directly after the set"],
+          triggers: ["A standout live moment that circulates", "Being tagged or featured in a recap", "A destination or experience offer"],
+          conversionGoal: "From festival attendee to a direct follow, then onto the owned list",
+        },
+        {
+          name: "The Catalog Listener",
+          label: "Latent",
+          priority: "expansion",
+          profile:
+            "Reaches the band through playlists rather than through the band. Sits inside the gap between 1.5 million monthly listeners and 466,000 followers. Has never been asked for anything and does not know when the band is playing nearby.",
+          psychographics: [
+            "Passive listening, largely seasonal and weather-linked",
+            "No relationship with the band as an entity",
+            "Would attend a show if they knew about one",
+          ],
+          platforms: [
+            { name: "Spotify", role: "Where the relationship currently begins and ends." },
+            { name: "Instagram", role: "Not currently following. The addressable conversion." },
+          ],
+          barriers: ["Does not know the band tours", "No trigger has ever reached them"],
+          triggers: ["A local date surfaced at the right moment", "A song they already know attached to a live clip"],
+          conversionGoal: "From passive listener to follower, which is the cheapest audience growth available",
+        },
+      ],
+      psychographics: [
+        {
+          label: "What the music is for",
+          items: [
+            "Mood regulation rather than genre connoisseurship. The scene describes itself as music for a good day or a bad day.",
+            "Escape is the core function, and a meaningful minority of the community has started to question that.",
+            "Consumption is seasonal and warm-weather linked, which the genre counter-programs with winter destination events.",
+          ],
+        },
+        {
+          label: "How they relate to the band",
+          items: [
+            "Personal and low-distance. Multiple acts in this genre run open question-and-answer sessions directly with fans.",
+            "Consistency is rewarded over reinvention, which is the opposite of most genre marketing advice.",
+            "Core fans resent support slots and want the band headlining.",
+          ],
+        },
+      ],
+      behaviorSignals: [
+        {
+          behavior: "Answers direct questions at a far higher rate than they engage with promotion",
+          platforms: ["Instagram"],
+          implication:
+            "The highest comment rate in the corpus came from a four-word personal post. A setlist question drew 195 comments. Conversation is cheap to generate here and is not being generated.",
+        },
+        {
+          behavior: "Engages with post-show content more than pre-show content",
+          platforms: ["Instagram", "TikTok"],
+          implication:
+            "The audience responds to having been there rather than to being sold a ticket. The commercial ask has to ride inside the recap, not replace it.",
+        },
+        {
+          behavior: "Still resident on Facebook at a rate unusual for a music audience",
+          platforms: ["Facebook", "Instagram"],
+          implication:
+            "Instagram and Facebook follower counts sit close together at roughly 315,000 and 314,000. This is a highly addressable, high-value email and SMS audience.",
+        },
+      ],
+      barriers: [
+        {
+          barrier: "Ticket cost is at a recorded high as a stated barrier to attendance",
+          response:
+            "Lead with access and scarcity rather than discounting. Presale and early access are what this audience actually values.",
+        },
+        {
+          barrier: "The genre carries reputational baggage the audience is aware of and jokes about",
+          response:
+            "Personality and craft content travels where scene-signalling content does not. Keep the humor self-aware rather than earnest.",
+        },
+        {
+          barrier: "Sameness fatigue across the genre",
+          response:
+            "A signature format is the answer, and the format space in this genre is genuinely open. Nobody but Stick Figure owns one.",
+        },
+        {
+          barrier: "No trigger currently reaches the passive catalog listener",
+          response:
+            "This is the owned-channel argument. A list is the only way to reach someone who is not following.",
+        },
+      ],
+      triggers: [
+        {
+          trigger: "Presale and early access",
+          implication:
+            "The band already gates presales behind a paid tier. Adding a free capture step in front of it converts reach into an addressable list.",
+        },
+        {
+          trigger: "A live moment they can see themselves in",
+          implication:
+            "Fan-as-subject content outperforms band-as-subject content elsewhere in the genre and is currently limited to thank-you recaps here.",
+        },
+        {
+          trigger: "Anniversary and archive material",
+          implication:
+            "Twenty-two years of touring history is unused inventory, and archive content outperforms current material where it has been tested in this genre.",
+        },
+        {
+          trigger: "A nearby date surfaced at the right moment",
+          implication:
+            "Requires knowing who is near which market, which is a list problem rather than a content problem.",
+        },
+      ],
+      fanQuotes: [
+        {
+          quote:
+            "Iration never disappoints. They play what the fans want and they surprise you with concert versions that don't take away from the original.",
+          source: "Bandsintown fan review, Costa Mesa CA, June 2026",
+          insight: "Consistency is the thing being praised, not novelty.",
+        },
+        {
+          quote:
+            "I won a VIP giveaway. I was able to attend their sound check, meet the band, and got some cool swag.",
+          source: "Bandsintown fan review, Houston TX, May 2026",
+          insight:
+            "Direct evidence that the existing Hive sweepstakes machine converts and produces goodwill. It is running without a content layer feeding it.",
+        },
+        {
+          quote:
+            "Iration is in my top three of all time. The only thing I would have changed is Iration being the headliner.",
+          source: "Bandsintown fan review, Nampa ID, July 2025",
+          insight: "Core fans want the band framed as the main event.",
+        },
+        {
+          quote:
+            "A big part of Cali reggae's popularity is tied to how it simplifies or repackages reggae through a coastal, easy to digest lens.",
+          source: "Reddit, r/reggae genre discussion, 2026",
+          insight:
+            "The genre's critics and its fans agree on the diagnosis. Self-aware content lands better than earnest scene-signalling.",
+        },
+      ],
+      fanQuotesLabel: "What Fans Actually Say",
+      similarArtists: [
+        "Rebelution",
+        "Stick Figure",
+        "Slightly Stoopid",
+        "Dirty Heads",
+        "Pepper",
+        "Tribal Seeds",
+        "The Movement",
+      ],
+      genres: ["Reggae Rock", "Cali Reggae", "Reggae Fusion", "Surf Rock"],
+      platformSignals: [
+        { platform: "Instagram", note: "314,901 followers. Ranks third of seven in the peer set on per-follower engagement. The primary channel." },
+        { platform: "TikTok", note: "61,700 followers. Sixth of seven on per-follower engagement, but the follower ratio is exactly the genre median. Allocation problem." },
+        { platform: "Facebook", note: "Roughly 314,000 followers, unusually close to Instagram. Indicates an older core that never left." },
+        { platform: "Spotify", note: "1,539,087 monthly listeners against 466,037 followers. Roughly a million listeners the band cannot currently address." },
+      ],
+      footnote:
+        "Listening market data from Chartmetric, June to August 2026. Age framing is an inference from genre cohort timing rather than published demographic data, and should be validated against the band's own platform analytics in the first thirty days. No gender split is published for this genre and none is asserted here.",
+    },
+
+    {
+      type: "vertical",
+      number: "06",
+      navLabel: "The Work",
+      title: "Social Media Management",
+      philosophy:
+        "Hold the cadence the band already sustains. Change what fills it, and give the reach somewhere to go.",
+      intro:
+        "Four workstreams. The first three are the social retainer. The fourth is the email and SMS module, scoped here and priced separately so it can be approved on its own timing.",
+      subBlocks: [
+        {
+          label: "Workstream 01",
+          title: "Channel Management",
+          objective:
+            "Run Instagram and TikTok as managed channels with a planned calendar, consistent packaging, and same-week responsiveness.",
+          strategy:
+            "Instagram leads because it is where the account already beats its genre at 1.54 times the median. TikTok runs in parallel with a reallocated calendar rather than a higher volume. Cadence holds at roughly twenty-five Instagram posts and twelve to fifteen TikToks per month, matching what the band already sustains.",
+          components: {
+            heading: "What we run",
+            items: [
+              "Monthly content calendar built against the format findings in section 03, approved by the band before the month starts",
+              "Editing and packaging of footage the band and its videographers already capture",
+              "Publishing and scheduling across Instagram and TikTok, including Reels and Stories",
+              "Community management and comment response on managed channels within one business day",
+              "Caption and hook writing, which this corpus shows is carrying 100 percent of the narrative load",
+              "Asset library and archive organization, so twenty-two years of footage becomes usable inventory",
+            ],
+          },
+          kpis: [
+            "TikTok median plays per follower moving off the 4.4 percent genre-floor baseline",
+            "Instagram median likes per follower holding above the 0.590 percent baseline",
+            "Static photo share of the TikTok calendar reduced from 30 percent",
+            "Response rate and time on managed channels",
+          ],
+        },
+        {
+          label: "Workstream 02",
+          title: "Format Development",
+          objective:
+            "Turn the recap from a byproduct of touring into a repeatable production line, and find one signature format that is Iration's rather than the genre's.",
+          strategy:
+            "The recap is the proven asset and the priority. Beyond it, three formats are worth testing on the evidence: scenery and location footage with a lyric caption, which carries the best-performing account in the genre at near-zero production cost; fan-as-subject content, which outperforms band-as-subject content elsewhere in the set; and archive, which is unused inventory across twenty-two years.",
+          tactics: [
+            "Build and document a fixed recap template: capture list, edit structure, caption pattern, and a 24-hour turnaround",
+            "Extend the recap to non-show months so the channel does not go quiet between tours",
+            "Cut one shoot into assets for both platforms, which the Super Girl Pro pair already proves",
+            "Test event saturation on major dates, running several posts across a few days rather than one recap",
+            "Raise personality content from 9 percent, the lowest share in the peer set, toward the genre range",
+            "Run a structured test of the scenery-and-lyric format, the archive format, and the fan-as-subject format, one at a time with a clean read on each",
+          ],
+          examples: [
+            "The Ventura County Fair recap reached 4.9 times the account median from a small room, which is the case for the format traveling beyond marquee shows",
+            "A four-word personal Instagram post produced the highest comment rate in the corpus, which is the case for personality content",
+            "The single non-recap post that beat recaps in a matched window was a sound check bit that was never repeated",
+          ],
+          timeline: "Recap template in weeks 1 to 3. Format tests run sequentially from week 4.",
+        },
+        {
+          label: "Workstream 03",
+          title: "Fan Capture Layer",
+          objective:
+            "Give the reach somewhere to land. Move owned-destination calls to action from three posts in a hundred to a standing part of the highest-performing formats.",
+          strategy:
+            "The ask rides inside content the audience already wants rather than replacing it. The corpus is unambiguous on this: an announcement framed with a personal story is the top Instagram post in the window at 9,104 likes, while an undressed merch post is the worst at 442. Routing runs through iration.fm, which the band already controls and which already carries a Meta pixel, so traffic is tracked and retargetable.",
+          components: {
+            heading: "What gets built",
+            items: [
+              "One owned-destination call to action attached to every recap post, routed through iration.fm",
+              "An SMS keyword run in-caption on high-reach posts, the one tactic with demonstrated results elsewhere in this genre",
+              "A free capture step placed in front of the paid fan club, so the paid tier has a funnel above it",
+              "Ticket links routed through iration.fm rather than venue domains, so the band keeps the attribution and the audience",
+              "A monthly read on how much capture social is actually driving, which nothing currently measures",
+            ],
+          },
+          kpis: [
+            "Owned-destination CTA coverage on recap posts, from a 0 percent baseline",
+            "New captures per month attributable to social",
+            "Click-through rate on iration.fm routed links",
+            "Free-tier to paid-tier conversion once the free step exists",
+          ],
+        },
+        {
+          label: "Add-On Module",
+          title: "Email And SMS On Hive",
+          budget: "Priced separately",
+          objective:
+            "Consolidate six vendors into one addressable view and run the lifecycle programs the existing Hive account was built for and is not being used for.",
+          strategy:
+            "Iration already runs Hive, currently as a contest tool across 32 city-level tour sweepstakes. That is the hardest part of adoption already done. What is missing is segmentation, lifecycle flows, and a single profile that knows a person is simultaneously a sweepstakes entrant, a Shopify buyer, a paid fan club member, and a Denver resident. Crowd Control holds a direct working relationship with Hive's leadership, which shortens the path on integration questions.",
+          components: {
+            heading: "What the module covers",
+            items: [
+              "Audit of what each of the six vendors currently holds, and who administers each account",
+              "Consolidation into Hive as the system of record, with the others feeding it rather than competing with it",
+              "Segmentation by market, purchase history, show attendance, and membership tier",
+              "Lifecycle flows: welcome, pre-show by market, post-show, lapsed-buyer reactivation, and merch",
+              "Announce and presale campaigns run against segments rather than the whole list",
+              "SMS program build on the existing consent flow, including the keyword used by the social capture layer",
+              "Monthly reporting on list growth, deliverability, and revenue attribution",
+            ],
+          },
+          kpis: [
+            "Addressable list size across a consolidated profile, which no single number currently exists for",
+            "Flow revenue as a share of total email and SMS revenue",
+            "Presale conversion by market segment",
+            "Free-tier to paid fan club conversion rate",
+          ],
+          timeline: "Vendor audit in weeks 1 to 2. Consolidation weeks 3 to 6. First flows live by week 8.",
+        },
+      ],
+      footnote:
+        "Media spend, creator fees, production travel, and third-party tools are separate from these fees and are billed at cost plus a 15 percent management fee where Crowd Control administers them.",
+    },
+
+    {
+      type: "targets",
+      number: "07",
+      navLabel: "Targets",
+      title: "Targets And Measurement",
+      intro:
+        "Baselines measured from the corpus in section 03, with directional targets for the first 90 days. Every baseline here is reproducible from the same method.",
+      targets: [
+        {
+          metric: "Owned-destination CTA coverage on recap posts",
+          baseline: "0 percent",
+          target: "100 percent",
+          window: "By day 30",
+          rationale:
+            "The recap format earns three to six times normal reach and currently asks for nothing. This is the single highest-leverage change available and it costs nothing to make.",
+          measurement: "Manual audit of every recap post published in the month",
+          featured: true,
+        },
+        {
+          metric: "TikTok static photo share of calendar",
+          baseline: "30 percent",
+          target: "Under 10 percent",
+          window: "By day 60",
+          rationale:
+            "Peer accounts run this format between zero and four percent. Reallocation is a scheduling decision rather than a production cost.",
+          measurement: "Format coding of the published calendar, same method as section 03",
+        },
+        {
+          metric: "TikTok median plays per follower",
+          baseline: "4.4 percent",
+          target: "Toward the 6.7 percent genre median",
+          window: "By day 90",
+          rationale:
+            "Sixth of seven in the peer set. The follower ratio is exactly the genre median, so this is an allocation problem rather than an audience-size problem.",
+          measurement: "Rolling 30-post median, outlier-excluded, reported monthly",
+        },
+        {
+          metric: "Instagram median likes per follower",
+          baseline: "0.590 percent",
+          target: "Hold above baseline while volume shifts",
+          window: "Ongoing",
+          rationale:
+            "Already 1.54 times the genre median and third of seven. The target here is protecting a strength while the TikTok calendar changes underneath it.",
+          measurement: "Rolling 30-post median, reported monthly",
+        },
+        {
+          metric: "New owned-audience captures attributable to social",
+          baseline: "Not currently measured",
+          target: "Establish a baseline, then grow against it",
+          window: "Baseline by day 30",
+          rationale:
+            "No number exists today because nothing on the calendar points at an owned destination. The first job is making it measurable.",
+          measurement: "iration.fm click-through and Hive capture attribution",
+        },
+        {
+          metric: "Personality and behind-the-scenes share of TikTok calendar",
+          baseline: "9 percent",
+          target: "20 to 30 percent",
+          window: "By day 90",
+          rationale:
+            "Lowest in the peer set, where comparable acts run between 12 and 48 percent. The one Iration post in this format placed third of twenty-three and was never repeated.",
+          measurement: "Format coding of the published calendar",
+        },
+      ],
+      measurementPrinciples: [
+        "Report medians rather than means, because one TikTok post carries 48 percent of the corpus and the mean is not meaningful",
+        "Publish every TikTok figure with its outlier-excluded value alongside it",
+        "Compare on per-follower rates rather than raw counts, so peer comparison stays valid across accounts of different sizes",
+        "Re-run the section 03 coding method monthly, so progress is measured against the same instrument that set the baseline",
+        "Treat any claim the data cannot support as unproven and say so, including in the monthly report",
+      ],
+      disclaimer:
+        "These are directional targets used to focus the work and to make progress measurable. They are not guarantees of outcome. Platform distribution, release timing, and touring activity all move these numbers independently of the work.",
+      footnote:
+        "Baselines are drawn from the corpus described in section 03 and will be re-established against the band's own native analytics once access is granted, which will be more accurate than public post metrics.",
+    },
+
+    {
+      type: "timeline",
+      number: "08",
+      navLabel: "Timeline",
+      title: "First 90 Days",
+      intro:
+        "Four phases. Access and baseline first, because the public-data baselines in this document are a starting point rather than the real thing.",
+      weeks: [
+        { index: 1, label: "W1", dates: "Sep 8" },
+        { index: 2, label: "W2", dates: "Sep 15" },
+        { index: 3, label: "W3", dates: "Sep 22" },
+        { index: 4, label: "W4", dates: "Sep 29", highlight: true, note: "Recap template live" },
+        { index: 5, label: "W5", dates: "Oct 6" },
+        { index: 6, label: "W6", dates: "Oct 13", highlight: true, note: "Palladium, Oct 15" },
+        { index: 7, label: "W7", dates: "Oct 20" },
+        { index: 8, label: "W8", dates: "Oct 27" },
+        { index: 9, label: "W9", dates: "Nov 3" },
+        { index: 10, label: "W10", dates: "Nov 10" },
+        { index: 11, label: "W11", dates: "Nov 17" },
+        { index: 12, label: "W12", dates: "Nov 24", highlight: true, note: "90-day review" },
+      ],
+      workstreams: [
+        {
+          name: "Access and Baseline",
+          cells: [
+            { weekIndex: 1, intensity: "high", milestone: true, label: "Kickoff" },
+            { weekIndex: 2, intensity: "high" },
+            { weekIndex: 3, intensity: "medium", milestone: true, label: "Native baseline set" },
+            { weekIndex: 4, intensity: "low" },
+            { weekIndex: 8, intensity: "low" },
+            { weekIndex: 12, intensity: "medium", milestone: true, label: "Review" },
+          ],
+        },
+        {
+          name: "Channel Management",
+          cells: [
+            { weekIndex: 2, intensity: "medium" },
+            { weekIndex: 3, intensity: "high", milestone: true, label: "Calendar live" },
+            { weekIndex: 4, intensity: "high" },
+            { weekIndex: 5, intensity: "high" },
+            { weekIndex: 6, intensity: "high" },
+            { weekIndex: 7, intensity: "high" },
+            { weekIndex: 8, intensity: "high" },
+            { weekIndex: 9, intensity: "high" },
+            { weekIndex: 10, intensity: "high" },
+            { weekIndex: 11, intensity: "high" },
+            { weekIndex: 12, intensity: "high" },
+          ],
+        },
+        {
+          name: "Recap Production Line",
+          cells: [
+            { weekIndex: 2, intensity: "medium" },
+            { weekIndex: 3, intensity: "high" },
+            { weekIndex: 4, intensity: "high", milestone: true, label: "Template shipped" },
+            { weekIndex: 6, intensity: "high", milestone: true, label: "Palladium run" },
+            { weekIndex: 7, intensity: "high" },
+            { weekIndex: 8, intensity: "medium" },
+            { weekIndex: 9, intensity: "medium" },
+            { weekIndex: 10, intensity: "medium" },
+            { weekIndex: 11, intensity: "medium" },
+            { weekIndex: 12, intensity: "medium" },
+          ],
+        },
+        {
+          name: "Format Testing",
+          cells: [
+            { weekIndex: 4, intensity: "low" },
+            { weekIndex: 5, intensity: "medium", milestone: true, label: "Test 1: scenery" },
+            { weekIndex: 6, intensity: "medium" },
+            { weekIndex: 7, intensity: "medium", milestone: true, label: "Test 2: archive" },
+            { weekIndex: 8, intensity: "medium" },
+            { weekIndex: 9, intensity: "medium", milestone: true, label: "Test 3: fan-as-subject" },
+            { weekIndex: 10, intensity: "medium" },
+            { weekIndex: 11, intensity: "high", milestone: true, label: "Read-out" },
+          ],
+        },
+        {
+          name: "Fan Capture Layer",
+          cells: [
+            { weekIndex: 2, intensity: "medium" },
+            { weekIndex: 3, intensity: "high", milestone: true, label: "iration.fm routing" },
+            { weekIndex: 4, intensity: "high", milestone: true, label: "CTA on every recap" },
+            { weekIndex: 5, intensity: "medium" },
+            { weekIndex: 6, intensity: "high" },
+            { weekIndex: 7, intensity: "medium" },
+            { weekIndex: 8, intensity: "high", milestone: true, label: "Free tier live" },
+            { weekIndex: 9, intensity: "medium" },
+            { weekIndex: 10, intensity: "medium" },
+            { weekIndex: 11, intensity: "medium" },
+            { weekIndex: 12, intensity: "medium" },
+          ],
+        },
+        {
+          name: "Reporting",
+          cells: [
+            { weekIndex: 4, intensity: "medium", milestone: true, label: "Month 1" },
+            { weekIndex: 8, intensity: "medium", milestone: true, label: "Month 2" },
+            { weekIndex: 12, intensity: "high", milestone: true, label: "Month 3 + review" },
+          ],
+        },
+      ],
+      weekBreakdowns: [
+        {
+          weekIndex: 1,
+          title: "Phase 1. Access and baseline",
+          items: [
+            "Kickoff with the band and the digital vendor, confirming who owns and administers each of the six fan-data accounts",
+            "Access to Instagram, TikTok, native analytics, iration.fm, and read access to Hive",
+            "Asset and archive inventory: what footage exists, where it lives, and who shoots it",
+            "Re-establish the section 03 baselines against native analytics, which will be more accurate than public metrics",
+          ],
+        },
+        {
+          weekIndex: 4,
+          title: "Phase 2. Format discipline",
+          items: [
+            "Recap template documented and shipped, with a 24-hour turnaround standard",
+            "First managed calendar live, with static photo share cut and the reallocation made explicit",
+            "Owned-destination call to action attached to every recap post, routed through iration.fm",
+            "Month 1 report against the baselines in section 07",
+          ],
+        },
+        {
+          weekIndex: 8,
+          title: "Phase 3. Testing and capture",
+          items: [
+            "Format tests running sequentially, one at a time, so each gets a clean read",
+            "Free capture step live in front of the paid fan club",
+            "SMS keyword running in-caption on high-reach posts",
+            "Hollywood Palladium on October 15 run as the first full event-saturation test",
+          ],
+        },
+        {
+          weekIndex: 12,
+          title: "Phase 4. Read-out and next quarter",
+          items: [
+            "Format test read-out: which of the three tested formats earned a place on the calendar",
+            "90-day report against every baseline set in section 07",
+            "Recommendation on whether the email and SMS module should be activated, based on what capture the social layer actually produced",
+            "Quarter two plan, built on measured results rather than on the assumptions in this document",
+          ],
+        },
+      ],
+      footnote:
+        "Dates assume a September 8, 2026 start and shift with the actual start date. The October 15 Hollywood Palladium show is the first major date inside the window and is treated as the first full test of the event-saturation model.",
+    },
+
+    {
+      type: "pricing",
+      number: "09",
+      navLabel: "Investment",
+      title: "Investment",
+      intro:
+        "Three tiers for the social retainer, billed monthly. The email and SMS module is priced separately so it can be approved on its own timing.",
+      ccdNote:
+        "Fees cover Crowd Control's management and production time. Media spend, creator fees, production travel, and third-party tools are separate and are billed at cost plus a 15 percent management fee where Crowd Control administers them.",
+      breakdownLabel: "What the fee covers",
+      deployableLabel: "Monthly output",
+      tiers: [
+        {
+          label: "Tier 01",
+          budget: "$6,000/mo",
+          name: "CORE",
+          tagline: "Instagram and TikTok, managed against the format findings in this document.",
+          deployable: "Roughly 25 Instagram posts and 12 to 15 TikToks per month, edited and packaged from footage the band already captures.",
+          breakdown: [
+            { vertical: "Channel management, calendar, and publishing", amount: "$2,750" },
+            { vertical: "Editing and packaging", amount: "$2,000" },
+            { vertical: "Community management", amount: "$750" },
+            { vertical: "Monthly reporting", amount: "$500" },
+          ],
+          feeBreakdown: {
+            retainer: "$6,000/mo",
+            retainerDetail: "Instagram and TikTok only. Band supplies raw footage.",
+            mediaManagement: "15%",
+            mediaManagementDetail: "Applied to any media spend Crowd Control administers. None is required at this tier.",
+            mediaManagementLabel: "Media management fee",
+          },
+        },
+        {
+          label: "Tier 02",
+          budget: "$9,500/mo",
+          name: "TOUR",
+          tagline: "Adds capture, YouTube Shorts and Facebook, and the fan-capture layer.",
+          deployable: "Everything in Core, plus YouTube Shorts and Facebook, on-site capture at up to four shows per quarter, and an owned-destination call to action on every recap.",
+          featured: true,
+          breakdown: [
+            { vertical: "Channel management across four platforms", amount: "$3,500" },
+            { vertical: "Editing, packaging, and the recap production line", amount: "$2,750" },
+            { vertical: "On-site capture, up to four shows per quarter", amount: "$1,500" },
+            { vertical: "Fan capture layer and iration.fm routing", amount: "$1,000" },
+            { vertical: "Community management", amount: "$750" },
+          ],
+          feeBreakdown: {
+            retainer: "$9,500/mo",
+            retainerDetail: "Four channels, on-site capture, and the fan capture layer. Capture travel billed at cost.",
+            mediaManagement: "15%",
+            mediaManagementDetail: "Applied to any media spend Crowd Control administers.",
+            mediaManagementLabel: "Media management fee",
+          },
+        },
+        {
+          label: "Tier 03",
+          budget: "$14,000/mo",
+          name: "FULL",
+          tagline: "Adds a monthly shoot day, the videographer network, and paid social management.",
+          deployable: "Everything in Tour, plus one dedicated shoot day per month, a managed fan and videographer network, and paid social management across the managed channels.",
+          breakdown: [
+            { vertical: "Channel management across four platforms", amount: "$3,500" },
+            { vertical: "Editing, packaging, and the recap production line", amount: "$2,750" },
+            { vertical: "On-site capture plus one monthly shoot day", amount: "$3,000" },
+            { vertical: "Fan and videographer network management", amount: "$1,500" },
+            { vertical: "Paid social management", amount: "$1,500" },
+            { vertical: "Fan capture layer and iration.fm routing", amount: "$1,000" },
+            { vertical: "Community management", amount: "$750" },
+          ],
+          feeBreakdown: {
+            retainer: "$14,000/mo",
+            retainerDetail: "Full owned-channel operation. Shoot-day production costs and travel billed at cost.",
+            mediaManagement: "15%",
+            mediaManagementDetail: "Applied to media spend Crowd Control administers. Paid social management is included in the retainer.",
+            mediaManagementLabel: "Media management fee",
+          },
+        },
+      ],
+      addOns: [
+        {
+          name: "Email and SMS on Hive",
+          subtitle: "Add-on module, approved separately",
+          budget: "$4,000/mo",
+          description:
+            "Vendor audit across the six systems currently holding fan data, consolidation into Hive as the system of record, segmentation, lifecycle flows, presale and announce campaigns, and the SMS program. Three-month minimum because the consolidation work front-loads into the first six weeks. Hive platform fees are billed directly by Hive and are separate from this figure.",
+        },
+        {
+          name: "Content production beyond scope",
+          subtitle: "Scoped and quoted per project",
+          budget: "$120/hr",
+          description:
+            "Music video, long-form documentary, graphic design, and animation sit outside the retainer and are quoted as separate fixed scopes or billed hourly.",
+        },
+      ],
+      footnote:
+        "All tiers are billed monthly with a three-month initial term, then month to month with 30 days notice. Not included in any tier: paid media budget, creator and influencer fees, PR, DSP editorial pitching, tour marketing, release strategy, merchandise, and web development. Final invoicing and termination terms move into the signed agreement.",
+    },
+  ],
+};
