@@ -30,7 +30,7 @@ export function PlanTimeline({ section }: { section: TimelineSection }) {
             {/* Header row: workstream label cell + week columns */}
             <div
               className="grid items-end gap-x-px text-[10px] font-mono tracking-[0.08em] uppercase text-text-muted/70"
-              style={{ gridTemplateColumns: `160px repeat(${weekCount}, minmax(60px, 1fr))` }}
+              style={{ gridTemplateColumns: `200px repeat(${weekCount}, minmax(60px, 1fr))` }}
             >
               <div className="pb-3"></div>
               {section.weeks.map((w) => (
@@ -60,7 +60,7 @@ export function PlanTimeline({ section }: { section: TimelineSection }) {
                 viewport={{ once: true, margin: "-60px" }}
                 transition={{ duration: 0.4, delay: ri * 0.05 }}
                 className="grid items-stretch gap-x-px"
-                style={{ gridTemplateColumns: `160px repeat(${weekCount}, minmax(60px, 1fr))` }}
+                style={{ gridTemplateColumns: `200px repeat(${weekCount}, minmax(60px, 1fr))` }}
               >
                 {/* Workstream name */}
                 <div className="py-3 pr-3 text-[12px] md:text-[13px] font-mono tracking-[0.02em] text-text-primary border-b border-text-muted/10 flex items-center min-w-0">

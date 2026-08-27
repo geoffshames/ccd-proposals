@@ -1036,9 +1036,9 @@ export const irationPlan: StrategyPlanData = {
           measurement: "Rolling 30-post median, reported monthly",
         },
         {
-          metric: "New owned-audience captures attributable to social",
-          baseline: "Unmeasured",
-          target: "Set a baseline",
+          metric: "List signups attributable to social",
+          baseline: "0",
+          target: "Tracked",
           window: "Baseline by day 30",
           rationale:
             "Establish the number, then grow against it. None exists today because nothing on the calendar points at an owned destination, so the first job is making it measurable.",
@@ -1094,7 +1094,7 @@ export const irationPlan: StrategyPlanData = {
           cells: [
             { weekIndex: 1, intensity: "high", milestone: true, label: "Kickoff" },
             { weekIndex: 2, intensity: "high" },
-            { weekIndex: 3, intensity: "medium", milestone: true, label: "Native baseline set" },
+            { weekIndex: 3, intensity: "medium", milestone: true, label: "Baseline set" },
             { weekIndex: 4, intensity: "low" },
             { weekIndex: 8, intensity: "low" },
             { weekIndex: 12, intensity: "medium", milestone: true, label: "Review" },
@@ -1121,7 +1121,7 @@ export const irationPlan: StrategyPlanData = {
           cells: [
             { weekIndex: 2, intensity: "medium" },
             { weekIndex: 3, intensity: "high" },
-            { weekIndex: 4, intensity: "high", milestone: true, label: "Template shipped" },
+            { weekIndex: 4, intensity: "high", milestone: true, label: "Template" },
             { weekIndex: 6, intensity: "high", milestone: true, label: "October run" },
             { weekIndex: 7, intensity: "high" },
             { weekIndex: 8, intensity: "medium" },
@@ -1135,11 +1135,11 @@ export const irationPlan: StrategyPlanData = {
           name: "Format Testing",
           cells: [
             { weekIndex: 4, intensity: "low" },
-            { weekIndex: 5, intensity: "medium", milestone: true, label: "Test 1: scenery" },
+            { weekIndex: 5, intensity: "medium", milestone: true, label: "Test 1" },
             { weekIndex: 6, intensity: "medium" },
-            { weekIndex: 7, intensity: "medium", milestone: true, label: "Test 2: archive" },
+            { weekIndex: 7, intensity: "medium", milestone: true, label: "Test 2" },
             { weekIndex: 8, intensity: "medium" },
-            { weekIndex: 9, intensity: "medium", milestone: true, label: "Test 3: fan-as-subject" },
+            { weekIndex: 9, intensity: "medium", milestone: true, label: "Test 3" },
             { weekIndex: 10, intensity: "medium" },
             { weekIndex: 11, intensity: "high", milestone: true, label: "Read-out" },
           ],
@@ -1148,8 +1148,8 @@ export const irationPlan: StrategyPlanData = {
           name: "Fan Capture Layer",
           cells: [
             { weekIndex: 2, intensity: "medium" },
-            { weekIndex: 3, intensity: "high", milestone: true, label: "iration.fm routing" },
-            { weekIndex: 4, intensity: "high", milestone: true, label: "CTA on every recap" },
+            { weekIndex: 3, intensity: "high", milestone: true, label: "Link routing" },
+            { weekIndex: 4, intensity: "high", milestone: true, label: "Recap CTAs" },
             { weekIndex: 5, intensity: "medium" },
             { weekIndex: 6, intensity: "high" },
             { weekIndex: 7, intensity: "medium" },
@@ -1165,7 +1165,7 @@ export const irationPlan: StrategyPlanData = {
           cells: [
             { weekIndex: 4, intensity: "medium", milestone: true, label: "Month 1" },
             { weekIndex: 8, intensity: "medium", milestone: true, label: "Month 2" },
-            { weekIndex: 12, intensity: "high", milestone: true, label: "Month 3 + review" },
+            { weekIndex: 12, intensity: "high", milestone: true, label: "Month 3" },
           ],
         },
       ],

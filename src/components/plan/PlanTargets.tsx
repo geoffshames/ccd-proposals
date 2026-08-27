@@ -30,7 +30,7 @@ export function PlanTargets({ section }: { section: TargetsSection }) {
           intro={section.intro}
         />
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 items-stretch">
           {section.targets.map((target, i) => (
             <motion.article
               key={`${target.metric}-${i}`}
@@ -38,7 +38,7 @@ export function PlanTargets({ section }: { section: TargetsSection }) {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-80px" }}
               transition={{ duration: 0.55, delay: i * 0.05 }}
-              className={`relative border p-7 md:p-8 ${
+              className={`relative border p-7 md:p-8 flex flex-col h-full ${
                 target.featured
                   ? "border-white/[0.16] bg-white/[0.045]"
                   : "border-text-muted/15 bg-bg-card"
@@ -70,47 +70,31 @@ export function PlanTargets({ section }: { section: TargetsSection }) {
                 </div>
               </div>
 
-              <div className="mt-7 grid grid-cols-1 sm:grid-cols-[minmax(0,1fr)_auto_minmax(0,1fr)] gap-4 items-start">
-                <div className="min-w-0">
-                  <div className="text-[10px] font-mono tracking-[0.18em] uppercase text-text-muted/65">
-                    Baseline
-                  </div>
-                  <div
-                    className={`mt-2 ${valueSize(target.baseline)} font-bold leading-tight text-text-muted break-words`}
-                    style={{
-                      fontFamily:
-                        "var(--font-heading), var(--font-sans), sans-serif",
-                    }}
-                  >
-                    {target.baseline}
-                  </div>
+              <div className="mt-7">
+                <div className="text-[10px] font-mono tracking-[0.18em] uppercase text-accent/90">
+                  Directional target
                 </div>
-                <div className="text-accent text-[18px] rotate-90 sm:rotate-0 justify-self-start sm:justify-self-auto" aria-hidden="true">
-                  →
+                <div
+                  className={`mt-1.5 ${valueSize(target.target)} font-bold leading-[1.05] text-accent break-words`}
+                  style={{
+                    fontFamily:
+                      "var(--font-heading), var(--font-sans), sans-serif",
+                  }}
+                >
+                  {target.target}
                 </div>
-                <div className="min-w-0 text-left sm:text-right">
-                  <div className="text-[10px] font-mono tracking-[0.18em] uppercase text-accent/90">
-                    Directional target
-                  </div>
-                  <div
-                    className={`mt-2 ${valueSize(target.target)} font-bold leading-tight text-accent break-words`}
-                    style={{
-                      fontFamily:
-                        "var(--font-heading), var(--font-sans), sans-serif",
-                    }}
-                  >
-                    {target.target}
-                  </div>
+                <div className="mt-2 text-[12px] font-mono text-text-muted/70">
+                  Today <span className="text-text-primary/75">{target.baseline}</span>
                 </div>
               </div>
 
               {target.rationale && (
-                <p className="mt-7 text-[14px] leading-relaxed text-text-primary/85">
+                <p className="mt-7 mb-6 text-[14px] leading-relaxed text-text-primary/85 max-w-[54ch]">
                   {target.rationale}
                 </p>
               )}
 
-              <div className="mt-6 pt-5 border-t border-text-muted/15">
+              <div className="mt-auto pt-5 border-t border-text-muted/15">
                 <div className="text-[10px] font-mono tracking-[0.18em] uppercase text-text-muted/65">
                   Measurement
                 </div>
