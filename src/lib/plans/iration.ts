@@ -34,7 +34,7 @@ export const irationPlan: StrategyPlanData = {
       body: [
         "Iration is twenty-two years in, independent, and self-released through Three Prong Records. The band posts constantly. Effort is not the constraint.",
         "We pulled the last fifty posts from each platform and coded every one by format, timing, length, and call to action. Two things came out of it: the formats that work are a small and identifiable subset of what gets posted, and almost nothing that gets posted asks the audience for anything.",
-        "The second one is the expensive one, because the infrastructure is already paid for. Six vendors are collecting fan data and the content calendar feeds none of them.",
+        "The second one is the expensive one. Iration already runs a real email and SMS operation on Hive and runs it well. Social is simply not pointed at it, so the reach the band earns every week never reaches the list.",
       ],
       charts: [
         {
@@ -64,7 +64,7 @@ export const irationPlan: StrategyPlanData = {
       supports: {
         heading: "What This Engagement Covers",
         items: [
-          "Instagram and TikTok channel management, calendar, and publishing",
+          "Social media management across every channel the band runs, plus community management",
           "Short-form editing and format development from footage the band already shoots",
           "Community management and comment response, within one business day",
           "A fan-capture layer built into the formats that already perform",
@@ -78,7 +78,7 @@ export const irationPlan: StrategyPlanData = {
           "A repeatable recap production line that survives the end of a tour cycle",
           "A tested replacement for the third of the TikTok calendar spent on static photos",
           "A measured baseline for how much audience capture social can actually drive",
-          "A consolidated view of what the six fan-data vendors are each holding",
+          "A social calendar that feeds the email and SMS list instead of running beside it",
           "Whether TikTok can be moved off the genre floor, answered with data",
         ],
       },
@@ -140,9 +140,9 @@ export const irationPlan: StrategyPlanData = {
         },
         {
           dimension: "Fan Data Infrastructure",
-          status: "Present and fragmented",
+          status: "Already strong",
           evidence:
-            "Hive runs 31 city-level tour sweepstakes plus an album listening-party contest. The Chorus carries a paid IRATORS VIP tier at $6.99 per month. Shopify, ToneDen, Constant Contact, and Discord each hold a slice, alongside a Squarespace form carrying live SMS consent. No evidence of a unified profile across them.",
+            "A working email and SMS operation on Hive, running 31 city-level tour sweepstakes plus an album listening-party contest, alongside a paid IRATORS VIP tier on The Chorus, a Shopify store, ToneDen smart links, and a live SMS consent flow. This is a well-run stack, not a gap.",
         },
       ],
       foundations: [
@@ -193,11 +193,11 @@ export const irationPlan: StrategyPlanData = {
             "Reallocating that share to the formats that already outperform is a scheduling decision, not a production cost. It is the cheapest available lift on the weakest channel.",
         },
         {
-          title: "Six vendors hold fan data and none of them talk to each other",
+          title: "The email operation and the social calendar run as two separate businesses",
           finding:
-            "Hive holds the sweepstakes records, The Chorus holds paid members, Shopify holds buyers, ToneDen holds pre-save and pixel audiences, Constant Contact holds the press list, and Discord holds the community. There is no evidence of a unified profile or lifecycle flows across them.",
+            "The Hive side is well run. The social side never points at it. Across the last hundred posts there is no email signup, no SMS keyword, and no fan club link, so the two highest-reach channels the band owns are not connected to each other.",
           opportunity:
-            "Hive is already in the stack and is built for exactly this. The consolidation work is scoped in the email and SMS module rather than assumed inside the social retainer.",
+            "Connecting them is a content decision, not a platform migration. The recap format already earns three to six times normal reach, and it is the natural place to put the ask.",
         },
         {
           title: "The paid membership has no free tier above it",
@@ -371,7 +371,7 @@ export const irationPlan: StrategyPlanData = {
           verdict: "confirmed",
           confidence: "High",
           summary:
-            "Three posts out of a hundred point to a destination Iration owns. None of them point to email, SMS, or the fan club. The infrastructure exists across six vendors and the content calendar connects to none of it.",
+            "Three posts out of a hundred point to a destination Iration owns. None of them point to email, SMS, or the fan club. The email operation is already there and running well. Social just never sends anyone to it.",
           evidence: [
             "Owned-destination calls to action: 1 of 50 on TikTok, 2 of 50 on Instagram. All three point to the Shopify store.",
             "Email signups: zero. SMS keywords: zero. Fan club join links: zero.",
@@ -526,9 +526,15 @@ export const irationPlan: StrategyPlanData = {
         "Iration sits mid-pack on audience size and above the genre on Instagram, but sixth of seven on TikTok per-follower engagement. The gap is format allocation, not audience size, because the TikTok-to-Instagram follower ratio is exactly the genre median.",
       competitors: [
         {
-          name: "Stick Figure / 6,988,882 Monthly Listeners",
+          name: "Stick Figure",
+          metric: "6,988,882 monthly listeners",
+          stats: [
+            { label: "TikTok", value: "251.2K" },
+            { label: "Instagram", value: "660.4K" },
+            { label: "Plays / follower", value: "13.6%" },
+            { label: "IG likes / follower", value: "2.33%" },
+          ],
           lane: "The genre ceiling",
-          proof: "251,200 TikTok followers, 660,432 Instagram. 13.6 percent TikTok plays per follower, 2.333 percent Instagram likes per follower, roughly six times the genre median.",
           strength:
             "The only act in the genre with a signature visual format. Forty percent of output is scenery and travel footage with a lyric caption and no band members on camera. His highest-performing posts are personal rather than musical.",
           gap: "No membership product and no owned data asset. The reach lands in a Facebook Group and a presale that leaks codes to aggregator sites.",
@@ -536,9 +542,15 @@ export const irationPlan: StrategyPlanData = {
             "The scenery-and-lyric format is the cheapest content in the genre to produce and it carries the best-performing account. It is directly testable for Iration at near-zero production cost.",
         },
         {
-          name: "Rebelution / 2,164,051 Monthly Listeners",
+          name: "Rebelution",
+          metric: "2,164,051 monthly listeners",
+          stats: [
+            { label: "Spotify followers", value: "984.4K" },
+            { label: "Follower ratio", value: "45.5%" },
+            { label: "TikTok", value: "183.7K" },
+            { label: "Plays / follower", value: "7.0%" },
+          ],
           lane: "Best fanbase quality",
-          proof: "984,399 Spotify followers, a 45.5 percent follower-to-listener ratio, the highest in the set. 183,700 TikTok followers at 7.0 percent plays per follower.",
           strength:
             "Discipline and saturation. Short live clips of seven to twenty-four seconds beat their own long recaps of the same show by eleven to twenty-six times, and they run eight posts around a single event in six days.",
           gap: "The right tactics land in a Mailchimp list. No membership layer, no fan club, no artist-run presale.",
@@ -546,9 +558,15 @@ export const irationPlan: StrategyPlanData = {
             "Their event-saturation model maps directly onto Iration's recap strength. Iration posts one recap per show where Rebelution posts several.",
         },
         {
-          name: "Dirty Heads / 3,599,079 Monthly Listeners",
+          name: "Dirty Heads",
+          metric: "3,599,079 monthly listeners",
+          stats: [
+            { label: "TikTok", value: "129.0K" },
+            { label: "Instagram", value: "436.6K" },
+            { label: "Top post", value: "332.3K plays" },
+            { label: "Vs their median", value: "~50x" },
+          ],
           lane: "Owned identity graph",
-          proof: "129,000 TikTok followers, 436,556 Instagram. One post at 332,297 plays, roughly fifty times their median.",
           strength:
             "The only first-party identity graph in the genre. A native fan-club app owned by the band entity, collecting email, phone, and device identity. Also the only act running true curiosity-gap hooks.",
           gap: "The infrastructure is ahead of the audience. The app carries nine ratings six months after launch, and 129,000 TikTok followers produce a median around 6,700 plays.",
@@ -556,9 +574,15 @@ export const irationPlan: StrategyPlanData = {
             "Proof that owned infrastructure without a top-of-funnel does not fill itself. Iration's paid fan club has the same shape and the same problem.",
         },
         {
-          name: "Slightly Stoopid / 3,329,480 Monthly Listeners",
+          name: "Slightly Stoopid",
+          metric: "3,329,480 monthly listeners",
+          stats: [
+            { label: "TikTok", value: "83.4K" },
+            { label: "Plays / follower", value: "2.6%" },
+            { label: "Rank in set", value: "7th of 7" },
+            { label: "Destination events", value: "2" },
+          ],
           lane: "Largest touring equity",
-          proof: "83,400 TikTok followers producing a 2.6 percent play rate, the worst in the set. Owns two destination events.",
           strength:
             "Deepest touring equity in the genre and the highest personality content share at 48 percent. The formats they are running are the right ones.",
           gap: "Correct formats, dead distribution. A default newsletter block on the website and no SMS anywhere on the band's own site.",
@@ -566,9 +590,15 @@ export const irationPlan: StrategyPlanData = {
             "The cautionary case. Personality content alone does not fix a channel, and 3.3 million listeners feeding a default signup box is the same disconnect Iration has, at larger scale.",
         },
         {
-          name: "Pepper / 1,376,243 Monthly Listeners",
+          name: "Pepper",
+          metric: "1,376,243 monthly listeners",
+          stats: [
+            { label: "TikTok", value: "26.4K" },
+            { label: "Instagram", value: "208.8K" },
+            { label: "Fan club", value: "$10/mo" },
+            { label: "TikTok videos", value: "649" },
+          ],
           lane: "Best capture funnel",
-          proof: "26,400 TikTok followers, 208,761 Instagram, the smallest audience in the core set.",
           strength:
             "The only act running a free-list capture and a paid membership together. A discount traded for a phone number at the top, a $10 per month fan club at the bottom, on the same platform Iration uses.",
           gap: "The smallest audience in the core set, and the funnel is doing more work than the reach behind it.",
@@ -576,9 +606,15 @@ export const irationPlan: StrategyPlanData = {
             "Pepper charges 43 percent more than Iration on the same platform, bundling venue early entry and an annual shirt, and still runs a free capture above it because the free list is what feeds the paid tier.",
         },
         {
-          name: "The Movement / 1,265,129 Monthly Listeners",
+          name: "The Movement",
+          metric: "1,265,129 monthly listeners",
+          stats: [
+            { label: "TikTok", value: "7.5K" },
+            { label: "Plays / follower", value: "22.3%" },
+            { label: "Rank in set", value: "1st of 7" },
+            { label: "Live-clip share", value: "60%" },
+          ],
           lane: "Best capture UX, smallest reach",
-          proof: "7,475 TikTok followers at 22.3 percent plays per follower, the highest rate in the set on the smallest base.",
           strength:
             "Cleanest email and SMS capture UX in the genre, and 60 percent live-clip output with a credited videographer on every post. Their top post is a fan brought on stage.",
           gap: "No membership, no presale gate, and an audience too small to move the genre.",
@@ -855,15 +891,15 @@ export const irationPlan: StrategyPlanData = {
           label: "Workstream 01",
           title: "Channel Management",
           objective:
-            "Run Instagram and TikTok as managed channels with a planned calendar, consistent packaging, and same-week responsiveness.",
+            "Run the band's social channels as one managed operation: a planned calendar, consistent packaging, and same-week responsiveness.",
           strategy:
-            "Instagram leads because it is where the account already beats its genre. TikTok runs in parallel on a reallocated calendar rather than a higher volume. Cadence holds at what the band already sustains.",
+            "Instagram leads the effort because it is where the account already beats its genre. TikTok runs in parallel on a reallocated calendar rather than a higher volume. Cadence holds at what the band already sustains.",
           components: {
             heading: "What we run",
             items: [
               "Monthly content calendar built against the format findings in section 03, approved by the band before the month starts",
               "Editing and packaging of footage the band and its videographers already capture",
-              "Publishing and scheduling across Instagram and TikTok, including Reels and Stories",
+              "Publishing and scheduling across every managed channel, including Reels and Stories",
               "Community management and comment response on managed channels within one business day",
               "Caption and hook writing, which carried the narrative in 17 of the 20 videos sampled for speech",
               "Asset library and archive organization, so twenty-two years of footage becomes usable inventory",
@@ -923,36 +959,35 @@ export const irationPlan: StrategyPlanData = {
           ],
         },
         {
-          label: "Add-On Module",
+          label: "Module",
           title: "Email And SMS On Hive",
-          budget: "Priced separately",
+          budget: "$2,000/mo",
           objective:
-            "Consolidate six vendors into one addressable view and run the lifecycle programs the existing Hive account was built for and is not being used for.",
+            "Take the weekly running of the email and SMS channel off the band's plate, without changing how it works.",
           strategy:
-            "Iration already runs Hive, currently as a contest tool across 31 city-level tour sweepstakes plus a listening-party contest, so the hardest part of adoption is done. What is missing is segmentation, lifecycle flows, and a single profile that knows one person is a sweepstakes entrant, a Shopify buyer, a paid member, and a Denver resident at once. Crowd Control works directly with Hive's leadership, which shortens the integration path.",
+            "Iration already runs Hive well. The flows are built, the sweepstakes machine works, and the list is real. This is not a rebuild and not a migration. It is Crowd Control absorbing the execution: building and sending campaigns, keeping segments and flows current, and running presale and announce sends against the calendar the band sets. We work directly with Hive's leadership, which helps when something needs escalating.",
           components: {
             heading: "What the module covers",
             items: [
-              "Audit of what each of the six vendors currently holds, and who administers each account",
-              "Consolidation into Hive as the system of record, with the others feeding it rather than competing with it",
-              "Segmentation by market, purchase history, show attendance, and membership tier",
-              "Lifecycle flows: welcome, pre-show by market, post-show, lapsed-buyer reactivation, and merch",
-              "Announce and presale campaigns run against segments rather than the whole list",
-              "SMS program build on the existing consent flow, including the keyword used by the social capture layer",
-              "Monthly reporting on list growth, deliverability, and revenue attribution",
+              "Campaign build, copy, scheduling, and send",
+              "Segment and flow upkeep against the structure already in place",
+              "Presale, announce, and on-sale sends timed to the tour calendar",
+              "The SMS keyword the social capture layer points at",
+              "List hygiene and deliverability monitoring",
+              "Monthly reporting on list growth, engagement, and revenue",
             ],
           },
           kpis: [
-            "Addressable list size across a consolidated profile, which no single number currently exists for",
-            "Flow revenue as a share of total email and SMS revenue",
-            "Presale conversion by market segment",
-            "Free-tier to paid fan club conversion rate",
+            "Sends shipped on schedule without band-side production time",
+            "List growth attributable to the social capture layer",
+            "Presale conversion by market",
+            "Revenue per send, tracked against the current baseline",
           ],
-          timeline: "Vendor audit in weeks 1 to 2. Consolidation weeks 3 to 6. First flows live by week 8.",
+          timeline: "Access and handover in weeks 1 to 2. Crowd Control running sends from week 3.",
         },
       ],
       footnote:
-        "Media spend, creator fees, production travel, and third-party tools are separate from these fees and are billed at cost plus a 15 percent management fee where Crowd Control administers them.",
+        "Content creation beyond packaging existing footage is billed hourly. Media spend and creator fees are separate and carry a 15 percent management fee where Crowd Control administers them.",
     },
 
     {
@@ -965,8 +1000,8 @@ export const irationPlan: StrategyPlanData = {
       targets: [
         {
           metric: "Owned-destination CTA coverage on recap posts",
-          baseline: "0 percent",
-          target: "100 percent",
+          baseline: "0%",
+          target: "100%",
           window: "By day 30",
           rationale:
             "The recap format earns three to six times normal reach and currently asks for nothing. This is the single highest-leverage change available and it costs nothing to make.",
@@ -975,8 +1010,8 @@ export const irationPlan: StrategyPlanData = {
         },
         {
           metric: "TikTok static photo share of calendar",
-          baseline: "30 percent",
-          target: "Under 10 percent",
+          baseline: "30%",
+          target: "Under 10%",
           window: "By day 60",
           rationale:
             "Peer accounts run this format between zero and four percent. Reallocation is a scheduling decision rather than a production cost.",
@@ -984,35 +1019,35 @@ export const irationPlan: StrategyPlanData = {
         },
         {
           metric: "TikTok median plays per follower",
-          baseline: "4.4 percent",
-          target: "Toward the 6.7 percent genre median",
+          baseline: "4.4%",
+          target: "6.7%",
           window: "By day 90",
           rationale:
-            "Sixth of seven in the peer set. The follower ratio is exactly the genre median, so this is an allocation problem rather than an audience-size problem.",
+            "Moving toward the 6.7 percent genre median. Sixth of seven in the peer set today, and the follower ratio is exactly the genre median, so this is an allocation problem rather than an audience-size problem.",
           measurement: "Rolling 30-post median, outlier-excluded, reported monthly",
         },
         {
           metric: "Instagram median likes per follower",
-          baseline: "0.590 percent",
-          target: "Hold above baseline while volume shifts",
+          baseline: "0.590%",
+          target: "Hold 0.590%",
           window: "Ongoing",
           rationale:
-            "Already 1.54 times the genre median and third of seven. The target here is protecting a strength while the TikTok calendar changes underneath it.",
+            "Hold the current rate while the TikTok calendar changes underneath it. Already 1.54 times the genre median and third of seven, so the job here is protecting a strength rather than growing it.",
           measurement: "Rolling 30-post median, reported monthly",
         },
         {
           metric: "New owned-audience captures attributable to social",
-          baseline: "Not currently measured",
-          target: "Establish a baseline, then grow against it",
+          baseline: "Unmeasured",
+          target: "Set a baseline",
           window: "Baseline by day 30",
           rationale:
-            "No number exists today because nothing on the calendar points at an owned destination. The first job is making it measurable.",
+            "Establish the number, then grow against it. None exists today because nothing on the calendar points at an owned destination, so the first job is making it measurable.",
           measurement: "iration.fm click-through and Hive capture attribution",
         },
         {
           metric: "Personality and behind-the-scenes share of TikTok calendar",
-          baseline: "9 percent",
-          target: "20 to 30 percent",
+          baseline: "9%",
+          target: "20 to 30%",
           window: "By day 90",
           rationale:
             "The lowest share in the peer set, where comparable acts run between 12 and 48 percent. Iration's one sound-check bit reached 8,151 plays, three times the June median, and was never repeated.",
@@ -1187,96 +1222,74 @@ export const irationPlan: StrategyPlanData = {
       navLabel: "Investment",
       title: "Investment",
       intro:
-        "Three tiers for the social retainer, billed monthly. The email and SMS module is priced separately so it can be approved on its own timing.",
+        "Crowd Control's standard rate card. Social management is one retainer covering every channel the band runs. Email and SMS is a separate monthly module, and content creation is hourly so it only costs what it is used for.",
       ccdNote:
-        "Fees cover Crowd Control's management and production time. Media spend, creator fees, production travel, and third-party tools are separate and are billed at cost plus a 15 percent management fee where Crowd Control administers them.",
-      breakdownLabel: "What the fee covers",
+        "Retainers cover Crowd Control's management time. Content creation is billed hourly against approved briefs. Any managed media spend or creator fee carries a 15 percent management fee and is billed at cost on top of it.",
+      breakdownLabel: "What the retainer covers",
       deployableLabel: "Monthly output",
       tiers: [
         {
-          label: "Tier 01",
-          budget: "$6,000/mo",
-          name: "CORE",
-          tagline: "Instagram and TikTok, managed against the format findings in this document.",
-          deployable: "Roughly 25 Instagram posts and 12 to 15 TikToks per month, edited and packaged from footage the band already captures.",
-          breakdown: [
-            { vertical: "Channel management, calendar, and publishing", amount: "$2,750" },
-            { vertical: "Editing and packaging", amount: "$2,000" },
-            { vertical: "Community management", amount: "$750" },
-            { vertical: "Monthly reporting", amount: "$500" },
-          ],
-          feeBreakdown: {
-            retainer: "$6,000",
-            retainerDetail: "Instagram and TikTok only. Band supplies raw footage.",
-            mediaManagement: "15%",
-            mediaManagementDetail: "Applied to any media spend Crowd Control administers. None is required at this tier.",
-            mediaManagementLabel: "Media management fee",
-          },
-        },
-        {
-          label: "Tier 02",
-          budget: "$9,500/mo",
-          name: "TOUR",
-          tagline: "Adds capture, YouTube Shorts and Facebook, and the fan-capture layer.",
-          deployable: "Everything in Core, plus YouTube Shorts and Facebook, on-site capture at up to four shows per quarter, and an owned-destination call to action on every recap.",
+          label: "Retainer",
+          budget: "$5,000/mo",
+          name: "SOCIAL MANAGEMENT",
+          tagline: "Every channel the band runs, plus community management.",
+          deployable:
+            "Managed calendar, editing and packaging from footage the band already has, publishing, community management, and a monthly report against the baselines in section 07.",
           featured: true,
           breakdown: [
-            { vertical: "Channel management across four platforms", amount: "$3,500" },
-            { vertical: "Editing, packaging, and the recap production line", amount: "$2,750" },
-            { vertical: "On-site capture, up to four shows per quarter", amount: "$1,500" },
-            { vertical: "Fan capture layer and iration.fm routing", amount: "$1,000" },
-            { vertical: "Community management", amount: "$750" },
+            { vertical: "Channel management, calendar, and publishing", amount: "Included" },
+            { vertical: "Editing and packaging of existing footage", amount: "Included" },
+            { vertical: "Community management and comment response", amount: "Included" },
+            { vertical: "Monthly reporting", amount: "Included" },
           ],
           feeBreakdown: {
-            retainer: "$9,500",
-            retainerDetail: "Four channels, on-site capture, and the fan capture layer. Capture travel billed at cost.",
+            retainer: "$5,000",
+            retainerDetail: "Per month, covering social media management and community management across all channels.",
             mediaManagement: "15%",
-            mediaManagementDetail: "Applied to any media spend Crowd Control administers.",
-            mediaManagementLabel: "Media management fee",
+            mediaManagementDetail: "On any media spend or creator fee Crowd Control manages, billed at cost plus the fee.",
+            mediaManagementLabel: "Managed spend fee",
           },
         },
         {
-          label: "Tier 03",
-          budget: "$14,000/mo",
-          name: "FULL",
-          tagline: "Adds a monthly shoot day, the videographer network, and paid social management.",
-          deployable: "Everything in Tour, plus one dedicated shoot day per month, a managed fan and videographer network, and paid social management across the managed channels.",
+          label: "Module",
+          budget: "$2,000/mo",
+          name: "EMAIL AND SMS",
+          tagline: "We run the Hive account the band already runs well.",
+          deployable:
+            "Campaign build and send, segment maintenance, flow upkeep, presale and announce sends, and a monthly report on list growth and revenue.",
           breakdown: [
-            { vertical: "Channel management across four platforms", amount: "$3,500" },
-            { vertical: "Editing, packaging, and the recap production line", amount: "$2,750" },
-            { vertical: "On-site capture plus one monthly shoot day", amount: "$3,000" },
-            { vertical: "Fan and videographer network management", amount: "$1,500" },
-            { vertical: "Paid social management", amount: "$1,500" },
-            { vertical: "Fan capture layer and iration.fm routing", amount: "$1,000" },
-            { vertical: "Community management", amount: "$750" },
+            { vertical: "Campaign build, scheduling, and send", amount: "Included" },
+            { vertical: "Segment and flow upkeep", amount: "Included" },
+            { vertical: "Presale and announce sends", amount: "Included" },
+            { vertical: "Monthly reporting", amount: "Included" },
           ],
           feeBreakdown: {
-            retainer: "$14,000",
-            retainerDetail: "Full owned-channel operation. Shoot-day production costs and travel billed at cost.",
+            retainer: "$2,000",
+            retainerDetail: "Per month, on top of the social retainer. Hive platform fees are billed directly by Hive.",
             mediaManagement: "15%",
-            mediaManagementDetail: "Applied to media spend Crowd Control administers. Paid social management is included in the retainer.",
-            mediaManagementLabel: "Media management fee",
+            mediaManagementDetail: "On any media spend or creator fee Crowd Control manages.",
+            mediaManagementLabel: "Managed spend fee",
           },
         },
       ],
       addOns: [
         {
-          name: "Email and SMS on Hive",
-          subtitle: "Add-on module, approved separately",
-          budget: "$4,000/mo",
+          name: "Content creation",
+          subtitle: "Billed hourly against approved briefs",
+          budget: "$100/hr",
           description:
-            "Vendor audit across the six systems currently holding fan data, consolidation into Hive as the system of record, segmentation, lifecycle flows, presale and announce campaigns, and the SMS program. Three-month minimum because the consolidation work front-loads into the first six weeks. Hive platform fees are billed directly by Hive and are separate from this figure.",
+            "Original creative produced by Crowd Control rather than packaged from what the band already shoots. Quoted per brief before any work starts, so it stays a decision rather than a standing cost.",
         },
         {
-          name: "Content production beyond scope",
-          subtitle: "Scoped and quoted per project",
-          budget: "$120/hr",
+          name: "Managed spend and creator fees",
+          subtitle: "Applied to spend Crowd Control administers",
+          budget: "15%",
           description:
-            "Music video, long-form documentary, graphic design, and animation sit outside the retainer and are quoted as separate fixed scopes or billed hourly.",
+            "Paid media budget and creator fees are billed at cost with a 15 percent management fee. No spend is required for either retainer to work.",
         },
       ],
       footnote:
-        "All tiers are billed monthly with a three-month initial term, then month to month with 30 days notice. Not included in any tier: paid media budget, creator and influencer fees, PR, DSP editorial pitching, tour marketing, release strategy, merchandise, and web development. Final invoicing and termination terms move into the signed agreement.",
+        "Billed monthly with a three-month initial term, then month to month with 30 days notice. Not included: paid media budget, creator and influencer fees, PR, DSP editorial pitching, tour marketing, release strategy, merchandise, and web development. Final invoicing and termination terms move into the signed agreement.",
     },
   ],
 };

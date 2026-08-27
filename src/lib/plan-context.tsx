@@ -246,7 +246,11 @@ export type BrandAuditSection = {
 
 export type CompetitivePeer = {
   name: string;
+  /** Headline metric shown beneath the name, e.g. "3.6M monthly listeners". Keep it short. */
+  metric?: string;
   lane?: string;
+  /** Discrete supporting figures. Preferred over the free-text `proof` string. */
+  stats?: { label: string; value: string }[];
   proof?: string;
   strength: string;
   gap: string;

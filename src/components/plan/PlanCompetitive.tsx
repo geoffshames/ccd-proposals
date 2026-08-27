@@ -52,14 +52,14 @@ export function PlanCompetitive({ section }: { section: CompetitiveSection }) {
                 className="border border-text-muted/15 bg-bg-card p-7 md:p-8"
               >
                 <div className="flex items-start justify-between gap-4">
-                  <div>
+                  <div className="min-w-0">
                     {competitor.lane && (
-                      <div className="text-[10px] font-mono tracking-[0.18em] uppercase text-accent mb-2">
+                      <div className="text-[10px] font-mono tracking-[0.18em] uppercase text-text-muted/60 mb-3">
                         {competitor.lane}
                       </div>
                     )}
                     <h3
-                      className="text-[24px] md:text-[28px] leading-tight font-bold text-text-primary"
+                      className="text-[24px] md:text-[28px] leading-[1.12] font-bold text-text-primary"
                       style={{
                         fontFamily:
                           "var(--font-heading), var(--font-sans), sans-serif",
@@ -67,40 +67,60 @@ export function PlanCompetitive({ section }: { section: CompetitiveSection }) {
                     >
                       {competitor.name}
                     </h3>
+                    {competitor.metric && (
+                      <div className="mt-2.5 text-[13px] font-mono tabular-nums text-accent tracking-[0.04em]">
+                        {competitor.metric}
+                      </div>
+                    )}
                   </div>
-                  <span className="text-[11px] font-mono tabular-nums text-text-muted/65 flex-shrink-0">
+                  <span className="text-[11px] font-mono tabular-nums text-text-muted/50 flex-shrink-0">
                     {String(i + 1).padStart(2, "0")}
                   </span>
                 </div>
 
-                {competitor.proof && (
-                  <p className="mt-4 text-[12px] font-mono tracking-[0.08em] leading-relaxed text-text-muted/65">
+                {competitor.stats && competitor.stats.length > 0 && (
+                  <dl className="mt-6 flex flex-wrap gap-x-8 gap-y-4 pb-6 border-b border-text-muted/12">
+                    {competitor.stats.map((stat, si) => (
+                      <div key={si} className="min-w-0">
+                        <dt className="text-[9.5px] font-mono tracking-[0.16em] uppercase text-text-muted/60">
+                          {stat.label}
+                        </dt>
+                        <dd className="mt-1 text-[15px] font-bold tabular-nums text-text-primary/90">
+                          {stat.value}
+                        </dd>
+                      </div>
+                    ))}
+                  </dl>
+                )}
+
+                {!competitor.stats && competitor.proof && (
+                  <p className="mt-5 text-[13.5px] leading-relaxed text-text-muted pb-6 border-b border-text-muted/12">
                     {competitor.proof}
                   </p>
                 )}
 
                 <dl className="mt-6 space-y-5">
-                  <div className="grid grid-cols-1 sm:grid-cols-[82px_1fr] gap-2 sm:gap-4">
-                    <dt className="text-[10px] font-mono tracking-[0.16em] uppercase text-text-muted/70 pt-0.5">
+                  <div>
+                    <dt className="text-[9.5px] font-mono tracking-[0.18em] uppercase text-text-muted/60 mb-1.5">
                       Strength
                     </dt>
-                    <dd className="text-[14px] leading-relaxed text-text-primary/85">
+                    <dd className="text-[14px] leading-relaxed text-text-primary/85 max-w-[62ch]">
                       {competitor.strength}
                     </dd>
                   </div>
-                  <div className="grid grid-cols-1 sm:grid-cols-[82px_1fr] gap-2 sm:gap-4">
-                    <dt className="text-[10px] font-mono tracking-[0.16em] uppercase text-text-muted/70 pt-0.5">
+                  <div>
+                    <dt className="text-[9.5px] font-mono tracking-[0.18em] uppercase text-text-muted/60 mb-1.5">
                       Gap
                     </dt>
-                    <dd className="text-[14px] leading-relaxed text-text-muted">
+                    <dd className="text-[14px] leading-relaxed text-text-muted max-w-[62ch]">
                       {competitor.gap}
                     </dd>
                   </div>
-                  <div className="grid grid-cols-1 sm:grid-cols-[82px_1fr] gap-2 sm:gap-4 pt-5 border-t border-text-muted/15">
-                    <dt className="text-[10px] font-mono tracking-[0.16em] uppercase text-accent pt-0.5">
+                  <div className="pt-5 border-t border-text-muted/15">
+                    <dt className="text-[9.5px] font-mono tracking-[0.18em] uppercase text-text-muted/60 mb-1.5">
                       Implication
                     </dt>
-                    <dd className="text-[14px] leading-relaxed text-text-primary">
+                    <dd className="text-[14px] leading-relaxed text-text-primary border-l-2 border-accent pl-4 max-w-[62ch]">
                       {competitor.implication}
                     </dd>
                   </div>

@@ -4,6 +4,19 @@ import { motion } from "framer-motion";
 import type { TargetsSection } from "@/lib/plan-context";
 import { PlanSectionHeader } from "./PlanSectionHeader";
 
+/**
+ * Baseline and target values are authored as short tokens ("100%", "4.4%"), but plans
+ * sometimes pass a phrase. Step the display size down by length so a long value wraps
+ * gracefully inside the card instead of overflowing it.
+ */
+function valueSize(v: string): string {
+  const n = v.trim().length;
+  if (n <= 10) return "text-[clamp(1.35rem,3vw,2.25rem)]";
+  if (n <= 18) return "text-[clamp(1.1rem,2.2vw,1.6rem)]";
+  if (n <= 30) return "text-[clamp(0.95rem,1.7vw,1.2rem)]";
+  return "text-[clamp(0.9rem,1.4vw,1.05rem)]";
+}
+
 export function PlanTargets({ section }: { section: TargetsSection }) {
   return (
     <section
@@ -57,13 +70,13 @@ export function PlanTargets({ section }: { section: TargetsSection }) {
                 </div>
               </div>
 
-              <div className="mt-7 grid grid-cols-1 sm:grid-cols-[minmax(0,1fr)_auto_minmax(0,1fr)] gap-4 items-center">
+              <div className="mt-7 grid grid-cols-1 sm:grid-cols-[minmax(0,1fr)_auto_minmax(0,1fr)] gap-4 items-start">
                 <div className="min-w-0">
                   <div className="text-[10px] font-mono tracking-[0.18em] uppercase text-text-muted/65">
                     Baseline
                   </div>
                   <div
-                    className="mt-2 text-[clamp(1.35rem,3vw,2.25rem)] font-bold leading-tight text-text-muted break-words"
+                    className={`mt-2 ${valueSize(target.baseline)} font-bold leading-tight text-text-muted break-words`}
                     style={{
                       fontFamily:
                         "var(--font-heading), var(--font-sans), sans-serif",
@@ -80,7 +93,7 @@ export function PlanTargets({ section }: { section: TargetsSection }) {
                     Directional target
                   </div>
                   <div
-                    className="mt-2 text-[clamp(1.35rem,3vw,2.25rem)] font-bold leading-tight text-accent break-words"
+                    className={`mt-2 ${valueSize(target.target)} font-bold leading-tight text-accent break-words`}
                     style={{
                       fontFamily:
                         "var(--font-heading), var(--font-sans), sans-serif",
