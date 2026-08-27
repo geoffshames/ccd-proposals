@@ -68,7 +68,7 @@ export function PlanCover() {
           className="mt-8 max-w-3xl"
         >
           <div className="h-[2px] w-16 bg-accent mb-6" />
-          <p className="text-[clamp(1.5rem, 3vw, 2.25rem)] font-bold leading-[1.1] text-text-primary"
+          <p className="text-[clamp(1.35rem,_2.4vw,_1.9rem)] font-bold leading-[1.25] text-text-primary max-w-[34ch]"
              style={{ fontFamily: "var(--font-heading), var(--font-sans), sans-serif" }}>
             {subtitle}
           </p>

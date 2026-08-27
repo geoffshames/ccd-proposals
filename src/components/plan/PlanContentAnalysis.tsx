@@ -428,7 +428,7 @@ export function PlanContentAnalysis({ section }: { section: ContentAnalysisSecti
               </table>
             </div>
             {section.mixFootnote && (
-              <p className="mt-4 text-[12px] font-mono text-text-muted/70 leading-relaxed">
+              <p className="mt-4 text-[12px] font-mono text-text-muted/70 leading-relaxed max-w-[80ch]">
                 {section.mixFootnote}
               </p>
             )}
@@ -499,7 +499,7 @@ export function PlanContentAnalysis({ section }: { section: ContentAnalysisSecti
         </div>
 
         {section.footnote && (
-          <p className="mt-12 text-[12.5px] font-mono text-text-muted/70 leading-relaxed border-l-2 border-accent/40 pl-4">
+          <p className="mt-12 text-[12.5px] font-mono text-text-muted/70 leading-relaxed border-l-2 border-accent/40 pl-4 max-w-[80ch]">
             {section.footnote}
           </p>
         )}
