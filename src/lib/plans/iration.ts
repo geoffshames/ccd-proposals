@@ -32,9 +32,9 @@ export const irationPlan: StrategyPlanData = {
       subtitle:
         "The output is already there. What is missing is a format discipline and a place for the attention to land.",
       body: [
-        "Iration is twenty-two years in, independent, self-released through Three Prong Records, and coming off a fourteen-track album and a thirty-four date headline run. The band posts constantly: 813 videos on TikTok, 5,107 posts on Instagram, roughly twenty-five Instagram posts and twelve TikToks in the last thirty days. Effort is not the constraint.",
+        "Iration is twenty-two years in, independent, self-released through Three Prong Records, and coming off a fourteen-track album and a headline run across thirty-four cities. The band posts constantly: 813 videos on TikTok, 5,107 posts on Instagram, roughly twenty-five Instagram posts and twelve TikToks in the last thirty days. Effort is not the constraint.",
         "We pulled the last fifty posts from each platform and coded every one by format, timing, length, and call to action. Two things came out of it. The formats that work are a small and identifiable subset of what gets posted, and almost nothing that gets posted asks the audience for anything. Three posts out of a hundred point to a destination Iration owns. Zero carry an email signup, an SMS keyword, or a link to join the fan club.",
-        "That second number is the expensive one, because the infrastructure is already paid for. Iration runs Hive for city-level tour sweepstakes, a paid membership on The Chorus, a Shopify store, ToneDen smart links, and an SMS consent form. Six vendors are collecting fan data and the content calendar feeds none of them.",
+        "That second number is the expensive one, because the infrastructure is already paid for. Iration runs Hive for tour sweepstakes, a paid membership on The Chorus, a Shopify store, ToneDen smart links, Constant Contact for press, and a Discord. Six vendors are collecting fan data and the content calendar feeds none of them.",
         "This proposal covers social media management only. Instagram and TikTok as the core, short-form video as the medium, and a fan-capture layer wired into the formats that already earn reach. Email and SMS on Hive is scoped and priced as a separate module so it can be approved on its own timing.",
       ],
       supports: {
@@ -76,7 +76,7 @@ export const irationPlan: StrategyPlanData = {
           dimension: "Live Demand",
           status: "Primary strength",
           evidence:
-            "523,000 Bandsintown followers, ahead of Stick Figure's 438,000 despite Stick Figure carrying roughly 4.5 times the Spotify monthly listeners. A 34-date self-headlined run in 2026 with a two-night Denver stand, the second night sold out.",
+            "523,000 Bandsintown followers, ahead of Stick Figure's 438,000 despite Stick Figure carrying roughly 4.5 times the Spotify monthly listeners. A self-headlined run across 34 cities in 2026 with a two-night Denver stand, both nights sold out.",
         },
         {
           dimension: "Audience Quality",
@@ -94,13 +94,13 @@ export const irationPlan: StrategyPlanData = {
           dimension: "Instagram Performance",
           status: "Genuine relative strength",
           evidence:
-            "Median 1,858 likes against 314,901 followers, a 0.590 percent rate that ranks third of seven in the peer set and runs at 1.54 times the genre median. Instagram is working harder than it is being credited for.",
+            "Measured on the same window and method as the peer set, median 1,858 likes against 314,901 followers, a 0.590 percent rate that ranks third of seven and runs at 1.54 times the genre median of 0.384 percent. Across the wider 50-post corpus the median is 1,575 likes, or 0.50 percent. Instagram is working harder than it is being credited for on either measure.",
         },
         {
           dimension: "TikTok Performance",
           status: "Below genre floor",
           evidence:
-            "Median 2,707 plays against 61,700 followers, a 4.4 percent rate that ranks sixth of seven and runs at 0.66 times the genre median. Only Slightly Stoopid performs worse per follower.",
+            "Median 2,707 plays excluding the single viral outlier, against 61,700 followers, a 4.4 percent rate that ranks sixth of seven and runs at 0.66 times the genre median of 6.7 percent. Including the outlier the median is 2,764. Only Slightly Stoopid performs worse per follower.",
         },
         {
           dimension: "Format Discipline",
@@ -112,13 +112,13 @@ export const irationPlan: StrategyPlanData = {
           dimension: "Owned-Audience Capture",
           status: "Built but disconnected",
           evidence:
-            "Three of the last hundred posts carry a call to action pointing to a destination Iration owns. Zero carry an email signup, an SMS keyword, or a fan club link. Ticket calls to action route to venue domains rather than through iration.fm, which the band already controls.",
+            "Three of the last hundred posts carry a call to action pointing to a destination Iration owns. Zero carry an email signup, an SMS keyword, or a fan club link. The band already routes its own tour-page ticket links through iration.fm, but social captions point at venue domains instead, so the reach social generates lands outside that tracked layer.",
         },
         {
           dimension: "Fan Data Infrastructure",
           status: "Present and fragmented",
           evidence:
-            "Hive runs 32 separate city-level tour sweepstakes. The Chorus carries a paid IRATORS VIP tier at $6.99 per month. Shopify, ToneDen, a Squarespace form with live SMS consent, Constant Contact, and Discord each hold a slice. No evidence of a unified profile across them.",
+            "Hive runs 31 city-level tour sweepstakes plus an album listening-party contest. The Chorus carries a paid IRATORS VIP tier at $6.99 per month. Shopify, ToneDen, Constant Contact, and Discord each hold a slice, alongside a Squarespace form carrying live SMS consent. No evidence of a unified profile across them.",
         },
       ],
       foundations: [
@@ -138,7 +138,7 @@ export const irationPlan: StrategyPlanData = {
         {
           title: "One shoot is already producing two platform wins",
           detail:
-            "The Super Girl Pro recap ran as the same creative on both channels and placed near the top of each: 8,877 plays on TikTok with the highest share rate in the corpus outside the single viral post, and 8,160 likes on Instagram, the best non-outlier post in the window. The cross-posting instinct is right and under-exploited.",
+            "The Super Girl Pro recap ran as the same creative on both channels and placed near the top of each: 8,877 plays on TikTok with the highest share rate in the corpus outside the single viral post, and 8,160 likes on Instagram, near the top of the window. The cross-posting instinct is right and under-exploited.",
         },
         {
           title: "The audience answers when asked a real question",
@@ -176,7 +176,7 @@ export const irationPlan: StrategyPlanData = {
         {
           title: "The paid membership has no free tier above it",
           finding:
-            "Presale access sits behind a $6.99 per month paid fan club with no free capture layer feeding it. Pepper charges $10 per month on the same platform with a third of Iration's monthly listeners, and runs a free list capture on top of it because the free list is what feeds the paid tier.",
+            "Presale access sits behind a $6.99 per month paid fan club with no free capture layer feeding it. Pepper charges $10 per month on the same platform, with venue early-entry and an annual shirt Iration does not bundle, and still runs a free list capture on top of it because the free list is what feeds the paid tier.",
           opportunity:
             "A free capture step between social reach and the paid tier converts attention the band is already earning into a list it can address for nothing.",
         },
@@ -207,7 +207,7 @@ export const irationPlan: StrategyPlanData = {
           audienceTruth:
             "The tour diary is the strongest thing on the account. It is also the thing that stops working the moment the tour does.",
           direction:
-            "Treat the recap as a format rather than a byproduct, so it can be produced in months without shows. That is the difference between a channel and a scrapbook.",
+            "Treat the recap as a format rather than a byproduct, so it can be produced in months without shows. That is the difference between a format and a byproduct.",
         },
       ],
       footnote:
@@ -220,7 +220,7 @@ export const irationPlan: StrategyPlanData = {
       navLabel: "Content",
       title: "Content Analysis",
       intro:
-        "One hundred posts, coded by format, timing, length, and call to action, then run against a refutation pass designed to kill the findings before they reached this page.",
+        "One hundred posts, coded by format, timing, length, and call to action, then tested against every alternative explanation we could construct.",
       clientQuestion: {
         attribution: "The question this section answers",
         question:
@@ -230,14 +230,14 @@ export const irationPlan: StrategyPlanData = {
         { label: "Corpus", value: "Last 50 TikTok posts (May 2 to August 26, 2026) and last 50 Instagram posts (June 24 to August 25, 2026)" },
         { label: "Coding", value: "Every post classified by format, show timing, length bucket, and call-to-action type" },
         { label: "Transcription", value: "70 videos submitted for transcription, 70 returned" },
-        { label: "Refutation", value: "Every finding tested against recency, seasonality, tour-window, outlier, and confounding explanations before publication" },
+        { label: "Testing", value: "Every finding checked against recency, seasonality, tour-window, outlier, and confounding explanations" },
         { label: "Benchmark", value: "Last 25 TikTok and last 12 Instagram posts each from Rebelution, Stick Figure, Slightly Stoopid, Dirty Heads, Pepper, and The Movement" },
-        { label: "Known limits", value: "Instagram view counts are not exposed by the API, so likes are the Instagram engagement proxy. Instagram durations were unavailable, so length analysis is TikTok only. Eight Instagram posts returned null likes and are excluded from likes math." },
+        { label: "Known limits", value: "Instagram view counts are not exposed by the API, so likes are the Instagram engagement proxy and no true like-for-like cross-platform comparison is available. Instagram durations were unavailable, so length analysis is TikTok only. Eight of fifty Instagram posts returned null likes and are excluded from likes math. The two windows are not matched: the TikTok window spans the whole tour, the Instagram window is almost entirely after it, so any cross-platform read carries that difference." },
       ],
       corpusStats: [
         { label: "Posts Coded", value: "100", detail: "50 TikTok, 50 Instagram" },
-        { label: "TikTok Median", value: "2,764", detail: "plays, 4.5 percent of followers" },
-        { label: "Instagram Median", value: "1,575", detail: "likes, 0.50 percent of followers" },
+        { label: "TikTok Median", value: "2,707", detail: "plays excluding the outlier, 4.4 percent of followers" },
+        { label: "Instagram Median", value: "1,575", detail: "likes across the 50-post corpus, 0.50 percent" },
         { label: "Owned-Destination CTAs", value: "3 of 100", detail: "zero email, SMS, or fan club" },
         { label: "Posts With No CTA", value: "79 of 100", detail: "across both platforms" },
         { label: "Videos With Spoken Audio", value: "3 of 20 sampled", detail: "captions carry the narrative" },
@@ -301,7 +301,7 @@ export const irationPlan: StrategyPlanData = {
         "Peer corpora pulled August 27, 2026. Instagram pagination limited peer samples to twelve posts each, so Instagram peer figures carry wider error bars than the TikTok figures.",
       findingsHeading: "Verdicts",
       findingsIntro:
-        "Six findings, each tested against the corpus and against the most plausible alternative explanation. Two did not survive, and both are published here with the correction.",
+        "Six findings, each tested against the sample and against the most plausible alternative explanation. One did not survive contact with the data and is published here with the correction rather than removed.",
       findings: [
         {
           id: "recap",
@@ -348,15 +348,15 @@ export const irationPlan: StrategyPlanData = {
             "Owned-destination calls to action: 1 of 50 on TikTok, 2 of 50 on Instagram. All three point to the Shopify store.",
             "Email signups: zero. SMS keywords: zero. Fan club join links: zero.",
             "79 of 100 posts carry no call to action of any kind.",
-            "Ticket calls to action that do exist point at venue domains rather than iration.fm, which the band controls and which already carries a Meta pixel.",
+            "Ticket calls to action in social captions point at venue domains, even though the band already routes its own tour-page links through iration.fm, which carries a Meta pixel.",
             "The IRATORS VIP presale is referenced in two captions as a password gate without ever being linked.",
           ],
           counterEvidence: [
             "Link-in-bio traffic is invisible to this method and may be carrying more load than the post-level data shows.",
-            "The audience does punish undressed selling. The one hard-sell merch post is the worst-performing Instagram post in the corpus at 442 likes, 0.28 times the median.",
+            "The audience does punish selling with no framing around it. The one hard-sell merch post is the worst-performing Instagram post in the sample at 442 likes, 0.28 times the median.",
           ],
           examples: [
-            { platform: "instagram", id: "DbBwrHfSbD7", label: "Merch post", date: "July 2026", stat: "442 likes, 0.28x median", note: "The cost of an undressed hard sell. Worst post in the Instagram corpus." },
+            { platform: "instagram", id: "DbBwrHfSbD7", label: "Merch post", date: "July 2026", stat: "442 likes, 0.28x median", note: "The cost of a hard sell with no framing. Worst post in the Instagram sample." },
             { platform: "instagram", id: "DaG549JvTQU", label: "Announce with a personal story", date: "July 2026", stat: "9,104 likes, 197 comments", note: "Top Instagram post in the window, and it is an announcement. Framing is the variable, not the ask." },
           ],
           pivot: {
@@ -375,9 +375,9 @@ export const irationPlan: StrategyPlanData = {
           verdict: "confirmed",
           confidence: "High",
           summary:
-            "Thirty percent of the TikTok calendar goes to a format the rest of the genre has abandoned, while the video formats carry the account.",
+            "Just over half the TikTok calendar goes to two formats that never beat the account median, one of which the rest of the genre has abandoned.",
           evidence: [
-            "Static photo and slideshow posts make up 30 percent of TikTok output, running at 0.98 times the account median.",
+            "Static photo and slideshow posts make up 30 percent of TikTok output, running at 0.98 times the account median and never above it.",
             "Peer accounts run this format between zero and four percent. Rebelution, Dirty Heads, and Slightly Stoopid post effectively none.",
             "A further 22 percent goes to lyric and song clips, the weakest video format at 0.77 times the account median.",
             "Together those two formats consume 52 percent of the TikTok calendar and neither beats the median.",
@@ -432,10 +432,10 @@ export const irationPlan: StrategyPlanData = {
           verdict: "refuted",
           confidence: "High",
           summary:
-            "This was the first read of the data and it is wrong. It compared TikTok plays, an impression metric, against Instagram likes, an engagement metric. Corrected like for like, Instagram is the stronger channel and by a clear margin.",
+            "The apparent gap compared TikTok plays, an impression metric, against Instagram likes, an engagement metric. Instagram exposes no view count through this method, so no true like-for-like correction is available. Measured against each platform's own genre baseline, Instagram is the stronger relative performer.",
           evidence: [
             "The apparent 9x TikTok advantage compares plays to likes. It is not a valid comparison and should not be used.",
-            "Like for like, TikTok's per-follower like rate is 0.353 percent against Instagram's 0.500 percent. Instagram is 1.42 times better.",
+            "On likes per follower, the one metric both platforms report, TikTok runs 0.353 percent against Instagram's 0.500 percent.",
             "In absolute volume Instagram delivers 7.2 times more likes per post: 1,575 against 218.",
             "Against the peer set, Instagram ranks third of seven at 1.54 times the genre median while TikTok ranks sixth of seven at 0.66 times.",
           ],
@@ -459,7 +459,7 @@ export const irationPlan: StrategyPlanData = {
           verdict: "partial",
           confidence: "High on TikTok, refuted on Instagram",
           summary:
-            "A single May post accounts for nearly half of all TikTok plays in the corpus. Instagram carries no equivalent distortion, which is why the Instagram findings are the structurally sound ones.",
+            "A single May post accounts for nearly half of all TikTok plays in the corpus. Instagram carries no equivalent single-post distortion, though it has its own limits: no view metric, and eight of fifty posts excluded for missing likes.",
           evidence: [
             "One TikTok post carries 190,151 plays, which is 48.2 percent of every play across all 50 posts and 59.8 percent of all likes.",
             "The top five TikTok posts account for 61.2 percent of plays. The TikTok mean of 7,894 is 2.9 times the median of 2,764, so the mean should never be quoted.",
@@ -484,7 +484,7 @@ export const irationPlan: StrategyPlanData = {
         },
       ],
       footnote:
-        "Findings that failed refutation are published with the correction rather than removed. Instagram engagement is measured in likes because the platform does not expose view counts through this method.",
+        "Findings the data did not support are published with the correction rather than removed. Instagram engagement is measured in likes because the platform does not expose view counts through this method.",
     },
 
     {
@@ -500,7 +500,7 @@ export const irationPlan: StrategyPlanData = {
         {
           name: "Stick Figure / 6,988,882 Monthly Listeners",
           lane: "The genre ceiling",
-          proof: "251,200 TikTok followers, 660,432 Instagram. 13.6 percent TikTok plays per follower, 2.333 percent Instagram likes per follower, roughly four times the genre median.",
+          proof: "251,200 TikTok followers, 660,432 Instagram. 13.6 percent TikTok plays per follower, 2.333 percent Instagram likes per follower, roughly six times the genre median.",
           strength:
             "The only act in the genre with a signature visual format. Forty percent of output is scenery and travel footage with a lyric caption and no band members on camera. His highest-performing posts are personal rather than musical.",
           gap: "No membership product and no owned data asset. The reach lands in a Facebook Group and a presale that leaks codes to aggregator sites.",
@@ -543,9 +543,9 @@ export const irationPlan: StrategyPlanData = {
           proof: "26,400 TikTok followers, 208,761 Instagram, the smallest audience in the core set.",
           strength:
             "The only act running a free-list capture and a paid membership together. A discount traded for a phone number at the top, a $10 per month fan club at the bottom, on the same platform Iration uses.",
-          gap: "649 TikTok videos have bought 26,400 followers. Volume without format.",
+          gap: "The smallest audience in the core set, and the funnel is doing more work than the reach behind it.",
           implication:
-            "Pepper charges 43 percent more than Iration for the same fan club feature set with a third of the monthly listeners, and runs a free capture on top because the free list is what feeds the paid tier.",
+            "Pepper charges 43 percent more than Iration on the same platform, bundling venue early entry and an annual shirt, and still runs a free capture above it because the free list is what feeds the paid tier.",
         },
         {
           name: "The Movement / 1,265,129 Monthly Listeners",
@@ -572,12 +572,12 @@ export const irationPlan: StrategyPlanData = {
         {
           title: "Nobody has a signature format except one act",
           description:
-            "Seven of eight accounts post interchangeable live clips and city thank-yous. There is no recurring bit, series, or character anywhere in the genre. The format space is open.",
+            "Six of seven accounts post interchangeable live clips and city thank-yous. There is no recurring bit, series, or character anywhere in the genre. The format space is open.",
         },
         {
           title: "Nobody is mining archive",
           description:
-            "Where archive content has been tested in this genre it substantially outperforms current material. Iration has been touring since 2004 and is not using it.",
+            "Archive material is untested across this peer set in the window we measured, which is itself the point: twenty-two years of Iration footage is inventory nobody in the genre is drawing on.",
         },
       ],
       principles: [
@@ -598,7 +598,7 @@ export const irationPlan: StrategyPlanData = {
       intro:
         "Who is actually on the other end of these channels, and what that means for where the work should go.",
       thesis:
-        "This is a live-first audience in its thirties that never left Instagram and Facebook, discovered the genre between 2007 and 2012, and converts on access and scarcity rather than on discovery. Planning a channel strategy around reaching teenagers on TikTok would be planning against the evidence.",
+        "The evidence reads as a live-first audience in its thirties that never left Instagram and Facebook, most of it having found the genre between 2007 and 2012, converting on access and scarcity rather than on discovery. The age framing is an inference from genre cohort timing and is the first thing to check against native analytics. Planning a channel strategy around reaching teenagers on TikTok would be planning against the evidence.",
       metrosLabel: "Top Listening Markets",
       metros: [
         { name: "Los Angeles", tier: "primary" },
@@ -618,7 +618,7 @@ export const irationPlan: StrategyPlanData = {
           label: "Core",
           priority: "primary",
           profile:
-            "Found the band between 2007 and 2012, likely in a California college town or through a friend's playlist. Now in their early-to-mid thirties, often with kids, and buys tickets the day they go on sale. Uses the music for mood rather than for taste signalling.",
+            "Found the band between 2007 and 2012, likely in a California college town or through a friend's playlist. Most likely in their thirties now, and buys tickets the day they go on sale. Uses the music for mood rather than for taste signalling.",
           psychographics: [
             "Treats the catalog as personal history rather than as current listening",
             "Values the band's consistency over reinvention",
@@ -707,12 +707,12 @@ export const irationPlan: StrategyPlanData = {
           behavior: "Still resident on Facebook at a rate unusual for a music audience",
           platforms: ["Facebook", "Instagram"],
           implication:
-            "Instagram and Facebook follower counts sit close together at roughly 315,000 and 314,000. This is a highly addressable, high-value email and SMS audience.",
+            "Instagram and Facebook follower counts sit close together at roughly 315,000 and 314,000, which is unusual. Follower counts alone do not prove the audience is active there, so this is the second thing to check against native analytics, and it is the strongest available signal that an email and SMS list would be worth building.",
         },
       ],
       barriers: [
         {
-          barrier: "Ticket cost is at a recorded high as a stated barrier to attendance",
+          barrier: "Ticket cost is the most frequently stated barrier to attendance in this genre",
           response:
             "Lead with access and scarcity rather than discounting. Presale and early access are what this audience actually values.",
         },
@@ -741,12 +741,12 @@ export const irationPlan: StrategyPlanData = {
         {
           trigger: "A live moment they can see themselves in",
           implication:
-            "Fan-as-subject content outperforms band-as-subject content elsewhere in the genre and is currently limited to thank-you recaps here.",
+            "The Movement's single best post in the window was a fan brought on stage, which makes fan-as-subject worth testing. Iration currently runs it only as thank-you recaps.",
         },
         {
           trigger: "Anniversary and archive material",
           implication:
-            "Twenty-two years of touring history is unused inventory, and archive content outperforms current material where it has been tested in this genre.",
+            "Twenty-two years of touring history is unused inventory. Worth testing rather than assuming, which is why it is scoped as one of three sequential format tests.",
         },
         {
           trigger: "A nearby date surfaced at the right moment",
@@ -827,7 +827,7 @@ export const irationPlan: StrategyPlanData = {
               "Editing and packaging of footage the band and its videographers already capture",
               "Publishing and scheduling across Instagram and TikTok, including Reels and Stories",
               "Community management and comment response on managed channels within one business day",
-              "Caption and hook writing, which this corpus shows is carrying 100 percent of the narrative load",
+              "Caption and hook writing, which carried the narrative in 17 of the 20 videos sampled for speech",
               "Asset library and archive organization, so twenty-two years of footage becomes usable inventory",
             ],
           },
@@ -844,7 +844,7 @@ export const irationPlan: StrategyPlanData = {
           objective:
             "Turn the recap from a byproduct of touring into a repeatable production line, and find one signature format that is Iration's rather than the genre's.",
           strategy:
-            "The recap is the proven asset and the priority. Beyond it, three formats are worth testing on the evidence: scenery and location footage with a lyric caption, which carries the best-performing account in the genre at near-zero production cost; fan-as-subject content, which outperforms band-as-subject content elsewhere in the set; and archive, which is unused inventory across twenty-two years.",
+            "The recap is the proven asset and the priority. Beyond it, three formats are worth testing on the evidence: scenery and location footage with a lyric caption, which carries the best-performing account in the genre at near-zero production cost; fan-as-subject content, which produced the single best post in another act's window; and archive, which is unused inventory across twenty-two years.",
           tactics: [
             "Build and document a fixed recap template: capture list, edit structure, caption pattern, and a 24-hour turnaround",
             "Extend the recap to non-show months so the channel does not go quiet between tours",
@@ -856,9 +856,9 @@ export const irationPlan: StrategyPlanData = {
           examples: [
             "The Ventura County Fair recap reached 4.9 times the account median from a small room, which is the case for the format traveling beyond marquee shows",
             "A four-word personal Instagram post produced the highest comment rate in the corpus, which is the case for personality content",
-            "The single non-recap post that beat recaps in a matched window was a sound check bit that was never repeated",
+            "The single non-recap post that beat recaps in a matched window was a sound-check bit at 8,151 plays, three times the June median, and it was never repeated",
           ],
-          timeline: "Recap template in weeks 1 to 3. Format tests run sequentially from week 4.",
+          timeline: "Recap template in weeks 1 to 4. Format tests run sequentially from week 5.",
         },
         {
           label: "Workstream 03",
@@ -866,14 +866,14 @@ export const irationPlan: StrategyPlanData = {
           objective:
             "Give the reach somewhere to land. Move owned-destination calls to action from three posts in a hundred to a standing part of the highest-performing formats.",
           strategy:
-            "The ask rides inside content the audience already wants rather than replacing it. The corpus is unambiguous on this: an announcement framed with a personal story is the top Instagram post in the window at 9,104 likes, while an undressed merch post is the worst at 442. Routing runs through iration.fm, which the band already controls and which already carries a Meta pixel, so traffic is tracked and retargetable.",
+            "The ask rides inside content the audience already wants rather than replacing it. The sample is unambiguous on this: an announcement framed with a personal story is the top Instagram post in the window at 9,104 likes, while a merch post with no framing is the worst at 442. Routing runs through iration.fm, which the band already controls and which already carries a Meta pixel, so traffic is tracked and retargetable.",
           components: {
             heading: "What gets built",
             items: [
               "One owned-destination call to action attached to every recap post, routed through iration.fm",
               "An SMS keyword run in-caption on high-reach posts, the one tactic with demonstrated results elsewhere in this genre",
               "A free capture step placed in front of the paid fan club, so the paid tier has a funnel above it",
-              "Ticket links routed through iration.fm rather than venue domains, so the band keeps the attribution and the audience",
+              "Social ticket links routed through iration.fm, matching what the tour page already does, so social traffic lands in the same tracked layer",
               "A monthly read on how much capture social is actually driving, which nothing currently measures",
             ],
           },
@@ -891,7 +891,7 @@ export const irationPlan: StrategyPlanData = {
           objective:
             "Consolidate six vendors into one addressable view and run the lifecycle programs the existing Hive account was built for and is not being used for.",
           strategy:
-            "Iration already runs Hive, currently as a contest tool across 32 city-level tour sweepstakes. That is the hardest part of adoption already done. What is missing is segmentation, lifecycle flows, and a single profile that knows a person is simultaneously a sweepstakes entrant, a Shopify buyer, a paid fan club member, and a Denver resident. Crowd Control holds a direct working relationship with Hive's leadership, which shortens the path on integration questions.",
+            "Iration already runs Hive, currently as a contest tool across 31 city-level tour sweepstakes plus a listening-party contest. That is the hardest part of adoption already done. What is missing is segmentation, lifecycle flows, and a single profile that knows a person is simultaneously a sweepstakes entrant, a Shopify buyer, a paid fan club member, and a Denver resident. Crowd Control holds a direct working relationship with Hive's leadership, which shortens the path on integration questions.",
           components: {
             heading: "What the module covers",
             items: [
@@ -977,13 +977,13 @@ export const irationPlan: StrategyPlanData = {
           target: "20 to 30 percent",
           window: "By day 90",
           rationale:
-            "Lowest in the peer set, where comparable acts run between 12 and 48 percent. The one Iration post in this format placed third of twenty-three and was never repeated.",
+            "The lowest share in the peer set, where comparable acts run between 12 and 48 percent. Iration's one sound-check bit reached 8,151 plays, three times the June median, and was never repeated.",
           measurement: "Format coding of the published calendar",
         },
       ],
       measurementPrinciples: [
         "Report medians rather than means, because one TikTok post carries 48 percent of the corpus and the mean is not meaningful",
-        "Publish every TikTok figure with its outlier-excluded value alongside it",
+        "Report every TikTok figure with its outlier-excluded value alongside it from month one, since one post carries 48 percent of the sample used to set these baselines",
         "Compare on per-follower rates rather than raw counts, so peer comparison stays valid across accounts of different sizes",
         "Re-run the section 03 coding method monthly, so progress is measured against the same instrument that set the baseline",
         "Treat any claim the data cannot support as unproven and say so, including in the monthly report",
@@ -1007,7 +1007,7 @@ export const irationPlan: StrategyPlanData = {
         { index: 3, label: "W3", dates: "Sep 22" },
         { index: 4, label: "W4", dates: "Sep 29", highlight: true, note: "Recap template live" },
         { index: 5, label: "W5", dates: "Oct 6" },
-        { index: 6, label: "W6", dates: "Oct 13", highlight: true, note: "Palladium, Oct 15" },
+        { index: 6, label: "W6", dates: "Oct 13", highlight: true, note: "Four shows, Oct 14 to 18" },
         { index: 7, label: "W7", dates: "Oct 20" },
         { index: 8, label: "W8", dates: "Oct 27" },
         { index: 9, label: "W9", dates: "Nov 3" },
@@ -1049,7 +1049,7 @@ export const irationPlan: StrategyPlanData = {
             { weekIndex: 2, intensity: "medium" },
             { weekIndex: 3, intensity: "high" },
             { weekIndex: 4, intensity: "high", milestone: true, label: "Template shipped" },
-            { weekIndex: 6, intensity: "high", milestone: true, label: "Palladium run" },
+            { weekIndex: 6, intensity: "high", milestone: true, label: "October run" },
             { weekIndex: 7, intensity: "high" },
             { weekIndex: 8, intensity: "medium" },
             { weekIndex: 9, intensity: "medium" },
@@ -1114,6 +1114,7 @@ export const irationPlan: StrategyPlanData = {
             "Recap template documented and shipped, with a 24-hour turnaround standard",
             "First managed calendar live, with static photo share cut and the reallocation made explicit",
             "Owned-destination call to action attached to every recap post, routed through iration.fm",
+            "The October 14 to 18 run, four shows in five days, worked as the first event-saturation block",
             "Month 1 report against the baselines in section 07",
           ],
         },
@@ -1124,7 +1125,7 @@ export const irationPlan: StrategyPlanData = {
             "Format tests running sequentially, one at a time, so each gets a clean read",
             "Free capture step live in front of the paid fan club",
             "SMS keyword running in-caption on high-reach posts",
-            "Hollywood Palladium on October 15 run as the first full event-saturation test",
+            "Read-out on what the October block produced against the recap baseline",
           ],
         },
         {
@@ -1139,7 +1140,7 @@ export const irationPlan: StrategyPlanData = {
         },
       ],
       footnote:
-        "Dates assume a September 8, 2026 start and shift with the actual start date. The October 15 Hollywood Palladium show is the first major date inside the window and is treated as the first full test of the event-saturation model.",
+        "Dates assume a September 8, 2026 start and shift with the actual start date. Four shows fall inside the window across five days: Big Fresno Fair on October 14, Hollywood Palladium on October 15, Flagstaff on October 17, and Tucson on October 18. That cluster is the first full test of the event-saturation model.",
     },
 
     {
