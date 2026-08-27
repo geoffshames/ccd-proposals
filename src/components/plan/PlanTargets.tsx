@@ -137,13 +137,13 @@ export function PlanTargets({ section }: { section: TargetsSection }) {
           )}
 
         {section.disclaimer && (
-          <p className="mt-8 text-[12px] font-mono tracking-[0.12em] uppercase text-text-muted/70 leading-relaxed max-w-4xl">
+          <p className="mt-8 text-[12px] font-mono tracking-[0.12em] uppercase text-text-muted/70 leading-relaxed max-w-[80ch]">
             {section.disclaimer}
           </p>
         )}
 
         {section.footnote && (
-          <p className="mt-6 text-[12px] font-mono tracking-[0.15em] uppercase text-text-muted/70 leading-relaxed max-w-4xl">
+          <p className="mt-6 text-[12px] font-mono tracking-[0.15em] uppercase text-text-muted/70 leading-relaxed max-w-[80ch]">
             {section.footnote}
           </p>
         )}

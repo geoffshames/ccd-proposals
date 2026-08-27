@@ -166,7 +166,7 @@ export function PlanTimeline({ section }: { section: TimelineSection }) {
         )}
 
         {section.footnote && (
-          <p className="mt-10 text-[12px] font-mono tracking-[0.18em] uppercase text-text-muted/75 leading-relaxed max-w-3xl">
+          <p className="mt-10 text-[12px] font-mono tracking-[0.18em] uppercase text-text-muted/75 leading-relaxed max-w-[80ch]">
             {section.footnote}
           </p>
         )}

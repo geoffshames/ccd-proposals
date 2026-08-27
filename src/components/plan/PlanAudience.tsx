@@ -564,7 +564,7 @@ export function PlanAudience({ section }: { section: AudienceSection }) {
         )}
 
         {section.footnote && (
-          <p className="mt-8 text-[12px] font-mono tracking-[0.15em] uppercase text-text-muted/70 leading-relaxed max-w-3xl">
+          <p className="mt-8 text-[12px] font-mono tracking-[0.15em] uppercase text-text-muted/70 leading-relaxed max-w-[80ch]">
             {section.footnote}
           </p>
         )}

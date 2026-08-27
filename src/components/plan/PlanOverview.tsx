@@ -84,7 +84,7 @@ export function PlanOverview({ section }: { section: OverviewSection }) {
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
-            className="mt-16 text-[12px] font-mono tracking-[0.18em] uppercase text-text-muted/75 leading-relaxed max-w-3xl"
+            className="mt-16 text-[12px] font-mono tracking-[0.18em] uppercase text-text-muted/75 leading-relaxed max-w-[80ch]"
           >
             {section.footnote}
           </motion.p>

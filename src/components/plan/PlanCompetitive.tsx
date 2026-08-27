@@ -167,7 +167,7 @@ export function PlanCompetitive({ section }: { section: CompetitiveSection }) {
         )}
 
         {section.footnote && (
-          <p className="mt-12 text-[12px] font-mono tracking-[0.15em] uppercase text-text-muted/70 leading-relaxed max-w-4xl">
+          <p className="mt-12 text-[12px] font-mono tracking-[0.15em] uppercase text-text-muted/70 leading-relaxed max-w-[80ch]">
             {section.footnote}
           </p>
         )}
