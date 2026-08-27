@@ -67,7 +67,7 @@ function LineChart({ spec }: { spec: PlanChartSpec }) {
       <line x1={padL} x2={W - padR} y1={padT + ih} y2={padT + ih} stroke="rgba(255,255,255,0.18)" strokeWidth={1} />
       {labels.map((l, i) =>
         i % tickEvery === 0 || i === n - 1 ? (
-          <text key={i} x={xAt(i)} y={H - 10} textAnchor="middle" fontSize={9} fill={AXIS} fontFamily="var(--font-mono), monospace">
+          <text key={i} x={xAt(i)} y={H - 10} textAnchor={i === n - 1 ? "end" : "middle"} fontSize={9} fill={AXIS} fontFamily="var(--font-mono), monospace">
             {l}
           </text>
         ) : null
@@ -75,10 +75,11 @@ function LineChart({ spec }: { spec: PlanChartSpec }) {
       {spec.markers?.map((m, mi) => {
         const idx = labels.indexOf(m.x);
         if (idx < 0) return null;
+        const nearRight = xAt(idx) > padL + iw * 0.8;
         return (
           <g key={mi}>
             <line x1={xAt(idx)} x2={xAt(idx)} y1={padT} y2={padT + ih} stroke="rgba(253,55,55,0.35)" strokeWidth={1} strokeDasharray="3 4" />
-            <text x={xAt(idx) + 4} y={padT + 10 + mi * 11} fontSize={8.5} fill="rgba(253,55,55,0.85)" fontFamily="var(--font-mono), monospace" letterSpacing="0.08em">
+            <text x={nearRight ? xAt(idx) - 4 : xAt(idx) + 4} y={padT + 10 + mi * 11} textAnchor={nearRight ? "end" : "start"} fontSize={8.5} fill="rgba(253,55,55,0.85)" fontFamily="var(--font-mono), monospace" letterSpacing="0.08em">
               {m.label}
             </text>
           </g>
