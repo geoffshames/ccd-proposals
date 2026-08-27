@@ -17,8 +17,12 @@ import { lolaAmourPlan } from "./lola-amour";
 import { uberHitcPlan } from "./uber-hitc";
 import { bhaviViajeDeIdaPlan } from "./bhavi-viaje-de-ida";
 import { eightyTwoMajorSeptember } from "./82major-september";
+import { kiiikiiiPlan } from "./kiiikiii";
+import { kiiikiiiPlanKorean } from "./kiiikiii-ko";
 
 export const PLANS: Record<string, StrategyPlanData> = {
+  kiiikiii: kiiikiiiPlan,
+  "kiiikiii-ko": kiiikiiiPlanKorean,
   "bhavi-viaje-de-ida": bhaviViajeDeIdaPlan,
   "hitc-la-uber-26": uberHitcPlan,
   "lola-amour": lolaAmourPlan,

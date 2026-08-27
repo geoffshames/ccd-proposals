@@ -479,6 +479,7 @@ export type ContentAnalysisSection = {
   clientQuestion?: { attribution: string; question: string };
   methodology?: { label: string; value: string }[];
   corpusStats?: ContentCorpusStat[];
+  mixColumnLabel?: string;
   mixHeading?: string;
   mixIntro?: string;
   mixRows?: ContentMixRow[];
