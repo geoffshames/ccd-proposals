@@ -389,7 +389,7 @@ export function PlanContentAnalysis({ section }: { section: ContentAnalysisSecti
                       {section.mixColumnLabel ?? "Lola Amour today"}
                     </th>
                     <th className="px-5 py-3 text-[10px] font-mono tracking-[0.2em] uppercase text-text-muted/70 font-normal">
-                      2026 benchmark
+                      {section.benchmarkColumnLabel || "Benchmark"}
                     </th>
                     <th className="px-5 py-3 text-[10px] font-mono tracking-[0.2em] uppercase text-text-muted/70 font-normal">
                       Read

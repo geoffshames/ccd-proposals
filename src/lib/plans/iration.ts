@@ -258,7 +258,7 @@ export const irationPlan: StrategyPlanData = {
         { label: "Transcription", value: "70 videos submitted for transcription, 70 returned" },
         { label: "Testing", value: "Every finding checked against recency, seasonality, tour-window, outlier, and confounding explanations" },
         { label: "Benchmark", value: "Last 25 TikTok and last 12 Instagram posts each from Rebelution, Stick Figure, Slightly Stoopid, Dirty Heads, Pepper, and The Movement" },
-        { label: "Known limits", value: "Instagram view counts are not exposed by the API, so likes are the Instagram engagement proxy and no true like-for-like cross-platform comparison is available. Instagram durations were unavailable, so length analysis is TikTok only. Eight of fifty Instagram posts returned null likes and are excluded from likes math. The two windows are not matched: the TikTok window spans the whole tour, the Instagram window is almost entirely after it, so any cross-platform read carries that difference." },
+        { label: "Known limits", value: "Four, set out beneath this section" },
       ],
       corpusStats: [
         { label: "Posts Coded", value: "100", detail: "50 TikTok, 50 Instagram" },
@@ -512,7 +512,7 @@ export const irationPlan: StrategyPlanData = {
         },
       ],
       footnote:
-        "Findings the data did not support are published with the correction rather than removed. Instagram engagement is measured in likes because the platform does not expose view counts through this method.",
+        "Known limits. Instagram does not expose view counts, so likes are the Instagram proxy and no true like-for-like cross-platform comparison exists. Instagram durations were unavailable, so length analysis is TikTok only. Eight of fifty Instagram posts returned null likes and are excluded from likes math. The two windows are not matched: the TikTok window spans the whole tour, the Instagram window sits almost entirely after it. Findings the data did not support are published with the correction rather than removed.",
     },
 
     {
@@ -1078,9 +1078,9 @@ export const irationPlan: StrategyPlanData = {
         { index: 1, label: "W1", dates: "Sep 8" },
         { index: 2, label: "W2", dates: "Sep 15" },
         { index: 3, label: "W3", dates: "Sep 22" },
-        { index: 4, label: "W4", dates: "Sep 29", highlight: true, note: "Recap template live" },
+        { index: 4, label: "W4", dates: "Sep 29", highlight: true, note: "Template live" },
         { index: 5, label: "W5", dates: "Oct 6" },
-        { index: 6, label: "W6", dates: "Oct 13", highlight: true, note: "Four shows, Oct 14 to 18" },
+        { index: 6, label: "W6", dates: "Oct 13", highlight: true, note: "4 shows, Oct 14-18" },
         { index: 7, label: "W7", dates: "Oct 20" },
         { index: 8, label: "W8", dates: "Oct 27" },
         { index: 9, label: "W9", dates: "Nov 3" },

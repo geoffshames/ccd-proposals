@@ -503,6 +503,8 @@ export type ContentAnalysisSection = {
   methodology?: { label: string; value: string }[];
   corpusStats?: ContentCorpusStat[];
   mixColumnLabel?: string;
+  /** Header for the comparison column. Defaults to "Benchmark". */
+  benchmarkColumnLabel?: string;
   mixHeading?: string;
   mixIntro?: string;
   mixRows?: ContentMixRow[];
