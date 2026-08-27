@@ -1,7 +1,7 @@
 import type { StrategyPlanData } from "../plan-context";
 
 export const irationPlan: StrategyPlanData = {
-  accentColor: "#E8823C",
+  accentColor: "#fd3737",
   ogImage: "/images/iration/og-image.png",
   language: "en",
   noIndex: true,
@@ -1167,7 +1167,7 @@ export const irationPlan: StrategyPlanData = {
             { vertical: "Monthly reporting", amount: "$500" },
           ],
           feeBreakdown: {
-            retainer: "$6,000/mo",
+            retainer: "$6,000",
             retainerDetail: "Instagram and TikTok only. Band supplies raw footage.",
             mediaManagement: "15%",
             mediaManagementDetail: "Applied to any media spend Crowd Control administers. None is required at this tier.",
@@ -1189,7 +1189,7 @@ export const irationPlan: StrategyPlanData = {
             { vertical: "Community management", amount: "$750" },
           ],
           feeBreakdown: {
-            retainer: "$9,500/mo",
+            retainer: "$9,500",
             retainerDetail: "Four channels, on-site capture, and the fan capture layer. Capture travel billed at cost.",
             mediaManagement: "15%",
             mediaManagementDetail: "Applied to any media spend Crowd Control administers.",
@@ -1212,7 +1212,7 @@ export const irationPlan: StrategyPlanData = {
             { vertical: "Community management", amount: "$750" },
           ],
           feeBreakdown: {
-            retainer: "$14,000/mo",
+            retainer: "$14,000",
             retainerDetail: "Full owned-channel operation. Shoot-day production costs and travel billed at cost.",
             mediaManagement: "15%",
             mediaManagementDetail: "Applied to media spend Crowd Control administers. Paid social management is included in the retainer.",
