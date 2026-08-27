@@ -276,7 +276,7 @@ export function PlanContentAnalysis({ section }: { section: ContentAnalysisSecti
   const [open, setOpen] = useState<ContentFinding | null>(null);
 
   return (
-    <section id={`section-${section.number}`} className="px-6 md:px-12 lg:px-24 py-20 md:py-28">
+    <section id={`section-${section.number}`} className="px-6 md:px-12 lg:px-24 py-24 md:py-32">
       <div className="max-w-6xl mx-auto">
         <PlanSectionHeader
           number={section.number}

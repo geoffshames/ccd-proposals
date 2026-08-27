@@ -38,13 +38,13 @@ function SubBlock({ block, idx }: { block: VerticalSubBlock; idx: number }) {
           {block.objective && (
             <div>
               <div className="text-[10px] font-mono tracking-[0.22em] uppercase text-text-muted/60 mb-2">Objective</div>
-              <p className="text-text-primary/90 text-[15px] md:text-[16px] leading-relaxed">{block.objective}</p>
+              <p className="text-text-primary/90 text-[15px] md:text-[16px] leading-relaxed max-w-[68ch]">{block.objective}</p>
             </div>
           )}
           {block.strategy && (
             <div>
               <div className="text-[10px] font-mono tracking-[0.22em] uppercase text-text-muted/60 mb-2">Strategy</div>
-              <p className="text-text-primary/90 text-[15px] md:text-[16px] leading-relaxed">{block.strategy}</p>
+              <p className="text-text-primary/90 text-[15px] md:text-[16px] leading-relaxed max-w-[68ch]">{block.strategy}</p>
             </div>
           )}
           {block.components && (
@@ -200,7 +200,7 @@ export function PlanVertical({ section }: { section: VerticalSection }) {
         </div>
 
         {section.footnote && (
-          <p className="mt-16 text-[12px] font-mono tracking-[0.18em] uppercase text-text-muted/60 leading-relaxed max-w-3xl">
+          <p className="mt-16 text-[12px] font-mono tracking-[0.18em] uppercase text-text-muted/75 leading-relaxed max-w-3xl">
             {section.footnote}
           </p>
         )}

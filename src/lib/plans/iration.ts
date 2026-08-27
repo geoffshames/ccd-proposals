@@ -32,30 +32,53 @@ export const irationPlan: StrategyPlanData = {
       subtitle:
         "The output is already there. What is missing is a format discipline and a place for the attention to land.",
       body: [
-        "Iration is twenty-two years in, independent, self-released through Three Prong Records, and coming off a fourteen-track album and a headline run across thirty-four cities. The band posts constantly: 813 videos on TikTok, 5,107 posts on Instagram, roughly twenty-five Instagram posts and twelve TikToks in the last thirty days. Effort is not the constraint.",
-        "We pulled the last fifty posts from each platform and coded every one by format, timing, length, and call to action. Two things came out of it. The formats that work are a small and identifiable subset of what gets posted, and almost nothing that gets posted asks the audience for anything. Three posts out of a hundred point to a destination Iration owns. Zero carry an email signup, an SMS keyword, or a link to join the fan club.",
-        "That second number is the expensive one, because the infrastructure is already paid for. Iration runs Hive for tour sweepstakes, a paid membership on The Chorus, a Shopify store, ToneDen smart links, Constant Contact for press, and a Discord. Six vendors are collecting fan data and the content calendar feeds none of them.",
-        "This proposal covers social media management only. Instagram and TikTok as the core, short-form video as the medium, and a fan-capture layer wired into the formats that already earn reach. Email and SMS on Hive is scoped and priced as a separate module so it can be approved on its own timing.",
+        "Iration is twenty-two years in, independent, and self-released through Three Prong Records. The band posts constantly. Effort is not the constraint.",
+        "We pulled the last fifty posts from each platform and coded every one by format, timing, length, and call to action. Two things came out of it: the formats that work are a small and identifiable subset of what gets posted, and almost nothing that gets posted asks the audience for anything.",
+        "The second one is the expensive one, because the infrastructure is already paid for. Six vendors are collecting fan data and the content calendar feeds none of them.",
+      ],
+      charts: [
+        {
+          kind: "hbars",
+          title: "Where The Last 100 Posts Point",
+          subtitle: "Calls to action across the last 50 TikTok and 50 Instagram posts",
+          unit: "posts",
+          yMax: 100,
+          series: [
+            {
+              name: "Posts",
+              points: [
+                { x: "No call to action at all", y: 79 },
+                { x: "Ticket or show link", y: 18 },
+                { x: "A destination Iration owns", y: 3 },
+                { x: "Email signup", y: 0 },
+                { x: "SMS keyword", y: 0 },
+                { x: "Fan club join link", y: 0 },
+              ],
+            },
+          ],
+          note: "The three owned-destination posts all point to the Shopify store. Nothing on the calendar feeds the email, SMS, or membership layer.",
+          source: "Corpus coded August 27, 2026",
+        },
       ],
       supports: {
         heading: "What This Engagement Covers",
         items: [
-          "Instagram and TikTok channel management, calendar, packaging, and publishing",
-          "Short-form video editing and format development from footage the band already captures",
-          "Community management and comment response on managed channels",
+          "Instagram and TikTok channel management, calendar, and publishing",
+          "Short-form editing and format development from footage the band already shoots",
+          "Community management and comment response, within one business day",
           "A fan-capture layer built into the formats that already perform",
-          "Monthly performance reporting against the baselines established in this document",
+          "Monthly reporting against the baselines set in this document",
           "Optional email and SMS on the existing Hive account, priced separately",
         ],
       },
       goals: {
         heading: "What The First 90 Days Establish",
         items: [
-          "A repeatable production line for the recap format, so it survives the end of a tour cycle",
-          "A tested replacement for the 30 percent of the TikTok calendar currently spent on static photo posts",
-          "A measured baseline for how much owned-audience capture social can actually drive",
-          "A consolidated view of what the six existing fan-data vendors are each holding",
-          "Whether TikTok can be moved off the genre floor, answered with data rather than assumption",
+          "A repeatable recap production line that survives the end of a tour cycle",
+          "A tested replacement for the third of the TikTok calendar spent on static photos",
+          "A measured baseline for how much audience capture social can actually drive",
+          "A consolidated view of what the six fan-data vendors are each holding",
+          "Whether TikTok can be moved off the genre floor, answered with data",
         ],
       },
       footnote:
@@ -128,6 +151,8 @@ export const irationPlan: StrategyPlanData = {
         { label: "TikTok", value: "61,700", note: "@iration, 813 videos" },
         { label: "Bandsintown", value: "523,000", note: "Fourth in the peer set, ahead of Stick Figure" },
         { label: "Top Listening City", value: "Los Angeles", note: "51,924 listeners, followed by San Diego at 34,065" },
+        { label: "Follower-To-Listener", value: "30.3%", note: "Ahead of Stick Figure, Dirty Heads, and Slightly Stoopid" },
+        { label: "Posts Per Month", value: "37", note: "Roughly 25 on Instagram, 12 on TikTok" },
       ],
       strengths: [
         {
@@ -240,7 +265,9 @@ export const irationPlan: StrategyPlanData = {
         { label: "Instagram Median", value: "1,575", detail: "likes across the 50-post corpus, 0.50 percent" },
         { label: "Owned-Destination CTAs", value: "3 of 100", detail: "zero email, SMS, or fan club" },
         { label: "Posts With No CTA", value: "79 of 100", detail: "across both platforms" },
-        { label: "Videos With Spoken Audio", value: "3 of 20 sampled", detail: "captions carry the narrative" },
+        { label: "Videos With Spoken Audio", value: "3 of 20", detail: "captions carry the narrative" },
+        { label: "Videos Transcribed", value: "70", detail: "of 70 submitted" },
+        { label: "Peer Accounts Benchmarked", value: "6", detail: "same window, same method" },
       ],
       mixHeading: "Format Mix Against The Peer Set",
       mixIntro:
@@ -572,12 +599,7 @@ export const irationPlan: StrategyPlanData = {
         {
           title: "Nobody has a signature format except one act",
           description:
-            "Six of seven accounts post interchangeable live clips and city thank-yous. There is no recurring bit, series, or character anywhere in the genre. The format space is open.",
-        },
-        {
-          title: "Nobody is mining archive",
-          description:
-            "Archive material is untested across this peer set in the window we measured, which is itself the point: twenty-two years of Iration footage is inventory nobody in the genre is drawing on.",
+            "Six of seven accounts post interchangeable live clips and city thank-yous. No recurring bit, series, or character anywhere in the genre, and nobody is drawing on archive. Iration has twenty-two years of it.",
         },
       ],
       principles: [
@@ -596,9 +618,9 @@ export const irationPlan: StrategyPlanData = {
       navLabel: "Audience",
       title: "Audience",
       intro:
-        "Who is actually on the other end of these channels, and what that means for where the work should go.",
+        "Who is actually on the other end of these channels, and what that means for where the work should go. The age framing is an inference from genre cohort timing, and it is the first thing to check against native analytics.",
       thesis:
-        "The evidence reads as a live-first audience in its thirties that never left Instagram and Facebook, most of it having found the genre between 2007 and 2012, converting on access and scarcity rather than on discovery. The age framing is an inference from genre cohort timing and is the first thing to check against native analytics. Planning a channel strategy around reaching teenagers on TikTok would be planning against the evidence.",
+        "A live-first audience in its thirties that never left Instagram and Facebook, and converts on access rather than discovery. Planning this around reaching teenagers on TikTok would be planning against the evidence.",
       metrosLabel: "Top Listening Markets",
       metros: [
         { name: "Los Angeles", tier: "primary" },
@@ -620,9 +642,14 @@ export const irationPlan: StrategyPlanData = {
           profile:
             "Found the band between 2007 and 2012, likely in a California college town or through a friend's playlist. Most likely in their thirties now, and buys tickets the day they go on sale. Uses the music for mood rather than for taste signalling.",
           psychographics: [
-            "Treats the catalog as personal history rather than as current listening",
+            "Treats the catalog as personal history rather than current listening",
             "Values the band's consistency over reinvention",
-            "Comfortable spending on experience, less interested in merch volume",
+            "Spends on experience, less on merch volume",
+          ],
+          motivations: [
+            "Being first to a ticket, ahead of the general public",
+            "Proof the band still knows who showed up early",
+            "A night that reliably delivers what they came for",
           ],
           platforms: [
             { name: "Instagram", role: "Primary daily surface. Where they see and engage with the band." },
@@ -644,6 +671,11 @@ export const irationPlan: StrategyPlanData = {
             "Plans travel around one or two events a year",
             "Discovers new acts almost entirely through live exposure",
           ],
+          motivations: [
+            "The weekend as a whole, not any one headliner",
+            "Being part of a scene rather than a fanbase",
+            "A set worth telling people about afterwards",
+          ],
           platforms: [
             { name: "Instagram", role: "Follows festivals and photographers more than bands. Reachable through tagged and reposted content." },
             { name: "TikTok", role: "Present but passive for this genre. Not where they discover reggae-rock." },
@@ -662,6 +694,11 @@ export const irationPlan: StrategyPlanData = {
             "Passive listening, largely seasonal and weather-linked",
             "No relationship with the band as an entity",
             "Would attend a show if they knew about one",
+          ],
+          motivations: [
+            "A song they already like, attached to something happening nearby",
+            "Low-friction discovery that does not feel like marketing",
+            "A reason to move from a playlist to a room",
           ],
           platforms: [
             { name: "Spotify", role: "Where the relationship currently begins and ends." },
@@ -819,7 +856,7 @@ export const irationPlan: StrategyPlanData = {
           objective:
             "Run Instagram and TikTok as managed channels with a planned calendar, consistent packaging, and same-week responsiveness.",
           strategy:
-            "Instagram leads because it is where the account already beats its genre at 1.54 times the median. TikTok runs in parallel with a reallocated calendar rather than a higher volume. Cadence holds at roughly twenty-five Instagram posts and twelve to fifteen TikToks per month, matching what the band already sustains.",
+            "Instagram leads because it is where the account already beats its genre. TikTok runs in parallel on a reallocated calendar rather than a higher volume. Cadence holds at what the band already sustains.",
           components: {
             heading: "What we run",
             items: [
@@ -844,7 +881,7 @@ export const irationPlan: StrategyPlanData = {
           objective:
             "Turn the recap from a byproduct of touring into a repeatable production line, and find one signature format that is Iration's rather than the genre's.",
           strategy:
-            "The recap is the proven asset and the priority. Beyond it, three formats are worth testing on the evidence: scenery and location footage with a lyric caption, which carries the best-performing account in the genre at near-zero production cost; fan-as-subject content, which produced the single best post in another act's window; and archive, which is unused inventory across twenty-two years.",
+            "The recap is the proven asset and the priority. Three further formats are worth testing, each cheap to produce and each already working somewhere in the peer set.",
           tactics: [
             "Build and document a fixed recap template: capture list, edit structure, caption pattern, and a 24-hour turnaround",
             "Extend the recap to non-show months so the channel does not go quiet between tours",
@@ -866,7 +903,7 @@ export const irationPlan: StrategyPlanData = {
           objective:
             "Give the reach somewhere to land. Move owned-destination calls to action from three posts in a hundred to a standing part of the highest-performing formats.",
           strategy:
-            "The ask rides inside content the audience already wants rather than replacing it. The sample is unambiguous on this: an announcement framed with a personal story is the top Instagram post in the window at 9,104 likes, while a merch post with no framing is the worst at 442. Routing runs through iration.fm, which the band already controls and which already carries a Meta pixel, so traffic is tracked and retargetable.",
+            "The ask rides inside content the audience already wants rather than replacing it. An announcement framed with a personal story is the top Instagram post in the window at 9,104 likes. A merch post with no framing is the worst at 442. Routing runs through iration.fm, which the band already controls, so social traffic is tracked and retargetable.",
           components: {
             heading: "What gets built",
             items: [
@@ -891,7 +928,7 @@ export const irationPlan: StrategyPlanData = {
           objective:
             "Consolidate six vendors into one addressable view and run the lifecycle programs the existing Hive account was built for and is not being used for.",
           strategy:
-            "Iration already runs Hive, currently as a contest tool across 31 city-level tour sweepstakes plus a listening-party contest. That is the hardest part of adoption already done. What is missing is segmentation, lifecycle flows, and a single profile that knows a person is simultaneously a sweepstakes entrant, a Shopify buyer, a paid fan club member, and a Denver resident. Crowd Control holds a direct working relationship with Hive's leadership, which shortens the path on integration questions.",
+            "Iration already runs Hive, currently as a contest tool across 31 city-level tour sweepstakes plus a listening-party contest, so the hardest part of adoption is done. What is missing is segmentation, lifecycle flows, and a single profile that knows one person is a sweepstakes entrant, a Shopify buyer, a paid member, and a Denver resident at once. Crowd Control works directly with Hive's leadership, which shortens the integration path.",
           components: {
             heading: "What the module covers",
             items: [

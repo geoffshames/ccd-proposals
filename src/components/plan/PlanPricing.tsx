@@ -151,7 +151,7 @@ export function PlanPricing({ section }: { section: PricingSection }) {
         )}
 
         {section.footnote && (
-          <p className="mt-16 text-[12px] font-mono tracking-[0.18em] uppercase text-text-muted/60 leading-relaxed max-w-3xl">
+          <p className="mt-16 text-[12px] font-mono tracking-[0.18em] uppercase text-text-muted/75 leading-relaxed max-w-3xl">
             {section.footnote}
           </p>
         )}

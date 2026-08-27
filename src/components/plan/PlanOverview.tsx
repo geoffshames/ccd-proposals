@@ -10,7 +10,7 @@ export function PlanOverview({ section }: { section: OverviewSection }) {
       <div className="max-w-6xl mx-auto">
         <PlanSectionHeader number={section.number} title={section.title} subtitle={section.subtitle} />
 
-        <div className="space-y-6 max-w-4xl">
+        <div className="space-y-6 max-w-[68ch]">
           {section.body.map((p, i) => (
             <motion.p
               key={i}
@@ -84,7 +84,7 @@ export function PlanOverview({ section }: { section: OverviewSection }) {
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
-            className="mt-16 text-[12px] font-mono tracking-[0.18em] uppercase text-text-muted/60 leading-relaxed max-w-3xl"
+            className="mt-16 text-[12px] font-mono tracking-[0.18em] uppercase text-text-muted/75 leading-relaxed max-w-3xl"
           >
             {section.footnote}
           </motion.p>
