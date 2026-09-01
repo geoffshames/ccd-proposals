@@ -389,14 +389,14 @@
 }
 
 .planStage {
-  position: sticky;
-  top: 8vh;
-  height: fit-content;
+  position: relative;
   min-width: 0;
 }
 
 .editSuite {
   margin-top: 46px;
+  position: sticky;
+  top: max(24px, calc(100dvh - 520px));
   background: var(--obsidian-raised);
   border: 1px solid var(--rule);
   border-top: 2px solid var(--red);
@@ -1181,6 +1181,7 @@
   }
 
   .editSuite {
+    position: static;
     padding: 16px;
   }
 
