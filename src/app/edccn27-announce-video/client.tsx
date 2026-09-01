@@ -104,9 +104,9 @@ const scopeFacts = [
 ] as const;
 
 const ratios = [
-  { label: "16:9 planning frame", box: "100%", height: "56.25%" },
-  { label: "9:16 planning frame", box: "31.64%", height: "100%" },
-  { label: "1:1 planning frame", box: "70.7%", height: "70.7%" },
+  { label: "16:9 planning frame", ratio: "r169" },
+  { label: "9:16 planning frame", ratio: "r916" },
+  { label: "1:1 planning frame", ratio: "r11" },
 ] as const;
 
 const dockFacts = ["$6,500 fixed", "September 25 delivery", "One master, three sizes"] as const;
@@ -315,9 +315,8 @@ function Storyboard() {
               {ratios.map((ratio) => (
                 <div key={ratio.label} className={styles.framingCell}>
                   <div className={styles.framingFrame}>
+                    <i className={`${styles.framingOutline} ${styles[ratio.ratio]}`} />
                     <span className={styles.framingRatio}>{ratio.label}</span>
-                    <i className={styles.framingOutline} style={{ width: ratio.box, paddingBottom: ratio.height }} />
-                    <i className={styles.framingCenter} />
                   </div>
                 </div>
               ))}

@@ -448,6 +448,8 @@
 .framingCell {
   display: grid;
   justify-items: center;
+  flex: 0 1 auto;
+  min-width: 0;
 }
 
 .framingFrame {
@@ -469,11 +471,14 @@
 .framingOutline {
   display: block;
   max-width: 118px;
+  width: 100%;
   border: 1px solid var(--hairline);
   background: rgb(253 55 55 / 0.04);
+  position: relative;
 }
 
-.framingCenter {
+.framingOutline::after {
+  content: "";
   position: absolute;
   top: 50%;
   left: 50%;
@@ -481,6 +486,20 @@
   height: 1px;
   background: var(--red);
   transform: translate(-50%, -50%);
+}
+
+.r169 {
+  aspect-ratio: 16 / 9;
+}
+
+.r916 {
+  aspect-ratio: 9 / 16;
+  max-width: 46px;
+}
+
+.r11 {
+  aspect-ratio: 1 / 1;
+  max-width: 82px;
 }
 
 .framingNote {
@@ -1313,6 +1332,56 @@
 
   .progressFill {
     transform: scale(1) !important;
+  }
+}
+
+/* Narrow viewports: the three planning frames reflow from a row into a
+   compact grid so every frame and label stays inside the card. */
+@media (max-width: 640px) {
+  .framingBoard {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    align-items: end;
+    gap: 12px;
+  }
+
+  .framingCell {
+    justify-items: center;
+  }
+
+  .framingFrame {
+    width: 100%;
+    max-width: 96px;
+  }
+
+  .framingRatio {
+    font-size: 0.5rem;
+    letter-spacing: 0.06em;
+  }
+}
+
+@media (max-width: 380px) {
+  .framingBoard {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 14px;
+  }
+
+  .framingCell {
+    display: grid;
+    grid-template-columns: 64px 1fr;
+    align-items: center;
+    column-gap: 12px;
+    width: 100%;
+  }
+
+  .framingFrame {
+    max-width: none;
+  }
+
+  .r916,
+  .r11 {
+    max-width: 64px;
   }
 }
 
