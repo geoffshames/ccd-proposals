@@ -17,37 +17,37 @@ const rate = 100;
 const pricing = [
   {
     service: "Creative direction and kickoff",
-    hours: 3,
+    hours: 5,
     detail: "Creative alignment, asset review and technical kickoff.",
   },
   {
     service: "Editorial development and first cut",
-    hours: 12,
+    hours: 20,
     detail: "Narrative structure, editorial build and first-cut delivery.",
   },
   {
-    service: "Motion graphics and finishing",
-    hours: 8,
+    service: "Motion design and finishing",
+    hours: 18,
     detail: "Motion design, audio balance, polish and finishing.",
   },
   {
     service: "Format adaptation for three sizes",
-    hours: 4,
+    hours: 7,
     detail: "One approved master adapted across three client-specified sizes.",
   },
   {
     service: "Two revision rounds",
-    hours: 6,
+    hours: 8,
     detail: "Two rounds of consolidated, timecoded client feedback.",
   },
   {
     service: "Final QC, exports and delivery",
-    hours: 2,
+    hours: 3,
     detail: "Quality control and final delivery exports.",
   },
   {
     service: "Project management and client communication",
-    hours: 3,
+    hours: 4,
     detail: "Production coordination and client communication throughout.",
   },
 ] as const;
@@ -97,7 +97,7 @@ const schedule = [
 
 const totalHours = pricing.reduce((sum, item) => sum + item.hours, 0);
 const totalPrice = totalHours * rate;
-const formattedTotalPrice = totalPrice === 3800 ? "$3,800" : `$${totalPrice.toLocaleString("en-US")}`;
+const formattedTotalPrice = `$${totalPrice.toLocaleString("en-US")}`;
 const approvalHref =
   "mailto:geoff@crowdcontroldigital.com?subject=EDC%20China%202027%20Announce%20Video%20Approval";
 
