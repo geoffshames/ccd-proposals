@@ -14,6 +14,7 @@ export const irationPlan: StrategyPlanData = {
     partnership: "Iration × Crowd Control Digital",
     prepared: "Geoff Shames / Co-Founder, Crowd Control Digital",
     date: "August 2026",
+    backgroundImage: "/images/iration/hero.jpg",
     logo: "/brand/CC-LOGO-2024-WHITE.png",
   },
 
