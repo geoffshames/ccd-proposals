@@ -106,7 +106,7 @@ const totalHours = pricing.reduce((sum, item) => sum + item.hours, 0);
 const totalPrice = totalHours * rate;
 const formattedTotalPrice = `$${totalPrice.toLocaleString("en-US")}`;
 const approvalHref =
-  "mailto:geoff@crowdcontroldigital.com?subject=EDC%20China%202027%20Announce%20Video%20Approval";
+  "mailto:hello@crowdcontroldigital.com?subject=EDC%20China%202027%20Announce%20Video%20Approval";
 
 const ease = [0.16, 1, 0.3, 1] as const;
 
