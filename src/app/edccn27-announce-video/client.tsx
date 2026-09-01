@@ -95,6 +95,13 @@ const schedule = [
   { date: "Sep 25", item: "Final delivery" },
 ] as const;
 
+const specs = [
+  { index: "01", label: "Runtime", value: "60 seconds" },
+  { index: "02", label: "Outputs", value: "Three client-specified sizes" },
+  { index: "03", label: "Review", value: "Two consolidated rounds" },
+  { index: "04", label: "Delivery", value: "September 25" },
+] as const;
+
 const totalHours = pricing.reduce((sum, item) => sum + item.hours, 0);
 const totalPrice = totalHours * rate;
 const formattedTotalPrice = `$${totalPrice.toLocaleString("en-US")}`;
@@ -117,13 +124,22 @@ function Reveal({
   return (
     <motion.div
       className={className}
-      initial={reduce ? false : { opacity: 0, y: 34 }}
+      initial={reduce ? false : { opacity: 0, y: 22 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, amount: 0.2 }}
-      transition={{ duration: 0.75, delay, ease }}
+      transition={{ duration: 0.7, delay, ease }}
     >
       {children}
     </motion.div>
+  );
+}
+
+function SectionKicker({ index, label }: { index: string; label: string }) {
+  return (
+    <p className={styles.sectionKicker}>
+      <span>{index}</span>
+      {label}
+    </p>
   );
 }
 
@@ -135,7 +151,6 @@ function ProgressRail() {
     damping: 28,
     restDelta: 0.001,
   });
-  const percentage = useTransform(progress, [0, 1], [0, 100]);
 
   return (
     <div className={styles.progressRail} aria-hidden="true">
@@ -146,74 +161,65 @@ function ProgressRail() {
           style={{ scaleY: reduce ? 1 : progress }}
         />
       </div>
-      <motion.output>{percentage}</motion.output>
     </div>
   );
 }
 
 function Hero() {
   const reduce = useReducedMotion();
-  const enter = (delay: number, x = 0, y = 24) => ({
-    initial: reduce ? false : { opacity: 0, x, y },
-    animate: { opacity: 1, x: 0, y: 0 },
+  const enter = (delay: number, y = 20) => ({
+    initial: reduce ? false : { opacity: 0, y },
+    animate: { opacity: 1, y: 0 },
     transition: { duration: 0.8, delay, ease },
   });
 
   return (
     <section className={styles.hero} aria-labelledby="proposal-title">
       <div className={styles.heroCopy}>
-        <motion.p className={styles.kicker} {...enter(0.05, -18, 0)}>
+        <motion.p className={styles.kicker} {...enter(0.05)}>
           Prepared for Insomniac
         </motion.p>
         <h1 id="proposal-title" className={styles.heroTitle}>
           <span className={styles.titleClip}>
-            <motion.span {...enter(0.12, 0, 58)}>EDC China 2027</motion.span>
+            <motion.span {...enter(0.14, 56)}>EDC China 2027</motion.span>
           </span>
           <span className={styles.titleClip}>
-            <motion.span className={styles.titleAccent} {...enter(0.22, 0, 58)}>
+            <motion.span className={styles.titleAccent} {...enter(0.26, 56)}>
               60-Second Announce Video
             </motion.span>
           </span>
         </h1>
-        <motion.p className={styles.intro} {...enter(0.38, 0, 26)}>
+        <motion.p className={styles.intro} {...enter(0.42)}>
           Crowd Control will create a bespoke, motion-led 60-second announce video for EDC China 2027, delivered in three client-specified sizes with two revision rounds.
         </motion.p>
       </div>
 
-      <div className={styles.kineticHero} aria-label="60-second video delivered in three sizes by September 25">
-        <motion.div className={styles.runtimeBlock} {...enter(0.28, 42, 0)}>
-          <span>Runtime</span>
-          <strong>60</strong>
-          <b>Seconds</b>
-        </motion.div>
-        <motion.div className={styles.deliveryBlock} {...enter(0.48, 0, 34)}>
-          <span>Final delivery</span>
-          <strong>September 25</strong>
-        </motion.div>
-        <div className={styles.sizeSequence}>
-          {["One master", "Output 01", "Output 02", "Output 03"].map((label, index) => (
-            <motion.span
-              key={label}
-              className={index === 0 ? styles.masterChip : styles.outputChip}
-              initial={reduce ? false : { opacity: 0, transform: "translateX(-28px) scale(0.9)" }}
-              animate={{ opacity: 1, transform: "translateX(0px) scale(1)" }}
-              transition={{ duration: 0.65, delay: 0.54 + index * 0.1, ease }}
+      <motion.div
+        className={styles.specPanel}
+        role="group"
+        aria-label="Production spec: 60-second video delivered in three sizes by September 25 with two review rounds"
+        initial={reduce ? false : { opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.8, delay: 0.3, ease }}
+      >
+        <p className={styles.specPanelLabel}>Production spec</p>
+        <dl>
+          {specs.map((spec, index) => (
+            <motion.div
+              key={spec.index}
+              className={styles.specRow}
+              initial={reduce ? false : { opacity: 0, y: 14 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.46 + index * 0.09, ease }}
             >
-              {label}
-            </motion.span>
+              <span className={styles.specIndex}>{spec.index}</span>
+              <dt>{spec.label}</dt>
+              <dd>{spec.value}</dd>
+            </motion.div>
           ))}
-        </div>
-        <motion.p className={styles.kineticCaption} {...enter(0.9, 0, 14)}>
-          Three client-specified sizes. Exact sizes confirmed at kickoff.
-        </motion.p>
-      </div>
-
-      <motion.dl className={styles.heroFacts} {...enter(0.72, 0, 20)}>
-        <div><dt>Runtime</dt><dd>60 seconds</dd></div>
-        <div><dt>Outputs</dt><dd>Three sizes</dd></div>
-        <div><dt>Revisions</dt><dd>Two rounds</dd></div>
-        <div><dt>Delivery</dt><dd>September 25</dd></div>
-      </motion.dl>
+        </dl>
+        <p className={styles.specNote}>Exact sizes confirmed at kickoff.</p>
+      </motion.div>
     </section>
   );
 }
@@ -226,19 +232,19 @@ function ApproachStory() {
   return (
     <section className={styles.approachSection} aria-labelledby="approach-title">
       <div className={styles.approachStage}>
-        <p className={styles.stageIntro}>One continuous production path</p>
-        <h2 id="approach-title">Production approach</h2>
+        <SectionKicker index="01" label="Production approach" />
+        <h2 id="approach-title">One continuous production path</h2>
         <div className={styles.stageWindow} aria-hidden="true">
           <AnimatePresence mode="wait" initial={false}>
             <motion.div
               key={current.name}
-              initial={reduce ? false : { opacity: 0, y: 24 }}
+              initial={reduce ? false : { opacity: 0, y: 18 }}
               animate={{ opacity: 1, y: 0 }}
-              exit={reduce ? { opacity: 1 } : { opacity: 0, y: -20 }}
-              transition={{ duration: 0.38, ease }}
+              exit={reduce ? { opacity: 1 } : { opacity: 0, y: -14 }}
+              transition={{ duration: 0.36, ease }}
             >
               <span>{current.name}</span>
-              <strong>{current.action}</strong>
+              <strong>{String(active + 1).padStart(2, "0")}</strong>
             </motion.div>
           </AnimatePresence>
           <div className={styles.phaseMeter}>
@@ -247,7 +253,7 @@ function ApproachStory() {
               transition={reduce ? { duration: 0 } : { type: "spring", stiffness: 140, damping: 25 }}
             />
           </div>
-          <small>{active + 1} of {phases.length}</small>
+          <small>Phase {active + 1} of {phases.length}</small>
         </div>
       </div>
 
@@ -258,11 +264,14 @@ function ApproachStory() {
             className={active === index ? styles.activePhase : undefined}
             onViewportEnter={() => setActive(index)}
             viewport={{ amount: 0.55 }}
-            initial={reduce ? false : { opacity: 0.45, x: 38 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            initial={reduce ? false : { opacity: 0.4 }}
+            whileInView={{ opacity: 1 }}
             transition={{ duration: 0.5, ease }}
           >
-            <span>{phase.name}</span>
+            <span className={styles.phaseLabel}>
+              <i>{String(index + 1).padStart(2, "0")}</i>
+              {phase.name}
+            </span>
             <h3>{phase.action}</h3>
             <p>{phase.description}</p>
           </motion.li>
@@ -278,6 +287,7 @@ function Deliverables() {
   return (
     <section className={styles.deliverablesSection} aria-labelledby="deliverables-title">
       <Reveal className={styles.deliverablesCopy}>
+        <SectionKicker index="02" label="Deliverables" />
         <h2 id="deliverables-title">One idea, built to travel.</h2>
         <p>One 60-second master creative becomes three client-specified outputs after the direction is approved.</p>
         <a
@@ -291,33 +301,27 @@ function Deliverables() {
       </Reveal>
 
       <div className={styles.outputComposition} aria-label="One 60-second master adapted to three client-specified sizes">
-        <motion.div
-          className={styles.masterOutput}
-          initial={reduce ? false : { opacity: 0, transform: "translateX(-40px) scale(0.92)" }}
-          whileInView={{ opacity: 1, transform: "translateX(0px) scale(1)" }}
-          viewport={{ once: true, amount: 0.45 }}
-          transition={{ duration: 0.7, ease }}
-        >
+        <Reveal className={styles.masterOutput}>
           <span>Master creative</span>
           <strong>60 seconds</strong>
           <small>Approved direction</small>
-        </motion.div>
+        </Reveal>
         <div className={styles.outputConnector} aria-hidden="true">
           <motion.i
             initial={reduce ? false : { transform: "scaleX(0)" }}
             whileInView={{ transform: "scaleX(1)" }}
             viewport={{ once: true, amount: 0.5 }}
-            transition={{ duration: 0.7, delay: 0.35, ease }}
+            transition={{ duration: 0.7, delay: 0.3, ease }}
           />
         </div>
         <div className={styles.outputStack}>
           {["Output 01", "Output 02", "Output 03"].map((label, index) => (
             <motion.div
               key={label}
-              initial={reduce ? false : { opacity: 0, transform: "translateX(-28px) scale(0.94)" }}
-              whileInView={{ opacity: 1, transform: "translateX(0px) scale(1)" }}
+              initial={reduce ? false : { opacity: 0, y: 16 }}
+              whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.5 }}
-              transition={{ duration: 0.55, delay: 0.48 + index * 0.1, ease }}
+              transition={{ duration: 0.55, delay: 0.4 + index * 0.1, ease }}
             >
               <span>{label}</span>
               <strong>Client-specified size</strong>
@@ -342,6 +346,7 @@ function Estimate() {
   return (
     <section className={styles.investmentSection} aria-labelledby="investment-title">
       <Reveal className={styles.investmentLead}>
+        <SectionKicker index="03" label="Investment" />
         <h2 id="investment-title">Project investment</h2>
         <p>Fixed project price based on {totalHours} planned hours at ${rate}/hour.</p>
         <div className={styles.priceLockup}>
@@ -356,7 +361,7 @@ function Estimate() {
           <span>{totalHours} hours</span>
         </div>
         {pricing.map((item, index) => (
-          <details key={item.service} open={index === 0} className={styles.estimateRow}>
+          <details key={item.service} open className={styles.estimateRow}>
             <summary>
               <span>{item.service}</span>
               <span>{item.hours}h</span>
@@ -381,6 +386,7 @@ function Timeline() {
   return (
     <section className={styles.scheduleSection} aria-labelledby="schedule-title">
       <Reveal className={styles.scheduleHead}>
+        <SectionKicker index="04" label="Schedule" />
         <h2 id="schedule-title">Accelerated schedule</h2>
         <p>Seven clear handoffs move the production from approved inputs to final delivery.</p>
       </Reveal>
@@ -391,17 +397,17 @@ function Timeline() {
             initial={reduce ? false : { transform: "scaleY(0)" }}
             whileInView={{ transform: "scaleY(1)" }}
             viewport={{ once: true, amount: 0.2 }}
-            transition={{ duration: 1.25, ease }}
+            transition={{ duration: 1.2, ease }}
           />
         </div>
         <ol className={styles.timeline}>
           {schedule.map((milestone, index) => (
             <motion.li
               key={milestone.date}
-              initial={reduce ? false : { opacity: 0, x: index % 2 === 0 ? -28 : 28 }}
-              whileInView={{ opacity: 1, x: 0 }}
+              initial={reduce ? false : { opacity: 0, y: 16 }}
+              whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.6 }}
-              transition={{ duration: 0.55, delay: index * 0.05, ease }}
+              transition={{ duration: 0.5, delay: index * 0.04, ease }}
             >
               <time>{milestone.date}</time>
               <span>{milestone.item}</span>
@@ -421,6 +427,7 @@ function Terms() {
   return (
     <section className={styles.termsSection} aria-labelledby="assumptions-title">
       <Reveal className={styles.assumptions}>
+        <SectionKicker index="05" label="Terms" />
         <h2 id="assumptions-title">Working assumptions</h2>
         <ul>
           <li>Insomniac supplies approved source assets, final copy, brand guidance, approved and cleared audio, and technical delivery specs by September 8.</li>
@@ -451,7 +458,7 @@ function Approval() {
   return (
     <section className={styles.ctaSection} aria-labelledby="approval-title">
       <motion.div
-        initial={reduce ? false : { opacity: 0, y: 36 }}
+        initial={reduce ? false : { opacity: 0, y: 24 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, amount: 0.5 }}
         transition={{ duration: 0.7, ease }}
@@ -462,9 +469,10 @@ function Approval() {
       <motion.a
         className={styles.cta}
         href={approvalHref}
-        whileHover={reduce ? undefined : { transform: "translateY(-4px) scale(1.02)" }}
-        whileTap={reduce ? undefined : { transform: "translateY(1px) scale(0.98)" }}
-        transition={{ type: "spring", stiffness: 300, damping: 22 }}
+        initial={reduce ? false : { opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: true, amount: 0.5 }}
+        transition={{ duration: 0.6, delay: 0.12, ease }}
       >
         Approve scope
       </motion.a>
