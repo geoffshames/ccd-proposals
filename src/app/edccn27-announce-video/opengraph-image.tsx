@@ -1,6 +1,6 @@
 import { ImageResponse } from "next/og";
 
-export const alt = "EDCCN27 60-Second Announce Video creative production proposal from Crowd Control";
+export const alt = "EDC China 2027 60-Second Announce Video creative production proposal from Crowd Control";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -14,9 +14,9 @@ export default function OpenGraphImage() {
           display: "flex",
           flexDirection: "column",
           justifyContent: "space-between",
-          padding: "58px 64px",
-          background: "#080808",
-          color: "#f6f6f2",
+          padding: "54px 62px",
+          background: "#090909",
+          color: "#f4f2ec",
           fontFamily: "Arial, sans-serif",
           position: "relative",
           overflow: "hidden",
@@ -25,15 +25,28 @@ export default function OpenGraphImage() {
         <div
           style={{
             position: "absolute",
-            right: -90,
-            top: -120,
-            width: 510,
-            height: 510,
+            top: 0,
+            right: 0,
+            width: 330,
+            height: 630,
             display: "flex",
-            border: "96px solid rgba(253, 55, 55, 0.17)",
-            borderRadius: 510,
+            background: "#fd3737",
           }}
         />
+        <div
+          style={{
+            position: "absolute",
+            top: 116,
+            right: 58,
+            display: "flex",
+            flexDirection: "column",
+            color: "#090909",
+          }}
+        >
+          <span style={{ display: "flex", fontSize: 18, letterSpacing: 3, textTransform: "uppercase" }}>Runtime</span>
+          <strong style={{ display: "flex", fontSize: 150, lineHeight: 0.82 }}>60</strong>
+          <span style={{ display: "flex", justifyContent: "flex-end", fontSize: 22, fontWeight: 700, textTransform: "uppercase" }}>Seconds</span>
+        </div>
         <div
           style={{
             display: "flex",
@@ -45,17 +58,17 @@ export default function OpenGraphImage() {
           }}
         >
           <strong style={{ display: "flex", color: "#fd3737" }}>Crowd Control</strong>
-          <span style={{ display: "flex", color: "#a0a0a0" }}>Creative production proposal</span>
+          <span style={{ display: "flex", marginRight: 360, color: "#a8a7a2" }}>Creative production proposal</span>
         </div>
-        <div style={{ display: "flex", flexDirection: "column", maxWidth: 1000 }}>
+        <div style={{ display: "flex", flexDirection: "column", maxWidth: 770 }}>
           <span
             style={{
               display: "flex",
-              fontSize: 22,
+              fontSize: 20,
               letterSpacing: 4,
               textTransform: "uppercase",
-              color: "#aaa",
-              marginBottom: 22,
+              color: "#aaa9a4",
+              marginBottom: 18,
             }}
           >
             Prepared for Insomniac
@@ -64,28 +77,30 @@ export default function OpenGraphImage() {
             style={{
               display: "flex",
               flexDirection: "column",
-              fontSize: 92,
-              lineHeight: 0.94,
-              letterSpacing: -4,
+              fontSize: 78,
+              lineHeight: 0.91,
+              letterSpacing: -3,
               textTransform: "uppercase",
             }}
           >
-            <span style={{ display: "flex" }}>EDCCN27 60-Second</span>
-            <span style={{ display: "flex", color: "#fd3737" }}>Announce Video</span>
+            <span style={{ display: "flex" }}>EDC China 2027</span>
+            <span style={{ display: "flex", color: "#fd3737" }}>60-Second</span>
+            <span style={{ display: "flex" }}>Announce Video</span>
           </strong>
         </div>
         <div
           style={{
             display: "flex",
             justifyContent: "space-between",
-            paddingTop: 20,
-            borderTop: "1px solid #383838",
-            fontSize: 19,
-            color: "#c0c0c0",
+            width: 760,
+            paddingTop: 18,
+            borderTop: "1px solid #3a3a39",
+            fontSize: 18,
+            color: "#c1c0ba",
           }}
         >
-          <span style={{ display: "flex" }}>60 seconds / Three sizes / Two rounds</span>
-          <span style={{ display: "flex", color: "#fd3737" }}>Final delivery October 1, 2026</span>
+          <span style={{ display: "flex" }}>Three sizes / Two rounds</span>
+          <span style={{ display: "flex", color: "#fd3737" }}>Final delivery September 25</span>
         </div>
       </div>
     ),
