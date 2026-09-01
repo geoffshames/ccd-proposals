@@ -1,6 +1,6 @@
 import { ImageResponse } from "next/og";
 
-export const alt = "EDC China 2027 60-Second Announce Video creative production proposal from Crowd Control";
+export const alt = "EDC China 2027 60-Second Announce Video proposal: one master creative, three sizes, delivered September 25 for a fixed $6,500, from Crowd Control";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -15,8 +15,8 @@ export default function OpenGraphImage() {
           flexDirection: "column",
           justifyContent: "space-between",
           padding: "54px 62px",
-          background: "#090909",
-          color: "#f4f2ec",
+          background: "#07080b",
+          color: "#f2f1ec",
           fontFamily: "Arial, sans-serif",
           position: "relative",
           overflow: "hidden",
@@ -100,7 +100,7 @@ export default function OpenGraphImage() {
           }}
         >
           <span style={{ display: "flex" }}>Three sizes / Two rounds</span>
-          <span style={{ display: "flex", color: "#fd3737" }}>Final delivery September 25</span>
+          <span style={{ display: "flex", color: "#fd3737" }}>$6,500 fixed / Delivered September 25</span>
         </div>
       </div>
     ),

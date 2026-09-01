@@ -9,7 +9,7 @@ import {
   useSpring,
   useTransform,
 } from "framer-motion";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import styles from "./proposal.module.css";
 
 const rate = 100;
@@ -95,18 +95,45 @@ const schedule = [
   { date: "Sep 25", item: "Final delivery" },
 ] as const;
 
-const specs = [
-  { index: "01", label: "Runtime", value: "60 seconds" },
-  { index: "02", label: "Outputs", value: "Three client-specified sizes" },
-  { index: "03", label: "Review", value: "Two consolidated rounds" },
-  { index: "04", label: "Delivery", value: "September 25" },
+const scopeFacts = [
+  "Bespoke motion-led 60-second master creative",
+  "Adaptation to three client-specified sizes",
+  "Two consolidated revision rounds",
+  "Final exports",
+  "Client coordination",
 ] as const;
+
+const ratios = [
+  { label: "16:9 planning frame", box: "100%", height: "56.25%" },
+  { label: "9:16 planning frame", box: "31.64%", height: "100%" },
+  { label: "1:1 planning frame", box: "70.7%", height: "70.7%" },
+] as const;
+
+const dockFacts = ["$6,500 fixed", "September 25 delivery", "One master, three sizes"] as const;
 
 const totalHours = pricing.reduce((sum, item) => sum + item.hours, 0);
 const totalPrice = totalHours * rate;
 const formattedTotalPrice = `$${totalPrice.toLocaleString("en-US")}`;
-const approvalHref =
-  "mailto:hello@crowdcontroldigital.com?subject=EDC%20China%202027%20Announce%20Video%20Approval";
+
+const approvalSubject = "EDC China 2027 Announce Video Approval";
+const approvalBody = [
+  "Hi Crowd Control,",
+  "",
+  "Approved: EDC China 2027 60-Second Announce Video.",
+  "",
+  "Scope: one bespoke motion-led 60-second master creative, adapted to three",
+  "client-specified sizes, two consolidated revision rounds, final exports,",
+  "client coordination.",
+  `Price: ${formattedTotalPrice} fixed, ${totalHours} planned hours at $${rate}/hour.`,
+  "Delivery: September 25.",
+  "",
+  "Approved materials will be with you by September 8.",
+  "",
+  "Thanks,",
+  "[Name]",
+  "Insomniac",
+].join("\n");
+const approvalHref = `mailto:hello@crowdcontroldigital.com?subject=${encodeURIComponent(approvalSubject)}&body=${encodeURIComponent(approvalBody)}`;
 
 const ease = [0.16, 1, 0.3, 1] as const;
 
@@ -190,71 +217,128 @@ function Hero() {
           </span>
         </h1>
         <motion.p className={styles.intro} {...enter(0.42)}>
-          Crowd Control will create a bespoke, motion-led 60-second announce video for EDC China 2027, delivered in three client-specified sizes with two revision rounds.
+          A bespoke, motion-led 60-second announce video for EDC China 2027. One master creative, three client-specified sizes, two consolidated revision rounds, delivered September 25 for a fixed {formattedTotalPrice}.
         </motion.p>
       </div>
 
-      <motion.div
-        className={styles.specPanel}
-        role="group"
-        aria-label="Production spec: 60-second video delivered in three sizes by September 25 with two review rounds"
-        initial={reduce ? false : { opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 0.8, delay: 0.3, ease }}
-      >
-        <p className={styles.specPanelLabel}>Production spec</p>
-        <dl>
-          {specs.map((spec, index) => (
-            <motion.div
-              key={spec.index}
-              className={styles.specRow}
-              initial={reduce ? false : { opacity: 0, y: 14 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.46 + index * 0.09, ease }}
-            >
-              <span className={styles.specIndex}>{spec.index}</span>
-              <dt>{spec.label}</dt>
-              <dd>{spec.value}</dd>
-            </motion.div>
-          ))}
-        </dl>
-        <p className={styles.specNote}>Exact sizes confirmed at kickoff.</p>
-      </motion.div>
+      <motion.ul className={styles.anchorStrip} {...enter(0.56)}>
+        <li>
+          <span>Fixed price</span>
+          <strong>{formattedTotalPrice}</strong>
+        </li>
+        <li>
+          <span>Delivery</span>
+          <strong>September 25</strong>
+        </li>
+        <li>
+          <span>Scope</span>
+          <strong>One master, three sizes</strong>
+        </li>
+      </motion.ul>
     </section>
   );
 }
 
-function ApproachStory() {
+function Deliverable() {
+  return (
+    <section className={styles.deliverableSection} aria-labelledby="deliverable-title">
+      <div className={styles.deliverableCopy}>
+        <Reveal>
+          <SectionKicker index="01" label="The deliverable" />
+          <h2 id="deliverable-title">One master. Three sizes.</h2>
+          <p>
+            Crowd Control builds one bespoke, motion-led 60-second master creative, then adapts the approved direction into three client-specified sizes. Exact sizes are confirmed at kickoff.
+          </p>
+        </Reveal>
+        <Reveal delay={0.08} className={styles.scopeList}>
+          <ul>
+            {scopeFacts.map((fact) => (
+              <li key={fact}>{fact}</li>
+            ))}
+          </ul>
+          <a
+            className={styles.referenceLink}
+            href="https://www.dropbox.com/scl/fo/bixxolaijjq763iikplya/AG7DiX_Gg2orVXtwj9KVovg?rlkey=x4x6p1d38j3a31mlnporv2aj2&dl=0"
+            target="_blank"
+            rel="noreferrer"
+          >
+            View reference folder
+          </a>
+        </Reveal>
+      </div>
+
+      <Reveal className={styles.outputComposition} delay={0.05}>
+        <div className={styles.masterOutput}>
+          <span>Master creative</span>
+          <strong>60 seconds</strong>
+          <small>Approved direction</small>
+        </div>
+        <div className={styles.outputStack}>
+          {["Output 01", "Output 02", "Output 03"].map((label) => (
+            <div key={label}>
+              <span>{label}</span>
+              <strong>Client-specified size</strong>
+            </div>
+          ))}
+        </div>
+      </Reveal>
+    </section>
+  );
+}
+
+function Storyboard() {
   const reduce = useReducedMotion();
   const [active, setActive] = useState(0);
   const current = phases[active];
 
   return (
-    <section className={styles.approachSection} aria-labelledby="approach-title">
-      <div className={styles.approachStage}>
-        <SectionKicker index="01" label="Production approach" />
-        <h2 id="approach-title">One continuous production path</h2>
-        <div className={styles.stageWindow} aria-hidden="true">
-          <AnimatePresence mode="wait" initial={false}>
-            <motion.div
-              key={current.name}
-              initial={reduce ? false : { opacity: 0, y: 18 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={reduce ? { opacity: 1 } : { opacity: 0, y: -14 }}
-              transition={{ duration: 0.36, ease }}
-            >
-              <span>{current.name}</span>
-              <strong>{String(active + 1).padStart(2, "0")}</strong>
-            </motion.div>
-          </AnimatePresence>
-          <div className={styles.phaseMeter}>
-            <motion.i
-              animate={{ transform: `scaleX(${(active + 1) / phases.length})` }}
-              transition={reduce ? { duration: 0 } : { type: "spring", stiffness: 140, damping: 25 }}
-            />
+    <section className={styles.planSection} aria-labelledby="plan-title">
+      <div className={styles.planStage}>
+        <Reveal>
+          <SectionKicker index="02" label="The production plan" />
+          <h2 id="plan-title">Built as one continuous path</h2>
+          <p>
+            Six phases, two consolidated review points, one production spine. Feedback is consolidated, never fragmented. Walk the plan.
+          </p>
+        </Reveal>
+
+        <Reveal className={styles.editSuite} delay={0.08}>
+          <div className={styles.suiteHeader}>
+            <span>Pre-production framing spec</span>
+            <output className={styles.suiteTimecode}>
+              {String(active + 1).padStart(2, "0")}:{String(Math.round(((active + 1) / phases.length) * 60)).padStart(2, "0")}
+            </output>
           </div>
-          <small>Phase {active + 1} of {phases.length}</small>
-        </div>
+
+          <div className={styles.framingStage} aria-hidden="true">
+            <div className={styles.framingBoard}>
+              {ratios.map((ratio) => (
+                <div key={ratio.label} className={styles.framingCell}>
+                  <div className={styles.framingFrame}>
+                    <span className={styles.framingRatio}>{ratio.label}</span>
+                    <i className={styles.framingOutline} style={{ width: ratio.box, paddingBottom: ratio.height }} />
+                    <i className={styles.framingCenter} />
+                  </div>
+                </div>
+              ))}
+            </div>
+            <p className={styles.framingNote}>Editorial direction developed at kickoff</p>
+          </div>
+
+          <p className={styles.framingCaption}>
+            Final client-specified sizes confirmed at kickoff.
+          </p>
+
+          <div className={styles.suiteControls}>
+            <div className={styles.phaseMeter} aria-hidden="true">
+              <motion.i
+                animate={{ transform: `scaleX(${(active + 1) / phases.length})` }}
+                transition={reduce ? { duration: 0 } : { type: "spring", stiffness: 140, damping: 25 }}
+              />
+            </div>
+            <small>Phase {active + 1} of {phases.length}</small>
+          </div>
+        </Reveal>
       </div>
 
       <ol className={styles.phasePanels}>
@@ -281,114 +365,17 @@ function ApproachStory() {
   );
 }
 
-function Deliverables() {
-  const reduce = useReducedMotion();
-
-  return (
-    <section className={styles.deliverablesSection} aria-labelledby="deliverables-title">
-      <Reveal className={styles.deliverablesCopy}>
-        <SectionKicker index="02" label="Deliverables" />
-        <h2 id="deliverables-title">One idea, built to travel.</h2>
-        <p>One 60-second master creative becomes three client-specified outputs after the direction is approved.</p>
-        <a
-          className={styles.referenceLink}
-          href="https://www.dropbox.com/scl/fo/bixxolaijjq763iikplya/AG7DiX_Gg2orVXtwj9KVovg?rlkey=x4x6p1d38j3a31mlnporv2aj2&dl=0"
-          target="_blank"
-          rel="noreferrer"
-        >
-          View reference folder
-        </a>
-      </Reveal>
-
-      <div className={styles.outputComposition} aria-label="One 60-second master adapted to three client-specified sizes">
-        <Reveal className={styles.masterOutput}>
-          <span>Master creative</span>
-          <strong>60 seconds</strong>
-          <small>Approved direction</small>
-        </Reveal>
-        <div className={styles.outputConnector} aria-hidden="true">
-          <motion.i
-            initial={reduce ? false : { transform: "scaleX(0)" }}
-            whileInView={{ transform: "scaleX(1)" }}
-            viewport={{ once: true, amount: 0.5 }}
-            transition={{ duration: 0.7, delay: 0.3, ease }}
-          />
-        </div>
-        <div className={styles.outputStack}>
-          {["Output 01", "Output 02", "Output 03"].map((label, index) => (
-            <motion.div
-              key={label}
-              initial={reduce ? false : { opacity: 0, y: 16 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, amount: 0.5 }}
-              transition={{ duration: 0.55, delay: 0.4 + index * 0.1, ease }}
-            >
-              <span>{label}</span>
-              <strong>Client-specified size</strong>
-            </motion.div>
-          ))}
-        </div>
-      </div>
-
-      <Reveal className={styles.revisionBoundary} delay={0.08}>
-        <div>
-          <strong>Two</strong>
-          <span>Consolidated revision rounds</span>
-        </div>
-        <p>Two rounds cover refinements to the approved direction, edit, timing, graphics, copy, audio balance and formatting.</p>
-        <p>A new concept, major structural change after first-cut approval, new runtime, additional sizes, or extra revision rounds are out of scope and quoted at $100/hour after written approval.</p>
-      </Reveal>
-    </section>
-  );
-}
-
-function Estimate() {
-  return (
-    <section className={styles.investmentSection} aria-labelledby="investment-title">
-      <Reveal className={styles.investmentLead}>
-        <SectionKicker index="03" label="Investment" />
-        <h2 id="investment-title">Project investment</h2>
-        <p>Fixed project price based on {totalHours} planned hours at ${rate}/hour.</p>
-        <div className={styles.priceLockup}>
-          <span>Fixed price</span>
-          <strong>{formattedTotalPrice}</strong>
-        </div>
-      </Reveal>
-
-      <Reveal className={styles.estimate} delay={0.08}>
-        <div className={styles.estimateHeading}>
-          <span>Estimate detail</span>
-          <span>{totalHours} hours</span>
-        </div>
-        {pricing.map((item, index) => (
-          <details key={item.service} open className={styles.estimateRow}>
-            <summary>
-              <span>{item.service}</span>
-              <span>{item.hours}h</span>
-              <strong>${(item.hours * rate).toLocaleString("en-US")}</strong>
-            </summary>
-            <p>{item.detail}</p>
-          </details>
-        ))}
-        <div className={styles.estimateTotal}>
-          <span>Total</span>
-          <span>{totalHours}h</span>
-          <strong>{formattedTotalPrice}</strong>
-        </div>
-      </Reveal>
-    </section>
-  );
-}
-
 function Timeline() {
   const reduce = useReducedMotion();
 
   return (
     <section className={styles.scheduleSection} aria-labelledby="schedule-title">
       <Reveal className={styles.scheduleHead}>
-        <SectionKicker index="04" label="Schedule" />
-        <h2 id="schedule-title">Accelerated schedule</h2>
-        <p>Seven clear handoffs move the production from approved inputs to final delivery.</p>
+        <SectionKicker index="03" label="The schedule" />
+        <h2 id="schedule-title">Final delivery September 25</h2>
+        <p>
+          Sixteen days from kickoff to delivery, across seven dated handoffs. September 25 holds when approved materials arrive by September 8 and consolidated feedback returns on September 17 and September 22.
+        </p>
       </Reveal>
 
       <div className={styles.timelineWrap}>
@@ -415,9 +402,48 @@ function Timeline() {
           ))}
         </ol>
       </div>
+    </section>
+  );
+}
 
-      <Reveal className={styles.scheduleDependency}>
-        Final delivery is scheduled for September 25, provided approved materials arrive by September 8 and consolidated feedback is returned on the dates above.
+function Estimate() {
+  return (
+    <section className={styles.investmentSection} aria-labelledby="investment-title">
+      <Reveal className={styles.investmentLead}>
+        <SectionKicker index="04" label="The investment" />
+        <h2 id="investment-title">One fixed price</h2>
+        <p>
+          {formattedTotalPrice} fixed, based on {totalHours} planned hours at ${rate}/hour. The only way the number moves is with your written approval.
+        </p>
+        <div className={styles.priceLockup}>
+          <span>Fixed price</span>
+          <strong>{formattedTotalPrice}</strong>
+        </div>
+      </Reveal>
+
+      <Reveal className={styles.estimate} delay={0.08}>
+        <div className={styles.estimateHeading}>
+          <span>Estimate detail</span>
+          <span>{totalHours} hours</span>
+        </div>
+        {pricing.map((item) => (
+          <details key={item.service} open className={styles.estimateRow}>
+            <summary>
+              <span>{item.service}</span>
+              <span>{item.hours}h</span>
+              <strong>${(item.hours * rate).toLocaleString("en-US")}</strong>
+            </summary>
+            <p>{item.detail}</p>
+          </details>
+        ))}
+        <div className={styles.estimateTotal}>
+          <span>Total</span>
+          <span>{totalHours}h</span>
+          <strong>{formattedTotalPrice}</strong>
+        </div>
+        <p className={styles.scopeBoundary}>
+          A new concept, major structural change after first-cut approval, new runtime, additional sizes, or extra revision rounds are out of scope and quoted at $100/hour after written approval.
+        </p>
       </Reveal>
     </section>
   );
@@ -425,10 +451,10 @@ function Timeline() {
 
 function Terms() {
   return (
-    <section className={styles.termsSection} aria-labelledby="assumptions-title">
+    <section className={styles.termsSection} aria-labelledby="agreement-title">
       <Reveal className={styles.assumptions}>
-        <SectionKicker index="05" label="Terms" />
-        <h2 id="assumptions-title">Working assumptions</h2>
+        <SectionKicker index="05" label="The agreement" />
+        <h2 id="agreement-title">What we agree on</h2>
         <ul>
           <li>Insomniac supplies approved source assets, final copy, brand guidance, approved and cleared audio, and technical delivery specs by September 8.</li>
           <li>The exact three sizes are confirmed at kickoff.</li>
@@ -452,30 +478,72 @@ function Terms() {
   );
 }
 
-function Approval() {
+function DecisionDock() {
+  const [dockVisible, setDockVisible] = useState(false);
+
+  useEffect(() => {
+    const investment = document.getElementById("investment-title");
+    if (!investment) return;
+    const observer = new IntersectionObserver(
+      ([entry]) => setDockVisible(entry.isIntersecting || entry.boundingClientRect.top < 0),
+      { threshold: 0.1 }
+    );
+    observer.observe(investment);
+    return () => observer.disconnect();
+  }, []);
+
+  return (
+    <div className={dockVisible ? `${styles.dock} ${styles.dockActive}` : styles.dock} aria-hidden={!dockVisible}>
+      <ul className={styles.dockFacts}>
+        {dockFacts.map((fact) => (
+          <li key={fact}>{fact}</li>
+        ))}
+      </ul>
+      <a
+        className={styles.dockCta}
+        href={approvalHref}
+        tabIndex={dockVisible ? 0 : -1}
+        aria-hidden={!dockVisible}
+      >
+        Approve by email
+      </a>
+      <p className={styles.dockNote}>Opens your mail app. Nothing is submitted here.</p>
+    </div>
+  );
+}
+
+function Decision() {
   const reduce = useReducedMotion();
 
   return (
-    <section className={styles.ctaSection} aria-labelledby="approval-title">
+    <section className={styles.ctaSection} aria-labelledby="decision-title">
       <motion.div
         initial={reduce ? false : { opacity: 0, y: 24 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, amount: 0.5 }}
         transition={{ duration: 0.7, ease }}
       >
-        <p>Ready to schedule production?</p>
-        <h2 id="approval-title">Approve the scope by email.</h2>
+        <SectionKicker index="06" label="The decision" />
+        <h2 id="decision-title">Approve the scope by email</h2>
+        <p className={styles.decisionLead}>
+          One email starts production. Approve the scope and Crowd Control schedules the September 9 kickoff.
+        </p>
       </motion.div>
-      <motion.a
-        className={styles.cta}
-        href={approvalHref}
-        initial={reduce ? false : { opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        viewport={{ once: true, amount: 0.5 }}
-        transition={{ duration: 0.6, delay: 0.12, ease }}
-      >
-        Approve scope
-      </motion.a>
+      <div className={styles.decisionBlock}>
+        <motion.a
+          className={styles.cta}
+          href={approvalHref}
+          initial={reduce ? false : { opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true, amount: 0.5 }}
+          transition={{ duration: 0.6, delay: 0.12, ease }}
+        >
+          Approve by email
+        </motion.a>
+        <p className={styles.transparencyNote}>
+          Opens a prefilled email to hello@crowdcontroldigital.com in your mail app. This page sends nothing and records nothing.
+        </p>
+      </div>
     </section>
   );
 }
@@ -500,13 +568,15 @@ export default function ProposalExperience() {
 
       <div id="proposal-content">
         <Hero />
-        <ApproachStory />
-        <Deliverables />
-        <Estimate />
+        <Deliverable />
+        <Storyboard />
         <Timeline />
+        <Estimate />
         <Terms />
-        <Approval />
+        <Decision />
       </div>
+
+      <DecisionDock />
 
       <footer className={styles.footer}>
         <Image
