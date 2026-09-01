@@ -885,7 +885,7 @@ export const irationPlan: StrategyPlanData = {
       philosophy:
         "Hold the cadence the band already sustains. Change what fills it, and give the reach somewhere to go.",
       intro:
-        "Four workstreams. The first three are the social retainer. The fourth is the email and SMS module, scoped here and priced separately so it can be approved on its own timing.",
+        "The first three workstreams are the social retainer. Fan HQ and email and SMS are separate modules, scoped here and priced on their own so each can be approved independently.",
       subBlocks: [
         {
           label: "Workstream 01",
@@ -959,6 +959,32 @@ export const irationPlan: StrategyPlanData = {
             "Free-tier to paid-tier conversion once the free step exists",
           ],
           timeline: "Routing live week 3. CTA on every recap from week 4.",
+        },
+        {
+          label: "Module",
+          title: "Fan HQ",
+          budget: "$2,000/mo",
+          objective:
+            "Put three fan accounts around the band, run by Crowd Control, so discovery-side content ships daily without touching the main calendar.",
+          strategy:
+            "The genre benchmark showed fan-as-subject and archive material working while nobody in the peer set runs either at volume. Fan accounts are the cheap way to test both: they post daily from show footage, archive, and catalog clips, carry the capture layer on every account, and feed the main channels whatever breaks. The band's twenty-two years of material is the inventory.",
+          components: {
+            heading: "What the module covers",
+            items: [
+              "Three fan accounts, named, built, and operated by Crowd Control",
+              "Daily posting from live, archive, and catalog material",
+              "Capture links on every account, routed through iration.fm",
+              "Winners resurfaced to the main channels",
+              "Performance rolled into the monthly report",
+            ],
+          },
+          kpis: [
+            "Posting cadence held across all three accounts",
+            "Reach and follower growth per account",
+            "Capture clicks attributable to the network",
+            "Clips promoted from fan accounts to main channels per month",
+          ],
+          timeline: "Accounts live by week 3. Daily cadence from week 4.",
         },
         {
           label: "Module",
@@ -1096,7 +1122,7 @@ export const irationPlan: StrategyPlanData = {
           cells: [
             { weekIndex: 1, intensity: "high", milestone: true, label: "Kickoff" },
             { weekIndex: 2, intensity: "high" },
-            { weekIndex: 3, intensity: "medium", milestone: true, label: "Baseline set" },
+            { weekIndex: 3, intensity: "medium", milestone: true, label: "Baseline" },
             { weekIndex: 4, intensity: "low" },
             { weekIndex: 8, intensity: "low" },
             { weekIndex: 12, intensity: "medium", milestone: true, label: "Review" },
@@ -1106,7 +1132,7 @@ export const irationPlan: StrategyPlanData = {
           name: "Channel Management",
           cells: [
             { weekIndex: 2, intensity: "medium" },
-            { weekIndex: 3, intensity: "high", milestone: true, label: "Calendar live" },
+            { weekIndex: 3, intensity: "high", milestone: true, label: "Calendar" },
             { weekIndex: 4, intensity: "high" },
             { weekIndex: 5, intensity: "high" },
             { weekIndex: 6, intensity: "high" },
@@ -1124,7 +1150,7 @@ export const irationPlan: StrategyPlanData = {
             { weekIndex: 2, intensity: "medium" },
             { weekIndex: 3, intensity: "high" },
             { weekIndex: 4, intensity: "high", milestone: true, label: "Template" },
-            { weekIndex: 6, intensity: "high", milestone: true, label: "October run" },
+            { weekIndex: 6, intensity: "high", milestone: true, label: "Oct run" },
             { weekIndex: 7, intensity: "high" },
             { weekIndex: 8, intensity: "medium" },
             { weekIndex: 9, intensity: "medium" },
@@ -1150,12 +1176,12 @@ export const irationPlan: StrategyPlanData = {
           name: "Fan Capture Layer",
           cells: [
             { weekIndex: 2, intensity: "medium" },
-            { weekIndex: 3, intensity: "high", milestone: true, label: "Link routing" },
+            { weekIndex: 3, intensity: "high", milestone: true, label: "Links" },
             { weekIndex: 4, intensity: "high", milestone: true, label: "Recap CTAs" },
             { weekIndex: 5, intensity: "medium" },
             { weekIndex: 6, intensity: "high" },
             { weekIndex: 7, intensity: "medium" },
-            { weekIndex: 8, intensity: "high", milestone: true, label: "Free tier live" },
+            { weekIndex: 8, intensity: "high", milestone: true, label: "Free tier" },
             { weekIndex: 9, intensity: "medium" },
             { weekIndex: 10, intensity: "medium" },
             { weekIndex: 11, intensity: "medium" },
@@ -1224,7 +1250,7 @@ export const irationPlan: StrategyPlanData = {
       navLabel: "Investment",
       title: "Investment",
       intro:
-        "Crowd Control's standard rate card. Social management is one retainer covering every channel the band runs. Email and SMS is a separate monthly module, and content creation is hourly so it only costs what it is used for.",
+        "A 90-day engagement, priced to start. Social management is one retainer covering every channel the band runs. Fan HQ and email and SMS are separate monthly modules, so each can be approved on its own.",
       ccdNote:
         "Retainers cover Crowd Control's management time. Content creation is billed hourly against approved briefs. Any managed media spend or creator fee carries a 15 percent management fee and is billed at cost on top of it.",
       breakdownLabel: "What the retainer covers",
@@ -1232,9 +1258,9 @@ export const irationPlan: StrategyPlanData = {
       tiers: [
         {
           label: "Retainer",
-          budget: "$5,000/mo",
+          budget: "$2,500/mo",
           name: "SOCIAL MANAGEMENT",
-          tagline: "Every channel the band runs, plus community management.",
+          tagline: "Every channel the band runs, for a 90-day initial term.",
           deployable:
             "Managed calendar, editing and packaging from footage the band already has, publishing, community management, and a monthly report against the baselines in section 07.",
           featured: true,
@@ -1245,10 +1271,31 @@ export const irationPlan: StrategyPlanData = {
             { vertical: "Monthly reporting", amount: "Included" },
           ],
           feeBreakdown: {
-            retainer: "$5,000",
-            retainerDetail: "Per month, covering social media management and community management across all channels.",
+            retainer: "$2,500",
+            retainerDetail: "Per month for the 90-day initial term, covering social media management across all channels.",
             mediaManagement: "15%",
             mediaManagementDetail: "On any media spend or creator fee Crowd Control manages, billed at cost plus the fee.",
+            mediaManagementLabel: "Managed spend fee",
+          },
+        },
+        {
+          label: "Module",
+          budget: "$2,000/mo",
+          name: "FAN HQ",
+          tagline: "Three fan accounts, built and run by Crowd Control.",
+          deployable:
+            "Three fan-run-style accounts posting daily around the band: live moments, archive, and catalog clips, each carrying the capture layer and feeding the main channels.",
+          breakdown: [
+            { vertical: "Three fan accounts, built and operated", amount: "Included" },
+            { vertical: "Daily posting from show, archive, and catalog material", amount: "Included" },
+            { vertical: "Capture links on every account", amount: "Included" },
+            { vertical: "Performance rolled into the monthly report", amount: "Included" },
+          ],
+          feeBreakdown: {
+            retainer: "$2,000",
+            retainerDetail: "Per month for three accounts, on top of the social retainer.",
+            mediaManagement: "15%",
+            mediaManagementDetail: "On any media spend or creator fee Crowd Control manages.",
             mediaManagementLabel: "Managed spend fee",
           },
         },
@@ -1287,11 +1334,11 @@ export const irationPlan: StrategyPlanData = {
           subtitle: "Applied to spend Crowd Control administers",
           budget: "15%",
           description:
-            "Paid media budget and creator fees are billed at cost with a 15 percent management fee. No spend is required for either retainer to work.",
+            "Paid media budget and creator fees are billed at cost with a 15 percent management fee. No spend is required for any retainer to work.",
         },
       ],
       footnote:
-        "Billed monthly with a three-month initial term, then month to month with 30 days notice. Not included: paid media budget, creator and influencer fees, PR, DSP editorial pitching, tour marketing, release strategy, merchandise, and web development. Final invoicing and termination terms move into the signed agreement.",
+        "Billed monthly with a 90-day initial term, then month to month with 30 days notice. Not included: paid media budget, creator and influencer fees, PR, DSP editorial pitching, tour marketing, release strategy, merchandise, and web development. Final invoicing and termination terms move into the signed agreement.",
     },
   ],
 };
