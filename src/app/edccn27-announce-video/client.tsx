@@ -480,20 +480,43 @@ function Terms() {
 
 function DecisionDock() {
   const [dockVisible, setDockVisible] = useState(false);
+  const [pageEndVisible, setPageEndVisible] = useState(false);
 
   useEffect(() => {
     const investment = document.getElementById("investment-title");
     if (!investment) return;
-    const observer = new IntersectionObserver(
+    const investmentObserver = new IntersectionObserver(
       ([entry]) => setDockVisible(entry.isIntersecting || entry.boundingClientRect.top < 0),
       { threshold: 0.1 }
     );
-    observer.observe(investment);
-    return () => observer.disconnect();
+    investmentObserver.observe(investment);
+
+    // The dock must never cover the footer or the closing decision section:
+    // once the page end is reachable, the dock gives way to document flow.
+    const footer = document.querySelector("footer");
+    let endObserver: IntersectionObserver | undefined;
+    if (footer) {
+      endObserver = new IntersectionObserver(
+        ([entry]) => setPageEndVisible(entry.isIntersecting),
+        { threshold: 0 }
+      );
+      endObserver.observe(footer);
+    }
+
+    return () => {
+      investmentObserver.disconnect();
+      endObserver?.disconnect();
+    };
   }, []);
 
+  const dockActive = dockVisible && !pageEndVisible;
+
   return (
-    <div className={dockVisible ? `${styles.dock} ${styles.dockActive}` : styles.dock} aria-hidden={!dockVisible}>
+    <div
+      className={dockActive ? `${styles.dock} ${styles.dockActive}` : styles.dock}
+      aria-hidden={!dockActive}
+      data-testid="decision-dock"
+    >
       <ul className={styles.dockFacts}>
         {dockFacts.map((fact) => (
           <li key={fact}>{fact}</li>
@@ -502,8 +525,8 @@ function DecisionDock() {
       <a
         className={styles.dockCta}
         href={approvalHref}
-        tabIndex={dockVisible ? 0 : -1}
-        aria-hidden={!dockVisible}
+        tabIndex={dockActive ? 0 : -1}
+        aria-hidden={!dockActive}
       >
         Approve by email
       </a>
