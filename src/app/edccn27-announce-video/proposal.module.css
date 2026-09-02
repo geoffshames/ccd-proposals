@@ -1366,7 +1366,7 @@
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
     align-items: end;
-    gap: 12px;
+    gap: 16px;
   }
 
   .framingCell {
@@ -1375,28 +1375,35 @@
 
   .framingFrame {
     width: 100%;
-    max-width: 96px;
+    max-width: 92px;
   }
 
   .framingRatio {
     font-size: 0.5rem;
-    letter-spacing: 0.06em;
+    letter-spacing: 0.04em;
+    max-width: 100%;
+    overflow-wrap: normal;
   }
 }
 
-@media (max-width: 380px) {
+@media (max-width: 480px) {
   .framingBoard {
     grid-template-columns: 1fr;
     justify-items: center;
-    gap: 14px;
+    gap: 16px;
   }
 
   .framingCell {
     display: grid;
-    grid-template-columns: 64px 1fr;
+    grid-template-columns: 72px 1fr;
     align-items: center;
-    column-gap: 12px;
+    column-gap: 16px;
     width: 100%;
+  }
+
+  .framingRatio {
+    font-size: 0.56rem;
+    text-align: left;
   }
 
   .framingFrame {
@@ -1405,7 +1412,7 @@
 
   .r916,
   .r11 {
-    max-width: 64px;
+    max-width: 72px;
   }
 }
 
