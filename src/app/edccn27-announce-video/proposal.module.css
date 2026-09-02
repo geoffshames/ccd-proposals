@@ -1007,15 +1007,13 @@
   background: rgb(12 14 19 / 0.92);
   backdrop-filter: blur(14px);
   border-top: 1px solid var(--hairline);
-  transform: translateY(110%);
+  /* No transition by design: the dock must never be mid-flight over page
+     content, so visibility switches in the same frame the state changes. */
   visibility: hidden;
-  transition: transform 420ms cubic-bezier(0.16, 1, 0.3, 1), visibility 0s 420ms;
 }
 
 .dock.dockActive {
-  transform: translateY(0);
   visibility: visible;
-  transition: transform 420ms cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .dockFacts {
@@ -1034,6 +1032,23 @@
   letter-spacing: 0.08em;
   text-transform: uppercase;
   white-space: nowrap;
+  padding-right: 14px;
+}
+
+.dockFacts li + li {
+  position: relative;
+  padding-left: 14px;
+}
+
+.dockFacts li + li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 1px;
+  height: 0.9em;
+  background: var(--rule);
+  transform: translateY(-50%);
 }
 
 .dockCta {
@@ -1300,17 +1315,26 @@
   }
 
   .dockFacts {
-    justify-content: space-between;
-    gap: 8px;
+    justify-content: flex-start;
+    gap: 0;
   }
 
   .dockFacts li {
     font-size: 0.58rem;
     white-space: normal;
+    padding-right: 10px;
+  }
+
+  .dockFacts li + li {
+    padding-left: 10px;
   }
 
   .dockFacts li:nth-child(3) {
     display: none;
+  }
+
+  .dockFacts li + li::before {
+    content: none;
   }
 
   .dockCta {

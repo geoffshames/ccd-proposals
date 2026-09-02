@@ -490,14 +490,29 @@ function DecisionDock() {
     );
     investmentObserver.observe(investment);
 
-    // The dock must never cover the footer or the closing decision section:
-    // once the page end is reachable, the dock gives way to document flow.
+    // The dock must never cover the footer or the closing decision section.
+    // The sentinel is a zero-height marker placed above the decision section:
+    // it triggers one full dock-height of lead before the footer can reach
+    // the viewport, so the dock is gone before any contact is possible.
     const footer = document.querySelector("footer");
     let endObserver: IntersectionObserver | undefined;
+    const sentinel = document.createElement("div");
+    sentinel.setAttribute("data-testid", "dock-sentinel");
+    sentinel.style.position = "absolute";
+    sentinel.style.left = "0";
+    sentinel.style.width = "1px";
+    sentinel.style.height = "1px";
     if (footer) {
+      const ctaSection = document.querySelector('section[aria-labelledby="decision-title"]');
+      const lead = 160;
+      if (ctaSection) {
+        ctaSection.prepend(sentinel);
+        sentinel.style.top = `-${lead}px`;
+      }
       endObserver = new IntersectionObserver(
         ([entry]) => setPageEndVisible(entry.isIntersecting),
-        { threshold: 0 }
+        // rootMargin grows the detection band upward by the lead distance
+        { rootMargin: `${lead}px 0px 0px 0px`, threshold: 0 }
       );
       endObserver.observe(footer);
     }
