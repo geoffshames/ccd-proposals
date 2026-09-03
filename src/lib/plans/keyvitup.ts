@@ -683,7 +683,7 @@ export const keyvitupPlan: StrategyPlanData = {
           ],
           behaviors: [
             "Streams on Spotify free tier, discovers on TikTok",
-            "Organises on X rather than on official platforms",
+            "Organizes on X rather than on official platforms",
             "Buys physical when a local retailer or a group order exists, rarely otherwise",
           ],
           platforms: [
@@ -717,7 +717,7 @@ export const keyvitupPlan: StrategyPlanData = {
           ],
           behaviors: [
             "Discovers through TikTok and YouTube Shorts, converts on Spotify",
-            "Organises fan projects on X and Instagram with no label involvement",
+            "Organizes fan projects on X and Instagram with no label involvement",
           ],
           platforms: [
             { name: "TikTok", role: "The whole relationship today" },
@@ -778,7 +778,7 @@ export const keyvitupPlan: StrategyPlanData = {
           implication: "Instagram delivers a 1.56x median advantage on 19 percent fewer followers, and it is currently unmanaged. This is free reach sitting on the table.",
         },
         {
-          behavior: "Organised fan network totals roughly 2,350 accounts across twelve handles",
+          behavior: "Organized fan network totals roughly 2,350 accounts across twelve handles",
           platforms: ["X"],
           implication: "That is 1.4 percent of the TikTok following. The fandom is almost entirely unorganized, which is a risk today and an opportunity for whoever organizes it first.",
         },
@@ -1380,7 +1380,7 @@ export const keyvitupPlan: StrategyPlanData = {
       subBlocks: [
         {
           label: "A",
-          title: "Republish the Capture Programme",
+          title: "Republish the Capture Program",
           objective: "A working first-party email and SMS capture surface, live in every market, inside three weeks.",
           strategy: "The fan-data campaign provisioned on the distributor's CRM platform is republished using the template already running for another group on the roster, rather than built from scratch. Consent language is written per market so that the Korean and non-Korean flows are separated, since Korean data law forbids bundling a signup with anything else and requires Korean-language notices and explicit opt-outs. Non-Korean fans are captured directly; Korean fans continue through the fan platform, which is where the law puts them.",
           components: {
