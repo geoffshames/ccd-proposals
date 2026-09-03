@@ -33,7 +33,7 @@ export const keyvitupPlan: StrategyPlanData = {
       title: "Overview & Objective",
       subtitle: "The debut worked. The audience it produced came from four countries that received no promotion, and it is still reachable.",
       body: [
-        "KEYVITUP debuted on April 8, 2026 with a self-titled EP and moved 84,882 copies in the first week, which placed 83rd across every release of the year by any artist at any career stage, and reached No. 5 on the Circle weekly album chart. The title track has passed a million Spotify streams, the three music videos have passed 13 million YouTube views between them, and the group closed August with the highest median TikTok engagement rate of the six peers analysed here, at 28.96 percent.",
+        "KEYVITUP debuted on April 8, 2026 with a self-titled EP and moved 84,882 copies in the first week, which placed 83rd across every release of the year by any artist at any career stage, and reached No. 5 on the Circle weekly album chart. The title track has passed a million Spotify streams, the three music videos have passed 13 million YouTube views between them, and the group closed August with the highest median TikTok engagement rate of the six peers analyzed here, at 28.96 percent.",
         "The interesting part is where the listening came from. Monthly listeners peaked globally at 265,562 on May 9. Measured market by market, each on its own peak date, Indonesia reached 140,221, Malaysia 102,330, Taiwan 31,994 and Thailand 22,477, against a Korean peak of 11,665. No appearance, fan event, showcase or media day in any of those four markets appears in any source reviewed for this audit. The audience assembled itself.",
         "It then dispersed, because nothing was built to hold it. Spotify playlist support was concentrated in the launch window and the two largest placements both ended inside seven weeks. Monthly listeners fell 72.3 percent over the hundred days that followed. There is no email list, no SMS list, no membership, no fan club to join, no store and no lightstick. The fandom has a name, KEYPER, and nowhere to register it.",
         "This document audits that gap in detail and then closes it. The order of work is deliberate: capture first, because it is the cheapest and most durable, then the markets that already raised their hands, then the content system that turns reach into repeat. Nothing here asks the group to change what it is. Every recommendation is built on something the group has already proven it can do.",
@@ -43,7 +43,7 @@ export const keyvitupPlan: StrategyPlanData = {
         items: [
           "A tiered market position against thirteen peers, on live consumption rather than reputation",
           "The editorial dependency analysis: what was added, when it was removed, and what it cost",
-          "Where the audience actually is, across streaming, short form and organised fandom",
+          "Where the audience actually is, across streaming, short form and organized fandom",
           "A frame-by-frame read of 123 videos through video AI, performance data joined on every one",
           "A surface-by-surface infrastructure audit of every owned property, verified rather than assumed",
           "Four execution verticals and a twelve-week timeline",
@@ -149,7 +149,7 @@ export const keyvitupPlan: StrategyPlanData = {
                   monthlyListeners: "2.4M Monthly Listeners",
                   instagram: "1.4M Spotify Followers",
                   reference: "Ratio 0.582, debuted January 2024",
-                  note: "Rode a bright, accessible pop identity into a durable streaming base. The nearest tonal neighbour to what KEYVITUP does well when the content is loose rather than choreographed.",
+                  note: "Rode a bright, accessible pop identity into a durable streaming base. The nearest tonal neighbor to what KEYVITUP does well when the content is loose rather than choreographed.",
                 },
               ],
             },
@@ -353,7 +353,7 @@ export const keyvitupPlan: StrategyPlanData = {
             heading: "The three gaps, in order of cost to close",
             items: [
               "No owned capture. Every listener acquired to date has been rented from a platform. Closing this costs a form and a decision, not a budget.",
-              "No promoted presence in the four markets that produced the launch audience. Closing this costs a targeted media programme, not a tour.",
+              "No promoted presence in the four markets that produced the launch audience. Closing this costs a targeted media program, not a tour.",
               "No repeatable content franchise, against peers running between one and eight each. Closing this costs a format decision and consistency, not production spend.",
             ],
           },
@@ -689,7 +689,7 @@ export const keyvitupPlan: StrategyPlanData = {
           platforms: [
             { name: "TikTok", role: "Discovery and the primary acquisition surface" },
             { name: "Spotify", role: "Consumption, currently the only place they are counted" },
-            { name: "X", role: "Where the fanbase self-organises, entirely unsupported today" },
+            { name: "X", role: "Where the fanbase self-organizes, entirely unsupported today" },
           ],
           barriers: [
             "No official account, capture surface or content in any Southeast Asian language",
@@ -707,8 +707,8 @@ export const keyvitupPlan: StrategyPlanData = {
           priority: "expansion",
           profile: "Mexico and Brazil alone account for 11.3 percent of TikTok followers, at 6.11 and 5.19 percent, and Lima ranks fifth among all listener cities worldwide. This audience has received nothing: no press, no interview, no Spanish-language coverage anywhere on earth, and no official account in any language they speak.",
           psychographics: [
-            "Short-form native, extremely high save and share behaviour",
-            "Fandom culture organised around translation accounts and group chats",
+            "Short-form native, extremely high save and share behavior",
+            "Fandom culture organized around translation accounts and group chats",
             "Strong live-event demand relative to market income, historically underserved by K-pop touring",
           ],
           motivations: [
@@ -725,7 +725,7 @@ export const keyvitupPlan: StrategyPlanData = {
           ],
           barriers: [
             "Zero Spanish or Portuguese content across 504 owned posts",
-            "One dormant Brazilian fan account at 119 followers is the entire organised presence",
+            "One dormant Brazilian fan account at 119 followers is the entire organized presence",
           ],
           triggers: [
             "Spanish and Portuguese subtitles on existing content, which costs nothing to produce",
@@ -768,7 +768,7 @@ export const keyvitupPlan: StrategyPlanData = {
       ],
       behaviorSignals: [
         {
-          behavior: "Highest median engagement rate of the six peers analysed, at 28.96 percent",
+          behavior: "Highest median engagement rate of the six peers analyzed, at 28.96 percent",
           platforms: ["TikTok"],
           implication: "The people who see the content respond to it more strongly than they respond to any competitor. Holding power is not the problem. Reach is.",
         },
@@ -780,7 +780,7 @@ export const keyvitupPlan: StrategyPlanData = {
         {
           behavior: "Organised fan network totals roughly 2,350 accounts across twelve handles",
           platforms: ["X"],
-          implication: "That is 1.4 percent of the TikTok following. The fandom is almost entirely unorganised, which is a risk today and an opportunity for whoever organises it first.",
+          implication: "That is 1.4 percent of the TikTok following. The fandom is almost entirely unorganized, which is a risk today and an opportunity for whoever organizes it first.",
         },
         {
           behavior: "Zero fan-run accounts exist on TikTok, the group's largest platform",
@@ -829,7 +829,7 @@ export const keyvitupPlan: StrategyPlanData = {
         },
         {
           platform: "Instagram",
-          note: "139,970 followers. The quiet overperformer: 33 of 50 analysed reels are same-day twins of TikTok posts and Instagram won 28 of those 33, at a median pairwise advantage of 1.56 times, on 19 percent fewer followers. Comparing account medians rather than pairs, Instagram runs 51,379 against TikTok's 40,100.",
+          note: "139,970 followers. The quiet overperformer: 33 of 50 analyzed reels are same-day twins of TikTok posts and Instagram won 28 of those 33, at a median pairwise advantage of 1.56 times, on 19 percent fewer followers. Comparing account medians rather than pairs, Instagram runs 51,379 against TikTok's 40,100.",
         },
         {
           platform: "Spotify",
@@ -854,7 +854,7 @@ export const keyvitupPlan: StrategyPlanData = {
       intro: "Crowd Control Digital indexed 123 videos into a dedicated KEYVITUP intelligence store on TwelveLabs video AI: 73 of the group's own posts across TikTok, YouTube and Instagram including all three music videos, plus 50 posts from VAYONN, MODYSSEY, CORTIS, AHOF and IDID. Selection was drawn from a full enumeration of 3,860 posts across nine accounts, stratified so that top and bottom performers are both represented, with real performance data joined to every item. Every finding below is joined to the performance band it holds in, and carries the counter-evidence found against it.",
       clientQuestion: {
         attribution: "The question this analysis answers",
-        question: "The group holds the highest engagement rate of the six peers analysed here and the smallest audience among them. What is in the content that keeps people, and what is missing that would bring more of them?",
+        question: "The group holds the highest engagement rate of the six peers analyzed here and the smallest audience among them. What is in the content that keeps people, and what is missing that would bring more of them?",
       },
       methodology: [
         {
@@ -880,7 +880,7 @@ export const keyvitupPlan: StrategyPlanData = {
       ],
       corpusStats: [
         {
-          label: "Videos analysed",
+          label: "Videos analyzed",
           value: "123",
           detail: "73 owned and 50 competitor, 70.9 minutes, selected from a full enumeration of 3,860 posts across nine accounts",
         },
@@ -892,7 +892,7 @@ export const keyvitupPlan: StrategyPlanData = {
         {
           label: "Median engagement rate",
           value: "28.96%",
-          detail: "Highest of the six peers analysed, ahead of IDID at 24.95 and CORTIS at 23.06",
+          detail: "Highest of the six peers analyzed, ahead of IDID at 24.95 and CORTIS at 23.06",
         },
         {
           label: "Posts since last campaign asset",
@@ -984,7 +984,7 @@ export const keyvitupPlan: StrategyPlanData = {
               ],
             },
           ],
-          note: "The April-only column controls for debut novelty and the gap holds at 2.5 times. This is not a launch-window artefact.",
+          note: "The April-only column controls for debut novelty and the gap holds at 2.5 times. This is not a launch-window artifact.",
           source: "CREATIVE CONTROL corpus, September 2026",
         },
         {
@@ -1137,7 +1137,7 @@ export const keyvitupPlan: StrategyPlanData = {
           summary: "Head to head at their best, VAYONN runs 8 of 11 personality-led posts against KEYVITUP's 0 of 9, which are 9 of 9 choreography-led. Re-running the classification on KEYVITUP's mid, bottom and Instagram content only, deliberately excluding their top performers, puts fan-service gesture as main content at 2 of 42, or 5 percent, against VAYONN's 31 to 38 percent. VAYONN also posts far more, at 199 TikToks across July and August against 50.",
           evidence: [
             "VAYONN 8 of 11 personality-led at their best; KEYVITUP 0 of 9",
-            "KEYVITUP fan-service-as-main-content: 2 of 42, tested on a deliberately unfavourable sample",
+            "KEYVITUP fan-service-as-main-content: 2 of 42, tested on a deliberately unfavorable sample",
             "Direct-to-camera fan interaction is VAYONN's single largest recurring format at 6 of 16",
             "Posting volume: 134 VAYONN TikToks in July against 28",
           ],
@@ -1211,7 +1211,7 @@ export const keyvitupPlan: StrategyPlanData = {
             "55 of 73 fully survive translation, 15 partially, 3 not at all",
             "Dance was the most common fully-surviving format across all five passes",
             "The failures are the subway game, the personality test, the conversation piece, the profile interview and the props gag",
-            "Median engagement of 28.96 percent, the highest of the six peers analysed, says holding power is not the constraint",
+            "Median engagement of 28.96 percent, the highest of the six peers analyzed, says holding power is not the constraint",
           ],
           pivot: {
             title: "Build the personality lane translation-first",
@@ -1235,13 +1235,13 @@ export const keyvitupPlan: StrategyPlanData = {
       navLabel: "Infrastructure",
       title: "Infrastructure Audit",
       philosophy: "Every surface was checked rather than assumed, with a working control tested against each one. The good news is that most of what is needed already exists and is switched off.",
-      intro: "This is a surface-by-surface verification of every owned property: website, link-in-bio, fan platform, fandom, commerce, retail, lightstick and DSP profiles. The headline is not that nothing was built. It is that a capture programme was provisioned, on a platform the label already uses successfully for another group on its own roster, and then left unpublished.",
+      intro: "This is a surface-by-surface verification of every owned property: website, link-in-bio, fan platform, fandom, commerce, retail, lightstick and DSP profiles. The headline is not that nothing was built. It is that a capture program was provisioned, on a platform the label already uses successfully for another group on its own roster, and then left unpublished.",
       subBlocks: [
         {
           label: "A",
           title: "First-Party Data Capture",
           objective: "Establish, with evidence, whether any first-party data capture exists on any owned surface.",
-          strategy: "The official smart link for the release declares a fan-data campaign on the distributor's CRM platform as its origin URL. That campaign address resolves and is recognised by the platform, which distinguishes it from an address that was never created, and it renders a page saying it no longer exists, carrying zero input fields. The equivalent address for another group on the same label roster returns a live capture form with fifteen inputs, including mailing-list assignment, triggered sends, newsletter opt-ins and a pre-save. Whatever was provisioned for KEYVITUP is not collecting, on tooling the label already operates successfully elsewhere.",
+          strategy: "The official smart link for the release declares a fan-data campaign on the distributor's CRM platform as its origin URL. That campaign address resolves and is recognized by the platform, which distinguishes it from an address that was never created, and it renders a page saying it no longer exists, carrying zero input fields. The equivalent address for another group on the same label roster returns a live capture form with fifteen inputs, including mailing-list assignment, triggered sends, newsletter opt-ins and a pre-save. Whatever was provisioned for KEYVITUP is not collecting, on tooling the label already operates successfully elsewhere.",
           components: {
             heading: "Verified absent across every owned surface",
             items: [
@@ -1318,7 +1318,7 @@ export const keyvitupPlan: StrategyPlanData = {
               "Three music videos carrying roughly 13 million combined views, roughly three hundred times the subscriber count",
               "Two verified Chinese-platform accounts, roughly 15,700 followers, unlinked from any other property",
               "An Apple Music profile live since release day, carrying no editorial biography prose",
-              "A Philippine fan account and a Brazilian fan account already organising with no support",
+              "A Philippine fan account and a Brazilian fan account already organizing with no support",
             ],
           },
           kpis: [
@@ -1347,7 +1347,7 @@ export const keyvitupPlan: StrategyPlanData = {
         },
         {
           label: "Amplifier 1 / The Markets That Already Answered",
-          description: "Indonesia, Malaysia, Thailand, the Philippines and Latin America produced the launch audience with zero promotional support and have received nothing since. Enter them properly: translated content first because it costs almost nothing, then targeted paid against the short-form audience that is still intact, then a seeded fan-page network in the places where the fandom has already tried twice to organise itself and found nothing to join.",
+          description: "Indonesia, Malaysia, Thailand, the Philippines and Latin America produced the launch audience with zero promotional support and have received nothing since. Enter them properly: translated content first because it costs almost nothing, then targeted paid against the short-form audience that is still intact, then a seeded fan-page network in the places where the fandom has already tried twice to organize itself and found nothing to join.",
         },
         {
           label: "Amplifier 2 / The Content System",
@@ -1426,13 +1426,13 @@ export const keyvitupPlan: StrategyPlanData = {
         {
           label: "C",
           title: "Fan-Page Network Seeding",
-          objective: "Give the organised fandom something to attach to in the markets where it has already attempted to form.",
-          strategy: "The entire organised fan network totals roughly 2,350 accounts across twelve handles, which is 1.4 percent of the TikTok following, and there are zero fan-run accounts on TikTok, the group's largest platform. Two Indonesian fanbase accounts were created and abandoned with zero posts, which is demand looking for something to join and finding nothing. The network is seeded in the launch markets first, in local language, and connected to the capture surface built in block A.",
+          objective: "Give the organized fandom something to attach to in the markets where it has already attempted to form.",
+          strategy: "The entire organized fan network totals roughly 2,350 accounts across twelve handles, which is 1.4 percent of the TikTok following, and there are zero fan-run accounts on TikTok, the group's largest platform. Two Indonesian fanbase accounts were created and abandoned with zero posts, which is demand looking for something to join and finding nothing. The network is seeded in the launch markets first, in local language, and connected to the capture surface built in block A.",
           components: {
             heading: "Priority markets, in order",
             items: [
               "Indonesia, where two accounts were created and abandoned and the peak listener figure was 140,221",
-              "Malaysia, at a 102,330 peak with no organised presence at all",
+              "Malaysia, at a 102,330 peak with no organized presence at all",
               "The Philippines, where a fan account already exists and is active with no support",
               "Spanish-language Latin America, where there is currently no account of any kind against Lima ranking fourth among listener cities",
               "Thailand, at a 22,477 peak and no presence",
@@ -1546,7 +1546,7 @@ export const keyvitupPlan: StrategyPlanData = {
           label: "A",
           title: "Placement Case for the Next Release",
           objective: "Enter the next cycle with a stronger editorial argument than the debut had, built on evidence rather than novelty.",
-          strategy: "A debut gets placed on potential. A second release gets placed on evidence. The evidence a Spotify editor responds to is save rate, completion, follower conversion and market-level traction, all of which the plan generates in verticals 1 and 2 before the pitch is made. The pitch is prepared per market rather than centrally, because the group's strongest markets are not the ones a Korean-centred pitch would lead with. Malaysian, Indonesian and Latin American editorial teams are approached with their own market data, which is a materially different conversation from the one the debut had.",
+          strategy: "A debut gets placed on potential. A second release gets placed on evidence. The evidence a Spotify editor responds to is save rate, completion, follower conversion and market-level traction, all of which the plan generates in verticals 1 and 2 before the pitch is made. The pitch is prepared per market rather than centrally, because the group's strongest markets are not the ones a Korean-centered pitch would lead with. Malaysian, Indonesian and Latin American editorial teams are approached with their own market data, which is a materially different conversation from the one the debut had.",
           components: {
             heading: "Pitch inputs to build first",
             items: [
@@ -1554,7 +1554,7 @@ export const keyvitupPlan: StrategyPlanData = {
               "Market-level traction data for Indonesia, Malaysia, the Philippines and Latin America",
               "The catalog floor, at roughly 7,900 streams a day with no active promotion",
               "The algorithmic pickup on the non-single track, as evidence the music holds without a campaign",
-              "The engagement rate, highest of the six peers analysed here, which is a genuine differentiator in a pitch",
+              "The engagement rate, highest of the six peers analyzed here, which is a genuine differentiator in a pitch",
             ],
           },
           kpis: [
@@ -1568,11 +1568,11 @@ export const keyvitupPlan: StrategyPlanData = {
           label: "B",
           title: "Reduce the Concentration Risk",
           objective: "Stop 83 percent of playlist reach sitting in eight lists the group does not control.",
-          strategy: "Of 206 current Spotify playlists, eight are Spotify-owned and carry 498,745 of the 602,175 total reach. Four of those eight are algorithmic artist radio lists that can disappear without a human decision. The remaining 198 lists carry 103,430 between them and 194 of them have fewer than 1,000 followers. The counterweight is a deliberate independent and curator programme in the launch markets, plus the owned surfaces from vertical 1, so that the next removal costs the group a smaller share of its reach than the last one did.",
+          strategy: "Of 206 current Spotify playlists, eight are Spotify-owned and carry 498,745 of the 602,175 total reach. Four of those eight are algorithmic artist radio lists that can disappear without a human decision. The remaining 198 lists carry 103,430 between them and 194 of them have fewer than 1,000 followers. The counterweight is a deliberate independent and curator program in the launch markets, plus the owned surfaces from vertical 1, so that the next removal costs the group a smaller share of its reach than the last one did.",
           components: {
             heading: "Diversification",
             items: [
-              "Independent and market-native curator programme in Indonesia, Malaysia and Latin America",
+              "Independent and market-native curator program in Indonesia, Malaysia and Latin America",
               "Apple Music editorial biography submitted, which is currently absent",
               "Second-largest DSP relationships opened in the launch markets rather than only in Korea and the United States",
               "Owned surfaces carrying pre-save and follow prompts so that reach converts into a permanent follower rather than a monthly listener",
@@ -1597,8 +1597,8 @@ export const keyvitupPlan: StrategyPlanData = {
       number: "11",
       navLabel: "PR",
       title: "Vertical 4 / PR & Market Entry",
-      philosophy: "The press programme has been well executed and aimed at one market. The opportunity is to aim the same machine at the markets that already answered.",
-      intro: "The group has run a real international press programme: eleven English-language interviews, an in-person United States run around KCON Los Angeles, a fan meet, and a partner activation, with interviews scheduled at Korean midnight to hit American business hours. That work produced a measurable result and the United States is now the largest single tracked listener market. The gap is that the same effort has never been pointed at Southeast Asia or Latin America, where two label-serviced placements represent the entire programme to date.",
+      philosophy: "The press program has been well executed and aimed at one market. The opportunity is to aim the same machine at the markets that already answered.",
+      intro: "The group has run a real international press program: eleven English-language interviews, an in-person United States run around KCON Los Angeles, a fan meet, and a partner activation, with interviews scheduled at Korean midnight to hit American business hours. That work produced a measurable result and the United States is now the largest single tracked listener market. The gap is that the same effort has never been pointed at Southeast Asia or Latin America, where two label-serviced placements represent the entire program to date.",
       subBlocks: [
         {
           label: "A",
