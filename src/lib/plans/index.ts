@@ -21,9 +21,11 @@ import { kiiikiiiPlan } from "./kiiikiii";
 import { kiiikiiiPlanKorean } from "./kiiikiii-ko";
 import { irationPlan } from "./iration";
 import { markTuanPlan } from "./mark-tuan";
+import { markTuanPlanProposal } from "./mark-tuan-plan";
 
 export const PLANS: Record<string, StrategyPlanData> = {
   "mark-tuan": markTuanPlan,
+  "mark-tuan-plan": markTuanPlanProposal,
   iration: irationPlan,
   kiiikiii: kiiikiiiPlan,
   "kiiikiii-ko": kiiikiiiPlanKorean,
