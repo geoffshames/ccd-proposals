@@ -34,7 +34,7 @@ export const alldayProjectPlan: StrategyPlanData = {
       subtitle: "ALLDAY PROJECT has added Spotify followers every single week since debut, including through nine months without a comeback. The opportunity is that almost nothing in the current setup lets those followers do anything next.",
       body: [
         "Fourteen months after debut, ALLDAY PROJECT holds a follower-to-listener ratio of 0.468, the highest of the 2025 rookie class. Spotify followers stand at 908,927 and have never declined in a single reading since debut, still adding roughly 509 a day at the date of this audit and through nine months with no comeback in market. On the format the industry said could not sell albums, the first EP moved 250,071 copies in its opening week. The commitment is real, it is measurable, and it is compounding on its own.",
-        "The infrastructure to serve that commitment already exists and was paid for. DAY ONE was named on debut day. The DAY OFF app took 40,000 signups in its first 24 hours across 156 countries. A paid membership launched and sold out. What has not been built is the connective layer between the two: the owned channels route nowhere, the membership gates nothing, there is no lightstick, and the group has not yet played a headline show in any market. The audit half of this document measures each of those gaps precisely across consumption, decay behavior, audience, video, and infrastructure. The strategy half connects what is already standing, and points it at the United States, which is this group's number one listening market and has never been worked.",
+        "The infrastructure to serve that commitment already exists and was paid for. DAY ONE was named the day before debut. The DAY OFF app took 40,000 signups in its first 24 hours across 156 countries. A paid membership launched and sold out. What has not been built is the connective layer between the two: the owned channels route nowhere, the membership gates nothing, there is no lightstick, and the group has not yet played a headline show in any market. The audit half of this document measures each of those gaps precisely across consumption, decay behavior, audience, video, and infrastructure. The strategy half connects what is already standing, and points it at the United States, which is this group's number one listening market and has never been worked.",
       ],
       supports: {
         heading: "What This Document Covers",
@@ -1464,7 +1464,7 @@ export const alldayProjectPlan: StrategyPlanData = {
           ],
         },
         {
-          name: "Conversion Infrastructure",
+          name: "Conversion Layer",
           cells: [
             { weekIndex: 1, intensity: "high", label: "WIRE" },
             { weekIndex: 2, intensity: "high", label: "BUILD" },
