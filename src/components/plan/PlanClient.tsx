@@ -21,6 +21,7 @@ import { PlanAssetChecklist } from "./PlanAssetChecklist";
 import { PlanContentAnalysis } from "./PlanContentAnalysis";
 import { PlanCostModel } from "./PlanCostModel";
 import { PlanApprove } from "./PlanApprove";
+import { PlanPartToggle, PlanPartEnd } from "./PlanPartSwitch";
 import { LanguageToggle } from "@/components/LanguageToggle";
 import { ProjectProvider, type ProjectData } from "@/lib/project-context";
 
@@ -53,6 +54,7 @@ export function PlanClient({ plan }: { plan: StrategyPlanData }) {
         }}
       >
         <PlanLanguageToggle plan={plan} />
+        <PlanPartToggle />
         <PlanNavigation />
         <PlanCover />
 
@@ -96,6 +98,8 @@ export function PlanClient({ plan }: { plan: StrategyPlanData }) {
               return null;
           }
         })}
+
+        <PlanPartEnd />
 
         <PlanApprove />
 

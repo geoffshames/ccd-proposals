@@ -3,8 +3,16 @@ import type { StrategyPlanData } from "../plan-context";
 export const markTuanPlanProposal: StrategyPlanData = {
   accentColor: "#FD3737",
   ogImage: "/images/mark-tuan/og-image-plan.png",
-  language: "Plan",
-  languageAlternates: [{ slug: "mark-tuan", label: "Brand Audit", code: "AUDIT" }],
+  partSwitch: {
+    currentCode: "PLAN",
+    slug: "mark-tuan",
+    code: "AUDIT",
+    label: "the brand audit",
+    eyebrow: "Part One",
+    endTitle: "The Brand Audit",
+    endBlurb: "The evidence this plan is built on: market position against sixteen peers, consumption and decay era by era, the Southeast Asia audience profile, 162 videos analyzed frame by frame, and the infrastructure audit.",
+    endCta: "Read the audit",
+  },
 
   cover: {
     label: "Part Two / Southeast Asia Launch Plan",

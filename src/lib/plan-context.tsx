@@ -705,6 +705,25 @@ export type PlanSection =
 
 // Plan root -----------------------------------------------------------------
 
+export type PlanPartSwitchSpec = {
+  /** Short code shown in the active pill for THIS page, e.g. "AUDIT". */
+  currentCode: string;
+  /** Slug of the other part. */
+  slug: string;
+  /** Short code shown in the link pill for the other part, e.g. "PLAN". */
+  code: string;
+  /** Full name of the other part, used for titles and aria labels. */
+  label: string;
+  /** Eyebrow above the end-of-page band, e.g. "PART TWO". */
+  eyebrow?: string;
+  /** Headline on the end-of-page band. Defaults to `label`. */
+  endTitle?: string;
+  /** One-line description under the end-of-page headline. */
+  endBlurb?: string;
+  /** Button text on the end-of-page band. */
+  endCta?: string;
+};
+
 export type StrategyPlanData = {
   accentColor: string;
   noIndex?: boolean;
@@ -728,6 +747,13 @@ export type StrategyPlanData = {
   };
 
   ogImage?: string;
+
+  /**
+   * Set when a plan ships as two linked pages (for example an audit and the
+   * plan built on it). Renders a persistent pill switch and an end-of-page
+   * band. Plans that omit it are unaffected.
+   */
+  partSwitch?: PlanPartSwitchSpec;
 
   approveCta?: {
     label: string;

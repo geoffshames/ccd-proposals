@@ -3,6 +3,7 @@
 import { useEffect, useState, useMemo } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { usePlan } from "@/lib/plan-context";
+import { PlanPartPills } from "./PlanPartSwitch";
 
 function deriveNavLabel(section: { navLabel?: string; title: string }): string {
   if (section.navLabel) return section.navLabel;
@@ -118,13 +119,19 @@ export function PlanNavigation() {
               )}
             </div>
 
-            {/* Right: Approve CTA (desktop only). Mobile hamburger lives on the left. */}
-            <a
-              href="#approve"
-              className="hidden md:inline-flex ml-auto flex-shrink-0 text-[10px] md:text-[11px] font-mono tracking-[0.14em] uppercase text-white bg-accent px-3 md:px-4 py-1.5 md:py-2 hover:bg-accent/90 transition-colors whitespace-nowrap"
-            >
-              Approve
-            </a>
+            {/* Right rail: part switch stays visible at every scroll position;
+                the Approve CTA only renders on a page that has one. */}
+            <div className="ml-auto flex items-center gap-2 md:gap-3 flex-shrink-0">
+              <PlanPartPills compact />
+              {PLAN.approveCta && (
+                <a
+                  href="#approve"
+                  className="hidden md:inline-flex text-[10px] md:text-[11px] font-mono tracking-[0.14em] uppercase text-white bg-accent px-3 md:px-4 py-1.5 md:py-2 hover:bg-accent/90 transition-colors whitespace-nowrap"
+                >
+                  Approve
+                </a>
+              )}
+            </div>
           </div>
 
           {/* Mobile menu drawer */}
@@ -153,13 +160,24 @@ export function PlanNavigation() {
                       <span>{item.label}</span>
                     </a>
                   ))}
-                  <a
-                    href="#approve"
-                    onClick={() => setMobileOpen(false)}
-                    className="mt-3 flex items-center justify-center px-3 py-3.5 text-[12px] font-mono uppercase tracking-[0.18em] text-white bg-accent"
-                  >
-                    Approve
-                  </a>
+                  {PLAN.partSwitch && (
+                    <a
+                      href={`/${PLAN.partSwitch.slug}`}
+                      onClick={() => setMobileOpen(false)}
+                      className="mt-3 flex items-center justify-center px-3 py-3.5 text-[12px] font-mono uppercase tracking-[0.18em] text-text-primary border border-text-muted/30"
+                    >
+                      {PLAN.partSwitch.endCta ?? PLAN.partSwitch.label}
+                    </a>
+                  )}
+                  {PLAN.approveCta && (
+                    <a
+                      href="#approve"
+                      onClick={() => setMobileOpen(false)}
+                      className="mt-3 flex items-center justify-center px-3 py-3.5 text-[12px] font-mono uppercase tracking-[0.18em] text-white bg-accent"
+                    >
+                      Approve
+                    </a>
+                  )}
                 </div>
               </motion.div>
             )}

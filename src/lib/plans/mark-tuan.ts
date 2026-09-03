@@ -3,8 +3,16 @@ import type { StrategyPlanData } from "../plan-context";
 export const markTuanPlan: StrategyPlanData = {
   accentColor: "#FD3737",
   ogImage: "/images/mark-tuan/og-image.png",
-  language: "Audit",
-  languageAlternates: [{ slug: "mark-tuan-plan", label: "Southeast Asia Launch Plan", code: "PLAN" }],
+  partSwitch: {
+    currentCode: "AUDIT",
+    slug: "mark-tuan-plan",
+    code: "PLAN",
+    label: "the Southeast Asia launch plan",
+    eyebrow: "Part Two",
+    endTitle: "The Southeast Asia Launch Plan",
+    endBlurb: "What Crowd Control Digital runs against these findings: paid media concentrated on Thailand, a Thai creator wave on two sound cuts, and the creative direction and reporting that sit inside the fee. Priced two ways.",
+    endCta: "Read the launch plan",
+  },
 
   cover: {
     label: "Part One / Brand Audit",
