@@ -28,8 +28,16 @@ import { meovvPlan } from "./meovv";
 import { meovvPlanKorean } from "./meovv-ko";
 import { keyvitupPlan } from "./keyvitup";
 import { keyvitupPlanKorean } from "./keyvitup-ko";
+import { zerobaseonePlan } from "./zerobaseone";
+import { zerobaseonePlanProposal } from "./zerobaseone-plan";
+import { zerobaseonePlanKorean } from "./zerobaseone-ko";
+import { zerobaseonePlanProposalKorean } from "./zerobaseone-plan-ko";
 
 export const PLANS: Record<string, StrategyPlanData> = {
+  zerobaseone: zerobaseonePlan,
+  "zerobaseone-plan": zerobaseonePlanProposal,
+  "zerobaseone-ko": zerobaseonePlanKorean,
+  "zerobaseone-plan-ko": zerobaseonePlanProposalKorean,
   keyvitup: keyvitupPlan,
   "keyvitup-ko": keyvitupPlanKorean,
   meovv: meovvPlan,
