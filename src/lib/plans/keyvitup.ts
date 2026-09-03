@@ -554,9 +554,9 @@ export const keyvitupPlan: StrategyPlanData = {
                   points: [
                     { x: "All New K-Pop", y: 359024 },
                     { x: "K-Pop Dance Driving", y: 119937 },
-                    { x: "All 198 third-party lists", y: 103430 },
+                    { x: "198 other lists", y: 103430 },
                     { x: "MU:CON 2026", y: 10668 },
-                    { x: "Artist radio and mix lists (5)", y: 9116 },
+                    { x: "Artist radio (5)", y: 9116 },
                   ],
                 },
               ],

@@ -554,9 +554,9 @@ export const keyvitupPlanKorean: StrategyPlanData = {
                   points: [
                     { x: "All New K-Pop", y: 359024 },
                     { x: "K-Pop Dance Driving", y: 119937 },
-                    { x: "모든 198개의 서드파티 리스트", y: 103430 },
+                    { x: "기타 198개 리스트", y: 103430 },
                     { x: "MU:CON 2026", y: 10668 },
-                    { x: "아티스트 라디오 및 믹스 리스트 (5)", y: 9116 },
+                    { x: "아티스트 라디오 (5)", y: 9116 },
                   ],
                 },
               ],
