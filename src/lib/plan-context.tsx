@@ -481,7 +481,7 @@ export type ContentFinding = {
 
 export type ContentMixRow = {
   metric: string;
-  lolaAmour: string;
+  subject: string;
   benchmark: string;
   read: "ahead" | "inline" | "behind" | "neutral";
   note?: string;

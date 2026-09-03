@@ -408,7 +408,7 @@ export function PlanContentAnalysis({ section }: { section: ContentAnalysisSecti
                         )}
                       </td>
                       <td className="px-5 py-4 text-[13px] text-text-primary/80 leading-snug align-top">
-                        {r.lolaAmour}
+                        {r.subject}
                       </td>
                       <td className="px-5 py-4 text-[13px] text-text-muted leading-snug align-top">
                         {r.benchmark}

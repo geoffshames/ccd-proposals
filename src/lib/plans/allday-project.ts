@@ -9,7 +9,7 @@ export const alldayProjectPlan: StrategyPlanData = {
   cover: {
     label: "Brand Audit & Growth Strategy",
     title: "ALLDAY PROJECT",
-    subtitle: "An audit of the most committed fanbase in the 2025 rookie class, the infrastructure already built to serve it, and the plan that connects the two.",
+    subtitle: "An audit of a following that has never stopped growing, the infrastructure already built to serve it, and the plan that connects the two.",
     partnership: "Transparent Arts × Crowd Control Digital",
     prepared: "Geoff Shames / Co-Founder, Crowd Control Digital",
     date: "September 2026",
@@ -31,9 +31,9 @@ export const alldayProjectPlan: StrategyPlanData = {
       number: "01",
       navLabel: "Overview",
       title: "Overview & Objective",
-      subtitle: "ALLDAY PROJECT converts listeners into fans better than any act in its class. The opportunity is that almost nothing in the current setup lets those fans do anything next.",
+      subtitle: "ALLDAY PROJECT has added Spotify followers every single week since debut, including through nine months without a comeback. The opportunity is that almost nothing in the current setup lets those followers do anything next.",
       body: [
-        "Fourteen months after debut, ALLDAY PROJECT holds a follower-to-listener ratio of 0.468, the highest of any active group in the 2024 to 2026 rookie cohort. Spotify followers stand at 908,927 and have never declined in a single reading since debut, still adding roughly 509 a day at the date of this audit with no new music in market since December. On the format the industry said could not sell albums, the first EP moved 250,071 copies in its opening week. The commitment is real, it is measurable, and it is compounding on its own.",
+        "Fourteen months after debut, ALLDAY PROJECT holds a follower-to-listener ratio of 0.468, the highest of the 2025 rookie class. Spotify followers stand at 908,927 and have never declined in a single reading since debut, still adding roughly 509 a day at the date of this audit and through nine months with no comeback in market. On the format the industry said could not sell albums, the first EP moved 250,071 copies in its opening week. The commitment is real, it is measurable, and it is compounding on its own.",
         "The infrastructure to serve that commitment already exists and was paid for. DAY ONE was named on debut day. The DAY OFF app took 40,000 signups in its first 24 hours across 156 countries. A paid membership launched and sold out. What has not been built is the connective layer between the two: the owned channels route nowhere, the membership gates nothing, there is no lightstick, and the group has not yet played a headline show in any market. The audit half of this document measures each of those gaps precisely across consumption, decay behavior, audience, video, and infrastructure. The strategy half connects what is already standing, and points it at the United States, which is this group's number one listening market and has never been worked.",
       ],
       supports: {
@@ -50,11 +50,11 @@ export const alldayProjectPlan: StrategyPlanData = {
       goals: {
         heading: "12-Month Targets",
         items: [
-          "Spotify monthly listeners recovering from 1.94M toward the 4M+ range the group already reached in December 2025",
-          "Editorial reach rebuilt from 146,835 live toward the 13.8M the catalog has previously held",
+          "Spotify monthly listeners recovering from 1.94M toward the 4.20M the group reached in December 2025",
+          "Editorial reach rebuilt from 146,625 live toward the 12.45M the catalog held as recently as March 2026",
           "First-party capture standing up from zero to a measurable owned list across email and SMS in the U.S.",
           "Short form restarted to a sustained 4+ posts per week, the cadence every group in the comp set runs",
-          "A first headline moment and a lightstick, giving the sold-out membership something to actually gate",
+          "A first headline room and a lightstick, giving the sold-out membership something to actually gate",
           "First U.S. retail program and a named U.S. partner structure, converting the group's largest market",
         ],
       },
@@ -62,31 +62,31 @@ export const alldayProjectPlan: StrategyPlanData = {
         {
           kind: "area",
           title: "14 Months of Spotify Consumption",
-          subtitle: "Monthly-listener and follower readings since debut. The two lines move in opposite directions: followers have never fallen in a single reading, while listeners peaked in December 2025 and have declined every month since.",
+          subtitle: "Monthly-listener and follower readings since debut. The two lines move in opposite directions: followers have never fallen in a single reading, while listeners peaked at 4.20M on December 20 2025 and are down roughly 54% from there.",
           series: [
             {
               name: "Monthly listeners",
               points: [
-                { x: "6/25/25", y: 156612 }, { x: "7/1/25", y: 881795 }, { x: "8/1/25", y: 3558809 }, { x: "9/1/25", y: 3048881 }, { x: "10/1/25", y: 2731824 }, { x: "11/1/25", y: 2341639 }, { x: "12/1/25", y: 3263035 }, { x: "1/1/26", y: 4036593 }, { x: "2/1/26", y: 3690893 }, { x: "3/1/26", y: 3076390 }, { x: "4/1/26", y: 3012497 }, { x: "5/1/26", y: 2581395 }, { x: "6/1/26", y: 2553854 }, { x: "7/1/26", y: 2204568 }, { x: "8/1/26", y: 1990176 }, { x: "8/31/26", y: 1951884 },
+                { x: "6/25/25", y: 156612 }, { x: "7/1/25", y: 881795 }, { x: "8/1/25", y: 3558809 }, { x: "9/1/25", y: 3048881 }, { x: "10/1/25", y: 2731824 }, { x: "11/1/25", y: 2341639 }, { x: "12/1/25", y: 3263035 }, { x: "12/20/25", y: 4195113 }, { x: "1/1/26", y: 4036593 }, { x: "2/1/26", y: 3690893 }, { x: "3/1/26", y: 3076390 }, { x: "4/1/26", y: 3012497 }, { x: "5/1/26", y: 2581395 }, { x: "6/1/26", y: 2553854 }, { x: "7/1/26", y: 2204568 }, { x: "8/1/26", y: 1990176 }, { x: "8/31/26", y: 1951884 },
               ],
             },
             {
               name: "Followers",
               points: [
-                { x: "6/25/25", y: 46559 }, { x: "7/1/25", y: 125931 }, { x: "8/1/25", y: 270952 }, { x: "9/1/25", y: 369070 }, { x: "10/1/25", y: 424242 }, { x: "11/1/25", y: 461394 }, { x: "12/1/25", y: 516130 }, { x: "1/1/26", y: 596469 }, { x: "2/1/26", y: 672386 }, { x: "3/1/26", y: 723276 }, { x: "4/1/26", y: 773837 }, { x: "5/1/26", y: 814269 }, { x: "6/1/26", y: 849748 }, { x: "7/1/26", y: 873859 }, { x: "8/1/26", y: 892294 }, { x: "8/31/26", y: 907611 },
+                { x: "6/25/25", y: 46559 }, { x: "7/1/25", y: 125931 }, { x: "8/1/25", y: 270952 }, { x: "9/1/25", y: 369070 }, { x: "10/1/25", y: 424242 }, { x: "11/1/25", y: 461394 }, { x: "12/1/25", y: 516130 }, { x: "12/20/25", y: 569294 }, { x: "1/1/26", y: 596469 }, { x: "2/1/26", y: 672386 }, { x: "3/1/26", y: 723276 }, { x: "4/1/26", y: 773837 }, { x: "5/1/26", y: 814269 }, { x: "6/1/26", y: 849748 }, { x: "7/1/26", y: 873859 }, { x: "8/1/26", y: 892294 }, { x: "8/31/26", y: 907611 },
               ],
             },
           ],
           markers: [
             { x: "6/25/25", label: "DEBUT" },
-            { x: "12/1/25", label: "1ST EP" },
+            { x: "12/20/25", label: "PEAK" },
             { x: "3/1/26", label: "PUBG" },
           ],
           tall: true,
           source: "Chartmetric, Jun 25 2025 to Aug 31 2026",
         },
       ],
-      footnote: "All data in this document was pulled September 3, 2026 unless dated otherwise. Sources: Chartmetric, Spotify daily and weekly chart archives, Hanteo and Circle published tallies, platform audience data, a 34-surface owned-infrastructure audit, and a dedicated ALLDAY PROJECT video intelligence store. Cover photograph: 티비텐 TV10, CC BY 3.0, via Wikimedia Commons.",
+      footnote: "All data in this document was pulled September 3, 2026 unless dated otherwise. Sources: Chartmetric, Spotify daily and weekly chart archives, Hanteo and Circle published tallies, platform audience data, a 34-surface owned-infrastructure audit, and a dedicated ALLDAY PROJECT video intelligence store. Instagram audience geography, age, gender and affinity figures are platform-panel estimates built on a sample of roughly 72 to 78 profiles and are labelled as estimates wherever they appear. Cover photograph: 티비텐 TV10, CC BY 3.0, via Wikimedia Commons.",
     },
 
     // ===================================================================
@@ -116,6 +116,7 @@ export const alldayProjectPlan: StrategyPlanData = {
             "Tier two, established scale, 4M to 8M: Hearts2Hearts 7.96M, BABYMONSTER 7.69M, MEOVV 4.96M, KiiiKiii 4.18M",
             "Tier three, sub-2M: ALLDAY PROJECT 1.94M at the top of the tier, JEON SOMI 1.82M, izna 1.56M, KARD 1.03M",
             "Gap to tier two: +2,238,576 listeners, or 2.15x, measured against KiiiKiii",
+            "Ratio 0.468 leads the 2025 rookie class and sits below the 1.14 to 2.05 range the established acts reach",
             "Gap to tier one: +10.9M listeners, or 6.63x, measured against CORTIS",
           ],
           charts: [
@@ -148,7 +149,7 @@ export const alldayProjectPlan: StrategyPlanData = {
             {
               kind: "hbars",
               title: "Fandom Conversion: Followers per Monthly Listener",
-              subtitle: "Among the active rookie cohort, ALLDAY PROJECT converts listeners into committed followers at the highest rate in the set. The three acts above them are mature or legacy cases where accumulated followers have outlived current listening.",
+              subtitle: "ALLDAY PROJECT ranks 4th of 11 and first among the 2025 rookie class. The three acts above them carry more Spotify followers than monthly listeners, a signature of an established fandom rather than a rookie one, and mark the range this plan is aiming at.",
               series: [
                 {
                   name: "Follower-to-listener ratio",
@@ -169,7 +170,7 @@ export const alldayProjectPlan: StrategyPlanData = {
               ],
               highlightX: ["ALLDAY PROJECT"],
               tall: true,
-              note: "Ratio is Spotify followers divided by monthly listeners. A high ratio means a large share of the listening audience has chosen to commit.",
+              note: "Ratio is Spotify followers divided by monthly listeners. BABYMONSTER at 1.14, JEON SOMI at 1.83 and KARD at 2.05 all carry more followers than listeners, which is the range an established fandom reaches and the direction this plan is pointed.",
               source: "Chartmetric, September 3 2026",
             },
           ],
@@ -183,14 +184,14 @@ export const alldayProjectPlan: StrategyPlanData = {
             items: [
               "The U.S.-first lane: KATSEYE, ILLIT and CORTIS all rank the United States as their number one country and hold U.S. listener bases larger than ALLDAY PROJECT's entire global base. ALLDAY PROJECT also ranks U.S. number one, at 384,259, and is the only act in that lane without a single U.S.-facing structure behind it.",
               "The domestic and regional lane: Hearts2Hearts leads on Indonesia, MEOVV on Malaysia, BABYMONSTER on fandom-first conversion. These are the acts building depth market by market. ALLDAY PROJECT's Korea position is small at 93,271 but it is the only market in their top twenty that grew over the last six months.",
-              "The co-ed precedent: KARD is the only act to sustain a decade-long co-ed touring career, and it capped out at roughly 2,000-capacity rooms with one full-length album in ten years. ALLDAY PROJECT's single EP week already outsells KARD's career-best album week by 12.1x, which means the format ceiling KARD hit was a distribution ceiling, not an audience one.",
+              "The established-fandom band: BABYMONSTER, JEON SOMI and KARD all hold more followers than listeners. KARD is also the only act to sustain a decade-long co-ed touring career, and it capped out at roughly 2,000-capacity rooms with one full-length album in ten years. ALLDAY PROJECT's single EP week already outsells KARD's career-best album week by 12.1x, which means the format ceiling KARD hit was a distribution ceiling, not an audience one.",
             ],
           },
           kpis: [
             "ALLDAY PROJECT holds 91% of KiiiKiii's follower count on 46% of their monthly listeners",
-            "Instagram audience is 26.8% United States and 18.3% Korea, the most U.S.-weighted following in the tier",
+            "Instagram follower panel estimates the United States at 26% and Korea at 18%, the most U.S.-weighted follower estimate in the tier",
             "Korea, at 93,271 listeners, is the only market in the top twenty growing over six months",
-            "Luxury goods audience affinity runs 59.7% at a 7.2x index, the strongest brand signal in the comp set",
+            "Luxury goods audience affinity indexes at 7.2x, the strongest brand signal in the comp set",
           ],
         },
       ],
@@ -211,12 +212,12 @@ export const alldayProjectPlan: StrategyPlanData = {
         {
           label: "A",
           title: "Fandom Conversion, Month by Month",
-          strategy: "The ratio has risen every month since August 2025, from 0.076 to 0.465, a 6.1x improvement. Decomposing it matters: followers grew 59.7% over the window and never once declined, while listeners fell from their December peak. Both halves moved the ratio, and the follower half is the durable one. This is a fanbase that kept growing through nine months with no new music in market.",
+          strategy: "The ratio has climbed from 0.076 in August 2025 to 0.465, a 6.1x improvement, with three flat-to-down months along the way and an unbroken run of gains since January 2026. Decomposing it matters, because the two halves are not equally durable: the listener collapse contributes roughly twice what follower growth does. The follower half is the durable one, and it is remarkable on its own. Followers grew 59.7% from the December peak and have never once declined, through nine months with no comeback in market.",
           charts: [
             {
               kind: "line",
               title: "Follower-to-Listener Ratio by Month",
-              subtitle: "From 0.076 in August 2025 to 0.465 at the end of August 2026. Every reading is an improvement on the one before it.",
+              subtitle: "From 0.076 in August 2025 to 0.465 at the end of August 2026. Three readings dip along the way; every month since January 2026 is an improvement on the one before it.",
               series: [
                 {
                   name: "Ratio",
@@ -232,8 +233,8 @@ export const alldayProjectPlan: StrategyPlanData = {
           kpis: [
             "Followers +339,633 since the December listener peak, a 59.7% gain with zero declining readings",
             "Follower adds still running at roughly 509 a day with no product in market",
-            "Ratio 0.468 as of September 3, highest of the active rookie cohort",
-            "Monthly listener decline decelerating: -16.3% in July, then -4.3%, then -1.4%, then -0.4% over the final days of August",
+            "Ratio 0.468 as of September 3, first of the 2025 rookie class and 4th of the 11-act set",
+            "Monthly listener decline runs as a sawtooth, not a glide: -2.7% in March, -13.8% in April, -2.0% in May, -11.7% in June, -11.3% in July, -2.1% in August, month-end to month-end",
           ],
         },
         {
@@ -293,7 +294,7 @@ export const alldayProjectPlan: StrategyPlanData = {
             "Total current catalog rate: roughly 1.60M Spotify streams per week, 229,340 per day globally",
             "FAMOUS holds 484,056 a week at fourteen months, about 30% of all weekly catalog volume",
             "LOOK AT ME now out-streams ONE MORE TIME and WICKED globally despite never being the promotional centre",
-            "Catalog total to date: 245.5M streams across ten tracks",
+            "Catalog total to date: 245.5M streams across ten tracks, nine of which are charted above",
           ],
         },
         {
@@ -330,7 +331,7 @@ export const alldayProjectPlan: StrategyPlanData = {
             {
               kind: "bars",
               title: "Weeks on the Korea Weekly Chart by Release",
-              subtitle: "Chart durability by release order. The debut single held for a full year.",
+              subtitle: "Chart durability by release order. The debut single held for 51 consecutive weeks.",
               unit: "weeks",
               series: [
                 {
@@ -353,18 +354,18 @@ export const alldayProjectPlan: StrategyPlanData = {
             "Every release reaches its maximum daily rate between day two and day four",
             "Best post-launch multiple achieved to date: 1.21x, on LOOK AT ME",
             "Comparison range across the rookie class: 1.92x to 3.38x",
-            "FAMOUS charted in Korea for 51 consecutive weeks, the longest run in the catalog",
+            "FAMOUS charted in Korea for 51 consecutive weeks, from June 2025 to June 2026, the longest run in the catalog",
           ],
         },
         {
           label: "D",
-          title: "The Ceiling, the Floor, and What Moves Them",
-          strategy: "Two numbers frame the whole opportunity. The artist-level weekly ceiling was 932,447 in the debut era and 935,330 in the EP era, a 0.31% change across three times the charting inventory, which says added catalog alone does not lift the ceiling. But decay between eras is slowing sharply, from -6.96% a week to -1.01% a week, and the catalog found a genuine plateau. The lever that does move the number is a real comeback: the November 2025 release lifted the debut catalog 42.0% in two weeks. The March brand single moved it -9.8%. Releases lift the catalog. Brand tie-ins do not.",
+          title: "Ceiling and Floor Economics",
+          strategy: "Two numbers frame the whole opportunity. The artist-level weekly ceiling was 932,447 in the debut era and 935,330 in the EP era, a 0.31% change across three times the charting inventory, which says added catalog alone does not lift the ceiling. Decay on the debut track between eras did slow, from -6.96% a week across the 15 weeks to November 2025 to roughly -1% a week across its final plateau, and that plateau was genuine. Monthly listeners overall have not stabilized, and section 03A states that plainly. The lever that does move the number is a real comeback: the November 2025 release lifted the debut catalog 42.0% over the two weeks that followed. The March brand single moved it -13.8% over the same two-week window. Releases lift the catalog. Brand tie-ins do not.",
           charts: [
             {
               kind: "bars",
               title: "Weekly Listener Decay Between Releases",
-              subtitle: "Decay in the quiet windows is decelerating era over era, which means the audience that remains is progressively harder to lose.",
+              subtitle: "Weekly stream decay on the debut single across each quiet window between releases. The track itself became progressively harder to lose. Monthly listeners across the whole catalog have not followed the same path.",
               unit: "%/wk",
               series: [
                 {
@@ -388,7 +389,7 @@ export const alldayProjectPlan: StrategyPlanData = {
                   name: "Catalog change",
                   points: [
                     { x: "Nov 2025 comeback", y: 42.0 },
-                    { x: "Mar 2026 brand single", y: -9.8 },
+                    { x: "Mar 2026 brand single", y: -13.8 },
                   ],
                 },
               ],
@@ -399,30 +400,30 @@ export const alldayProjectPlan: StrategyPlanData = {
           kpis: [
             "Artist weekly ceiling: 932,447 in the debut era, 935,330 in the EP era, on 3x the charting tracks",
             "Per-track efficiency fell from 466,224 to 155,888 across the same two eras",
-            "Inter-era decay improved from -6.96% to -1.01% a week",
+            "Debut-track decay improved from -6.96% a week (Jul to Nov 2025) to roughly -1% a week (Apr to Jun 2026)",
             "Catalog plateau held between 84,921 and 94,543 weekly across the final ten charting weeks",
           ],
         },
         {
           label: "E",
           title: "Editorial Reach and Physical Sales",
-          strategy: "Two more findings close the section, and they point in opposite directions. Editorial support has almost entirely lapsed: 13.77M of reach across 38 playlists historically, against 146,835 live today. That is the clearest single explanation for the listener curve, and it is recoverable, because those placements were earned once. Physical sales run the other way. The EP moved 250,071 copies in week one, 5.2x the debut single, in the same window that streaming fell. The two halves of this audience behave completely differently, and only one of them has ever been sold to properly.",
+          strategy: "Two more findings close the section, and they point in opposite directions. Editorial support has almost entirely lapsed, and the timing is exact. Peak support was 27 editorial playlists live at once on March 12 2026, reaching a combined 12.45M followers. Five are live today, reaching 146,625. That 98.8% fall between March and August is the clearest single explanation for the listener curve over the same months, and it is recoverable, because all 42 of those placements were earned once already. Physical sales run the other way. The EP moved 250,071 copies in week one, 5.2x the debut single, in the same window that streaming fell. The two halves of this audience behave completely differently, and only one of them has ever been sold to properly.",
           charts: [
             {
               kind: "grouped",
               title: "Editorial Playlist Reach, Historical vs Live",
-              subtitle: "Placements previously held include K-Pop ON! at 6.13M reach with a peak position of 3, Hot Hits Korea at a peak of 1, and K-Pop Rising at a peak of 3.",
+              subtitle: "Peak simultaneous support was 27 editorial playlists on March 12 2026. K-Pop ON! (6.13M followers) came off on April 8, K-Pop Rising on April 14, KimBops! on May 13, Hot Hits Korea on June 24.",
               unit: "reach",
               series: [
                 {
                   name: "Reach",
                   points: [
-                    { x: "Held historically", y: 13771453 },
-                    { x: "Live today", y: 146835 },
+                    { x: "Peak, Mar 12 2026", y: 12451383 },
+                    { x: "Live today", y: 146625 },
                   ],
                 },
               ],
-              note: "Roughly 1.4M of the historical reach sat on non-K-pop editorial, including a pop mood list that peaked at position 6 and a hip-hop and R&B list that peaked at 18.",
+              note: "42 distinct editorial playlists have carried the catalog at some point, reaching 13.80M followers in total. Roughly 1.4M of that sat on non-K-pop editorial, including a pop mood list that peaked at position 6 and a hip-hop and R&B list that peaked at 18.",
               source: "Chartmetric playlist endpoint, September 3 2026",
             },
             {
@@ -443,7 +444,7 @@ export const alldayProjectPlan: StrategyPlanData = {
             },
           ],
           kpis: [
-            "38 editorial playlists held historically, 4 live today",
+            "42 editorial playlists held at some point, 27 live simultaneously at the March 2026 peak, 5 live today",
             "Non-K-pop editorial delivered outsized peak positions and is currently unused",
             "EP first week 250,071, in the same range as peers at 2x to 4x the streaming scale",
             "First day of EP sales alone: 85,531, above the debut single's entire first week",
@@ -461,13 +462,14 @@ export const alldayProjectPlan: StrategyPlanData = {
       number: "04",
       navLabel: "Audience",
       title: "U.S. Audience & Targeting",
-      intro: "The profile below is built from Chartmetric platform audience data across all three owned channels, pulled September 3, 2026. It sets the opening paid targeting and the posture for U.S. owned channels. Splits refine once pixel data accumulates in the first weeks of paid activity.",
-      thesis: "Two distinct audiences sit under one act. Instagram is United States and Korea, aged 25 to 34, gender balanced, and fashion led. TikTok is Southeast Asia and Latin America, aged 18 to 24, and 77% female. They are not the same people, and the plan targets them separately rather than averaging them into one campaign.",
+      intro: "The profile below is built from Chartmetric platform audience data across all three owned channels, pulled September 3, 2026. Two source types sit underneath it and they are not equally strong. Spotify listener geography is measured. Instagram follower demographics are panel estimates on a sample of roughly 72 to 78 profiles and are treated as directional only. Instagram engagement geography, computed on actual like volume across 156 cities, is the strongest signal available and is reported alongside the others because it disagrees with them.",
+      thesis: "Where this group is streamed and where it is engaged are two different maps. Spotify listening is United States first at 384,259. Instagram engagement, measured on real like volume, is Greater China first: Taiwan 22.4%, then Indonesia, Korea, Japan and China, with the United States sixth at 5.7%. Neither map is wrong. The plan treats the U.S. as the streaming, retail and paid priority, and treats Asia as where live demand is already demonstrable.",
+      metrosLabel: "Opening U.S. Paid Markets",
       metros: [
         { name: "Los Angeles, CA" },
         { name: "New York, NY" },
         { name: "Chicago, IL" },
-        { name: "San Francisco Bay Area" },
+        { name: "San Francisco Bay Area", tier: "secondary" },
         { name: "Dallas-Fort Worth, TX", tier: "secondary" },
         { name: "Seattle, WA", tier: "secondary" },
         { name: "Atlanta, GA", tier: "secondary" },
@@ -497,19 +499,19 @@ export const alldayProjectPlan: StrategyPlanData = {
         {
           label: "What This Audience Buys",
           items: [
-            "Luxury goods affinity runs 59.7% at a 7.2x index, the strongest brand signal in the comp set",
-            "Named house affinities: Dior 24.7%, Louis Vuitton 21.9%, Prada 20.6%, Chanel 20.6%",
-            "Stated interests: clothing and accessories 64.9%, music 54.6%, beauty 51.9%",
-            "Streaming and entertainment affinity led by Netflix at 27.4%",
+            "Luxury goods indexes at 7.2x against the platform baseline, the strongest brand signal in the comp set",
+            "Christian Dior indexes at 12.7x, Chanel 12.9x, Prada 12.7x, Louis Vuitton 11.3x",
+            "Clothing and accessories, music, and beauty are the three leading stated interests",
+            "Affinity indices are drawn from a panel sample of roughly 74 to 78 profiles and are directional, not a headcount",
           ],
         },
         {
-          label: "Why the Gender Balance Matters",
+          label: "Where the Two Maps Disagree",
           items: [
-            "A 52 / 48 Instagram split is unusual in this class, where peers run 70% female and above",
-            "The male half of the following is a genuine addressable audience rather than a rounding error",
-            "It widens the viable brand category list well past beauty and fashion into tech, audio, sport, and gaming",
-            "It also widens the viable live audience, which matters for a first headline room",
+            "Spotify listening ranks the United States first at 384,259, ahead of Indonesia, the Philippines, Taiwan and Malaysia",
+            "Instagram engagement, measured on real like volume, ranks Taiwan first at 22.4% with the United States sixth at 5.7%",
+            "Hong Kong, Taipei and Seoul lead engagement by city; Los Angeles ranks 22nd on the same measure",
+            "The practical read: the U.S. audience streams and does not yet interact, while the Asia audience interacts heavily. Both are real and they call for different tactics",
           ],
         },
       ],
@@ -532,17 +534,22 @@ export const alldayProjectPlan: StrategyPlanData = {
         {
           behavior: "Subscribing on YouTube without watching short form there",
           platforms: ["YouTube"],
-          implication: "4.31M subscribers, which is 2.7x the TikTok following, converting at a median of 0.27x on the same video. The largest single gap between audience size and audience use.",
+          implication: "4.31M subscribers, which is 2.6x the TikTok following, converting at a median of 0.27x on the same video. The largest single gap between audience size and audience use.",
+        },
+        {
+          behavior: "Engaging heavily in Asia while streaming heavily in the United States",
+          platforms: ["Instagram", "Spotify"],
+          implication: "Taiwan drives 22.4% of Instagram like volume against 5.7% from the United States, while the U.S. leads Spotify listening. Live demand is provable in Asia today; the U.S. is a streaming and retail market that has not been asked to do anything yet.",
         },
       ],
       platformSignals: [
         {
           platform: "Spotify",
-          note: "1.94M monthly listeners with the United States at No. 1 on 384,259, ahead of Indonesia, the Philippines, Taiwan and Malaysia. Follower base 908,927 and rising. The U.S. footprint is broad and flat rather than metro concentrated, which reads as algorithmic reach that has never been worked on the ground.",
+          note: "1.94M monthly listeners with the United States at No. 1 on 384,259, or 19.8% of the total, ahead of Indonesia, the Philippines, Taiwan and Malaysia. Follower base 908,927 and rising. The U.S. footprint is broad and flat rather than metro concentrated, which reads as algorithmic reach that has never been worked on the ground.",
         },
         {
           platform: "Instagram",
-          note: "1.69M followers, 3.52% engagement, roughly 59.7K average likes. Audience is 26.8% United States and 18.3% Korea, top cities Los Angeles 16.9% and Seoul 15.5%, aged 25 to 34 at 49.2%, and split 51.5% female to 48.5% male. This is the U.S. facing channel and the one paid should key on.",
+          note: "1.69M followers, 3.52% engagement, roughly 59.7K average likes. Follower panel estimates skew United States and Korea, aged 25 to 34, and close to evenly split by gender, which is unusual in this class. Engagement measured on real like volume tells a different story: Taiwan 22.4%, Indonesia 8.3%, Korea 8.0%, Japan 6.9%, China 6.5%, United States 5.7%. Treat the panel as directional and the like volume as the reliable read.",
         },
         {
           platform: "TikTok",
@@ -553,7 +560,7 @@ export const alldayProjectPlan: StrategyPlanData = {
           note: "4.31M subscribers and 756M channel views. Audience 71.7% female, 56.4% aged 25 to 34, subscribers led by Korea 23.9% and the United States 10.0%. The commenting core is 43.1% Korean, so the vocal audience and the subscribing audience are different populations.",
         },
       ],
-      footnote: "Age and gender shown are Instagram audience statistics via Chartmetric, September 3, 2026, chosen because Instagram is the most U.S.-weighted of the three channels and the one initial paid targeting would key on. TikTok's distribution differs materially and is described in the platform notes. U.S. metros are ordered on Spotify city listener data, with the remainder standard U.S. demand centers to be validated against pixel data in the first paid flight.",
+      footnote: "Age and gender shown are Instagram audience panel estimates via Chartmetric, September 3, 2026, computed on a sample of roughly 72 to 78 profiles. They are directional and should not be read as a headcount. Instagram engagement geography is computed on actual like volume across 156 cities and is the stronger measure. TikTok's distribution differs materially from both and is described in the platform notes. U.S. metros are ordered on Spotify city listener data and are the opening paid set, to be validated against pixel data in the first flight rather than treated as settled.",
     },
 
     // ===================================================================
@@ -572,11 +579,11 @@ export const alldayProjectPlan: StrategyPlanData = {
       methodology: [
         {
           label: "Corpus pull",
-          value: "48 owned posts (34 TikTok, 11 Instagram, 3 YouTube), selected as the top quintile by views with full engagement data. Comparison sets: top posts by views from MEOVV, CORTIS, KiiiKiii, KATSEYE, Hearts2Hearts, BABYMONSTER and izna, 58 videos in total.",
+          value: "Two layers. The full catalog of every owned account was enumerated with per-post engagement, 293 TikTok posts plus Instagram and YouTube, and all medians and cadence figures are computed on that full enumeration. A 106-video subset was then indexed into the video store: 48 owned (34 TikTok, 11 Instagram, 3 YouTube) and 58 competitor, drawn from the top performers of MEOVV, CORTIS, KiiiKiii, KATSEYE, Hearts2Hearts, BABYMONSTER and izna.",
         },
         {
           label: "Video intelligence store",
-          value: "All 106 videos indexed into a dedicated persistent ALLDAY PROJECT knowledge store, making hooks, on-screen text, staging and recurring formats queryable across the whole corpus at once. Each file carries its performance tier in its own name, so the store remains readable independent of any external registry.",
+          value: "All 106 subset videos indexed into a dedicated persistent ALLDAY PROJECT knowledge store, making hooks, on-screen text, staging and recurring formats queryable across the whole corpus at once. Each file carries its performance tier in its own name, so the store remains readable independent of any external registry.",
         },
         {
           label: "Performance join",
@@ -588,29 +595,29 @@ export const alldayProjectPlan: StrategyPlanData = {
         },
         {
           label: "Honest limits",
-          value: "Findings below are grounded in corpus enumeration and joined performance data across all 106 items. Frame-level query results against the store extend this analysis and are reported in a follow-up pass. Comparison corpora are each act's top posts, so competitor medians are a winners' benchmark by construction, not an account average. Member-level reads are grounded in captions and official tags, not facial identification.",
+          value: "Findings below are grounded in full-catalog enumeration and joined performance data, with the 106-video indexed subset behind the format and content reads. Frame-level query results against the store extend this analysis and are reported in a follow-up pass. Comparison corpora are each act's top posts, so competitor medians are a winners' benchmark by construction, not an account average. Member-level reads are grounded in captions and official tags, not facial identification.",
         },
       ],
       corpusStats: [
         {
           label: "Videos analyzed",
           value: "106",
-          detail: "48 owned + 58 competitor, performance data joined on every item",
+          detail: "48 owned + 58 competitor indexed, drawn from a fully enumerated catalog of 293 owned TikTok posts",
         },
         {
           label: "Owned TikTok median, debut era",
           value: "3.01M",
-          detail: "Across 76 posts in June and July 2025. All-time single-post peak is 14.47M",
+          detail: "Across 76 posts in June and July 2025, from the full catalog enumeration. All-time single-post peak is 14.47M",
         },
         {
           label: "Owned TikTok median, most recent era",
           value: "822K",
-          detail: "Across 8 posts in May and June 2026, before the account went quiet",
+          detail: "Across 8 posts in May and June 2026, the last posts before the account went quiet",
         },
         {
           label: "Days since last post",
           value: "72 / 55 / 45",
-          detail: "TikTok, YouTube and Instagram respectively, as of September 3 2026",
+          detail: "TikTok, YouTube and Instagram respectively, as of September 3 2026. Instagram's last organic post was 62 days ago; the more recent one is a brand campaign post",
         },
       ],
       mixColumnLabel: "ALLDAY PROJECT today",
@@ -620,42 +627,42 @@ export const alldayProjectPlan: StrategyPlanData = {
       mixRows: [
         {
           metric: "Posting cadence, Jun 1 to Sep 3 2026",
-          lolaAmour: "0 TikTok posts in the final 72 days of the window",
+          subject: "8 TikTok posts on a single day in June, then 0 in the final 72 days of the window",
           benchmark: "KiiiKiii ~21/wk, Hearts2Hearts ~21/wk, CORTIS ~20/wk, izna ~13/wk, KATSEYE ~6.8/wk, MEOVV ~4.5/wk, BABYMONSTER ~2.5/wk",
           read: "behind",
           note: "Every one of the seven comparison accounts posted on September 3. This is the single largest and cheapest gap in the audit.",
         },
         {
           metric: "Calls to action",
-          lolaAmour: "5 explicit calls to action across 48 posts, none of them in 2026",
+          subject: "5 explicit calls to action across 48 posts, none of them in 2026",
           benchmark: "Standard practice across the set is a recurring end card or a caption ask on release assets",
           read: "behind",
           note: "The most recent call to action of any kind was 271 days ago. With the U.S. as listening market No. 1, this is the cheapest fix in the document.",
         },
         {
           metric: "Platform allocation",
-          lolaAmour: "TikTok treated as primary; Instagram as a mirror; YouTube Shorts as an afterthought",
+          subject: "TikTok treated as primary; Instagram as a mirror; YouTube Shorts as an afterthought",
           benchmark: "Peers weight to whichever surface their own data rewards, and manage the crossover deliberately",
           read: "behind",
           note: "Instagram beats TikTok on 18 of 21 paired posts at a 1.47x median, while a 4.31M-subscriber YouTube channel returns 0.27x. The allocation is inverted against the evidence.",
         },
         {
           metric: "Member-named content",
-          lolaAmour: "12 of 48 posts name a member (25%)",
+          subject: "12 of 48 posts name a member (25%)",
           benchmark: "MEOVV names a member in 42% of ingested captions",
           read: "behind",
           note: "Posts naming two or more members median 8.74M against 2.92M for posts naming none. The format works and is under-supplied.",
         },
         {
           metric: "U.S.-addressed content",
-          lolaAmour: "Korean hashtags on nearly every post; English appears as lyric fragments",
+          subject: "Korean hashtags on nearly every post; English appears as lyric fragments",
           benchmark: "KATSEYE runs 100% English captions with U.S.-native idiom, U.S. brand partners and an English fandom name",
           read: "behind",
           note: "Against a No. 1 market of 384,259 U.S. listeners, the corpus contains no asset addressed to a U.S. viewer.",
         },
         {
           metric: "Engagement quality",
-          lolaAmour: "10.49% TikTok engagement rate; final post before the pause hit a 17.7% like rate",
+          subject: "10.49% TikTok engagement rate; final post before the pause hit a 17.7% like rate",
           benchmark: "Comfortably at or above the set on a per-post basis",
           read: "ahead",
           note: "This is the row that says the content itself is not the problem. Efficiency was rising at the exact point output stopped.",
@@ -685,7 +692,7 @@ export const alldayProjectPlan: StrategyPlanData = {
         {
           kind: "bars",
           title: "Weekly Posting Cadence, Jun 1 to Sep 3 2026",
-          subtitle: "Measured across the same window for every account in the set.",
+          subtitle: "Measured across the same window for every account in the set. ALLDAY PROJECT posted on June 23 and not once in the 72 days since.",
           unit: "posts/wk",
           series: [
             {
@@ -698,7 +705,7 @@ export const alldayProjectPlan: StrategyPlanData = {
                 { x: "KATSEYE", y: 6.8 },
                 { x: "MEOVV", y: 4.5 },
                 { x: "BABYMONSTER", y: 2.5 },
-                { x: "ALLDAY PROJECT", y: 0 },
+                { x: "ALLDAY PROJECT", y: 0.6 },
               ],
             },
           ],
@@ -721,7 +728,7 @@ export const alldayProjectPlan: StrategyPlanData = {
               ],
             },
           ],
-          note: "Instagram wins 18 of 21 paired posts. YouTube Shorts returns roughly a quarter of the TikTok number on a channel with 2.7x the followers.",
+          note: "Instagram wins 18 of 21 paired posts. YouTube Shorts returns roughly a quarter of the TikTok number on a channel with 2.6x the followers.",
           source: "21 paired posts and 15 three-way twins across the owned corpus",
         },
       ],
@@ -737,7 +744,7 @@ export const alldayProjectPlan: StrategyPlanData = {
           evidence: [
             "Final TikTok post, June 23 2026: 4,745,315 plays, 839,797 likes, a 17.7% like rate",
             "That like rate is the account's best since its debut window, on a post ranking roughly 30th of 293 by reach",
-            "Instagram's last organic reel, July 3 2026, took 934,654 views with no promotion behind it",
+            "Instagram's last organic reel, July 3 2026, took 934,654 views with no promotion behind it. The only post since is a brand campaign reel on July 20",
             "Spotify followers continued adding roughly 509 a day through the entire quiet window",
           ],
           counterEvidence: [
@@ -781,12 +788,12 @@ export const alldayProjectPlan: StrategyPlanData = {
           title: "Platform allocation is inverted against the group's own data.",
           verdict: "confirmed",
           confidence: "High",
-          summary: "Identical videos perform better on Instagram than TikTok in 18 of 21 paired cases, at a 1.47x median. YouTube Shorts returns a 0.27x median on a channel carrying 4.31M subscribers, which is 2.7x the TikTok following. The largest owned audience is being served the least, and the surface that wins is treated as a mirror.",
+          summary: "Identical videos perform better on Instagram than TikTok in 18 of 21 paired cases, at a 1.47x median. YouTube Shorts returns a 0.27x median on a channel carrying 4.31M subscribers, which is 2.6x the TikTok following. The largest owned audience is being served the least, and the surface that wins is treated as a mirror.",
           evidence: [
             "Instagram beats TikTok on 18 of 21 paired posts, median 1.47x, mean 1.90x",
             "The three widest gaps all sit on brand-campaign content, at 3.81x, 4.02x and 4.22x",
             "YouTube Shorts median 0.27x across 15 three-way twins; the final post read 4,745,315 TikTok, 5,395,176 Instagram, 741,000 YouTube",
-            "The YouTube channel holds 4.31M subscribers and 756M lifetime views",
+            "The YouTube channel holds 4.31M subscribers and 756M lifetime views, the largest owned audience on any platform",
           ],
           counterEvidence: [
             "One YouTube Short outperformed its TikTok twin at 1.20x, so the channel is capable when the format fits it",
@@ -802,14 +809,14 @@ export const alldayProjectPlan: StrategyPlanData = {
         },
         {
           id: "cta-desert",
-          title: "Five calls to action in 48 posts, and none at all in 2026.",
+          title: "Five release calls to action, all of them in 2025, and one app prompt since.",
           verdict: "confirmed",
           confidence: "High",
-          summary: "Across the owned corpus there are five explicit calls to action, all of them between June and December 2025. Every post dated 2026, including all thirteen in the final window before the pause, carries none. The most recent ask of any kind was 271 days ago, and the Instagram bio link currently points at a music video from March.",
+          summary: "Across the owned corpus there are five explicit release calls to action, all between June and December 2025, a 10% rate. Since then there has been exactly one ask of any kind: a single app-download prompt on TikTok in March 2026, which was the lowest-performing post in the sampled set. No release, ticket, membership or capture ask has run in over nine months.",
           evidence: [
-            "Five calls to action total, in a corpus of 48 posts, a 10% rate",
-            "Last recorded call to action: December 6 2025, a pre-save and pre-order ask on the EP",
-            "All 24 corpus posts dated 2026 carry no ask of any kind",
+            "Five release calls to action total, in a corpus of 48 posts, a 10% rate",
+            "Last release ask: December 6 2025, a pre-save and pre-order prompt on the EP",
+            "One app-download prompt in March 2026, the lowest-performing post in the sampled set at 318K plays against a 4.75M ceiling",
             "The bio link on 1.69M Instagram followers resolves to a music video published in March",
           ],
           pivot: {
@@ -878,8 +885,8 @@ export const alldayProjectPlan: StrategyPlanData = {
           evidence: [
             "Owned captions carry Korean hashtags on nearly every post in the corpus",
             "KATSEYE comparison set: 100% English captions, zero Korean characters, zero Korean hashtags across 64 posts",
-            "U.S. is the No. 1 Spotify market at 384,259 listeners and 19.7% of the global total",
-            "Instagram audience is 26.8% United States with Los Angeles the No. 1 city at 16.9%",
+            "U.S. is the No. 1 Spotify market at 384,259 listeners and 19.8% of the global total",
+            "Instagram engagement, measured on real like volume, ranks the United States 6th at 5.7%, so the U.S. audience streams far more than it interacts",
           ],
           counterEvidence: [
             "The most U.S.-legible assets in the catalog, a U.S. dance-crew collaboration at 5,374,230 and a Western remix at 2,069,143, did not outperform Korea-native dance content. Adding English alone is not the fix; the fix is a channel that posts at all, then a U.S. layer on top of it",
@@ -915,11 +922,11 @@ export const alldayProjectPlan: StrategyPlanData = {
           components: {
             heading: "Standing Assets",
             items: [
-              "DAY ONE, the official fandom name, announced on debut day rather than months later",
+              "DAY ONE, the official fandom name, announced on June 22 2025, the day before debut, rather than months later",
               "DAY OFF, a proprietary label fan app launched July 7 2025, which took 40,000 signups in its first 24 hours across 156 countries and reached No. 1 in Social Networking on iOS in Korea",
               "A paid membership product launched November 24 2025 at 20.83 USD, currently sold out",
               "A second stacked paid tier inside the app, member direct messaging at 3.99 to 17.99 USD a month, added June 2026",
-              "An official store that ships to the United States, prices in USD, and carries roughly 25 items",
+              "An official store that ships to the United States, prices in USD, and carries 30 or more items across three pages",
               "Deep U.S. specialty retail distribution across five importers, all actively restocking",
               "Owned audiences of 4.31M on YouTube, 1.69M on Instagram and 1.63M on TikTok",
             ],
@@ -928,20 +935,20 @@ export const alldayProjectPlan: StrategyPlanData = {
             "40,000 app signups in 24 hours, across 156 countries",
             "Membership sold out at its current price point",
             "Two stacked paid tiers already proven with this audience",
-            "Fandom named on day one of the group's existence",
+            "Fandom named the day before debut, ahead of the first release",
           ],
         },
         {
           label: "B",
           title: "First-Party Data Capture",
-          strategy: "Every owned surface was checked for email or SMS capture, including page source. There is no artist-level list. The store captures an address only as a byproduct of label-level account registration, which means the data sits at label level and is not addressable to this audience specifically. This is the highest-leverage gap in the document because it is inexpensive to close and it gates every other fix.",
+          strategy: "Every owned surface was checked for email or SMS capture, including page source. There is no artist-level list. The label store does run a newsletter signup and an account registration, but both capture at label level across the whole roster, so the resulting data is not addressable to this audience specifically. This is the highest-leverage gap in the document because it is inexpensive to close and it gates every other fix.",
           components: {
             heading: "Surface by Surface",
             items: [
               "A standalone artist website has never existed on the expected domain, and the label site carries no artist page",
-              "Store page source contains two forms, product search and account login. No third-party email platform appears anywhere in the source",
+              "The label store runs a roster-wide newsletter signup and an account registration. Neither is artist-specific, and no third-party email platform appears in the page source",
               "The Instagram bio link on 1.69M followers resolves to a music video published in March 2026",
-              "The YouTube channel carrying 4.31M subscribers links to six other social platforms and nothing else: no store, no app, no site, no capture",
+              "The YouTube channel carrying 4.31M subscribers lists seven links: six social platforms plus one managed smart link. The smart link routes to streaming services only, so the largest owned audience is never offered the store, the app, or any capture",
               "The app landing page offers store buttons only, with no email or SMS capture ahead of the download",
               "No SMS program was found on any surface",
             ],
@@ -949,42 +956,42 @@ export const alldayProjectPlan: StrategyPlanData = {
           kpis: [
             "Zero artist-level email capture across every owned surface checked",
             "Zero SMS capture",
-            "Zero links from any owned social channel to a commerce, app, or capture destination",
-            "One app-download call to action recorded in the sampled content, in March 2026",
+            "No link from any owned social channel reaches the store, the app, or any capture destination",
+            "One app-download prompt recorded in the sampled content, in March 2026, and nothing since",
           ],
         },
         {
           label: "C",
           title: "The Live Business and What the Membership Gates",
-          strategy: "The membership sold out with no ticketing entitlement attached, because there is nothing yet to gate. The group has not headlined a concert, fan meeting or showcase in any market, confirmed across three independent sources. Three third-party festival bookings sit on the autumn calendar and none of them are the group's own. Meanwhile the label operates a working direct-ticketing category on the same storefront for another artist, so the rails exist and have simply never been pointed here.",
+          strategy: "The membership sold out with no ticketing entitlement attached, because there is nothing yet to gate. The group has not headlined a ticketed concert or solo showcase in any market, confirmed across three independent sources. Promotional fan-signings ran around the debut single, but no headline room has been sold. Three third-party festival bookings sit on the autumn calendar and none of them are the group's own. Meanwhile the label operates a working direct-ticketing category on the same storefront for another artist, so the rails exist and have simply never been pointed here.",
           components: {
             heading: "Current Position",
             items: [
-              "No headline show, fan meeting, or showcase to date in any market",
+              "No headline ticketed concert or solo showcase to date in any market",
               "Autumn 2026 calendar carries three third-party bookings: a music awards show in September and two festivals in October",
               "Two United States appearances to date, both festival slots on a shared bill at the same venue",
-              "The label's storefront runs a live direct-ticketing category with roughly 18 entries for another artist and none for this group",
+              "The label's storefront runs a working direct-booking category, currently carrying 14 timed-entry slots for another artist's album exhibition and nothing for this group",
               "No lightstick released or announced, fourteen months after debut, while three labelmates sell one on the same store",
               "No Japan debut, showcase or Japanese-language release",
             ],
           },
           kpis: [
-            "First headline moment and first lightstick are the two products the sold-out membership currently has nothing to attach to",
-            "Ticketing rails already exist at label level and require pointing, not building",
+            "A first headline room and a first lightstick are the two products the sold-out membership currently has nothing to attach to",
+            "Direct-booking rails already exist at label level and require extending, not building",
             "Two U.S. appearances to date, both on shared festival bills",
           ],
         },
         {
           label: "D",
           title: "U.S. Market Structure and Retail",
-          strategy: "The United States is this group's number one listening market and is served entirely through the import channel. Physical product reaches U.S. buyers through five specialty importers plus general marketplace listings, with no bespoke U.S. retail program, no exclusive editions and no U.S. pop-up. The structural piece is the same story: the copyright line on all six releases reads the label alone, while labelmates carry named U.S. partners.",
+          strategy: "The United States is this group's number one listening market and is served entirely through the import channel. Physical product reaches U.S. buyers through five specialty importers plus general marketplace listings, with no bespoke U.S. retail program, no exclusive editions and no U.S. pop-up. The structural piece is the same story. Distribution reaches the U.S. through the label's own smart-link and distribution chain, but the copyright line on all six releases reads the label alone, while labelmates carry named U.S. label-services partners on their releases.",
           components: {
             heading: "What the Check Found",
             items: [
               "U.S. mass retail: present on two general marketplaces through importers; absent from the two dedicated music retailers where a labelmate sells three retailer-exclusive editions",
               "No U.S.-exclusive versions, retailer exclusives, or signed editions anywhere in the catalog",
               "Three pop-up activations executed to date, two in Seoul and one in Tokyo. None in the United States",
-              "Copyright lines on all six releases read the label only. Labelmates carry named U.S. label partners on their releases",
+              "Copyright lines on all six releases read the label only. Distribution into the U.S. runs through the label's existing chain, but no U.S. label-services partner is named on any release, while labelmates carry Capitol, Atlantic and Interscope",
               "No U.S. booking agent, publicist, or management structure identified",
               "No U.S. radio, sync placement, or television appearance recorded",
             ],
@@ -993,7 +1000,7 @@ export const alldayProjectPlan: StrategyPlanData = {
             "384,259 U.S. monthly listeners served through the import channel alone",
             "Zero U.S. retail exclusives against a labelmate's three at a single retailer",
             "Zero U.S. pop-ups against three executed in Asia",
-            "The label's U.S. profile is at an all-time high and has not yet been extended to this group",
+            "The label's U.S. profile is at an all-time high and has not yet been extended to this group in the form of a named U.S. services partner",
           ],
         },
       ],
@@ -1074,12 +1081,12 @@ export const alldayProjectPlan: StrategyPlanData = {
           label: "B",
           title: "The Link Graph",
           objective: "Make every owned surface route somewhere that can be measured.",
-          strategy: "The audit found a 4.31M-subscriber channel linking only to other social platforms and a bio link on 1.69M followers pointing at a months-old video. This is free reach currently terminating in a dead end. Fixing it requires no production budget and no approvals beyond channel access.",
+          strategy: "A managed smart link already exists and is already on the YouTube channel, but it routes to streaming services only, and the Instagram bio on 1.69M followers points at a months-old music video. The work is not building a hub. It is repointing the hub that exists so it also carries the store, the app and a capture destination, then instrumenting it so the traffic is readable. No production budget, no approvals beyond channel access.",
           components: {
             heading: "Execute",
             items: [
-              "A single managed hub link deployed across every bio, updated on a fixed schedule against the current priority",
-              "YouTube channel links rebuilt to carry the store, the app and the capture destination alongside the social set",
+              "The existing managed smart link extended past streaming to carry the store, the app and the capture destination, then deployed across every bio and updated on a fixed schedule",
+              "The YouTube link panel rebuilt so the largest owned audience is offered something beyond six social platforms",
               "Store, membership and app surfaced from the channels that carry the largest audiences rather than only from each other",
               "A recurring end card on release assets carrying title and date, standardized at one to two seconds",
               "UTM and attribution discipline applied from the first link, so the traffic is readable",
@@ -1153,7 +1160,7 @@ export const alldayProjectPlan: StrategyPlanData = {
           label: "B",
           title: "Platform Reallocation",
           objective: "Serve the largest owned audience the most, rather than the least.",
-          strategy: "Instagram wins 18 of 21 paired posts at a 1.47x median, and YouTube Shorts returns 0.27x on a channel carrying 2.7x the TikTok following. Reallocation captures reach that already exists and requires no incremental production.",
+          strategy: "Instagram wins 18 of 21 paired posts at a 1.47x median, and YouTube Shorts returns 0.27x on a channel carrying 2.6x the TikTok following. Reallocation captures reach that already exists and requires no incremental production.",
           components: {
             heading: "Execute",
             items: [
@@ -1203,13 +1210,13 @@ export const alldayProjectPlan: StrategyPlanData = {
       navLabel: "DSP",
       title: "Vertical 3 / DSP Recovery",
       philosophy: "The editorial footprint was earned once. Rebuilding it is a known path, not a speculative one.",
-      intro: "Section 03 measured 13.77M of editorial reach held historically against 146,835 live, and launch curves that peak within four days and never multiply. Those are two different problems with two different fixes, and both are addressable with the catalog as it stands.",
+      intro: "Section 03 measured 12.45M of editorial reach live as recently as March 2026 against 146,625 today, and launch curves that peak within four days and never multiply. Those are two different problems with two different fixes, and both are addressable with the catalog as it stands.",
       subBlocks: [
         {
           label: "A",
           title: "Editorial Rebuild",
           objective: "Recover the placements the catalog has already proven it can hold.",
-          strategy: "Thirty-eight editorial playlists carried this catalog historically, including flagship K-pop lists at peak positions of 1 and 3. Four are live today. The pitch case is unusually strong because the placements are precedent rather than aspiration, and because the retention data gives editorial a reason to re-add.",
+          strategy: "Forty-two editorial playlists have carried this catalog, including flagship K-pop lists at peak positions of 1 and 3, with 27 live simultaneously as recently as March 2026. Five are live today. The pitch case is unusually strong because the placements are precedent rather than aspiration, and because the retention data gives editorial a reason to re-add.",
           components: {
             heading: "Program",
             items: [
@@ -1220,8 +1227,8 @@ export const alldayProjectPlan: StrategyPlanData = {
             ],
           },
           kpis: [
-            "Live editorial reach, from 146,835 toward the 13.8M previously held",
-            "Editorial playlist count, from 4 live upward",
+            "Live editorial reach, from 146,625 toward the 12.45M held in March 2026",
+            "Editorial playlist count, from 5 live toward the 27 live at the March 2026 peak",
             "Share of weekly streams attributable to editorial placement",
           ],
         },
@@ -1241,7 +1248,7 @@ export const alldayProjectPlan: StrategyPlanData = {
             ],
           },
           kpis: [
-            "Non-K-pop placements secured, against a current baseline of one",
+            "Non-K-pop placements secured, against a current baseline of one live placement",
             "Listener growth in markets where crossover placements previously landed",
             "Peak position achieved on non-genre lists",
           ],
@@ -1279,20 +1286,20 @@ export const alldayProjectPlan: StrategyPlanData = {
       navLabel: "Live & U.S.",
       title: "Vertical 4 / Live Business & U.S. Structure",
       philosophy: "The layer with no ceiling yet established, serving the market that is already number one.",
-      intro: "This is the highest-ceiling work in the document and the least explored. The group has never headlined anywhere, the United States is its largest listening market and has no structure behind it, and the fandom has already demonstrated it will pay for access. Nothing here is speculative demand: it is a fanbase that bought out a membership with no entitlement attached.",
+      intro: "This is the highest-ceiling work in the document and the least explored. The group has never headlined anywhere, its largest listening market has no structure behind it, and the fandom has already demonstrated it will pay for access. Nothing here is speculative demand: it is a fanbase that bought out a membership with no entitlement attached.",
       subBlocks: [
         {
           label: "A",
           title: "First Headline Moment",
           objective: "Establish the group's own live product, at a scale sized to verified demand rather than ambition.",
-          strategy: "The first headline moment is deliberately scoped small and sold out rather than large and papered. A right-sized U.S. showcase converts the largest listening market, gives the membership a presale to gate, and creates the demand data that every subsequent routing decision depends on. Festival slots continue in parallel as reach; they are not a substitute for an owned room.",
+          strategy: "The first headline moment is deliberately scoped small and sold out rather than large and papered, and it goes where demand is already demonstrable. Engagement data puts that in Asia: Taiwan drives 22.4% of Instagram like volume, with Hong Kong, Taipei and Seoul the top three cities, while the United States sits sixth on the same measure. Seoul and Taipei are therefore the low-risk first rooms. The United States is the streaming, retail and paid priority in parallel, and earns its own room once the owned list built in section 08 produces real ticket-demand data rather than an inference. Festival slots continue as reach; they are not a substitute for an owned room.",
           components: {
             heading: "Sequence",
             items: [
-              "A first U.S. showcase in Los Angeles, the group's largest U.S. city on both Spotify and Instagram",
-              "Membership presale as the first entitlement the membership has ever carried",
+              "A first headline room in Seoul or Taipei, the two markets where engagement data already demonstrates demand",
+              "Membership presale as the first entitlement the membership has ever carried, and the cleanest test of what the sold-out membership is worth",
               "Capture running on every ticket transaction, so the live audience becomes an owned list",
-              "Demand data from the first room used to size the second, rather than routing on assumption",
+              "A U.S. date sized from that owned list rather than from a follower panel estimate, once the list exists",
               "Existing autumn festival bookings used as promotion for the owned date rather than treated as the live plan",
             ],
           },
@@ -1300,7 +1307,7 @@ export const alldayProjectPlan: StrategyPlanData = {
             "Sell-through rate and time to sell out on the first owned date",
             "Presale conversion rate among members",
             "Contacts captured per ticket sold",
-            "Geographic demand map from ticket buyer data, feeding the next routing decision",
+            "Geographic demand map from ticket buyer data, which replaces panel estimates as the basis for U.S. routing",
           ],
         },
         {
@@ -1313,7 +1320,7 @@ export const alldayProjectPlan: StrategyPlanData = {
             items: [
               "Dedicated U.S. retail placement at the two music retailers where the catalog is currently absent",
               "U.S.-exclusive and signed editions, of which the catalog currently has none",
-              "A first U.S. pop-up, timed against the showcase, following the model of the three already executed in Asia",
+              "A first U.S. pop-up, timed against the retail program, following the model of the three already executed in Asia",
               "Pre-order programs run against the owned list, with capture at the point of purchase",
             ],
           },
@@ -1331,10 +1338,10 @@ export const alldayProjectPlan: StrategyPlanData = {
           components: {
             heading: "Angles",
             items: [
-              "The co-ed format story, grounded in a 52 / 48 audience split that no comparison act carries",
+              "The co-ed format story, grounded in an audience that skews far less female than any comparison act in the set",
               "The physical result against the format prediction, a specific and verifiable counter-narrative",
               "Production identity and the label's current U.S. profile, which is at an all-time high",
-              "Long-lead U.S. music and culture press timed to the showcase rather than run continuously",
+              "Long-lead U.S. music and culture press timed to the retail and live calendar rather than run continuously",
             ],
           },
           kpis: [
@@ -1435,7 +1442,7 @@ export const alldayProjectPlan: StrategyPlanData = {
         { index: 8, label: "W8", dates: "Nov 2" },
         { index: 9, label: "W9", dates: "Nov 9" },
         { index: 10, label: "W10", dates: "Nov 16" },
-        { index: 11, label: "W11", dates: "Nov 23", highlight: true, note: "SHOWCASE (TBD)" },
+        { index: 11, label: "W11", dates: "Nov 23", highlight: true, note: "FIRST HEADLINE ROOM (TBD)" },
         { index: 12, label: "W12", dates: "Nov 30" },
       ],
       workstreams: [
@@ -1578,7 +1585,7 @@ export const alldayProjectPlan: StrategyPlanData = {
           items: [
             "First editorial adds tracked and reported, including non-K-pop targets",
             "YouTube Shorts format test ships, with a 60-day measurement window opened",
-            "Showcase venue options sized against verified demand data rather than ambition",
+            "Venue options in Seoul and Taipei sized against verified engagement and ticket demand rather than ambition",
             "Cost per captured contact established as the working benchmark",
           ],
         },
@@ -1589,7 +1596,7 @@ export const alldayProjectPlan: StrategyPlanData = {
             "Full review against every baseline captured in week one",
             "Paid lines that cleared their expected case are held; lines that did not are cut, not scaled",
             "Cadence floor audited: held or not held, with the reason either way",
-            "Press long-lead planning opens against the showcase date",
+            "Press long-lead planning opens against the retail and live calendar",
           ],
         },
         {
@@ -1598,7 +1605,7 @@ export const alldayProjectPlan: StrategyPlanData = {
           items: [
             "Paid scales onto the lines that cleared test, with worst, expected and best cases restated",
             "Membership presale opens as the first entitlement the membership has carried",
-            "Long-lead U.S. press outreach begins on the format narrative",
+            "Long-lead U.S. press outreach begins on the format narrative, timed to the retail program",
             "Lightstick program timeline confirmed with the label",
           ],
         },
@@ -1616,7 +1623,7 @@ export const alldayProjectPlan: StrategyPlanData = {
           weekIndex: 9,
           title: "Press push",
           items: [
-            "U.S. press push lands against the showcase and the format narrative",
+            "U.S. press push lands against the retail program and the format narrative",
             "Sustain content plan runs against any confirmed release window",
             "Geographic demand map assembled from ticket buyer data",
             "Second editorial pitch wave, informed by the first wave's results",
@@ -1627,16 +1634,16 @@ export const alldayProjectPlan: StrategyPlanData = {
           title: "Retail and pop-up",
           items: [
             "U.S. retail program confirmed, with exclusive editions where doors were secured",
-            "First U.S. pop-up prepared against the showcase date",
+            "First U.S. pop-up prepared, timed to the U.S. retail program",
             "Pre-order program runs against the owned list built in weeks three through nine",
             "Paid weighted toward the live and retail conversion window",
           ],
         },
         {
           weekIndex: 11,
-          title: "Showcase window",
+          title: "First headline room",
           items: [
-            "First owned U.S. live moment, with capture at every touchpoint",
+            "First owned headline room, with capture at every touchpoint",
             "Pop-up runs alongside, converting attendance into list and into physical sales",
             "Content captured on site becomes the format bank for the following quarter",
             "Full-funnel measurement from paid impression through ticket and physical purchase",
