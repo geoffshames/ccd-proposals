@@ -32,6 +32,8 @@ import { zerobaseonePlan } from "./zerobaseone";
 import { zerobaseonePlanProposal } from "./zerobaseone-plan";
 import { zerobaseonePlanKorean } from "./zerobaseone-ko";
 import { zerobaseonePlanProposalKorean } from "./zerobaseone-plan-ko";
+import { alldayProjectPlan } from "./allday-project";
+import { alldayProjectPlanKorean } from "./allday-project-ko";
 
 export const PLANS: Record<string, StrategyPlanData> = {
   zerobaseone: zerobaseonePlan,
@@ -67,6 +69,8 @@ export const PLANS: Record<string, StrategyPlanData> = {
   "82major-deliverables-ko": eightyTwoMajorDeliverablesKorean,
   "temporex-deliverables": temporexDeliverables,
   "miguel-test-sprint": miguelTestSprint,
+  "allday-project": alldayProjectPlan,
+  "allday-project-ko": alldayProjectPlanKorean,
 };
 
 export function getPlan(slug: string): StrategyPlanData | undefined {

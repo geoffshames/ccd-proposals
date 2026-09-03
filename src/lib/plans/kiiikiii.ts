@@ -312,12 +312,12 @@ export const kiiikiiiPlan: StrategyPlanData = {
           label: "B",
           title: "Track Decay Analysis",
           objective: "Compare how KiiiKiii's hit retains streams week over week against the class's defining recent hits, on identical chart data.",
-          strategy: "Every benchmark hit in the set decays from week one. \"404 (New Era)\" inverts the curve: by week 4 it ran at 4.8x its launch week, and at week 26 it still runs at 1.8x, averaging 35.6K streams per day in South Korea alone seven months after release. Magnetic, the class's biggest debut-era hit, retained 16% of launch week at the same age; RUDE!, the strongest comp on retention, held 63%. This is catalog behavior of a kind the class does not produce, and it is the strongest single argument in this audit: attention compounds around this group when a song connects. The strategy's job is to make each future launch land on infrastructure that captures that compounding.",
+          strategy: "Three of the four benchmark hits lift above their launch week inside the first month. Only one is still above it half a year later. \"404 (New Era)\" runs at 4.8x its launch week by week 4 and is still at 1.8x at week 24, averaging 35.6K streams per day in South Korea alone seven months after release. Magnetic climbed to 2.7x at week 4 and was back to 59% of its launch week by week 24; RUDE!, the strongest comp on late retention, peaked at 1.2x and held 63%. 404 carries the highest multiple at every plotted week and is the only track in the set that never falls below where it started. This is catalog behavior of a kind the class does not sustain, and it is the strongest single argument in this audit: attention compounds around this group when a song connects. The strategy's job is to make each future launch land on infrastructure that captures that compounding.",
           charts: [
             {
               kind: "line",
               title: "Weekly Stream Retention vs Launch Week",
-              subtitle: "Weekly South Korea streams indexed to each track's first full chart week. The class decays; 404 multiplies.",
+              subtitle: "Weekly South Korea streams indexed to each track's own first chart week. Most of the class lifts early and then settles below its launch week. 404 never does.",
               unit: "x",
               series: [
                 {
@@ -341,11 +341,11 @@ export const kiiikiiiPlan: StrategyPlanData = {
                 {
                   name: "Magnetic (ILLIT)",
                   points: [
-                    { x: "W1", y: 1.0 }, { x: "W4", y: 0.68 }, { x: "W8", y: 0.38 }, { x: "W12", y: 0.34 }, { x: "W16", y: 0.23 }, { x: "W20", y: 0.2 }, { x: "W24", y: 0.16 },
+                    { x: "W1", y: 1.0 }, { x: "W4", y: 2.72 }, { x: "W8", y: 1.36 }, { x: "W12", y: 1.22 }, { x: "W16", y: 0.83 }, { x: "W20", y: 0.7 }, { x: "W24", y: 0.59 },
                   ],
                 },
               ],
-              note: "SPAGHETTI left the South Korea weekly chart after week 23. All four tracks measured on the same chart source.",
+              note: "SPAGHETTI fell below the South Korea weekly chart cutoff after week 23; that point is a chart-coverage gap, not zero streams. All four tracks are measured on the same chart source and indexed to their own first chart week. 404 and Magnetic released on a Monday and so carry a four-day first chart week, against a seven-day first week for RUDE! and SPAGHETTI.",
               source: "Spotify weekly South Korea chart archives, pulled Aug 26 2026",
               tall: true,
             },
