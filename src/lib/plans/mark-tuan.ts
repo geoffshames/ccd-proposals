@@ -438,7 +438,7 @@ export const markTuanPlan: StrategyPlanData = {
                 },
               ],
               highlightX: ["Post-Silhouette\nJul 2026"],
-              note: "Target: the post-Night Light floor lands above 350K, the first era to raise the floor instead of lowering it.",
+              note: "The floor is the number Part Two asks to be judged on: above 350K after this cycle, against a floor that has fallen three eras running.",
               source: "Chartmetric daily listener series",
             },
           ],

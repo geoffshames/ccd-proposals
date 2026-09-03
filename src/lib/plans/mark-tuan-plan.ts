@@ -42,7 +42,8 @@ export const markTuanPlanProposal: StrategyPlanData = {
       subtitle: "Thailand already chose Mark Tuan. This plan spends against that, Thailand first, on the two things a budget this size can actually move.",
       body: [
         "The audit in Part One measured five things. Thailand is his largest Spotify market at 55,244 monthly listeners, ahead of the United States, and it is 47.9% of his TikTok audience. His follower base moved 7.8% in eighteen months while monthly listeners swung between 282,423 and 937,006, so the audience each release brings in does not stay. His two biggest tracks and his seventh are collaborations, all of them ahead of every solo single since 2025. He holds five Spotify editorial placements reaching 33,087 people against MILLI's nineteen reaching 2.5 million. And across 162 analyzed videos, no collaboration post has ever let a guest speak, two carry an on-screen ask, and none of his best-performing work contains a single Thai marker.",
-        "This plan puts $15,000 to $20,000 against that, and it buys two things: paid media concentrated on Thailand, where his audience already sits and media costs a fraction of Western rates, and a Thai creator wave at the tier where Thai rates make real volume affordable. Creative direction, the asset briefs, the DSP pitch material and the weekly readout sit inside the campaign fee. Everything else the audit surfaced is listed in section 08 as a no-cost recommendation for the artist team, because it costs no money and Crowd Control Digital does not bill for it.",
+        "This plan puts $15,000 to $20,000 against that, and it buys two things: paid media concentrated on Thailand, where his audience already sits and media costs a fraction of Western rates, and a Thai creator wave at the tier where Thai rates make real volume affordable. Creative direction, the asset briefs, the DSP pitch material and the weekly readout sit inside the campaign fee. Everything else the audit surfaced is listed in section 09 as a no-cost recommendation for the artist team, because it costs no money and Crowd Control Digital does not bill for it.",
+        "One thing this document does differently: it does not promise a streaming number. All four of his prior release cycles grew without paid support, and his last three singles peaked at 1.52x, 1.17x and 1.43x their pre-release listener base on their own. Quoting a figure inside that band would be selling the release back to you. Section 02 sets out the baseline, the media arithmetic, and an explicit split between what this campaign commits to, what it expects, and what it reports without claiming. The number Crowd Control Digital asks to be judged on is the floor the cycle leaves behind, which has fallen three eras running.",
       ],
       supports: {
         heading: "What This Plan Covers",
@@ -56,25 +57,158 @@ export const markTuanPlanProposal: StrategyPlanData = {
         ],
       },
       goals: {
-        heading: "Campaign Targets (Ten-Week Window, Expected Case)",
+        heading: "What This Campaign Is Judged On",
         items: [
-          "Thailand Spotify monthly listeners: 55K to 150K at cycle peak, the first time a release is promoted to the market that already listens most",
-          "Total Spotify monthly listeners: 404K to 750K at cycle peak",
-          "Spotify followers: +25K against a base that has added 46K in eighteen months",
-          "Creator volume: 5,000+ videos on the official sound across TikTok in Thailand and the region during the window",
-          "Paid efficiency: a modelled $0.19 to $0.28 per pre-save or stream action, reported weekly against actuals",
-          "Retention: the post-cycle listener floor lands above 350K, versus 282K before the current single",
+          "Committed: 4.1M to 11.2M Thai impressions and views delivered across TikTok, Meta and YouTube, counted in the ad accounts",
+          "Committed: 14,000 to 21,000 measured DSP actions from the conversion-optimized spend, at a modelled $0.19 to $0.28 each",
+          "Committed: 20 to 35 contracted creator posts on the official sound, with total sound usage counted on top",
+          "Expected: Spotify followers +10K worst, +25K expected, +50K best, against a base that has moved 7.8% in eighteen months",
+          "The headline test: a post-cycle listener floor above 350K, against 282K before the current single and a floor that has fallen three eras running",
+          "Reported, not promised: monthly listeners and streams, shown weekly against the 330K to 550K his last three singles model unaided",
         ],
       },
       footnote: "Every target carries a worst, expected and best case in the verticals below. Streaming is the one variable this plan reports on rather than guarantees. All figures trace to the audit in Part One, pulled September 3, 2026.",
     },
 
     // ===================================================================
-    // 02. Core Strategy & Philosophy
+    // 02. Targets & Methodology
+    // ===================================================================
+    {
+      type: "vertical",
+      number: "02",
+      navLabel: "Method",
+      title: "Targets & Methodology",
+      philosophy: "Every prior Mark Tuan release grew without a dollar of paid support. So before this plan claims anything, it states what the release would do on its own, what a campaign of this size can add on top of that, and what nobody can honestly attribute.",
+      intro: "A marketing plan that promises a streaming number is usually promising something the release was going to do anyway. This section shows the arithmetic behind every figure in this document: the baseline drawn from his own four release cycles, the media math behind the delivery estimates, and an explicit split between what Crowd Control Digital commits to, what it expects, and what it reports without promising.",
+      subBlocks: [
+        {
+          label: "A",
+          title: "The Baseline: What a Release Does Unaided",
+          objective: "Establish what happens with no campaign, so the campaign is measured against the right counterfactual.",
+          strategy: "Four release cycles sit in the Chartmetric daily record, and none of them had a paid campaign behind it. Indexed to the day of release, the three singles peaked at 1.52x, 1.17x and 1.43x their pre-release listener base, a mean of 1.37x, each roughly thirty days out. The Silhouette EP reached 2.39x, but it was an EP carrying a Thai media tour, a retail fansign run, a countdown performance and a two-night arena booking, so it is context rather than a comparable. Night Light is a single. Applied to a modelled pre-release floor of 280,000 to 360,000, that band puts the unaided peak at roughly 330,000 to 550,000 monthly listeners. Any campaign proposal for this artist has to beat that band to have done anything at all, and any proposal that quotes a number inside it is selling the release back to the label.",
+          components: {
+            heading: "The Four Cycles, All Unaided",
+            items: [
+              "High As You (single, May 2025): 348,020 to 529,867 at day 30, a 1.52x peak",
+              "hold still (single, Aug 2025): 407,050 to 476,020 at day 34, a 1.17x peak",
+              "Alone (single, Jul 2026): 282,423 to 403,615 at day 31, a 1.43x reading with the curve still rising at the last data point",
+              "Silhouette (EP, Nov 2025): 391,933 to 937,006 at day 32, a 2.39x peak. An EP with a full promotional cycle, shown for context and excluded from the single baseline",
+            ],
+          },
+          charts: [
+            {
+              kind: "bars",
+              title: "Peak Listener Lift by Release, Indexed to Release Day",
+              subtitle: "Every one of these was achieved with no paid media. The three singles average 1.37x; the EP is shown for context and excluded from the baseline.",
+              unit: "x",
+              series: [
+                {
+                  name: "Peak lift",
+                  points: [
+                    { x: "hold still\nsingle, Aug 25", y: 1.17 },
+                    { x: "Alone\nsingle, Jul 26", y: 1.43 },
+                    { x: "High As You\nsingle, May 25", y: 1.52 },
+                    { x: "Silhouette\nEP, Nov 25", y: 2.39 },
+                  ],
+                },
+              ],
+              highlightX: ["Silhouette\nEP, Nov 25"],
+              note: "Alone had not peaked at the last available reading, so 1.43x is a floor for that cycle rather than its ceiling.",
+              source: "Chartmetric daily monthly-listener series, indexed by Crowd Control Digital, Sep 3 2026",
+              tall: true,
+            },
+          ],
+        },
+        {
+          label: "B",
+          title: "What This Campaign Commits To",
+          objective: "Separate the numbers Crowd Control Digital controls from the numbers it does not.",
+          strategy: "Three tiers, and the page is explicit about which is which. Committed figures are delivery and cost: they are bought, counted in an ad account, and reported weekly, and if the campaign misses them the money is reallocated or returned to the client's decision. Expected figures are audience movements the campaign contributes to but does not solely cause, quoted as a range with a stated basis. Reported figures are streaming outcomes, which are shown every week against the baseline above and are never sold as a promise, because no agency can separate a paid stream from a stream the record would have earned anyway.",
+          components: {
+            heading: "Tier 1: Committed, Directly Measured",
+            items: [
+              "Thai impressions and views delivered: 4.1M to 11.2M across TikTok, Meta and YouTube on the Foundation tier, priced from published Thai rate cards",
+              "Measured DSP actions from the conversion-optimized slice: 14,000 to 21,000 at a modelled $0.19 to $0.28 each",
+              "Creator videos on the official sound from the seeded waves: 20 to 35 contracted posts, with total sound usage counted on top",
+              "Cost per view, per engagement and per action by channel and market, reported weekly against the modelled benchmark",
+            ],
+          },
+          kpis: [
+            "Tier 2, expected and partly attributable: Spotify followers +10K worst, +25K expected, +50K best; TikTok followers +150K to +350K; Thailand listener growth reported against a market that has never had a dedicated flight",
+            "Tier 3, reported not promised: total monthly listeners at cycle peak, shown weekly against the 330K to 550K unaided baseline; total streams, shown weekly with no target attached",
+          ],
+        },
+        {
+          label: "C",
+          title: "The Attribution Problem, Stated Plainly",
+          objective: "Say out loud what this plan cannot prove, because the alternative is a number that falls apart under scrutiny.",
+          strategy: "Paid media and creator seeding move streams through the platforms' own recommendation systems, which no advertiser can see into. A campaign can prove it delivered impressions, drove clicks to a DSP and produced creator videos. It cannot cleanly prove which streams would not have happened anyway, and any agency claiming otherwise is either running a much larger budget with a holdout group or guessing. At this budget the noise floor is real: a spend of this size against an artist already generating hundreds of thousands of monthly listeners produces a lift that can sit inside normal week-to-week variance. That is the honest constraint, and this plan is built around it rather than past it.",
+          components: {
+            heading: "What Gets This Closer to Causal",
+            items: [
+              "Staged market entry: Thailand runs first at test weight while the ring markets stay dark, so the Thai delta reads against unpromoted markets in the same weeks",
+              "Weekly baseline-versus-actual: every readout plots the live curve against the 1.17x to 1.52x unaided band, so over-performance is visible rather than asserted",
+              "Sustain weighting: spend concentrates in weeks two through six, which is where his eras peak, so the campaign is testable against a release-week-only pattern",
+              "The floor test at close-out: the post-cycle floor is the least confounded number in the whole plan, because it is measured eight weeks after the release event has passed",
+            ],
+          },
+        },
+        {
+          label: "D",
+          title: "The Number That Actually Matters",
+          objective: "Name the single metric this campaign should be judged on.",
+          strategy: "Peaks are easy and temporary. His last three post-release floors were 406,082, 393,847 and 282,423, so the audience each cycle leaves behind has fallen by 30% in a year while the peaks kept arriving. That decline is the problem this plan was built for, and it is the cleanest thing to hold Crowd Control Digital to, because it is measured two months after release, long after the release-day effect has washed out, and because raising it is the only outcome that compounds into the next cycle. The target is a post-cycle floor above 350,000 against the 282,423 the current single was released into.",
+          kpis: [
+            "Post-cycle floor above 350,000 monthly listeners at week ten, against 282,423 before the current single and a falling three-era trend",
+            "Reported alongside it: the follower base, which has moved 7.8% in eighteen months and is the second compounding number",
+          ],
+          charts: [
+            {
+              kind: "bars",
+              title: "The Post-Release Floor, Era Over Era",
+              subtitle: "Lowest monthly-listener reading after each cycle passed. The peaks kept coming; the floor fell 30% in a year.",
+              series: [
+                {
+                  name: "Floor",
+                  points: [
+                    { x: "After High As You\nAug 2025", y: 406082 },
+                    { x: "After hold still\nNov 2025", y: 393847 },
+                    { x: "After Silhouette\nJul 2026", y: 282423 },
+                    { x: "Night Light\ntarget", y: 350000 },
+                  ],
+                },
+              ],
+              highlightX: ["Night Light\ntarget"],
+              source: "Chartmetric daily monthly-listener series. The target is the figure Crowd Control Digital is asking to be judged on.",
+            },
+          ],
+        },
+        {
+          label: "E",
+          title: "Sources and Confidence",
+          objective: "Let anyone reading check the arithmetic.",
+          strategy: "Every figure in this document carries its origin. Listener, follower, market and playlist data come from Chartmetric, pulled September 3, 2026, with daily series through August 31. Release-cycle lifts and decay rates were computed by Crowd Control Digital from that daily series and the arithmetic is shown above. Media rates come from published 2025 and 2026 Thai and Southeast Asian rate cards and agency-reported first-party benchmarks, and are labelled as modelled until live account data replaces them in week one. The cost-per-action figure is the weakest input in the plan: it is a single published benchmark discounted for Southeast Asian markets, so it is quoted as a model and is the first number the weekly readout replaces with actuals. Video findings come from a 162-video analysis with per-post performance joined on, cross-checked against an independent statistics pass. iTunes country peaks are reported by fan chart tracking rather than a published industry chart and are attributed that way wherever they appear.",
+          components: {
+            heading: "Confidence, Highest to Lowest",
+            items: [
+              "High: his own listener, follower and playlist history, and the delivery figures once the flight is live. Directly observed",
+              "High: creator volume and creator-post performance. Counted",
+              "Medium: media delivery estimates. Published rate bands, replaced with actuals after week one",
+              "Low, and labelled: cost per DSP action, modelled from one published benchmark discounted for the region",
+              "Not claimed: incremental streams. Reported weekly against the unaided baseline, never promised",
+            ],
+          },
+        },
+      ],
+      footnote: "Baseline lifts and floors computed from the Chartmetric daily monthly-listener series, September 3, 2026 pull. The unaided band assumes a pre-release floor of 280,000 to 360,000, which moves with the release date and is restated once the date locks.",
+    },
+
+    // ===================================================================
+    // 03. Core Strategy & Philosophy
     // ===================================================================
     {
       type: "philosophy",
-      number: "02",
+      number: "03",
       navLabel: "Philosophy",
       title: "Core Strategy & Philosophy",
       thesis: "Mark Tuan does not need Thailand to discover him. It already has. Every dollar in this plan buys reach in the market that already listens most, or puts the record in front of Thai creators who will carry it further than paid can. Nothing here asks the song to be something it is not, and nothing here bills for work that costs no money.",
@@ -107,11 +241,11 @@ export const markTuanPlanProposal: StrategyPlanData = {
     },
 
     // ===================================================================
-    // 03. Proposal Structure
+    // 04. Proposal Structure
     // ===================================================================
     {
       type: "structure",
-      number: "03",
+      number: "04",
       navLabel: "Structure",
       title: "Proposal Structure",
       intro: "Two budgets for the Night Light cycle, both Thailand first. Every dollar shown buys media or creators. Creative direction, the asset briefs, the DSP pitch material and the weekly reporting sit inside the Crowd Control Digital campaign fee, which is billed separately and shown in the pricing section. Both tiers run the same ten-week window; the Expanded tier raises the Thai weight, doubles the creator wave and adds a funded Southeast Asia ring.",
@@ -147,11 +281,11 @@ export const markTuanPlanProposal: StrategyPlanData = {
     },
 
     // ===================================================================
-    // 04. Vertical 1 / Paid Media, Thailand First
+    // 05. Vertical 1 / Paid Media, Thailand First
     // ===================================================================
     {
       type: "vertical",
-      number: "04",
+      number: "05",
       navLabel: "Paid",
       title: "Vertical 1 / Paid Media, Thailand First",
       philosophy: "The majority of the budget. Thailand's media costs are a fraction of Western rates and the audience is already following him; paid exists to move that audience from following to listening.",
@@ -173,9 +307,10 @@ export const markTuanPlanProposal: StrategyPlanData = {
             ],
           },
           kpis: [
-            "Thailand Spotify monthly listeners at cycle peak: 90K worst, 150K expected, 250K best (from 55K)",
-            "Cost per pre-save or stream action: $0.19 to $0.28 modelled from published benchmarks, reported against actuals weekly",
-            "Retargeting pool of 500K+ Thai users by the end of week two after release",
+            "Committed: 4.1M to 11.2M Thai impressions and views delivered, priced from published Thai rate cards and reconciled to the ad accounts weekly",
+            "Committed: cost per view, per engagement and per DSP action by channel, against a modelled $0.19 to $0.28 per action that live data replaces in week one",
+            "Committed: a retargeting pool of 500K+ Thai users by the end of week two after release",
+            "Reported, not promised: Thai monthly listeners, shown weekly against the ring markets, which stay dark through release week so the Thai delta reads against unpromoted markets",
           ],
         },
         {
@@ -198,11 +333,11 @@ export const markTuanPlanProposal: StrategyPlanData = {
           label: "C",
           title: "The Scale Rule",
           objective: "Move money toward what works, on a written rule rather than a judgment call.",
-          strategy: "Every paid line opens at roughly 30% of budget for its first seven days, baselining cost per view, cost per engagement and cost per click by market and by asset. Lines that beat their benchmark scale; lines that miss it by more than 50% are cut and the budget moves inside the tier. Streaming is reported weekly and is the one number this plan does not guarantee, because paid reach converts to streams through the platforms' own recommendation systems and no agency controls that. What the plan commits to is the target ranges below, each with a worst, expected and best case, and a written weekly readout on all of them.",
+          strategy: "Every paid line opens at roughly 30% of budget for its first seven days, baselining cost per view, cost per engagement and cost per click by market and by asset. Lines that beat their benchmark scale; lines that miss it by more than 50% are cut and the budget moves inside the tier. Streaming is reported weekly and is the one number this plan does not guarantee, because paid reach converts to streams through the platforms' own recommendation systems and no agency controls that. What the plan commits to is the delivery and cost figures in section 02, and a written weekly readout that plots the live listener curve against the unaided baseline his own last three singles set.",
           kpis: [
-            "Total Spotify monthly listeners at cycle peak: 550K worst, 750K expected, 1.0M best (from 404K)",
-            "Spotify followers added in the window: 10K worst, 25K expected, 50K best",
-            "Post-cycle listener floor: above 350K, against 282K before the current single",
+            "The headline test: a post-cycle listener floor above 350K at week ten, against 282K before the current single and a floor that has fallen three eras running",
+            "Expected: Spotify followers added in the window, 10K worst, 25K expected, 50K best",
+            "Reported against the baseline, not promised: monthly listeners at cycle peak, plotted weekly against the 330K to 550K band his last three singles model unaided",
           ],
         },
       ],
@@ -210,11 +345,11 @@ export const markTuanPlanProposal: StrategyPlanData = {
     },
 
     // ===================================================================
-    // 05. Vertical 2 / Creator Seeding
+    // 06. Vertical 2 / Creator Seeding
     // ===================================================================
     {
       type: "vertical",
-      number: "05",
+      number: "06",
       navLabel: "Creators",
       title: "Vertical 2 / Creator Seeding",
       philosophy: "The line paid media cannot replace. Thai creator rates make real volume affordable at this budget, and the record has a transition built into it that creators will copy once they see it.",
@@ -269,11 +404,11 @@ export const markTuanPlanProposal: StrategyPlanData = {
     },
 
     // ===================================================================
-    // 06. Vertical 3 / Creative Direction
+    // 07. Vertical 3 / Creative Direction
     // ===================================================================
     {
       type: "vertical",
-      number: "06",
+      number: "07",
       navLabel: "Creative",
       title: "Vertical 3 / Creative Direction",
       philosophy: "Inside the campaign fee, not a media line. Crowd Control Digital specifies the assets; the artist team produces them. What is specified comes straight from the video intelligence findings and the record's actual shape.",
@@ -322,11 +457,11 @@ export const markTuanPlanProposal: StrategyPlanData = {
     },
 
     // ===================================================================
-    // 07. Vertical 4 / Measurement & Reporting
+    // 08. Vertical 4 / Measurement & Reporting
     // ===================================================================
     {
       type: "vertical",
-      number: "07",
+      number: "08",
       navLabel: "Reporting",
       title: "Vertical 4 / Measurement & Reporting",
       philosophy: "Also inside the fee. A campaign that cannot be read week to week cannot be reallocated week to week, and reallocation is where a budget this size earns its return.",
@@ -371,11 +506,11 @@ export const markTuanPlanProposal: StrategyPlanData = {
     },
 
     // ===================================================================
-    // 08. Recommendations for the Artist Team
+    // 09. Recommendations for the Artist Team
     // ===================================================================
     {
       type: "vertical",
-      number: "08",
+      number: "09",
       navLabel: "Recommendations",
       title: "Recommendations for the Artist Team",
       philosophy: "Everything here costs no media budget and is not billed by Crowd Control Digital. It is listed because the audit found it, and because each item raises the return on the spend in the verticals above.",
@@ -419,11 +554,11 @@ export const markTuanPlanProposal: StrategyPlanData = {
     },
 
     // ===================================================================
-    // 09. Proposed Media Flight
+    // 10. Proposed Media Flight
     // ===================================================================
     {
       type: "flight",
-      number: "09",
+      number: "10",
       navLabel: "Flight",
       title: "Proposed Media Flight",
       intro: "How the budget deploys across a ten-week window keyed to release week (R). Pre-release warms the Thai audience and books the creators. Release week turns everything on at test weight. The sustain phase, where every previous era actually peaked, carries the largest share and scales what the first week proved. Phase figures show Foundation first and Expanded second.",
@@ -468,11 +603,11 @@ export const markTuanPlanProposal: StrategyPlanData = {
     },
 
     // ===================================================================
-    // 10. Execution Timeline
+    // 11. Execution Timeline
     // ===================================================================
     {
       type: "timeline",
-      number: "10",
+      number: "11",
       navLabel: "Timeline",
       title: "Execution Timeline",
       intro: "A ten-week window keyed to release week. Briefs and creator booking happen in the three weeks before release; paid and creators launch in release week at test weight; the sustain phase runs six weeks because that is where this artist's eras have always peaked. Calendar dates lock when the release date does.",
@@ -629,11 +764,11 @@ export const markTuanPlanProposal: StrategyPlanData = {
     },
 
     // ===================================================================
-    // 11. Final Pricing
+    // 12. Final Pricing
     // ===================================================================
     {
       type: "pricing",
-      number: "11",
+      number: "12",
       navLabel: "Pricing",
       title: "Final Pricing",
       intro: "Two tiers for the Night Light cycle. Every dollar of the budget buys media or creators. The Crowd Control Digital campaign fee covers strategy, paid media management across every platform and market, creator program management, creative direction and the asset briefs, DSP pitch material and the weekly readout, and is billed separately from the budget.",
