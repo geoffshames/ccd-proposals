@@ -20,8 +20,10 @@ import { eightyTwoMajorSeptember } from "./82major-september";
 import { kiiikiiiPlan } from "./kiiikiii";
 import { kiiikiiiPlanKorean } from "./kiiikiii-ko";
 import { irationPlan } from "./iration";
+import { markTuanPlan } from "./mark-tuan";
 
 export const PLANS: Record<string, StrategyPlanData> = {
+  "mark-tuan": markTuanPlan,
   iration: irationPlan,
   kiiikiii: kiiikiiiPlan,
   "kiiikiii-ko": kiiikiiiPlanKorean,
