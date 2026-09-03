@@ -34,7 +34,7 @@ export const meovvPlan: StrategyPlanData = {
       subtitle: "Two years in, MEOVV has built the hardest thing to build and the easiest thing to monetize. It has not yet built the place to monetize it.",
       body: [
         "MEOVV converts attention into commitment better than any act of comparable scale in its debut class. The Spotify follower-to-listener ratio, the cleanest available measure of how much of a passing audience actually signs up, sits at 0.408 against 4.95M monthly listeners. KiiiKiii runs 0.239 at a similar listener count. Hearts2Hearts runs 0.313 at 60% more listeners. KATSEYE, at nearly eight times the scale, runs 0.337. Two smaller acts in the set do convert faster, ALLDAY PROJECT at 0.468 and izna at 0.423, at 39% and 31% of MEOVV's listener scale. The ratio has climbed almost every month since debut, from 0.066 in September 2024, and across 720 daily transitions the follower count has not fallen once.",
-        "The commitment is real and it is priced in everywhere a fan is allowed to spend. The lightstick sold out. The paid membership sold out. First-week physical sales rose from 255,005 to 301,725 between the two EPs, a group record. What does not exist is the surface that turns any of that into a repeatable business: no concert and no fan meeting in 727 days, no ticketed headline show anywhere, no email or SMS capture on any owned property, a US store that no bio on any platform links to, and a parked domain sitting on the group's own name. This audit measures each of those gaps precisely, then prescribes the capture layer that closes them.",
+        "The commitment is real and it is priced in everywhere a fan is allowed to spend. The lightstick sold out. The paid membership sold out. First-week physical sales rose from 255,005 to 301,725 between the two EPs, a group record. What does not exist is the surface that turns any of that into a repeatable business: no concert and no fan meeting in 727 days, no ticketed headline show anywhere, an official site that is still a holding page two years in, a US store that no owned surface links to, and the single email capture that does exist running on the distributor's consent rather than the artist's. This audit measures each of those gaps precisely, then prescribes the capture layer that closes them.",
       ],
       supports: {
         heading: "What This Document Covers",
@@ -50,7 +50,7 @@ export const meovvPlan: StrategyPlanData = {
         heading: "12-Month Targets",
         items: [
           "A first ticketed MEOVV headline show, and a first fan concert in the markets that already carry the listening",
-          "A first-party audience list built from zero, sized against the 2.02M Spotify followers who have already opted in once",
+          "A first-party audience list the artist controls, sized against the 2.02M Spotify followers who have already opted in once",
           "Fandom conversion: ratio from 0.408 toward 0.60+, the band the class's established acts occupy",
           "Spotify monthly listeners from 4.95M to 8M+ during active cycles, with the release halo restored above 1.5x",
           "Short form: median post from 633K toward 1.5M on a rebalanced mix and a daily cadence",
@@ -554,7 +554,7 @@ export const meovvPlan: StrategyPlanData = {
           label: "What it has never been offered",
           items: [
             "A ticket to anything, anywhere, in two years",
-            "A way to give the group an email address or phone number",
+            "Any way to reach the group directly that is not a pop-up on a store no owned channel links to",
             "A merchandise line, a lightstick or a membership reachable from a United States address without a reseller",
             "A reason to return to any owned surface between comebacks",
           ],
@@ -998,34 +998,36 @@ export const meovvPlan: StrategyPlanData = {
       navLabel: "Infrastructure",
       title: "Infrastructure Audit",
       philosophy: "Every owned surface was checked directly rather than assumed. The question asked of each one was simple: can MEOVV reach a fan through it without a platform in the middle, and can a fan spend money through it.",
-      intro: "This is the section that explains the gap between the conversion rate in section 03 and the business results underneath it. Six surfaces were audited on September 3, 2026 by visiting them, reading their page source, and checking the platforms and APIs behind them.",
+      intro: "This is the section that explains the gap between the conversion rate in section 03 and the business results underneath it. Six surfaces were audited on September 3, 2026 by loading each one in a browser and inspecting the live document, which is how the capture unit in block B was found: it renders after load and does not appear in the page source.",
       subBlocks: [
         {
           label: "A",
-          title: "The Domain and the Front Door",
-          strategy: "There is no official MEOVV website. The exact-match domain resolves to a commercial parking page operated by a domain reseller, monetizing search traffic on the group's own name, and has done for the two years since debut. The closest thing to an official site is a storefront, and the label's own site carries no capture of any kind.",
+          title: "The Official Site Is a Holding Page",
+          strategy: "MEOVV does run an official website, at the Korean domain, and it is a single holding page. It carries a copyright line, six social icons and nothing else: no store link, no release information, no capture, and no second page. Every path on the domain serves the same shell. Its own share image is named for the placeholder it is. The one owned front door that exists sends every visitor straight back out to a platform.",
           components: {
             heading: "What was found",
             items: [
-              "The exact-match .com domain returns a parking and for-sale page from a third-party reseller. It is not held by the label.",
-              "The label's corporate site carries zero forms and zero email inputs across 21,738 bytes of markup.",
-              "The label's commerce site carries three forms: two searches and one member login. No newsletter, no capture.",
-              "There is no owned page anywhere that a campaign could drive traffic to and retain the visitor.",
+              "The official site is operated by the label, carries Korean and English locale tags, and renders one line of text: the copyright notice.",
+              "Six outbound links: YouTube, Instagram, X, TikTok, Facebook and Threads. No link to either store, to the fan app, or to a release.",
+              "Fourteen candidate paths were requested (shop, store, news, notice, members, join, music, media, contact, newsletter and others). All fourteen return the same holding shell, so there is no second page to reach.",
+              "Zero forms and zero email inputs anywhere on the domain.",
+              "The exact-match .com is separately held by a domain reseller and serves a parking page, monetizing search traffic on the group's name.",
             ],
           },
         },
         {
           label: "B",
-          title: "Email and SMS: Installed, Never Switched On",
-          strategy: "The most consequential finding in the audit. A full email service provider is already installed, paid for and tracking on the US store. It has no signup unit anywhere in front of it. The only way MEOVV acquires a fan's email address today is if that fan completes a CD purchase.",
+          title: "The Email List Exists and It Is Not MEOVV's",
+          strategy: "Email capture does run, in exactly one place: a pop-up on the US store. It is worth reading closely, because of the three consent boxes it presents, only one is MEOVV. The other two are the distributor and its parent. The consent language states that mail is sent by or on behalf of the distribution company, at the distribution company's address. So a list is being built on MEOVV's traffic, inside someone else's system, under someone else's consent. Every other owned surface captures nothing.",
           components: {
             heading: "Surface-by-surface verification",
             items: [
-              "Five store pages were scanned for form elements and email inputs. Result across all five: zero email inputs.",
-              "An enterprise ESP is live on the store with site tracking and cart-recovery scripts running, which means the plumbing, the contract and the integration all already exist.",
-              "The store's own data layer reports an empty customer email and an empty marketing-consent value on every page load, confirming there is no opt-in path.",
-              "No email or SMS capture was found on any link hub, any streaming link page, any social bio destination, or either label site.",
-              "The streaming link pages carry a retargeting pixel and an analytics tag, which is advertising data, not owned data. It cannot be exported, emailed or taken to another platform.",
+              "The capture is a pop-up unit on the US store collecting an email address and a country, with three separate opt-in checkboxes: MEOVV, the distributor's label group, and its parent company.",
+              "The consent copy names the distribution company as sender, at its California address, with its privacy policy governing. The resulting list is held there, not by the artist or the label.",
+              "An enterprise email platform runs alongside it with site-tracking and cart-recovery scripts live, so the sending infrastructure, the contract and the integration all already exist.",
+              "Because the unit is a pop-up rather than a permanent element, it is absent from the page body: a scan of the store's static markup returns zero email fields. The capture is real, and it is easy to miss.",
+              "No email or SMS capture exists on the official site, the fan app funnel, any link hub, any streaming link page, or any social bio destination.",
+              "The streaming link pages carry a retargeting pixel and an analytics tag, which is advertising data, not owned data. It cannot be exported, mailed, or taken to another platform.",
             ],
           },
         },
@@ -1037,6 +1039,7 @@ export const meovvPlan: StrategyPlanData = {
             heading: "The commerce gap",
             items: [
               "Instagram's four bio link slots hold two release links, a social directory and a mood board. None is a store.",
+              "The official site does not link either store, so the one owned page that exists points at no commerce at all.",
               "TikTok, X and YouTube bios each hold a single streaming link and nothing else.",
               "The social directory hub lists ten destinations. The US store is not among them; the Korean shop is.",
               "The US store's full product catalog is ten items, 100% CDs. There is no repeat-purchase reason to return between album cycles.",
@@ -1078,14 +1081,14 @@ export const meovvPlan: StrategyPlanData = {
         },
         {
           label: "F",
-          title: "What the Absence Adds Up To",
-          strategy: "7.9M followers across three platforms, and a further 2.02M committed enough to follow on a streaming service where following does nothing for them, and not one of those relationships can be reached without a platform intermediary. Two commitment products have ever been offered and both sold out. The audit's conclusion is that demand has been proven repeatedly and supply has never been built.",
+          title: "What the Gap Adds Up To",
+          strategy: "7.9M followers across three platforms, and a further 2.02M committed enough to follow on a streaming service where following does nothing for them. Almost none of those relationships is reachable except through a platform, and the one channel that could reach them directly sits on a store no owned surface links to, collecting into the distributor's list rather than the artist's. Two commitment products have ever been offered and both sold out. The audit's conclusion is that demand has been proven repeatedly and the apparatus to meet it has not been built.",
           components: {
             heading: "Ranked by cost to close",
             items: [
-              "Switch on the ESP that is already installed and put a capture unit in front of it. This is a configuration change, not a build.",
+              "Stand up a list in MEOVV's own name. The store pop-up proves the audience opts in, but that list is the distributor's and the artist will not hold it.",
               "Point at least one bio link on each platform at a first-party page that captures before it converts.",
-              "Acquire the exact-match domain and stand up an owned page behind it.",
+              "Turn the official site from a holding page into the destination that capture sits on.",
               "Extend the US store beyond CDs and carry the lightstick and merchandise on it.",
               "Announce a first ticketed date in a market that already carries the listening.",
               "Rebuild the membership proposition around access to that live business rather than around app features.",
@@ -1093,7 +1096,7 @@ export const meovvPlan: StrategyPlanData = {
           },
         },
       ],
-      footnote: "Every surface in this section was verified directly on September 3, 2026 by loading the page, reading its source, and querying the relevant public APIs. Absence claims are based on scans for form elements, email inputs and named vendor scripts, and on live-event database queries returning zero upcoming events. Follower counts are platform-reported on the same date.",
+      footnote: "Every surface in this section was verified directly on September 3, 2026 by loading the page in a browser, inspecting the live document rather than the static markup, and querying the relevant public APIs. Capture findings rest on the rendered form fields, their consent copy and their list identifiers. Absence claims rest on the same inspection plus live-event database queries returning zero upcoming events. Follower counts are platform-reported on the same date.",
     },
 
     // ===================================================================
@@ -1108,7 +1111,7 @@ export const meovvPlan: StrategyPlanData = {
       hierarchy: [
         {
           label: "1. Capture",
-          description: "Convert platform followers into first-party contacts the group actually owns. The email service provider is already installed and running with nothing in front of it, which makes this the fastest and cheapest move on the board. Everything downstream depends on it.",
+          description: "Convert platform followers into first-party contacts the group actually owns. A list is already being built on MEOVV's traffic today, under the distributor's name, on a store nothing links to, and the artist does not hold it. Standing up an artist-side list and pointing owned traffic at it is the fastest and cheapest move on the board. Everything downstream depends on it.",
         },
         {
           label: "2. Live",
@@ -1145,13 +1148,14 @@ export const meovvPlan: StrategyPlanData = {
       subBlocks: [
         {
           label: "A",
-          title: "Switch On the Capture That Already Exists",
-          objective: "Move from zero owned contacts to a live, growing, segmented list inside the first four weeks.",
-          strategy: "The US store already runs an enterprise email service provider with site tracking and cart recovery live. No new vendor, contract or integration is required. What is missing is a signup unit, a destination page and a reason to give an address. All three are configuration and copy rather than engineering.",
+          title: "Stand Up a List MEOVV Actually Holds",
+          objective: "A first-party audience the artist controls and can mail on its own schedule, live inside the first four weeks.",
+          strategy: "Capture already runs on the US store, but it is not MEOVV's. Two of its three consent boxes belong to the distributor and its parent, the mail goes out under their name and their privacy policy, and in practice an artist does not get direct access to that list. Treat it as what it is: proof the audience will opt in, and a channel that will keep running regardless. The work is to stand up a separate artist-held list on a dedicated fan-CRM platform, running alongside it and fed by every owned channel, so MEOVV holds an audience it can reach without asking anyone.",
           components: {
             heading: "Build",
             items: [
-              "A capture unit in the store footer and as an entry interstitial, running against the ESP already installed",
+              "A dedicated fan-CRM platform, Laylo or an equivalent, holding the artist-side list independent of the distributor's",
+              "A capture unit in MEOVV's own name wherever owned traffic lands, sitting alongside the distributor's store pop-up rather than replacing it",
               "A standalone first-party landing page as the single destination every bio link and end card points at",
               "SMS capture alongside email for the markets where it is legally clean, kept separate from the email flow by consent type",
               "A welcome sequence in English, triggered on signup, that routes new contacts by market",
@@ -1159,7 +1163,7 @@ export const meovvPlan: StrategyPlanData = {
             ],
           },
           kpis: [
-            "First-party contacts captured, reported weekly against a zero baseline",
+            "Artist-held contacts captured, reported weekly, and the share of total capture they represent",
             "Capture rate per thousand profile visits, by platform and by bio slot",
             "Share of contacts from outside Korea, targeting the top five listening markets",
             "Deliverability and opt-out rate held inside industry norms from the first send",
@@ -1167,20 +1171,21 @@ export const meovvPlan: StrategyPlanData = {
         },
         {
           label: "B",
-          title: "Reclaim the Front Door",
-          objective: "An owned page on the group's own name, that a campaign can drive to and a fan can return to.",
-          strategy: "The exact-match domain currently monetizes MEOVV's search traffic for a third party. Acquiring it and standing a page behind it converts a leak into an asset. The page does not need to be large: a release hub, a store link, a tour module and the capture unit is the whole requirement in phase one.",
+          title: "Finish the Front Door",
+          objective: "Turn the official site from a holding page into the destination a campaign can drive to and a fan can return to.",
+          strategy: "The domain and the site already exist and the label already operates them, which removes the hardest part. What sits there today is a placeholder: a copyright line and six links back out to platforms. Building it out is the cheapest owned-media gain available. The page does not need to be large, and a release hub, a store link, a tour module and the capture unit is the whole requirement in phase one.",
           components: {
             heading: "Build",
             items: [
-              "Domain acquisition, then a single-page owned hub behind it",
+              "A real home page behind the domain the label already holds, replacing the holding shell",
+              "Acquisition of the exact-match .com, which currently monetizes the group's search traffic for a reseller",
               "A tour module that can hold an announcement, so the first date has a home before it is booked",
               "Store routing that sends US traffic to the US storefront and everyone else to the label shop, which nothing does today",
               "Consistent bio-link architecture across all four platforms, with at least one slot permanently held by the owned page",
             ],
           },
           kpis: [
-            "Owned-page sessions and returning-visitor share",
+            "Owned-site sessions and returning-visitor share, against a holding-page baseline of effectively zero",
             "Share of total bio-link clicks landing on an owned property rather than a third-party link page",
             "Store sessions attributable to owned channels",
           ],
