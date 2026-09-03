@@ -23,6 +23,7 @@ import { irationPlan } from "./iration";
 import { markTuanPlan } from "./mark-tuan";
 import { markTuanPlanProposal } from "./mark-tuan-plan";
 import { fiftyFiftyPlan } from "./fifty-fifty";
+import { fiftyFiftyPlanKorean } from "./fifty-fifty-ko";
 import { meovvPlan } from "./meovv";
 import { meovvPlanKorean } from "./meovv-ko";
 import { keyvitupPlan } from "./keyvitup";
@@ -37,6 +38,7 @@ export const PLANS: Record<string, StrategyPlanData> = {
   "mark-tuan-plan": markTuanPlanProposal,
   iration: irationPlan,
   "fifty-fifty": fiftyFiftyPlan,
+  "fifty-fifty-ko": fiftyFiftyPlanKorean,
   kiiikiii: kiiikiiiPlan,
   "kiiikiii-ko": kiiikiiiPlanKorean,
   "bhavi-viaje-de-ida": bhaviViajeDeIdaPlan,
