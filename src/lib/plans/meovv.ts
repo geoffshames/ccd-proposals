@@ -33,7 +33,7 @@ export const meovvPlan: StrategyPlanData = {
       title: "Overview & Objective",
       subtitle: "Two years in, MEOVV has built the hardest thing to build and the easiest thing to monetize. It has not yet built the place to monetize it.",
       body: [
-        "MEOVV converts attention into commitment better than any group in its debut class. The Spotify follower-to-listener ratio, the cleanest available measure of how much of a passing audience actually signs up, sits at 0.408 against 4.96M monthly listeners. KiiiKiii runs 0.239 at a similar listener count. Hearts2Hearts runs 0.313 at 60% more listeners. KATSEYE, at nearly eight times the scale, runs 0.337. The ratio has climbed almost every month since debut, from 0.066 in September 2024, and across 720 consecutive days of readings the follower count has not fallen once.",
+        "MEOVV converts attention into commitment better than any act of comparable scale in its debut class. The Spotify follower-to-listener ratio, the cleanest available measure of how much of a passing audience actually signs up, sits at 0.408 against 4.95M monthly listeners. KiiiKiii runs 0.239 at a similar listener count. Hearts2Hearts runs 0.313 at 60% more listeners. KATSEYE, at nearly eight times the scale, runs 0.337. Two smaller acts in the set do convert faster, ALLDAY PROJECT at 0.468 and izna at 0.423, at 39% and 31% of MEOVV's listener scale. The ratio has climbed almost every month since debut, from 0.066 in September 2024, and across 720 daily transitions the follower count has not fallen once.",
         "The commitment is real and it is priced in everywhere a fan is allowed to spend. The lightstick sold out. The paid membership sold out. First-week physical sales rose from 255,005 to 301,725 between the two EPs, a group record. What does not exist is the surface that turns any of that into a repeatable business: no concert and no fan meeting in 727 days, no ticketed headline show anywhere, no email or SMS capture on any owned property, a US store that no bio on any platform links to, and a parked domain sitting on the group's own name. This audit measures each of those gaps precisely, then prescribes the capture layer that closes them.",
       ],
       supports: {
@@ -52,7 +52,7 @@ export const meovvPlan: StrategyPlanData = {
           "A first ticketed MEOVV headline show, and a first fan concert in the markets that already carry the listening",
           "A first-party audience list built from zero, sized against the 2.02M Spotify followers who have already opted in once",
           "Fandom conversion: ratio from 0.408 toward 0.60+, the band the class's established acts occupy",
-          "Spotify monthly listeners from 4.96M to 8M+ during active cycles, with the release halo restored above 1.5x",
+          "Spotify monthly listeners from 4.95M to 8M+ during active cycles, with the release halo restored above 1.5x",
           "Short form: median post from 633K toward 1.5M on a rebalanced mix and a daily cadence",
           "Physicals: first week above 350K on the next cycle, with a US retail lane that is linked from owned channels",
         ],
@@ -61,7 +61,7 @@ export const meovvPlan: StrategyPlanData = {
         {
           kind: "area",
           title: "24 Months of Spotify Consumption",
-          subtitle: "Weekly monthly-listener and follower readings since debut. Listeners cycle with releases. Followers have not declined on a single one of 720 days.",
+          subtitle: "Weekly monthly-listener and follower readings since debut. Listeners cycle with releases. Followers have not declined across any of 720 daily transitions.",
           series: [
             {
               name: "Monthly listeners",
@@ -86,7 +86,7 @@ export const meovvPlan: StrategyPlanData = {
           source: "Chartmetric, weekly readings, Sep 9 2024 to Aug 31 2026",
         },
       ],
-      footnote: "All data in this document was pulled September 3, 2026 unless dated otherwise. Sources: Chartmetric, Spotify daily and weekly chart archives, Hanteo and Circle published tallies, platform data, and a dedicated analysis of 928 short-form posts.",
+      footnote: "All data in this document was pulled September 3, 2026 unless dated otherwise. Sources: Chartmetric, Spotify daily and weekly chart archives, Hanteo and Circle published tallies, platform data, and a dedicated analysis of 1,129 short-form posts.",
     },
 
     // ===================================================================
@@ -153,14 +153,14 @@ export const meovvPlan: StrategyPlanData = {
                   monthlyListeners: "5.76M Monthly Listeners",
                   instagram: "Ratio 1.332",
                   reference: "Arena-scale touring act",
-                  note: "Fewer monthly listeners than MEOVV and 3.8x the followers. The entire difference is years of ticketed shows converting listeners into a committed base.",
+                  note: "16% more monthly listeners than MEOVV and 3.8x the followers. The entire difference is years of ticketed shows converting listeners into a committed base.",
                 },
                 {
                   name: "MEOVV",
-                  monthlyListeners: "4.96M Monthly Listeners",
+                  monthlyListeners: "4.95M Monthly Listeners",
                   instagram: "Ratio 0.408",
                   reference: "480M career Spotify streams",
-                  note: "Best conversion rate in the debut class and a ratio that has climbed almost every month since debut. The listener number is mid-table; the commitment behind it is not.",
+                  note: "The highest conversion rate of any act above 2M listeners in the debut class, on a ratio that has climbed almost every month since debut. The listener number is mid-table; the commitment behind it is not.",
                 },
                 {
                   name: "KISS OF LIFE",
@@ -186,7 +186,7 @@ export const meovvPlan: StrategyPlanData = {
                   monthlyListeners: "1.94M Monthly Listeners",
                   instagram: "Ratio 0.468",
                   reference: "2025 debut",
-                  note: "The only act in the set converting faster than MEOVV, at 40% of the scale and inside a shorter window. Worth watching as the class's next conversion benchmark.",
+                  note: "The fastest-converting act in the set at 0.468, reached at 39% of MEOVV's listener scale and inside a shorter window. Worth watching as the class's next conversion benchmark.",
                 },
                 {
                   name: "izna",
@@ -202,7 +202,7 @@ export const meovvPlan: StrategyPlanData = {
             {
               kind: "hbars",
               title: "The Set by Spotify Monthly Listeners",
-              subtitle: "MEOVV sits in the middle of the contested band, ahead of KiiiKiii and KISS OF LIFE, behind Hearts2Hearts and BABYMONSTER.",
+              subtitle: "MEOVV sits in the middle of the contested band, ahead of KISS OF LIFE, KiiiKiii and NMIXX, behind Hearts2Hearts, BABYMONSTER and IVE.",
               unit: "monthly listeners",
               series: [
                 {
@@ -231,7 +231,7 @@ export const meovvPlan: StrategyPlanData = {
             {
               kind: "hbars",
               title: "Fandom Conversion: Followers per Monthly Listener",
-              subtitle: "Among acts that debuted in 2024 or later, MEOVV converts better than anyone at scale. The acts above it are all older, and every one of them tours.",
+              subtitle: "MEOVV converts better than any act near its scale. The two acts above it that debuted alongside it are a third its size; everything else above it is older, larger and touring.",
               unit: "followers per listener",
               series: [
                 {
@@ -255,7 +255,7 @@ export const meovvPlan: StrategyPlanData = {
                 },
               ],
               highlightX: ["MEOVV"],
-              note: "Ratios above 1.0 belong to acts with three or more years of touring behind them. Inside the 2024-2026 debut class, MEOVV leads every group with more than 2M listeners.",
+              note: "Ratios above 1.0 belong to established acts with years of touring behind them. Inside the 2024-2026 debut class, MEOVV leads every group with more than 2M monthly listeners. ALLDAY PROJECT and izna convert faster at 1.94M and 1.56M listeners respectively.",
               source: "Chartmetric, Sep 3 2026",
             },
           ],
@@ -268,7 +268,7 @@ export const meovvPlan: StrategyPlanData = {
             heading: "What the tiering says",
             items: [
               "Listener scale is a function of catalog size and release frequency. MEOVV has 14 tracks. KATSEYE has 38 and ILLIT 64. The listener gap is substantially a catalog gap and closes with output.",
-              "Conversion is a function of what a fan is offered after they listen. MEOVV leads its class here with almost nothing on offer, which is the strongest available evidence that the demand is genuine rather than campaign-driven.",
+              "Conversion is a function of what a fan is offered after they listen. MEOVV leads every act above 2M listeners in its class here with almost nothing on offer, which is the strongest available evidence that the demand is genuine rather than campaign-driven.",
               "Hearts2Hearts debuted after MEOVV and passed them on career streams. The difference is not creative quality. It is that they post on 96% of days and MEOVV posts on 33%.",
               "KiiiKiii is running higher daily streams today (1.15M) than MEOVV (1.04M) off less than half the catalog. Neither act is being out-produced creatively; MEOVV is being out-published.",
             ],
@@ -296,10 +296,10 @@ export const meovvPlan: StrategyPlanData = {
           components: {
             heading: "What the curve proves",
             items: [
-              "Followers have not declined on a single one of 720 consecutive daily readings. Not one down day in two years.",
+              "Followers have not declined across any of 720 daily transitions. Not one down day in two years, and the result holds when interpolated readings are excluded.",
               "Each inter-era peak is higher than the last: 0.339 (Apr 2025), 0.584 (Apr 2026). The base is not just growing, it is committing at an increasing rate.",
               "The dips are release effects, not churn. June 2026 fell to 0.348 because listeners arrived faster than they signed up, which is the correct problem to have.",
-              "At 2.02M Spotify followers, MEOVV holds more committed accounts than KiiiKiii, Hearts2Hearts, ALLDAY PROJECT and izna combined.",
+              "At 2.02M Spotify followers on 4.95M listeners, MEOVV holds twice KiiiKiii's follower count at a comparable listener scale, and more followers than KiiiKiii and ALLDAY PROJECT hold between them.",
             ],
           },
           charts: [
@@ -317,7 +317,7 @@ export const meovvPlan: StrategyPlanData = {
                 },
               ],
               markers: [
-                { x: "5/25", label: "MY EYES OPEN VVIDE" },
+                { x: "4/25", label: "HANDS UP" },
                 { x: "10/25", label: "BURNING UP" },
                 { x: "6/26", label: "BITE NOW" },
               ],
@@ -360,7 +360,7 @@ export const meovvPlan: StrategyPlanData = {
                 },
               ],
               highlightX: ["Hit 'Em"],
-              note: "Four catalog tracks below 20,000 daily streams are omitted for legibility. They account for 5.2% of daily volume between them.",
+              note: "Five catalog tracks below 20,000 daily streams are omitted for legibility. They account for 6.7% of daily volume between them.",
               source: "Spotify catalog aggregates, Aug 31 2026",
             },
           ],
@@ -394,7 +394,7 @@ export const meovvPlan: StrategyPlanData = {
                 },
               ],
               highlightX: ["HANDS UP (Apr 2025)"],
-              source: "Spotify catalog aggregates, release-window comparison",
+              source: "Spotify catalog aggregates. Release windows differ in length, so the multiples are directional rather than strictly like-for-like.",
             },
             {
               kind: "line",
@@ -427,7 +427,7 @@ export const meovvPlan: StrategyPlanData = {
                   ],
                 },
               ],
-              note: "HANDS UP peaked at 827,555 streams a day on day 19, 2.30x its release day. It is the only MEOVV song to date that grew after launch.",
+              note: "HANDS UP peaked at 827,555 streams a day on day 19 and ran week 4 at 1.18x its launch week. It is the only MEOVV song to date that grew after launch.",
               source: "Spotify catalog archives, weekly reconstruction. Intervals wider than 30 days are interpolated and treated as directional.",
             },
           ],
@@ -441,7 +441,7 @@ export const meovvPlan: StrategyPlanData = {
             items: [
               "Chart position is not a useful KPI for this act and should not be used to judge a campaign's performance. Streams, followers and first-party signups should.",
               "Where MEOVV does chart, it charts well and it charts long: HANDS UP reached No. 3 on the Korean Spotify daily chart on two separate occasions, spent 225 days on that chart and 21 days inside the top ten, and reached No. 7 in Taiwan across 201 days. The Korean audience is real and the chart record proves it.",
-              "MEOVV has never charted in Indonesia, the Philippines, Thailand, the United States or Australia, despite those five markets carrying roughly 1.8M monthly listeners between them. The listening is happening entirely off-chart in exactly the territories with no promotional presence.",
+              "MEOVV has never charted in Indonesia, the Philippines, Thailand, the United States or Australia, despite those five markets carrying roughly 2.0M monthly listeners between them. The listening is happening entirely off-chart in exactly the territories with no promotional presence.",
               "An act that grows without chart support grows through discovery surfaces and social. That is the machine worth funding, because it is the one that already works.",
             ],
           },
@@ -491,7 +491,7 @@ export const meovvPlan: StrategyPlanData = {
                 },
               ],
               highlightX: ["MEOVV"],
-              source: "Spotify catalog aggregates, Sep 2 2026",
+              source: "Spotify catalog aggregates, Aug 31 2026 for MEOVV, Sep 2 2026 for peers",
             },
           ],
         },
@@ -509,7 +509,7 @@ export const meovvPlan: StrategyPlanData = {
       title: "Audience & Targeting",
       intro: "The profile below is built from Chartmetric platform data and MEOVV's Instagram audience statistics, pulled September 3, 2026. It sets the initial paid targeting, the owned-channel posting clock, and the market order for the live build. Splits refine once pixel data accumulates in the first weeks of paid activity.",
       thesis: "A young, heavily female, Asia-Pacific-centered audience with a large and completely unserved American second market. Target the Asia-Pacific base as the core and the United States as the expansion, and stop treating them as the same audience on the same schedule.",
-      metrosLabel: "Priority Markets, in Demand Order",
+      metrosLabel: "Priority Markets",
       metros: [
         { name: "Kuala Lumpur" },
         { name: "Taipei" },
@@ -523,7 +523,7 @@ export const meovvPlan: StrategyPlanData = {
         { name: "Seoul", tier: "secondary" },
       ],
       ageDistribution: [
-        { bracket: "13-17", weight: 13 },
+        { bracket: "13-17", weight: 12 },
         { bracket: "18-24", weight: 51 },
         { bracket: "25-34", weight: 33 },
         { bracket: "35+", weight: 4 },
@@ -585,22 +585,22 @@ export const meovvPlan: StrategyPlanData = {
       platformSignals: [
         {
           platform: "Spotify",
-          note: "4.96M monthly listeners against 2.02M followers, a 0.408 ratio that leads the debut class. Malaysia is market No. 1 at 778K and the United States is No. 2 at 687K. Zero chart placements worldwide, and 94% of career streams earned off-chart.",
+          note: "4.95M monthly listeners against 2.02M followers, a 0.408 ratio that leads every act above 2M listeners in the debut class. Malaysia is market No. 1 at 778K and the United States is No. 2 at 687K. Zero chart placements worldwide, and 94% of career streams earned off-chart.",
         },
         {
           platform: "TikTok",
-          note: "3.2M followers, 811 videos, 150.9M likes. Median post 633K views. The account is dark on two days out of three and then publishes in batches of up to ten, against peers who post near-daily.",
+          note: "3.2M followers, 811 videos, 149.5M likes. Median post 633K views. The account goes dark for roughly half the calendar and then publishes in batches of up to ten, against peers who post near-daily.",
         },
         {
           platform: "Instagram",
-          note: "3.13M followers. Median reel 1.15M views, roughly 1.8x the TikTok median on largely the same content and an almost identical follower base. Audience is 72.2% female, with 63.6% aged 18 to 34 and 12.5% aged 13 to 17.",
+          note: "3.12M followers. Median reel 1.15M views, roughly 1.8x the TikTok median on largely the same content and an almost identical follower base. Audience is 72.2% female, with 83% aged 18 to 34 and 12.5% aged 13 to 17.",
         },
         {
           platform: "YouTube",
-          note: "1.58M subscribers, 794M channel views, 29.9M monthly views. The catalog's video library is substantial and is the surface most likely to carry a US-hours release moment.",
+          note: "1.57M subscribers, 794M channel views, 29.9M monthly views. The catalog's video library is substantial and is the surface most likely to carry a US-hours release moment.",
         },
       ],
-      footnote: "Age and gender: Instagram audience statistics via Chartmetric, September 3, 2026. Market list is ordered by current Spotify monthly listeners by city and country. Seoul is included as a priority market on the strength of the domestic chart record rather than Spotify share, since Korean listening runs primarily through domestic platforms.",
+      footnote: "Age and gender: Instagram audience statistics via Chartmetric, September 3, 2026. Markets are drawn from the current Spotify top-ten listening cities, with Los Angeles carried up as the United States entry point and Bandung folded into the Indonesian market. Seoul is included as a priority market on the strength of the domestic chart record rather than Spotify share, since Korean listening runs primarily through domestic platforms.",
     },
 
     // ===================================================================
@@ -610,8 +610,8 @@ export const meovvPlan: StrategyPlanData = {
       type: "contentAnalysis",
       number: "05",
       navLabel: "Content",
-      title: "Content Intelligence / 928 Posts, Read Against Their Own Results",
-      intro: "Crowd Control Digital classified 928 short-form posts and read every one against its own performance: 362 MEOVV TikTok posts and 200 Instagram reels, plus the 566 most recent posts from KATSEYE, ILLIT, Hearts2Hearts and KiiiKiii computed the same way so the numbers are comparable. Two hypotheses were tested and failed, and both are reported below alongside the six that held.",
+      title: "Content Intelligence / 1,129 Posts, Read Against Their Own Results",
+      intro: "Crowd Control Digital classified 1,129 short-form posts and read every one against its own performance: 362 MEOVV TikTok posts and 200 Instagram reels, plus 567 recent posts from KATSEYE, ILLIT, Hearts2Hearts and KiiiKiii computed the same way so the numbers are comparable. Two hypotheses were tested and failed, and both are reported below alongside the six that held.",
       clientQuestion: {
         attribution: "The question this analysis answers",
         question: "MEOVV's median post reaches a fraction of what the class reaches. How much of that is audience size, and how much is a fixable operating pattern?",
@@ -619,7 +619,7 @@ export const meovvPlan: StrategyPlanData = {
       methodology: [
         {
           label: "Corpus pull",
-          value: "362 TikTok posts from @meovv_official covering May 28, 2025 to September 3, 2026, and 200 Instagram reels from @meovv covering March 21 to September 3, 2026, each with full engagement data. Competitor sets are the most recent 150 TikTok posts from each of KATSEYE, ILLIT, Hearts2Hearts and KiiiKiii.",
+          value: "362 TikTok posts from @meovv_official covering May 28, 2025 to September 3, 2026, and 200 Instagram reels from @meovv covering March 21 to September 3, 2026, each with full engagement data. Competitor sets are the most recent 150 TikTok posts from each of KATSEYE, ILLIT, Hearts2Hearts and KiiiKiii, of which 567 carried usable view data.",
         },
         {
           label: "Classification",
@@ -641,8 +641,8 @@ export const meovvPlan: StrategyPlanData = {
       corpusStats: [
         {
           label: "Posts analyzed",
-          value: "928",
-          detail: "362 MEOVV TikTok, 200 MEOVV Instagram, 566 competitor, all performance-joined",
+          value: "1,129",
+          detail: "362 MEOVV TikTok, 200 MEOVV Instagram, 567 competitor, all performance-joined",
         },
         {
           label: "MEOVV median post",
@@ -651,13 +651,13 @@ export const meovvPlan: StrategyPlanData = {
         },
         {
           label: "Class median post",
-          value: "321K to 7.3M",
-          detail: "KiiiKiii 321K, Hearts2Hearts 1.81M, ILLIT 3.75M, KATSEYE 7.33M",
+          value: "321K to 7.5M",
+          detail: "KiiiKiii 321K, Hearts2Hearts 1.81M, ILLIT 3.75M, KATSEYE 7.52M",
         },
         {
           label: "Days with any post",
-          value: "33%",
-          detail: "Against KATSEYE 90%, Hearts2Hearts 96%, ILLIT 82%, KiiiKiii 74%",
+          value: "53%",
+          detail: "Against Hearts2Hearts 93%, KATSEYE 88%, ILLIT 80%, KiiiKiii 74% over comparable recent windows",
         },
       ],
       mixColumnLabel: "MEOVV today",
@@ -667,8 +667,8 @@ export const meovvPlan: StrategyPlanData = {
       mixRows: [
         {
           metric: "Publishing cadence",
-          lolaAmour: "Active on 33% of days, 2.37 posts per active day, up to 10 in one day",
-          benchmark: "Hearts2Hearts 96%, KATSEYE 90%, ILLIT 82%, KiiiKiii 74% of days active",
+          lolaAmour: "Active on 53% of days, 2.37 posts per active day, up to 10 in one day",
+          benchmark: "Hearts2Hearts 93%, KATSEYE 88%, ILLIT 80%, KiiiKiii 74% of days active",
           read: "behind",
           note: "MEOVV is dark two days in three and then publishes in batches. Every group in the set maintains near-daily presence, and the one that debuted after MEOVV has already passed them on career streams.",
         },
@@ -677,7 +677,7 @@ export const meovvPlan: StrategyPlanData = {
           lolaAmour: "13.5% of output, median 314K views, indexes 0.41x into the top decile",
           benchmark: "Instagram shows the identical pattern: 12.5% of output at a 0.40x index",
           read: "behind",
-          note: "The second-largest deliberate category on the account is also its worst performer, on both platforms independently.",
+          note: "The second-largest deliberate category on the account is also the worst-performing lane of any scale, on both platforms independently.",
         },
         {
           metric: "Conversion asks",
@@ -688,7 +688,7 @@ export const meovvPlan: StrategyPlanData = {
         },
         {
           metric: "Repeatable formats",
-          lolaAmour: "Every recurring tag is a release cycle: DDIRORI 107 posts, BITENOW 78, BURNINGUP 45",
+          lolaAmour: "Every recurring tag is a release cycle: DDIRORI 102 posts, BITENOW 78, BURNINGUP 45",
           benchmark: "ILLIT runs two named series across 76 posts; KiiiKiii runs one across 90",
           read: "behind",
           note: "Campaign tags expire when the campaign does. There is nothing on the account a viewer can subscribe to between comebacks.",
@@ -702,15 +702,15 @@ export const meovvPlan: StrategyPlanData = {
         },
         {
           metric: "Posting clock",
-          lolaAmour: "Concentrated 6pm to 8pm Korean time",
+          lolaAmour: "Modal window 6pm to 8pm Korean time, 37% of posts",
           benchmark: "KATSEYE concentrates 61% of posts on US Pacific morning hours",
           read: "inline",
           note: "The slot is well matched to Malaysia, Indonesia, the Philippines and Australia. It reaches the United States, market No. 2, at 2am to 4am Pacific.",
         },
         {
           metric: "Hashtag load",
-          lolaAmour: "7.2 hashtags per post, 97.5% carrying mirrored Korean and Latin pairs",
-          benchmark: "KATSEYE 1.5 per post",
+          lolaAmour: "5.5 hashtags per post, 97.5% carrying mirrored Korean and Latin pairs",
+          benchmark: "KATSEYE 1.4 per post",
           read: "neutral",
           note: "Largely mechanical duplication. Low cost to fix, low expected gain, listed for completeness rather than as a priority.",
         },
@@ -762,7 +762,7 @@ export const meovvPlan: StrategyPlanData = {
               ],
             },
           ],
-          note: "TikTok 3.20M followers, Instagram 3.13M followers. Same content, same window, near-identical audience size.",
+          note: "TikTok 3.17M followers, Instagram 3.12M followers. Same content, same window, near-identical audience size.",
           source: "Caption-similarity matching at 0.80 threshold, 48-hour window",
         },
         {
@@ -774,10 +774,10 @@ export const meovvPlan: StrategyPlanData = {
             {
               name: "Views per follower",
               points: [
-                { x: "KATSEYE", y: 0.347 },
+                { x: "KATSEYE", y: 0.36 },
                 { x: "ILLIT", y: 0.291 },
-                { x: "Hearts2Hearts", y: 0.224 },
-                { x: "MEOVV", y: 0.198 },
+                { x: "Hearts2Hearts", y: 0.228 },
+                { x: "MEOVV", y: 0.2 },
                 { x: "KiiiKiii", y: 0.146 },
               ],
             },
@@ -788,18 +788,18 @@ export const meovvPlan: StrategyPlanData = {
         {
           kind: "grouped",
           title: "Output vs Results After the Comeback",
-          subtitle: "Publishing volume more than tripled at the June 2026 comeback. Median reach moved 14%.",
+          subtitle: "Publishing volume rose two and a half times at the June 2026 comeback. Median reach moved 14%.",
           unit: "indexed",
           series: [
             {
               name: "Posts per month",
               points: [
-                { x: "Before Jun 2026", y: 15.4 },
+                { x: "Before Jun 2026", y: 22.4 },
                 { x: "From Jun 2026", y: 56.1 },
               ],
             },
           ],
-          note: "Median views over the same split: 596,990 before, 678,182 after. Top-decile median moved 3.17M to 3.35M. More posting did not produce proportionally more reach; the mix did not change with the volume.",
+          note: "Median views over the same split: 596,990 before, 678,182 after. Top-decile median moved 3.17M to 3.35M. The pre-comeback rate is stated excluding a 114-day window the data provider could not serve. More posting did not produce proportionally more reach; the mix did not change with the volume.",
           source: "362 TikTok posts, split at Jun 1 2026",
         },
       ],
@@ -851,10 +851,10 @@ export const meovvPlan: StrategyPlanData = {
           id: "f3",
           title: "The account is dark two days out of three, then publishes ten posts at once.",
           verdict: "confirmed",
-          confidence: "High. n=362 against 566 competitor posts.",
-          summary: "MEOVV posts on 33% of days. Every peer in the set is on their audience's feed near-daily. The batching pattern means each post competes against the group's own posts for the same audience on the same day, then leaves a two-day silence.",
+          confidence: "High. n=362 against 567 competitor posts.",
+          summary: "MEOVV posts on 53% of days over the same recent window in which the peer set posts on 74% to 93%. Every peer is on their audience's feed near-daily. The batching pattern means each post competes against the group's own posts for the same audience on the same day, then leaves a two-day silence.",
           evidence: [
-            "Active-day share: Hearts2Hearts 96%, KATSEYE 90%, ILLIT 82%, KiiiKiii 74%, MEOVV 33%",
+            "Active-day share over each account's most recent window: Hearts2Hearts 93%, KATSEYE 88%, ILLIT 80%, KiiiKiii 74%, MEOVV 53%",
             "MEOVV publishes 2.37 posts per active day with a single-day maximum of 10; KATSEYE publishes 1.49 per active day with a maximum of 6",
             "Hearts2Hearts debuted after MEOVV, posts on 96% of days, and has already passed them on career Spotify streams",
           ],
@@ -923,7 +923,7 @@ export const meovvPlan: StrategyPlanData = {
           title: "The posting clock serves four of the top five markets and misses the fifth.",
           verdict: "partial",
           confidence: "Medium-high. Based on posting-hour distribution across 362 posts.",
-          summary: "MEOVV concentrates posting between 6pm and 8pm Korean time. That is early evening in Malaysia, Indonesia, the Philippines and Australia, which is correct and should be kept. It is 2am to 4am Pacific, which is where 687K monthly listeners live. KATSEYE is the only act in the set that schedules for American hours, and it is the only act in the set with an American business.",
+          summary: "MEOVV's modal posting window is 6pm to 8pm Korean time, carrying 37% of output. That is early evening in Malaysia, Indonesia, the Philippines and Australia, which is correct and should be kept. It is 2am to 4am Pacific, which is where 687K monthly listeners live. KATSEYE is the only act in the set that schedules for American hours, and it is the only act in the set with an American business.",
           evidence: [
             "MEOVV's top three posting hours are 09, 10 and 11 UTC, carrying 36% of posts",
             "KATSEYE's top three are 15, 16 and 19 UTC, carrying 61% of posts, which is 8am to 12pm Pacific",
@@ -941,10 +941,10 @@ export const meovvPlan: StrategyPlanData = {
           id: "f7",
           title: "There is nothing on the account a viewer can subscribe to between comebacks.",
           verdict: "confirmed",
-          confidence: "High. Tag frequency across 362 owned and 566 competitor posts.",
+          confidence: "High. Tag frequency across 362 owned and 567 competitor posts.",
           summary: "Every recurring hashtag on the MEOVV account is a release cycle that expires with the campaign. Peers run named, repeatable series that persist across eras and give a viewer a reason to return when there is no single to promote.",
           evidence: [
-            "MEOVV's recurring non-boilerplate tags are all campaigns: DDIRORI 107 posts, BITENOW 78, BURNINGUP 45",
+            "MEOVV's recurring non-boilerplate tags are all campaigns: DDIRORI 102 posts, BITENOW 78, BURNINGUP 45",
             "ILLIT sustains two named recurring formats across 76 posts alongside per-member tags; KiiiKiii runs one across 90",
             "Posts carrying no member tag at all, 165 of them, median 479,323 against the 633,163 corpus median. Tagging a member is worth more than which member is tagged.",
           ],
@@ -981,12 +981,12 @@ export const meovvPlan: StrategyPlanData = {
             actions: [
               "Give one member-facing slot per week to a non-campaign internet format, chosen from what is live that week rather than planned a quarter out.",
               "Accept a low hit rate. The lane's expected value is set by its ceiling, and the ceiling here is 42.9 million against a 633 thousand median.",
-              "Cross-fandom collaboration is the reliable version of the same effect and already sits in the top ten twice. Schedule it rather than waiting for it.",
+              "Cross-fandom collaboration is the reliable version of the same effect and already sits in the top ten. Schedule it rather than waiting for it.",
             ],
           },
         },
       ],
-      footnote: "Corpus and method: 362 TikTok posts and 200 Instagram reels from MEOVV's official accounts, plus 566 competitor posts, all with engagement data joined. YouTube Shorts could not be enumerated by the data provider and is excluded from every figure. TikTok coverage is 45% of the account's 811 lifetime videos, weighted toward the most recent period, with a gap between October 2025 and February 2026 that the provider could not serve from either pagination direction.",
+      footnote: "Corpus and method: 362 TikTok posts and 200 Instagram reels from MEOVV's official accounts, plus 567 competitor posts with usable view data, all engagement-joined. YouTube Shorts could not be enumerated by the data provider and is excluded from every figure. TikTok coverage is 45% of the account's 811 lifetime videos, weighted toward the most recent period, with a gap between October 2025 and February 2026 that the provider could not serve from either pagination direction.",
     },
 
     // ===================================================================
@@ -1053,7 +1053,7 @@ export const meovvPlan: StrategyPlanData = {
             heading: "What the app data shows",
             items: [
               "The membership is currently sold out on the label store, priced at roughly $21 for a twelve-month term.",
-              "App installs sit in the 100,000-plus band against a combined 6.9M followers across Instagram, TikTok and YouTube, which is roughly 3% of the social audience at the most generous reading.",
+              "App installs sit in the 100,000-plus band against a combined 7.9M followers across Instagram, TikTok and YouTube, which is under 2% of the social audience at the most generous reading.",
               "Two 2026 releases removed paywalls: a free trial for new subscribers in June, then live chat and posting opened to all users in August.",
               "The app does collect email addresses, but they sit inside a Korean-market application and are not available to a US label or marketing partner.",
               "Fan-app promotion is the worst-performing content on the account, at a 86K median against a 633K corpus median. The audience is not following the group into the app.",
@@ -1079,7 +1079,7 @@ export const meovvPlan: StrategyPlanData = {
         {
           label: "F",
           title: "What the Absence Adds Up To",
-          strategy: "6.9M followers across three platforms, 2.02M of them committed enough to follow on a streaming service where following does nothing for them, and not one of those relationships can be reached without a platform intermediary. Two commitment products have ever been offered and both sold out. The audit's conclusion is that demand has been proven repeatedly and supply has never been built.",
+          strategy: "7.9M followers across three platforms, and a further 2.02M committed enough to follow on a streaming service where following does nothing for them, and not one of those relationships can be reached without a platform intermediary. Two commitment products have ever been offered and both sold out. The audit's conclusion is that demand has been proven repeatedly and supply has never been built.",
           components: {
             heading: "Ranked by cost to close",
             items: [
@@ -1124,10 +1124,10 @@ export const meovvPlan: StrategyPlanData = {
         },
       ],
       messaging: [
-        "The conversion rate is the asset. It is the best in the debut class, it has risen almost every month for two years, and it was earned with almost nothing on offer. Protect it before optimizing anything else.",
+        "The conversion rate is the asset. It leads every act of comparable scale in the debut class, it has risen almost every month for two years, and it was earned with almost nothing on offer. Protect it before optimizing anything else.",
         "Charts are not the scoreboard for this act. 94% of everything MEOVV has ever streamed happened outside any chart, and the group is currently doing over a million streams a day while charting nowhere on earth.",
         "The audience has picked its own singles twice. Build the release process to listen to that rather than to overrule it.",
-        "Nothing in this plan requires a creative reset. The creative is producing 42-million-view outliers and a class-leading conversion rate. What is missing is the business that should sit underneath it.",
+        "Nothing in this plan requires a creative reset. The creative is producing 42-million-view outliers and a conversion rate ahead of every act near its scale. What is missing is the business that should sit underneath it.",
       ],
       footnote: "The four verticals that follow execute against this hierarchy in order. Capture comes first because every other workstream compounds through it.",
     },
@@ -1300,14 +1300,14 @@ export const meovvPlan: StrategyPlanData = {
       number: "10",
       navLabel: "System",
       title: "Vertical 3 / Content System",
-      philosophy: "The creative is not the problem. A 42.9-million-view post and a class-leading conversion rate are not signs of weak content. The problem is that the account publishes in bursts, spends its reach on announcements, and offers nothing to follow between comebacks.",
+      philosophy: "The creative is not the problem. A 42.9-million-view post and a conversion rate ahead of every act near its scale are not signs of weak content. The problem is that the account publishes in bursts, spends its reach on announcements, and offers nothing to follow between comebacks.",
       intro: "This vertical converts the eight findings in section 05 into an operating system: a cadence floor, two named franchises, a second daily slot on US hours, and an end-card standard that points reach at the capture layer built in vertical one.",
       subBlocks: [
         {
           label: "A",
           title: "A Daily Floor Instead of Batches",
-          objective: "Move from 33% of days active to daily presence across TikTok and Instagram.",
-          strategy: "Peers post on 74% to 96% of days. MEOVV posts on 33%, in batches of up to ten, then goes dark. Batching makes the group's posts compete against each other on the same day for the same audience, then surrenders the two days after. The material to fix this already exists; it is being spent three at a time.",
+          objective: "Move from 53% of days active to daily presence across TikTok and Instagram.",
+          strategy: "Peers post on 74% to 93% of days. MEOVV posts on 53%, in batches of up to ten, then goes dark. Batching makes the group's posts compete against each other on the same day for the same audience, then surrenders the two days after. The material to fix this already exists; it is being spent three at a time.",
           components: {
             heading: "Operating changes",
             items: [
@@ -1318,7 +1318,7 @@ export const meovvPlan: StrategyPlanData = {
             ],
           },
           kpis: [
-            "Share of days with at least one post, from 33% toward 85%+",
+            "Share of days with at least one post, from 53% toward 85%+",
             "Median views per post, from 633K toward 1.5M",
             "Follower growth rate by platform, and US-geography profile visits on the new slot",
           ],
@@ -1327,14 +1327,14 @@ export const meovvPlan: StrategyPlanData = {
           label: "B",
           title: "Two Franchises That Outlive the Campaign",
           objective: "Give a viewer something to subscribe to when there is no single to promote.",
-          strategy: "Every recurring tag on the account is a release cycle that expires: 107 posts on one campaign, 78 on another, 45 on a third. Peers run named series that persist across eras. The lane data says which two franchises to build: performance content indexes highest into the top decile on both platforms, and posts tagged to any member beat untagged posts by 32%.",
+          strategy: "Every recurring tag on the account is a release cycle that expires: 102 posts on one campaign, 78 on another, 45 on a third. Peers run named series that persist across eras. The lane data says which two franchises to build: performance content indexes highest into the top decile on both platforms, and posts tagged to any member beat untagged posts by 70%.",
           components: {
             heading: "Build",
             items: [
               "One performance-led franchise with a fixed name, a fixed weekly slot and a fixed format",
               "One member-led franchise rotating all five members rather than concentrating on one, since per-member samples are too thin to justify favoring any",
               "An internet-culture slot once a week, chosen from what is live that week rather than planned a quarter ahead",
-              "Cross-fandom collaboration scheduled rather than opportunistic; it already appears twice in the account's top ten",
+              "Cross-fandom collaboration scheduled rather than opportunistic; it already appears in the account's top ten",
             ],
           },
           kpis: [
@@ -1420,11 +1420,11 @@ export const meovvPlan: StrategyPlanData = {
           label: "C",
           title: "Grow the Catalog",
           objective: "Close the listener gap that is substantially a catalog gap.",
-          strategy: "MEOVV has 14 tracks. The two acts above it in the tier map have 38 and 64. Monthly listeners are a function of how much catalog is available to discover, and MEOVV's listener number is depressed by having less of it, not by converting worse. On conversion the group leads its class.",
+          strategy: "MEOVV has 14 tracks. The two acts above it in the tier map have 38 and 64. Monthly listeners are a function of how much catalog is available to discover, and MEOVV's listener number is depressed by having less of it, not by converting worse. On conversion it outperforms every act near its scale.",
           components: {
             heading: "The case",
             items: [
-              "Career streams per track run ahead of the class, which says the tracks perform when they exist",
+              "MEOVV averages 34.3M career streams per track. The two acts above it in the tier map average more, on catalogs three to four times larger, which is the scale the release rate has to close",
               "The nearest comparison group passed MEOVV on career streams while debuting later, on higher release frequency",
               "A group currently doing over a million streams a day off 14 tracks has the clearest possible argument for more of them",
             ],
@@ -1539,7 +1539,7 @@ export const meovvPlan: StrategyPlanData = {
             { weekIndex: 2, intensity: "high", label: "Build units" },
             { weekIndex: 3, intensity: "high", label: "Landing page" },
             { weekIndex: 4, intensity: "high", milestone: true, label: "Capture live" },
-            { weekIndex: 5, intensity: "medium", label: "Bio rewiring" },
+            { weekIndex: 5, intensity: "medium", label: "Welcome flow" },
             { weekIndex: 6, intensity: "medium", label: "Welcome flow" },
             { weekIndex: 7, intensity: "medium" },
             { weekIndex: 8, intensity: "medium", label: "SMS layer" },
