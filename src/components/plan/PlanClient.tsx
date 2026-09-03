@@ -48,9 +48,14 @@ export function PlanClient({ plan }: { plan: StrategyPlanData }) {
   return (
     <PlanProvider data={plan}>
       <main
+        lang={plan.language}
         style={{
           ["--color-accent" as never]: plan.accentColor,
           ["--color-accent-dim" as never]: `${plan.accentColor}10`,
+          // Hangul has no inter-word break opportunity the way Latin does, so the
+          // default `normal` splits Korean words between syllables. keep-all breaks
+          // on spaces only, which is correct for Korean and a no-op for English.
+          ...(plan.language === "ko" ? { wordBreak: "keep-all" as const } : {}),
         }}
       >
         <PlanLanguageToggle plan={plan} />

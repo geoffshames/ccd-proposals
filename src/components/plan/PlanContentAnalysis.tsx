@@ -439,7 +439,9 @@ export function PlanContentAnalysis({ section }: { section: ContentAnalysisSecti
           {section.charts && section.charts.length > 0 && (
             <div className="mt-12 grid grid-cols-1 lg:grid-cols-2 gap-6">
               {section.charts.map((c, ci) => (
-                <PlanChart key={ci} spec={c} />
+                <div key={ci} className={c.tall ? "lg:col-span-2" : undefined}>
+                  <PlanChart spec={c} />
+                </div>
               ))}
             </div>
           )}
