@@ -24,8 +24,12 @@ import { markTuanPlan } from "./mark-tuan";
 import { markTuanPlanProposal } from "./mark-tuan-plan";
 import { meovvPlan } from "./meovv";
 import { meovvPlanKorean } from "./meovv-ko";
+import { keyvitupPlan } from "./keyvitup";
+import { keyvitupPlanKorean } from "./keyvitup-ko";
 
 export const PLANS: Record<string, StrategyPlanData> = {
+  keyvitup: keyvitupPlan,
+  "keyvitup-ko": keyvitupPlanKorean,
   meovv: meovvPlan,
   "meovv-ko": meovvPlanKorean,
   "mark-tuan": markTuanPlan,
