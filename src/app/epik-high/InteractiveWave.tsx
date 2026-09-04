@@ -28,7 +28,7 @@ export interface InteractiveWaveProps {
 const MARKS = ["D−14", "D0", "D+4"] as const;
 const PHASE_STOPS = [0.24, 0.52, 0.79] as const;
 const MOTION_QUERY = "(prefers-reduced-motion: reduce)";
-const LOOP_SECONDS = 18;
+const LOOP_SECONDS = 9;
 
 function subscribeMotion(onChange: () => void) {
   const query = window.matchMedia(MOTION_QUERY);
