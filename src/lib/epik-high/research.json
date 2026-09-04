@@ -1,0 +1,99 @@
+{
+  "retrieved": "2026-09-04",
+  "cities": [
+    {
+      "city": "New York",
+      "listeners": 13972,
+      "isEstimate": true,
+      "availability": "available"
+    },
+    {
+      "city": "Toronto",
+      "listeners": 15202,
+      "isEstimate": true,
+      "availability": "available"
+    },
+    {
+      "city": "Chicago",
+      "listeners": 13144,
+      "isEstimate": true,
+      "availability": "available"
+    },
+    {
+      "city": "Atlanta",
+      "listeners": 12207,
+      "isEstimate": true,
+      "availability": "available"
+    },
+    {
+      "city": "Dallas",
+      "listeners": 12756,
+      "isEstimate": true,
+      "availability": "available"
+    },
+    {
+      "city": "Los Angeles",
+      "listeners": 16940,
+      "isEstimate": true,
+      "availability": "available"
+    },
+    {
+      "city": "Seattle",
+      "listeners": 12807,
+      "isEstimate": true,
+      "availability": "available"
+    }
+  ],
+  "tracks": [
+    {
+      "title": "TUKUTZISM (feat. Crush) (Prod. by GroovyRoom, Crush, 3RACHA of Stray Kids)",
+      "artists": [
+        "DJ TUKUTZ",
+        "Crush"
+      ],
+      "chartmetricId": 172215046,
+      "isrc": "KRB472602724",
+      "spotifyUrl": "https://open.spotify.com/track/3rcpe6aiXDe36cKIH5STRn",
+      "appleMusicUrl": "https://music.apple.com/us/album/epikase-song-battle-single/6807254179?i=6807254183",
+      "durationMs": 141104,
+      "spotifyStreams": null,
+      "spotifyPopularity": null,
+      "spotifyPlaylistCount": null,
+      "reportingStatus": "Not yet populated in release-day Chartmetric data; null is unavailable, not zero.",
+      "trackStatsEndpointStatus": "HTTP 200; empty Spotify streams data array on September 4."
+    },
+    {
+      "title": "anime (feat. BANG YEDAM)",
+      "artists": [
+        "TABLO",
+        "BANG YEDAM"
+      ],
+      "chartmetricId": 172214953,
+      "isrc": "KRB472602725",
+      "spotifyUrl": "https://open.spotify.com/track/1AwIcIO7farlo7Qpmfa8kT",
+      "appleMusicUrl": "https://music.apple.com/us/album/epikase-song-battle-single/6807254179?i=6807254307",
+      "durationMs": 153939,
+      "spotifyStreams": null,
+      "spotifyPopularity": null,
+      "spotifyPlaylistCount": null,
+      "reportingStatus": "Not yet populated in release-day Chartmetric data; null is unavailable, not zero.",
+      "trackStatsEndpointStatus": "HTTP 200; empty Spotify streams data array on September 4."
+    },
+    {
+      "title": "Will I Be Okay (Prod. by NELL)",
+      "artists": [
+        "MITHRA JIN"
+      ],
+      "chartmetricId": 172217505,
+      "isrc": "KRB472602726",
+      "spotifyUrl": "https://open.spotify.com/track/3cejjLRN8N83tN9ukBfCeH",
+      "appleMusicUrl": "https://music.apple.com/us/album/epikase-song-battle-single/6807254179?i=6807254310",
+      "durationMs": 205254,
+      "spotifyStreams": null,
+      "spotifyPopularity": null,
+      "spotifyPlaylistCount": null,
+      "reportingStatus": "Not yet populated in release-day Chartmetric data; null is unavailable, not zero.",
+      "trackStatsEndpointStatus": "HTTP 200; empty Spotify streams data array on September 4."
+    }
+  ]
+}
