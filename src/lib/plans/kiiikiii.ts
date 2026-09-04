@@ -374,46 +374,125 @@ export const kiiikiiiPlan: StrategyPlanData = {
       number: "05",
       navLabel: "Physical",
       title: "Workstream 2 / Physical Sales",
-      philosophy: "U.S. chart placement is arithmetic. This workstream works the arithmetic.",
-      intro: "Physical sales in the U.S. behave predictably: a known number of committed fans converts to a known number of units, and units plus streams produce a chart position. The job is to build the committed base first and then convert it inside the counting week.",
+      philosophy: "One purchase counts as one chart unit. It takes one hundred paid streams to count as the same unit. That ratio is the whole reason this workstream exists.",
+      intro: "U.S. charting is arithmetic, and the arithmetic is published. This section sets out exactly how a sale converts into chart position, what the entry points have actually been across 2026, and why physical is the highest-leverage lever available to a K-pop act specifically.",
       subBlocks: [
         {
           label: "A",
-          title: "The Chart Math",
-          objective: "State plainly what different levels of physical sales actually buy.",
-          strategy: "Around 100,000 committed U.S. fans, converting to roughly 10,000 units in the counting week alongside normal streaming volume, puts an act in Hot 100 range. Pre-orders of 10,000 to 20,000 units move the target into the top 40 and, at the upper end, the top 25. Below roughly 1,000 units, physical is a revenue exercise rather than a chart exercise, and should be planned as one. These are the same thresholds every U.S. label plans against, and they set the size of the fan base Workstream 1 needs to build.",
+          title: "What One Sale Is Actually Worth",
+          objective: "Establish the exchange rate between a sale and a stream, from the published formula.",
+          strategy: "Luminate, the data provider behind the Billboard charts, publishes the song-equivalent formula outright. As of the first chart week of 2026 it is: one purchase counts as one unit, 100 premium streams count as one unit, 250 ad-supported streams count as one unit, and 400 programmed streams count as one unit. The ratios tightened in 2026, from 125 and 375 previously, which made streams count for slightly more and sales relatively less, but the headline has not changed: one sale is worth one hundred paid streams. That is the entire case for the physical workstream. Ten thousand units moved in a counting week is the chart equivalent of a million premium streams, and it is far easier to produce ten thousand committed purchases from a known fan list than a million incremental streams from strangers.",
           charts: [
             {
               kind: "bars",
-              title: "U.S. Chart Outcomes by Pre-Order Volume",
-              subtitle: "Indicative U.S. chart position by units moved in the counting week, alongside normal streaming volume.",
+              title: "Chart Units Produced by 10,000 Fan Actions",
+              subtitle: "What the same number of fan actions is worth in chart units, under the published 2026 Luminate song-equivalent ratios.",
               series: [
                 {
-                  name: "Units in counting week",
+                  name: "Chart units",
                   points: [
-                    { x: "Revenue play\nUnder 1K", y: 1000 },
-                    { x: "Hot 100 range\n~10K", y: 10000 },
-                    { x: "Top 40\n10-15K", y: 15000 },
-                    { x: "Top 25\n15-20K", y: 20000 },
+                    { x: "10,000\npurchases", y: 10000 },
+                    { x: "10,000 premium\nstreams", y: 100 },
+                    { x: "10,000 ad-supported\nstreams", y: 40 },
+                    { x: "10,000 programmed\nstreams", y: 25 },
                   ],
                 },
               ],
-              highlightX: ["Hot 100 range\n~10K"],
-              note: "Thresholds are U.S. market standards and move with the competitive week. They are planning ranges, not guarantees.",
-              source: "U.S. chart planning standards, 2026",
+              highlightX: ["10,000\npurchases"],
+              note: "One purchase equals one unit. It takes 100 premium streams to produce the same single unit. This ratio is why K-pop charts on sales.",
+              source: "Luminate, published song-equivalent weighting, effective week 1 of 2026",
             },
           ],
         },
         {
           label: "B",
+          title: "What It Has Actually Taken to Chart",
+          objective: "Replace rules of thumb with measured entry points from the chart itself.",
+          strategy: "Billboard does not publish an entry threshold, and the cutoff moves every week with the strength of the field. Crowd Control Digital maintains its own record of it: the actual chart points earned by the songs sitting at ranks 1, 10, 25, 50, 75 and 100, captured from Luminate every week. Across 21 chart weeks from January to June 2026, entering the Hot 100 at No. 100 took a median of 34,853 points, and ranged from 29,087 in the softest week to 49,806 in the hardest. A concrete example from the week ending June 11: the song sitting at No. 100 got there on 3.64 million premium streams, 671,000 ad-supported streams, 86,500 in airplay audience and 880 sales, for 37,432 points. Read against the ratio above, ten thousand units would have been more than a quarter of that entire chart position on its own.",
+          charts: [
+            {
+              kind: "hbars",
+              title: "Median Chart Points Required, by Hot 100 Rank",
+              subtitle: "Observed points earned by the song at each rank, median of 21 chart weeks, January to June 2026.",
+              series: [
+                {
+                  name: "Chart points",
+                  points: [
+                    { x: "No. 1", y: 299949 },
+                    { x: "No. 10", y: 146157 },
+                    { x: "No. 25", y: 99732 },
+                    { x: "No. 50", y: 62817 },
+                    { x: "No. 75", y: 44643 },
+                    { x: "No. 100", y: 34853 },
+                  ],
+                },
+              ],
+              highlightX: ["No. 100"],
+              note: "The entry point is the realistic first target. Ranges across the same period: No. 100 ran 29,087 to 49,806, No. 25 ran 70,199 to 148,295.",
+              source: "Crowd Control Digital chart dataset, Luminate weekly drill-ins, 21 weeks",
+            },
+            {
+              kind: "line",
+              title: "Hot 100 Entry Point, Week by Week",
+              subtitle: "Points required to sit at No. 100, every chart week from January to June 2026. The target moves, which is why the counting week matters.",
+              series: [
+                {
+                  name: "Points at No. 100",
+                  points: [
+                    { x: "1/15", y: 38603 }, { x: "1/22", y: 33305 }, { x: "1/29", y: 29087 }, { x: "2/5", y: 35215 }, { x: "2/12", y: 46524 }, { x: "2/19", y: 36484 }, { x: "2/26", y: 35862 }, { x: "3/5", y: 34999 }, { x: "3/12", y: 34332 }, { x: "3/19", y: 33012 }, { x: "3/26", y: 33859 }, { x: "4/2", y: 35330 }, { x: "4/9", y: 31079 }, { x: "4/16", y: 32883 }, { x: "4/23", y: 31309 }, { x: "4/30", y: 34515 }, { x: "5/7", y: 34853 }, { x: "5/14", y: 32203 }, { x: "5/21", y: 49806 }, { x: "5/28", y: 38227 }, { x: "6/11", y: 37432 },
+                  ],
+                },
+              ],
+              note: "A 71 percent spread between the easiest and hardest week of the period. Release timing is worth as much as several thousand units.",
+              source: "Crowd Control Digital chart dataset, Luminate weekly drill-ins",
+            },
+          ],
+        },
+        {
+          label: "C",
+          title: "Why This Lever Works for K-Pop in Particular",
+          objective: "Show that peers reaching U.S. charts are doing it on sales, and that the U.S. physical market is moving in the same direction.",
+          strategy: "Every major K-pop chart success in the U.S. this year has been a sales story rather than a streaming story. KATSEYE reached No. 1 on the Billboard 200 in August 2026 on 170,000 units, of which 145,000 were pure album sales, spread across more than thirty CD and vinyl variants. BTS reached No. 1 in March on 643,000 units with 532,000 pure sales. BLACKPINK charted at No. 8 in March on 52,000 units with 41,000 pure sales. In each case roughly four out of five chart units came from people buying something. The market backdrop points the same way: U.S. CD sales grew 16 percent in the first half of 2026, and Luminate stated in its own midyear report that without K-pop that growth would have been 6.7 percent. K-pop fandom is the reason the U.S. physical market is growing, and KiiiKiii has not yet sold a single U.S.-exclusive unit into it.",
+          charts: [
+            {
+              kind: "grouped",
+              title: "How K-Pop Acts Actually Chart in the U.S.",
+              subtitle: "First-week U.S. equivalent album units versus pure album sales, 2026 Billboard 200 entries.",
+              series: [
+                {
+                  name: "Total units",
+                  points: [
+                    { x: "BTS\nNo. 1", y: 643000 },
+                    { x: "Stray Kids\nNo. 1", y: 369000 },
+                    { x: "KATSEYE\nNo. 1", y: 170000 },
+                    { x: "BLACKPINK\nNo. 8", y: 52000 },
+                  ],
+                },
+                {
+                  name: "Pure sales",
+                  points: [
+                    { x: "BTS\nNo. 1", y: 532000 },
+                    { x: "Stray Kids\nNo. 1", y: null },
+                    { x: "KATSEYE\nNo. 1", y: 145000 },
+                    { x: "BLACKPINK\nNo. 8", y: 41000 },
+                  ],
+                },
+              ],
+              note: "Pure sales are 79 to 85 percent of chart units for every act shown. Stray Kids' sales split was not published; its 369,000 units came with 17 physical and 8 digital variants.",
+              source: "Billboard chart reporting on Luminate data, March to August 2026",
+            },
+          ],
+        },
+        {
+          label: "D",
           title: "How It Gets Executed",
-          objective: "Convert the owned fan list into units inside the counting week.",
-          strategy: "Pre-orders open to the first-party list before any public announcement, which both rewards the list and gives an early read on demand. A U.S.-exclusive version through the established U.S. K-pop retail network creates a reason to buy in-market rather than importing, and a retail or pop-up moment gives the campaign something to photograph and the press something to cover. Everything is timed to land inside a single counting week rather than spread across the cycle, since a unit sold in the wrong week does nothing for a chart.",
+          objective: "Convert the owned fan list into units inside a single counting week.",
+          strategy: "Pre-orders open to the first-party list before any public announcement, which rewards the list and gives an early read on demand while there is still time to act on it. A U.S.-exclusive version through the established U.S. K-pop retail network creates a reason to buy in-market rather than importing, and variant strategy is what every act in the chart above used to multiply units per fan. A retail or pop-up moment gives the campaign something to photograph and the press something to cover. Everything is timed to land inside one counting week, because a unit sold in the wrong week does nothing for a chart position.",
           components: {
             heading: "Components",
             items: [
               "Pre-order window opened to the owned list first",
-              "U.S.-exclusive version through U.S. K-pop retail",
+              "U.S.-exclusive version and variant strategy through U.S. K-pop retail",
               "Retail or pop-up moment tied to the on-sale",
               "All demand concentrated inside one counting week",
               "Direct-to-fan channel for margin on top of chart-eligible retail",
@@ -426,7 +505,7 @@ export const kiiikiiiPlan: StrategyPlanData = {
           ],
         },
       ],
-      footnote: "Physical results depend on the release calendar and the competitive week. Targets are set once a release date is confirmed.",
+      footnote: "Ratios: Luminate published song-equivalent weighting, effective week 1 of 2026. Threshold data: Crowd Control Digital's own chart dataset, built from Luminate weekly drill-ins across 21 chart weeks, January to June 2026. Peer figures: Billboard chart reporting on Luminate data. Album-chart and song-chart ratios differ; both are set out above in the terms that apply to each. Targets are set once a release date is confirmed, because the entry point moves with the competitive week.",
     },
 
     // ===================================================================
