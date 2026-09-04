@@ -230,5 +230,9 @@
   "waveLiveAction": "현장을 느끼기",
   "waveLiveDetail": "함께한 라이브의 순간이 이야기가 됩니다.",
   "waveAfterAction": "공연의 여운을 집까지",
-  "waveAfterDetail": "음악 감상 유도 광고로 모든 도시의 팬들을 다시 신곡으로 이끕니다."
+  "waveAfterDetail": "음악 감상 유도 광고로 모든 도시의 팬들을 다시 신곡으로 이끕니다.",
+  "navLabel": "제안서 목차",
+  "navScrollHint": "좌우로 밀어 목차 보기",
+  "navPrevious": "앞쪽 목차 보기",
+  "navNext": "뒤쪽 목차 보기"
 }

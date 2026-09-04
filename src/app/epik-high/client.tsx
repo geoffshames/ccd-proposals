@@ -8,6 +8,7 @@ import tourData from "@/lib/epik-high/tour.json";
 import research from "@/lib/epik-high/research.json";
 import styles from "./proposal.module.css";
 import InteractiveWave from "./InteractiveWave";
+import ProposalNav from "./ProposalNav";
 import creators from "@/lib/epik-high/creators.json";
 
 type Copy = typeof en;
@@ -50,14 +51,14 @@ export default function EpikHighClient({ copy, locale = "en" }: {copy: Copy; loc
       <div className={styles.language} aria-label="Language"><Link lang="en" aria-current={locale==='en'?'page':undefined} href="/epik-high">EN</Link><Link lang="ko" aria-current={locale==='ko'?'page':undefined} href="/epik-high-ko">KO</Link></div>
     </header>
     <section className={styles.hero}>
-      <div className={styles.heroTitle}><p className={styles.eyebrow}>{t('heroKicker')}</p><h1>EPIK HIGH<span className={styles.star} aria-hidden="true">✳</span></h1></div>
+      <div className={styles.heroTitle}><p className={styles.eyebrow}>{t('heroKicker')}</p><h1>EPIK HIGH<svg className={styles.star} viewBox="0 0 100 100" aria-hidden="true" focusable="false"><path d="M50 4v92M4 50h92M17.5 17.5l65 65M17.5 82.5l65-65" fill="none" stroke="currentColor" strokeWidth="8"/></svg></h1></div>
       <div className={styles.heroGrid}>
         <div className={styles.heroCopy}><h2>{t('heroTitle')}</h2><p>{t('heroBody')}</p><div className={styles.recommendation}><b>{t('heroRec')}</b><span>{t('heroRecBody')}</span></div><a className={styles.button} href="#investment">{t('compare')} <span aria-hidden="true">↗</span></a><a className={styles.textLink} href="#markets">{t('tourLink')} ↓</a></div>
         <figure className={styles.cover}><Image unoptimized src={base+'epikase-cover.jpg'} alt="EPIKASE SONG BATTLE official release artwork" width="640" height="640" fetchPriority="high" /><figcaption>{t('artCaption')}</figcaption></figure>
       </div>
       <div className={styles.heroFooter}><span>{t('confidential')}</span><span>{t('date')}</span></div>
     </section>
-    <nav className={styles.nav} aria-label={t('proposal')}>{['opportunity','music','waves','markets','creative','swsh','investment','measurement'].map((id,i)=><a href={'#'+id} key={id}><small>{String(i+1).padStart(2,'0')}</small>{t(('nav'+(i+1)) as Key)}</a>)}</nav>
+    <ProposalNav items={['opportunity','music','waves','markets','creative','swsh','investment','measurement'].map((id,i)=>({id,label:t(('nav'+(i+1)) as Key)}))} label={t('navLabel')} scrollHint={t('navScrollHint')} previousLabel={t('navPrevious')} nextLabel={t('navNext')}/>
     <section className={styles.section} id="opportunity">
       {head('01','opportunityTitle','opportunityIntro')}
       <p className={styles.bodyLarge}>{t('opportunityBody')}</p>

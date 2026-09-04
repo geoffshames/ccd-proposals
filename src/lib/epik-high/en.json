@@ -230,5 +230,9 @@
   "waveLiveAction": "Feel the room",
   "waveLiveDetail": "The shared live moment becomes the story.",
   "waveAfterAction": "Take the night home",
-  "waveAfterDetail": "Paid listening brings every market back to the release."
+  "waveAfterDetail": "Paid listening brings every market back to the release.",
+  "navLabel": "Proposal sections",
+  "navScrollHint": "Swipe for more sections",
+  "navPrevious": "Scroll to earlier sections",
+  "navNext": "Scroll to later sections"
 }
