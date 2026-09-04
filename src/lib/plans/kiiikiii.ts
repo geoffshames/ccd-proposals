@@ -580,7 +580,7 @@ export const kiiikiiiPlan: StrategyPlanData = {
           label: "C",
           title: "Clipping and Seeding, Sized Honestly",
           objective: "Use creator volume where it works, and say clearly where it does not.",
-          strategy: "Clipping works at scale and only at scale. One million impressions changes nothing measurable. One hundred million can move an act. At roughly a dollar CPM, fifty million impressions costs in the region of fifty thousand dollars, and that is the level at which the tactic is worth running at all. Crowd Control Digital built the back end for one of the largest clipping platforms in the market and buys at rates the agency market does not have access to. Content produced through clipping is also licensed back into paid, which lowers creative costs on everything else.",
+          strategy: "Clipping works at scale and only at scale. A quarter of a million impressions changes nothing measurable. Twenty-five million can move an act, and at roughly a dollar CPM that is about twenty-five thousand dollars, which is a sensible place to start. Crowd Control Digital built the back end for one of the largest clipping platforms in the market and buys at rates the agency market does not have access to, so the same budget delivers materially more volume here than it would anywhere else. Content produced through clipping is also licensed back into paid, which lowers creative costs across the rest of the plan.",
           charts: [
             {
               kind: "bars",
@@ -590,14 +590,14 @@ export const kiiikiiiPlan: StrategyPlanData = {
                 {
                   name: "Impressions",
                   points: [
-                    { x: "No measurable\neffect  1M", y: 1000000 },
-                    { x: "Threshold\n~50M", y: 50000000 },
-                    { x: "Can move an act\n100M", y: 100000000 },
+                    { x: "No measurable\neffect  250K", y: 250000 },
+                    { x: "Minimum viable\n~12.5M", y: 12500000 },
+                    { x: "Starting budget\n25M", y: 25000000 },
                   ],
                 },
               ],
-              highlightX: ["Can move an act\n100M"],
-              note: "At roughly a $1 CPM, 50M impressions is on the order of $50,000. Below the threshold the spend buys noise, which is why we would rather not run it than run it small.",
+              highlightX: ["Starting budget\n25M"],
+              note: "At roughly a $1 CPM, 25M impressions is about $25,000, which is a realistic entry point rather than a minimum commitment. Below the floor the spend buys noise, which is why we would rather not run it than run it small.",
               source: "Crowd Control Digital clipping benchmarks, 2026",
             },
           ],
