@@ -32,11 +32,10 @@
       }
     ],
     "releaseTime": "18:00 Asia/Seoul",
-    "quoteDateVerified": false,
-    "workingAssumption": "The undated request references the three songs verified released September 4, 2026.",
     "officialEpisode": "https://www.youtube.com/watch?v=fggT2PB2wgI",
     "officialEpisodePublished": "2026-09-03",
-    "battleEnds": "2026-09-14"
+    "battleEnds": "2026-09-14",
+    "releaseConfirmedByClient": true
   },
   "tour": [
     {
@@ -47,12 +46,16 @@
       "status": "Ticket offer listed; inventory unverified",
       "support10": "full",
       "support15": "full",
-      "budget10": 1600,
-      "budget15": 1600,
+      "budget10": 1700,
+      "budget15": 1800,
       "flightStart": "2026-09-16",
       "flightEnd": "2026-09-29",
       "recapStart": "2026-10-01",
-      "recapEnd": "2026-10-04"
+      "sharedRecap": false,
+      "recapEnd10": "2026-10-02",
+      "recapEnd15": "2026-10-04",
+      "recapBudget10": 100,
+      "recapBudget15": 200
     },
     {
       "date": "2026-10-01",
@@ -67,7 +70,11 @@
       "flightStart": "2026-09-17",
       "flightEnd": "2026-09-30",
       "recapStart": "2026-10-02",
-      "recapEnd": "2026-10-05"
+      "sharedRecap": false,
+      "recapEnd10": "2026-10-03",
+      "recapEnd15": "2026-10-05",
+      "recapBudget10": 100,
+      "recapBudget15": 200
     },
     {
       "date": "2026-10-04",
@@ -77,12 +84,16 @@
       "status": "Event listed; inventory unverified",
       "support10": "full",
       "support15": "full",
-      "budget10": 1600,
-      "budget15": 1600,
+      "budget10": 1700,
+      "budget15": 1800,
       "flightStart": "2026-09-20",
       "flightEnd": "2026-10-03",
       "recapStart": "2026-10-05",
-      "recapEnd": "2026-10-08"
+      "sharedRecap": false,
+      "recapEnd10": "2026-10-06",
+      "recapEnd15": "2026-10-08",
+      "recapBudget10": 100,
+      "recapBudget15": 200
     },
     {
       "date": "2026-10-07",
@@ -97,7 +108,11 @@
       "flightStart": "2026-09-23",
       "flightEnd": "2026-10-06",
       "recapStart": "2026-10-08",
-      "recapEnd": "2026-10-11"
+      "sharedRecap": false,
+      "recapEnd10": "2026-10-09",
+      "recapEnd15": "2026-10-11",
+      "recapBudget10": 100,
+      "recapBudget15": 200
     },
     {
       "date": "2026-10-10",
@@ -112,7 +127,11 @@
       "flightStart": "2026-09-26",
       "flightEnd": "2026-10-09",
       "recapStart": "2026-10-11",
-      "recapEnd": "2026-10-14"
+      "sharedRecap": false,
+      "recapEnd10": "2026-10-12",
+      "recapEnd15": "2026-10-14",
+      "recapBudget10": 100,
+      "recapBudget15": 200
     },
     {
       "date": "2026-10-11",
@@ -127,7 +146,11 @@
       "flightStart": "2026-10-06",
       "flightEnd": "2026-10-10",
       "recapStart": "2026-10-12",
-      "recapEnd": "2026-10-15"
+      "sharedRecap": false,
+      "recapEnd10": "2026-10-13",
+      "recapEnd15": "2026-10-15",
+      "recapBudget10": 100,
+      "recapBudget15": 200
     },
     {
       "date": "2026-10-13",
@@ -142,7 +165,11 @@
       "flightStart": "2026-09-29",
       "flightEnd": "2026-10-12",
       "recapStart": "2026-10-14",
-      "recapEnd": "2026-10-17"
+      "sharedRecap": false,
+      "recapEnd10": "2026-10-15",
+      "recapEnd15": "2026-10-17",
+      "recapBudget10": 100,
+      "recapBudget15": 200
     },
     {
       "date": "2026-10-15",
@@ -152,12 +179,16 @@
       "status": "Ticket offer listed; inventory unverified",
       "support10": "full",
       "support15": "full",
-      "budget10": 1600,
-      "budget15": 1600,
+      "budget10": 1700,
+      "budget15": 1800,
       "flightStart": "2026-10-01",
       "flightEnd": "2026-10-14",
       "recapStart": "2026-10-16",
-      "recapEnd": "2026-10-19"
+      "sharedRecap": false,
+      "recapEnd10": "2026-10-17",
+      "recapEnd15": "2026-10-19",
+      "recapBudget10": 100,
+      "recapBudget15": 200
     },
     {
       "date": "2026-10-18",
@@ -172,7 +203,11 @@
       "flightStart": "2026-10-04",
       "flightEnd": "2026-10-17",
       "recapStart": "2026-10-19",
-      "recapEnd": "2026-10-22"
+      "sharedRecap": false,
+      "recapEnd10": "2026-10-20",
+      "recapEnd15": "2026-10-22",
+      "recapBudget10": 100,
+      "recapBudget15": 200
     },
     {
       "date": "2026-10-20",
@@ -187,7 +222,11 @@
       "flightStart": "2026-10-06",
       "flightEnd": "2026-10-19",
       "recapStart": "2026-10-21",
-      "recapEnd": "2026-10-24"
+      "sharedRecap": false,
+      "recapEnd10": "2026-10-22",
+      "recapEnd15": "2026-10-24",
+      "recapBudget10": 100,
+      "recapBudget15": 200
     },
     {
       "date": "2026-10-22",
@@ -202,8 +241,12 @@
       "budget15": 0,
       "flightStart": "2026-10-08",
       "flightEnd": "2026-10-21",
-      "recapStart": "2026-10-23",
-      "recapEnd": "2026-10-26"
+      "recapStart": "2026-10-26",
+      "sharedRecap": true,
+      "recapEnd10": "2026-10-27",
+      "recapEnd15": "2026-10-29",
+      "recapBudget10": 0,
+      "recapBudget15": 0
     },
     {
       "date": "2026-10-25",
@@ -218,7 +261,11 @@
       "flightStart": "2026-10-20",
       "flightEnd": "2026-10-24",
       "recapStart": "2026-10-26",
-      "recapEnd": "2026-10-29"
+      "sharedRecap": false,
+      "recapEnd10": "2026-10-27",
+      "recapEnd15": "2026-10-29",
+      "recapBudget10": 100,
+      "recapBudget15": 200
     },
     {
       "date": "2026-10-27",
@@ -233,7 +280,11 @@
       "flightStart": "2026-10-13",
       "flightEnd": "2026-10-26",
       "recapStart": "2026-10-28",
-      "recapEnd": "2026-10-31"
+      "sharedRecap": false,
+      "recapEnd10": "2026-10-29",
+      "recapEnd15": "2026-10-31",
+      "recapBudget10": 100,
+      "recapBudget15": 200
     },
     {
       "date": "2026-10-29",
@@ -248,7 +299,11 @@
       "flightStart": "2026-10-15",
       "flightEnd": "2026-10-28",
       "recapStart": "2026-10-30",
-      "recapEnd": "2026-11-02"
+      "sharedRecap": false,
+      "recapEnd10": "2026-10-31",
+      "recapEnd15": "2026-11-02",
+      "recapBudget10": 100,
+      "recapBudget15": 200
     }
   ]
 }
