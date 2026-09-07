@@ -43,11 +43,11 @@
       "city": "New York",
       "venue": "Terminal 5",
       "url": "https://www.axs.com/events/1480945/epik-high-tickets?skin=terminal5",
-      "status": "Ticket offer listed; inventory unverified",
+      "status": "WME ticket report as of September 2, 2026; refresh inventory before launch.",
       "support10": "full",
       "support15": "full",
-      "budget10": 1700,
-      "budget15": 1700,
+      "budget10": 1100,
+      "budget15": 1500,
       "flightStart": "2026-09-16",
       "flightEnd": "2026-09-29",
       "recapStart": "2026-10-01",
@@ -55,18 +55,24 @@
       "recapEnd10": "2026-10-02",
       "recapEnd15": "2026-10-04",
       "recapBudget10": 100,
-      "recapBudget15": 200
+      "recapBudget15": 200,
+      "ticketCount": {
+        "asOf": "2026-09-02",
+        "sellable": 3000,
+        "sold": 2047,
+        "open": 953
+      }
     },
     {
       "date": "2026-10-01",
       "city": "Boston",
       "venue": "Big Night Live",
       "url": "https://www.ticketmaster.com/event/010064C3DB3785EC",
-      "status": "Event listed; inventory unverified",
-      "support10": "organic",
-      "support15": "organic",
-      "budget10": 0,
-      "budget15": 0,
+      "status": "WME ticket report as of September 2, 2026; refresh inventory before launch.",
+      "support10": "full",
+      "support15": "full",
+      "budget10": 700,
+      "budget15": 1000,
       "flightStart": "2026-09-17",
       "flightEnd": "2026-09-30",
       "recapStart": "2026-10-02",
@@ -74,18 +80,24 @@
       "recapEnd10": "2026-10-03",
       "recapEnd15": "2026-10-05",
       "recapBudget10": 100,
-      "recapBudget15": 200
+      "recapBudget15": 200,
+      "ticketCount": {
+        "asOf": "2026-09-02",
+        "sellable": 1600,
+        "sold": 884,
+        "open": 716
+      }
     },
     {
       "date": "2026-10-04",
       "city": "Toronto",
       "venue": "HISTORY",
       "url": "https://www.ticketmaster.ca/event/100064C42E0F19BE",
-      "status": "Event listed; inventory unverified",
-      "support10": "full",
-      "support15": "full",
-      "budget10": 1700,
-      "budget15": 1700,
+      "status": "WME ticket report as of September 2, 2026; refresh inventory before launch.",
+      "support10": "organic",
+      "support15": "organic",
+      "budget10": 0,
+      "budget15": 0,
       "flightStart": "2026-09-20",
       "flightEnd": "2026-10-03",
       "recapStart": "2026-10-05",
@@ -93,18 +105,24 @@
       "recapEnd10": "2026-10-06",
       "recapEnd15": "2026-10-08",
       "recapBudget10": 100,
-      "recapBudget15": 200
+      "recapBudget15": 200,
+      "ticketCount": {
+        "asOf": "2026-09-02",
+        "sellable": 2327,
+        "sold": 2200,
+        "open": 127
+      }
     },
     {
       "date": "2026-10-07",
       "city": "Chicago",
       "venue": "House of Blues",
       "url": "https://www.ticketmaster.com/event/040064C2516ABFC0",
-      "status": "Event listed; inventory unverified",
+      "status": "WME ticket report as of September 2, 2026; refresh inventory before launch.",
       "support10": "organic",
-      "support15": "full",
+      "support15": "organic",
       "budget10": 0,
-      "budget15": 1100,
+      "budget15": 0,
       "flightStart": "2026-09-23",
       "flightEnd": "2026-10-06",
       "recapStart": "2026-10-08",
@@ -112,14 +130,20 @@
       "recapEnd10": "2026-10-09",
       "recapEnd15": "2026-10-11",
       "recapBudget10": 100,
-      "recapBudget15": 200
+      "recapBudget15": 200,
+      "ticketCount": {
+        "asOf": "2026-09-02",
+        "sellable": 1250,
+        "sold": 1096,
+        "open": 154
+      }
     },
     {
       "date": "2026-10-10",
       "city": "Washington, DC",
       "venue": "The Howard Theatre",
       "url": "https://www.unionstagepresents.com/shows/epik-high-3-0-north-american-tour-10-oct",
-      "status": "Event listed; inventory unverified",
+      "status": "WME ticket report as of September 2, 2026; refresh inventory before launch.",
       "support10": "organic",
       "support15": "organic",
       "budget10": 0,
@@ -131,37 +155,49 @@
       "recapEnd10": "2026-10-12",
       "recapEnd15": "2026-10-14",
       "recapBudget10": 100,
-      "recapBudget15": 200
+      "recapBudget15": 200,
+      "ticketCount": {
+        "asOf": "2026-09-02",
+        "sellable": 1250,
+        "sold": 1186,
+        "open": 64
+      }
     },
     {
       "date": "2026-10-11",
       "city": "Atlanta",
       "venue": "The Eastern",
       "url": "https://www.axs.com/events/1479442/epik-high-tickets",
-      "status": "Ticket offer listed; inventory unverified",
-      "support10": "organic",
-      "support15": "light",
-      "budget10": 0,
-      "budget15": 300,
-      "flightStart": "2026-10-06",
+      "status": "WME ticket report as of September 2, 2026; refresh inventory before launch.",
+      "support10": "full",
+      "support15": "full",
+      "budget10": 1400,
+      "budget15": 2000,
+      "flightStart": "2026-09-27",
       "flightEnd": "2026-10-10",
       "recapStart": "2026-10-12",
       "sharedRecap": false,
       "recapEnd10": "2026-10-13",
       "recapEnd15": "2026-10-15",
       "recapBudget10": 100,
-      "recapBudget15": 200
+      "recapBudget15": 200,
+      "ticketCount": {
+        "asOf": "2026-09-02",
+        "sellable": 2280,
+        "sold": 1016,
+        "open": 1264
+      }
     },
     {
       "date": "2026-10-13",
       "city": "Dallas",
       "venue": "Granada Theater",
       "url": "https://www.prekindle.com/promo/id/-2852527949180184620",
-      "status": "Ticket offer listed; inventory unverified",
-      "support10": "organic",
+      "status": "WME ticket report as of September 2, 2026; refresh inventory before launch.",
+      "support10": "full",
       "support15": "full",
-      "budget10": 0,
-      "budget15": 1100,
+      "budget10": 400,
+      "budget15": 500,
       "flightStart": "2026-09-29",
       "flightEnd": "2026-10-12",
       "recapStart": "2026-10-14",
@@ -169,52 +205,70 @@
       "recapEnd10": "2026-10-15",
       "recapEnd15": "2026-10-17",
       "recapBudget10": 100,
-      "recapBudget15": 200
+      "recapBudget15": 200,
+      "ticketCount": {
+        "asOf": "2026-09-02",
+        "sellable": 1150,
+        "sold": 821,
+        "open": 329
+      }
     },
     {
       "date": "2026-10-15",
       "city": "Los Angeles",
       "venue": "The Novo",
       "url": "https://www.axs.com/events/1479452/epik-high-tickets",
-      "status": "Ticket offer listed; inventory unverified",
-      "support10": "full",
-      "support15": "full",
-      "budget10": 1700,
-      "budget15": 1700,
-      "flightStart": "2026-10-01",
+      "status": "WME ticket report as of September 2, 2026; refresh inventory before launch.",
+      "support10": "organic",
+      "support15": "light",
+      "budget10": 0,
+      "budget15": 300,
+      "flightStart": "2026-10-10",
       "flightEnd": "2026-10-14",
       "recapStart": "2026-10-16",
       "sharedRecap": false,
       "recapEnd10": "2026-10-17",
       "recapEnd15": "2026-10-19",
       "recapBudget10": 100,
-      "recapBudget15": 200
+      "recapBudget15": 200,
+      "ticketCount": {
+        "asOf": "2026-09-02",
+        "sellable": 2341,
+        "sold": 1998,
+        "open": 343
+      }
     },
     {
       "date": "2026-10-18",
       "city": "Oakland",
       "venue": "Fox Theater",
       "url": "https://www.ticketmaster.com/event/1C0064C32FD1C9C5?brand=anotherplanet&camefrom=CFC_ANOTHERPLANET_artist",
-      "status": "Event listed; inventory unverified",
+      "status": "WME ticket report as of September 2, 2026; refresh inventory before launch.",
       "support10": "organic",
-      "support15": "organic",
+      "support15": "light",
       "budget10": 0,
-      "budget15": 0,
-      "flightStart": "2026-10-04",
+      "budget15": 200,
+      "flightStart": "2026-10-13",
       "flightEnd": "2026-10-17",
       "recapStart": "2026-10-19",
       "sharedRecap": false,
       "recapEnd10": "2026-10-20",
       "recapEnd15": "2026-10-22",
       "recapBudget10": 100,
-      "recapBudget15": 200
+      "recapBudget15": 200,
+      "ticketCount": {
+        "asOf": "2026-09-02",
+        "sellable": 2878,
+        "sold": 2239,
+        "open": 639
+      }
     },
     {
       "date": "2026-10-20",
       "city": "Vancouver",
       "venue": "Orpheum",
       "url": "https://admitone.com/events/vancouver/pro/other/orpheum/epik-high/epik-high/6a1f5290388e0ccdeae3c9f0",
-      "status": "Buy Now listed; inventory unverified",
+      "status": "WME ticket report as of September 2, 2026; refresh inventory before launch.",
       "support10": "organic",
       "support15": "organic",
       "budget10": 0,
@@ -226,17 +280,22 @@
       "recapEnd10": "2026-10-22",
       "recapEnd15": "2026-10-24",
       "recapBudget10": 100,
-      "recapBudget15": 200
+      "recapBudget15": 200,
+      "ticketCount": {
+        "asOf": "2026-09-02",
+        "sellable": 2498,
+        "sold": 2013,
+        "open": 485
+      }
     },
     {
       "date": "2026-10-22",
       "city": "Seattle",
       "venue": "Neptune Theatre",
       "url": "https://www.ticketmaster.com/event/0F0064C5C9CCF6D2",
-      "status": "Reported sold out in Aug 9 press release; exclude ticket acquisition; inventory recheck required",
-      "statusSource": "https://thekrazemag.com/press-releases/2026/8/9/epik-high-expands-tour-with-new-seattle-show-and-vip-giveaway-for-hey-tablo-live-podcast-experience",
-      "support10": "soldout",
-      "support15": "soldout",
+      "status": "WME ticket report as of September 2, 2026; refresh inventory before launch.",
+      "support10": "organic",
+      "support15": "organic",
       "budget10": 0,
       "budget15": 0,
       "flightStart": "2026-10-08",
@@ -246,37 +305,49 @@
       "recapEnd10": "2026-10-27",
       "recapEnd15": "2026-10-29",
       "recapBudget10": 0,
-      "recapBudget15": 0
+      "recapBudget15": 0,
+      "ticketCount": {
+        "asOf": "2026-09-02",
+        "sellable": 1000,
+        "sold": 942,
+        "open": 58
+      }
     },
     {
       "date": "2026-10-25",
       "city": "Seattle",
       "venue": "Neptune Theatre",
       "url": "https://www.ticketmaster.com/epik-high-north-america-30-seattle-washington-10-25-2026/event/0F0064FED493EBA0",
-      "status": "Added second show; event listed; inventory unverified",
-      "support10": "organic",
-      "support15": "light",
-      "budget10": 0,
-      "budget15": 300,
-      "flightStart": "2026-10-20",
+      "status": "WME ticket report as of September 2, 2026; refresh inventory before launch.",
+      "support10": "full",
+      "support15": "full",
+      "budget10": 700,
+      "budget15": 1100,
+      "flightStart": "2026-10-11",
       "flightEnd": "2026-10-24",
       "recapStart": "2026-10-26",
       "sharedRecap": false,
       "recapEnd10": "2026-10-27",
       "recapEnd15": "2026-10-29",
       "recapBudget10": 100,
-      "recapBudget15": 200
+      "recapBudget15": 200,
+      "ticketCount": {
+        "asOf": "2026-09-02",
+        "sellable": 1000,
+        "sold": 455,
+        "open": 545
+      }
     },
     {
       "date": "2026-10-27",
       "city": "Las Vegas",
       "venue": "House of Blues",
       "url": "https://www.ticketmaster.com/epik-high-3-0-north-american-tour-las-vegas-10-27-2026/event/170064C46CFA8644",
-      "status": "General sale listed as happening now; inventory unverified",
-      "support10": "organic",
-      "support15": "organic",
-      "budget10": 0,
-      "budget15": 0,
+      "status": "WME ticket report as of September 2, 2026; refresh inventory before launch.",
+      "support10": "full",
+      "support15": "full",
+      "budget10": 800,
+      "budget15": 1300,
       "flightStart": "2026-10-13",
       "flightEnd": "2026-10-26",
       "recapStart": "2026-10-28",
@@ -284,14 +355,20 @@
       "recapEnd10": "2026-10-29",
       "recapEnd15": "2026-10-31",
       "recapBudget10": 100,
-      "recapBudget15": 200
+      "recapBudget15": 200,
+      "ticketCount": {
+        "asOf": "2026-09-02",
+        "sellable": 1800,
+        "sold": 477,
+        "open": 1323
+      }
     },
     {
       "date": "2026-10-29",
       "city": "San Diego",
       "venue": "The Observatory North Park",
       "url": "https://www.ticketmaster.com/event/0B0064C5CA617063",
-      "status": "Event listed; inventory unverified",
+      "status": "WME ticket report as of September 2, 2026; refresh inventory before launch.",
       "support10": "organic",
       "support15": "organic",
       "budget10": 0,
@@ -303,7 +380,46 @@
       "recapEnd10": "2026-10-31",
       "recapEnd15": "2026-11-02",
       "recapBudget10": 100,
-      "recapBudget15": 200
+      "recapBudget15": 200,
+      "ticketCount": {
+        "asOf": "2026-09-02",
+        "sellable": 1200,
+        "sold": 1031,
+        "open": 169
+      }
     }
-  ]
+  ],
+  "ticketReport": {
+    "asOf": "2026-09-02",
+    "proposalUpdated": "2026-09-07",
+    "source": "WME — EPIK HIGH North America Ticket Counts 2026, supplied by the artist team",
+    "sellable": 25574,
+    "sold": 18405,
+    "open": 7169
+  },
+  "investment": {
+    "currency": "USD",
+    "managementRate": 0.15,
+    "managementBasis": "Working media spend",
+    "packages": {
+      "10": {
+        "total": 10000.0,
+        "media": 7826.09,
+        "management": 1173.91,
+        "creator": 1000.0,
+        "ticket": 5100.0,
+        "post": 1300.0,
+        "release": 1426.09
+      },
+      "15": {
+        "total": 15000.0,
+        "media": 12173.91,
+        "management": 1826.09,
+        "creator": 1000.0,
+        "ticket": 7900.0,
+        "post": 2600.0,
+        "release": 1673.91
+      }
+    }
+  }
 }
