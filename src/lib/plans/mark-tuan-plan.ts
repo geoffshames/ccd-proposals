@@ -41,9 +41,9 @@ export const markTuanPlanProposal: StrategyPlanData = {
       title: "Overview & Objective",
       subtitle: "Thailand already chose Mark Tuan. This plan spends against that, Thailand first, on the two things a budget this size can actually move.",
       body: [
-        "The audit in Part One measured five things. Thailand is his largest Spotify market at 55,244 monthly listeners, ahead of the United States, and it is 47.9% of his TikTok audience. His follower base moved 7.8% in eighteen months while monthly listeners swung between 282,423 and 937,006, so the audience each release brings in does not stay. His two biggest tracks and his seventh are collaborations, all of them ahead of every solo single since 2025. He holds five Spotify editorial placements reaching 33,087 people against MILLI's nineteen reaching 2.5 million. And across 162 analyzed videos, no collaboration post has ever let a guest speak, two carry an on-screen ask, and none of his best-performing work contains a single Thai marker.",
+        "The audit in Part One measured five things. Thailand is his largest Spotify market at 55,244 monthly listeners, ahead of the United States, and it is 47.9% of his TikTok audience. His follower base moved 7.8% in eighteen months while monthly listeners swung between 282,423 and 937,006, and the base he returns to between releases has not grown across three cycles. His two biggest tracks and his seventh are collaborations, all of them ahead of every solo single since 2025. He holds five Spotify editorial placements reaching 33,087 people against MILLI's nineteen reaching 2.5 million. And across 162 analyzed videos, no collaboration post has ever let a guest speak, two carry an on-screen ask, and none of his best-performing work contains a single Thai marker.",
         "This plan puts $15,000 to $20,000 against that, and it buys two things: paid media concentrated on Thailand, where his audience already sits and media costs a fraction of Western rates, and a Thai creator wave at the tier where Thai rates make real volume affordable. Creative direction, the asset briefs, the DSP pitch material and the weekly readout sit inside the campaign fee. Everything else the audit surfaced is listed in section 09 as a no-cost recommendation for the artist team, because it costs no money and Crowd Control Digital does not bill for it.",
-        "One thing this document does differently: it does not promise a streaming number. All four of his prior release cycles grew without paid support, and his last three singles peaked at 1.52x, 1.17x and 1.43x their pre-release listener base on their own. Quoting a figure inside that band would be selling the release back to you. Section 02 sets out the baseline, the media arithmetic, and an explicit split between what this campaign commits to, what it expects, and what it reports without claiming. The number Crowd Control Digital asks to be judged on is the floor the cycle leaves behind, which has fallen three eras running.",
+        "One thing this document does differently: it does not promise a streaming number. Every cycle since High As You has carried paid support, roughly $5,000 to $10,000 per single and roughly $50,000 on the EP, in YouTube advertising and playlist promotion. On that support his last three singles peaked at 1.52x, 1.17x and 1.43x their pre-release listener base, and the EP reached 2.39x. Quoting a figure inside the single band would be selling you what that spend already buys. Section 02 sets out the baseline, the media arithmetic, and an explicit split between what this campaign commits to, what it expects, and what it reports without claiming. The number Crowd Control Digital asks to be judged on is the base the cycle leaves behind, which has not grown across three cycles.",
       ],
       supports: {
         heading: "What This Plan Covers",
@@ -63,8 +63,8 @@ export const markTuanPlanProposal: StrategyPlanData = {
           "Committed: 14,000 to 21,000 measured DSP actions from the conversion-optimized spend, at a modelled $0.19 to $0.28 each",
           "Committed: 20 to 35 contracted creator posts on the official sound, with total sound usage counted on top",
           "Expected: Spotify followers +10K worst, +25K expected, +50K best, against a base that has moved 7.8% in eighteen months",
-          "The headline test: a post-cycle listener floor above 350K, against 282K before the current single and a floor that has fallen three eras running",
-          "Reported, not promised: monthly listeners and streams, shown weekly against the 330K to 550K his last three singles model unaided",
+          "The headline test: a listener base above 350K ten weeks after release, against 282K before the current single, the first cycle to leave the base higher than it found it",
+          "Reported, not promised: monthly listeners and streams, shown weekly against the 330K to 550K band his last three singles reached with $5,000 to $10,000 of support each",
         ],
       },
       footnote: "Every target carries a worst, expected and best case in the verticals below. Streaming is the one variable this plan reports on rather than guarantees. All figures trace to the audit in Part One, pulled September 3, 2026.",
@@ -78,28 +78,28 @@ export const markTuanPlanProposal: StrategyPlanData = {
       number: "02",
       navLabel: "Method",
       title: "Targets & Methodology",
-      philosophy: "Every prior Mark Tuan release grew without a dollar of paid support. So before this plan claims anything, it states what the release would do on its own, what a campaign of this size can add on top of that, and what nobody can honestly attribute.",
-      intro: "A marketing plan that promises a streaming number is usually promising something the release was going to do anyway. This section shows the arithmetic behind every figure in this document: the baseline drawn from his own four release cycles, the media math behind the delivery estimates, and an explicit split between what Crowd Control Digital commits to, what it expects, and what it reports without promising.",
+      philosophy: "Every cycle since High As You carried paid support, and the results are on the record. So before this plan claims anything, it states what that support has bought, what a campaign of this size on a different channel mix in a different market can add, and what nobody can honestly attribute.",
+      intro: "A marketing plan that promises a streaming number is usually promising something the release and its usual support were going to do anyway. This section shows the arithmetic behind every figure in this document: the baseline drawn from his own four release cycles and the spend behind each, the media math behind the delivery estimates, and an explicit split between what Crowd Control Digital commits to, what it expects, and what it reports without promising.",
       subBlocks: [
         {
           label: "A",
-          title: "The Baseline: What a Release Does Unaided",
-          objective: "Establish what happens with no campaign, so the campaign is measured against the right counterfactual.",
-          strategy: "Four release cycles sit in the Chartmetric daily record, and none of them had a paid campaign behind it. Indexed to the day of release, the three singles peaked at 1.52x, 1.17x and 1.43x their pre-release listener base, a mean of 1.37x, each roughly thirty days out. The Silhouette EP reached 2.39x, but it was an EP carrying a Thai media tour, a retail fansign run, a countdown performance and a two-night arena booking, so it is context rather than a comparable. Night Light is a single. Applied to a modelled pre-release floor of 280,000 to 360,000, that band puts the unaided peak at roughly 330,000 to 550,000 monthly listeners. Any campaign proposal for this artist has to beat that band to have done anything at all, and any proposal that quotes a number inside it is selling the release back to the label.",
+          title: "The Baseline: What His Last Four Releases Did, and What Was Behind Them",
+          objective: "Establish what his usual level of support produces, so this campaign is measured against the right counterfactual.",
+          strategy: "Four release cycles sit in the Chartmetric daily record, and each carried paid support: roughly $5,000 to $10,000 per single and roughly $50,000 on the EP, in YouTube advertising and playlist promotion, as reported by the artist's management. Indexed to the day of release, the three singles peaked at 1.52x, 1.17x and 1.43x their pre-release listener base, a mean of 1.37x, each roughly thirty days out. The Silhouette EP reached 2.39x on five times the spend plus a Thai media tour, a retail fansign run, a countdown performance and two arena nights, so it is a ceiling reference rather than a comparable. That gives his own history a dose-response shape: $5,000 to $10,000 behind a single has produced roughly 1.2x to 1.5x, and $50,000 behind an EP produced 2.4x. This plan sits between those budgets, on a different channel mix (TikTok, Meta and creators in Thailand rather than YouTube and playlisting), so its results should be read against the single band as the floor and nowhere near the EP. Applied to a modelled pre-release base of 280,000 to 360,000, the single band puts the expected peak at roughly 330,000 to 550,000 monthly listeners with his usual support. A proposal has to beat that band to have added anything, and one that quotes a number inside it is selling the label what it already buys.",
           components: {
-            heading: "The Four Cycles, All Unaided",
+            heading: "The Four Cycles, and the Support Behind Each",
             items: [
-              "High As You (single, May 2025): 348,020 to 529,867 at day 30, a 1.52x peak",
-              "hold still (single, Aug 2025): 407,050 to 476,020 at day 34, a 1.17x peak",
-              "Alone (single, Jul 2026): 282,423 to 403,615 at day 31, a 1.43x reading with the curve still rising at the last data point",
-              "Silhouette (EP, Nov 2025): 391,933 to 937,006 at day 32, a 2.39x peak. An EP with a full promotional cycle, shown for context and excluded from the single baseline",
+              "High As You (single, May 2025): 348,020 to 529,867 at day 30, a 1.52x peak, on roughly $5,000 to $10,000 of YouTube and playlist support",
+              "hold still (single, Aug 2025): 407,050 to 476,020 at day 34, a 1.17x peak, on roughly $5,000 to $10,000",
+              "Alone (single, Jul 2026): 282,423 to 403,615 at day 31, a 1.43x reading with the curve still rising at the last data point, on roughly $5,000 to $10,000",
+              "Silhouette (EP, Nov 2025): 391,933 to 937,006 at day 32, a 2.39x peak, on roughly $50,000 plus a full Thai promotional cycle. The ceiling reference, excluded from the single baseline",
             ],
           },
           charts: [
             {
               kind: "bars",
               title: "Peak Listener Lift by Release, Indexed to Release Day",
-              subtitle: "Every one of these was achieved with no paid media. The three singles average 1.37x; the EP is shown for context and excluded from the baseline.",
+              subtitle: "Each single carried roughly $5,000 to $10,000 of YouTube and playlist support and the EP roughly $50,000. The three singles average 1.37x; the EP is the ceiling reference.",
               unit: "x",
               series: [
                 {
@@ -134,22 +134,22 @@ export const markTuanPlanProposal: StrategyPlanData = {
             ],
           },
           kpis: [
-            "Tier 2, expected and partly attributable: Spotify followers +10K worst, +25K expected, +50K best; TikTok followers +150K to +350K; Thailand listener growth reported against a market that has never had a dedicated flight",
-            "Tier 3, reported not promised: total monthly listeners at cycle peak, shown weekly against the 330K to 550K unaided baseline; total streams, shown weekly with no target attached",
+            "Tier 2, expected and partly attributable: Spotify followers +10K worst, +25K expected, +50K best; TikTok followers +150K to +350K; Thailand listener growth reported against a market no release has yet been built around",
+            "Tier 3, reported not promised: total monthly listeners at cycle peak, shown weekly against the 330K to 550K baseline his singles set on their usual support; total streams, shown weekly with no target attached",
           ],
         },
         {
           label: "C",
           title: "The Attribution Problem, Stated Plainly",
           objective: "Say out loud what this plan cannot prove, because the alternative is a number that falls apart under scrutiny.",
-          strategy: "Paid media and creator seeding move streams through the platforms' own recommendation systems, which no advertiser can see into. A campaign can prove it delivered impressions, drove clicks to a DSP and produced creator videos. It cannot cleanly prove which streams would not have happened anyway, and any agency claiming otherwise is either running a much larger budget with a holdout group or guessing. At this budget the noise floor is real: a spend of this size against an artist already generating hundreds of thousands of monthly listeners produces a lift that can sit inside normal week-to-week variance. That is the honest constraint, and this plan is built around it rather than past it.",
+          strategy: "Paid media and creator seeding move streams through the platforms' own recommendation systems, which no advertiser can see into. A campaign can prove it delivered impressions, drove clicks to a DSP and produced creator videos. It cannot cleanly prove which streams would not have happened anyway, and any agency claiming otherwise is either running a much larger budget with a holdout group or guessing. At this budget the noise level is real: a spend of this size against an artist already generating hundreds of thousands of monthly listeners produces a lift that can sit inside normal week-to-week variance. That is the honest constraint, and this plan is built around it rather than past it. His own record adds the other half: paid moves the number during a flight, and what carries it past the flight is the artist's own channels posting at cadence alongside it, which is why the creative direction in this plan is paired with the spend rather than separate from it.",
           components: {
             heading: "What Gets This Closer to Causal",
             items: [
               "Staged market entry: Thailand runs first at test weight while the ring markets stay dark, so the Thai delta reads against unpromoted markets in the same weeks",
-              "Weekly baseline-versus-actual: every readout plots the live curve against the 1.17x to 1.52x unaided band, so over-performance is visible rather than asserted",
+              "Weekly baseline-versus-actual: every readout plots the live curve against the 1.17x to 1.52x band his singles set on their usual support, so over-performance is visible rather than asserted",
               "Sustain weighting: spend concentrates in weeks two through six, which is where his eras peak, so the campaign is testable against a release-week-only pattern",
-              "The floor test at close-out: the post-cycle floor is the least confounded number in the whole plan, because it is measured eight weeks after the release event has passed",
+              "The base test at close-out: the listener base ten weeks out is the least confounded number in the whole plan, because it is measured long after the release event has passed",
             ],
           },
         },
@@ -157,19 +157,19 @@ export const markTuanPlanProposal: StrategyPlanData = {
           label: "D",
           title: "The Number That Actually Matters",
           objective: "Name the single metric this campaign should be judged on.",
-          strategy: "Peaks are easy and temporary. His last three post-release floors were 406,082, 393,847 and 282,423, so the audience each cycle leaves behind has fallen by 30% in a year while the peaks kept arriving. That decline is the problem this plan was built for, and it is the cleanest thing to hold Crowd Control Digital to, because it is measured two months after release, long after the release-day effect has washed out, and because raising it is the only outcome that compounds into the next cycle. The target is a post-cycle floor above 350,000 against the 282,423 the current single was released into.",
+          strategy: "Peaks are easy and temporary. The base his last three cycles returned to was 406,082, then 393,847, then 282,423, so the peaks kept arriving and the base did not grow. Growing that base is what this plan was built for, and it is the cleanest thing to hold Crowd Control Digital to, because it is measured ten weeks after release, long after the release-day effect has washed out, and because it is the only outcome that compounds into the next cycle. The target is a base above 350,000 against the 282,423 the current single was released into: the first cycle in the record to leave the base higher than it found it.",
           kpis: [
-            "Post-cycle floor above 350,000 monthly listeners at week ten, against 282,423 before the current single and a falling three-era trend",
+            "Listener base above 350,000 at week ten, against 282,423 before the current single and a base that has not grown across three cycles",
             "Reported alongside it: the follower base, which has moved 7.8% in eighteen months and is the second compounding number",
           ],
           charts: [
             {
               kind: "bars",
-              title: "The Post-Release Floor, Era Over Era",
-              subtitle: "Lowest monthly-listener reading after each cycle passed. The peaks kept coming; the floor fell 30% in a year.",
+              title: "The Base Between Releases, Era Over Era",
+              subtitle: "The monthly-listener base each cycle returned to. The peaks kept coming; the base has not grown.",
               series: [
                 {
-                  name: "Floor",
+                  name: "Base",
                   points: [
                     { x: "After High As You\nAug 2025", y: 406082 },
                     { x: "After hold still\nNov 2025", y: 393847 },
@@ -187,7 +187,7 @@ export const markTuanPlanProposal: StrategyPlanData = {
           label: "E",
           title: "Sources and Confidence",
           objective: "Let anyone reading check the arithmetic.",
-          strategy: "Every figure in this document carries its origin. Listener, follower, market and playlist data come from Chartmetric, pulled September 3, 2026, with daily series through August 31. Release-cycle lifts and decay rates were computed by Crowd Control Digital from that daily series and the arithmetic is shown above. Media rates come from published 2025 and 2026 Thai and Southeast Asian rate cards and agency-reported first-party benchmarks, and are labelled as modelled until live account data replaces them in week one. The cost-per-action figure is the weakest input in the plan: it is a single published benchmark discounted for Southeast Asian markets, so it is quoted as a model and is the first number the weekly readout replaces with actuals. Video findings come from a 162-video analysis with per-post performance joined on, cross-checked against an independent statistics pass. iTunes country peaks are reported by fan chart tracking rather than a published industry chart and are attributed that way wherever they appear.",
+          strategy: "Every figure in this document carries its origin. Listener, follower, market and playlist data come from Chartmetric, pulled September 3, 2026, with daily series through August 31. Release-cycle lifts and the base between releases were computed by Crowd Control Digital from that daily series and the arithmetic is shown above. Prior campaign spend per release is as reported by the artist's management and is approximate. Media rates come from published 2025 and 2026 Thai and Southeast Asian rate cards and agency-reported first-party benchmarks, and are labelled as modelled until live account data replaces them in week one. The cost-per-action figure is the weakest input in the plan: it is a single published benchmark discounted for Southeast Asian markets, so it is quoted as a model and is the first number the weekly readout replaces with actuals. Video findings come from a 162-video analysis with per-post performance joined on, cross-checked against an independent statistics pass. iTunes country peaks are reported by fan chart tracking rather than a published industry chart and are attributed that way wherever they appear.",
           components: {
             heading: "Confidence, Highest to Lowest",
             items: [
@@ -195,12 +195,12 @@ export const markTuanPlanProposal: StrategyPlanData = {
               "High: creator volume and creator-post performance. Counted",
               "Medium: media delivery estimates. Published rate bands, replaced with actuals after week one",
               "Low, and labelled: cost per DSP action, modelled from one published benchmark discounted for the region",
-              "Not claimed: incremental streams. Reported weekly against the unaided baseline, never promised",
+              "Not claimed: incremental streams. Reported weekly against the baseline his own history sets, never promised",
             ],
           },
         },
       ],
-      footnote: "Baseline lifts and floors computed from the Chartmetric daily monthly-listener series, September 3, 2026 pull. The unaided band assumes a pre-release floor of 280,000 to 360,000, which moves with the release date and is restated once the date locks.",
+      footnote: "Baseline lifts and the base between releases computed from the Chartmetric daily monthly-listener series, September 3, 2026 pull. Prior spend per release as reported by management, approximate. The single baseline band assumes a pre-release base of 280,000 to 360,000, which moves with the release date and is restated once the date locks.",
     },
 
     // ===================================================================
@@ -296,11 +296,11 @@ export const markTuanPlanProposal: StrategyPlanData = {
           title: "Thailand Core Flight",
           budget: "$10,000 Foundation / $11,000 Expanded",
           objective: "Run the first dedicated paid program in the market that already listens most.",
-          strategy: "Three channels, weighted to where the audience and the cost meet. TikTok carries the largest share, running Spark Ads on the organic winners and the top creator posts rather than bespoke ad creative, against fans of MILLI, BamBam, Jackson Wang, Jeff Satur and the Thai pop and hip-hop interest stack, with Thailand's 18-to-34 female core as the seed. Meta runs Instagram Reels and Facebook video on the same assets, because Instagram is where his identical posts systematically out-earn TikTok and where 2.84M Thai followers already sit. YouTube carries the music video and the MILLI-verse cut as in-stream ads at a per-view cost that makes a 375K-view flight cost roughly $1,500. Objectives ladder from video views in week one to engagement and pre-save clicks from week two, with retargeting pools built from viewers and engagers.",
+          strategy: "Three channels, weighted to where the audience and the cost meet. TikTok carries the largest share, running Spark Ads on organic posts and creator posts rather than bespoke ad creative. Three sources feed it and are tested against each other from day one: the assets Crowd Control Digital briefs before launch from what is working for his peers right now, whatever Mark films on his own, and MILLI's posts about the record, which put the Thai audience she already holds directly behind the sound. The first week decides the split; the winners take the scale budget. Targeting runs against fans of MILLI, BamBam, Jackson Wang, Jeff Satur and the Thai pop and hip-hop interest stack, with Thailand's 18-to-34 female core as the seed. Meta runs Instagram Reels and Facebook video on the same assets, because Instagram is where his identical posts systematically out-earn TikTok and where 2.84M Thai followers already sit. YouTube carries the music video and the MILLI-verse cut as in-stream ads at a per-view cost that makes a 375K-view flight cost roughly $1,500. Objectives ladder from video views in week one to engagement and pre-save clicks from week two, with retargeting pools built from viewers and engagers.",
           components: {
             heading: "Channel Split and Modelled Delivery",
             items: [
-              "TikTok Spark Ads on organic and creator winners: $5,000 to $5,500, a modelled 3 to 8 million Thai impressions at published rates",
+              "TikTok Spark Ads on the briefed assets, Mark's own posts, MILLI's posts and the creator winners: $5,000 to $5,500, a modelled 3 to 8 million Thai impressions at published rates",
               "Meta Reels and video: $3,500 to $4,000, a modelled 700K to 1.5M impressions depending on the Instagram-to-Facebook weighting",
               "YouTube in-stream on the music video and the MILLI cut: $1,500, a modelled 300K to 400K completed views",
               "Retargeting architecture across video viewers and engagers from week one",
@@ -310,7 +310,7 @@ export const markTuanPlanProposal: StrategyPlanData = {
             "Committed: 4.1M to 11.2M Thai impressions and views delivered, priced from published Thai rate cards and reconciled to the ad accounts weekly",
             "Committed: cost per view, per engagement and per DSP action by channel, against a modelled $0.19 to $0.28 per action that live data replaces in week one",
             "Committed: a retargeting pool of 500K+ Thai users by the end of week two after release",
-            "Reported, not promised: Thai monthly listeners, shown weekly against the ring markets, which stay dark through release week so the Thai delta reads against unpromoted markets",
+            "Reported, not promised: Thai monthly listeners, shown weekly against the ring markets, which stay dark through release week so the Thai delta reads against markets with no spend",
           ],
         },
         {
@@ -333,11 +333,11 @@ export const markTuanPlanProposal: StrategyPlanData = {
           label: "C",
           title: "The Scale Rule",
           objective: "Move money toward what works, on a written rule rather than a judgment call.",
-          strategy: "Every paid line opens at roughly 30% of budget for its first seven days, baselining cost per view, cost per engagement and cost per click by market and by asset. Lines that beat their benchmark scale; lines that miss it by more than 50% are cut and the budget moves inside the tier. Streaming is reported weekly and is the one number this plan does not guarantee, because paid reach converts to streams through the platforms' own recommendation systems and no agency controls that. What the plan commits to is the delivery and cost figures in section 02, and a written weekly readout that plots the live listener curve against the unaided baseline his own last three singles set.",
+          strategy: "Every paid line opens at roughly 30% of budget for its first seven days, baselining cost per view, cost per engagement and cost per click by market and by asset. Lines that beat their benchmark scale; lines that miss it by more than 50% are cut and the budget moves inside the tier. Streaming is reported weekly and is the one number this plan does not guarantee, because paid reach converts to streams through the platforms' own recommendation systems and no agency controls that. What the plan commits to is the delivery and cost figures in section 02, and a written weekly readout that plots the live listener curve against the baseline his own last three singles set on their usual support.",
           kpis: [
-            "The headline test: a post-cycle listener floor above 350K at week ten, against 282K before the current single and a floor that has fallen three eras running",
+            "The headline test: a listener base above 350K at week ten, against 282K before the current single, the first cycle to leave the base higher than it found it",
             "Expected: Spotify followers added in the window, 10K worst, 25K expected, 50K best",
-            "Reported against the baseline, not promised: monthly listeners at cycle peak, plotted weekly against the 330K to 550K band his last three singles model unaided",
+            "Reported against the baseline, not promised: monthly listeners at cycle peak, plotted weekly against the 330K to 550K band his last three singles reached on $5,000 to $10,000 of support each",
           ],
         },
       ],
@@ -411,35 +411,30 @@ export const markTuanPlanProposal: StrategyPlanData = {
       number: "07",
       navLabel: "Creative",
       title: "Vertical 3 / Creative Direction",
-      philosophy: "Inside the campaign fee, not a media line. Crowd Control Digital specifies the assets; the artist team produces them. What is specified comes straight from the video intelligence findings and the record's actual shape.",
-      intro: "The paid budget can only amplify what exists. This vertical is the brief for what should exist, written to the six video intelligence findings in Part One and delivered before the shoot rather than after it.",
+      philosophy: "Inside the campaign fee, not a media line. Crowd Control Digital briefs a short list of assets before launch, Mark films whatever he wants alongside them, and paid tests both. Nothing here replaces his instincts; it gives them a control group.",
+      intro: "The paid budget can only amplify what exists, so this vertical runs three lanes side by side rather than one. Lane one is a short list of assets Crowd Control Digital briefs before the shoot, drawn from what is working for his peers right now and from the six video intelligence findings in Part One. Lane two is whatever Mark films on his own, at his own cadence. Lane three is MILLI's posts about the record. All three go into the first week of paid; the winners take the scale budget. The briefs land before the shoot, not after it.",
       subBlocks: [
         {
           label: "A",
-          title: "The Asset Brief",
-          objective: "Specify a package of assets that fixes the measured gaps rather than repeating the current template.",
-          strategy: "Ten assets, each tied to a finding. A two-hander in which MILLI raps to camera in Thai and Mark reacts, because 26 collaboration posts contain no guest voice. A direct-address introduction in Mark's own voice with Thai subtitles, because the catalog has never carried a record introduced that way. A process cut from the session or the shoot, because no behind-the-scenes footage exists anywhere in the corpus while two regional peers run it as a core format. The outfit switch at its proven spec, set to the hook. A transition video built on the beat switch, which is the template the creator wave copies. An asset shot with identifiably Thai settings and props, because his best-performing work contains none. Thai-script title and end cards on every regional cut. Instagram-first variants of the three strongest cuts. The music video and lyric video for YouTube, with the MILLI verse cut as a Short.",
+          title: "Lane One: The Briefed Assets",
+          objective: "Suggest a few specific assets that do what his peers' winners do and what his own catalog has not tried, so there is something to test his own posts against.",
+          strategy: "Five briefed assets, each tied to a finding in Part One and to a format that is working for a peer right now. A two-hander in which MILLI raps to camera in Thai and Mark reacts, because 26 of his collaboration posts contain no guest voice and MILLI opens nine of fifteen of her own videos on her face. A direct-address introduction of the record in Mark's own voice with Thai subtitles, because Jeff Satur and BamBam sell direct to camera and his catalog has never introduced a record that way. The outfit switch at its proven spec, set to the hook, because it is his own best format. A transition video on the beat switch into MILLI's verse, which is the template the creator wave copies. And one asset shot in an identifiably Thai setting, because his best-performing work contains none. These are suggestions with evidence behind them, delivered as a shoot list before the content day, and they run alongside whatever he films himself.",
           components: {
-            heading: "The Ten Assets",
+            heading: "The Five Briefed Assets",
             items: [
               "Two-hander: MILLI on camera, in Thai, with Mark reacting rather than mirroring",
               "Direct address: Mark introduces the record and MILLI in his own voice, Thai subtitles burned in",
-              "Process cut: session or shoot footage paired with the finished performance",
               "Outfit switch to the hook: 9 to 11 seconds, four to six looks, a hard cut every 2 to 3 seconds, question in the caption",
               "Transition video on the beat switch into MILLI's verse, the creator-wave template",
               "Thai-setting asset: street signage, a Bangkok exterior, Thai food or a recognizable venue",
-              "Thai-first title and end-card templates applied to every Southeast Asia cut",
-              "Instagram-first variants of the three strongest TikTok assets",
-              "Music video and lyric video, with the MILLI verse cut as a YouTube Short",
-              "Two official sound cuts uploaded before the creator wave posts",
             ],
           },
         },
         {
           label: "B",
-          title: "Cadence and Platform Plan",
-          objective: "Give the artist team a weekly posting plan built on the account's own data.",
-          strategy: "Three posts a week on TikTok from two weeks before release through six weeks after, using MILLI's cadence as the floor; the account currently runs at one. Instagram receives the strongest assets as twins plus one Instagram-first test a week, because identical edits have out-earned their TikTok originals in 25 of 31 verified pairs and won three of four pairs in the current release window. YouTube Shorts carries the MILLI verse and the process cut. Every release asset closes on the end card; the challenge and outfit lanes stay clean and carry the ask in the caption and the pinned comment.",
+          title: "Lane Two: Mark's Own Posts, and the Cadence Around Them",
+          objective: "Keep his own posting instincts in the mix, at a cadence the window can use, and give paid a second creative source to test.",
+          strategy: "Whatever Mark films on his own goes into the paid test alongside the briefed assets, and the data decides. The one ask is cadence: three posts a week on TikTok from two weeks before release through six weeks after, using MILLI's cadence as the floor, because the account currently runs at one and paid works hardest when the artist's own channels are active through the flight. Instagram receives the strongest assets as twins plus one Instagram-first test a week, because identical edits have out-earned their TikTok originals in 25 of 31 verified pairs. Every release asset closes on the end card; the challenge and outfit lanes stay clean and carry the ask in the caption and the pinned comment. Alongside both lanes, the release assets already in production (the music video, the lyric video, the two official sound cuts, Thai-first end cards and Instagram variants of the winners) are the campaign's backbone and need no new brief.",
           kpis: [
             "TikTok cadence: 3 posts a week for eight weeks, 24 posts against a current pace of 8",
             "Every TikTok winner backfilled to Instagram within 48 hours",
@@ -448,12 +443,12 @@ export const markTuanPlanProposal: StrategyPlanData = {
         },
         {
           label: "C",
-          title: "Creative Rotation",
-          objective: "Keep paid running on proven creative rather than on a fixed set of ads.",
-          strategy: "Paid creative is drawn weekly from whatever performed organically or in the creator wave, not produced separately. That is the cheapest creative pipeline available to a campaign this size and it is what the Spark Ads structure in Vertical 1 is built for. Crowd Control Digital picks the rotation each week from the performance data and briefs any small edit required, which the artist team's editor executes.",
+          title: "Lane Three: MILLI, and the Weekly Rotation",
+          objective: "Put spend behind MILLI's posts about the record, and keep paid running on whichever creative is winning.",
+          strategy: "MILLI's own posts about the record are the third creative lane and a spend vehicle in their own right: she holds 6.7 million TikTok followers, 74% of them in Thailand, and running Spark Ads through her posts puts the Thai audience she already has directly behind the sound. Part of the Thai TikTok line runs through her posts from release week, with the split against Mark's decided by the first week's data. From there, paid creative is drawn weekly from whatever performed across all three lanes and the creator wave, not produced separately. That is the cheapest creative pipeline available to a campaign this size. Crowd Control Digital picks the rotation each week from the performance data and briefs any small edit required, which the artist team's editor executes.",
         },
       ],
-      footnote: "Everything in this vertical sits inside the campaign fee. Production, editing and localization are executed by the artist team and its existing partners; the briefs, specs and rotation calls come from Crowd Control Digital.",
+      footnote: "Everything in this vertical sits inside the campaign fee. Production, editing and localization are executed by the artist team and its existing partners; the briefs, the shoot list and the weekly rotation calls come from Crowd Control Digital. MILLI's participation in the briefed assets and the paid rotation is subject to her team.",
     },
 
     // ===================================================================
@@ -499,7 +494,7 @@ export const markTuanPlanProposal: StrategyPlanData = {
           label: "C",
           title: "Close-Out and Next Cycle",
           objective: "End the window with a document the next campaign can be priced from.",
-          strategy: "A full-window readout across every workstream: listeners and followers, total and Thailand, creator volume, editorial holds, paid efficiency by channel and market, and the post-cycle floor against the 350K target. Then the recommendation for the next cycle, priced on what this one actually returned rather than on the same modelled benchmarks.",
+          strategy: "A full-window readout across every workstream: listeners and followers, total and Thailand, creator volume, editorial holds, paid efficiency by channel and market, and the listener base against the 350K target. Then the recommendation for the next cycle, priced on what this one actually returned rather than on the same modelled benchmarks.",
         },
       ],
       footnote: "Reporting and DSP pitch material sit inside the campaign fee. Readouts are written documents, delivered weekly.",
@@ -578,7 +573,7 @@ export const markTuanPlanProposal: StrategyPlanData = {
         {
           label: "Release Week",
           window: "R / 1 week",
-          focus: "Thailand paid opens across TikTok, Meta and YouTube on the release assets at roughly 30% weight and scales inside the week on data. Creator wave one drops the MILLI-entrance transition. New Music Friday push across Thailand and the ring; Marquee opens in the three ring markets where it runs on Expanded.",
+          focus: "Thailand paid opens across TikTok, Meta and YouTube at roughly 30% weight, with the briefed assets, Mark's own posts and MILLI's posts all in rotation, and scales inside the week on data. Creator wave one drops the MILLI-entrance transition. New Music Friday push across Thailand and the ring; Marquee opens in the three ring markets where it runs on Expanded.",
           budget: "$5,500 / $7,250",
           tactics: [
             "Thailand paid media, test then scale: $3,000 / $3,500",
@@ -695,7 +690,7 @@ export const markTuanPlanProposal: StrategyPlanData = {
           weekIndex: 1,
           title: "Briefs and pitch material",
           items: [
-            "Asset briefs and shoot list for the ten-asset package delivered, written to the video intelligence findings and the record's section map.",
+            "Shoot list for the five briefed assets delivered, written to what is working for his peers and to the record's section map. Mark's own ideas go on the same list.",
             "DSP pitch packet written and handed to the distributor's regional teams.",
             "Creator sourcing opens in Thailand across dance, comedy and lifestyle tiers.",
           ],
@@ -704,7 +699,7 @@ export const markTuanPlanProposal: StrategyPlanData = {
           weekIndex: 2,
           title: "Shoot and creator booking",
           items: [
-            "Content day: the two-hander, the direct address, the process cut, the outfit switch, the transition and the Thai-setting asset captured.",
+            "Content day: the five briefed assets captured alongside whatever Mark wants to shoot. MILLI's posting plan for release week confirmed with her team.",
             "Creator wave one contracted and briefed on the MILLI-entrance transition template and the Thai text treatment.",
           ],
         },
@@ -721,7 +716,7 @@ export const markTuanPlanProposal: StrategyPlanData = {
           weekIndex: 4,
           title: "Release week",
           items: [
-            "Thailand paid opens across TikTok, Meta and YouTube at roughly 30% weight on the release assets, and scales inside the week on cost per view and click.",
+            "Thailand paid opens across TikTok, Meta and YouTube at roughly 30% weight with the briefed assets, Mark's own posts and MILLI's posts in rotation, and scales inside the week on cost per view and click.",
             "Creator wave one drops on the MILLI-entrance sound cut.",
             "New Music Friday push across Thailand and the ring; Marquee opens in Indonesia, the Philippines and Singapore on Expanded.",
           ],
@@ -755,7 +750,7 @@ export const markTuanPlanProposal: StrategyPlanData = {
           weekIndex: 10,
           title: "Close-out and next cycle",
           items: [
-            "Full-window readout: Thai and total listeners, followers, creator volume, editorial holds, cost per action by channel and market, and the post-cycle floor against the 350K target.",
+            "Full-window readout: Thai and total listeners, followers, creator volume, editorial holds, cost per action by channel and market, and the listener base against the 350K target.",
             "Next-cycle recommendation, priced on what this window actually returned rather than on modelled benchmarks.",
           ],
         },

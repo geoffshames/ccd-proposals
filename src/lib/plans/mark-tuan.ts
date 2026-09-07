@@ -33,16 +33,16 @@ export const markTuanPlan: StrategyPlanData = {
       number: "01",
       navLabel: "Overview",
       title: "Overview & Objective",
-      subtitle: "Thailand found Mark Tuan before his own infrastructure did. Part One measures that gap across five dimensions. Part Two closes it around one release.",
+      subtitle: "Thailand chose Mark Tuan on its own. Part One measures how far that goes and where the growth has stalled. Part Two builds one release around it.",
       body: [
-        "Thailand is Mark Tuan's largest Spotify market at 55,244 monthly listeners, ahead of the United States. It is 47.9% of his TikTok audience and 21.3% of his Instagram audience. He holds the largest Thai listener base of any GOT7 soloist and more Thai listeners than Jackson Wang, whose overall audience is nearly four times his size. The last twelve months added a Thai management partnership, a performance slot on the ICONSIAM Amazing Thailand Countdown's Global Phenomenon Stage, a Thai media tour, and two nights at IMPACT Arena where he performed a Thai-language cover and spoke Thai from the stage. The market has already chosen him.",
-        "What has not been built is anything that holds that attention between releases. His Spotify follower base moved 7.8% in eighteen months while monthly listeners swung between 282,423 and 937,006. Release eras decay at 2.7% to 4.7% a week, averaging 3.88%, and each 2026 era has settled on a lower floor than the one before it. He sits in five Spotify editorial playlists with a combined reach of 33,087; MILLI sits in nineteen with a reach of 2.5 million. \"Night Light\" featuring MILLI is the right record for exactly this gap: a Thai verse from the artist who topped the 2026 LiFTED 50 and reached the Show Me The Money 12 final, on a song shaped for the short-form formats that already work for him. This document sizes that opportunity across market position, consumption, audience, video and infrastructure. The launch plan built on it, priced at $15,000 to $20,000 of media and creator spend, is in Part Two.",
+        "Thailand is Mark Tuan's largest Spotify market at 55,244 monthly listeners, ahead of the United States. It is 47.9% of his TikTok audience and 21.3% of his Instagram audience. He holds the largest Thai listener base of any GOT7 soloist and more Thai listeners than Jackson Wang, whose overall audience is nearly four times his size. The last twelve months added a Thai management partnership, a performance slot on the ICONSIAM Amazing Thailand Countdown's Global Phenomenon Stage, a Thai media tour, and two nights at IMPACT Arena where he performed a Thai-language cover and spoke Thai from the stage. The market has already chosen him, and no release has yet been built around it.",
+        "What has not happened yet is growth that compounds. Each release lifts the number and the lift has not carried into the next cycle: monthly listeners have swung between 282,423 and 937,006 over eighteen months while the follower base moved 7.8%, and the base he returns to between releases has not grown across three cycles. He sits in five Spotify editorial playlists with a combined reach of 33,087; MILLI sits in nineteen with a reach of 2.5 million. \"Night Light\" featuring MILLI is the right record for exactly this gap: a Thai verse from the artist who topped the 2026 LiFTED 50 and reached the Show Me The Money 12 final, on a song shaped for the short-form formats that already work for him. This document sizes that opportunity across market position, consumption, audience, video and infrastructure. The launch plan built on it, priced at $15,000 to $20,000 of media and creator spend, is in Part Two.",
       ],
       supports: {
         heading: "What Part One Covers",
         items: [
           "Market position against sixteen regional and K-pop soloist peers, tiered on live consumption data",
-          "Consumption and decay analysis: era-by-era listener curves, the floor between releases, the collaboration pattern in his catalog, playlists and markets",
+          "Consumption and growth analysis: era-by-era launch curves, the base between releases, the collaboration pattern in his catalog, playlists and markets",
           "Southeast Asia audience profile across Spotify, TikTok, Instagram and YouTube",
           "Video intelligence: a frame-level analysis of 162 Mark Tuan, MILLI and peer videos with performance data joined",
           "Infrastructure audit: fan data, capture surfaces, pixels, smart links, live footprint and editorial position",
@@ -51,43 +51,14 @@ export const markTuanPlan: StrategyPlanData = {
       goals: {
         heading: "What the Audit Found",
         items: [
-          "Thailand is his No. 1 Spotify market at 55,244 listeners, ahead of the U.S., and 47.9% of his TikTok audience. It has never been promoted to",
-          "Followers moved 7.8% in eighteen months while listeners swung 282,423 to 937,006. The audience each release brings in does not stay",
+          "Thailand is his No. 1 Spotify market at 55,244 listeners, ahead of the U.S., and 47.9% of his TikTok audience. No release has yet been built around it",
+          "Followers moved 7.8% in eighteen months while listeners swung 282,423 to 937,006. Each release lifts the number; the base between releases has not grown across three cycles",
           "His two biggest tracks and his seventh are collaborations, all ahead of every solo single since 2025",
           "Five Spotify editorial placements reaching 33,087 people, against MILLI's nineteen reaching 2.5 million",
           "Across 162 analyzed videos: no collaboration post lets a guest speak, two carry an on-screen ask, and none of his best work contains a Thai marker",
-          "The capture surface that existed on the last EP was not carried forward to the current single",
+          "The release page for the last EP captured email and country; the current single's link is DSP buttons only",
         ],
       },
-      charts: [
-        {
-          kind: "area",
-          title: "18 Months of Spotify Consumption",
-          subtitle: "Weekly monthly-listener and follower readings since March 2025. Listeners rise and fall with each release; followers barely move.",
-          series: [
-            {
-              name: "Monthly listeners",
-              points: [
-                { x: "3/5/25", y: 403099 }, { x: "3/12/25", y: 386177 }, { x: "3/19/25", y: 374025 }, { x: "3/26/25", y: 364203 }, { x: "4/2/25", y: 354101 }, { x: "4/9/25", y: 357535 }, { x: "4/16/25", y: 360475 }, { x: "4/23/25", y: 364457 }, { x: "4/30/25", y: 369342 }, { x: "5/7/25", y: 374869 }, { x: "5/14/25", y: 373035 }, { x: "5/21/25", y: 363247 }, { x: "5/28/25", y: 351321 }, { x: "6/4/25", y: 366101 }, { x: "6/11/25", y: 433510 }, { x: "6/18/25", y: 487601 }, { x: "6/25/25", y: 517618 }, { x: "7/2/25", y: 525159 }, { x: "7/9/25", y: 486415 }, { x: "7/16/25", y: 456657 }, { x: "7/23/25", y: 433428 }, { x: "7/30/25", y: 422676 }, { x: "8/6/25", y: 408500 }, { x: "8/13/25", y: 406838 }, { x: "8/20/25", y: 425644 }, { x: "8/27/25", y: 454687 }, { x: "9/3/25", y: 471540 }, { x: "9/10/25", y: 473457 }, { x: "9/17/25", y: 475700 }, { x: "9/24/25", y: 456218 }, { x: "10/1/25", y: 429917 }, { x: "10/8/25", y: 422537 }, { x: "10/15/25", y: 404778 }, { x: "10/22/25", y: 403844 }, { x: "10/29/25", y: 402760 }, { x: "11/5/25", y: 394883 }, { x: "11/12/25", y: 468640 }, { x: "11/19/25", y: 636710 }, { x: "11/26/25", y: 759542 }, { x: "12/3/25", y: 892691 }, { x: "12/10/25", y: 925459 }, { x: "12/17/25", y: 857889 }, { x: "12/24/25", y: 769615 }, { x: "12/31/25", y: 676381 }, { x: "1/7/26", y: 617005 }, { x: "1/14/26", y: 597656 }, { x: "1/21/26", y: 588953 }, { x: "1/28/26", y: 582809 }, { x: "2/4/26", y: 561083 }, { x: "2/11/26", y: 541297 }, { x: "2/18/26", y: 511043 }, { x: "2/25/26", y: 482510 }, { x: "3/4/26", y: 451042 }, { x: "3/11/26", y: 420328 }, { x: "3/18/26", y: 403448 }, { x: "3/25/26", y: 389550 }, { x: "4/1/26", y: 375284 }, { x: "4/8/26", y: 362518 }, { x: "4/15/26", y: 368370 }, { x: "4/22/26", y: 362183 }, { x: "4/29/26", y: 354452 }, { x: "5/6/26", y: 347836 }, { x: "5/13/26", y: 379203 }, { x: "5/20/26", y: 393841 }, { x: "5/27/26", y: 399532 }, { x: "6/3/26", y: 400401 }, { x: "6/10/26", y: 352941 }, { x: "6/17/26", y: 330032 }, { x: "6/24/26", y: 316432 }, { x: "7/1/26", y: 315879 }, { x: "7/8/26", y: 310139 }, { x: "7/15/26", y: 301746 }, { x: "7/22/26", y: 294202 }, { x: "7/29/26", y: 283616 }, { x: "8/5/26", y: 305047 }, { x: "8/12/26", y: 335649 }, { x: "8/19/26", y: 368918 }, { x: "8/26/26", y: 392700 },
-              ],
-            },
-            {
-              name: "Followers",
-              points: [
-                { x: "3/5/25", y: 586783 }, { x: "3/12/25", y: 586743 }, { x: "3/19/25", y: 586703 }, { x: "3/26/25", y: 586838 }, { x: "4/2/25", y: 586500 }, { x: "4/9/25", y: 586329 }, { x: "4/16/25", y: 586224 }, { x: "4/23/25", y: 585999 }, { x: "4/30/25", y: 585897 }, { x: "5/7/25", y: 585992 }, { x: "5/14/25", y: 586542 }, { x: "5/21/25", y: 588928 }, { x: "5/28/25", y: 593637 }, { x: "6/4/25", y: 599086 }, { x: "6/11/25", y: 602669 }, { x: "6/18/25", y: 604129 }, { x: "6/25/25", y: 604605 }, { x: "7/2/25", y: 604257 }, { x: "7/9/25", y: 603893 }, { x: "7/16/25", y: 603901 }, { x: "7/23/25", y: 604451 }, { x: "7/30/25", y: 604550 }, { x: "8/6/25", y: 604621 }, { x: "8/13/25", y: 605195 }, { x: "8/20/25", y: 606529 }, { x: "8/27/25", y: 607221 }, { x: "9/3/25", y: 607843 }, { x: "9/10/25", y: 608947 }, { x: "9/17/25", y: 610876 }, { x: "9/24/25", y: 612066 }, { x: "10/1/25", y: 612398 }, { x: "10/8/25", y: 613014 }, { x: "10/15/25", y: 614325 }, { x: "10/22/25", y: 615344 }, { x: "10/29/25", y: 615694 }, { x: "11/5/25", y: 616392 }, { x: "11/12/25", y: 617417 }, { x: "11/19/25", y: 618183 }, { x: "11/26/25", y: 618849 }, { x: "12/3/25", y: 620147 }, { x: "12/10/25", y: 620873 }, { x: "12/17/25", y: 620955 }, { x: "12/24/25", y: 621032 }, { x: "12/31/25", y: 621240 }, { x: "1/7/26", y: 621459 }, { x: "1/14/26", y: 621395 }, { x: "1/21/26", y: 621482 }, { x: "1/28/26", y: 621615 }, { x: "2/4/26", y: 621687 }, { x: "2/11/26", y: 621804 }, { x: "2/18/26", y: 621734 }, { x: "2/25/26", y: 621858 }, { x: "3/4/26", y: 622167 }, { x: "3/11/26", y: 622654 }, { x: "3/18/26", y: 623036 }, { x: "3/25/26", y: 623491 }, { x: "4/1/26", y: 623915 }, { x: "4/8/26", y: 624265 }, { x: "4/15/26", y: 624511 }, { x: "4/22/26", y: 624809 }, { x: "4/29/26", y: 624991 }, { x: "5/6/26", y: 625339 }, { x: "5/13/26", y: 625805 }, { x: "5/20/26", y: 626219 }, { x: "5/27/26", y: 626482 }, { x: "6/3/26", y: 626905 }, { x: "6/10/26", y: 627259 }, { x: "6/17/26", y: 627500 }, { x: "6/24/26", y: 627845 }, { x: "7/1/26", y: 628027 }, { x: "7/8/26", y: 628195 }, { x: "7/15/26", y: 628372 }, { x: "7/22/26", y: 628555 }, { x: "7/29/26", y: 629368 }, { x: "8/5/26", y: 630630 }, { x: "8/12/26", y: 631415 }, { x: "8/19/26", y: 632155 }, { x: "8/26/26", y: 632406 },
-              ],
-            },
-          ],
-          markers: [
-            { x: "6/4/25", label: "HIGH AS YOU" },
-            { x: "8/20/25", label: "HOLD STILL" },
-            { x: "11/12/25", label: "SILHOUETTE" },
-            { x: "8/5/26", label: "ALONE" },
-          ],
-          tall: true,
-          source: "Chartmetric, weekly readings, Mar 5 2025 to Aug 26 2026",
-        },
-      ],
       footnote: "All data in this document was pulled September 3, 2026 unless dated otherwise. Sources: Chartmetric, Spotify platform data, iTunes reporting by fan chart tracking where attributed, Hanteo published tallies, platform audience statistics, live-site inspection of every owned surface, and a dedicated Mark Tuan video intelligence store. The launch plan built on these findings is in Part Two.",
     },
 
@@ -304,7 +275,7 @@ export const markTuanPlan: StrategyPlanData = {
             heading: "What the Tiering Says",
             items: [
               "The Thai ceiling is real and far away: Jeff Satur draws 1.03M Thai listeners and F.HERO 1.24M from the same 72-million-person market Mark Tuan draws 55K from. Thailand is under-worked, not saturated",
-              "GOT7 soloists convert fandom into iTunes country peaks across Southeast Asia; none has converted that into streaming retention. The gap is structural to the group, and the first soloist to close it wins the lane",
+              "GOT7 soloists convert fandom into iTunes country peaks across Southeast Asia; none has yet converted that into a streaming base that grows cycle over cycle. The gap is structural to the group, and the first soloist to close it wins the lane",
               "The set's growth stories run on cadence and direct address: Eric Nam is up 14.2% in 90 days and posts 2.6 times a week on TikTok against Mark Tuan's 1.0, with Ink Waruntorn up 11.5% and PP KRIT up 12.3% over the same window",
               "MILLI is live on New Music Friday in five Southeast Asian markets this week plus Taiwan and Hong Kong. The feature is an editorial asset before a single ad runs",
             ],
@@ -315,21 +286,21 @@ export const markTuanPlan: StrategyPlanData = {
     },
 
     // ===================================================================
-    // 03. Consumption & Decay Analysis
+    // 03. Consumption & Growth Analysis
     // ===================================================================
     {
       type: "vertical",
       number: "03",
       navLabel: "Consumption",
-      title: "Consumption & Decay Analysis",
-      philosophy: "Every release lifts him and every release lets go. The listeners arrive; nothing holds them. The plan is built to change the shape of the curve, not just the height of the peak.",
-      intro: "This section reads Mark Tuan's Spotify consumption at four depths: the follower-to-listener ratio over eighteen months, era-by-era launch curves and decay rates, the falling floor between releases, and the collaboration pattern inside his catalog. Listener and follower series come from Chartmetric daily data; catalog totals from Spotify track data.",
+      title: "Consumption & Growth Analysis",
+      philosophy: "Every release lifts the number, and the lifts have not yet compounded into growth. The plan is built to change the shape of the curve, not just the height of the peak.",
+      intro: "This section reads Mark Tuan's Spotify consumption at four depths: the follower-to-listener ratio over eighteen months, era-by-era launch curves, the base between releases, and the collaboration pattern inside his catalog. Every cycle since High As You carried paid support, roughly $5,000 to $10,000 per single and roughly $50,000 on the EP, in YouTube advertising and playlist promotion, so the curves below are what that support has bought. Listener and follower series come from Chartmetric daily data; catalog totals from Spotify track data.",
       subBlocks: [
         {
           label: "A",
           title: "Followers and Listeners Have Decoupled",
-          objective: "Measure how much of the audience that arrives with each release stays.",
-          strategy: "The follower-to-listener ratio runs from 0.74 at the Silhouette peak to 2.23 at the July 2026 floor, a three-fold swing in eight months. Read correctly, that is not fandom conversion moving; it is listening collapsing between releases against a follower base that barely moves. Followers rose from 586,637 to 632,618 over eighteen months (+7.8%, a near-straight line) while monthly listeners swung between 282,423 and 937,006. Marketing spend on this artist has only ever moved the listener line, and the listener line has always reverted. The plan's conversion vertical exists to make the follower line move for the first time.",
+          objective: "Measure whether the audience each release reaches is turning into a growing follower base.",
+          strategy: "The follower-to-listener ratio runs from 0.74 at the Silhouette peak to 2.23 at the July 2026 base, a three-fold swing in eight months. Read correctly, that is not fandom conversion moving; it is listening returning to base between releases against a follower base that barely moves. Followers rose from 586,637 to 632,618 over eighteen months (+7.8%, a near-straight line) while monthly listeners swung between 282,423 and 937,006. Release cycles move the listener line; the follower line has not yet followed it. Part Two is built to move both, and to be judged on the one that compounds.",
           charts: [
             {
               kind: "line",
@@ -346,9 +317,9 @@ export const markTuanPlan: StrategyPlanData = {
               ],
               markers: [
                 { x: "11/25", label: "SILHOUETTE" },
-                { x: "7/26", label: "FLOOR" },
+                { x: "7/26", label: "BASE" },
               ],
-              note: "Target for this cycle: followers +25K, so the ratio settles lower at a higher listener count rather than snapping back.",
+              note: "Target for this cycle: followers +25K, so the ratio settles lower at a higher listener count.",
               source: "Chartmetric month-end readings, Mar 2025 to Aug 2026",
             },
           ],
@@ -398,18 +369,18 @@ export const markTuanPlan: StrategyPlanData = {
         },
         {
           label: "C",
-          title: "Decay Rate and the Falling Floor",
-          objective: "Measure what each era leaves behind once the promotional wave passes.",
-          strategy: "Across the three completed release eras since 2025, monthly listeners decayed at an average of 3.88% per week from peak to trough. The Silhouette era is the sharpest case: a 937,006 peak followed by twenty consecutive weeks of decline at 4.69% a week down to 353,784. The floor is falling with it. After the 2025 singles the audience settled at roughly 400K to 423K; after Silhouette it settled at a 307K average with an absolute low of 282,423 on July 31, 2026. Each 2026 era has ended lower than the one before, which is the pattern Chartmetric's trend flag is reading. The audience that arrives is never asked to follow, join, or come back, so it does not.",
+          title: "The Base Between Releases",
+          objective: "Measure whether each cycle leaves the listener base higher than it found it.",
+          strategy: "Across the three completed cycles since 2025, monthly listeners eased back from each peak at an average of 3.88% a week, and the base they returned to was 406,082 after High As You, 393,847 after hold still, and 282,423 after Silhouette, which had produced the highest peak of the window at 937,006. The peaks kept arriving; the base did not grow, and Chartmetric's trend flag reads the same pattern. That is the opportunity this document is built around: a cycle that leaves the base higher than it found it, which none of the last three did, and which is the one outcome that carries into every release after it.",
           charts: [
             {
               kind: "bars",
-              title: "Average Weekly Listener Decay by Era",
-              subtitle: "Percent of monthly listeners lost per week from each era's peak to its trough.",
+              title: "Weekly Change From Peak to Base, by Era",
+              subtitle: "Percent of monthly listeners given back per week from each era's peak to the base it returned to.",
               unit: "%",
               series: [
                 {
-                  name: "Weekly decay rate",
+                  name: "Weekly change",
                   points: [
                     { x: "High As You\nJun-Aug 2025", y: 4.24 },
                     { x: "hold still\nSep-Nov 2025", y: 2.7 },
@@ -419,16 +390,16 @@ export const markTuanPlan: StrategyPlanData = {
                 },
               ],
               highlightX: ["Silhouette\nDec 2025-Apr 2026"],
-              note: "Silhouette bled for twenty straight weeks, the longest and steepest decline in the window.",
+              note: "Silhouette produced the highest peak of the window and gave it back over twenty weeks, the longest run in the record.",
               source: "Chartmetric daily listener series, computed peak to trough per window",
             },
             {
               kind: "bars",
-              title: "The Listener Floor, Era Over Era",
-              subtitle: "Lowest monthly-listener reading between releases. Each 2026 floor landed below the one before it.",
+              title: "The Base Between Releases, Era Over Era",
+              subtitle: "The monthly-listener base each cycle returned to. It has not grown across three cycles.",
               series: [
                 {
-                  name: "Floor",
+                  name: "Base",
                   points: [
                     { x: "Pre-High As You\nMay 2025", y: 349671 },
                     { x: "Post-High As You\nAug 2025", y: 406082 },
@@ -438,7 +409,7 @@ export const markTuanPlan: StrategyPlanData = {
                 },
               ],
               highlightX: ["Post-Silhouette\nJul 2026"],
-              note: "The floor is the number Part Two asks to be judged on: above 350K after this cycle, against a floor that has fallen three eras running.",
+              note: "The base is the number Part Two asks to be judged on: above 350K after this cycle, the first cycle to leave it higher than it found it.",
               source: "Chartmetric daily listener series",
             },
           ],
@@ -1031,7 +1002,7 @@ export const markTuanPlan: StrategyPlanData = {
           label: "A",
           title: "Fan Data and Capture Surfaces",
           objective: "Map where fan relationships live today and verify, not assume, where owned capture is missing.",
-          strategy: "The fan community home is a b.stage community launched October 3, 2025, with four tiers from free to $40 a year, and it is the bio destination on TikTok and YouTube. Around it the capture layer has gone backwards. The official site carries a single email field with a consent checkbox and no name, country or phone, and no marketing platform behind it. The Silhouette EP campaign page captured email and country through the distributor's forms host during a cycle in which Thailand was among the strongest markets. The Alone smart link, five weeks old, is DSP buttons only with no capture of any kind. That is a regression, not an absence: the mechanic existed one cycle ago and was not carried forward. There is no SMS or phone capture on any surface. The official site carries analytics only, with no Meta or TikTok pixel, so no paid campaign to date has been able to build audiences or measure conversions from site traffic. The X account with 8.5 million followers carries no bio and no link.",
+          strategy: "The fan community home is a b.stage community launched October 3, 2025, with four tiers from free to $40 a year, and it is the bio destination on TikTok and YouTube. Around it the capture layer is thin. The official site carries a single email field with a consent checkbox and no name, country or phone, and no marketing platform behind it. The Silhouette EP campaign page captured email and country through the distributor's forms host during a cycle in which Thailand was among the strongest markets. The Alone smart link, five weeks old, is DSP buttons only with no capture of any kind. The mechanic is already in the stack and is not on the current link. There is no SMS or phone capture on any surface. The official site carries analytics only, with no Meta or TikTok pixel, so paid campaigns to date have not been able to build audiences or measure conversions from site traffic. The X account with 8.5 million followers carries no bio and no link.",
           components: {
             heading: "Verified Current State (Sep 3, 2026)",
             items: [
