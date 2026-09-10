@@ -15,274 +15,14 @@ export const markTuanPlan: StrategyPlanData = {
 
   sections: [
     // ===================================================================
-    // 01. Overview & Objective
+    // 01. Consumption & Growth Analysis
     // ===================================================================
     {
-      type: "overview",
+      type: "vertical",
       number: "01",
-      navLabel: "Overview",
-      title: "Overview & Objective",
-      subtitle: "Thailand chose Mark Tuan on its own. This audit measures how far that goes and where the growth has stalled.",
-      body: [
-        "Thailand is Mark Tuan's largest Spotify market at 55,244 monthly listeners, ahead of the United States. It is 47.9% of his TikTok audience and 21.3% of his Instagram audience. He holds the largest Thai listener base of any GOT7 soloist and more Thai listeners than Jackson Wang, whose overall audience is nearly four times his size. The last twelve months added a Thai management partnership, a performance slot on the ICONSIAM Amazing Thailand Countdown's Global Phenomenon Stage, a Thai media tour, and two nights at IMPACT Arena where he performed a Thai-language cover and spoke Thai from the stage. The market has already chosen him, and no release has yet been built around it.",
-        "What has not happened yet is growth that compounds. Each release lifts the number and the lift has not carried into the next cycle: monthly listeners have swung between 282,423 and 937,006 over eighteen months while the follower base moved 7.8%, and the base he returns to between releases has not grown across three cycles. He sits in five Spotify editorial playlists with a combined reach of 33,087; MILLI sits in nineteen with a reach of 2.5 million. \"Night Light\" featuring MILLI is the right record for exactly this gap: a Thai verse from the artist who topped the 2026 LiFTED 50 and reached the Show Me The Money 12 final, on a song shaped for the short-form formats that already work for him. This document sizes that opportunity across market position, consumption, audience, video and infrastructure.",
-      ],
-      supports: {
-        heading: "What This Audit Covers",
-        items: [
-          "Market position against sixteen regional and K-pop soloist peers, tiered on live consumption data",
-          "Consumption and growth analysis: era-by-era launch curves, the base between releases, the collaboration pattern in his catalog, playlists and markets",
-          "Southeast Asia audience profile across Spotify, TikTok, Instagram and YouTube",
-          "Video intelligence: a frame-level analysis of 162 Mark Tuan, MILLI and peer videos with performance data joined",
-          "Infrastructure audit: fan data, capture surfaces, pixels, smart links, live footprint and editorial position",
-        ],
-      },
-      goals: {
-        heading: "What the Audit Found",
-        items: [
-          "Thailand is his No. 1 Spotify market at 55,244 listeners, ahead of the U.S., and 47.9% of his TikTok audience. No release has yet been built around it",
-          "Followers moved 7.8% in eighteen months while listeners swung 282,423 to 937,006. Each release lifts the number; the base between releases has not grown across three cycles",
-          "His two biggest tracks and his seventh are collaborations, all ahead of every solo single since 2025",
-          "Five Spotify editorial placements reaching 33,087 people, against MILLI's nineteen reaching 2.5 million",
-          "Across 162 analyzed videos: no collaboration post lets a guest speak, two carry an on-screen ask, and none of his best work contains a Thai marker",
-          "The release page for the last EP captured email and country; the current single's link is DSP buttons only",
-        ],
-      },
-      footnote: "All data in this document was pulled September 3, 2026 unless dated otherwise. Sources: Chartmetric, Spotify platform data, iTunes reporting by fan chart tracking where attributed, Hanteo published tallies, platform audience statistics, live-site inspection of every owned surface, and a dedicated Mark Tuan video intelligence store.",
-    },
-
-    // ===================================================================
-    // 02. Market Position
-    // ===================================================================
-    {
-      type: "vertical",
-      number: "02",
-      navLabel: "Market",
-      title: "Market Position",
-      philosophy: "Positioning is only defensible when it is tiered on live consumption, not reputation. Sixteen artists, one metric spine, three tiers, and one column that decides the whole plan: Thailand.",
-      intro: "The comparison set covers the three groups Mark Tuan is measured against commercially: the Thai-native engines who own the anchor market, the K-pop and Asian-American crossover soloists who share his lane globally, and the GOT7 soloists who share his fandom. Spotify monthly listeners (Chartmetric, Sep 2026) is the spine; the Thailand column is where the plan is decided.",
-      subBlocks: [
-        {
-          label: "A",
-          title: "The Tier Map",
-          featureTiersHeading: "The Comparison Set, Tiered by Monthly Listeners",
-          featureTiers: [
-            {
-              label: "Tier 1 / Regional Engines",
-              artists: [
-                {
-                  name: "LISA",
-                  monthlyListeners: "12.9M Monthly Listeners",
-                  instagram: "16.2M Spotify Followers",
-                  reference: "Amazing Thailand Ambassador; the Thai-born ceiling for the whole region",
-                  note: "Proof of what Thai identity plus global infrastructure produces. Thailand is only 2.8% of her listening because the rest of the world arrived; the documented Thai commerce spike around her came from naming her home province on camera.",
-                },
-                {
-                  name: "Jay Park",
-                  monthlyListeners: "4.8M Monthly Listeners",
-                  instagram: "2.5M Spotify Followers",
-                  reference: "Career trend: growth. Malaysia and the U.S. lead his markets",
-                  note: "The Asian-American soloist benchmark for scale. Thailand is 3.6% of his base, which shows how unusual Mark Tuan's Thai skew is for an artist in this lane.",
-                },
-                {
-                  name: "Ink Waruntorn",
-                  monthlyListeners: "1.8M Monthly Listeners",
-                  instagram: "1.3M Spotify Followers",
-                  reference: "1.70M Thai monthly listeners; +11.5% in 90 days",
-                  note: "The size of the Thai pop audience when it is fully served: 94% of her listening is domestic. The ceiling Mark Tuan's 55K Thai listeners are measured against.",
-                },
-                {
-                  name: "F.HERO",
-                  monthlyListeners: "1.6M Monthly Listeners",
-                  instagram: "1.0M Spotify Followers",
-                  reference: "Founder of MILLI's label; 16 weeks at Official Thailand Chart No. 1 in 2025",
-                  note: "The architect of the Thai rap crossover lane. His Mirror Mirror with MILLI and Changbin is the highest-view Thai-Korean crossover on record and the direct precedent for this release.",
-                },
-              ],
-            },
-            {
-              label: "Tier 2 / Crossover Peers",
-              artists: [
-                {
-                  name: "Jackson Wang",
-                  monthlyListeners: "1.56M Monthly Listeners",
-                  instagram: "4.3M Spotify Followers",
-                  reference: "MAGICMAN 2 opened its Asia leg with two sold-out IMPACT Arena nights, Oct 2025",
-                  note: "The GOT7 solo ceiling. Bangkok is his tour launch city, yet Thailand is only 2.9% of his listening and his 44,605 Thai listeners sit below Mark Tuan's 55,244. He also holds the only prior GOT7-member record with MILLI.",
-                },
-                {
-                  name: "Jeff Satur",
-                  monthlyListeners: "1.50M Monthly Listeners",
-                  instagram: "1.8M Spotify Followers",
-                  reference: "Official Thailand Chart's No. 1 local artist and No. 1 local song of 2024",
-                  note: "The Thai crossover model: 1.03M Thai listeners, sung direct-to-camera short form, brand integrations in the feed. He shared the ICONSIAM countdown stage with Mark Tuan in December 2025.",
-                },
-                {
-                  name: "MILLI",
-                  monthlyListeners: "1.38M Monthly Listeners",
-                  instagram: "503K Spotify Followers",
-                  reference: "19 Spotify editorial placements, 2.5M editorial reach; No. 1 on the 2026 LiFTED 50",
-                  note: "The feature artist. 522K Thai listeners, 6.7M TikTok followers (73.6% Thai), a live Korea crossover with 61K Korean listeners, and an honorary diplomacy role from the Korean Embassy in Thailand. She brings the editorial pipeline this record needs.",
-                },
-                {
-                  name: "Eric Nam",
-                  monthlyListeners: "879K Monthly Listeners",
-                  instagram: "2.1M Spotify Followers",
-                  reference: "+14.2% listeners in 90 days; posts 2.6 times a week on TikTok",
-                  note: "The Asian-American independent soloist who converts a smaller audience into a growing one through cadence and direct address. The operating model, not the audience, is the comparison.",
-                },
-              ],
-            },
-            {
-              label: "Tier 3 / GOT7 Soloists and Contenders",
-              artists: [
-                {
-                  name: "PP KRIT",
-                  monthlyListeners: "566K Monthly Listeners",
-                  instagram: "431K Spotify Followers",
-                  reference: "486K Thai listeners; appeared in a Mark Tuan post in August 2026",
-                  note: "A Thai actor-singer operating at Mark Tuan's scale with 86% of his listening at home. Shows what a Thailand-first audience at this tier looks like.",
-                },
-                {
-                  name: "Mark Tuan",
-                  monthlyListeners: "404K Monthly Listeners",
-                  instagram: "633K Spotify Followers",
-                  reference: "Thailand is market No. 1 at 55,244 listeners; Silhouette reported at iTunes No. 1 in Thailand, Malaysia and the Philippines",
-                  note: "The subject of this document: the largest Thai listener base of the five GOT7 soloists, an outsized social footprint for his streaming tier (13.3M Instagram, 3.1M TikTok, 8.5M X), and a catalog whose biggest tracks are collaborations. That combination is the plan.",
-                },
-                {
-                  name: "BamBam",
-                  monthlyListeners: "216K Monthly Listeners",
-                  instagram: "734K Spotify Followers",
-                  reference: "Thailand is 22.5% of his listening; a top brand endorser in Thailand since 2017",
-                  note: "The reason the GOT7 frame already exists in Thai media. He appeared on stage with Mark Tuan at IMPACT Arena in March 2026 and their joint TikTok did 5.2M views.",
-                },
-                {
-                  name: "JAY B",
-                  monthlyListeners: "211K Monthly Listeners",
-                  instagram: "683K Spotify Followers",
-                  reference: "Two solo releases at iTunes No. 1 in 36 and 41 regions including Thailand",
-                  note: "Fandom converts to day-one purchases across Southeast Asia for every GOT7 soloist. It has not converted to streaming retention for any of them.",
-                },
-                {
-                  name: "YUGYEOM",
-                  monthlyListeners: "121K Monthly Listeners",
-                  instagram: "470K Spotify Followers",
-                  reference: "Appeared in the Alone dance collaboration, Aug 2026",
-                  note: "Thailand is 18.5% of his listening. Thailand ranks first for all five GOT7 soloists, with Malaysia and the U.S. trading second and third between them.",
-                },
-              ],
-            },
-          ],
-          charts: [
-            {
-              kind: "hbars",
-              title: "The Set by Spotify Monthly Listeners",
-              series: [
-                {
-                  name: "Monthly listeners",
-                  points: [
-                    { x: "LISA", y: 12886928 },
-                    { x: "Jay Park", y: 4771263 },
-                    { x: "Ink Waruntorn", y: 1812294 },
-                    { x: "F.HERO", y: 1615782 },
-                    { x: "Jackson Wang", y: 1561728 },
-                    { x: "Jeff Satur", y: 1497753 },
-                    { x: "MILLI", y: 1384073 },
-                    { x: "Eric Nam", y: 878944 },
-                    { x: "PP KRIT", y: 565738 },
-                    { x: "Mark Tuan", y: 404145 },
-                    { x: "BamBam", y: 216294 },
-                    { x: "JAY B", y: 210919 },
-                    { x: "YUGYEOM", y: 120578 },
-                  ],
-                },
-              ],
-              highlightX: ["Mark Tuan"],
-              source: "Chartmetric, Sep 3 2026",
-            },
-            {
-              kind: "hbars",
-              title: "Thailand Monthly Listeners by Artist",
-              subtitle: "The column the plan is built on. Mark Tuan draws more Thai listeners than Jackson Wang, Eric Nam and every other GOT7 soloist; the Thai-native peers show how far the market goes.",
-              series: [
-                {
-                  name: "Thailand listeners",
-                  points: [
-                    { x: "Ink Waruntorn", y: 1703833 },
-                    { x: "F.HERO", y: 1241810 },
-                    { x: "Jeff Satur", y: 1028680 },
-                    { x: "MILLI", y: 521810 },
-                    { x: "PP KRIT", y: 486432 },
-                    { x: "LISA", y: 364794 },
-                    { x: "Jay Park", y: 170451 },
-                    { x: "Mark Tuan", y: 55244 },
-                    { x: "BamBam", y: 48761 },
-                    { x: "Jackson Wang", y: 44605 },
-                    { x: "Eric Nam", y: 30354 },
-                    { x: "JAY B", y: 27170 },
-                    { x: "YUGYEOM", y: 22331 },
-                  ],
-                },
-              ],
-              highlightX: ["Mark Tuan"],
-              source: "Chartmetric, where people listen, Sep 2 2026",
-            },
-            {
-              kind: "hbars",
-              title: "Thailand's Share of Each Artist's Listening",
-              subtitle: "Thailand is the No. 1 market for every GOT7 soloist and for none of the global K-pop soloists. Mark Tuan carries a Thai skew that his lane does not.",
-              unit: "%",
-              series: [
-                {
-                  name: "Thailand share",
-                  points: [
-                    { x: "Jeff Satur", y: 68.7 },
-                    { x: "MILLI", y: 37.7 },
-                    { x: "BamBam", y: 22.5 },
-                    { x: "YUGYEOM", y: 18.5 },
-                    { x: "Mark Tuan", y: 13.7 },
-                    { x: "JAY B", y: 12.9 },
-                    { x: "Jay Park", y: 3.6 },
-                    { x: "Eric Nam", y: 3.5 },
-                    { x: "Jackson Wang", y: 2.9 },
-                    { x: "LISA", y: 2.8 },
-                  ],
-                },
-              ],
-              highlightX: ["Mark Tuan"],
-              source: "Chartmetric, Sep 2026. Thailand listeners divided by total monthly listeners",
-            },
-          ],
-        },
-        {
-          label: "B",
-          title: "How the Set Splits",
-          objective: "Two lanes run through this set, and Mark Tuan sits between them with the strengths of both.",
-          strategy: "The Thai-native lane (Ink Waruntorn, F.HERO, Jeff Satur, MILLI, PP KRIT) draws 38% to 94% of its listening from Thailand and owns the market's editorial, press and brand economy. The global K-pop soloist lane (LISA, Jay Park, Jackson Wang, Eric Nam) draws under 4% from Thailand and indexes the U.S., Malaysia and Indonesia first. The GOT7 soloists are the exception in K-pop: Thailand is the No. 1 market for all five, and Mark Tuan holds the largest Thai base of the five at 55,244. He carries a social footprint several tiers above his streaming base (13.3M Instagram, 3.1M TikTok, 8.5M X) attached to a Thai-first listening pattern that no other artist in his lane has. That is the asset a Thailand-first release promotes to, and the MILLI feature is the bridge into the Thai-native lane's audience and editorial system.",
-          components: {
-            heading: "What the Tiering Says",
-            items: [
-              "The Thai ceiling is real and far away: Jeff Satur draws 1.03M Thai listeners and F.HERO 1.24M from the same 72-million-person market Mark Tuan draws 55K from. Thailand is under-worked, not saturated",
-              "GOT7 soloists convert fandom into iTunes country peaks across Southeast Asia; none has yet converted that into a streaming base that grows cycle over cycle. The gap is structural to the group, and the first soloist to close it wins the lane",
-              "The set's growth stories run on cadence and direct address: Eric Nam is up 14.2% in 90 days and posts 2.6 times a week on TikTok against Mark Tuan's 1.0, with Ink Waruntorn up 11.5% and PP KRIT up 12.3% over the same window",
-              "MILLI is live on New Music Friday in five Southeast Asian markets this week plus Taiwan and Hong Kong. The feature is an editorial asset before a single ad runs",
-            ],
-          },
-        },
-      ],
-      footnote: "Listener and follower figures: Chartmetric, pulled Sep 3, 2026; country readings dated Sep 2, 2026. Chartmetric reports each artist's top ten countries only, so market shares are floors. Tier labels describe consumption scale, not quality.",
-    },
-
-    // ===================================================================
-    // 03. Consumption & Growth Analysis
-    // ===================================================================
-    {
-      type: "vertical",
-      number: "03",
       navLabel: "Consumption",
       title: "Consumption & Growth Analysis",
-      philosophy: "Every release lifts the number, and the lifts have not yet compounded into growth. The plan is built to change the shape of the curve, not just the height of the peak.",
+      philosophy: "Every release lifts the number, and the lifts have not yet compounded into growth. The next release should be built to change the shape of the curve, not just the height of the peak.",
       intro: "This section reads Mark Tuan's Spotify consumption at four depths: the follower-to-listener ratio over eighteen months, era-by-era launch curves, the base between releases, and the collaboration pattern inside his catalog. Every cycle since High As You carried paid support, roughly $5,000 to $10,000 per single and roughly $50,000 on the EP, in YouTube advertising and playlist promotion, so the curves below are what that support has bought. Listener and follower series come from Chartmetric daily data; catalog totals from Spotify track data.",
       subBlocks: [
         {
@@ -317,7 +57,7 @@ export const markTuanPlan: StrategyPlanData = {
           label: "B",
           title: "Launch Curves, Era Over Era",
           objective: "Compare how each release lifted monthly listeners from its own starting point, on identical data.",
-          strategy: "Indexed to the day of release, the Silhouette EP lifted listeners 2.38x by day 30 and peaked at 937,006 on day 32. High As You lifted 1.52x, hold still 1.17x. The current single, Alone, released July 31 into the lowest floor of the entire window and has lifted 1.43x by day 30 with the curve still rising, which is the strongest single launch since High As You and is not yet finished. The lesson is consistent: peaks land three to five weeks after release, so the sustain window is where a campaign earns its money. The plan holds spend for weeks two through six rather than exhausting it on release day.",
+          strategy: "Indexed to the day of release, the Silhouette EP lifted listeners 2.38x by day 30 and peaked at 937,006 on day 32. High As You lifted 1.52x, hold still 1.17x. The current single, Alone, released July 31 into the lowest floor of the entire window and has lifted 1.43x by day 30 with the curve still rising, which is the strongest single launch since High As You and is not yet finished. The lesson is consistent: peaks land three to five weeks after release, so the sustain window is where a campaign earns its money. Any spend behind the next release should be held for weeks two through six rather than exhausted on release day.",
           charts: [
             {
               kind: "line",
@@ -510,11 +250,11 @@ export const markTuanPlan: StrategyPlanData = {
     },
 
     // ===================================================================
-    // 04. Southeast Asia Audience & Targeting
+    // 02. Southeast Asia Audience & Targeting
     // ===================================================================
     {
       type: "audience",
-      number: "04",
+      number: "02",
       navLabel: "Audience",
       title: "Southeast Asia Audience & Targeting",
       intro: "The profile below is built from Chartmetric platform data and Mark Tuan's TikTok, Instagram and YouTube audience statistics (updated Sep 1 to 3, 2026). It sets the initial paid targeting and the content posture for the campaign; splits refine once pixel data accumulates in the first week of paid activity.",
@@ -573,11 +313,11 @@ export const markTuanPlan: StrategyPlanData = {
     },
 
     // ===================================================================
-    // 05. Video Intelligence
+    // 03. Video Intelligence
     // ===================================================================
     {
       type: "contentAnalysis",
-      number: "05",
+      number: "03",
       navLabel: "Content",
       title: "Video Intelligence / 162 Videos, Frame by Frame",
       intro: "Crowd Control Digital indexed 162 videos into a dedicated Mark Tuan intelligence store on TwelveLabs video AI: 62 of his own posts across TikTok and Instagram (his top 40 by views plus his 25 most recent), the top 15 posts from MILLI, and the top posts from BamBam, Jackson Wang, Jeff Satur, Eric Nam, 4EVE and JAY B. Every frame, spoken word, on-screen text and format became queryable, with each video's real performance data joined on. The findings were cross-checked against an independent statistics-only pass over the same accounts; where the two disagreed, the page says so.",
@@ -977,11 +717,11 @@ export const markTuanPlan: StrategyPlanData = {
     },
 
     // ===================================================================
-    // 06. Infrastructure Audit
+    // 04. Infrastructure Audit
     // ===================================================================
     {
       type: "vertical",
-      number: "06",
+      number: "04",
       navLabel: "Infrastructure",
       title: "Infrastructure Audit",
       philosophy: "A 13-million-follower artist whose No. 1 market has never been asked for anything. This section is the itemized gap, verified surface by surface on September 3, 2026.",
