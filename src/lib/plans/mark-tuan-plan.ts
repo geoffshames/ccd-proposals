@@ -3,21 +3,10 @@ import type { StrategyPlanData } from "../plan-context";
 export const markTuanPlanProposal: StrategyPlanData = {
   accentColor: "#FD3737",
   ogImage: "/images/mark-tuan/og-image-plan.png",
-  partSwitch: {
-    currentCode: "PLAN",
-    slug: "mark-tuan",
-    code: "AUDIT",
-    label: "the brand audit",
-    eyebrow: "Part One",
-    endTitle: "The Brand Audit",
-    endBlurb: "The evidence this plan is built on: market position against sixteen peers, consumption and decay era by era, the Southeast Asia audience profile, 162 videos analyzed frame by frame, and the infrastructure audit.",
-    endCta: "Read the audit",
-  },
-
   cover: {
-    label: "Part Two / Southeast Asia Launch Plan",
+    label: "Southeast Asia Launch Plan",
     title: "Night Light",
-    subtitle: "What Crowd Control Digital runs for the MILLI feature, priced two ways, Thailand first. The audit this plan is built on sits in Part One.",
+    subtitle: "What Crowd Control Digital runs for the MILLI feature, priced two ways, Thailand first.",
     partnership: "Transparent Arts \u00d7 Crowd Control Digital",
     prepared: "Geoff Shames / Co-Founder, Crowd Control Digital",
     date: "September 2026",
@@ -41,7 +30,7 @@ export const markTuanPlanProposal: StrategyPlanData = {
       title: "Overview & Objective",
       subtitle: "Thailand already chose Mark Tuan. This plan spends against that, Thailand first, on the two things a budget this size can actually move.",
       body: [
-        "The audit in Part One measured five things. Thailand is his largest Spotify market at 55,244 monthly listeners, ahead of the United States, and it is 47.9% of his TikTok audience. His follower base moved 7.8% in eighteen months while monthly listeners swung between 282,423 and 937,006, and the base he returns to between releases has not grown across three cycles. His two biggest tracks and his seventh are collaborations, all of them ahead of every solo single since 2025. He holds five Spotify editorial placements reaching 33,087 people against MILLI's nineteen reaching 2.5 million. And across 162 analyzed videos, no collaboration post has ever let a guest speak, two carry an on-screen ask, and none of his best-performing work contains a single Thai marker.",
+        "Crowd Control Digital's audit of his position measured five things. Thailand is his largest Spotify market at 55,244 monthly listeners, ahead of the United States, and it is 47.9% of his TikTok audience. His follower base moved 7.8% in eighteen months while monthly listeners swung between 282,423 and 937,006, and the base he returns to between releases has not grown across three cycles. His two biggest tracks and his seventh are collaborations, all of them ahead of every solo single since 2025. He holds five Spotify editorial placements reaching 33,087 people against MILLI's nineteen reaching 2.5 million. And across 162 analyzed videos, no collaboration post has ever let a guest speak, two carry an on-screen ask, and none of his best-performing work contains a single Thai marker.",
         "This plan puts $15,000 to $20,000 against that, and it buys two things: paid media concentrated on Thailand, where his audience already sits and media costs a fraction of Western rates, and a Thai creator wave at the tier where Thai rates make real volume affordable. Creative direction, the asset briefs, the DSP pitch material and the weekly readout sit inside the campaign fee. Everything else the audit surfaced is listed in section 09 as a no-cost recommendation for the artist team, because it costs no money and Crowd Control Digital does not bill for it.",
         "One thing this document does differently: it does not promise a streaming number. Every cycle since High As You has carried paid support, roughly $5,000 to $10,000 per single and roughly $50,000 on the EP, in YouTube advertising and playlist promotion. On that support his last three singles peaked at 1.52x, 1.17x and 1.43x their pre-release listener base, and the EP reached 2.39x. Quoting a figure inside the single band would be selling you what that spend already buys. Section 02 sets out the baseline, the media arithmetic, and an explicit split between what this campaign commits to, what it expects, and what it reports without claiming. The number Crowd Control Digital asks to be judged on is the base the cycle leaves behind, which has not grown across three cycles.",
       ],
@@ -67,7 +56,7 @@ export const markTuanPlanProposal: StrategyPlanData = {
           "Reported, not promised: monthly listeners and streams, shown weekly against the 330K to 550K band his last three singles reached with $5,000 to $10,000 of support each",
         ],
       },
-      footnote: "Every target carries a worst, expected and best case in the verticals below. Streaming is the one variable this plan reports on rather than guarantees. All figures trace to the audit in Part One, pulled September 3, 2026.",
+      footnote: "Every target carries a worst, expected and best case in the verticals below. Streaming is the one variable this plan reports on rather than guarantees. All figures trace to Crowd Control Digital's audit, data pulled September 3, 2026.",
     },
 
     // ===================================================================
@@ -231,7 +220,7 @@ export const markTuanPlanProposal: StrategyPlanData = {
         },
       ],
       messaging: [
-        "Audit before prescription: every recommendation in the verticals traces to a measured gap in the audit in Part One.",
+        "Audit before prescription: every recommendation in the verticals traces to a measured gap in the audit.",
         "Streams are not promised. Every target carries a worst, expected and best case, and streaming is the one variable this plan reports on rather than guarantees.",
         "Test, then scale: every paid line opens at roughly 30% of its budget and earns the rest on data inside the first week.",
         "Thailand is promoted like the No. 1 market it already is, not like a future expansion.",
@@ -412,13 +401,13 @@ export const markTuanPlanProposal: StrategyPlanData = {
       navLabel: "Creative",
       title: "Vertical 3 / Creative Direction",
       philosophy: "Inside the campaign fee, not a media line. Crowd Control Digital briefs a short list of assets before launch, Mark films whatever he wants alongside them, and paid tests both. Nothing here replaces his instincts; it gives them a control group.",
-      intro: "The paid budget can only amplify what exists, so this vertical runs three lanes side by side rather than one. Lane one is a short list of assets Crowd Control Digital briefs before the shoot, drawn from what is working for his peers right now and from the six video intelligence findings in Part One. Lane two is whatever Mark films on his own, at his own cadence. Lane three is MILLI's posts about the record. All three go into the first week of paid; the winners take the scale budget. The briefs land before the shoot, not after it.",
+      intro: "The paid budget can only amplify what exists, so this vertical runs three lanes side by side rather than one. Lane one is a short list of assets Crowd Control Digital briefs before the shoot, drawn from what is working for his peers right now and from the six findings of a 162-video analysis of his own and his peers' content. Lane two is whatever Mark films on his own, at his own cadence. Lane three is MILLI's posts about the record. All three go into the first week of paid; the winners take the scale budget. The briefs land before the shoot, not after it.",
       subBlocks: [
         {
           label: "A",
           title: "Lane One: The Briefed Assets",
           objective: "Suggest a few specific assets that do what his peers' winners do and what his own catalog has not tried, so there is something to test his own posts against.",
-          strategy: "Five briefed assets, each tied to a finding in Part One and to a format that is working for a peer right now. A two-hander in which MILLI raps to camera in Thai and Mark reacts, because 26 of his collaboration posts contain no guest voice and MILLI opens nine of fifteen of her own videos on her face. A direct-address introduction of the record in Mark's own voice with Thai subtitles, because Jeff Satur and BamBam sell direct to camera and his catalog has never introduced a record that way. The outfit switch at its proven spec, set to the hook, because it is his own best format. A transition video on the beat switch into MILLI's verse, which is the template the creator wave copies. And one asset shot in an identifiably Thai setting, because his best-performing work contains none. These are suggestions with evidence behind them, delivered as a shoot list before the content day, and they run alongside whatever he films himself.",
+          strategy: "Five briefed assets, each tied to an audit finding and to a format that is working for a peer right now. A two-hander in which MILLI raps to camera in Thai and Mark reacts, because 26 of his collaboration posts contain no guest voice and MILLI opens nine of fifteen of her own videos on her face. A direct-address introduction of the record in Mark's own voice with Thai subtitles, because Jeff Satur and BamBam sell direct to camera and his catalog has never introduced a record that way. The outfit switch at its proven spec, set to the hook, because it is his own best format. A transition video on the beat switch into MILLI's verse, which is the template the creator wave copies. And one asset shot in an identifiably Thai setting, because his best-performing work contains none. These are suggestions with evidence behind them, delivered as a shoot list before the content day, and they run alongside whatever he films himself.",
           components: {
             heading: "The Five Briefed Assets",
             items: [

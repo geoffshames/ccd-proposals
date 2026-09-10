@@ -3,21 +3,10 @@ import type { StrategyPlanData } from "../plan-context";
 export const markTuanPlan: StrategyPlanData = {
   accentColor: "#FD3737",
   ogImage: "/images/mark-tuan/og-image.png",
-  partSwitch: {
-    currentCode: "AUDIT",
-    slug: "mark-tuan-plan",
-    code: "PLAN",
-    label: "the Southeast Asia launch plan",
-    eyebrow: "Part Two",
-    endTitle: "The Southeast Asia Launch Plan",
-    endBlurb: "What Crowd Control Digital runs against these findings: paid media concentrated on Thailand, a Thai creator wave on two sound cuts, and the creative direction and reporting that sit inside the fee. Priced two ways.",
-    endCta: "Read the launch plan",
-  },
-
   cover: {
-    label: "Part One / Brand Audit",
+    label: "Brand Audit",
     title: "Mark Tuan",
-    subtitle: "Where Mark Tuan actually stands across Southeast Asia, measured across streaming, consumption, audience, video and infrastructure. The launch plan for \"Night Light\" featuring MILLI sits in Part Two.",
+    subtitle: "Where Mark Tuan actually stands across Southeast Asia, measured across streaming, consumption, audience, video and infrastructure. Prepared ahead of \"Night Light\" featuring MILLI.",
     partnership: "Transparent Arts \u00d7 Crowd Control Digital",
     prepared: "Geoff Shames / Co-Founder, Crowd Control Digital",
     date: "September 2026",
@@ -33,13 +22,13 @@ export const markTuanPlan: StrategyPlanData = {
       number: "01",
       navLabel: "Overview",
       title: "Overview & Objective",
-      subtitle: "Thailand chose Mark Tuan on its own. Part One measures how far that goes and where the growth has stalled. Part Two builds one release around it.",
+      subtitle: "Thailand chose Mark Tuan on its own. This audit measures how far that goes and where the growth has stalled.",
       body: [
         "Thailand is Mark Tuan's largest Spotify market at 55,244 monthly listeners, ahead of the United States. It is 47.9% of his TikTok audience and 21.3% of his Instagram audience. He holds the largest Thai listener base of any GOT7 soloist and more Thai listeners than Jackson Wang, whose overall audience is nearly four times his size. The last twelve months added a Thai management partnership, a performance slot on the ICONSIAM Amazing Thailand Countdown's Global Phenomenon Stage, a Thai media tour, and two nights at IMPACT Arena where he performed a Thai-language cover and spoke Thai from the stage. The market has already chosen him, and no release has yet been built around it.",
-        "What has not happened yet is growth that compounds. Each release lifts the number and the lift has not carried into the next cycle: monthly listeners have swung between 282,423 and 937,006 over eighteen months while the follower base moved 7.8%, and the base he returns to between releases has not grown across three cycles. He sits in five Spotify editorial playlists with a combined reach of 33,087; MILLI sits in nineteen with a reach of 2.5 million. \"Night Light\" featuring MILLI is the right record for exactly this gap: a Thai verse from the artist who topped the 2026 LiFTED 50 and reached the Show Me The Money 12 final, on a song shaped for the short-form formats that already work for him. This document sizes that opportunity across market position, consumption, audience, video and infrastructure. The launch plan built on it, priced at $15,000 to $20,000 of media and creator spend, is in Part Two.",
+        "What has not happened yet is growth that compounds. Each release lifts the number and the lift has not carried into the next cycle: monthly listeners have swung between 282,423 and 937,006 over eighteen months while the follower base moved 7.8%, and the base he returns to between releases has not grown across three cycles. He sits in five Spotify editorial playlists with a combined reach of 33,087; MILLI sits in nineteen with a reach of 2.5 million. \"Night Light\" featuring MILLI is the right record for exactly this gap: a Thai verse from the artist who topped the 2026 LiFTED 50 and reached the Show Me The Money 12 final, on a song shaped for the short-form formats that already work for him. This document sizes that opportunity across market position, consumption, audience, video and infrastructure.",
       ],
       supports: {
-        heading: "What Part One Covers",
+        heading: "What This Audit Covers",
         items: [
           "Market position against sixteen regional and K-pop soloist peers, tiered on live consumption data",
           "Consumption and growth analysis: era-by-era launch curves, the base between releases, the collaboration pattern in his catalog, playlists and markets",
@@ -59,7 +48,7 @@ export const markTuanPlan: StrategyPlanData = {
           "The release page for the last EP captured email and country; the current single's link is DSP buttons only",
         ],
       },
-      footnote: "All data in this document was pulled September 3, 2026 unless dated otherwise. Sources: Chartmetric, Spotify platform data, iTunes reporting by fan chart tracking where attributed, Hanteo published tallies, platform audience statistics, live-site inspection of every owned surface, and a dedicated Mark Tuan video intelligence store. The launch plan built on these findings is in Part Two.",
+      footnote: "All data in this document was pulled September 3, 2026 unless dated otherwise. Sources: Chartmetric, Spotify platform data, iTunes reporting by fan chart tracking where attributed, Hanteo published tallies, platform audience statistics, live-site inspection of every owned surface, and a dedicated Mark Tuan video intelligence store.",
     },
 
     // ===================================================================
@@ -270,7 +259,7 @@ export const markTuanPlan: StrategyPlanData = {
           label: "B",
           title: "How the Set Splits",
           objective: "Two lanes run through this set, and Mark Tuan sits between them with the strengths of both.",
-          strategy: "The Thai-native lane (Ink Waruntorn, F.HERO, Jeff Satur, MILLI, PP KRIT) draws 38% to 94% of its listening from Thailand and owns the market's editorial, press and brand economy. The global K-pop soloist lane (LISA, Jay Park, Jackson Wang, Eric Nam) draws under 4% from Thailand and indexes the U.S., Malaysia and Indonesia first. The GOT7 soloists are the exception in K-pop: Thailand is the No. 1 market for all five, and Mark Tuan holds the largest Thai base of the five at 55,244. He carries a social footprint several tiers above his streaming base (13.3M Instagram, 3.1M TikTok, 8.5M X) attached to a Thai-first listening pattern that no other artist in his lane has. That is the asset Part Two promotes to, and the MILLI feature is the bridge into the Thai-native lane's audience and editorial system.",
+          strategy: "The Thai-native lane (Ink Waruntorn, F.HERO, Jeff Satur, MILLI, PP KRIT) draws 38% to 94% of its listening from Thailand and owns the market's editorial, press and brand economy. The global K-pop soloist lane (LISA, Jay Park, Jackson Wang, Eric Nam) draws under 4% from Thailand and indexes the U.S., Malaysia and Indonesia first. The GOT7 soloists are the exception in K-pop: Thailand is the No. 1 market for all five, and Mark Tuan holds the largest Thai base of the five at 55,244. He carries a social footprint several tiers above his streaming base (13.3M Instagram, 3.1M TikTok, 8.5M X) attached to a Thai-first listening pattern that no other artist in his lane has. That is the asset a Thailand-first release promotes to, and the MILLI feature is the bridge into the Thai-native lane's audience and editorial system.",
           components: {
             heading: "What the Tiering Says",
             items: [
@@ -300,7 +289,7 @@ export const markTuanPlan: StrategyPlanData = {
           label: "A",
           title: "Followers and Listeners Have Decoupled",
           objective: "Measure whether the audience each release reaches is turning into a growing follower base.",
-          strategy: "The follower-to-listener ratio runs from 0.74 at the Silhouette peak to 2.23 at the July 2026 base, a three-fold swing in eight months. Read correctly, that is not fandom conversion moving; it is listening returning to base between releases against a follower base that barely moves. Followers rose from 586,637 to 632,618 over eighteen months (+7.8%, a near-straight line) while monthly listeners swung between 282,423 and 937,006. Release cycles move the listener line; the follower line has not yet followed it. Part Two is built to move both, and to be judged on the one that compounds.",
+          strategy: "The follower-to-listener ratio runs from 0.74 at the Silhouette peak to 2.23 at the July 2026 base, a three-fold swing in eight months. Read correctly, that is not fandom conversion moving; it is listening returning to base between releases against a follower base that barely moves. Followers rose from 586,637 to 632,618 over eighteen months (+7.8%, a near-straight line) while monthly listeners swung between 282,423 and 937,006. Release cycles move the listener line; the follower line has not yet followed it. A release built around this market has to move both, and should be judged on the one that compounds.",
           charts: [
             {
               kind: "line",
@@ -409,7 +398,7 @@ export const markTuanPlan: StrategyPlanData = {
                 },
               ],
               highlightX: ["Post-Silhouette\nJul 2026"],
-              note: "The base is the number Part Two asks to be judged on: above 350K after this cycle, the first cycle to leave it higher than it found it.",
+              note: "The base is the number the next cycle should be judged on: above 350K after it closes, the first cycle to leave it higher than it found it.",
               source: "Chartmetric daily listener series",
             },
           ],
@@ -996,7 +985,7 @@ export const markTuanPlan: StrategyPlanData = {
       navLabel: "Infrastructure",
       title: "Infrastructure Audit",
       philosophy: "A 13-million-follower artist whose No. 1 market has never been asked for anything. This section is the itemized gap, verified surface by surface on September 3, 2026.",
-      intro: "Everything below is what a release converts through. The audit opened every owned surface and read the page code for pixels and integrations. Each item is stated as found. Nothing in this section is a Crowd Control Digital line item; it is the map the plan in Part Two runs on and the short list of fixes the artist team can make at no cost.",
+      intro: "Everything below is what a release converts through. The audit opened every owned surface and read the page code for pixels and integrations. Each item is stated as found. Nothing in this section is a Crowd Control Digital line item; it is the map any release runs on and the short list of fixes the artist team can make at no cost.",
       subBlocks: [
         {
           label: "A",
@@ -1057,7 +1046,7 @@ export const markTuanPlan: StrategyPlanData = {
           },
         },
       ],
-      footnote: "Infrastructure facts verified against live sites, page code, archived captures, platform notices and published coverage, September 3, 2026. iTunes country peaks are reported by fan chart tracking rather than by a published industry chart and are attributed as such. This is the last section of Part One; the launch plan built on these findings is in Part Two.",
+      footnote: "Infrastructure facts verified against live sites, page code, archived captures, platform notices and published coverage, September 3, 2026. iTunes country peaks are reported by fan chart tracking rather than by a published industry chart and are attributed as such.",
     },
   ],
 };
