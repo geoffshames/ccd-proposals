@@ -4,6 +4,8 @@ import Image from "next/image";
 import { motion, useScroll, useSpring } from "framer-motion";
 import { useEffect, useState, type ReactNode } from "react";
 import {
+  basics,
+  basicsIntro,
   closing,
   disclaimer,
   facts,
@@ -119,7 +121,7 @@ function IdeasNavigation() {
           />
         </a>
         <div className={styles.navLinks}>
-          {ideasNav.slice(0, 4).map((item) => (
+          {ideasNav.slice(0, 5).map((item) => (
             <a
               key={item.id}
               href={`#${item.id}`}
@@ -380,10 +382,63 @@ export function ChampionTeamwearIdeasClient() {
           ))}
         </div>
 
-        {/* 03 — SEQUENCE ----------------------------------------------- */}
-        <section id="sequence" className={styles.section}>
+        {/* 03 — THE BASICS --------------------------------------------- */}
+        <section id="basics" className={styles.section}>
           <SectionHead
             index="03"
+            eyebrow={basicsIntro.eyebrow}
+            note={basicsIntro.note}
+            title={
+              <>
+                The obvious stuff, <em>done properly.</em>
+              </>
+            }
+            body={basicsIntro.body}
+          />
+
+          <div className={styles.basicsGrid}>
+            {basics.map((item, index) => (
+              <Reveal
+                className={styles.basicCard}
+                key={item.code}
+                delay={(index % 3) * 0.05}
+              >
+                <div className={styles.basicTop}>
+                  <span>{item.code}</span>
+                  <span>{item.channel}</span>
+                </div>
+                <h3>{item.title}</h3>
+                <p>{item.body}</p>
+                <div className={styles.basicMeta}>
+                  <div>
+                    <span>Effort</span>
+                    <strong>{item.effort}</strong>
+                  </div>
+                  <div>
+                    <span>Start</span>
+                    <strong>{item.start}</strong>
+                  </div>
+                  <div className={styles.basicOwner}>
+                    <span>Who runs it</span>
+                    <strong>{item.owner}</strong>
+                  </div>
+                </div>
+              </Reveal>
+            ))}
+          </div>
+
+          <Reveal>
+            <div className={styles.distinction}>
+              <span>The honest note</span>
+              <p>{basicsIntro.closing}</p>
+            </div>
+          </Reveal>
+        </section>
+
+        {/* 04 — SEQUENCE ----------------------------------------------- */}
+        <section id="sequence" className={styles.section}>
+          <SectionHead
+            index="04"
             eyebrow={sequenceIntro.eyebrow}
             note={sequenceIntro.note}
             title={
@@ -422,10 +477,10 @@ export function ChampionTeamwearIdeasClient() {
           </div>
         </section>
 
-        {/* 04 — SOURCES ------------------------------------------------ */}
+        {/* 05 — SOURCES ------------------------------------------------ */}
         <section id="sources" className={styles.section}>
           <SectionHead
-            index="04"
+            index="05"
             eyebrow="Sources"
             note="Public data / July audit"
             title={

@@ -36,6 +36,16 @@ export type Idea = {
   watch: string;
 };
 
+export type Basic = {
+  code: string;
+  title: string;
+  body: string;
+  channel: string;
+  effort: "Low" | "Medium";
+  start: string;
+  owner: string;
+};
+
 export type Play = {
   code: string;
   name: string;
@@ -60,6 +70,7 @@ export const ideasMeta = {
 export const ideasNav: readonly NavItem[] = [
   { id: "premise", label: "Premise" },
   { id: "ideas", label: "Ideas" },
+  { id: "basics", label: "Basics" },
   { id: "sequence", label: "Sequence" },
   { id: "sources", label: "Sources" },
   { id: "contact", label: "Contact" },
@@ -447,14 +458,150 @@ export const ideas: readonly Idea[] = [
 ];
 
 /* ------------------------------------------------------------------ */
-/* 03 — Sequence                                                       */
+/* 03 — The basics                                                     */
+/* ------------------------------------------------------------------ */
+
+export const basicsIntro = {
+  eyebrow: "The basics",
+  note: "Traditional B2B / easy to start",
+  body:
+    "None of this is clever, and that's the point. These are the standard ways a team dealer fills the pipeline, most of them cheap, most of them startable this month, and most of them run by the sales team with us behind them. They sit underneath whichever big ideas you pick.",
+  closing:
+    "Most of these need a list, a calendar and someone to own the follow-up. That's the real work, and it's the first thing we'd set up.",
+} as const;
+
+export const basics: readonly Basic[] = [
+  {
+    code: "01",
+    title: "Build the list",
+    body:
+      "A clean prospect list of every high-school athletic department, club director and cheer or dance gym in the target states, with the coach's name, the sport and when they order. Reps work it by ordering deadline, not alphabetically.",
+    channel: "Outbound",
+    effort: "Low",
+    start: "This month",
+    owner: "Crowd Control builds it, reps work it",
+  },
+  {
+    code: "02",
+    title: "Mail the catalog",
+    body:
+      "The catalog we're building is a sales piece, not just a reference. Print a run for the top couple of thousand programs and get it on the AD's desk a month before their ordering window, with the rep's name and number on the back cover.",
+    channel: "Direct mail",
+    effort: "Low",
+    start: "When the catalog ships",
+    owner: "Together",
+  },
+  {
+    code: "03",
+    title: "Free samples, on purpose",
+    body:
+      "You already offer free 60-day sizing samples. Turn that into the offer: put it on the homepage, in the ads, in every outbound email, and make the sample box itself a sales piece with a sport sell sheet and the rep's card inside.",
+    channel: "Offer",
+    effort: "Low",
+    start: "This month",
+    owner: "Champion Teamwear",
+  },
+  {
+    code: "04",
+    title: "A rep email cadence",
+    body:
+      "A five-touch sequence every rep sends new prospects: intro, samples offer, a program story, the ordering deadline, then a call ask. Written once, personalized per sport, tracked in the CRM so nobody falls through.",
+    channel: "Outbound",
+    effort: "Low",
+    start: "This month",
+    owner: "Crowd Control writes it, reps send it",
+  },
+  {
+    code: "05",
+    title: "Search ads on buying keywords",
+    body:
+      "Coaches Google \"custom volleyball uniforms\" and \"team spirit wear store\" when they're ready to buy. Own those terms and the Champion brand terms, send the click to a sport landing page or the look builder, and retarget everyone who visits.",
+    channel: "Paid search",
+    effort: "Low",
+    start: "Next 30 days",
+    owner: "Crowd Control",
+  },
+  {
+    code: "06",
+    title: "Target the job title",
+    body:
+      "LinkedIn and Meta both let you reach athletic directors, coaches and club owners by title and location. Small budget, tight geography, timed to each sport's ordering season, with samples as the hook.",
+    channel: "Paid social",
+    effort: "Low",
+    start: "Next 30 days",
+    owner: "Crowd Control",
+  },
+  {
+    code: "07",
+    title: "Show up where coaches meet",
+    body:
+      "State athletic director associations, the NIAAA national conference, the AVCA convention for volleyball, cheer and dance coach clinics. A booth with samples, a look-builder demo and a sign-up sheet does more than a month of cold email.",
+    channel: "Events",
+    effort: "Medium",
+    start: "Next season",
+    owner: "Reps on the floor, Crowd Control on materials",
+  },
+  {
+    code: "08",
+    title: "Program spotlights",
+    body:
+      "Short case studies from current cheer, dance and gymnastics customers: the program, the order, a photo, and what the coach actually said. One a month on the site, in the newsletter, and printed for the reps.",
+    channel: "Content",
+    effort: "Low",
+    start: "This month",
+    owner: "Crowd Control",
+  },
+  {
+    code: "09",
+    title: "Ask for the review",
+    body:
+      "After every delivered order, a one-tap request for a Google review and a team photo. The reviews show up when the next coach searches, and the photos become content.",
+    channel: "Reputation",
+    effort: "Low",
+    start: "This month",
+    owner: "Champion ops, Crowd Control sets it up",
+  },
+  {
+    code: "10",
+    title: "An early-order incentive",
+    body:
+      "A clear deadline and a reason to hit it: order by the date and get free numbering, a coach's polo, or priority production. Coaches respond to deadlines more than they respond to discounts.",
+    channel: "Offer",
+    effort: "Low",
+    start: "Next season",
+    owner: "Champion Teamwear",
+  },
+  {
+    code: "11",
+    title: "Win back lapsed programs",
+    body:
+      "Every program that ordered two or three seasons ago and stopped gets a rep call and a we'd-love-you-back offer. It's the cheapest new customer there is, and the order history tells you exactly what to pitch.",
+    channel: "Outbound",
+    effort: "Low",
+    start: "This month",
+    owner: "Reps, with Crowd Control pulling the list",
+  },
+  {
+    code: "12",
+    title: "Be the official partner",
+    body:
+      "Sponsor a state cheer championship, a club volleyball league or a regional tournament series as the official uniform partner. Logo on the bracket, samples at the event, and a code for every team in it.",
+    channel: "Sponsorship",
+    effort: "Medium",
+    start: "Next season",
+    owner: "Champion Teamwear",
+  },
+];
+
+/* ------------------------------------------------------------------ */
+/* 04 — Sequence                                                       */
 /* ------------------------------------------------------------------ */
 
 export const sequenceIntro = {
   eyebrow: "How we'd sequence it",
   note: "Three ways to run the next twelve months",
   body:
-    "The ideas stack in a particular order. These are the three combinations we'd actually recommend, and the trade-off each one makes.",
+    "The ideas stack in a particular order. These are the three combinations we'd actually recommend, and the trade-off each one makes. The basics run underneath all three.",
 } as const;
 
 export const plays: readonly Play[] = [
@@ -491,7 +638,7 @@ export const plays: readonly Play[] = [
 ];
 
 /* ------------------------------------------------------------------ */
-/* 04 — Sources                                                        */
+/* 05 — Sources                                                        */
 /* ------------------------------------------------------------------ */
 
 export const sources: readonly Source[] = [

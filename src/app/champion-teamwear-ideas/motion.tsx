@@ -172,14 +172,14 @@ export function CinematicHero() {
             </span>
           </h1>
           <p className={styles.heroLead}>
-            Six ideas for signing up more youth teams, clubs and schools.
-            Each one is built to win over the coach who signs off on the
-            order and the kid who has to wear it.
+            Six ideas for signing up more youth teams, clubs and schools,
+            plus the basics that run underneath them. All built to win over
+            the coach who signs off on the order and the kid who wears it.
           </p>
           <div className={styles.heroStats}>
             <div>
               <strong>06</strong>
-              <span>Ideas on the table</span>
+              <span>Big ideas on the table</span>
             </div>
             <div>
               <strong>8.3M</strong>
