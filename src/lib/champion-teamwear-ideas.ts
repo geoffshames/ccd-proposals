@@ -161,8 +161,8 @@ export const known = {
     },
     {
       code: "04",
-      title: "The website is mid-move.",
-      body: "Legacy hosts, a new commerce platform on the way, and a catalog rebuild in flight. Anything we launch has to be modular enough to survive the migration.",
+      title: "The website stays with your team.",
+      body: "A new commerce platform is on the way and a catalog rebuild is in flight, and your team owns the site. Everything here is built to plug into it, not to rebuild it.",
     },
   ] satisfies readonly KnownSignal[],
 } as const;
@@ -198,7 +198,7 @@ export const ideas: readonly Idea[] = [
       "Design the reveal format: a fifteen-second template built around the drape pull, the slow detail shot and the team going nuts, plus a countdown sticker set and a new-look-loading post for the team account.",
       "Drop a reveal kit into every team order. A QR card in the box opens a mobile page with the template, cleared audio and one-tap upload.",
       "Feature the best reveals every week on Champion's channels and in the coach newsletter. Programs compete for Reveal of the Week.",
-      "Retarget everyone who watched a reveal within a few miles of that school with one message: your program's turn. It links to the look builder.",
+      "Retarget everyone who watched a reveal within a few miles of that school with one message: your program's turn. It links to the free sizing samples and the rep locator.",
       "Every reveal in a territory gives the rep a call list: the neighboring programs in the same conference.",
     ],
     why:
@@ -226,54 +226,8 @@ export const ideas: readonly Idea[] = [
       "Minors on camera. The kit needs a school or club-side consent step and a no-faces version of the template, and reveal timing can't get ahead of production dates.",
   },
   {
-    id: "builder",
-    number: "02",
-    name: "Build My Look in 60 Seconds",
-    scale: "ENGINE",
-    hook: "Upload a logo, pick your colors, and see your team in Champion before you ever talk to anyone.",
-    logline:
-      "Relaunch the Coach's Assistant as an AI-powered look builder. A coach drops in a logo and school colors and gets photoreal mockups on real Champion garments for every sport they run, then turns any look into a live team store or a rep quote. It's the top of the funnel, the demo and the lead form in one tool.",
-    image: "/champion-ideas/builder.jpg",
-    imageAlt:
-      "A coach's hands over a tablet on a locker-room bench showing a glowing uniform mockup beside a real red and black jersey",
-    format: "Web tool on the new commerce platform",
-    window: "Prototype in four to six weeks, ships with the new site",
-    wins: "Coaches, club directors, athletic directors",
-    signal: "Looks built, stores opened, quotes requested",
-    mechanic: [
-      "The coach lands on one page: upload a logo, pick two colors, check the sports the program runs.",
-      "A generative mockup engine renders the school's look on a curated set of Champion pieces in a few seconds: jersey, warm-up, hoodie, cheer shell. Photoreal, on-body, ready to share.",
-      "Every look can be saved and sent. Send to my AD, send to the boosters, post to the team. Each share captures the next person in the program.",
-      "Two ways out: open a team store for self-serve spirit wear, or get a rep quote for custom uniforms. The tool routes by order type.",
-      "Looks feed the CRM. An abandoned build triggers a rep follow-up with the coach's own mockups attached.",
-    ],
-    why:
-      "Every order starts with a picture in the coach's head, and right now that picture gets made by whoever the coach already knows. Put it in their hands in the first minute, in Champion pieces, in their colors, and the sales cycle gets a lot shorter. It also gives you something concrete to point to on the technology side.",
-    compounding:
-      "Every share is a warm intro to the next decision-maker in the program, with the product already visualized.",
-    proof: {
-      claim:
-        "Shopify reports that merchants who add 3D and visual product content see conversion lifts of up to 94%, and 80% of shoppers in 3D Cloud's 2025 study said visual models made them more confident buying.",
-      source: "Shopify via DesignRush / 3D Cloud",
-    },
-    build: [
-      "Look-builder experience and render pipeline",
-      "Garment templates and decoration rules",
-      "Share and capture flows",
-      "CRM and rep routing",
-      "Integration spec for the new site",
-    ],
-    clientSide: [
-      "Product templates and what can actually be decorated",
-      "Pricing logic for quotes",
-      "Rep territory map",
-    ],
-    watch:
-      "Render accuracy. Mockups have to match what production can actually make, with guardrails on colors, placements and licensed logos.",
-  },
-  {
     id: "booster",
-    number: "03",
+    number: "02",
     name: "The Booster Engine",
     scale: "ENGINE",
     hook: "Make every team store the program's easiest fundraiser.",
@@ -319,7 +273,7 @@ export const ideas: readonly Idea[] = [
   },
   {
     id: "calendar",
-    number: "04",
+    number: "03",
     name: "Own the Season Calendar",
     scale: "ENGINE",
     hook: "Be in the coach's inbox the week before the decision. Every season, every sport.",
@@ -334,7 +288,7 @@ export const ideas: readonly Idea[] = [
     signal: "List growth, quote requests around deadlines, reorders",
     mechanic: [
       "Map the ordering calendar for each sport and each buyer: when tryouts end, when rosters lock, when an order has to ship to make game one.",
-      "Launch two lead magnets: a season ordering calendar in print and digital, and the 60-day sizing samples you already offer, both captured through the look builder and the rep locator.",
+      "Launch two lead magnets: a season ordering calendar in print and digital, and the 60-day sizing samples you already offer, both captured through the site and the rep locator.",
       "Build the flows: new-coach welcome, roster-lock reminder, a reorder nudge when last season's order gets old, and a your-samples-are-waiting sequence.",
       "Send a monthly coach newsletter: one design drop, one program story, one deadline.",
       "Give the reps every send, so the follow-up call lands the same day the email does.",
@@ -365,12 +319,12 @@ export const ideas: readonly Idea[] = [
   },
   {
     id: "beachhead",
-    number: "05",
+    number: "04",
     name: "The Beachhead Play",
     scale: "PLAY",
     hook: "Win one traditional sport all the way before trying to win them all.",
     logline:
-      "The core is cheer, dance and gymnastics; the goal is traditional team sports. Instead of spreading across every sport, pick one where the schools, the parents and the culture already overlap (our pick is girls' volleyball) and run the full playbook there for one season in a few states: reveals, look builder, booster stores, calendar, and a targeted paid push.",
+      "The core is cheer, dance and gymnastics; the goal is traditional team sports. Instead of spreading across every sport, pick one where the schools, the parents and the culture already overlap (our pick is girls' volleyball) and run the full playbook there for one season in a few states: reveals, booster stores, the calendar, referrals, and a targeted paid push.",
     image: "/champion-ideas/beachhead.jpg",
     imageAlt:
       "A high-school volleyball player in a black jersey with a red number rising at the net under gym lights",
@@ -380,7 +334,7 @@ export const ideas: readonly Idea[] = [
     signal: "Programs signed in the test states versus the rest of the country",
     mechanic: [
       "Pick three states with dense club volleyball and big high-school participation. Texas, California and Ohio lead the country in total athletes.",
-      "Build a volleyball capsule: sublimated jerseys, warm-ups, and the practice and travel pieces the sport actually wears, pre-loaded in the look builder.",
+      "Build a volleyball capsule: sublimated jerseys, warm-ups, and the practice and travel pieces the sport actually wears, with mockups ready for the reps to send.",
       "Run paid to coaches and parents in those states, timed to club tryouts and high-school preseason. The creative is reveal content from the first pilot teams.",
       "Sponsor two or three regional club tournaments with a sizing and reveal setup that generates content and store sign-ups.",
       "Read the results at the end of the season: cost per program signed, reorder intent, share of the sport's conversation. Then pick the second sport.",
@@ -411,12 +365,12 @@ export const ideas: readonly Idea[] = [
   },
   {
     id: "schools",
-    number: "06",
+    number: "05",
     name: "Champion Schools",
     scale: "FLAGSHIP",
     hook: "Land in one sport. Expand to the whole building.",
     logline:
-      "A whole-school partnership. One agreement covers every team's uniforms, the spirit store, PE and staff gear, with a school-wide give-back and one point of contact. Get in through the sport Champion already wins, then use a Bring Your Rival referral (a coach or AD who refers another program gets credit toward their next order) to move district by district.",
+      "A whole-school partnership. One agreement covers every team's uniforms, the spirit store, PE and staff gear, with a school-wide give-back and one point of contact. Get in through the sport Champion already wins, then use Bring Your Rival (idea 06) to move district by district.",
     image: "/champion-ideas/schools.jpg",
     imageAlt:
       "A rolling rack holding one matching red and black uniform from every sport in a school hallway of dark lockers",
@@ -427,7 +381,7 @@ export const ideas: readonly Idea[] = [
     mechanic: [
       "Define the Champion Schools package: uniforms across sports, a spirit store with give-back, PE and staff gear, guaranteed delivery before game one, and one rep.",
       "Start with existing cheer and dance customers. You already trust us for one team; here's the whole-school offer.",
-      "Bring Your Rival. Every referral that turns into a program earns store credit for the referring school, with a leaderboard by conference.",
+      "Run Bring Your Rival inside the program, so every school you sign helps sign the next one in the district.",
       "Give the AD a visible win: a school-wide reveal day, the school's crest in the design library, and a partner page they can send parents to.",
       "Expand by district. Once two schools in a district are in, pitch the district athletics office directly.",
     ],
@@ -454,6 +408,52 @@ export const ideas: readonly Idea[] = [
     ],
     watch:
       "Capacity. A whole-school program promises delivery before game one across every sport, and the site currently warns about longer processing times. Fix that story before selling this one.",
+  },
+  {
+    id: "rival",
+    number: "06",
+    name: "Bring Your Rival",
+    scale: "ENGINE",
+    hook: "Every school you sign helps you sign the school across town.",
+    logline:
+      "A referral program built on the one thing every program already has: a rival. A coach or AD who brings in another program earns credit toward their next order, the new program gets a first-order perk, and a public leaderboard by conference keeps score. It runs on the customers you already have, costs nothing until it works, and turns every reveal, every booster check and every rep visit into an ask.",
+    image: "/champion-ideas/rival.jpg",
+    imageAlt:
+      "Two rival jerseys, one black and one white, both with red numbers, hanging side by side on a chain-link fence under stadium lights",
+    format: "Referral program with a public leaderboard",
+    window: "Four weeks to launch, then always on",
+    wins: "Coaches and ADs, through their own network",
+    signal: "Referrals submitted, referrals that became orders, and what a referred program costs versus a paid one",
+    mechanic: [
+      "Set the deal. The referring program earns store credit or a cut of the new program's first order, and the new program gets a first-order perk like free numbering or a coach's kit.",
+      "Give every coach a personal referral link and a printed card. Reps carry them, the reveal kit includes one, and every booster payout email has one.",
+      "Publish a leaderboard by conference and by state showing which programs have brought in the most schools. Coaches are competitive. Use it.",
+      "Time the ask to the reveal. The week a team's new uniforms drop is the week rival coaches are asking who made them.",
+      "Reps close the loop. Every referral becomes a warm call within 48 hours, with the referring coach named in the first sentence.",
+    ],
+    why:
+      "A cold email to a coach is a stranger asking for a meeting. A referral from the coach across town is a peer saying it worked. High-school sports already runs on rivalry and word of mouth, and the dealer conversation happens in the same hallways, conferences and group chats coaches already share. Right now nobody is giving programs a reason to have that conversation about Champion.",
+    compounding:
+      "Every program signed through a referral becomes a referrer. The program pays for itself from the second order on.",
+    proof: {
+      claim:
+        "In a three-year study of roughly 10,000 customers, referred customers were worth at least 16% more than comparable non-referred customers, and the retention gap held over time.",
+      source: "Schmitt, Skiera and Van den Bulte, Journal of Marketing, 2011",
+    },
+    build: [
+      "Program rules and credit mechanics",
+      "Referral links, printed cards and tracking",
+      "Leaderboard page by conference and state",
+      "The ask, written into the reveal kit, booster emails and rep scripts",
+      "Reporting on referrals through to orders",
+    ],
+    clientSide: [
+      "Credit policy and margin rules",
+      "Rep follow-up inside 48 hours",
+      "Order data to close the loop",
+    ],
+    watch:
+      "Keep it clean. Credit goes to the program, never to a coach personally, so nothing looks like a kickback to a public-school employee. Gift and procurement rules vary by state and district, so check before launch.",
   },
 ];
 
@@ -515,7 +515,7 @@ export const basics: readonly Basic[] = [
     code: "05",
     title: "Search ads on buying keywords",
     body:
-      "Coaches Google \"custom volleyball uniforms\" and \"team spirit wear store\" when they're ready to buy. Own those terms and the Champion brand terms, send the click to a sport landing page or the look builder, and retarget everyone who visits.",
+      "Coaches Google \"custom volleyball uniforms\" and \"team spirit wear store\" when they're ready to buy. Own those terms and the Champion brand terms, send the click to the right sport page on the site, and retarget everyone who visits.",
     channel: "Paid search",
     effort: "Low",
     start: "Next 30 days",
@@ -535,7 +535,7 @@ export const basics: readonly Basic[] = [
     code: "07",
     title: "Show up where coaches meet",
     body:
-      "State athletic director associations, the NIAAA national conference, the AVCA convention for volleyball, cheer and dance coach clinics. A booth with samples, a look-builder demo and a sign-up sheet does more than a month of cold email.",
+      "State athletic director associations, the NIAAA national conference, the AVCA convention for volleyball, cheer and dance coach clinics. A booth with samples, the catalog and a sign-up sheet does more than a month of cold email.",
     channel: "Events",
     effort: "Medium",
     start: "Next season",
@@ -609,9 +609,9 @@ export const plays: readonly Play[] = [
     code: "Play A",
     name: "Quick wins before tryouts",
     horizon: "First ninety days",
-    picks: ["04 Own the Season Calendar", "03 The Booster Engine", "01 The Reveal Engine"],
+    picks: ["03 Own the Season Calendar", "02 The Booster Engine", "06 Bring Your Rival", "01 The Reveal Engine"],
     rationale:
-      "Everything here runs on product and channels you already have. The calendar and the booster stores go live before cheer and dance tryout season, and the reveal kit is in every box by the first spring deliveries.",
+      "Everything here runs on product, channels and customers you already have. The calendar and the booster stores go live before cheer and dance tryout season, Bring Your Rival turns current programs into the sales team, and the reveal kit is in every box by the first spring deliveries.",
     tradeoff:
       "Fast results, mostly inside the core you already own. It proves the system without proving the expansion.",
   },
@@ -619,19 +619,19 @@ export const plays: readonly Play[] = [
     code: "Play B",
     name: "The beachhead season",
     horizon: "One full season",
-    picks: ["02 Build My Look", "05 The Beachhead Play", "01 The Reveal Engine"],
+    picks: ["04 The Beachhead Play", "01 The Reveal Engine", "06 Bring Your Rival"],
     rationale:
-      "The look builder prototype ships first, then volleyball runs the whole playbook in three states with reveal content as the creative. By the end of the season there's a real cost per program signed.",
+      "Volleyball runs the whole playbook in three states: reveal content as the creative, booster stores for the parents, and Bring Your Rival to move club to club. By the end of the season there's a real cost per program signed.",
     tradeoff:
-      "More to build before the first read, but it answers the question leadership actually has: can Champion win a traditional sport?",
+      "More to set up before the first read, but it answers the question leadership actually has: can Champion win a traditional sport?",
   },
   {
     code: "Play C",
-    name: "The platform year",
+    name: "The whole-school year",
     horizon: "Twelve months",
-    picks: ["06 Champion Schools", "02 Build My Look", "04 Own the Season Calendar"],
+    picks: ["05 Champion Schools", "06 Bring Your Rival", "03 Own the Season Calendar"],
     rationale:
-      "Champion Schools turns existing cheer and dance accounts into whole-school relationships while the look builder ships with the new site and the calendar keeps every account warm between orders.",
+      "Champion Schools turns existing cheer and dance accounts into whole-school relationships, Bring Your Rival moves it district by district, and the calendar keeps every account warm between orders.",
     tradeoff:
       "Slowest to show a number and the most dependent on operations, but it's the version that keeps paying for years.",
   },
@@ -668,11 +668,6 @@ export const sources: readonly Source[] = [
     url: "https://www.squadlocker.com/squad-blog/fundraising-with-squadlocker",
   },
   {
-    title: "3D product configurators: conversion and returns data",
-    publisher: "DesignRush",
-    url: "https://www.designrush.com/agency/ecommerce/trends/3d-product-configurators",
-  },
-  {
     title: "Uniform reveal ideas",
     publisher: "TikTok Discover",
     url: "https://www.tiktok.com/discover/uniform-reveal-ideas",
@@ -696,6 +691,11 @@ export const sources: readonly Source[] = [
     title: "Custom uniforms, apparel and equipment for club select teams",
     publisher: "BSN SPORTS Club Direct",
     url: "https://www.bsnsports.com/programs/club-direct/",
+  },
+  {
+    title: "Referral programs and customer value",
+    publisher: "Journal of Marketing (Schmitt, Skiera, Van den Bulte)",
+    url: "https://journals.sagepub.com/doi/10.1509/jm.75.1.46",
   },
   {
     title: "Ames Watson takes the helm of Champion's collegiate, licensed and teamwear businesses",

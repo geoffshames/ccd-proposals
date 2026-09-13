@@ -461,7 +461,7 @@ export function ChampionTeamwearIdeasClient() {
                   <span>{play.horizon}</span>
                 </div>
                 <h3>{play.name}</h3>
-                <div className={styles.playHorizon}>Three ideas / one plan</div>
+                <div className={styles.playHorizon}>The picks / one plan</div>
                 <ul className={styles.playPicks}>
                   {play.picks.map((pick) => (
                     <li key={pick}>{pick}</li>
