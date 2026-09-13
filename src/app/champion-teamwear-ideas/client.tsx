@@ -210,11 +210,11 @@ export function ChampionTeamwearIdeasClient() {
             note={premise.note}
             title={
               <>
-                Whoever removes the most friction{" "}
-                <em>wins the order.</em>
+                The order goes to whoever{" "}
+                <em>makes it easiest.</em>
               </>
             }
-            body="Three things are true at once about every youth team, club and school order. The ideas on this page are built to hold all three."
+            body="Three things are true about every youth team, club and school order. Every idea on this page is built with all three in mind."
           />
 
           <Reveal>
@@ -265,7 +265,7 @@ export function ChampionTeamwearIdeasClient() {
             note={ideasIntro.note}
             title={
               <>
-                Six ways to <em>earn the order.</em>
+                Six ideas, <em>each one standalone.</em>
               </>
             }
             body={ideasIntro.body}
@@ -301,7 +301,7 @@ export function ChampionTeamwearIdeasClient() {
                       <strong>{idea.format}</strong>
                     </div>
                     <div>
-                      <span>Window</span>
+                      <span>Timing</span>
                       <strong>{idea.window}</strong>
                     </div>
                     <div>
@@ -309,7 +309,7 @@ export function ChampionTeamwearIdeasClient() {
                       <strong>{idea.wins}</strong>
                     </div>
                     <div>
-                      <span>What we read</span>
+                      <span>What we&apos;d measure</span>
                       <strong>{idea.signal}</strong>
                     </div>
                   </div>
@@ -332,7 +332,7 @@ export function ChampionTeamwearIdeasClient() {
                   <p className={styles.why}>{idea.why}</p>
 
                   <div className={styles.compounding}>
-                    <strong>Compounding logic. </strong>
+                    <strong>Why it keeps paying. </strong>
                     {idea.compounding}
                   </div>
 
@@ -357,7 +357,7 @@ export function ChampionTeamwearIdeasClient() {
                       ))}
                     </ul>
                     <div className={styles.sideHead}>
-                      <span>Built client-side</span>
+                      <span>What you&apos;d handle</span>
                       <b>Champion Teamwear</b>
                     </div>
                     <ul className={styles.clientList}>
@@ -371,7 +371,7 @@ export function ChampionTeamwearIdeasClient() {
                   </div>
 
                   <div className={styles.watchNote}>
-                    <i>Watch</i>
+                    <i>Watch out for</i>
                     <span>{idea.watch}</span>
                   </div>
                 </Reveal>
@@ -406,7 +406,7 @@ export function ChampionTeamwearIdeasClient() {
                   <span>{play.horizon}</span>
                 </div>
                 <h3>{play.name}</h3>
-                <div className={styles.playHorizon}>Three ideas / one rhythm</div>
+                <div className={styles.playHorizon}>Three ideas / one plan</div>
                 <ul className={styles.playPicks}>
                   {play.picks.map((pick) => (
                     <li key={pick}>{pick}</li>
@@ -426,14 +426,14 @@ export function ChampionTeamwearIdeasClient() {
         <section id="sources" className={styles.section}>
           <SectionHead
             index="04"
-            eyebrow="Evidence"
-            note="Public sources / July diagnostic"
+            eyebrow="Sources"
+            note="Public data / July audit"
             title={
               <>
-                Every number has <em>a receipt.</em>
+                Where the numbers <em>come from.</em>
               </>
             }
-            body="Participation data, family spending, competitor claims and conversion research used to build the ideas on this page."
+            body="Participation data, family spending, competitor claims and conversion research behind the ideas on this page."
           />
           <Reveal>
             <div className={styles.sourceGrid}>
@@ -471,8 +471,8 @@ export function ChampionTeamwearIdeasClient() {
                 {closing.eyebrow}
               </p>
               <h2>
-                Pick the ideas with legs.{" "}
-                <em>We will build the season around them.</em>
+                Tell us which ideas have legs.{" "}
+                <em>We&apos;ll build the season around them.</em>
               </h2>
               <p className={styles.closingBody}>{closing.body}</p>
               <Magnetic>

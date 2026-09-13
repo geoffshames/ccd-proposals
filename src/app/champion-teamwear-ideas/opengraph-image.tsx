@@ -2,7 +2,7 @@ import { ImageResponse } from "next/og";
 import { readFile } from "node:fs/promises";
 
 export const alt =
-  "Champion Teamwear growth ideas by Crowd Control Digital";
+  "Champion Teamwear marketing ideas by Crowd Control Digital";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -117,15 +117,15 @@ export default async function OpenGraphImage() {
               style={{
                 display: "flex",
                 flexDirection: "column",
-                fontSize: 78,
+                fontSize: 72,
                 lineHeight: 0.94,
                 letterSpacing: -2,
               }}
             >
-              <span>MAKE CHAMPION</span>
-              <span>THE EASY</span>
+              <span>CHAMPION</span>
+              <span>TEAMWEAR</span>
               <span style={{ display: "flex" }}>
-                <span style={{ color: "#fd3737" }}>YES.</span>
+                MARKETING&nbsp;<span style={{ color: "#fd3737" }}>IDEAS.</span>
               </span>
             </div>
           </div>
@@ -142,8 +142,8 @@ export default async function OpenGraphImage() {
               color: "rgba(244,242,237,0.56)",
             }}
           >
-            <span>SIX GROWTH IDEAS / YOUTH TEAMS + SCHOOLS</span>
-            <span>STRATEGY DOCUMENT / 2026</span>
+            <span>SIX IDEAS / TEAMS, CLUBS + SCHOOLS</span>
+            <span>STRATEGY DOC / 2026</span>
           </div>
         </div>
       </div>

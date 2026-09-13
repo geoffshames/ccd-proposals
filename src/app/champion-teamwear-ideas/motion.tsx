@@ -164,29 +164,30 @@ export function CinematicHero() {
             Champion Teamwear × Crowd Control
           </p>
           <h1 className={styles.heroTitle}>
-            <span>Be the</span>
-            <span>easy</span>
+            <span>Champion</span>
+            <span>Teamwear</span>
+            <span>Marketing</span>
             <span>
-              <em className={styles.heroRed}>yes.</em>
+              <em className={styles.heroRed}>Ideas.</em>
             </span>
           </h1>
           <p className={styles.heroLead}>
-            Six growth ideas for signing up more youth teams, clubs and
-            schools. Each one is built to win the person who approves the
-            order and the athlete who wears it.
+            Six ideas for signing up more youth teams, clubs and schools.
+            Each one is built to win over the coach who signs off on the
+            order and the kid who has to wear it.
           </p>
           <div className={styles.heroStats}>
             <div>
               <strong>06</strong>
-              <span>Ideas to greenlight</span>
+              <span>Ideas on the table</span>
             </div>
             <div>
               <strong>8.3M</strong>
-              <span>HS athletes in play</span>
+              <span>High-school athletes in the US</span>
             </div>
             <div>
               <strong>02</strong>
-              <span>Buyers on every order</span>
+              <span>People to win on every order</span>
             </div>
           </div>
         </motion.div>
@@ -197,7 +198,7 @@ export function CinematicHero() {
             style={reduce ? undefined : { y: mediaY, scale: mediaScale }}
           >
             <Image
-              src="/champion-ideas/hero.jpg"
+              src="/champion-ideas/hero-jersey.jpg"
               alt=""
               fill
               priority
@@ -206,7 +207,7 @@ export function CinematicHero() {
           </motion.div>
           <span className={styles.heroMediaTag}>
             <i />
-            Performance knit / rhinestone edge / detail 01
+            Interlock knit / sublimated stripe / detail 01
           </span>
         </div>
 
