@@ -287,10 +287,10 @@ export const eightyTwoMajorTrophyEs: StrategyPlanData = {
           goal: "Fund a paid engine in the group's cheapest markets, put native Spanish creators and edits around the record in all three, capture every listener it reaches into a follow and a save, point new fans to the group's Laylo, and hand the result to the tour window. Sized to be approved as a single decision and to end before holiday advertising costs rise.",
           includes: [
             "Paid social, Spanish-speaking Latin America $8,000: TikTok and Meta, concentrated in Mexico City, Santiago, Lima, and Bogotá",
-            "Paid social, Spain $3,500: amplification aimed at converting the release-day purchase spike into a streaming base",
+            "Paid social, Spain $3,600: amplification aimed at converting the release-day purchase spike into a streaming base",
             "Paid social, United States Spanish-language $4,500: language-targeted conversion inside the warmed audiences from the SIGN and HEAT flights",
-            "Spanish-language creator program $7,100 across the three markets, native speakers only, briefed culture-first, with paid boost behind whatever breaks",
-            "Spanish-language clipping network $3,000, edits cut for Latin American and Spanish culture, timed to the Mexico City weekend",
+            "Spanish-language creator program $5,000 across the three markets, native speakers only, briefed culture-first, with paid boost behind whatever breaks",
+            "Spanish-language clipping network $5,000, edits cut for Latin American and Spanish culture, timed to the Mexico City weekend",
             "CCD fee $3,900, 15 percent on managed spend, no retainer line",
             "Inside the fee: Laylo pointing and Spanish reply support on the group's existing channel, DSP pitch packets and metadata check with the distributor, weekly dashboard reporting in English and Korean",
           ],
@@ -331,7 +331,7 @@ export const eightyTwoMajorTrophyEs: StrategyPlanData = {
         {
           label: "B",
           title: "Spain",
-          budget: "$3,500 / TikTok and Meta",
+          budget: "$3,600 / TikTok and Meta",
           objective: "Convert a release-day purchase spike into a streaming base that registers on the group's top-market board. The signal is fresh and decays fast, so Spain runs first.",
           strategy: "Spain is the most expensive of the three markets after the United States, at roughly $5.80 per thousand on Meta, and the base is small, so the line is sized to amplify rather than to build from zero. Creative acknowledges the chart result directly: the fandom that put the record in the top five gets to see that it was noticed. Spanish creators from Spain, not Latin American content re-run in Spain, carry the reach, and paid retargets every engaged viewer to a Spotify follow and save.",
           components: {
@@ -385,7 +385,7 @@ export const eightyTwoMajorTrophyEs: StrategyPlanData = {
           ],
         },
       ],
-      footnote: "Impression-cost figures are 2026 market benchmarks used for planning, not commitments; live costs replace them from week one. The three market lines total $16,000 and reallocate against each other weekly.",
+      footnote: "Impression-cost figures are 2026 market benchmarks used for planning, not commitments; live costs replace them from week one. The three market lines total $16,100 and reallocate against each other weekly.",
     },
 
     // ===================================================================
@@ -401,7 +401,7 @@ export const eightyTwoMajorTrophyEs: StrategyPlanData = {
         {
           label: "A",
           title: "Spanish-Language Creator Program",
-          budget: "$7,100 / Latin America $3,100, Spain $2,000, United States $2,000",
+          budget: "$5,000 / Latin America $2,000, Spain $1,500, United States $1,500",
           objective: "Put the Spanish vocal in the mouths and feeds of Spanish-speaking creators in all three markets, briefed on culture first and the group second, with paid boost behind whatever breaks.",
           strategy: "Three rosters, not one. Mexico City, Santiago, Lima, and Bogotá creators for Latin America; creators from Spain for Spain; U.S.-based Spanish-language creators from Los Angeles, Houston, and Dallas for the United States. The program is bought on cost per thousand, so creator counts are an output rather than a promise, and the roster tilts micro because that is where the cost per view has been best across both prior cycles. Every post carries partner-code rights so paid can scale the winners in the same market they came from. Briefs are issued in week one to allow for the ramp time creators need, with posting concentrated in weeks three through five.",
           components: {
@@ -424,7 +424,7 @@ export const eightyTwoMajorTrophyEs: StrategyPlanData = {
         {
           label: "B",
           title: "Spanish-Language Clipping Network",
-          budget: "$3,000 / Latin America $2,000, Spain $1,000",
+          budget: "$5,000 / Latin America $3,500, Spain $1,500",
           objective: "Run the edits format, the best cost per thousand on the account, in Spanish. Edits attach the song to Latin American and Spanish culture and post at volume across a network of Spanish-language edit accounts.",
           strategy: "The clipping network pays on posting volume and reach, which is why it produced a sub-$3 cost per thousand last cycle. The Spanish-language version of it cuts edits for the culture it runs in: the Formula 1 driver edits already cut this month work for Mexico City in week five, Día de Muertos and Latin American film and series edits carry the region, and Spain gets its own set built around the moments Spanish fans are already sharing. Winners get paid boost from the paid lane.",
           components: {
@@ -513,7 +513,7 @@ export const eightyTwoMajorTrophyEs: StrategyPlanData = {
           ],
         },
       ],
-      footnote: "Laylo is the group's existing owned channel and the pointing, reply bank, and reporting run inside the CCD fee; Laylo message credits pass through at cost with no CCD markup, billed on usage at the platform's published rates, and international capture runs email-first to keep that cost low. No separate Spanish-language list is created. Spanish-language fan channels owned and run on the group's behalf are not funded in this campaign; they remain available as a separately priced label-side option at $2,500 per month and are listed in Section 11.",
+      footnote: "Laylo is the group's existing owned channel and the pointing, reply bank, and reporting run inside the CCD fee; Laylo message credits pass through at cost with no CCD markup, billed on usage at the platform's published rates, and international capture runs email-first to keep that cost low. No separate Spanish-language list is created.",
     },
 
     // ===================================================================
@@ -578,7 +578,7 @@ export const eightyTwoMajorTrophyEs: StrategyPlanData = {
           ],
         },
       ],
-      footnote: "Kakao and Great M own execution of all four workstreams; CCD provides strategy, materials, and coordination inside the fee. Radio budgets sit entirely outside the CCD ceiling. Spanish-language fan channels, if the label wants owned surfaces in Spanish, are a separately priced option listed in Section 11 and are not part of this campaign.",
+      footnote: "Kakao and Great M own execution of all four workstreams; CCD provides strategy, materials, and coordination inside the fee. Radio budgets sit entirely outside the CCD ceiling.",
     },
 
     // ===================================================================
@@ -882,22 +882,14 @@ export const eightyTwoMajorTrophyEs: StrategyPlanData = {
           breakdown: [
             { vertical: "CCD Fee (15% on managed spend)", amount: "$3,900" },
             { vertical: "Paid Social: Latin America", amount: "$8,000" },
-            { vertical: "Paid Social: Spain", amount: "$3,500" },
+            { vertical: "Paid Social: Spain", amount: "$3,600" },
             { vertical: "Paid Social: U.S. Spanish-Language", amount: "$4,500" },
-            { vertical: "Spanish-Language Creator Program", amount: "$7,100" },
-            { vertical: "Spanish-Language Clipping Network", amount: "$3,000" },
+            { vertical: "Spanish-Language Creator Program", amount: "$5,000" },
+            { vertical: "Spanish-Language Clipping Network", amount: "$5,000" },
           ],
         },
       ],
-      addOns: [
-        {
-          name: "Spanish-Language Fan Channels",
-          subtitle: "Label-Side Option",
-          budget: "$2,500 per month",
-          description: "Owned Spanish-language fan channels run on the group's behalf. Not funded in this campaign and not recommended for an eight-week window; available as a separately priced option if the label wants owned Spanish-language surfaces as an objective in its own right.",
-        },
-      ],
-      footnote: "THE ARITHMETIC. $30,000 authorized. The CCD fee is 15 percent on managed spend and there is no retainer: $3,900 on $26,100 of deployable spend, which together sum to $30,000. By market, the deployable splits Latin America $13,100 (paid $8,000, creators $3,100, clipping $2,000), Spain $6,500 (paid $3,500, creators $2,000, clipping $1,000), and the United States $6,500 (paid $4,500, creators $2,000), which is 50, 25, and 25 percent. The three paid lines are starting allocations that reallocate weekly against live cost per outcome. The creator and clipping lines are bought on cost per thousand, so post and creator counts are reported as outputs rather than committed as deliverables. Laylo pointing and Spanish reply support, DSP pitch packets, the metadata check, and daily dashboard reporting in English and Korean run inside the fee; Laylo message credits pass through at cost with no CCD markup. Radio sits entirely outside this budget on the Kakao side. This budget is scoped to the TROPHY (Spanish Ver.) campaign only. The Q4 tour window and the 1H 2027 releases each authorize fresh budgets on this same structure and inherit the Spanish-language audiences and creative this campaign produces.",
+      footnote: "THE ARITHMETIC. $30,000 authorized. The CCD fee is 15 percent on managed spend and there is no retainer: $3,900 on $26,100 of deployable spend, which together sum to $30,000. By market, the deployable splits Latin America $13,500 (paid $8,000, creators $2,000, clipping $3,500), Spain $6,600 (paid $3,600, creators $1,500, clipping $1,500), and the United States $6,000 (paid $4,500, creators $1,500), which lands at roughly half, a quarter, and a quarter. The three paid lines are starting allocations that reallocate weekly against live cost per outcome. The creator and clipping lines are bought on cost per thousand, so post and creator counts are reported as outputs rather than committed as deliverables. Laylo pointing and Spanish reply support, DSP pitch packets, the metadata check, and daily dashboard reporting in English and Korean run inside the fee; Laylo message credits pass through at cost with no CCD markup. Radio sits entirely outside this budget on the Kakao side. This budget is scoped to the TROPHY (Spanish Ver.) campaign only. The Q4 tour window and the 1H 2027 releases each authorize fresh budgets on this same structure and inherit the Spanish-language audiences and creative this campaign produces.",
     },
   ],
 };
