@@ -191,7 +191,7 @@ export const eightyTwoMajorRoadmap: StrategyPlanData = {
     // ===================================================================
     {
       type: "audience",
-      number: "03",
+      number: "04",
       navLabel: "LATAM",
       title: "The LATAM Opportunity",
       intro: "82MAJOR's five core LATAM markets hold ~36.5K monthly listeners today (Chartmetric, July 2026), roughly equal to South Korea, built with zero LATAM marketing. The gap is the opportunity: LATAM is ~7% of 82MAJOR's listening geography versus ~11% for ATEEZ, ~12% for KATSEYE, and ~24% for Stray Kids, for whom Mexico is the #2 country in the world. Latin America is also the fastest-growing recorded-music region globally (+17.1% in 2025), with Brazil and Mexico now top-10 world markets. These splits set initial paid targeting and the LATAM channel network's content posture.",
@@ -247,7 +247,7 @@ export const eightyTwoMajorRoadmap: StrategyPlanData = {
     // ===================================================================
     {
       type: "structure",
-      number: "04",
+      number: "05",
       navLabel: "C1 Budget",
       title: "Campaign 1 Budget / Trophy Español",
       intro: "This budget funds Campaign 1 only: the Trophy Español LATAM launch, ~12 weeks. It does not cover the September EP, the tour window, or the 2027 releases; each of those authorizes its own budget on this same structure. Two all-in levels. CCD retainer and media management sit inside the budget, not on top. Foundation concentrates entirely on Spanish-speaking LATAM (Mexico, Chile, Peru, Colombia). Expansion adds Brazil with Portuguese-captioned creative, a larger creator program, and LATAM music PR. DSP editorial runs through Kakao's distribution relationships identically in both packages.",
@@ -288,7 +288,7 @@ export const eightyTwoMajorRoadmap: StrategyPlanData = {
     // ===================================================================
     {
       type: "vertical",
-      number: "05",
+      number: "06",
       navLabel: "Fandom",
       title: "Vertical 1 / LATAM Fandom & Infrastructure",
       philosophy: "The compounding foundation, stood up in Spanish: distribution at volume through LATAM clip networks, captured into a CRM lane the artist team owns. LATAM K-pop fandom is the most participatory in the world; this layer meets it where it already lives.",
@@ -358,7 +358,7 @@ export const eightyTwoMajorRoadmap: StrategyPlanData = {
     // ===================================================================
     {
       type: "vertical",
-      number: "06",
+      number: "07",
       navLabel: "Digital",
       title: "Vertical 2 / LATAM Digital Marketing",
       philosophy: "The amplifier, aimed where reach is cheapest. LATAM CPMs give this campaign a structural advantage: the same dollar buys multiples of the impressions it buys in the U.S.",
@@ -426,7 +426,7 @@ export const eightyTwoMajorRoadmap: StrategyPlanData = {
     // ===================================================================
     {
       type: "vertical",
-      number: "07",
+      number: "08",
       navLabel: "DSP",
       title: "Vertical 3 / DSP Strategy LATAM",
       philosophy: "The discovery layer, led through Kakao's distribution relationships and identical in both packages. A Spanish-language release is the qualifying asset LATAM editorial teams need to support a K-pop act beyond the global K-pop bucket.",
@@ -487,7 +487,7 @@ export const eightyTwoMajorRoadmap: StrategyPlanData = {
     // ===================================================================
     {
       type: "vertical",
-      number: "08",
+      number: "09",
       navLabel: "PR",
       title: "Vertical 4 / PR & Media LATAM",
       philosophy: "Amplification once the record is moving. Spanish-language music media rewards the localization story, and LATAM reactor culture is a distribution channel in its own right.",
@@ -529,7 +529,7 @@ export const eightyTwoMajorRoadmap: StrategyPlanData = {
     // ===================================================================
     {
       type: "vertical",
-      number: "09",
+      number: "10",
       navLabel: "EP + Tour",
       title: "Campaigns 2-3 / September EP + Q4 Tour Window",
       philosophy: "The LATAM campaign is not a detour from the September EP. It is the warm audience the EP lands on. This section is the short-term plan for the comeback cycle and the tour window behind it, shaped by what the SIGN campaign proved.",
@@ -588,7 +588,7 @@ export const eightyTwoMajorRoadmap: StrategyPlanData = {
     // ===================================================================
     {
       type: "vertical",
-      number: "10",
+      number: "11",
       navLabel: "2027",
       title: "Campaigns 4-5 / January Single + February EP",
       philosophy: "The long-term plan is the same structure, compounding. Every cycle inherits the infrastructure, the warmed audiences, and the learnings of the one before it.",
@@ -635,7 +635,7 @@ export const eightyTwoMajorRoadmap: StrategyPlanData = {
     // ===================================================================
     {
       type: "vertical",
-      number: "11",
+      number: "12",
       navLabel: "Label",
       title: "Handled by Kakao / Great M",
       philosophy: "Workstreams the label and Kakao own directly. CCD coordinates timing and advises, but relationships, talent, and masters decisions run through the label side.",
@@ -677,7 +677,7 @@ export const eightyTwoMajorRoadmap: StrategyPlanData = {
     // ===================================================================
     {
       type: "flight",
-      number: "12",
+      number: "13",
       navLabel: "Flight",
       title: "Proposed Media Flight / Campaign 1",
       intro: "How the Campaign 1 (Trophy Español) deployable budget moves across the ~12-week cycle at each tier. Phase one localizes assets and stands up the ES infrastructure while paid runs in test mode. Phase two is the release window at full scale. Phase three sustains, bridges into the September EP, and hands the warmed LATAM audiences to the comeback campaign. If Trophy Español ships as an EP track rather than a standalone single, phase two slides to the EP week and phase one extends; the structure holds either way.",
@@ -728,7 +728,7 @@ export const eightyTwoMajorRoadmap: StrategyPlanData = {
     // ===================================================================
     {
       type: "timeline",
-      number: "13",
+      number: "14",
       navLabel: "Timeline",
       title: "Execution Timeline",
       intro: "Twelve-week deployment grid for the Trophy Español cycle, running into the September EP and the Q4 tour window. Dates below assume an early-August start; the grid anchors to the locked release date and slides accordingly. W4 marks the flexible Trophy Español release slot (standalone scenario); W6-7 mark the September EP window; W10+ marks the tour run-in.",
@@ -886,7 +886,7 @@ export const eightyTwoMajorRoadmap: StrategyPlanData = {
     // ===================================================================
     {
       type: "pricing",
-      number: "14",
+      number: "15",
       navLabel: "Pricing",
       title: "Final Pricing / Campaign 1: Trophy Español",
       intro: "This pricing covers Campaign 1 only: the Trophy Español LATAM launch (~12 weeks). The September EP, the Q4 tour window, and the 1H 2027 releases are not included in these numbers; each authorizes a fresh budget on this structure when it locks. CCD fees sit inside the budget, not on top: a $7,500 cycle retainer plus media management at 15% of managed spend. Everything else deploys to media, creators, and LATAM infrastructure.",

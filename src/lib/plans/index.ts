@@ -17,6 +17,8 @@ import { lolaAmourPlan } from "./lola-amour";
 import { uberHitcPlan } from "./uber-hitc";
 import { bhaviViajeDeIdaPlan } from "./bhavi-viaje-de-ida";
 import { eightyTwoMajorSeptember } from "./82major-september";
+import { eightyTwoMajorTrophyEs } from "./82major-trophy-es";
+import { eightyTwoMajorTrophyEsKorean } from "./82major-trophy-es-ko";
 import { kiiikiiiPlan } from "./kiiikiii";
 import { kiiikiiiPlanKorean } from "./kiiikiii-ko";
 import { irationPlan } from "./iration";
@@ -60,6 +62,8 @@ export const PLANS: Record<string, StrategyPlanData> = {
   "ekator-ko": ekatorPlanKorean,
   "82major": eightyTwoMajorPlan,
   "82major-september": eightyTwoMajorSeptember,
+  "82major-trophy-es": eightyTwoMajorTrophyEs,
+  "82major-trophy-es-ko": eightyTwoMajorTrophyEsKorean,
   "82major-roadmap": eightyTwoMajorRoadmap,
   "82major-roadmap-ko": eightyTwoMajorRoadmapKorean,
   "82major-strategy": eightyTwoMajorPlanStrategy,
