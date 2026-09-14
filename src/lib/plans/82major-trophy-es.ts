@@ -45,7 +45,7 @@ export const eightyTwoMajorTrophyEs: StrategyPlanData = {
           "Spanish-speaking Latin America: Mexico, Chile, Peru, Colombia, and Argentina, concentrated in Mexico City, Santiago, Lima, and Bogotá",
           "Spain, where the record charted on release day with no spend behind it",
           "Spanish-speaking fans in the United States, reached with language targeting inside the paid audiences already built",
-          "The Q4 U.S. tour window and the 1H 2027 releases, which inherit the Spanish-language audiences, creative, and CRM lane this campaign builds (own budgets, authorized separately)",
+          "The Q4 U.S. tour window and the 1H 2027 releases, which inherit the Spanish-language audiences and creative this campaign builds (own budgets, authorized separately)",
         ],
       },
       goals: {
@@ -54,7 +54,7 @@ export const eightyTwoMajorTrophyEs: StrategyPlanData = {
           "Put Spain on the group's Spotify top-market board for the first time, which means crossing roughly 4,100 monthly listeners there",
           "Grow Spanish-speaking Latin America by 40 percent or more from the September 14 baseline of roughly 26,000 monthly listeners across Mexico, Colombia, Chile, and Peru",
           "Earn TROPHY (Spanish Ver.) its first editorial placement in a Spanish-speaking market, with Spanish-market streams attributed to the Spanish version",
-          "Start the Spanish-language CRM list, phone and email, and carry it into the tour window and the 2027 album",
+          "Convert reach into Spotify follows and saves in all three markets, and point every new fan to the group's Laylo so the tour window and the 2027 album inherit them",
           "Buy Spanish-language creator and edit reach at a blended cost per thousand in line with the creator and clipping results of the last two cycles",
         ],
       },
@@ -106,7 +106,7 @@ export const eightyTwoMajorTrophyEs: StrategyPlanData = {
         },
         {
           label: "Owned Capture",
-          description: "Reach that does not convert to a follow, a save, or a contact disappears when the flight ends. Every creative in this campaign carries a follow or save prompt, and the Spanish-language CRM lane captures phone and email so the audience survives the campaign and is waiting for the tour window and the 2027 album.",
+          description: "Reach that does not convert to a follow, a save, or a signup disappears when the flight ends. Every creative in this campaign carries a follow or save prompt, and every surface points fans to the group's Laylo, the owned channel that already exists, so the audience survives the campaign and is waiting for the tour window and the 2027 album.",
         },
       ],
       messaging: [
@@ -178,7 +178,7 @@ export const eightyTwoMajorTrophyEs: StrategyPlanData = {
           ],
           barriers: ["Assumes the group will never come to the region", "Skips creative that reads as a translated ad"],
           triggers: ["Native Spanish creators reacting to the vocal", "Edits attached to Latin American culture, not to K-pop alone", "Any signal the group is looking at the region"],
-          conversionGoal: "Follow and save on Spotify, then join the Spanish-language CRM list.",
+          conversionGoal: "Follow and save on Spotify, then land on the group's Laylo.",
         },
         {
           name: "Spain: The High-Intent Buyer",
@@ -218,7 +218,7 @@ export const eightyTwoMajorTrophyEs: StrategyPlanData = {
           motivations: ["Recognition inside a fandom that reads as English-first", "Content to share with Spanish-speaking family and friends", "Ticket intent as the Q4 tour approaches"],
           behaviors: [
             "Engages with Spanish-language creators based in the United States, not only in Latin America",
-            "Converts to CRM signup at the best cost per lead in the account when the ask is in Spanish",
+            "Signs up to the group's Laylo at the account's best U.S. cost per lead when the ask is bilingual",
             "Buys tickets, which makes this the audience the tour window inherits",
           ],
           platforms: [
@@ -228,7 +228,7 @@ export const eightyTwoMajorTrophyEs: StrategyPlanData = {
           ],
           barriers: ["Higher impression costs than the other two markets", "Creative that reads as Latin American rather than U.S. Latino"],
           triggers: ["Spanish-language creators from Los Angeles, Houston, and Dallas", "Bilingual captions on the group's own posts", "Tour-window content in the back half of the campaign"],
-          conversionGoal: "Spanish-language CRM signup and Spotify follow, ready for tour-window conversion.",
+          conversionGoal: "Spotify follow and a Laylo signup, ready for tour-window conversion.",
         },
       ],
       behaviorSignals: [
@@ -256,7 +256,7 @@ export const eightyTwoMajorTrophyEs: StrategyPlanData = {
       triggers: [
         { trigger: "The Mexico City weekend of October 30 to November 1", implication: "The Formula 1 Grand Prix and the Día de Muertos parade concentrate the country's attention in one city for three days; paid and edits concentrate with it." },
         { trigger: "K-pop's largest act touring Bogotá, Lima, and Santiago in the campaign's first three weeks", implication: "Regional K-pop attention peaks while the creators and clipping lanes are live; edits ride the moment without borrowing anyone's name." },
-        { trigger: "The Q4 U.S. tour window opening as the campaign closes", implication: "Warmed Spanish-speaking U.S. audiences and the CRM list hand directly to tour marketing." },
+        { trigger: "The Q4 U.S. tour window opening as the campaign closes", implication: "Warmed Spanish-speaking U.S. audiences hand directly to tour marketing." },
       ],
       similarArtists: ["KATSEYE", "NMIXX", "P1Harmony", "Stray Kids", "ATEEZ", "TWS", "BOYNEXTDOOR", "RIIZE"],
       genres: ["K-Pop", "K-R&B", "Melodic R&B", "Latin Pop"],
@@ -284,15 +284,15 @@ export const eightyTwoMajorTrophyEs: StrategyPlanData = {
           budget: "$30,000",
           name: "All-In, 8 Weeks",
           featured: true,
-          goal: "Fund a paid engine in the group's cheapest markets, put native Spanish creators and edits around the record in all three, capture every listener it reaches into a follow and a Spanish-language contact, and hand the result to the tour window. Sized to be approved as a single decision and to end before holiday advertising costs rise.",
+          goal: "Fund a paid engine in the group's cheapest markets, put native Spanish creators and edits around the record in all three, capture every listener it reaches into a follow and a save, point new fans to the group's Laylo, and hand the result to the tour window. Sized to be approved as a single decision and to end before holiday advertising costs rise.",
           includes: [
-            "Paid social, Spanish-speaking Latin America $8,000: TikTok and Meta with a YouTube in-stream slice, concentrated in Mexico City, Santiago, Lima, and Bogotá",
+            "Paid social, Spanish-speaking Latin America $8,000: TikTok and Meta, concentrated in Mexico City, Santiago, Lima, and Bogotá",
             "Paid social, Spain $3,500: amplification aimed at converting the release-day purchase spike into a streaming base",
             "Paid social, United States Spanish-language $4,500: language-targeted conversion inside the warmed audiences from the SIGN and HEAT flights",
             "Spanish-language creator program $7,100 across the three markets, native speakers only, briefed culture-first, with paid boost behind whatever breaks",
             "Spanish-language clipping network $3,000, edits cut for Latin American and Spanish culture, timed to the Mexico City weekend",
             "CCD fee $3,900, 15 percent on managed spend, no retainer line",
-            "Inside the fee: Spanish-language CRM lane, DSP pitch packets and metadata check with the distributor, weekly dashboard reporting in English and Korean",
+            "Inside the fee: Laylo pointing and Spanish reply support on the group's existing channel, DSP pitch packets and metadata check with the distributor, weekly dashboard reporting in English and Korean",
           ],
         },
       ],
@@ -311,22 +311,20 @@ export const eightyTwoMajorTrophyEs: StrategyPlanData = {
         {
           label: "A",
           title: "Spanish-Speaking Latin America",
-          budget: "$8,000 / TikTok, Meta, YouTube in-stream",
+          budget: "$8,000 / TikTok and Meta",
           objective: "Scale a base that is already growing on its own. Mexico, Chile, Peru, Colombia, and Argentina, concentrated in Mexico City, Santiago, Lima, and Bogotá, with country-level coverage behind the cities.",
-          strategy: "TikTok carries reach because it is the region's discovery surface and its cheapest. Meta carries retargeting and the second click, using the same conversion structure that returned the account's best cost per action in the United States. A YouTube in-stream slice runs in Mexico, Chile, and Peru because ad-supported listening is a real share of the region's consumption and YouTube views are streams in their own right. Impression costs in these five countries run roughly $3.70 to $5.20 on Meta and lower on TikTok, against $15 to $23 in the United States, so this line buys several times the reach of the U.S. line for less money.",
+          strategy: "TikTok carries reach because it is the region's discovery surface and its cheapest. Meta carries retargeting and the second click, using the same conversion structure that returned the account's best cost per action in the United States. Impression costs in these five countries run roughly $3.70 to $5.20 on Meta and lower on TikTok, against $15 to $23 in the United States, so this line buys several times the reach of the U.S. line for less money.",
           components: {
             heading: "Build",
             items: [
               "TikTok: Spanish-language creator and edit assets promoted through partner codes, targeted on K-pop hashtag and creator interactions plus music interests, geo-concentrated on the four priority cities",
-              "Meta: Instagram-first conversion flight on Spanish-language creative, optimized to the pivot click and to CRM signup, retargeting every video viewer",
-              "YouTube: skippable in-stream behind the official audio and performance content in Mexico, Chile, and Peru, bought on cost per view",
+              "Meta: Instagram-first conversion flight on Spanish-language creative, optimized to the pivot click with Laylo signup as the secondary conversion, retargeting every video viewer",
               "Argentina enters at low weight from week three once the first two weeks show which creative travels",
             ],
           },
           kpis: [
             "Cost per pivot click and cost per Spotify follow by country",
             "Monthly-listener growth in Mexico, Chile, Peru, and Colombia against the September 14 baseline",
-            "Cost per view on the YouTube slice against the account's August Latin America benchmark of under a third of a cent",
           ],
           timeline: "Live from week one at test weight, full weight from week three, concentrated on Mexico City in week five.",
         },
@@ -341,7 +339,7 @@ export const eightyTwoMajorTrophyEs: StrategyPlanData = {
             items: [
               "TikTok reach behind Spain-native creator content in weeks one and two, when the chart signal is warmest",
               "Meta retargeting of every engaged viewer to follow and save, with Madrid and Barcelona geo-weighted",
-              "Fan-account amplification handled organically through the CRM and community lane, no spend",
+              "Fan-account amplification handled organically through the community lane, no spend",
               "Catalan-language variant tested in Catalonia if week-one Barcelona results warrant it",
             ],
           },
@@ -361,14 +359,14 @@ export const eightyTwoMajorTrophyEs: StrategyPlanData = {
           components: {
             heading: "Build",
             items: [
-              "Meta: Spanish-language conversion flight inside the existing SIGN and HEAT retargeting pools, language filter on, optimized to CRM signup and follow",
+              "Meta: Spanish-language conversion flight inside the existing SIGN and HEAT retargeting pools, language filter on, optimized to Laylo signup and follow",
               "TikTok: U.S.-based Spanish-language creators from the priority metros, promoted through partner codes",
               "Bilingual creative alongside Spanish-only, so nothing reads as a separate campaign",
               "Weighted to weeks five through eight, timed to the Q4 tour window",
             ],
           },
           kpis: [
-            "Cost per Spanish-language CRM signup against the account's best U.S. cost per lead",
+            "Cost per Laylo signup from Spanish-language creative against the account's best U.S. cost per lead",
             "Follow and save rate on Spanish-language creative inside the warmed pools",
             "Share of U.S. Spanish-language engagement attributable to the priority metros",
           ],
@@ -387,7 +385,7 @@ export const eightyTwoMajorTrophyEs: StrategyPlanData = {
           ],
         },
       ],
-      footnote: "Impression-cost figures are 2026 market benchmarks used for planning, not commitments; live costs replace them from week one. The three market lines total $16,000 and reallocate against each other weekly. The August Latin America YouTube benchmark is from a CCD flight for another artist in the same markets and is cited as a planning reference only.",
+      footnote: "Impression-cost figures are 2026 market benchmarks used for planning, not commitments; live costs replace them from week one. The three market lines total $16,000 and reallocate against each other weekly.",
     },
 
     // ===================================================================
@@ -454,7 +452,7 @@ export const eightyTwoMajorTrophyEs: StrategyPlanData = {
             "Latin America paid geo-tightened to Mexico City from Thursday to Sunday of the race weekend",
             "Formula 1 driver edits released across the clipping network timed to practice, qualifying, and the race",
             "Mexico City creators posting across the weekend, with Día de Muertos formats alongside the race formats",
-            "Follow and save prompts and the Spanish-language CRM signup carried on every asset that weekend",
+            "Follow and save prompts and the Laylo link carried on every asset that weekend",
           ],
         },
       ],
@@ -462,34 +460,34 @@ export const eightyTwoMajorTrophyEs: StrategyPlanData = {
     },
 
     // ===================================================================
-    // 07. Vertical 3: Fandom & CRM
+    // 07. Vertical 3: Fandom & Owned Capture
     // ===================================================================
     {
       type: "vertical",
       number: "07",
       navLabel: "Fandom",
-      title: "Vertical 3 / Fandom & CRM",
-      philosophy: "The conversion ratio is the thesis metric of this account, and it recovered from 0.32 to 0.47 across the SIGN cycle because reach was captured into follows and contacts rather than left as impressions. The Spanish-language version of that machine is the part of this campaign that survives the flight: a Spanish CRM lane, follow and save prompts on every asset, and organic community mechanics that cost nothing but attention.",
+      title: "Vertical 3 / Fandom & Owned Capture",
+      philosophy: "The conversion ratio is the thesis metric of this account, and it recovered from 0.32 to 0.47 across the SIGN cycle because reach was captured into follows and signups rather than left as impressions. This campaign runs the same machine for Spanish-speaking fans without building anything new: follow and save prompts on every asset, the group's existing Laylo as the one place every new fan is pointed, and organic community mechanics that cost nothing but attention.",
       subBlocks: [
         {
           label: "A",
-          title: "Spanish-Language CRM Lane",
-          timeline: "Inside the CCD fee; platform message credits pass through at cost",
-          objective: "Start the Spanish-language list, phone and email, and carry it into the tour window and the 2027 album. The existing CRM platform already has a working voicemail and signup funnel; this extends it in Spanish.",
-          strategy: "A Spanish-language welcome flow and reply bank go live in week one so every Spanish-language signup is answered in Spanish without an approval loop per message. Latin America and Spain run email-first because international SMS costs several times a U.S. text, with SMS reserved for U.S. numbers. The lane runs reply-first and broadcast-light, the cadence that kept the English list healthy, with a Spanish-language drop tied to the Mexico City weekend and a tour-window handoff at the end.",
+          title: "Laylo as the Capture Point",
+          timeline: "Inside the CCD fee; Laylo message credits pass through at cost",
+          objective: "The group's Laylo already runs as the owned channel, with a working signup and voicemail funnel and a list the tour window and the 2027 album will be talking to. This campaign does not stand up a separate Spanish-language list. It points every Spanish-speaking fan it reaches to the same Laylo, so new fans land where the group is already talking to its audience.",
+          strategy: "The Laylo link travels on every paid and creator asset in all three markets, in Spanish, as the one signup ask. Fans who join receive the same drops as everyone else on the existing cadence, and inbound that arrives in Spanish is answered from a small pre-approved Spanish reply bank rather than left waiting on translation. International fans are captured email-first because international SMS costs several times a U.S. text; U.S. numbers get SMS as they do today. Two moments in the window get a Laylo push on the existing cadence: the Mexico City weekend and the tour-window handoff.",
           components: {
             heading: "Mechanics",
             items: [
-              "Spanish-language signup flow and welcome sequence live from week one, linked from every paid and creator asset",
-              "Pre-approved Spanish reply bank so inbound is answered quickly, in the Spanish of the market where possible",
-              "Email-first for Latin America and Spain, SMS for U.S. numbers, all sends captioned in Korean for the label",
-              "Two Spanish-language broadcasts in the window: the Mexico City weekend and the tour-window handoff",
+              "Laylo link carried on every paid and creator asset from week one, with the ask written in Spanish",
+              "Small pre-approved Spanish reply bank so inbound in Spanish is answered quickly, no separate flow",
+              "Email-first capture for Latin America and Spain, SMS for U.S. numbers, sends captioned in Korean for the label as today",
+              "Two Laylo pushes on the existing cadence: the Mexico City weekend and the tour-window handoff",
             ],
           },
           kpis: [
-            "Spanish-language signups, phone and email, by market",
-            "Reply rate and retention on the Spanish list against the English baseline",
+            "Laylo signups attributed to the campaign, by market",
             "Cost per signup by market against the account's best U.S. cost per lead",
+            "Reply rate on Spanish-language inbound",
           ],
         },
         {
@@ -515,7 +513,7 @@ export const eightyTwoMajorTrophyEs: StrategyPlanData = {
           ],
         },
       ],
-      footnote: "The CRM lane is operational inside the CCD fee; platform message credits pass through at cost with no CCD markup, billed on usage at the platform's published rates, and international sends are run email-first to keep that cost low. Spanish-language fan channels owned and run on the group's behalf are not funded in this campaign; they remain available as a separately priced label-side option at $2,500 per month and are listed in Section 11.",
+      footnote: "Laylo is the group's existing owned channel and the pointing, reply bank, and reporting run inside the CCD fee; Laylo message credits pass through at cost with no CCD markup, billed on usage at the platform's published rates, and international capture runs email-first to keep that cost low. No separate Spanish-language list is created. Spanish-language fan channels owned and run on the group's behalf are not funded in this campaign; they remain available as a separately priced label-side option at $2,500 per month and are listed in Section 11.",
     },
 
     // ===================================================================
@@ -566,7 +564,6 @@ export const eightyTwoMajorTrophyEs: StrategyPlanData = {
             items: [
               "Short member clips in Spanish: a greeting to fans in Mexico, Chile, Peru, Colombia, Argentina, and Spain, and a thank-you for the Spain chart result",
               "Spanish captions on the group's official posts about the Spanish version during the eight-week window",
-              "A Spanish-language lyric video or visualizer, if one can be produced inside the window, as the YouTube in-stream asset",
               "A decision on the reserved Spanish-version handle, so the campaign can point to an owned surface if the label wants one",
             ],
           },
@@ -598,13 +595,13 @@ export const eightyTwoMajorTrophyEs: StrategyPlanData = {
         {
           label: "Phase 1 / Ignite",
           window: "Sep 28 to Oct 11, 2 weeks",
-          focus: "Spain first, while the chart signal is warm: Spain-native creator content with paid reach behind it and retargeting to follow and save. Latin America and the United States open at test weight, learning which Spanish-language creative travels. Creator briefs go out, the Spanish CRM lane goes live, and the metadata and song-grouping check runs with the distributor so every stream from here attributes to the Spanish version.",
+          focus: "Spain first, while the chart signal is warm: Spain-native creator content with paid reach behind it and retargeting to follow and save. Latin America and the United States open at test weight, learning which Spanish-language creative travels. Creator briefs go out, the Laylo link and Spanish reply bank go live, and the metadata and song-grouping check runs with the distributor so every stream from here attributes to the Spanish version.",
           budget: "~$7,500",
           tactics: [
             "Spain paid at full weight on Spain-native creator content, Madrid and Barcelona geo-weighted",
             "Latin America and U.S. dark tests across hook, caption, and language variants, optimized to the second click",
             "Creator rosters confirmed and briefed in all three markets; clipping network stood up",
-            "Spanish-language CRM flow, welcome sequence, and reply bank live",
+            "Laylo link on every asset and a Spanish reply bank live",
             "Week-one asks to the label: Spanish member clips, Spanish captions, metadata check",
           ],
         },
@@ -614,23 +611,23 @@ export const eightyTwoMajorTrophyEs: StrategyPlanData = {
           focus: "Latin America at full weight on validated creative, with creator posting concentrated in the first three weeks of the phase and the clipping network running underneath. Week five is the Mexico City weekend: paid geo tightens to the city, the Formula 1 driver edits go out timed to the race, and the Mexico City creators post across Día de Muertos. The U.S. Spanish-language line ramps from week five as the tour window approaches.",
           budget: "~$13,100",
           tactics: [
-            "Latin America paid scaled across TikTok, Meta, and YouTube in-stream on the week-two winners",
+            "Latin America paid scaled across TikTok and Meta on the week-two winners",
             "Creator round posting in all three markets, paid boost behind whatever breaks through partner codes",
             "Clipping network at full volume, edit sets cut per market",
-            "Mexico City weekend concentration, October 30 to November 1, with a Spanish-language CRM drop",
+            "Mexico City weekend concentration, October 30 to November 1, with the Laylo link on every asset",
             "U.S. Spanish-language conversion flight opened inside the warmed pools from week five",
           ],
         },
         {
           label: "Phase 3 / Sustain + Handoff",
           window: "Nov 9 to Nov 22, 2 weeks",
-          focus: "Hold the floors in Latin America and Spain, convert engaged viewers to follows and Spanish-language contacts, and hand warmed Spanish-speaking U.S. audiences and the CRM list to the Q4 tour window. The flight closes before the Black Friday and holiday cost peak; Buen Fin week in Mexico runs at reduced weight.",
+          focus: "Hold the floors in Latin America and Spain, convert engaged viewers to follows, saves, and Laylo signups, and hand warmed Spanish-speaking U.S. audiences to the Q4 tour window. The flight closes before the Black Friday and holiday cost peak; Buen Fin week in Mexico runs at reduced weight.",
           budget: "~$5,500",
           tactics: [
             "Retargeting-weighted delivery to follow, save, and signup across all three markets",
             "U.S. Spanish-language line at full weight with tour-window creative",
             "Second creator wave from the winners, no new briefs",
-            "Tour-window handoff broadcast to the Spanish-language list",
+            "Tour-window handoff through the group's Laylo",
             "Final read: Spanish-market listeners, follows, signups, and cost per outcome by market, in English and Korean",
           ],
         },
@@ -724,16 +721,16 @@ export const eightyTwoMajorTrophyEs: StrategyPlanData = {
           ],
         },
         {
-          name: "CRM: Spanish Lane",
+          name: "Laylo",
           cells: [
-            { weekIndex: 1, intensity: "medium", label: "BUILD" },
+            { weekIndex: 1, intensity: "medium", label: "SETUP" },
             { weekIndex: 2, intensity: "medium", label: "LIVE" },
             { weekIndex: 3, intensity: "medium", label: "REPLY" },
             { weekIndex: 4, intensity: "medium", label: "REPLY" },
-            { weekIndex: 5, intensity: "high", label: "DROP" },
+            { weekIndex: 5, intensity: "high", label: "PUSH" },
             { weekIndex: 6, intensity: "medium", label: "REPLY" },
             { weekIndex: 7, intensity: "medium", label: "REPLY" },
-            { weekIndex: 8, intensity: "high", label: "DROP" },
+            { weekIndex: 8, intensity: "high", label: "HANDOFF" },
           ],
         },
         {
@@ -771,7 +768,7 @@ export const eightyTwoMajorTrophyEs: StrategyPlanData = {
             "Spain paid live at full weight on Spain-native creator content, retargeting to follow and save",
             "Latin America and U.S. dark tests open across hook, caption, and language variants",
             "Creator rosters confirmed and briefed in all three markets",
-            "Spanish CRM flow, welcome sequence, and reply bank built",
+            "Laylo link set up for every asset and a Spanish reply bank built",
             "Week-one asks delivered: Spanish member clips, Spanish captions, metadata and song-grouping check, radio markets and dates",
           ],
         },
@@ -782,7 +779,7 @@ export const eightyTwoMajorTrophyEs: StrategyPlanData = {
             "Spain paid scaled on the week-one winners, Madrid and Barcelona geo-weighted",
             "Creator drafts in and through the label's usual approval process",
             "Clipping network live with the first Latin America edit set",
-            "Spanish CRM lane live and linked from every asset",
+            "Laylo link live from every paid and creator asset",
             "Week-two read decides which creative carries Latin America into scale",
           ],
         },
@@ -790,7 +787,7 @@ export const eightyTwoMajorTrophyEs: StrategyPlanData = {
           weekIndex: 3,
           title: "Latin America to full weight, creators posting",
           items: [
-            "Latin America paid at full weight across TikTok, Meta, and YouTube in-stream",
+            "Latin America paid at full weight across TikTok and Meta",
             "Creator posting begins in all three markets; winners boosted through partner codes within 48 hours",
             "DSP pitch packets with the distributor for the country editions of New Music Friday and the K-pop editorial playlists",
             "Argentina enters the Latin America line at low weight",
@@ -805,7 +802,7 @@ export const eightyTwoMajorTrophyEs: StrategyPlanData = {
             "Clipping network at full volume; Formula 1 driver edits and Día de Muertos sets staged for week five",
             "U.S. Spanish-language line moves from test to build inside the warmed pools",
             "Paid geo plan for the Mexico City weekend locked",
-            "Spanish-language CRM drop drafted and captioned in Korean for the label",
+            "Laylo copy for the Mexico City weekend drafted and captioned in Korean for the label",
           ],
         },
         {
@@ -815,7 +812,7 @@ export const eightyTwoMajorTrophyEs: StrategyPlanData = {
             "Latin America paid geo-tightened to Mexico City from Thursday to Sunday of the race weekend, October 30 to November 1",
             "Formula 1 driver edits released across the clipping network timed to practice, qualifying, and the race",
             "Mexico City creators posting across the weekend, Día de Muertos formats alongside the race formats",
-            "Spanish-language CRM drop to the list",
+            "Laylo push around the weekend, on the existing send cadence",
             "U.S. Spanish-language line opens at full weight",
           ],
         },
@@ -845,8 +842,8 @@ export const eightyTwoMajorTrophyEs: StrategyPlanData = {
           weekIndex: 8,
           title: "Handoff to the tour window",
           items: [
-            "Tour-window handoff broadcast to the Spanish-language list",
-            "Warmed Spanish-speaking U.S. audiences and the CRM list handed to tour marketing",
+            "Tour-window handoff through the group's Laylo",
+            "Warmed Spanish-speaking U.S. audiences handed to tour marketing",
             "Flight closes November 22, ahead of the Black Friday and holiday cost peak",
             "Final read: Spanish-market listeners against the September 14 baseline, Spain against the tracked-market threshold, follows, signups, and cost per outcome by market",
             "Recommendation on what the 1H 2027 releases inherit and what a second Spanish-language cycle would fund",
@@ -900,7 +897,7 @@ export const eightyTwoMajorTrophyEs: StrategyPlanData = {
           description: "Owned Spanish-language fan channels run on the group's behalf. Not funded in this campaign and not recommended for an eight-week window; available as a separately priced option if the label wants owned Spanish-language surfaces as an objective in its own right.",
         },
       ],
-      footnote: "THE ARITHMETIC. $30,000 authorized. The CCD fee is 15 percent on managed spend and there is no retainer: $3,900 on $26,100 of deployable spend, which together sum to $30,000. By market, the deployable splits Latin America $13,100 (paid $8,000, creators $3,100, clipping $2,000), Spain $6,500 (paid $3,500, creators $2,000, clipping $1,000), and the United States $6,500 (paid $4,500, creators $2,000), which is 50, 25, and 25 percent. The three paid lines are starting allocations that reallocate weekly against live cost per outcome. The creator and clipping lines are bought on cost per thousand, so post and creator counts are reported as outputs rather than committed as deliverables. The Spanish-language CRM lane, DSP pitch packets, the metadata check, and daily dashboard reporting in English and Korean run inside the fee; CRM platform message credits pass through at cost with no CCD markup. Radio sits entirely outside this budget on the Kakao side. This budget is scoped to the TROPHY (Spanish Ver.) campaign only. The Q4 tour window and the 1H 2027 releases each authorize fresh budgets on this same structure and inherit the Spanish-language audiences, creative, and CRM list this campaign produces.",
+      footnote: "THE ARITHMETIC. $30,000 authorized. The CCD fee is 15 percent on managed spend and there is no retainer: $3,900 on $26,100 of deployable spend, which together sum to $30,000. By market, the deployable splits Latin America $13,100 (paid $8,000, creators $3,100, clipping $2,000), Spain $6,500 (paid $3,500, creators $2,000, clipping $1,000), and the United States $6,500 (paid $4,500, creators $2,000), which is 50, 25, and 25 percent. The three paid lines are starting allocations that reallocate weekly against live cost per outcome. The creator and clipping lines are bought on cost per thousand, so post and creator counts are reported as outputs rather than committed as deliverables. Laylo pointing and Spanish reply support, DSP pitch packets, the metadata check, and daily dashboard reporting in English and Korean run inside the fee; Laylo message credits pass through at cost with no CCD markup. Radio sits entirely outside this budget on the Kakao side. This budget is scoped to the TROPHY (Spanish Ver.) campaign only. The Q4 tour window and the 1H 2027 releases each authorize fresh budgets on this same structure and inherit the Spanish-language audiences and creative this campaign produces.",
     },
   ],
 };
