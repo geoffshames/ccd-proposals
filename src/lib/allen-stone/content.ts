@@ -25,6 +25,7 @@ export const NAV = [
   { id: "live", label: "Live" },
   { id: "cadence", label: "Cadence" },
   { id: "room", label: "The room" },
+  { id: "wave", label: "The wave" },
   { id: "system", label: "The system" },
   { id: "fans", label: "Fans" },
   { id: "rollout", label: "Rollout" },
@@ -165,7 +166,105 @@ export const SYSTEM = {
     { title: "Retargeting pools", sub: "Viewers, visitors, crowds" },
     { title: "Release flights", sub: "Singles + album week" },
   ],
-  outputs: ["Spotify saves + follows", "Text STONE list", "Vinyl pre-orders", "Tickets"],
+  outputs: ["Pre-saves + Spotify follows", "Owned fan list", "Vinyl pre-orders", "Tickets"],
+};
+
+export const WAVE = {
+  title: "Turn every show into *pre-saves.*",
+  intro:
+    "CCD's dopamine wave: the anticipation before a show, the peak in the room, and the glow the morning after. Every city Allen plays builds one. We capture fans at the top of it and ride the glow into the album, so each market becomes a block of pre-saves before release day.",
+  caption: "Conceptual campaign rhythm. Not to scale; the curve and dots don't represent data.",
+  phases: [
+    {
+      key: "before",
+      name: "Before",
+      window: "D−14 → D−1",
+      action: "Warm the room",
+      points: [
+        "Geo-targeted live clips (“Unaware,” “Give You Blue”) to soul and headliner fans in the market",
+        "An RSVP drop for set-time alerts and a first listen of the new single",
+        "Artist Stories counting down the city",
+      ],
+    },
+    {
+      key: "live",
+      name: "Show day",
+      window: "D0",
+      action: "Capture the peak",
+      points: [
+        "A from-stage call at the biggest moment of the set, plus a QR on screens and the merch table where the headliner and venue allow",
+        "A reason to join right then: signed vinyl, the setlist, or the new single before anyone else",
+        "The city's swsh album opens so fans can drop their angles of the night",
+      ],
+    },
+    {
+      key: "after",
+      name: "After",
+      window: "D+1 → D+4",
+      action: "Point the glow at the record",
+      points: [
+        "Everyone captured gets the night's swsh album and “the song you heard last night”",
+        "The ask is a pre-save: Spotify Countdown Page or a Laylo pre-save drop",
+        "Paid retargeting hits the market's video viewers and visitors with the live clip, pointed at the pre-save",
+      ],
+    },
+  ],
+  release: {
+    name: "Release day",
+    body: "Every captured city lands at once. Each fan gets the release-day text or DM, and pre-saves turn into day-one streams right when the algorithm is paying attention.",
+  },
+  stats: [
+    { value: "40%", label: "Tour RSVPs that became album pre-saves", source: "Japanese Breakfast on Laylo (Laylo case study)" },
+    { value: "1 in 7", label: "Pre-savers who become super listeners by release week", source: "Spotify Countdown Pages" },
+    { value: "D0", label: "Capture in the room: the cheapest fan data you'll collect, and the highest converting", source: "AndR music CRM guide, 2026" },
+  ],
+};
+
+export const CAPTURE = {
+  title: "The capture stack",
+  intro:
+    "Right now capture lives online: a Klaviyo popup on allenstone.com and the Text STONE number. Nothing is built for the moment in the room. Two ways to fix that, plus one add-on that turns every show into content.",
+  options: [
+    {
+      key: "setlive",
+      tab: "SET.Live",
+      tag: "Fastest to launch · keep Klaviyo",
+      what: "App-free, web-based in-show experiences, like giveaways and voting, that capture name, phone, and email while the room is at its peak. Used by Black Pumas, Jelly Roll, John Legend, Alicia Keys, and Miranda Lambert.",
+      how: [
+        "A from-stage call and a QR on screens or the merch table open a SET.Live page",
+        "“Enter to win the signed vinyl” or “hear the new single first”",
+        "Fans land on the existing Text STONE list and get the post-show pre-save ask",
+      ],
+      why: "The lightest lift. Nothing to migrate, Klaviyo and the Shopify store stay exactly as they are, and a free account is enough to pilot on the November dates.",
+      watch: "Confirm how SET.Live contacts sync into Klaviyo before launch, and clear screen and stage placements with the headliner, promoter, and venue on support dates.",
+    },
+    {
+      key: "laylo",
+      tab: "Laylo swap",
+      tag: "Best path to pre-saves",
+      what: "Move fan capture onto Laylo, the drop platform built for artists: SMS, email, and Instagram DM, with native Spotify pre-save and auto-follow, plus Seated, Bandsintown, and Shopify sync.",
+      how: [
+        "The QR in the room opens a Laylo drop: “Get the new song the second it's out”",
+        "That same RSVP becomes the pre-save and the release-day text, with no second ask",
+        "Seated and Bandsintown fans (223K followers) flow into the same list",
+      ],
+      why: "It connects the room to the record in one system. Allen already lists dates on Seated, Laylo already powers the Stone Family Field Trip drop, and Laylo reports Japanese Breakfast turned 40% of tour RSVPs into album pre-saves.",
+      watch: "Plan the Text STONE migration and SMS consent carefully. Klaviyo can stay on the store for cart and order flows, or retire fully. Laylo's platform fees are billed at cost.",
+    },
+    {
+      key: "swsh",
+      tab: "swsh",
+      tag: "Add-on · tour content engine",
+      what: "Shared photo and video albums fans join from a QR, no app required. Built-in moderation, approval before publishing, and face filtering. Growth adds fan CRM collection and video clipping.",
+      how: [
+        "One album per city opens during the set",
+        "Fans drop their own angles of the show, and the team approves what goes live",
+        "The next morning, “see the night” goes out with a link to hear it again and pre-save",
+      ],
+      why: "Every show turns into a library of real fan footage for Reels, TikTok, and ads, and the After phase gets a reason fans actually want to open.",
+      watch: "Starter is $100/mo (500 participants), Growth $250/mo (2,000), and arena-scale volume needs Enterprise. Joining an album isn't ad-usage rights or marketing consent, so get those separately. Pilot on two headline shows first.",
+    },
+  ],
 };
 
 export const FANS = {
@@ -219,7 +318,7 @@ export const ROLLOUT = {
       points: [
         "Access, baseline audit, TikTok pixel + Meta Conversions API",
         "Retargeting pools from video viewers, site visitors, list lookalikes, tour markets",
-        "Catalog warm-up tests on “Consider Me,” “Sweet Little Rainbows,” “Brown Eyed Lover”",
+        "Tour capture live for the Nov 1–8 arena dates: SET.Live or Laylo, plus a swsh pilot",
       ],
     },
     {
@@ -229,7 +328,7 @@ export const ROLLOUT = {
       points: [
         "Snippet-to-release sequence: hook tease, studio moment, live take, sound upload",
         "Single-one flight across Meta, TikTok, YouTube, optimized to streams + saves",
-        "Countdown Page + pre-save push with ATO, YouTube Shorts back on",
+        "Captured fans from every city get the first listen and the pre-save ask",
       ],
     },
     {
@@ -280,7 +379,7 @@ export const INVESTMENT = {
   includes: [
     { name: "Album rollout strategy", body: "Release-anchored playbook, content system, monthly calendars, weekly syncs with Red Light + ATO." },
     { name: "Social media management", body: "Instagram, TikTok, YouTube (incl. Shorts), Facebook. Platform-native publishing and daily community management." },
-    { name: "Paid media management", body: "Tracking, audience architecture, three release flights, and always-on retargeting across Meta, TikTok, YouTube." },
+    { name: "Paid media + tour capture", body: "Tracking, audience architecture, three release flights, always-on retargeting, and the capture-to-pre-save flow around every show." },
     { name: "Reporting + optimization", body: "Monthly reports against targets, weekly pacing notes in release weeks." },
   ],
   fee: 0.15,
@@ -296,6 +395,7 @@ export const INVESTMENT = {
     { name: "Content capture + editing", basis: "Scoped per shoot" },
     { name: "Creator seeding", basis: "Per single, fees at cost + 15%" },
     { name: "Email + SMS campaigns", basis: "Scoped as add-on" },
+    { name: "SET.Live, Laylo, swsh platform fees", basis: "Billed at cost" },
   ],
   terms:
     "Retainer invoiced monthly in advance, net 15. Ad spend is paid directly to the platforms from ATO's or management's budget; the 15% management fee is invoiced monthly in arrears.",
@@ -309,11 +409,13 @@ export const SCOPE = {
     "Daily community management and reactive content in release windows",
     "Paid strategy, build, and optimization on Meta, TikTok, YouTube",
     "TikTok pixel, Meta Conversions API, retargeting architecture",
-    "Paid support for Text STONE sign-ups and vinyl pre-orders",
+    "Tour capture setup (SET.Live or Laylo) and post-show pre-save drops",
+    "Paid support for owned-list sign-ups, pre-saves, and vinyl pre-orders",
     "Monthly performance reporting",
   ],
   excluded: [
     "Ad spend (paid to platforms, plus 15%)",
+    "Capture and content platform fees (SET.Live, Laylo, swsh), billed at cost",
     "Shoots and short-form editing beyond formatting (add-on)",
     "Creator seeding (add-on)",
     "Email + SMS campaign writing (add-on)",
@@ -342,6 +444,11 @@ export const SOURCES = [
   { label: "Spotify Countdown Pages", href: "https://newsroom.spotify.com/2025-05-21/upcoming-releases-hub-countdown-pages-charts-discovery" },
   { label: "TikTok Add to Music App: 6B saves", href: "https://newsroom.tiktok.com/6-billion-tracks-saved-w-tt-add-to-music-app?lang=en" },
   { label: "Album in progress (CT Examiner)", href: "https://ctexaminer.com/2025/09/05/allen-stone-talks-new-single-and-the-future-ahead-of-show-at-toads-place/" },
+  { label: "SET.Live (A2IM member spotlight)", href: "https://a2im.org/ams-set-live/" },
+  { label: "Laylo pre-saves + Japanese Breakfast case", href: "https://laylo.com/tools/presaves" },
+  { label: "Laylo integrations", href: "https://laylo.com/integrations" },
+  { label: "swsh pricing", href: "https://www.joinswsh.com/pricing" },
+  { label: "AndR: best CRM platforms for musicians (2026)", href: "https://learn.andrmusic.co/en/articles/13557994-best-crm-platforms-for-musicians-laylo-openstage-set-live-2026" },
   { label: "r/bottlerock", href: "https://www.reddit.com/r/bottlerock/comments/1lw1iqq/allen_stone_videos/" },
   { label: "r/roanoke", href: "https://www.reddit.com/r/roanoke/comments/1ub50hn/allen_stone_the_exchange/" },
 ];

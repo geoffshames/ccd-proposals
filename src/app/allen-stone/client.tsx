@@ -2,8 +2,8 @@
 
 /**
  * ALLEN STONE × CROWD CONTROL DIGITAL — "Soul, amplified."
- * Bespoke album-rollout proposal. Warm soul-record editorial system: N27 display,
- * Instrument Serif italics, mono labels, rust on warm ink. Real imagery only
+ * Bespoke album-rollout proposal in the CCD brand system: #0A0A0A / #FAFAFA /
+ * #FD3737, N27 Bold display, Work Sans body, mono labels. Real imagery only
  * (press photos + Allen's actual top live clips). Motion via Framer Motion:
  * letter-rise hero with scroll parallax, velocity marquee, pinned scroll-scrubbed
  * conversion chart, pinned horizontal clip reel, dot-grid cadence, self-drawing
@@ -42,6 +42,8 @@ import {
   CLIPS,
   CADENCE,
   ROOM,
+  WAVE,
+  CAPTURE,
   SYSTEM,
   FANS,
   ROLLOUT,
@@ -696,7 +698,257 @@ function Room() {
 }
 
 /* ----------------------------------------------------------------------------
- * 05 — The system (self-drawing diagram)
+ * 05 — The wave (interactive dopamine wave → pre-saves) + capture stack
+ * ------------------------------------------------------------------------- */
+
+const WAVE_PATH =
+  "M 40 300 C 170 300 260 262 360 236 C 440 214 500 206 540 150 C 566 120 584 72 600 72 C 616 72 636 120 662 158 C 700 222 760 236 840 238 C 940 240 1010 232 1080 214 C 1120 204 1140 176 1160 120";
+const PHASE_X = [40, 480, 720, 1060, 1160];
+const WAVE_LOOP = 10;
+const MARKERS = [
+  { x: 300, label: "RSVP drop + live-clip ads" },
+  { x: 600, label: "Capture the room" },
+  { x: 880, label: "swsh album + pre-save ask" },
+  { x: 1160, label: "Release day" },
+];
+
+function WavePlayer() {
+  const reduce = useReduced();
+  const wrapRef = useRef<HTMLDivElement>(null);
+  const pathRef = useRef<SVGPathElement>(null);
+  const inView = useInView(wrapRef, { margin: "-15% 0px" });
+  const [t, setT] = useState(0.52);
+  const [playing, setPlaying] = useState(true);
+  const [pt, setPt] = useState({ x: 600, y: 72 });
+  const start = useRef<number | null>(null);
+  const base = useRef(0.52);
+
+  useEffect(() => {
+    if (reduce) setPlaying(false);
+  }, [reduce]);
+
+  useAnimationFrame((time) => {
+    if (!playing || !inView || reduce) {
+      start.current = null;
+      return;
+    }
+    if (start.current === null) {
+      start.current = time;
+      base.current = t;
+    }
+    const next = (base.current + (time - start.current) / 1000 / WAVE_LOOP) % 1;
+    setT(next);
+  });
+
+  useEffect(() => {
+    const path = pathRef.current;
+    if (!path) return;
+    const len = path.getTotalLength();
+    const p = path.getPointAtLength(t * len);
+    setPt({ x: p.x, y: p.y });
+  }, [t]);
+
+  const phase = pt.x < PHASE_X[1] ? 0 : pt.x < PHASE_X[2] ? 1 : pt.x < PHASE_X[3] ? 2 : 3;
+  const jump = (i: number) => {
+    const targets = [0.22, 0.47, 0.72, 0.97];
+    setPlaying(false);
+    setT(targets[i]);
+  };
+  const labels = [...WAVE.phases.map((p) => p.name), WAVE.release.name];
+
+  return (
+    <div ref={wrapRef} className={s.wave}>
+      <div className={s.waveTop}>
+        <div className={s.wavePhaseBtns} role="group" aria-label="Choose a phase">
+          {labels.map((l, i) => (
+            <button key={l} type="button" aria-pressed={phase === i} onClick={() => jump(i)}>
+              <span>{String(i + 1).padStart(2, "0")}</span>
+              {l}
+            </button>
+          ))}
+        </div>
+        <button type="button" className={s.wavePlay} onClick={() => setPlaying((v) => !v)} aria-label={playing ? "Pause the wave" : "Play the wave"}>
+          {playing ? "❚❚ Pause" : "▶ Play the wave"}
+        </button>
+      </div>
+      <svg className={s.waveSvg} viewBox="0 0 1200 360" role="img" aria-label="The dopamine wave: anticipation before a show, the peak on show day, the glow after, then the build to release day.">
+        <defs>
+          <linearGradient id="waveFill" x1="0" x2="0" y1="0" y2="1">
+            <stop offset="0%" stopColor="#fd3737" stopOpacity="0.42" />
+            <stop offset="100%" stopColor="#fd3737" stopOpacity="0" />
+          </linearGradient>
+          <clipPath id="waveClip">
+            <rect x="0" y="0" width={pt.x} height="360" />
+          </clipPath>
+        </defs>
+        {PHASE_X.slice(1, 4).map((x) => (
+          <line key={x} x1={x} x2={x} y1={30} y2={318} stroke="#333333" strokeDasharray="4 6" />
+        ))}
+        {[
+          { x: 40, t: "D−14" },
+          { x: 600, t: "D0 · SHOW" },
+          { x: 900, t: "D+4" },
+          { x: 1160, t: "RELEASE" },
+        ].map((m) => (
+          <text key={m.t} x={m.x} y={346} fill="#b8b8c0" fontSize={12} textAnchor={m.x === 40 ? "start" : m.x === 1160 ? "end" : "middle"} style={{ fontFamily: "var(--font-geist-mono), monospace", letterSpacing: "0.14em" }}>
+            {m.t}
+          </text>
+        ))}
+        <line x1={40} x2={1160} y1={318} y2={318} stroke="#262626" />
+        <path d={`${WAVE_PATH} L 1160 318 L 40 318 Z`} fill="url(#waveFill)" clipPath="url(#waveClip)" />
+        <path d={WAVE_PATH} fill="none" stroke="#333333" strokeWidth={2} />
+        <path ref={pathRef} d={WAVE_PATH} fill="none" stroke="#fd3737" strokeWidth={3} clipPath="url(#waveClip)" />
+        {MARKERS.map((m, i) => {
+          const passed = pt.x >= m.x - 2;
+          return (
+            <g key={m.label}>
+              <circle cx={m.x} cy={318} r={6} fill={passed ? "#fd3737" : "#0a0a0a"} stroke={passed ? "#fd3737" : "#333333"} strokeWidth={2} />
+              <text className={s.waveMarkerLabel} x={m.x} y={24} fill={passed ? "#fafafa" : "#b8b8c0"} fontSize={13} fontWeight={600} textAnchor={m.x === 1160 ? "end" : "middle"} opacity={passed ? 1 : 0.7}>
+                {m.label}
+              </text>
+            </g>
+          );
+        })}
+        <circle cx={pt.x} cy={pt.y} r={18} fill="#fd3737" opacity={0.18} />
+        <circle cx={pt.x} cy={pt.y} r={8} fill="#fd3737" />
+      </svg>
+      <input
+        className={s.slider}
+        type="range"
+        min={0}
+        max={1000}
+        value={Math.round(t * 1000)}
+        aria-label="Move through the show cycle"
+        style={{ ["--fill" as string]: `${t * 100}%` } as CSSProperties}
+        onChange={(e) => {
+          setPlaying(false);
+          setT(Number(e.target.value) / 1000);
+        }}
+      />
+      <p className={s.note} style={{ marginTop: 10 }}>
+        {WAVE.caption}
+      </p>
+      <div className={s.wavePhases}>
+        {WAVE.phases.map((p, i) => (
+          <article key={p.key} className={`${s.wavePhase} ${phase === i ? s.wavePhaseOn : ""}`}>
+            <div className={`${s.wavePhaseTop} ${s.mono}`}>
+              <span className={s.rust}>{String(i + 1).padStart(2, "0")} · {p.name}</span>
+              <span>{p.window}</span>
+            </div>
+            <h3>{p.action}</h3>
+            <ul>
+              {p.points.map((pt2) => (
+                <li key={pt2}>{pt2}</li>
+              ))}
+            </ul>
+          </article>
+        ))}
+      </div>
+      <div className={`${s.waveRelease} ${phase === 3 ? s.wavePhaseOn : ""}`}>
+        <span className={`${s.mono} ${s.rust}`}>04 · {WAVE.release.name}</span>
+        <p>{WAVE.release.body}</p>
+      </div>
+    </div>
+  );
+}
+
+function CaptureStack() {
+  const [tab, setTab] = useState(1);
+  const opt = CAPTURE.options[tab];
+  return (
+    <div className={s.capture}>
+      <div className={s.captureHead}>
+        <div>
+          <span className={`${s.mono} ${s.rust}`}>{CAPTURE.title}</span>
+          <p className={s.intro} style={{ marginTop: 14 }}>
+            {CAPTURE.intro}
+          </p>
+        </div>
+        <div className={s.captureTabs} role="tablist" aria-label="Capture options">
+          {CAPTURE.options.map((o, i) => (
+            <button key={o.key} type="button" role="tab" aria-selected={tab === i} onClick={() => setTab(i)}>
+              {o.tab}
+            </button>
+          ))}
+        </div>
+      </div>
+      <AnimatePresence mode="wait">
+        <motion.div
+          key={opt.key}
+          className={s.capturePanel}
+          role="tabpanel"
+          initial={{ opacity: 0, y: 14 }}
+          animate={{ opacity: 1, y: 0 }}
+          exit={{ opacity: 0, y: -10 }}
+          transition={{ duration: 0.4, ease: EASE }}
+        >
+          <div>
+            <span className={`${s.captureTag} ${s.mono}`}>{opt.tag}</span>
+            <h3>{opt.tab}</h3>
+            <p className={s.captureWhat}>{opt.what}</p>
+          </div>
+          <div>
+            <span className={s.mono} style={{ color: "var(--muted)" }}>
+              At Allen&apos;s shows
+            </span>
+            <ol className={s.captureSteps}>
+              {opt.how.map((h, i) => (
+                <li key={h}>
+                  <span>{String(i + 1).padStart(2, "0")}</span>
+                  {h}
+                </li>
+              ))}
+            </ol>
+            <div className={s.captureCols}>
+              <div>
+                <span className={s.mono} style={{ color: "var(--muted)" }}>
+                  Why
+                </span>
+                <p>{opt.why}</p>
+              </div>
+              <div>
+                <span className={s.mono} style={{ color: "var(--muted)" }}>
+                  Watch-outs
+                </span>
+                <p>{opt.watch}</p>
+              </div>
+            </div>
+          </div>
+        </motion.div>
+      </AnimatePresence>
+      <div className={s.waveStats}>
+        {WAVE.stats.map((st, i) => (
+          <Reveal key={st.label} className={s.waveStat} delay={i * 0.08}>
+            <strong>{st.value}</strong>
+            <b>{st.label}</b>
+            <span>{st.source}</span>
+          </Reveal>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+function Wave() {
+  return (
+    <section className={s.section} id="wave" aria-labelledby="wave-title">
+      <div className={s.sectionHead}>
+        <div id="wave-title">
+          <Label n="05">The wave</Label>
+          <SplitHeading text={WAVE.title} className={s.h2} />
+        </div>
+        <Reveal>
+          <p className={s.intro}>{WAVE.intro}</p>
+        </Reveal>
+      </div>
+      <WavePlayer />
+      <CaptureStack />
+    </section>
+  );
+}
+
+/* ----------------------------------------------------------------------------
+ * 06 — The system (self-drawing diagram)
  * ------------------------------------------------------------------------- */
 
 const COL = { inX: 0, inW: 270, enX: 465, enW: 270, outX: 930, outW: 270 };
@@ -711,19 +963,19 @@ const curve = (x1: number, y1: number, x2: number, y2: number) => {
 
 function SysPath({ d, progress, range, hot }: { d: string; progress: MotionValue<number>; range: [number, number]; hot?: boolean }) {
   const pathLength = useTransform(progress, range, [0, 1]);
-  return <motion.path d={d} fill="none" stroke={hot ? "#ff6a3d" : "#463c33"} strokeWidth={hot ? 1.6 : 1.2} style={{ pathLength }} />;
+  return <motion.path d={d} fill="none" stroke={hot ? "#fd3737" : "#333333"} strokeWidth={hot ? 1.6 : 1.2} style={{ pathLength }} />;
 }
 
 function SysNode({ x, y, w, h, title, sub, engine, progress, at }: { x: number; y: number; w: number; h: number; title: string; sub?: string; engine?: boolean; progress: MotionValue<number>; at: number }) {
   const opacity = useTransform(progress, [at, at + 0.12], [0, 1]);
   return (
     <motion.g className={s.fadeVar} style={{ ["--o" as string]: opacity } as never}>
-      <rect x={x} y={y - h / 2} width={w} height={h} fill={engine ? "#15110e" : "#0d0b0a"} stroke={engine ? "#ff6a3d" : "#463c33"} strokeWidth={engine ? 1.5 : 1} />
-      <text x={x + 20} y={sub ? y - 4 : y + 6} fill="#f3eadd" fontSize={18} fontWeight={600}>
+      <rect x={x} y={y - h / 2} width={w} height={h} fill={engine ? "#141414" : "#0a0a0a"} stroke={engine ? "#fd3737" : "#333333"} strokeWidth={engine ? 1.5 : 1} />
+      <text x={x + 20} y={sub ? y - 4 : y + 6} fill="#fafafa" fontSize={18} fontWeight={600}>
         {title}
       </text>
       {sub && (
-        <text x={x + 20} y={y + 20} fill="#bfb2a4" fontSize={14}>
+        <text x={x + 20} y={y + 20} fill="#b8b8c0" fontSize={14}>
           {sub}
         </text>
       )}
@@ -746,7 +998,7 @@ function System() {
     <section className={s.section} id="system" aria-labelledby="system-title">
       <div className={s.sectionHead}>
         <div id="system-title">
-          <Label n="05">The system</Label>
+          <Label n="06">The system</Label>
           <SplitHeading text={SYSTEM.title} className={s.h2} />
         </div>
         <Reveal>
@@ -761,7 +1013,7 @@ function System() {
             { x: COL.enX, t: "What CCD runs" },
             { x: COL.outX, t: "Where it lands" },
           ].map((h) => (
-            <text key={h.t} x={h.x} y={40} fill="#8e8174" fontSize={12} letterSpacing="2.2" style={{ textTransform: "uppercase", fontFamily: "var(--font-geist-mono), monospace" }}>
+            <text key={h.t} x={h.x} y={40} fill="#b8b8c0" fontSize={12} letterSpacing="2.2" style={{ textTransform: "uppercase", fontFamily: "var(--font-geist-mono), monospace" }}>
               {h.t.toUpperCase()}
             </text>
           ))}
@@ -775,7 +1027,7 @@ function System() {
             [...inPaths, ...outPaths]
               .filter((p) => p.hot)
               .map((p, i) => (
-                <circle key={`f${i}`} r={4} fill="#ff6a3d">
+                <circle key={`f${i}`} r={4} fill="#fd3737">
                   <animateMotion dur="2.8s" begin={`${i * 0.45}s`} repeatCount="indefinite" path={p.d} />
                 </circle>
               ))}
@@ -878,7 +1130,7 @@ function Fans() {
     <section className={s.section} id="fans" aria-labelledby="fans-title">
       <div className={s.sectionHead}>
         <div id="fans-title">
-          <Label n="06">The fans</Label>
+          <Label n="07">The fans</Label>
           <SplitHeading text={FANS.title} className={s.h2} />
         </div>
         <Reveal>
@@ -959,7 +1211,7 @@ function Rollout() {
     <section className={s.section} id="rollout" aria-labelledby="rollout-title">
       <div className={s.sectionHead}>
         <div id="rollout-title">
-          <Label n="07">The rollout</Label>
+          <Label n="08">The rollout</Label>
           <SplitHeading text={ROLLOUT.title} className={s.h2} />
         </div>
         <Reveal>
@@ -1032,7 +1284,7 @@ function Investment() {
     <section className={s.section} id="investment" aria-labelledby="investment-title">
       <div className={s.sectionHead}>
         <div id="investment-title">
-          <Label n="08">Investment</Label>
+          <Label n="09">Investment</Label>
           <SplitHeading text={INVESTMENT.title} className={s.h2} />
         </div>
         <Reveal>
@@ -1205,7 +1457,7 @@ function Investment() {
 function Next() {
   return (
     <section className={`${s.section} ${s.next}`} id="next" aria-labelledby="next-title">
-      <Label n="09">Next steps</Label>
+      <Label n="10">Next steps</Label>
       <Reveal>
         <h2 id="next-title" className={s.nextTitle}>
           The record&apos;s done. Let&apos;s make sure people <em>find it.</em>
@@ -1245,6 +1497,8 @@ export default function AllenStoneClient() {
       <Cadence />
       <div className={s.rule} />
       <Room />
+      <div className={s.rule} />
+      <Wave />
       <div className={s.rule} />
       <System />
       <div className={s.rule} />

@@ -1,14 +1,5 @@
 import type { Metadata } from "next";
-import { Instrument_Serif } from "next/font/google";
 import AllenStoneClient from "./client";
-
-const serif = Instrument_Serif({
-  variable: "--font-serif",
-  subsets: ["latin"],
-  weight: "400",
-  style: ["normal", "italic"],
-  display: "swap",
-});
 
 const TITLE = "Allen Stone × Crowd Control Digital: Soul, Amplified";
 const DESC =
@@ -33,8 +24,6 @@ export const metadata: Metadata = {
 
 export default function AllenStonePage() {
   return (
-    <div className={serif.variable}>
-      <AllenStoneClient />
-    </div>
+    <AllenStoneClient />
   );
 }
