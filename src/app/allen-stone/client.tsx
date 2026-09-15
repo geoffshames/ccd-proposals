@@ -1,0 +1,1284 @@
+"use client";
+
+/**
+ * ALLEN STONE × CROWD CONTROL DIGITAL — "Soul, amplified."
+ * Bespoke album-rollout proposal. Warm soul-record editorial system: N27 display,
+ * Instrument Serif italics, mono labels, rust on warm ink. Real imagery only
+ * (press photos + Allen's actual top live clips). Motion via Framer Motion:
+ * letter-rise hero with scroll parallax, velocity marquee, pinned scroll-scrubbed
+ * conversion chart, pinned horizontal clip reel, dot-grid cadence, self-drawing
+ * system diagram, scroll-filled rollout timeline, and an interactive spend calculator.
+ */
+
+import Image from "next/image";
+import {
+  useEffect,
+  useRef,
+  useState,
+  type CSSProperties,
+  type ReactNode,
+} from "react";
+import {
+  AnimatePresence,
+  animate,
+  motion,
+  useAnimationFrame,
+  useInView,
+  useMotionValue,
+  useMotionValueEvent,
+  useReducedMotion,
+  useScroll,
+  useSpring,
+  useTransform,
+  useVelocity,
+  type MotionValue,
+} from "framer-motion";
+import s from "./allen.module.css";
+import {
+  IMG,
+  HERO,
+  NAV,
+  GAP,
+  CLIPS,
+  CADENCE,
+  ROOM,
+  SYSTEM,
+  FANS,
+  ROLLOUT,
+  TARGETS,
+  INVESTMENT,
+  SCOPE,
+  NEXT,
+  SOURCES,
+} from "@/lib/allen-stone/content";
+
+const EASE = [0.16, 1, 0.3, 1] as const;
+const usd = (n: number) => "$" + Math.round(n).toLocaleString("en-US");
+const MAIL = `mailto:${NEXT.email}?subject=${encodeURIComponent("Allen Stone × Crowd Control Digital: intro call")}&body=${encodeURIComponent(
+  "Hi Geoff,\n\nWe've read the Allen Stone proposal (proposal.crowdcontroldigital.com/allen-stone) and would like to set up a call.\n\nName / team:\nTimes that work:\n",
+)}`;
+
+/* ----------------------------------------------------------------------------
+ * Helpers
+ * ------------------------------------------------------------------------- */
+
+/** Hydration-safe reduced-motion flag: false on the server and first client render. */
+function useReduced() {
+  const pref = useReducedMotion();
+  const [mounted, setMounted] = useState(false);
+  useEffect(() => setMounted(true), []);
+  return mounted ? !!pref : false;
+}
+
+function useMedia(query: string) {
+  const [match, setMatch] = useState(false);
+  useEffect(() => {
+    const mq = window.matchMedia(query);
+    const update = () => setMatch(mq.matches);
+    update();
+    mq.addEventListener("change", update);
+    return () => mq.removeEventListener("change", update);
+  }, [query]);
+  return match;
+}
+
+function SplitHeading({ text, className }: { text: string; className: string }) {
+  const reduce = useReduced();
+  const ref = useRef<HTMLHeadingElement>(null);
+  const inView = useInView(ref, { once: true, margin: "0px 0px -12% 0px" });
+  const tokens = text.split(" ");
+  return (
+    <h2 ref={ref} className={className} aria-label={text.replace(/\*/g, "")}>
+      {tokens.map((tok, i) => {
+        const accent = tok.startsWith("*") || tok.endsWith("*");
+        const clean = tok.replace(/\*/g, "");
+        return (
+          <span className={s.word} key={i} aria-hidden="true">
+            <motion.span
+              className={s.letter}
+              initial={reduce ? false : { y: "108%" }}
+              animate={reduce || inView ? { y: "0%" } : { y: "108%" }}
+              transition={{ duration: 0.95, ease: EASE, delay: i * 0.06 }}
+            >
+              {accent ? <em>{clean}</em> : clean}
+            </motion.span>
+          </span>
+        );
+      })}
+    </h2>
+  );
+}
+
+function Reveal({ children, delay = 0, y = 28, className, style }: { children: ReactNode; delay?: number; y?: number; className?: string; style?: CSSProperties }) {
+  const reduce = useReduced();
+  return (
+    <motion.div
+      className={className}
+      style={style}
+      initial={reduce ? { opacity: 1, y: 0 } : { opacity: 0, y }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, margin: "-10% 0px" }}
+      transition={{ duration: 0.9, ease: EASE, delay }}
+    >
+      {children}
+    </motion.div>
+  );
+}
+
+function Counter({ value, suffix = "", prefix = "", format }: { value: number; suffix?: string; prefix?: string; format?: (n: number) => string }) {
+  const ref = useRef<HTMLSpanElement>(null);
+  const inView = useInView(ref, { once: true, margin: "-10% 0px" });
+  const reduce = useReduced();
+  const [n, setN] = useState(0);
+  useEffect(() => {
+    if (!inView) return;
+    if (reduce) {
+      setN(value);
+      return;
+    }
+    const controls = animate(0, value, { duration: 1.8, ease: EASE, onUpdate: (v) => setN(v) });
+    return () => controls.stop();
+  }, [inView, reduce, value]);
+  return (
+    <span ref={ref}>
+      {prefix}
+      {format ? format(n) : Math.round(n).toLocaleString("en-US")}
+      {suffix}
+    </span>
+  );
+}
+
+function Label({ n, children }: { n: string; children: ReactNode }) {
+  return (
+    <div className={`${s.label} ${s.mono}`}>
+      <b>{n}</b>
+      {children}
+    </div>
+  );
+}
+
+/* ----------------------------------------------------------------------------
+ * Chrome: progress + topbar
+ * ------------------------------------------------------------------------- */
+
+function Chrome() {
+  const { scrollYProgress } = useScroll();
+  const scaleX = useSpring(scrollYProgress, { stiffness: 140, damping: 30, mass: 0.3 });
+  const [solid, setSolid] = useState(false);
+  const [active, setActive] = useState<string>("");
+
+  useEffect(() => {
+    const onScroll = () => setSolid(window.scrollY > 40);
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    const io = new IntersectionObserver(
+      (entries) => entries.forEach((e) => e.isIntersecting && setActive(e.target.id)),
+      { rootMargin: "-45% 0px -50% 0px" },
+    );
+    NAV.forEach(({ id }) => {
+      const el = document.getElementById(id);
+      if (el) io.observe(el);
+    });
+    return () => {
+      window.removeEventListener("scroll", onScroll);
+      io.disconnect();
+    };
+  }, []);
+
+  const idx = NAV.findIndex((n) => n.id === active);
+  return (
+    <>
+      <motion.div className={s.progress} style={{ scaleX }} />
+      <header className={`${s.topbar} ${solid ? s.topbarSolid : ""}`}>
+        <a href="#top" aria-label="Crowd Control Digital, back to top">
+          <Image unoptimized src="/brand/CC-LOGO-2024-WHITE.png" alt="Crowd Control Digital" width={150} height={26} priority />
+        </a>
+        <nav className={s.navLinks} aria-label="Proposal sections">
+          {NAV.map((n) => (
+            <a key={n.id} href={`#${n.id}`} aria-current={active === n.id ? "true" : undefined}>
+              {n.label}
+            </a>
+          ))}
+        </nav>
+        <span className={s.navNow} aria-hidden="true">
+          {idx >= 0 ? (
+            <>
+              <b>{String(idx + 1).padStart(2, "0")}</b>
+              {NAV[idx].label}
+            </>
+          ) : (
+            "Album rollout proposal"
+          )}
+        </span>
+        <a className={s.navCta} href={MAIL}>
+          Book the call ↗
+        </a>
+      </header>
+    </>
+  );
+}
+
+/* ----------------------------------------------------------------------------
+ * Hero
+ * ------------------------------------------------------------------------- */
+
+function Hero() {
+  const ref = useRef<HTMLElement>(null);
+  const reduce = useReduced();
+  const { scrollYProgress } = useScroll({ target: ref, offset: ["start start", "end start"] });
+  const scale = useTransform(scrollYProgress, [0, 1], reduce ? [1, 1] : [1.04, 1.22]);
+  const imgY = useTransform(scrollYProgress, [0, 1], reduce ? ["0%", "0%"] : ["0%", "10%"]);
+  const textY = useTransform(scrollYProgress, [0, 1], reduce ? ["0%", "0%"] : ["0%", "-22%"]);
+  const fade = useTransform(scrollYProgress, [0, 0.75], [1, reduce ? 1 : 0]);
+
+  let letterIndex = 0;
+  return (
+    <section ref={ref} className={s.hero} id="top" aria-label="Allen Stone album rollout proposal">
+      <motion.div className={s.heroMedia} style={{ scale, y: imgY }}>
+        <Image unoptimized src={`${IMG}/press-orange.jpg`} alt="Allen Stone press photograph in a velvet jacket against burnt orange" fill priority sizes="100vw" />
+      </motion.div>
+      <div className={s.heroShade} />
+      <motion.div className={`${s.heroInner} ${s.fadeVar}`} style={{ y: textY, ["--o" as string]: fade } as never}>
+        <motion.p
+          className={`${s.heroKicker} ${s.mono}`}
+          initial={reduce ? false : { opacity: 0, y: 12 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, ease: EASE, delay: 0.1 }}
+        >
+          {HERO.kicker}
+        </motion.p>
+        <h1 className={s.heroTitle} aria-label="Allen Stone">
+          {["ALLEN", "STONE"].map((w) => (
+            <span className={s.word} key={w} aria-hidden="true">
+              {w.split("").map((ch) => {
+                const i = letterIndex++;
+                return (
+                  <motion.span
+                    key={i}
+                    className={s.letter}
+                    initial={reduce ? false : { y: "105%" }}
+                    animate={{ y: "0%" }}
+                    transition={{ duration: 1.1, ease: EASE, delay: 0.2 + i * 0.045 }}
+                  >
+                    {ch}
+                  </motion.span>
+                );
+              })}
+            </span>
+          ))}
+        </h1>
+        <div className={s.heroRow}>
+          <motion.div initial={reduce ? false : { opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1, ease: EASE, delay: 0.75 }}>
+            <p className={s.heroLine}>{HERO.line}</p>
+            <p className={s.heroBody}>{HERO.body}</p>
+          </motion.div>
+          <motion.div className={s.heroStats} initial={reduce ? false : { opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1, ease: EASE, delay: 0.95 }}>
+            {HERO.stats.map((st) => (
+              <div key={st.label}>
+                <span className={s.heroStat}>
+                  <Counter value={st.value} suffix={st.suffix} />
+                </span>
+                <span className={s.heroStatLabel}>{st.label}</span>
+              </div>
+            ))}
+          </motion.div>
+        </div>
+        <div className={`${s.heroMeta} ${s.mono}`}>
+          <span>{HERO.prepared}</span>
+          <span className={s.scrollCue}>
+            <span aria-hidden="true" />
+            Scroll · {HERO.date}
+          </span>
+        </div>
+      </motion.div>
+    </section>
+  );
+}
+
+/* ----------------------------------------------------------------------------
+ * Velocity marquee
+ * ------------------------------------------------------------------------- */
+
+const wrap = (min: number, max: number, v: number) => {
+  const r = max - min;
+  return ((((v - min) % r) + r) % r) + min;
+};
+
+function Marquee() {
+  const reduce = useReduced();
+  const baseX = useMotionValue(0);
+  const { scrollY } = useScroll();
+  const velocity = useVelocity(scrollY);
+  const smooth = useSpring(velocity, { damping: 50, stiffness: 400 });
+  const factor = useTransform(smooth, [0, 1000], [0, 4], { clamp: false });
+  const x = useTransform(baseX, (v) => `${wrap(-25, 0, v)}%`);
+  const dir = useRef(-1);
+  useAnimationFrame((_, delta) => {
+    if (reduce) return;
+    let move = dir.current * 1.6 * (delta / 1000);
+    const f = factor.get();
+    if (f < 0) dir.current = 1;
+    else if (f > 0) dir.current = -1;
+    move += dir.current * Math.abs(move) * Math.abs(f);
+    baseX.set(baseX.get() + move);
+  });
+  const item = (
+    <span className={s.marqueeItem}>
+      The voice is the strategy <span className={s.marqueeStar}>✺</span> Live is the <i>product</i> <span className={s.marqueeStar}>✺</span> Point it at the album <span className={s.marqueeStar}>✺</span>
+    </span>
+  );
+  return (
+    <div className={s.marquee} aria-hidden="true">
+      <motion.div className={s.marqueeTrack} style={{ x }}>
+        {item}
+        {item}
+        {item}
+        {item}
+      </motion.div>
+    </div>
+  );
+}
+
+/* ----------------------------------------------------------------------------
+ * 01 — The gap (pinned, scroll-scrubbed)
+ * ------------------------------------------------------------------------- */
+
+const MAX_RATIO = 20;
+
+function GapRow({ row, i, progress }: { row: (typeof GAP.rows)[number]; i: number; progress: MotionValue<number> }) {
+  const start = 0.08 + i * 0.13;
+  const end = start + 0.16;
+  const scaleX = useTransform(progress, [start, end], [0, row.ratio / MAX_RATIO]);
+  const opacity = useTransform(progress, [start - 0.06, start], [0.2, 1]);
+  const val = useTransform(progress, [start, end], [0, row.ratio]);
+  const label = useTransform(val, (v) => `${v.toFixed(1)}×`);
+  return (
+    <motion.div className={`${s.gapRow} ${s.fadeVar} ${"self" in row && row.self ? s.gapSelf : ""}`} style={{ ["--o" as string]: opacity } as never}>
+      <div className={s.gapName}>
+        {row.name}
+        <small>
+          {row.followers} IG → {row.listeners} listeners
+        </small>
+      </div>
+      <div className={s.gapTrack}>
+        <motion.div className={s.gapBar} style={{ scaleX }} />
+      </div>
+      <motion.div className={s.gapVal}>{label}</motion.div>
+    </motion.div>
+  );
+}
+
+function Gap() {
+  const ref = useRef<HTMLDivElement>(null);
+  const reduce = useReduced();
+  const one = useMotionValue(1);
+  const { scrollYProgress } = useScroll({ target: ref, offset: ["start start", "end end"] });
+  const progress = reduce ? one : scrollYProgress;
+  const callout = useTransform(progress, [0.78, 0.9], [0, 1]);
+  const calloutY = useTransform(progress, [0.78, 0.9], [20, 0]);
+  return (
+    <section id="gap" aria-labelledby="gap-title">
+      <div ref={ref} className={`${s.pin} ${s.pinGap}`}>
+        <div className={s.sticky}>
+          <div className={s.gapWrap}>
+            <div>
+              <Label n="01">The gap</Label>
+              <div id="gap-title">
+                <SplitHeading text={GAP.title} className={s.h2} />
+              </div>
+              <p className={s.intro} style={{ marginTop: 26 }}>
+                {GAP.intro}
+              </p>
+            </div>
+            <div>
+              <div className={s.gapRows}>
+                {GAP.rows.map((row, i) => (
+                  <GapRow key={row.name} row={row} i={i} progress={progress} />
+                ))}
+              </div>
+              <div className={`${s.gapAxis} ${s.mono}`} aria-hidden="true">
+                <span>0×</span>
+                <span>10×</span>
+                <span>20×</span>
+              </div>
+              <motion.p className={`${s.gapCallout} ${s.fadeVar}`} style={{ ["--o" as string]: callout, y: calloutY } as never}>
+                Same-size fanbase. <span className={s.rust}>A fraction of the reach.</span>
+              </motion.p>
+              <p className={s.note} style={{ marginTop: 16 }}>
+                {GAP.note}
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className={s.section} style={{ paddingTop: 20 }}>
+        <div className={s.lessons}>
+          {GAP.lessons.map((l, i) => (
+            <Reveal key={l.who} className={s.lesson} delay={i * 0.1}>
+              <div className={s.lessonWho}>
+                <h3>{l.who}</h3>
+                <span className={`${s.mono} ${s.rust}`}>{l.stat}</span>
+              </div>
+              <p>{l.lesson}</p>
+              <p className={s.lessonTake}>{l.take}</p>
+            </Reveal>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+/* ----------------------------------------------------------------------------
+ * 02 — Live is the product (pinned horizontal reel)
+ * ------------------------------------------------------------------------- */
+
+function ClipCard({ clip, i }: { clip: (typeof CLIPS)[number]; i: number }) {
+  const onTikTok = clip.href.includes("tiktok.com");
+  return (
+    <a className={s.clip} href={clip.href} target="_blank" rel="noreferrer" aria-label={`${clip.title}, ${clip.context}, ${clip.views} ${clip.platform}. Watch on ${onTikTok ? "TikTok" : "YouTube"}.`}>
+      <div className={s.clipMedia}>
+        <Image unoptimized src={`${IMG}/${clip.img}`} alt="" fill sizes="(max-width: 900px) 82vw, 36vw" />
+        <div className={s.clipShade} />
+        <div className={s.clipViews}>
+          <strong>{clip.views}</strong>
+          <span>{clip.platform}</span>
+        </div>
+        <span className={s.clipPlay} aria-hidden="true">
+          <svg viewBox="0 0 16 16" fill="currentColor">
+            <path d="M3 1.5v13l11-6.5z" />
+          </svg>
+        </span>
+      </div>
+      <div className={s.clipMeta}>
+        <div>
+          <h3>{clip.title}</h3>
+          <p>{clip.context}</p>
+        </div>
+        <span className={s.clipIdx}>{String(i + 1).padStart(2, "0")}</span>
+      </div>
+    </a>
+  );
+}
+
+function Contrast() {
+  return (
+    <div className={s.contrast}>
+      <span className={`${s.mono} ${s.rust}`}>Meanwhile</span>
+      <div>
+        <strong>3K–11K</strong>
+        <p style={{ marginTop: 18 }}>Plays on ticket and promo posts. The voice sells the show better than the flyer does.</p>
+      </div>
+      <span className={s.note}>TikTok + Instagram post-level audit, Sept 2026</span>
+    </div>
+  );
+}
+
+function Live() {
+  const ref = useRef<HTMLDivElement>(null);
+  const trackRef = useRef<HTMLDivElement>(null);
+  const reduce = useReduced();
+  const mobile = useMedia("(max-width: 900px)");
+  const [dist, setDist] = useState(0);
+  const [count, setCount] = useState(1);
+  const pinned = !mobile && !reduce;
+
+  useEffect(() => {
+    const measure = () => {
+      if (trackRef.current) setDist(Math.max(0, trackRef.current.scrollWidth - window.innerWidth));
+    };
+    measure();
+    const ro = new ResizeObserver(measure);
+    if (trackRef.current) ro.observe(trackRef.current);
+    window.addEventListener("resize", measure);
+    return () => {
+      ro.disconnect();
+      window.removeEventListener("resize", measure);
+    };
+  }, [pinned]);
+
+  const { scrollYProgress } = useScroll({ target: ref, offset: ["start start", "end end"] });
+  const x = useTransform(scrollYProgress, (v) => -Math.min(1, Math.max(0, (v - 0.05) / 0.9)) * dist);
+  useMotionValueEvent(scrollYProgress, "change", (v) => setCount(Math.min(CLIPS.length, Math.max(1, Math.ceil(v * CLIPS.length)))));
+
+  const head = (
+    <div className={s.liveHead}>
+      <div>
+        <Label n="02">Live is the product</Label>
+        <SplitHeading text="Every breakout is the *voice,* live." className={s.liveTitle} />
+      </div>
+      {pinned && (
+        <div className={s.liveCounter} aria-hidden="true">
+          {String(count).padStart(2, "0")}
+          <span>/{String(CLIPS.length).padStart(2, "0")}</span>
+        </div>
+      )}
+    </div>
+  );
+
+  return (
+    <section id="live" aria-label="Live is the product">
+      <div ref={ref} className={`${s.pin} ${pinned ? s.pinLive : ""}`}>
+        <div className={pinned ? s.sticky : undefined} style={pinned ? undefined : { padding: "96px 0 40px" }}>
+          <div className={s.liveStage}>
+            {head}
+            {pinned ? (
+              <motion.div ref={trackRef} className={s.reel} style={{ x }}>
+                {CLIPS.map((c, i) => (
+                  <ClipCard key={c.img} clip={c} i={i} />
+                ))}
+                <Contrast />
+              </motion.div>
+            ) : (
+              <div ref={trackRef} className={s.liveMobile} style={{ display: "flex" }}>
+                {CLIPS.map((c, i) => (
+                  <ClipCard key={c.img} clip={c} i={i} />
+                ))}
+                <Contrast />
+              </div>
+            )}
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+/* ----------------------------------------------------------------------------
+ * 03 — Cadence (dot grids)
+ * ------------------------------------------------------------------------- */
+
+const SPORADIC = new Set([2, 9, 15, 22, 27, 33, 40, 45]);
+
+function Dots({ total, lit, plan }: { total: number; lit: (i: number) => boolean; plan?: boolean }) {
+  const reduce = useReduced();
+  return (
+    <motion.div
+      className={s.dots}
+      initial="hide"
+      whileInView="show"
+      viewport={{ once: true, margin: "-15% 0px" }}
+      variants={{ show: { transition: { staggerChildren: reduce ? 0 : plan ? 0.018 : 0.012 } } }}
+      aria-hidden="true"
+    >
+      {Array.from({ length: total }).map((_, i) => (
+        <motion.span
+          key={i}
+          className={`${s.dot} ${lit(i) ? s.dotOn : ""}`}
+          variants={{
+            hide: reduce ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.3 },
+            show: { opacity: 1, scale: 1, transition: { duration: 0.35, ease: EASE } },
+          }}
+        />
+      ))}
+    </motion.div>
+  );
+}
+
+function Cadence() {
+  return (
+    <section className={s.section} id="cadence" aria-labelledby="cadence-title">
+      <div className={s.sectionHead}>
+        <div id="cadence-title">
+          <Label n="03">Cadence</Label>
+          <SplitHeading text={CADENCE.title} className={s.h2} />
+        </div>
+        <Reveal>
+          <p className={s.intro}>{CADENCE.intro}</p>
+        </Reveal>
+      </div>
+      <div className={s.cadence}>
+        <div className={s.cadencePanel}>
+          <span className={`${s.mono}`} style={{ color: "var(--muted)" }}>
+            Today
+          </span>
+          <div className={s.cadenceNum} style={{ marginTop: 14 }}>
+            <Counter value={CADENCE.today.count} />
+          </div>
+          <p className={s.cadenceLabel}>{CADENCE.today.label}</p>
+          <p className={s.cadenceSub}>{CADENCE.today.median}</p>
+          <Dots total={CADENCE.plan.count} lit={(i) => SPORADIC.has(i)} />
+        </div>
+        <div className={`${s.cadencePanel} ${s.cadencePanelPlan}`}>
+          <span className={`${s.mono} ${s.rust}`}>With CCD</span>
+          <div className={s.cadenceNum} style={{ marginTop: 14 }}>
+            <Counter value={CADENCE.plan.count} suffix="+" />
+          </div>
+          <p className={s.cadenceLabel}>{CADENCE.plan.label}</p>
+          <p className={s.cadenceSub}>{CADENCE.plan.median}</p>
+          <Dots total={CADENCE.plan.count} lit={() => true} plan />
+        </div>
+      </div>
+      <div className={s.facts}>
+        {CADENCE.facts.map((f, i) => (
+          <Reveal key={f.k} delay={i * 0.08}>
+            <span className={s.mono} style={{ color: "var(--dim)" }}>
+              {f.k}
+            </span>
+            <b>{f.v}</b>
+          </Reveal>
+        ))}
+      </div>
+    </section>
+  );
+}
+
+/* ----------------------------------------------------------------------------
+ * 04 — The room
+ * ------------------------------------------------------------------------- */
+
+function Room() {
+  const mediaRef = useRef<HTMLDivElement>(null);
+  const reduce = useReduced();
+  const mobile = useMedia("(max-width: 900px)");
+  const { scrollYProgress } = useScroll({ target: mediaRef, offset: ["start end", "end start"] });
+  const y = useTransform(scrollYProgress, [0, 1], reduce ? ["0%", "0%"] : ["-6%", "6%"]);
+  return (
+    <section className={s.section} id="room" aria-labelledby="room-title">
+      <div className={s.room}>
+        <div ref={mediaRef} className={s.roomMedia}>
+          <motion.div className={s.roomMediaInner} style={{ y }}>
+            <Image unoptimized src={`${IMG}/live-stage.jpg`} alt="Allen Stone performing on a festival main stage with a cream Stratocaster" fill sizes="(max-width: 900px) 100vw, 45vw" />
+          </motion.div>
+          <div className={`${s.roomCaption} ${s.mono}`}>Allen Stone, live</div>
+        </div>
+        <div>
+          <div id="room-title">
+            <Label n="04">The room</Label>
+            <SplitHeading text={ROOM.title} className={s.h2} />
+          </div>
+          <Reveal>
+            <p className={s.intro} style={{ marginTop: 28 }}>
+              {ROOM.intro}
+            </p>
+          </Reveal>
+          <Reveal>
+            <p className={s.quote}>{ROOM.quote}</p>
+            <span className={`${s.mono}`} style={{ color: "var(--dim)" }}>
+              {ROOM.quoteSource}
+            </span>
+          </Reveal>
+          <div className={s.dates}>
+            <span className={s.mono} style={{ color: "var(--muted)" }}>
+              Opening for Teddy Swims · November 2026
+            </span>
+            <div style={{ position: "relative", marginTop: 22 }}>
+              <motion.div
+                className={s.datesLine}
+                initial={reduce ? false : mobile ? { scaleY: 0 } : { scaleX: 0 }}
+                whileInView={{ scaleX: 1, scaleY: 1 }}
+                viewport={{ once: true, margin: "-15% 0px" }}
+                transition={{ duration: 1.4, ease: EASE }}
+              />
+              <div className={s.datesRow}>
+                {ROOM.dates.map((d, i) => (
+                  <Reveal key={d.day} className={s.date} delay={0.2 + i * 0.12} y={12}>
+                    <span className={`${s.mono} ${s.rust}`}>{d.day}</span>
+                    <b>{d.city}</b>
+                    <span>{d.venue}</span>
+                  </Reveal>
+                ))}
+              </div>
+            </div>
+          </div>
+          <div className={s.owned}>
+            {ROOM.owned.map((o, i) => (
+              <Reveal key={o.k} className={s.ownedRow} delay={i * 0.06} y={10}>
+                <b>{o.k}</b>
+                <span>{o.v}</span>
+              </Reveal>
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+/* ----------------------------------------------------------------------------
+ * 05 — The system (self-drawing diagram)
+ * ------------------------------------------------------------------------- */
+
+const COL = { inX: 0, inW: 270, enX: 465, enW: 270, outX: 930, outW: 270 };
+const IN_Y = [150, 280, 410];
+const EN_Y = [150, 280, 410];
+const OUT_Y = [118, 226, 334, 442];
+
+const curve = (x1: number, y1: number, x2: number, y2: number) => {
+  const mid = (x1 + x2) / 2;
+  return `M ${x1} ${y1} C ${mid} ${y1}, ${mid} ${y2}, ${x2} ${y2}`;
+};
+
+function SysPath({ d, progress, range, hot }: { d: string; progress: MotionValue<number>; range: [number, number]; hot?: boolean }) {
+  const pathLength = useTransform(progress, range, [0, 1]);
+  return <motion.path d={d} fill="none" stroke={hot ? "#ff6a3d" : "#463c33"} strokeWidth={hot ? 1.6 : 1.2} style={{ pathLength }} />;
+}
+
+function SysNode({ x, y, w, h, title, sub, engine, progress, at }: { x: number; y: number; w: number; h: number; title: string; sub?: string; engine?: boolean; progress: MotionValue<number>; at: number }) {
+  const opacity = useTransform(progress, [at, at + 0.12], [0, 1]);
+  return (
+    <motion.g className={s.fadeVar} style={{ ["--o" as string]: opacity } as never}>
+      <rect x={x} y={y - h / 2} width={w} height={h} fill={engine ? "#15110e" : "#0d0b0a"} stroke={engine ? "#ff6a3d" : "#463c33"} strokeWidth={engine ? 1.5 : 1} />
+      <text x={x + 20} y={sub ? y - 4 : y + 6} fill="#f3eadd" fontSize={18} fontWeight={600}>
+        {title}
+      </text>
+      {sub && (
+        <text x={x + 20} y={y + 20} fill="#bfb2a4" fontSize={14}>
+          {sub}
+        </text>
+      )}
+    </motion.g>
+  );
+}
+
+function System() {
+  const ref = useRef<HTMLDivElement>(null);
+  const reduce = useReduced();
+  const one = useMotionValue(1);
+  const inView = useInView(ref, { margin: "-20% 0px" });
+  const { scrollYProgress } = useScroll({ target: ref, offset: ["start 85%", "center 50%"] });
+  const progress = reduce ? one : scrollYProgress;
+
+  const inPaths = IN_Y.flatMap((y1, i) => EN_Y.map((y2, j) => ({ d: curve(COL.inX + COL.inW, y1, COL.enX, y2), hot: i === j })));
+  const outPaths = EN_Y.flatMap((y1, i) => OUT_Y.map((y2, j) => ({ d: curve(COL.enX + COL.enW, y1, COL.outX, y2), hot: (i === 0 && j === 0) || (i === 1 && j === 1) || (i === 2 && j === 2) || (i === 1 && j === 3) })));
+
+  return (
+    <section className={s.section} id="system" aria-labelledby="system-title">
+      <div className={s.sectionHead}>
+        <div id="system-title">
+          <Label n="05">The system</Label>
+          <SplitHeading text={SYSTEM.title} className={s.h2} />
+        </div>
+        <Reveal>
+          <p className={s.intro}>{SYSTEM.intro}</p>
+        </Reveal>
+      </div>
+
+      <div ref={ref} className={s.systemDesktop}>
+        <svg className={s.systemSvg} viewBox="0 0 1200 500" role="img" aria-label="Diagram: live clips, arena crowds, and new singles flow through CCD's native social, retargeting pools, and release flights into Spotify saves and follows, the Text STONE list, vinyl pre-orders, and tickets.">
+          {[
+            { x: COL.inX, t: "What Allen has" },
+            { x: COL.enX, t: "What CCD runs" },
+            { x: COL.outX, t: "Where it lands" },
+          ].map((h) => (
+            <text key={h.t} x={h.x} y={40} fill="#8e8174" fontSize={12} letterSpacing="2.2" style={{ textTransform: "uppercase", fontFamily: "var(--font-geist-mono), monospace" }}>
+              {h.t.toUpperCase()}
+            </text>
+          ))}
+          {inPaths.map((p, i) => (
+            <SysPath key={`i${i}`} d={p.d} hot={p.hot} progress={progress} range={[0.15, 0.55]} />
+          ))}
+          {outPaths.map((p, i) => (
+            <SysPath key={`o${i}`} d={p.d} hot={p.hot} progress={progress} range={[0.5, 0.92]} />
+          ))}
+          {!reduce && inView &&
+            [...inPaths, ...outPaths]
+              .filter((p) => p.hot)
+              .map((p, i) => (
+                <circle key={`f${i}`} r={4} fill="#ff6a3d">
+                  <animateMotion dur="2.8s" begin={`${i * 0.45}s`} repeatCount="indefinite" path={p.d} />
+                </circle>
+              ))}
+          {SYSTEM.inputs.map((n, i) => (
+            <SysNode key={n.title} x={COL.inX} y={IN_Y[i]} w={COL.inW} h={76} title={n.title} sub={n.sub} progress={progress} at={0.02 + i * 0.05} />
+          ))}
+          {SYSTEM.engine.map((n, i) => (
+            <SysNode key={n.title} x={COL.enX} y={EN_Y[i]} w={COL.enW} h={86} title={n.title} sub={n.sub} engine progress={progress} at={0.4 + i * 0.05} />
+          ))}
+          {SYSTEM.outputs.map((t, i) => (
+            <SysNode key={t} x={COL.outX} y={OUT_Y[i]} w={COL.outW} h={62} title={t} progress={progress} at={0.78 + i * 0.04} />
+          ))}
+        </svg>
+      </div>
+
+      <div className={s.systemMobile}>
+        <Reveal className={s.sysCol}>
+          <span className={s.mono} style={{ color: "var(--dim)" }}>
+            What Allen has
+          </span>
+          <ul>
+            {SYSTEM.inputs.map((n) => (
+              <li key={n.title}>{n.title}</li>
+            ))}
+          </ul>
+        </Reveal>
+        <div className={s.sysArrow} aria-hidden="true">
+          ↓
+        </div>
+        <Reveal className={`${s.sysCol} ${s.sysEngine}`}>
+          <span className={`${s.mono} ${s.rust}`}>What CCD runs</span>
+          <ul>
+            {SYSTEM.engine.map((n) => (
+              <li key={n.title}>
+                {n.title} <span style={{ color: "var(--muted)" }}>· {n.sub}</span>
+              </li>
+            ))}
+          </ul>
+        </Reveal>
+        <div className={s.sysArrow} aria-hidden="true">
+          ↓
+        </div>
+        <Reveal className={s.sysCol}>
+          <span className={s.mono} style={{ color: "var(--dim)" }}>
+            Where it lands
+          </span>
+          <ul>
+            {SYSTEM.outputs.map((t) => (
+              <li key={t}>{t}</li>
+            ))}
+          </ul>
+        </Reveal>
+      </div>
+    </section>
+  );
+}
+
+/* ----------------------------------------------------------------------------
+ * 06 — Fans
+ * ------------------------------------------------------------------------- */
+
+function Quotes() {
+  const [i, setI] = useState(0);
+  const [paused, setPaused] = useState(false);
+  const reduce = useReduced();
+  useEffect(() => {
+    if (paused || reduce) return;
+    const t = setInterval(() => setI((v) => (v + 1) % FANS.quotes.length), 5200);
+    return () => clearInterval(t);
+  }, [paused, reduce]);
+  const q = FANS.quotes[i];
+  return (
+    <div className={s.quoteBox} onMouseEnter={() => setPaused(true)} onMouseLeave={() => setPaused(false)}>
+      <span className={s.mono} style={{ color: "var(--muted)" }}>
+        In their words
+      </span>
+      <div style={{ marginTop: 18, minHeight: 150 }} aria-live="polite">
+        <AnimatePresence mode="wait">
+          <motion.div key={i} initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -12 }} transition={{ duration: 0.55, ease: EASE }}>
+            <blockquote>“{q.text}”</blockquote>
+            <cite className={`${s.mono}`} style={{ color: "var(--dim)" }}>
+              {q.source}
+            </cite>
+          </motion.div>
+        </AnimatePresence>
+      </div>
+      <div className={s.quoteDots}>
+        {FANS.quotes.map((_, k) => (
+          <button key={k} type="button" aria-label={`Quote ${k + 1}`} aria-pressed={k === i} onClick={() => setI(k)} />
+        ))}
+      </div>
+    </div>
+  );
+}
+
+function Fans() {
+  const reduce = useReduced();
+  const max = Math.max(...FANS.cities.map((c) => c.listeners));
+  return (
+    <section className={s.section} id="fans" aria-labelledby="fans-title">
+      <div className={s.sectionHead}>
+        <div id="fans-title">
+          <Label n="06">The fans</Label>
+          <SplitHeading text={FANS.title} className={s.h2} />
+        </div>
+        <Reveal>
+          <p className={s.intro}>{FANS.intro}</p>
+        </Reveal>
+      </div>
+      <div className={s.personas}>
+        {FANS.personas.map((p, i) => (
+          <Reveal key={p.name} delay={i * 0.1} className={s.persona}>
+            <div className={s.personaGlow} />
+            <div className={s.personaTop}>
+              <span className={`${s.mono} ${s.rust}`}>0{i + 1}</span>
+              <span className={s.mono} style={{ color: "var(--muted)" }}>
+                {p.age}
+              </span>
+            </div>
+            <h3>{p.name}</h3>
+            <p>{p.body}</p>
+            <div className={s.traits}>
+              {p.traits.map((t) => (
+                <span key={t}>{t}</span>
+              ))}
+            </div>
+          </Reveal>
+        ))}
+      </div>
+      <div className={s.fansLower}>
+        <div>
+          <span className={s.mono} style={{ color: "var(--muted)" }}>
+            Top Spotify cities · monthly listeners
+          </span>
+          <div style={{ marginTop: 24 }}>
+            {FANS.cities.map((c, i) => (
+              <div key={c.city} className={s.cityRow}>
+                <div className={s.cityTop}>
+                  <b style={{ fontWeight: 500 }}>{c.city}</b>
+                  <span>{(c.listeners / 1000).toFixed(1)}K</span>
+                </div>
+                <div className={s.cityTrack}>
+                  <motion.div
+                    className={s.cityBar}
+                    initial={reduce ? { scaleX: c.listeners / max } : { scaleX: 0 }}
+                    whileInView={{ scaleX: c.listeners / max }}
+                    viewport={{ once: true, margin: "-10% 0px" }}
+                    transition={{ duration: 1.2, ease: EASE, delay: i * 0.08 }}
+                  />
+                </div>
+              </div>
+            ))}
+          </div>
+          <p className={s.note} style={{ marginTop: 14 }}>
+            Auckland and Sydney lead, and streaming outside the US grew nearly 3× faster than at home in H1 2026. Flights geo-weight to both.
+          </p>
+        </div>
+        <Quotes />
+      </div>
+    </section>
+  );
+}
+
+/* ----------------------------------------------------------------------------
+ * 07 — Rollout (scroll-filled timeline)
+ * ------------------------------------------------------------------------- */
+
+function Rollout() {
+  const ref = useRef<HTMLDivElement>(null);
+  const reduce = useReduced();
+  const { scrollYProgress } = useScroll({ target: ref, offset: ["start 70%", "end 60%"] });
+  const fill = useSpring(scrollYProgress, { stiffness: 120, damping: 30, mass: 0.4 });
+  const n = ROLLOUT.phases.length;
+  const [active, setActive] = useState(-1);
+  useMotionValueEvent(scrollYProgress, "change", (v) => {
+    if (reduce) return;
+    setActive(v <= 0.01 ? -1 : Math.min(n - 1, Math.floor(v * n + 0.35)));
+  });
+
+  return (
+    <section className={s.section} id="rollout" aria-labelledby="rollout-title">
+      <div className={s.sectionHead}>
+        <div id="rollout-title">
+          <Label n="07">The rollout</Label>
+          <SplitHeading text={ROLLOUT.title} className={s.h2} />
+        </div>
+        <Reveal>
+          <p className={s.intro}>{ROLLOUT.intro}</p>
+        </Reveal>
+      </div>
+      <div ref={ref} className={s.timeline}>
+        <div className={s.tlLine} aria-hidden="true">
+          <motion.div className={s.tlFill} style={{ scaleY: reduce ? 1 : fill }} />
+        </div>
+        {ROLLOUT.phases.map((p, i) => {
+          const on = reduce || i <= active;
+          return (
+            <div key={p.name} className={`${s.phase} ${on ? s.phaseOn : ""}`}>
+              <span className={s.phaseDot} aria-hidden="true" />
+              <div>
+                <div className={`${s.phaseWhen} ${s.mono}`}>
+                  <span className={s.rust}>{p.when}</span>
+                  <span>{p.rel}</span>
+                </div>
+                <h3>{p.name}</h3>
+                {"release" in p && p.release && <span className={`${s.releaseTag} ${s.mono}`}>Release day</span>}
+              </div>
+              <ul>
+                {p.points.map((pt, k) => (
+                  <li key={k}>
+                    <span>0{k + 1}</span>
+                    {pt}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          );
+        })}
+      </div>
+      <div className={s.targets}>
+        {TARGETS.map((t, i) => (
+          <Reveal key={t.label} className={s.target} delay={i * 0.08}>
+            <strong>{t.value}</strong>
+            <b>{t.label}</b>
+            <span>{t.context}</span>
+          </Reveal>
+        ))}
+      </div>
+      <p className={s.note} style={{ marginTop: 18 }}>
+        Directional targets from competitive benchmarks and current baselines, not guarantees.
+      </p>
+    </section>
+  );
+}
+
+/* ----------------------------------------------------------------------------
+ * 08 — Investment (interactive)
+ * ------------------------------------------------------------------------- */
+
+const MIN_SPEND = 1000;
+const MAX_SPEND = 25000;
+
+function Investment() {
+  const [spend, setSpend] = useState(6000);
+  const [picked, setPicked] = useState<number | null>(1);
+  const reduce = useReduced();
+  const fee = spend * INVESTMENT.fee;
+  const toCcd = INVESTMENT.retainer + fee;
+  const planMax = Math.max(...INVESTMENT.plan.map((p) => p.spend));
+  const planMedia = INVESTMENT.plan.reduce((a, p) => a + p.spend, 0);
+  const pct = ((spend - MIN_SPEND) / (MAX_SPEND - MIN_SPEND)) * 100;
+
+  return (
+    <section className={s.section} id="investment" aria-labelledby="investment-title">
+      <div className={s.sectionHead}>
+        <div id="investment-title">
+          <Label n="08">Investment</Label>
+          <SplitHeading text={INVESTMENT.title} className={s.h2} />
+        </div>
+        <Reveal>
+          <p className={s.intro}>One flat retainer for strategy, social, and paid. Media runs on top at 15%, paid straight to the platforms, so every ad dollar stays visible and scalable.</p>
+        </Reveal>
+      </div>
+      <div className={s.invest}>
+        <div>
+          <div className={s.bigPrice}>
+            <Counter value={INVESTMENT.retainer} prefix="$" />
+            <small>/ month</small>
+          </div>
+          <div className={`${s.priceSub} ${s.mono}`}>
+            <span>
+              <b>{INVESTMENT.months} months</b>
+            </span>
+            <span>
+              <b>{usd(INVESTMENT.retainer * INVESTMENT.months)}</b> total retainer
+            </span>
+            <span>
+              <b>+15%</b> of managed spend
+            </span>
+          </div>
+          <div className={s.includes}>
+            {INVESTMENT.includes.map((inc, i) => (
+              <Reveal key={inc.name} className={s.include} delay={i * 0.06} y={12}>
+                <span>0{i + 1}</span>
+                <div>
+                  <b>{inc.name}</b>
+                  <p>{inc.body}</p>
+                </div>
+              </Reveal>
+            ))}
+          </div>
+          <p className={s.note} style={{ marginTop: 20 }}>
+            {INVESTMENT.terms}
+          </p>
+        </div>
+
+        <div className={s.calc}>
+          <div className={s.calcHead}>
+            <span className={`${s.mono} ${s.rust}`}>Media calculator</span>
+            <span className={s.mono} style={{ color: "var(--dim)" }}>
+              Drag or pick a month
+            </span>
+          </div>
+          <div className={s.calcSpend}>
+            {usd(spend)}
+            <span>ad spend / mo</span>
+          </div>
+          <input
+            className={s.slider}
+            type="range"
+            min={MIN_SPEND}
+            max={MAX_SPEND}
+            step={500}
+            value={spend}
+            aria-label="Monthly ad spend"
+            style={{ ["--fill" as string]: `${pct}%` } as CSSProperties}
+            onChange={(e) => {
+              setSpend(Number(e.target.value));
+              setPicked(null);
+            }}
+          />
+          <div className={`${s.sliderScale} ${s.mono}`}>
+            <span>{usd(MIN_SPEND)}</span>
+            <span>{usd(MAX_SPEND)}</span>
+          </div>
+          <div className={s.calcRows}>
+            <div className={s.calcRow}>
+              <span>Ad spend, paid to platforms</span>
+              <b>{usd(spend)}</b>
+            </div>
+            <div className={s.calcRow}>
+              <span>Management fee (15%)</span>
+              <b>{usd(fee)}</b>
+            </div>
+            <div className={s.calcRow}>
+              <span>Retainer</span>
+              <b>{usd(INVESTMENT.retainer)}</b>
+            </div>
+          </div>
+          <div className={s.calcTotal}>
+            <span>Monthly to CCD</span>
+            <b>{usd(toCcd)}</b>
+          </div>
+          <p className={s.note}>All-in including media: {usd(toCcd + spend)} / month</p>
+
+          <div className={s.plan}>
+            <span className={s.mono} style={{ color: "var(--muted)" }}>
+              Recommended media plan · {usd(planMedia)} across the cycle
+            </span>
+            <div className={s.planBars}>
+              {INVESTMENT.plan.map((p, i) => (
+                <button
+                  key={p.month}
+                  type="button"
+                  className={s.planBar}
+                  aria-pressed={picked === i}
+                  aria-label={`${p.month} ${p.label}: ${usd(p.spend)}`}
+                  onClick={() => {
+                    setSpend(p.spend);
+                    setPicked(i);
+                  }}
+                >
+                  <em>{usd(p.spend / 1000)}K</em>
+                  <motion.span
+                    className={s.planFill}
+                    style={{ height: `${(p.spend / planMax) * 100}%`, display: "block" }}
+                    initial={reduce ? { scaleY: 1 } : { scaleY: 0 }}
+                    whileInView={{ scaleY: 1 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.9, ease: EASE, delay: i * 0.07 }}
+                  />
+                </button>
+              ))}
+            </div>
+            <div className={s.planLabels}>
+              {INVESTMENT.plan.map((p) => (
+                <span key={p.month}>
+                  <b>{p.month}</b>
+                  {p.label}
+                </span>
+              ))}
+            </div>
+            <p className={s.note} style={{ marginTop: 14 }}>
+              Six-month view: {usd(INVESTMENT.retainer * INVESTMENT.months)} retainer + {usd(planMedia * INVESTMENT.fee)} management fee on {usd(planMedia)} of recommended media. Scales up or down with results.
+            </p>
+          </div>
+          <div className={s.addOns}>
+            <span className={s.mono} style={{ color: "var(--muted)" }}>
+              Available as add-ons
+            </span>
+            {INVESTMENT.addOns.map((a) => (
+              <div key={a.name} className={s.addOn}>
+                <b style={{ fontWeight: 500 }}>{a.name}</b>
+                <span>{a.basis}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+
+      <div className={s.scope} style={{ marginTop: "clamp(56px, 8vh, 96px)" }}>
+        <div className={`${s.scopeCol} ${s.scopeIn}`}>
+          <h3>Included</h3>
+          <ul>
+            {SCOPE.included.map((x) => (
+              <li key={x}>{x}</li>
+            ))}
+          </ul>
+        </div>
+        <div className={`${s.scopeCol} ${s.scopeOut}`}>
+          <h3>Not included</h3>
+          <ul>
+            {SCOPE.excluded.map((x) => (
+              <li key={x}>{x}</li>
+            ))}
+          </ul>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+/* ----------------------------------------------------------------------------
+ * Next + footer
+ * ------------------------------------------------------------------------- */
+
+function Next() {
+  return (
+    <section className={`${s.section} ${s.next}`} id="next" aria-labelledby="next-title">
+      <Label n="09">Next steps</Label>
+      <Reveal>
+        <h2 id="next-title" className={s.nextTitle}>
+          The record&apos;s done. Let&apos;s make sure people <em>find it.</em>
+        </h2>
+      </Reveal>
+      <div className={s.steps}>
+        {NEXT.steps.map((st, i) => (
+          <Reveal key={st.title} className={s.step} delay={i * 0.08}>
+            <span>0{i + 1}</span>
+            <b>{st.title}</b>
+            <p>{st.body}</p>
+          </Reveal>
+        ))}
+      </div>
+      <div className={s.ctas}>
+        <motion.a className={s.btn} href={MAIL} whileHover={{ x: 4 }} transition={{ duration: 0.2 }}>
+          Book the intro call <span aria-hidden="true">↗</span>
+        </motion.a>
+        <a className={s.btnGhost} href={`mailto:${NEXT.email}`}>
+          {NEXT.email}
+        </a>
+      </div>
+    </section>
+  );
+}
+
+export default function AllenStoneClient() {
+  return (
+    <main className={s.page}>
+      <Chrome />
+      <Hero />
+      <Marquee />
+      <Gap />
+      <div className={s.rule} />
+      <Live />
+      <div className={s.rule} />
+      <Cadence />
+      <div className={s.rule} />
+      <Room />
+      <div className={s.rule} />
+      <System />
+      <div className={s.rule} />
+      <Fans />
+      <div className={s.rule} />
+      <Rollout />
+      <div className={s.rule} />
+      <Investment />
+      <div className={s.rule} />
+      <Next />
+      <div className={s.sources}>
+        <details>
+          <summary className={s.mono}>Sources + methodology</summary>
+          <ol>
+            {SOURCES.map((src) => (
+              <li key={src.href}>
+                <a href={src.href} target="_blank" rel="noreferrer">
+                  {src.label} ↗
+                </a>
+              </li>
+            ))}
+          </ol>
+          <p className={s.note} style={{ marginTop: 14 }}>
+            Social and streaming figures pulled Sept 15, 2026 from public profiles, kworb, Meta Ad Library, and a post-level audit of Allen&apos;s Instagram, TikTok, and YouTube. Photography and video stills belong to Allen Stone and their original publishers and are shown for proposal purposes only.
+          </p>
+        </details>
+      </div>
+      <footer className={`${s.footer} ${s.mono}`}>
+        <Image unoptimized src="/brand/CC-LOGO-2024-WHITE.png" alt="Crowd Control Digital" width={150} height={26} />
+        <span>Allen Stone × Crowd Control Digital · Confidential · {HERO.date}</span>
+        <a href="#top" style={{ textDecoration: "none" }}>
+          Back to top ↑
+        </a>
+      </footer>
+    </main>
+  );
+}
