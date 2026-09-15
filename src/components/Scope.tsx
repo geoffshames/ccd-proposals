@@ -25,7 +25,7 @@ export function Scope() {
             Scope of Work
           </h2>
           <p className="text-[16px] text-text-secondary leading-[1.8] mb-20 max-w-2xl tracking-[-0.01em]">
-            Clear boundaries to ensure maximum value within the project parameters.
+            {PROJECT.scope.subheading ?? "Clear boundaries to ensure maximum value within the project parameters."}
           </p>
         </ScrollReveal>
 
