@@ -1538,8 +1538,15 @@ function Rollout() {
 }
 
 /* ----------------------------------------------------------------------------
- * 08 — Investment (interactive)
+ * 10 — Scope (+ Investment, hidden for now)
  * ------------------------------------------------------------------------- */
+
+/**
+ * PRICING is hidden for now. Flip to true to bring back the retainer, media
+ * calculator, six-month media plan, add-ons, and terms (then restore the
+ * PRICING lines in content.ts and page.tsx, and og-image-pricing.png).
+ */
+const SHOW_PRICING = false;
 
 const MIN_SPEND = 1000;
 const MAX_SPEND = 25000;
@@ -1555,18 +1562,24 @@ function Investment() {
   const pct = ((spend - MIN_SPEND) / (MAX_SPEND - MIN_SPEND)) * 100;
 
   return (
-    <section className={s.section} id="investment" aria-labelledby="investment-title">
+    <section className={s.section} id={SHOW_PRICING ? "investment" : "scope"} aria-labelledby="investment-title">
       <div className={s.sectionHead}>
         <div id="investment-title">
-          <Label n="10">Investment</Label>
-          <SplitHeading text={INVESTMENT.title} className={s.h2} />
+          <Label n="10">{SHOW_PRICING ? "Investment" : "Scope"}</Label>
+          <SplitHeading text={SHOW_PRICING ? INVESTMENT.title : "What we *run.*"} className={s.h2} />
         </div>
         <Reveal>
-          <p className={s.intro}>One flat retainer for strategy, social, paid, and email + SMS. Media runs on top at 15%, paid straight to the platforms, so every ad dollar stays visible and scalable.</p>
+          {SHOW_PRICING ? (
+            <p className={s.intro}>One flat retainer for strategy, social, paid, and email + SMS. Media runs on top at 15%, paid straight to the platforms, so every ad dollar stays visible and scalable.</p>
+          ) : (
+            <p className={s.intro}>One team across strategy, social, paid, and email + SMS, anchored to release day and built with Red Light and ATO.</p>
+          )}
         </Reveal>
       </div>
-      <div className={s.invest}>
+      <div className={`${s.invest} ${SHOW_PRICING ? "" : s.investSolo}`}>
         <div>
+          {SHOW_PRICING && (
+          <>
           <div className={s.bigPrice}>
             <Counter value={INVESTMENT.retainer} prefix="$" />
             <small>/ month</small>
@@ -1582,6 +1595,8 @@ function Investment() {
               <b>+15%</b> of managed spend
             </span>
           </div>
+          </>
+          )}
           <div className={s.includes}>
             {INVESTMENT.includes.map((inc, i) => (
               <Reveal key={inc.name} className={s.include} delay={i * 0.06} y={12}>
@@ -1593,11 +1608,14 @@ function Investment() {
               </Reveal>
             ))}
           </div>
-          <p className={s.note} style={{ marginTop: 20 }}>
-            {INVESTMENT.terms}
-          </p>
+          {SHOW_PRICING && (
+            <p className={s.note} style={{ marginTop: 20 }}>
+              {INVESTMENT.terms}
+            </p>
+          )}
         </div>
 
+        {SHOW_PRICING && (
         <div className={s.calc}>
           <div className={s.calcHead}>
             <span className={`${s.mono} ${s.rust}`}>Media calculator</span>
@@ -1700,6 +1718,7 @@ function Investment() {
             ))}
           </div>
         </div>
+        )}
       </div>
 
       <div className={s.scope} style={{ marginTop: "clamp(56px, 8vh, 96px)" }}>

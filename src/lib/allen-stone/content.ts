@@ -30,7 +30,8 @@ export const NAV = [
   { id: "system", label: "The system" },
   { id: "fans", label: "Fans" },
   { id: "rollout", label: "Rollout" },
-  { id: "investment", label: "Investment" },
+  // PRICING (hidden for now): { id: "investment", label: "Investment" },
+  { id: "scope", label: "Scope" },
 ] as const;
 
 /** Spotify monthly listeners (kworb, 9/15/26) per Instagram follower (Tokscript/profile, 9/15/26). */
@@ -334,7 +335,8 @@ export const CAPTURE = {
         "Seated and Bandsintown fans (223K followers) flow into the same list",
       ],
       why: "It connects the room to the record in one system. Allen already lists dates on Seated, Laylo already powers the Stone Family Field Trip drop, and Laylo reports Japanese Breakfast turned 40% of tour RSVPs into album pre-saves.",
-      watch: "Plan the Text STONE migration and SMS consent carefully. Klaviyo can stay on the store for cart and order flows, or retire fully. Laylo's platform fees are billed at cost.",
+      watch: "Plan the Text STONE migration and SMS consent carefully. Klaviyo can stay on the store for cart and order flows, or retire fully.",
+      // PRICING (hidden for now), append to the line above: " Laylo's platform fees are billed at cost."
     },
     {
       key: "swsh",
@@ -500,8 +502,10 @@ export const SCOPE = {
     "Monthly performance reporting",
   ],
   excluded: [
-    "Ad spend (paid to platforms, plus 15%)",
-    "Capture and content platform fees (SET.Live, Laylo, swsh), billed at cost",
+    // PRICING (hidden for now): "Ad spend (paid to platforms, plus 15%)",
+    "Ad spend (paid directly to the platforms)",
+    // PRICING (hidden for now): "Capture and content platform fees (SET.Live, Laylo, swsh), billed at cost",
+    "Capture and content platform fees (SET.Live, Laylo, swsh)",
     "Shoots and short-form editing beyond formatting (add-on)",
     "Creator seeding (add-on)",
     "Music videos, photography, graphic design (add-on)",
@@ -514,7 +518,8 @@ export const NEXT = {
   steps: [
     { title: "Intro call with Red Light + ATO", body: "Walk the audit, confirm the release window and single plan, and settle who owns what." },
     { title: "Decide on the November arena run", body: "If we're aligned by late October, Month 1 starts Nov 1 and those five arena crowds go straight into retargeting." },
-    { title: "Approve scope + starting media", body: "Confirm the $5K/mo retainer, a starting ad budget, and whether spend runs from ATO or management." },
+    // PRICING (hidden for now): { title: "Approve scope + starting media", body: "Confirm the $5K/mo retainer, a starting ad budget, and whether spend runs from ATO or management." },
+    { title: "Approve scope + starting media", body: "Lock the scope, a starting ad budget, and whether spend runs from ATO or management." },
     { title: "Access + foundation sprint", body: "Channel, ad account, Spotify for Artists, and Klaviyo access. Pixels, audiences, and warm-up tests live within 30 days." },
   ],
   email: "geoff@crowdcontroldigital.com",
