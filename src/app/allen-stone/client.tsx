@@ -40,6 +40,7 @@ import {
   NAV,
   GAP,
   CLIPS,
+  BRAIN,
   CADENCE,
   ROOM,
   WAVE,
@@ -278,7 +279,7 @@ function Hero() {
             {HERO.stats.map((st) => (
               <div key={st.label}>
                 <span className={s.heroStat}>
-                  <Counter value={st.value} suffix={st.suffix} />
+                  <Counter value={st.value} suffix={st.suffix} format={st.value % 1 ? (n) => n.toFixed(1) : undefined} />
                 </span>
                 <span className={s.heroStatLabel}>{st.label}</span>
               </div>
@@ -547,7 +548,109 @@ function Live() {
 }
 
 /* ----------------------------------------------------------------------------
- * 03 — Cadence (dot grids)
+ * 03 — The video brain (TwelveLabs Jockey corpus findings)
+ * ------------------------------------------------------------------------- */
+
+function Brain() {
+  const [open, setOpen] = useState(0);
+  const [filter, setFilter] = useState<string>("All");
+  const tags = ["All", ...Array.from(new Set(BRAIN.findings.map((f) => f.tag)))];
+  const list = BRAIN.findings.map((f, i) => ({ ...f, i })).filter((f) => filter === "All" || f.tag === filter);
+  return (
+    <section className={s.section} id="brain" aria-labelledby="brain-title">
+      <div className={s.sectionHead}>
+        <div id="brain-title">
+          <Label n="03">Video AI</Label>
+          <SplitHeading text={BRAIN.title} className={s.h2} />
+        </div>
+        <Reveal>
+          <p className={s.intro}>{BRAIN.intro}</p>
+        </Reveal>
+      </div>
+      <div className={s.brainStats}>
+        {BRAIN.stats.map((st, i) => (
+          <Reveal key={st.label} className={s.brainStat} delay={i * 0.06}>
+            <strong>{st.value}</strong>
+            <span>{st.label}</span>
+          </Reveal>
+        ))}
+        <Reveal className={`${s.brainStat} ${s.brainEngine}`} delay={0.2}>
+          <span className={s.mono}>Engine</span>
+          <b>TwelveLabs Jockey</b>
+          <span>Whole-corpus queries, cited to clips</span>
+        </Reveal>
+      </div>
+      <div className={s.brainFilters} role="group" aria-label="Filter findings">
+        {tags.map((t) => (
+          <button key={t} type="button" aria-pressed={filter === t} onClick={() => setFilter(t)}>
+            {t}
+          </button>
+        ))}
+      </div>
+      <div className={s.brainList}>
+        {list.map((f) => {
+          const isOpen = open === f.i;
+          return (
+            <motion.article key={f.headline} layout className={`${s.finding} ${isOpen ? s.findingOpen : ""}`}>
+              <button type="button" className={s.findingHead} aria-expanded={isOpen} onClick={() => setOpen(isOpen ? -1 : f.i)}>
+                <span className={s.findingIdx}>{String(f.i + 1).padStart(2, "0")}</span>
+                <span className={s.findingTitle}>
+                  <span className={`${s.mono} ${s.findingTag}`}>{f.tag}</span>
+                  <span className={s.findingHeadline}>{f.headline}</span>
+                </span>
+                <span className={s.findingToggle} aria-hidden="true">
+                  {isOpen ? "–" : "+"}
+                </span>
+              </button>
+              <AnimatePresence initial={false}>
+                {isOpen && (
+                  <motion.div
+                    key="body"
+                    className={s.findingBody}
+                    initial={{ height: 0, opacity: 0 }}
+                    animate={{ height: "auto", opacity: 1 }}
+                    exit={{ height: 0, opacity: 0 }}
+                    transition={{ duration: 0.45, ease: EASE }}
+                  >
+                    <div className={s.findingGrid}>
+                      <div>
+                        <p className={s.findingText}>{f.body}</p>
+                        <div className={s.findingImpl}>
+                          <span className={`${s.mono} ${s.rust}`}>For the rollout</span>
+                          <p>{f.implication}</p>
+                        </div>
+                      </div>
+                      <div className={s.clipChips}>
+                        <span className={s.mono} style={{ color: "var(--muted)" }}>
+                          Cited clips
+                        </span>
+                        {f.clips.map((c) => (
+                          <a key={c.href} href={c.href} target="_blank" rel="noreferrer" className={`${s.chip} ${"low" in c && c.low ? s.chipLow : ""}`}>
+                            <strong>{c.views}</strong>
+                            <span>
+                              {c.label}
+                              <em>{c.platform} ↗</em>
+                            </span>
+                          </a>
+                        ))}
+                      </div>
+                    </div>
+                  </motion.div>
+                )}
+              </AnimatePresence>
+            </motion.article>
+          );
+        })}
+      </div>
+      <p className={s.note} style={{ marginTop: 18 }}>
+        {BRAIN.method}
+      </p>
+    </section>
+  );
+}
+
+/* ----------------------------------------------------------------------------
+ * 04 — Cadence (dot grids)
  * ------------------------------------------------------------------------- */
 
 const SPORADIC = new Set([2, 9, 15, 22, 27, 33, 40, 45]);
@@ -582,7 +685,7 @@ function Cadence() {
     <section className={s.section} id="cadence" aria-labelledby="cadence-title">
       <div className={s.sectionHead}>
         <div id="cadence-title">
-          <Label n="03">Cadence</Label>
+          <Label n="04">Cadence</Label>
           <SplitHeading text={CADENCE.title} className={s.h2} />
         </div>
         <Reveal>
@@ -646,7 +749,7 @@ function Room() {
         </div>
         <div>
           <div id="room-title">
-            <Label n="04">The room</Label>
+            <Label n="05">The room</Label>
             <SplitHeading text={ROOM.title} className={s.h2} />
           </div>
           <Reveal>
@@ -934,7 +1037,7 @@ function Wave() {
     <section className={s.section} id="wave" aria-labelledby="wave-title">
       <div className={s.sectionHead}>
         <div id="wave-title">
-          <Label n="05">The wave</Label>
+          <Label n="06">The wave</Label>
           <SplitHeading text={WAVE.title} className={s.h2} />
         </div>
         <Reveal>
@@ -953,7 +1056,7 @@ function Wave() {
 
 const COL = { inX: 0, inW: 270, enX: 465, enW: 270, outX: 930, outW: 270 };
 const IN_Y = [150, 280, 410];
-const EN_Y = [150, 280, 410];
+const EN_Y = [118, 226, 334, 442];
 const OUT_Y = [118, 226, 334, 442];
 
 const curve = (x1: number, y1: number, x2: number, y2: number) => {
@@ -991,14 +1094,14 @@ function System() {
   const { scrollYProgress } = useScroll({ target: ref, offset: ["start 85%", "center 50%"] });
   const progress = reduce ? one : scrollYProgress;
 
-  const inPaths = IN_Y.flatMap((y1, i) => EN_Y.map((y2, j) => ({ d: curve(COL.inX + COL.inW, y1, COL.enX, y2), hot: i === j })));
-  const outPaths = EN_Y.flatMap((y1, i) => OUT_Y.map((y2, j) => ({ d: curve(COL.enX + COL.enW, y1, COL.outX, y2), hot: (i === 0 && j === 0) || (i === 1 && j === 1) || (i === 2 && j === 2) || (i === 1 && j === 3) })));
+  const inPaths = IN_Y.flatMap((y1, i) => EN_Y.map((y2, j) => ({ d: curve(COL.inX + COL.inW, y1, COL.enX, y2), hot: (i === 0 && j === 0) || (i === 1 && j === 1) || (i === 2 && j === 2) || (i === 1 && j === 3) })));
+  const outPaths = EN_Y.flatMap((y1, i) => OUT_Y.map((y2, j) => ({ d: curve(COL.enX + COL.enW, y1, COL.outX, y2), hot: i === j || (i === 3 && j === 0) })));
 
   return (
     <section className={s.section} id="system" aria-labelledby="system-title">
       <div className={s.sectionHead}>
         <div id="system-title">
-          <Label n="06">The system</Label>
+          <Label n="07">The system</Label>
           <SplitHeading text={SYSTEM.title} className={s.h2} />
         </div>
         <Reveal>
@@ -1035,7 +1138,7 @@ function System() {
             <SysNode key={n.title} x={COL.inX} y={IN_Y[i]} w={COL.inW} h={76} title={n.title} sub={n.sub} progress={progress} at={0.02 + i * 0.05} />
           ))}
           {SYSTEM.engine.map((n, i) => (
-            <SysNode key={n.title} x={COL.enX} y={EN_Y[i]} w={COL.enW} h={86} title={n.title} sub={n.sub} engine progress={progress} at={0.4 + i * 0.05} />
+            <SysNode key={n.title} x={COL.enX} y={EN_Y[i]} w={COL.enW} h={78} title={n.title} sub={n.sub} engine progress={progress} at={0.4 + i * 0.04} />
           ))}
           {SYSTEM.outputs.map((t, i) => (
             <SysNode key={t} x={COL.outX} y={OUT_Y[i]} w={COL.outW} h={62} title={t} progress={progress} at={0.78 + i * 0.04} />
@@ -1130,7 +1233,7 @@ function Fans() {
     <section className={s.section} id="fans" aria-labelledby="fans-title">
       <div className={s.sectionHead}>
         <div id="fans-title">
-          <Label n="07">The fans</Label>
+          <Label n="08">The fans</Label>
           <SplitHeading text={FANS.title} className={s.h2} />
         </div>
         <Reveal>
@@ -1211,7 +1314,7 @@ function Rollout() {
     <section className={s.section} id="rollout" aria-labelledby="rollout-title">
       <div className={s.sectionHead}>
         <div id="rollout-title">
-          <Label n="08">The rollout</Label>
+          <Label n="09">The rollout</Label>
           <SplitHeading text={ROLLOUT.title} className={s.h2} />
         </div>
         <Reveal>
@@ -1284,11 +1387,11 @@ function Investment() {
     <section className={s.section} id="investment" aria-labelledby="investment-title">
       <div className={s.sectionHead}>
         <div id="investment-title">
-          <Label n="09">Investment</Label>
+          <Label n="10">Investment</Label>
           <SplitHeading text={INVESTMENT.title} className={s.h2} />
         </div>
         <Reveal>
-          <p className={s.intro}>One flat retainer for strategy, social, and paid. Media runs on top at 15%, paid straight to the platforms, so every ad dollar stays visible and scalable.</p>
+          <p className={s.intro}>One flat retainer for strategy, social, paid, and email + SMS. Media runs on top at 15%, paid straight to the platforms, so every ad dollar stays visible and scalable.</p>
         </Reveal>
       </div>
       <div className={s.invest}>
@@ -1457,7 +1560,7 @@ function Investment() {
 function Next() {
   return (
     <section className={`${s.section} ${s.next}`} id="next" aria-labelledby="next-title">
-      <Label n="10">Next steps</Label>
+      <Label n="11">Next steps</Label>
       <Reveal>
         <h2 id="next-title" className={s.nextTitle}>
           The record&apos;s done. Let&apos;s make sure people <em>find it.</em>
@@ -1493,6 +1596,8 @@ export default function AllenStoneClient() {
       <Gap />
       <div className={s.rule} />
       <Live />
+      <div className={s.rule} />
+      <Brain />
       <div className={s.rule} />
       <Cadence />
       <div className={s.rule} />

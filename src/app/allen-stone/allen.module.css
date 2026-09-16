@@ -336,7 +336,7 @@
 .footer img { width: 150px; height: 26px; object-fit: contain; object-position: left center; }
 
 /* ---------- responsive ---------- */
-@media (max-width: 1180px) {
+@media (max-width: 1320px) {
   .navLinks { display: none; }
   .navNow { display: block; }
 }
@@ -477,3 +477,51 @@
 }
 
 @media (max-width: 900px) { .waveMarkerLabel { display: none; } }
+
+/* ---------- video brain ---------- */
+.brainStats { display: grid; grid-template-columns: repeat(3, minmax(0, 0.7fr)) minmax(0, 1fr); border-block: 1px solid var(--line2); margin-bottom: 30px; }
+.brainStat { padding: 22px 18px 22px 0; display: flex; flex-direction: column; gap: 6px; }
+.brainStat + .brainStat { padding-left: 18px; border-left: 1px solid var(--line); }
+.brainStat strong { font-family: var(--display); font-size: clamp(2.4rem, 4.4vw, 4.2rem); letter-spacing: -0.04em; line-height: 0.9; }
+.brainStat span { font-size: 13px; color: var(--muted); }
+.brainStat b { font-family: var(--display); text-transform: uppercase; font-size: clamp(1.2rem, 1.9vw, 1.7rem); letter-spacing: -0.02em; font-weight: 700; }
+.brainEngine span.mono { color: var(--red); font-size: 10px; }
+.brainFilters { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 16px; }
+.brainFilters button { background: transparent; border: 1px solid var(--line2); color: var(--muted); font-family: var(--mono); font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; padding: 9px 14px; cursor: pointer; transition: all 0.25s; }
+.brainFilters button:hover { color: var(--paper); border-color: var(--muted); }
+.brainFilters button[aria-pressed="true"] { background: var(--red); border-color: var(--red); color: var(--paper); }
+.brainList { border-top: 1px solid var(--line2); }
+.finding { border-bottom: 1px solid var(--line2); transition: background 0.35s; }
+.findingOpen { background: var(--ink2); }
+.findingHead { width: 100%; display: grid; grid-template-columns: 64px minmax(0, 1fr) 40px; gap: 16px; align-items: center; background: transparent; border: 0; color: inherit; text-align: left; padding: 24px 16px 24px 0; cursor: pointer; }
+.findingOpen .findingHead { padding-left: 20px; }
+.findingIdx { font-family: var(--display); font-size: 34px; color: var(--red); letter-spacing: -0.03em; line-height: 1; }
+.findingTitle { display: flex; flex-direction: column; gap: 8px; }
+.findingTag { color: var(--muted); }
+.findingHeadline { font-family: var(--display); text-transform: uppercase; font-size: clamp(1.4rem, 2.6vw, 2.4rem); letter-spacing: -0.03em; line-height: 0.95; }
+.finding:hover .findingHeadline { color: var(--paper); }
+.findingToggle { font-family: var(--mono); font-size: 22px; color: var(--red); text-align: center; }
+.findingBody { overflow: hidden; }
+.findingGrid { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr); gap: clamp(20px, 4vw, 60px); padding: 0 20px 30px 100px; }
+.findingText { color: var(--text2); font-size: 16px; line-height: 1.65; }
+.findingImpl { margin-top: 20px; border-left: 3px solid var(--red); padding: 14px 18px; background: var(--ink); }
+.findingImpl p { margin-top: 8px !important; font-family: var(--display); text-transform: uppercase; font-size: clamp(1rem, 1.4vw, 1.25rem); letter-spacing: -0.01em; line-height: 1.15; }
+.clipChips { display: flex; flex-direction: column; gap: 8px; }
+.chip { display: grid; grid-template-columns: 92px minmax(0, 1fr); gap: 14px; align-items: center; text-decoration: none; border: 1px solid var(--line2); padding: 12px 14px; background: var(--ink); transition: border-color 0.25s, transform 0.25s; }
+.chip:hover { border-color: var(--red); transform: translateX(4px); }
+.chip strong { font-family: var(--display); font-size: 26px; letter-spacing: -0.03em; line-height: 1; color: var(--paper); }
+.chip span { font-size: 13px; color: var(--text2); line-height: 1.35; display: flex; flex-direction: column; gap: 3px; }
+.chip em { font-style: normal; font-family: var(--mono); font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); }
+.chipLow strong { color: var(--muted); }
+.chipLow { border-style: dashed; }
+@media (max-width: 900px) {
+  .brainStats { grid-template-columns: 1fr 1fr; }
+  .brainStat, .brainStat + .brainStat { padding: 16px 10px 16px 0; border-left: 0; }
+  .brainEngine { grid-column: 1 / -1; border-top: 1px solid var(--line); }
+  .findingHead { grid-template-columns: 40px minmax(0, 1fr) 28px; gap: 10px; }
+  .findingOpen .findingHead { padding-left: 12px; }
+  .findingIdx { font-size: 24px; }
+  .findingGrid { grid-template-columns: 1fr; padding: 0 12px 24px 12px; }
+  .chip { grid-template-columns: 70px minmax(0, 1fr); }
+  .chip strong { font-size: 20px; }
+}

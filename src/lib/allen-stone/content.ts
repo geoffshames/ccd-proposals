@@ -7,7 +7,7 @@
 export const IMG = "/images/allen-stone";
 
 export const HERO = {
-  kicker: "Album rollout · Social + paid media · 6 months",
+  kicker: "Album rollout · Social, paid, email + SMS · 6 months",
   prepared: "Prepared for Red Light Management × ATO Records",
   date: "September 2026",
   line: "Soul, amplified.",
@@ -16,13 +16,14 @@ export const HERO = {
   stats: [
     { value: 527, suffix: "K", label: "Instagram followers" },
     { value: 597, suffix: "K", label: "Spotify monthly listeners" },
-    { value: 17, suffix: "M", label: "Views on a living-room video" },
+    { value: 17.8, suffix: "M", label: "Views on a living-room video" },
   ],
 };
 
 export const NAV = [
   { id: "gap", label: "The gap" },
   { id: "live", label: "Live" },
+  { id: "brain", label: "Video AI" },
   { id: "cadence", label: "Cadence" },
   { id: "room", label: "The room" },
   { id: "wave", label: "The wave" },
@@ -71,7 +72,7 @@ export const CLIPS = [
   {
     title: "Unaware",
     context: "Live from his mother's living room",
-    views: "17M",
+    views: "17.8M",
     platform: "YouTube",
     img: "clip-unaware.jpg",
     href: "https://www.youtube.com/watch?v=z4Hy6kp5kIs",
@@ -118,6 +119,86 @@ export const CLIPS = [
   },
 ];
 
+export const BRAIN = {
+  title: "What the video brain *found.*",
+  intro:
+    "We loaded 82 of the best and worst performing videos from Allen and five modern-soul peers into a TwelveLabs Jockey knowledge store, tagged every one with its real views, and asked it questions across the whole library at once. These are the patterns it found, each tied to specific clips.",
+  stats: [
+    { value: "481", label: "Posts pulled with engagement data" },
+    { value: "82", label: "Videos in the knowledge store" },
+    { value: "6", label: "Artists: Allen + 5 peers" },
+  ],
+  findings: [
+    {
+      tag: "Allen's pattern",
+      headline: "The voice lands first. The pitch loses.",
+      body: "Across the library, the highest-view videos open on someone already performing, with no setup and no pitch. Allen's lowest posts all open on the ask: a ticket giveaway, merch, a Valentine's message service.",
+      implication: "Every rollout asset, including ticket and pre-save posts, opens on a sung line. The ask comes after the payoff.",
+      clips: [
+        { label: "Allen · “Unaware” living room", views: "17.8M", platform: "YouTube", href: "https://www.youtube.com/watch?v=z4Hy6kp5kIs" },
+        { label: "Allen · “Give You Blue” with Nu Deco", views: "356K", platform: "TikTok", href: "https://www.tiktok.com/@allen_stone/video/7610938669855149325" },
+        { label: "Allen · ticket giveaway", views: "8.8K", platform: "TikTok", href: "https://www.tiktok.com/@allen_stone/video/7665811474618535181", low: true },
+      ],
+    },
+    {
+      tag: "Across all 82",
+      headline: "In-video asks cost reach, unless the story carries them.",
+      body: "Roughly one in six videos carries an in-video ask. Those ran a median of about 50K–80K views, against roughly 350K for videos without one, across two separate reads of the library. The exception: Thee Sacred Souls turned a tour announcement into a scene and hit 2.6M. Allen's presale Reel sat at 29K.",
+      implication: "Make the ask a story beat, or keep it in the caption and retargeting instead of the first seconds. (The sample leans toward top performers, so read this as directional.)",
+      clips: [
+        { label: "Thee Sacred Souls · Kali Uchis tour reveal", views: "2.6M", platform: "TikTok", href: "https://www.tiktok.com/@theesacredsouls/video/7503969701811342622" },
+        { label: "Allen · Stapleton presale Reel", views: "29K", platform: "Instagram", href: "https://www.instagram.com/reel/DTd9R5iDmgw/", low: true },
+      ],
+    },
+    {
+      tag: "What peers do",
+      headline: "Peers make the release itself the content.",
+      body: "Myles Smith's pre-save post secretly films his producer hearing the song for the first time: 15.7M views, second only to “Unaware” in the whole library. His album-out post leads with a relatable text premise over the performance. Allen has never posted a pre-save or release moment built as content.",
+      implication: "Build single one around a first-listen reaction and a pre-save moment fans want to watch, not a date card.",
+      clips: [
+        { label: "Myles Smith · pre-save first listen", views: "15.7M", platform: "Instagram", href: "https://www.instagram.com/reel/C5wBU9NN0-g/" },
+        { label: "Myles Smith · debut album out now", views: "7.4M", platform: "TikTok", href: "https://www.tiktok.com/@mylessmithuk/video/7653454685650554134" },
+        { label: "Thee Sacred Souls · “out now” vignette", views: "471K", platform: "TikTok", href: "https://www.tiktok.com/@theesacredsouls/video/7503557594749865246" },
+      ],
+    },
+    {
+      tag: "What peers do",
+      headline: "Peers invite fans in. Allen's page doesn't ask yet.",
+      body: "Leon asks who's learning the choreo, Myles runs an emoji freestyle, Durand talks straight to the algorithm, Jalen thanks fans with heart hands. Allen's closest is the city-swap “Is this love… in [your city]?”",
+      implication: "Give single two a duet-and-stitch vocal prompt and turn the city swap into a recurring tour series.",
+      clips: [
+        { label: "Jalen Ngonda · heart-hands thank you", views: "5.8M", platform: "Instagram", href: "https://www.instagram.com/reel/C4-g59tIKJY/" },
+        { label: "Myles Smith · emoji freestyle", views: "1.9M", platform: "Instagram", href: "https://www.instagram.com/reel/DXPZQA0iEMR/" },
+        { label: "Leon Bridges · “who's learning the choreo?”", views: "561K", platform: "Instagram", href: "https://www.instagram.com/reel/DcUIsqxSeYa/" },
+      ],
+    },
+    {
+      tag: "Tour content",
+      headline: "Backstage setup, one lyric hook, crowd payoff.",
+      body: "The best show-night videos follow three beats. Allen already proved it with the Teddy Swims couch jam at Bourbon & Beyond, and his Nashville opener with Chris Stapleton (locker room, walk-on, stadium) is ready to recut into the same shape.",
+      implication: "Shoot every show night for the three-beat edit, and let swsh fan footage supply the crowd payoff.",
+      clips: [
+        { label: "Allen + Teddy Swims · Bourbon & Beyond", views: "1.03M", platform: "Instagram", href: "https://www.instagram.com/reel/DAOoWtwxsK7/" },
+        { label: "Myles Smith · locker-room celebration", views: "736K", platform: "Instagram", href: "https://www.instagram.com/reel/DWADMIajPKf/" },
+        { label: "Leon Bridges · fan-POV “River”", views: "495K", platform: "TikTok", href: "https://www.tiktok.com/@leonbridgesofficial/video/7664978133271072031" },
+      ],
+    },
+    {
+      tag: "Allen's pattern",
+      headline: "Allen wins as a character.",
+      body: "His top posts give people a visual premise: a cowboy in a sunlit field, a beige suit in front of an orchestra, a two-shot with Macklemore. His lowest posts swap him out for mascots, sales copy, or other people modeling a shirt.",
+      implication: "Build repeatable looks and collaborator cameos into every release beat.",
+      clips: [
+        { label: "Allen · “Hard to find the words” field", views: "182K", platform: "TikTok", href: "https://www.tiktok.com/@allen_stone/video/7576815593173634359" },
+        { label: "Allen + Macklemore", views: "104K", platform: "TikTok", href: "https://www.tiktok.com/@allen_stone/video/7636801051877805326" },
+        { label: "Allen · merch tee", views: "8.9K", platform: "TikTok", href: "https://www.tiktok.com/@allen_stone/video/7541978683322551565", low: true },
+      ],
+    },
+  ],
+  method:
+    "TwelveLabs Jockey knowledge store, queried across the whole corpus. Selection: top quintile by views per handle (Allen's TikTok, Instagram, and top YouTube live clips; each peer's TikTok and Instagram), plus six of Allen's lowest promo posts for contrast. Views as of Sept 15, 2026. Findings are directional, not causal.",
+};
+
 export const CADENCE = {
   title: "The summer went *quiet.*",
   intro:
@@ -155,7 +236,7 @@ export const ROOM = {
 export const SYSTEM = {
   title: "The *system.*",
   intro:
-    "Three inputs Allen already has, one layer CCD runs every day, and four places the attention lands. Every post and every dollar is built to move someone one step right.",
+    "Three inputs Allen already has, four things CCD runs every day, and four places the attention lands. Every post, every send, and every dollar is built to move someone one step right.",
   inputs: [
     { title: "Live vocal clips", sub: "The proven format" },
     { title: "Arena + stadium crowds", sub: "Stapleton, Teddy Swims" },
@@ -165,6 +246,7 @@ export const SYSTEM = {
     { title: "Native social", sub: "Every week, every platform" },
     { title: "Retargeting pools", sub: "Viewers, visitors, crowds" },
     { title: "Release flights", sub: "Singles + album week" },
+    { title: "Email + SMS drops", sub: "Pre-saves, presales, release day" },
   ],
   outputs: ["Pre-saves + Spotify follows", "Owned fan list", "Vinyl pre-orders", "Tickets"],
 };
@@ -316,7 +398,7 @@ export const ROLLOUT = {
       rel: "Release −20 to −16 wks",
       name: "Foundation",
       points: [
-        "Access, baseline audit, TikTok pixel + Meta Conversions API",
+        "Access, baseline audit, TikTok pixel + Meta Conversions API, email and SMS list audit",
         "Retargeting pools from video viewers, site visitors, list lookalikes, tour markets",
         "Tour capture live for the Nov 1–8 arena dates: SET.Live or Laylo, plus a swsh pilot",
       ],
@@ -336,7 +418,7 @@ export const ROLLOUT = {
       rel: "Release −8 to −1 wks",
       name: "Single two + pre-order",
       points: [
-        "A duet-and-stitch vocal prompt built for the singer community",
+        "A duet-and-stitch vocal prompt built for the singer community, plus a pre-save sequence by email and SMS",
         "Vinyl + D2C pre-order campaigns to the Shopify store",
         "Geo-weighted flights: LA, PNW, Denver, NYC, Chicago, Auckland, Sydney, Brisbane",
       ],
@@ -348,7 +430,7 @@ export const ROLLOUT = {
       release: true,
       points: [
         "Release-day surge driving streams, saves, and follows",
-        "Daily community management and reactive content",
+        "Release-day email and text to every captured fan, plus daily community management",
         "72-hour and day-10 readouts that move spend to the songs the algorithm picks",
       ],
     },
@@ -358,7 +440,7 @@ export const ROLLOUT = {
       name: "Sustain + tour bridge",
       points: [
         "Always-on album + catalog retargeting at efficient spend",
-        "Tour announce and on-sale support",
+        "Tour announce and on-sale support across paid, social, email, and SMS",
         "Full-cycle report and the plan for deluxe, second-wave singles, and touring",
       ],
     },
@@ -380,6 +462,7 @@ export const INVESTMENT = {
     { name: "Album rollout strategy", body: "Release-anchored playbook, content system, monthly calendars, weekly syncs with Red Light + ATO." },
     { name: "Social media management", body: "Instagram, TikTok, YouTube (incl. Shorts), Facebook. Platform-native publishing and daily community management." },
     { name: "Paid media + tour capture", body: "Tracking, audience architecture, three release flights, always-on retargeting, and the capture-to-pre-save flow around every show." },
+    { name: "Email + SMS management", body: "Laylo or Klaviyo: list and consent hygiene, city segments, welcome and post-show flows, pre-save and presale drops, release-day and on-sale sends, monthly send calendar." },
     { name: "Reporting + optimization", body: "Monthly reports against targets, weekly pacing notes in release weeks." },
   ],
   fee: 0.15,
@@ -394,7 +477,6 @@ export const INVESTMENT = {
   addOns: [
     { name: "Content capture + editing", basis: "Scoped per shoot" },
     { name: "Creator seeding", basis: "Per single, fees at cost + 15%" },
-    { name: "Email + SMS campaigns", basis: "Scoped as add-on" },
     { name: "SET.Live, Laylo, swsh platform fees", basis: "Billed at cost" },
   ],
   terms:
@@ -410,6 +492,7 @@ export const SCOPE = {
     "Paid strategy, build, and optimization on Meta, TikTok, YouTube",
     "TikTok pixel, Meta Conversions API, retargeting architecture",
     "Tour capture setup (SET.Live or Laylo) and post-show pre-save drops",
+    "Email + SMS management: segments, flows, drops, presale, release-day, and on-sale sends",
     "Paid support for owned-list sign-ups, pre-saves, and vinyl pre-orders",
     "Monthly performance reporting",
   ],
@@ -418,7 +501,6 @@ export const SCOPE = {
     "Capture and content platform fees (SET.Live, Laylo, swsh), billed at cost",
     "Shoots and short-form editing beyond formatting (add-on)",
     "Creator seeding (add-on)",
-    "Email + SMS campaign writing (add-on)",
     "Music videos, photography, graphic design (add-on)",
     "Playlist pitching, PR, radio (ATO + partners)",
   ],

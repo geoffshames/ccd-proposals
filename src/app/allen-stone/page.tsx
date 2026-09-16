@@ -3,7 +3,7 @@ import AllenStoneClient from "./client";
 
 const TITLE = "Allen Stone × Crowd Control Digital: Soul, Amplified";
 const DESC =
-  "A release-anchored social and paid media system for Allen Stone's next album. $5,000/mo for six months, plus 15% of managed spend.";
+  "A release-anchored social, paid, and email + SMS system for Allen Stone's next album. $5,000/mo for six months, plus 15% of managed spend.";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://proposal.crowdcontroldigital.com"),
