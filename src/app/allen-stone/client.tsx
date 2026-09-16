@@ -34,6 +34,7 @@ import {
   type MotionValue,
 } from "framer-motion";
 import s from "./allen.module.css";
+import { VideoBoxProvider, embedFor, useVideoBox, type VideoItem } from "./video-box";
 import {
   IMG,
   HERO,
@@ -53,6 +54,7 @@ import {
   SCOPE,
   NEXT,
   SOURCES,
+  POSTS,
 } from "@/lib/allen-stone/content";
 
 const EASE = [0.16, 1, 0.3, 1] as const;
@@ -160,9 +162,108 @@ function Label({ n, children }: { n: string; children: ReactNode }) {
   );
 }
 
+
+/* ----------------------------------------------------------------------------
+ * Referenced social posts: one registry, inline {{text|url}} links, shadowbox groups
+ * ------------------------------------------------------------------------- */
+
+const REF = /\{\{([^|}]+)\|([^}]+)\}\}/g;
+
+const REGISTRY: Map<string, VideoItem> = (() => {
+  const m = new Map<string, VideoItem>();
+  CLIPS.forEach((c) =>
+    m.set(c.href, {
+      href: c.href,
+      title: `Allen Stone · “${c.title}”`,
+      views: c.views,
+      platform: c.platform.replace(/ plays$/, ""),
+      metric: /plays$/.test(c.platform) ? "plays" : "views",
+      context: c.context,
+      poster: `${IMG}/${c.img}`,
+      noEmbed: "noEmbed" in c ? !!c.noEmbed : false,
+    }),
+  );
+  BRAIN.findings.forEach((f) =>
+    f.clips.forEach((c) => {
+      if (!m.has(c.href)) m.set(c.href, { href: c.href, title: c.label, views: c.views, platform: c.platform, low: "low" in c && !!c.low });
+    }),
+  );
+  Object.entries(POSTS).forEach(([href, v]) => m.set(href, { href, ...v }));
+  return m;
+})();
+
+function postItem(href: string, extra?: Partial<VideoItem>): VideoItem {
+  const base = REGISTRY.get(href) ?? { href, title: href, platform: embedFor(href)?.name ?? "Post" };
+  return { ...base, ...extra };
+}
+
+/** URLs referenced inline in a string, in reading order. */
+function refsIn(text: string) {
+  return Array.from(text.matchAll(REF), (m) => m[2]);
+}
+
+function stripRefs(text: string) {
+  return text.replace(REF, "$1");
+}
+
+type PostGroup = { label: string; items: VideoItem[] };
+
+function groupFor(label: string, hrefs: string[], extra?: Partial<VideoItem>): PostGroup {
+  const seen = new Set<string>();
+  const items = hrefs.filter((h) => (seen.has(h) ? false : (seen.add(h), true))).map((h) => postItem(h, extra));
+  return { label, items };
+}
+
+const PlayGlyph = () => (
+  <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
+    <path d="M4 2.5v11l9-5.5z" />
+  </svg>
+);
+
+/** Renders copy with {{text|url}} post references as shadowbox links. */
+function RichText({ text, group }: { text: string; group?: PostGroup }) {
+  const play = useVideoBox();
+  const g = group ?? groupFor("Referenced posts", refsIn(text));
+  const parts: ReactNode[] = [];
+  let last = 0;
+  for (const m of text.matchAll(REF)) {
+    const [whole, label, href] = m;
+    if (m.index! > last) parts.push(text.slice(last, m.index));
+    const idx = Math.max(0, g.items.findIndex((it) => it.href === href));
+    parts.push(
+      <a
+        key={`${href}-${m.index}`}
+        className={s.refLink}
+        href={href}
+        target="_blank"
+        rel="noreferrer"
+        aria-haspopup="dialog"
+        onClick={play(g, idx)}
+        title={`Open the ${postItem(href).platform} post`}
+      >
+        {label}
+        <PlayGlyph />
+      </a>,
+    );
+    last = m.index! + whole.length;
+  }
+  if (last < text.length) parts.push(text.slice(last));
+  return <>{parts}</>;
+}
+
 /* ----------------------------------------------------------------------------
  * Chrome: progress + topbar
  * ------------------------------------------------------------------------- */
+
+function HeroStatLink({ href, label }: { href: string; label: string }) {
+  const play = useVideoBox();
+  return (
+    <a className={`${s.heroStatLabel} ${s.refLink}`} href={href} target="_blank" rel="noreferrer" aria-haspopup="dialog" onClick={play(groupFor("Allen Stone", [href]), 0)}>
+      {label}
+      <PlayGlyph />
+    </a>
+  );
+}
 
 function Chrome() {
   const { scrollYProgress } = useScroll();
@@ -281,7 +382,11 @@ function Hero() {
                 <span className={s.heroStat}>
                   <Counter value={st.value} suffix={st.suffix} format={st.value % 1 ? (n) => n.toFixed(1) : undefined} />
                 </span>
-                <span className={s.heroStatLabel}>{st.label}</span>
+                {"href" in st && st.href ? (
+                  <HeroStatLink href={st.href} label={st.label} />
+                ) : (
+                  <span className={s.heroStatLabel}>{st.label}</span>
+                )}
               </div>
             ))}
           </motion.div>
@@ -422,7 +527,9 @@ function Gap() {
                 <h3>{l.who}</h3>
                 <span className={`${s.mono} ${s.rust}`}>{l.stat}</span>
               </div>
-              <p>{l.lesson}</p>
+              <p>
+                <RichText text={l.lesson} group={groupFor(`${l.who} · referenced posts`, refsIn(l.lesson))} />
+              </p>
               <p className={s.lessonTake}>{l.take}</p>
             </Reveal>
           ))}
@@ -436,10 +543,20 @@ function Gap() {
  * 02 — Live is the product (pinned horizontal reel)
  * ------------------------------------------------------------------------- */
 
+const LIVE_REEL: VideoItem[] = CLIPS.map((c) => postItem(c.href));
+
 function ClipCard({ clip, i }: { clip: (typeof CLIPS)[number]; i: number }) {
-  const onTikTok = clip.href.includes("tiktok.com");
+  const play = useVideoBox();
   return (
-    <a className={s.clip} href={clip.href} target="_blank" rel="noreferrer" aria-label={`${clip.title}, ${clip.context}, ${clip.views} ${clip.platform}. Watch on ${onTikTok ? "TikTok" : "YouTube"}.`}>
+    <a
+      className={s.clip}
+      href={clip.href}
+      target="_blank"
+      rel="noreferrer"
+      aria-haspopup="dialog"
+      onClick={play({ label: "Live is the product", items: LIVE_REEL }, i)}
+      aria-label={`Play “${clip.title}”, ${clip.context}, ${clip.views} ${clip.platform}`}
+    >
       <div className={s.clipMedia}>
         <Image unoptimized src={`${IMG}/${clip.img}`} alt="" fill sizes="(max-width: 900px) 82vw, 36vw" />
         <div className={s.clipShade} />
@@ -551,7 +668,14 @@ function Live() {
  * 03 — The video brain (TwelveLabs Jockey corpus findings)
  * ------------------------------------------------------------------------- */
 
+function findingGroup(f: (typeof BRAIN.findings)[number] & { i: number }): PostGroup {
+  return groupFor(`Finding ${String(f.i + 1).padStart(2, "0")} · referenced posts`, [...refsIn(f.body), ...f.clips.map((c) => c.href)], {
+    context: stripRefs(f.headline),
+  });
+}
+
 function Brain() {
+  const play = useVideoBox();
   const [open, setOpen] = useState(0);
   const [filter, setFilter] = useState<string>("All");
   const tags = ["All", ...Array.from(new Set(BRAIN.findings.map((f) => f.tag)))];
@@ -614,7 +738,9 @@ function Brain() {
                   >
                     <div className={s.findingGrid}>
                       <div>
-                        <p className={s.findingText}>{f.body}</p>
+                        <p className={s.findingText}>
+                          <RichText text={f.body} group={findingGroup(f)} />
+                        </p>
                         <div className={s.findingImpl}>
                           <span className={`${s.mono} ${s.rust}`}>For the rollout</span>
                           <p>{f.implication}</p>
@@ -625,12 +751,25 @@ function Brain() {
                           Cited clips
                         </span>
                         {f.clips.map((c) => (
-                          <a key={c.href} href={c.href} target="_blank" rel="noreferrer" className={`${s.chip} ${"low" in c && c.low ? s.chipLow : ""}`}>
+                          <a
+                            key={c.href}
+                            href={c.href}
+                            target="_blank"
+                            rel="noreferrer"
+                            aria-haspopup="dialog"
+                            onClick={play(findingGroup(f), findingGroup(f).items.findIndex((x) => x.href === c.href))}
+                            className={`${s.chip} ${"low" in c && c.low ? s.chipLow : ""}`}
+                          >
                             <strong>{c.views}</strong>
                             <span>
                               {c.label}
-                              <em>{c.platform} ↗</em>
+                              <em>{c.platform}</em>
                             </span>
+                            <b className={s.chipPlay} aria-hidden="true">
+                              <svg viewBox="0 0 16 16" fill="currentColor">
+                                <path d="M4 2.5v11l9-5.5z" />
+                              </svg>
+                            </b>
                           </a>
                         ))}
                       </div>
@@ -759,9 +898,7 @@ function Room() {
           </Reveal>
           <Reveal>
             <p className={s.quote}>{ROOM.quote}</p>
-            <span className={`${s.mono}`} style={{ color: "var(--dim)" }}>
-              {ROOM.quoteSource}
-            </span>
+            <QuoteSource href={ROOM.quoteHref} label={ROOM.quoteSource} quote={ROOM.quote} groupLabel="The room" />
           </Reveal>
           <div className={s.dates}>
             <span className={s.mono} style={{ color: "var(--muted)" }}>
@@ -941,7 +1078,9 @@ function WavePlayer() {
             <h3>{p.action}</h3>
             <ul>
               {p.points.map((pt2) => (
-                <li key={pt2}>{pt2}</li>
+                <li key={pt2}>
+                  <RichText text={pt2} group={groupFor(`The wave · ${p.name}`, refsIn(pt2))} />
+                </li>
               ))}
             </ul>
           </article>
@@ -1192,6 +1331,29 @@ function System() {
  * 06 — Fans
  * ------------------------------------------------------------------------- */
 
+function QuoteSource({ href, label, quote, groupLabel, group, index = 0 }: { href?: string; label: string; quote: string; groupLabel: string; group?: PostGroup; index?: number }) {
+  const play = useVideoBox();
+  if (!href) {
+    return (
+      <span className={s.mono} style={{ color: "var(--dim)" }}>
+        {label}
+      </span>
+    );
+  }
+  const g = group ?? { label: groupLabel, items: [postItem(href, { quote })] };
+  return (
+    <a className={`${s.mono} ${s.refSource}`} href={href} target="_blank" rel="noreferrer" aria-haspopup="dialog" onClick={play(g, index)}>
+      {label}
+      <PlayGlyph />
+    </a>
+  );
+}
+
+const QUOTE_GROUP: PostGroup = {
+  label: "In their words",
+  items: FANS.quotes.filter((q) => "href" in q && q.href).map((q) => postItem((q as { href: string }).href, { quote: q.text })),
+};
+
 function Quotes() {
   const [i, setI] = useState(0);
   const [paused, setPaused] = useState(false);
@@ -1211,8 +1373,15 @@ function Quotes() {
         <AnimatePresence mode="wait">
           <motion.div key={i} initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -12 }} transition={{ duration: 0.55, ease: EASE }}>
             <blockquote>“{q.text}”</blockquote>
-            <cite className={`${s.mono}`} style={{ color: "var(--dim)" }}>
-              {q.source}
+            <cite style={{ fontStyle: "normal" }}>
+              <QuoteSource
+                href={"href" in q ? q.href : undefined}
+                label={q.source}
+                quote={q.text}
+                groupLabel="In their words"
+                group={QUOTE_GROUP}
+                index={Math.max(0, QUOTE_GROUP.items.findIndex((it) => it.quote === q.text))}
+              />
             </cite>
           </motion.div>
         </AnimatePresence>
@@ -1251,7 +1420,9 @@ function Fans() {
               </span>
             </div>
             <h3>{p.name}</h3>
-            <p>{p.body}</p>
+            <p>
+              <RichText text={p.body} />
+            </p>
             <div className={s.traits}>
               {p.traits.map((t) => (
                 <span key={t}>{t}</span>
@@ -1587,8 +1758,37 @@ function Next() {
   );
 }
 
+const SOCIAL_SOURCES: PostGroup = groupFor(
+  "Sources · social posts",
+  SOURCES.map((x) => x.href).filter((h) => embedFor(h)),
+);
+
+function SourceLinks() {
+  const play = useVideoBox();
+  return (
+    <>
+      {SOURCES.map((src) => {
+        const idx = SOCIAL_SOURCES.items.findIndex((it) => it.href === src.href);
+        return (
+          <li key={src.href}>
+            <a
+              href={src.href}
+              target="_blank"
+              rel="noreferrer"
+              {...(idx >= 0 ? { "aria-haspopup": "dialog" as const, onClick: play(SOCIAL_SOURCES, idx) } : {})}
+            >
+              {src.label} {idx >= 0 ? "▶" : "↗"}
+            </a>
+          </li>
+        );
+      })}
+    </>
+  );
+}
+
 export default function AllenStoneClient() {
   return (
+    <VideoBoxProvider>
     <main className={s.page}>
       <Chrome />
       <Hero />
@@ -1618,13 +1818,7 @@ export default function AllenStoneClient() {
         <details>
           <summary className={s.mono}>Sources + methodology</summary>
           <ol>
-            {SOURCES.map((src) => (
-              <li key={src.href}>
-                <a href={src.href} target="_blank" rel="noreferrer">
-                  {src.label} ↗
-                </a>
-              </li>
-            ))}
+            <SourceLinks />
           </ol>
           <p className={s.note} style={{ marginTop: 14 }}>
             Social and streaming figures pulled Sept 15, 2026 from public profiles, kworb, Meta Ad Library, and a post-level audit of Allen&apos;s Instagram, TikTok, and YouTube. Photography and video stills belong to Allen Stone and their original publishers and are shown for proposal purposes only.
@@ -1639,5 +1833,6 @@ export default function AllenStoneClient() {
         </a>
       </footer>
     </main>
+    </VideoBoxProvider>
   );
 }

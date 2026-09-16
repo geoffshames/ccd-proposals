@@ -16,7 +16,7 @@ export const HERO = {
   stats: [
     { value: 527, suffix: "K", label: "Instagram followers" },
     { value: 597, suffix: "K", label: "Spotify monthly listeners" },
-    { value: 17.8, suffix: "M", label: "Views on a living-room video" },
+    { value: 17.8, suffix: "M", label: "Views on a living-room video", href: "https://www.youtube.com/watch?v=z4Hy6kp5kIs" },
   ],
 };
 
@@ -50,7 +50,7 @@ export const GAP = {
     {
       who: "Myles Smith",
       stat: "18.8M listeners",
-      lesson: "Built “Stargazing” in public on TikTok: hook snippet, demo, sound upload, then release.",
+      lesson: "Built “Stargazing” in public: hook snippet, {{studio demo|https://www.instagram.com/reel/C5wBU9NN0-g/}}, sound upload, then release.",
       take: "Allen can run the same snippet-to-release funnel with a voice fans already know.",
     },
     {
@@ -62,7 +62,7 @@ export const GAP = {
     {
       who: "Leon Bridges",
       stat: "14.9M listeners",
-      lesson: "Staged the new album in two EP parts with signed vinyl, but short-form feels distant.",
+      lesson: "Staged the new album in {{two EP parts|https://www.instagram.com/reel/DcJ7EZzyB-8/}} with signed vinyl, but short-form feels distant.",
       take: "Allen's warmth and humor on camera are the edge the lane can't copy.",
     },
   ],
@@ -92,6 +92,7 @@ export const CLIPS = [
     platform: "YouTube",
     img: "clip-give-you-blue.jpg",
     href: "https://www.youtube.com/watch?v=SRzvkKb-JRI",
+    noEmbed: true,
   },
   {
     title: "Sara Smile",
@@ -108,6 +109,7 @@ export const CLIPS = [
     platform: "YouTube",
     img: "clip-sweet-little-rainbows.jpg",
     href: "https://www.youtube.com/watch?v=_0jJnBNbitk",
+    noEmbed: true,
   },
   {
     title: "Give You Blue",
@@ -115,7 +117,7 @@ export const CLIPS = [
     views: "356K",
     platform: "TikTok plays",
     img: "clip-nu-deco.jpg",
-    href: "https://www.youtube.com/watch?v=FsLhPuWi0Fs",
+    href: "https://www.tiktok.com/@allen_stone/video/7610938669855149325",
   },
 ];
 
@@ -132,7 +134,7 @@ export const BRAIN = {
     {
       tag: "Allen's pattern",
       headline: "The voice lands first. The pitch loses.",
-      body: "Across the library, the highest-view videos open on someone already performing, with no setup and no pitch. Allen's lowest posts all open on the ask: a ticket giveaway, merch, a Valentine's message service.",
+      body: "Across the library, the highest-view videos open on someone already performing, with no setup and no pitch. Allen's lowest posts all open on the ask: a {{ticket giveaway|https://www.tiktok.com/@allen_stone/video/7665811474618535181}}, {{merch|https://www.tiktok.com/@allen_stone/video/7541978683322551565}}, a {{Valentine's message service|https://www.tiktok.com/@allen_stone/video/7605007196664892685}}.",
       implication: "Every rollout asset, including ticket and pre-save posts, opens on a sung line. The ask comes after the payoff.",
       clips: [
         { label: "Allen · “Unaware” living room", views: "17.8M", platform: "YouTube", href: "https://www.youtube.com/watch?v=z4Hy6kp5kIs" },
@@ -143,7 +145,7 @@ export const BRAIN = {
     {
       tag: "Across all 82",
       headline: "In-video asks cost reach, unless the story carries them.",
-      body: "Roughly one in six videos carries an in-video ask. Those ran a median of about 50K–80K views, against roughly 350K for videos without one, across two separate reads of the library. The exception: Thee Sacred Souls turned a tour announcement into a scene and hit 2.6M. Allen's presale Reel sat at 29K.",
+      body: "Roughly one in six videos carries an in-video ask. Those ran a median of about 50K–80K views, against roughly 350K for videos without one, across two separate reads of the library. The exception: {{Thee Sacred Souls turned a tour announcement into a scene|https://www.tiktok.com/@theesacredsouls/video/7503969701811342622}} and hit 2.6M. {{Allen's presale Reel|https://www.instagram.com/reel/DTd9R5iDmgw/}} sat at 29K.",
       implication: "Make the ask a story beat, or keep it in the caption and retargeting instead of the first seconds. (The sample leans toward top performers, so read this as directional.)",
       clips: [
         { label: "Thee Sacred Souls · Kali Uchis tour reveal", views: "2.6M", platform: "TikTok", href: "https://www.tiktok.com/@theesacredsouls/video/7503969701811342622" },
@@ -153,7 +155,7 @@ export const BRAIN = {
     {
       tag: "What peers do",
       headline: "Peers make the release itself the content.",
-      body: "Myles Smith's pre-save post secretly films his producer hearing the song for the first time: 15.7M views, second only to “Unaware” in the whole library. His album-out post leads with a relatable text premise over the performance. Allen has never posted a pre-save or release moment built as content.",
+      body: "{{Myles Smith's pre-save post|https://www.instagram.com/reel/C5wBU9NN0-g/}} secretly films his producer hearing the song for the first time: 15.7M views, second only to “Unaware” in the whole library. {{His album-out post|https://www.tiktok.com/@mylessmithuk/video/7653454685650554134}} leads with a relatable text premise over the performance. Allen has never posted a pre-save or release moment built as content.",
       implication: "Build single one around a first-listen reaction and a pre-save moment fans want to watch, not a date card.",
       clips: [
         { label: "Myles Smith · pre-save first listen", views: "15.7M", platform: "Instagram", href: "https://www.instagram.com/reel/C5wBU9NN0-g/" },
@@ -164,7 +166,7 @@ export const BRAIN = {
     {
       tag: "What peers do",
       headline: "Peers invite fans in. Allen's page doesn't ask yet.",
-      body: "Leon asks who's learning the choreo, Myles runs an emoji freestyle, Durand talks straight to the algorithm, Jalen thanks fans with heart hands. Allen's closest is the city-swap “Is this love… in [your city]?”",
+      body: "{{Leon asks who's learning the choreo|https://www.instagram.com/reel/DcUIsqxSeYa/}}, {{Myles runs an emoji freestyle|https://www.instagram.com/reel/DXPZQA0iEMR/}}, {{Durand talks straight to the algorithm|https://www.instagram.com/reel/DVZW3LOkUYI/}}, {{Jalen thanks fans with heart hands|https://www.instagram.com/reel/C4-g59tIKJY/}}. Allen's closest is the {{city-swap “Is this love… in [your city]?”|https://www.tiktok.com/@allen_stone/video/7582364218788236599}}",
       implication: "Give single two a duet-and-stitch vocal prompt and turn the city swap into a recurring tour series.",
       clips: [
         { label: "Jalen Ngonda · heart-hands thank you", views: "5.8M", platform: "Instagram", href: "https://www.instagram.com/reel/C4-g59tIKJY/" },
@@ -175,7 +177,7 @@ export const BRAIN = {
     {
       tag: "Tour content",
       headline: "Backstage setup, one lyric hook, crowd payoff.",
-      body: "The best show-night videos follow three beats. Allen already proved it with the Teddy Swims couch jam at Bourbon & Beyond, and his Nashville opener with Chris Stapleton (locker room, walk-on, stadium) is ready to recut into the same shape.",
+      body: "The best show-night videos follow three beats. Allen already proved it with the {{Teddy Swims couch jam at Bourbon & Beyond|https://www.instagram.com/reel/DAOoWtwxsK7/}}, and his {{Nashville opener with Chris Stapleton|https://www.instagram.com/reel/DY0MMWUzQje/}} (locker room, walk-on, stadium) is ready to recut into the same shape.",
       implication: "Shoot every show night for the three-beat edit, and let swsh fan footage supply the crowd payoff.",
       clips: [
         { label: "Allen + Teddy Swims · Bourbon & Beyond", views: "1.03M", platform: "Instagram", href: "https://www.instagram.com/reel/DAOoWtwxsK7/" },
@@ -186,7 +188,7 @@ export const BRAIN = {
     {
       tag: "Allen's pattern",
       headline: "Allen wins as a character.",
-      body: "His top posts give people a visual premise: a cowboy in a sunlit field, a beige suit in front of an orchestra, a two-shot with Macklemore. His lowest posts swap him out for mascots, sales copy, or other people modeling a shirt.",
+      body: "His top posts give people a visual premise: {{a cowboy in a sunlit field|https://www.tiktok.com/@allen_stone/video/7576815593173634359}}, {{a beige suit in front of an orchestra|https://www.instagram.com/reel/DVMrxaGjoIs/}}, {{a two-shot with Macklemore|https://www.tiktok.com/@allen_stone/video/7636801051877805326}}. His lowest posts swap him out for {{mascots|https://www.tiktok.com/@allen_stone/video/7669086514109844750}}, sales copy, or {{other people modeling a shirt|https://www.tiktok.com/@allen_stone/video/7541978683322551565}}.",
       implication: "Build repeatable looks and collaborator cameos into every release beat.",
       clips: [
         { label: "Allen · “Hard to find the words” field", views: "182K", platform: "TikTok", href: "https://www.tiktok.com/@allen_stone/video/7576815593173634359" },
@@ -218,6 +220,7 @@ export const ROOM = {
     "In a year without an album, Allen played Chris Stapleton's All-American Road Show stadiums and opens five Teddy Swims arena dates in November. Those are the highest-intent new fans he'll ever meet. With no TikTok pixel on the site and no always-on retargeting in the ad history, many of them walk out uncaptured.",
   quote: "I had no idea who he was and I was loving it, loving it so much that I didn't take any videos.",
   quoteSource: "r/bottlerock",
+  quoteHref: "https://www.reddit.com/r/bottlerock/comments/1lw1iqq/allen_stone_videos/",
   dates: [
     { day: "Nov 1", city: "Denver", venue: "Ball Arena" },
     { day: "Nov 3", city: "Salt Lake City", venue: "Delta Center" },
@@ -263,7 +266,7 @@ export const WAVE = {
       window: "D−14 → D−1",
       action: "Warm the room",
       points: [
-        "Geo-targeted live clips (“Unaware,” “Give You Blue”) to soul and headliner fans in the market",
+        "Geo-targeted live clips ({{“Unaware”|https://www.youtube.com/watch?v=z4Hy6kp5kIs}}, {{“Give You Blue”|https://www.tiktok.com/@allen_stone/video/7610938669855149325}}) to soul and headliner fans in the market",
         "An RSVP drop for set-time alerts and a first listen of the new single",
         "Artist Stories counting down the city",
       ],
@@ -357,7 +360,7 @@ export const FANS = {
     {
       name: "The Day One",
       age: "30–50",
-      body: "Found Allen through the living-room “Unaware” video or the Radius era and never left. Buys the ticket every time he comes through, and probably has a “Consider Me” story.",
+      body: "Found Allen through the {{living-room “Unaware” video|https://www.youtube.com/watch?v=z4Hy6kp5kIs}} or the Radius era and never left. Buys the ticket every time he comes through, and probably has a “Consider Me” story.",
       traits: ["Repeat ticket buyer", "Vinyl collector", "On the text list"],
     },
     {
@@ -381,9 +384,9 @@ export const FANS = {
     { city: "Chicago", listeners: 7700 },
   ],
   quotes: [
-    { text: "I wonder why this guy isn't getting enough recognition in the music industry.", source: "YouTube, “Unaware”" },
-    { text: "4th time seeing Allen, 3rd time he's headlined. Always a beautiful and uplifting experience.", source: "r/roanoke" },
-    { text: "His vocal range is wider than my future.", source: "YouTube, “Unaware”" },
+    { text: "I wonder why this guy isn't getting enough recognition in the music industry.", source: "YouTube, “Unaware”", href: "https://www.youtube.com/watch?v=z4Hy6kp5kIs" },
+    { text: "4th time seeing Allen, 3rd time he's headlined. Always a beautiful and uplifting experience.", source: "r/roanoke", href: "https://www.reddit.com/r/roanoke/comments/1ub50hn/allen_stone_the_exchange/" },
+    { text: "His vocal range is wider than my future.", source: "YouTube, “Unaware”", href: "https://www.youtube.com/watch?v=z4Hy6kp5kIs" },
     { text: "He was my intro to modern soul music.", source: "r/ratemysinging" },
   ],
 };
@@ -534,3 +537,20 @@ export const SOURCES = [
   { label: "r/bottlerock", href: "https://www.reddit.com/r/bottlerock/comments/1lw1iqq/allen_stone_videos/" },
   { label: "r/roanoke", href: "https://www.reddit.com/r/roanoke/comments/1ub50hn/allen_stone_the_exchange/" },
 ];
+
+/**
+ * Every social post the page references that isn't already a Live-reel card or a
+ * cited clip. Views pulled Sept 15, 2026 (TokScript enumeration). Copy links use
+ * {{visible text|url}} and resolve here for the shadowbox.
+ */
+export const POSTS: Record<string, { title: string; platform: string; views?: string; low?: boolean }> = {
+  "https://www.tiktok.com/@allen_stone/video/7605007196664892685": { title: "Allen · Valentine's video-message promo", platform: "TikTok", views: "6.9K", low: true },
+  "https://www.instagram.com/reel/DVZW3LOkUYI/": { title: "Durand Jones & The Indications · “the algorithm thinks you'll like our music”", platform: "Instagram", views: "341K" },
+  "https://www.tiktok.com/@allen_stone/video/7582364218788236599": { title: "Allen · city-swap “Is this love… in Buffalo?”", platform: "TikTok", views: "78K" },
+  "https://www.instagram.com/reel/DY0MMWUzQje/": { title: "Allen · Nashville opener with Chris Stapleton", platform: "Instagram", views: "87.2K" },
+  "https://www.instagram.com/reel/DVMrxaGjoIs/": { title: "Allen · “Give You Blue” with Nu Deco Ensemble", platform: "Instagram", views: "673K" },
+  "https://www.tiktok.com/@allen_stone/video/7669086514109844750": { title: "Allen · Peanuts song post", platform: "TikTok", views: "3.1K", low: true },
+  "https://www.instagram.com/reel/DcJ7EZzyB-8/": { title: "Leon Bridges · “Happiness Anytime: Part 2 out Friday”", platform: "Instagram", views: "205K" },
+  "https://www.reddit.com/r/bottlerock/comments/1lw1iqq/allen_stone_videos/": { title: "r/bottlerock · “Allen Stone Videos”", platform: "Reddit" },
+  "https://www.reddit.com/r/roanoke/comments/1ub50hn/allen_stone_the_exchange/": { title: "r/roanoke · “Allen Stone @ The Exchange”", platform: "Reddit" },
+};
