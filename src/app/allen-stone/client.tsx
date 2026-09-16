@@ -87,16 +87,20 @@ function useMedia(query: string) {
   return match;
 }
 
+/** Glue hyphenated words so "PRE-SAVES" never splits across lines. */
+const glue = (str: string) => str.replace(/(\S)-(\S)/g, "$1\u2060-\u2060$2");
+
 function SplitHeading({ text, className }: { text: string; className: string }) {
   const reduce = useReduced();
   const ref = useRef<HTMLHeadingElement>(null);
   const inView = useInView(ref, { once: true, margin: "0px 0px -12% 0px" });
+  const [revealed, setRevealed] = useState(false);
   const tokens = text.split(" ");
   return (
-    <h2 ref={ref} className={className} aria-label={text.replace(/\*/g, "")}>
+    <h2 ref={ref} className={className} aria-label={text.replace(/\*/g, "")} data-revealed={reduce || revealed ? "" : undefined}>
       {tokens.map((tok, i) => {
         const accent = tok.startsWith("*") || tok.endsWith("*");
-        const clean = tok.replace(/\*/g, "");
+        const clean = glue(tok.replace(/\*/g, ""));
         return (
           <span className={s.word} key={i} aria-hidden="true">
             <motion.span
@@ -104,6 +108,7 @@ function SplitHeading({ text, className }: { text: string; className: string }) 
               initial={reduce ? false : { y: "108%" }}
               animate={reduce || inView ? { y: "0%" } : { y: "108%" }}
               transition={{ duration: 0.95, ease: EASE, delay: i * 0.06 }}
+              onAnimationComplete={i === tokens.length - 1 && inView ? () => setRevealed(true) : undefined}
             >
               {accent ? <em>{clean}</em> : clean}
             </motion.span>
@@ -214,12 +219,6 @@ function groupFor(label: string, hrefs: string[], extra?: Partial<VideoItem>): P
   return { label, items };
 }
 
-const PlayGlyph = () => (
-  <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
-    <path d="M4 2.5v11l9-5.5z" />
-  </svg>
-);
-
 /** Renders copy with {{text|url}} post references as shadowbox links. */
 function RichText({ text, group }: { text: string; group?: PostGroup }) {
   const play = useVideoBox();
@@ -241,8 +240,7 @@ function RichText({ text, group }: { text: string; group?: PostGroup }) {
         onClick={play(g, idx)}
         title={`Open the ${postItem(href).platform} post`}
       >
-        {label}
-        <PlayGlyph />
+        <span className={s.refText}>{label}</span>
       </a>,
     );
     last = m.index! + whole.length;
@@ -259,8 +257,7 @@ function HeroStatLink({ href, label }: { href: string; label: string }) {
   const play = useVideoBox();
   return (
     <a className={`${s.heroStatLabel} ${s.refLink}`} href={href} target="_blank" rel="noreferrer" aria-haspopup="dialog" onClick={play(groupFor("Allen Stone", [href]), 0)}>
-      {label}
-      <PlayGlyph />
+      <span className={s.refText}>{label}</span>
     </a>
   );
 }
@@ -478,16 +475,26 @@ function GapRow({ row, i, progress }: { row: (typeof GAP.rows)[number]; i: numbe
 
 function Gap() {
   const ref = useRef<HTMLDivElement>(null);
+  const chartRef = useRef<HTMLDivElement>(null);
   const reduce = useReduced();
+  const mobile = useMedia("(max-width: 900px)");
+  const pinned = !mobile && !reduce;
   const one = useMotionValue(1);
+  const played = useMotionValue(0);
+  const chartInView = useInView(chartRef, { once: true, margin: "0px 0px -20% 0px" });
+  useEffect(() => {
+    if (pinned || reduce || !chartInView) return;
+    const controls = animate(played, 1, { duration: 2.6, ease: "linear" });
+    return () => controls.stop();
+  }, [pinned, reduce, chartInView, played]);
   const { scrollYProgress } = useScroll({ target: ref, offset: ["start start", "end end"] });
-  const progress = reduce ? one : scrollYProgress;
+  const progress = reduce ? one : pinned ? scrollYProgress : played;
   const callout = useTransform(progress, [0.78, 0.9], [0, 1]);
   const calloutY = useTransform(progress, [0.78, 0.9], [20, 0]);
   return (
     <section id="gap" aria-labelledby="gap-title">
-      <div ref={ref} className={`${s.pin} ${s.pinGap}`}>
-        <div className={s.sticky}>
+      <div ref={ref} className={pinned ? `${s.pin} ${s.pinGap}` : s.pin}>
+        <div className={pinned ? s.sticky : s.gapFlow}>
           <div className={s.gapWrap}>
             <div>
               <Label n="01">The gap</Label>
@@ -498,7 +505,7 @@ function Gap() {
                 {GAP.intro}
               </p>
             </div>
-            <div>
+            <div ref={chartRef}>
               <div className={s.gapRows}>
                 {GAP.rows.map((row, i) => (
                   <GapRow key={row.name} row={row} i={i} progress={progress} />
@@ -720,7 +727,7 @@ function Brain() {
                 <span className={s.findingIdx}>{String(f.i + 1).padStart(2, "0")}</span>
                 <span className={s.findingTitle}>
                   <span className={`${s.mono} ${s.findingTag}`}>{f.tag}</span>
-                  <span className={s.findingHeadline}>{f.headline}</span>
+                  <span className={s.findingHeadline}>{glue(f.headline)}</span>
                 </span>
                 <span className={s.findingToggle} aria-hidden="true">
                   {isOpen ? "–" : "+"}
@@ -945,6 +952,12 @@ const WAVE_PATH =
   "M 40 300 C 170 300 260 262 360 236 C 440 214 500 206 540 150 C 566 120 584 72 600 72 C 616 72 636 120 662 158 C 700 222 760 236 840 238 C 940 240 1010 232 1080 214 C 1120 204 1140 176 1160 120";
 const PHASE_X = [40, 480, 720, 1060, 1160];
 const WAVE_LOOP = 10;
+const WAVE_AXIS = [
+  { x: 40, t: "D−14" },
+  { x: 600, t: "D0 · SHOW" },
+  { x: 900, t: "D+4" },
+  { x: 1160, t: "RELEASE" },
+];
 const MARKERS = [
   { x: 300, label: "RSVP drop + live-clip ads" },
   { x: 600, label: "Capture the room" },
@@ -1024,13 +1037,8 @@ function WavePlayer() {
         {PHASE_X.slice(1, 4).map((x) => (
           <line key={x} x1={x} x2={x} y1={30} y2={318} stroke="#333333" strokeDasharray="4 6" />
         ))}
-        {[
-          { x: 40, t: "D−14" },
-          { x: 600, t: "D0 · SHOW" },
-          { x: 900, t: "D+4" },
-          { x: 1160, t: "RELEASE" },
-        ].map((m) => (
-          <text key={m.t} x={m.x} y={346} fill="#b8b8c0" fontSize={12} textAnchor={m.x === 40 ? "start" : m.x === 1160 ? "end" : "middle"} style={{ fontFamily: "var(--font-geist-mono), monospace", letterSpacing: "0.14em" }}>
+        {WAVE_AXIS.map((m) => (
+          <text key={m.t} className={s.waveAxisSvg} x={m.x} y={346} fill="#b8b8c0" fontSize={12} textAnchor={m.x === 40 ? "start" : m.x === 1160 ? "end" : "middle"} style={{ fontFamily: "var(--font-geist-mono), monospace", letterSpacing: "0.14em" }}>
             {m.t}
           </text>
         ))}
@@ -1052,6 +1060,16 @@ function WavePlayer() {
         <circle cx={pt.x} cy={pt.y} r={18} fill="#fd3737" opacity={0.18} />
         <circle cx={pt.x} cy={pt.y} r={8} fill="#fd3737" />
       </svg>
+      <div className={`${s.waveAxisHtml} ${s.mono}`} aria-hidden="true">
+        {WAVE_AXIS.map((m) => (
+          <span key={m.t} style={{ left: `${(m.x / 1200) * 100}%` }} data-edge={m.x === 40 ? "start" : m.x === 1160 ? "end" : undefined} data-minor={m.x === 900 ? "" : undefined}>
+            {m.t}
+          </span>
+        ))}
+      </div>
+      <p className={`${s.waveNow} ${s.mono}`} aria-live="polite">
+        <b>Now</b> {[...MARKERS].reverse().find((m) => pt.x >= m.x - 2)?.label ?? "Warm the room"}
+      </p>
       <input
         className={s.slider}
         type="range"
@@ -1075,7 +1093,7 @@ function WavePlayer() {
               <span className={s.rust}>{String(i + 1).padStart(2, "0")} · {p.name}</span>
               <span>{p.window}</span>
             </div>
-            <h3>{p.action}</h3>
+            <h3>{glue(p.action)}</h3>
             <ul>
               {p.points.map((pt2) => (
                 <li key={pt2}>
@@ -1126,7 +1144,7 @@ function CaptureStack() {
         >
           <div>
             <span className={`${s.captureTag} ${s.mono}`}>{opt.tag}</span>
-            <h3>{opt.tab}</h3>
+            <h3>{glue(opt.tab)}</h3>
             <p className={s.captureWhat}>{opt.what}</p>
           </div>
           <div>
@@ -1344,7 +1362,6 @@ function QuoteSource({ href, label, quote, groupLabel, group, index = 0 }: { hre
   return (
     <a className={`${s.mono} ${s.refSource}`} href={href} target="_blank" rel="noreferrer" aria-haspopup="dialog" onClick={play(g, index)}>
       {label}
-      <PlayGlyph />
     </a>
   );
 }
@@ -1506,7 +1523,7 @@ function Rollout() {
                   <span className={s.rust}>{p.when}</span>
                   <span>{p.rel}</span>
                 </div>
-                <h3>{p.name}</h3>
+                <h3>{glue(p.name)}</h3>
                 {"release" in p && p.release && <span className={`${s.releaseTag} ${s.mono}`}>Release day</span>}
               </div>
               <ul>
