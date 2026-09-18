@@ -70,9 +70,9 @@
 .heroKicker::before { content: ""; width: 8px; height: 8px; border-radius: 50%; background: var(--red); box-shadow: 0 0 0 0 rgba(253,55,55,0.6); animation: pulse 2.4s infinite; }
 @keyframes pulse { 0% { box-shadow: 0 0 0 0 rgba(253,55,55,0.55); } 70% { box-shadow: 0 0 0 12px rgba(253,55,55,0); } 100% { box-shadow: 0 0 0 0 rgba(253,55,55,0); } }
 .heroTitle { font-family: var(--display); font-size: clamp(4.2rem, 15.5vw, 16.5rem); letter-spacing: -0.045em; line-height: 0.8; text-transform: uppercase; display: flex; flex-wrap: wrap; column-gap: 0.18em; }
-.word { display: inline-flex; overflow: hidden; padding: 0.14em 0.06em 0.24em; margin: -0.14em -0.06em -0.24em; }
+.word { display: inline-flex; overflow: hidden; max-width: 100%; padding: 0.14em 0.06em 0.24em; margin: -0.14em -0.06em -0.24em; }
 [data-revealed] .word { overflow: visible; }
-.letter { display: inline-block; will-change: transform; }
+.letter { display: inline-block; max-width: 100%; overflow-wrap: break-word; will-change: transform; }
 .heroRow { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); gap: clamp(24px, 5vw, 80px); align-items: end; margin-top: clamp(18px, 3vh, 34px); }
 .heroLine { font-family: var(--display); text-transform: uppercase; font-size: clamp(1.9rem, 3.9vw, 3.9rem); line-height: 0.92; color: var(--red); letter-spacing: -0.03em; }
 .heroBody { font-size: clamp(1rem, 1.35vw, 1.2rem); color: var(--text2); max-width: 46ch; margin-top: 18px !important; line-height: 1.55; }
@@ -99,7 +99,7 @@
 .label { display: flex; align-items: center; gap: 14px; color: var(--muted); margin-bottom: 22px; }
 .label b { color: var(--red); font-weight: 400; }
 .label::after { content: ""; flex: 0 0 48px; height: 1px; background: var(--line2); }
-.h2 { font-family: var(--display); text-transform: uppercase; font-size: clamp(2.8rem, 7vw, 7.4rem); letter-spacing: -0.04em; line-height: 0.86; }
+.h2 { font-family: var(--display); text-transform: uppercase; font-size: clamp(2.8rem, 6vw, 6.4rem); letter-spacing: -0.04em; line-height: 0.86; }
 .h2 em { font-style: normal; color: var(--red); }
 .intro { font-size: clamp(1.02rem, 1.4vw, 1.28rem); color: var(--text2); line-height: 1.6; max-width: 56ch; }
 .note { font-size: 12px; color: var(--dim); line-height: 1.7; }
@@ -412,7 +412,7 @@
   .page * { transition: none !important; }
 }
 .h2 .word { margin-right: 0.12em; }
-.liveTitle { font-family: var(--display); text-transform: uppercase; font-size: clamp(2.6rem, 6vw, 6.4rem); letter-spacing: -0.04em; line-height: 0.86; }
+.liveTitle { font-family: var(--display); text-transform: uppercase; font-size: clamp(2.6rem, 5.4vw, 5.8rem); letter-spacing: -0.04em; line-height: 0.86; }
 .liveTitle em { font-style: normal; color: var(--red); }
 .liveTitle .word { margin-right: 0.12em; }
 @media (max-width: 900px) {

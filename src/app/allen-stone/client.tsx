@@ -100,7 +100,7 @@ function SplitHeading({ text, className }: { text: string; className: string }) 
     <h2 ref={ref} className={className} aria-label={text.replace(/\*/g, "")} data-revealed={reduce || revealed ? "" : undefined}>
       {tokens.map((tok, i) => {
         const accent = tok.startsWith("*") || tok.endsWith("*");
-        const clean = glue(tok.replace(/\*/g, ""));
+        const clean = tok.replace(/\*/g, "");
         return (
           <span className={s.word} key={i} aria-hidden="true">
             <motion.span
