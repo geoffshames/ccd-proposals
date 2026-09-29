@@ -132,7 +132,7 @@ function YouTubeScatter() {
       </svg>
       <div className="hi-scatter-read">
         {hover === null ? (
-          <p className="hi-mono">HOVER A DOT. GOLD IS EARNED, RED IS BOUGHT REACH.</p>
+          <p className="hi-mono">HOVER A DOT. GOLD IS THE SHORT, RED IS LONG FORM.</p>
         ) : (
           <p><strong>{youtube[hover].t}</strong><br /><span className="hi-mono">{youtube[hover].v.toLocaleString()} VIEWS / {youtube[hover].lr}% LIKE RATE</span></p>
         )}
@@ -188,7 +188,7 @@ function Ladder() {
 /* ---------- creative ---------- */
 
 const creative = [
-  { id: 'version', tab: 'Reggae Version', img: 'creative/reggae-version.jpg', ratio: 'tall', title: 'The front door: a covers series with a number on it.', body: 'Your one big organic result is the Water cover as a Short: 328K views at a normal like rate. We turn that accident into a franchise. A numbered series of under-60-second reggae versions of songs people already love, filmed in one look, each pointing to the full version and to your originals. Here Without You becomes the flagship episode.', spec: '9:16 / UNDER 60s / WEEKLY' },
+  { id: 'version', tab: 'Reggae Version', img: 'creative/reggae-version.jpg', ratio: 'tall', title: 'The front door: a covers series with a number on it.', body: 'Your best-performing ad ever is the Water cover cut as a Short: 328K views at a normal like rate. We turn that into a franchise. A numbered series of under-60-second reggae versions of songs people already love, filmed in one look, each pointing to the full version and to your originals. Here Without You becomes the flagship episode.', spec: '9:16 / UNDER 60s / WEEKLY' },
   { id: 'visualizer', tab: 'Owned Visualizer', img: 'creative/visualizer.jpg', video: 'creative/visualizer.mp4', ratio: 'tall', title: 'Your emblem, your type, every lyric clip.', body: 'The Universal Light eye is the strongest mark you own and it barely appears. One template, fixed palette, fixed type, the lyric people quote back set large. Partner channels keep premiering; your grid stays unmistakably yours.', spec: '9:16 / TEMPLATE / EVERY RELEASE' },
   { id: 'city', tab: 'City Drop', img: 'creative/city-drop.jpg', ratio: 'four', title: 'Three hundred numbers in San Diego.', body: 'A paid unit built to collect phone numbers, not views. One creative per priority market, geo-fenced, pointing to a Laylo drop. When a promoter asks how many you can bring, the answer is a real list of people in that city who asked to be told.', spec: '4:5 / META / PER MARKET' },
   { id: 'unplugged', tab: 'Unplugged', img: 'creative/unplugged.jpg', inset: 'creative/unplugged.mp4', ratio: 'square', title: 'The acoustic record, under your name.', body: 'Twelve songs, stripped. Released as Highest Intention Unplugged rather than a new project, the model Rebelution and Iya Terra use. It opens the Jack Johnson lane without splitting an audience you are still building.', spec: '1:1 / DSP ART / SERIES WORLD' },
@@ -409,13 +409,13 @@ export default function Proposal() {
               ].map(([h, b]) => <article key={h}><h4>{h}</h4><p>{b}</p></article>)}
             </div>
 
-            <h3 className="hi-sub" data-reveal>YouTube: bought reach versus earned reach</h3>
+            <h3 className="hi-sub" data-reveal>YouTube: same song, two formats</h3>
             <div className="hi-two hi-two-yt" data-reveal>
               <YouTubeScatter />
               <div className="hi-yt-copy">
                 <p className="hi-yt-big"><strong>1,035,589</strong> views.<br /><strong>727</strong> likes.</p>
                 <p>The long-form Water cover is the channel’s biggest upload, and its like rate is 3% of your normal. Viewers even say how they found it: <em>“YouTube nunca promociona algo bueno.”</em> Last year’s ad push bought views in the cheapest markets, where listeners do not follow, stream or buy tickets.</p>
-                <p><strong>The same cover as a Short did 328,503 views at a perfectly normal 2.37% like rate.</strong> That is the most important data point in this proposal: a reggae version of a song people already love, under a minute, earns real reach for you.</p>
+                <p><strong>The same cover, promoted as a Short, did 328,503 views at a perfectly normal 2.37% like rate, about 34 times the long form.</strong> That is the most important data point in this proposal: put spend behind a reggae version of a song people already love, vertical and under a minute, and it reaches people who actually respond.</p>
                 <p className="hi-small">Eight uploads over 20K views make up 97.9% of lifetime channel views. Sources: <Cite href={src.waterLong}>Water, long form</Cite>, <Cite href={src.waterShort}>Water, Short</Cite>, <Cite href={src.fatOne}>Fat One</Cite>.</p>
               </div>
             </div>
