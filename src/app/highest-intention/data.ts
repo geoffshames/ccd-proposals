@@ -79,12 +79,12 @@ export const teardown = [
 ];
 
 export const sentiment = [
-  { k: 'Genuine fans', v: 31.2, c: 'var(--gold)' },
+  { k: 'Genuine fans', v: 31.2, c: '#fafafa' },
   { k: 'Spam and generic', v: 26.8, c: 'var(--red)' },
-  { k: 'Emoji only', v: 17.7, c: '#8a8373' },
-  { k: 'Peers and industry', v: 15.6, c: 'var(--green)' },
-  { k: 'Promo channels', v: 5.8, c: '#4a4a4a' },
-  { k: 'Other', v: 2.9, c: '#2a2a2a' },
+  { k: 'Emoji only', v: 17.7, c: '#5c5c5c' },
+  { k: 'Peers and industry', v: 15.6, c: '#a3a3a3' },
+  { k: 'Promo channels', v: 5.8, c: '#3a3a3a' },
+  { k: 'Other', v: 2.9, c: '#262626' },
 ];
 
 export const platformSplit = [

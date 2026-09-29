@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import Proposal from './proposal';
 
-const og = 'https://proposal.crowdcontroldigital.com/images/highest-intention/og-image.png?v=1';
+const og = 'https://proposal.crowdcontroldigital.com/images/highest-intention/og-image.png?v=2';
 
 export const metadata: Metadata = {
   title: 'Highest Intention | Crowd Control Digital Proposal',

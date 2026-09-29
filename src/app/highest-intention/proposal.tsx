@@ -29,26 +29,15 @@ function Cite({ href, children }: { href: string; children: React.ReactNode }) {
 function SectionHead({ n, title, strap, children }: { n: string; title: string; strap: React.ReactNode; children?: React.ReactNode }) {
   return (
     <div className="hi-head" data-reveal>
-      <div className="hi-head-num"><span className="hi-mono">{n}</span><i className="hi-tri" /></div>
-      <div>
-        <h2>{title}</h2>
-        <p className="hi-strap">{strap}</p>
+      <p className="hi-head-label hi-mono"><span>{n}</span>{title}</p>
+      <div className="hi-head-grid">
+        <div>
+          <h2>{title}</h2>
+          <p className="hi-strap">{strap}</p>
+        </div>
         {children && <div className="hi-head-copy">{children}</div>}
       </div>
     </div>
-  );
-}
-
-function Rays({ className = '' }: { className?: string }) {
-  const rays = Array.from({ length: 48 });
-  return (
-    <svg className={'hi-rays ' + className} viewBox="-100 -100 200 200" aria-hidden="true">
-      {rays.map((_, i) => {
-        const a = (i / rays.length) * Math.PI * 2;
-        const r1 = i % 2 ? 38 : 30;
-        return <line key={i} x1={Math.cos(a) * r1} y1={Math.sin(a) * r1} x2={Math.cos(a) * 98} y2={Math.sin(a) * 98} />;
-      })}
-    </svg>
   );
 }
 
@@ -122,7 +111,7 @@ function YouTubeScatter() {
           <text key={v} x={xs(v)} y={H - 16} textAnchor="middle" className="hi-axis">{k(v)}</text>
         ))}
         <line x1={P.l} x2={W - P.r} y1={ys(baseline)} y2={ys(baseline)} className="hi-baseline" />
-        <text x={W - P.r} y={ys(baseline) - 8} textAnchor="end" className="hi-axis hi-axis-gold">CHANNEL BASELINE 2.42% LIKES PER VIEW</text>
+        <text x={W - P.r} y={ys(baseline) - 8} textAnchor="end" className="hi-axis hi-axis-hi">CHANNEL BASELINE 2.42% LIKES PER VIEW</text>
         {youtube.map((d, i) => (
           <g key={d.t} onMouseEnter={() => setHover(i)} onMouseLeave={() => setHover(null)} onFocus={() => setHover(i)} onBlur={() => setHover(null)} tabIndex={0} className="hi-dot-g">
             <circle cx={xs(d.v)} cy={ys(d.lr)} r={d.kind === 'earned' ? 11 : 8} className={d.kind === 'earned' ? 'hi-dot earned' : 'hi-dot paid'} />
@@ -132,7 +121,7 @@ function YouTubeScatter() {
       </svg>
       <div className="hi-scatter-read">
         {hover === null ? (
-          <p className="hi-mono">HOVER A DOT. GOLD IS THE SHORT, RED IS LONG FORM.</p>
+          <p className="hi-mono">HOVER A DOT. WHITE IS THE SHORT, RED IS LONG FORM.</p>
         ) : (
           <p><strong>{youtube[hover].t}</strong><br /><span className="hi-mono">{youtube[hover].v.toLocaleString()} VIEWS / {youtube[hover].lr}% LIKE RATE</span></p>
         )}
@@ -141,20 +130,19 @@ function YouTubeScatter() {
   );
 }
 
-function Donut() {
-  let acc = 0;
-  const R = 70, C = 2 * Math.PI * R;
+function SentimentBars() {
+  const max = Math.max(...sentiment.map(x => x.v));
   return (
-    <svg viewBox="0 0 200 200" className="hi-donut" role="img" aria-label="Comment categories">
-      {sentiment.map(s => {
-        const len = (s.v / 100) * C;
-        const el = <circle key={s.k} r={R} cx="100" cy="100" fill="none" stroke={s.c} strokeWidth="26" strokeDasharray={`${len} ${C - len}`} strokeDashoffset={-acc} transform="rotate(-90 100 100)" />;
-        acc += len;
-        return el;
-      })}
-      <text x="100" y="96" textAnchor="middle" className="hi-donut-big">597</text>
-      <text x="100" y="116" textAnchor="middle" className="hi-donut-small">COMMENTS SCORED</text>
-    </svg>
+    <div className="hi-sbars">
+      <div className="hi-sbars-head"><strong>597</strong><span className="hi-mono">COMMENTS SCORED</span></div>
+      {sentiment.map(x => (
+        <div key={x.k} className={'hi-sbar' + (x.k === 'Spam and generic' ? ' is-red' : x.k === 'Genuine fans' ? ' is-hi' : '')}>
+          <span className="hi-sbar-k">{x.k}</span>
+          <span className="hi-sbar-t"><i style={{ width: (x.v / max) * 100 + '%' }} /></span>
+          <span className="hi-sbar-v">{x.v}%</span>
+        </div>
+      ))}
+    </div>
   );
 }
 
@@ -267,7 +255,6 @@ export default function Proposal() {
         <section className="hi-hero">
           <div className="hi-hero-img" style={{ backgroundImage: `url(${A}hero.jpg)` }} role="img" aria-label="Ben Lowe performing live with a blue electric guitar, photographed by Louis Barr" />
           <div className="hi-hero-shade" />
-          <Rays className="hi-hero-rays" />
           <div className="hi-hero-top hi-mono">
             <span><i className="hi-dot" /> AUDIENCE GROWTH AND TOUR READINESS PROPOSAL</span>
             <span className="hi-right">LOS ANGELES, CALIFORNIA<br />PROPOSED START OCTOBER 15, 2026</span>
@@ -306,7 +293,7 @@ export default function Proposal() {
         {/* 01 AUDIT */}
         <section id="audit" data-chapter className="hi-section">
           <div className="hi-wrap">
-            <SectionHead n="01" title="The Audit" strap="Catalog, credentials and the infrastructure around them.">
+            <SectionHead n="01" title="The Audit" strap="Great songs. No system around them.">
               <p>We pulled every release, every platform and every public mention. Here is the honest picture.</p>
             </SectionHead>
 
@@ -351,19 +338,16 @@ export default function Proposal() {
           </div>
         </section>
 
-        {/* photo break */}
-        <section className="hi-break">
-          <img src={A + 'stage-crowd.jpg'} alt="A packed room with hands in the air as Ben plays a blue guitar on stage" loading="lazy" />
-          <div className="hi-break-copy">
-            <p className="hi-mono">THE ROOM ALREADY WORKS</p>
-            <p className="hi-display">Now build the list<br />behind the room.</p>
-          </div>
+        <section className="hi-ticker" aria-label="The room already works. Now build the list behind the room.">
+          <div className="hi-ticker-track"><div>{Array.from({ length: 4 }).map((_, i) => <span key={i}>The room already works <i aria-hidden="true" /> <em>Build the list behind the room</em> <i aria-hidden="true" /></span>)}</div></div>
         </section>
 
         {/* 02 TEARDOWN */}
         <section id="teardown" data-chapter className="hi-section hi-alt">
           <div className="hi-wrap">
-            <SectionHead n="02" title="Social Teardown" strap="47 Instagram posts, 74 YouTube uploads, 17 TikToks, scored one by one." />
+            <SectionHead n="02" title="Social Teardown" strap="The songs travel. The grid does not.">
+              <p>47 Instagram posts, 74 YouTube uploads and 17 TikToks, scored one by one for cadence, format, hook and engagement.</p>
+            </SectionHead>
 
             <div className="hi-kpis" data-reveal>
               {[
@@ -425,17 +409,12 @@ export default function Proposal() {
         {/* 03 SENTIMENT */}
         <section id="sentiment" data-chapter className="hi-section">
           <div className="hi-wrap">
-            <SectionHead n="03" title="Sentiment Analysis" strap="597 comments across Instagram and YouTube, classified by hand and by model.">
+            <SectionHead n="03" title="Sentiment Analysis" strap="People love it. Too few are talking.">
               <p>We read every comment we could pull, removed the band’s own replies, then scored the remaining 570 for sentiment, author type and language.</p>
             </SectionHead>
 
             <div className="hi-sent" data-reveal>
-              <div className="hi-sent-donut">
-                <Donut />
-                <ul className="hi-legend">
-                  {sentiment.map(s => <li key={s.k}><i style={{ background: s.c }} />{s.k}<span className="hi-mono">{s.v}%</span></li>)}
-                </ul>
-              </div>
+              <SentimentBars />
               <div className="hi-sent-side">
                 <div className="hi-sent-score">
                   <strong>82.6%</strong><span className="hi-mono">POSITIVE</span>
@@ -447,9 +426,9 @@ export default function Proposal() {
                     <div key={p.p}>
                       <div className="hi-split-head"><strong>{p.p}</strong><span className="hi-mono">{p.n} COMMENTS</span></div>
                       <div className="hi-split-bar">
-                        <span style={{ width: p.fan + '%', background: 'var(--gold)' }} title="Genuine fans" />
-                        <span style={{ width: p.peer + '%', background: 'var(--green)' }} title="Peers" />
-                        <span style={{ width: p.emoji + '%', background: '#8a8373' }} title="Emoji only" />
+                        <span style={{ width: p.fan + '%', background: '#fafafa' }} title="Genuine fans" />
+                        <span style={{ width: p.peer + '%', background: '#a3a3a3' }} title="Peers" />
+                        <span style={{ width: p.emoji + '%', background: '#5c5c5c' }} title="Emoji only" />
                         <span style={{ width: p.spam + '%', background: 'var(--red)' }} title="Spam" />
                       </div>
                       <p className="hi-small">{p.p === 'YouTube' ? 'Half of the YouTube comment layer is spam, much of it concentrated under two videos. It is the first thing a booker sees under your biggest uploads.' : 'Nearly a third of Instagram commenters are fellow musicians and collaborators. Real respect, but a small circle.'}</p>
@@ -482,8 +461,8 @@ export default function Proposal() {
         {/* 04 FIELD */}
         <section id="field" data-chapter className="hi-section hi-alt">
           <div className="hi-wrap">
-            <SectionHead n="04" title="The Field" strap="Twenty-six Cali roots acts benchmarked. The gap to a support slot is smaller than it looks.">
-              <p>Headliners are the goal. The acts getting support slots right now are the benchmark.</p>
+            <SectionHead n="04" title="The Field" strap="The gap is smaller than it looks.">
+              <p>Twenty-six Cali roots acts benchmarked. Headliners are the goal; the acts getting support slots right now are the benchmark.</p>
             </SectionHead>
             <div data-reveal><Ladder /></div>
 
@@ -515,10 +494,11 @@ export default function Proposal() {
         {/* 05 STRATEGY */}
         <section id="strategy" data-chapter className="hi-section">
           <div className="hi-wrap">
-            <SectionHead n="05" title="The Strategy" strap="One band. Three doors in. One list that makes you bookable." />
+            <SectionHead n="05" title="The Strategy" strap="One band. Three doors. One list.">
+              <p>Every piece of content opens one of three doors, and every door leads to a phone number in a city you want to play.</p>
+            </SectionHead>
 
             <div className="hi-thesis" data-reveal>
-              <Rays className="hi-thesis-rays" />
               <p className="hi-mono">POSITIONING</p>
               <p className="hi-thesis-line">The songwriter’s<br /><span>roots band.</span></p>
               <p className="hi-thesis-copy">Serious lyrics over deep roots grooves, played by the people who built the sound. Everything we publish should make that sentence more true.</p>
@@ -559,7 +539,7 @@ export default function Proposal() {
         {/* 06 CREATIVE */}
         <section id="creative" data-chapter className="hi-section hi-alt">
           <div className="hi-wrap">
-            <SectionHead n="06" title="Example Creative" strap="Five formats, built in your world. Examples and directional only.">
+            <SectionHead n="06" title="Example Creative" strap="Five formats. Examples, directional only.">
               <p>These were generated for this proposal to show the direction. Final creative uses your real footage, your players and your approval.</p>
             </SectionHead>
             <div className="hi-ctabs" role="tablist" aria-label="Creative examples" data-reveal>
@@ -606,7 +586,9 @@ export default function Proposal() {
         {/* 07 ROADMAP */}
         <section id="roadmap" data-chapter className="hi-section">
           <div className="hi-wrap">
-            <SectionHead n="07" title="The Roadmap" strap="Six months, from cleanup to a Cali Roots-ready band." />
+            <SectionHead n="07" title="The Roadmap" strap="Six months to festival ready.">
+              <p>From cleanup to a band with a list, footage and numbers a buyer can verify, in time for the 2027 festival season.</p>
+            </SectionHead>
             <div className="hi-road" data-reveal>
               {[
                 ['DAYS 1 TO 30', 'OCT 15 TO NOV 14', 'Foundation', ['Brand system and owned visualizer template', 'Profile cleanup: YouTube spam, duplicate uploads, orphan Spotify, TikTok link, Instagram name', 'Laylo live with five city drops', 'Content bank from the archive, first Reggae Version episodes filmed', 'Here Without You rollout plan and license cleared']],
@@ -627,7 +609,9 @@ export default function Proposal() {
         {/* 08 INVESTMENT */}
         <section id="investment" data-chapter className="hi-section hi-invest">
           <div className="hi-wrap">
-            <SectionHead n="08" title="Investment" strap="Two ways to work together. Same strategy, different hands on the wheel." />
+            <SectionHead n="08" title="Investment" strap="Same strategy. Your call on the hands.">
+              <p>Two ways to work together. Full Service puts our team on execution; Consulting keeps posting with the band while we run strategy and ads.</p>
+            </SectionHead>
 
             <div className="hi-tiers" data-reveal>
               {([
@@ -705,7 +689,7 @@ export default function Proposal() {
         {/* NEXT */}
         <section className="hi-section hi-next">
           <div className="hi-wrap">
-            <SectionHead n="09" title="Next Steps" strap="From yes to first post in two weeks." />
+            <SectionHead n="09" title="Next Steps" strap="Yes to first post in two weeks." />
             <div className="hi-steps" data-reveal>
               {[
                 ['Pick a tier', 'Approve Full Service or Consulting below and we send the agreement and first invoice.'],
@@ -719,7 +703,7 @@ export default function Proposal() {
         </section>
 
         <section className="hi-close">
-          <img src={A + 'band-banner.jpg'} alt="Highest Intention on stage in gold light" loading="lazy" />
+          <img src={A + 'close.jpg'} alt="Ben Lowe on stage, photographed by Louis Barr" loading="lazy" />
           <div className="hi-close-shade" />
           <div className="hi-close-body hi-wrap">
             <p className="hi-mono">LET’S GET THE BAND OUT OF THE STUDIO</p>
