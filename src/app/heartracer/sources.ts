@@ -1,5 +1,4 @@
 export const sources = {
-  meeting: 'https://notes.granola.ai/d/cb3581b4-70f8-441e-9f53-6e8ca32b5ab1',
   official: 'https://www.playheartracer.com/',
   bio: 'https://www.playheartracer.com/bio',
   album: 'https://heartracer.bandcamp.com/album/nighttime-fever',
