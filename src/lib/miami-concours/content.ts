@@ -29,15 +29,15 @@ export const HERO = {
   body: "We audited every public signal around Miami Concours: the website, six social channels, 3,246 posts and comments, 67 videos run through video AI, search demand, and the events competing for the same collectors in February. This is what we found, and how we would turn it into free RSVPs, VIP revenue and sponsor value for the tenth edition.",
   stats: [
     { value: 17.1, suffix: "M", decimals: 1, label: "views on #miamiconcours on TikTok, almost all from other people's accounts" },
-    { value: 4.97, suffix: "M", decimals: 2, label: "Instagram followers across the partners already around the event" },
+    { value: 4.97, suffix: "M", decimals: 2, label: "Instagram followers across the partner brands already around the event" },
     { value: 0, suffix: "", decimals: 0, label: "Meta ads running for Miami Concours today, five months out" },
   ],
   date: "Audit date: September 30, 2026",
 };
 
 export const MARQUEE = [
-  "Ten years on the red carpet",
-  "125+ rare and hyper cars",
+  "Ten editions on the red carpet",
+  "Hypercars on the red carpet",
   "Free general admission",
   "Miami Design District",
   "February 19 to 21, 2027",
@@ -51,14 +51,14 @@ export const SUMMARY = {
   items: [
     {
       n: "01",
-      head: "Demand is there, and nobody is buying it",
-      body: "\"miami concours\" drew 12,400 US searches in the last 12 months, 79% of them between December and February. Google rates competition on the term at zero. The Meta Ad Library shows no active Miami Concours ads, and the site carries no Meta, TikTok or Google Ads tag.",
+      head: "Demand is there, and it isn't being bought",
+      body: "\"miami concours\" drew 12,400 US searches in the last 12 months, 79% of them between December and February. Google rates competition on the term at zero, meaning few or no advertisers bid on it. The Meta Ad Library shows no active Miami Concours ads, and the site carries no Meta, TikTok or Google Ads tag.",
       to: "search",
     },
     {
       n: "02",
       head: "The conversation belongs to other accounts",
-      body: "157 TikToks about the event drew 13.07M views. Creators with 10,000+ followers produced 92% of those views. The official TikTok has 46 followers.",
+      body: "157 TikToks about the event drew 13.07M views, 5.52M of them from 2025 and 2026 alone. Creators with 10,000+ followers produced 92% of those views. The official TikTok has 46 followers.",
       to: "voice",
     },
     {
@@ -76,13 +76,13 @@ export const SUMMARY = {
     {
       n: "05",
       head: "People beat cars",
-      body: "70% of the feed is cars alone, at a 1.02% median engagement rate. Posts with a person as the subject run at 4.14%. Video AI found the same thing in the first two seconds of every winning reel.",
+      body: "70% of the feed is cars alone, at a 1.02% median engagement rate. Posts with a person as the subject run at 4.14%. Video AI found a person in the first two seconds of six of the seven most-played reels.",
       to: "video",
     },
     {
       n: "06",
       head: "February is contested",
-      body: "Cavallino Classic Palm Beach runs the exact same dates an hour up the coast, and already has 81 active Meta ads selling February 2027. ModaMiami and an RM Sotheby's sale follow one week later.",
+      body: "Cavallino Classic Palm Beach runs the exact same dates an hour up the coast, and already has 81 active Meta ads, including \"Reserve Your Place. Feb 2027\". ModaMiami and an RM Sotheby's sale follow one week later.",
       to: "field",
     },
   ],
@@ -98,7 +98,7 @@ export const SEARCH = {
     { v: "12,400", l: "US searches for \"miami concours\", Sep 2025 to Aug 2026" },
     { v: "79%", l: "of that demand lands December to February" },
     { v: "1,600", l: "searches for \"miami concours tickets\" in February 2026 alone" },
-    { v: "0", l: "Google's competition index on the brand terms. No one is bidding." },
+    { v: "0", l: "Google's competition index on the brand terms: few or no advertisers bid on them" },
   ],
   asks: [
     { q: "miami concours 2026", a: ["tickets", "promo code", "schedule", "dates", "location", "tickets price", "time", "free"] },
@@ -129,17 +129,17 @@ export const WEBSITE = {
     { k: "Accessibility", v: 82, note: "44 of 49 homepage images have no alt text" },
   ],
   vitals: [
-    { v: "21.3s", l: "Largest contentful paint on mobile (lab). The hero video is the heaviest thing on the page." },
+    { v: "21.3s", l: "Largest contentful paint on mobile, Lighthouse lab run. Most visitors from paid social arrive on a phone." },
     { v: "6.1MB", l: "Homepage weight on mobile. Modern image formats alone would save 2.0MB." },
     { v: "2x", l: "jQuery and the slick carousel are each loaded twice, from two different sources." },
   ],
   tracking: [
     { k: "Google Analytics 4", ok: true, note: "Installed through Site Kit" },
-    { k: "Meta pixel and Conversions API", ok: false, note: "None found" },
-    { k: "TikTok pixel", ok: false, note: "None found" },
-    { k: "Google Ads conversion tag", ok: false, note: "None found" },
+    { k: "Meta pixel", ok: false, note: "Not in page source" },
+    { k: "TikTok pixel", ok: false, note: "Not in page source" },
+    { k: "Google Ads conversion tag", ok: false, note: "Not in page source" },
     { k: "Event structured data", ok: false, note: "No Event schema, so no event rich results in Google" },
-    { k: "One email list", ok: false, note: "Two newsletter plugins plus a WPForms form collect sign-ups" },
+    { k: "One sign-up system", ok: false, note: "Brevo, Newsletter and WPForms plugins are all installed" },
   ],
   trackingNote:
     "Paid media can only optimize toward what it can see. Today a Meta or TikTok campaign would be buying clicks, not RSVPs or VIP sales.",
@@ -153,7 +153,7 @@ export const WEBSITE = {
     { where: "YouTube link in the site footer", says: "Returns a 404. There is no official channel.", state: "broken" },
   ],
   storyNote:
-    "Every paid click lands somewhere. Right now a person who finds the event on Google, Instagram and the homepage gets three different years, two different formats and two different date ranges.",
+    "Every paid click lands somewhere. Right now a person who finds the event on Google, Instagram and the homepage gets two different years, two different formats and two different date ranges.",
   fixes: [
     { t: "Rewrite the meta description, FAQ, Ticketing, Programming and Schedule pages for the tenth edition", w: "Week 1" },
     { t: "Update the Linktree and Instagram bio to one date line and one RSVP link", w: "Day 1" },
@@ -182,7 +182,7 @@ export const CADENCE = {
   start: { y: 2024, m: 0 },
   counts: [0, 52, 0, 0, 17, 9, 0, 0, 0, 0, 1, 2, 1, 17, 2, 1, 2, 0, 0, 5, 11, 0, 3, 7, 8, 22, 0, 0, 0, 0, 0, 0, 0],
   note:
-    "Output spikes in event month (52 posts in February 2024, 17 in 2025, 22 in 2026) and falls to zero after. The tenth-edition date was announced on the District's Instagram on June 1. The event's own account has said nothing since February.",
+    "Output spikes in event month (52 posts in February 2024, 17 in 2025, 22 in 2026) and falls to zero or near zero after. The tenth-edition date was announced on the District's Instagram on June 1. The event's own account hasn't posted since February.",
 };
 
 export const FORMATS = {
@@ -216,7 +216,7 @@ export const TOP_POSTS = [
 
 export const LOW_POSTS = [
   { href: "https://www.instagram.com/reel/DUa3l3NjdG7/", img: "DUa3l3NjdG7", who: "@miamiconcours", metric: "19,102 plays", note: "Static \"PURCHASE TICKETS NOW\" card in the first frame." },
-  { href: "https://www.instagram.com/reel/DUYjDTTDYF3/", img: "DUYjDTTDYF3", who: "@miamiconcours", metric: "6,211 plays", note: "65-second explainer of the ticketed format. Lowest owned reel of the cycle." },
+  { href: "https://www.instagram.com/reel/DUYjDTTDYF3/", img: "DUYjDTTDYF3", who: "@miamiconcours", metric: "6,211 plays", note: "65-second explainer of the ticketed format. Fewest plays of the cycle's owned reels." },
   { href: "https://www.instagram.com/p/DOY1sWRjV3u/", img: "DOY1sWRjV3u", who: "@miamiconcours", metric: "86 likes and comments", note: "Off-season single-car spec post. The format that fills the quiet months." },
 ];
 
@@ -249,13 +249,13 @@ export const SENTIMENT = {
     { k: "Fewer or repeat cars", n: 20, neg: 12, tone: "neg" },
   ],
   quotes: [
-    { q: "It's crazy, I've only missed 2 (or 3?), and think each can't possibly get better than the year before, but it does! So worth my 8 hours of driving.", who: "Instagram, repeat attendee, Feb 2026", href: "https://www.instagram.com/p/DU1Cjd_kfHV/", tone: "pos" },
-    { q: "The best car show in Miami, unfortunately it's a victim of its own success.", who: "Dan, Instagram, photographer, Feb 2025", href: "https://www.instagram.com/p/DGGAvlzNmEM/", tone: "neg" },
-    { q: "It being ticketed made it so much better. Didn't have to be there at 6am to actually see stuff.", who: "Benny, TikTok, Feb 2026", href: "https://www.tiktok.com/@jared_carphotovideo/video/7606123953735683341", tone: "pos" },
-    { q: "Nothing like advertising the hell out of the P4/5, a car I have been wanting to see for the longest, only to have it roped off in the VIP section.", who: "Instagram, visiting from Texas, Feb 2026", href: "https://www.instagram.com/p/DUv_To5kQhQ/", tone: "neg" },
+    { q: "It's crazy, I've only missed 2 (or 3?), and think each each can't possibly get better than the year before, but it does! So worth my 8 hours of driving.", who: "Instagram, repeat attendee, Feb 2026", href: "https://www.instagram.com/p/DU1Cjd_kfHV/", tone: "pos" },
+    { q: "The best car show in Miami - unfortunately it's a victim of its own success.", who: "Dan, Instagram, photographer, Feb 2025", href: "https://www.instagram.com/p/DGGAvlzNmEM/", tone: "neg" },
+    { q: "It being ticketed made it sm better. Didnt have to be there at 6am to actually see stuff", who: "Benny, TikTok, Feb 2026", href: "https://www.tiktok.com/@jared_carphotovideo/video/7606123953735683341", tone: "pos" },
+    { q: "Nothing like advertising the hell out of the P4/5, a car I have been wanting to see for the longest, only to have it roped off in the VIP section unless you're willing to shell out $1000.", who: "Instagram, visiting from Texas, Feb 2026", href: "https://www.instagram.com/p/DUv_To5kQhQ/", tone: "neg" },
     { q: "The website details and FAQ section are extremely vague and lack any detail as to what the entire days look like.", who: "Steven, Instagram, Jan 2026", href: "https://www.instagram.com/p/DRmr6MLj_Fw/", tone: "q" },
     { q: "That's my poster he signed!!! So grateful for the opportunity to meet such an icon in the car community.", who: "Instagram attendee, Feb 2026", href: "https://www.instagram.com/p/DU1QjMhFQx6/", tone: "pos" },
-    { q: "Why do I always see this stuff AFTER the fact?", who: "TikTok, Feb 2025", href: "https://www.tiktok.com/@wearecurated/video/7471763620590816543", tone: "q" },
+    { q: "Why do I always see this stuff AFTER the fact", who: "TikTok, Feb 2025", href: "https://www.tiktok.com/@wearecurated/video/7471763620590816543", tone: "q" },
     { q: "Was super excited to go. But after two hours of trying to park had to leave.", who: "Instagram, Feb 2025", href: "https://www.instagram.com/p/DGGAvlzNmEM/", tone: "neg" },
   ],
   response: { asked: 87, brand: 17, none: 52, negTotal: 102, negReplied: 8 },
@@ -279,7 +279,7 @@ export const SENTIMENT = {
     { k: "Glickenhaus", v: 20 },
   ],
   words: {
-    note: "In their own words, people call it a \"car show\" (77 mentions). Fashion, art and lifestyle language shows up in 44, mostly in captions and press. The \"auto, art and fashion\" position is real on camera, but the audience talks about cars and people.",
+    note: "In their own words, people call it a \"car show\" (77 mentions). Fashion, art and lifestyle language shows up in 44, mostly in captions and press. Auto and fashion are real on camera, but the audience talks about cars and people.",
   },
   brief: [
     { h: "Free has to mean something specific", b: "Say what GA sees, which day, which hours, and that kids under 14 are welcome. The 2025 and 2026 comments are full of people who could not tell." },
@@ -303,18 +303,18 @@ export const VOICE = {
   ],
   total: "13.07M",
   videos: 157,
-  youtube: "Creators drove 84% of the 893,518 YouTube views on Miami Concours videos. The District's own 2026 recap has 50 views.",
+  youtube: "On YouTube, creators drove 84% of the 893,518 views on Miami Concours videos.",
   creators: [
     { handle: "@carsimping", platform: "TikTok", followers: "69.9K", reach: "7.5M", note: "2023 edition, still the biggest video tagged to the event", href: "https://www.tiktok.com/@carsimping/video/7202314643417599274", img: "7202314643417599274" },
     { handle: "@mattsv8", platform: "TikTok", followers: "29.1K", reach: "2.9M", note: "Glickenhaus SCG 004 door clip, 2026", href: "https://www.tiktok.com/@mattsv8/video/7607696545898614029", img: "7607696545898614029" },
     { handle: "@enzoedits812", platform: "TikTok", followers: "177K", reach: "2.3M", note: "Fan edit of the Lamborghini lineup", href: "https://www.tiktok.com/@enzoedits812/video/7484354176806341943", img: "7484354176806341943" },
-    { handle: "@jessiicabergmann", platform: "TikTok", followers: "325.6K", reach: "541.7K", note: "Miami lifestyle guide. 13,500 shares, the most in the sample.", href: "https://www.tiktok.com/@jessiicabergmann/video/7469146179020934446", img: "7469146179020934446" },
+    { handle: "@jessiicabergmann", platform: "TikTok", followers: "325.6K", reach: "541.7K", note: "Miami lifestyle guide. 13,500 shares, the most of any 2025 or 2026 video in the sample.", href: "https://www.tiktok.com/@jessiicabergmann/video/7469146179020934446", img: "7469146179020934446" },
     { handle: "@dailykellyp", platform: "TikTok", followers: "34.4K", reach: "438.2K", note: "Fashion fan account covering a guest's outfit", href: "https://www.tiktok.com/@dailykellyp/video/7472881076738837815", img: "7472881076738837815" },
     { handle: "@chl0ebean", platform: "TikTok", followers: "3M", reach: "203.1K", note: "The 2025 crowd thread lives in these comments", href: "https://www.tiktok.com/@chl0ebean/video/7472479344435170602", img: "7472479344435170602" },
     { handle: "@juancardzsa", platform: "TikTok", followers: "130.4K", reach: "125.4K", note: "Spanish-language hypercar walk", href: "https://www.tiktok.com/@juancardzsa/video/7607889223911345438", img: "7607889223911345438" },
-    { handle: "Bistrighini", platform: "YouTube", followers: "7.2K", reach: "67.8K", note: "Full 2026 walkthrough. \"Comprehensive coverage as always.\"", href: "https://www.youtube.com/watch?v=H0rVXl4MSQw" },
+    { handle: "Bistrighini", platform: "YouTube", followers: "7.2K", reach: "67.8K", note: "Full 2026 walkthrough, 1 hour 32 minutes", href: "https://www.youtube.com/watch?v=H0rVXl4MSQw" },
   ],
-  note: "This is the creator bench that already shows up unpaid. A structured program (early access, owner intros, a creator lane on the carpet, whitelisting rights) turns it into paid reach at organic prices.",
+  note: "This is the creator bench that already shows up unpaid. A structured program (early access, owner intros, a creator lane on the carpet, whitelisting rights) turns it into reach the event can plan around and put paid media behind.",
 };
 
 /* ------------------------------------------------------------------ video intelligence */
@@ -323,17 +323,17 @@ export const BRAIN = {
   corpus: [
     { k: "Miami Concours owned and collab reels", v: 34 },
     { k: "Peer concours reels (Cavallino, Amelia, Audrain, Pebble Beach)", v: 16 },
-    { k: "Active peer Meta ads", v: 7 },
+    { k: "Active peer Meta ad videos", v: 7 },
     { k: "Miami Design District reels", v: 6 },
     { k: "Creator TikToks", v: 4 },
   ],
   total: 67,
   minutes: "37.3",
   intro:
-    "We loaded 67 videos into a TwelveLabs video-AI knowledge store (the event's own reels, the District's, creators', and the best reels and live ads from four peer concours) and questioned the whole library at once. Every finding below is tied to specific videos and timestamps. Click any of them to watch.",
+    "We loaded 67 videos into a TwelveLabs video-AI knowledge store (the event's own reels, the District's, creators', the best reels from four peer concours and live ads from two of them) and questioned the whole library at once. Every finding below is tied to specific videos and timestamps. Click any of them to watch.",
   findings: [
     {
-      h: "Winners open on a person. Ticket cards open dead.",
+      h: "Winners open on a person, not a ticket card",
       b: "All four 2026 countdown reels open on the same static \"PURCHASE TICKETS NOW\" card and sit at 6,211 to 23,290 plays. Six of the seven most-played Concours reels checked have a person in frame in the first two seconds. The two cards that did win carried news: a weather date change (88,356 plays) and \"General admission is free\" (70,383).",
       take: "The first frame of every ad is a person or a moving car. A card only when it carries news.",
       clips: [
@@ -344,7 +344,7 @@ export const BRAIN = {
       ],
     },
     {
-      h: "The best-performing 2026 reel is 2023 footage",
+      h: "The best-performing 2026 reel is built on 2023 footage",
       b: "The most-played reel of the 2026 cycle shares its shots with the 2024 \"Flashback Friday\" reel, and both carry a burned-in \"JOIN US FEB 19\" graphic from 2023 at 0:30. The archive is working as ad material without anyone treating it as ad material.",
       take: "Nine editions of footage are a paid asset. Recut the best of it with 2027 end cards before new footage exists.",
       clips: [
@@ -354,7 +354,7 @@ export const BRAIN = {
     },
     {
       h: "The offer is almost never said out loud",
-      b: "In 16 reels from the 2026 cycle, a ticket call to action appears inside the video five times: four static cards and one spoken line from Brett David (tickets, kids free, date, place). No official reel ever shows a price. The most complete practical information came from a Spanish-language creator: hours, prices, kids free and the URL.",
+      b: "In 16 reels from the 2026 cycle, a ticket call to action appears inside the video five times: four static cards and one spoken line from Brett David (tickets, kids free, date, place). None of the official reels we analyzed shows a price. The most complete practical information came from a Spanish-language creator: hours, prices, kids free and the URL.",
       take: "\"Free. February 19 to 21. Miami Design District.\" spoken and on screen in every GA ad. VIP as its own message.",
       clips: [
         { href: "https://www.instagram.com/reel/DUBys5Dj4oG/", label: "Spoken CTA, 0:17 to 0:27", views: "52,846 plays" },
@@ -363,7 +363,7 @@ export const BRAIN = {
     },
     {
       h: "Cavallino sells tiers with one repeatable 23-second ad",
-      b: "Every live Cavallino ad opens on the date and venue in the first second, runs a hospitality montage, and closes on a solid red card listing what the tier includes above \"SECURE YOUR PLACE\". No price. A second variant is a guest testimonial: \"If you like Ferraris, you have to come to this event.\"",
+      b: "The Cavallino video ads we analyzed open on the date and venue in the first second, runs a hospitality montage, and closes on a solid red card listing what the tier includes above \"SECURE YOUR PLACE\". No price. A second variant is a guest testimonial: \"If you like Ferraris, you have to come to this event.\"",
       take: "Build the VIP ad the same way, in Miami terms: date and place first, then what VIP adds on the carpet.",
       clips: [
         { href: "https://www.facebook.com/ads/library/?id=901168189436698", label: "Cavallino Patron ad, dated open and tier card", views: "Active Meta ad" },
@@ -371,21 +371,21 @@ export const BRAIN = {
       ],
     },
     {
-      h: "VIP is only ever shown as a room",
-      b: "Where VIP appears in Concours footage it is a lounge, a bar, a \"COLLECTORS' LOUNGE\" sign. Nothing shows what a VIP ticket buys on the red carpet itself, and the one on-camera explanation of the ticketed format was the weakest owned reel of the cycle.",
+      h: "In the footage, VIP only appears as a room",
+      b: "Where VIP appears in Concours footage it is a lounge, a bar, a \"COLLECTORS' LOUNGE\" sign. Nothing we found shows what a VIP ticket buys on the red carpet itself.",
       take: "Film VIP as access: the carpet before the crowd, a door opened for you, an owner talking to you.",
       clips: [
         { href: "https://www.instagram.com/reel/DFvU2ynp1f9/", label: "VIP pitch over lounge and bar, 0:19", views: "57,417 plays" },
-        { href: "https://www.instagram.com/reel/DUYjDTTDYF3/", label: "Format explainer", views: "6,211 plays", low: true },
+        { href: "https://www.instagram.com/reel/DGWM7WTvanV/", label: "COLLECTORS' LOUNGE sign and gift bags, 0:12", views: "9,986 plays" },
       ],
     },
     {
       h: "Fashion is on screen. Art mostly isn't.",
-      b: "The District's reels and partner reels show storefronts constantly (Dior, Chanel, Louis Vuitton, Cartier, Bottega Veneta) and styled guests on the carpet. Art is thin: a statue and a mural in archive footage, one installation. The District's June reel announcing 2027 shows no date on screen.",
+      b: "The District's reels and partner reels show storefronts constantly (Dior, Chanel, Louis Vuitton, Cartier, Bottega Veneta) and styled guests on the carpet. Art is thin: a statue and a mural in archive footage, one installation. The June reel announcing 2027 ends on a logo card, which leaves room to put the date on screen next time.",
       take: "Auto plus fashion is proven. If art stays in the line, 2027 needs a filmed art moment.",
       clips: [
         { href: "https://www.instagram.com/reel/DT8pxuYkkF2/", label: "Storefront run, 0:00 to 0:12", views: "161,502 plays" },
-        { href: "https://www.instagram.com/reel/DZDvavZhFqr/", label: "2027 announcement, no date on screen", views: "30,200 plays" },
+        { href: "https://www.instagram.com/reel/DZDvavZhFqr/", label: "2027 announcement reel", views: "30,200 plays" },
       ],
     },
     {
@@ -399,7 +399,7 @@ export const BRAIN = {
     },
     {
       h: "Crowds read as scale from above and as a crush from the ground",
-      b: "Drone shots of the carpet read as spectacle. Ground shots of unveilings show people blocking the car. The creators with the biggest reach film owners and walk-and-talks, and Amelia's attendee vox-pop (\"so make sure you come next year\") is a format the Concours feed has never run.",
+      b: "Drone shots of the carpet read as spectacle. Ground shots of unveilings show people blocking the car. Creators film owners and walk-and-talks, formats the event feed rarely uses, and Amelia's attendee vox-pop (\"so make sure you come next year\") is a format we didn't find in the Concours feed.",
       take: "Crowds from above, individuals from the ground. Book owners and attendees on camera.",
       clips: [
         { href: "https://www.instagram.com/reel/DGA9IKcNzHb/", label: "Crowd blocks the unveil, 0:00", views: "100,383 plays" },
@@ -424,15 +424,16 @@ export const PARTNERS = {
   owned: 30784,
   list: [
     { k: "Lamborghini Miami", v: 2917412 },
-    { k: "Christian von Koenigsegg", v: 1578518, note: "2026 Guest of Honor. Never a collab." },
+    { k: "Christian von Koenigsegg", v: 1578518, note: "2026 Guest of Honor. Not a collab on any 2026 post." },
     { k: "duPont REGISTRY", v: 1022601 },
     { k: "Miami Design District", v: 423791 },
     { k: "Prestige Imports", v: 358139 },
     { k: "CURATED", v: 198044 },
     { k: "The Concours Club", v: 31214 },
+    { k: "Collection Suites", v: 15509 },
     { k: "@miamiconcours", v: 30784, self: true },
   ],
-  tiktok: "On TikTok the same partners add about 918K followers: duPont REGISTRY 602.3K, Miami Design District 285.8K, Prestige Imports 30.2K.",
+  tiktok: "The 4.97M figure counts partner brands only. On TikTok the same partners add about 918K followers: duPont REGISTRY 602.3K, Miami Design District 285.8K, Prestige Imports 30.2K.",
   facts: [
     { v: "5.4x", l: "median engagement on collab posts versus solo posts, 2026 cycle" },
     { v: "187,216", l: "plays on the District's best Concours reel. The event account's best ever: 100,383." },
@@ -446,13 +447,13 @@ export const PARTNERS = {
 export const FIELD = {
   rows: [
     { k: "Miami Concours", date: "Feb 19 to 21, 2027", price: "Free GA, paid VIP", ig: "30.8K", tt: "46", ads: "0", self: true },
-    { k: "Cavallino Classic Palm Beach", date: "Feb 19 to 21, 2027", price: "$495 GA to $14,000", ig: "122.7K", tt: "None", ads: "81 active", hot: true },
-    { k: "ModaMiami (Miami Car Week)", date: "Feb 26 to 28, 2027", price: "$275 to $2,985", ig: "n/a", tt: "n/a", ads: "Not found" },
-    { k: "The Amelia", date: "Mar 2027", price: "From $126 (2026 sale)", ig: "31.7K", tt: "None", ads: "Not found" },
+    { k: "Cavallino Classic Palm Beach", date: "Feb 19 to 21, 2027", price: "$495 GA to $14,000", ig: "122.7K", tt: "Not found", ads: "81 active", hot: true },
+    { k: "ModaMiami (Miami Car Week)", date: "Feb 26 to 28, 2027", price: "$275 to $2,985 (2026)", ig: "n/a", tt: "n/a", ads: "Not found" },
+    { k: "The Amelia", date: "Early Mar 2027", price: "From $126 (2026 sale)", ig: "31.7K", tt: "Not found", ads: "Not found" },
     { k: "Audrain Newport", date: "Oct 1 to 4, 2026", price: "$250 GA, $500 VIP", ig: "22.5K", tt: "8", ads: "92 active", hot: true },
-    { k: "Pebble Beach", date: "Aug 15, 2027", price: "$650 to $5,000", ig: "138.5K", tt: "None", ads: "0 active" },
-    { k: "Greenwich", date: "May 2026", price: "From $75", ig: "27.2K", tt: "None", ads: "Not found" },
-    { k: "Rodeo Drive Concours", date: "June 2026", price: "Free, street show", ig: "114.4K (Rodeo Drive)", tt: "n/a", ads: "4 (June)" },
+    { k: "Pebble Beach", date: "Aug 15, 2027", price: "Mid-$400s to $5,000", ig: "138.5K", tt: "Not found", ads: "0 active" },
+    { k: "Greenwich", date: "May 29 to 31, 2026", price: "From $75", ig: "27.2K", tt: "Not found", ads: "Not found" },
+    { k: "Rodeo Drive Concours", date: "June 21, 2026", price: "Free, street show", ig: "114.4K (Rodeo Drive)", tt: "n/a", ads: "4 (June)" },
   ],
   map: {
     tl: ["Pebble Beach", "Cavallino", "Audrain"],
@@ -461,11 +462,11 @@ export const FIELD = {
     br: ["Miami Concours", "Rodeo Drive (June, LA)"],
   },
   white:
-    "Miami Concours is the only free, street-format concours set in a luxury design district during South Florida's peak season. Every February neighbor is gated and priced. The closest analog, Rodeo Drive, runs in June in Los Angeles.",
+    "Miami Concours is the only free, street-format concours set in a luxury design district during South Florida's peak season. Every other concours nearby in February is gated and priced. The closest analog, Rodeo Drive, runs in June in Los Angeles.",
   obs: [
-    { h: "Cavallino is already buying your weekend", b: "Same dates, an hour up the coast, 81 active Meta ads including \"Reserve Your Place. Feb 2027\". It also appears on Miami Concours' sponsor wall. The collector audience will hear from Cavallino for five months before it hears from Miami Concours." },
-    { h: "Audrain is the paid template", b: "92 active ads, one per ticket tier or sub-event (GA, two-day, VIP, kids day), each tracked to its own ticket link. Miami Concours has the same building blocks: The Screening, Collectors Dinner, Porsche and Petals, Red Carpet Day, VIP." },
-    { h: "TikTok is open ground", b: "No major concours has a real TikTok presence. A free street show with fashion and hypercars is TikTok-native in a way a judged lawn show is not." },
+    { h: "Cavallino is already buying your weekend", b: "Same dates, an hour up the coast, 81 active Meta ads including \"Reserve Your Place. Feb 2027\". Cavallino is already talking to the collector audience, five months out." },
+    { h: "Audrain is the paid template", b: "92 active ads, each tied to a ticket tier or sub-event (GA, two-day, VIP, kids day), each tracked to its own ticket link. Miami Concours has the same building blocks: The Screening, Collectors Dinner, Porsche and Petals, Red Carpet Day, VIP." },
+    { h: "TikTok is open ground", b: "None of the peer concours we checked has a verifiable TikTok presence. A free street show with fashion and hypercars is TikTok-native in a way a judged lawn show is not." },
   ],
 };
 
@@ -480,13 +481,13 @@ export const CALENDAR = [
 ];
 
 export const CALENDAR_NOTE =
-  "February is now a three-weekend car month in Miami. The strongest position is the one only Miami Concours can hold: the free, public opening of Miami's car season, a week before the gated events.";
+  "February is now a three-weekend car month in Miami. The strongest position is the one only Miami Concours can hold: the free, public opening of Miami's car season, a week before ModaMiami and RM Sotheby's.";
 
 /* ------------------------------------------------------------------ sponsors */
 
 export const SPONSORS = {
   intro:
-    "Peer concours sell categories Miami Concours has not sold yet, in the US city with the highest concentration of millionaires.",
+    "Peer concours sell sponsor categories at a higher tier than Miami Concours does today, in the US city with the highest concentration of millionaires.",
   wealth: [
     { v: "38,800", l: "millionaires in Miami" },
     { v: "180", l: "centi-millionaires" },
@@ -494,9 +495,9 @@ export const SPONSORS = {
   ],
   gaps: [
     { k: "Presenting partner for the tenth edition", peer: "A. Lange & Sohne presents Audrain" },
-    { k: "Luxury watch", peer: "Rolex at Pebble Beach" },
+    { k: "Luxury watch at presenting level", peer: "Rolex at Pebble Beach. Accutron is a partner today." },
     { k: "Private aviation", peer: "Flexjet at Pebble, Airbus Corporate Jets at Amelia" },
-    { k: "Champagne house", peer: "Dom Perignon and Ruinart at Pebble" },
+    { k: "Champagne house", peer: "Dom Perignon and Ruinart at Pebble. Moet Hennessy wine estates today." },
     { k: "Collector insurance and finance", peer: "Hagerty owns Amelia and Greenwich" },
     { k: "Private bank or wealth manager", peer: "Unclaimed at Miami Concours today" },
   ],
@@ -520,13 +521,13 @@ export const SYSTEM = {
     { k: "Audiences", items: ["RSVP list", "Contest entrants and referrals", "Video viewers", "Site visitors via pixel and CAPI"] },
     { k: "VIP and revenue", items: ["VIP retargeting", "Collectors Dinner and Screening", "Out-of-town packages", "SMS and email"] },
     { k: "Event weekend", items: ["Arrival reminders", "Geo-targeted parking messages", "Live content and creators", "People's Choice vote"] },
-    { k: "After", items: ["Sponsor reports", "UGC and recap", "Tenth anniversary archive", "2028 save the date"] },
+    { k: "After", items: ["Sponsor reports", "UGC and recap", "Tenth edition archive", "2028 save the date"] },
   ],
 };
 
 export const PROMOTIX = {
   intro:
-    "PromoTix introduced us, and the two systems fit together cleanly: PromoTix runs registration, ticketing and the referral contest, and Crowd Control runs the media and measurement on top of it.",
+    "PromoTix powers registration and the viral contest, and Crowd Control runs the media and measurement on top of it. The two are built to work together.",
   items: [
     { h: "Conversion tracking", b: "RSVP, contest entry, referral and VIP purchase sent server-side to Meta, TikTok and Google, so every platform optimizes to real outcomes." },
     { h: "Paid push on the viral contest", b: "Ads drive the first entrants; every entrant brings friends. Referral entries lower the blended cost per RSVP the longer the contest runs." },
@@ -539,7 +540,7 @@ export const AUDIENCES = [
   { k: "Collectors and owners", b: "High-net-worth car owners, dealer and auction audiences, lookalikes of past VIP buyers. The VIP and Collectors Dinner audience." },
   { k: "Miami lifestyle", b: "Design District shoppers, fashion, art and dining audiences within 25 miles. The reason the event is more than a car show." },
   { k: "Enthusiasts and families", b: "Car culture, cars and coffee regulars, families with kids. The free GA audience that creates the energy, managed with arrival windows." },
-  { k: "Out-of-town visitors", b: "Travelers planning Miami in February from the Northeast, Canada and Latin America, reached in December and January when trips get booked." },
+  { k: "Out-of-town visitors", b: "Travelers planning Miami in February from Canada, Latin America and Europe, Miami's top feeder markets, reached in December and January when trips get booked." },
   { k: "Spanish-language Miami", b: "The most complete explanation of the 2026 event came from a Spanish-language creator. Ads and captions in both languages." },
 ];
 
@@ -593,12 +594,12 @@ export const CREATIVE = {
       ratio: "34",
     },
     {
-      k: "Tenth anniversary",
+      k: "Tenth edition",
       fmt: "Feed, 3:4",
       video: "first-light.mp4",
       img: "first-light.webp",
       top: "2018 to 2027",
-      big: "Ten years on the red carpet.",
+      big: "Ten editions on the red carpet.",
       small: ["February 19 to 21", "Miami Design District"],
       cta: "Learn More",
       why: "Crowds from above read as spectacle. A clean opener for the announcement phase.",
@@ -619,7 +620,7 @@ export const CREATIVE = {
   ],
   stills: [
     { img: "fashion.webp", k: "Out of town", line: "Miami's car season opens in the Design District.", why: "Fashion-first creative for lifestyle and travel audiences." },
-    { img: "owner-ugc.webp", k: "Owner stories", line: "Meet the owners on the carpet.", why: "The creator format with the biggest reach: owners talking, not car lists." },
+    { img: "owner-ugc.webp", k: "Owner stories", line: "Meet the owners on the carpet.", why: "A creator format the event feed hasn't used: owners talking, not car lists." },
     { img: "ten-wallscape.webp", k: "Presenting partner", line: "A tenth-edition campaign a presenting partner can own.", why: "Out-of-home in the District, sold as sponsor inventory." },
   ],
 };
@@ -677,7 +678,7 @@ export const NEXT = {
 
 export const SOURCES = [
   "Instagram: Apify instagram-profile-scraper and instagram-scraper, 369 of 371 @miamiconcours posts, 306 @miamidesigndistrict posts, 1,783 comments, pulled Sep 30, 2026",
-  "TikTok: Apify clockworks/tiktok-scraper (#miamiconcours, 200 results, 157 confirmed Concours videos), Tokscript user and video data, TikTok oEmbed",
+  "TikTok: Apify clockworks/tiktok-scraper (#miamiconcours, 200 results; 157 videos confirmed as Miami Concours content for share of voice), Tokscript user and video data, TikTok oEmbed",
   "YouTube: channel and search pages, 125 relevant videos, 383 comments",
   "Facebook and X: Apify facebook-pages and facebook-posts scrapers, fxtwitter API",
   "Reddit: 16 posts and 134 comments mentioning Miami Concours",
@@ -690,6 +691,7 @@ export const SOURCES = [
   "Wealth: Henley and Partners via Miami New Times, Jan 20, 2026. Tourism: Greater Miami Convention and Visitors Bureau, 2025 results",
   "Press: duPont REGISTRY, Robb Report, Haute Living, Hypebeast, Elite Traveler, Resident, Cigar Aficionado, PROFILEmiami, Community Newspapers, Time Out Miami",
   "Photography: miamiconcours.com gallery",
+  "Quotes are verbatim excerpts. Private individuals are named by first name and platform only",
 ];
 
 /** Shadowbox metadata for posts referenced inline or in grids. */

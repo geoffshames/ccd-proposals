@@ -408,7 +408,7 @@ function Search() {
   return (
     <section className={s.section} id="search">
       <Head n="02" label="Search demand" title="Search Demand">
-        People search for Miami Concours by name every winter, in rising numbers from December. The event doesn&apos;t bid on its own name, and neither does anyone else.
+        People search for Miami Concours by name every winter, in rising numbers from December. The event doesn&apos;t bid on its own name, and Google shows almost no competition for it.
       </Head>
       <Reveal>
         <div className={s.chart}>
@@ -554,7 +554,7 @@ function Website() {
   return (
     <section className={s.section} id="website">
       <Head n="03" label="Website audit" title="Website">
-        miamiconcours.com is where every ad, bio link and search result lands. Today it tells three different stories, loads slowly on phones, and can&apos;t report a single conversion back to an ad platform.
+        miamiconcours.com is where every ad, bio link and search result lands. Today it tells three different stories, loads slowly on phones, and has no ad-platform pixel or conversion tag.
       </Head>
       <Reveal>
         <div className={s.rings}>
@@ -694,7 +694,7 @@ function Social() {
   return (
     <section className={s.section} id="social">
       <Head n="04" label="Social audit" title="Social Channels">
-        Instagram is the only channel with an audience, and it posts in bursts around February. TikTok and YouTube, where the event actually travels, have no official presence.
+        Instagram is the only channel with an audience, and it posts in bursts around February. TikTok and YouTube, where the event actually travels, have no active official presence.
       </Head>
 
       <Reveal>
@@ -915,7 +915,7 @@ function Sentiment() {
             <p className={s.statL}>negative share of Instagram comments, 2025 cycle to 2026 cycle</p>
           </div>
           <p className={s.callout}>
-            Ticketing calmed the crowds and the comments. It also raised price and access objections. With free general admission back for 2027, the job is to keep the 2026 calm without the 2026 price, and that is a planning and communication problem, not a capacity problem.
+            Ticketing calmed the crowds and the comments. It also raised price and access objections. With free general admission back for 2027, the job is to keep the 2026 calm without the 2026 price, and that is a planning, capacity and communication problem. RSVPs with arrival windows address all three.
           </p>
         </div>
       </Reveal>
@@ -1051,13 +1051,13 @@ function Voice() {
   return (
     <section className={s.section} id="voice">
       <Head n="06" label="Share of voice" title="Share of Voice">
-        Miami Concours is one of the most-filmed car events in the country. Almost all of that footage lives on other people&apos;s accounts.
+        Miami Concours is filmed heavily by attendees and creators. Almost all of that footage lives on other people&apos;s accounts.
       </Head>
       <div className={s.sov}>
         <Reveal>
           <div className={s.sovBig}>
             <Counter value={327} />
-            <small>TikTok views on the two videos the event posted, out of {VOICE.total} across {VOICE.videos} Miami Concours videos</small>
+            <small>views on the two official videos among the {VOICE.videos} Miami Concours TikToks we found, which drew {VOICE.total} in total</small>
           </div>
         </Reveal>
         <Reveal delay={0.1}>
@@ -1087,7 +1087,7 @@ function Voice() {
         <Reveal>
           <div className={s.subHead}>
             <h3 className={s.h3}>The creator bench</h3>
-            <span className={`${s.mono} ${s.dim}`}>Already posting about the event, unpaid</span>
+            <span className={`${s.mono} ${s.dim}`}>Already posting about the event on their own</span>
           </div>
         </Reveal>
         <div className={s.creators}>
@@ -1220,7 +1220,7 @@ function Video() {
       </div>
       <Reveal className={s.sub}>
         <div className={s.subHead}>
-          <h3 className={s.h3}>Ad cutdowns from footage you already own</h3>
+          <h3 className={s.h3}>Ad cutdowns from existing footage</h3>
           <span className={`${s.mono} ${s.dim}`}>Partner footage needs sign-off before paid use</span>
         </div>
         <div className={s.cuts}>
@@ -1306,7 +1306,7 @@ function Field() {
             <thead>
               <tr>
                 <th>Event</th>
-                <th>Next dates</th>
+                <th>Dates</th>
                 <th>Ticket model</th>
                 <th>Instagram</th>
                 <th>TikTok</th>

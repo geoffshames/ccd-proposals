@@ -83,7 +83,7 @@
 .marquee { border-block: 1px solid var(--line); overflow: hidden; padding: 16px 0; background: var(--ink); }
 .marqueeTrack { display: flex; gap: 44px; white-space: nowrap; width: max-content; will-change: transform; }
 .marqueeItem { font-family: var(--display); text-transform: uppercase; font-size: clamp(1.6rem, 3.6vw, 3.2rem); letter-spacing: -0.02em; line-height: 1; display: inline-flex; align-items: center; gap: 44px; }
-.marqueeDot { display: inline-block; width: 0.42em; height: 0.42em; background: var(--red); }
+.marqueeDot { display: inline-block; width: 1.1em; height: 3px; background: var(--red); }
 
 /* ---------- sections ---------- */
 .section { position: relative; max-width: 1600px; margin: 0 auto; padding: clamp(80px, 12vh, 140px) var(--gut); scroll-margin-top: 64px; }
