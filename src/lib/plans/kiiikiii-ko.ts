@@ -31,9 +31,9 @@ export const kiiikiiiPlanKorean: StrategyPlanData = {
       number: "01",
       navLabel: "기회",
       title: "기회",
-      subtitle: "KiiiKiii now has more than 1.09 million Spotify followers, and the United States is its largest listening market. That is a strong base to build a U.S. campaign on.",
+      subtitle: "KiiiKiii now has 1.09 million Spotify followers, and the United States is its largest listening market. That is a strong base to build a U.S. campaign on.",
       body: [
-        "KiiiKiii reached a career-high 4.41M Spotify monthly listeners in September and sits at 3.97M today, with the U.S. as its largest market. Followers grew 9 percent in the last month alone, to 1.09 million. \"404 (New Era)\" is still charting in Korea 252 days after release and has passed ten million streams there. \"Pop Off Pop Off\" reached No. 1 on Spotify Korea within ten days, peaked at No. 3 on the weekly chart, and is still in the top 20 seven weeks in. It also won Best Song of the Year at the SPOTV K-Pop Awards in September. The audience is real, it is growing, and a large share of it is already in the market Starship wants to grow.",
+        "KiiiKiii reached a career-high 4.41M Spotify monthly listeners in September and sits at 4.0M today, with the U.S. as its largest market. Followers grew 8 percent in September alone, to 1.09 million. \"404 (New Era)\" is still charting in Korea 252 days after release and has passed ten million streams there. \"Pop Off Pop Off\" reached No. 1 on Spotify Korea within ten days, peaked at No. 3 on the weekly chart, and is still in the top 20 seven weeks in. It also won Best Song of the Year at the SPOTV K-Pop Awards in September. The audience is real, it is growing, and a large share of it is already in the market Starship wants to grow.",
         "기회는 해당 청중에게 레이블로 직접 연결되는 통로와 행동할 이유를 제공하는 것입니다. 즉, 레이블이 소유한 미국 팬 리스트, 다음 미국 차트 주간에 맞춰 준비된 실물 앨범 발매 계획, 그리고 리스너들이 이미 존재하는 시장에서의 지속적인 유료 지원입니다. 본 문서는 이를 달성하기 위한 세 가지 실행 과제를 제안합니다. 각 과제에는 테스트 예산, 정의된 성공 지표, 그리고 언제 확장하고 언제 중단할지에 대한 규칙이 포함됩니다.",
       ],
       supports: {
@@ -63,13 +63,13 @@ export const kiiikiiiPlanKorean: StrategyPlanData = {
             {
               name: "월간 리스너 수",
               points: [
-                { x: "2/26/25", y: 42075 }, { x: "3/12/25", y: 709813 }, { x: "3/26/25", y: 1394572 }, { x: "4/9/25", y: 1800939 }, { x: "4/23/25", y: 1773572 }, { x: "5/7/25", y: 1496555 }, { x: "5/21/25", y: 1394789 }, { x: "6/4/25", y: 1230975 }, { x: "6/18/25", y: 1041609 }, { x: "7/2/25", y: 997039 }, { x: "7/16/25", y: 957721 }, { x: "7/30/25", y: 812380 }, { x: "2025년 8월 13일", y: 865993 }, { x: "2025년 8월 27일", y: 1257338 }, { x: "2025년 9월 10일", y: 1381161 }, { x: "2025년 9월 24일", y: 1190848 }, { x: "2025년 10월 8일", y: 1058594 }, { x: "2025년 10월 22일", y: 926214 }, { x: "2025년 11월 5일", y: 820899 }, { x: "2025년 11월 19일", y: 893196 }, { x: "2025년 12월 3일", y: 927667 }, { x: "2025년 12월 17일", y: 857681 }, { x: "2025년 12월 31일", y: 831721 }, { x: "2026년 1월 14일", y: 841397 }, { x: "2026년 1월 28일", y: 914832 }, { x: "2026년 2월 11일", y: 2110587 }, { x: "2026년 2월 25일", y: 3209569 }, { x: "2026년 3월 11일", y: 3647896 }, { x: "2026년 3월 25일", y: 3723676 }, { x: "2026년 4월 8일", y: 3793821 }, { x: "2026년 4월 22일", y: 3819436 }, { x: "2026년 5월 6일", y: 3786215 }, { x: "26년 5월 20일", y: 3686434 }, { x: "26년 6월 3일", y: 3691572 }, { x: "26년 6월 17일", y: 3687714 }, { x: "26년 7월 1일", y: 3537890 }, { x: "26년 7월 15일", y: 3346487 }, { x: "26년 7월 29일", y: 3232246 }, { x: "26년 8월 12일", y: 3234105 }, { x: "26년 8월 26일", y: 3980695 }, { x: "26년 8월 31일", y: 4137130 }, { x: "2026/10/1", y: 3971878 },
+                { x: "2/26/25", y: 42075 }, { x: "3/12/25", y: 709813 }, { x: "3/26/25", y: 1394572 }, { x: "4/9/25", y: 1800939 }, { x: "4/23/25", y: 1773572 }, { x: "5/7/25", y: 1496555 }, { x: "5/21/25", y: 1394789 }, { x: "6/4/25", y: 1230975 }, { x: "6/18/25", y: 1041609 }, { x: "7/2/25", y: 997039 }, { x: "7/16/25", y: 957721 }, { x: "7/30/25", y: 812380 }, { x: "2025년 8월 13일", y: 865993 }, { x: "2025년 8월 27일", y: 1257338 }, { x: "2025년 9월 10일", y: 1381161 }, { x: "2025년 9월 24일", y: 1190848 }, { x: "2025년 10월 8일", y: 1058594 }, { x: "2025년 10월 22일", y: 926214 }, { x: "2025년 11월 5일", y: 820899 }, { x: "2025년 11월 19일", y: 893196 }, { x: "2025년 12월 3일", y: 927667 }, { x: "2025년 12월 17일", y: 857681 }, { x: "2025년 12월 31일", y: 831721 }, { x: "2026년 1월 14일", y: 841397 }, { x: "2026년 1월 28일", y: 914832 }, { x: "2026년 2월 11일", y: 2110587 }, { x: "2026년 2월 25일", y: 3209569 }, { x: "2026년 3월 11일", y: 3647896 }, { x: "2026년 3월 25일", y: 3723676 }, { x: "2026년 4월 8일", y: 3793821 }, { x: "2026년 4월 22일", y: 3819436 }, { x: "2026년 5월 6일", y: 3786215 }, { x: "26년 5월 20일", y: 3686434 }, { x: "26년 6월 3일", y: 3691572 }, { x: "26년 6월 17일", y: 3687714 }, { x: "26년 7월 1일", y: 3537890 }, { x: "26년 7월 15일", y: 3346487 }, { x: "26년 7월 29일", y: 3232246 }, { x: "26년 8월 12일", y: 3234105 }, { x: "26년 8월 26일", y: 3980695 }, { x: "26년 8월 31일", y: 4137130 }, { x: "26/9/14", y: 4399366 }, { x: "26/9/30", y: 4001991 },
               ],
             },
             {
               name: "팔로워",
               points: [
-                { x: "2/26/25", y: 16158 }, { x: "3/12/25", y: 59917 }, { x: "3/26/25", y: 84666 }, { x: "4/9/25", y: 109584 }, { x: "4/23/25", y: 125179 }, { x: "5/7/25", y: 141541 }, { x: "5/21/25", y: 154121 }, { x: "6/4/25", y: 165037 }, { x: "6/18/25", y: 176263 }, { x: "7/2/25", y: 185506 }, { x: "7/16/25", y: 194902 }, { x: "7/30/25", y: 204291 }, { x: "2025년 8월 13일", y: 219269 }, { x: "2025년 8월 27일", y: 233343 }, { x: "2025년 9월 10일", y: 243369 }, { x: "2025년 9월 24일", y: 254488 }, { x: "2025년 10월 8일", y: 264792 }, { x: "2025년 10월 22일", y: 274744 }, { x: "2025년 11월 5일", y: 284526 }, { x: "2025년 11월 19일", y: 295210 }, { x: "2025년 12월 3일", y: 307750 }, { x: "2025년 12월 17일", y: 322149 }, { x: "2025년 12월 31일", y: 335502 }, { x: "2026년 1월 14일", y: 350353 }, { x: "2026년 1월 28일", y: 375502 }, { x: "2026년 2월 11일", y: 414802 }, { x: "2026년 2월 25일", y: 452981 }, { x: "2026년 3월 11일", y: 494508 }, { x: "2026년 3월 25일", y: 538285 }, { x: "2026년 4월 8일", y: 582755 }, { x: "2026년 4월 22일", y: 624096 }, { x: "2026년 5월 6일", y: 664489 }, { x: "26년 5월 20일", y: 700695 }, { x: "26년 6월 3일", y: 736458 }, { x: "26년 6월 17일", y: 771708 }, { x: "26년 7월 1일", y: 805011 }, { x: "26년 7월 15일", y: 839117 }, { x: "26년 7월 29일", y: 876272 }, { x: "26년 8월 12일", y: 918742 }, { x: "26년 8월 26일", y: 976747 }, { x: "26년 8월 31일", y: 993822 }, { x: "2026/10/1", y: 1094240 },
+                { x: "2/26/25", y: 16158 }, { x: "3/12/25", y: 59917 }, { x: "3/26/25", y: 84666 }, { x: "4/9/25", y: 109584 }, { x: "4/23/25", y: 125179 }, { x: "5/7/25", y: 141541 }, { x: "5/21/25", y: 154121 }, { x: "6/4/25", y: 165037 }, { x: "6/18/25", y: 176263 }, { x: "7/2/25", y: 185506 }, { x: "7/16/25", y: 194902 }, { x: "7/30/25", y: 204291 }, { x: "2025년 8월 13일", y: 219269 }, { x: "2025년 8월 27일", y: 233343 }, { x: "2025년 9월 10일", y: 243369 }, { x: "2025년 9월 24일", y: 254488 }, { x: "2025년 10월 8일", y: 264792 }, { x: "2025년 10월 22일", y: 274744 }, { x: "2025년 11월 5일", y: 284526 }, { x: "2025년 11월 19일", y: 295210 }, { x: "2025년 12월 3일", y: 307750 }, { x: "2025년 12월 17일", y: 322149 }, { x: "2025년 12월 31일", y: 335502 }, { x: "2026년 1월 14일", y: 350353 }, { x: "2026년 1월 28일", y: 375502 }, { x: "2026년 2월 11일", y: 414802 }, { x: "2026년 2월 25일", y: 452981 }, { x: "2026년 3월 11일", y: 494508 }, { x: "2026년 3월 25일", y: 538285 }, { x: "2026년 4월 8일", y: 582755 }, { x: "2026년 4월 22일", y: 624096 }, { x: "2026년 5월 6일", y: 664489 }, { x: "26년 5월 20일", y: 700695 }, { x: "26년 6월 3일", y: 736458 }, { x: "26년 6월 17일", y: 771708 }, { x: "26년 7월 1일", y: 805011 }, { x: "26년 7월 15일", y: 839117 }, { x: "26년 7월 29일", y: 876272 }, { x: "26년 8월 12일", y: 918742 }, { x: "26년 8월 26일", y: 976747 }, { x: "26년 8월 31일", y: 993822 }, { x: "26/9/14", y: 1038954 }, { x: "26/9/30", y: 1086523 },
               ],
             },
           ],
@@ -79,10 +79,10 @@ export const kiiikiiiPlanKorean: StrategyPlanData = {
             { x: "26년 8월 12일", label: "POP OFF" },
           ],
           tall: true,
-          source: "Chartmetric weekly readings through Aug 31 2026; Spotify, Oct 1 2026",
+          source: "Chartmetric, 2026년 9월 30일까지 주간 데이터",
         },
       ],
-      footnote: "Data refreshed October 1, 2026 unless dated otherwise. Sources: Chartmetric, Spotify, Spotify weekly and daily South Korea chart archives, and platform data.",
+      footnote: "Data refreshed October 1, 2026 unless dated otherwise. Sources: Chartmetric, Spotify weekly and daily South Korea chart archives, and platform data.",
     },
 
     // ===================================================================
@@ -94,7 +94,7 @@ export const kiiikiiiPlanKorean: StrategyPlanData = {
       navLabel: "순위",
       title: "KiiiKiii의 현황",
       philosophy: "데이터에서 도출된 세 가지 주요 발견점과 각 발견점이 열어주는 기회.",
-      intro: "Everything below comes from live consumption data refreshed October 1, 2026: Spotify and Chartmetric for audience metrics, the Spotify South Korea chart archives for stream-level detail. The comparison set is the girl-group class KiiiKiii is measured against commercially.",
+      intro: "Everything below comes from live consumption data refreshed October 1, 2026: Chartmetric for audience metrics, the Spotify South Korea chart archives for stream-level detail. The comparison set is the girl-group class KiiiKiii is measured against commercially.",
       subBlocks: [
         {
           label: "A",
@@ -158,7 +158,7 @@ export const kiiikiiiPlanKorean: StrategyPlanData = {
           label: "B",
           title: "109만 팔로워, 400만 리스너",
           objective: "청취와 팬 활동 사이의 격차는 가장 큰 잠재적 성장 기회이며, 이미 좁혀지기 시작했습니다.",
-          strategy: "KiiiKiii's Spotify follower-to-listener ratio is 0.275, up from 0.239 a month ago, because followers grew 9 percent while listeners eased off the September peak. That movement is the good news: the conversion is happening on its own. The headroom is the bigger news: roughly 2.9 million people listened to KiiiKiii this month without yet taking the one free action that puts every future release in front of them automatically, and every group in the comparison set converts at a higher rate. A follower is the cheapest, most durable growth available to the group, and it is the first metric the U.S. workstream is measured against.",
+          strategy: "KiiiKiii's Spotify follower-to-listener ratio is 0.271, up from 0.239 a month ago, because followers grew 8 percent while listeners eased off the September peak. That movement is the good news: the conversion is happening on its own. The headroom is the bigger news: roughly 2.9 million people listened to KiiiKiii this month without yet taking the one free action that puts every future release in front of them automatically, and every group in the comparison set converts at a higher rate. A follower is the cheapest, most durable growth available to the group, and it is the first metric the U.S. workstream is measured against.",
           charts: [
             {
               kind: "hbars",
@@ -168,23 +168,23 @@ export const kiiikiiiPlanKorean: StrategyPlanData = {
                 {
                   name: "비율",
                   points: [
-                    { x: "KiiiKiii", y: 0.275 },
-                    { x: "Hearts2Hearts", y: 0.352 },
-                    { x: "KATSEYE", y: 0.396 },
-                    { x: "ILLIT", y: 0.41 },
-                    { x: "MEOVV", y: 0.421 },
-                    { x: "izna", y: 0.459 },
-                    { x: "LE SSERAFIM", y: 0.585 },
-                    { x: "NewJeans", y: 1.002 },
-                    { x: "aespa", y: 1.091 },
-                    { x: "BABYMONSTER", y: 1.241 },
-                    { x: "IVE", y: 1.34 },
+                    { x: "KiiiKiii", y: 0.271 },
+                    { x: "Hearts2Hearts", y: 0.35 },
+                    { x: "KATSEYE", y: 0.393 },
+                    { x: "ILLIT", y: 0.408 },
+                    { x: "MEOVV", y: 0.419 },
+                    { x: "izna", y: 0.457 },
+                    { x: "LE SSERAFIM", y: 0.583 },
+                    { x: "NewJeans", y: 0.999 },
+                    { x: "aespa", y: 1.088 },
+                    { x: "BABYMONSTER", y: 1.236 },
+                    { x: "IVE", y: 1.337 },
                   ],
                 },
               ],
               highlightX: ["KiiiKiii"],
-              note: "ILLIT의 0.41 비율을 적용하면, KiiiKiii의 현재 리스너 기반은 약 163만 명의 팔로워를 보유할 수 있으며, 이는 현재보다 약 54만 명 더 많은 수치입니다.",
-              source: "Spotify, Oct 1 2026",
+              note: "ILLIT의 0.41을 기준으로 할 때, KiiiKiii의 현재 리스너 기반은 약 163만 명의 팔로워를 보유할 수 있으며, 이는 현재보다 약 54만 5천 명 더 많은 수치입니다.",
+              source: "Chartmetric, 2026년 9월 30일",
             },
           ],
         },
@@ -192,7 +192,7 @@ export const kiiikiiiPlanKorean: StrategyPlanData = {
           label: "C",
           title: "미국은 최상위 시장이며, 자체적으로 성장했습니다",
           objective: "가장 큰 잠재 고객층은 미국에 있으며, 지금까지의 성장은 거의 전적으로 유기적으로 이루어졌습니다. 이는 앞으로 추가될 모든 요소가 추가적인 이익이 될 것임을 의미합니다.",
-          strategy: "미국은 KiiiKiii의 제1 청취 시장으로, 한국의 거의 두 배에 달하는 규모입니다. 이는 유기적으로 달성되었습니다. 8월 Rose Bowl에서의 강력한 페스티벌 데뷔와 지속적으로 음악을 발굴해주는 편집 지원이 있었습니다. \"Pop Off Pop Off\"는 K-pop 섹션뿐만 아니라 일반 팝 플레이리스트에도 포함되었는데, 이는 얻기 가장 어려운 배치이며 한국 아티스트가 성공적으로 진출할 수 있음을 나타내는 일반적인 신호입니다. 이번 주에는 Stargirl vibes에서 4위를 기록하며 다시 순위에 올랐습니다. 아직 미국 유료 홍보, 미국 팬 확보, 미국 리테일 모멘텀이 추가되지 않았으므로, 이 시장은 이미 수요를 입증했으며 모든 주요 성장 동력이 여전히 활용 가능합니다.",
+          strategy: "미국은 KiiiKiii의 1위 청취 시장으로, 한국을 훨씬 앞서고 있습니다. 이는 유기적으로 달성되었습니다. 8월 Rose Bowl에서의 강력한 페스티벌 데뷔와 지속적으로 음악을 찾아주는 편집 지원 덕분입니다. \"Pop Off Pop Off\"는 K-pop 섹션뿐만 아니라 일반 팝 플레이리스트에도 포함되었는데, 이는 얻기 가장 어려운 배치이며 한국 아티스트가 크로스오버할 수 있다는 일반적인 신호입니다. 이번 주 Stargirl vibes에서 4위로 다시 올라왔습니다. 아직 미국 내 유료 지원, 미국 팬 확보, 미국 리테일 모멘텀이 추가되지 않았으므로, 이미 수요가 입증되었고 모든 주요 성장 동력이 여전히 활용 가능한 시장입니다.",
           charts: [
             {
               kind: "hbars",
@@ -201,24 +201,24 @@ export const kiiikiiiPlanKorean: StrategyPlanData = {
                 {
                   name: "리스너",
                   points: [
-                    { x: "미국", y: 696451 },
-                    { x: "대한민국", y: 392734 },
-                    { x: "인도네시아", y: 386086 },
-                    { x: "필리핀", y: 334056 },
-                    { x: "말레이시아", y: 332419 },
-                    { x: "대만", y: 223855 },
-                    { x: "호주", y: 140881 },
-                    { x: "영국", y: 108243 },
+                    { x: "미국", y: 664001 },
+                    { x: "대한민국", y: 415896 },
+                    { x: "인도네시아", y: 368097 },
+                    { x: "말레이시아", y: 334031 },
+                    { x: "필리핀", y: 318491 },
+                    { x: "대만", y: 223928 },
+                    { x: "호주", y: 138051 },
+                    { x: "영국", y: 106068 },
                   ],
                 },
               ],
               highlightX: ["미국"],
-              source: "Chartmetric 시장 분석, 2026년 9월 3일 (최신 자료)",
+              source: "Chartmetric, 2026년 9월 30일",
             },
           ],
         },
       ],
-      footnote: "Audience data: Spotify, Oct 1, 2026; market breakdown from Chartmetric, Sep 3, 2026. Stream data: Spotify South Korea weekly and daily chart archives. Comparison set is the 2024 to 2026 girl-group class.",
+      footnote: "Audience data: Chartmetric, Sep 30, 2026. Stream data: Spotify South Korea weekly and daily chart archives. Comparison set is the 2024 to 2026 girl-group class.",
     },
 
     // ===================================================================

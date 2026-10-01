@@ -31,9 +31,9 @@ export const kiiikiiiPlan: StrategyPlanData = {
       number: "01",
       navLabel: "Opportunity",
       title: "The Opportunity",
-      subtitle: "KiiiKiii now has more than 1.09 million Spotify followers, and the United States is its largest listening market. That is a strong base to build a U.S. campaign on.",
+      subtitle: "KiiiKiii now has 1.09 million Spotify followers, and the United States is its largest listening market. That is a strong base to build a U.S. campaign on.",
       body: [
-        "KiiiKiii reached a career-high 4.41M Spotify monthly listeners in September and sits at 3.97M today, with the U.S. as its largest market. Followers grew 9 percent in the last month alone, to 1.09 million. \"404 (New Era)\" is still charting in Korea 252 days after release and has passed ten million streams there. \"Pop Off Pop Off\" reached No. 1 on Spotify Korea within ten days, peaked at No. 3 on the weekly chart, and is still in the top 20 seven weeks in. It also won Best Song of the Year at the SPOTV K-Pop Awards in September. The audience is real, it is growing, and a large share of it is already in the market Starship wants to grow.",
+        "KiiiKiii reached a career-high 4.41M Spotify monthly listeners in September and sits at 4.0M today, with the U.S. as its largest market. Followers grew 8 percent in September alone, to 1.09 million. \"404 (New Era)\" is still charting in Korea 252 days after release and has passed ten million streams there. \"Pop Off Pop Off\" reached No. 1 on Spotify Korea within ten days, peaked at No. 3 on the weekly chart, and is still in the top 20 seven weeks in. It also won Best Song of the Year at the SPOTV K-Pop Awards in September. The audience is real, it is growing, and a large share of it is already in the market Starship wants to grow.",
         "The opportunity is to give that audience a direct line to the label and a reason to act: a U.S. fan list the label owns, a physical release plan ready for the next U.S. chart week, and sustained paid support in the market where the listeners already are. This document proposes three workstreams to do that. Each has a test budget, a defined success metric, and a rule for when to scale and when to stop.",
       ],
       supports: {
@@ -63,13 +63,13 @@ export const kiiikiiiPlan: StrategyPlanData = {
             {
               name: "Monthly listeners",
               points: [
-                { x: "2/26/25", y: 42075 }, { x: "3/12/25", y: 709813 }, { x: "3/26/25", y: 1394572 }, { x: "4/9/25", y: 1800939 }, { x: "4/23/25", y: 1773572 }, { x: "5/7/25", y: 1496555 }, { x: "5/21/25", y: 1394789 }, { x: "6/4/25", y: 1230975 }, { x: "6/18/25", y: 1041609 }, { x: "7/2/25", y: 997039 }, { x: "7/16/25", y: 957721 }, { x: "7/30/25", y: 812380 }, { x: "8/13/25", y: 865993 }, { x: "8/27/25", y: 1257338 }, { x: "9/10/25", y: 1381161 }, { x: "9/24/25", y: 1190848 }, { x: "10/8/25", y: 1058594 }, { x: "10/22/25", y: 926214 }, { x: "11/5/25", y: 820899 }, { x: "11/19/25", y: 893196 }, { x: "12/3/25", y: 927667 }, { x: "12/17/25", y: 857681 }, { x: "12/31/25", y: 831721 }, { x: "1/14/26", y: 841397 }, { x: "1/28/26", y: 914832 }, { x: "2/11/26", y: 2110587 }, { x: "2/25/26", y: 3209569 }, { x: "3/11/26", y: 3647896 }, { x: "3/25/26", y: 3723676 }, { x: "4/8/26", y: 3793821 }, { x: "4/22/26", y: 3819436 }, { x: "5/6/26", y: 3786215 }, { x: "5/20/26", y: 3686434 }, { x: "6/3/26", y: 3691572 }, { x: "6/17/26", y: 3687714 }, { x: "7/1/26", y: 3537890 }, { x: "7/15/26", y: 3346487 }, { x: "7/29/26", y: 3232246 }, { x: "8/12/26", y: 3234105 }, { x: "8/26/26", y: 3980695 }, { x: "8/31/26", y: 4137130 }, { x: "10/1/26", y: 3971878 },
+                { x: "2/26/25", y: 42075 }, { x: "3/12/25", y: 709813 }, { x: "3/26/25", y: 1394572 }, { x: "4/9/25", y: 1800939 }, { x: "4/23/25", y: 1773572 }, { x: "5/7/25", y: 1496555 }, { x: "5/21/25", y: 1394789 }, { x: "6/4/25", y: 1230975 }, { x: "6/18/25", y: 1041609 }, { x: "7/2/25", y: 997039 }, { x: "7/16/25", y: 957721 }, { x: "7/30/25", y: 812380 }, { x: "8/13/25", y: 865993 }, { x: "8/27/25", y: 1257338 }, { x: "9/10/25", y: 1381161 }, { x: "9/24/25", y: 1190848 }, { x: "10/8/25", y: 1058594 }, { x: "10/22/25", y: 926214 }, { x: "11/5/25", y: 820899 }, { x: "11/19/25", y: 893196 }, { x: "12/3/25", y: 927667 }, { x: "12/17/25", y: 857681 }, { x: "12/31/25", y: 831721 }, { x: "1/14/26", y: 841397 }, { x: "1/28/26", y: 914832 }, { x: "2/11/26", y: 2110587 }, { x: "2/25/26", y: 3209569 }, { x: "3/11/26", y: 3647896 }, { x: "3/25/26", y: 3723676 }, { x: "4/8/26", y: 3793821 }, { x: "4/22/26", y: 3819436 }, { x: "5/6/26", y: 3786215 }, { x: "5/20/26", y: 3686434 }, { x: "6/3/26", y: 3691572 }, { x: "6/17/26", y: 3687714 }, { x: "7/1/26", y: 3537890 }, { x: "7/15/26", y: 3346487 }, { x: "7/29/26", y: 3232246 }, { x: "8/12/26", y: 3234105 }, { x: "8/26/26", y: 3980695 }, { x: "8/31/26", y: 4137130 }, { x: "9/14/26", y: 4399366 }, { x: "9/30/26", y: 4001991 },
               ],
             },
             {
               name: "Followers",
               points: [
-                { x: "2/26/25", y: 16158 }, { x: "3/12/25", y: 59917 }, { x: "3/26/25", y: 84666 }, { x: "4/9/25", y: 109584 }, { x: "4/23/25", y: 125179 }, { x: "5/7/25", y: 141541 }, { x: "5/21/25", y: 154121 }, { x: "6/4/25", y: 165037 }, { x: "6/18/25", y: 176263 }, { x: "7/2/25", y: 185506 }, { x: "7/16/25", y: 194902 }, { x: "7/30/25", y: 204291 }, { x: "8/13/25", y: 219269 }, { x: "8/27/25", y: 233343 }, { x: "9/10/25", y: 243369 }, { x: "9/24/25", y: 254488 }, { x: "10/8/25", y: 264792 }, { x: "10/22/25", y: 274744 }, { x: "11/5/25", y: 284526 }, { x: "11/19/25", y: 295210 }, { x: "12/3/25", y: 307750 }, { x: "12/17/25", y: 322149 }, { x: "12/31/25", y: 335502 }, { x: "1/14/26", y: 350353 }, { x: "1/28/26", y: 375502 }, { x: "2/11/26", y: 414802 }, { x: "2/25/26", y: 452981 }, { x: "3/11/26", y: 494508 }, { x: "3/25/26", y: 538285 }, { x: "4/8/26", y: 582755 }, { x: "4/22/26", y: 624096 }, { x: "5/6/26", y: 664489 }, { x: "5/20/26", y: 700695 }, { x: "6/3/26", y: 736458 }, { x: "6/17/26", y: 771708 }, { x: "7/1/26", y: 805011 }, { x: "7/15/26", y: 839117 }, { x: "7/29/26", y: 876272 }, { x: "8/12/26", y: 918742 }, { x: "8/26/26", y: 976747 }, { x: "8/31/26", y: 993822 }, { x: "10/1/26", y: 1094240 },
+                { x: "2/26/25", y: 16158 }, { x: "3/12/25", y: 59917 }, { x: "3/26/25", y: 84666 }, { x: "4/9/25", y: 109584 }, { x: "4/23/25", y: 125179 }, { x: "5/7/25", y: 141541 }, { x: "5/21/25", y: 154121 }, { x: "6/4/25", y: 165037 }, { x: "6/18/25", y: 176263 }, { x: "7/2/25", y: 185506 }, { x: "7/16/25", y: 194902 }, { x: "7/30/25", y: 204291 }, { x: "8/13/25", y: 219269 }, { x: "8/27/25", y: 233343 }, { x: "9/10/25", y: 243369 }, { x: "9/24/25", y: 254488 }, { x: "10/8/25", y: 264792 }, { x: "10/22/25", y: 274744 }, { x: "11/5/25", y: 284526 }, { x: "11/19/25", y: 295210 }, { x: "12/3/25", y: 307750 }, { x: "12/17/25", y: 322149 }, { x: "12/31/25", y: 335502 }, { x: "1/14/26", y: 350353 }, { x: "1/28/26", y: 375502 }, { x: "2/11/26", y: 414802 }, { x: "2/25/26", y: 452981 }, { x: "3/11/26", y: 494508 }, { x: "3/25/26", y: 538285 }, { x: "4/8/26", y: 582755 }, { x: "4/22/26", y: 624096 }, { x: "5/6/26", y: 664489 }, { x: "5/20/26", y: 700695 }, { x: "6/3/26", y: 736458 }, { x: "6/17/26", y: 771708 }, { x: "7/1/26", y: 805011 }, { x: "7/15/26", y: 839117 }, { x: "7/29/26", y: 876272 }, { x: "8/12/26", y: 918742 }, { x: "8/26/26", y: 976747 }, { x: "8/31/26", y: 993822 }, { x: "9/14/26", y: 1038954 }, { x: "9/30/26", y: 1086523 },
               ],
             },
           ],
@@ -79,10 +79,10 @@ export const kiiikiiiPlan: StrategyPlanData = {
             { x: "8/12/26", label: "POP OFF" },
           ],
           tall: true,
-          source: "Chartmetric weekly readings through Aug 31 2026; Spotify, Oct 1 2026",
+          source: "Chartmetric, weekly readings through Sep 30 2026",
         },
       ],
-      footnote: "Data refreshed October 1, 2026 unless dated otherwise. Sources: Chartmetric, Spotify, Spotify weekly and daily South Korea chart archives, and platform data.",
+      footnote: "Data refreshed October 1, 2026 unless dated otherwise. Sources: Chartmetric, Spotify weekly and daily South Korea chart archives, and platform data.",
     },
 
     // ===================================================================
@@ -94,7 +94,7 @@ export const kiiikiiiPlan: StrategyPlanData = {
       navLabel: "Position",
       title: "Where KiiiKiii Stands",
       philosophy: "Three findings from the data, and what each one opens up.",
-      intro: "Everything below comes from live consumption data refreshed October 1, 2026: Spotify and Chartmetric for audience metrics, the Spotify South Korea chart archives for stream-level detail. The comparison set is the girl-group class KiiiKiii is measured against commercially.",
+      intro: "Everything below comes from live consumption data refreshed October 1, 2026: Chartmetric for audience metrics, the Spotify South Korea chart archives for stream-level detail. The comparison set is the girl-group class KiiiKiii is measured against commercially.",
       subBlocks: [
         {
           label: "A",
@@ -158,7 +158,7 @@ export const kiiikiiiPlan: StrategyPlanData = {
           label: "B",
           title: "1.09 Million Followers, Four Million Listeners",
           objective: "The gap between listening and committing is the single largest available gain, and it is already starting to close.",
-          strategy: "KiiiKiii's Spotify follower-to-listener ratio is 0.275, up from 0.239 a month ago, because followers grew 9 percent while listeners eased off the September peak. That movement is the good news: the conversion is happening on its own. The headroom is the bigger news: roughly 2.9 million people listened to KiiiKiii this month without yet taking the one free action that puts every future release in front of them automatically, and every group in the comparison set converts at a higher rate. A follower is the cheapest, most durable growth available to the group, and it is the first metric the U.S. workstream is measured against.",
+          strategy: "KiiiKiii's Spotify follower-to-listener ratio is 0.271, up from 0.239 a month ago, because followers grew 8 percent while listeners eased off the September peak. That movement is the good news: the conversion is happening on its own. The headroom is the bigger news: roughly 2.9 million people listened to KiiiKiii this month without yet taking the one free action that puts every future release in front of them automatically, and every group in the comparison set converts at a higher rate. A follower is the cheapest, most durable growth available to the group, and it is the first metric the U.S. workstream is measured against.",
           charts: [
             {
               kind: "hbars",
@@ -168,23 +168,23 @@ export const kiiikiiiPlan: StrategyPlanData = {
                 {
                   name: "Ratio",
                   points: [
-                    { x: "KiiiKiii", y: 0.275 },
-                    { x: "Hearts2Hearts", y: 0.352 },
-                    { x: "KATSEYE", y: 0.396 },
-                    { x: "ILLIT", y: 0.41 },
-                    { x: "MEOVV", y: 0.421 },
-                    { x: "izna", y: 0.459 },
-                    { x: "LE SSERAFIM", y: 0.585 },
-                    { x: "NewJeans", y: 1.002 },
-                    { x: "aespa", y: 1.091 },
-                    { x: "BABYMONSTER", y: 1.241 },
-                    { x: "IVE", y: 1.34 },
+                    { x: "KiiiKiii", y: 0.271 },
+                    { x: "Hearts2Hearts", y: 0.35 },
+                    { x: "KATSEYE", y: 0.393 },
+                    { x: "ILLIT", y: 0.408 },
+                    { x: "MEOVV", y: 0.419 },
+                    { x: "izna", y: 0.457 },
+                    { x: "LE SSERAFIM", y: 0.583 },
+                    { x: "NewJeans", y: 0.999 },
+                    { x: "aespa", y: 1.088 },
+                    { x: "BABYMONSTER", y: 1.236 },
+                    { x: "IVE", y: 1.337 },
                   ],
                 },
               ],
               highlightX: ["KiiiKiii"],
-              note: "At ILLIT's 0.41, KiiiKiii's current listener base would carry about 1.63M followers, roughly 540,000 more than today.",
-              source: "Spotify, Oct 1 2026",
+              note: "At ILLIT's 0.41, KiiiKiii's current listener base would carry about 1.63M followers, roughly 545,000 more than today.",
+              source: "Chartmetric, Sep 30 2026",
             },
           ],
         },
@@ -192,7 +192,7 @@ export const kiiikiiiPlan: StrategyPlanData = {
           label: "C",
           title: "The U.S. Is the Top Market, and It Grew On Its Own",
           objective: "The largest audience is in the U.S., and almost all of the growth there so far has been organic, which means every lever added from here is upside.",
-          strategy: "The United States is KiiiKiii's No. 1 listening market, nearly twice the size of Korea. It got there organically: a strong festival debut at the Rose Bowl in August, and editorial support that keeps finding the music. \"Pop Off Pop Off\" has been placed on general pop playlists, not just K-pop shelves, which is the hardest placement to earn and the usual signal that a Korean act can cross over. It is back on Stargirl vibes this week at No. 4. Dedicated U.S. paid support, U.S. fan capture, and a U.S. retail moment have not been layered on top of that yet, so this is a market that has already proven demand and still has every major growth lever available.",
+          strategy: "The United States is KiiiKiii's No. 1 listening market, well ahead of Korea. It got there organically: a strong festival debut at the Rose Bowl in August, and editorial support that keeps finding the music. \"Pop Off Pop Off\" has been placed on general pop playlists, not just K-pop shelves, which is the hardest placement to earn and the usual signal that a Korean act can cross over. It is back on Stargirl vibes this week at No. 4. Dedicated U.S. paid support, U.S. fan capture, and a U.S. retail moment have not been layered on top of that yet, so this is a market that has already proven demand and still has every major growth lever available.",
           charts: [
             {
               kind: "hbars",
@@ -201,24 +201,24 @@ export const kiiikiiiPlan: StrategyPlanData = {
                 {
                   name: "Listeners",
                   points: [
-                    { x: "United States", y: 696451 },
-                    { x: "South Korea", y: 392734 },
-                    { x: "Indonesia", y: 386086 },
-                    { x: "Philippines", y: 334056 },
-                    { x: "Malaysia", y: 332419 },
-                    { x: "Taiwan", y: 223855 },
-                    { x: "Australia", y: 140881 },
-                    { x: "United Kingdom", y: 108243 },
+                    { x: "United States", y: 664001 },
+                    { x: "South Korea", y: 415896 },
+                    { x: "Indonesia", y: 368097 },
+                    { x: "Malaysia", y: 334031 },
+                    { x: "Philippines", y: 318491 },
+                    { x: "Taiwan", y: 223928 },
+                    { x: "Australia", y: 138051 },
+                    { x: "United Kingdom", y: 106068 },
                   ],
                 },
               ],
               highlightX: ["United States"],
-              source: "Chartmetric market breakdown, Sep 3 2026 (latest available)",
+              source: "Chartmetric, Sep 30 2026",
             },
           ],
         },
       ],
-      footnote: "Audience data: Spotify, Oct 1, 2026; market breakdown from Chartmetric, Sep 3, 2026. Stream data: Spotify South Korea weekly and daily chart archives. Comparison set is the 2024 to 2026 girl-group class.",
+      footnote: "Audience data: Chartmetric, Sep 30, 2026. Stream data: Spotify South Korea weekly and daily chart archives. Comparison set is the 2024 to 2026 girl-group class.",
     },
 
     // ===================================================================
