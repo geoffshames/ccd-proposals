@@ -12,7 +12,7 @@ export const kiiikiiiPlanKorean: StrategyPlanData = {
     subtitle: "KiiiKiii가 미국에서 이미 확보한 팬층을 전환하기 위한 세 가지 실행 과제: 퍼스트 파티 팬 데이터, 실물 음반 판매, 미국 시장 성장.",
     partnership: "Transparent Arts × Crowd Control Digital",
     prepared: "Geoff Shames / 공동 창립자, Crowd Control Digital",
-    date: "2026년 9월",
+    date: "2026년 10월",
     backgroundImage: "/images/kiiikiii/kiiikiii-group.jpg",
   },
 
@@ -31,16 +31,16 @@ export const kiiikiiiPlanKorean: StrategyPlanData = {
       number: "01",
       navLabel: "기회",
       title: "기회",
-      subtitle: "KiiiKiii crossed one million Spotify followers this week, and the United States is already its largest listening market. Neither of those has been built on yet.",
+      subtitle: "KiiiKiii now has more than 1.09 million Spotify followers, and the United States is its largest listening market. That is a strong base to build a U.S. campaign on.",
       body: [
-        "KiiiKiii is at its highest point ever on the metrics that matter most in the U.S.: 4.18M Spotify monthly listeners, 696K of them American, and a follower count that passed one million in early September. \"404 (New Era)\" is still charting in Korea 219 days after release and has crossed ten million streams there. \"Pop Off Pop Off\" reached No. 1 on Spotify Korea within ten days and is still holding the daily top ten a month later. The audience is real, it is growing, and a large share of it is already in the market Starship wants to grow.",
-        "아직 갖춰지지 않은 것은 해당 팬층을 레이블이 소유하고 측정할 수 있는 것으로 전환하는 단계입니다: 미국 내 퍼스트 파티 팬 리스트, 미국 차트 진입을 목표로 하는 실물 음반 판매 운영, 그리고 리스너들이 이미 존재하는 시장에서의 지속적인 유료 지원입니다. 본 문서는 정확히 이 세 가지 격차를 해소하기 위한 세 가지 실행 과제를 제안하며, 각 과제는 테스트 예산, 정의된 성공 지표, 그리고 확장 또는 중단 시점을 결정하는 규칙을 포함합니다.",
+        "KiiiKiii reached a career-high 4.41M Spotify monthly listeners in September and sits at 3.97M today, with the U.S. as its largest market. Followers grew 9 percent in the last month alone, to 1.09 million. \"404 (New Era)\" is still charting in Korea 252 days after release and has passed ten million streams there. \"Pop Off Pop Off\" reached No. 1 on Spotify Korea within ten days, peaked at No. 3 on the weekly chart, and is still in the top 20 seven weeks in. It also won Best Song of the Year at the SPOTV K-Pop Awards in September. The audience is real, it is growing, and a large share of it is already in the market Starship wants to grow.",
+        "기회는 해당 청중에게 레이블로 직접 연결되는 통로와 행동할 이유를 제공하는 것입니다. 즉, 레이블이 소유한 미국 팬 리스트, 다음 미국 차트 주간에 맞춰 준비된 실물 앨범 발매 계획, 그리고 리스너들이 이미 존재하는 시장에서의 지속적인 유료 지원입니다. 본 문서는 이를 달성하기 위한 세 가지 실행 과제를 제안합니다. 각 과제에는 테스트 예산, 정의된 성공 지표, 그리고 언제 확장하고 언제 중단할지에 대한 규칙이 포함됩니다.",
       ],
       supports: {
         heading: "세 가지 실행 과제",
         items: [
           "퍼스트 파티 팬 데이터: 한국 개인정보보호법 내에서 구축된, 레이블이 완전히 소유하는 미국 팬 데이터베이스",
-          "실물 음반 판매: 사전 주문과 충성 팬 기반 계산에 기반한 미국 차트 전략",
+          "실물 앨범 판매: 캠페인 기간 동안 구축되어 다음 발매 시 실행 준비가 된 미국 차트 계획",
           "U.S. market lift: growth in Spotify followers, Instagram, and YouTube in the top market",
         ],
       },
@@ -50,7 +50,7 @@ export const kiiikiiiPlanKorean: StrategyPlanData = {
           "Spotify follower growth, measured against a set baseline in a set window",
           "미국에 집중된 Instagram 및 YouTube 성장",
           "팬당 비용과 목표 규모가 명시된 자체 팬 리스트",
-          "미국 리테일 및 팬 직접 판매 채널을 통해 판매된 실물 앨범 수량",
+          "소유한 팬 리스트를 기반으로 사전 주문 수요를 측정한, 발매 준비 완료된 미국 실물 앨범 계획",
           "스트리밍 성과는 보고되고 관리되며, 절대 약속되지 않습니다. 누구도 이를 정직하게 예측할 수 없습니다.",
         ],
       },
@@ -58,18 +58,18 @@ export const kiiikiiiPlanKorean: StrategyPlanData = {
         {
           kind: "area",
           title: "Spotify Listeners and Followers Since Debut",
-          subtitle: "팔로워 수는 데뷔 이후 매주 증가했으며 2026년 9월에 100만 명을 돌파했습니다. 각 릴리즈 사이클은 이전보다 리스너 기반을 더 높게 만듭니다.",
+          subtitle: "팔로워는 데뷔 이후 매주 꾸준히 증가하여 2026년 10월까지 109만 명을 넘어섰습니다. 각 발매 주기는 이전보다 더 높은 리스너 기반을 남깁니다.",
           series: [
             {
               name: "월간 리스너 수",
               points: [
-                { x: "2/26/25", y: 42075 }, { x: "3/12/25", y: 709813 }, { x: "3/26/25", y: 1394572 }, { x: "4/9/25", y: 1800939 }, { x: "4/23/25", y: 1773572 }, { x: "5/7/25", y: 1496555 }, { x: "5/21/25", y: 1394789 }, { x: "6/4/25", y: 1230975 }, { x: "6/18/25", y: 1041609 }, { x: "7/2/25", y: 997039 }, { x: "7/16/25", y: 957721 }, { x: "7/30/25", y: 812380 }, { x: "2025년 8월 13일", y: 865993 }, { x: "2025년 8월 27일", y: 1257338 }, { x: "2025년 9월 10일", y: 1381161 }, { x: "2025년 9월 24일", y: 1190848 }, { x: "2025년 10월 8일", y: 1058594 }, { x: "2025년 10월 22일", y: 926214 }, { x: "2025년 11월 5일", y: 820899 }, { x: "2025년 11월 19일", y: 893196 }, { x: "2025년 12월 3일", y: 927667 }, { x: "2025년 12월 17일", y: 857681 }, { x: "2025년 12월 31일", y: 831721 }, { x: "2026년 1월 14일", y: 841397 }, { x: "2026년 1월 28일", y: 914832 }, { x: "2026년 2월 11일", y: 2110587 }, { x: "2026년 2월 25일", y: 3209569 }, { x: "2026년 3월 11일", y: 3647896 }, { x: "2026년 3월 25일", y: 3723676 }, { x: "2026년 4월 8일", y: 3793821 }, { x: "2026년 4월 22일", y: 3819436 }, { x: "2026년 5월 6일", y: 3786215 }, { x: "26년 5월 20일", y: 3686434 }, { x: "26년 6월 3일", y: 3691572 }, { x: "26년 6월 17일", y: 3687714 }, { x: "26년 7월 1일", y: 3537890 }, { x: "26년 7월 15일", y: 3346487 }, { x: "26년 7월 29일", y: 3232246 }, { x: "26년 8월 12일", y: 3234105 }, { x: "26년 8월 26일", y: 3980695 }, { x: "26년 8월 31일", y: 4137130 },
+                { x: "2/26/25", y: 42075 }, { x: "3/12/25", y: 709813 }, { x: "3/26/25", y: 1394572 }, { x: "4/9/25", y: 1800939 }, { x: "4/23/25", y: 1773572 }, { x: "5/7/25", y: 1496555 }, { x: "5/21/25", y: 1394789 }, { x: "6/4/25", y: 1230975 }, { x: "6/18/25", y: 1041609 }, { x: "7/2/25", y: 997039 }, { x: "7/16/25", y: 957721 }, { x: "7/30/25", y: 812380 }, { x: "2025년 8월 13일", y: 865993 }, { x: "2025년 8월 27일", y: 1257338 }, { x: "2025년 9월 10일", y: 1381161 }, { x: "2025년 9월 24일", y: 1190848 }, { x: "2025년 10월 8일", y: 1058594 }, { x: "2025년 10월 22일", y: 926214 }, { x: "2025년 11월 5일", y: 820899 }, { x: "2025년 11월 19일", y: 893196 }, { x: "2025년 12월 3일", y: 927667 }, { x: "2025년 12월 17일", y: 857681 }, { x: "2025년 12월 31일", y: 831721 }, { x: "2026년 1월 14일", y: 841397 }, { x: "2026년 1월 28일", y: 914832 }, { x: "2026년 2월 11일", y: 2110587 }, { x: "2026년 2월 25일", y: 3209569 }, { x: "2026년 3월 11일", y: 3647896 }, { x: "2026년 3월 25일", y: 3723676 }, { x: "2026년 4월 8일", y: 3793821 }, { x: "2026년 4월 22일", y: 3819436 }, { x: "2026년 5월 6일", y: 3786215 }, { x: "26년 5월 20일", y: 3686434 }, { x: "26년 6월 3일", y: 3691572 }, { x: "26년 6월 17일", y: 3687714 }, { x: "26년 7월 1일", y: 3537890 }, { x: "26년 7월 15일", y: 3346487 }, { x: "26년 7월 29일", y: 3232246 }, { x: "26년 8월 12일", y: 3234105 }, { x: "26년 8월 26일", y: 3980695 }, { x: "26년 8월 31일", y: 4137130 }, { x: "2026/10/1", y: 3971878 },
               ],
             },
             {
               name: "팔로워",
               points: [
-                { x: "2/26/25", y: 16158 }, { x: "3/12/25", y: 59917 }, { x: "3/26/25", y: 84666 }, { x: "4/9/25", y: 109584 }, { x: "4/23/25", y: 125179 }, { x: "5/7/25", y: 141541 }, { x: "5/21/25", y: 154121 }, { x: "6/4/25", y: 165037 }, { x: "6/18/25", y: 176263 }, { x: "7/2/25", y: 185506 }, { x: "7/16/25", y: 194902 }, { x: "7/30/25", y: 204291 }, { x: "2025년 8월 13일", y: 219269 }, { x: "2025년 8월 27일", y: 233343 }, { x: "2025년 9월 10일", y: 243369 }, { x: "2025년 9월 24일", y: 254488 }, { x: "2025년 10월 8일", y: 264792 }, { x: "2025년 10월 22일", y: 274744 }, { x: "2025년 11월 5일", y: 284526 }, { x: "2025년 11월 19일", y: 295210 }, { x: "2025년 12월 3일", y: 307750 }, { x: "2025년 12월 17일", y: 322149 }, { x: "2025년 12월 31일", y: 335502 }, { x: "2026년 1월 14일", y: 350353 }, { x: "2026년 1월 28일", y: 375502 }, { x: "2026년 2월 11일", y: 414802 }, { x: "2026년 2월 25일", y: 452981 }, { x: "2026년 3월 11일", y: 494508 }, { x: "2026년 3월 25일", y: 538285 }, { x: "2026년 4월 8일", y: 582755 }, { x: "2026년 4월 22일", y: 624096 }, { x: "2026년 5월 6일", y: 664489 }, { x: "26년 5월 20일", y: 700695 }, { x: "26년 6월 3일", y: 736458 }, { x: "26년 6월 17일", y: 771708 }, { x: "26년 7월 1일", y: 805011 }, { x: "26년 7월 15일", y: 839117 }, { x: "26년 7월 29일", y: 876272 }, { x: "26년 8월 12일", y: 918742 }, { x: "26년 8월 26일", y: 976747 }, { x: "26년 8월 31일", y: 993822 },
+                { x: "2/26/25", y: 16158 }, { x: "3/12/25", y: 59917 }, { x: "3/26/25", y: 84666 }, { x: "4/9/25", y: 109584 }, { x: "4/23/25", y: 125179 }, { x: "5/7/25", y: 141541 }, { x: "5/21/25", y: 154121 }, { x: "6/4/25", y: 165037 }, { x: "6/18/25", y: 176263 }, { x: "7/2/25", y: 185506 }, { x: "7/16/25", y: 194902 }, { x: "7/30/25", y: 204291 }, { x: "2025년 8월 13일", y: 219269 }, { x: "2025년 8월 27일", y: 233343 }, { x: "2025년 9월 10일", y: 243369 }, { x: "2025년 9월 24일", y: 254488 }, { x: "2025년 10월 8일", y: 264792 }, { x: "2025년 10월 22일", y: 274744 }, { x: "2025년 11월 5일", y: 284526 }, { x: "2025년 11월 19일", y: 295210 }, { x: "2025년 12월 3일", y: 307750 }, { x: "2025년 12월 17일", y: 322149 }, { x: "2025년 12월 31일", y: 335502 }, { x: "2026년 1월 14일", y: 350353 }, { x: "2026년 1월 28일", y: 375502 }, { x: "2026년 2월 11일", y: 414802 }, { x: "2026년 2월 25일", y: 452981 }, { x: "2026년 3월 11일", y: 494508 }, { x: "2026년 3월 25일", y: 538285 }, { x: "2026년 4월 8일", y: 582755 }, { x: "2026년 4월 22일", y: 624096 }, { x: "2026년 5월 6일", y: 664489 }, { x: "26년 5월 20일", y: 700695 }, { x: "26년 6월 3일", y: 736458 }, { x: "26년 6월 17일", y: 771708 }, { x: "26년 7월 1일", y: 805011 }, { x: "26년 7월 15일", y: 839117 }, { x: "26년 7월 29일", y: 876272 }, { x: "26년 8월 12일", y: 918742 }, { x: "26년 8월 26일", y: 976747 }, { x: "26년 8월 31일", y: 993822 }, { x: "2026/10/1", y: 1094240 },
               ],
             },
           ],
@@ -79,10 +79,10 @@ export const kiiikiiiPlanKorean: StrategyPlanData = {
             { x: "26년 8월 12일", label: "POP OFF" },
           ],
           tall: true,
-          source: "Chartmetric, 2026년 8월 31일까지 주간 데이터",
+          source: "Chartmetric weekly readings through Aug 31 2026; Spotify, Oct 1 2026",
         },
       ],
-      footnote: "Data pulled September 3, 2026. Sources: Chartmetric, Spotify weekly and daily South Korea chart archives, and platform data.",
+      footnote: "Data refreshed October 1, 2026 unless dated otherwise. Sources: Chartmetric, Spotify, Spotify weekly and daily South Korea chart archives, and platform data.",
     },
 
     // ===================================================================
@@ -94,13 +94,13 @@ export const kiiikiiiPlanKorean: StrategyPlanData = {
       navLabel: "순위",
       title: "KiiiKiii의 현황",
       philosophy: "데이터에서 도출된 세 가지 주요 발견점과 각 발견점이 열어주는 기회.",
-      intro: "Everything below comes from live consumption data pulled September 3, 2026: Chartmetric for audience metrics, the Spotify South Korea chart archives for stream-level detail. The comparison set is the girl-group class KiiiKiii is measured against commercially.",
+      intro: "Everything below comes from live consumption data refreshed October 1, 2026: Spotify and Chartmetric for audience metrics, the Spotify South Korea chart archives for stream-level detail. The comparison set is the girl-group class KiiiKiii is measured against commercially.",
       subBlocks: [
         {
           label: "A",
           title: "노래의 지속력이 카테고리 평균보다 우수함",
           objective: "KiiiKiii의 히트곡은 다른 그룹들과 달리 발매 첫 주 이후에도 성장하며 지속됩니다.",
-          strategy: "Most K-pop singles peak in week one and decline from there. \"404 (New Era)\" ran at 4.8 times its launch week by week four, was still at 1.8 times launch at week 24, and is charting in Korea 219 days later having crossed ten million streams there. Against the same chart source, the class's biggest recent hits retained between 16 and 63 percent of launch week at that age. \"Pop Off Pop Off\" is following the same shape: No. 1 on Spotify Korea by day nine, still top ten daily at day 23, and its week-over-week decline has flattened to under two percent. This is the single most valuable thing about the catalog, because it means audience acquired for a KiiiKiii song does not evaporate the following month.",
+          strategy: "Most K-pop singles peak in week one and decline from there. \"404 (New Era)\" ran at 4.8 times its launch week by week four, was still at 1.8 times launch at week 24, and in week 35 is still pulling 232K streams a week in Korea, having passed ten million there. Against the same chart source, the class's biggest recent hits retained between 16 and 63 percent of launch week at that age. \"Pop Off Pop Off\" is following the same shape: No. 1 on Spotify Korea by day nine, a No. 3 weekly peak, and still in the weekly top 20 seven weeks in with 302K streams that week. This is the single most valuable thing about the catalog, because it means audience acquired for a KiiiKiii song does not evaporate the following month.",
           charts: [
             {
               kind: "line",
@@ -111,42 +111,42 @@ export const kiiikiiiPlanKorean: StrategyPlanData = {
                 {
                   name: "404 (New Era)",
                   points: [
-                    { x: "W1", y: 1.0 }, { x: "W4", y: 4.83 }, { x: "W8", y: 3.01 }, { x: "W12", y: 2.13 }, { x: "W16", y: 1.79 }, { x: "W20", y: 2.25 }, { x: "W24", y: 1.84 }, { x: "W31", y: 1.69 },
+                    { x: "W1", y: 1.0 }, { x: "W4", y: 4.83 }, { x: "W8", y: 3.01 }, { x: "W12", y: 2.13 }, { x: "W16", y: 1.79 }, { x: "W20", y: 2.25 }, { x: "W24", y: 1.84 }, { x: "W35", y: 1.73 },
                   ],
                 },
                 {
                   name: "비교 대상 A",
                   points: [
-                    { x: "W1", y: 1.0 }, { x: "W4", y: 1.21 }, { x: "W8", y: 0.85 }, { x: "W12", y: 0.75 }, { x: "W16", y: 0.71 }, { x: "W20", y: 0.65 }, { x: "W24", y: 0.63 }, { x: "W31", y: null },
+                    { x: "W1", y: 1.0 }, { x: "W4", y: 1.21 }, { x: "W8", y: 0.85 }, { x: "W12", y: 0.75 }, { x: "W16", y: 0.71 }, { x: "W20", y: 0.65 }, { x: "W24", y: 0.63 }, { x: "W35", y: null },
                   ],
                 },
                 {
                   name: "비교 대상 B",
                   points: [
-                    { x: "W1", y: 1.0 }, { x: "W4", y: 0.75 }, { x: "W8", y: 0.56 }, { x: "W12", y: 0.53 }, { x: "W16", y: 0.41 }, { x: "W20", y: 0.35 }, { x: "W24", y: null }, { x: "W31", y: null },
+                    { x: "W1", y: 1.0 }, { x: "W4", y: 0.75 }, { x: "W8", y: 0.56 }, { x: "W12", y: 0.53 }, { x: "W16", y: 0.41 }, { x: "W20", y: 0.35 }, { x: "W24", y: null }, { x: "W35", y: null },
                   ],
                 },
                 {
                   name: "비교 대상 C",
                   points: [
-                    { x: "W1", y: 1.0 }, { x: "W4", y: 0.68 }, { x: "W8", y: 0.38 }, { x: "W12", y: 0.34 }, { x: "W16", y: 0.23 }, { x: "W20", y: 0.2 }, { x: "W24", y: 0.16 }, { x: "W31", y: null },
+                    { x: "W1", y: 1.0 }, { x: "W4", y: 0.68 }, { x: "W8", y: 0.38 }, { x: "W12", y: 0.34 }, { x: "W16", y: 0.23 }, { x: "W20", y: 0.2 }, { x: "W24", y: 0.16 }, { x: "W35", y: null },
                   ],
                 },
               ],
               note: "비교 대상은 같은 기간 동안 가장 높은 인지도를 가진 세 개의 걸그룹 싱글이며, 예의상 이름은 생략합니다. 두 곡은 24주차 이전에 차트에서 이탈했습니다.",
-              source: "Spotify weekly South Korea chart archives, pulled Sep 3 2026",
+              source: "Spotify weekly South Korea chart archives, pulled Oct 1 2026",
               tall: true,
             },
             {
               kind: "bars",
-              title: "404 (New Era): 한국 주간 스트림, 31주차",
-              subtitle: "출시 첫 주 134K. 4주차에 647K로 최고치 기록. 출시 7개월 후인 31주차에도 227K로 출시 주차보다 높은 수치를 유지하고 있습니다.",
+              title: "404 (New Era): 한국 주간 스트림, 35주차",
+              subtitle: "발매 첫 주 13만 4천. 4주차 최고 64만 7천. 8개월이 지난 35주차에도 23만 2천으로, 발매 첫 주보다 훨씬 높은 수치를 기록하고 있습니다.",
               unit: "K",
               series: [
                 {
                   name: "주간 스트림 (K)",
                   points: [
-                    { x: "W1", y: 134 }, { x: "W4", y: 647 }, { x: "W8", y: 404 }, { x: "W12", y: 286 }, { x: "W16", y: 240 }, { x: "W20", y: 301 }, { x: "W24", y: 246 }, { x: "W28", y: 245 }, { x: "W31", y: 227 },
+                    { x: "W1", y: 134 }, { x: "W4", y: 647 }, { x: "W8", y: 404 }, { x: "W12", y: 286 }, { x: "W16", y: 240 }, { x: "W20", y: 301 }, { x: "W24", y: 246 }, { x: "W28", y: 245 }, { x: "W31", y: 227 }, { x: "W35", y: 232 },
                   ],
                 },
               ],
@@ -156,9 +156,9 @@ export const kiiikiiiPlanKorean: StrategyPlanData = {
         },
         {
           label: "B",
-          title: "팔로워 100만 명, 리스너 400만 명",
-          objective: "청취와 구독 간의 격차가 비교 대상 그룹 내에서 가장 크며, 이는 가장 큰 잠재적 성장 가능성을 의미합니다.",
-          strategy: "KiiiKiii's Spotify follower-to-listener ratio is 0.239. Every group in the comparison set converts at a higher rate, and the mature acts sit above 1.0. Read positively: roughly 3.2 million people listened to KiiiKiii this month without taking the one free action that puts every future release in front of them automatically. Followers have grown every week since debut, so the mechanism works. It has simply never had dedicated support behind it. This is the cheapest, most durable growth available to the group, and it is the first metric the U.S. workstream is measured against.",
+          title: "109만 팔로워, 400만 리스너",
+          objective: "청취와 팬 활동 사이의 격차는 가장 큰 잠재적 성장 기회이며, 이미 좁혀지기 시작했습니다.",
+          strategy: "KiiiKiii's Spotify follower-to-listener ratio is 0.275, up from 0.239 a month ago, because followers grew 9 percent while listeners eased off the September peak. That movement is the good news: the conversion is happening on its own. The headroom is the bigger news: roughly 2.9 million people listened to KiiiKiii this month without yet taking the one free action that puts every future release in front of them automatically, and every group in the comparison set converts at a higher rate. A follower is the cheapest, most durable growth available to the group, and it is the first metric the U.S. workstream is measured against.",
           charts: [
             {
               kind: "hbars",
@@ -168,31 +168,31 @@ export const kiiikiiiPlanKorean: StrategyPlanData = {
                 {
                   name: "비율",
                   points: [
-                    { x: "KiiiKiii", y: 0.239 },
-                    { x: "Hearts2Hearts", y: 0.313 },
-                    { x: "KATSEYE", y: 0.337 },
-                    { x: "ILLIT", y: 0.359 },
-                    { x: "MEOVV", y: 0.408 },
-                    { x: "izna", y: 0.423 },
-                    { x: "LE SSERAFIM", y: 0.547 },
-                    { x: "NewJeans", y: 0.981 },
-                    { x: "aespa", y: 1.052 },
-                    { x: "BABYMONSTER", y: 1.141 },
-                    { x: "IVE", y: 1.332 },
+                    { x: "KiiiKiii", y: 0.275 },
+                    { x: "Hearts2Hearts", y: 0.352 },
+                    { x: "KATSEYE", y: 0.396 },
+                    { x: "ILLIT", y: 0.41 },
+                    { x: "MEOVV", y: 0.421 },
+                    { x: "izna", y: 0.459 },
+                    { x: "LE SSERAFIM", y: 0.585 },
+                    { x: "NewJeans", y: 1.002 },
+                    { x: "aespa", y: 1.091 },
+                    { x: "BABYMONSTER", y: 1.241 },
+                    { x: "IVE", y: 1.34 },
                   ],
                 },
               ],
               highlightX: ["KiiiKiii"],
-              note: "동종 업계 중간값인 약 0.42를 기준으로 할 때, KiiiKiii의 현재 리스너 기반은 약 175만 명의 팔로워를 보유하게 될 것입니다.",
-              source: "Chartmetric, 2026년 9월 3일",
+              note: "ILLIT의 0.41 비율을 적용하면, KiiiKiii의 현재 리스너 기반은 약 163만 명의 팔로워를 보유할 수 있으며, 이는 현재보다 약 54만 명 더 많은 수치입니다.",
+              source: "Spotify, Oct 1 2026",
             },
           ],
         },
         {
           label: "C",
-          title: "미국은 최상위 시장이자 가장 적게 공략된 시장입니다.",
-          objective: "가장 큰 잠재 고객층이 가장 적은 활동이 이루어지고 있는 시장에 존재하며, 크로스오버 기회가 막 열렸다가 닫히기 시작했습니다.",
-          strategy: "미국은 KiiiKiii의 월간 리스너 69만 6천 명으로 한국을 앞서는 제1의 청취 시장이며, 지난주에도 다시 성장했습니다. 미국 내 유료 캠페인, 미국 팬 데이터 수집, 미국 리테일 활동, 미국 라이브 공연은 단 한 차례도 없었습니다. 또한 주목할 만한 시점 신호가 있습니다. 여름 동안 \"Pop Off Pop Off\"는 K-pop 섹션뿐만 아니라 일반 팝 에디토리얼 플레이리스트에도 포함되었는데, 이는 얻기 가장 어려운 것이며 일반적으로 한국 아티스트가 성공할 수 있다는 신호입니다. 해당 플레이리스트 포함은 이후 종료되었고, 총 플레이리스트 도달 범위는 일주일 만에 약 24% 감소했습니다. 기회는 저절로 열렸습니다. 이를 유지하기 위한 노력은 없었으며, 이것이 세 번째 워크스트림이 존재하는 이유입니다.",
+          title: "미국은 최상위 시장이며, 자체적으로 성장했습니다",
+          objective: "가장 큰 잠재 고객층은 미국에 있으며, 지금까지의 성장은 거의 전적으로 유기적으로 이루어졌습니다. 이는 앞으로 추가될 모든 요소가 추가적인 이익이 될 것임을 의미합니다.",
+          strategy: "미국은 KiiiKiii의 제1 청취 시장으로, 한국의 거의 두 배에 달하는 규모입니다. 이는 유기적으로 달성되었습니다. 8월 Rose Bowl에서의 강력한 페스티벌 데뷔와 지속적으로 음악을 발굴해주는 편집 지원이 있었습니다. \"Pop Off Pop Off\"는 K-pop 섹션뿐만 아니라 일반 팝 플레이리스트에도 포함되었는데, 이는 얻기 가장 어려운 배치이며 한국 아티스트가 성공적으로 진출할 수 있음을 나타내는 일반적인 신호입니다. 이번 주에는 Stargirl vibes에서 4위를 기록하며 다시 순위에 올랐습니다. 아직 미국 유료 홍보, 미국 팬 확보, 미국 리테일 모멘텀이 추가되지 않았으므로, 이 시장은 이미 수요를 입증했으며 모든 주요 성장 동력이 여전히 활용 가능합니다.",
           charts: [
             {
               kind: "hbars",
@@ -213,12 +213,12 @@ export const kiiikiiiPlanKorean: StrategyPlanData = {
                 },
               ],
               highlightX: ["미국"],
-              source: "Chartmetric, 2026년 9월 3일",
+              source: "Chartmetric 시장 분석, 2026년 9월 3일 (최신 자료)",
             },
           ],
         },
       ],
-      footnote: "Audience data: Chartmetric, pulled Sep 3, 2026. Stream data: Spotify South Korea weekly and daily chart archives. Comparison set is the 2024 to 2026 girl-group class.",
+      footnote: "Audience data: Spotify, Oct 1, 2026; market breakdown from Chartmetric, Sep 3, 2026. Stream data: Spotify South Korea weekly and daily chart archives. Comparison set is the 2024 to 2026 girl-group class.",
     },
 
     // ===================================================================
@@ -324,7 +324,7 @@ export const kiiikiiiPlanKorean: StrategyPlanData = {
       navLabel: "팬 데이터",
       title: "워크스트림 1 / 퍼스트 파티 팬 데이터",
       philosophy: "한국 개인정보보호법이 허용하는 범위 내에서 Starship이 완전 소유하는 미국 팬 데이터베이스 구축.",
-      intro: "이 데이터베이스가 존재하면 다른 모든 워크스트림의 효율성이 향상됩니다. 레이블이 자체 팬층에 대한 접근 권한을 임대하는 대신 소유하게 되기 때문입니다.",
+      intro: "레이블이 플랫폼을 거치지 않고 미국 잠재 고객에게 직접 연결될 수 있기 때문에, 이것이 존재하면 다른 모든 업무 흐름이 더욱 효율적이 됩니다.",
       subBlocks: [
         {
           label: "A",
@@ -374,138 +374,151 @@ export const kiiikiiiPlanKorean: StrategyPlanData = {
       number: "05",
       navLabel: "실물 음반",
       title: "워크스트림 2 / 실물 음반 판매",
-      philosophy: "구매 1건은 차트 유닛 1개로 집계됩니다. 유료 스트리밍 100회 분량이 동일한 유닛 1개로 집계됩니다. 이 비율이 바로 이 워크스트림이 존재하는 이유입니다.",
-      intro: "미국 차트 집계는 산술적이며, 그 산술 방식은 공개되어 있습니다. 본 섹션에서는 판매량이 차트 순위로 어떻게 전환되는지, 2026년 동안 실제 진입 지점은 어떠했는지, 그리고 K팝 아티스트에게 물리적 판매량이 왜 가장 높은 레버리지를 제공하는지 정확히 설명합니다.",
+      philosophy: "캠페인 기간 동안 구축되었으며, 차트 진입이 필요한 발매를 위해 준비되었습니다. Billboard 200에서 앨범 1장 판매는 1,000건의 유료 스트리밍과 동일하게 계산됩니다.",
+      intro: "실물 앨범은 필요한 주에 즉시 실행할 수 없는 유일한 요소입니다. 다양한 버전, 미국 내 유통 배분, 사전 주문 흐름, 그리고 판매량으로 전환되는 팬 리스트 모두 준비하는 데 수개월이 걸립니다. 따라서 이 업무 흐름은 캠페인 기간 동안 백그라운드에서 진행됩니다. 업무 흐름 1과 3이 미국 잠재 고객을 늘리는 동안, 우리는 실물 앨범 계획을 수립하고 다음 KiiiKiii 발매가 미국 차트에 진입하기 위해 준비, 규모 조정 및 대기 상태로 유지합니다.",
       subBlocks: [
         {
           label: "A",
-          title: "판매 1건의 실제 가치",
-          objective: "공개된 공식을 바탕으로 판매와 스트리밍 간의 환산율을 설정하십시오.",
-          strategy: "Billboard 차트의 데이터 제공업체인 Luminate는 곡당 환산 공식을 명확하게 공개합니다. 2026년 첫 차트 주 기준으로, 구매 1건은 유닛 1개, 프리미엄 스트리밍 100회는 유닛 1개, 광고 지원 스트리밍 250회는 유닛 1개, 프로그래밍 스트리밍 400회는 유닛 1개로 집계됩니다. 2026년에 비율이 이전의 125회 및 375회에서 더 타이트해져 스트리밍의 가치가 약간 더 높아지고 판매량의 가치는 상대적으로 낮아졌지만, 핵심은 변하지 않았습니다. 즉, 판매 1건은 유료 스트리밍 100회와 같습니다. 이것이 바로 물리적 판매 워크스트림의 근거입니다. 집계 주간에 1만 유닛이 판매되면 이는 프리미엄 스트리밍 100만 회와 동일한 차트 가치를 가지며, 낯선 사람들로부터 백만 건의 추가 스트리밍을 확보하는 것보다 알려진 팬 목록에서 만 건의 확정적인 구매를 유도하는 것이 훨씬 쉽습니다.",
+          title: "앨범 1장 판매의 가치",
+          objective: "EP가 실제로 경쟁하는 차트에서 판매와 스트리밍 간의 환산율을 설정하십시오.",
+          strategy: "EP는 앨범 등가 유닛을 집계하는 Billboard 200에서 경쟁합니다. Billboard 차트의 데이터 제공업체인 Luminate는 다음과 같은 공식을 발표했습니다. 2026년 첫 차트 주 기준으로 앨범 1장 구매는 1 유닛, 트랙 10회 다운로드는 1 유닛, 프리미엄 스트림 1,000회는 1 유닛, 광고 지원 스트림 2,500회는 1 유닛으로 계산됩니다. 따라서 발매 주에 앨범 10,000장 판매는 1,000만 회의 프리미엄 스트림과 동일한 차트 가중치를 갖습니다. 미국 잠재 고객이 실존하지만 아직 어린 아티스트에게는 이것이 차트 진입을 위한 가장 효율적인 경로이며, 섹션 C의 모든 K-pop 아티스트가 택한 경로입니다.",
           charts: [
             {
               kind: "bars",
-              title: "1만 팬 활동으로 생산된 차트 유닛",
-              subtitle: "공개된 2026 Luminate 곡당 환산 비율에 따라 동일한 수의 팬 활동이 차트 유닛으로 얼마의 가치를 가지는지.",
+              title: "10,000건의 팬 활동으로 생산된 Billboard 200 유닛",
+              subtitle: "Luminate가 발표한 2026년 앨범 등가 비율에 따른 앨범 차트에서 동일한 수의 팬 활동이 갖는 가치.",
               series: [
                 {
-                  name: "차트 유닛",
+                  name: "앨범 유닛",
                   points: [
-                    { x: "10,000\\n구매", y: 10000 },
-                    { x: "10,000 프리미엄\\n스트리밍", y: 100 },
-                    { x: "10,000 광고 지원\\n스트리밍", y: 40 },
-                    { x: "10,000 프로그래밍\\n스트리밍", y: 25 },
+                    { x: "10,000\\n앨범 구매", y: 10000 },
+                    { x: "10,000\\n트랙 다운로드", y: 1000 },
+                    { x: "10,000 프리미엄\\n스트리밍", y: 10 },
+                    { x: "10,000 광고 지원\\n스트리밍", y: 4 },
                   ],
                 },
               ],
-              highlightX: ["10,000\\n구매"],
-              note: "구매 1건은 유닛 1개와 같습니다. 동일한 단일 유닛을 생산하기 위해 프리미엄 스트리밍 100회가 필요합니다. 이 비율 때문에 K팝은 판매량으로 차트화됩니다.",
-              source: "Luminate, 공개된 곡당 환산 가중치, 2026년 1주차 기준",
+              highlightX: ["10,000\\n앨범 구매"],
+              note: "앨범 1장 판매는 1 유닛과 같습니다. 동일한 유닛을 생산하려면 프리미엄 스트림 1,000회 또는 광고 지원 스트림 2,500회가 필요합니다. 프로그래밍된 스트림은 앨범 차트에 전혀 포함되지 않습니다.",
+              source: "Luminate, 발표된 앨범 등가 가중치, 2026년 1주차부터 적용",
             },
           ],
         },
         {
           label: "B",
-          title: "실제로 차트 진입에 필요한 것",
-          objective: "경험적 규칙을 차트 자체의 측정된 진입 지점으로 대체하십시오.",
-          strategy: "Billboard는 진입 임계값을 공개하지 않으며, 그 기준은 매주 경쟁 상황의 강도에 따라 변동합니다. Crowd Control Digital은 자체 기록을 유지하고 있습니다. 이는 Luminate에서 매주 캡처한 순위 1, 10, 25, 50, 75, 100위에 있는 곡들이 획득한 실제 차트 포인트입니다. 2026년 1월부터 6월까지 21개 차트 주 동안 Hot 100 차트 100위로 진입하는 데는 평균 34,853 포인트가 소요되었으며, 가장 약했던 주에는 29,087 포인트에서 가장 강했던 주에는 49,806 포인트까지 분포했습니다. 6월 11일로 끝나는 주의 구체적인 예시를 들면, 100위 곡은 37,432 포인트로 364만 프리미엄 스트리밍, 67만 광고 지원 스트리밍, 86,500의 라디오 청취자 수, 그리고 880건의 판매량으로 해당 순위에 올랐습니다. 위 비율과 비교했을 때, 1만 유닛은 그 자체로 전체 차트 순위의 4분의 1 이상을 차지했을 것입니다.",
+          title: "2026년 차트 진입을 위한 요건",
+          objective: "올해 K-pop 발매가 실제로 필요했던 것을 바탕으로 현실적인 목표를 설정하십시오.",
+          strategy: "Billboard는 마감일을 발표하지 않으므로, 아래 목표는 올해 보고된 결과를 바탕으로 산출되었습니다. 적당한 U.S. 스트리밍을 동반한 K-pop 발매의 경우, 약 8,000~12,000건의 주로 실물 U.S. 판매량으로 Billboard 200 진입이 가능했습니다. 26,000건의 판매량은 K-pop 아티스트를 No. 16으로 이끌었습니다. 2026년 상위 10위권은 33,000~41,000 유닛이 소요되었으며, 상위 10위권에 진입한 K-pop 아티스트들은 약 34,000건의 순수 판매량으로 이를 달성했습니다. 판매량만 집계하는 Top Album Sales 차트에서는 약 8,000장의 판매량으로 상위 10위권에 진입할 수 있었습니다. 계획 수립에 중요한 한 가지 세부 사항은, 올해 여러 K-pop 발매작이 Top Album Sales 상위 10위권에 들었음에도 불구하고 Billboard 200에는 진입하지 못했다는 점입니다. 이는 판매량이 충분한 유닛을 뒷받침하지 못했기 때문입니다. 이것이 바로 자체 리스트와 U.S. 스트리밍 기반을 먼저 구축하는 이유입니다. KiiiKiii는 아직 U.S. Billboard 차트에 등장한 적이 없으므로, 첫 Billboard 200 진입은 다음 발매를 위한 명확하고 달성 가능한 헤드라인이 될 것입니다.",
           charts: [
             {
               kind: "hbars",
-              title: "Hot 100 순위별 필요 평균 차트 포인트",
-              subtitle: "각 순위에서 곡이 획득한 관찰된 포인트, 2026년 1월부터 6월까지 21개 차트 주의 중앙값.",
+              title: "2026년 U.S. 첫 주 판매량 및 Billboard 200 순위",
+              subtitle: "K-pop 발매 첫 주 순수 앨범 판매량 및 각 발매의 Billboard 200 순위",
               series: [
                 {
-                  name: "차트 포인트",
+                  name: "순수 U.S. 판매량",
                   points: [
-                    { x: "1위", y: 299949 },
-                    { x: "10위", y: 146157 },
-                    { x: "25위", y: 99732 },
-                    { x: "50위", y: 62817 },
-                    { x: "75위", y: 44643 },
-                    { x: "100위", y: 34853 },
+                    { x: "ENHYPEN No. 1", y: 92000 },
+                    { x: "BLACKPINK No. 8", y: 41000 },
+                    { x: "aespa No. 9", y: 34500 },
+                    { x: "LE SSERAFIM No. 10", y: 34000 },
+                    { x: "BOYNEXTDOOR No. 16", y: 26000 },
+                    { x: "PLAVE No. 145", y: 12000 },
+                    { x: "ILLIT No. 171", y: 8000 },
                   ],
                 },
               ],
-              highlightX: ["100위"],
-              note: "진입 지점은 현실적인 첫 번째 목표입니다. 동일 기간 범위: 100위는 29,087에서 49,806까지, 25위는 70,199에서 148,295까지 기록했습니다.",
-              source: "Crowd Control Digital 차트 데이터셋, Luminate 주간 상세 분석, 21주",
+              highlightX: ["PLAVE No. 145", "ILLIT No. 171"],
+              note: "진입 범위 강조. ILLIT의 수치는 이전 비율에 따른 2025년 7월 기준입니다. KATSEYE (145,000) 및 BTS (532,000)는 규모 비교를 위해 이 차트에서 제외되었습니다.",
+              source: "Luminate 데이터 기반 Billboard 차트 보고, 2025년 7월 ~ 2026년 9월",
             },
             {
-              kind: "line",
-              title: "Hot 100 진입 지점, 주별 추이",
-              subtitle: "2026년 1월부터 6월까지 매주 차트별 100위권 유지를 위해 필요한 포인트. 목표치는 변동하므로 집계 주차가 중요합니다.",
+              kind: "bars",
+              title: "다음 KiiiKiii 발매를 위한 제안 목표",
+              subtitle: "결과별 U.S. 첫 주 유닛. 첫 번째 목표는 Billboard 200 데뷔입니다.",
               series: [
                 {
-                  name: "100위권 포인트",
+                  name: "U.S. 유닛",
                   points: [
-                    { x: "1/15", y: 38603 }, { x: "1/22", y: 33305 }, { x: "1/29", y: 29087 }, { x: "2/5", y: 35215 }, { x: "2/12", y: 46524 }, { x: "2/19", y: 36484 }, { x: "2/26", y: 35862 }, { x: "3/5", y: 34999 }, { x: "3/12", y: 34332 }, { x: "3/19", y: 33012 }, { x: "3/26", y: 33859 }, { x: "4/2", y: 35330 }, { x: "4/9", y: 31079 }, { x: "4/16", y: 32883 }, { x: "4/23", y: 31309 }, { x: "4/30", y: 34515 }, { x: "5/7", y: 34853 }, { x: "5/14", y: 32203 }, { x: "5/21", y: 49806 }, { x: "5/28", y: 38227 }, { x: "6/11", y: 37432 },
+                    { x: "Top Album Sales 상위 10", y: 8000 },
+                    { x: "Billboard 200 진입", y: 12000 },
+                    { x: "Billboard 200 상위 20", y: 26000 },
+                    { x: "Billboard 200 상위 10", y: 35000 },
                   ],
                 },
               ],
-              note: "해당 기간 중 가장 수월한 주와 가장 어려운 주 사이에 71%의 편차가 존재합니다. 발매 시점은 수천 유닛만큼의 가치를 지닙니다.",
-              source: "Crowd Control Digital 차트 데이터셋, Luminate 주간 상세 분석",
+              highlightX: ["Billboard 200 진입"],
+              note: "상기 2026년 결과에 따른 계획 범위입니다. 차트 집계 주마다 필드가 다르므로 릴리스 날짜가 확정된 후에 최종 목표가 설정됩니다.",
+              source: "Crowd Control Digital의 2026년 Billboard 결과 분석",
             },
           ],
         },
         {
           label: "C",
-          title: "이 전략이 특히 K-Pop에 효과적인 이유",
-          objective: "미국 차트에 진입하는 동료 아티스트들이 판매량을 통해 이를 달성하고 있으며, 미국 실물 시장 역시 같은 방향으로 움직이고 있음을 보여줍니다.",
-          strategy: "올해 미국 차트에서 K-Pop의 주요 성공 사례는 스트리밍보다는 판매량에 의한 것이었습니다. KATSEYE는 2026년 8월, 17만 유닛으로 빌보드 200 차트 1위에 올랐으며, 이 중 14만 5천 유닛은 30가지 이상의 CD 및 바이닐 에디션을 통해 발생한 순수 앨범 판매량이었습니다. BTS는 3월, 64만 3천 유닛으로 1위에 올랐으며 이 중 53만 2천 유닛이 순수 판매량이었습니다. BLACKPINK는 3월, 5만 2천 유닛으로 8위에 올랐으며 이 중 4만 1천 유닛이 순수 판매량이었습니다. 각 사례에서 차트 유닛의 약 5분의 4는 무언가를 구매한 팬들로부터 나왔습니다. 시장 상황 역시 같은 방향을 가리키고 있습니다. 2026년 상반기 미국 CD 판매량은 16% 증가했으며, Luminate는 자체 중간 보고서에서 K-Pop이 없었다면 해당 성장률은 6.7%에 그쳤을 것이라고 밝혔습니다. K-Pop 팬덤은 미국 실물 시장 성장의 원동력이며, KiiiKiii는 아직 미국 전용 유닛을 판매한 적이 없습니다.",
+          title: "K-Pop에 특히 효과적인 이유",
+          objective: "미국 차트에 진입하는 동료 아티스트들은 판매량을 통해 이를 달성하고 있으며, K-Pop 덕분에 미국 음반 시장이 성장하고 있습니다.",
+          strategy: "올해 K-Pop의 미국 차트 성공은 판매량에 의해 주도되었습니다. ENHYPEN은 9월에 98,000 유닛(순수 판매량 92,000)으로 Billboard 200 차트 1위를 기록했습니다. KATSEYE는 8월에 170,000 유닛(판매량 145,000)으로 1위를 기록했으며, 이는 30가지가 넘는 CD 및 바이닐 변형 상품에 걸쳐 분산되었습니다. LE SSERAFIM과 aespa는 각각 약 34,000장의 판매량으로 6월에 상위 10위권에 진입했습니다. 이들 릴리스에서 차트 유닛의 약 5개 중 4개는 앨범을 구매한 팬들로부터 나왔습니다. 시장은 같은 방향으로 움직이고 있습니다: 2026년 상반기 미국 CD 판매량은 16% 성장했으며, Luminate의 중간 보고서에 따르면 K-Pop이 없었다면 성장률은 6.7%였을 것입니다. 첫 번째 미국 전용 KiiiKiii 릴리스는 이러한 종류의 팬을 중심으로 적극적으로 성장하고 있는 시장에 진입하게 될 것입니다.",
           charts: [
             {
               kind: "grouped",
-              title: "K-Pop 아티스트들이 실제로 미국 차트에서 순위를 올리는 방법",
-              subtitle: "첫 주 미국 환산 앨범 유닛 대 순수 앨범 판매량, 2026 빌보드 200 진입 기록.",
+              title: "K-Pop 아티스트의 Billboard 200 차트 진입 방식",
+              subtitle: "2026년 첫 주 미국 앨범 등가 유닛 대 순수 앨범 판매량.",
               series: [
                 {
                   name: "총 유닛",
                   points: [
-                    { x: "BTS\\n1위", y: 643000 },
-                    { x: "Stray Kids\\n1위", y: 369000 },
                     { x: "KATSEYE\\n1위", y: 170000 },
+                    { x: "ENHYPEN
+No. 1", y: 98000 },
                     { x: "BLACKPINK\\n8위", y: 52000 },
+                    { x: "aespa
+No. 9", y: 41000 },
+                    { x: "LE SSERAFIM
+No. 10", y: 41000 },
                   ],
                 },
                 {
                   name: "순수 판매량",
                   points: [
-                    { x: "BTS\\n1위", y: 532000 },
-                    { x: "Stray Kids\\n1위", y: null },
                     { x: "KATSEYE\\n1위", y: 145000 },
+                    { x: "ENHYPEN
+No. 1", y: 92000 },
                     { x: "BLACKPINK\\n8위", y: 41000 },
+                    { x: "aespa
+No. 9", y: 34500 },
+                    { x: "LE SSERAFIM
+No. 10", y: 34000 },
                   ],
                 },
               ],
-              note: "순수 판매량은 차트 유닛의 79%에서 85%를 차지합니다. Stray Kids의 판매량 분할은 공개되지 않았으며, 369,000 유닛은 17개의 실물 및 8개의 디지털 버전과 함께 판매되었습니다.",
-              source: "Billboard 차트 Luminate 데이터 보고 (2026년 3월 - 8월)",
+              note: "표시된 모든 아티스트의 경우 순수 판매량이 차트 유닛의 79%에서 94%를 차지합니다.",
+              source: "Billboard 차트, Luminate 데이터 기반 보고 (2026년 3월-9월)",
             },
           ],
         },
         {
           label: "D",
-          title: "실행 방안",
-          objective: "보유 팬 리스트를 단일 집계 주간 내 유닛으로 전환하십시오.",
-          strategy: "공개 발표 전에 자체 리스트에 사전 주문을 개방하여 리스트에 대한 보상을 제공하고, 아직 조치를 취할 시간이 있을 때 수요를 조기에 파악할 수 있도록 합니다. 기존 미국 K-pop 유통망을 통한 미국 전용 버전은 수입 대신 현지 구매 이유를 만들며, 다양한 버전 전략은 위 차트의 모든 아티스트가 팬당 유닛 수를 늘리기 위해 사용한 것입니다. 리테일 또는 팝업 이벤트는 캠페인에 사진 촬영거리를, 언론에는 보도거리를 제공합니다. 모든 것은 단일 집계 주간 내에 완료되도록 시기 조절되어야 합니다. 잘못된 주간에 판매된 유닛은 차트 순위에 아무런 영향을 미치지 않기 때문입니다.",
+          title: "캠페인 기간 중 준비 완료, 릴리스 준비 완료",
+          objective: "릴리스 날짜 발표 전에 전체 실물 앨범 계획을 수립하고 대기열에 올려놓으십시오.",
+          strategy: "캠페인 기간 동안 리드 타임이 필요한 실물 앨범 계획의 모든 요소를 구축하여, Starship이 차트 진입이 필요한 다음 릴리스를 확정했을 때 계획이 시작 준비가 아닌 실행 준비 상태가 되도록 합니다. 이는 보유 팬 목록과 미국 스트리밍 기반에서 목표 규모를 설정하고, 변형 상품 조합 및 미국 전용 버전을 추천하며, 미국 K-Pop 리테일 할당 및 리테일 또는 팝업 이벤트를 조율하고, 팬 목록에 먼저 공개되도록 사전 주문 흐름을 구축하는 것을 의미합니다. 날짜가 확정되면 모든 것이 하나의 집계 주에 집중됩니다. 여러 주에 걸쳐 분산된 판매량은 한 주에 동일한 판매량보다 차트 순위에 훨씬 적은 영향을 미치기 때문입니다.",
           components: {
-            heading: "구성 요소",
+            heading: "릴리스 날짜 이전에 준비되는 사항",
             items: [
-              "선주문 기간을 자체 리스트에 먼저 공개",
-              "미국 K-pop 유통망을 통한 미국 전용 버전 및 다양한 버전 전략",
-              "판매 시점과 연계된 리테일 또는 팝업 이벤트",
-              "모든 수요를 한 주간 집계",
-              "차트 집계 가능 리테일 판매에 더한 마진을 위한 팬 직접 판매 채널",
+              "보유 미국 팬 목록 및 스트리밍 기반에서 산출된 유닛 목표",
+              "레이블 제품 팀을 위한 변형 상품 및 미국 전용 버전 추천",
+              "미국 K-Pop 리테일 할당 및 리테일 또는 팝업 이벤트 (범위 및 비용 산정 완료)",
+              "팬 목록에 먼저 공개되어 수요를 조기에 파악하는 사전 주문 흐름",
+              "단 한 주에 유료 광고, 콘텐츠 및 팬 활동을 집중시키는 카운팅 위크 플랜",
             ],
           },
           kpis: [
+            "첫 90일 이내에 완료되는 릴리스 준비 플랜",
             "공개 판매 전 확정된 선주문 유닛",
-            "집계 주간 총 유닛 수",
-            "자체 리스트에서 추적된 유닛 비율",
+            "합의된 목표 대비 카운팅 위크 내 총 미국 유닛 판매량",
           ],
         },
       ],
-      footnote: "비율: Luminate 발표 곡 환산 가중치 (2026년 1주차 적용). 기준 데이터: Crowd Control Digital 자체 차트 데이터셋 (2026년 1월 - 6월, 21개 차트 주간 Luminate 주간 상세 분석 기반). 동종 업계 수치: Billboard 차트 Luminate 데이터 보고. 앨범 차트 및 곡 차트 비율은 다르며, 둘 다 각 차트에 적용되는 조건에 따라 위에 명시되어 있습니다. 출시일이 확정되면 목표치가 설정됩니다. 경쟁 주간에 따라 진입 시점이 달라지기 때문입니다.",
+      footnote: "비율: 2026년 1주차부터 적용되는 Luminate 발표 앨범 등가 가중치. Hot 100은 자체 공식이 있는 별도의 곡 차트이며, 앨범 구매는 이에 포함되지 않습니다. 본 워크스트림은 EP가 경쟁하는 Billboard 200 및 Top Album Sales를 목표로 합니다. 동종 업계 수치: Luminate 데이터를 기반으로 한 Billboard 차트 보고. 제품 결정, 제조 및 출시 시기는 Starship이 담당하며, Crowd Control Digital은 이를 중심으로 미국 마케팅을 계획하고 실행합니다.",
     },
 
     // ===================================================================
@@ -523,7 +536,7 @@ export const kiiikiiiPlanKorean: StrategyPlanData = {
           label: "A",
           title: "주요 시장 유료 광고 집행",
           objective: "이미 청취 중인 잠재 고객을 대상으로 그룹의 첫 미국 전용 유료 프로그램을 실행합니다.",
-          strategy: "카탈로그는 이미 전환율을 입증했습니다: \"404 (New Era)\"는 출시 7개월 후에도 여전히 스트리밍을 견인하고 있으며, 현재 싱글은 자체적인 추진력으로 한국에서 1위를 달성했습니다. 유료 광고 지원은 이미 검증된 트랙을 대상으로 미국 우선으로 진행되며, 팔로워 및 구독자 성장부터 팬 데이터 확보까지 단계적으로 진행되고, 비디오 시청자 및 프로필 방문자로부터 리타겟팅 풀을 구축합니다. 광고 소재는 맞춤형 광고 제작이 아닌, 이미 유기적으로 성과를 내고 있는 콘텐츠를 주간 단위로 교체하여 사용하며, 이는 참조 캠페인에서 클릭당 비용을 72% 절감한 접근 방식입니다.",
+          strategy: "기존 카탈로그는 이미 전환율이 높은 콘텐츠를 증명했습니다. \"404 (New Era)\"는 출시 8개월이 지난 지금도 스트리밍을 견인하고 있으며, 현재 싱글은 자체적인 추진력으로 한국에서 1위를 달성했습니다. 유료 광고 지원은 이러한 검증된 트랙을 중심으로 미국 우선으로 진행되며, 팔로워 및 구독자 증가에서 팬 데이터 확보로 이어지고, 비디오 시청자 및 프로필 방문자로부터 리타겟팅 풀을 구축합니다. 광고 소재는 맞춤 제작 광고 빌드가 아닌, 이미 유기적으로 성과를 내고 있는 콘텐츠를 중심으로 매주 교체되며, 이는 참조 캠페인에서 클릭당 비용을 72% 절감한 접근 방식입니다.",
           components: {
             heading: "구성 요소",
             items: [
@@ -544,14 +557,14 @@ export const kiiikiiiPlanKorean: StrategyPlanData = {
           label: "B",
           title: "확장 가능한 콘텐츠 및 크리에이터 작업",
           objective: "그룹 자체 데이터로 이미 입증된 콘텐츠 형식에 실제 유의미한 볼륨으로 유료 광고를 집중하십시오.",
-          strategy: "KiiiKiii 및 경쟁사 영상 113개를 분석한 결과, 각 영상의 실제 성과 데이터를 첨부하여 명확한 패턴을 발견했습니다. 그룹에서 가장 많이 제작된 형식은 성과가 가장 낮은 반면, 멤버 중심 게시물, 소품 및 개그 형식, 무대 영상은 꾸준히 높은 성과를 보였습니다. 동일한 분석 결과, 동일한 게시물이 Instagram에서 TikTok보다 정기적으로 몇 배 더 많은 수익을 올리며, 그룹 콘텐츠의 거의 대부분이 시청자를 다른 곳으로 유도하지 못했습니다. 이 중 어느 것도 새로운 제작을 필요로 하지 않습니다. 이미 제작되고 있는 것을 재할당하고 수익을 창출하는 형식 뒤에 미디어를 배치하는 것이 필요합니다.",
+          strategy: "KiiiKiii 자체 데이터는 어떤 포맷이 효과적인지를 이미 보여줍니다. KiiiKiii 및 경쟁사 영상 113개를 각각 실제 성과 데이터와 함께 분석한 결과, 멤버 중심 게시물, 소품 및 개그 포맷, 무대 영상이 계정 평균을 꾸준히 상회했으며, 동일한 게시물이 인스타그램에서 틱톡보다 몇 배 더 높은 성과를 내는 경우가 많았습니다. 이는 시작하기에 유리한 위치입니다. 이미 성공적인 포맷이 제작되고 있으므로, 새로운 콘텐츠 전략을 개발하는 것이 아니라 이를 더 많이 제작하고 미디어를 지원하는 것이 과제입니다. 주요 콘텐츠에 짧은 출시일 엔드 카드를 삽입하면 해당 도달 범위를 팔로워 및 사전 저장으로 전환할 수 있습니다.",
           components: {
-            heading: "콘텐츠 분석 결과",
+            heading: "미디어 집행 방안",
             items: [
-              "멤버 중심 게시물은 계정 평균 대비 약 2배의 성과를 내며, 전체 제작량의 7%를 차지합니다.",
-              "가장 많이 제작된 형식은 전체 게시물의 약 절반을 차지하며 상위 성과 게시물의 1/7에 해당합니다.",
-              "동일한 게시물이 Instagram에서 TikTok보다 최대 5배 더 많은 수익을 올리며, 어느 플랫폼에도 최적화된 버전은 없습니다.",
-              "분석된 68개의 게시물에 명시적인 행동 유도 문구가 한 번 나타났습니다.",
+              "멤버 중심 게시물: 계정 중간값의 약 두 배에 달하므로, 볼륨과 지출을 늘릴 첫 번째 대상입니다.",
+              "소품, 개그 및 무대 포맷: 검증된 고성과 콘텐츠로, 확장이 가능합니다.",
+              "인스타그램을 선도 플랫폼으로 활용: 동일한 게시물이 틱톡 조회수의 최대 5배를 기록했습니다.",
+              "주요 콘텐츠에 출시일 엔드 카드 삽입: 강력한 도달 범위를 통해 팬들이 팔로우, 사전 저장 및 사전 주문하도록 유도합니다.",
             ],
           },
           charts: [
@@ -564,7 +577,7 @@ export const kiiikiiiPlanKorean: StrategyPlanData = {
                 {
                   name: "평균 조회수 (천)",
                   points: [
-                    { x: "가장 많이\\n제작된 형식", y: 246 },
+                    { x: "게스트 챌린지 게시물", y: 246 },
                     { x: "계정\\n평균", y: 590 },
                     { x: "소품 및 개그\\n게시물", y: 939 },
                     { x: "멤버 중심\\n게시물", y: 1220 },
@@ -626,7 +639,7 @@ export const kiiikiiiPlanKorean: StrategyPlanData = {
         },
         {
           label: "스트리밍은 노력하는 것이지 약속하는 것이 아닙니다.",
-          description: "스트리밍 증가는 솔직하게 예측할 수 없기 때문에 수치를 제시하지 않습니다. 최근 다른 아티스트를 대상으로 진행된 테스트에서 트랙에 실제 예산을 투입했으나, 해당 트랙의 일반적인 일일 변동폭보다 작은 움직임을 보여 측정 불가능했습니다. 저희는 스트리밍을 주간 단위로 보고하며, 위에 언급된 전략들을 통해 적극적으로 노력합니다. 저희는 팔로워, 잠재고객 성장, 팬 데이터, 유닛 판매에 대해 약속드리며, 이 모든 것은 측정 가능하고 귀속 가능합니다.",
+          description: "스트리밍 증가량에 대한 수치는 정직하게 예측할 수 없으므로 제시하지 않습니다. 스트리밍은 주간 단위로 보고하며, 위에서 언급한 전술을 통해 적극적으로 관리합니다. 저희가 약속드리는 것은 측정 가능하고 귀속 가능한 팔로워, 잠재고객 성장, 팬 데이터 및 유닛 판매량입니다.",
         },
         {
           label: "업무 분담 명확화",
@@ -638,7 +651,7 @@ export const kiiikiiiPlanKorean: StrategyPlanData = {
         "본 문서에서 제안된 모든 사항은 출시 전 설정된 기준선과 비교하여 측정됩니다.",
         "마법의 총알은 마법의 총알이 있다고 누구에게도 말하지 않는 것입니다.",
       ],
-      footnote: "본 문서의 모든 권장 사항은 2026년 9월 3일에 추출된 소비 데이터 또는 동일한 세 가지 워크스트림에서 실행된 라이브 캠페인 결과에 근거합니다.",
+      footnote: "본 문서의 모든 권장 사항은 2026년 10월 1일에 업데이트된 소비 데이터, 발표된 Luminate 방법론 또는 동일한 워크스트림에서 실행된 라이브 캠페인 결과에 근거합니다.",
     },
 
     // ===================================================================
@@ -649,7 +662,7 @@ export const kiiikiiiPlanKorean: StrategyPlanData = {
       number: "08",
       navLabel: "첫 90일",
       title: "첫 90일",
-      intro: "테스트 우선 방식입니다. 팬 데이터 수집은 첫 주에 구축되며, 다른 모든 활동은 이를 지원합니다. 유료 광고는 소규모로 시작하여 증거에 기반하여 확장됩니다. 실물 앨범 기획은 발매일이 확정되는 즉시 시작되며, 4주차의 첫 번째 점검 회의는 단순한 진행 상황 보고가 아닌 실제 확장 또는 중단 여부를 결정하는 회의가 될 것입니다.",
+      intro: "테스트 우선 리듬을 따릅니다. 팬 데이터 확보는 첫 주부터 시작되며, 다른 모든 활동이 이를 지원합니다. 유료 광고는 소규모로 시작하여 증거에 기반하여 확장됩니다. 실물 앨범 플랜은 해당 기간 동안 병렬적으로 구축되어, 다음 출시일이 정해지는 즉시 실행될 준비가 됩니다. 4주차의 첫 번째 체크포인트는 상태 업데이트가 아닌, 실제 확장 또는 중단 여부를 결정하는 시점입니다.",
       weeks: [
         { index: 1, label: "W1", dates: "1주차" },
         { index: 2, label: "W2", dates: "2주차" },
@@ -718,16 +731,16 @@ export const kiiikiiiPlanKorean: StrategyPlanData = {
         {
           name: "실물 음반",
           cells: [
-            { weekIndex: 3, intensity: "low", label: "PLAN" },
-            { weekIndex: 4, intensity: "medium" },
-            { weekIndex: 5, intensity: "medium" },
+            { weekIndex: 3, intensity: "low", label: "SIZE" },
+            { weekIndex: 4, intensity: "low" },
+            { weekIndex: 5, intensity: "medium", label: "RETAIL" },
             { weekIndex: 6, intensity: "medium" },
-            { weekIndex: 7, intensity: "high", label: "RETAIL" },
-            { weekIndex: 8, intensity: "high" },
-            { weekIndex: 9, intensity: "high", label: "ONSALE" },
-            { weekIndex: 10, intensity: "high" },
-            { weekIndex: 11, intensity: "medium" },
-            { weekIndex: 12, intensity: "medium" },
+            { weekIndex: 7, intensity: "medium" },
+            { weekIndex: 8, intensity: "medium", label: "PREORD" },
+            { weekIndex: 9, intensity: "medium" },
+            { weekIndex: 10, intensity: "medium" },
+            { weekIndex: 11, intensity: "high", label: "READY" },
+            { weekIndex: 12, intensity: "high" },
           ],
         },
       ],
@@ -756,7 +769,7 @@ export const kiiikiiiPlanKorean: StrategyPlanData = {
           items: [
             "착수 시 합의된 목표 대비 팬당 비용 및 팔로워당 비용에 대한 종합 분석.",
             "성과가 좋은 항목에 예산 집중. 효율성 하한선 이하의 항목은 유지하지 않고 즉시 중단.",
-            "발매일 확정 시 실물 앨범 기획 착수.",
+            "실물 앨범: 리스트 성장 및 스트리밍 데이터의 첫 4주를 기반으로 미국 유닛 판매 목표를 설정합니다.",
           ],
         },
         {
@@ -764,7 +777,7 @@ export const kiiikiiiPlanKorean: StrategyPlanData = {
           title: "점검: 중간 검토",
           items: [
             "90일 목표 대비 리스트 규모, 팔로워 증가, 오디언스 증가 측정.",
-            "집계 주간에 대한 리테일 및 사전 예약 계획 확정.",
+            "실물 앨범: 소매 유통 할당 범위를 설정하고 자체 리스트를 기반으로 사전 주문 흐름을 구축합니다.",
             "현재 오가닉 콘텐츠 히트작 기반으로 크리에이티브 업데이트.",
           ],
         },
@@ -774,11 +787,71 @@ export const kiiikiiiPlanKorean: StrategyPlanData = {
           items: [
             "모든 약정 지표에 대한 전체 보고, 기여도 명확히 명시.",
             "레이블이 소유한, 풍부하고 내보내기 가능한 팬 리스트가 전달되었습니다.",
+            "릴리스 준비 완료된 실물 앨범 플랜: 유닛 목표, 다양한 버전 및 미국 독점 추천, 소매 유통 계획, 사전 주문 흐름, 카운팅 위크 플랜.",
             "이번 기간 동안 실제로 증명된 것을 바탕으로 규모가 조정된 다음 릴리스 주기에 대한 권장 사항입니다.",
           ],
         },
       ],
-      footnote: "타이밍은 실물 상품 작업 흐름에 대한 확정된 출시일을 가정합니다. 체크포인트는 채널을 중단할 권한이 있는 실제 의사 결정 지점입니다.",
+      footnote: "실물 앨범 플랜은 Starship이 이 기간 내 또는 이후에 다음 출시일을 설정할 때 실행됩니다. 체크포인트는 채널을 중단할 권한이 있는 실제 의사 결정 지점입니다.",
+    },
+
+    // ===================================================================
+    // 09. Investment
+    // ===================================================================
+    {
+      type: "pricing",
+      number: "09",
+      navLabel: "투자",
+      title: "투자",
+      intro: "전략, 실행 및 보고를 위한 월간 리테이너가 세 가지 워크스트림 전반에 걸쳐 적용되며, 워킹 미디어는 별도로 실비에 관리비를 더하여 청구됩니다. 첫 90일은 테스트 기간으로, 미디어 집행은 의도적으로 소규모로 시작하며, 4주차 및 8주차 점검 시점에서 규모 확대를 결정합니다. Starship은 워킹 미디어에 대한 모든 지출을 약정 전에 승인합니다.",
+      breakdownLabel: "상업 구조",
+      deployableLabel: "기간",
+      tiers: [
+        {
+          label: "리테이너",
+          budget: "$5,000 / month",
+          name: "3개 워크스트림 미국 리테이너",
+          tagline: "전략, 캠페인 실행, 팬 데이터 구축, 실물 기획, 크리에이티브 디렉션, 주간 보고, 그리고 Starship 및 Transparent Arts와의 주간 통화.",
+          featured: true,
+          deployable: "90일 초기 기간, 이후 월별 계약",
+          breakdown: [
+            { vertical: "월간 리테이너", amount: "$5,000" },
+            { vertical: "초기 기간", amount: "90일 / $15,000" },
+            { vertical: "워킹 미디어 및 크리에이터", amount: "Starship 승인" },
+            { vertical: "워킹 미디어 관리", amount: "지출의 15%" },
+            { vertical: "실물 제품 및 제조", amount: "레이블 측" },
+          ],
+        },
+        {
+          label: "90일 예시",
+          budget: "$84,000",
+          name: "권장 시작 예산",
+          tagline: "첫 기간 자금 조달 방법 중 하나입니다. 미디어 라인은 각 점검 시점에서 효과적인 부분으로 이동하는 시작점입니다.",
+          deployable: "$60,000 working media in market",
+          breakdown: [
+            { vertical: "리테이너, 3개월", amount: "$15,000" },
+            { vertical: "미국 유료 소셜 (팔로워, 오디언스, 리타겟팅)", amount: "$25,000" },
+            { vertical: "클리핑 및 크리에이터 시딩", amount: "$25,000" },
+            { vertical: "팬 데이터 확보", amount: "$10,000" },
+            { vertical: "매니지먼트, $60,000의 15%", amount: "$9,000" },
+          ],
+        },
+      ],
+      addOns: [
+        {
+          name: "가벼운 시작",
+          subtitle: "동일한 구조, 더 작은 풀",
+          budget: "$43,750",
+          description: "90일간의 리테이너($15,000)와 미국 유료 및 팬 데이터 확보에 분배될 워킹 미디어 $25,000, 그리고 매니지먼트 $3,750. 초기 분석 결과가 뒷받침할 경우 첫 번째 체크포인트에서 클리핑이 추가됩니다.",
+        },
+        {
+          name: "발매 주간 실물 앨범 푸시",
+          subtitle: "다음 발매일이 확정되면",
+          budget: "범위가 정해진",
+          description: "유료, 크리에이터 및 팬 리스트 활동은 집계 주간에 집중되며, 발매 준비 계획의 유닛 목표에 맞춰 예산이 책정됩니다. 워킹 미디어 비용에 15%를 가산하여 청구됩니다.",
+        },
+      ],
+      footnote: "워킹 미디어는 계약 전에 Starship의 승인을 받아야 하며, 원가에 15%를 가산하여 청구됩니다. 실물 앨범의 제품, 제조 및 유통 비용은 레이블에서 부담합니다. 계약 기간 및 통지 세부 사항은 작업 명세서에 명시됩니다.",
     },
   ],
 };
