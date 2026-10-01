@@ -485,13 +485,15 @@ export const fiftyFiftyPlan: StrategyPlanData = {
           label: "B",
           title: "Content That Already Works, Given More Weight",
           objective: "Put paid weight behind the formats the group's own data already proves.",
-          strategy: "An analysis of 105 FIFTY FIFTY and competitor videos, with each video's real performance data attached, found one format that stands well above the rest: gaming and esports content, where the members appear inside gaming culture alongside creators and pro players. It earns a median of 584,750 views, more than five times the account's other content, and it works for every member rather than depending on one. It is also the most natural fit for the U.S. audience. Today it is under four percent of what the group posts. None of this requires a new production model. It requires giving the format that already works a regular slot, putting media behind it, and adding a clear next step for viewers, since almost none of the group's posts currently point anywhere.",
+          strategy: "An analysis of 105 FIFTY FIFTY and competitor videos, with each video's real performance data attached, found one format that stands well above the rest: gaming and esports content, where the members appear inside gaming culture alongside creators and pro players. It earns a median of 584,750 views, more than five times the account's other content, and it works for every member rather than depending on one. It is also the most natural fit for the U.S. audience. Today it is under four percent of what the group posts. None of this requires a new production model. It requires giving the format that already works a regular slot, putting media behind it, getting to the moment that matters faster, and adding a clear next step for viewers, since almost none of the group's posts currently point anywhere.",
           components: {
             heading: "What the Content Analysis Found",
             items: [
               "Gaming and esports content earns a median 584,750 views, more than five times other formats, and is 3.7 percent of output",
               "Appearing inside a partner's world outperforms bringing a guest into the group's own format by roughly 13 to 1",
-              "The same post earns more on Instagram than TikTok in most matched pairs, and about three times more per follower",
+              "Posts published to both Instagram and TikTok on the same day earned more on Instagram in most matched pairs, and Instagram returns about three times more views per follower",
+              "Comparison acts reach the payoff inside the first three seconds twice as often: 6 of 15 videos for both KATSEYE and i-dle, 3 of 15 for FIFTY FIFTY",
+              "KATSEYE, the clearest U.S. benchmark, opens all 15 analyzed videos on movement already underway, with little dialogue, so they need no translation to land",
               "Five of 1,006 recent TikTok posts point a viewer anywhere they could follow, join, or buy",
             ],
           },
@@ -568,7 +570,7 @@ export const fiftyFiftyPlan: StrategyPlanData = {
           ],
         },
       ],
-      footnote: "Content findings come from an analysis of 105 FIFTY FIFTY and competitor videos with per-post performance data attached, completed September 2026.",
+      footnote: "Content findings come from an analysis of 105 FIFTY FIFTY and competitor videos with per-post performance data attached, completed September 2026, with the opening-seconds comparison added October 2026.",
     },
 
     // ===================================================================
