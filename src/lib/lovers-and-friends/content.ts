@@ -1,5 +1,5 @@
 /**
- * Lovers & Friends: digital audit (Crowd Control Digital).
+ * R&B Love Festival (formerly Lovers & Friends): digital audit (Crowd Control Digital).
  * Every figure below was pulled September 30 to October 1, 2026 from a scrape, API,
  * ad library, Keyword Planner export, Lighthouse run, video AI query or fetched page.
  * Sources are listed in SOURCES. Sentiment figures are analytical estimates.
@@ -24,10 +24,10 @@ export const NAV = [
 ] as const;
 
 export const HERO = {
-  kicker: "Prepared for the Lovers & Friends team",
-  title: "Lovers & Friends",
+  kicker: "Prepared for the R&B Love Festival team",
+  title: "R&B Love Festival",
   line: "Digital Audit",
-  sub: "Brand, market, social, sentiment, search, video AI and a relaunch plan.",
+  sub: "Formerly Lovers & Friends. Brand, market, social, sentiment, search, video AI and a relaunch plan.",
   body: "Two Las Vegas editions, a third that sold out on presale day and was cancelled for wind the night before, and 28 months of silence. We measured everything public about Lovers & Friends against ten peer festivals: 494 Instagram posts, 19,635 fan comments and posts, 24 months of search demand and every ad library entry, and reviewed 61 videos, 30 of them with video AI. The audience never left. This is the evidence, and the plan to bring it back.",
   stats: [
     { value: 448885, label: "Instagram followers, 3rd of 11 festivals benchmarked" },
@@ -231,7 +231,7 @@ export const MARKET = {
   windowNote:
     "The 2026 spring and summer calendar for the category. The early-May Vegas slot sits between Rolling Loud and EDC; the 2022 to 2024 editions ran May 4 to 15.",
   callout:
-    "Lovers & Friends owns a position nobody else holds: the definitive 90s and 2000s R&B and hip-hop festival, west of the Mississippi, in a destination city. Its closest peers are paused or gone. The opening is real, and it is time-boxed: When We Were Young returns to the same grounds in October 2027.",
+    "R&B Love Festival inherits a position nobody else holds: the definitive 90s and 2000s R&B and hip-hop festival, west of the Mississippi, in a destination city. Its closest peers are paused or gone. The opening is real, and it is time-boxed: When We Were Young returns to the same grounds in October 2027.",
 };
 
 /* ----------------------------------------------------------------------------
@@ -642,7 +642,17 @@ export const FUNNEL = {
 
 export const PLAN = {
   intro:
-    "A relaunch plan built from the evidence above. It runs on the festival's own clock: Phase 0 starts now, and everything after it is timed from the day a 2027 return is announced.",
+    "A relaunch plan built from the evidence above. It runs on the festival's own clock: Phase 0 starts now, and everything after it is timed from the day R&B Love Festival is announced.",
+  rename: {
+    intro:
+      "A new name on a festival with 583,727 followers and 121,900 searches for the old one in two years. The audience has to find the new name without losing the old one.",
+    points: [
+      { h: "Rename, don't restart", b: "Rename the existing accounts (448,885 on Instagram, 52,600 on TikTok, 69,465 on Facebook, 12,777 on X) so followers, history and ad audiences carry over. New accounts start at zero." },
+      { h: "\"Formerly Lovers & Friends\"", b: "In every bio, ad, email subject and press line for the first cycle. People will keep searching the old name for a year or more." },
+      { h: "Keep the old doors open", b: "Redirect loversandfriendsfest.com to the new site and keep bidding on the Lovers & Friends terms. Other events are already borrowing the old name." },
+      { h: "Secure the new one", b: "rnblovefestival.com is already used by a separate R&B event in Orlando. Lock handles, domains and branded search before the reveal, not after." },
+    ],
+  },
   pillars: [
     { k: "Repair", b: "Close the 2024 story in public, answer the questions, and put the weather and refund terms in writing." },
     { k: "Reignite", b: "Turn 449K dormant followers and the nostalgia engine back on, anchored to the festival this time." },
@@ -657,7 +667,7 @@ export const PLAN = {
         "Replace the cancellation homepage with a 2027 list page (email plus SMS)",
         "Update bios, Facebook About, help center and Event schema",
         "Retargeting pools from the live Meta and TikTok pixels",
-        "Register the year domains and monitor the Ad Library for the name",
+        "Lock R&B Love Festival handles, domains and search terms before the reveal",
         "Pinned comment and a reply desk on the cancellation post",
       ],
     },
@@ -665,10 +675,10 @@ export const PLAN = {
       k: "The return",
       when: "Announce day",
       items: [
-        "One direct, human message that names the 2024 night and what changed",
+        "One direct, human message: the 2024 night, what changed, and why the new name",
         "The weather plan and refund terms, published in plain language",
         "Paid support behind the announcement to the full past-buyer and follower pool",
-        "Branded search live on every year term",
+        "Branded search live on the new name and every Lovers & Friends term",
       ],
     },
     {
@@ -756,7 +766,7 @@ export const CREATIVE = {
       fmt: "9:16 TikTok",
       video: "flip-phone.mp4",
       poster: "flip-phone.webp",
-      top: "Lovers & Friends",
+      top: "R&B Love Festival",
       big: "We're back.",
       small: ["2027", "Las Vegas", "Presale from $19.99 down"],
       cta: "Get presale access",
@@ -816,7 +826,7 @@ export const WHY = {
 
 export const NEXT = {
   steps: [
-    { h: "Walk-through call", b: "We take the team through this audit and hear where Lovers & Friends is headed." },
+    { h: "Walk-through call", b: "We take the team through this audit and hear where R&B Love Festival is headed." },
     { h: "Two-week foundation sprint", b: "Reopen the doors: site, bios, schema, list page, retargeting pools and the reply desk." },
     { h: "Return-ready", b: "Announcement creative, the presale system and the always-on calendar, ready for the day you say go." },
   ],

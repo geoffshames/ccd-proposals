@@ -61,8 +61,8 @@ import {
 const EASE = [0.16, 1, 0.3, 1] as const;
 const fmt = (n: number) => Math.round(n).toLocaleString("en-US");
 const compact = (n: number) => (n >= 1e6 ? `${(n / 1e6).toFixed(n >= 1e7 ? 1 : 2)}M` : n >= 1e4 ? `${Math.round(n / 1e3)}K` : n >= 1e3 ? `${(n / 1e3).toFixed(1)}K` : `${n}`);
-const MAIL = `mailto:${NEXT.email}?subject=${encodeURIComponent("Lovers & Friends x Crowd Control: audit walk-through")}&body=${encodeURIComponent(
-  "Hi Geoff,\n\nWe've read the Lovers & Friends audit and would like to set up a walk-through.\n\nName and team:\nTimes that work:\n",
+const MAIL = `mailto:${NEXT.email}?subject=${encodeURIComponent("R&B Love Festival x Crowd Control: audit walk-through")}&body=${encodeURIComponent(
+  "Hi Geoff,\n\nWe've read the R&B Love Festival audit and would like to set up a walk-through.\n\nName and team:\nTimes that work:\n",
 )}`;
 
 /* ----------------------------------------------------------------------------
@@ -255,7 +255,7 @@ function TopBar() {
       <a className={s.brand} href="#top" aria-label="Back to top">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img src="/brand/CC-LOGO-2024-WHITE.png" alt="Crowd Control" />
-        <span className={s.mono}>for Lovers &amp; Friends</span>
+        <span className={s.mono}>for R&amp;B Love Festival</span>
       </a>
       <nav className={s.navLinks} aria-label="Sections">
         {NAV.map((n) => (
@@ -1569,6 +1569,21 @@ function Plan() {
         </div>
       </Reveal>
 
+      <Reveal className={s.sub}>
+        <SubHead title="Carrying the name over" aside="Lovers & Friends to R&B Love Festival" />
+        <p className={s.intro} style={{ marginBottom: 26 }}>
+          {PLAN.rename.intro}
+        </p>
+        <div className={s.why}>
+          {PLAN.rename.points.map((p) => (
+            <div key={p.h}>
+              <h4>{p.h}</h4>
+              <p>{p.b}</p>
+            </div>
+          ))}
+        </div>
+      </Reveal>
+
       <div className={s.sub}>
         <Reveal>
           <SubHead title="Phases" aside="Timed from the announcement" />
@@ -1807,7 +1822,7 @@ function Next() {
       <footer className={`${s.footer} ${s.mono}`}>
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img src="/brand/CC-LOGO-2024-WHITE.png" alt="Crowd Control" />
-        <span>Prepared for Lovers &amp; Friends by Crowd Control Digital</span>
+        <span>Prepared for R&amp;B Love Festival by Crowd Control Digital</span>
         <span>September 2026</span>
       </footer>
     </>
