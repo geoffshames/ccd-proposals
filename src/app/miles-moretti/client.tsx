@@ -7,11 +7,10 @@
  * shadowbox (video-box.tsx). Password gated client-side; noindex in page.tsx.
  */
 
-import Image from "next/image";
-import { useEffect, useRef, useState, useSyncExternalStore, type CSSProperties, type FormEvent, type ReactNode } from "react";
-import { AnimatePresence, animate, motion, useAnimationFrame, useInView, useMotionValue, useReducedMotion, useScroll, useSpring, useTransform } from "framer-motion";
+import { useEffect, useRef, useState, useSyncExternalStore, type CSSProperties, type FormEvent, type MouseEvent, type ReactNode } from "react";
+import { AnimatePresence, animate, motion, useAnimationFrame, useInView, useMotionValue, useReducedMotion, useScroll, useSpring, useTransform, type MotionValue } from "framer-motion";
 import s from "./mm.module.css";
-import { VideoBoxProvider, useVideoBox, useVideoBoxRaw, type VideoItem } from "./video-box";
+import { VideoBoxProvider, useVideoBox, type VideoItem } from "./video-box";
 import {
   IMG,
   P,
@@ -23,7 +22,9 @@ import {
   SUMMARY,
   CHINA,
   CHANNELS,
-  REELS,
+  MONTHS,
+  LEAK,
+  INTERLUDES,
   FORMATS,
   CLIP,
   TOP_POSTS,
@@ -200,7 +201,10 @@ function item(href: string, title: string, views?: string, context?: string, ext
 }
 
 const igUrl = (id: string) => `https://www.instagram.com/reel/${id}/`;
-const short = (v: number) => (v >= 1e6 ? `${(v / 1e6).toFixed(1)}M` : `${Math.round(v / 1e3)}K`);
+const toSec = (t: string) => {
+  const [m, x] = t.split(":").map(Number);
+  return m * 60 + (x || 0);
+};
 
 /* ----------------------------------------------------------------------------
  * Password gate
@@ -310,25 +314,34 @@ function Progress() {
  * Hero
  * ------------------------------------------------------------------------- */
 
+function FilmCol({ f, i, progress, reduce, onOpen }: { f: { id: string; label: string }; i: number; progress: MotionValue<number>; reduce: boolean; onOpen: (e: MouseEvent<HTMLAnchorElement>) => void }) {
+  const y = useTransform(progress, [0, 1], [0, reduce ? 0 : (i % 2 ? -1 : 1) * (60 + i * 14)]);
+  return (
+    <motion.a href={igUrl(f.id)} target="_blank" rel="noreferrer" onClick={onOpen} aria-label={`Watch the ${f.label} reel`} style={{ y }} initial={reduce ? false : { opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1.2, ease: EASE, delay: 0.2 + i * 0.08 }}>
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img src={P(f.id)} alt="" />
+      <span className={s.filmV}>
+        {f.label}
+        <small className={s.mono}>views</small>
+      </span>
+    </motion.a>
+  );
+}
+
 function Hero() {
   const reduce = useReduced();
   const open = useVideoBox();
   const ref = useRef<HTMLElement>(null);
   const { scrollYProgress } = useScroll({ target: ref, offset: ["start start", "end start"] });
-  const y = useTransform(scrollYProgress, [0, 1], ["0%", reduce ? "0%" : "12%"]);
   const words = HERO.title.split(" ");
   const group = { label: "Five reels that explain him", items: HERO.film.map((f) => item(igUrl(f.id), "Miles Moretti", `${f.label} views`)) };
   return (
     <section className={s.hero} ref={ref} id="top">
-      <motion.div className={s.heroFilm} style={{ y }}>
+      <div className={s.heroFilm}>
         {HERO.film.map((f, i) => (
-          <a key={f.id} href={igUrl(f.id)} target="_blank" rel="noreferrer" onClick={open(group, i)} aria-label={`Watch the ${f.label} reel`}>
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src={P(f.id)} alt="" />
-            <span className={s.mono}>{f.label}</span>
-          </a>
+          <FilmCol key={f.id} f={f} i={i} progress={scrollYProgress} reduce={reduce} onOpen={open(group, i)} />
         ))}
-      </motion.div>
+      </div>
       <div className={s.heroShade} />
       <div className={s.heroInner}>
         <Reveal>
@@ -437,6 +450,12 @@ function DouyinChart() {
   const xa = X("2025-01-20"), xb = X("2026-09-30"), xc = X("2025-04-05");
   return (
     <svg viewBox={`0 0 ${W} ${H}`} role="img" aria-label="Douyin followers for 李美越, November 2023 to September 2026" className={s.svg}>
+      <defs>
+        <linearGradient id="dyg" x1="0" x2="0" y1="0" y2="1">
+          <stop offset="0%" stopColor={PAPER} stopOpacity="0.22" />
+          <stop offset="100%" stopColor={PAPER} stopOpacity="0" />
+        </linearGradient>
+      </defs>
       {[5, 6, 7, 8].map((v) => (
         <g key={v}>
           <line x1={l} x2={W - r} y1={Y(v)} y2={Y(v)} stroke={LINE} />
@@ -455,17 +474,21 @@ function DouyinChart() {
         No Douyin posts since Jan 20, 2025
       </text>
       <line x1={xc} x2={xc} y1={t} y2={H - b} stroke={RED} strokeDasharray="4 4" />
-      <text x={xc + 8} y={Y(5.55)} fill={RED} fontSize="11">
+      <text x={xc + 8} y={t + 14} fill={RED} fontSize="11">
         Apr 5, 2025: CCTV blurs his face
       </text>
+      <motion.path d={`${path} L${X(pts[pts.length - 1].d).toFixed(1)},${H - b} L${X(pts[0].d).toFixed(1)},${H - b} Z`} fill="url(#dyg)" initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} transition={{ duration: 1.4, delay: 0.6 }} />
       <motion.path d={path} fill="none" stroke={PAPER} strokeWidth="2" initial={{ pathLength: 0 }} whileInView={{ pathLength: 1 }} viewport={{ once: true }} transition={{ duration: 1.6, ease: EASE }} />
       {pts.map((p) => (
-        <circle key={p.d} cx={X(p.d)} cy={Y(p.v)} r="5" fill={p.kind === "measured" ? RED : PAPER} />
+        <g key={p.d}>
+          {p.kind === "measured" && <circle cx={X(p.d)} cy={Y(p.v)} r="12" fill={RED} opacity="0.22" className={s.pulse} />}
+          <circle cx={X(p.d)} cy={Y(p.v)} r="5" fill={p.kind === "measured" ? RED : PAPER} stroke="#0a0a0a" strokeWidth="2" />
+        </g>
       ))}
       <text x={X(pts[1].d)} y={Y(pts[1].v) - 12} fill={PAPER} fontSize="12" textAnchor="middle">
         6.75M
       </text>
-      <text x={X(pts[2].d)} y={Y(pts[2].v) - 12} fill={PAPER} fontSize="12" textAnchor="middle">
+      <text x={X(pts[2].d) - 10} y={Y(pts[2].v) + 4} fill={PAPER} fontSize="12" textAnchor="end">
         7.70M peak
       </text>
       <text x={X(pts[4].d)} y={Y(pts[4].v) + 22} fill={RED} fontSize="12" textAnchor="end">
@@ -567,72 +590,90 @@ function China() {
  * 03 US engine
  * ------------------------------------------------------------------------- */
 
-function ReelsChart() {
-  const open = useVideoBoxRaw();
-  const W = 720, H = 320, l = 52, r = 20, t = 16, b = 40;
-  const d0 = Date.UTC(2024, 3, 1), d1 = Date.UTC(2026, 9, 15);
-  const lo = Math.log10(8e5), hi = Math.log10(7e7);
-  const X = (d: string | number) => l + ((W - l - r) * ((typeof d === "string" ? Date.parse(d) : d) - d0)) / (d1 - d0);
-  const Y = (v: number) => t + (H - t - b) * (1 - (Math.log10(v) - lo) / (hi - lo));
-  const group = { label: "Every reel, both accounts", items: REELS.map((p) => item(igUrl(p.id), p.a === "P" ? "@the0.5bloodprince" : "@youngchinaaaa", `${short(p.v)} views`, p.d)) };
+function MonthlyViews() {
+  const open = useVideoBox();
+  const rows = MONTHS.rows;
+  const max = Math.max(...rows.map((r) => r.main + r.clip));
+  const peaks = rows.filter((r) => "peak" in r && r.peak);
+  const group = { label: "Peak months", items: peaks.map((r) => item(igUrl(r.peak!.id), r.peak!.l, `${r.peak!.v}M views`, r.m)) };
   return (
-    <svg viewBox={`0 0 ${W} ${H}`} role="img" aria-label="Instagram views per reel across both accounts, April 2024 to September 2026" className={s.svg}>
-      {[
-        [1e6, "1M"],
-        [3e6, "3M"],
-        [1e7, "10M"],
-        [3e7, "30M"],
-      ].map(([v, lab]) => (
-        <g key={lab}>
-          <line x1={l} x2={W - r} y1={Y(v as number)} y2={Y(v as number)} stroke={LINE} />
-          <text x={l - 8} y={Y(v as number) + 4} fill={DIM} fontSize="11" textAnchor="end">
-            {lab}
-          </text>
-        </g>
-      ))}
-      {[
-        [2024, 6, "Jul '24"],
-        [2025, 0, "Jan '25"],
-        [2025, 6, "Jul '25"],
-        [2026, 0, "Jan '26"],
-        [2026, 6, "Jul '26"],
-      ].map(([y, m, lab]) => (
-        <text key={lab} x={X(Date.UTC(y as number, m as number, 1))} y={H - 12} fill={DIM} fontSize="11" textAnchor="middle">
-          {lab}
-        </text>
-      ))}
-      <line x1={X("2025-01-20")} x2={X("2025-01-20")} y1={t} y2={H - b} stroke={RED} strokeDasharray="4 4" />
-      <text x={X("2025-01-20") - 6} y={t + 12} fill={DIM} fontSize="11" textAnchor="end">
-        Last Douyin post
-      </text>
-      {REELS.map((p, i) => (
-        <motion.circle
-          key={p.id}
-          cx={X(p.d)}
-          cy={Y(p.v)}
-          r={p.v >= 2e7 ? 6 : 4}
-          fill={p.a === "P" ? PAPER : RED}
-          opacity={0.9}
-          className={s.dot}
-          initial={{ scale: 0 }}
-          whileInView={{ scale: 1 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.4, delay: i * 0.008 }}
-          onClick={() => open(group, i)}
-        >
-          <title>{`${p.d}: ${short(p.v)} views`}</title>
-        </motion.circle>
-      ))}
-      <text x={X("2026-09-05") - 10} y={Y(53796949) + 4} fill={PAPER} fontSize="12" textAnchor="end">
-        24 Hours in China, 53.8M
-      </text>
-      <text x={X("2025-04-17") + 10} y={Y(47701151) + 4} fill={PAPER} fontSize="12">
-        Mumbai, 47.7M
-      </text>
-      <text x={X("2025-03-27") - 10} y={Y(27617434) + 4} fill={PAPER} fontSize="12" textAnchor="end">
-        IShowSpeed tour, 27.6M
-      </text>
-    </svg>
+    <div className={s.mv}>
+      <div className={s.mvYears}>
+        {MONTHS.years.map((y) => {
+          const tot = y.main + y.clip;
+          return (
+            <div key={y.y}>
+              <span className={`${s.mono} ${s.dim}`}>{y.y}</span>
+              <b>
+                <Counter value={tot} suffix="M" />
+              </b>
+              <span className={s.mvSplit}>
+                <Grow to={1} style={{ width: `${(y.main / tot) * 100}%`, background: PAPER }} />
+                <Grow to={1} style={{ width: `${(y.clip / tot) * 100}%`, background: RED }} delay={0.2} />
+              </span>
+              <small>{y.clip ? `${Math.round((y.clip / tot) * 100)}% from the clip account` : "Main account only"}</small>
+            </div>
+          );
+        })}
+      </div>
+      <div className={s.mvPlot}>
+        <div className={s.mvArea}>
+        {[20, 40, 60, 80].map((g) => (
+          <span key={g} className={s.mvGrid} style={{ bottom: `${(g / max) * 100}%` }}>
+            <em className={s.mono}>{g}M</em>
+          </span>
+        ))}
+        {rows.map((r, i) => {
+          const tot = r.main + r.clip;
+          const h = (tot / max) * 100;
+          const pk = "peak" in r ? r.peak : undefined;
+          const pi = peaks.findIndex((x) => x.m === r.m);
+          return (
+            <div className={s.mvCol} key={r.m} data-empty={tot ? undefined : ""}>
+              <Grow axis="y" to={1} className={s.mvStack} style={{ height: `${h}%`, transformOrigin: "50% 100%" }} delay={0.1 + i * 0.03}>
+                {r.clip > 0 && <i className={s.mvClip} style={{ flexGrow: r.clip }} />}
+                {r.main > 0 && <i className={s.mvMain} style={{ flexGrow: r.main }} />}
+              </Grow>
+              {tot > 0 && <span className={`${s.mvTip} ${s.mono}`}>{tot.toFixed(1)}M</span>}
+              {pk && (
+                <motion.a
+                  className={s.mvPeak}
+                  data-m={r.m}
+                  href={igUrl(pk.id)}
+                  target="_blank"
+                  rel="noreferrer"
+                  onClick={open(group, pi)}
+                  style={{ bottom: `calc(${h}% + 14px)`, x: "-50%" }}
+                  initial={{ opacity: 0, y: 14 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.8, ease: EASE, delay: 0.9 + pi * 0.12 }}
+                >
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img src={P(pk.id)} alt="" />
+                  <span>
+                    <b>{pk.v}M</b>
+                    {pk.l}
+                  </span>
+                </motion.a>
+              )}
+              {(i === 0 || r.m.endsWith("-01")) && <span className={`${s.mvYear} ${s.mono}`}>{r.m.slice(0, 4)}</span>}
+            </div>
+          );
+        })}
+        </div>
+      </div>
+      <div className={`${s.chartLegend} ${s.mono}`} style={{ margin: "34px 0 0" }}>
+        <span>
+          <i style={{ background: PAPER }} />
+          @the0.5bloodprince (main, 1.24M)
+        </span>
+        <span>
+          <i style={{ background: RED }} />
+          @youngchinaaaa (clips, 762K)
+        </span>
+      </div>
+    </div>
   );
 }
 
@@ -736,22 +777,10 @@ function US() {
       </Reveal>
 
       <Reveal className={s.sub}>
-        <SubHead title="Views per reel, both accounts" aside="Tap a dot to watch. Log scale" />
-        <div className={s.chart}>
-          <div className={`${s.chartLegend} ${s.mono}`}>
-            <span>
-              <i style={{ background: PAPER, borderRadius: "50%" }} />
-              @the0.5bloodprince (main, 1.24M)
-            </span>
-            <span>
-              <i style={{ background: RED, borderRadius: "50%" }} />
-              @youngchinaaaa (clips, 762K)
-            </span>
-          </div>
-          <ReelsChart />
-        </div>
+        <SubHead title="Where the views come from" aside="Monthly Instagram views. Tap a cover to watch" />
+        <MonthlyViews />
         <p className={s.note} style={{ marginTop: 12 }}>
-          Pulled Sept 30, 2026 via Tokscript: the last 50 reels on each account, cross-posted collabs counted once.
+          {MONTHS.note}
         </p>
       </Reveal>
 
@@ -816,20 +845,58 @@ function US() {
  * ------------------------------------------------------------------------- */
 
 function Gap() {
+  const top = Math.log10(1.02e8) - 2;
+  const val = (r: (typeof LEAK.rows)[number]) => r.v * (r.unit === "M" ? 1e6 : r.unit === "K" ? 1e3 : 1);
   return (
     <section className={s.section} id="gap">
       <Head n="04" label="The gap" title="Rented Reach">
-        Short-form followers are rented. What a creator owns is the audience that comes to him: YouTube subscribers, live viewers, a list. On that measure Miles is an outlier in the wrong direction.
+        Short-form followers are rented. What a creator owns is the audience that comes to him. Follow one clip down to the people who stay.
       </Head>
-      <Reveal>
-        <SubHead title="Short-form followers per YouTube subscriber" />
+      <div className={s.leak}>
+        {LEAK.rows.map((r, i) => (
+          <Reveal key={r.k} delay={i * 0.08}>
+            {"ratio" in r && r.ratio && <div className={`${s.leakRatio} ${s.mono}`}>{r.ratio}</div>}
+            <div className={s.leakRow} data-last={i === LEAK.rows.length - 1 ? "" : undefined}>
+              <Grow to={(Math.log10(val(r)) - 2) / top} className={s.leakBar} delay={0.15 + i * 0.12} />
+              <div className={s.leakIn}>
+                <span className={s.leakV}>
+                  <Counter value={r.v} decimals={r.v < 10 ? 1 : 0} suffix={r.unit} />
+                </span>
+                <span className={s.leakK}>
+                  <b>{r.k}</b>
+                  <small>{r.s}</small>
+                </span>
+              </div>
+            </div>
+          </Reveal>
+        ))}
+        <p className={s.note} style={{ marginTop: 14 }}>
+          Bar widths on a log scale. Ratios are each step against the one above.
+        </p>
+      </div>
+
+      <Reveal className={s.sub}>
+        <SubHead title="The fix is infrastructure, not reach" />
+        <div className={s.fixCards}>
+          {LEAK.fix.map((f, i) => (
+            <div key={f.h}>
+              <span className={s.mono}>{String(i + 1).padStart(2, "0")}</span>
+              <h4>{f.h}</h4>
+              <p>{f.b}</p>
+            </div>
+          ))}
+        </div>
+      </Reveal>
+
+      <Reveal className={s.sub}>
+        <SubHead title="Against peers" aside="Short-form followers per YouTube subscriber" />
         <HBars rows={GAP.ratio} max={70} fmtV={(v) => (v < 1 ? v.toFixed(2) : v.toFixed(1))} unit="x" />
         <p className={s.note} style={{ marginTop: 16 }}>
           {GAP.ratioNote}
         </p>
       </Reveal>
       <Reveal className={s.sub}>
-        <div className={s.stats}>
+        <div className={s.stats} style={{ gridTemplateColumns: "repeat(3, minmax(0, 1fr))" }}>
           {GAP.stats.map((st) => (
             <div key={st.l}>
               <span className={s.statV}>
@@ -839,18 +906,10 @@ function Gap() {
             </div>
           ))}
         </div>
+        <p className={s.note} style={{ marginTop: 16 }}>
+          {LEAK.kick}
+        </p>
       </Reveal>
-      <div className={`${s.grid2} ${s.sub}`}>
-        <Reveal>
-          <p className={s.bigCallout}>{GAP.callout}</p>
-        </Reveal>
-        <Reveal delay={0.1}>
-          <h3 className={s.h3} style={{ marginBottom: 14 }}>
-            A note on Kick
-          </h3>
-          <p className={s.callout}>{GAP.kick}</p>
-        </Reveal>
-      </div>
     </section>
   );
 }
@@ -884,6 +943,26 @@ function Tear({ t, i }: { t: (typeof TEARDOWNS)[number]; i: number }) {
               </h3>
             </div>
             <span className={s.tearViews}>{t.views}</span>
+          </div>
+          <div className={s.beatMap} aria-hidden="true">
+            <span className={s.beatTrack}>
+              <Grow to={1} className={s.beatFill} delay={0.2} />
+            </span>
+            {t.beats.map((b, j) => {
+              const pos = Math.min(1, (b.t === "End" ? toSec(t.len) : toSec(b.t)) / toSec(t.len));
+              return (
+                <motion.i
+                  key={b.t + b.k}
+                  data-tone={b.tone || undefined}
+                  style={{ left: `${pos * 100}%` }}
+                  initial={{ scale: 0 }}
+                  whileInView={{ scale: 1 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.5, ease: EASE, delay: 0.4 + j * 0.08 }}
+                  title={`${b.t} ${b.k}`}
+                />
+              );
+            })}
           </div>
           <ol className={s.beats}>
             {t.beats.map((b) => (
@@ -1159,9 +1238,17 @@ function Listening() {
           <p className={s.note} style={{ marginTop: 12 }}>
             {LISTEN.demandNote}
           </p>
-          <p className={s.callout} style={{ marginTop: 26 }}>
-            Shipping the pair is 5.3% of comments and 25.5% of all comment likes. Safety fears are 1.1% of comments and 15.4% of likes. The two most-liked comments in the set are &ldquo;Feels like an easy way to get trafficked&rdquo; (604K likes) and &ldquo;Ok it was fun and all now get married&rdquo; (434K). The audience wants the ending, and it wants to know she got home.
-          </p>
+          <div className={s.duel} style={{ marginTop: 30 }}>
+            <div>
+              <span className={s.duelV}>25.5%</span>
+              <span className={s.statL}>of all comment likes go to shipping the pair: &ldquo;now get married&rdquo; (434K likes)</span>
+            </div>
+            <div>
+              <span className={s.duelV}>15.4%</span>
+              <span className={s.statL}>go to safety fears, from just 1.1% of comments: &ldquo;an easy way to get trafficked&rdquo; (604K likes)</span>
+            </div>
+          </div>
+          <p className={s.bigLine}>The audience wants the ending, and it wants to know she got home.</p>
         </Reveal>
       </div>
 
@@ -1172,7 +1259,7 @@ function Listening() {
         <div className={s.quotes}>
           {LISTEN.quotes.map((q, i) => (
             <a key={q.q} className={s.quote} data-tone={q.tone} href={q.href} target="_blank" rel="noreferrer" onClick={open(quoteGroup, i)}>
-              <blockquote>&ldquo;{q.q}&rdquo;</blockquote>
+              <blockquote>{/^[“"]/.test(q.q) ? q.q : `“${q.q}”`}</blockquote>
               <footer className={s.mono}>
                 <span>
                   {"orig" in q && q.orig ? `${q.orig} · ` : ""}
@@ -1352,7 +1439,10 @@ function Format24() {
           {FORMAT24.risks.map((r) => (
             <li className={s.fix} key={r.h}>
               <div>
-                <b>{r.h}.</b> <span className={s.muted}>{r.b}</span>
+                <b>{r.h}.</b>{" "}
+                <p className={s.muted} style={{ display: "inline" }}>
+                  {r.b}
+                </p>
               </div>
               <span>{r.tag}</span>
             </li>
@@ -1504,13 +1594,14 @@ function Creative() {
           {CREATIVE.label}
         </div>
       </Reveal>
-      <div className={s.stills} style={{ gridTemplateColumns: "repeat(2, minmax(0, 1fr))" }}>
+      <div className={s.stills} style={{ gridTemplateColumns: "repeat(3, minmax(0, 1fr))" }}>
         {CREATIVE.stills.map((st, i) => (
-          <Reveal key={st.img} delay={(i % 2) * 0.08}>
+          <Reveal key={st.img} delay={(i % 3) * 0.08} style={st.w > st.h ? { gridColumn: "1 / -1" } : undefined}>
             <div className={s.still}>
-              <div className={s.stillMedia} style={{ aspectRatio: "16 / 10" }}>
+              <div className={s.stillMedia} style={{ aspectRatio: `${st.w} / ${st.h}` }}>
                 <span className={s.aiBadge}>AI example</span>
-                <Image src={`${IMG}/creative/${st.img}`} alt={st.line} fill sizes="(max-width: 700px) 100vw, 50vw" style={{ objectFit: st.w > st.h ? "cover" : "contain", background: "#111" }} />
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img src={`${IMG}/creative/${st.img}`} alt={st.line} loading="lazy" />
                 <span className={s.stillLine}>{st.line}</span>
               </div>
               <div className={s.phoneMeta}>
@@ -1579,6 +1670,50 @@ function Diligence() {
 }
 
 /* ----------------------------------------------------------------------------
+ * Interludes
+ * ------------------------------------------------------------------------- */
+
+function Interlude({ n }: { n: number }) {
+  const it = INTERLUDES[n];
+  const ref = useRef<HTMLDivElement>(null);
+  const reduce = useReduced();
+  const { scrollYProgress } = useScroll({ target: ref, offset: ["start end", "end start"] });
+  const y = useTransform(scrollYProgress, [0, 1], reduce ? ["0%", "0%"] : ["-8%", "8%"]);
+  const words = it.q.split(" ");
+  return (
+    <div className={s.inter} ref={ref}>
+      <motion.div className={s.interBg} style={{ y }}>
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img src={P(it.img)} alt="" />
+      </motion.div>
+      <div className={s.interInner}>
+        <Reveal>
+          <span className={`${s.mono} ${s.red}`}>{it.who}</span>
+        </Reveal>
+        <blockquote className={s.interQ}>
+          {words.map((w, i) => (
+            <span className={s.word} key={i}>
+              <motion.span className={s.letter} initial={reduce ? false : { y: "110%" }} whileInView={{ y: "0%" }} viewport={{ once: true, margin: "-10% 0px" }} transition={{ duration: 0.9, ease: EASE, delay: i * 0.05 }}>
+                {w}
+              </motion.span>
+            </span>
+          ))}
+        </blockquote>
+        <Reveal delay={0.3}>
+          {"href" in it && it.href ? (
+            <a className={`${s.mono} ${s.dim}`} href={it.href} target="_blank" rel="noreferrer">
+              {it.n} ↗
+            </a>
+          ) : (
+            <span className={`${s.mono} ${s.dim}`}>{it.n}</span>
+          )}
+        </Reveal>
+      </div>
+    </div>
+  );
+}
+
+/* ----------------------------------------------------------------------------
  * Page
  * ------------------------------------------------------------------------- */
 
@@ -1600,13 +1735,13 @@ export default function MilesMorettiClient() {
           <Gap />
           <div className={s.rule} />
           <Teardowns />
-          <div className={s.rule} />
+          <Interlude n={0} />
           <Listening />
           <div className={s.rule} />
           <Peers />
           <div className={s.rule} />
           <Format24 />
-          <div className={s.rule} />
+          <Interlude n={1} />
           <Collective />
           <div className={s.rule} />
           <Plan />

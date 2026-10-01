@@ -443,7 +443,7 @@ export const CLIP = {
  "clipReels": 40,
  "clipViews": 222,
  "mainReels": 9,
- "body": "Since March, @youngchinaaaa has posted 40 reels for 222M views, written in third person (\"have you seen my little brother\", \"Miles makes her day better at the end\"). The main account posted 9 reels in 2026, almost all live-stream promos. Somebody is already running a clipping operation around him. Whether that is Miles, a hire or Kick's clipper program matters for any deal, because that account is the asset doing the work."
+ "body": "Written in third person (\"have you seen my little brother\"). Somebody already runs a clipping operation around him, and that account is the asset doing the work. Who owns it matters for any deal."
 };
 
 export const TOP_POSTS = [
@@ -536,6 +536,262 @@ export const LOW_POSTS = [
  }
 ];
 
+export const MONTHS = {
+ "rows": [
+  {
+   "m": "2024-04",
+   "main": 2.15,
+   "clip": 0.0
+  },
+  {
+   "m": "2024-05",
+   "main": 13.58,
+   "clip": 0.0
+  },
+  {
+   "m": "2024-06",
+   "main": 16.07,
+   "clip": 0.0
+  },
+  {
+   "m": "2024-07",
+   "main": 3.89,
+   "clip": 0.0
+  },
+  {
+   "m": "2024-08",
+   "main": 25.77,
+   "clip": 0.0
+  },
+  {
+   "m": "2024-09",
+   "main": 0.0,
+   "clip": 0.0
+  },
+  {
+   "m": "2024-10",
+   "main": 11.35,
+   "clip": 0.0
+  },
+  {
+   "m": "2024-11",
+   "main": 6.81,
+   "clip": 0.0
+  },
+  {
+   "m": "2024-12",
+   "main": 2.21,
+   "clip": 0.0
+  },
+  {
+   "m": "2025-01",
+   "main": 8.49,
+   "clip": 0.0
+  },
+  {
+   "m": "2025-02",
+   "main": 1.78,
+   "clip": 0.0
+  },
+  {
+   "m": "2025-03",
+   "main": 55.53,
+   "clip": 0.0
+  },
+  {
+   "m": "2025-04",
+   "main": 82.88,
+   "clip": 0.0,
+   "peak": {
+    "id": "DIj2u_gT4oM",
+    "v": 47.7,
+    "l": "Mumbai"
+   }
+  },
+  {
+   "m": "2025-05",
+   "main": 0.0,
+   "clip": 0.0
+  },
+  {
+   "m": "2025-06",
+   "main": 0.0,
+   "clip": 0.0
+  },
+  {
+   "m": "2025-07",
+   "main": 4.21,
+   "clip": 0.0
+  },
+  {
+   "m": "2025-08",
+   "main": 33.42,
+   "clip": 9.64
+  },
+  {
+   "m": "2025-09",
+   "main": 1.62,
+   "clip": 45.67,
+   "peak": {
+    "id": "DOGYaoukXyA",
+    "v": 33.2,
+    "l": "\"I'm from India\""
+   }
+  },
+  {
+   "m": "2025-10",
+   "main": 2.25,
+   "clip": 0.0
+  },
+  {
+   "m": "2025-11",
+   "main": 7.43,
+   "clip": 0.0
+  },
+  {
+   "m": "2025-12",
+   "main": 0.0,
+   "clip": 0.0
+  },
+  {
+   "m": "2026-01",
+   "main": 0.0,
+   "clip": 0.0
+  },
+  {
+   "m": "2026-02",
+   "main": 0.0,
+   "clip": 0.0
+  },
+  {
+   "m": "2026-03",
+   "main": 4.74,
+   "clip": 30.56
+  },
+  {
+   "m": "2026-04",
+   "main": 0.0,
+   "clip": 57.43
+  },
+  {
+   "m": "2026-05",
+   "main": 0.0,
+   "clip": 57.66
+  },
+  {
+   "m": "2026-06",
+   "main": 0.0,
+   "clip": 63.89,
+   "peak": {
+    "id": "DaCf2QZuY8S",
+    "v": 20.9,
+    "l": "Robot brother"
+   }
+  },
+  {
+   "m": "2026-07",
+   "main": 20.13,
+   "clip": 0.0
+  },
+  {
+   "m": "2026-08",
+   "main": 5.82,
+   "clip": 0.0
+  },
+  {
+   "m": "2026-09",
+   "main": 56.05,
+   "clip": 12.7,
+   "peak": {
+    "id": "Dc5nVmoz7Je",
+    "v": 53.8,
+    "l": "24 Hours, Day 6"
+   }
+  }
+ ],
+ "years": [
+  {
+   "y": "2024",
+   "main": 82,
+   "clip": 0
+  },
+  {
+   "y": "2025",
+   "main": 198,
+   "clip": 55
+  },
+  {
+   "y": "2026",
+   "main": 87,
+   "clip": 222
+  }
+ ],
+ "note": "Monthly Instagram views by posting month, from the last 50 reels on each account (so older clip-account months are not in the sample). Cross-posted collabs counted once."
+};
+
+export const LEAK = {
+ "rows": [
+  {
+   "v": 102,
+   "unit": "M",
+   "k": "views on one 24 Hours in China clip",
+   "s": "TikTok plus Instagram, Sept 5"
+  },
+  {
+   "v": 3.4,
+   "unit": "M",
+   "k": "short-form followers",
+   "s": "TikTok and both Instagram accounts",
+   "ratio": "1 in 30"
+  },
+  {
+   "v": 52,
+   "unit": "K",
+   "k": "YouTube subscribers",
+   "s": "the only owned long-form audience",
+   "ratio": "1 in 65"
+  },
+  {
+   "v": 983,
+   "unit": "",
+   "k": "average live viewers",
+   "s": "Twitch, last 30 days",
+   "ratio": "1 in 53"
+  }
+ ],
+ "fix": [
+  {
+   "h": "A long-form home",
+   "b": "A YouTube cut of every episode within 72 hours."
+  },
+  {
+   "h": "Clips point to the channel",
+   "b": "Pay clippers to send people to YouTube, not to a stream."
+  },
+  {
+   "h": "Capture every spike",
+   "b": "A drop list on any clip that breaks 10M."
+  }
+ ],
+ "kick": "Kick pays well per viewer, but it is owned by the founders of the crypto casino Stake. Gambling is illegal in China."
+};
+
+export const INTERLUDES = [
+ {
+  "img": "7685315342431718674",
+  "q": "Ok it was fun and all now get married",
+  "who": "Top comment on a 24 Hours in China TikTok",
+  "n": "434,197 likes",
+  "href": "https://www.tiktok.com/@milesmoretti/video/7685315342431718674"
+ },
+ {
+  "img": "DIGeKSkBs66",
+  "q": "Products and IP, not management fees.",
+  "who": "The collective thesis",
+  "n": "Pressure-tested below"
+ }
+];
+
 export const GAP = {
  "ratio": [
   {
@@ -575,19 +831,15 @@ export const GAP = {
  "ratioNote": "Short-form followers (TikTok plus Instagram) per YouTube subscriber, pulled Sept 30, 2026 (Social Blade, Tokscript, HypeAuditor). Daniel Mac's YouTube is mostly Shorts, which flatters his ratio. JiDion's TikTok is understated after an earlier ban.",
  "stats": [
   {
-   "v": 52,
-   "suffix": "K",
-   "l": "YouTube subscribers. 19.6M lifetime views on 94 uploads; about 239K views and 2,900 subscribers in the last 30 days"
-  },
-  {
-   "v": 983,
-   "suffix": "",
-   "l": "average Twitch viewers, last 30 days. JakenBake, with a fifth of the short-form reach, averages 1,020"
+   "v": 19.6,
+   "suffix": "M",
+   "decimals": 1,
+   "l": "lifetime YouTube views on 94 uploads; about 239K views and 2,900 subscribers in the last 30 days"
   },
   {
    "v": 2108,
    "suffix": "",
-   "l": "peak concurrent viewers. Kai Cenat averages about 35K"
+   "l": "peak concurrent Twitch viewers. Kai Cenat averages about 35K"
   },
   {
    "v": 2.2,
@@ -1374,7 +1626,7 @@ export const LISTEN = {
    "url": "https://www.reddit.com/r/findfashion/comments/1drkm8o/sunglasses_miles_moretti/"
   },
   {
-   "point": "X: the visible posts are mostly fan reposts and fashion-account posts from 2024 (Malaysia street clip, Cannes 2024). One 2026 post calls the content \"cringe\" and disputes his stated background (\"a Vietnamese American\"), echoing a Chinese-language IG comment about him.",
+   "point": "X: the visible posts are mostly fan reposts and fashion-account posts from 2024 (Malaysia street clip, Cannes 2024). One 2026 post calls the content \"cringe\".",
    "url": "https://x.com/xmperor91/status/2063153007626211363"
   },
   {
@@ -1955,7 +2207,7 @@ export const MUSIC = {
   {
    "k": "Route B",
    "h": "Stay independent, borrow the team",
-   "b": "Pull producers and songwriters from CCD's network (Dice, who did most of Liza's music, was named on the call), release through distribution, keep the masters, and sell or license later. Slower, and the upside compounds if he catches the way Alex Warren did."
+   "b": "Pull producers and songwriters from CCD's network (Dyse, who did most of Liza's music, was named on the call), release through distribution, keep the masters, and sell or license later. Slower, and the upside compounds if he catches the way Alex Warren did."
   }
  ],
  "precedent": "Creator music works when it stands on its own (Joji, Addison Rae) or rides a tentpole (IShowSpeed's World Cup song, 105M views). Novelty backfires (Jake Paul's \"It's Everyday Bro\"). Tie the first release to a 24 Hours episode or Lunar New Year, put a Mandarin hook in it, and keep the masters. Today's comments ask about the background track, not his music, so the release has to build its own demand."
@@ -2050,20 +2302,20 @@ export const CREATIVE = {
  "label": "AI example, directional. Not real products or real episodes",
  "stills": [
   {
-   "img": "c0.webp",
-   "w": 896,
-   "h": 1120,
-   "k": "Capsule",
-   "line": "东北大花 bomber",
-   "why": "His signature print as a US streetwear piece. Recognisable IP he did not have to buy."
-  },
-  {
    "img": "c1.webp",
    "w": 1200,
    "h": 671,
    "k": "Packaging",
    "line": "24 Hours in China, Ep. 9",
    "why": "A YouTube long-form thumbnail: the stranger, the boarding pass, the city. The owned home for every episode."
+  },
+  {
+   "img": "c0.webp",
+   "w": 896,
+   "h": 1120,
+   "k": "Capsule",
+   "line": "东北大花 bomber",
+   "why": "His signature print as a US streetwear piece. Recognisable IP he did not have to buy."
   },
   {
    "img": "c2.webp",
