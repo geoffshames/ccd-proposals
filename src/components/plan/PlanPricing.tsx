@@ -57,7 +57,7 @@ export function PlanPricing({ section }: { section: PricingSection }) {
                 <div className="mt-8 grid grid-cols-2 gap-px bg-text-muted/15 border border-text-muted/15">
                   <div className="bg-bg-card p-4">
                     <div className="text-[10px] font-mono tracking-[0.18em] uppercase text-text-muted/60 mb-2">
-                      Crowd Control Retainer
+                      {tier.feeBreakdown.retainerLabel ?? "Crowd Control Retainer"}
                     </div>
                     <div className="text-[22px] md:text-[26px] font-bold text-text-primary leading-none"
                          style={{ fontFamily: "var(--font-heading), var(--font-sans), sans-serif" }}>

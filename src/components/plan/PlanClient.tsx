@@ -111,7 +111,7 @@ export function PlanClient({ plan }: { plan: StrategyPlanData }) {
         <footer className="border-t border-text-muted/15 px-6 md:px-12 lg:px-24 py-10">
           <div className="max-w-6xl mx-auto flex flex-col md:flex-row md:items-center md:justify-between gap-3 text-[11px] font-mono tracking-[0.18em] uppercase text-text-muted/70">
             <span>{plan.cover.label} / {plan.cover.title}</span>
-            <span>Crowd Control Digital</span>
+            <span>{plan.footerCredit ?? "Crowd Control Digital"}</span>
             <span>{plan.cover.date}</span>
           </div>
         </footer>

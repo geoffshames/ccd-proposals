@@ -381,6 +381,8 @@ export type PricingSection = {
       mediaManagement: string;
       mediaManagementDetail: string;
       mediaManagementLabel?: string;
+      /** Optional label for the retainer cell. Defaults to "Crowd Control Retainer". */
+      retainerLabel?: string;
     };
     featured?: boolean;
   }[];
@@ -746,6 +748,9 @@ export type StrategyPlanData = {
     logo?: string;
     partnerLogos?: { src: string; alt: string; height?: number }[];
   };
+
+  /** Optional footer credit. Defaults to "Crowd Control Digital". */
+  footerCredit?: string;
 
   ogImage?: string;
 
