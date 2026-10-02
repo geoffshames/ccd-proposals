@@ -2,9 +2,22 @@
 import { motion } from "framer-motion";
 import { usePlan } from "@/lib/plan-context";
 
+function PartnerLockup({ logos, className = "" }: { logos: { src: string; alt: string; height?: number }[]; className?: string }) {
+  return (
+    <div className={`flex items-center gap-5 md:gap-7 ${className}`}>
+      {logos.map((l, i) => (
+        <div key={l.src} className="flex items-center gap-5 md:gap-7">
+          {i > 0 && <span className="text-text-muted/50 text-[18px] font-light leading-none select-none">×</span>}
+          <img src={l.src} alt={l.alt} style={{ height: l.height ?? 24 }} className="w-auto select-none pointer-events-none" />
+        </div>
+      ))}
+    </div>
+  );
+}
+
 export function PlanCover() {
   const PLAN = usePlan();
-  const { label, title, subtitle, partnership, prepared, date, backgroundImage, logo } = PLAN.cover;
+  const { label, title, subtitle, partnership, prepared, date, backgroundImage, logo, partnerLogos } = PLAN.cover;
 
   return (
     <section
@@ -22,7 +35,18 @@ export function PlanCover() {
         </>
       )}
 
-      {logo && (
+      {partnerLogos && partnerLogos.length > 0 && (
+        <motion.div
+          initial={{ opacity: 0, y: -8 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
+          className="self-start mb-6 md:mb-8"
+        >
+          <PartnerLockup logos={partnerLogos} />
+        </motion.div>
+      )}
+
+      {logo && !partnerLogos && (
         <motion.img
           src={logo}
           alt="Crowd Control Digital"

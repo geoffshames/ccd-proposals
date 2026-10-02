@@ -10,16 +10,20 @@ export const kiiikiiiPlan: StrategyPlanData = {
     label: "U.S. Growth Plan",
     title: "KiiiKiii",
     subtitle: "Three workstreams to convert the audience KiiiKiii already has in the United States: first-party fan data, physical sales, and U.S. market lift.",
-    partnership: "Transparent Arts × Crowd Control Digital",
-    prepared: "Geoff Shames / Co-Founder, Crowd Control Digital",
+    partnership: "A joint offering from Transparent Arts and Crowd Control Digital",
+    prepared: "Transparent Arts and Crowd Control Digital",
     date: "October 2026",
     backgroundImage: "/images/kiiikiii/kiiikiii-group.jpg",
+    partnerLogos: [
+      { src: "/images/kiiikiii/ta-logo-white.png", alt: "Transparent Arts", height: 36 },
+      { src: "/brand/CC-LOGO-2024-WHITE.png", alt: "Crowd Control Digital", height: 22 },
+    ],
   },
 
   approveCta: {
     label: "Approve",
     sentLabel: "Sent. Our team will be in touch.",
-    caption: "APPROVALS NOTIFY CROWD CONTROL DIGITAL",
+    caption: "APPROVALS NOTIFY TRANSPARENT ARTS AND CROWD CONTROL DIGITAL",
   },
 
   sections: [
@@ -230,7 +234,7 @@ export const kiiikiiiPlan: StrategyPlanData = {
       navLabel: "Track Record",
       title: "The Same Three Workstreams, Run Before",
       philosophy: "A current K-pop engagement, under NDA. The label and artist cannot be named, but every figure below is from that campaign's own reporting.",
-      intro: "Crowd Control Digital runs an active U.S. campaign for a K-pop act on a major Korean label, entering at week seven of a single's release cycle with U.S. and Canada targeting only. The numbers below cover June 15 to September 2, 2026. They are included because two of the three workstreams proposed here are the same two that produced these results.",
+      intro: "Crowd Control Digital, which leads media and data in this partnership, runs an active U.S. campaign for a K-pop act on a major Korean label, entering at week seven of a single's release cycle with U.S. and Canada targeting only. The numbers below cover June 15 to September 2, 2026. They are included because two of the three workstreams proposed here are the same two that produced these results.",
       subBlocks: [
         {
           label: "A",
@@ -449,7 +453,7 @@ export const kiiikiiiPlan: StrategyPlanData = {
               ],
               highlightX: ["Billboard 200\nentry"],
               note: "Planning ranges drawn from the 2026 results above. Final targets are set once a release date is confirmed, because every chart week has a different field.",
-              source: "Crowd Control Digital analysis of 2026 Billboard results",
+              source: "Transparent Arts and Crowd Control Digital analysis of 2026 Billboard results",
             },
           ],
         },
@@ -512,7 +516,7 @@ export const kiiikiiiPlan: StrategyPlanData = {
           ],
         },
       ],
-      footnote: "Ratios: Luminate published album-equivalent weighting, effective week 1 of 2026. The Hot 100 is a separate song chart with its own formula, and album purchases do not count toward it; this workstream targets the Billboard 200 and Top Album Sales, which is where an EP competes. Peer figures: Billboard chart reporting on Luminate data. Product decisions, manufacturing and release timing remain with Starship; Crowd Control Digital plans and executes the U.S. marketing around them.",
+      footnote: "Ratios: Luminate published album-equivalent weighting, effective week 1 of 2026. The Hot 100 is a separate song chart with its own formula, and album purchases do not count toward it; this workstream targets the Billboard 200 and Top Album Sales, which is where an EP competes. Peer figures: Billboard chart reporting on Luminate data. Product decisions, manufacturing and release timing remain with Starship; Transparent Arts and Crowd Control Digital plan and execute the U.S. marketing around them.",
     },
 
     // ===================================================================
@@ -587,7 +591,7 @@ export const kiiikiiiPlan: StrategyPlanData = {
           label: "C",
           title: "Clipping and Seeding, Sized Honestly",
           objective: "Use creator volume where it works, and say clearly where it does not.",
-          strategy: "Clipping works at scale and only at scale. A quarter of a million impressions changes nothing measurable. Twenty-five million can move an act, and at roughly a dollar CPM that is about twenty-five thousand dollars, which is a sensible place to start. Crowd Control Digital built the back end for one of the largest clipping platforms in the market and buys at rates the agency market does not have access to, so the same budget delivers materially more volume here than it would anywhere else. Content produced through clipping is also licensed back into paid, which lowers creative costs across the rest of the plan.",
+          strategy: "Clipping works at scale and only at scale. A quarter of a million impressions changes nothing measurable. Twenty-five million is the point where it starts to move an act, and fifty million is where we would plan the first window: at roughly a dollar CPM, about fifty thousand dollars. Crowd Control Digital built the back end for one of the largest clipping platforms in the market and buys at rates the agency market does not have access to, so the same budget delivers materially more volume here than it would anywhere else. Content produced through clipping is also licensed back into paid, which lowers creative costs across the rest of the plan.",
           charts: [
             {
               kind: "bars",
@@ -599,12 +603,13 @@ export const kiiikiiiPlan: StrategyPlanData = {
                   points: [
                     { x: "No measurable\neffect  250K", y: 250000 },
                     { x: "Minimum viable\n~12.5M", y: 12500000 },
-                    { x: "Starting budget\n25M", y: 25000000 },
+                    { x: "Starts to move\nan act  25M", y: 25000000 },
+                    { x: "First-window\nplan  50M", y: 50000000 },
                   ],
                 },
               ],
-              highlightX: ["Starting budget\n25M"],
-              note: "At roughly a $1 CPM, 25M impressions is about $25,000, which is a realistic entry point rather than a minimum commitment. Below the floor the spend buys noise, which is why we would rather not run it than run it small.",
+              highlightX: ["First-window\nplan  50M"],
+              note: "At roughly a $1 CPM, 50M impressions is about $50,000, which is the clipping line in the recommended 90-day budget. Below the floor the spend buys noise, which is why we would rather not run it than run it small.",
               source: "Crowd Control Digital clipping benchmarks, 2026",
             },
           ],
@@ -636,8 +641,8 @@ export const kiiikiiiPlan: StrategyPlanData = {
           description: "We do not put a number on streaming lift, because nobody can predict it honestly. We report streaming weekly and work it hard through the tactics above. What we commit to is followers, audience growth, fan data, and units, which are all measurable and attributable.",
         },
         {
-          label: "Clear Division of Labor",
-          description: "Crowd Control Digital runs numbers, media, data, and creative testing. Transparent Arts runs A&R, press, and relationships. Neither side sells the other's expertise, and both sides sit on the same weekly call.",
+          label: "One Team, Two Specialties",
+          description: "This is a single joint offering. Transparent Arts leads U.S. go-to-market, artist and label relationships, A&R and press. Crowd Control Digital leads media, data, fan capture and creative testing. Starship gets one team, one weekly call and one report.",
         },
       ],
       messaging: [
@@ -797,20 +802,20 @@ export const kiiikiiiPlan: StrategyPlanData = {
       number: "09",
       navLabel: "Investment",
       title: "Investment",
-      intro: "A monthly retainer for strategy, execution and reporting across all three workstreams, with working media billed separately at cost plus management. The first 90 days are the test window: media starts deliberately small, and the week-four and week-eight checkpoints decide where it scales. Starship approves every dollar of working media before it is committed.",
+      intro: "One joint monthly retainer from Transparent Arts and Crowd Control Digital for strategy, execution and reporting across all three workstreams, with working media billed separately at cost plus management. The first 90 days are the test window: media starts deliberately small, and the week-four and week-eight checkpoints decide where it scales. Starship approves every dollar of working media before it is committed.",
       breakdownLabel: "Commercial Structure",
       deployableLabel: "Term",
       tiers: [
         {
           label: "Retainer",
-          budget: "$5,000 / month",
-          name: "Three-Workstream U.S. Retainer",
-          tagline: "Strategy, campaign execution, fan-data build, physical planning, creative direction, weekly reporting, and a weekly call with Starship and Transparent Arts.",
+          budget: "$10,000 / month",
+          name: "Joint Three-Workstream U.S. Retainer",
+          tagline: "U.S. go-to-market strategy, campaign execution, fan-data build, physical planning, creative direction, label and press coordination, weekly reporting, and a weekly call with Starship.",
           featured: true,
           deployable: "90-day initial window, then month to month",
           breakdown: [
-            { vertical: "Monthly retainer", amount: "$5,000" },
-            { vertical: "Initial window", amount: "90 days / $15,000" },
+            { vertical: "Monthly retainer", amount: "$10,000" },
+            { vertical: "Initial window", amount: "90 days / $30,000" },
             { vertical: "Working media and creators", amount: "Starship-approved" },
             { vertical: "Management on working media", amount: "15% of spend" },
             { vertical: "Physical product and manufacturing", amount: "Label-side" },
@@ -818,16 +823,16 @@ export const kiiikiiiPlan: StrategyPlanData = {
         },
         {
           label: "Illustrative 90 Days",
-          budget: "$84,000",
+          budget: "$168,000",
           name: "Recommended Starting Budget",
           tagline: "One way to fund the first window. Media lines are starting points that move at each checkpoint toward whatever is working.",
-          deployable: "$60,000 working media in market",
+          deployable: "$120,000 working media in market",
           breakdown: [
-            { vertical: "Retainer, 3 months", amount: "$15,000" },
-            { vertical: "U.S. paid social (followers, audience, retargeting)", amount: "$25,000" },
-            { vertical: "Clipping and creator seeding", amount: "$25,000" },
-            { vertical: "Fan-data acquisition", amount: "$10,000" },
-            { vertical: "Management, 15% of $60,000", amount: "$9,000" },
+            { vertical: "Retainer, 3 months", amount: "$30,000" },
+            { vertical: "U.S. paid social (followers, audience, retargeting)", amount: "$50,000" },
+            { vertical: "Clipping and creator seeding", amount: "$50,000" },
+            { vertical: "Fan-data acquisition", amount: "$20,000" },
+            { vertical: "Management, 15% of $120,000", amount: "$18,000" },
           ],
         },
       ],
@@ -835,8 +840,8 @@ export const kiiikiiiPlan: StrategyPlanData = {
         {
           name: "Lighter Start",
           subtitle: "Same structure, smaller pool",
-          budget: "$43,750",
-          description: "Retainer for 90 days ($15,000) plus $25,000 of working media split between U.S. paid and fan-data acquisition, and $3,750 management. Clipping is added at the first checkpoint if the early read supports it.",
+          budget: "$87,500",
+          description: "Retainer for 90 days ($30,000) plus $50,000 of working media split between U.S. paid and fan-data acquisition, and $7,500 management. Clipping is added at the first checkpoint if the early read supports it.",
         },
         {
           name: "Release-Week Physical Push",

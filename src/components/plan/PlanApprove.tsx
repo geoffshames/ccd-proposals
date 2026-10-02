@@ -39,6 +39,16 @@ export function PlanApprove() {
   return (
     <section id="approve" className="px-6 md:px-12 lg:px-24 py-24 md:py-32">
       <div className="max-w-3xl mx-auto text-center">
+        {PLAN.cover.partnerLogos && PLAN.cover.partnerLogos.length > 0 && (
+          <div className="flex items-center justify-center gap-5 md:gap-7 mb-12">
+            {PLAN.cover.partnerLogos.map((l, i) => (
+              <div key={l.src} className="flex items-center gap-5 md:gap-7">
+                {i > 0 && <span className="text-text-muted/50 text-[18px] font-light leading-none select-none">×</span>}
+                <img src={l.src} alt={l.alt} style={{ height: l.height ?? 24 }} className="w-auto select-none pointer-events-none" />
+              </div>
+            ))}
+          </div>
+        )}
         <motion.button
           onClick={onApprove}
           disabled={state === "loading" || done}

@@ -744,6 +744,7 @@ export type StrategyPlanData = {
     date: string;
     backgroundImage?: string;
     logo?: string;
+    partnerLogos?: { src: string; alt: string; height?: number }[];
   };
 
   ogImage?: string;
