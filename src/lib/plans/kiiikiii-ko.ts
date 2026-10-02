@@ -10,16 +10,20 @@ export const kiiikiiiPlanKorean: StrategyPlanData = {
     label: "미국 성장 계획",
     title: "KiiiKiii",
     subtitle: "KiiiKiii가 미국에서 이미 확보한 팬층을 전환하기 위한 세 가지 실행 과제: 퍼스트 파티 팬 데이터, 실물 음반 판매, 미국 시장 성장.",
-    partnership: "Transparent Arts × Crowd Control Digital",
-    prepared: "Geoff Shames / 공동 창립자, Crowd Control Digital",
+    partnership: "Transparent Arts와 Crowd Control Digital의 공동 제안",
+    prepared: "Transparent Arts와 Crowd Control Digital",
     date: "2026년 10월",
     backgroundImage: "/images/kiiikiii/kiiikiii-group.jpg",
+    partnerLogos: [
+      { src: "/images/kiiikiii/ta-logo-white.png", alt: "Transparent Arts", height: 36 },
+      { src: "/brand/CC-LOGO-2024-WHITE.png", alt: "Crowd Control Digital", height: 22 },
+    ],
   },
 
   approveCta: {
     label: "승인",
     sentLabel: "전송되었습니다. 저희 팀에서 연락드리겠습니다.",
-    caption: "승인 알림 CROWD CONTROL DIGITAL",
+    caption: "승인 시 Transparent Arts 및 Crowd Control Digital에 통보",
   },
 
   sections: [
@@ -230,7 +234,7 @@ export const kiiikiiiPlanKorean: StrategyPlanData = {
       navLabel: "실적",
       title: "이전에 실행된 동일한 세 가지 워크스트림",
       philosophy: "현재 K-pop 관련 활동으로, NDA(비밀 유지 협약) 하에 있습니다. 레이블과 아티스트는 이름을 밝힐 수 없지만, 아래 모든 수치는 해당 캠페인의 자체 보고서에서 나온 것입니다.",
-      intro: "Crowd Control Digital은 주요 한국 레이블 소속 K팝 아티스트를 대상으로 미국 캠페인을 활발히 진행 중이며, 싱글 발매 7주차에 미국과 캐나다만을 타겟으로 진입했습니다. 아래 수치는 2026년 6월 15일부터 9월 2일까지의 기간을 다룹니다. 본 수치가 포함된 이유는 여기에 제안된 세 가지 워크스트림 중 두 가지가 이러한 결과를 도출한 것과 동일하기 때문입니다.",
+      intro: "본 파트너십에서 미디어 및 데이터를 주도하는 Crowd Control Digital은 주요 한국 레이블의 K팝 아티스트를 대상으로 미국 내 활발한 캠페인을 진행 중이며, 싱글 발매 주기 7주차부터 미국 및 캐나다만을 대상으로 합니다. 아래 수치는 2026년 6월 15일부터 9월 2일까지의 기간을 포함합니다. 본 수치가 포함된 이유는 여기에 제안된 세 가지 워크스트림 중 두 가지가 이러한 결과를 도출한 것과 동일하기 때문입니다.",
       subBlocks: [
         {
           label: "A",
@@ -449,7 +453,7 @@ export const kiiikiiiPlanKorean: StrategyPlanData = {
               ],
               highlightX: ["Billboard 200 진입"],
               note: "상기 2026년 결과에 따른 계획 범위입니다. 차트 집계 주마다 필드가 다르므로 릴리스 날짜가 확정된 후에 최종 목표가 설정됩니다.",
-              source: "Crowd Control Digital의 2026년 Billboard 결과 분석",
+              source: "Transparent Arts 및 Crowd Control Digital의 2026년 빌보드 결과 분석",
             },
           ],
         },
@@ -512,7 +516,7 @@ export const kiiikiiiPlanKorean: StrategyPlanData = {
           ],
         },
       ],
-      footnote: "비율: 2026년 1주차부터 적용되는 Luminate 발표 앨범 등가 가중치. Hot 100은 자체 공식이 있는 별도의 곡 차트이며, 앨범 구매는 이에 포함되지 않습니다. 본 워크스트림은 EP가 경쟁하는 Billboard 200 및 Top Album Sales를 목표로 합니다. 동종 업계 수치: Luminate 데이터를 기반으로 한 Billboard 차트 보고. 제품 결정, 제조 및 출시 시기는 Starship이 담당하며, Crowd Control Digital은 이를 중심으로 미국 마케팅을 계획하고 실행합니다.",
+      footnote: "비율: Luminate는 2026년 1주차부터 앨범 등가 가중치를 발표했습니다. Hot 100은 자체 공식이 있는 별도의 곡 차트이며, 앨범 구매는 이에 포함되지 않습니다. 본 워크스트림은 EP가 경쟁하는 Billboard 200 및 Top Album Sales를 목표로 합니다. 동종 업계 수치: Luminate 데이터에 대한 빌보드 차트 보고. 제품 결정, 제조 및 출시 시기는 Starship이 담당하며, Transparent Arts와 Crowd Control Digital은 이를 중심으로 미국 마케팅을 계획하고 실행합니다.",
     },
 
     // ===================================================================
@@ -587,7 +591,7 @@ export const kiiikiiiPlanKorean: StrategyPlanData = {
           label: "C",
           title: "클리핑 및 시딩, 합리적인 규모로",
           objective: "효과가 있는 곳에서는 크리에이터 볼륨을 활용하고, 효과가 없는 곳은 명확히 말씀드리겠습니다.",
-          strategy: "클리핑은 규모를 통해서만, 오직 규모를 통해서만 효과를 발휘합니다. 25만 회의 노출은 측정 가능한 변화를 전혀 일으키지 못합니다. 2,500만 회의 노출은 아티스트를 움직일 수 있으며, 대략 1달러의 CPM 기준으로 약 2만 5천 달러가 소요되는데, 이는 시작하기에 합리적인 지점입니다. Crowd Control Digital은 시장에서 가장 큰 클리핑 플랫폼 중 하나의 백엔드를 구축했으며, 에이전시 시장에서는 접근할 수 없는 요율로 구매하므로 동일한 예산으로 다른 어떤 곳보다 실질적으로 더 많은 볼륨을 제공합니다. 클리핑을 통해 제작된 콘텐츠는 유료 광고로도 라이선스되어 계획의 나머지 부분에 대한 크리에이티브 비용을 절감합니다.",
+          strategy: "클리핑은 규모 있게, 오직 규모 있게 작동합니다. 25만 회 노출은 측정 가능한 변화를 일으키지 못합니다. 2500만 회가 아티스트를 움직이기 시작하는 시점이며, 5000만 회는 첫 번째 윈도우를 계획할 시점입니다. 대략 1달러 CPM으로 약 5만 달러입니다. Crowd Control Digital은 시장에서 가장 큰 클리핑 플랫폼 중 하나의 백엔드를 구축했으며, 에이전시 시장이 접근할 수 없는 요율로 구매하므로 동일한 예산으로 다른 어떤 곳보다 실질적으로 더 많은 볼륨을 제공합니다. 클리핑을 통해 생산된 콘텐츠는 유료 광고로도 라이선스되어 계획의 나머지 부분에 대한 크리에이티브 비용을 절감합니다.",
           charts: [
             {
               kind: "bars",
@@ -599,12 +603,13 @@ export const kiiikiiiPlanKorean: StrategyPlanData = {
                   points: [
                     { x: "측정 불가\n효과 없음 250K", y: 250000 },
                     { x: "최소 실행\n~1,250만", y: 12500000 },
-                    { x: "시작 예산\n2,500만", y: 25000000 },
+                    { x: "아티스트를 움직이기 시작하는 시점 25M", y: 25000000 },
+                    { x: "첫 번째 윈도우 계획 50M", y: 50000000 },
                   ],
                 },
               ],
-              highlightX: ["시작 예산\n2,500만"],
-              note: "대략 1달러의 CPM 기준으로 2,500만 회의 노출은 약 2만 5천 달러로, 이는 최소한의 약정이라기보다는 현실적인 진입점입니다. 이 기준 이하의 지출은 노이즈만 발생시키므로, 소규모로 실행하기보다는 아예 실행하지 않는 것이 낫습니다.",
+              highlightX: ["첫 번째 윈도우 계획 50M"],
+              note: "대략 1달러 CPM으로 5000만 회 노출은 약 5만 달러이며, 이는 권장 90일 예산의 클리핑 라인입니다. 이 기준 이하의 지출은 노이즈만 발생시키므로, 소규모로 실행하는 것보다 실행하지 않는 것이 낫습니다.",
               source: "Crowd Control Digital 클리핑 벤치마크, 2026",
             },
           ],
@@ -636,8 +641,8 @@ export const kiiikiiiPlanKorean: StrategyPlanData = {
           description: "스트리밍 증가량에 대한 수치는 정직하게 예측할 수 없으므로 제시하지 않습니다. 스트리밍은 주간 단위로 보고하며, 위에서 언급한 전술을 통해 적극적으로 관리합니다. 저희가 약속드리는 것은 측정 가능하고 귀속 가능한 팔로워, 잠재고객 성장, 팬 데이터 및 유닛 판매량입니다.",
         },
         {
-          label: "업무 분담 명확화",
-          description: "Crowd Control Digital은 수치, 미디어, 데이터 및 크리에이티브 테스트를 담당합니다. Transparent Arts는 A&R, 언론 및 관계 관리를 담당합니다. 양측은 서로의 전문성을 침범하지 않으며, 매주 같은 회의에 참석합니다.",
+          label: "하나의 팀, 두 가지 전문 분야",
+          description: "이는 단일 공동 제안입니다. Transparent Arts는 미국 시장 진출, 아티스트 및 레이블 관계, A&R 및 홍보를 주도합니다. Crowd Control Digital은 미디어, 데이터, 팬 확보 및 크리에이티브 테스트를 주도합니다. Starship은 하나의 팀, 주간 1회 통화, 1개의 보고서를 받습니다.",
         },
       ],
       messaging: [
@@ -797,20 +802,20 @@ export const kiiikiiiPlanKorean: StrategyPlanData = {
       number: "09",
       navLabel: "투자",
       title: "투자",
-      intro: "전략, 실행 및 보고를 위한 월간 리테이너가 세 가지 워크스트림 전반에 걸쳐 적용되며, 워킹 미디어는 별도로 실비에 관리비를 더하여 청구됩니다. 첫 90일은 테스트 기간으로, 미디어 집행은 의도적으로 소규모로 시작하며, 4주차 및 8주차 점검 시점에서 규모 확대를 결정합니다. Starship은 워킹 미디어에 대한 모든 지출을 약정 전에 승인합니다.",
+      intro: "전체 세 가지 워크스트림에 대한 전략, 실행 및 보고를 위한 Transparent Arts와 Crowd Control Digital의 월간 공동 리테이너이며, 집행 미디어는 비용에 관리비를 더하여 별도로 청구됩니다. 첫 90일은 테스트 기간입니다. 미디어 집행은 의도적으로 소규모로 시작되며, 4주차 및 8주차 점검에서 규모 확대를 결정합니다. Starship은 집행 미디어의 모든 달러를 약정 전에 승인합니다.",
       breakdownLabel: "상업 구조",
       deployableLabel: "기간",
       tiers: [
         {
           label: "리테이너",
-          budget: "$5,000 / month",
-          name: "3개 워크스트림 미국 리테이너",
-          tagline: "전략, 캠페인 실행, 팬 데이터 구축, 실물 기획, 크리에이티브 디렉션, 주간 보고, 그리고 Starship 및 Transparent Arts와의 주간 통화.",
+          budget: "$10,000 / month",
+          name: "공동 3개 워크스트림 미국 리테이너",
+          tagline: "미국 시장 진출 전략, 캠페인 실행, 팬 데이터 구축, 물리적 계획, 크리에이티브 디렉션, 레이블 및 홍보 조정, 주간 보고, Starship과의 주간 통화.",
           featured: true,
           deployable: "90일 초기 기간, 이후 월별 계약",
           breakdown: [
-            { vertical: "월간 리테이너", amount: "$5,000" },
-            { vertical: "초기 기간", amount: "90일 / $15,000" },
+            { vertical: "월간 리테이너", amount: "$10,000" },
+            { vertical: "초기 기간", amount: "90일 / $30,000" },
             { vertical: "워킹 미디어 및 크리에이터", amount: "Starship 승인" },
             { vertical: "워킹 미디어 관리", amount: "지출의 15%" },
             { vertical: "실물 제품 및 제조", amount: "레이블 측" },
@@ -818,16 +823,16 @@ export const kiiikiiiPlanKorean: StrategyPlanData = {
         },
         {
           label: "90일 예시",
-          budget: "$84,000",
+          budget: "$168,000",
           name: "권장 시작 예산",
           tagline: "첫 기간 자금 조달 방법 중 하나입니다. 미디어 라인은 각 점검 시점에서 효과적인 부분으로 이동하는 시작점입니다.",
-          deployable: "$60,000 working media in market",
+          deployable: "$120,000 working media in market",
           breakdown: [
-            { vertical: "리테이너, 3개월", amount: "$15,000" },
-            { vertical: "미국 유료 소셜 (팔로워, 오디언스, 리타겟팅)", amount: "$25,000" },
-            { vertical: "클리핑 및 크리에이터 시딩", amount: "$25,000" },
-            { vertical: "팬 데이터 확보", amount: "$10,000" },
-            { vertical: "매니지먼트, $60,000의 15%", amount: "$9,000" },
+            { vertical: "리테이너, 3개월", amount: "$30,000" },
+            { vertical: "미국 유료 소셜 (팔로워, 오디언스, 리타겟팅)", amount: "$50,000" },
+            { vertical: "클리핑 및 크리에이터 시딩", amount: "$50,000" },
+            { vertical: "팬 데이터 확보", amount: "$20,000" },
+            { vertical: "관리비, $120,000의 15%", amount: "$18,000" },
           ],
         },
       ],
@@ -835,8 +840,8 @@ export const kiiikiiiPlanKorean: StrategyPlanData = {
         {
           name: "가벼운 시작",
           subtitle: "동일한 구조, 더 작은 풀",
-          budget: "$43,750",
-          description: "90일간의 리테이너($15,000)와 미국 유료 및 팬 데이터 확보에 분배될 워킹 미디어 $25,000, 그리고 매니지먼트 $3,750. 초기 분석 결과가 뒷받침할 경우 첫 번째 체크포인트에서 클리핑이 추가됩니다.",
+          budget: "$87,500",
+          description: "90일 리테이너($30,000)에 미국 유료 광고 및 팬 데이터 확보에 분할될 $50,000의 집행 미디어, 그리고 $7,500의 관리비가 추가됩니다. 초기 결과가 뒷받침할 경우 첫 번째 점검 시 클리핑이 추가됩니다.",
         },
         {
           name: "발매 주간 실물 앨범 푸시",
