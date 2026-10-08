@@ -881,3 +881,19 @@
 .calcTotal span { font-family: var(--mono); font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--paper); }
 .calcTotal b { font-family: var(--display); font-size: clamp(2.4rem, 4vw, 3.6rem); letter-spacing: -0.04em; color: var(--red); line-height: 1; }
 @media (max-width: 1000px) { .tiers { grid-template-columns: 1fr; } .calc { grid-template-columns: 1fr; } }
+.tiers { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.earnIntro { color: var(--text2); font-size: 16px; line-height: 1.6; max-width: 640px; margin: -6px 0 22px; }
+.earn { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--red); }
+.earn > div { background: var(--ink2); padding: clamp(22px, 2.4vw, 32px); display: flex; flex-direction: column; gap: 10px; }
+.earn b { font-family: var(--display); font-size: clamp(3rem, 5vw, 4.6rem); letter-spacing: -0.04em; line-height: 0.9; color: var(--red); }
+.earn h4 { font-family: var(--display); text-transform: uppercase; font-size: 1.25rem; letter-spacing: -0.01em; line-height: 1; margin-top: 6px; }
+.earn p { color: var(--muted); font-size: 14px; line-height: 1.55; }
+.addons { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line); }
+.addons > div { background: var(--ink); padding: 24px 22px; display: flex; flex-direction: column; gap: 10px; }
+.addons h4 { font-family: var(--display); text-transform: uppercase; font-size: 1.2rem; letter-spacing: -0.01em; line-height: 1.05; }
+.addPrice { display: flex; align-items: baseline; gap: 8px; border-top: 1px solid var(--line); padding-top: 12px; }
+.addPrice b { font-family: var(--display); font-size: 1.9rem; letter-spacing: -0.03em; line-height: 1; }
+.addPrice span { color: var(--muted); font-size: 13px; }
+.addons p { color: var(--muted); font-size: 13.5px; line-height: 1.55; }
+@media (max-width: 1000px) { .tiers { grid-template-columns: 1fr; } .earn, .addons { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 600px) { .earn, .addons { grid-template-columns: 1fr; } }

@@ -1739,9 +1739,13 @@ function Pricing() {
     const h = PRICING.tiers[i].hours;
     setHours(Math.round((h[0] + h[1]) / 2));
   };
+  const [adds, setAdds] = useState<string[]>([]);
+  const monthlyAdds = PRICING.addons.filter((a) => "monthly" in a && a.monthly) as { k: string; monthly: number }[];
+  const toggle = (k: string) => setAdds((cur) => (cur.includes(k) ? cur.filter((x) => x !== k) : [...cur, k]));
   const fee = (spend * PRICING.fee) / 100;
   const creative = hours * PRICING.rate;
-  const total = t.retainer + fee + creative;
+  const addTotal = monthlyAdds.filter((a) => adds.includes(a.k)).reduce((n, a) => n + a.monthly, 0);
+  const total = t.retainer + fee + creative + addTotal;
   return (
     <section className={s.section} id="pricing">
       <Head n="11" label="Pricing" title="Pricing">
@@ -1776,6 +1780,37 @@ function Pricing() {
       </div>
 
       <Reveal className={s.sub}>
+        <SubHead title={PRICING.earn.title} aside="Paid on results" />
+        <p className={s.earnIntro}>{PRICING.earn.intro}</p>
+        <div className={s.earn}>
+          {PRICING.earn.items.map((x) => (
+            <div key={x.h}>
+              <b>{x.big}</b>
+              <h4>{x.h}</h4>
+              <p>{x.b}</p>
+            </div>
+          ))}
+        </div>
+      </Reveal>
+
+      <Reveal className={s.sub}>
+        <SubHead title="Add-ons" aside="On top of either option" />
+        <div className={s.addons}>
+          {PRICING.addons.map((x) => (
+            <div key={x.k}>
+              <span className={`${s.mono} ${s.red}`}>{x.g}</span>
+              <h4>{x.k}</h4>
+              <div className={s.addPrice}>
+                <b>{x.price}</b>
+                {"unit" in x && x.unit && <span>{x.unit}</span>}
+              </div>
+              <p>{x.b}</p>
+            </div>
+          ))}
+        </div>
+      </Reveal>
+
+      <Reveal className={s.sub}>
         <SubHead title="Estimate a month" aside="Drag to try a spend level" />
         <div className={s.calc}>
           <div className={s.calcIn}>
@@ -1798,6 +1833,16 @@ function Pricing() {
               </span>
               <input type="range" min={0} max={100} step={5} value={hours} onChange={(e) => setHours(+e.target.value)} />
             </label>
+            <div className={`${s.mono} ${s.dim}`} style={{ marginBottom: 10 }}>
+              Monthly add-ons
+            </div>
+            <div className={s.tabs} role="group" aria-label="Monthly add-ons" style={{ marginBottom: 0 }}>
+              {monthlyAdds.map((a) => (
+                <button key={a.k} aria-pressed={adds.includes(a.k)} onClick={() => toggle(a.k)}>
+                  + {a.k}
+                </button>
+              ))}
+            </div>
           </div>
           <div className={s.calcOut}>
             <div className={s.calcRow}>
@@ -1816,11 +1861,19 @@ function Pricing() {
               </span>
               <b>{usd(creative)}</b>
             </div>
+            {monthlyAdds
+              .filter((a) => adds.includes(a.k))
+              .map((a) => (
+                <div className={s.calcRow} key={a.k}>
+                  <span>{a.k}</span>
+                  <b>{usd(a.monthly)}</b>
+                </div>
+              ))}
             <div className={s.calcTotal}>
               <span>Monthly fees</span>
               <b>{usd(total)}</b>
             </div>
-            <p className={s.note}>Media spend of {usd(spend)} is paid by the festival directly to the platforms and is not included above.</p>
+            <p className={s.note}>Media spend of {usd(spend)} is paid by the festival directly to the platforms and is not included above. Project, show-week and commission items are billed separately.</p>
           </div>
         </div>
       </Reveal>

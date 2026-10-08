@@ -798,7 +798,7 @@ export const CREATIVE = {
 
 export const PRICING = {
   intro:
-    "Three ways to work together. Each is a monthly retainer plus a management fee on paid media, with creative billed by the hour against an estimate you approve each month. Full Marketing covers the plan on this page end to end.",
+    "Two ways to work together. Each is a monthly retainer plus a management fee on paid media, with creative billed by the hour against an estimate you approve each month. Full Marketing covers the plan on this page end to end. Add-ons sit on top, and the partnership work is paid on results.",
   tiers: [
     {
       k: "Paid Media",
@@ -825,34 +825,39 @@ export const PRICING = {
         "Community management and the reply desk",
         "Email and SMS list program, presale codes and drops",
         "Creator and reaction-creator seeding",
-        "Site and funnel fixes, and the move to the new name",
+        "Funnel and landing-page fixes",
         "Monthly sentiment and share-of-voice tracking",
         "A dedicated strategy lead and biweekly calls",
-      ],
-    },
-    {
-      k: "Full Season",
-      retainer: 15000,
-      hours: [50, 80] as [number, number],
-      lead: "Full Marketing plus the people on the ground at show week.",
-      items: [
-        "Everything in Full Marketing",
-        "On-site content team at show week: stage-out crowd, artist moments, 24-hour recap",
-        "Artist and partner collab coordination",
-        "Sponsor content packages built in the formats that perform",
-        "Show-week command center: live updates, weather and entry comms",
-        "Spanish-language program",
-        "Full-set YouTube channel build and archive programming",
       ],
     },
   ],
   fee: 15,
   rate: 100,
+  earn: {
+    title: "We earn when you earn",
+    intro: "Partnership work is paid on results. If we don't bring the deal in, it costs nothing.",
+    items: [
+      { big: "20%", h: "Sponsorships and partnerships", b: "Of the cash value of sponsor and brand partner deals we source and close." },
+      { big: "20%", h: "Travel and hotel partners", b: "Of revenue share or partner fees from Vegas hotel blocks, fly-in packages and airline tie-ins." },
+      { big: "20%", h: "Streaming and broadcast", b: "Of the rights fee for a livestream or recap partner we bring to the table." },
+      { big: "Bonus", h: "Sell out early", b: "A flat bonus, set together at signing, if GA sells out by an agreed date." },
+    ],
+  },
+  addons: [
+    { g: "Project", k: "New-name brand system", price: "Up to $10,000", b: "Logo, type, color and usage rules for the R&B Love Festival identity, built to work in ads first." },
+    { g: "Project", k: "Website rebuild and name migration", price: "$10,000", b: "New site on the new name, domain move, redirects that keep search traffic, and the ticketing hookup." },
+    { g: "Show week", k: "Show-week command center", price: "$5,000", unit: "flat", b: "Live updates, weather and entry comms, and the reply desk staffed through the weekend." },
+    { g: "Monthly", k: "Live ticket pacing dashboard", price: "$1,500", unit: "/mo", monthly: 1500, b: "Our pacing system on your ticketing exports, so spend moves with sales every day." },
+    { g: "Monthly", k: "YouTube archive channel", price: "$2,000", unit: "/mo", monthly: 2000, b: "Full sets, anniversary uploads and Shorts from the archive, programmed weekly." },
+    { g: "Pass-through", k: "Creator program at scale", price: "15%", unit: "handling", b: "Paid creator deals beyond seeding. Creator fees pass through at cost, plus 15% handling." },
+    { g: "Billed to sponsor", k: "Sponsor content packages", price: "Cost + 20%", b: "Content we make for the festival's sponsors, sold into their packages and billed to the sponsor." },
+    { g: "Expansion", k: "Spin-off events", price: "$5,000", unit: "per event", b: "After-parties, presents shows and residency nights up to 5,000 capacity, plus 15% of that event's spend. Larger events quoted separately." },
+  ],
   terms: [
     { h: "Six-month minimum", b: "Month to month after the first six months." },
     { h: "Media billed direct", b: "Ad spend is paid by the festival directly to the platforms. The 15% management fee applies to the spend we manage." },
     { h: "Creative at $100 an hour", b: "Ad cutdowns, statics, motion, AI-generated assets and copy. Billed monthly against an hours estimate you approve in advance." },
-    { h: "Retainer billed monthly", b: "Covers strategy, management, social, community and reporting for the tier you choose." },
+    { h: "Commissions on close", b: "The 20% on partnership deals is invoiced as the partner pays, on first-year value." },
   ],
 };
 
