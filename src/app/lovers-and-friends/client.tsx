@@ -52,6 +52,7 @@ import {
   FUNNEL,
   PLAN,
   CREATIVE,
+  PRICING,
   WHY,
   NEXT,
   SOURCES,
@@ -1723,6 +1724,123 @@ function Creative() {
 }
 
 /* ----------------------------------------------------------------------------
+ * 11 Pricing
+ * ------------------------------------------------------------------------- */
+
+const usd = (n: number) => `$${Math.round(n).toLocaleString("en-US")}`;
+
+function Pricing() {
+  const [tier, setTier] = useState(1);
+  const [spend, setSpend] = useState(50000);
+  const t = PRICING.tiers[tier];
+  const [hours, setHours] = useState(Math.round((t.hours[0] + t.hours[1]) / 2));
+  const pick = (i: number) => {
+    setTier(i);
+    const h = PRICING.tiers[i].hours;
+    setHours(Math.round((h[0] + h[1]) / 2));
+  };
+  const fee = (spend * PRICING.fee) / 100;
+  const creative = hours * PRICING.rate;
+  const total = t.retainer + fee + creative;
+  return (
+    <section className={s.section} id="pricing">
+      <Head n="11" label="Pricing" title="Pricing">
+        {PRICING.intro}
+      </Head>
+      <div className={s.tiers}>
+        {PRICING.tiers.map((x, i) => (
+          <Reveal key={x.k} delay={i * 0.08} style={{ display: "flex" }}>
+            <button className={s.tier} data-rec={"rec" in x && x.rec ? "" : undefined} aria-pressed={tier === i} onClick={() => pick(i)}>
+              {"rec" in x && x.rec && <span className={`${s.tierTag} ${s.mono}`}>Recommended</span>}
+              <span className={`${s.mono} ${s.red}`}>Option {String(i + 1).padStart(2, "0")}</span>
+              <h3>{x.k}</h3>
+              <p className={s.tierLead}>{x.lead}</p>
+              <div className={s.tierPrice}>
+                <b>{usd(x.retainer)}</b>
+                <span>per month</span>
+              </div>
+              <div className={s.tierPlus}>
+                <span>+ {PRICING.fee}% of managed media spend</span>
+                <span>
+                  + creative at ${PRICING.rate}/hr, est. {x.hours[0]} to {x.hours[1]} hrs a month
+                </span>
+              </div>
+              <ul>
+                {x.items.map((it) => (
+                  <li key={it}>{it}</li>
+                ))}
+              </ul>
+            </button>
+          </Reveal>
+        ))}
+      </div>
+
+      <Reveal className={s.sub}>
+        <SubHead title="Estimate a month" aside="Drag to try a spend level" />
+        <div className={s.calc}>
+          <div className={s.calcIn}>
+            <div className={s.tabs} role="group" aria-label="Choose an option" style={{ marginBottom: 22 }}>
+              {PRICING.tiers.map((x, i) => (
+                <button key={x.k} aria-pressed={tier === i} onClick={() => pick(i)}>
+                  {x.k}
+                </button>
+              ))}
+            </div>
+            <label className={s.range}>
+              <span>
+                Monthly media spend <b>{usd(spend)}</b>
+              </span>
+              <input type="range" min={10000} max={250000} step={5000} value={spend} onChange={(e) => setSpend(+e.target.value)} />
+            </label>
+            <label className={s.range}>
+              <span>
+                Creative hours <b>{hours}</b>
+              </span>
+              <input type="range" min={0} max={100} step={5} value={hours} onChange={(e) => setHours(+e.target.value)} />
+            </label>
+          </div>
+          <div className={s.calcOut}>
+            <div className={s.calcRow}>
+              <span>{t.k} retainer</span>
+              <b>{usd(t.retainer)}</b>
+            </div>
+            <div className={s.calcRow}>
+              <span>
+                Management fee, {PRICING.fee}% of {usd(spend)}
+              </span>
+              <b>{usd(fee)}</b>
+            </div>
+            <div className={s.calcRow}>
+              <span>
+                Creative, {hours} hrs at ${PRICING.rate}
+              </span>
+              <b>{usd(creative)}</b>
+            </div>
+            <div className={s.calcTotal}>
+              <span>Monthly fees</span>
+              <b>{usd(total)}</b>
+            </div>
+            <p className={s.note}>Media spend of {usd(spend)} is paid by the festival directly to the platforms and is not included above.</p>
+          </div>
+        </div>
+      </Reveal>
+
+      <Reveal className={s.sub}>
+        <SubHead title="Terms" />
+        <div className={s.why}>
+          {PRICING.terms.map((x) => (
+            <div key={x.h}>
+              <h4>{x.h}</h4>
+              <p>{x.b}</p>
+            </div>
+          ))}
+        </div>
+      </Reveal>
+    </section>
+  );
+}
+
+/* ----------------------------------------------------------------------------
  * 11 Why + 12 Next
  * ------------------------------------------------------------------------- */
 
@@ -1730,7 +1848,7 @@ function Next() {
   return (
     <>
       <section className={s.section} id="why">
-        <Head n="11" label="Crowd Control" title="Why Crowd Control">
+        <Head n="12" label="Crowd Control" title="Why Crowd Control">
           {WHY.intro}
         </Head>
         <Reveal>
@@ -1761,7 +1879,7 @@ function Next() {
         </div>
         <section className={`${s.section} ${s.nextInner}`}>
           <Reveal>
-            <Label n="12">Next steps</Label>
+            <Label n="13">Next steps</Label>
             <h2 className={s.nextTitle}>Next Steps</h2>
           </Reveal>
           <Reveal className={s.sub} style={{ marginTop: 44 }}>
@@ -1874,6 +1992,8 @@ export default function LoversAndFriendsClient() {
         <Plan />
         <div className={s.rule} />
         <Creative />
+        <div className={s.rule} />
+        <Pricing />
         <div className={s.rule} />
         <Next />
       </main>

@@ -20,6 +20,7 @@ export const NAV = [
   { id: "funnel", label: "Funnel" },
   { id: "plan", label: "Plan" },
   { id: "creative", label: "Creative" },
+  { id: "pricing", label: "Pricing" },
   { id: "next", label: "Next" },
 ] as const;
 
@@ -752,8 +753,8 @@ export const CREATIVE = {
     {
       k: "The list is open",
       fmt: "9:16 Story and Reel",
-      video: "poster-loop.mp4",
-      poster: "poster-2027.webp",
+      video: "rnb-poster-loop.mp4",
+      poster: "rnb-poster-2027.webp",
       top: "",
       big: "",
       small: [] as string[],
@@ -764,8 +765,8 @@ export const CREATIVE = {
     {
       k: "1 new message",
       fmt: "9:16 TikTok",
-      video: "flip-phone.mp4",
-      poster: "flip-phone.webp",
+      video: "rnb-flip-phone.mp4",
+      poster: "rnb-flip-phone.webp",
       top: "R&B Love Festival",
       big: "We're back.",
       small: ["2027", "Las Vegas", "Presale from $19.99 down"],
@@ -775,8 +776,8 @@ export const CREATIVE = {
     {
       k: "Wristband POV",
       fmt: "9:16 Reel",
-      video: "wristband.mp4",
-      poster: "wristband.webp",
+      video: "rnb-wristband.mp4",
+      poster: "rnb-wristband.webp",
       top: "Presale",
       big: "Lock in 2027.",
       small: ["List-only presale", "Payment plans available"],
@@ -785,7 +786,7 @@ export const CREATIVE = {
     },
   ],
   stills: [
-    { img: "creative/mixtape.webp", ai: true, k: "Fan lineup ballot", line: "Burn your 2027 mixtape.", why: "Phase 2. Fans pick the lineup with you. It answers the most-asked question and builds the list at the same time." },
+    { img: "creative/rnb-mixtape.webp", ai: true, k: "Fan lineup ballot", line: "Burn your 2027 mixtape.", why: "Phase 2. Fans pick the lineup with you. It answers the most-asked question and builds the list at the same time." },
     { img: "creative/suite.webp", ai: true, k: "Vegas travel bundle", line: "The suite. The squad. The setlist.", why: "Fly-in markets. Sells the trip, not only the ticket, for buyers already planning around Vegas." },
     { img: "photos/missy-fire.webp", ai: false, k: "On this day archive", line: "Three years ago today.", why: "Phase 2. Every big set gets its anniversary, every year. Real footage from the archive, no AI needed." },
   ],
@@ -794,6 +795,66 @@ export const CREATIVE = {
 /* ----------------------------------------------------------------------------
  * 11 Why + 12 Next
  * ------------------------------------------------------------------------- */
+
+export const PRICING = {
+  intro:
+    "Three ways to work together. Each is a monthly retainer plus a management fee on paid media, with creative billed by the hour against an estimate you approve each month. Full Marketing covers the plan on this page end to end.",
+  tiers: [
+    {
+      k: "Paid Media",
+      retainer: 6000,
+      hours: [10, 20] as [number, number],
+      lead: "The paid engine: presale, on-sale and always-on flights.",
+      items: [
+        "Paid strategy and buying on Meta, TikTok, Google Search and YouTube",
+        "Tracking, pixel and audience setup",
+        "Retargeting pools from the live pixels and past-buyer lists",
+        "Presale, on-sale and last-call flights",
+        "Live reporting page, updated daily, with a weekly readout",
+      ],
+    },
+    {
+      k: "Full Marketing",
+      retainer: 10000,
+      hours: [30, 50] as [number, number],
+      rec: true,
+      lead: "The plan on this page, run end to end by one team.",
+      items: [
+        "Everything in Paid Media",
+        "Organic social on Instagram, TikTok, X and Facebook, three to five posts a week",
+        "Community management and the reply desk",
+        "Email and SMS list program, presale codes and drops",
+        "Creator and reaction-creator seeding",
+        "Site and funnel fixes, and the move to the new name",
+        "Monthly sentiment and share-of-voice tracking",
+        "A dedicated strategy lead and biweekly calls",
+      ],
+    },
+    {
+      k: "Full Season",
+      retainer: 15000,
+      hours: [50, 80] as [number, number],
+      lead: "Full Marketing plus the people on the ground at show week.",
+      items: [
+        "Everything in Full Marketing",
+        "On-site content team at show week: stage-out crowd, artist moments, 24-hour recap",
+        "Artist and partner collab coordination",
+        "Sponsor content packages built in the formats that perform",
+        "Show-week command center: live updates, weather and entry comms",
+        "Spanish-language program",
+        "Full-set YouTube channel build and archive programming",
+      ],
+    },
+  ],
+  fee: 15,
+  rate: 100,
+  terms: [
+    { h: "Six-month minimum", b: "Month to month after the first six months." },
+    { h: "Media billed direct", b: "Ad spend is paid by the festival directly to the platforms. The 15% management fee applies to the spend we manage." },
+    { h: "Creative at $100 an hour", b: "Ad cutdowns, statics, motion, AI-generated assets and copy. Billed monthly against an hours estimate you approve in advance." },
+    { h: "Retainer billed monthly", b: "Covers strategy, management, social, community and reporting for the tier you choose." },
+  ],
+};
 
 export const WHY = {
   intro:

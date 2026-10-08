@@ -851,3 +851,33 @@
   .heroStat { font-size: 2.2rem; }
   .dots { grid-template-columns: repeat(auto-fill, minmax(4px, 1fr)); gap: 1px; }
 }
+
+/* pricing */
+.tiers { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line); align-items: stretch; }
+.tier { position: relative; width: 100%; text-align: left; background: var(--ink); padding: clamp(24px, 2.6vw, 36px); display: flex; flex-direction: column; gap: 14px; transition: background 0.3s, box-shadow 0.3s; cursor: pointer; }
+.tier:hover { background: var(--ink2); }
+.tier[aria-pressed="true"] { background: var(--ink2); box-shadow: inset 0 0 0 1px var(--paper); }
+.tier[data-rec] { box-shadow: inset 0 3px 0 0 var(--red); }
+.tier[data-rec][aria-pressed="true"] { box-shadow: inset 0 3px 0 0 var(--red), inset 0 0 0 1px var(--red); }
+.tier h3 { font-family: var(--display); text-transform: uppercase; font-size: clamp(1.8rem, 2.6vw, 2.6rem); letter-spacing: -0.03em; line-height: 0.95; }
+.tierTag { position: absolute; top: 18px; right: 18px; background: var(--red); color: var(--ink); padding: 4px 8px; }
+.tierLead { color: var(--text2); font-size: 15px; line-height: 1.5; }
+.tierPrice { display: flex; align-items: baseline; gap: 10px; border-top: 1px solid var(--line); padding-top: 16px; }
+.tierPrice b { font-family: var(--display); font-size: clamp(2.6rem, 4.4vw, 4rem); letter-spacing: -0.04em; line-height: 0.9; }
+.tierPrice span { color: var(--muted); font-size: 14px; }
+.tierPlus { display: flex; flex-direction: column; gap: 4px; font-size: 13.5px; color: var(--text2); }
+.tier ul { border-top: 1px solid var(--line); padding-top: 10px; }
+.tier li { font-size: 13.5px; color: var(--muted); padding: 7px 0 7px 18px; position: relative; line-height: 1.4; }
+.tier li::before { content: ""; position: absolute; left: 0; top: 13px; width: 8px; height: 1px; background: var(--red); }
+.calc { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 1px; background: var(--line); border: 1px solid var(--line); }
+.calcIn, .calcOut { background: var(--ink2); padding: clamp(20px, 2.4vw, 32px); }
+.range { display: flex; flex-direction: column; gap: 10px; margin-bottom: 22px; }
+.range span { display: flex; justify-content: space-between; color: var(--muted); font-size: 14px; }
+.range b { font-family: var(--display); font-size: 1.4rem; color: var(--paper); letter-spacing: -0.02em; }
+.range input { width: 100%; accent-color: var(--red); }
+.calcRow { display: flex; justify-content: space-between; gap: 16px; padding: 12px 0; border-bottom: 1px solid var(--line); font-size: 14.5px; color: var(--muted); }
+.calcRow b { font-family: var(--display); font-size: 1.3rem; color: var(--paper); letter-spacing: -0.02em; white-space: nowrap; }
+.calcTotal { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; padding: 18px 0 14px; }
+.calcTotal span { font-family: var(--mono); font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--paper); }
+.calcTotal b { font-family: var(--display); font-size: clamp(2.4rem, 4vw, 3.6rem); letter-spacing: -0.04em; color: var(--red); line-height: 1; }
+@media (max-width: 1000px) { .tiers { grid-template-columns: 1fr; } .calc { grid-template-columns: 1fr; } }
