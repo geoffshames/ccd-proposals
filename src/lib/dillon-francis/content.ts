@@ -113,7 +113,7 @@ export const ARTIST_INTRO = "Dillon Francis is a Los Angeles producer, DJ and co
 
 export const TIMELINE = [
  {
-  "y": "2011-12",
+  "y": "2012",
   "h": "Moombahton breakout",
   "b": "Discovered through Diplo and Mad Decent (\"Que Que\" with Maluca). Something, Something, Awesome. on OWSLA becomes the first moombahton release to top the Beatport releases chart in February 2012."
  },
@@ -128,23 +128,23 @@ export const TIMELINE = [
   "b": "\"Get Low\" with DJ Snake (February) becomes his biggest record, now 224.7M Spotify streams. Money Sucks, Friends Rule arrives on Columbia in October."
  },
  {
-  "y": "2015-16",
+  "y": "2015",
   "h": "Peak Columbia run",
   "b": "This Mixtape Is Fire reaches number one on Billboard's Top Dance/Electronic Albums. \"Coming Over\" with Kygo (2016) is his second largest song at 163.9M streams."
  },
  {
-  "y": "2017-19",
+  "y": "2017",
   "h": "IDGAFOS and genre swings",
   "b": "Launches his own label IDGAFOS with \"Say Less\" ft. G-Eazy, then releases Wut Wut (2018), a Spanish-language LP, \"Catchy Song\" for The Lego Movie 2, and the Magic Is Real mixtape (2019)."
  },
  {
-  "y": "2021-23",
+  "y": "2021",
   "h": "Happy Machine to Astralwerks",
   "b": "Happy Machine (2021, IDGAFOS / Mad Decent), then a licensing run with Astralwerks that produces \"Goodies\", \"Don't Let Me Let Go\" with ILLENIUM and This Mixtape Is Fire TOO (December 2023)."
  },
  {
-  "y": "2024-26",
-  "h": "Reset year",
+  "y": "2026",
+  "h": "A new chapter",
   "b": "MSFR 10 year remix album, pop-punk side project Sorry My Love with Albert Hype (2025), singles on Monstercat x broke, the Dillstradamus co-headline tour with Flosstradamus, the 2026 EDM Awards Impact Award and a June 2026 move to The Shalizi Group with Canopy."
  }
 ];

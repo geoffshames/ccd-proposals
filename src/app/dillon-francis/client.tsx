@@ -502,7 +502,12 @@ function ListenerChart() {
           </g>
         ))}
         <motion.path d={area} fill="rgba(253,55,55,0.08)" initial={{ opacity: reduce ? 1 : 0 }} animate={{ opacity: inView || reduce ? 1 : 0 }} transition={{ duration: 1.2, delay: 0.6 }} />
-        <motion.path d={d} fill="none" stroke="var(--red)" strokeWidth="2.5" vectorEffect="non-scaling-stroke" initial={{ pathLength: reduce ? 1 : 0 }} animate={{ pathLength: inView || reduce ? 1 : 0 }} transition={{ duration: reduce ? 0 : 2, ease: EASE }} />
+        <defs>
+          <clipPath id="lineReveal">
+            <motion.rect x="0" y="-10" height={H + 20} initial={{ width: reduce ? W : 0 }} animate={{ width: inView || reduce ? W : 0 }} transition={{ duration: reduce ? 0 : 2, ease: EASE }} />
+          </clipPath>
+        </defs>
+        <path d={d} fill="none" stroke="var(--red)" strokeWidth="2.5" vectorEffect="non-scaling-stroke" clipPath="url(#lineReveal)" />
         {LISTENERS.marks.map((m) => (
           <g key={m.l}>
             <line x1={xs(m.i)} x2={xs(m.i)} y1={ys(vals[m.i])} y2={H} stroke="var(--paper)" strokeDasharray="3 4" strokeWidth="1" vectorEffect="non-scaling-stroke" opacity="0.45" />
