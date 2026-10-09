@@ -23,6 +23,7 @@ import {
 import { createPortal } from "react-dom";
 import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
 import s from "./audien.module.css";
+import type { Teardown } from "@/lib/audien/teardowns";
 
 const EASE = [0.16, 1, 0.3, 1] as const;
 
@@ -39,6 +40,8 @@ export type VideoItem = {
   low?: boolean;
   /** Rights holder blocks off-platform playback (e.g. Vevo). Skips the embed. */
   noEmbed?: boolean;
+  /** Full video teardown, shown beside the player. */
+  teardown?: Teardown;
 };
 
 type Group = { label: string; items: VideoItem[] };
@@ -233,6 +236,7 @@ function Box({ group, index, onClose, onStep }: { group: Group; index: number; o
           className={s.vboxBody}
           data-orient={orient}
           data-kind={embed?.kind}
+          data-td={item.teardown ? "" : undefined}
           custom={dir}
           variants={{
             enter: (d: number) => (reduce ? { opacity: 0 } : { opacity: 0, x: 48 * d, scale: 0.97 }),
@@ -261,8 +265,9 @@ function Box({ group, index, onClose, onStep }: { group: Group; index: number; o
             <div className={s.vboxText}>
               {item.low && <span className={`${s.mono} ${s.vboxLow}`}>Low performer, shown for contrast</span>}
               <h3 id={titleId}>{item.title}</h3>
-              {item.context && <p>{item.context}</p>}
+              {item.context && !item.teardown && <p>{item.context}</p>}
             </div>
+            {item.teardown && <TeardownPanel td={item.teardown} />}
             <div className={s.vboxActions}>
               {multi && (
                 <div className={s.vboxSteps}>
@@ -284,6 +289,106 @@ function Box({ group, index, onClose, onStep }: { group: Group; index: number; o
         </motion.div>
       </AnimatePresence>
     </motion.div>
+  );
+}
+
+const n = (v: number | null) => (v == null ? null : v.toLocaleString("en-US"));
+
+function TeardownPanel({ td }: { td: Teardown }) {
+  const m = td.metrics;
+  const stats = [
+    ["likes", n(m.likes)],
+    ["comments", n(m.comments)],
+    ["shares", n(m.shares)],
+    ["saves", n(m.saves)],
+  ].filter((x) => x[1]) as [string, string][];
+  return (
+    <div className={s.td}>
+      <div className={`${s.tdTag} ${s.mono}`}>
+        <i />
+        Video teardown, TwelveLabs Pegasus
+      </div>
+      <p className={s.tdVerdict}>{td.verdict}</p>
+      <div className={`${s.tdStats} ${s.mono}`}>
+        <span>{td.date}</span>
+        <span>{Math.round(td.duration_s)}s</span>
+        {stats.map(([k, v]) => (
+          <span key={k}>
+            {v} {k}
+          </span>
+        ))}
+      </div>
+
+      <section>
+        <h4 className={s.mono}>Hook, {td.hook.window}</h4>
+        <p>{td.hook.what_we_see}</p>
+        {td.hook.on_screen_text && <p className={s.tdText}>&ldquo;{td.hook.on_screen_text}&rdquo;</p>}
+        <p className={s.tdRead}>{td.hook.read}</p>
+      </section>
+
+      <section>
+        <h4 className={s.mono}>Beat by beat</h4>
+        <ol className={s.tdBeats}>
+          {td.beats.map((b) => (
+            <li key={b.t + b.what}>
+              <b className={s.mono}>{b.t}</b>
+              <span>{b.what}</span>
+            </li>
+          ))}
+        </ol>
+      </section>
+
+      {td.on_screen_text.length > 0 && (
+        <section>
+          <h4 className={s.mono}>On-screen text</h4>
+          <ul className={s.tdList}>
+            {td.on_screen_text.map((t) => (
+              <li key={t}>{t}</li>
+            ))}
+          </ul>
+        </section>
+      )}
+
+      <dl className={s.tdGrid}>
+        <div>
+          <dt className={s.mono}>Audio</dt>
+          <dd>{td.audio}</dd>
+        </div>
+        <div>
+          <dt className={s.mono}>On camera</dt>
+          <dd>{td.artist_on_camera}</dd>
+        </div>
+        <div>
+          <dt className={s.mono}>Brand cues</dt>
+          <dd>{td.brand_cues}</dd>
+        </div>
+        <div>
+          <dt className={s.mono}>Pacing</dt>
+          <dd>{td.pacing}</dd>
+        </div>
+        <div>
+          <dt className={s.mono}>Call to action</dt>
+          <dd>{td.cta}</dd>
+        </div>
+      </dl>
+
+      <section>
+        <h4 className={s.mono}>What worked</h4>
+        <ul className={s.tdList}>
+          {td.what_worked.map((t) => (
+            <li key={t}>{t}</li>
+          ))}
+        </ul>
+      </section>
+      <section>
+        <h4 className={`${s.mono} ${s.tdRed}`}>{td.artist === "AUDIEN" ? "What to repeat or change" : "What AUDIEN can borrow"}</h4>
+        <ul className={s.tdList} data-red="">
+          {td.what_to_change.map((t) => (
+            <li key={t}>{t.replace(/^For AUDIEN: /, "")}</li>
+          ))}
+        </ul>
+      </section>
+    </div>
   );
 }
 

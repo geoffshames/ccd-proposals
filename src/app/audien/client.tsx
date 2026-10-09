@@ -13,6 +13,7 @@ import { AnimatePresence, animate, motion, useAnimationFrame, useInView, useMoti
 import s from "./audien.module.css";
 import { VideoBoxProvider, useVideoBox, type VideoItem } from "./video-box";
 import { THUMB_IDS } from "@/lib/audien/thumbs";
+import { TEARDOWNS } from "@/lib/audien/teardowns";
 import {
   IMG,
   P,
@@ -208,6 +209,7 @@ function item(href: string, title: string, views?: string, context?: string, ext
     metric,
     context,
     poster: posterOf(href),
+    teardown: TEARDOWNS[idOf(href)],
     ...extra,
   };
 }
@@ -403,7 +405,7 @@ type PostT = { href: string; img: string; who: string; metric: string; note: str
 
 function PostGrid({ posts, label, low }: { posts: readonly PostT[]; label: string; low?: boolean }) {
   const open = useVideoBox();
-  const group = { label, items: posts.map((p) => item(p.href, p.who, p.metric, p.note, { low })) };
+  const group = { label, items: posts.map((p) => item(p.href, p.x ? p.who : "AUDIEN", p.metric, p.note, { low })) };
   return (
     <div className={s.posts}>
       {posts.map((p, i) => (
@@ -421,6 +423,7 @@ function PostGrid({ posts, label, low }: { posts: readonly PostT[]; label: strin
               <span className={`${s.postWho} ${s.mono}`}>{p.who}</span>
               <span className={s.postMetric}>{p.metric}</span>
               {p.x && <span className={s.postX}>{p.x}</span>}
+              {TEARDOWNS[idOf(p.href)] && <span className={s.tdFlag}>Full teardown</span>}
               <span className={s.postNote}>{p.note}</span>
             </div>
           </a>
@@ -585,7 +588,7 @@ function Brand() {
   return (
     <section className={s.section} id="brand">
       <Head n="03" label="Brand audit" title="The Brand">
-        We pulled all 43 release covers since 2019, every wordmark in use and the caption voice. The brand has strong parts. They have not been assembled into one system.
+        We pulled all 43 release covers since 2019, the wordmark and logo in use, and the caption voice. The brand has strong parts. They have not been assembled into one system.
       </Head>
 
       <Reveal>
@@ -662,13 +665,16 @@ function Brand() {
       </Reveal>
 
       <Reveal className={s.sub}>
-        <SubHead title="Four wordmarks in use" aside="Website, campaign, tour and show" />
+        <SubHead title="One wordmark, one show logo" aside="Website, campaign, tour and PHND" />
+        <p className={s.intro} style={{ marginBottom: 26, maxWidth: "80ch" }}>
+          {WORDMARKS.intro}
+        </p>
         <div className={s.marks}>
-          {WORDMARKS.map((w) => (
+          {WORDMARKS.items.map((w) => (
             <div className={s.mark} key={w.k}>
-              <div className={s.markImg} data-png={w.png ? "" : undefined}>
+              <div className={s.markImg} data-png={"png" in w && w.png ? "" : undefined}>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src={`${IMG}/logos/${w.img}.${w.png ? "png" : "webp"}`} alt={`${w.k} wordmark`} loading="lazy" />
+                <img src={`${IMG}/logos/${w.img}.${"png" in w && w.png ? "png" : "webp"}`} alt={w.k} loading="lazy" />
               </div>
               <div>
                 <b>{w.k}</b>
@@ -677,6 +683,9 @@ function Brand() {
             </div>
           ))}
         </div>
+        <p className={s.note} style={{ marginTop: 16, maxWidth: "90ch" }}>
+          {WORDMARKS.note}
+        </p>
       </Reveal>
 
       <Reveal className={s.sub}>
@@ -888,7 +897,7 @@ function Social() {
 
       <div className={s.sub}>
         <Reveal>
-          <SubHead title="Top performers" aside="Tap to watch" />
+          <SubHead title="Top performers" aside="Tap for the video and its full teardown" />
         </Reveal>
         <PostGrid posts={TOP_POSTS} label="Top performers" />
       </div>
@@ -1185,6 +1194,7 @@ function Finding({ f, i, openIdx, setOpen }: { f: (typeof BRAIN.findings)[number
                         <b>{c.label}</b>
                         <small>
                           {platformOf(c.href)}, {c.views}
+                          {TEARDOWNS[idOf(c.href)] ? ", full teardown" : ""}
                         </small>
                       </span>
                       <span className={s.chipPlay}>

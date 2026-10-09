@@ -66,7 +66,7 @@ export const SUMMARY = {
       n: "01",
       to: "brand",
       head: "Three assets, not yet one brand",
-      body: "Four visual eras in seven years. The last eight covers score 5.5 out of 10 for consistency, and at least four versions of the wordmark are in use today. The chrome heart and the PHND lockup are the parts that hold.",
+      body: "Four visual eras in seven years, and the last eight covers score 5.5 out of 10 for consistency. The wordmark is steady but changes color with every campaign and is missing from the covers. The chrome heart and PHND are the parts that hold.",
     },
     {
       n: "02",
@@ -215,7 +215,7 @@ export const ASSETS = [
   {
     k: "The scene",
     v: "PHND",
-    b: "Progressive House Never Died is the identity fans repeat, the presale code, and the most consistent design system he has: one heart-shaped type lockup, recolored for each city since January 2025.",
+    b: "Progressive House Never Died is the identity fans repeat, the presale code, and the most consistent design system he has: a PHND logo plus one heart-shaped flyer template, recolored for each city since January 2025.",
     proof: "Posts naming PHND or a city outperform; fans write \"PHND forever\"",
   },
   {
@@ -226,12 +226,18 @@ export const ASSETS = [
   },
 ];
 
-export const WORDMARKS = [
-  { img: "audiendj-site_audien-wordmark_2024-04", png: true, k: "Website", d: "2024. Extended heavy sans. The closest thing to a master." },
-  { img: "2025-09_TimesSquare-billboard_AUDIEN-chrome_DOok1E5jipO", k: "Times Square", d: "2025. Condensed heavy, acid green." },
-  { img: "2026-03_tour-poster_AUDIEN-wordmark-chrome-heart_DVzPz5sDgAv", k: "Tour admat", d: "2026. Extra-wide extended, khaki." },
-  { img: "2026-02_PHND-DC-flyer_heart-type-lockup_DUlU-9fDmms", k: "PHND lockup", d: "2025 to 2026. The heart-shaped type, recolored per city." },
-];
+export const WORDMARKS = {
+  intro:
+    "One AUDIEN wordmark, an extended heavy sans, used consistently since 2024. What moves is the color around it: white on the website, acid green in Times Square, khaki and chrome on the 2026 tour art. PHND has a logo of its own.",
+  items: [
+    { img: "audiendj-site_audien-wordmark_2024-04", png: true, k: "AUDIEN, white", d: "The website and the master file, 2024." },
+    { img: "2025-09_TimesSquare-billboard_AUDIEN-chrome_DOok1E5jipO", k: "AUDIEN, acid green", d: "The First Love Times Square takeover, 2025." },
+    { img: "2026-03_tour-poster_AUDIEN-wordmark-chrome-heart_DVzPz5sDgAv", k: "AUDIEN, khaki", d: "The spring 2026 tour admat, with the chrome heart." },
+    { img: "phnd-site_PHND-wordmark_2025-01", png: true, k: "PHND logo", d: "The show brand's own mark, used on the PHND site since 2025." },
+  ],
+  note:
+    "The mark itself is not the problem. The color changes with each campaign, the wordmark never appears on the release covers, and the heart has never been locked to it.",
+};
 
 export const VOICE = [
   { k: "Lowercase and self-deprecating", e: "\"still trying to figure out what an audien is..\"" },
@@ -457,7 +463,7 @@ export const FAN_BRIEF = [
 
 export const BRAIN = {
   intro:
-    "We indexed 49 videos in a TwelveLabs Jockey knowledge store: 26 of AUDIEN's best, worst and promoted posts and 23 peer breakouts. Then we asked it what separates them, and checked every claim about the first seconds against a frame we pulled ourselves.",
+    "We indexed 49 videos in a TwelveLabs Jockey knowledge store: 26 of AUDIEN's best, worst and promoted posts and 23 peer breakouts. Then we asked it what separates them, and checked every claim about the first seconds against a frame we pulled ourselves. Every video referenced on this page also opens with a full TwelveLabs Pegasus teardown: the hook, every beat, the on-screen text, audio, pacing and what to repeat.",
   total: 49,
   corpus: [
     { k: "AUDIEN organic winners", v: 14 },
@@ -522,7 +528,7 @@ export const BRAIN = {
     {
       h: "Announcements are cut like trailers, so the payoff comes late",
       b: "Show and release promos open on logos, city shots and campaign copy and save the crowd for the back half. Low-performing reels run a median 35.4 seconds against 23.9 for the winners. The AUDIEN PRESENTS reel spends more than 20 seconds before the venue appears.",
-      take: "Crowd moment in the first 3 seconds, date and city as a short overlay, the PHND lockup last.",
+      take: "Crowd moment in the first 3 seconds, date and city as a short overlay, the PHND logo last.",
       clips: [
         { href: "https://www.instagram.com/p/DbbbUO8vvst/", label: "PHND NYC announce", views: "11,282 plays", low: true },
         { href: "https://www.tiktok.com/@kaskade/video/7636475425878854926", label: "Kaskade, the song sung live first", views: "3.1M plays" },
@@ -601,7 +607,7 @@ export const DIRECTION = {
   },
   world: [
     { k: "AUDIEN", r: "The artist", b: "The name on the records and the person in the frame. Lowercase, sincere, a little self-deprecating, signed with the white heart." },
-    { k: "PHND", r: "The franchise", b: "The shows, the community and the name for the people in it. The heart-shaped lockup becomes the sub-brand mark, every city, every year." },
+    { k: "PHND", r: "The franchise", b: "The shows, the community and the name for the people in it. The PHND logo stays the show mark, and the heart-shaped flyer type carries every city, every year." },
     { k: "The heart", r: "The mark", b: "Promoted from album art to logo. Locked with the wordmark, on every cover, every stage, every end card and every piece of merch." },
   ],
   era: {
@@ -610,8 +616,8 @@ export const DIRECTION = {
     b: "The lone figure in a vast American landscape has run through his covers since 2019. The heart has run through them since 2025. Put them together: one figure, one heart, wide open country at dusk. It carries the nostalgia fans ask for, the cinematic mood of the 2026 covers, and a story that scales from a single cover to a stage.",
   },
   system: [
-    { k: "Wordmark", b: "Lock the 2024 extended sans as the master and set it in a fixed position on every cover. Retire the other treatments." },
-    { k: "Lockup", b: "Wordmark plus chrome heart as the primary logo. The PHND heart type stays as the show mark." },
+    { k: "Wordmark", b: "Keep the wordmark as it is. Fix its color to the system, white or chrome, and give it a fixed position on every cover, where it is missing today." },
+    { k: "Lockup", b: "Wordmark plus chrome heart as the primary logo. The PHND logo stays as the show mark, with the heart-shaped type as its flyer template." },
     { k: "Palette", b: "Chrome, dusk teal (#273128 to #588993) and peach (#FDE8DE), with one owned accent. We recommend bringing back the First Love acid green (#1AFE13): it is already his, and it keeps the sky-and-heart look clear of Said The Sky's." },
     { k: "Type on video", b: "One typeface and one color for every burned-in line, so a clip reads as AUDIEN before the caption loads." },
     { k: "Photography", b: "One photographer or 3D artist per season, so covers, press photos, the Spotify header and Canvas share one hand. Refresh the Spotify photo and bio." },
@@ -643,7 +649,7 @@ export const PLAN = {
       when: "Weeks 1 to 3",
       items: [
         "Footage bank: every set, crowd angle and studio clip in one tagged library",
-        "Lock the wordmark, heart lockup, on-screen type and end card",
+        "Lock the wordmark color, heart lockup, on-screen type and end card",
         "One owned link hub with email and SMS capture, Meta and TikTok pixels",
         "Spotify photo, bio and Canvas refresh. Claim YouTube @audien",
       ],
@@ -719,7 +725,7 @@ export const CREATIVE = {
   stills: [
     { img: "heartland-key-art", k: "Era key art", line: "One figure, one heart, open country", why: "The cover world for the next era, ready to stretch to billboards and stage screens." },
     { img: "cover-system", k: "Cover system", line: "The last three singles, one system", why: "High Hopes, Sacrifice and 7 Miles High in a locked layout: wordmark top left, title bottom left, the accent square, the heart." },
-    { img: "phnd-sf-poster", k: "PHND city poster", line: "The lockup, chrome, every city", why: "The template he already owns, upgraded to the chrome system." },
+    { img: "phnd-sf-poster", k: "PHND city poster", line: "The flyer template, chrome, every city", why: "The template he already owns, upgraded to the chrome system." },
     { img: "merch-capsule", k: "Capsule", line: "The world you can wear", why: "Heart lockup, sleeve wordmark, a PHND pass. Sold at shows and on his own store." },
     { img: "studio-series-frame", k: "Should I finish this", line: "The studio series, with the heart in the room", why: "His best rare format, made recurring." },
     { img: "premise-clip-frame", k: "The Room", line: "Premise-first, crowd in frame one", why: "The frame every live clip should open on." },
@@ -769,7 +775,7 @@ export const SOURCES = [
   "Streaming: Chartmetric API (artist 3717), Spotify listener and follower history, where people listen, tracks, playlists and career score, pulled October 8, 2026. kworb.net daily streams, updated September 14, 2026",
   "Fans: 5,430 items (3,159 Instagram comments, 1,581 YouTube comments, 358 TikTok comments, 332 Reddit posts and comments), 5,034 analyzed. Theme and tone scored with rules checked against about 250 hand-read comments. Sentiment is an analytical estimate",
   "Video AI: TwelveLabs Jockey knowledge store \"Audien + peers (CCD)\", 49 videos indexed, every first-second claim checked against pulled frames",
-  "Brand: 43 release covers since 2019 from the iTunes Search API, palettes by median-cut quantization; wordmarks from audiendj.com, the PHND site and official posts",
+  "Brand: 43 release covers since 2019 from the iTunes Search API, palettes by median-cut quantization; the wordmark and PHND logo from audiendj.com, the PHND site and official posts",
   "Funnel: audiendj.com and PHND site HTML and network capture, Lighthouse mobile lab run, Meta Ad Library, Google autocomplete and Google Trends topic data, October 8, 2026",
   "Career facts: Wikipedia, EDMTunes, EDM.com, EDM Identity, Beatportal, Magnetic Magazine, Laylo, Songkick and official posts",
   "Photography: AUDIEN official Instagram. Peer thumbnails link to the original posts",
