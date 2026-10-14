@@ -4,6 +4,7 @@ import { useEffect, useState, useMemo } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { usePlan } from "@/lib/plan-context";
 import { PlanPartPills } from "./PlanPartSwitch";
+import { useT } from "@/lib/plan-i18n";
 
 function deriveNavLabel(section: { navLabel?: string; title: string }): string {
   if (section.navLabel) return section.navLabel;
@@ -13,6 +14,7 @@ function deriveNavLabel(section: { navLabel?: string; title: string }): string {
 }
 
 export function PlanNavigation() {
+  const t = useT();
   const PLAN = usePlan();
   const [active, setActive] = useState<string>("");
   const [scrolled, setScrolled] = useState(false);
@@ -128,7 +130,7 @@ export function PlanNavigation() {
                   href="#approve"
                   className="hidden md:inline-flex text-[10px] md:text-[11px] font-mono tracking-[0.14em] uppercase text-white bg-accent px-3 md:px-4 py-1.5 md:py-2 hover:bg-accent/90 transition-colors whitespace-nowrap"
                 >
-                  Approve
+                  {t("approve")}
                 </a>
               )}
             </div>
@@ -175,7 +177,7 @@ export function PlanNavigation() {
                       onClick={() => setMobileOpen(false)}
                       className="mt-3 flex items-center justify-center px-3 py-3.5 text-[12px] font-mono uppercase tracking-[0.18em] text-white bg-accent"
                     >
-                      Approve
+                      {t("approve")}
                     </a>
                   )}
                 </div>

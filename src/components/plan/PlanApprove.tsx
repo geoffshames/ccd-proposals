@@ -3,8 +3,10 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { usePathname } from "next/navigation";
 import { usePlan } from "@/lib/plan-context";
+import { useT } from "@/lib/plan-i18n";
 
 export function PlanApprove() {
+  const t = useT();
   const PLAN = usePlan();
   const cta = PLAN.approveCta;
   const pathname = usePathname();
@@ -63,11 +65,11 @@ export function PlanApprove() {
           }`}
         >
           {state === "loading"
-            ? "Sending..."
+            ? t("sending")
             : done
             ? cta.sentLabel
             : err
-            ? "Couldn't send. Try again."
+            ? t("sendError")
             : cta.label}
         </motion.button>
         <p className="text-[11px] text-text-muted/60 mt-6 font-mono tracking-[0.15em] uppercase">

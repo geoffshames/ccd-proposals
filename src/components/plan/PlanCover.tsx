@@ -1,6 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
 import { usePlan } from "@/lib/plan-context";
+import { useT } from "@/lib/plan-i18n";
 
 function PartnerLockup({ logos, className = "" }: { logos: { src: string; alt: string; height?: number }[]; className?: string }) {
   return (
@@ -16,6 +17,7 @@ function PartnerLockup({ logos, className = "" }: { logos: { src: string; alt: s
 }
 
 export function PlanCover() {
+  const t = useT();
   const PLAN = usePlan();
   const { label, title, subtitle, partnership, prepared, date, backgroundImage, logo, partnerLogos } = PLAN.cover;
 
@@ -107,7 +109,7 @@ export function PlanCover() {
       >
         <div>
           <div className="text-[10px] font-mono tracking-[0.22em] uppercase text-text-muted/60 mb-2">
-            Partnership
+            {t("partnership")}
           </div>
           <div className="text-[14px] md:text-[15px] text-text-primary leading-snug">
             {partnership}
@@ -115,7 +117,7 @@ export function PlanCover() {
         </div>
         <div className="md:text-right">
           <div className="text-[10px] font-mono tracking-[0.22em] uppercase text-text-muted/60 mb-2">
-            Prepared By
+            {t("preparedBy")}
           </div>
           <div className="text-[14px] md:text-[15px] text-text-primary leading-snug">
             {prepared}

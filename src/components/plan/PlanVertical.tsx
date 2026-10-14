@@ -3,8 +3,10 @@ import { motion } from "framer-motion";
 import { PlanSectionHeader } from "./PlanSectionHeader";
 import { PlanChart } from "./PlanChart";
 import type { VerticalSection, VerticalSubBlock } from "@/lib/plan-context";
+import { useT } from "@/lib/plan-i18n";
 
 function SubBlock({ block, idx }: { block: VerticalSubBlock; idx: number }) {
+  const t = useT();
   return (
     <motion.div
       initial={{ opacity: 0, y: 16 }}
@@ -37,20 +39,20 @@ function SubBlock({ block, idx }: { block: VerticalSubBlock; idx: number }) {
         <div className="lg:col-span-9 space-y-6">
           {block.objective && (
             <div>
-              <div className="text-[10px] font-mono tracking-[0.22em] uppercase text-text-muted/60 mb-2">Objective</div>
+              <div className="text-[10px] font-mono tracking-[0.22em] uppercase text-text-muted/60 mb-2">{t("objective")}</div>
               <p className="text-text-primary/90 text-[15px] md:text-[16px] leading-relaxed max-w-[68ch]">{block.objective}</p>
             </div>
           )}
           {block.strategy && (
             <div>
-              <div className="text-[10px] font-mono tracking-[0.22em] uppercase text-text-muted/60 mb-2">Strategy</div>
+              <div className="text-[10px] font-mono tracking-[0.22em] uppercase text-text-muted/60 mb-2">{t("strategy")}</div>
               <p className="text-text-primary/90 text-[15px] md:text-[16px] leading-relaxed max-w-[68ch]">{block.strategy}</p>
             </div>
           )}
           {block.components && (
             <div>
               <div className="text-[10px] font-mono tracking-[0.22em] uppercase text-text-muted/60 mb-2">
-                {block.components.heading || "Components"}
+                {block.components.heading || t("components")}
               </div>
               <ul className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-2">
                 {block.components.items.map((it, i) => (
@@ -64,7 +66,7 @@ function SubBlock({ block, idx }: { block: VerticalSubBlock; idx: number }) {
           )}
           {block.tactics && (
             <div>
-              <div className="text-[10px] font-mono tracking-[0.22em] uppercase text-text-muted/60 mb-2">Tactics</div>
+              <div className="text-[10px] font-mono tracking-[0.22em] uppercase text-text-muted/60 mb-2">{t("tactics")}</div>
               <ul className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-2">
                 {block.tactics.map((it, i) => (
                   <li key={i} className="flex gap-3 text-[14px] md:text-[15px] text-text-primary/85 leading-relaxed">
@@ -77,7 +79,7 @@ function SubBlock({ block, idx }: { block: VerticalSubBlock; idx: number }) {
           )}
           {block.examples && (
             <div>
-              <div className="text-[10px] font-mono tracking-[0.22em] uppercase text-text-muted/60 mb-2">Examples</div>
+              <div className="text-[10px] font-mono tracking-[0.22em] uppercase text-text-muted/60 mb-2">{t("examples")}</div>
               <ul className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-2">
                 {block.examples.map((it, i) => (
                   <li key={i} className="flex gap-3 text-[14px] md:text-[15px] text-text-primary/85 leading-relaxed">
@@ -90,7 +92,7 @@ function SubBlock({ block, idx }: { block: VerticalSubBlock; idx: number }) {
           )}
           {block.kpis && (
             <div>
-              <div className="text-[10px] font-mono tracking-[0.22em] uppercase text-text-muted/60 mb-2">KPIs</div>
+              <div className="text-[10px] font-mono tracking-[0.22em] uppercase text-text-muted/60 mb-2">{t("kpis")}</div>
               <ul className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-2">
                 {block.kpis.map((it, i) => (
                   <li key={i} className="flex gap-3 text-[14px] md:text-[15px] text-text-primary/85 leading-relaxed">
@@ -104,7 +106,7 @@ function SubBlock({ block, idx }: { block: VerticalSubBlock; idx: number }) {
           {block.featureTiers && block.featureTiers.length > 0 && (
             <div>
               <div className="text-[10px] font-mono tracking-[0.22em] uppercase text-text-muted/60 mb-4">
-                {block.featureTiersHeading || "Feature Artist Candidates"}
+                {block.featureTiersHeading || t("featureArtists")}
               </div>
               <div className="space-y-8">
                 {block.featureTiers.map((tier, ti) => (
@@ -155,7 +157,7 @@ function SubBlock({ block, idx }: { block: VerticalSubBlock; idx: number }) {
           {block.links && block.links.length > 0 && (
             <div>
               <div className="text-[10px] font-mono tracking-[0.22em] uppercase text-text-muted/60 mb-3">
-                {block.linksHeading || "References"}
+                {block.linksHeading || t("references")}
               </div>
               <ul className="space-y-2">
                 {block.links.map((l, i) => (

@@ -35,9 +35,9 @@ export const kiiikiiiPlanKorean: StrategyPlanData = {
       number: "01",
       navLabel: "기회",
       title: "기회",
-      subtitle: "KiiiKiii now has 1.09 million Spotify followers, and the United States is its largest listening market. That is a strong base to build a U.S. campaign on.",
+      subtitle: "KiiiKiii는 현재 스포티파이 팔로워 109만 명을 보유하고 있으며, 미국이 가장 큰 청취 시장입니다. 이는 미국 캠페인을 구축하기 위한 강력한 기반이 됩니다.",
       body: [
-        "KiiiKiii reached a career-high 4.41M Spotify monthly listeners in September and sits at 4.0M today, with the U.S. as its largest market. Followers grew 8 percent in September alone, to 1.09 million. \"404 (New Era)\" is still charting in Korea 252 days after release and has passed ten million streams there. \"Pop Off Pop Off\" reached No. 1 on Spotify Korea within ten days, peaked at No. 3 on the weekly chart, and is still in the top 20 seven weeks in. It also won Best Song of the Year at the SPOTV K-Pop Awards in September. The audience is real, it is growing, and a large share of it is already in the market Starship wants to grow.",
+        "KiiiKiii는 9월에 커리어 하이인 스포티파이 월간 리스너 441만 명을 기록했으며, 현재 400만 명을 유지하고 있으며 미국이 가장 큰 시장입니다. 팔로워는 9월 한 달 동안 8% 증가하여 109만 명에 달했습니다. \"404 (New Era)\"는 발매 252일이 지난 지금도 한국에서 차트 상위권을 유지하며 1천만 스트리밍을 돌파했습니다. \"Pop Off Pop Off\"는 스포티파이 한국에서 10일 만에 1위에 올랐고, 주간 차트 최고 3위를 기록했으며, 7주가 지난 지금도 상위 20위 안에 머물러 있습니다. 또한 9월 SPOTV K-Pop Awards에서 올해의 노래 부문에서 수상했습니다. 이들의 팬덤은 실재하며 성장하고 있으며, 상당 부분이 Starship이 성장시키고자 하는 시장에 이미 존재합니다.",
         "기회는 해당 청중에게 레이블로 직접 연결되는 통로와 행동할 이유를 제공하는 것입니다. 즉, 레이블이 소유한 미국 팬 리스트, 다음 미국 차트 주간에 맞춰 준비된 실물 앨범 발매 계획, 그리고 리스너들이 이미 존재하는 시장에서의 지속적인 유료 지원입니다. 본 문서는 이를 달성하기 위한 세 가지 실행 과제를 제안합니다. 각 과제에는 테스트 예산, 정의된 성공 지표, 그리고 언제 확장하고 언제 중단할지에 대한 규칙이 포함됩니다.",
       ],
       supports: {
@@ -45,13 +45,13 @@ export const kiiikiiiPlanKorean: StrategyPlanData = {
         items: [
           "퍼스트 파티 팬 데이터: 한국 개인정보보호법 내에서 구축된, 레이블이 완전히 소유하는 미국 팬 데이터베이스",
           "실물 앨범 판매: 캠페인 기간 동안 구축되어 다음 발매 시 실행 준비가 된 미국 차트 계획",
-          "U.S. market lift: growth in Spotify followers, Instagram, and YouTube in the top market",
+          "미국 시장 성장: 주요 시장에서의 스포티파이 팔로워, 인스타그램, 유튜브 성장",
         ],
       },
       goals: {
         heading: "우리의 약속",
         items: [
-          "Spotify follower growth, measured against a set baseline in a set window",
+          "정해진 기간 동안 정해진 기준선 대비 스포티파이 팔로워 성장",
           "미국에 집중된 Instagram 및 YouTube 성장",
           "팬당 비용과 목표 규모가 명시된 자체 팬 리스트",
           "소유한 팬 리스트를 기반으로 사전 주문 수요를 측정한, 발매 준비 완료된 미국 실물 앨범 계획",
@@ -61,7 +61,7 @@ export const kiiikiiiPlanKorean: StrategyPlanData = {
       charts: [
         {
           kind: "area",
-          title: "Spotify Listeners and Followers Since Debut",
+          title: "데뷔 이후 스포티파이 리스너 및 팔로워",
           subtitle: "팔로워는 데뷔 이후 매주 꾸준히 증가하여 2026년 10월까지 109만 명을 넘어섰습니다. 각 발매 주기는 이전보다 더 높은 리스너 기반을 남깁니다.",
           series: [
             {
@@ -86,7 +86,7 @@ export const kiiikiiiPlanKorean: StrategyPlanData = {
           source: "Chartmetric, 2026년 9월 30일까지 주간 데이터",
         },
       ],
-      footnote: "Data refreshed October 1, 2026 unless dated otherwise. Sources: Chartmetric, Spotify weekly and daily South Korea chart archives, and platform data.",
+      footnote: "데이터는 별도 명시가 없는 한 2026년 10월 1일에 업데이트되었습니다. 출처: Chartmetric, Spotify 주간 및 일간 한국 차트 아카이브, 플랫폼 데이터.",
     },
 
     // ===================================================================
@@ -98,13 +98,13 @@ export const kiiikiiiPlanKorean: StrategyPlanData = {
       navLabel: "순위",
       title: "KiiiKiii의 현황",
       philosophy: "데이터에서 도출된 세 가지 주요 발견점과 각 발견점이 열어주는 기회.",
-      intro: "Everything below comes from live consumption data refreshed October 1, 2026: Chartmetric for audience metrics, the Spotify South Korea chart archives for stream-level detail. The comparison set is the girl-group class KiiiKiii is measured against commercially.",
+      intro: "아래 모든 내용은 2026년 10월 1일에 업데이트된 실시간 소비 데이터를 기반으로 합니다: 오디언스 지표는 Chartmetric, 스트림 수준의 세부 정보는 Spotify 한국 차트 아카이브를 사용했습니다. 비교 대상은 상업적으로 KiiiKiii와 비교되는 걸그룹 그룹입니다.",
       subBlocks: [
         {
           label: "A",
           title: "노래의 지속력이 카테고리 평균보다 우수함",
           objective: "KiiiKiii의 히트곡은 다른 그룹들과 달리 발매 첫 주 이후에도 성장하며 지속됩니다.",
-          strategy: "Most K-pop singles peak in week one and decline from there. \"404 (New Era)\" ran at 4.8 times its launch week by week four, was still at 1.8 times launch at week 24, and in week 35 is still pulling 232K streams a week in Korea, having passed ten million there. Against the same chart source, the class's biggest recent hits retained between 16 and 63 percent of launch week at that age. \"Pop Off Pop Off\" is following the same shape: No. 1 on Spotify Korea by day nine, a No. 3 weekly peak, and still in the weekly top 20 seven weeks in with 302K streams that week. This is the single most valuable thing about the catalog, because it means audience acquired for a KiiiKiii song does not evaporate the following month.",
+          strategy: "대부분의 K팝 싱글은 첫 주에 정점을 찍고 하락합니다. \"404 (New Era)\"는 4주차에 발매 첫 주 대비 4.8배의 성과를 냈고, 24주차에도 발매 첫 주 대비 1.8배를 유지했으며, 35주차에도 한국에서 주당 232,000 스트림을 기록하며 총 1천만 스트림을 돌파했습니다. 동일한 차트 출처를 기준으로, 해당 그룹의 최근 히트곡들은 그 시점에 발매 첫 주 대비 16%에서 63% 사이의 성과를 유지했습니다. \"Pop Off Pop Off\" 역시 비슷한 양상을 보이고 있습니다: 발매 9일 만에 스포티파이 한국 1위, 주간 최고 3위, 그리고 7주차에도 해당 주에 302,000 스트림을 기록하며 주간 상위 20위 안에 머물러 있습니다. 이것이 이 카탈로그의 가장 가치 있는 점인데, 이는 KiiiKiii의 노래를 통해 확보된 팬덤이 다음 달에 사라지지 않는다는 것을 의미하기 때문입니다.",
           charts: [
             {
               kind: "line",
@@ -138,7 +138,7 @@ export const kiiikiiiPlanKorean: StrategyPlanData = {
                 },
               ],
               note: "비교 대상은 같은 기간 동안 가장 높은 인지도를 가진 세 개의 걸그룹 싱글이며, 예의상 이름은 생략합니다. 두 곡은 24주차 이전에 차트에서 이탈했습니다.",
-              source: "Spotify weekly South Korea chart archives, pulled Oct 1 2026",
+              source: "Spotify 주간 한국 차트 아카이브, 2026년 10월 1일 기준",
               tall: true,
             },
             {
@@ -154,7 +154,7 @@ export const kiiikiiiPlanKorean: StrategyPlanData = {
                   ],
                 },
               ],
-              source: "Spotify weekly South Korea chart archive, Jan to Sep 2026",
+              source: "Spotify 주간 한국 차트 아카이브, 2026년 1월-9월",
             },
           ],
         },
@@ -162,7 +162,7 @@ export const kiiikiiiPlanKorean: StrategyPlanData = {
           label: "B",
           title: "109만 팔로워, 400만 리스너",
           objective: "청취와 팬 활동 사이의 격차는 가장 큰 잠재적 성장 기회이며, 이미 좁혀지기 시작했습니다.",
-          strategy: "KiiiKiii's Spotify follower-to-listener ratio is 0.271, up from 0.239 a month ago, because followers grew 8 percent while listeners eased off the September peak. That movement is the good news: the conversion is happening on its own. The headroom is the bigger news: roughly 2.9 million people listened to KiiiKiii this month without yet taking the one free action that puts every future release in front of them automatically, and every group in the comparison set converts at a higher rate. A follower is the cheapest, most durable growth available to the group, and it is the first metric the U.S. workstream is measured against.",
+          strategy: "KiiiKiii의 스포티파이 팔로워 대 리스너 비율은 0.271로, 한 달 전 0.239에서 상승했습니다. 이는 팔로워가 8% 증가한 반면 리스너는 9월 최고치에서 소폭 하락했기 때문입니다. 이러한 움직임은 긍정적인 소식입니다. 즉, 전환이 자체적으로 일어나고 있다는 것입니다. 더 큰 소식은 잠재력입니다. 약 290만 명의 사람들이 이번 달 KiiiKiii를 들었지만, 향후 모든 발매를 자동으로 앞에 놓이게 하는 단 한 번의 무료 행동을 아직 하지 않았습니다. 비교 대상 그룹들은 모두 더 높은 전환율을 보입니다. 팔로워는 그룹에게 가장 저렴하고 지속 가능한 성장이며, 미국 워크스트림이 측정되는 첫 번째 지표입니다.",
           charts: [
             {
               kind: "hbars",
@@ -222,7 +222,7 @@ export const kiiikiiiPlanKorean: StrategyPlanData = {
           ],
         },
       ],
-      footnote: "Audience data: Chartmetric, Sep 30, 2026. Stream data: Spotify South Korea weekly and daily chart archives. Comparison set is the 2024 to 2026 girl-group class.",
+      footnote: "오디언스 데이터: Chartmetric, 2026년 9월 30일. 스트림 데이터: Spotify 한국 주간 및 일간 차트 아카이브. 비교 대상은 2024년-2026년 걸그룹 그룹입니다.",
     },
 
     // ===================================================================
@@ -257,7 +257,7 @@ export const kiiikiiiPlanKorean: StrategyPlanData = {
                 },
               ],
               highlightX: ["8주차\n2026년 9월"],
-              note: "$1.97 cost per signup on the paid flight; $1.15 blended across all capture sources.",
+              note: "유료 캠페인 기준 가입당 비용 $1.97, 전체 수집 채널 혼합 기준 팬 1인당 $1.15.",
               source: "참조 캠페인 보고, 2026년 7월 6일 - 9월 3일",
             },
           ],
@@ -528,7 +528,7 @@ export const kiiikiiiPlanKorean: StrategyPlanData = {
       navLabel: "미국 시장 성장",
       title: "워크스트림 3 / 미국 시장 성장",
       philosophy: "청취자들이 이미 활동하는 시장에서 팔로워, 구독자, 참여도를 높입니다.",
-      intro: "This workstream is measured on Spotify followers, Instagram, and YouTube growth in the United States. Streaming is worked hard and reported honestly, but it is not a promised number, and Section 08 explains why.",
+      intro: "이 워크스트림은 미국 내 스포티파이 팔로워, 인스타그램, 유튜브 성장을 기준으로 측정됩니다. 스트리밍은 많은 노력을 기울여 정직하게 보고되지만, 보장된 수치는 아니며, 섹션 08에서 그 이유를 설명합니다.",
       subBlocks: [
         {
           label: "A",
@@ -546,7 +546,7 @@ export const kiiikiiiPlanKorean: StrategyPlanData = {
             ],
           },
           kpis: [
-            "Spotify follower growth against baseline",
+            "기준선 대비 스포티파이 팔로워 성장",
             "기준선 대비 미국 Instagram 및 YouTube 성장",
             "팔로워당 비용 및 확보된 팬당 비용",
           ],
@@ -651,7 +651,7 @@ export const kiiikiiiPlanKorean: StrategyPlanData = {
             { t: "캡션 라인 1", d: "아티스트 본인의 목소리로 전달되는, 개성을 살리기 위한 의도적인 오타가 포함된 무표정한 농담 오프너." },
             { t: "캡션 라인 2", d: "요청 사항: \"제 웹사이트(프로필 링크)에서 사전 판매 액세스에 등록하세요.\"" },
             { t: "캡션 라인 3", d: "엄격한 마감일(다음 날 오후 6시 ET 마감) 및 보상: \"등록하는 모든 분께 고유한 사전 판매 코드를 드립니다.\"" },
-            { t: "캡션 라인 4", d: "Presale and general on-sale dates, then a credit to the illustrator." },
+            { t: "캡션 라인 4", d: "사전 판매 및 일반 판매 날짜, 그리고 일러스트레이터 크레딧." },
           ],
           mechanics: [
             "사전 판매 코드는 인증된 전화번호로 아티스트의 자체 사이트에 등록한 팬에게만 발급되므로, 모든 얼리 티켓 구매자는 아티스트가 소유하는 연락처가 됩니다.",
@@ -761,9 +761,9 @@ export const kiiikiiiPlanKorean: StrategyPlanData = {
           url: "https://www.tiktok.com/@sabrinacarpenter/video/7672513827467955470",
           poster: "/images/kiiikiii/examples/sabrina-carpenter.jpg",
           artist: "Sabrina Carpenter",
-          title: "\"when it's time for the debrief\"",
+          title: "\"디브리프를 할 시간일 때\"",
           date: "2026년 8월 10일",
-          tag: "Workstream 3 / U.S. Lift",
+          tag: "워크스트림 3 / 미국 시장 성장",
           stats: [
             { label: "재생 수", value: "33.3M" },
             { label: "좋아요", value: "6.27M" },
@@ -1006,7 +1006,7 @@ export const kiiikiiiPlanKorean: StrategyPlanData = {
           budget: "$168,000",
           name: "권장 시작 예산",
           tagline: "첫 기간 자금 조달 방법 중 하나입니다. 미디어 라인은 각 점검 시점에서 효과적인 부분으로 이동하는 시작점입니다.",
-          deployable: "$120,000 working media in market",
+          deployable: "실제 집행 미디어 예산 $120,000",
           breakdown: [
             { vertical: "리테이너, 3개월", amount: "$30,000" },
             { vertical: "미국 유료 소셜 (팔로워, 오디언스, 리타겟팅)", amount: "$50,000" },

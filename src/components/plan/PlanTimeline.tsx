@@ -2,8 +2,10 @@
 import { motion } from "framer-motion";
 import { PlanSectionHeader } from "./PlanSectionHeader";
 import type { TimelineSection } from "@/lib/plan-context";
+import { useT } from "@/lib/plan-i18n";
 
 export function PlanTimeline({ section }: { section: TimelineSection }) {
+  const t = useT();
   const weekCount = section.weeks.length;
   // Build a map keyed by `${row}-${weekIndex}` for fast lookup.
   const cellMap = new Map<string, ReturnType<typeof Object.assign>>();
@@ -19,7 +21,7 @@ export function PlanTimeline({ section }: { section: TimelineSection }) {
         {/* Mobile scroll hint */}
         <div className="md:hidden flex items-center gap-2 mb-3 text-[10px] font-mono tracking-[0.2em] uppercase text-accent/80">
           <span aria-hidden="true">←</span>
-          <span>Swipe to see full timeline</span>
+          <span>{t("swipeTimeline")}</span>
           <span aria-hidden="true">→</span>
         </div>
 
@@ -100,15 +102,15 @@ export function PlanTimeline({ section }: { section: TimelineSection }) {
               <div className="mt-6 flex items-center gap-5 text-[10px] font-mono tracking-[0.15em] uppercase text-text-muted/60">
                 <div className="flex items-center gap-2">
                   <span className="w-5 h-3 bg-accent/25 inline-block"></span>
-                  <span>Light</span>
+                  <span>{t("light")}</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <span className="w-5 h-3 bg-accent/55 inline-block"></span>
-                  <span>Active</span>
+                  <span>{t("active")}</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <span className="w-5 h-3 bg-accent inline-block"></span>
-                  <span>Heavy</span>
+                  <span>{t("heavy")}</span>
                 </div>
               </div>
             </div>
@@ -123,7 +125,7 @@ export function PlanTimeline({ section }: { section: TimelineSection }) {
         {section.weekBreakdowns && section.weekBreakdowns.length > 0 && (
           <div className="mt-20">
             <div className="text-[10px] font-mono tracking-[0.22em] uppercase text-text-muted/60 mb-6">
-              Week-by-week breakdown
+              {t("weekBreakdown")}
             </div>
             <div className="grid gap-px bg-text-muted/10 border border-text-muted/15">
               {section.weekBreakdowns.map((wb) => {

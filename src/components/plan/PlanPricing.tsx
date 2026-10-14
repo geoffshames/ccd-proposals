@@ -2,6 +2,7 @@
 import { motion } from "framer-motion";
 import { PlanSectionHeader } from "./PlanSectionHeader";
 import type { PricingSection } from "@/lib/plan-context";
+import { useT } from "@/lib/plan-i18n";
 
 // Literal class strings so the Tailwind JIT can see them.
 const TIER_COLS: Record<1 | 2 | 3 | 4, string> = {
@@ -12,6 +13,7 @@ const TIER_COLS: Record<1 | 2 | 3 | 4, string> = {
 };
 
 export function PlanPricing({ section }: { section: PricingSection }) {
+  const t = useT();
   return (
     <section id={`section-${section.number}`} className="px-6 md:px-12 lg:px-24 py-24 md:py-32 bg-bg-card/30">
       <div className="max-w-6xl mx-auto">
@@ -33,7 +35,7 @@ export function PlanPricing({ section }: { section: PricingSection }) {
             >
               {tier.featured && (
                 <div className="absolute top-0 right-0 bg-accent text-white text-[10px] font-bold tracking-[0.2em] uppercase px-4 py-2">
-                  Recommended
+                  {t("recommended")}
                 </div>
               )}
 
@@ -57,7 +59,7 @@ export function PlanPricing({ section }: { section: PricingSection }) {
                 <div className="mt-8 grid grid-cols-2 gap-px bg-text-muted/15 border border-text-muted/15">
                   <div className="bg-bg-card p-4">
                     <div className="text-[10px] font-mono tracking-[0.18em] uppercase text-text-muted/60 mb-2">
-                      {tier.feeBreakdown.retainerLabel ?? "Crowd Control Retainer"}
+                      {tier.feeBreakdown.retainerLabel ?? t("retainer")}
                     </div>
                     <div className="text-[22px] md:text-[26px] font-bold text-text-primary leading-none"
                          style={{ fontFamily: "var(--font-heading), var(--font-sans), sans-serif" }}>
@@ -69,7 +71,7 @@ export function PlanPricing({ section }: { section: PricingSection }) {
                   </div>
                   <div className="bg-bg-card p-4">
                     <div className="text-[10px] font-mono tracking-[0.18em] uppercase text-text-muted/60 mb-2">
-                      {tier.feeBreakdown.mediaManagementLabel ?? "Media Mgmt"}
+                      {tier.feeBreakdown.mediaManagementLabel ?? t("mediaMgmt")}
                     </div>
                     <div className="text-[22px] md:text-[26px] font-bold text-text-primary leading-none"
                          style={{ fontFamily: "var(--font-heading), var(--font-sans), sans-serif" }}>
@@ -84,7 +86,7 @@ export function PlanPricing({ section }: { section: PricingSection }) {
 
               <div className="mt-8 pt-6 border-t border-text-muted/15">
                 <div className="text-[10px] font-mono tracking-[0.22em] uppercase text-text-muted/60 mb-4">
-                  {section.breakdownLabel ?? "Breakdown By Vertical"}
+                  {section.breakdownLabel ?? t("breakdown")}
                 </div>
                 <div className="space-y-2">
                   {tier.breakdown.map((b, j) => (
@@ -98,7 +100,7 @@ export function PlanPricing({ section }: { section: PricingSection }) {
 
               <div className="mt-6 pt-4 border-t border-text-muted/15">
                 <div className="flex items-baseline justify-between gap-4 text-[13px]">
-                  <span className="text-text-muted/70 uppercase tracking-[0.12em] font-mono">{section.deployableLabel ?? "Deployable Net of Agency Fee"}</span>
+                  <span className="text-text-muted/70 uppercase tracking-[0.12em] font-mono">{section.deployableLabel ?? t("deployable")}</span>
                   <span className="font-mono tabular-nums text-accent font-bold">{tier.deployable}</span>
                 </div>
               </div>
@@ -115,7 +117,7 @@ export function PlanPricing({ section }: { section: PricingSection }) {
             className="mt-12"
           >
             <div className="text-[11px] font-mono tracking-[0.22em] uppercase text-text-muted/70 mb-4">
-              Optional Add-Ons (Outside The Tier)
+              {t("addOns")}
             </div>
             <div
               className={`grid grid-cols-1 sm:grid-cols-2 gap-4 ${

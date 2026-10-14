@@ -3,8 +3,10 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { PlanSectionHeader } from "./PlanSectionHeader";
 import type { ShowcaseSection, ShowcaseItem } from "@/lib/plan-context";
+import { useT } from "@/lib/plan-i18n";
 
 function ShowcaseEmbed({ item }: { item: ShowcaseItem }) {
+  const t = useT();
   const [loaded, setLoaded] = useState(false);
   const isTikTok = item.platform === "tiktok";
   const src = isTikTok
@@ -28,7 +30,7 @@ function ShowcaseEmbed({ item }: { item: ShowcaseItem }) {
             <div className="absolute inset-0 bg-gradient-to-t from-bg via-bg/20 to-transparent" />
             <div className="absolute bottom-6 inset-x-0 flex justify-center">
               <span className="px-4 py-2 border border-accent bg-bg/70 text-[10px] font-mono tracking-[0.2em] uppercase text-text-primary group-hover:bg-accent/25 transition-colors">
-                Open on Instagram ↗
+                {t("openInstagram")}
               </span>
             </div>
           </a>
@@ -61,7 +63,7 @@ function ShowcaseEmbed({ item }: { item: ShowcaseItem }) {
                 <span className="ml-1 text-accent text-[18px]">▶</span>
               </span>
               <span className="text-[10px] font-mono tracking-[0.2em] uppercase text-text-primary/90">
-                {isTikTok ? "Load TikTok" : "Load Instagram post"}
+                {isTikTok ? t("loadTikTok") : t("loadInstagram")}
               </span>
             </div>
           </button>
@@ -73,13 +75,14 @@ function ShowcaseEmbed({ item }: { item: ShowcaseItem }) {
         rel="noopener noreferrer"
         className="block px-4 py-3 border-t border-text-muted/15 text-[10px] font-mono tracking-[0.18em] uppercase text-text-muted hover:text-accent transition-colors"
       >
-        View original post ↗
+        {t("viewOriginal")}
       </a>
     </div>
   );
 }
 
 function Item({ item, idx }: { item: ShowcaseItem; idx: number }) {
+  const t = useT();
   return (
     <motion.article
       initial={{ opacity: 0, y: 18 }}
@@ -129,12 +132,12 @@ function Item({ item, idx }: { item: ShowcaseItem; idx: number }) {
           </div>
 
           <div>
-            <div className="text-[10px] font-mono tracking-[0.22em] uppercase text-text-muted/60 mb-2">Format</div>
+            <div className="text-[10px] font-mono tracking-[0.22em] uppercase text-text-muted/60 mb-2">{t("format")}</div>
             <p className="text-[14px] md:text-[15px] text-text-primary/90 leading-relaxed">{item.format}</p>
           </div>
 
           <div>
-            <div className="text-[10px] font-mono tracking-[0.22em] uppercase text-text-muted/60 mb-3">Beat by Beat</div>
+            <div className="text-[10px] font-mono tracking-[0.22em] uppercase text-text-muted/60 mb-3">{t("beatByBeat")}</div>
             <ol className="border-l border-accent/40 space-y-3">
               {item.beats.map((b, i) => (
                 <li key={i} className="pl-4 relative">
@@ -147,7 +150,7 @@ function Item({ item, idx }: { item: ShowcaseItem; idx: number }) {
           </div>
 
           <div>
-            <div className="text-[10px] font-mono tracking-[0.22em] uppercase text-text-muted/60 mb-3">Why It Works</div>
+            <div className="text-[10px] font-mono tracking-[0.22em] uppercase text-text-muted/60 mb-3">{t("whyItWorks")}</div>
             <ul className="space-y-2">
               {item.mechanics.map((m, i) => (
                 <li key={i} className="text-[13.5px] md:text-[14px] text-text-primary/85 leading-relaxed flex gap-2">
@@ -160,7 +163,7 @@ function Item({ item, idx }: { item: ShowcaseItem; idx: number }) {
 
           {item.outcome && (
             <div className="border border-text-muted/15 bg-bg-card/60 px-5 py-4">
-              <div className="text-[10px] font-mono tracking-[0.22em] uppercase text-text-muted/60 mb-2">Result</div>
+              <div className="text-[10px] font-mono tracking-[0.22em] uppercase text-text-muted/60 mb-2">{t("result")}</div>
               <p className="text-[14px] text-text-primary leading-relaxed">{item.outcome}</p>
               {item.outcomeSource && (
                 <div className="mt-2 text-[9.5px] font-mono tracking-[0.14em] uppercase text-text-muted/55">{item.outcomeSource}</div>
@@ -169,7 +172,7 @@ function Item({ item, idx }: { item: ShowcaseItem; idx: number }) {
           )}
 
           <div className="border border-accent/40 bg-accent/[0.05] px-5 py-5">
-            <div className="text-[10px] font-mono tracking-[0.22em] uppercase text-accent mb-2">For KiiiKiii</div>
+            <div className="text-[10px] font-mono tracking-[0.22em] uppercase text-accent mb-2">{t("forArtist")}</div>
             <div className="text-[16px] font-bold text-text-primary mb-3" style={{ fontFamily: "var(--font-heading), var(--font-sans), sans-serif" }}>
               {item.adapt.title}
             </div>
