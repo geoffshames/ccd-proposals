@@ -528,7 +528,7 @@ export const kiiikiiiPlan: StrategyPlanData = {
       navLabel: "U.S. Lift",
       title: "Workstream 3 / U.S. Market Lift",
       philosophy: "Grow the followed, subscribed, and engaged audience in the market where the listeners already are.",
-      intro: "This workstream is measured on Spotify followers, Instagram, and YouTube growth in the United States. Streaming is worked hard and reported honestly, but it is not a promised number, and Section 07 explains why.",
+      intro: "This workstream is measured on Spotify followers, Instagram, and YouTube growth in the United States. Streaming is worked hard and reported honestly, but it is not a promised number, and Section 08 explains why.",
       subBlocks: [
         {
           label: "A",
@@ -619,11 +619,190 @@ export const kiiikiiiPlan: StrategyPlanData = {
     },
 
     // ===================================================================
-    // 07. How We Work
+    // 07. Creative Examples
+    // ===================================================================
+    {
+      type: "showcase",
+      number: "07",
+      navLabel: "Examples",
+      title: "Creative Examples",
+      philosophy: "Four recent posts from U.S. pop artists that do exactly what this plan asks KiiiKiii's channels to do, taken apart frame by frame.",
+      intro: "Each example below maps to one of the three workstreams. They were chosen because the mechanic is visible in the post itself, the result is on the public record, and the format is something a five-member group can run at the same cadence. Every teardown ends with how we would adapt it for KiiiKiii.",
+      items: [
+        {
+          platform: "instagram",
+          platformLabel: "Instagram post",
+          id: "DbTHWKpOsF0",
+          url: "https://www.instagram.com/p/DbTHWKpOsF0/",
+          poster: "/images/kiiikiii/examples/audrey-hobert.jpg",
+          artist: "Audrey Hobert",
+          title: "Tour presale announcement, \"The Staircase To Stardom Tour\"",
+          date: "Jul 27, 2026",
+          tag: "Workstream 1 / Fan Data",
+          stats: [
+            { label: "Likes", value: "111K" },
+            { label: "Comments", value: "971" },
+            { label: "Sign-up window", value: "~24 hrs" },
+            { label: "Format", value: "1 image" },
+          ],
+          format: "A single hand-drawn poster in crayon and marker: a sunrise rainbow, a crowd of doodled fans, the artist at the centre holding a bouquet and wearing \"BEST SINGER\" and \"#1 STAR\" medals, with every tour date printed across the bottom third. It is the second poster in a series by the same illustrator. The January announcement was the bottom of the staircase; this one is captioned \"One... Last... Step...\".",
+          beats: [
+            { t: "Image", d: "Reads as a collectible poster rather than an ad. No URL or call to action on the art itself, so it gets saved and shared as artwork." },
+            { t: "Caption line 1", d: "A deadpan joke opener in the artist's own voice, with a deliberate misspelling for personality." },
+            { t: "Caption line 2", d: "The ask: \"Sign up for presale access on my website at link in bio.\"" },
+            { t: "Caption line 3", d: "A hard deadline (sign-up closes 6PM ET the next day) and the reward: \"Everyone who signs up will receive a unique presale code.\"" },
+            { t: "Caption line 4", d: "Presale and general on-sale dates, then a credit to the illustrator." },
+          ],
+          mechanics: [
+            "The presale code is only issued to fans who sign up on the artist's own site with a verified phone number, so every early ticket buyer becomes a contact the artist owns.",
+            "A sign-up window of roughly a day turns a passive follow into an immediate action.",
+            "The poster series makes each tour announcement a chapter fans want to collect, which is why it travels.",
+            "The comments become free market research: almost every reply is a city request.",
+          ],
+          outcome: "The artist moved multiple shows on this run to larger rooms (Detroit, Salt Lake City and Columbus), then used the same sign-up mechanic again to announce this final leg.",
+          outcomeSource: "Artist's own Instagram, May 2026; sign-up platform case study, Jan 2026",
+          adapt: {
+            title: "Turn the next U.S. show announcement into a list-building moment",
+            actions: [
+              "Announce the first U.S. showcase or fan-meet with a collectible illustrated poster, designed as the first in a series.",
+              "Release presale access only through the owned U.S. list, with a unique code per fan and a 24 to 48 hour sign-up window.",
+              "Reply to the city requests in the comments with a link to vote, so the next routing decision is backed by phone numbers.",
+            ],
+          },
+        },
+        {
+          platform: "instagram",
+          platformLabel: "Instagram video",
+          id: "DT3ddW_CJfZ",
+          url: "https://www.instagram.com/p/DT3ddW_CJfZ/",
+          poster: "/images/kiiikiii/examples/mitski.jpg",
+          artist: "Mitski",
+          title: "Signed-record drop: \"found more signed records buried inside the Tansy House\"",
+          date: "Jan 23, 2026",
+          tag: "Workstream 2 / Physical",
+          stats: [
+            { label: "Views", value: "1.18M" },
+            { label: "Likes", value: "92.6K" },
+            { label: "Length", value: "56 sec" },
+            { label: "Repeat drop", value: "988K views" },
+          ],
+          format: "A 56-second art-directed film with no dialogue and no on-screen text. The artist signs vinyl copies of the new album throughout a period house that doubles as the album's fictional world. A follow-up drop a month later used the same format and reached 988,000 views.",
+          beats: [
+            { t: "0.5s", d: "Close-up of a hand writing the signature. The product is established before anything else." },
+            { t: "1-8s", d: "A held night shot through a lit window, watching her inside. The audience is a visitor to the album's world." },
+            { t: "11s", d: "Close-up of a signature going onto the actual LP, artwork and title clearly visible." },
+            { t: "13-47s", d: "Signing in different rooms: framed through an ornate mirror, in an armchair among stacks of records, beside the album's props." },
+            { t: "49-55s", d: "Signing on the front steps, then surrounded by finished stacks. Ends on black." },
+            { t: "Caption", d: "Written in the third person as a story beat: \"Mitski has found more signed records buried inside the Tansy House. A very limited number are available online now.\" Then a plain store URL." },
+          ],
+          mechanics: [
+            "The act of signing is the content. Fans watch the specific copies they can buy being made.",
+            "A merchandise restock is framed as a story event, so it reads as part of the album era rather than a sales post.",
+            "\"A very limited number\" plus a visible volume of stacks creates urgency without a hard sell.",
+            "The format repeats. Each new batch of signed copies becomes a new post, which makes it a reliable physical-sales lever across a whole campaign.",
+          ],
+          outcome: "The album debuted at No. 10 on the Billboard 200 with about 43,000 units, of which roughly 31,000 were pure album sales.",
+          outcomeSource: "Luminate data as reported by Music Week, 2026",
+          adapt: {
+            title: "Make signed U.S. copies a recurring, story-led drop",
+            actions: [
+              "Film the members signing a U.S.-exclusive version inside the visual world of the current era, one short film per batch.",
+              "Release signed copies in waves through the counting week, with the owned fan list getting first access to each wave.",
+              "Caption each wave as an in-world story beat in English, with the store link and nothing else.",
+            ],
+          },
+        },
+        {
+          platform: "instagram",
+          platformLabel: "Instagram carousel",
+          id: "DZpxkQAm87W",
+          url: "https://www.instagram.com/p/DZpxkQAm87W/",
+          poster: "/images/kiiikiii/examples/katseye.jpg",
+          artist: "KATSEYE",
+          title: "\"WILD\" EP pre-order launch, followed by version reveals",
+          date: "Jun 16, 2026",
+          tag: "Workstream 2 / Physical",
+          stats: [
+            { label: "Likes", value: "667K" },
+            { label: "Comments", value: "6.9K" },
+            { label: "Vs. account avg", value: "1.2x" },
+            { label: "Version reveals", value: "~15 posts" },
+          ],
+          format: "A three-slide carousel announcing the EP and opening pre-orders on the group's own store, followed eight weeks later by roughly fifteen version-reveal carousels in eight days, each slide dedicated to one member in that version's styling.",
+          beats: [
+            { t: "Slide 1", d: "All members in matching styling, shot from overhead, with the group wordmark. One strong, unified group image." },
+            { t: "Slide 2", d: "A colour-graded group shot carrying the EP logo, establishing the era's look." },
+            { t: "Slide 3", d: "A lyric card. Lines from the title track seed the song before anyone has heard it." },
+            { t: "Caption", d: "One line: the EP's world, the release date, and \"pre-order now on our official store\"." },
+            { t: "Version reveals", d: "One member per slide, each tagged, so fans swipe to find their favourite member and pick the version built around them." },
+          ],
+          mechanics: [
+            "Pre-orders open eight weeks out, so demand accumulates for the counting week instead of arriving after it.",
+            "Each physical version is introduced as its own piece of content, which multiplies posts, and purchases, per fan.",
+            "Member-by-member slides let every fan base inside the group act on its own favourite.",
+            "Styling choices on the reveals drew strong opinions in the comments. That lifted engagement and is also a reminder to keep each version recognisably on-brand.",
+          ],
+          outcome: "\"WILD\" debuted at No. 1 on the Billboard 200 with 170,000 units, 145,000 of them pure album sales, the biggest week for a girl group since the chart began counting units.",
+          outcomeSource: "Billboard and NPR, August 2026, on Luminate data",
+          adapt: {
+            title: "Run the version reveal as a member-led countdown to the counting week",
+            actions: [
+              "Open pre-orders for the next EP early, through a store tied to the owned U.S. list, with a U.S.-exclusive version.",
+              "Reveal versions one member per slide across the final ten days, so each member's fans have their own moment to buy.",
+              "Pair the first post with a lyric card in English to seed the title track with U.S. listeners before release.",
+            ],
+          },
+        },
+        {
+          platform: "tiktok",
+          platformLabel: "TikTok",
+          id: "7672513827467955470",
+          url: "https://www.tiktok.com/@sabrinacarpenter/video/7672513827467955470",
+          poster: "/images/kiiikiii/examples/sabrina-carpenter.jpg",
+          artist: "Sabrina Carpenter",
+          title: "\"when it's time for the debrief\"",
+          date: "Aug 10, 2026",
+          tag: "Workstream 3 / U.S. Lift",
+          stats: [
+            { label: "Plays", value: "33.3M" },
+            { label: "Likes", value: "6.27M" },
+            { label: "Shares", value: "153K" },
+            { label: "Length", value: "8 sec" },
+          ],
+          format: "Eight seconds, three locked phone shots, warm practical light, no on-screen text and no call to action. The new single plays underneath. A relatable caption does all the framing.",
+          beats: [
+            { t: "0-2s", d: "Solo shot in a distinctive outfit in front of a lit wood stove, looking straight at the lens. Instantly recognisable, instantly on-brand." },
+            { t: "2s", d: "Cut to a second person in an armchair: the reveal. Fans recognised him immediately." },
+            { t: "5s", d: "The payoff: both in frame, cheek to cheek, a playful lean-in." },
+            { t: "6-8s", d: "A line of the song lands as both look into the lens. Ends." },
+          ],
+          mechanics: [
+            "A reveal at two seconds and a payoff at five keeps almost everyone watching to the end, which is what distribution rewards.",
+            "The caption is a feeling people share, not a promotion, so it gets sent to friends. Shares ran at nearly half a percent of plays.",
+            "The song is the soundtrack, not the subject. Promotion happens without a single word of promotion.",
+            "Fans read the guest as a reunion with a former TV co-star, and that recognition is what drove the comments and shares.",
+          ],
+          outcome: "33.3 million plays and 153,000 shares, with likes at nearly 19 percent of plays, on a post with no promotional copy at all.",
+          outcomeSource: "TikTok public metrics, October 2026",
+          adapt: {
+            title: "Build the member-solo franchise on this exact grammar",
+            actions: [
+              "One member, one setup, one reveal, under ten seconds, with the current single as the sound.",
+              "Use guests U.S. audiences recognise, from creators to other artists, as the reveal rather than a set routine.",
+              "Write captions as relatable feelings in English, and save promotional copy for the release-date end cards.",
+            ],
+          },
+        },
+      ],
+      footnote: "Public posts by third-party artists, shown as examples of format and mechanics. Metrics are the platforms' public counts as of October 2026. Results are as reported by the sources named on each example.",
+    },
+
+    // ===================================================================
+    // 08. How We Work
     // ===================================================================
     {
       type: "philosophy",
-      number: "07",
+      number: "08",
       navLabel: "How We Work",
       title: "How We Work",
       thesis: "There is a floor of efficacy for everything. Every channel has a spend level below which the money buys noise, and we would rather tell you that before taking the budget than after spending it.",
@@ -654,11 +833,11 @@ export const kiiikiiiPlan: StrategyPlanData = {
     },
 
     // ===================================================================
-    // 08. First 90 Days
+    // 09. First 90 Days
     // ===================================================================
     {
       type: "timeline",
-      number: "08",
+      number: "09",
       navLabel: "First 90 Days",
       title: "First 90 Days",
       intro: "A test-first rhythm. Fan data capture stands up in week one because everything else feeds it. Paid begins small and scales only on evidence. The physical plan is built in parallel across the window, so it is ready to run the moment the next release date is set. The first checkpoint at week four is a real scale-or-stop decision, not a status update.",
@@ -795,11 +974,11 @@ export const kiiikiiiPlan: StrategyPlanData = {
     },
 
     // ===================================================================
-    // 09. Investment
+    // 10. Investment
     // ===================================================================
     {
       type: "pricing",
-      number: "09",
+      number: "10",
       navLabel: "Investment",
       title: "Investment",
       intro: "One joint monthly retainer from Transparent Arts and Crowd Control Digital for strategy, execution and reporting across all three workstreams, with working media billed separately at cost plus management. The first 90 days are the test window: media starts deliberately small, and the week-four and week-eight checkpoints decide where it scales. Starship approves every dollar of working media before it is committed.",

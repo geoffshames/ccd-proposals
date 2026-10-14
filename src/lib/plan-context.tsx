@@ -699,6 +699,36 @@ export type DropCalendarPhase = {
   markets?: string[];
 };
 
+export type ShowcaseItem = {
+  platform: "tiktok" | "instagram";
+  platformLabel: string;
+  id: string;
+  url: string;
+  poster?: string;
+  artist: string;
+  title: string;
+  date: string;
+  tag: string;
+  stats: { label: string; value: string }[];
+  format: string;
+  beats: { t: string; d: string }[];
+  mechanics: string[];
+  outcome?: string;
+  outcomeSource?: string;
+  adapt: { title: string; actions: string[] };
+};
+
+export type ShowcaseSection = {
+  type: "showcase";
+  number: string;
+  navLabel?: string;
+  title: string;
+  philosophy?: string;
+  intro?: string;
+  items: ShowcaseItem[];
+  footnote?: string;
+};
+
 export type PlanSection =
   | OverviewSection
   | PhilosophySection
@@ -716,7 +746,8 @@ export type PlanSection =
   | ContentAnalysisSection
   | CalendarSection
   | AssetChecklistSection
-  | CostModelSection;
+  | CostModelSection
+  | ShowcaseSection;
 
 // Plan root -----------------------------------------------------------------
 
