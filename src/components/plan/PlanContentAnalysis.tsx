@@ -43,9 +43,9 @@ function ExampleEmbed({ ex }: { ex: ContentExample }) {
   const src = isTikTok
     ? `https://www.tiktok.com/embed/v2/${ex.id}`
     : `https://www.instagram.com/reel/${ex.id}/embed/`;
-  const href = isTikTok
+  const href = ex.url ?? (isTikTok
     ? `https://www.tiktok.com/@lolaamourmusic/video/${ex.id}`
-    : `https://www.instagram.com/reel/${ex.id}/`;
+    : `https://www.instagram.com/reel/${ex.id}/`);
 
   return (
     <div className="flex-shrink-0 w-[300px] md:w-[325px] border border-text-muted/15 bg-bg overflow-hidden">
@@ -116,9 +116,11 @@ function ExampleEmbed({ ex }: { ex: ContentExample }) {
 function FindingModal({
   finding,
   onClose,
+  labels,
 }: {
   finding: ContentFinding;
   onClose: () => void;
+  labels?: ContentAnalysisSection["labels"];
 }) {
   const meta = VERDICT_META[finding.verdict];
 
@@ -164,7 +166,7 @@ function FindingModal({
               className={`inline-flex items-center gap-2 px-2.5 py-1 border text-[10px] font-mono tracking-[0.18em] uppercase ${meta.chip}`}
             >
               <span className={`w-1.5 h-1.5 rounded-full ${meta.dot}`} />
-              {meta.label}
+              {finding.tag ?? meta.label}
               {finding.confidence ? ` / ${finding.confidence}` : ""}
             </span>
             <h3
@@ -190,7 +192,7 @@ function FindingModal({
 
           <div>
             <div className="text-[10px] font-mono tracking-[0.22em] uppercase text-text-muted/60 mb-3">
-              What the corpus shows
+              {labels?.evidence ?? "What the corpus shows"}
             </div>
             <ul className="space-y-2.5">
               {finding.evidence.map((e, i) => (
@@ -205,10 +207,10 @@ function FindingModal({
           {finding.counterEvidence && finding.counterEvidence.length > 0 && (
             <div className="border border-text-muted/15 bg-bg p-5 md:p-6">
               <div className="text-[10px] font-mono tracking-[0.22em] uppercase text-text-muted/60 mb-1">
-                Adversarial check
+                {labels?.counterEvidence ?? "Adversarial check"}
               </div>
               <p className="text-[12px] text-text-muted/80 mb-3">
-                Before keeping this finding, we tried to break it. This is what pushed back.
+                {labels?.counterEvidenceNote ?? "Before keeping this finding, we tried to break it. This is what pushed back."}
               </p>
               <ul className="space-y-2.5">
                 {finding.counterEvidence.map((e, i) => (
@@ -224,7 +226,7 @@ function FindingModal({
           {finding.examples && finding.examples.length > 0 && (
             <div>
               <div className="text-[10px] font-mono tracking-[0.22em] uppercase text-text-muted/60 mb-3">
-                See it in the content
+                {labels?.examples ?? "See it in the content"}
               </div>
               <div className="flex gap-4 overflow-x-auto pb-3 -mx-1 px-1">
                 {finding.examples.map((ex, i) => (
@@ -236,7 +238,7 @@ function FindingModal({
 
           <div className="border border-accent/30 bg-accent/[0.05] p-5 md:p-6">
             <div className="text-[10px] font-mono tracking-[0.22em] uppercase text-accent mb-2">
-              The pivot
+              {labels?.pivot ?? "The pivot"}
             </div>
             <h4
               className="text-[17px] md:text-[19px] font-bold text-text-primary leading-tight"
@@ -476,7 +478,7 @@ export function PlanContentAnalysis({ section }: { section: ContentAnalysisSecti
                       className={`inline-flex items-center gap-2 px-2.5 py-1 border text-[10px] font-mono tracking-[0.18em] uppercase ${meta.chip}`}
                     >
                       <span className={`w-1.5 h-1.5 rounded-full ${meta.dot}`} />
-                      {meta.label}
+                      {f.tag ?? meta.label}
                     </span>
                     <span className="text-[10px] font-mono text-text-muted/50">
                       {String(i + 1).padStart(2, "0")}
@@ -492,7 +494,7 @@ export function PlanContentAnalysis({ section }: { section: ContentAnalysisSecti
                     {f.summary}
                   </p>
                   <div className="mt-5 text-[11px] font-mono tracking-[0.18em] uppercase text-text-muted/60 group-hover:text-accent transition-colors">
-                    Evidence and recommendation ↗
+                    {section.labels?.cardCta ?? "Evidence and recommendation ↗"}
                   </div>
                 </motion.button>
               );
@@ -508,7 +510,7 @@ export function PlanContentAnalysis({ section }: { section: ContentAnalysisSecti
       </div>
 
       <AnimatePresence>
-        {open && <FindingModal finding={open} onClose={() => setOpen(null)} />}
+        {open && <FindingModal finding={open} onClose={() => setOpen(null)} labels={section.labels} />}
       </AnimatePresence>
     </section>
   );

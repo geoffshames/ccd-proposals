@@ -464,12 +464,16 @@ export type ContentExample = {
   date?: string;
   stat?: string;
   note?: string;
+  /** Optional full post URL for the "Open original" link. */
+  url?: string;
 };
 
 export type ContentFinding = {
   id: string;
   title: string;
   verdict: "confirmed" | "partial" | "refuted";
+  /** Optional chip text that replaces the verdict label, for non-audit uses such as reference examples. */
+  tag?: string;
   confidence?: string;
   summary: string;
   evidence: string[];
@@ -515,6 +519,15 @@ export type ContentAnalysisSection = {
   findingsHeading?: string;
   findingsIntro?: string;
   findings: ContentFinding[];
+  /** Optional overrides for the fixed labels in the finding cards and teardown modal. */
+  labels?: {
+    evidence?: string;
+    counterEvidence?: string;
+    counterEvidenceNote?: string;
+    examples?: string;
+    pivot?: string;
+    cardCta?: string;
+  };
   footnote?: string;
 };
 

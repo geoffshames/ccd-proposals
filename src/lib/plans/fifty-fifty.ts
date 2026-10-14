@@ -464,7 +464,7 @@ export const fiftyFiftyPlan: StrategyPlanData = {
       navLabel: "U.S. Lift",
       title: "Workstream 3 / U.S. Market Lift",
       philosophy: "Grow the followed, subscribed, and engaged audience in the market where the listeners already are.",
-      intro: "This workstream is measured on Spotify followers, Instagram, YouTube, and content performance in the United States. Streaming is worked hard and reported honestly, but it is not a promised number, and Section 07 explains why.",
+      intro: "This workstream is measured on Spotify followers, Instagram, YouTube, and content performance in the United States. Streaming is worked hard and reported honestly, but it is not a promised number, and Section 08 explains why.",
       subBlocks: [
         {
           label: "A",
@@ -580,11 +580,146 @@ export const fiftyFiftyPlan: StrategyPlanData = {
     },
 
     // ===================================================================
-    // 07. How We Work
+    // 07. What It Looks Like in Practice
+    // ===================================================================
+    {
+      type: "contentAnalysis",
+      number: "07",
+      navLabel: "Examples",
+      title: "What It Looks Like in Practice",
+      intro: "Three recent posts from artists outside K-pop, each showing one move this plan would run for FIFTY FIFTY. They illustrate the thinking rather than prescribe the content: the actual posts would be built from FIFTY FIFTY's own audience data, and the formats change month to month. Every performance figure is measured against that artist's own recent posts, because beating your own baseline is the only comparison that means anything.",
+      findingsHeading: "Three Moves, Three Recent Examples",
+      findingsIntro: "Open any card for a second-by-second teardown, the numbers behind it, and how the same move would work for FIFTY FIFTY.",
+      labels: {
+        evidence: "Second by second",
+        counterEvidence: "What does not transfer",
+        counterEvidenceNote: "Where this example differs from FIFTY FIFTY's position, and what that changes.",
+        examples: "Watch the post",
+        pivot: "How FIFTY FIFTY would run it",
+        cardCta: "Open the teardown ↗",
+      },
+      findings: [
+        {
+          id: "capture-the-moment",
+          tag: "Move 01 / Capture the moment",
+          verdict: "confirmed",
+          title: "Olivia Rodrigo hangs a release date on a moment fans are already sharing.",
+          summary: "Instead of announcing a new single with a standard teaser, Olivia Rodrigo set the announcement to a fan-made audio from a TV drama that was already circulating, and put the only call to action in the caption: song and video out Thursday. The post earned 273,800 shares in its first day, the most of any of her last twenty posts. The lesson for FIFTY FIFTY is the mechanic: a moment that is already moving carries the message further than a polished asset, as long as something owned and dated is attached to it.",
+          evidence: [
+            "0.0 to 1.0 seconds: an empty black curtain and nothing else. The opening is deliberately bare, because the audio is doing the work",
+            "1.0 to 4.5 seconds: a single arm reaches into frame, palm open, and holds there while the fan audio plays the setup",
+            "4.5 to 6.0 seconds: hands meet around a corsage, and the shot opens to two performers in full costume and wigs, holding hands",
+            "6.0 to 11.0 seconds: they dance and celebrate, ending in a laughing embrace. No on-screen text at any point",
+            "Caption: the release date and the collaborator, nothing else. The call to action lives where it cannot interrupt the joke",
+            "9.9M views, 3.3M likes and 273,800 shares in roughly 24 hours. A share rate of 2.8 percent, four times the 0.7 percent on the Tate McRae post later in this section",
+          ],
+          counterEvidence: [
+            "Views were still below her own median at one day old (about 0.85x). This post wins on shares, and shares are the metric that matters for an announcement, because each one is a fan carrying the date to someone else",
+            "The slow three-second opening only works because her audience already knew the audio. For an act still building U.S. recognition, the same move needs a faster visual payoff up front",
+          ],
+          examples: [
+            {
+              platform: "tiktok",
+              id: "7696185172210765070",
+              url: "https://www.tiktok.com/@livbedumb/video/7696185172210765070",
+              label: "Olivia Rodrigo, release announcement",
+              date: "Oct 13 2026",
+              stat: "9.9M views / 273.8K shares",
+            },
+          ],
+          pivot: {
+            title: "Attach every dated moment to something already moving",
+            actions: [
+              "Watch for the formats and audios FIFTY FIFTY's own U.S. audience is sharing, and hang announcements on them while they are live",
+              "Put the date and the destination in the caption every time, pointed at the owned capture page from Workstream 1",
+              "Judge announcement posts on shares and signups, not views",
+            ],
+          },
+        },
+        {
+          id: "go-into-another-world",
+          tag: "Move 02 / Go into another world",
+          verdict: "confirmed",
+          title: "Sexyy Red shows up inside streamer culture as a guest, not a host.",
+          summary: "At Streamer Prom 2026, a creator-run event streamed live on Twitch and YouTube, Sexyy Red attended as a streamer's date and posted a phone-shot clip from inside the room. The post drew 1.1M views, 2.3 times her own median. It is the same pattern FIFTY FIFTY's own data shows: when the group goes into gaming and creator culture, posts outperform by a wide margin, and when guests are brought into the group's format, they do not.",
+          evidence: [
+            "0.0 to 1.0 seconds: shot at phone height in the middle of the crowd, she holds up a prom card to the lens beside her date",
+            "1.5 to 3.0 seconds: her date, the streamer, laughs straight into camera. The streamer's face, not hers, carries the opening, which is what makes it native to his audience",
+            "4.5 to 7.5 seconds: fast pans across the room show camera crews, ring lights, a wall of phones, and the event's own stage screen",
+            "9.0 to 10.5 seconds: back on her, waving, surrounded by cameras",
+            "Audio is the room itself, a crowd shout for the event's host. No music bed, no edit beyond the pans",
+            "1.1M views against a median of 456,000 across her last thirty posts, 2.3 times her baseline",
+          ],
+          counterEvidence: [
+            "Shares were low at 587. The value here is reach into an audience she does not already own, not virality within her own",
+            "The event did the heavy lifting: the hosts and attendees each posted their own clips, and each one carried her to their followers. The move only works when the partner's audience is large and the appearance is genuine",
+          ],
+          examples: [
+            {
+              platform: "tiktok",
+              id: "7673764571210878222",
+              url: "https://www.tiktok.com/@sexyyred314/video/7673764571210878222",
+              label: "Sexyy Red, Streamer Prom",
+              date: "Aug 14 2026",
+              stat: "1.1M views / 2.3x her median",
+            },
+          ],
+          pivot: {
+            title: "Send the group into rooms that already have an audience",
+            actions: [
+              "Prioritize appearances at creator, gaming and esports events where FIFTY FIFTY has already proven it travels",
+              "Shoot it on a phone from inside the room on the night, and let the host's tag do the distribution",
+              "Count the reach on the partner's side, not only the post on FIFTY FIFTY's own channel",
+            ],
+          },
+        },
+        {
+          id: "instant-payoff",
+          tag: "Move 03 / Payoff in three seconds",
+          verdict: "confirmed",
+          title: "Tate McRae lands a globally known format in a single take.",
+          summary: "Tate McRae's version of the Disney Channel introduction format is ten seconds long, one shot, and needs no translation: her face fills the frame from the first frame and the joke lands inside three seconds. It drew 11.7M views, 2.4 times her own median. FIFTY FIFTY's own content reaches its payoff in the first three seconds half as often as its competitors, and this is the cleanest illustration of what closing that gap looks like.",
+          evidence: [
+            "0.0 seconds: her face already fills the frame against a plain white backdrop, looking straight into the lens",
+            "0.5 to 2.5 seconds: the format's one line, delivered with the familiar exaggerated mannerisms of the original, a hair flip and a pointed finger",
+            "3.0 seconds: she breaks into a laugh, which is the payoff",
+            "4.5 to 9.0 seconds: lingering smiles and a hand to the face, an ending that loops cleanly back to the start",
+            "One continuous take. No cuts, no on-screen text, no music beyond the trend audio",
+            "11.7M views against a median of 4.9M, 2.4 times her baseline, with 79,800 shares",
+          ],
+          counterEvidence: [
+            "Hundreds of artists posted this format. Her edge was speed and a flattering single take, not originality. The same post a month later would have earned a fraction of this",
+            "A format this simple depends on recognisability, so it suits individual members at least as well as the full group",
+          ],
+          examples: [
+            {
+              platform: "tiktok",
+              id: "7667040262232821006",
+              url: "https://www.tiktok.com/@tatemcrae/video/7667040262232821006",
+              label: "Tate McRae, Disney Channel format",
+              date: "Jul 27 2026",
+              stat: "11.7M views / 2.4x her median",
+            },
+          ],
+          pivot: {
+            title: "Move fast on formats the whole world already knows",
+            actions: [
+              "Rotate members through globally recognisable formats within days of their peak, not weeks",
+              "Open on a face and deliver the payoff inside three seconds, with one line or none",
+              "Keep production light so speed is never the bottleneck",
+            ],
+          },
+        },
+      ],
+      footnote: "Posts are third-party examples selected by Transparent Arts and Crowd Control Digital from artists' recent public posts, with performance read on October 14, 2026 and compared with each artist's own recent median. Second-by-second notes come from a frame review of each post. The artists named here are not affiliated with this proposal.",
+    },
+
+    // ===================================================================
+    // 08. How We Work
     // ===================================================================
     {
       type: "philosophy",
-      number: "07",
+      number: "08",
       navLabel: "How We Work",
       title: "How We Work",
       thesis: "There is a floor of efficacy for everything. Every channel has a spend level below which the money buys noise, and we would rather tell you that before taking the budget than after spending it.",
@@ -615,11 +750,11 @@ export const fiftyFiftyPlan: StrategyPlanData = {
     },
 
     // ===================================================================
-    // 08. First 90 Days
+    // 09. First 90 Days
     // ===================================================================
     {
       type: "timeline",
-      number: "08",
+      number: "09",
       navLabel: "First 90 Days",
       title: "First 90 Days",
       intro: "A test-first rhythm. The highest-traffic assets are fixed in the first two weeks because everything else feeds from them. Paid begins small and scales only on evidence. Physical planning starts as soon as a release date is confirmed, and the checkpoint at week four is a real scale-or-stop decision, not a status update.",
@@ -755,11 +890,11 @@ export const fiftyFiftyPlan: StrategyPlanData = {
     },
 
     // ===================================================================
-    // 09. Investment
+    // 10. Investment
     // ===================================================================
     {
       type: "pricing",
-      number: "09",
+      number: "10",
       navLabel: "Investment",
       title: "Investment",
       intro: "A 90-day pilot across all three workstreams, delivered jointly by Transparent Arts and Crowd Control Digital and offered at three budget levels. Each level shows exactly what goes to media and what goes to the team. The pilot sets the real cost per fan and cost per follower, and those numbers decide which band of the 12-month outcomes is within reach.",
