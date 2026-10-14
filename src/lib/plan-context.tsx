@@ -705,6 +705,7 @@ export type ShowcaseItem = {
   id: string;
   url: string;
   poster?: string;
+  embeddable?: boolean;
   artist: string;
   title: string;
   date: string;

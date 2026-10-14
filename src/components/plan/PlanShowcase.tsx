@@ -14,7 +14,25 @@ function ShowcaseEmbed({ item }: { item: ShowcaseItem }) {
   return (
     <div className="w-full max-w-[340px] mx-auto lg:mx-0 border border-text-muted/15 bg-bg overflow-hidden">
       <div className={`relative ${isTikTok ? "h-[600px]" : "h-[560px]"}`}>
-        {loaded ? (
+        {item.embeddable === false ? (
+          <a
+            href={item.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="absolute inset-0 w-full h-full group"
+            aria-label={`Open post: ${item.artist}, ${item.title}`}
+          >
+            {item.poster && (
+              <img src={item.poster} alt="" className="absolute inset-0 w-full h-full object-cover opacity-80 group-hover:opacity-95 transition-opacity" />
+            )}
+            <div className="absolute inset-0 bg-gradient-to-t from-bg via-bg/20 to-transparent" />
+            <div className="absolute bottom-6 inset-x-0 flex justify-center">
+              <span className="px-4 py-2 border border-accent bg-bg/70 text-[10px] font-mono tracking-[0.2em] uppercase text-text-primary group-hover:bg-accent/25 transition-colors">
+                Open on Instagram ↗
+              </span>
+            </div>
+          </a>
+        ) : loaded ? (
           <iframe
             src={src}
             className="absolute inset-0 w-full h-full"

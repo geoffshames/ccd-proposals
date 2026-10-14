@@ -718,6 +718,7 @@ export const kiiikiiiPlanKorean: StrategyPlanData = {
           id: "DZpxkQAm87W",
           url: "https://www.instagram.com/p/DZpxkQAm87W/",
           poster: "/images/kiiikiii/examples/katseye.jpg",
+          embeddable: false,
           artist: "KATSEYE",
           title: "\"WILD\" EP 사전 예약 출시, 이후 버전 공개",
           date: "2026년 6월 16일",

@@ -718,6 +718,7 @@ export const kiiikiiiPlan: StrategyPlanData = {
           id: "DZpxkQAm87W",
           url: "https://www.instagram.com/p/DZpxkQAm87W/",
           poster: "/images/kiiikiii/examples/katseye.jpg",
+          embeddable: false,
           artist: "KATSEYE",
           title: "\"WILD\" EP pre-order launch, followed by version reveals",
           date: "Jun 16, 2026",
