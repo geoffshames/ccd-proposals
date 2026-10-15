@@ -730,6 +730,28 @@ export type ShowcaseSection = {
   footnote?: string;
 };
 
+export type MockupItem = {
+  kind: "image" | "video";
+  src: string;
+  poster?: string;
+  aspect: "9:16" | "2:3" | "4:5" | "1:1" | "16:9";
+  tag: string;
+  title: string;
+  caption: string;
+  notes?: string[];
+};
+
+export type MockupsSection = {
+  type: "mockups";
+  number: string;
+  navLabel?: string;
+  title: string;
+  philosophy?: string;
+  intro?: string;
+  items: MockupItem[];
+  footnote?: string;
+};
+
 export type PlanSection =
   | OverviewSection
   | PhilosophySection
@@ -748,7 +770,8 @@ export type PlanSection =
   | CalendarSection
   | AssetChecklistSection
   | CostModelSection
-  | ShowcaseSection;
+  | ShowcaseSection
+  | MockupsSection;
 
 // Plan root -----------------------------------------------------------------
 

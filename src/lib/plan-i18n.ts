@@ -36,6 +36,8 @@ const UI = {
     whyItWorks: "Why It Works",
     result: "Result",
     forArtist: "For {artist}",
+    directional: "AI-generated / directional",
+    howWeUseIt: "How we'd use it",
   },
   ko: {
     partnership: "파트너십",
@@ -71,6 +73,45 @@ const UI = {
     whyItWorks: "효과 요인",
     result: "성과",
     forArtist: "{artist} 적용 방안",
+    directional: "AI 생성 / 방향성 예시",
+    howWeUseIt: "활용 방안",
+  },
+  ja: {
+    partnership: "パートナーシップ",
+    preparedBy: "作成",
+    approve: "承認する",
+    objective: "目的",
+    strategy: "戦略",
+    components: "構成要素",
+    tactics: "施策",
+    examples: "事例",
+    kpis: "主要指標",
+    featureArtists: "フィーチャリング候補",
+    references: "参考資料",
+    swipeTimeline: "横にスワイプしてスケジュール全体を表示",
+    light: "低",
+    active: "中",
+    heavy: "高",
+    weekBreakdown: "週ごとの詳細",
+    recommended: "推奨",
+    retainer: "リテイナー",
+    mediaMgmt: "メディア運用費",
+    breakdown: "項目別内訳",
+    deployable: "エージェンシー費用を除く実行予算",
+    addOns: "オプション（ティア外）",
+    sending: "送信中...",
+    sendError: "送信できませんでした。もう一度お試しください。",
+    openInstagram: "Instagramで見る ↗",
+    loadTikTok: "TikTokを読み込む",
+    loadInstagram: "Instagram投稿を読み込む",
+    viewOriginal: "元の投稿を見る ↗",
+    format: "フォーマット",
+    beatByBeat: "構成分析",
+    whyItWorks: "効果の理由",
+    result: "成果",
+    forArtist: "{artist}への応用",
+    directional: "AI生成 / イメージ例",
+    howWeUseIt: "活用方法",
   },
 } as const;
 
@@ -78,7 +119,7 @@ export type UIKey = keyof typeof UI.en;
 
 export function useT() {
   const plan = usePlan();
-  const lang = plan.language === "ko" ? "ko" : "en";
+  const lang = plan.language === "ko" || plan.language === "ja" ? plan.language : "en";
   return (key: UIKey, vars?: Record<string, string>) => {
     let s: string = UI[lang][key] ?? UI.en[key];
     vars = { artist: plan.cover.title, ...(vars ?? {}) };

@@ -21,6 +21,8 @@ import { eightyTwoMajorTrophyEs } from "./82major-trophy-es";
 import { eightyTwoMajorTrophyEsKorean } from "./82major-trophy-es-ko";
 import { kiiikiiiPlan } from "./kiiikiii";
 import { kiiikiiiPlanKorean } from "./kiiikiii-ko";
+import { miyaviPlan } from "./miyavi";
+import { miyaviPlanJapanese } from "./miyavi-ja";
 import { irationPlan } from "./iration";
 import { markTuanPlan } from "./mark-tuan";
 import { markTuanPlanProposal } from "./mark-tuan-plan";
@@ -53,6 +55,8 @@ export const PLANS: Record<string, StrategyPlanData> = {
   "fifty-fifty-ko": fiftyFiftyPlanKorean,
   kiiikiii: kiiikiiiPlan,
   "kiiikiii-ko": kiiikiiiPlanKorean,
+  miyavi: miyaviPlan,
+  "miyavi-ja": miyaviPlanJapanese,
   "bhavi-viaje-de-ida": bhaviViajeDeIdaPlan,
   "hitc-la-uber-26": uberHitcPlan,
   "lola-amour": lolaAmourPlan,
