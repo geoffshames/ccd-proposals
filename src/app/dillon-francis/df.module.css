@@ -1083,3 +1083,10 @@
 @media (max-width: 600px) { .addons[data-n="5"] { grid-template-columns: 1fr; } }
 .why[data-n="3"] { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 @media (max-width: 700px) { .why[data-n="3"] { grid-template-columns: 1fr; } }
+.baseCard { display: grid; grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.4fr); gap: clamp(24px, 4vw, 64px); background: var(--ink2); border: 1px solid var(--red); padding: clamp(26px, 3.4vw, 48px); }
+.baseLeft { display: flex; flex-direction: column; gap: 18px; }
+.baseLeft .tierPrice b { font-size: clamp(3.4rem, 6vw, 5.6rem); }
+.baseList { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: 1fr 1fr; column-gap: 32px; align-content: start; }
+.baseList li { font-size: 15px; color: var(--text2); padding: 12px 0 12px 20px; position: relative; line-height: 1.45; border-bottom: 1px solid var(--line); }
+.baseList li::before { content: ""; position: absolute; left: 0; top: 22px; width: 9px; height: 1px; background: var(--red); }
+@media (max-width: 1000px) { .baseCard, .baseList { grid-template-columns: 1fr; } }

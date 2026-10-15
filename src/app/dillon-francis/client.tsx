@@ -1664,16 +1664,11 @@ function Creative() {
 const usd = (n: number) => `$${Math.round(n).toLocaleString("en-US")}`;
 
 function Pricing() {
-  const [tier, setTier] = useState(1);
-  const [fans, setFans] = useState(1);
+  const [fans, setFans] = useState(0);
   const [spend, setSpend] = useState(0);
   const [hours, setHours] = useState(15);
-  const pick = (i: number) => {
-    setTier(i);
-    setFans(i === 1 ? 1 : 0);
-    setSpend(i === 2 ? 25000 : 0);
-  };
-  const base = PRICING.tiers[0].retainer;
+  const B = PRICING.base;
+  const base = B.retainer;
   const fanFee = PRICING.fans[fans].v;
   const fee = (spend * PRICING.fee) / 100;
   const creative = hours * PRICING.rate;
@@ -1683,35 +1678,26 @@ function Pricing() {
       <Head n="12" label="Pricing" title="Pricing">
         {PRICING.intro}
       </Head>
-      <div className={s.tiers} data-n="3">
-        {PRICING.tiers.map((x, i) => (
-          <Reveal key={x.k} delay={i * 0.08} style={{ display: "flex" }}>
-            <button className={s.tier} data-rec={"rec" in x && x.rec ? "" : undefined} aria-pressed={tier === i} onClick={() => pick(i)}>
-              {"rec" in x && x.rec && <span className={`${s.tierTag} ${s.mono}`}>Recommended</span>}
-              <span className={`${s.mono} ${s.red}`}>Option {String(i + 1).padStart(2, "0")}</span>
-              <h3>{x.k}</h3>
-              <p className={s.tierLead}>{x.lead}</p>
-              <div className={s.tierPrice}>
-                <b>{usd(x.retainer)}</b>
-                <span>per month</span>
-              </div>
-              <div className={s.tierPlus}>
-                {"alt" in x && x.alt && <span>{x.alt}</span>}
-                {"plusFee" in x && x.plusFee && <span>+ {PRICING.fee}% of media spend, paid or creator</span>}
-                <span>+ creative at ${PRICING.rate}/hr, against an approved estimate</span>
-              </div>
-              <ul>
-                {x.items.map((it) => (
-                  <li key={it}>{it}</li>
-                ))}
-              </ul>
-            </button>
-          </Reveal>
-        ))}
-      </div>
+      <Reveal>
+        <div className={s.baseCard}>
+          <div className={s.baseLeft}>
+            <span className={`${s.mono} ${s.red}`}>{B.k}</span>
+            <div className={s.tierPrice}>
+              <b>{usd(base)}</b>
+              <span>per month</span>
+            </div>
+            <p className={s.tierLead}>{B.lead}</p>
+          </div>
+          <ul className={s.baseList}>
+            {B.items.map((it) => (
+              <li key={it}>{it}</li>
+            ))}
+          </ul>
+        </div>
+      </Reveal>
 
       <Reveal className={s.sub}>
-        <SubHead title="Add-ons" aside="On top of Socials" />
+        <SubHead title="Add-ons" aside="On top of the base package" />
         <div className={s.addons} data-n="5">
           {PRICING.addons.map((x) => (
             <div key={x.k}>
@@ -1756,7 +1742,7 @@ function Pricing() {
           </div>
           <div className={s.calcOut}>
             <div className={s.calcRow}>
-              <span>Socials retainer</span>
+              <span>Base package</span>
               <b>{usd(base)}</b>
             </div>
             {fanFee > 0 && (

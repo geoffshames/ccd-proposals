@@ -2118,49 +2118,20 @@ export const CREATIVE = {
 };
 
 export const PRICING = {
- "intro": "Three ways to start, all on a monthly retainer. Socials is the base. Fan pages and media sit on top, and creative is billed by the hour against an estimate you approve each month.",
- "tiers": [
-  {
-   "k": "Socials",
-   "retainer": 6000,
-   "lead": "The main feed, the strategy and the list.",
-   "items": [
-    "Strategy and the 2027 content plan around the mix, the EPs and the run",
-    "Main feed on Instagram, TikTok, YouTube and X",
-    "Posting, community management and replies",
-    "Email and SMS on Laylo: list clean, SMS growth, presale and drop sends",
-    "Store-access and giveaway sends with the new merch partner",
-    "Weekly reporting page and biweekly calls"
-   ]
-  },
-  {
-   "k": "Socials + Fan Pages",
-   "retainer": 9000,
-   "alt": "or $11,000 a month for 5 pages, 10 accounts",
-   "rec": true,
-   "lead": "The base plus a network of clip pages around the main feed.",
-   "items": [
-    "Everything in Socials",
-    "2 fan pages, each an Instagram and TikTok pair: 4 accounts",
-    "Daily clips from sets, the mix, IDs and the catalog",
-    "Every page built to send fans back to the main feed and the list",
-    "Step up to 5 pages, 10 accounts, at $11,000 a month"
-   ]
-  },
-  {
-   "k": "Socials + Ads",
-   "retainer": 6000,
-   "plusFee": true,
-   "lead": "The base plus paid media and creators.",
-   "items": [
-    "Everything in Socials",
-    "Paid strategy and buying on Meta, TikTok and YouTube",
-    "Release, ticket and SMS list-growth campaigns",
-    "Creator seeding and paid creator deals",
-    "Live reporting on every campaign"
-   ]
-  }
- ],
+ "intro": "One base package at $6,000 a month, with fan pages, media and creative added on top as needed. Creative is billed by the hour against an estimate you approve each month.",
+ "base": {
+  "k": "Base package",
+  "retainer": 6000,
+  "lead": "Social, strategy and the list, run by one team.",
+  "items": [
+   "Strategy and the 2027 content plan around the mix, the EPs and the run",
+   "Main feed on Instagram, TikTok, YouTube and X",
+   "Posting, community management and replies",
+   "Email and SMS on Laylo: list clean, SMS growth, presale and drop sends",
+   "Store-access and giveaway sends with the new merch partner",
+   "Weekly reporting page and biweekly calls"
+  ]
+ },
  "fee": 15,
  "rate": 125,
  "fans": [
@@ -2179,15 +2150,15 @@ export const PRICING = {
  ],
  "addons": [
   {
-   "g": "Monthly",
-   "k": "Fan pages, 2",
+   "g": "Fan pages",
+   "k": "2 pages, 4 accounts",
    "price": "$3,000",
    "unit": "/mo",
    "b": "Two fan pages, each an Instagram and TikTok pair: 4 accounts posting daily."
   },
   {
-   "g": "Monthly",
-   "k": "Fan pages, 5",
+   "g": "Fan pages",
+   "k": "5 pages, 10 accounts",
    "price": "$5,000",
    "unit": "/mo",
    "b": "Five fan pages, each an Instagram and TikTok pair: 10 accounts posting daily."
@@ -2273,8 +2244,8 @@ export const WHY = {
 export const NEXT = {
  "steps": [
   {
-   "h": "Pick an option",
-   "b": "Socials, Socials + Fan Pages or Socials + Ads. We confirm scope, the creative estimate and a start date."
+   "h": "Confirm scope",
+   "b": "The base package plus any add-ons: fan pages, paid media or creators. We set the creative estimate and a start date."
   },
   {
    "h": "Foundation, November and December",
