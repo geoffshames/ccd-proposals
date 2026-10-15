@@ -706,7 +706,7 @@ export const miyaviPlanJapanese: StrategyPlanData = {
             "チームは、ダンスの呼びかけ、ライブパフォーマンス、コラボレーションビデオを提供し続けることで、その勢いを維持しました。",
           ],
           outcome: "Billboard Global 200で最高8位、日本で19週連続1位、米国でRIAAゴールド認定を獲得しました。そのサウンドを使用した動画は1年間で約45,000件から300万件以上に増加し、デュオは2026年にコーチェラを含む初の北米ツアーを行いました。",
-          outcomeSource: "Billboard, RIAA and Real Sound, 2024 to 2026",
+          outcomeSource: "Billboard、RIAA、Real Sound（2024〜2026年）",
           adapt: {
             title: "彼のSNSアカウントを、タイアップコンテンツの拠点とします。",
             actions: [
