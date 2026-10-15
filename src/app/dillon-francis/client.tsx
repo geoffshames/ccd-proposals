@@ -65,6 +65,7 @@ import {
   DIRECTION,
   PLAN,
   CREATIVE,
+  PRICING,
   WHY,
   NEXT,
   SOURCES,
@@ -1420,7 +1421,7 @@ function Direction() {
       </Reveal>
 
       <Reveal className={s.sub}>
-        <SubHead title="One show, three parts" />
+        <SubHead title="Three parts" />
         <div className={s.world}>
           {DIRECTION.world.map((w) => (
             <div key={w.k}>
@@ -1436,7 +1437,7 @@ function Direction() {
         <div className={s.eraBlock}>
           <div className={s.eraMedia}>
             <span className={s.aiBadge}>AI example</span>
-            <Image src={CR("show-key-art")} alt="An empty late-night talk show set with DJ decks in the host desk and a giant acid green neon smiley on the back wall" fill sizes="(max-width: 1000px) 100vw, 50vw" style={{ objectFit: "cover" }} />
+            <Image src={CR("multicam-mix")} alt="A DJ booth in a dark red-lit warehouse ringed by cinema cameras on tripods and a jib" fill sizes="(max-width: 1000px) 100vw, 50vw" style={{ objectFit: "cover" }} />
           </div>
           <div className={s.eraText}>
             <span className={`${s.mono} ${s.red}`}>{DIRECTION.era.tag}</span>
@@ -1639,10 +1640,10 @@ function Creative() {
         {CREATIVE.stills.map((st, i) => (
           <Reveal key={st.img} delay={(i % 3) * 0.08}>
             <div className={s.still}>
-              <div className={s.stillMedia} data-contain={st.img === "cover-system" ? "" : undefined}>
-                {st.img !== "cover-system" && <span className={s.aiBadge}>AI example</span>}
-                <Image src={CR(st.img)} alt={st.line} fill sizes="(max-width: 700px) 100vw, 33vw" style={{ objectFit: st.img === "cover-system" ? "contain" : "cover" }} />
-                <span className={s.stillLine}>{st.line}</span>
+              <div className={s.stillMedia} data-contain={"fit" in st ? "" : undefined}>
+                <span className={s.aiBadge}>{"ai" in st && st.ai === false ? "Mockup" : "AI example"}</span>
+                <Image src={CR(st.img)} alt={st.line} fill sizes="(max-width: 700px) 100vw, 33vw" style={{ objectFit: "fit" in st ? "contain" : "cover" }} />
+                {!("fit" in st) && <span className={s.stillLine}>{st.line}</span>}
               </div>
               <div className={s.phoneMeta}>
                 <span className={`${s.mono} ${s.red}`}>{st.k}</span>
@@ -1657,14 +1658,160 @@ function Creative() {
 }
 
 /* ----------------------------------------------------------------------------
- * 12 Why and next
+ * 12 Pricing
+ * ------------------------------------------------------------------------- */
+
+const usd = (n: number) => `$${Math.round(n).toLocaleString("en-US")}`;
+
+function Pricing() {
+  const [tier, setTier] = useState(1);
+  const [fans, setFans] = useState(1);
+  const [spend, setSpend] = useState(0);
+  const [hours, setHours] = useState(15);
+  const pick = (i: number) => {
+    setTier(i);
+    setFans(i === 1 ? 1 : 0);
+    setSpend(i === 2 ? 25000 : 0);
+  };
+  const base = PRICING.tiers[0].retainer;
+  const fanFee = PRICING.fans[fans].v;
+  const fee = (spend * PRICING.fee) / 100;
+  const creative = hours * PRICING.rate;
+  const total = base + fanFee + fee + creative;
+  return (
+    <section className={s.section} id="pricing">
+      <Head n="12" label="Pricing" title="Pricing">
+        {PRICING.intro}
+      </Head>
+      <div className={s.tiers} data-n="3">
+        {PRICING.tiers.map((x, i) => (
+          <Reveal key={x.k} delay={i * 0.08} style={{ display: "flex" }}>
+            <button className={s.tier} data-rec={"rec" in x && x.rec ? "" : undefined} aria-pressed={tier === i} onClick={() => pick(i)}>
+              {"rec" in x && x.rec && <span className={`${s.tierTag} ${s.mono}`}>Recommended</span>}
+              <span className={`${s.mono} ${s.red}`}>Option {String(i + 1).padStart(2, "0")}</span>
+              <h3>{x.k}</h3>
+              <p className={s.tierLead}>{x.lead}</p>
+              <div className={s.tierPrice}>
+                <b>{usd(x.retainer)}</b>
+                <span>per month</span>
+              </div>
+              <div className={s.tierPlus}>
+                {"alt" in x && x.alt && <span>{x.alt}</span>}
+                {"plusFee" in x && x.plusFee && <span>+ {PRICING.fee}% of media spend, paid or creator</span>}
+                <span>+ creative at ${PRICING.rate}/hr, against an approved estimate</span>
+              </div>
+              <ul>
+                {x.items.map((it) => (
+                  <li key={it}>{it}</li>
+                ))}
+              </ul>
+            </button>
+          </Reveal>
+        ))}
+      </div>
+
+      <Reveal className={s.sub}>
+        <SubHead title="Add-ons" aside="On top of Socials" />
+        <div className={s.addons} data-n="5">
+          {PRICING.addons.map((x) => (
+            <div key={x.k}>
+              <span className={`${s.mono} ${s.red}`}>{x.g}</span>
+              <h4>{x.k}</h4>
+              <div className={s.addPrice}>
+                <b>{x.price}</b>
+                {x.unit && <span>{x.unit}</span>}
+              </div>
+              <p>{x.b}</p>
+            </div>
+          ))}
+        </div>
+      </Reveal>
+
+      <Reveal className={s.sub}>
+        <SubHead title="Estimate a month" aside="Build your own mix" />
+        <div className={s.calc}>
+          <div className={s.calcIn}>
+            <div className={`${s.mono} ${s.dim}`} style={{ marginBottom: 10 }}>
+              Fan pages
+            </div>
+            <div className={s.tabs} role="group" aria-label="Fan pages" style={{ marginBottom: 22 }}>
+              {PRICING.fans.map((f, i) => (
+                <button key={f.k} aria-pressed={fans === i} onClick={() => setFans(i)}>
+                  {f.k}
+                </button>
+              ))}
+            </div>
+            <label className={s.range}>
+              <span>
+                Monthly media spend, paid or creator <b>{usd(spend)}</b>
+              </span>
+              <input type="range" min={0} max={100000} step={2500} value={spend} onChange={(e) => setSpend(+e.target.value)} />
+            </label>
+            <label className={s.range}>
+              <span>
+                Creative hours <b>{hours}</b>
+              </span>
+              <input type="range" min={0} max={60} step={5} value={hours} onChange={(e) => setHours(+e.target.value)} />
+            </label>
+          </div>
+          <div className={s.calcOut}>
+            <div className={s.calcRow}>
+              <span>Socials retainer</span>
+              <b>{usd(base)}</b>
+            </div>
+            {fanFee > 0 && (
+              <div className={s.calcRow}>
+                <span>Fan pages, {PRICING.fans[fans].k}</span>
+                <b>{usd(fanFee)}</b>
+              </div>
+            )}
+            {spend > 0 && (
+              <div className={s.calcRow}>
+                <span>
+                  Media fee, {PRICING.fee}% of {usd(spend)}
+                </span>
+                <b>{usd(fee)}</b>
+              </div>
+            )}
+            <div className={s.calcRow}>
+              <span>
+                Creative, {hours} hrs at ${PRICING.rate}
+              </span>
+              <b>{usd(creative)}</b>
+            </div>
+            <div className={s.calcTotal}>
+              <span>Monthly fees</span>
+              <b>{usd(total)}</b>
+            </div>
+            <p className={s.note}>{spend > 0 ? `Media spend of ${usd(spend)} is paid directly to the platforms and creators and is not included above.` : "Media spend is paid directly to the platforms and creators and is not included above."}</p>
+          </div>
+        </div>
+      </Reveal>
+
+      <Reveal className={s.sub}>
+        <SubHead title="Terms" />
+        <div className={s.why} data-n="3">
+          {PRICING.terms.map((x) => (
+            <div key={x.h}>
+              <h4>{x.h}</h4>
+              <p>{x.b}</p>
+            </div>
+          ))}
+        </div>
+      </Reveal>
+    </section>
+  );
+}
+
+/* ----------------------------------------------------------------------------
+ * 13 Why and next
  * ------------------------------------------------------------------------- */
 
 function Next() {
   return (
     <>
       <section className={s.section} id="why">
-        <Head n="12" label="Crowd Control" title="Why Crowd Control">
+        <Head n="13" label="Crowd Control" title="Why Crowd Control">
           {WHY.intro}
         </Head>
         <Reveal>
@@ -1695,7 +1842,7 @@ function Next() {
         </div>
         <section className={`${s.section} ${s.nextInner}`}>
           <Reveal>
-            <Label n="13">Next steps</Label>
+            <Label n="14">Next steps</Label>
             <h2 className={s.nextTitle}>Next Steps</h2>
           </Reveal>
           <Reveal className={s.sub} style={{ marginTop: 44 }}>
@@ -1802,7 +1949,7 @@ export default function DillonFrancisClient() {
         <Fans />
         <div className={s.rule} />
         <Video />
-        <Break src="DdUY4axlPMC-5" alt="Dillon at the decks of an outdoor garden party, crowd packed in under hanging greenery" line="The jokes already work. They need a home." sub="Outdoor day party, September 2026" pos="50% 40%" />
+        <Break src="DdUY4axlPMC-5" alt="Dillon at the decks of an outdoor garden party, crowd packed in under hanging greenery" line="The records still move the room." sub="Outdoor day party, September 2026" pos="50% 40%" />
         <Funnel />
         <div className={s.rule} />
         <Direction />
@@ -1810,6 +1957,8 @@ export default function DillonFrancisClient() {
         <Plan />
         <div className={s.rule} />
         <Creative />
+        <div className={s.rule} />
+        <Pricing />
         <div className={s.rule} />
         <Next />
       </main>

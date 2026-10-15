@@ -1074,3 +1074,12 @@
 }
 
 .tag[data-s="own"] { border-color: var(--paper); color: var(--paper); }
+
+/* ---------- pricing, three options ---------- */
+.tiers[data-n="3"] { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.addons[data-n="5"] { grid-template-columns: repeat(5, minmax(0, 1fr)); }
+@media (max-width: 1200px) { .addons[data-n="5"] { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+@media (max-width: 1000px) { .tiers[data-n="3"] { grid-template-columns: 1fr; } .addons[data-n="5"] { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 600px) { .addons[data-n="5"] { grid-template-columns: 1fr; } }
+.why[data-n="3"] { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+@media (max-width: 700px) { .why[data-n="3"] { grid-template-columns: 1fr; } }

@@ -23,6 +23,7 @@ export const NAV = [
   { id: "direction", label: "Direction" },
   { id: "plan", label: "Plan" },
   { id: "creative", label: "Creative" },
+  { id: "pricing", label: "Pricing" },
   { id: "next", label: "Next" },
 ] as const;
 
@@ -31,7 +32,7 @@ export const HERO = {
  "title": "DILLON FRANCIS",
  "line": "Social Media and Content Audit",
  "sub": "Artist, brand, social, peers, fans, video AI, funnel, a content direction and a social plan.",
- "body": "We measured everything public about Dillon Francis: 43 release covers since 2014, more than 800 of his own posts across Instagram, TikTok, YouTube and X, 800 posts from ten peer artists, 6,262 fan comments, 40 videos run through video AI, and every link a fan can tap. The short version: the funniest personality in dance music, an audience that still answers every time he is funny, and a fall release run that stopped giving them the joke.",
+ "body": "We measured everything public about Dillon Francis: 43 release covers since 2014, more than 800 of his own posts across Instagram, TikTok, YouTube and X, 800 posts from ten peer artists, 6,262 fan comments, 40 videos run through video AI, and every link a fan can tap. The short version: a catalog and a live show fans still talk about, a personality that can carry any record, and a feed that drifted away from the music.",
  "stats": [
   {
    "value": 81,
@@ -68,7 +69,7 @@ export const MARQUEE = [
 ];
 
 export const SUMMARY = {
- "intro": "Dillon Francis has the rarest asset in dance music: a sense of humor his audience will follow anywhere. Every number in this audit points the same way. When the post is a bit, reach shows up. When the post is a plain release clip, it doesn't. The direction is simple to say and specific to execute: put the songs back inside the jokes, give the jokes a recurring home, and build the links so the attention lands somewhere Dillon owns.",
+ "intro": "Dillon Francis built his audience on trap and festival records and a set with real energy, and a sense of humor that made people stay. New music is still the biggest thing fans talk about, ahead of the comedy. Every number in this audit points the same way: the posts that win put a song inside a moment worth watching, and the plain release clips miss. The direction for 2027 is music first. The EPs, the mix and the catalog lead, the personality delivers them, fan pages widen the reach, and the list turns attention into fans Dillon can text directly.",
  "items": [
   {
    "n": "01",
@@ -1821,34 +1822,34 @@ export const FUNNEL = {
 };
 
 export const DIRECTION = {
- "intro": "The research points to one move: stop running the comedy and the music as two feeds. Make every release an episode of the show he already runs, with Dillon as the host, the bits as the segments and the smiley as the mark. Everything below is a starting point for the conversation, not a finished identity.",
+ "intro": "The research and the 2027 plan point the same way: everything ties back to the music. The personality stays, as the delivery rather than the subject. The trap EPs, the January mix and the catalog lead. The bits, the live moments and the fan pages carry them. The list turns that attention into fans Dillon can reach directly. Everything below is a starting point for the conversation, not a finished identity.",
  "position": {
-  "pre": "The ",
-  "em": "funniest",
-  "post": " person in dance music.",
-  "b": "Dillon is the producer who made the joke part of the record. Fans treat it that way already: comedy is a fifth of all fan conversation, and the songs that land hardest arrive as a punchline. Nobody else in the peer set owns written, character-driven comedy. FISHER is spontaneous, Steve Aoki is stunts, Diplo is provocation. Dillon writes the bit."
+  "pre": "Festival trap with a ",
+  "em": "personality",
+  "post": " nobody can copy.",
+  "b": "Dillon built his audience on the records and the set: Get Low, IDGAFOS, Money Sucks, Friends Rule and a decade of festival main stages. The humor is why people stay, not why they came. Fans still talk about new music more than anything else, a quarter of all fan conversation, ahead of the comedy. The job for 2027 is to make the music the subject of every post again, with Dillon as the delivery. Plenty of peers can post a drop. Nobody else can carry a trap record with a bit, and nobody else has his catalog."
  },
  "world": [
   {
+   "k": "The music",
+   "r": "The subject",
+   "b": "Two trap EPs, the January multicam mix, the set and the catalog. Every post starts from a record."
+  },
+  {
    "k": "Dillon",
-   "r": "The host",
-   "b": "The person in the frame and the writer of every bit. Mock-heroic captions, the studio diary voice, sincere about friends."
+   "r": "The delivery",
+   "b": "The voice, the bits and the live energy that make a song worth stopping for. Personality in service of the track."
   },
   {
-   "k": "The Show",
-   "r": "The franchise",
-   "b": "Recurring bits become segments: Ring Cam, Chat, Stop The Show, Did They Steal My Song. Peers and creators are guests. Every new single is the musical guest."
-  },
-  {
-   "k": "The smiley",
-   "r": "The mark",
-   "b": "Promoted from a merch doodle to the logo. Locked with the hand-drawn wordmark on every cover, end card, stage screen, pass and avatar."
+   "k": "The network",
+   "r": "The reach",
+   "b": "The main feed, a set of fan pages clipping every set and ID, and an SMS list that hears it first."
   }
  ],
  "era": {
-  "k": "THE DILLON FRANCIS SHOW",
-  "tag": "Working frame for the next twelve months",
-  "b": "Treat the feed as a late-night show he hosts. Bits are segments, peers and creators are guests, DJ Hanzel gets a recurring slot, and every new song is the performance at the end. It matches what already wins on his grid, gives YouTube a reason to exist again, and turns a release week into an episode instead of an announcement."
+  "k": "ISDGAFOS",
+  "tag": "Working frame for 2027",
+  "b": "Part 1 and Part 2 lead into ISDGAFOS, with the multicam mix in January setting the sound before festival season. Every post in the year belongs to that road: the IDs, the sets, the studio and the catalog that got him here. It gives the feed one story to tell, fans a reason to follow every step, and the bigger headline shows at the end of 2027 a payoff."
  },
  "system": [
   {
@@ -1857,7 +1858,7 @@ export const DIRECTION = {
   },
   {
    "k": "The mark",
-   "b": "The smiley becomes the logo: covers, end cards, stage screens, the store button and the avatar on every channel."
+   "b": "The smiley becomes the logo: covers, end cards, stage screens, the store button and the avatar on every channel and fan page."
   },
   {
    "k": "Palette",
@@ -1865,119 +1866,131 @@ export const DIRECTION = {
   },
   {
    "k": "Type on video",
-   "b": "One typeface, one color and one position for every premise line, so a clip reads as Dillon before the caption loads."
+   "b": "One typeface, one color and one position for every track title and premise line, so a clip reads as Dillon before the caption loads."
   },
   {
-   "k": "Characters",
-   "b": "DJ Hanzel keeps his own look, black and red with the sunglasses, as a recurring guest of the show rather than a separate account to feed."
+   "k": "The EP covers",
+   "b": "Part 1 and Part 2 share one layout: the wordmark top left, the title bottom left, the smiley bottom right. The era reads as one body of work."
   },
   {
    "k": "Fan identity",
-   "b": "Give the people in on the joke a name. IDGAFOS has been a song, a label and a rallying cry since 2011, and it is still on the merch."
+   "b": "IDGAFOS has been a song, a label and a rallying cry since 2011. ISDGAFOS gives the people who never left a name to rally around again."
   }
  ],
  "pillars": [
   {
-   "k": "The Bit",
-   "b": "The song as the punchline. A premise line in the first frame, the track as the payoff, 15 to 30 seconds."
-  },
-  {
-   "k": "The Cast",
-   "b": "Peers, creators, fans and friends in the frame, posted as collabs so both audiences receive it. Fall gets a cast too."
-  },
-  {
-   "k": "The Room",
-   "b": "Live with stakes: one Stop The Show moment per date, crowd-made moments, the payoff post the next day."
+   "k": "The Set",
+   "b": "The drop, the crowd and the room. Festival and headline footage cut for every platform, new trap records first."
   },
   {
    "k": "The Studio",
-   "b": "Needs Words: the work in progress, fans writing and naming it in the comments, a visible road from studio clip to release."
+   "b": "IDs, works in progress and the road from studio clip to release. Fans hear Part 1 and Part 2 before they come out."
+  },
+  {
+   "k": "The Bit",
+   "b": "Personality with the song as the payoff. A premise line in the first frame, the track as the punchline, 15 to 30 seconds."
+  },
+  {
+   "k": "The Catalog",
+   "b": "The records newer fans don't know are his. Get Low, IDGAFOS and the rest, told through live moments and the stories behind them."
   }
  ],
  "platforms": [
   {
    "k": "Instagram",
    "r": "Home",
-   "b": "Keep about 3 posts a week and swap teasers for premise-led bits. One collab post every week."
+   "b": "About 3 posts a week, music in every one. One collab post a week with peers on shared bills."
   },
   {
    "k": "TikTok",
-   "r": "Growth",
-   "b": "Native cuts, reply-to-comment videos and stitches with fans. Promote only posts that already won organically."
+   "r": "Discovery",
+   "b": "Native cuts of drops and IDs, reply videos and stitches. Promote only posts that already won organically."
   },
   {
    "k": "YouTube",
-   "r": "The show",
-   "b": "One long-form episode or full set a month, Shorts cut from the episode, a Hanzel slot."
+   "r": "The mix and the sets",
+   "b": "The January multicam mix in full, full festival sets, and Shorts cut from both."
+  },
+  {
+   "k": "Fan pages",
+   "r": "The reach",
+   "b": "Instagram and TikTok pairs clipping every set, ID and catalog moment daily, each one pointing back to the main feed."
+  },
+  {
+   "k": "SMS and email",
+   "r": "The list",
+   "b": "Text Dillon: first listens, presales, 48-hour store access and giveaways. The email list cleaned and rebuilt."
   },
   {
    "k": "X",
-   "r": "The writers' room",
-   "b": "Long personal posts and live commentary. The Alesso and Zedd posts show it works."
+   "r": "The voice",
+   "b": "Long personal posts and live commentary around releases and shows. The Alesso and Zedd posts show it works."
   }
  ]
 };
 
 export const PLAN = {
- "intro": "A social plan built on the dates already on the calendar, so the fall run feeds the show and the show is ready for 2027.",
+ "intro": "A social plan built on the 2027 road: the mix in January, two trap EPs, a market run and festival season, then the ISDGAFOS headline shows at the end of the year.",
  "phases": [
   {
    "k": "Foundation",
-   "when": "Weeks 1 to 2",
+   "when": "November to December 2026",
    "items": [
-    "Five premises written for Fall, each ending on the hook of the song",
-    "Lock the wordmark, the smiley, on-screen type and the end card",
-    "One owned link hub with email and SMS capture and Dillon's own pixels",
-    "Refresh the YouTube header links and every bio"
+    "Main feed reset: music in every post, lockup, on-screen type and end card locked",
+    "Fan pages launched: Instagram handles live, TikTok pairs set up",
+    "Text Dillon on Laylo: SMS sign-up on every link, show and post",
+    "Full email list run through NeverBounce, then a win-back send",
+    "Merch relaunch with the new partner: SMS-only 48-hour store access",
+    "Stop The Show moments on the remaining fall dates through The Church Denver on December 26"
    ]
   },
   {
-   "k": "The fall run",
-   "when": "October 16 to December 26",
-   "items": [
-    "Toronto, Montreal, Winnipeg, Exchange LA, Ember Shores, SILO Dallas, The Church Denver: one Stop The Show moment per date",
-    "Halloween at Exchange LA as a DJ Hanzel takeover",
-    "Ring Cam and Chat return weekly, one collab post a week",
-    "Put budget only behind posts that already won organically"
-   ]
-  },
-  {
-   "k": "The show",
+   "k": "The mix",
    "when": "January to March 2027",
    "items": [
-    "Episode one of the show on YouTube, Shorts cut from it",
-    "Name the fanbase and give it a list to join",
-    "The next single launched as an episode, with an ID to release road",
-    "Peer guests booked around shared bills"
+    "The multicam mix premieres on YouTube, cut into clips for every feed and fan page",
+    "EP Part 1: IDs teased live, first listens to the SMS list, release week on every channel",
+    "The catalog series starts for newer fans",
+    "Peer collabs booked around shared bills"
    ]
   },
   {
-   "k": "The season",
-   "when": "Spring and summer 2027",
+   "k": "The run",
+   "when": "April to July 2027",
    "items": [
-    "Festival season and the Wynn residency shot as episodes",
-    "A smiley capsule on his own store, sold at shows and online",
-    "A Spanish-language segment for Mexico City and US Latin fans",
-    "Quarterly format review against the peer set"
+    "EP Part 2, with the same rollout",
+    "The market run shot as content: every city gets a post and a local SMS presale",
+    "Festival season cut for the main feed and the fan pages within 24 hours",
+    "Ticket and list-growth media where a market needs it"
+   ]
+  },
+  {
+   "k": "ISDGAFOS",
+   "when": "August to December 2027",
+   "items": [
+    "The ISDGAFOS era rollout across every channel",
+    "Bigger headline shows announced to the SMS list first",
+    "Presales, giveaways and drops run through the list",
+    "Year-end review and the 2028 plan"
    ]
   }
  ],
  "series": [
   {
+   "k": "The Drop",
+   "b": "The new trap records hitting a festival crowd, shot from the booth. ID in frame, the reaction as the payoff, the release date or the SMS link on screen."
+  },
+  {
    "k": "Ring Cam",
    "b": "Night-vision doorbell skits where the new song is the punchline. The first two reached 512,421 and 329,936 plays, then the series stopped."
   },
   {
-   "k": "Chat",
-   "b": "The fake stream “to 100k viewers”, his best post of the summer at 543,815 plays. Made weekly, and a real monthly live stream behind it."
-  },
-  {
-   "k": "Did They Steal My Song?",
-   "b": "A chart hit next to his own record. Two posts, a median 927,627 plays, 7.8 times his typical reel. Never repeated."
-  },
-  {
    "k": "Stop The Show",
    "b": "A stakes moment at every date, filmed from the booth, with the payoff the next day. A fan's basketball shot reached 409,851 plays."
+  },
+  {
+   "k": "You Know This One",
+   "b": "The catalog for newer fans: a crowd losing it to Get Low, then the story of the record. Did They Steal My Song?, with two posts at a median 927,627 plays, lives here too."
   }
  ],
  "kpis": [
@@ -2000,37 +2013,37 @@ export const PLAN = {
    "when": "6 months, the legacy-star range"
   },
   {
-   "k": "YouTube long-form",
-   "now": "None since Oct 2025",
-   "to": "1 episode a month",
-   "when": "From January 2027"
+   "k": "SMS subscribers",
+   "now": "20,000",
+   "to": "100,000",
+   "when": "12 months, on the way to 10x"
   },
   {
-   "k": "Owned list",
-   "now": "SMS only",
-   "to": "25,000 email and SMS",
-   "when": "6 months"
+   "k": "Email list",
+   "now": "73,000 emails",
+   "to": "Cleaned and sending monthly",
+   "when": "60 days"
   },
   {
-   "k": "Instagram reply rate",
-   "now": "1.2%",
-   "to": "5%",
-   "when": "90 days"
+   "k": "Fan pages",
+   "now": "New handles",
+   "to": "4 to 10 accounts posting daily",
+   "when": "From December 2026"
   }
  ],
  "measure": [
   "Reach and engagement by platform, against the ten peers",
-  "Median plays by series and by hook, so formats earn their slot",
-  "Organic and promoted reported separately",
-  "List sign-ups by source: link hub, shows, drops",
+  "Median plays by series, so formats earn their slot",
+  "Fan page reach and follows sent to the main feed",
+  "SMS sign-ups by source, click rate and opt-outs per send",
   "Spotify listeners, saves and streams around every release",
-  "Fan comments read and tagged weekly, questions answered"
+  "Organic and promoted reported separately"
  ]
 };
 
 export const CREATIVE = {
  "intro": "What the direction could look like, made for this audit: three short videos and six stills built on his real hand-drawn wordmark and smiley. No likeness of Dillon was generated.",
- "label": "AI-generated examples, directional only. Not final artwork",
+ "label": "AI-generated examples and mockups, directional only. Not final artwork",
  "videos": [
   {
    "k": "Ring Cam",
@@ -2039,8 +2052,8 @@ export const CREATIVE = {
    "poster": "ring-cam-frame",
    "top": "RING CAM, EP. 3",
    "big": "3:04am and I forgot to play you the new one",
-   "cta": "Fall is out: link in bio",
-   "why": "The format that already won, pointed at the single. Premise line in frame one, the song as the payoff, the ask on screen."
+   "cta": "Part 1 first listen: text Dillon",
+   "why": "The format that already won, pointed at the new music. Premise line in frame one, the song as the payoff, the SMS ask on screen."
   },
   {
    "k": "Stop The Show",
@@ -2048,55 +2061,171 @@ export const CREATIVE = {
    "video": "stop-the-show.mp4",
    "poster": "stop-the-show-frame",
    "top": "STOP THE SHOW",
-   "big": "if he makes this shot we play Fall twice",
-   "cta": "Next: Exchange LA, 10.31",
-   "why": "One stakes moment per date, shot from the booth, with the date and the next show on screen."
+   "big": "if he makes this shot I play the new one twice",
+   "cta": "Next show: link in bio",
+   "why": "One stakes moment per date, shot from the booth, with an unreleased record as the prize."
   },
   {
-   "k": "The show open",
+   "k": "The mix",
    "fmt": "YouTube, 16:9",
-   "video": "show-open.mp4",
-   "poster": "show-key-art",
+   "video": "the-mix.mp4",
+   "poster": "multicam-mix",
    "wide": true,
-   "why": "The smiley as the set, the decks as the host desk. The open for a monthly long-form episode."
+   "why": "The January multicam mix: one room, every angle, cut into weeks of clips for the main feed and the fan pages."
   }
  ],
  "stills": [
   {
-   "img": "show-key-art",
-   "k": "The show",
-   "line": "The smiley as the set",
-   "why": "Key art for a monthly long-form show, with the decks built into the host desk."
+   "img": "ep-part-1",
+   "k": "EP Part 1",
+   "line": "One cover system for the era",
+   "why": "The wordmark top left, the title bottom left, the smiley bottom right, so Part 1 and Part 2 read as one body of work. Built from the real marks.",
+   "fit": "contain"
   },
   {
-   "img": "cover-system",
-   "k": "Cover system",
-   "line": "The last three singles, one system",
-   "why": "Fall, Cry Myself To Sleep and Make You Move with the hand-drawn wordmark top left, the title bottom left and the smiley bottom right. Built from the real covers and marks."
+   "img": "booth-set",
+   "k": "The Drop",
+   "line": "The new records, from the booth",
+   "why": "The festival view the series is shot from: the decks in frame, the crowd as the reaction."
   },
   {
-   "img": "hanzel-poster",
-   "k": "DJ Hanzel takeover",
-   "line": "Halloween at Exchange LA",
-   "why": "The character returns as a guest of the show, on a date already on the calendar."
+   "img": "fan-mock",
+   "k": "Fan pages",
+   "line": "Every set, every drop, every ID",
+   "why": "A clip page built from his own photography: drops, IDs and catalog moments daily, pointing back to the main feed.",
+   "ai": false
   },
   {
-   "img": "merch-capsule",
-   "k": "Capsule",
-   "line": "The smiley you can wear",
-   "why": "The mark and the wordmark on a black and acid green capsule, whoopee cushion included."
+   "img": "sms-mock",
+   "k": "Text Dillon",
+   "line": "First listens to the list",
+   "why": "Part 1 a day early, and 48-hour store access on merch drops, to the SMS list only.",
+   "ai": false
   },
   {
    "img": "studio-needs-words",
-   "k": "Needs Words",
-   "line": "The studio series, recurring",
-   "why": "His highest-conversation format, made into a named series fans help finish."
+   "k": "The Studio",
+   "line": "IDs before release",
+   "why": "The work in progress as a named series, fans hearing the EPs take shape."
   },
   {
-   "img": "chat-set",
-   "k": "Chat",
-   "line": "The fake stream gets a set",
-   "why": "A fixed, recognizable room for the format that won the summer."
+   "img": "merch-capsule",
+   "k": "Merch drop",
+   "line": "The smiley you can wear",
+   "why": "A capsule with the new merch partner, sold to the SMS list first."
+  }
+ ]
+};
+
+export const PRICING = {
+ "intro": "Three ways to start, all on a monthly retainer. Socials is the base. Fan pages and media sit on top, and creative is billed by the hour against an estimate you approve each month.",
+ "tiers": [
+  {
+   "k": "Socials",
+   "retainer": 6000,
+   "lead": "The main feed, the strategy and the list.",
+   "items": [
+    "Strategy and the 2027 content plan around the mix, the EPs and the run",
+    "Main feed on Instagram, TikTok, YouTube and X",
+    "Posting, community management and replies",
+    "Email and SMS on Laylo: list clean, SMS growth, presale and drop sends",
+    "Store-access and giveaway sends with the new merch partner",
+    "Weekly reporting page and biweekly calls"
+   ]
+  },
+  {
+   "k": "Socials + Fan Pages",
+   "retainer": 9000,
+   "alt": "or $11,000 a month for 5 pages, 10 accounts",
+   "rec": true,
+   "lead": "The base plus a network of clip pages around the main feed.",
+   "items": [
+    "Everything in Socials",
+    "2 fan pages, each an Instagram and TikTok pair: 4 accounts",
+    "Daily clips from sets, the mix, IDs and the catalog",
+    "Every page built to send fans back to the main feed and the list",
+    "Step up to 5 pages, 10 accounts, at $11,000 a month"
+   ]
+  },
+  {
+   "k": "Socials + Ads",
+   "retainer": 6000,
+   "plusFee": true,
+   "lead": "The base plus paid media and creators.",
+   "items": [
+    "Everything in Socials",
+    "Paid strategy and buying on Meta, TikTok and YouTube",
+    "Release, ticket and SMS list-growth campaigns",
+    "Creator seeding and paid creator deals",
+    "Live reporting on every campaign"
+   ]
+  }
+ ],
+ "fee": 15,
+ "rate": 125,
+ "fans": [
+  {
+   "k": "No fan pages",
+   "v": 0
+  },
+  {
+   "k": "2 pages, 4 accounts",
+   "v": 3000
+  },
+  {
+   "k": "5 pages, 10 accounts",
+   "v": 5000
+  }
+ ],
+ "addons": [
+  {
+   "g": "Monthly",
+   "k": "Fan pages, 2",
+   "price": "$3,000",
+   "unit": "/mo",
+   "b": "Two fan pages, each an Instagram and TikTok pair: 4 accounts posting daily."
+  },
+  {
+   "g": "Monthly",
+   "k": "Fan pages, 5",
+   "price": "$5,000",
+   "unit": "/mo",
+   "b": "Five fan pages, each an Instagram and TikTok pair: 10 accounts posting daily."
+  },
+  {
+   "g": "Media",
+   "k": "Paid media",
+   "price": "15%",
+   "unit": "of spend",
+   "b": "Strategy, buying and reporting on Meta, TikTok and YouTube. Spend is paid directly to the platforms."
+  },
+  {
+   "g": "Media",
+   "k": "Creator programs",
+   "price": "15%",
+   "unit": "of spend",
+   "b": "Creator seeding and paid creator deals. Creator fees pass through at cost."
+  },
+  {
+   "g": "Hourly",
+   "k": "Creative services",
+   "price": "$125",
+   "unit": "/hr",
+   "b": "Mix and set edits, cutdowns, statics, motion, cover and merch design, AI-generated assets and copy."
+  }
+ ],
+ "terms": [
+  {
+   "h": "Six-month minimum",
+   "b": "Month to month after the first six months."
+  },
+  {
+   "h": "Media billed direct",
+   "b": "Ad and creator spend is paid by Dillon's team directly. The 15% fee applies to any media we manage, paid or creator."
+  },
+  {
+   "h": "Creative at $125 an hour",
+   "b": "Billed monthly against an hours estimate you approve in advance. Nothing is billed beyond the estimate without sign-off."
   }
  ]
 };
@@ -2105,12 +2234,12 @@ export const WHY = {
  "intro": "Crowd Control is a culture-first marketing agency. We run social, paid, creative and data for artists, labels, tours and the brands around them, and we build research like this for every client before we spend a dollar.",
  "points": [
   {
-   "h": "Comedy and music under one roof",
-   "b": "Writers, editors and strategists who build the bit and the release plan together, so the joke and the song ship as one post."
+   "h": "Music first, personality as the delivery",
+   "b": "Strategists, editors and writers who start from the record and build the post around it, so the personality sells the song instead of replacing it."
   },
   {
-   "h": "Tour content as a system",
-   "b": "We plan every date as a content shoot and turn a run of shows into a run of episodes, with per-market media where tickets need it."
+   "h": "One network, not one feed",
+   "b": "We run the main feed, fan pages and the SMS list as one system, so every clip has more than one door and every fan ends up somewhere Dillon owns."
   },
   {
    "h": "Listening before posting",
@@ -2144,22 +2273,23 @@ export const WHY = {
 export const NEXT = {
  "steps": [
   {
-   "h": "Walk-through call",
-   "b": "We take the team through this audit and hear where Dillon is headed in 2027."
+   "h": "Pick an option",
+   "b": "Socials, Socials + Fan Pages or Socials + Ads. We confirm scope, the creative estimate and a start date."
   },
   {
-   "h": "Two-week foundation",
-   "b": "Five Fall premises, the locked lockup and end card, the link hub and the tracking, in place before Exchange LA on Halloween."
+   "h": "Foundation, November and December",
+   "b": "Main feed reset, fan pages live, Text Dillon on every link, the email list cleaned and the merch relaunch wired to SMS."
   },
   {
-   "h": "The fall run, on social",
-   "b": "Ring Cam and Chat back weekly, one Stop The Show moment per date through The Church Denver on December 26."
+   "h": "January: the mix",
+   "b": "The multicam mix premieres and Part 1 begins, with the network and the list ready to carry it."
   }
  ],
  "need": [
   "Instagram, TikTok and YouTube access",
+  "Fan page logins",
   "Meta Business Manager and TikTok Ads access",
-  "Laylo and Shopify access",
+  "Laylo access and the new merch partner contact",
   "Set, crowd and studio footage archive",
   "Release and show calendar into 2027",
   "Label and partner contacts for collab posts"
