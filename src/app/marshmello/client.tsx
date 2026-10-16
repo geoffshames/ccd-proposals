@@ -726,28 +726,79 @@ function Brand() {
  * 04 Social
  * ------------------------------------------------------------------------- */
 
-function CadBars({ counts, max }: { counts: number[]; max: number }) {
+const MON = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+const monLabel = (m: string) => `${MON[+m.slice(5, 7) - 1]} ${m.slice(2, 4)}`;
+
+function CadChart() {
+  const [hover, setHover] = useState<number | null>(null);
+  const n = CADENCE.months.length;
+  const pmax = Math.max(...CADENCE.ig, ...CADENCE.tt);
+  const rmax = Math.max(...CADENCE.ttPlays);
+  const i = hover ?? n - 2;
+  const rows = [
+    { k: "Instagram posts", vals: CADENCE.ig, max: pmax, cls: s.ccIg, fmtV: (v: number) => `${v}` },
+    { k: "TikTok posts", vals: CADENCE.tt, max: pmax, cls: s.ccTt, fmtV: (v: number) => `${v}` },
+    { k: "TikTok median plays", vals: CADENCE.ttPlays, max: rmax, cls: s.ccReach, fmtV: (v: number) => (v ? compact(v) : "n/a") },
+  ];
   return (
-    <div className={s.cadBars}>
-      {counts.map((v, i) => (
-        <motion.span
-          key={i}
-          className={s.cadBar}
-          title={`${CADENCE.months[i]}: ${v} posts`}
-          data-zero={v ? undefined : ""}
-          style={{ height: v ? `${(v / max) * 100}%` : undefined, transformOrigin: "50% 100%" }}
-          initial={{ scaleY: 0 }}
-          whileInView={{ scaleY: 1 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.9, ease: EASE, delay: i * 0.015 }}
-        />
+    <div className={s.cad}>
+      <div className={s.ccHead}>
+        <div className={s.ccLegend}>
+          <span><i className={s.ccIg} />Instagram posts</span>
+          <span><i className={s.ccTt} />TikTok posts</span>
+          <span><i className={s.ccReach} />TikTok median plays</span>
+        </div>
+        <div className={s.ccReadout} aria-live="polite">
+          <b>{monLabel(CADENCE.months[i])}{CADENCE.months[i] === "2026-10" ? " (to Oct 15)" : ""}</b>
+          <span>{CADENCE.ig[i]} Instagram posts</span>
+          <span>{CADENCE.tt[i]} TikToks</span>
+          <span>{compact(CADENCE.ttPlays[i])} median TikTok plays</span>
+        </div>
+      </div>
+      {rows.map((r) => (
+        <div className={s.ccRow} key={r.k}>
+          <span className={`${s.mono} ${s.ccK}`}>{r.k}</span>
+          <div className={s.ccBars} style={{ gridTemplateColumns: `repeat(${n}, minmax(0, 1fr))` }}>
+            {r.vals.map((v, j) => (
+              <button
+                type="button"
+                key={j}
+                className={s.ccCol}
+                data-on={hover === j ? "" : undefined}
+                onMouseEnter={() => setHover(j)}
+                onMouseLeave={() => setHover(null)}
+                onFocus={() => setHover(j)}
+                onClick={() => setHover(j)}
+                aria-label={`${monLabel(CADENCE.months[j])}: ${r.fmtV(v)} ${r.k.toLowerCase()}`}
+              >
+                <span className={s.ccVal}>{r.fmtV(v)}</span>
+                <motion.span
+                  className={`${s.ccBar} ${r.cls}`}
+                  data-zero={v ? undefined : ""}
+                  style={{ height: v ? `${Math.max(3, (v / r.max) * 100)}%` : undefined, transformOrigin: "50% 100%" }}
+                  initial={{ scaleY: 0 }}
+                  whileInView={{ scaleY: 1 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.9, ease: EASE, delay: j * 0.03 }}
+                />
+              </button>
+            ))}
+          </div>
+        </div>
       ))}
+      <div className={s.ccRow}>
+        <span />
+        <div className={`${s.ccMonths} ${s.mono}`} style={{ gridTemplateColumns: `repeat(${n}, minmax(0, 1fr))` }}>
+          {CADENCE.months.map((m, j) => (
+            <span key={m} data-on={hover === j ? "" : undefined}>{monLabel(m)}</span>
+          ))}
+        </div>
+      </div>
     </div>
   );
 }
 
 function Social() {
-  const max = Math.max(...CADENCE.tt, ...CADENCE.ig);
   const rmax = Math.max(...RELEASE.map((r) => Math.max(r.rel, r.non)));
   return (
     <section className={s.section} id="social">
@@ -791,26 +842,8 @@ function Social() {
       </Reveal>
 
       <Reveal className={s.sub}>
-        <SubHead title="Posts per month" aside="October 2025 to October 2026" />
-        <div className={s.cad}>
-          <div className={s.cad2}>
-            <div className={s.cadRow}>
-              <span>Instagram</span>
-              <CadBars counts={CADENCE.ig} max={max} />
-            </div>
-            <div className={s.cadRow} data-tt="">
-              <span>TikTok</span>
-              <CadBars counts={CADENCE.tt} max={max} />
-            </div>
-            <div className={`${s.cadMonths} ${s.mono}`}>
-              <span />
-              <div>
-                <span>2025</span>
-                <span>2026</span>
-              </div>
-            </div>
-          </div>
-        </div>
+        <SubHead title="Posts and reach by month" aside="October 2025 to October 15, 2026. Hover or tap a month" />
+        <CadChart />
         <p className={s.callout} style={{ marginTop: 22 }}>
           {CADENCE.note}
         </p>
