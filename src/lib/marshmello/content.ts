@@ -51,7 +51,7 @@ export const SUMMARY = {
     { n: "03", to: "peers", head: "First on followers, 8th and 9th on reach", body: "1st of 11 artists on Instagram and TikTok followers. 8th on median reel plays (406,473 on 27.9M, against Martin Garrix's 1,774,552 on 15.3M) and 9th on TikTok plays per follower. Alan Walker, also masked, posts 4.4 TikToks a week at a 871,650 median." },
     { n: "04", to: "fans", head: "Fans are asking for 2016, and for an answer", body: "Nostalgia is 12.3% of 6,459 fan comments and holds 63.3% of all comment likes. The most liked comment in the set is \"2016 come back\" (79,784 likes). He replies to 0.4% of fan comments on Instagram and TikTok and none on YouTube." },
     { n: "05", to: "brand", head: "A world class symbol with no system around it", body: "69 covers since 2015 score 5.0 out of 10 for consistency: 8 for the helmet, 3 for the wordmark. Two different wordmarks are in use, and the 2020 to 2023 collab covers often leave the helmet out." },
-    { n: "06", to: "funnel", head: "Four lists, two audiences, no website", body: "marshmello.com does not load. Fans sign up in four places that do not talk to each other, the store and the bio link fire different Meta pixels, all 25 live ads sell one San Francisco show, and release ads send fans to more Reels." },
+    { n: "06", to: "funnel", head: "Four lists, two audiences, a site no bio links to", body: "Every bio points to a Linktree, not marshmellomusic.com, and the site itself is built as a store that scores 38 for mobile performance. Fans sign up in four places that do not talk to each other, the store and the bio link fire different Meta pixels, all 25 live ads sell one San Francisco show, and release ads send fans to more Reels." },
   ],
 };
 
@@ -451,14 +451,13 @@ export const BRAIN = {
 };
 
 export const FUNNEL = {
-  intro: "Every bio sends fans to one Linktree, and from there they scatter: a store, a management smart link, an app, a Discord and four separate sign-up lists, while marshmello.com itself does not load. Every door below was opened and checked on October 15, 2026.",
+  intro: "Every bio sends fans to one Linktree, and from there they scatter: a store, a management smart link, an app, a Discord and four separate sign-up lists, and none of them sends fans to his own site, marshmellomusic.com. Every door below was opened and checked on October 15, 2026.",
   doors: [
     { where: "Instagram bio", says: "No bio text, one link: linktr.ee/marshmello. The Linktree lists the Close My Eyes Red Rocks video, the Close My Eyes smart link, the store, shows, a pre-save sign-up, Discord and the Mellogang app, and its newsletter box saves emails into a Google Sheet. The biggest door, 27.9M followers, works, but it says nothing.", state: "own" },
     { where: "TikTok bio", says: "\"CLOSE MY EYES\" OUT NOW\", linking the same Linktree. 25.5M followers. No TikTok pixel on the Linktree, so TikTok traffic is only measured once it reaches the store.", state: "own" },
     { where: "X bio", says: "\"Close My Eyes w ILLENIUM ft. SACHA OUT NOW\" with the Linktree in the website field. 2.25M followers.", state: "own" },
     { where: "YouTube header", says: "58.7M subscribers. The description is one line, \"Marshmello's Official YouTube Channel\". Ten header links cover the store, streaming and socials, tour dates and the app. Nothing for the current single and no sign-up.", state: "thin" },
-    { where: "marshmello.com", says: "Does not load. The bare domain has no DNS address and www.marshmello.com returns a Cloudflare origin error, from two separate checks. It does not appear on Google page one and no bio links to it.", state: "stale" },
-    { where: "Store (marshmellomusic.com)", says: "A Shopify store called Mellogang that Google lists as \"The official website for everything Marshmello\". It is the real home today: shop, kids line, cookbook, music and a tour page with nine dates. It runs the fullest tracking anywhere, on its own Meta pixel.", state: "own" },
+    { where: "marshmellomusic.com", says: "His official site, built on Shopify as a store called Mellogang, which Google lists as \"The official website for everything Marshmello\": shop, kids line, cookbook, music and a tour page with nine dates. It runs the fullest tracking anywhere, on its own Meta pixel, but no bio links to it and there is no fan sign-up beyond the store's email and SMS box.", state: "thin" },
     { where: "Fan sign-up", says: "Four lists that do not talk to each other: the Linktree newsletter (a Google Sheet), the store email and \"Text MELLO to 63556\" SMS (Klaviyo), a pre-save page, and a separate Klaviyo account on the Joytime Collective site.", state: "thin" },
     { where: "Smart links (ffm.to)", says: "marshmello.ffm.to links name The Shalizi Group as data controller, so the data stays with the team. They share the Linktree's Meta pixel, but conversion tracking is off, there is no TikTok, Snap or Google Ads pixel, and analytics points at a Universal Analytics ID that stopped collecting in 2024.", state: "own" },
     { where: "Spotify profile", says: "About 54.4M monthly listeners, No. 48 in the world. The Artist Pick is current (Close My Eyes) and six concerts are listed. The About text is a third party bio that stops at December 2025.", state: "own" },
@@ -467,7 +466,7 @@ export const FUNNEL = {
     { where: "Cooking with Marshmello and partner pages", says: "Cooking with Marshmello still has 3.66M YouTube subscribers but its newest videos are six years old. The Burn Boot Camp partnership page collects sign-ups into Burn's own form, which is right for the partner, and links back to the store and Spotify.", state: "away" },
   ],
   scores: [
-    { k: "Performance", v: 38, note: "Tested on marshmellomusic.com because marshmello.com would not load. Largest contentful paint 5.5 seconds on mobile, a 5.3 MB page with 440 requests led by 1.2 MB of tag scripts. A second run also scored 38" },
+    { k: "Performance", v: 38, note: "Largest contentful paint 5.5 seconds on mobile, a 5.3 MB page with 440 requests led by 1.2 MB of tag scripts. A second run also scored 38" },
     { k: "Accessibility", v: 82, note: "Low contrast text, images without alt text, unlabeled links and small tap targets" },
     { k: "Best practices", v: 73, note: "Six third-party cookies, console errors and browser issues" },
     { k: "SEO", v: 92, note: "Images without alt text. Otherwise indexable, and Google already treats the store as the official site" },
@@ -499,7 +498,7 @@ export const FUNNEL = {
   ],
   hot: ["face", "face reveal", "under the mask"],
   autoNote: "Google autocomplete, US, October 15, 2026. Highlighted: the helmet questions, which lead the name.",
-  search: "The name owns its search, and the helmet owns the name. Two of the first three suggestions for \"marshmello\" are about his face, and \"who is marshmello\" fills with under the mask, real name and in real life. Fans search for tour 2026, tickets, the SF date and the setlist, and Fortnite still fills three of the ten \"f\" suggestions seven years after the in-game concert. No current single appears in any stem: the songs people type are Silence, FRIENDS and Shockwave. Page one is Wikipedia, YouTube, Instagram, Spotify, the store and X, and People Also Ask leads with \"What happened to Marshmello now?\". marshmello.com is nowhere, so the store is doing the website's job.",
+  search: "The name owns its search, and the helmet owns the name. Two of the first three suggestions for \"marshmello\" are about his face, and \"who is marshmello\" fills with under the mask, real name and in real life. Fans search for tour 2026, tickets, the SF date and the setlist, and Fortnite still fills three of the ten \"f\" suggestions seven years after the in-game concert. No current single appears in any stem: the songs people type are Silence, FRIENDS and Shockwave. Page one is Wikipedia, YouTube, Instagram, Spotify, the store and X, and People Also Ask leads with \"What happened to Marshmello now?\". marshmellomusic.com is on page one as a store, which is the job it is built to do.",
 };
 
 export const DIRECTION = {
@@ -528,7 +527,7 @@ export const DIRECTION = {
     { k: "Covers", b: "The bottom center helmet sign off from the 2018 covers returns on every single, whoever the partner is and whatever the genre." },
     { k: "Palette", b: "White, black and the red already repeating across the 2025 to 2026 singles. Release art can change; the lockup and the accent stay." },
     { k: "Type on video", b: "One typeface, one color and one position for every premise line and track title, so a clip reads as his before the caption loads." },
-    { k: "Home", b: "marshmello.com back online as the one home: tour, music, store and sign-up, on one pixel and one list." },
+    { k: "Home", b: "marshmellomusic.com as the one home every bio points to: music, tour, store and the Mellogang sign-up up front, on one pixel and one list." },
   ],
   pillars: [
     { k: "The Helmet", b: "Character bits and mask lore. The helmet at airport security, the first DIY mask, the helmet a fan painted. A premise line in the first frame." },
@@ -549,7 +548,7 @@ export const DIRECTION = {
 export const PLAN = {
   intro: "A social plan built on the 2027 calendar: the fall arena and NYE shows, the helmet series in the new year, festival season and Wynn, then Silence turning ten in August.",
   phases: [
-    { k: "Foundation", when: "November to December 2026", items: ["marshmello.com back online as the home, on one pixel", "Text the Mellogang: one list across bios, store, pre-saves and shows", "The four existing lists merged and cleaned", "Replies on every post in English, Spanish and Portuguese", "Fan pages launched: Instagram and TikTok pairs", "Pokemon Night Out at The O2, Decadance and Countdown NYE shot as content"] },
+    { k: "Foundation", when: "November to December 2026", items: ["marshmellomusic.com as the home every bio points to, on one pixel", "Text the Mellogang: one list across bios, store, pre-saves and shows", "The four existing lists merged and cleaned", "Replies on every post in English, Spanish and Portuguese", "Fan pages launched: Instagram and TikTok pairs", "Pokemon Night Out at The O2, Decadance and Countdown NYE shot as content"] },
     { k: "The Helmet", when: "January to March 2027", items: ["Helmet series launch: Helmet Cam and the first mask lore episodes", "Design My Helmet opens to the list first", "Aspen, January 29 and 30, shot as content", "B2B series with the peers on shared bills", "Catalog series starts: Then and Now"] },
     { k: "The Gang", when: "April to July 2027", items: ["Festival season cut within 24 hours for the main feed and the fan pages", "Design My Helmet winner worn on stage", "City presales by SMS, Wynn season as a weekly series", "Paid behind organic winners, pointed at the song or the list"] },
     { k: "Silence 10", when: "August to December 2027", items: ["Silence turns ten on August 11: anniversary content and live moments", "Melloween 2027 as the year's biggest helmet moment", "Presales and drops through the list", "Year-end review and the 2028 plan"] },
@@ -566,7 +565,7 @@ export const PLAN = {
     { k: "Instagram median reel plays", now: "406,473", to: "1,000,000", when: "6 months" },
     { k: "Instagram posts a week", now: "0.6", to: "3", when: "From December 2026" },
     { k: "Fan sign-up lists", now: "4 separate", to: "1 Mellogang list", when: "60 days" },
-    { k: "marshmello.com", now: "Not loading", to: "Live, one pixel", when: "30 days" },
+    { k: "marshmellomusic.com mobile performance", now: "38", to: "70+", when: "60 days" },
   ],
   measure: ["Reach and engagement by platform, against the ten peers", "Median plays by series, so formats earn their slot", "Fan page reach and follows sent to the main feed", "Mellogang sign-ups by source, click rate and opt-outs per send", "Spotify listeners, saves and streams around every release", "Organic and promoted reported separately"],
 };
@@ -632,10 +631,10 @@ export const WHY = {
 export const NEXT = {
   steps: [
     { h: "Confirm scope", b: "The base package plus any add-ons: fan pages, paid media or creators. We set the creative estimate and a start date." },
-    { h: "Foundation, November and December", b: "marshmello.com back online, one Mellogang list, replies on every post, fan pages live, and the O2 and NYE shows shot as content." },
+    { h: "Foundation, November and December", b: "marshmellomusic.com as the home in every bio, one Mellogang list, replies on every post, fan pages live, and the O2 and NYE shows shot as content." },
     { h: "January: the helmet", b: "The helmet series launches and Design My Helmet opens to the list, with the network ready to carry it." },
   ],
-  need: ["Instagram, TikTok and YouTube access", "Fan page logins", "Meta Business Manager and TikTok Ads access", "Linktree, Klaviyo, Shopify and Feature.fm access", "marshmello.com domain and hosting access", "Set, crowd and archive footage, including 2015 to 2019", "Release and show calendar into 2027", "Label and partner contacts for collab posts"],
+  need: ["Instagram, TikTok and YouTube access", "Fan page logins", "Meta Business Manager and TikTok Ads access", "Linktree, Klaviyo, Shopify and Feature.fm access", "marshmellomusic.com Shopify admin access", "Set, crowd and archive footage, including 2015 to 2019", "Release and show calendar into 2027", "Label and partner contacts for collab posts"],
   book: "https://app.reclaim.ai/m/team-leads",
   email: "geoff@crowdcontroldigital.com",
   name: "Geoff Shames",
