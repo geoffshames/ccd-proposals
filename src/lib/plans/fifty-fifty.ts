@@ -447,7 +447,7 @@ export const fiftyFiftyPlan: StrategyPlanData = {
                   ],
                 },
               ],
-              note: "Release 1 is measured on the base it builds, with a Top Album Sales entry as the upside. Release 2 targets a top-ten finish on Top Album Sales, with a Billboard 200 debut as the high case; K-pop releases with modest U.S. streaming have entered the Billboard 200 on around 8,000 to 12,000 sales in 2026. The group's only U.S. album-chart appearance on record is Billboard's World Albums chart in 2023, so the plan starts from almost no U.S. sales history.",
+              note: "Release 1 is measured on the base it builds, with a Top Album Sales entry as the upside. Release 2 targets a top-ten finish on Top Album Sales, with a Billboard 200 debut as the high case; K-pop releases with modest U.S. streaming have entered the Billboard 200 on around 8,000 to 12,000 sales in 2026. The group's only U.S. album-chart appearance on record is Billboard's World Albums chart in 2023, so the first release also establishes the group's U.S. sales baseline.",
               source: "Crowd Control Digital and Transparent Arts planning ranges from 2026 Billboard chart results",
             },
             {
@@ -474,7 +474,7 @@ export const fiftyFiftyPlan: StrategyPlanData = {
           label: "C",
           title: "Two Releases, Not One",
           objective: "Build the U.S. base on the next release, then go for the chart on the one after.",
-          strategy: "With a new lineup and almost no U.S. sales history, asking the first release to chart would put the whole plan under pressure on its first attempt. Most K-pop companies release two to three EPs a year, so the plan uses that rhythm. The first release with this plan is groundwork: it builds the U.S. fan list, runs the pre-order mechanics for the first time, and sets a real U.S. sales baseline for the current members. The second release takes everything the first one built and goes for the chart, with targets set from measured numbers rather than projections.",
+          strategy: "A chart result is strongest when it is built on a U.S. fan base that has already been reached and measured. The plan is therefore paced across two releases, in step with the group's regular release schedule. The first release with this plan is groundwork: it builds the U.S. fan list, runs the pre-order mechanics for the first time, and sets a real U.S. sales baseline for the current members. The second release takes everything the first one built and goes for the chart, with targets set from measured numbers rather than projections.",
           components: {
             heading: "How the Two Releases Divide the Work",
             items: [
@@ -795,7 +795,7 @@ export const fiftyFiftyPlan: StrategyPlanData = {
       messaging: [
         "The fandom is already growing. This plan is about building on it, not creating it.",
         "Everything proposed here is measured against a baseline set before launch.",
-        "The magic bullet is not telling anyone there is a magic bullet.",
+        "What works gets more budget. What does not is stopped early.",
       ],
       footnote: "Every recommendation in this document traces to data pulled October 1, 2026, or to results from a live campaign run on the same workstreams.",
     },
