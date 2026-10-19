@@ -413,26 +413,41 @@ export const fiftyFiftyPlan: StrategyPlanData = {
           },
           kpis: [
             "Pre-order units committed before public on-sale",
-            "U.S. units in the counting week",
+            "U.S. units in the counting week, measured release by release",
             "Percentage of units traced to the first-party list",
           ],
           charts: [
             {
-              kind: "bars",
-              title: "U.S. Album Units, Release Week",
-              subtitle: "Low, expected, and high outcomes for the U.S. alone. The expected case is a top-ten finish on Top Album Sales.",
+              kind: "grouped",
+              title: "U.S. Album Units, Release Week, Across Two Releases",
+              subtitle: "The first release with this plan builds the base. The second goes for the chart.",
               series: [
                 {
-                  name: "U.S. units",
+                  name: "Low",
+                  color: "#8A8A8A",
                   points: [
-                    { x: "Low", y: 3000 },
-                    { x: "Expected", y: 8000 },
-                    { x: "High", y: 12000 },
+                    { x: "Release 1\nGroundwork", y: 1500 },
+                    { x: "Release 2\nChart push", y: 5000 },
+                  ],
+                },
+                {
+                  name: "Expected",
+                  color: "#FD3737",
+                  points: [
+                    { x: "Release 1\nGroundwork", y: 3000 },
+                    { x: "Release 2\nChart push", y: 8000 },
+                  ],
+                },
+                {
+                  name: "High",
+                  color: "#F2F2F2",
+                  points: [
+                    { x: "Release 1\nGroundwork", y: 5000 },
+                    { x: "Release 2\nChart push", y: 12000 },
                   ],
                 },
               ],
-              highlightX: ["Expected"],
-              note: "Low is a Top Album Sales entry. Expected is a top-ten finish on Top Album Sales. High is a Billboard 200 debut, which K-pop releases with modest U.S. streaming have reached on around 8,000 to 12,000 sales in 2026. The group's only U.S. album-chart appearance on record is Billboard's World Albums chart in 2023, so these start from almost no U.S. sales history.",
+              note: "Release 1 is measured on the base it builds, with a Top Album Sales entry as the upside. Release 2 targets a top-ten finish on Top Album Sales, with a Billboard 200 debut as the high case; K-pop releases with modest U.S. streaming have entered the Billboard 200 on around 8,000 to 12,000 sales in 2026. The group's only U.S. album-chart appearance on record is Billboard's World Albums chart in 2023, so the plan starts from almost no U.S. sales history.",
               source: "Crowd Control Digital and Transparent Arts planning ranges from 2026 Billboard chart results",
             },
             {
@@ -457,6 +472,26 @@ export const fiftyFiftyPlan: StrategyPlanData = {
         },
         {
           label: "C",
+          title: "Two Releases, Not One",
+          objective: "Build the U.S. base on the next release, then go for the chart on the one after.",
+          strategy: "With a new lineup and almost no U.S. sales history, asking the first release to chart would put the whole plan under pressure on its first attempt. Most K-pop companies release two to three EPs a year, so the plan uses that rhythm. The first release with this plan is groundwork: it builds the U.S. fan list, runs the pre-order mechanics for the first time, and sets a real U.S. sales baseline for the current members. The second release takes everything the first one built and goes for the chart, with targets set from measured numbers rather than projections.",
+          components: {
+            heading: "How the Two Releases Divide the Work",
+            items: [
+              "Release 1, groundwork: grow the U.S. fan list, open pre-orders to it for the first time, and measure U.S. units, conversion from list to purchase, and cost per fan",
+              "Release 1 success is the base it leaves behind: list size, pre-order conversion, and a U.S. sales baseline for the current members",
+              "Release 2, chart push: pre-orders open to a larger, proven list, the limited edition and signed copies are sized from Release 1 demand, and everything lands inside one counting week",
+              "Release 2 targets a top-ten finish on Top Album Sales, with a Billboard 200 debut as the high case",
+            ],
+          },
+          kpis: [
+            "Release 1: U.S. fan list size and pre-order conversion rate",
+            "Release 1: a measured U.S. sales baseline for the current lineup",
+            "Release 2: U.S. units in the counting week against the targets set from Release 1",
+          ],
+        },
+        {
+          label: "D",
           title: "Recommendations for ATTRAKT",
           objective: "Three product decisions that sit with the label, which would make every workstream here more effective.",
           strategy: "These are ATTRAKT's calls, not part of this engagement's scope. We include them because each one gives the fan list something to sell and gives committed fans a next step beyond the album.",
@@ -900,7 +935,7 @@ export const fiftyFiftyPlan: StrategyPlanData = {
           items: [
             "Full reporting against every committed metric, with attribution stated plainly.",
             "Fan list handed over enriched and exportable, owned by the label.",
-            "Recommendation for the next cycle's budget tier, sized on what this window actually proved.",
+            "Chart targets for the next release, set from the U.S. sales baseline this window measured, along with the budget tier to fund it.",
           ],
         },
       ],
