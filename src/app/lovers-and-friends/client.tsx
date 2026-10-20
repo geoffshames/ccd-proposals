@@ -1734,18 +1734,29 @@ function Pricing() {
   const [spend, setSpend] = useState(50000);
   const t = PRICING.tiers[tier];
   const [hours, setHours] = useState(Math.round((t.hours[0] + t.hours[1]) / 2));
+  const [model, setModel] = useState(0);
+  const pm = PRICING.partner.models[model];
   const pick = (i: number) => {
     setTier(i);
+    if (i !== 1) setModel(0);
     const h = PRICING.tiers[i].hours;
     setHours(Math.round((h[0] + h[1]) / 2));
   };
   const [adds, setAdds] = useState<string[]>([]);
   const monthlyAdds = PRICING.addons.filter((a) => "monthly" in a && a.monthly) as { k: string; monthly: number }[];
   const toggle = (k: string) => setAdds((cur) => (cur.includes(k) ? cur.filter((x) => x !== k) : [...cur, k]));
-  const fee = (spend * PRICING.fee) / 100;
+  const pickModel = (i: number) => {
+    setModel(i);
+    if (tier !== 1) pick(1);
+  };
+  const feePct = tier === 1 ? pm.fee : PRICING.fee;
+  const retainer = tier === 1 ? pm.retainer : t.retainer;
+  const fee = (spend * feePct) / 100;
   const creative = hours * PRICING.rate;
   const addTotal = monthlyAdds.filter((a) => adds.includes(a.k)).reduce((n, a) => n + a.monthly, 0);
-  const total = t.retainer + fee + creative + addTotal;
+  const total = retainer + fee + creative + addTotal;
+  const std = PRICING.partner.models[0];
+  const saving = (m: (typeof PRICING.partner.models)[number]) => std.retainer - m.retainer + (spend * (std.fee - m.fee)) / 100;
   return (
     <section className={s.section} id="pricing">
       <Head n="11" label="Pricing" title="Pricing">
@@ -1811,6 +1822,36 @@ function Pricing() {
       </Reveal>
 
       <Reveal className={s.sub}>
+        <SubHead title={PRICING.partner.title} aside="Starting point, finalized together" />
+        <p className={s.earnIntro}>{PRICING.partner.intro}</p>
+        <div className={s.partner}>
+          {PRICING.partner.models.map((m, i) => (
+            <button key={m.k} className={s.pModel} data-partner={i > 0 ? "" : undefined} aria-pressed={tier === 1 && model === i} onClick={() => pickModel(i)}>
+              <span className={`${s.mono} ${i > 0 ? s.red : s.dim}`}>{m.tag}</span>
+              <h3>{m.k}</h3>
+              <dl>
+                {m.rows.map(([k, v]) => (
+                  <div key={k} data-up={k === "Upside" && i > 0 ? "" : undefined}>
+                    <dt>{k}</dt>
+                    <dd>{v}</dd>
+                  </div>
+                ))}
+              </dl>
+              <p className={s.pSave}>{i === 0 ? "The base rate." : `${usd(saving(m))} a month less than Standard at ${usd(spend)} in spend.`}</p>
+            </button>
+          ))}
+        </div>
+        <div className={s.why} style={{ marginTop: 24 }}>
+          {PRICING.partner.terms.map((x) => (
+            <div key={x.h}>
+              <h4>{x.h}</h4>
+              <p>{x.b}</p>
+            </div>
+          ))}
+        </div>
+      </Reveal>
+
+      <Reveal className={s.sub}>
         <SubHead title="Estimate a month" aside="Drag to try a spend level" />
         <div className={s.calc}>
           <div className={s.calcIn}>
@@ -1818,6 +1859,13 @@ function Pricing() {
               {PRICING.tiers.map((x, i) => (
                 <button key={x.k} aria-pressed={tier === i} onClick={() => pick(i)}>
                   {x.k}
+                </button>
+              ))}
+            </div>
+            <div className={s.tabs} role="group" aria-label="Choose a model" style={{ marginBottom: 22 }}>
+              {PRICING.partner.models.map((m, i) => (
+                <button key={m.k} aria-pressed={tier === 1 && model === i} onClick={() => pickModel(i)}>
+                  {i === 0 ? "Standard" : `${m.k} partner`}
                 </button>
               ))}
             </div>
@@ -1846,12 +1894,14 @@ function Pricing() {
           </div>
           <div className={s.calcOut}>
             <div className={s.calcRow}>
-              <span>{t.k} retainer</span>
-              <b>{usd(t.retainer)}</b>
+              <span>
+                {t.k} retainer{tier === 1 && model > 0 ? `, ${pm.k.toLowerCase()} partner` : ""}
+              </span>
+              <b>{usd(retainer)}</b>
             </div>
             <div className={s.calcRow}>
               <span>
-                Management fee, {PRICING.fee}% of {usd(spend)}
+                Management fee, {feePct}% of {usd(spend)}
               </span>
               <b>{usd(fee)}</b>
             </div>
@@ -1869,6 +1919,12 @@ function Pricing() {
                   <b>{usd(a.monthly)}</b>
                 </div>
               ))}
+            {tier === 1 && model > 0 && (
+              <div className={s.calcRow}>
+                <span>Saved against Standard</span>
+                <b className={s.red}>{usd(saving(pm))}</b>
+              </div>
+            )}
             <div className={s.calcTotal}>
               <span>Monthly fees</span>
               <b>{usd(total)}</b>

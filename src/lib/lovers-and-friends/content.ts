@@ -798,7 +798,7 @@ export const CREATIVE = {
 
 export const PRICING = {
   intro:
-    "Two ways to work together. Each is a monthly retainer plus a management fee on paid media, with creative billed by the hour against an estimate you approve each month. Full Marketing covers the plan on this page end to end. Add-ons sit on top, and the partnership work is paid on results.",
+    "Two ways to work together. Each is a monthly retainer plus a management fee on paid media, with creative billed by the hour against an estimate you approve each month. Full Marketing covers the plan on this page end to end. Add-ons sit on top, the partnership work is paid on results, and a partner model trades lower fees for a stake in the brand.",
   tiers: [
     {
       k: "Paid Media",
@@ -853,8 +853,63 @@ export const PRICING = {
     { g: "Billed to sponsor", k: "Sponsor content packages", price: "Cost + 20%", b: "Content we make for the festival's sponsors, sold into their packages and billed to the sponsor." },
     { g: "Expansion", k: "Spin-off events", price: "$5,000", unit: "per event", b: "After-parties, presents shows and residency nights up to 5,000 capacity, plus 15% of that event's spend. Larger events quoted separately." },
   ],
+  partner: {
+    title: "Partner model",
+    intro:
+      "We are open to building this with you, not just for you. Lower monthly fees in exchange for a stake in what the work creates. Same team, same scope as Full Marketing.",
+    models: [
+      {
+        k: "Standard",
+        tag: "Full Marketing",
+        retainer: 10000,
+        fee: 15,
+        rows: [
+          ["Retainer", "$10,000/mo"],
+          ["Management fee", "15% of managed spend"],
+          ["Creative", "$100/hr"],
+          ["Partnership commissions", "20%"],
+          ["Upside", "None"],
+          ["Term", "Six-month minimum"],
+        ],
+      },
+      {
+        k: "Revenue share",
+        tag: "Partner",
+        retainer: 7500,
+        fee: 12.5,
+        rows: [
+          ["Retainer", "$7,500/mo"],
+          ["Management fee", "12.5% of managed spend"],
+          ["Creative", "$100/hr"],
+          ["Partnership commissions", "20%"],
+          ["Upside", "$1.50 per ticket sold, every edition we market"],
+          ["Term", "Three-edition minimum"],
+        ],
+      },
+      {
+        k: "Equity",
+        tag: "Partner",
+        retainer: 6000,
+        fee: 10,
+        rows: [
+          ["Retainer", "$6,000/mo"],
+          ["Management fee", "10% of managed spend"],
+          ["Creative", "$100/hr"],
+          ["Partnership commissions", "20%"],
+          ["Upside", "10% of the R&B Love Festival brand, held in perpetuity"],
+          ["Term", "Vests in thirds over the first three editions"],
+        ],
+      },
+    ],
+    terms: [
+      { h: "No exposure on losses", b: "Our equity carries no capital contribution and no share of losses, debts or liabilities. We share in what the brand earns and what it is worth." },
+      { h: "Counted on tickets sold", b: "The per-ticket share is counted on tickets sold. If an edition is cancelled, refunds do not claw it back." },
+      { h: "Leaving early", b: "If the engagement ends before the minimum term, the discount for months already worked is repaid. Vested equity stays vested." },
+      { h: "Open books on tickets", b: "Ticketing reports shared each edition so the per-ticket share is easy to check." },
+    ],
+  },
   terms: [
-    { h: "Six-month minimum", b: "Month to month after the first six months." },
+    { h: "Six-month minimum", b: "On Paid Media and Full Marketing, month to month after. The partner models run on the terms above." },
     { h: "Media billed direct", b: "Ad spend is paid by the festival directly to the platforms. The 15% management fee applies to the spend we manage." },
     { h: "Creative at $100 an hour", b: "Ad cutdowns, statics, motion, AI-generated assets and copy. Billed monthly against an hours estimate you approve in advance." },
     { h: "Commissions on close", b: "The 20% on partnership deals is invoiced as the partner pays, on first-year value." },
