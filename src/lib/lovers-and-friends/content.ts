@@ -798,29 +798,18 @@ export const CREATIVE = {
 
 export const PRICING = {
   intro:
-    "Two ways to work together. Each is a monthly retainer plus a management fee on paid media, with creative billed by the hour against an estimate you approve each month. Full Marketing covers the plan on this page end to end. Add-ons sit on top, the partnership work is paid on results, and a partner model trades lower fees for a stake in the brand.",
+    "One plan, Full Marketing, covering everything on this page end to end: a monthly retainer plus a management fee on paid media, with creative billed by the hour against an estimate you approve each month. Add-ons sit on top, the partnership work is paid on results, and a partner model trades lower fees for a stake in the brand.",
   tiers: [
-    {
-      k: "Paid Media",
-      retainer: 6000,
-      hours: [10, 20] as [number, number],
-      lead: "The paid engine: presale, on-sale and always-on flights.",
-      items: [
-        "Paid strategy and buying on Meta, TikTok, Google Search and YouTube",
-        "Tracking, pixel and audience setup",
-        "Retargeting pools from the live pixels and past-buyer lists",
-        "Presale, on-sale and last-call flights",
-        "Live reporting page, updated daily, with a weekly readout",
-      ],
-    },
     {
       k: "Full Marketing",
       retainer: 10000,
       hours: [30, 50] as [number, number],
-      rec: true,
       lead: "The plan on this page, run end to end by one team.",
       items: [
-        "Everything in Paid Media",
+        "Paid strategy and buying on Meta, TikTok, Google Search and YouTube",
+        "Tracking, pixel and audience setup, with retargeting from live pixels and past-buyer lists",
+        "Presale, on-sale and last-call flights",
+        "Live reporting page, updated daily, with a weekly readout",
         "Organic social on Instagram, TikTok, X and Facebook, three to five posts a week",
         "Community management and the reply desk",
         "Email and SMS list program, presale codes and drops",
@@ -909,7 +898,7 @@ export const PRICING = {
     ],
   },
   terms: [
-    { h: "Six-month minimum", b: "On Paid Media and Full Marketing, month to month after. The partner models run on the terms above." },
+    { h: "Six-month minimum", b: "On Full Marketing, month to month after. The partner models run on the terms above." },
     { h: "Media billed direct", b: "Ad spend is paid by the festival directly to the platforms. The 15% management fee applies to the spend we manage." },
     { h: "Creative at $100 an hour", b: "Ad cutdowns, statics, motion, AI-generated assets and copy. Billed monthly against an hours estimate you approve in advance." },
     { h: "Commissions on close", b: "The 20% on partnership deals is invoiced as the partner pays, on first-year value." },

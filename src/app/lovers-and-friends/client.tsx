@@ -1730,27 +1730,17 @@ function Creative() {
 const usd = (n: number) => `$${Math.round(n).toLocaleString("en-US")}`;
 
 function Pricing() {
-  const [tier, setTier] = useState(1);
+  const t = PRICING.tiers[0];
   const [spend, setSpend] = useState(50000);
-  const t = PRICING.tiers[tier];
   const [hours, setHours] = useState(Math.round((t.hours[0] + t.hours[1]) / 2));
   const [model, setModel] = useState(0);
   const pm = PRICING.partner.models[model];
-  const pick = (i: number) => {
-    setTier(i);
-    if (i !== 1) setModel(0);
-    const h = PRICING.tiers[i].hours;
-    setHours(Math.round((h[0] + h[1]) / 2));
-  };
   const [adds, setAdds] = useState<string[]>([]);
   const monthlyAdds = PRICING.addons.filter((a) => "monthly" in a && a.monthly) as { k: string; monthly: number }[];
   const toggle = (k: string) => setAdds((cur) => (cur.includes(k) ? cur.filter((x) => x !== k) : [...cur, k]));
-  const pickModel = (i: number) => {
-    setModel(i);
-    if (tier !== 1) pick(1);
-  };
-  const feePct = tier === 1 ? pm.fee : PRICING.fee;
-  const retainer = tier === 1 ? pm.retainer : t.retainer;
+  const pickModel = (i: number) => setModel(i);
+  const feePct = pm.fee;
+  const retainer = pm.retainer;
   const fee = (spend * feePct) / 100;
   const creative = hours * PRICING.rate;
   const addTotal = monthlyAdds.filter((a) => adds.includes(a.k)).reduce((n, a) => n + a.monthly, 0);
@@ -1762,33 +1752,30 @@ function Pricing() {
       <Head n="11" label="Pricing" title="Pricing">
         {PRICING.intro}
       </Head>
-      <div className={s.tiers}>
-        {PRICING.tiers.map((x, i) => (
-          <Reveal key={x.k} delay={i * 0.08} style={{ display: "flex" }}>
-            <button className={s.tier} data-rec={"rec" in x && x.rec ? "" : undefined} aria-pressed={tier === i} onClick={() => pick(i)}>
-              {"rec" in x && x.rec && <span className={`${s.tierTag} ${s.mono}`}>Recommended</span>}
-              <span className={`${s.mono} ${s.red}`}>Option {String(i + 1).padStart(2, "0")}</span>
-              <h3>{x.k}</h3>
-              <p className={s.tierLead}>{x.lead}</p>
-              <div className={s.tierPrice}>
-                <b>{usd(x.retainer)}</b>
-                <span>per month</span>
-              </div>
-              <div className={s.tierPlus}>
-                <span>+ {PRICING.fee}% of managed media spend</span>
-                <span>
-                  + creative at ${PRICING.rate}/hr, est. {x.hours[0]} to {x.hours[1]} hrs a month
-                </span>
-              </div>
-              <ul>
-                {x.items.map((it) => (
-                  <li key={it}>{it}</li>
-                ))}
-              </ul>
-            </button>
-          </Reveal>
-        ))}
-      </div>
+      <Reveal>
+        <div className={s.plan}>
+          <div className={s.planHead}>
+            <span className={`${s.mono} ${s.red}`}>The plan</span>
+            <h3>{t.k}</h3>
+            <p className={s.tierLead}>{t.lead}</p>
+            <div className={s.tierPrice}>
+              <b>{usd(t.retainer)}</b>
+              <span>per month</span>
+            </div>
+            <div className={s.tierPlus}>
+              <span>+ {PRICING.fee}% of managed media spend</span>
+              <span>
+                + creative at ${PRICING.rate}/hr, est. {t.hours[0]} to {t.hours[1]} hrs a month
+              </span>
+            </div>
+          </div>
+          <ul className={s.planList}>
+            {t.items.map((it) => (
+              <li key={it}>{it}</li>
+            ))}
+          </ul>
+        </div>
+      </Reveal>
 
       <Reveal className={s.sub}>
         <SubHead title={PRICING.earn.title} aside="Paid on results" />
@@ -1805,7 +1792,7 @@ function Pricing() {
       </Reveal>
 
       <Reveal className={s.sub}>
-        <SubHead title="Add-ons" aside="On top of either option" />
+        <SubHead title="Add-ons" aside="On top of any model" />
         <div className={s.addons}>
           {PRICING.addons.map((x) => (
             <div key={x.k}>
@@ -1826,7 +1813,7 @@ function Pricing() {
         <p className={s.earnIntro}>{PRICING.partner.intro}</p>
         <div className={s.partner}>
           {PRICING.partner.models.map((m, i) => (
-            <button key={m.k} className={s.pModel} data-partner={i > 0 ? "" : undefined} aria-pressed={tier === 1 && model === i} onClick={() => pickModel(i)}>
+            <button key={m.k} className={s.pModel} data-partner={i > 0 ? "" : undefined} aria-pressed={model === i} onClick={() => pickModel(i)}>
               <span className={`${s.mono} ${i > 0 ? s.red : s.dim}`}>{m.tag}</span>
               <h3>{m.k}</h3>
               <dl>
@@ -1855,16 +1842,9 @@ function Pricing() {
         <SubHead title="Estimate a month" aside="Drag to try a spend level" />
         <div className={s.calc}>
           <div className={s.calcIn}>
-            <div className={s.tabs} role="group" aria-label="Choose an option" style={{ marginBottom: 22 }}>
-              {PRICING.tiers.map((x, i) => (
-                <button key={x.k} aria-pressed={tier === i} onClick={() => pick(i)}>
-                  {x.k}
-                </button>
-              ))}
-            </div>
             <div className={s.tabs} role="group" aria-label="Choose a model" style={{ marginBottom: 22 }}>
               {PRICING.partner.models.map((m, i) => (
-                <button key={m.k} aria-pressed={tier === 1 && model === i} onClick={() => pickModel(i)}>
+                <button key={m.k} aria-pressed={model === i} onClick={() => pickModel(i)}>
                   {i === 0 ? "Standard" : `${m.k} partner`}
                 </button>
               ))}
@@ -1895,7 +1875,7 @@ function Pricing() {
           <div className={s.calcOut}>
             <div className={s.calcRow}>
               <span>
-                {t.k} retainer{tier === 1 && model > 0 ? `, ${pm.k.toLowerCase()} partner` : ""}
+                {t.k} retainer{model > 0 ? `, ${pm.k.toLowerCase()} partner` : ""}
               </span>
               <b>{usd(retainer)}</b>
             </div>
@@ -1919,7 +1899,7 @@ function Pricing() {
                   <b>{usd(a.monthly)}</b>
                 </div>
               ))}
-            {tier === 1 && model > 0 && (
+            {model > 0 && (
               <div className={s.calcRow}>
                 <span>Saved against Standard</span>
                 <b className={s.red}>{usd(saving(pm))}</b>
