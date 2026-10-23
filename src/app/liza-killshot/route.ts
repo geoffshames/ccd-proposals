@@ -6,10 +6,10 @@ const html = `<!DOCTYPE html>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Liza Soberano KILLSHOT Rollout Plan | Crowd Control Digital</title>
-<meta name="description" content="Rollout plan for Liza Soberano's single KILLSHOT, built around the Todd McFarlane cover reveal at LA Comic Con." />
+<meta name="description" content="Rollout plan for Liza Soberano's single KILLSHOT, built around the Todd McFarlane cover reveal on LA Comic Con weekend." />
 <meta name="robots" content="noindex, nofollow" />
 <meta property="og:title" content="Liza Soberano KILLSHOT Rollout Plan" />
-<meta property="og:description" content="The LA Comic Con cover reveal and the road to release, prepared by Crowd Control Digital." />
+<meta property="og:description" content="The Todd McFarlane cover reveal and the road to release, prepared by Crowd Control Digital." />
 <meta property="og:type" content="website" />
 <meta property="og:image" content="https://proposal.crowdcontroldigital.com/images/liza-killshot/og.jpg" />
 <meta name="twitter:card" content="summary_large_image" />
@@ -235,11 +235,11 @@ const html = `<!DOCTYPE html>
       <h1 class="cover-title">LIZA SOBERANO<span class="sm">KILLSHOT ROLLOUT PLAN</span></h1>
       <div class="cover-subwrap">
         <div class="bar"></div>
-        <p class="cover-sub">A Todd McFarlane cover, unveiled by Liza and Todd in front of LA Comic Con. The plan below turns that weekend into pre-saves, a direct fan list and a launch audience that is still there on release day.</p>
+        <p class="cover-sub">A Todd McFarlane cover for Liza's single, revealed over LA Comic Con weekend while comics culture owns the feed. The plan puts the art and the two of them together everywhere that conversation is happening, then carries the attention to release day.</p>
       </div>
     </div>
     <div class="cover-foot">
-      <div><div class="mono dim">The moment</div><div class="cv">LA Comic Con, October 30 to November 1, Los Angeles Convention Center</div></div>
+      <div><div class="mono dim">The moment</div><div class="cv">LA Comic Con weekend, October 30 to November 1</div></div>
       <div><div class="mono dim">Prepared By</div><div class="cv">Geoff Shames, Crowd Control Digital</div></div>
     </div>
   </section>
@@ -247,17 +247,17 @@ const html = `<!DOCTYPE html>
   <div class="navbar">
     <div class="navbar-in">
       <a class="nb-brand" href="#top">Liza / KILLSHOT</a>
-      <div class="nb-jump"><a href="#plan">Plan</a><a href="#con">Con Weekend</a><a href="#content">Content</a><a href="#paid">Paid</a><a href="#creative">Creative</a><a href="#needs">Next Steps</a></div>
+      <div class="nb-jump"><a href="#plan">Plan</a><a href="#shoot">Shoot</a><a href="#amplify">Amplify</a><a href="#plays">Comic Plays</a><a href="#paid">Paid</a><a href="#creative">Creative</a><a href="#needs">Next Steps</a></div>
     </div>
   </div>
 
   <section class="ctx wrap">
     <h2>Why this, why now</h2>
-    <p class="lead">Music almost never gets a cover drawn by the creator of Spawn. KILLSHOT does, and the art debuts with both of them in the room at one of the biggest fan conventions in the country. That is a story comics press, Filipino press and music press will all want. <b>The job of this rollout is to bank that attention</b> into things we can reach again: pre-saves, phone numbers, NFC taps and an audience the ads can find on release day.</p>
+    <p class="lead">Music almost never gets a cover drawn by the creator of Spawn. KILLSHOT does, and it lands on the weekend LA Comic Con and Halloween put comics, cosplay and collectors at the top of everyone's feed. <b>The job is amplification:</b> the cover and the footage of Liza and Todd together, pushed through clipping, social PR, creators and paid media, with a pre-save at the end of every post.</p>
     <div class="ctx-grid">
-      <div class="ctx-card"><span class="k">The asset</span><p>An original <b>Todd McFarlane cover</b> for a pop single. It gives Liza a crossover into a collector audience music rarely reaches, and gives every post a reason to exist beyond "new song coming."</p></div>
-      <div class="ctx-card"><span class="k">The room</span><p>LA Comic Con drew <b>more than 130,000 fans</b> last year. This year's guest list includes the KPop Demon Hunters cast, which puts an Asian-led action story and its fans in the same building. Los Angeles is also home to one of the largest Filipino communities outside the Philippines.</p></div>
-      <div class="ctx-card"><span class="k">The bridge</span><p>The Con is the peak of attention and release day comes later. <b>Every tactic below captures something at the Con</b> that we spend again in release week, so the hype carries instead of resetting.</p></div>
+      <div class="ctx-card"><span class="k">The asset</span><p>An original <b>Todd McFarlane cover</b> and one session of the two of them together. That is enough to feed three weeks of content if the shoot is planned for it (section 02).</p></div>
+      <div class="ctx-card"><span class="k">The timing</span><p>LA Comic Con drew <b>more than 130,000 fans</b> last year, and this year's guest list includes the KPop Demon Hunters cast. The whole weekend is a pop culture news cycle. We ride it online instead of competing for floor space.</p></div>
+      <div class="ctx-card"><span class="k">The bridge</span><p>The reveal is the peak of attention and release day comes later. <b>Every post asks for the pre-save</b>, so the reveal audience is still reachable when the song lands.</p></div>
     </div>
     <div class="stats">
       <div class="st"><div class="n">17.6M</div><span class="l">Instagram followers</span></div>
@@ -271,107 +271,122 @@ const html = `<!DOCTYPE html>
     <div class="sec-head">
       <div class="row"><span class="num">01</span><span class="ln"></span></div>
       <h2>The Plan</h2>
-      <p class="desc">Five phases from announcement to album. Lanes are tagged: organic social, paid media, clipping, press, the Con floor and direct-to-fan (pre-save, list, NFC).</p>
+      <p class="desc">Five phases from tease to album. Lanes are tagged: organic social, social PR, creators, clipping, paid media and direct-to-fan (pre-save and list).</p>
     </div>
-    <div class="finding"><p><b>Recommended release date: Friday, November 13</b>, with Friday, November 20 as the latest date that still clears Thanksgiving week. Announce the date from the stage on Sunday, November 1. Two weeks from reveal to release keeps the Con audience warm; a longer gap means paying to rebuild it.</p></div>
+    <div class="finding"><p><b>Recommended release date: Friday, November 13</b>, with Friday, November 20 as the latest date that still clears Thanksgiving week. Put the date in the reveal post on Saturday, October 31. Two weeks from reveal to release keeps the audience warm; a longer gap means paying to rebuild it.</p></div>
     <div class="phases">
       <div class="phase">
-        <div class="ph-l"><span class="pn">PHASE 01</span><h3>Announce</h3><span class="when">Oct 26 to Oct 29</span><p class="goal">Make the collaboration the news and fill the signing line before the doors open.</p></div>
+        <div class="ph-l"><span class="pn">PHASE 01</span><h3>Tease</h3><span class="when">Oct 26 to Oct 29</span><p class="goal">Make the collaboration the news before anyone sees the full cover.</p></div>
         <div class="ph-r"><ul>
-          <li><span class="lane red">Organic</span><span><b>Co-announcement post</b> on Liza's and Todd's accounts as a collab post: ten seconds of Todd's hand inking a crop of the cover, Liza's voice over it. Only a sliver of the art is shown.</span></li>
-          <li><span class="lane">Press</span><span><b>Three exclusives, one per lane:</b> a comics outlet gets the first-look crop, a Philippine entertainment outlet gets Liza on the collaboration, a music outlet gets the single.</span></li>
-          <li><span class="lane red">Direct</span><span><b>Pre-save and signing RSVP live on day one.</b> RSVP through a phone and email drop that reserves a spot in the signing line. Every RSVP becomes a contact we can text on release day.</span></li>
-          <li><span class="lane red">Organic</span><span><b>Piece-by-piece reveal on stories</b>, one new crop a day. Fans assemble the cover themselves before it is unveiled.</span></li>
-          <li><span class="lane">Paid</span><span><b>Meta only, concentrated:</b> Los Angeles plus the Filipino diaspora markets, optimized to RSVP and pre-save.</span></li>
+          <li><span class="lane red">Organic</span><span><b>Collab post on Liza's and Todd's accounts:</b> Todd inking a crop of the cover, Liza's voice over it. Only a sliver of the art is shown.</span></li>
+          <li><span class="lane red">Organic</span><span><b>Piece-by-piece crops on stories</b>, one a day. Fans assemble the cover themselves before Saturday.</span></li>
+          <li><span class="lane">Social PR</span><span><b>Pages briefed under embargo</b> for the Saturday drop wave: comics news, pop culture, anime and K-pop, and Filipino entertainment pages.</span></li>
+          <li><span class="lane">Creators</span><span><b>Halloween costume creators</b> get the look (black bodysuit, red scarf) and post "last-minute Halloween costume" videos tagged to the single.</span></li>
+          <li><span class="lane red">Direct</span><span><b>Pre-save live on day one</b>, plus a free phone wallpaper of the line art in exchange for a number or email.</span></li>
+          <li><span class="lane">Paid</span><span><b>Meta only, concentrated:</b> Liza's fans and the Filipino diaspora markets, optimized to pre-save.</span></li>
         </ul></div>
       </div>
       <div class="phase">
-        <div class="ph-l"><span class="pn">PHASE 02</span><h3>Reveal</h3><span class="when">Oct 30 to Nov 1</span><p class="goal">Unveil the cover in front of the biggest possible room and capture enough footage to feed the next three weeks.</p></div>
+        <div class="ph-l"><span class="pn">PHASE 02</span><h3>Reveal</h3><span class="when">Oct 30 to Nov 1</span><p class="goal">Own the comics conversation for one weekend.</p></div>
         <div class="ph-r"><ul>
-          <li><span class="lane red">Con</span><span><b>The drape pull.</b> The full cover is unveiled by Liza and Todd together, filmed from four angles including the crowd's phones. Run of show in section 02.</span></li>
-          <li><span class="lane red">Direct</span><span><b>Signed, numbered NFC prints.</b> Each print carries a tap-to-listen tag that opens a private page: a first listen before anyone else, the pre-save and the sign-up.</span></li>
-          <li><span class="lane red">Con</span><span><b>Halloween cosplay call</b> on Saturday: come as the KILLSHOT heroine. Best costume gets a signed artist proof and a photo with Liza.</span></li>
-          <li><span class="lane">Clipping</span><span><b>Raw footage to clippers within hours</b>: the reveal, Todd's walkthrough, signing reactions, the date announcement.</span></li>
-          <li><span class="lane">Paid</span><span><b>Same-night boosts</b> of the best-performing post each day, plus a geofence around the convention center during show hours to send people to the booth.</span></li>
+          <li><span class="lane red">Organic</span><span><b>Full cover reveal on Saturday, October 31</b> as a collab post on both accounts, cut from the shoot: Liza seeing the cover for the first time. The release date is in the caption.</span></li>
+          <li><span class="lane">Social PR</span><span><b>Drop wave:</b> the briefed pages post the cover inside the same two hours, so the story shows up across comics, pop culture and Filipino feeds at once.</span></li>
+          <li><span class="lane">Press</span><span><b>One comics exclusive</b> on the collaboration that morning, with Philippine entertainment outlets the same day.</span></li>
+          <li><span class="lane">Creators</span><span><b>Reaction creators post the reveal:</b> comics creators, Filipino creators and cosplayers already at the Con, who wear the look on the floor and post from their own accounts.</span></li>
+          <li><span class="lane">Clipping</span><span><b>Shoot footage to clippers before the reveal</b>, so the first wave of clips lands the same day.</span></li>
+          <li><span class="lane">Paid</span><span><b>Boost the reveal</b> on Meta and TikTok Spark Ads across Los Angeles and the diaspora markets, with comics and collectibles interest layered in for the weekend.</span></li>
         </ul></div>
       </div>
       <div class="phase">
-        <div class="ph-l"><span class="pn">PHASE 03</span><h3>Bridge</h3><span class="when">Nov 2 to Nov 12</span><p class="goal">Keep the cover in feeds every day until release, and start the sound before the song is out.</p></div>
+        <div class="ph-l"><span class="pn">PHASE 03</span><h3>Bridge</h3><span class="when">Nov 2 to Nov 12</span><p class="goal">Keep the cover in feeds every day and start the sound before the song is out.</p></div>
         <div class="ph-r"><ul>
-          <li><span class="lane red">Organic</span><span><b>Cover breakdown series</b>, three short episodes: pencils, inks, color. Todd talks through the choices; Liza reacts to seeing herself as a comic heroine.</span></li>
-          <li><span class="lane red">Organic</span><span><b>Fan art challenge</b> with downloadable line art. Todd picks winners on camera; the winners are printed and signed.</span></li>
-          <li><span class="lane">Clipping</span><span><b>Clipping campaign live</b> on Con footage and a 15-second official snippet, so creators are already posting the sound when the song lands.</span></li>
-          <li><span class="lane red">Direct</span><span><b>Online drop of the remaining prints</b> with shipping to the Philippines, so the fanbase outside LA gets the same collectible.</span></li>
+          <li><span class="lane red">Organic</span><span><b>#KILLSHOTREDRAW</b>: line art released for artists to draw the cover in their own style. Todd stitches his favorites; the best get a signed print.</span></li>
+          <li><span class="lane red">Organic</span><span><b>Cover breakdown cuts</b> from the shoot: pencils, inks, color, in Todd's words.</span></li>
+          <li><span class="lane">Clipping</span><span><b>Clipping campaign on the 15-second snippet</b> and the interview, so creators are already posting the sound when the song lands.</span></li>
+          <li><span class="lane">Social PR</span><span><b>Second wave on art pages:</b> illustration and comic-art accounts share the best redraws.</span></li>
           <li><span class="lane">Paid</span><span><b>TikTok Spark Ads and Meta</b> on the strongest organic posts, building the retargeting pool for release week.</span></li>
         </ul></div>
       </div>
       <div class="phase">
-        <div class="ph-l"><span class="pn">PHASE 04</span><h3>Release</h3><span class="when">Week of Nov 13</span><p class="goal">Convert everyone we captured into day-one streams.</p></div>
+        <div class="ph-l"><span class="pn">PHASE 04</span><h3>Release</h3><span class="when">Week of Nov 13</span><p class="goal">Convert everyone we reached into day-one streams.</p></div>
         <div class="ph-r"><ul>
-          <li><span class="lane red">Direct</span><span><b>Text and email the full list at release</b>: RSVPs, NFC taps and pre-savers. Print holders get the song 24 hours early through their tag.</span></li>
-          <li><span class="lane red">Organic</span><span><b>Official video premiere</b>, the animated cover as Spotify Canvas and YouTube visualizer, and a listening live on TikTok.</span></li>
-          <li><span class="lane">Paid</span><span><b>Heaviest flight of the campaign</b> across Meta, TikTok and YouTube: retargeting Con engagers and pre-savers first, then lookalikes and the diaspora markets.</span></li>
+          <li><span class="lane red">Direct</span><span><b>Text and email the full list at release</b>: pre-savers and wallpaper sign-ups.</span></li>
+          <li><span class="lane red">Organic</span><span><b>Official video premiere</b>, the motion-comic lyric video, the animated cover as Spotify Canvas, and a listening live on TikTok.</span></li>
+          <li><span class="lane">Paid</span><span><b>Heaviest flight of the campaign</b> across Meta, TikTok and YouTube: retargeting reveal engagers and pre-savers first, then lookalikes and the diaspora markets.</span></li>
           <li><span class="lane">Clipping</span><span><b>Clippers switch to the released track</b> and the video.</span></li>
-          <li><span class="lane red">Organic</span><span><b>Creator seeding</b> with cosplay, comics and Filipino creators who posted during the Con.</span></li>
+          <li><span class="lane">Creators</span><span><b>Second creator round</b> with the creators who posted the reveal, now on the song.</span></li>
         </ul></div>
       </div>
       <div class="phase">
         <div class="ph-l"><span class="pn">PHASE 05</span><h3>Sustain</h3><span class="when">Nov 16 onward</span><p class="goal">Hand the audience to the next chapter: the Killer Queens comic and the album.</p></div>
         <div class="ph-r"><ul>
-          <li><span class="lane red">Organic</span><span><b>Fan reposts and cut-downs</b> for three weeks: best covers, cosplays and fan art from the challenge.</span></li>
-          <li><span class="lane red">Direct</span><span><b>Killer Queens comic preorder</b> opens to the list first. Under Billboard's smart media rules, an NFC comic that unlocks the album counts as an album sale, so the Con list becomes the first audience for a chart-eligible collectible.</span></li>
-          <li><span class="lane">Paid</span><span><b>Retargeting into the preorder</b>: everyone who engaged with the Con, the print or the single.</span></li>
+          <li><span class="lane red">Organic</span><span><b>Fan reposts and cut-downs</b> for three weeks: covers, redraws and costumes.</span></li>
+          <li><span class="lane red">Direct</span><span><b>Killer Queens comic preorder</b> opens to the list first. Under Billboard's smart media rules, an NFC comic that unlocks the album counts as an album sale, so this audience becomes the first buyers of a chart-eligible collectible.</span></li>
+          <li><span class="lane">Paid</span><span><b>Retargeting into the preorder</b>: everyone who engaged with the reveal or the single.</span></li>
         </ul></div>
       </div>
     </div>
   </section>
 
-  <section class="sec wrap" id="con">
+  <section class="sec wrap" id="shoot">
     <div class="sec-head">
       <div class="row"><span class="num">02</span><span class="ln"></span></div>
-      <h2>Con Weekend</h2>
-      <p class="desc">Recommended run of show, built around the busiest day of the show. Final times follow the panel and signing schedule.</p>
+      <h2>The Shoot</h2>
+      <p class="desc">One session with Liza and Todd, planned so it feeds every lane. Shoot vertical, two cameras, lav mics on both, and the song on a speaker for the reaction moments.</p>
     </div>
     <div class="tablewrap">
       <table class="data">
-        <thead><tr><th>Day</th><th>On the floor</th><th>What we post</th></tr></thead>
+        <thead><tr><th>#</th><th>Shot</th><th>What to capture</th><th>Becomes</th></tr></thead>
         <tbody>
-          <tr><td class="h">Fri, Oct 30<br><span class="mono dim">3 PM to 9 PM</span></td><td>Preview night. The booth is up with the art still under the drape and the animated teaser on screen. Signing RSVPs check in for wristbands. Crew films fans guessing what is under the drape.</td><td>"Tomorrow" story set. Fan guesses cut into one post.</td></tr>
-          <tr><td class="h">Sat, Oct 31<br><span class="mono dim">Halloween</span></td><td><b>The reveal</b>, timed to peak floor traffic in the early afternoon: Liza and Todd pull the drape together. Signing follows. Cosplay call runs all day. Reaction station plays the first 15 seconds of the song on headphones.</td><td>Drape pull within the hour, from the crowd angle. Signing POVs and cosplay roundup that night. Same-night boost on the winner.</td></tr>
-          <tr><td class="h">Sun, Nov 1</td><td>Release date announced from the stage or booth, followed by the first public play of the snippet. Final allocation of signed prints.</td><td>Date announcement post. Weekend recap edit that night with the pre-save in the first frame.</td></tr>
+          <tr><td class="h">01</td><td class="h">First look</td><td>Liza sees the finished cover for the first time. One take, no warning, both cameras on her face.</td><td>The reveal post, the strongest paid hook, clip one</td></tr>
+          <tr><td class="h">02</td><td class="h">Todd at the board</td><td>Todd inking a detail of the cover, Liza watching over his shoulder. Tight on the brush.</td><td>Tease collab post, Canvas loop, B-roll</td></tr>
+          <tr><td class="h">03</td><td class="h">The sit-down</td><td>Six to eight questions each: why he said yes, who the heroine is, what KILLSHOT is about, what she thought of Spawn, what he hears in the song.</td><td>The clipping library, 20 to 40 clips</td></tr>
+          <tr><td class="h">04</td><td class="h">Cover walkthrough</td><td>Todd explains the cover from pencils to color, pointing at the art.</td><td>Cover breakdown series, comics press</td></tr>
+          <tr><td class="h">05</td><td class="h">Todd hears the song</td><td>Liza plays him KILLSHOT. Capture his reaction start to finish.</td><td>Reaction hook, snippet launch</td></tr>
+          <tr><td class="h">06</td><td class="h">60-second sketch swap</td><td>Todd sketches Liza in a minute; Liza sketches Todd. Show both drawings side by side.</td><td>The most shareable clip of the set</td></tr>
+          <tr><td class="h">07</td><td class="h">Signing prints</td><td>Both signing a small run of prints at the table.</td><td>Redraw challenge prizes, giveaways</td></tr>
+          <tr><td class="h">08</td><td class="h">Phone B-roll</td><td>Liza's own phone throughout: arrival, the studio, the two of them laughing.</td><td>Stories, the unpolished layer</td></tr>
         </tbody>
       </table>
     </div>
-    <div class="grid2" style="margin-top:18px">
-      <div class="mech"><span class="k">Mechanic 01</span><h4>Tap-to-listen prints</h4><p>A numbered run of 1,000, signed by Liza and Todd. The tag opens a private page with the first listen, the pre-save and the sign-up. <b>Every print is a superfan we can reach directly</b>, and every tap is counted.</p></div>
-      <div class="mech"><span class="k">Mechanic 02</span><h4>Signing line by RSVP</h4><p>Line spots are reserved online in the week before. It controls the crowd, and it turns the line itself into a contact list of the most committed fans in Los Angeles.</p></div>
-      <div class="mech"><span class="k">Mechanic 03</span><h4>Reaction station</h4><p>Headphones at the booth with the first 15 seconds of KILLSHOT. Fans who opt in are filmed hearing it for the first time, which gives the clippers authentic reaction footage on day one.</p></div>
-      <div class="mech"><span class="k">Mechanic 04</span><h4>Halloween cosplay call</h4><p>The Con lands on Halloween. A call to come as the KILLSHOT heroine turns the cover into a costume, and costumes into posts that keep coming long after the weekend.</p></div>
+  </section>
+
+  <section class="sec wrap" id="amplify">
+    <div class="sec-head">
+      <div class="row"><span class="num">03</span><span class="ln"></span></div>
+      <h2>Amplification</h2>
+      <p class="desc">Four lanes, all fed by the cover and the shoot.</p>
+    </div>
+    <div class="grid2">
+      <div class="mech"><span class="k">Lane 01</span><h4>Clipping</h4><p>The shoot is cut into a library of 20 to 40 clips and handed to clippers before the reveal: the first look, Todd on drawing her, the sketch swap, his reaction to the song. <b>Clippers are paid on verified views</b> and move to the released track in release week.</p></div>
+      <div class="mech"><span class="k">Lane 02</span><h4>Social PR</h4><p>Pages, not just press. Comics news, pop culture, anime and K-pop, Filipino entertainment and illustration accounts post the cover in a <b>coordinated two-hour drop wave</b> on Saturday, with a second wave on the best redraws.</p></div>
+      <div class="mech"><span class="k">Lane 03</span><h4>Creators and reactions</h4><p>Three groups: <b>comics creators</b> reacting to Todd drawing a pop star, <b>Filipino creators</b> reacting to Liza getting a Spawn-creator cover, and <b>cosplay creators</b> who wear the look at the Con and on Halloween.</p></div>
+      <div class="mech"><span class="k">Lane 04</span><h4>Paid media</h4><p>Boosts the best organic posts instead of making separate ads, so paid always runs behind proof. Weighted to release week. Detail in section 05.</p></div>
     </div>
   </section>
 
-  <section class="sec wrap" id="content">
+  <section class="sec wrap" id="plays">
     <div class="sec-head">
-      <div class="row"><span class="num">03</span><span class="ln"></span></div>
-      <h2>Content</h2>
-      <p class="desc">Nine formats, each with an owner, so three days on the floor feed three weeks of posting.</p>
+      <div class="row"><span class="num">04</span><span class="ln"></span></div>
+      <h2>Comic Culture Plays</h2>
+      <p class="desc">Low-lift ideas that work because the cover is real comic art. Each one uses assets we already have.</p>
     </div>
     <div class="grid3">
-      <div class="card"><div class="top"><span class="cn">01</span><span class="tag">Announce</span></div><h4>Ink to collab post</h4><p>Todd's hand laying ink on a crop of the cover, Liza's voice over it. The first thing anyone sees.</p><span class="who">Todd's studio, CCD edit</span></div>
-      <div class="card"><div class="top"><span class="cn">02</span><span class="tag">Reveal</span></div><h4>The drape pull</h4><p>Four angles, cut three ways: the crowd's view, Liza's reaction and Todd's. Posted within the hour.</p><span class="who">CCD crew</span></div>
-      <div class="card"><div class="top"><span class="cn">03</span><span class="tag">Bridge</span></div><h4>Cover breakdown</h4><p>Todd walks through the pencils, inks and color. Comics fans love a process breakdown, and it explains why this cover matters to people who have never read Spawn.</p><span class="who">Todd, CCD edit</span></div>
-      <div class="card"><div class="top"><span class="cn">04</span><span class="tag">Con</span></div><h4>Liza's POV</h4><p>Her own phone, all weekend: green room, the floor, the moment she sees the crowd. The unpolished layer that makes the polished one believable.</p><span class="who">Liza</span></div>
-      <div class="card"><div class="top"><span class="cn">05</span><span class="tag">Con</span></div><h4>First listen reactions</h4><p>Fans hearing the first 15 seconds at the reaction station. Built for clipping and for paid hooks.</p><span class="who">CCD crew</span></div>
-      <div class="card"><div class="top"><span class="cn">06</span><span class="tag">Con</span></div><h4>Cosplay roundup</h4><p>The best KILLSHOT costumes of the weekend, reposted from the fans who made them.</p><span class="who">CCD social</span></div>
-      <div class="card"><div class="top"><span class="cn">07</span><span class="tag">Bridge</span></div><h4>Animated cover</h4><p>The cover in motion: rain, scarf, the crosshair locking. One asset for Spotify Canvas, the YouTube visualizer and the paid units.</p><span class="who">CCD motion</span></div>
-      <div class="card"><div class="top"><span class="cn">08</span><span class="tag">Bridge</span></div><h4>Fan art challenge</h4><p>Downloadable line art, a hashtag and Todd as judge. Winners printed, signed and shown on camera.</p><span class="who">CCD social, Todd</span></div>
-      <div class="card"><div class="top"><span class="cn">09</span><span class="tag">Release</span></div><h4>Countdown set</h4><p>Seven days of cover crops and snippet cuts, each ending on the date and the pre-save.</p><span class="who">CCD design</span></div>
+      <div class="card"><div class="top"><span class="cn">01</span><span class="tag">Highest upside</span></div><h4>#KILLSHOTREDRAW</h4><p>"Draw this in your style" is one of the most reliable formats in the art community. Release the line art, invite artists to redraw it, and let Todd stitch his favorites. <b>Every redraw is a new post about the single</b> from an account we did not have to pay.</p></div>
+      <div class="card"><div class="top"><span class="cn">02</span><span class="tag">Timing</span></div><h4>The Halloween costume</h4><p>Con weekend is Halloween weekend. A simple, buildable look (black, red scarf) turns the cover into a costume, and costume videos keep posting after the weekend ends.</p></div>
+      <div class="card"><div class="top"><span class="cn">03</span><span class="tag">Collector language</span></div><h4>Variant covers</h4><p>Comics fans collect variants. Release a sketch variant and an ink variant of the cover as wallpapers and swap the streaming artwork on release week. Same art, three moments.</p></div>
+      <div class="card"><div class="top"><span class="cn">04</span><span class="tag">Release week</span></div><h4>Motion-comic lyric video</h4><p>The lyrics told in comic panels, built from the cover art. Cheap to make, native to both audiences, and a second video for release week.</p></div>
+      <div class="card"><div class="top"><span class="cn">05</span><span class="tag">List building</span></div><h4>Line art for a number</h4><p>Free phone wallpapers and a printable coloring page of the line art, unlocked with a phone number or email. The list we text on release day.</p></div>
+      <div class="card"><div class="top"><span class="cn">06</span><span class="tag">Todd's audience</span></div><h4>Collab posts with Todd</h4><p>Every key post goes up as a collab on both accounts, so it reaches Todd's followers and the Spawn fan pages that repost him, without buying that audience.</p></div>
+      <div class="card"><div class="top"><span class="cn">07</span><span class="tag">Community</span></div><h4>Fan communities</h4><p>The story posted natively where comics and Filipino fans already talk, including Reddit, framed as the crossover it is. The most interesting angle wins there, not the most promotional one.</p></div>
+      <div class="card"><div class="top"><span class="cn">08</span><span class="tag">Optional</span></div><h4>LED truck downtown</h4><p>A mobile LED billboard with the cover and the pre-save on the streets around the convention center Saturday and Sunday. Visible to Con traffic without involving the Con, and it photographs well.</p></div>
+      <div class="card"><div class="top"><span class="cn">09</span><span class="tag">Press angle</span></div><h4>The interview as the story</h4><p>"Todd McFarlane on drawing Liza Soberano" is a headline comics press will run. One exclusive with the best quotes from the sit-down, timed to the reveal.</p></div>
     </div>
   </section>
 
   <section class="sec wrap" id="paid">
     <div class="sec-head">
-      <div class="row"><span class="num">04</span><span class="ln"></span></div>
+      <div class="row"><span class="num">05</span><span class="ln"></span></div>
       <h2>Paid Media</h2>
       <p class="desc">Two budget options, weighted to release week. Each phase runs on as few channels as it needs so every dollar of spend produces a readable result.</p>
     </div>
@@ -384,8 +399,8 @@ const html = `<!DOCTYPE html>
       <table class="data">
         <thead><tr><th>Phase</th><th>Objective</th><th>Channels</th><th class="r">Core</th><th class="r">Full</th></tr></thead>
         <tbody>
-          <tr><td class="h">01 Announce</td><td>RSVPs and pre-saves</td><td>Meta</td><td class="r">$3,000</td><td class="r">$5,000</td></tr>
-          <tr><td class="h">02 Reveal</td><td>Booth traffic and reach on the reveal</td><td>Meta geofence, same-night boosts</td><td class="r">$2,500</td><td class="r">$5,000</td></tr>
+          <tr><td class="h">01 Tease</td><td>Pre-saves and sign-ups</td><td>Meta</td><td class="r">$3,000</td><td class="r">$5,000</td></tr>
+          <tr><td class="h">02 Reveal</td><td>Reach on the reveal</td><td>Meta, TikTok Spark Ads</td><td class="r">$2,500</td><td class="r">$5,000</td></tr>
           <tr><td class="h">03 Bridge</td><td>Video views and the retargeting pool</td><td>TikTok Spark Ads, Meta</td><td class="r">$4,500</td><td class="r">$9,000</td></tr>
           <tr><td class="h">04 Release</td><td>Day-one streams</td><td>Meta, TikTok, YouTube</td><td class="r">$7,000</td><td class="r">$14,000</td></tr>
           <tr><td class="h">05 Sustain</td><td>Streams and comic preorders</td><td>Meta and TikTok retargeting</td><td class="r">$3,000</td><td class="r">$7,000</td></tr>
@@ -393,61 +408,62 @@ const html = `<!DOCTYPE html>
         </tbody>
       </table>
     </div>
-    <p class="tbl-note">Media spend only. The Full option adds a Philippines heavy-up and YouTube in the bridge. Paid units lead with the art, Liza and Todd; frames that feature a weapon stay in organic, since Meta and TikTok restrict ads that show firearms.</p>
-    <div class="finding" style="margin-top:26px"><p><b>Clipping runs alongside paid.</b> The clipping campaign planned for KILLSHOT gets its best raw material at the Con: the reveal, reactions, Todd's walkthrough and the snippet. Clippers receive footage the same day, paid on verified views, and switch to the released track in release week.</p></div>
+    <p class="tbl-note">Media spend only; clipping, social PR and creator fees are scoped separately. The Full option adds a Philippines heavy-up and YouTube in the bridge. Paid units lead with the art, Liza and Todd; frames that feature a weapon stay in organic, since Meta and TikTok restrict ads that show firearms.</p>
   </section>
 
   <section class="sec wrap" id="creative">
     <div class="sec-head">
-      <div class="row"><span class="num">05</span><span class="ln"></span></div>
+      <div class="row"><span class="num">06</span><span class="ln"></span></div>
       <h2>Example Creative</h2>
-      <p class="desc">Generated examples of the formats above. They show the direction; the final versions use Todd's real cover and approved photography of Liza.</p>
+      <p class="desc">Generated examples of the formats above. They show the direction; the final versions use Todd's real cover and the footage from the shoot.</p>
     </div>
     <p class="disclaim">Examples, directional only</p>
     <div class="cgrid">
-      <div class="cr wide"><div class="media"><img src="/images/liza-killshot/con-reveal.jpg" alt="Example: the drape pull at the booth" /></div><div class="body"><span class="k">Con</span><h4>The drape pull</h4><p>The reveal moment the whole weekend is built around, shot from the crowd's side.</p></div></div>
+      <div class="cr wide"><div class="media"><video src="/images/liza-killshot/ink-process.mp4" poster="/images/liza-killshot/ink-process.jpg" muted loop playsinline autoplay preload="none"></video></div><div class="body"><span class="k">Tease</span><h4>Ink to collab post</h4><p>The opening announcement: the cover being inked, with Liza's voice over it.</p></div></div>
       <div class="cr"><div class="media"><video src="/images/liza-killshot/cover-loop.mp4" poster="/images/liza-killshot/nfc-print.jpg" muted loop playsinline autoplay preload="none"></video></div><div class="body"><span class="k">Bridge</span><h4>Animated cover</h4><p>Canvas, visualizer and paid unit from one asset.</p></div></div>
-      <div class="cr"><div class="media"><img src="/images/liza-killshot/nfc-print.jpg" alt="Example: signed numbered print with NFC tag" /></div><div class="body"><span class="k">Direct</span><h4>Tap-to-listen print</h4><p>Signed, numbered, with the NFC tag that opens the first listen.</p></div></div>
-      <div class="cr"><div class="media"><img src="/images/liza-killshot/story-teaser.jpg" alt="Example: cover reveal story teaser" /></div><div class="body"><span class="k">Announce</span><h4>Cover reveal teaser</h4><p>Story frame for announce week, showing only a crop of the art.</p></div></div>
-      <div class="cr"><div class="media"><img src="/images/liza-killshot/presave-tile.jpg" alt="Example: pre-save tile" /></div><div class="body"><span class="k">Direct</span><h4>Pre-save tile</h4><p>The torn-paper reveal, carried from the Con into every pre-save ask.</p></div></div>
-      <div class="cr wide"><div class="media"><video src="/images/liza-killshot/ink-process.mp4" poster="/images/liza-killshot/ink-process.jpg" muted loop playsinline autoplay preload="none"></video></div><div class="body"><span class="k">Announce</span><h4>Ink to collab post</h4><p>The opening announcement: the cover being inked, with Liza's voice over it.</p></div></div>
-      <div class="cr"><div class="media"><img src="/images/liza-killshot/cosplay-call.jpg" alt="Example: Halloween cosplay call" /></div><div class="body"><span class="k">Con</span><h4>Halloween cosplay call</h4><p>The heroine as a costume, for the reposts that follow the weekend.</p></div></div>
+      <div class="cr"><div class="media"><img src="/images/liza-killshot/redraw.jpg" alt="Example: KILLSHOT redraw challenge" /></div><div class="body"><span class="k">Comic play</span><h4>#KILLSHOTREDRAW</h4><p>Line art on top, a fan artist's version underneath.</p></div></div>
+      <div class="cr"><div class="media"><img src="/images/liza-killshot/reaction-creator.jpg" alt="Example: creator reaction post" /></div><div class="body"><span class="k">Creators</span><h4>Reaction creator</h4><p>The hook every reaction post can lead with.</p></div></div>
+      <div class="cr"><div class="media"><img src="/images/liza-killshot/motion-comic.jpg" alt="Example: motion-comic lyric video frame" /></div><div class="body"><span class="k">Release</span><h4>Motion-comic lyric video</h4><p>The lyrics in panels, built from the cover art.</p></div></div>
+      <div class="cr wide"><div class="media"><img src="/images/liza-killshot/led-truck.jpg" alt="Example: mobile LED billboard downtown" /></div><div class="body"><span class="k">Optional</span><h4>LED truck downtown</h4><p>The cover and the pre-save on the streets around the Con.</p></div></div>
+      <div class="cr"><div class="media"><img src="/images/liza-killshot/cosplay-call.jpg" alt="Example: Halloween costume creators" /></div><div class="body"><span class="k">Creators</span><h4>Halloween costume</h4><p>Cosplay creators in the look, at the Con and on Halloween.</p></div></div>
+      <div class="cr"><div class="media"><img src="/images/liza-killshot/presave-tile.jpg" alt="Example: pre-save tile" /></div><div class="body"><span class="k">Direct</span><h4>Pre-save tile</h4><p>The torn-paper reveal, carried into every pre-save ask.</p></div></div>
+      <div class="cr"><div class="media"><img src="/images/liza-killshot/nfc-print.jpg" alt="Example: signed numbered print" /></div><div class="body"><span class="k">Comic play</span><h4>Signed print</h4><p>The prize for the best redraws and giveaways.</p></div></div>
     </div>
   </section>
 
   <section class="sec wrap" id="measure">
     <div class="sec-head">
-      <div class="row"><span class="num">06</span><span class="ln"></span></div>
+      <div class="row"><span class="num">07</span><span class="ln"></span></div>
       <h2>Measurement</h2>
       <p class="desc">What we report, and when. Baselines are set at kickoff.</p>
     </div>
     <div class="kpis">
-      <div class="mech"><span class="k">Capture</span><h4>Before release</h4><p>Pre-saves, signing RSVPs, list size, prints sold and NFC taps, reported daily through the Con.</p></div>
-      <div class="mech"><span class="k">Attention</span><h4>Reveal and bridge</h4><p>Views and shares on Con content, press pickups, posts using the snippet sound, fan art and cosplay entries.</p></div>
+      <div class="mech"><span class="k">Capture</span><h4>Before release</h4><p>Pre-saves and list sign-ups, reported daily from the tease through the reveal weekend.</p></div>
+      <div class="mech"><span class="k">Attention</span><h4>Reveal and bridge</h4><p>Views and shares on the reveal, page and press pickups, clip views, creator posts, redraw entries and posts using the snippet sound.</p></div>
       <div class="mech"><span class="k">Conversion</span><h4>Release and after</h4><p>First-week streams by market, saves, list click-through and comic preorders from the list.</p></div>
     </div>
   </section>
 
   <section class="sec wrap" id="needs">
     <div class="sec-head">
-      <div class="row"><span class="num">07</span><span class="ln"></span></div>
+      <div class="row"><span class="num">08</span><span class="ln"></span></div>
       <h2>Next Steps</h2>
-      <p class="desc">What it takes to start announce week on Monday, October 26. Tap an item to mark it done.</p>
+      <p class="desc">What it takes to start the tease on Monday, October 26. Tap an item to mark it done.</p>
     </div>
     <div class="needs" id="needs-list">
-      <div class="nd"><span class="bx"></span><div><h4>Release date</h4><p>Confirm November 13 (or November 20) so it can be announced at the Con.</p><span class="due">By Oct 24</span></div></div>
-      <div class="nd"><span class="bx"></span><div><h4>Con schedule</h4><p>Panel or booth slot, signing windows, and the hours Liza and Todd are on site.</p><span class="due">By Oct 24</span></div></div>
-      <div class="nd"><span class="bx"></span><div><h4>Cover files</h4><p>Layered art, crops and line art, with Todd's approval for motion, prints and the fan art challenge.</p><span class="due">By Oct 25</span></div></div>
-      <div class="nd"><span class="bx"></span><div><h4>Snippet</h4><p>A cleared 15 to 30 second cut for the booth, the NFC page and the official TikTok sound.</p><span class="due">By Oct 25</span></div></div>
-      <div class="nd"><span class="bx"></span><div><h4>Pre-save and RSVP</h4><p>Pre-save link from the label; we build the RSVP drop and the NFC landing page.</p><span class="due">Live Oct 26</span></div></div>
-      <div class="nd"><span class="bx"></span><div><h4>Print run</h4><p>Quantity, price, paper and NFC tags ordered in time for the Con.</p><span class="due">Order by Oct 26</span></div></div>
-      <div class="nd"><span class="bx"></span><div><h4>Ad access</h4><p>Partner access to Liza's Meta and TikTok accounts, and Spark codes on the posts we boost.</p><span class="due">By Oct 26</span></div></div>
+      <div class="nd"><span class="bx"></span><div><h4>Release date</h4><p>Confirm November 13 (or November 20) so it can go in the reveal post.</p><span class="due">By Oct 24</span></div></div>
+      <div class="nd"><span class="bx"></span><div><h4>Shoot slot</h4><p>When Liza and Todd are together, and how long we have. Two hours covers the full shot list.</p><span class="due">By Oct 24</span></div></div>
+      <div class="nd"><span class="bx"></span><div><h4>Cover files</h4><p>Layered art, crops and line art, with Todd's approval for wallpapers, motion and the redraw challenge.</p><span class="due">By Oct 25</span></div></div>
+      <div class="nd"><span class="bx"></span><div><h4>Snippet</h4><p>A cleared 15 to 30 second cut for clipping and the official TikTok sound.</p><span class="due">By Oct 25</span></div></div>
+      <div class="nd"><span class="bx"></span><div><h4>Pre-save</h4><p>Pre-save link from the label; we build the wallpaper sign-up page.</p><span class="due">Live Oct 26</span></div></div>
+      <div class="nd"><span class="bx"></span><div><h4>Pages and creators</h4><p>Approve the drop-wave page list and the creator shortlist we send.</p><span class="due">By Oct 27</span></div></div>
+      <div class="nd"><span class="bx"></span><div><h4>Ad access</h4><p>Partner access to Liza's Meta and TikTok accounts, and Spark codes on the posts we boost.</p><span class="due">By Oct 27</span></div></div>
       <div class="nd"><span class="bx"></span><div><h4>Video delivery</h4><p>Final delivery date for the official video, so release week can be built around it.</p><span class="due">By Oct 30</span></div></div>
     </div>
   </section>
 
   <footer class="wrap">
-    <p class="fn"><b>Notes.</b> Follower counts are from third-party trackers and current as of October 2026. Forgotten Island TikTok figures are from Crowd Control Digital's social listening on the film. LA Comic Con dates, hours and 2025 attendance are from the Los Angeles Convention Center listing; the guest list is subject to change. Creative on this page is generated for direction only. Smart media album eligibility follows Billboard and Luminate rules as published in September 2026 and should be confirmed with the label before any chart-facing plan is set.</p>
+    <p class="fn"><b>Notes.</b> Follower counts are from third-party trackers and current as of October 2026. Forgotten Island TikTok figures are from Crowd Control Digital's social listening on the film. LA Comic Con dates and 2025 attendance are from the Los Angeles Convention Center listing; the guest list is subject to change. Creative on this page is generated for direction only. Smart media album eligibility follows Billboard and Luminate rules as published in September 2026 and should be confirmed with the label before any chart-facing plan is set.</p>
   </footer>
 </div>
 
