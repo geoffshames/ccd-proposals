@@ -279,7 +279,7 @@ const html = `<!DOCTYPE html>
         <div class="ph-l"><span class="pn">PHASE 01</span><h3>Tease</h3><span class="when">Oct 26 to Oct 29</span><p class="goal">Make the collaboration the news before anyone sees the full cover.</p></div>
         <div class="ph-r"><ul>
           <li><span class="lane red">Organic</span><span><b>Collab post on Liza's and Todd's accounts:</b> Todd inking a crop of the cover, Liza's voice over it. Only a sliver of the art is shown.</span></li>
-          <li><span class="lane red">Organic</span><span><b>Piece-by-piece crops on stories</b>, one a day. Fans assemble the cover themselves before Saturday.</span></li>
+          <li><span class="lane red">Organic</span><span><b>Piece-by-piece crops on stories</b>, one a day, each set to the KILLSHOT sound fans already know from the teases. They assemble the cover themselves before Saturday.</span></li>
           <li><span class="lane">Social PR</span><span><b>Pages briefed under embargo</b> for the Saturday drop wave: comics news, pop culture, anime and K-pop, and Filipino entertainment pages.</span></li>
           <li><span class="lane">Creators</span><span><b>Halloween costume creators</b> get the look (black bodysuit, red scarf) and post "last-minute Halloween costume" videos tagged to the single.</span></li>
           <li><span class="lane red">Direct</span><span><b>Pre-save live on day one</b>, plus a free phone wallpaper of the line art in exchange for a number or email.</span></li>
@@ -292,17 +292,17 @@ const html = `<!DOCTYPE html>
           <li><span class="lane red">Organic</span><span><b>Full cover reveal on Saturday, October 31</b> as a collab post on both accounts, cut from the shoot: Liza seeing the cover for the first time. The release date is in the caption.</span></li>
           <li><span class="lane">Social PR</span><span><b>Drop wave:</b> the briefed pages post the cover inside the same two hours, so the story shows up across comics, pop culture and Filipino feeds at once.</span></li>
           <li><span class="lane">Press</span><span><b>One comics exclusive</b> on the collaboration that morning, with Philippine entertainment outlets the same day.</span></li>
-          <li><span class="lane">Creators</span><span><b>Reaction creators post the reveal:</b> comics creators, Filipino creators and cosplayers already at the Con, who wear the look on the floor and post from their own accounts.</span></li>
+          <li><span class="lane">Creators</span><span><b>Reaction creators post the reveal</b> over the KILLSHOT sound: comics creators, Filipino creators and cosplayers already at the Con, who wear the look on the floor and post from their own accounts.</span></li>
           <li><span class="lane">Clipping</span><span><b>Shoot footage to clippers before the reveal</b>, so the first wave of clips lands the same day.</span></li>
           <li><span class="lane">Paid</span><span><b>Boost the reveal</b> on Meta and TikTok Spark Ads across Los Angeles and the diaspora markets, with comics and collectibles interest layered in for the weekend.</span></li>
         </ul></div>
       </div>
       <div class="phase">
-        <div class="ph-l"><span class="pn">PHASE 03</span><h3>Bridge</h3><span class="when">Nov 2 to Nov 12</span><p class="goal">Keep the cover in feeds every day and start the sound before the song is out.</p></div>
+        <div class="ph-l"><span class="pn">PHASE 03</span><h3>Bridge</h3><span class="when">Nov 2 to Nov 12</span><p class="goal">Keep the cover in feeds every day and grow the teased sound before release.</p></div>
         <div class="ph-r"><ul>
           <li><span class="lane red">Organic</span><span><b>#KILLSHOTREDRAW</b>: line art released for artists to draw the cover in their own style. Todd stitches his favorites; the best get a signed print.</span></li>
           <li><span class="lane red">Organic</span><span><b>Cover breakdown cuts</b> from the shoot: pencils, inks, color, in Todd's words.</span></li>
-          <li><span class="lane">Clipping</span><span><b>Clipping campaign on the 15-second snippet</b> and the interview, so creators are already posting the sound when the song lands.</span></li>
+          <li><span class="lane">Clipping</span><span><b>Clipping campaign on the teased audio</b> and the interview, so the sound already has momentum when the full song lands.</span></li>
           <li><span class="lane">Social PR</span><span><b>Second wave on art pages:</b> illustration and comic-art accounts share the best redraws.</span></li>
           <li><span class="lane">Paid</span><span><b>TikTok Spark Ads and Meta</b> on the strongest organic posts, building the retargeting pool for release week.</span></li>
         </ul></div>
@@ -342,7 +342,7 @@ const html = `<!DOCTYPE html>
           <tr><td class="h">02</td><td class="h">Todd at the board</td><td>Todd inking a detail of the cover, Liza watching over his shoulder. Tight on the brush.</td><td>Tease collab post, Canvas loop, B-roll</td></tr>
           <tr><td class="h">03</td><td class="h">The sit-down</td><td>Six to eight questions each: why he said yes, who the heroine is, what KILLSHOT is about, what she thought of Spawn, what he hears in the song.</td><td>The clipping library, 20 to 40 clips</td></tr>
           <tr><td class="h">04</td><td class="h">Cover walkthrough</td><td>Todd explains the cover from pencils to color, pointing at the art.</td><td>Cover breakdown series, comics press</td></tr>
-          <tr><td class="h">05</td><td class="h">Todd hears the song</td><td>Liza plays him KILLSHOT. Capture his reaction start to finish.</td><td>Reaction hook, snippet launch</td></tr>
+          <tr><td class="h">05</td><td class="h">Todd hears the song</td><td>Liza plays him KILLSHOT. Capture his reaction start to finish.</td><td>Reaction hook, paid hook</td></tr>
           <tr><td class="h">06</td><td class="h">60-second sketch swap</td><td>Todd sketches Liza in a minute; Liza sketches Todd. Show both drawings side by side.</td><td>The most shareable clip of the set</td></tr>
           <tr><td class="h">07</td><td class="h">Signing prints</td><td>Both signing a small run of prints at the table.</td><td>Redraw challenge prizes, giveaways</td></tr>
           <tr><td class="h">08</td><td class="h">Phone B-roll</td><td>Liza's own phone throughout: arrival, the studio, the two of them laughing.</td><td>Stories, the unpolished layer</td></tr>
@@ -439,7 +439,7 @@ const html = `<!DOCTYPE html>
     </div>
     <div class="kpis">
       <div class="mech"><span class="k">Capture</span><h4>Before release</h4><p>Pre-saves and list sign-ups, reported daily from the tease through the reveal weekend.</p></div>
-      <div class="mech"><span class="k">Attention</span><h4>Reveal and bridge</h4><p>Views and shares on the reveal, page and press pickups, clip views, creator posts, redraw entries and posts using the snippet sound.</p></div>
+      <div class="mech"><span class="k">Attention</span><h4>Reveal and bridge</h4><p>Views and shares on the reveal, page and press pickups, clip views, creator posts, redraw entries and posts using the KILLSHOT sound.</p></div>
       <div class="mech"><span class="k">Conversion</span><h4>Release and after</h4><p>First-week streams by market, saves, list click-through and comic preorders from the list.</p></div>
     </div>
   </section>
@@ -454,7 +454,7 @@ const html = `<!DOCTYPE html>
       <div class="nd"><span class="bx"></span><div><h4>Release date</h4><p>Confirm November 13 (or November 20) so it can go in the reveal post.</p><span class="due">By Oct 24</span></div></div>
       <div class="nd"><span class="bx"></span><div><h4>Shoot slot</h4><p>When Liza and Todd are together, and how long we have. Two hours covers the full shot list.</p><span class="due">By Oct 24</span></div></div>
       <div class="nd"><span class="bx"></span><div><h4>Cover files</h4><p>Layered art, crops and line art, with Todd's approval for wallpapers, motion and the redraw challenge.</p><span class="due">By Oct 25</span></div></div>
-      <div class="nd"><span class="bx"></span><div><h4>Snippet</h4><p>A cleared 15 to 30 second cut for clipping and the official TikTok sound.</p><span class="due">By Oct 25</span></div></div>
+      <div class="nd"><span class="bx"></span><div><h4>The sound</h4><p>The teased audio set up as the official sound on TikTok and Instagram, cleared for clipping and creators.</p><span class="due">By Oct 25</span></div></div>
       <div class="nd"><span class="bx"></span><div><h4>Pre-save</h4><p>Pre-save link from the label; we build the wallpaper sign-up page.</p><span class="due">Live Oct 26</span></div></div>
       <div class="nd"><span class="bx"></span><div><h4>Pages and creators</h4><p>Approve the drop-wave page list and the creator shortlist we send.</p><span class="due">By Oct 27</span></div></div>
       <div class="nd"><span class="bx"></span><div><h4>Ad access</h4><p>Partner access to Liza's Meta and TikTok accounts, and Spark codes on the posts we boost.</p><span class="due">By Oct 27</span></div></div>
