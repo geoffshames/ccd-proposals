@@ -124,7 +124,7 @@ export const PH = {
     { k: "Tier C", h: "Volume", b: "Micro-creators everywhere at once" },
     { k: "Diaspora", h: "Filipino Americans", b: "L.A., Bay Area, New York" },
   ],
-  pantropiko: { from: 0.2, to: 3, label: "BINI \"Pantropiko\" monthly listeners, millions", note: "No. 173 to No. 1 on Spotify PH in about two months" },
+  pantropiko: { from: 0.2, to: 3, label: "BINI \"Pantropiko\": monthly listeners", note: "No. 173 to No. 1 on Spotify PH in about two months" },
   stats: [
     { v: 54, suffix: " hrs", label: "A week on digital media, second in the world" },
     { v: 97.2, decimals: 1, prefix: "₱", suffix: "M", label: "Forgotten Island PH opening, DreamWorks Animation's biggest there" },
@@ -181,11 +181,8 @@ export const CREATIVE = {
     { k: "Liza said KILLSHOT??", fmt: "PH creators", img: A.ph },
   ],
   stills: [
-    { k: "Reactions", line: "The tier-one reaction", img: A.reaction },
-    { k: "YouTube", line: "Premiere page", img: A.premiere },
-    { k: "Paid / Meta", line: "Out now", img: A.metaAd },
-    { k: "Clipping / Wave 2", line: "Never the sweet one", img: A.editB },
-    { k: "The film", line: "React to the news", img: A.film },
+    { k: "YouTube", line: "Premiere page, live a week out", img: A.premiere, ratio: "16 / 9", fr: "16fr" },
+    { k: "Paid / Meta", line: "Out-now feed ad, no weapon in frame", img: A.metaAd, ratio: "3 / 4", fr: "6.75fr" },
   ],
 };
 

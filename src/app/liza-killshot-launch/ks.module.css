@@ -814,3 +814,5 @@
   .swapArrow svg { transform: rotate(90deg); }
   .grow2 { height: 170px; }
 }
+.stills .stillMedia::after { display: none; }
+@media (max-width: 700px) { .stills { grid-template-columns: 1fr !important; } }

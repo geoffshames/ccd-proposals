@@ -936,18 +936,18 @@ function Creative() {
           </Reveal>
         ))}
       </div>
-      <div className={`${s.stills} ${s.sub}`}>
+      <div className={`${s.stills} ${s.sub}`} style={{ gridTemplateColumns: CREATIVE.stills.map((x) => `minmax(0, ${x.fr})`).join(" ") }}>
         {CREATIVE.stills.map((st, i) => (
-          <Reveal key={st.img} delay={(i % 3) * 0.08}>
+          <Reveal key={st.img} delay={i * 0.08}>
             <div className={s.still}>
-              <div className={s.stillMedia}>
+              <div className={s.stillMedia} style={{ aspectRatio: st.ratio }}>
                 <span className={s.aiBadge}>AI example</span>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src={st.img} alt={st.line} loading="lazy" style={{ objectPosition: "50% 30%" }} />
-                <span className={s.stillLine}>{st.line}</span>
+                <img src={st.img} alt={st.line} loading="lazy" />
               </div>
               <div className={s.phoneMeta}>
                 <span className={`${s.mono} ${s.red}`}>{st.k}</span>
+                <h4>{st.line}</h4>
               </div>
             </div>
           </Reveal>
@@ -1077,10 +1077,10 @@ export default function KillshotLaunchClient() {
       <Moments />
       <Band
         imgs={[
-          { src: A.editA, alt: "Example wave 1 action edit" },
-          { src: A.ph, alt: "Example Filipino creator post" },
-          { src: A.editB, alt: "Example wave 2 edit" },
-          { src: A.premiere, alt: "Example YouTube premiere page" },
+          { src: A.hero, alt: "Example key art: rooftop above Manila" },
+          { src: A.actionPoster, alt: "Example wave 1 action scene" },
+          { src: A.rooftopPoster, alt: "Example official-video frame" },
+          { src: A.metaAd, alt: "Example out-now feed ad" },
         ]}
       />
       <Plan />
