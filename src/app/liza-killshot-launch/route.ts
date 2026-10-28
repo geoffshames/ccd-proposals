@@ -371,7 +371,7 @@ const html = `<!DOCTYPE html>
         <div class="tl-m solid" style="left:0%"></div>
         <div class="tl-m solid" style="left:52.8%"></div>
         <div class="tl-m ghost" style="left:95%"></div>
-        <div class="tl-lab" style="left:0%;transform:none"><div class="d">Fri Oct 30</div><div class="t">Single + Comic Con</div></div>
+        <div class="tl-lab" style="left:0%;transform:none;text-align:left"><div class="d">Fri Oct 30</div><div class="t">Single + Comic Con</div></div>
         <div class="tl-lab" style="left:52.8%"><div class="d">Wed Nov 18</div><div class="t">Video premiere</div></div>
         <div class="tl-lab hold" style="left:80.5%"><div class="d">Nov 26 to 30</div><div class="t">Holiday hold</div></div>
         <div class="tl-lab" style="left:95%;transform:translateX(-80%)"><div class="d">Date TBC</div><div class="t">Film news</div></div>
@@ -655,13 +655,13 @@ const html = `<!DOCTYPE html>
     <div class="needs" id="needs-list">
       <div class="nd"><span class="bx"></span><div><h4>The target</h4><p>Agree the YouTube goal for the video (3M, 10M or 20M) and the media budget that goes with it.</p><span class="due">This week</span></div></div>
       <div class="nd"><span class="bx"></span><div><h4>Video date</h4><p>Confirm Wednesday, November 18, or the Dec 1 fallback, and the final delivery date for the cut.</p><span class="due">This week</span></div></div>
+      <div class="nd"><span class="bx"></span><div><h4>Ad access</h4><p>Partner access to Liza's Meta, TikTok and YouTube accounts, plus Spark codes on the posts we boost.</p><span class="due">By Oct 29</span></div></div>
       <div class="nd"><span class="bx"></span><div><h4>The sound</h4><p>KILLSHOT live as the official sound on TikTok and Instagram from Friday, cleared for clipping and creators.</p><span class="due">By Oct 30</span></div></div>
       <div class="nd"><span class="bx"></span><div><h4>Visualizer</h4><p>The animated cover uploaded to YouTube as the official visualizer for release day.</p><span class="due">By Oct 30</span></div></div>
       <div class="nd"><span class="bx"></span><div><h4>Creators and reactors</h4><p>Approve the Philippines creator shortlist, the reactor list and the tier-one YouTuber outreach.</p><span class="due">By Nov 2</span></div></div>
       <div class="nd"><span class="bx"></span><div><h4>Video selects for clippers</h4><p>Approved clips from the video a week early, under embargo, so Wave 2 posts minutes after the premiere.</p><span class="due">By Nov 11</span></div></div>
       <div class="nd"><span class="bx"></span><div><h4>YouTube support</h4><p>gamma's ask to YouTube for premiere placement, and access to Liza's channel for the Premiere page.</p><span class="due">By Nov 11</span></div></div>
       <div class="nd"><span class="bx"></span><div><h4>Film announcement</h4><p>The date and what we can say, so phase 05 can be built around it.</p><span class="due">When set</span></div></div>
-      <div class="nd"><span class="bx"></span><div><h4>Ad access</h4><p>Partner access to Liza's Meta, TikTok and YouTube accounts, plus Spark codes on the posts we boost.</p><span class="due">By Oct 29</span></div></div>
     </div>
   </section>
 
