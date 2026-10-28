@@ -498,7 +498,7 @@ function Plan() {
         <Reveal>
           <div className={s.subHead}>
             <h3 className={s.h3}>Week by week</h3>
-            <span className={`${s.mono} ${s.dim}`}>October 30 to December</span>
+            <span className={`${s.mono} ${s.dim}`}>November 1 to December</span>
           </div>
         </Reveal>
         <div className={s.phases} ref={phasesRef} style={{ gridTemplateColumns: `repeat(${PHASES.length}, minmax(0, 1fr))` }}>
