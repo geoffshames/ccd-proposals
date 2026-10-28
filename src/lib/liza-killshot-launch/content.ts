@@ -12,7 +12,7 @@ export const A = {
   editB: `${CDN}/45eca533-2485-417e-a6dd-303239185173.jpg`,
   ph: `${CDN}/a57ec9c1-ad0f-4b88-ae96-1a776f1c948d.jpg`,
   reaction: `${CDN}/f061fd08-af31-4a4d-b60a-ae0c8abdf5ce.jpg`,
-  premiere: `${CDN}/dbc5d4b4-abcf-415f-b3b5-c3d0a3f48e2d.jpg`,
+  premiere: `${CDN}/7cab369b-b12e-479c-b1cc-4b3b72b9fda3.jpg`,
   film: `${CDN}/1b6f5f66-db2c-4e47-83b2-396e8f3d8f02.jpg`,
   metaAd: `${CDN}/755675b8-7f0f-4f89-b1eb-30ef07c973aa.jpg`,
   actionVid: `${CDN}/c5f100ec-4a23-44b4-a77b-ec10eb16def5.mp4`,
@@ -31,7 +31,7 @@ export const NAV = [
   { id: "philippines", label: "Philippines" },
   { id: "reactions", label: "Reactions" },
   { id: "paid", label: "Paid" },
-  { id: "film", label: "Film" },
+  { id: "film", label: "New IP" },
   { id: "target", label: "Target" },
   { id: "creative", label: "Creative" },
   { id: "next", label: "Next" },
@@ -40,8 +40,8 @@ export const NAV = [
 export const HERO = {
   kicker: "Chapter 02 / The launch plan",
   title: "KILLSHOT",
-  line: "Three moments. One story.",
-  sub: "Liza Soberano: the single, the video and the film.",
+  line: "Four dates. One story.",
+  sub: "Liza Soberano: the reveal, the single, the shoot and the premiere.",
   stats: [
     { value: 18, suffix: "M+", label: "Instagram followers" },
     { value: 64, suffix: "M", label: "Adults TikTok ads reach in the Philippines" },
@@ -50,52 +50,54 @@ export const HERO = {
   date: "October 2026",
 };
 
-export const MARQUEE = ["Single Oct 30", "Video Nov 18", "The film", "Clipping", "Philippines", "Reactions", "YouTube"];
+export const MARQUEE = ["Reveal Nov 1", "Single Nov 6", "Shoot Nov 9–10", "Video Dec 1", "New IP", "Clipping", "Philippines", "Reactions"];
 
 export const MOMENTS = [
-  { n: "01", when: "Fri Oct 30", head: "The single", body: "Make it a sound people use.", goal: "Streams" },
-  { n: "02", when: "Wed Nov 18", head: "The video", body: "Make it an event on YouTube.", goal: "Views" },
-  { n: "03", when: "Date TBC", head: "The film", body: "Make it a bigger story.", goal: "New audience" },
+  { n: "01", when: "Sun Nov 1", head: "The reveal", body: "Todd McFarlane's art, with Todd and Larry Jackson at LA Comic Con.", goal: "Countdown" },
+  { n: "02", when: "Fri Nov 6", head: "The single", body: "Out everywhere, with the release party and a DJ hero moment.", goal: "Streams" },
+  { n: "03", when: "Nov 9–10", head: "The shoot", body: "Set visits from the creators of Spawn and John Wick.", goal: "Content" },
+  { n: "04", when: "Tue Dec 1", head: "The premiere", body: "The video and the new IP news land the same day.", goal: "Views" },
 ];
 
-/** Timeline: day offsets from Oct 30 across a 36-day window. */
+/** Timeline: day offsets from Nov 1 across a 36-day window. */
 export const TIMELINE = {
   days: 36,
   marks: [
-    { d: 0, k: "Single", sub: "Oct 30", kind: "on" },
-    { d: 19, k: "Video", sub: "Nov 18", kind: "on" },
-    { d: 34, k: "Film", sub: "TBC", kind: "ghost" },
+    { d: 0, k: "Reveal", sub: "Nov 1", kind: "on", pos: "up" },
+    { d: 5, k: "Single", sub: "Nov 6", kind: "on", pos: "down" },
+    { d: 8.5, k: "Shoot", sub: "Nov 9–10", kind: "ghost", pos: "up" },
+    { d: 30, k: "Video + IP", sub: "Dec 1", kind: "on", pos: "up" },
   ],
-  hold: { from: 27, to: 31, k: "Holiday hold", sub: "Nov 26 to 30" },
-  ticks: ["Oct 30", "Nov 8", "Nov 17", "Nov 26", "Dec 5"],
+  hold: { from: 25, to: 29, k: "Holiday hold", sub: "Nov 26 to 30" },
+  ticks: ["Nov 1", "Nov 10", "Nov 19", "Nov 28", "Dec 7"],
   why: [
-    { k: "Midweek", v: "No Friday competition" },
-    { k: "Pre-holiday", v: "Ahead of the CPM spike" },
-    { k: "Fallback", v: "Mon Nov 30 or Tue Dec 1" },
+    { k: "Three weeks", v: "Single to video: time to build the edit trend" },
+    { k: "After Cyber Monday", v: "Premiere lands as the holiday ad rush ends" },
+    { k: "One news day", v: "Video and the Deadline/Variety story together" },
   ],
 };
 
 export const PHASES = [
-  { k: "Drop", when: "Oct 30 to Nov 5", items: ["Visualizer live on YouTube", "Clipping wave 1 opens", "Philippines creators, first 72 hours", "Meta ads to Spotify"] },
-  { k: "Build", when: "Nov 6 to 15", items: ["Scale the best edits", "Bigger PH creators", "First song reactions", "Premiere page live"] },
-  { k: "Premiere", when: "Nov 16 to 25", items: ["YouTube Premiere, Nov 18", "Heaviest paid flight", "Clipping wave 2: the swap", "Tier-one reaction"] },
-  { k: "Hold", when: "Nov 26 to 30", items: ["Retargeting only", "Organic edits keep posting", "Fan reposts"] },
-  { k: "Film", when: "Date TBC", items: ["Announcement cut with the video", "React-to-this campaign", "Video to film fans"] },
+  { k: "Reveal", when: "Nov 1 to 5", items: ["Comic Con reveal with Todd and Larry", "Countdown post", "PR teases the collaboration", "Pre-save ads on Meta"] },
+  { k: "Drop", when: "Nov 6 to 8", items: ["Single on all platforms", "Release party and fundraiser", "DJ hero moment", "Clipping wave 1 and PH creators open", "Meta ads to Spotify"] },
+  { k: "Shoot", when: "Nov 9 to 15", items: ["Video shoot, Nov 9–10", "BTS: Abigail Thorn, Todd McFarlane, Derek Kolstad on set", "BTS cut for socials and clippers", "First song reactions"] },
+  { k: "Build", when: "Nov 16 to 30", items: ["Scale the best edits", "Bigger PH creators", "Premiere page live", "Paid light over the holiday"] },
+  { k: "Premiere", when: "Dec 1 on", items: ["YouTube Premiere", "Deadline/Variety IP news", "Heaviest paid flight", "Clipping wave 2: the swap", "Tier-one reaction"] },
 ];
 
 export const LEVERS = [
   { k: "Clipping", items: ["Action edits", "Paid per view", "Swap to video"] },
   { k: "PH creators", items: ["Three tiers", "Diaspora", "Taglish formats"] },
-  { k: "Reactions", items: ["Song wave", "Video wave", "Film wave"] },
+  { k: "Reactions", items: ["Song wave", "BTS wave", "Premiere wave"] },
   { k: "Paid", items: ["Meta to Spotify", "YouTube views", "Spark Ads"] },
-  { k: "Film", items: ["React to the news", "Film audiences", "Comic tie-in"] },
+  { k: "New IP", items: ["React to the news", "Film audiences", "Comic tie-in"] },
 ];
 
 export const CLIPPING = {
   intro: "Make KILLSHOT the audio for female-led action edits before the video exists. Then swap in the video.",
   waves: [
-    { n: "Wave 1", when: "From Oct 30", head: "Found footage", line: "KILLSHOT over iconic action scenes", vid: "action" as const },
-    { n: "Wave 2", when: "From Nov 18", head: "The swap", line: "Same format, official video", vid: "rooftop" as const },
+    { n: "Wave 1", when: "From Nov 6", head: "Found footage", line: "KILLSHOT over iconic action scenes", vid: "action" as const },
+    { n: "Wave 2", when: "From Dec 1", head: "The swap", line: "Same format, official video", vid: "rooftop" as const },
   ],
   terms: ["Paid per verified view", "Capped per creator", "Boosts only on official footage"],
   proof: [
@@ -135,9 +137,9 @@ export const REACTIONS = {
   intro: "The Philippines' sweetheart, singing about a killshot. The contrast is the hook.",
   waves: [
     { k: "Song", when: "Nov 6", b: "PH and U.S. music reactors" },
-    { k: "Video", when: "Nov 18", b: "One tier-one YouTuber plus a PH round" },
-    { k: "Fans", when: "Nov 18 on", b: "Open call: film your reaction" },
-    { k: "Film", when: "TBC", b: "Stitch the announcement" },
+    { k: "BTS", when: "Nov 9–10", b: "Set visits from the creators of Spawn and John Wick" },
+    { k: "Premiere", when: "Dec 1", b: "One tier-one YouTuber, a PH round, and the IP news" },
+    { k: "Fans", when: "Dec 1 on", b: "Open call: film your reaction" },
   ],
   proof: [
     { v: 1100, prefix: "+", suffix: "%", label: "\"In the Air Tonight\" sales after one reaction video", src: "Rolling Stone" },
@@ -158,11 +160,11 @@ export const PAID = {
   ],
   cpm: { before: 6.5, after: 8.83, label: "Median Meta CPM, Black Friday week 2025 (EUR)", src: "PPC Land" },
   notLikeUs: { label: "\"Not Like Us\" went back to No. 1 when its video landed two months after the song", v: 53.8, src: "Hypebeast" },
-  rules: ["Front-load around Nov 18", "Retargeting only over the holiday", "No weapons in paid frames"],
+  rules: ["Front-load from Dec 1", "Light over the holiday", "No weapons in paid frames"],
 };
 
 export const FILM = {
-  intro: "Most singles get one news cycle. KILLSHOT has a film behind it.",
+  intro: "Dec 1: Liza with the creators of Spawn and John Wick, launching original new IP, with gamma as music and producing partner.",
   plays: ["KILLSHOT was the trailer", "React to the news", "Video to film fans", "Comic tie-in"],
   golden: { label: "\"Golden\" from KPop Demon Hunters", stats: [{ v: "No. 1", k: "Billboard Hot 100" }, { v: "10 wks", k: "No. 1 in the UK" }] },
 };
@@ -170,7 +172,7 @@ export const FILM = {
 export const TARGETS = [
   { v: "3M", h: "Proof of concept", org: 33, ph: 45, us: 22, items: ["Focused Philippines flight", "PH reactor round", "Smaller wave 2"] },
   { v: "10M", h: "A statement", org: 10, ph: 60, us: 30, items: ["Full YouTube flight", "Tier-one YouTuber", "Clipping at full scale"] },
-  { v: "20M", h: "An event", org: 5, ph: 60, us: 35, items: ["Longer flight, more U.S.", "Two or three tier-one YouTubers", "All three waves, film included"] },
+  { v: "20M", h: "An event", org: 5, ph: 60, us: 35, items: ["Longer flight, more U.S.", "Two or three tier-one YouTubers", "Every wave, IP news included"] },
 ];
 
 export const CREATIVE = {
@@ -189,16 +191,16 @@ export const CREATIVE = {
 export const NEXT = {
   steps: [
     { h: "Set the target", b: "Agree the view goal and the media budget behind it." },
-    { h: "Lock the dates", b: "Video on Nov 18, or the Dec 1 fallback." },
-    { h: "Go Friday", b: "Sound, visualizer, clippers and creators live Oct 30." },
+    { h: "Shoot for the feed", b: "A vertical BTS shot list for Nov 9–10 and the set visits." },
+    { h: "Go Nov 1", b: "Countdown and pre-save at the reveal, everything live Nov 6." },
   ],
   need: [
     "Ad access: Meta, TikTok, YouTube",
-    "KILLSHOT live as the official sound",
-    "Animated cover for the visualizer",
+    "Pre-save link for the Nov 1 countdown",
+    "KILLSHOT live as the official sound, Nov 6",
     "Creator and reactor list sign-off",
-    "Video selects for clippers, a week early",
-    "Film announcement date",
+    "Video selects for clippers before Dec 1",
+    "Deadline/Variety embargo time for Dec 1",
   ],
   email: "geoff@crowdcontroldigital.com",
   name: "Geoff Shames",

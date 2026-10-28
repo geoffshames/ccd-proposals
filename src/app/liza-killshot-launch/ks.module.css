@@ -827,3 +827,13 @@
 @media (max-width: 700px) {
   .flow, .phases, .aud { grid-template-columns: 1fr !important; }
 }
+.sumGrid4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.tlLab[data-pos="down"] { bottom: auto; top: 30px; }
+.tlLab[data-pos="down"] span { margin-top: 4px; }
+.tlTicks { margin-top: 84px; }
+@media (max-width: 1000px) { .sumGrid4 { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 700px) {
+  .sumGrid4 { grid-template-columns: 1fr; }
+  .tlLab[data-kind="ghost"] { display: none; }
+  .tlTicks { margin-top: 70px; }
+}

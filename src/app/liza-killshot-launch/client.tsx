@@ -384,10 +384,10 @@ function Band({ imgs }: { imgs: { src: string; alt: string }[] }) {
 function Moments() {
   return (
     <section className={s.section} id="moments">
-      <Head n="01" label="Three moments" title="Three Moments">
-        Single first, video three weeks later, then the film. Each moment feeds the next.
+      <Head n="01" label="Four dates" title="Four Dates">
+        Reveal, single, shoot, premiere. Each date feeds the next.
       </Head>
-      <div className={s.sumGrid}>
+      <div className={`${s.sumGrid} ${s.sumGrid4}`}>
         {MOMENTS.map((m, i) => (
           <Reveal key={m.n} delay={i * 0.08} style={{ display: "flex" }}>
             <div className={s.sumCard} style={{ width: "100%", minHeight: 260 }}>
@@ -404,11 +404,11 @@ function Moments() {
       <Reveal className={s.sub}>
         <div className={s.subHead}>
           <h3 className={s.h3}>The calendar</h3>
-          <span className={`${s.mono} ${s.dim}`}>Video premiere: Wednesday, November 18</span>
+          <span className={`${s.mono} ${s.dim}`}>Video and IP news: Tuesday, December 1</span>
         </div>
         <div className={s.tl}>
           <div className={s.tlTrack}>
-            <Grow to={TIMELINE.marks[1].d / TIMELINE.days} className={s.tlFill} style={{ right: 0 }} />
+            <Grow to={TIMELINE.marks[TIMELINE.marks.length - 1].d / TIMELINE.days} className={s.tlFill} style={{ right: 0 }} />
             <div className={s.tlHold} style={{ left: pct(TIMELINE.hold.from), width: pct(TIMELINE.hold.to - TIMELINE.hold.from) }} />
             {TIMELINE.marks.map((m) => (
               <div key={m.k} className={s.tlMark} data-kind={m.kind} style={{ left: pct(m.d) }} />
@@ -418,13 +418,14 @@ function Moments() {
                 key={`l-${m.k}`}
                 className={s.tlLab}
                 data-kind={m.kind}
-                style={{ left: pct(m.d), transform: i === 0 ? "translateX(-10px)" : i === TIMELINE.marks.length - 1 ? "translateX(-70%)" : undefined, textAlign: i === 0 ? "left" : "center" }}
+                data-pos={m.pos}
+                style={{ left: pct(m.d), transform: i === 0 ? "translateX(-10px)" : undefined, textAlign: i === 0 ? "left" : "center" }}
               >
                 <b>{m.k}</b>
                 <span className={s.mono}>{m.sub}</span>
               </div>
             ))}
-            <div className={s.tlLab} data-kind="hold" style={{ left: pct((TIMELINE.hold.from + TIMELINE.hold.to) / 2) }}>
+            <div className={s.tlLab} data-kind="hold" data-pos="down" style={{ left: pct((TIMELINE.hold.from + TIMELINE.hold.to) / 2) }}>
               <b>{TIMELINE.hold.k}</b>
               <span className={s.mono}>{TIMELINE.hold.sub}</span>
             </div>
@@ -590,7 +591,7 @@ function Clipping() {
             ))}
           </div>
           <div className={s.callout} style={{ marginTop: 28 }}>
-            <strong>By November 18, KILLSHOT is already the action-edit song.</strong> The video gives every clipper the footage to finish the story.
+            <strong>By December 1, KILLSHOT is already the action-edit song.</strong> The video gives every clipper the footage to finish the story.
           </div>
         </Reveal>
       </div>
@@ -765,7 +766,7 @@ function Paid() {
       </Reveal>
       <div className={`${s.grid2} ${s.sub}`}>
         <Reveal>
-          <div className={`${s.proofK} ${s.mono}`}>Why the premiere comes first</div>
+          <div className={`${s.proofK} ${s.mono}`}>Why paid stays light over the holiday</div>
           <div className={s.duel}>
             <div>
               <span className={s.duelV}>+45%</span>
@@ -806,7 +807,7 @@ function Paid() {
 function Film() {
   return (
     <section className={s.section} id="film">
-      <Head n="07" label="Lever 05" title="The Film">
+      <Head n="07" label="Lever 05" title="The New IP">
         {FILM.intro}
       </Head>
       <div className={s.film}>
