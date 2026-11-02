@@ -702,7 +702,7 @@ export const fiftyFiftyExecutionPlan: StrategyPlanData = {
           ],
         },
       ],
-      footnote: "Phase budgets are directional. The team reallocates weekly between lines and phases based on results, inside the $50,000 total.",
+      footnote: "Phase budgets are directional. The team reallocates weekly between lines and phases based on results, inside the $50,000 total. We expect to recommend additional spend around the February EP release once December and January show what is working. Any recommendation comes with the data behind it and goes to ATTRAKT for approval before anything is spent.",
     },
 
     // ===================================================================
@@ -872,6 +872,7 @@ export const fiftyFiftyExecutionPlan: StrategyPlanData = {
           items: [
             "Public pre-order live. Pre-order units read against the release-week targets.",
             "Counting-week media plan locked against the confirmed release date.",
+            "Recommendation on additional release-window spend, sized from cost per fan and pre-order data, for ATTRAKT to approve.",
             "Radio add schedule confirmed station by station.",
           ],
         },
@@ -1088,7 +1089,7 @@ export const fiftyFiftyExecutionPlan: StrategyPlanData = {
           ],
         },
       ],
-      footnote: "Core program total: $87,500. Radio total: $100,000, with $60,000 due at pre-launch and $40,000 at the week six review. Combined February cycle: $187,500. Manufacturing, artist travel, accommodation and promotional dinners sit outside both budgets. Each later release cycle is authorized as its own budget on the same structure.",
+      footnote: "Core program total: $87,500. Radio total: $100,000, with $60,000 due at pre-launch and $40,000 at the week six review. Combined February cycle: $187,500. Manufacturing, artist travel, accommodation and promotional dinners sit outside both budgets. Each later release cycle is authorized as its own budget on the same structure. We expect to recommend additional spend around the February EP release once December and January show what is working. Any recommendation comes with the data behind it and goes to ATTRAKT for approval before anything is spent.",
     },
   ],
 };
