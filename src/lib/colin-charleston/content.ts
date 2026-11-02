@@ -1,7 +1,7 @@
 /**
  * COLIN x CROWD CONTROL DIGITAL: phased lead gen proposal for a new Charleston agent.
  * Built Nov 2, 2026 from the call with Sam Neider and Pantelis.
- * All prices are CCD-proposed figures for Geoff to confirm before this goes out.
+ * Pricing confirmed by Geoff Nov 2, 2026.
  */
 
 export const PASSWORD = "CHARLESTON";
@@ -94,8 +94,8 @@ export const PRICING = [
 
 export const PHASE2_PRICE = {
   t: "Phase 2: Colin's own platform",
-  price: "$6,000 to $12,000",
-  b: "One-time build, depending on which pieces he wants first, plus roughly $500 a month for data and hosting. Scoped and quoted after the 90-day review.",
+  price: "$15,000 to $20,000",
+  b: "One-time build, depending on which pieces he wants first, plus $500 a month for data and hosting. Scoped after the 90-day review.",
 };
 
 export const FINE_PRINT =
