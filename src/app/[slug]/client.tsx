@@ -10,7 +10,6 @@ import { Audience } from "@/components/Audience";
 import { Targets } from "@/components/Targets";
 import { MediaFlight } from "@/components/MediaFlight";
 import { Competitive } from "@/components/Competitive";
-import { CreativeExamples } from "@/components/CreativeExamples";
 import { Tiers } from "@/components/Tiers";
 import { Timeline } from "@/components/Timeline";
 import { Deliverables } from "@/components/Deliverables";
@@ -38,7 +37,6 @@ export function ProposalClient({ project }: { project: ProjectData }) {
         <Targets />
         <MediaFlight />
         <Competitive />
-        <CreativeExamples />
         <Tiers />
         <ImageBreak
           src={project.images.hero1}
