@@ -71,12 +71,9 @@ export const fiftyFiftyExecutionPlanKorean: StrategyPlanData = {
               name: "USD",
               points: [
                 { x: "팀 리테이너", y: 30000 },
+                { x: "팬 확보 매체비", y: 25000 },
+                { x: "미국 성장 매체비", y: 25000 },
                 { x: "매체 운영 수수료", y: 7500 },
-                { x: "팬 확보 매체비", y: 16000 },
-                { x: "미국 성장 매체비", y: 12500 },
-                { x: "발매 기간 매체비", y: 10000 },
-                { x: "선주문 및 리테일", y: 4000 },
-                { x: "클리핑 및 시딩", y: 7500 },
               ],
             },
           ],
@@ -106,8 +103,7 @@ export const fiftyFiftyExecutionPlanKorean: StrategyPlanData = {
             "퍼스트파티 팬 데이터: 캡처 스택, 링크 경로 정비, 유료 확보",
             "Instagram, TikTok, YouTube 미국 유료 성장 캠페인",
             "2월 EP 발매 기간: 프리세이브, 선주문, 집계 주간 매체 집행",
-            "선주문 및 미국 리테일 활성화",
-            "싱글 발매 시점에 집중한 클리핑 및 크리에이터 시딩",
+            "매체비 대부분을 싱글 발매 이후 기간에 집행",
             "전략, 콘텐츠 계획, 크리에이티브 테스트, 매체 운영, 실시간 대시보드, 주간 리포트",
           ],
           deployable: "$50,000 실집행 매체비",
@@ -138,7 +134,7 @@ export const fiftyFiftyExecutionPlanKorean: StrategyPlanData = {
       navLabel: "팬 데이터",
       title: "워크스트림 1 / 퍼스트파티 팬 데이터",
       philosophy: "레이블이 팬에게 직접 닿을 수 있게 되면 다른 모든 워크스트림의 비용이 낮아집니다. 이 워크스트림이 가장 먼저 시작되며 기간 내 매주 운영됩니다.",
-      intro: "예산: 핵심 프로그램 내 $16,000의 팬 확보 매체비, 셋업 및 운영은 리테이너에 포함. 목표는 3월 초까지 미국 동의 규정 내에서 약 15,000명의 식별된 미국 팬을 확보하는 것입니다.",
+      intro: "예산: 핵심 프로그램 내 $25,000의 팬 확보 매체비, 셋업 및 운영은 리테이너에 포함. 목표는 3월 초까지 미국 동의 규정 내에서 약 15,000명의 식별된 미국 팬을 확보하는 것입니다.",
       subBlocks: [
         {
           label: "A",
@@ -182,7 +178,7 @@ export const fiftyFiftyExecutionPlanKorean: StrategyPlanData = {
         {
           label: "C",
           title: "유료 확보",
-          budget: "기간 전체 $16,000",
+          budget: "기간 전체 $25,000",
           objective: "도달이 아닌 팬 1인당 비용으로 측정하는, 가입 전용 광고로 리스트를 확대합니다.",
           strategy: "캡처 광고는 미국 한정으로 Instagram을 먼저, 이어서 TikTok에 집행하며, 초기 오가닉 가입자를 기반으로 유사 타겟을 구성합니다. 연말 광고 수요로 비용이 연중 최고치에 이르기 때문에 12월 테스트는 의도적으로 작게 운영합니다. 1월에는 링크 경로 정비와 오가닉 가입이 역할을 하도록 집행을 최소화하고, 캡처 예산의 절반 이상은 가입 동기가 가장 강한 싱글 발매 이후 기간을 위해 남겨둡니다. 현재 저희가 운영 중인 레퍼런스 K-pop 캠페인은 유료 가입 1건당 $1.97, 전체 유입 경로 평균 $1.15에 팬을 확보했습니다.",
           charts: [
@@ -194,7 +190,7 @@ export const fiftyFiftyExecutionPlanKorean: StrategyPlanData = {
                 {
                   name: "확보 팬 수",
                   points: [
-                    { x: "하위", y: 7000 },
+                    { x: "하위", y: 8000 },
                     { x: "기대", y: 15000 },
                     { x: "상위", y: 25000 },
                   ],
@@ -225,12 +221,12 @@ export const fiftyFiftyExecutionPlanKorean: StrategyPlanData = {
       navLabel: "미국 성장",
       title: "워크스트림 2 / 미국 성장 및 콘텐츠",
       philosophy: "그룹 자체 데이터로 검증된 포맷에, 리스너가 이미 있는 시장에서 유료 매체를 집중합니다.",
-      intro: "예산: 핵심 프로그램 내 $12,500의 미국 유료 성장 매체비와 $7,500의 클리핑 및 시딩, 대부분 싱글 발매 이후 집행. Spotify 팔로워, Instagram 및 YouTube 성장, 게시물당 중간 조회수로 측정합니다.",
+      intro: "예산: 핵심 프로그램 내 $25,000의 미국 유료 성장 매체비, 대부분 싱글 발매 이후 집행. Spotify 팔로워, Instagram 및 YouTube 성장, 게시물당 중간 조회수로 측정합니다.",
       subBlocks: [
         {
           label: "A",
           title: "유료 성장 구조",
-          budget: "기간 전체 $12,500",
+          budget: "기간 전체 $25,000",
           objective: "12월 테스트로 설정한 팔로워 1인당 비용으로 미국 팔로워, 구독자, 참여 팬을 늘립니다.",
           strategy: "동일한 FIFTY FIFTY 영상이 대부분의 비교 사례에서 TikTok보다 Instagram에서 더 높은 성과를 내고, Instagram이 팔로워당 약 3배 많은 조회수를 기록하기 때문에 Instagram을 우선합니다. 12월 테스트는 2주간 소규모 예산을 세 플랫폼에 나눠 실제 데이터로 팔로워당, 구독자당, 스트리밍 클릭당 비용을 측정합니다. 첫 체크포인트부터 성과당 비용이 가장 낮은 플랫폼으로 예산을 이동하고, 최소 효율 기준에 미달하는 항목은 중단합니다.",
           components: {
@@ -266,22 +262,6 @@ export const fiftyFiftyExecutionPlanKorean: StrategyPlanData = {
             ],
           },
         },
-        {
-          label: "C",
-          title: "클리핑 및 시딩",
-          budget: "$7,500",
-          objective: "크리에이터 물량을 발매 전이 아닌, 싱글이 나온 기간에 집중합니다.",
-          strategy: "클리핑 및 시딩은 거의 전부 발매 기간에 집행하여, 모든 조회가 싱글을 스트리밍하고 저장하고 구매할 수 있는 시점에 발생하도록 합니다. 1월 말 소규모 시딩으로 발매 전 멤버들을 미국 게이밍 및 스트리밍 크리에이터의 콘텐츠 안에 등장시키며, 이는 그룹의 다른 콘텐츠보다 5배 이상 높은 성과를 내는 포맷입니다. 발매 주간부터는 예산이 클리핑으로 이동합니다. 싱글, 퍼포먼스, 멤버 장면을 클리퍼 네트워크가 짧게 편집하여 TikTok, Instagram, YouTube Shorts에 대량으로 게시합니다. Crowd Control Digital은 일반 에이전시 시장에서는 접근할 수 없는 단가로 이 물량을 구매하며, 레퍼런스 캠페인 단가 기준 $7,500로 약 150만~200만 조회를 확보합니다. 클리핑은 규모에 따라 효과가 누적되므로, 이번 사이클에서는 하나의 순간에 집중된 집행으로 운영하고 그 결과로 다음 발매의 예산을 설정합니다.",
-          components: {
-            heading: "$7,500 집행 계획",
-            items: [
-              "1월 말: 발매 전 게이밍 및 스트리밍 크리에이터 시딩, $1,000",
-              "발매 주간부터 3주차까지: 싱글, 퍼포먼스, 멤버 장면 클리핑, $6,500",
-              "모든 클립에 싱글 음원을 사용하고 캡처 링크로 연결",
-            ],
-          },
-          kpis: ["확보 조회수 및 1,000회 조회당 비용", "TikTok 및 Instagram에서 싱글 음원 사용 수", "크리에이터 및 클립 링크를 통해 확보한 팬 수"],
-        },
       ],
       footnote: "콘텐츠 분석 결과는 게시물별 성과 데이터가 결합된 FIFTY FIFTY 및 경쟁 아티스트 영상 105개 분석에 기반합니다.",
     },
@@ -295,7 +275,7 @@ export const fiftyFiftyExecutionPlanKorean: StrategyPlanData = {
       navLabel: "EP 발매",
       title: "워크스트림 3 / 2월 EP 발매 및 피지컬",
       philosophy: "앨범 1장 판매는 차트 1유닛입니다. 같은 1유닛을 만들려면 프리미엄 스트리밍 1,000회가 필요합니다. 발매 계획은 이 비율을 중심으로 설계되었습니다.",
-      intro: "예산: 핵심 프로그램 내 $10,000의 발매 기간 매체비와 $4,000의 선주문 및 리테일 활성화. 이번 EP는 기반 구축 발매로, 현 라인업의 미국 판매 기준치를 설정하고 선주문 운영을 처음으로 실행합니다.",
+      intro: "두 개의 핵심 매체 예산에서 집행됩니다. 미국 유료 성장 예산 중 약 $10,000와 발매 주간 팬 확보 매체비가 이 기간에 배정됩니다. 이번 EP는 기반 구축 발매로, 현 라인업의 미국 판매 기준치를 설정하고 선주문 운영을 처음으로 실행합니다.",
       subBlocks: [
         {
           label: "A",
@@ -317,9 +297,8 @@ export const fiftyFiftyExecutionPlanKorean: StrategyPlanData = {
         {
           label: "B",
           title: "선주문 및 리테일",
-          budget: "$4,000",
           objective: "미국에서 EP를 쉽게 구매할 수 있게 하고, 모든 미국 판매가 집계되도록 합니다.",
-          strategy: "선주문은 ATTRAKT의 D2C 스토어와 유통사를 통해 진행되어 모든 시장의 팬이 구매할 수 있습니다. 미국 차트에는 자격 요건을 충족한 판매만 집계되므로, 배송 및 리포팅 규칙을 사전에 유통사와 합의하여 미국 판매량을 보호합니다. 활성화 예산은 스토어 프로모션, 미국 리테일 입점 지원, 사인 앨범 판매 마케팅에 사용됩니다.",
+          strategy: "선주문은 ATTRAKT의 D2C 스토어와 유통사를 통해 진행되어 모든 시장의 팬이 구매할 수 있습니다. 미국 차트에는 자격 요건을 충족한 판매만 집계되므로, 배송 및 리포팅 규칙을 사전에 유통사와 합의하여 미국 판매량을 보호합니다. 스토어 프로모션은 미국 유료 성장 예산 내에서 집행됩니다.",
           components: {
             heading: "12월 18일까지 ATTRAKT의 결정이 필요한 사항",
             items: [
@@ -333,7 +312,7 @@ export const fiftyFiftyExecutionPlanKorean: StrategyPlanData = {
         {
           label: "C",
           title: "발매 기간 매체비",
-          budget: "$10,000",
+          budget: "미국 유료 성장 중 약 $10,000",
           objective: "전환이 일어나는 곳에 유료 매체를 집중합니다: 프리세이브, 선주문, 집계 주간.",
           strategy: "발매 기간 매체는 두 차례에 걸쳐 집행됩니다. 첫 번째는 12월과 1월에 구축한 리타겟팅 오디언스를 대상으로 프리세이브와 리스트 선주문을 유도합니다. 두 번째는 집계 주간 자체에 집행되며, 참여했지만 아직 구매하지 않은 팬과 함께 라디오 방송국이 싱글을 편성한 시장에 지역 가중 지원을 합니다.",
           charts: [
@@ -495,35 +474,31 @@ export const fiftyFiftyExecutionPlanKorean: StrategyPlanData = {
           label: "1단계 / 기반 구축 및 테스트",
           window: "12월 7일 ~ 1월 3일 / 4주",
           focus: "링크 경로 정비, 캡처 스택 가동, 기준치 고정. 확대 전에 세 플랫폼에서 소규모 테스트로 실제 팬당, 팔로워당 비용을 측정합니다.",
-          budget: "$4,500",
+          budget: "$5,000",
           tactics: [
-            "팬 데이터 확보 테스트 광고: $2,000",
+            "팬 데이터 확보 테스트 광고: $2,500",
             "Instagram, TikTok, YouTube 미국 유료 성장 테스트: $2,500",
           ],
         },
         {
           label: "2단계 / 발매 전 준비",
           window: "1월 4일 ~ 2월 7일 / 5주",
-          focus: "의도적으로 최소한으로 운영합니다. 첫 체크포인트에서 목표를 달성한 항목만 확대하고, 발매 시 활용할 리타겟팅 오디언스를 구축하며, 프리세이브와 리스트 선주문을 오픈하고, 발매 전 크리에이터 시딩을 진행합니다.",
+          focus: "의도적으로 최소한으로 운영합니다. 첫 체크포인트에서 목표를 달성한 항목만 확대하고, 발매 시 활용할 리타겟팅 오디언스를 구축하며, 프리세이브와 리스트 선주문을 오픈합니다.",
           budget: "$10,000",
           tactics: [
             "팬 데이터 확보, 프리세이브 및 리스트 선주문: $5,000",
-            "성과 상위 플랫폼 미국 유료 성장: $3,000",
-            "게이밍 및 스트리밍 크리에이터 시딩: $1,000",
-            "선주문 스토어 프로모션: $1,000",
+            "선주문 스토어 프로모션을 포함한 성과 상위 플랫폼 미국 유료 성장: $5,000",
           ],
         },
         {
           label: "3단계 / 발매 기간",
           window: "2월 8일 ~ 3월 6일 / 4주",
-          focus: "싱글이 나오고 예산 대부분이 집행됩니다. 유료 매체, 클리핑, 캡처를 집계 주간에 집중한 뒤 새로운 리스너를 유지합니다. 편성 추가 이후 라디오 시장에 유료 매체를 가중 집행합니다.",
-          budget: "$35,500",
+          focus: "싱글이 나오고 예산 대부분이 집행됩니다. 유료 매체와 캡처를 집계 주간에 집중한 뒤 새로운 리스너를 유지합니다. 편성 추가 이후 라디오 시장에 유료 매체를 가중 집행합니다.",
+          budget: "$35,000",
           tactics: [
-            "발매 기간 매체, 선주문 및 집계 주간: $10,000",
-            "발매 주간 가입 혜택을 활용한 팬 데이터 확보: $9,000",
-            "라디오 시장 가중 미국 유료 성장: $7,000",
-            "싱글, 퍼포먼스, 멤버 장면 클리핑: $6,500",
-            "미국 리테일 및 사인 앨범 활성화: $3,000",
+            "발매 주간 가입 혜택을 활용한 팬 데이터 확보: $17,500",
+            "미국 유료 성장, 집계 주간 집중 집행 및 신규 리스너 리타겟팅: $10,000",
+            "미국 유료 성장, 상시 운영 및 라디오 시장 가중: $7,500",
           ],
         },
       ],
@@ -584,17 +559,6 @@ export const fiftyFiftyExecutionPlanKorean: StrategyPlanData = {
             { weekIndex: 8, intensity: "medium" },
             { weekIndex: 9, intensity: "medium" },
             { weekIndex: 10, intensity: "high", label: "FULL" },
-            { weekIndex: 11, intensity: "high" },
-            { weekIndex: 12, intensity: "high" },
-            { weekIndex: 13, intensity: "medium" },
-          ],
-        },
-        {
-          name: "클리핑",
-          cells: [
-            { weekIndex: 8, intensity: "low", label: "SEED" },
-            { weekIndex: 9, intensity: "low" },
-            { weekIndex: 10, intensity: "high", label: "CLIP" },
             { weekIndex: 11, intensity: "high" },
             { weekIndex: 12, intensity: "high" },
             { weekIndex: 13, intensity: "medium" },
@@ -715,7 +679,7 @@ export const fiftyFiftyExecutionPlanKorean: StrategyPlanData = {
           weekIndex: 10,
           title: "발매 주간",
           items: [
-            "EP 발매. 매체 예산 대부분 집행: 첫째 날과 넷째 날 리스트 발송, 유료 매체와 클리핑은 집계 주간에 집중.",
+            "EP 발매. 매체 예산 대부분 집행: 첫째 날과 넷째 날 리스트 발송, 유료 매체는 집계 주간에 집중.",
             "라디오 편성 추가일: 1단계 방송국 싱글 편성.",
             "편성한 각 방송국의 시장에 유료 매체 가중 집행.",
           ],
@@ -894,15 +858,12 @@ export const fiftyFiftyExecutionPlanKorean: StrategyPlanData = {
           label: "핵심 프로그램",
           budget: "$87,500",
           name: "90일, 12월 7일 ~ 3월 6일",
-          tagline: "팬 데이터, 미국 성장, 2월 EP 발매 기간 및 피지컬.",
+          tagline: "2월 EP 발매 기간을 중심으로 한 팬 데이터 및 미국 성장.",
           deployable: "$50,000",
           breakdown: [
-            { vertical: "팬 데이터 확보 매체비", amount: "$16,000" },
-            { vertical: "미국 유료 성장 매체비", amount: "$12,500" },
-            { vertical: "발매 기간 매체비", amount: "$10,000" },
-            { vertical: "선주문 및 리테일 활성화", amount: "$4,000" },
-            { vertical: "클리핑 및 시딩", amount: "$7,500" },
-            { vertical: "팀 리테이너, 3개월", amount: "$30,000" },
+            { vertical: "팬 데이터 확보 매체비", amount: "$25,000" },
+            { vertical: "미국 유료 성장 매체비", amount: "$25,000" },
+            { vertical: "리테이너, 3개월", amount: "$30,000" },
             { vertical: "매체 운영 수수료, 15%", amount: "$7,500" },
           ],
           feeBreakdown: {
