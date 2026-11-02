@@ -39,7 +39,7 @@ export const fiftyFiftyExecutionPlan: StrategyPlanData = {
       title: "Plan Overview",
       subtitle: "An $87,500 core program over 90 days, from early December through the February EP release, with a separate $100,000 Top 40 radio campaign running alongside it.",
       body: [
-        "This document turns the U.S. growth plan into an execution schedule. It covers the first release cycle only: the February EP, four songs led by two new Euro-pop dance tracks, with a physical album and two photobooks. Work starts the week of December 7, 2026, so that the fan list, the paid accounts and the content rhythm are already running before the first single reaches U.S. listeners. The release week is penciled for the week of February 8 and moves to whatever date ATTRAKT confirms.",
+        "This document turns the U.S. growth plan into an execution schedule. It covers the first release cycle only: the February EP, four songs led by two new tracks built for radio, with a physical album and two photobooks. Work starts the week of December 7, 2026, so that the fan list, the paid accounts and the content rhythm are already running before the first single reaches U.S. listeners. The release week is penciled for the week of February 8 and moves to whatever date ATTRAKT confirms.",
         "The core program is $87,500: a $30,000 team retainer across three months, $50,000 of working media billed at cost, and a $7,500 management fee at 15 percent of that media. It funds three workstreams run as one team. First-party fan data builds a U.S. fan list ATTRAKT owns. U.S. growth puts paid weight behind the content formats the group's own data proves. Release and physical concentrates U.S. demand for the EP inside one chart counting week. Top 40 radio is the fourth workstream, budgeted separately at $100,000 for an initial three-month campaign and led by Transparent Arts through an independent promoter network covering 69 stations.",
         "Every line has a target, and every target has a low, expected and high case. Two checkpoints inside the window decide where money moves next. This cycle is groundwork for the chart push on the following release: it sets the real U.S. cost per fan, the U.S. sales baseline for the current lineup, and the radio footprint the next single can build on.",
       ],
@@ -153,7 +153,7 @@ export const fiftyFiftyExecutionPlan: StrategyPlanData = {
       genderDistribution: { female: 78.2, male: 21.8 },
       personas: [
         {
-          name: "Core K-pop and Pop Fans",
+          name: "Core K-pop Fans",
           label: "Segment 1",
           priority: "primary",
           profile: "Women 18 to 24, the center of the fanbase: 49 percent of Instagram followers and 67 percent of TikTok followers. They follow the members individually, post and share daily, and respond to member-led content and anything collectible.",
@@ -167,11 +167,11 @@ export const fiftyFiftyExecutionPlan: StrategyPlanData = {
           conversionGoal: "Join the fan list, then pre-order the EP",
         },
         {
-          name: "Millennial Pop Listeners",
+          name: "Millennial K-pop Listeners",
           label: "Segment 2",
           priority: "primary",
-          profile: "Listeners 25 to 34 who found the group through Cupid and stayed as pop fans: 38 percent of Instagram followers and 64 percent of YouTube subscribers. Spotify already places the group beside mainstream pop rather than only K-pop, and this is the age band with the most to spend on a physical album.",
-          psychographics: ["Pop listener first, K-pop second", "Nostalgic for the 2023 breakout", "Buys albums as keepsakes, not as versions"],
+          profile: "Listeners 25 to 34 who found the group through Cupid and stayed with it: 38 percent of Instagram followers and 64 percent of YouTube subscribers. This is the age band with the most to spend on a physical album.",
+          psychographics: ["Came in through Cupid, stayed for the group", "Nostalgic for the 2023 breakout", "Buys albums as keepsakes, not as versions"],
           behaviors: ["Discovers on YouTube and Spotify playlists", "Follows the artist on Spotify when a new song lands", "Shazams songs heard in stores, cars and on radio"],
           platforms: [
             { name: "YouTube", role: "Music video and Shorts reach" },
@@ -219,8 +219,8 @@ export const fiftyFiftyExecutionPlan: StrategyPlanData = {
         { behavior: "Engagers skew male and older than followers", platforms: ["Instagram"], implication: "Retarget engagers as their own audience instead of folding them into the core" },
         { behavior: "Nostalgia now drives about 21 percent of YouTube comments, and the share of non-English comments has nearly doubled, led by Spanish and Portuguese", platforms: ["YouTube"], implication: "Lead with the new single plus the Cupid connection, and add Spanish copy tests in Phase 3" },
       ],
-      similarArtists: ["KATSEYE", "ILLIT", "LE SSERAFIM", "IVE", "NewJeans", "TWICE", "Sabrina Carpenter"],
-      genres: ["K-pop", "Dance pop", "Euro-pop", "Pop"],
+      similarArtists: ["KATSEYE", "ILLIT", "LE SSERAFIM", "IVE", "NewJeans", "TWICE"],
+      genres: ["K-pop"],
       platformSignals: [
         { platform: "Spotify", note: "1.31M U.S. monthly listeners, 21 percent of the total and the No. 1 market" },
         { platform: "TikTok", note: "422,000 U.S. followers, 17 percent of 2.5M and the No. 1 market" },
@@ -243,13 +243,13 @@ export const fiftyFiftyExecutionPlan: StrategyPlanData = {
       subBlocks: [
         {
           label: "A",
-          title: "Core K-pop and Pop Fans",
+          title: "Core K-pop Fans",
           budget: "$17,500 (35%)",
           objective: "Build the fan list and grow Instagram and TikTok followers among women 18 to 24.",
           components: {
             heading: "Targeting",
             items: [
-              "Audience: U.S. women 18 to 24, K-pop and pop interest stacks, lookalikes of the first list signups and of top engagers",
+              "Audience: U.S. women 18 to 24, K-pop interest stacks, lookalikes of the first list signups and of top engagers",
               "Platforms: Instagram 60 percent, TikTok 40 percent",
               "Creative: rotating member content, challenges and behind-the-scenes, each with a join or pre-order step",
               "Phasing: tests in December, steady in January, largest share in the release window",
@@ -259,13 +259,13 @@ export const fiftyFiftyExecutionPlan: StrategyPlanData = {
         },
         {
           label: "B",
-          title: "Millennial Pop Listeners",
+          title: "Millennial K-pop Listeners",
           budget: "$12,500 (25%)",
           objective: "Turn Cupid-era listeners into Spotify followers and EP buyers.",
           components: {
             heading: "Targeting",
             items: [
-              "Audience: U.S. adults 25 to 34, mainstream pop interests and fans of comparable pop acts",
+              "Audience: U.S. adults 25 to 34, K-pop interests and fans of comparable K-pop acts",
               "Platforms: YouTube 50 percent, Instagram 50 percent",
               "Creative: the new single, framed as the next song from the group behind Cupid, then the physical album and photobooks",
               "Phasing: light before release, concentrated on release week and the counting week",

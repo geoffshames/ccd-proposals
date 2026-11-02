@@ -39,7 +39,7 @@ export const fiftyFiftyExecutionPlanKorean: StrategyPlanData = {
       title: "계획 개요",
       subtitle: "12월 초부터 2월 EP 발매까지 90일간 진행되는 $87,500 규모의 핵심 프로그램과, 이와 병행하는 별도 $100,000 규모의 Top 40 라디오 캠페인입니다.",
       body: [
-        "본 문서는 미국 성장 계획을 실행 일정으로 구체화한 것입니다. 대상은 첫 번째 발매 사이클인 2월 EP에 한정됩니다. 신곡 두 곡의 유로팝 댄스 트랙을 앞세운 4곡 구성이며, 피지컬 앨범과 포토북 2종이 함께 발매됩니다. 작업은 2026년 12월 7일 주간에 시작하여, 첫 싱글이 미국 리스너에게 도달하기 전에 팬 리스트, 광고 계정, 콘텐츠 운영 리듬이 이미 가동되도록 합니다. 발매 주간은 잠정적으로 2월 8일 주간으로 설정했으며, ATTRAKT가 확정하는 날짜에 맞춰 조정됩니다.",
+        "본 문서는 미국 성장 계획을 실행 일정으로 구체화한 것입니다. 대상은 첫 번째 발매 사이클인 2월 EP에 한정됩니다. 라디오를 겨냥한 신곡 두 곡을 앞세운 4곡 구성이며, 피지컬 앨범과 포토북 2종이 함께 발매됩니다. 작업은 2026년 12월 7일 주간에 시작하여, 첫 싱글이 미국 리스너에게 도달하기 전에 팬 리스트, 광고 계정, 콘텐츠 운영 리듬이 이미 가동되도록 합니다. 발매 주간은 잠정적으로 2월 8일 주간으로 설정했으며, ATTRAKT가 확정하는 날짜에 맞춰 조정됩니다.",
         "핵심 프로그램은 $87,500입니다. 3개월간의 팀 리테이너 $30,000, 실비로 집행되는 $50,000의 실집행 매체비, 그리고 해당 매체비의 15%인 $7,500의 매체 운영 수수료로 구성됩니다. 이 예산은 하나의 팀이 운영하는 세 가지 워크스트림에 투입됩니다. 퍼스트파티 팬 데이터는 ATTRAKT가 소유하는 미국 팬 리스트를 구축합니다. 미국 성장은 그룹 자체 데이터로 검증된 콘텐츠 포맷에 유료 매체를 집중합니다. 발매 및 피지컬은 EP에 대한 미국 수요를 하나의 차트 집계 주간에 집중시킵니다. Top 40 라디오는 네 번째 워크스트림으로, 초기 3개월 캠페인에 대해 $100,000가 별도 책정되며 Transparent Arts가 69개 방송국을 커버하는 독립 프로모터 네트워크를 통해 주도합니다.",
         "모든 항목에는 목표가 있고, 모든 목표에는 하위, 기대, 상위 시나리오가 있습니다. 기간 중 두 차례의 체크포인트에서 다음 예산 배분을 결정합니다. 이번 사이클은 다음 발매의 차트 공략을 위한 기반 작업입니다. 실제 미국 팬 1인당 확보 비용, 현 라인업의 미국 판매 기준치, 그리고 다음 싱글이 이어받을 라디오 기반을 확립합니다.",
       ],
@@ -153,7 +153,7 @@ export const fiftyFiftyExecutionPlanKorean: StrategyPlanData = {
       genderDistribution: { female: 78.2, male: 21.8 },
       personas: [
         {
-          name: "핵심 K-pop 및 팝 팬",
+          name: "핵심 K-pop 팬",
           label: "세그먼트 1",
           priority: "primary",
           profile: "18~24세 여성으로 팬층의 중심입니다. Instagram 팔로워의 49%, TikTok 팔로워의 67%를 차지합니다. 멤버 개개인을 팔로우하고, 매일 게시하고 공유하며, 멤버 중심 콘텐츠와 수집 가능한 모든 것에 반응합니다.",
@@ -167,11 +167,11 @@ export const fiftyFiftyExecutionPlanKorean: StrategyPlanData = {
           conversionGoal: "팬 리스트 가입 후 EP 선주문",
         },
         {
-          name: "밀레니얼 팝 리스너",
+          name: "밀레니얼 K-pop 리스너",
           label: "세그먼트 2",
           priority: "primary",
-          profile: "Cupid로 그룹을 알게 된 뒤 팝 팬으로 남은 25~34세 리스너입니다. Instagram 팔로워의 38%, YouTube 구독자의 64%를 차지합니다. Spotify는 이미 그룹을 K-pop에만 한정하지 않고 메인스트림 팝과 나란히 배치하고 있으며, 이 연령대가 피지컬 앨범에 가장 많은 금액을 쓸 수 있습니다.",
-          psychographics: ["K-pop보다 팝 리스너", "2023년 브레이크아웃에 대한 향수", "버전 수집이 아닌 소장용으로 앨범 구매"],
+          profile: "Cupid로 그룹을 알게 된 뒤 계속 함께하고 있는 25~34세 리스너입니다. Instagram 팔로워의 38%, YouTube 구독자의 64%를 차지합니다. 이 연령대가 피지컬 앨범에 가장 많은 금액을 쓸 수 있습니다.",
+          psychographics: ["Cupid로 유입되어 그룹 팬으로 정착", "2023년 브레이크아웃에 대한 향수", "버전 수집이 아닌 소장용으로 앨범 구매"],
           behaviors: ["YouTube와 Spotify 플레이리스트에서 발견", "신곡이 나오면 Spotify에서 아티스트 팔로우", "매장, 차, 라디오에서 들은 곡을 Shazam으로 검색"],
           platforms: [
             { name: "YouTube", role: "뮤직비디오 및 Shorts 도달" },
@@ -219,8 +219,8 @@ export const fiftyFiftyExecutionPlanKorean: StrategyPlanData = {
         { behavior: "참여자는 팔로워보다 남성 비중이 높고 연령대가 높음", platforms: ["Instagram"], implication: "참여자를 핵심층에 합치지 않고 별도 오디언스로 리타겟팅" },
         { behavior: "향수가 YouTube 댓글의 약 21%를 차지하며, 비영어 댓글 비중이 스페인어와 포르투갈어를 중심으로 거의 두 배로 증가", platforms: ["YouTube"], implication: "신곡과 Cupid의 연결고리를 앞세우고, 3단계에서 스페인어 문구 테스트 추가" },
       ],
-      similarArtists: ["KATSEYE", "ILLIT", "LE SSERAFIM", "IVE", "NewJeans", "TWICE", "Sabrina Carpenter"],
-      genres: ["K-pop", "댄스 팝", "유로팝", "팝"],
+      similarArtists: ["KATSEYE", "ILLIT", "LE SSERAFIM", "IVE", "NewJeans", "TWICE"],
+      genres: ["K-pop"],
       platformSignals: [
         { platform: "Spotify", note: "미국 월간 리스너 131만 명, 전체의 21%로 1위 시장" },
         { platform: "TikTok", note: "미국 팔로워 422,000명, 250만 명 중 17%로 1위 시장" },
@@ -243,13 +243,13 @@ export const fiftyFiftyExecutionPlanKorean: StrategyPlanData = {
       subBlocks: [
         {
           label: "A",
-          title: "핵심 K-pop 및 팝 팬",
+          title: "핵심 K-pop 팬",
           budget: "$17,500 (35%)",
           objective: "18~24세 여성 대상으로 팬 리스트를 구축하고 Instagram 및 TikTok 팔로워를 늘립니다.",
           components: {
             heading: "타겟팅",
             items: [
-              "오디언스: 미국 18~24세 여성, K-pop 및 팝 관심사, 초기 리스트 가입자와 상위 참여자 기반 유사 타겟",
+              "오디언스: 미국 18~24세 여성, K-pop 관심사, 초기 리스트 가입자와 상위 참여자 기반 유사 타겟",
               "플랫폼: Instagram 60%, TikTok 40%",
               "크리에이티브: 멤버별 순환 콘텐츠, 챌린지, 비하인드, 각각 가입 또는 선주문 안내 포함",
               "단계: 12월 테스트, 1월 유지, 발매 기간에 가장 큰 비중",
@@ -259,13 +259,13 @@ export const fiftyFiftyExecutionPlanKorean: StrategyPlanData = {
         },
         {
           label: "B",
-          title: "밀레니얼 팝 리스너",
+          title: "밀레니얼 K-pop 리스너",
           budget: "$12,500 (25%)",
           objective: "Cupid 시절 리스너를 Spotify 팔로워와 EP 구매자로 전환합니다.",
           components: {
             heading: "타겟팅",
             items: [
-              "오디언스: 미국 25~34세 성인, 메인스트림 팝 관심사 및 유사 팝 아티스트 팬",
+              "오디언스: 미국 25~34세 성인, K-pop 관심사 및 유사 K-pop 아티스트 팬",
               "플랫폼: YouTube 50%, Instagram 50%",
               "크리에이티브: Cupid를 부른 그룹의 다음 곡으로서 신곡을 소개한 뒤 피지컬 앨범과 포토북으로 연결",
               "단계: 발매 전에는 소규모, 발매 주간과 집계 주간에 집중",
