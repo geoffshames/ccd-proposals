@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import type { TargetsSection } from "@/lib/plan-context";
 import { PlanSectionHeader } from "./PlanSectionHeader";
+import { useT } from "@/lib/plan-i18n";
 
 /**
  * Baseline and target values are authored as short tokens ("100%", "4.4%"), but plans
@@ -18,6 +19,7 @@ function valueSize(v: string): string {
 }
 
 export function PlanTargets({ section }: { section: TargetsSection }) {
+  const t = useT();
   return (
     <section
       id={`section-${section.number}`}
@@ -46,7 +48,7 @@ export function PlanTargets({ section }: { section: TargetsSection }) {
             >
               {target.featured && (
                 <div className="absolute top-0 right-0 bg-accent text-white px-3 py-1.5 text-[10px] font-mono tracking-[0.18em] uppercase">
-                  Lead KPI
+                  {t("leadKpi")}
                 </div>
               )}
 
@@ -72,7 +74,7 @@ export function PlanTargets({ section }: { section: TargetsSection }) {
 
               <div className="mt-7">
                 <div className="text-[10px] font-mono tracking-[0.18em] uppercase text-accent/90">
-                  Directional target
+                  {t("directionalTarget")}
                 </div>
                 <div
                   className={`mt-1.5 ${valueSize(target.target)} font-bold leading-[1.05] text-accent break-words`}
@@ -84,7 +86,7 @@ export function PlanTargets({ section }: { section: TargetsSection }) {
                   {target.target}
                 </div>
                 <div className="mt-2 text-[12px] font-mono text-text-muted/70">
-                  Today <span className="text-text-primary/75">{target.baseline}</span>
+                  {t("today")} <span className="text-text-primary/75">{target.baseline}</span>
                 </div>
               </div>
 
@@ -96,7 +98,7 @@ export function PlanTargets({ section }: { section: TargetsSection }) {
 
               <div className="mt-auto pt-5 border-t border-text-muted/15">
                 <div className="text-[10px] font-mono tracking-[0.18em] uppercase text-text-muted/65">
-                  Measurement
+                  {t("measurement")}
                 </div>
                 <p className="mt-2 text-[13px] leading-relaxed text-text-muted">
                   {target.measurement}
@@ -116,7 +118,7 @@ export function PlanTargets({ section }: { section: TargetsSection }) {
               className="mt-10 border border-text-muted/15 bg-bg-card p-7 md:p-9"
             >
               <div className="text-[10px] font-mono tracking-[0.22em] uppercase text-text-muted/70 mb-6">
-                Measurement principles
+                {t("measurementPrinciples")}
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-5">
                 {section.measurementPrinciples.map((principle, i) => (

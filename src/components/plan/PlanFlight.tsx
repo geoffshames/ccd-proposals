@@ -2,8 +2,10 @@
 import { motion } from "framer-motion";
 import { PlanSectionHeader } from "./PlanSectionHeader";
 import type { FlightSection } from "@/lib/plan-context";
+import { useT } from "@/lib/plan-i18n";
 
 export function PlanFlight({ section }: { section: FlightSection }) {
+  const t = useT();
   return (
     <section id={`section-${section.number}`} className="px-6 md:px-12 lg:px-24 py-24 md:py-32">
       <div className="max-w-6xl mx-auto">
@@ -18,7 +20,7 @@ export function PlanFlight({ section }: { section: FlightSection }) {
             className="mb-12 border-l-2 border-accent pl-6 max-w-3xl"
           >
             <div className="text-[10px] font-mono tracking-[0.22em] uppercase text-accent mb-2">
-              Deployable Across Flight
+              {t("deployableAcrossFlight")}
             </div>
             <div className="text-[28px] md:text-[34px] font-bold text-text-primary leading-none"
                  style={{ fontFamily: "var(--font-heading), var(--font-sans), sans-serif" }}>
@@ -40,7 +42,7 @@ export function PlanFlight({ section }: { section: FlightSection }) {
               {/* Phase number + label */}
               <div className="lg:col-span-3">
                 <div className="text-[11px] font-mono tracking-[0.22em] uppercase text-accent mb-2">
-                  Phase {String(i + 1).padStart(2, "0")}
+                  {t("phase")} {String(i + 1).padStart(2, "0")}
                 </div>
                 <h3 className="text-[24px] md:text-[28px] font-bold text-text-primary leading-tight"
                     style={{ fontFamily: "var(--font-heading), var(--font-sans), sans-serif" }}>
@@ -59,12 +61,12 @@ export function PlanFlight({ section }: { section: FlightSection }) {
               {/* Focus + tactics */}
               <div className="lg:col-span-9 space-y-5">
                 <div>
-                  <div className="text-[10px] font-mono tracking-[0.22em] uppercase text-text-muted/60 mb-2">Focus</div>
+                  <div className="text-[10px] font-mono tracking-[0.22em] uppercase text-text-muted/60 mb-2">{t("focus")}</div>
                   <p className="text-text-primary/90 text-[15px] md:text-[16px] leading-relaxed">{phase.focus}</p>
                 </div>
                 {phase.tactics && phase.tactics.length > 0 && (
                   <div>
-                    <div className="text-[10px] font-mono tracking-[0.22em] uppercase text-text-muted/60 mb-2">Tactics</div>
+                    <div className="text-[10px] font-mono tracking-[0.22em] uppercase text-text-muted/60 mb-2">{t("tactics")}</div>
                     <ul className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-2">
                       {phase.tactics.map((t, j) => (
                         <li key={j} className="flex gap-3 text-[14px] md:text-[15px] text-text-primary/85 leading-relaxed">

@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { PlanSectionHeader } from "./PlanSectionHeader";
 import { usePlan } from "@/lib/plan-context";
 import type { StructureSection, PricingSection } from "@/lib/plan-context";
+import { useT } from "@/lib/plan-i18n";
 
 // Literal class strings so the Tailwind JIT can see them.
 const TIER_COLS: Record<1 | 2 | 3 | 4, string> = {
@@ -13,6 +14,7 @@ const TIER_COLS: Record<1 | 2 | 3 | 4, string> = {
 };
 
 export function PlanStructure({ section }: { section: StructureSection }) {
+  const t = useT();
   const PLAN = usePlan();
   // Locate the pricing section so the anchor button knows where to jump.
   const pricing = PLAN.sections.find(
@@ -61,7 +63,7 @@ export function PlanStructure({ section }: { section: StructureSection }) {
 
               <div className="mt-8 pt-6 border-t border-text-muted/15 flex-1">
                 <div className="text-[10px] font-mono tracking-[0.22em] uppercase text-text-muted/60 mb-4">
-                  Includes
+                  {t("includes")}
                 </div>
                 <ul className="space-y-3">
                   {tier.includes.map((it, j) => (
@@ -78,7 +80,7 @@ export function PlanStructure({ section }: { section: StructureSection }) {
                   href={pricingHref}
                   className="mt-8 inline-flex items-center justify-between gap-3 text-[11px] font-mono tracking-[0.22em] uppercase text-accent hover:text-text-primary transition-colors border-t border-text-muted/15 pt-5"
                 >
-                  <span>View Full Breakdown</span>
+                  <span>{t("viewFullBreakdown")}</span>
                   <span aria-hidden="true">↓</span>
                 </a>
               )}

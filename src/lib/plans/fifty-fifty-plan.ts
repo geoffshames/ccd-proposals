@@ -1,0 +1,905 @@
+import type { StrategyPlanData } from "../plan-context";
+
+export const fiftyFiftyExecutionPlan: StrategyPlanData = {
+  accentColor: "#FD3737",
+  ogImage: "/images/fifty-fifty/og-plan.png",
+  language: "en",
+  languageAlternates: [{ slug: "fifty-fifty-plan-ko", label: "한국어", code: "KO" }],
+
+  cover: {
+    label: "U.S. Execution Plan",
+    title: "FIFTY FIFTY",
+    subtitle: "The 90-day program for the February EP: fan data, U.S. growth, physical sales and Top 40 radio, with every dollar, date and target set out line by line.",
+    partnership: "A joint offering from Transparent Arts and Crowd Control Digital",
+    prepared: "Transparent Arts and Crowd Control Digital",
+    date: "November 2026",
+    backgroundImage: "/images/fifty-fifty/fifty-fifty-group.jpg",
+    partnerLogos: [
+      { src: "/brand/TA-LOGO-WHITE.png", alt: "Transparent Arts", height: 36 },
+      { src: "/brand/CC-LOGO-2024-WHITE.png", alt: "Crowd Control Digital", height: 22 },
+    ],
+  },
+
+  footerCredit: "Transparent Arts × Crowd Control Digital",
+
+  approveCta: {
+    label: "Approve",
+    sentLabel: "Sent. Our team will be in touch.",
+    caption: "APPROVALS NOTIFY TRANSPARENT ARTS AND CROWD CONTROL DIGITAL",
+  },
+
+  sections: [
+    // ===================================================================
+    // 01. Plan Overview
+    // ===================================================================
+    {
+      type: "overview",
+      number: "01",
+      navLabel: "Overview",
+      title: "Plan Overview",
+      subtitle: "A $90,000 core program over 90 days, from early December through the February EP release, with a separate $100,000 Top 40 radio campaign running alongside it.",
+      body: [
+        "This document turns the U.S. growth plan into an execution schedule. It covers the first release cycle only: the February EP, four songs led by two new Euro-pop dance tracks, with a physical album and two photobooks. Work starts the week of December 7, 2026, so that the fan list, the paid accounts and the content rhythm are already running before the first single reaches U.S. listeners. The release week is penciled for the week of February 8 and moves to whatever date ATTRAKT confirms.",
+        "The core program is $90,000: a $30,000 team retainer across three months and $60,000 of working media, billed at cost. It funds three workstreams run as one team. First-party fan data builds a U.S. fan list ATTRAKT owns. U.S. growth puts paid weight behind the content formats the group's own data proves. Release and physical concentrates U.S. demand for the EP inside one chart counting week. Top 40 radio is the fourth workstream, budgeted separately at $100,000 for an initial three-month campaign and led by Transparent Arts through an independent promoter network covering 69 stations.",
+        "Every line has a target, and every target has a low, expected and high case. Two checkpoints inside the window decide where money moves next. This cycle is groundwork for the chart push on the following release: it sets the real U.S. cost per fan, the U.S. sales baseline for the current lineup, and the radio footprint the next single can build on.",
+      ],
+      supports: {
+        heading: "What This Cycle Delivers",
+        items: [
+          "A U.S. fan list of about 15,000 identified fans by early March, owned and exportable by ATTRAKT",
+          "Spotify followers, Instagram and YouTube growth against baselines locked in the first week",
+          "Pre-orders opened to the fan list before public on-sale, with U.S. units concentrated in one counting week",
+          "Top 40 adds and weekly spins across 69 stations, tracked weekly from the add date",
+          "A measured U.S. cost per fan, cost per follower and sales baseline to size the next release",
+        ],
+      },
+      goals: {
+        heading: "What Is Funded Where",
+        items: [
+          "Core program, $90,000: fan data, U.S. growth, release and physical, team retainer",
+          "U.S. radio, $100,000: Top 40 promotion, station coverage and radio campaign management",
+          "With the label: music, A&R, manufacturing, release timing, artist travel and every artist decision",
+        ],
+      },
+      charts: [
+        {
+          kind: "hbars",
+          title: "Where the $90,000 Core Program Goes",
+          subtitle: "Two thirds of the core budget is working media in market.",
+          series: [
+            {
+              name: "USD",
+              points: [
+                { x: "Team retainer", y: 30000 },
+                { x: "Fan capture media", y: 20000 },
+                { x: "U.S. growth media", y: 20000 },
+                { x: "Release-window media", y: 12000 },
+                { x: "Pre-order and retail", y: 5000 },
+                { x: "Creator seeding", y: 3000 },
+              ],
+            },
+          ],
+          highlightX: ["Fan capture media", "U.S. growth media"],
+          source: "Transparent Arts and Crowd Control Digital program budget, November 2026",
+        },
+      ],
+      footnote: "All dates assume a February release week. The schedule shifts as one block when ATTRAKT confirms the date. Each later release cycle is authorized as its own budget on the same structure, sized from what this cycle measures.",
+    },
+
+    // ===================================================================
+    // 02. Program Structure
+    // ===================================================================
+    {
+      type: "structure",
+      number: "02",
+      navLabel: "Structure",
+      title: "Program Structure",
+      intro: "Two budgets, one team and one weekly report. The core program and the radio campaign are approved and invoiced separately so each can be scaled on its own results.",
+      tiers: [
+        {
+          label: "Core Program",
+          budget: "$90,000",
+          name: "90 Days, Dec 7 to Mar 6",
+          goal: "Build the U.S. fan list, grow the U.S. audience and convert it into EP units in one counting week.",
+          includes: [
+            "First-party fan data: capture stack, routing fix and paid acquisition",
+            "U.S. paid growth on Instagram, TikTok and YouTube",
+            "February EP release window: pre-save, pre-order and counting-week media",
+            "Pre-order and U.S. retail activation",
+            "Gaming and creator seeding behind the group's strongest format",
+            "Strategy, content plan, creative testing, live dashboard and weekly reporting",
+          ],
+          deployable: "$60,000 working media",
+        },
+        {
+          label: "U.S. Radio",
+          budget: "$100,000",
+          name: "3 Months From Pre-Launch",
+          goal: "Secure Top 40 adds and weekly spins for the lead single and build the station relationships the next single inherits.",
+          includes: [
+            "Radio strategy, station targeting and the add schedule",
+            "Promotion to program directors, music directors and DJs at 69 stations",
+            "Mix-show promotion and radio remixes",
+            "Add and spin tracking with weekly reporting",
+            "Artist promotion: interviews, acoustic sessions, station visits and custom station IDs",
+          ],
+          deployable: "$75,000 station promotion",
+        },
+      ],
+    },
+
+    // ===================================================================
+    // 03. Workstream 1: Fan Data
+    // ===================================================================
+    {
+      type: "vertical",
+      number: "03",
+      navLabel: "Fan Data",
+      title: "Workstream 1 / First-Party Fan Data",
+      philosophy: "Every other workstream gets cheaper once the label can reach its own fans directly. This one starts first and runs every week of the window.",
+      intro: "Budget: $20,000 of capture media inside the core program, plus setup and management covered by the retainer. The target is about 15,000 identified U.S. fans by early March, built inside U.S. consent rules.",
+      subBlocks: [
+        {
+          label: "A",
+          title: "Weeks 1 and 2: Fix the Routing",
+          objective: "Point the group's highest-traffic assets at a destination that captures fans before sending them on.",
+          strategy: "Five of the group's last 1,006 TikTok posts point a viewer anywhere they can follow, join or buy. The first two weeks fix that at zero media cost. Every owned link surface is repointed to a single FIFTY FIFTY U.S. destination that captures an email or phone number first and then forwards the fan to wherever they were going: the new single, the pre-order, the store or the video. From this point on, every organic spike the group earns adds to a list ATTRAKT owns.",
+          components: {
+            heading: "Surfaces Repointed in Week 1",
+            items: [
+              "Instagram, TikTok, YouTube and X profile links",
+              "YouTube descriptions and pinned comments on the top 25 videos by current traffic, Cupid versions first",
+              "Linktree or equivalent replaced by the owned capture destination",
+              "Pinned posts on every account carrying the join link through the release",
+              "Short QR code and URL for physical album inserts, photobooks and any U.S. retail display",
+            ],
+          },
+          timeline: "Week of Dec 7 to week of Dec 14",
+        },
+        {
+          label: "B",
+          title: "The Capture Stack",
+          objective: "One owned system for email, SMS and Instagram DMs, with a reason to join at every step.",
+          strategy: "The stack captures email and U.S. SMS, plus Instagram DM opt-ins through comment-to-DM automation, which reaches fans on the platform where the group is most efficient. Each signup gets a reason to join that matches the moment: early access to the single in December, first access to pre-orders in January, a signed-copy draw for list members only at release. Every record is tagged by source and later by behavior, so the label can tell a casual follower from a repeat buyer.",
+          components: {
+            heading: "Build List",
+            items: [
+              "Capture platform configured for email, U.S. SMS and Instagram DM opt-in",
+              "Bilingual signup pages in English and Korean, consent language in both",
+              "Welcome sequence: three messages over ten days, member content first, ask second",
+              "Comment-to-DM keyword flows on Instagram for the single, the pre-order and the release",
+              "Source tags on every record: organic link, paid unit, DM keyword, QR insert, radio market",
+              "Behavior tags: pre-saved, pre-ordered, bought direct, opened the last three sends",
+            ],
+          },
+          kpis: [
+            "Identified U.S. fans on file, reported weekly",
+            "Cost per fan on paid capture, target under $2.00",
+            "Share of records with at least one purchase or pre-save behavior",
+          ],
+        },
+        {
+          label: "C",
+          title: "Paid Acquisition",
+          budget: "$20,000 across the window",
+          objective: "Scale the list with ad units built for signup, measured on cost per fan, not reach.",
+          strategy: "Capture units run U.S.-only on Instagram first, then TikTok, with lookalikes seeded from the first organic signups. The December test is deliberately small because holiday advertising pushes costs to their yearly high. Spend steps up in January, when ad costs fall back, and again into the release window, when the reason to join is strongest. The reference K-pop campaign we run today acquired fans at $1.97 per paid signup and $1.15 blended across all sources.",
+          charts: [
+            {
+              kind: "bars",
+              title: "U.S. Fan List by Early March",
+              subtitle: "Low, expected and high outcomes for the 90-day window.",
+              series: [
+                {
+                  name: "Fans on file",
+                  points: [
+                    { x: "Low", y: 8000 },
+                    { x: "Expected", y: 15000 },
+                    { x: "High", y: 25000 },
+                  ],
+                },
+              ],
+              highlightX: ["Expected"],
+              note: "Low assumes paid capture alone at about $2.00 per fan. Expected adds routing and pre-order demand. High assumes a strong single and radio-market signups on top.",
+              source: "Crowd Control Digital projection from reference campaign cost per fan",
+            },
+          ],
+        },
+        {
+          label: "D",
+          title: "Inside Korean Privacy Rules",
+          objective: "Capture where it is permitted and the audience already is, and leave Korean fans where they are served well.",
+          strategy: "Paid capture is scoped to U.S. residents under U.S. consent standards. Consent is never bundled with anything else and opt-out is on every message. Fans in Korea stay on the group's existing fan platform. Instagram DM opt-in gives fans outside the U.S. a way to stay close to the group without phone-based capture, which Korean numbers do not complete in practice.",
+        },
+      ],
+      footnote: "The fan list is held in an account ATTRAKT owns, with full export available at any time.",
+    },
+
+    // ===================================================================
+    // 04. Workstream 2: U.S. Growth and Content
+    // ===================================================================
+    {
+      type: "vertical",
+      number: "04",
+      navLabel: "U.S. Growth",
+      title: "Workstream 2 / U.S. Growth and Content",
+      philosophy: "Put paid weight behind the formats the group's own data proves, in the market where the listeners already are.",
+      intro: "Budget: $20,000 of U.S. paid growth media and $3,000 of gaming and creator seeding inside the core program. Measured on Spotify followers, Instagram and YouTube growth, and median views per post.",
+      subBlocks: [
+        {
+          label: "A",
+          title: "Paid Growth Structure",
+          budget: "$20,000 across the window",
+          objective: "Grow followed, subscribed and engaged U.S. fans at a cost per follower set from the December test.",
+          strategy: "Instagram leads because the same FIFTY FIFTY video earns more there than on TikTok in most matched pairs, and Instagram returns about three times as many views per follower. The December test splits a small budget across all three platforms for two weeks to read cost per follower, per subscriber and per stream-click on real data. From the first checkpoint, budget moves to whichever platform is cheapest per outcome, and anything below its floor of efficacy is stopped.",
+          components: {
+            heading: "Campaign Build",
+            items: [
+              "Instagram: follower growth on Reels, plus retargeting of video viewers and profile visitors",
+              "TikTok: Spark Ads on the group's own top organic posts, U.S. only",
+              "YouTube: in-feed and Shorts placements driving subscribers and the official audio",
+              "Spotify follow and pre-save destinations through the capture link, so every click can also become a fan record",
+              "Starting split 50 percent Instagram, 25 percent TikTok, 25 percent YouTube, rebalanced at each checkpoint",
+            ],
+          },
+          kpis: [
+            "Cost per follower and cost per subscriber by platform",
+            "Spotify follower net adds per day against the 1,048 a day baseline",
+            "U.S. Instagram and YouTube growth against week 1 baselines",
+          ],
+        },
+        {
+          label: "B",
+          title: "The Content Plan",
+          objective: "Change the mix toward what already works. No new production model is needed.",
+          strategy: "The content plan is delivered in week 1 and refreshed every two weeks. It rebalances what the group already makes rather than asking for new shoots. Gaming and esports content earns a median of 584,750 views, more than five times the account's other formats, and is under four percent of output today, so it gets a standing weekly slot. Comparison acts reach the payoff inside the first three seconds twice as often as FIFTY FIFTY does, so every edit opens on movement already underway.",
+          components: {
+            heading: "Weekly Rhythm",
+            items: [
+              "One gaming or esports post a week, with the members inside a creator's or player's world rather than hosting guests",
+              "Same-day posting on Instagram and TikTok, timed for both KST and EST",
+              "Bilingual English and Korean captions on every post",
+              "A rotating member post each day of the pre-order window, so every member's fans have a day to rally behind",
+              "Every post carries a next step: follow, join, pre-save or pre-order",
+              "Creative for paid sourced weekly from the best organic performers",
+            ],
+          },
+        },
+        {
+          label: "C",
+          title: "Gaming and Creator Seeding",
+          budget: "$3,000",
+          objective: "Put the group inside U.S. gaming culture around the single.",
+          strategy: "A small paid seed with U.S. gaming and streaming creators who build content around the single and the members, chosen for fit and engagement rather than reach. This is not a clipping program. Clipping only compounds at volume, around 25 million impressions and up, and is held for a later cycle when the budget can reach that floor.",
+          kpis: ["Views and engagement per creator post", "Fans captured through creator links"],
+        },
+      ],
+      footnote: "Content findings come from an analysis of 105 FIFTY FIFTY and competitor videos with per-post performance data attached.",
+    },
+
+    // ===================================================================
+    // 05. Workstream 3: Release and Physical
+    // ===================================================================
+    {
+      type: "vertical",
+      number: "05",
+      navLabel: "EP Release",
+      title: "Workstream 3 / February EP Release and Physical",
+      philosophy: "One album sale counts as one chart unit. It takes 1,000 premium streams to equal it. The release plan is built around that ratio.",
+      intro: "Budget: $12,000 of release-window media and $5,000 of pre-order and retail activation inside the core program. This EP is the groundwork release: it sets the U.S. sales baseline for the current lineup and runs the pre-order mechanics for the first time.",
+      subBlocks: [
+        {
+          label: "A",
+          title: "The Release Sequence",
+          objective: "Move fans from discovery to pre-save to pre-order to purchase in the order the chart rewards.",
+          strategy: "The first single is used to grow the list. The pre-order opens to the list before any public announcement, which measures demand while there is still time to adjust supply. Public pre-order follows. Release week concentrates every U.S. purchase inside a single Billboard counting week, which runs Friday to Thursday, so the release date and the paid calendar are set together.",
+          components: {
+            heading: "Sequence",
+            items: [
+              "Single teaser and pre-save, with the capture link as the destination",
+              "Pre-order opened to the fan list 48 hours before public on-sale",
+              "Public pre-order with the rotating member daily posts",
+              "Release week: list sends on day one and day four, paid concentrated on the counting week",
+              "Post-release: a signed-copy draw for list buyers and a thank-you send that asks for the next action",
+            ],
+          },
+          timeline: "Pre-save from mid-January, list pre-order late January, release week of Feb 8 (to be confirmed)",
+        },
+        {
+          label: "B",
+          title: "Pre-Order and Retail",
+          budget: "$5,000",
+          objective: "Make the EP easy to buy in the U.S. and make every U.S. sale count.",
+          strategy: "Pre-orders run through ATTRAKT's direct-to-fan store and its distributor so fans in every market can buy. U.S. units are protected by shipping and reporting rules agreed with the distributor in advance, since only eligible sales count toward U.S. charts. The activation budget covers store promotion, U.S. retail placement support and signed-copy fulfillment marketing.",
+          components: {
+            heading: "Decisions Needed From ATTRAKT by Dec 18",
+            items: [
+              "The U.S. SKUs: standard versions, the photobook versions and whether a limited edition such as a vinyl joins this release",
+              "Signed-copy allocation for the U.S. direct store",
+              "Distributor contact for U.S. retail and chart reporting",
+              "Pre-order open date and price points",
+            ],
+          },
+        },
+        {
+          label: "C",
+          title: "Release-Window Media",
+          budget: "$12,000",
+          objective: "Concentrate paid weight where it converts: pre-save, pre-order and the counting week.",
+          strategy: "Release-window media runs in two bursts. The first drives pre-saves and list pre-orders from retargeting pools built in December and January. The second runs the counting week itself, aimed at fans who have engaged but not yet bought, plus geo-weighted support in the markets where radio stations add the single.",
+          charts: [
+            {
+              kind: "bars",
+              title: "U.S. Album Units, February EP Release Week",
+              subtitle: "Low, expected and high outcomes for the groundwork release.",
+              series: [
+                {
+                  name: "U.S. units",
+                  points: [
+                    { x: "Low", y: 1500 },
+                    { x: "Expected", y: 3000 },
+                    { x: "High", y: 5000 },
+                  ],
+                },
+              ],
+              highlightX: ["Expected"],
+              note: "Expected puts the EP on Billboard's Top Album Sales chart. The Billboard 200 is the target for the following release, built on the list and the baseline this one creates.",
+              source: "Crowd Control Digital and Transparent Arts planning ranges from 2026 Billboard chart results",
+            },
+          ],
+        },
+      ],
+      footnote: "Chart math follows Luminate's published album-equivalent weighting, effective week 1 of 2026. Manufacturing, versions and release timing remain with ATTRAKT.",
+    },
+
+    // ===================================================================
+    // 06. Workstream 4: U.S. Radio
+    // ===================================================================
+    {
+      type: "vertical",
+      number: "06",
+      navLabel: "Radio",
+      title: "Workstream 4 / U.S. Top 40 Radio",
+      philosophy: "Radio keeps a song in front of people long after the streaming curve flattens. The lead single is built for it, so it gets a full Top 40 campaign from day one.",
+      intro: "Budget: $100,000 for an initial three-month campaign, separate from the core program. Led by Transparent Arts through an independent promoter network, with Crowd Control Digital tying every station market back to the fan list and the paid plan.",
+      subBlocks: [
+        {
+          label: "A",
+          title: "Campaign Scope",
+          objective: "Secure adds to rotation and weekly spins for the lead single at Top 40 stations nationwide.",
+          strategy: "The campaign runs in four parts. Pre-launch sets the radio strategy, prepares the promotional assets, identifies target stations and sets the add schedule against the release. Promotion works program directors, music directors and DJs station by station to secure adds and build weekly spins. Tracking reports adds and spins every week and moves effort to the stations that respond. Artist promotion turns airplay into relationships through interviews, acoustic performances, station visits, custom station IDs and supporting social content, with the two English-speaking members leading on air.",
+          components: {
+            heading: "Four Parts",
+            items: [
+              "Pre-launch: radio strategy, promotional assets, station targeting and the add schedule",
+              "Radio promotion: program directors, music directors and DJs nationwide",
+              "Tracking and reporting: station adds, weekly spin counts and strategy adjustments",
+              "Artist promotion: interviews, acoustic sessions, station visits, custom station IDs and social content",
+            ],
+          },
+          timeline: "Pre-launch from mid-January, add date in release week, promotion through mid-April",
+        },
+        {
+          label: "B",
+          title: "Phase 1: Promoter and Station Network",
+          budget: "$68,000",
+          objective: "Coverage across 69 stations, each priced against a committed add to rotation or a set number of weekly spins.",
+          strategy: "Phase 1 is the full promoter roster, engaged together so the single reaches every target station inside the same add window. Thirteen independent promoters cover 41 stations at about $1,000 to $1,200 per station. Cumulus Media covers a further 28 stations. National promotion, the All Access trade blast and Suraci's mix-show and remix work sit alongside the station lines.",
+          components: {
+            heading: "Phase 1 Line Items",
+            items: [
+              "All Access trade email blast: $500",
+              "Danny Cooper: $3,000",
+              "Tommy Nappi: $6,000",
+              "Jeff Deane, 10 stations: $12,000",
+              "Greg Lawley, 6 stations: $7,000",
+              "Chuck Field, 6 stations: $7,000",
+              "Joe Hecht, 4 stations: $6,000",
+              "Joanne Grande, 3 stations: $4,000",
+              "Paula Tuggey, 2 stations: $3,000",
+              "Steve Zap, 2 stations: $2,000",
+              "Bill Rusch, 2 stations: $2,000",
+              "Jason McFadden, 2 stations: $2,000",
+              "Andy Arnold, 1 station: $1,000",
+              "Gary Triozzi, 1 station: $1,000",
+              "Ralph Carrol, 1 station: $1,000",
+              "Rick Salvador, 1 station: $1,000",
+              "Cumulus Media, 28 stations: $3,000",
+              "Suraci, mix-show promotion and remixes: $6,500",
+            ],
+          },
+          charts: [
+            {
+              kind: "hbars",
+              title: "Stations Covered by Promoter",
+              subtitle: "69 stations in Phase 1.",
+              series: [
+                {
+                  name: "Stations",
+                  points: [
+                    { x: "Cumulus Media", y: 28 },
+                    { x: "Jeff Deane", y: 10 },
+                    { x: "Greg Lawley", y: 6 },
+                    { x: "Chuck Field", y: 6 },
+                    { x: "Joe Hecht", y: 4 },
+                    { x: "Joanne Grande", y: 3 },
+                    { x: "Paula Tuggey", y: 2 },
+                    { x: "Steve Zap", y: 2 },
+                    { x: "Bill Rusch", y: 2 },
+                    { x: "Jason McFadden", y: 2 },
+                    { x: "Andy Arnold", y: 1 },
+                    { x: "Gary Triozzi", y: 1 },
+                    { x: "Ralph Carrol", y: 1 },
+                    { x: "Rick Salvador", y: 1 },
+                  ],
+                },
+              ],
+              highlightX: ["Cumulus Media"],
+              source: "Transparent Arts radio plan, November 2026",
+            },
+          ],
+        },
+        {
+          label: "C",
+          title: "Full Campaign Budget",
+          budget: "$100,000",
+          objective: "Phase 1 coverage, follow-through in months two and three, and campaign management for the full run.",
+          strategy: "$68,000 funds the Phase 1 network above. $7,000 funds months two and three: follow-up promotion to the stations that add, continued mix-show rotation and promotion to stations that come in late. $25,000 covers radio strategy, campaign management and reporting for the full three months: the add schedule, coordination across every promoter, artist promotion scheduling, spin tracking and the weekly radio report. $60,000 is needed at the start of pre-launch to secure the roster, with the remaining $40,000 due at the week six review.",
+          components: {
+            heading: "Budget",
+            items: [
+              "Phase 1 promoter and station network: $68,000",
+              "Months two and three, follow-through and late adds: $7,000",
+              "Radio strategy, campaign management and reporting, three months: $25,000",
+              "Total: $100,000",
+            ],
+          },
+        },
+        {
+          label: "D",
+          title: "How Radio Connects to the Rest of the Plan",
+          objective: "Make every radio market feed the fan list and the release week.",
+          strategy: "Each station that adds the single becomes a target market for the paid plan. U.S. growth and release-window media are weighted toward those markets in the weeks after an add, and capture units in those markets carry a radio-specific reason to join. Station interviews and IDs are cut into short-form posts. Shazam activity is tracked by market as the earliest read on whether airplay is turning into discovery.",
+          kpis: [
+            "Station adds against the add schedule",
+            "Weekly spins and audience reached",
+            "Mediabase Top 40 and Billboard Pop Airplay chart positions",
+            "Shazam lookups and fan-list signups in radio markets",
+          ],
+        },
+      ],
+      footnote: "Artist travel, accommodation and promotional dinners for station visits are budgeted separately. If the single gains traction, a second budget can extend station coverage and sustain momentum, approved on the same structure.",
+    },
+
+    // ===================================================================
+    // 07. Media Flight
+    // ===================================================================
+    {
+      type: "flight",
+      number: "07",
+      navLabel: "Flight",
+      title: "Core Program Media Flight",
+      intro: "The $60,000 of working media in three phases. Spend starts small in December, when holiday advertising makes it most expensive, and rises into January and the release window, when costs fall and the reason to act is strongest.",
+      totalBudget: "$60,000",
+      phases: [
+        {
+          label: "Phase 1 / Foundation and Test",
+          window: "Dec 7 to Jan 3 / 4 weeks",
+          focus: "Routing fixed, capture stack live, baselines locked. Small tests on all three platforms to read real cost per fan and cost per follower before anything scales.",
+          budget: "$10,000",
+          tactics: [
+            "Fan-data capture test units: $4,000",
+            "U.S. paid growth test across Instagram, TikTok and YouTube: $5,000",
+            "First gaming creator seed: $1,000",
+          ],
+        },
+        {
+          label: "Phase 2 / Pre-Release Ramp",
+          window: "Jan 4 to Feb 7 / 5 weeks",
+          focus: "Scale whatever cleared its target at the first checkpoint. Single teaser and pre-save, list pre-order opens, radio pre-launch begins.",
+          budget: "$22,000",
+          tactics: [
+            "Fan-data capture at scale: $9,000",
+            "U.S. paid growth on the winning platforms: $9,000",
+            "Gaming and creator seeding around the single: $2,000",
+            "Pre-order store promotion: $2,000",
+          ],
+        },
+        {
+          label: "Phase 3 / Release Window",
+          window: "Feb 8 to Mar 6 / 4 weeks",
+          focus: "Everything concentrates on the counting week, then holds the new listeners. Paid weighted toward radio markets after each add.",
+          budget: "$28,000",
+          tactics: [
+            "Release-window media, pre-order and counting week: $12,000",
+            "Fan-data capture with release-week reason to join: $7,000",
+            "U.S. paid growth, radio-market weighted: $6,000",
+            "U.S. retail and signed-copy activation: $3,000",
+          ],
+        },
+      ],
+      footnote: "Phase budgets are directional. The team reallocates weekly between lines and phases based on results, inside the $60,000 total.",
+    },
+
+    // ===================================================================
+    // 08. Execution Timeline
+    // ===================================================================
+    {
+      type: "timeline",
+      number: "08",
+      navLabel: "Timeline",
+      title: "Execution Timeline",
+      intro: "Thirteen weeks from December 7 to March 6. Release week is penciled for the week of February 8 and the grid shifts with the confirmed date. Weeks five and nine are checkpoints with the authority to move or stop budget.",
+      weeks: [
+        { index: 1, label: "W1", dates: "Dec 7" },
+        { index: 2, label: "W2", dates: "Dec 14" },
+        { index: 3, label: "W3", dates: "Dec 21" },
+        { index: 4, label: "W4", dates: "Dec 28" },
+        { index: 5, label: "W5", dates: "Jan 4", highlight: true, note: "CHECKPOINT" },
+        { index: 6, label: "W6", dates: "Jan 11" },
+        { index: 7, label: "W7", dates: "Jan 18" },
+        { index: 8, label: "W8", dates: "Jan 25" },
+        { index: 9, label: "W9", dates: "Feb 1", highlight: true, note: "CHECKPOINT" },
+        { index: 10, label: "W10", dates: "Feb 8", highlight: true, note: "RELEASE (TBD)" },
+        { index: 11, label: "W11", dates: "Feb 15" },
+        { index: 12, label: "W12", dates: "Feb 22" },
+        { index: 13, label: "W13", dates: "Mar 1", highlight: true, note: "REVIEW" },
+      ],
+      workstreams: [
+        {
+          name: "Fan Data",
+          cells: [
+            { weekIndex: 1, intensity: "high", label: "FIX" },
+            { weekIndex: 2, intensity: "high", label: "BUILD" },
+            { weekIndex: 3, intensity: "medium", label: "TEST" },
+            { weekIndex: 4, intensity: "low" },
+            { weekIndex: 5, intensity: "medium", label: "SCALE" },
+            { weekIndex: 6, intensity: "high" },
+            { weekIndex: 7, intensity: "high" },
+            { weekIndex: 8, intensity: "high", label: "PREORD" },
+            { weekIndex: 9, intensity: "high" },
+            { weekIndex: 10, intensity: "high", label: "LAUNCH" },
+            { weekIndex: 11, intensity: "high" },
+            { weekIndex: 12, intensity: "medium" },
+            { weekIndex: 13, intensity: "medium", label: "EXPORT" },
+          ],
+        },
+        {
+          name: "U.S. Paid",
+          cells: [
+            { weekIndex: 2, intensity: "medium", label: "TEST" },
+            { weekIndex: 3, intensity: "medium" },
+            { weekIndex: 4, intensity: "low" },
+            { weekIndex: 5, intensity: "medium", label: "SCALE" },
+            { weekIndex: 6, intensity: "high" },
+            { weekIndex: 7, intensity: "high" },
+            { weekIndex: 8, intensity: "high" },
+            { weekIndex: 9, intensity: "high" },
+            { weekIndex: 10, intensity: "high", label: "FULL" },
+            { weekIndex: 11, intensity: "high" },
+            { weekIndex: 12, intensity: "medium" },
+            { weekIndex: 13, intensity: "medium" },
+          ],
+        },
+        {
+          name: "Content",
+          cells: [
+            { weekIndex: 1, intensity: "medium", label: "PLAN" },
+            { weekIndex: 2, intensity: "high", label: "GAMING" },
+            { weekIndex: 3, intensity: "medium" },
+            { weekIndex: 4, intensity: "medium" },
+            { weekIndex: 5, intensity: "high" },
+            { weekIndex: 6, intensity: "high", label: "TEASER" },
+            { weekIndex: 7, intensity: "high" },
+            { weekIndex: 8, intensity: "high", label: "MEMBER" },
+            { weekIndex: 9, intensity: "high" },
+            { weekIndex: 10, intensity: "high", label: "RELEASE" },
+            { weekIndex: 11, intensity: "high" },
+            { weekIndex: 12, intensity: "high" },
+            { weekIndex: 13, intensity: "medium" },
+          ],
+        },
+        {
+          name: "Physical",
+          cells: [
+            { weekIndex: 2, intensity: "low", label: "SKUS" },
+            { weekIndex: 3, intensity: "low" },
+            { weekIndex: 5, intensity: "medium", label: "RETAIL" },
+            { weekIndex: 6, intensity: "medium" },
+            { weekIndex: 7, intensity: "medium" },
+            { weekIndex: 8, intensity: "high", label: "LIST" },
+            { weekIndex: 9, intensity: "high", label: "PUBLIC" },
+            { weekIndex: 10, intensity: "high", label: "COUNT" },
+            { weekIndex: 11, intensity: "medium" },
+            { weekIndex: 12, intensity: "low", label: "SIGNED" },
+          ],
+        },
+        {
+          name: "Radio",
+          cells: [
+            { weekIndex: 6, intensity: "medium", label: "PREP" },
+            { weekIndex: 7, intensity: "medium" },
+            { weekIndex: 8, intensity: "high", label: "SERVICE" },
+            { weekIndex: 9, intensity: "high" },
+            { weekIndex: 10, intensity: "high", label: "ADDS" },
+            { weekIndex: 11, intensity: "high", label: "PROMO" },
+            { weekIndex: 12, intensity: "high" },
+            { weekIndex: 13, intensity: "high" },
+          ],
+        },
+      ],
+      weekBreakdowns: [
+        {
+          weekIndex: 1,
+          title: "Kickoff and routing fix",
+          items: [
+            "Kickoff call with ATTRAKT, account access confirmed, live dashboard set up.",
+            "Every owned link surface repointed to the capture destination.",
+            "Baselines locked: Spotify followers, U.S. Instagram and YouTube, median views per post.",
+            "Content plan delivered with the weekly gaming slot.",
+          ],
+        },
+        {
+          weekIndex: 2,
+          title: "Capture stack live and paid tests begin",
+          items: [
+            "Email, SMS and Instagram DM capture live with bilingual signup pages and the welcome sequence.",
+            "Small paid tests start on Instagram, TikTok and YouTube.",
+            "U.S. SKU and pre-order decisions confirmed with ATTRAKT.",
+          ],
+        },
+        {
+          weekIndex: 4,
+          title: "Holiday hold",
+          items: [
+            "Spend held low through the holiday week, when ad costs peak and attention drops.",
+            "Organic content and capture keep running.",
+            "Test results compiled for the first checkpoint.",
+          ],
+        },
+        {
+          weekIndex: 5,
+          title: "Checkpoint 1: scale or stop",
+          items: [
+            "Cost per fan and cost per follower read against targets, by platform.",
+            "Budget moved to what cleared its target. Anything below its floor is stopped.",
+            "Release date and single delivery confirmed. U.S. retail plan opened with the distributor.",
+          ],
+        },
+        {
+          weekIndex: 6,
+          title: "Single teaser and radio pre-launch",
+          items: [
+            "Single teaser and pre-save live, with the capture link as the destination.",
+            "Radio pre-launch begins: station targeting, assets and the add schedule. $60,000 radio start payment.",
+          ],
+        },
+        {
+          weekIndex: 8,
+          title: "Pre-order opens to the list",
+          items: [
+            "List members get 48 hours of first access to the EP pre-order.",
+            "Rotating daily member posts begin and run through release.",
+            "Single serviced to radio ahead of the add date.",
+          ],
+        },
+        {
+          weekIndex: 9,
+          title: "Checkpoint 2: release lock",
+          items: [
+            "Public pre-order live. Pre-order units read against the release-week targets.",
+            "Counting-week media plan locked against the confirmed release date.",
+            "Radio add schedule confirmed station by station.",
+          ],
+        },
+        {
+          weekIndex: 10,
+          title: "Release week",
+          items: [
+            "EP out. List sends on day one and day four, paid concentrated on the counting week.",
+            "Radio add date: Phase 1 stations add the single.",
+            "Paid weighted toward the markets of each station that adds.",
+          ],
+        },
+        {
+          weekIndex: 11,
+          title: "Hold the new listeners",
+          items: [
+            "Retargeting of release-week listeners into follows and list signups.",
+            "Station interviews, IDs and acoustic sessions scheduled and cut for social.",
+            "Radio week six review and the remaining $40,000 radio payment.",
+          ],
+        },
+        {
+          weekIndex: 13,
+          title: "Cycle review",
+          items: [
+            "Full report against every target, with attribution stated plainly.",
+            "Fan list exported to ATTRAKT, enriched and tagged.",
+            "U.S. sales baseline and cost per fan used to size the next release and the chart push, with the budget to fund it.",
+            "Radio continues through mid-April on its own three-month run.",
+          ],
+        },
+      ],
+      footnote: "Release week, single delivery and radio add dates are planning dates until ATTRAKT confirms them. The radio campaign runs three months from pre-launch and continues past this window.",
+    },
+
+    // ===================================================================
+    // 09. Targets
+    // ===================================================================
+    {
+      type: "targets",
+      number: "09",
+      navLabel: "Targets",
+      title: "90-Day Targets",
+      intro: "What this cycle is measured on. Baselines are locked in week 1 and every target is reported weekly on the live dashboard.",
+      targets: [
+        {
+          metric: "U.S. fan list",
+          baseline: "No owned U.S. list",
+          target: "15,000 identified fans (low 8,000, high 25,000)",
+          window: "By Mar 6",
+          measurement: "Records on file in the label-owned capture account",
+          featured: true,
+        },
+        {
+          metric: "Cost per fan, paid capture",
+          baseline: "Set by the December test",
+          target: "Under $2.00",
+          window: "From checkpoint 1",
+          measurement: "Capture media spend divided by paid signups",
+        },
+        {
+          metric: "Spotify followers",
+          baseline: "About 1,048 net adds a day",
+          target: "115,000 net adds (low 90,000, high 140,000)",
+          window: "90 days",
+          measurement: "Chartmetric daily follower series",
+          featured: true,
+        },
+        {
+          metric: "Instagram followers",
+          baseline: "962,000",
+          target: "+45,000 (low +15,000, high +80,000)",
+          window: "90 days",
+          measurement: "Platform analytics, U.S. share reported separately",
+        },
+        {
+          metric: "Median views per post",
+          baseline: "94,100",
+          target: "125,000 (high 150,000)",
+          window: "Final four weeks",
+          measurement: "Median across Instagram and TikTok posts in the window",
+        },
+        {
+          metric: "U.S. album units, release week",
+          baseline: "No U.S. baseline for the current lineup",
+          target: "3,000 (low 1,500, high 5,000)",
+          window: "Counting week",
+          measurement: "Luminate U.S. album sales",
+          featured: true,
+        },
+        {
+          metric: "Radio station adds",
+          baseline: "69 stations targeted",
+          target: "Adds across the Phase 1 network, reported against the add schedule",
+          window: "From the add date",
+          measurement: "Mediabase station reports",
+        },
+        {
+          metric: "Weekly radio spins",
+          baseline: "Set at the add date",
+          target: "Week over week growth through month two",
+          window: "Three-month radio run",
+          measurement: "Mediabase spin counts and Pop Airplay chart position",
+        },
+      ],
+      measurementPrinciples: [
+        "Every target has a low, expected and high case agreed before launch.",
+        "Streaming is worked and reported weekly, not promised.",
+        "Attribution is stated plainly, including what cannot be attributed.",
+      ],
+      footnote: "Targets for the next release, including the Billboard 200 push, are set from what this cycle measures.",
+    },
+
+    // ===================================================================
+    // 10. Inputs and Reporting
+    // ===================================================================
+    {
+      type: "vertical",
+      number: "10",
+      navLabel: "Working Together",
+      title: "Inputs, Roles and Reporting",
+      philosophy: "One team, one weekly call, one report.",
+      subBlocks: [
+        {
+          label: "A",
+          title: "What We Need From ATTRAKT",
+          objective: "The inputs that keep the schedule on time, with the date each one is needed.",
+          components: {
+            heading: "Inputs and Dates",
+            items: [
+              "Admin or advertiser access to Instagram, TikTok, YouTube and Spotify for Artists: by Dec 4",
+              "Approval of the link-surface changes and the capture destination copy: by Dec 7",
+              "U.S. SKUs, photobook versions, signed-copy allocation and pre-order dates: by Dec 18",
+              "Distributor contact for U.S. retail and chart reporting: by Dec 18",
+              "Confirmed release date and lead single title: by Jan 4",
+              "Final master, clean edit and radio edit of the lead single for radio servicing: by Jan 11",
+              "Teaser, artwork and member content for the pre-order window: by Jan 18",
+              "Interview and session availability for the two English-speaking members in the release window",
+            ],
+          },
+        },
+        {
+          label: "B",
+          title: "Roles",
+          objective: "Who leads what.",
+          components: {
+            items: [
+              "Transparent Arts: relationships, U.S. radio, press, partnerships and the industry surface",
+              "Crowd Control Digital: fan data, paid media, content plan, creative testing, data and reporting",
+              "ATTRAKT: music, A&R, manufacturing, release timing, artist schedules and every artist decision",
+            ],
+          },
+        },
+        {
+          label: "C",
+          title: "Reporting and Checkpoints",
+          objective: "What ATTRAKT sees, and when.",
+          components: {
+            items: [
+              "A live dashboard updated daily: fan list, cost per fan, followers, spend by line and radio adds and spins",
+              "A weekly call with a written summary in English and Korean",
+              "Checkpoint reviews in weeks five and nine with a scale-or-stop decision on every line",
+              "A full cycle review in week thirteen, with the plan and budget for the next release",
+            ],
+          },
+        },
+      ],
+    },
+
+    // ===================================================================
+    // 11. Investment
+    // ===================================================================
+    {
+      type: "pricing",
+      number: "11",
+      navLabel: "Investment",
+      title: "Investment",
+      intro: "Two budgets for the February cycle: the core program and the U.S. radio campaign. Each shows exactly what goes in market and what goes to the team.",
+      ccdNote: "The team retainer is $10,000 a month for three months and covers strategy, the capture build, the content plan, creative testing, the live dashboard and weekly reporting. The $60,000 of core program media is billed at cost. Fixing the group's link surfaces is part of the retainer and uses no media budget.",
+      breakdownLabel: "Where the budget goes",
+      deployableLabel: "In market",
+      tiers: [
+        {
+          label: "Core Program",
+          budget: "$90,000",
+          name: "90 Days, Dec 7 to Mar 6",
+          tagline: "Fan data, U.S. growth, the February EP release window and physical.",
+          deployable: "$60,000",
+          breakdown: [
+            { vertical: "Fan-data capture media", amount: "$20,000" },
+            { vertical: "U.S. paid growth media", amount: "$20,000" },
+            { vertical: "Release-window media", amount: "$12,000" },
+            { vertical: "Pre-order and retail activation", amount: "$5,000" },
+            { vertical: "Gaming and creator seeding", amount: "$3,000" },
+            { vertical: "Team retainer, 3 months", amount: "$30,000" },
+          ],
+        },
+        {
+          label: "U.S. Radio",
+          budget: "$100,000",
+          name: "3 Months From Pre-Launch",
+          tagline: "Top 40 promotion across 69 stations, with campaign management and weekly reporting.",
+          deployable: "$75,000",
+          breakdown: [
+            { vertical: "Phase 1 promoter and station network", amount: "$68,000" },
+            { vertical: "Months two and three, follow-through", amount: "$7,000" },
+            { vertical: "Radio strategy, management and reporting", amount: "$25,000" },
+          ],
+        },
+      ],
+      footnote: "Core program total: $90,000. Radio total: $100,000, with $60,000 due at pre-launch and $40,000 at the week six review. Combined February cycle: $190,000. Manufacturing, artist travel, accommodation and promotional dinners sit outside both budgets. Each later release cycle is authorized as its own budget on the same structure.",
+    },
+  ],
+};
