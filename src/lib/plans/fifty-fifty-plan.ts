@@ -37,10 +37,10 @@ export const fiftyFiftyExecutionPlan: StrategyPlanData = {
       number: "01",
       navLabel: "Overview",
       title: "Plan Overview",
-      subtitle: "A $90,000 core program over 90 days, from early December through the February EP release, with a separate $100,000 Top 40 radio campaign running alongside it.",
+      subtitle: "An $87,500 core program over 90 days, from early December through the February EP release, with a separate $100,000 Top 40 radio campaign running alongside it.",
       body: [
         "This document turns the U.S. growth plan into an execution schedule. It covers the first release cycle only: the February EP, four songs led by two new Euro-pop dance tracks, with a physical album and two photobooks. Work starts the week of December 7, 2026, so that the fan list, the paid accounts and the content rhythm are already running before the first single reaches U.S. listeners. The release week is penciled for the week of February 8 and moves to whatever date ATTRAKT confirms.",
-        "The core program is $90,000: a $30,000 team retainer across three months and $60,000 of working media, billed at cost. It funds three workstreams run as one team. First-party fan data builds a U.S. fan list ATTRAKT owns. U.S. growth puts paid weight behind the content formats the group's own data proves. Release and physical concentrates U.S. demand for the EP inside one chart counting week. Top 40 radio is the fourth workstream, budgeted separately at $100,000 for an initial three-month campaign and led by Transparent Arts through an independent promoter network covering 69 stations.",
+        "The core program is $87,500: a $30,000 team retainer across three months, $50,000 of working media billed at cost, and a $7,500 management fee at 15 percent of that media. It funds three workstreams run as one team. First-party fan data builds a U.S. fan list ATTRAKT owns. U.S. growth puts paid weight behind the content formats the group's own data proves. Release and physical concentrates U.S. demand for the EP inside one chart counting week. Top 40 radio is the fourth workstream, budgeted separately at $100,000 for an initial three-month campaign and led by Transparent Arts through an independent promoter network covering 69 stations.",
         "Every line has a target, and every target has a low, expected and high case. Two checkpoints inside the window decide where money moves next. This cycle is groundwork for the chart push on the following release: it sets the real U.S. cost per fan, the U.S. sales baseline for the current lineup, and the radio footprint the next single can build on.",
       ],
       supports: {
@@ -56,7 +56,7 @@ export const fiftyFiftyExecutionPlan: StrategyPlanData = {
       goals: {
         heading: "What Is Funded Where",
         items: [
-          "Core program, $90,000: fan data, U.S. growth, release and physical, team retainer",
+          "Core program, $87,500: fan data, U.S. growth, release and physical, team fees",
           "U.S. radio, $100,000: Top 40 promotion, station coverage and radio campaign management",
           "With the label: music, A&R, manufacturing, release timing, artist travel and every artist decision",
         ],
@@ -64,18 +64,19 @@ export const fiftyFiftyExecutionPlan: StrategyPlanData = {
       charts: [
         {
           kind: "hbars",
-          title: "Where the $90,000 Core Program Goes",
-          subtitle: "Two thirds of the core budget is working media in market.",
+          title: "Where the $87,500 Core Program Goes",
+          subtitle: "$50,000 of the core budget is working media in market.",
           series: [
             {
               name: "USD",
               points: [
                 { x: "Team retainer", y: 30000 },
-                { x: "Fan capture media", y: 20000 },
-                { x: "U.S. growth media", y: 20000 },
-                { x: "Release-window media", y: 12000 },
-                { x: "Pre-order and retail", y: 5000 },
-                { x: "Creator seeding", y: 3000 },
+                { x: "Media management", y: 7500 },
+                { x: "Fan capture media", y: 16000 },
+                { x: "U.S. growth media", y: 12500 },
+                { x: "Release-window media", y: 10000 },
+                { x: "Pre-order and retail", y: 4000 },
+                { x: "Clipping and seeding", y: 7500 },
               ],
             },
           ],
@@ -98,7 +99,7 @@ export const fiftyFiftyExecutionPlan: StrategyPlanData = {
       tiers: [
         {
           label: "Core Program",
-          budget: "$90,000",
+          budget: "$87,500",
           name: "90 Days, Dec 7 to Mar 6",
           goal: "Build the U.S. fan list, grow the U.S. audience and convert it into EP units in one counting week.",
           includes: [
@@ -106,10 +107,10 @@ export const fiftyFiftyExecutionPlan: StrategyPlanData = {
             "U.S. paid growth on Instagram, TikTok and YouTube",
             "February EP release window: pre-save, pre-order and counting-week media",
             "Pre-order and U.S. retail activation",
-            "Gaming and creator seeding behind the group's strongest format",
-            "Strategy, content plan, creative testing, live dashboard and weekly reporting",
+            "Clipping and creator seeding concentrated on the single's release",
+            "Strategy, content plan, creative testing, media management, live dashboard and weekly reporting",
           ],
-          deployable: "$60,000 working media",
+          deployable: "$50,000 working media",
         },
         {
           label: "U.S. Radio",
@@ -137,7 +138,7 @@ export const fiftyFiftyExecutionPlan: StrategyPlanData = {
       navLabel: "Fan Data",
       title: "Workstream 1 / First-Party Fan Data",
       philosophy: "Every other workstream gets cheaper once the label can reach its own fans directly. This one starts first and runs every week of the window.",
-      intro: "Budget: $20,000 of capture media inside the core program, plus setup and management covered by the retainer. The target is about 15,000 identified U.S. fans by early March, built inside U.S. consent rules.",
+      intro: "Budget: $16,000 of capture media inside the core program, plus setup and management covered by the retainer. The target is about 15,000 identified U.S. fans by early March, built inside U.S. consent rules.",
       subBlocks: [
         {
           label: "A",
@@ -181,9 +182,9 @@ export const fiftyFiftyExecutionPlan: StrategyPlanData = {
         {
           label: "C",
           title: "Paid Acquisition",
-          budget: "$20,000 across the window",
+          budget: "$16,000 across the window",
           objective: "Scale the list with ad units built for signup, measured on cost per fan, not reach.",
-          strategy: "Capture units run U.S.-only on Instagram first, then TikTok, with lookalikes seeded from the first organic signups. The December test is deliberately small because holiday advertising pushes costs to their yearly high. Spend steps up in January, when ad costs fall back, and again into the release window, when the reason to join is strongest. The reference K-pop campaign we run today acquired fans at $1.97 per paid signup and $1.15 blended across all sources.",
+          strategy: "Capture units run U.S.-only on Instagram first, then TikTok, with lookalikes seeded from the first organic signups. The December test is deliberately small because holiday advertising pushes costs to their yearly high. January stays lean while the routing and organic signups do the work, and more than half of the capture budget is held for the weeks the single is out, when the reason to join is strongest. The reference K-pop campaign we run today acquired fans at $1.97 per paid signup and $1.15 blended across all sources.",
           charts: [
             {
               kind: "bars",
@@ -193,7 +194,7 @@ export const fiftyFiftyExecutionPlan: StrategyPlanData = {
                 {
                   name: "Fans on file",
                   points: [
-                    { x: "Low", y: 8000 },
+                    { x: "Low", y: 7000 },
                     { x: "Expected", y: 15000 },
                     { x: "High", y: 25000 },
                   ],
@@ -224,12 +225,12 @@ export const fiftyFiftyExecutionPlan: StrategyPlanData = {
       navLabel: "U.S. Growth",
       title: "Workstream 2 / U.S. Growth and Content",
       philosophy: "Put paid weight behind the formats the group's own data proves, in the market where the listeners already are.",
-      intro: "Budget: $20,000 of U.S. paid growth media and $3,000 of gaming and creator seeding inside the core program. Measured on Spotify followers, Instagram and YouTube growth, and median views per post.",
+      intro: "Budget: $12,500 of U.S. paid growth media and $7,500 of clipping and seeding inside the core program, most of it spent once the single is out. Measured on Spotify followers, Instagram and YouTube growth, and median views per post.",
       subBlocks: [
         {
           label: "A",
           title: "Paid Growth Structure",
-          budget: "$20,000 across the window",
+          budget: "$12,500 across the window",
           objective: "Grow followed, subscribed and engaged U.S. fans at a cost per follower set from the December test.",
           strategy: "Instagram leads because the same FIFTY FIFTY video earns more there than on TikTok in most matched pairs, and Instagram returns about three times as many views per follower. The December test splits a small budget across all three platforms for two weeks to read cost per follower, per subscriber and per stream-click on real data. From the first checkpoint, budget moves to whichever platform is cheapest per outcome, and anything below its floor of efficacy is stopped.",
           components: {
@@ -267,11 +268,19 @@ export const fiftyFiftyExecutionPlan: StrategyPlanData = {
         },
         {
           label: "C",
-          title: "Gaming and Creator Seeding",
-          budget: "$3,000",
-          objective: "Put the group inside U.S. gaming culture around the single.",
-          strategy: "A small paid seed with U.S. gaming and streaming creators who build content around the single and the members, chosen for fit and engagement rather than reach. This is not a clipping program. Clipping only compounds at volume, around 25 million impressions and up, and is held for a later cycle when the budget can reach that floor.",
-          kpis: ["Views and engagement per creator post", "Fans captured through creator links"],
+          title: "Clipping and Seeding",
+          budget: "$7,500",
+          objective: "Put creator volume behind the single in the weeks it is out, not before.",
+          strategy: "Clipping and seeding is held almost entirely for the release window, so every view lands while the single can be streamed, saved and bought. A small seed in late January puts the members inside U.S. gaming and streaming creators' content ahead of release, the format that earns more than five times the group's other content. From release week the budget moves to clipping: short edits of the single, the performance and the members, cut by a network of clippers and posted at volume across TikTok, Instagram and YouTube Shorts. Crowd Control Digital buys this volume at rates the agency market does not have access to; at the reference campaign's cost, $7,500 delivers roughly 1.5 to 2 million views. Clipping compounds with scale, so this cycle runs it as a concentrated burst around one moment, and the results set the budget for the next release.",
+          components: {
+            heading: "How the $7,500 Is Spent",
+            items: [
+              "Late January: gaming and streaming creator seed ahead of release, $1,000",
+              "Release week through week three: clipping of the single, performance and member moments, $6,500",
+              "Every clip carries the single's sound and points to the capture link",
+            ],
+          },
+          kpis: ["Views delivered and cost per thousand views", "Uses of the single's sound on TikTok and Instagram", "Fans captured through creator and clip links"],
         },
       ],
       footnote: "Content findings come from an analysis of 105 FIFTY FIFTY and competitor videos with per-post performance data attached.",
@@ -286,7 +295,7 @@ export const fiftyFiftyExecutionPlan: StrategyPlanData = {
       navLabel: "EP Release",
       title: "Workstream 3 / February EP Release and Physical",
       philosophy: "One album sale counts as one chart unit. It takes 1,000 premium streams to equal it. The release plan is built around that ratio.",
-      intro: "Budget: $12,000 of release-window media and $5,000 of pre-order and retail activation inside the core program. This EP is the groundwork release: it sets the U.S. sales baseline for the current lineup and runs the pre-order mechanics for the first time.",
+      intro: "Budget: $10,000 of release-window media and $4,000 of pre-order and retail activation inside the core program. This EP is the groundwork release: it sets the U.S. sales baseline for the current lineup and runs the pre-order mechanics for the first time.",
       subBlocks: [
         {
           label: "A",
@@ -308,7 +317,7 @@ export const fiftyFiftyExecutionPlan: StrategyPlanData = {
         {
           label: "B",
           title: "Pre-Order and Retail",
-          budget: "$5,000",
+          budget: "$4,000",
           objective: "Make the EP easy to buy in the U.S. and make every U.S. sale count.",
           strategy: "Pre-orders run through ATTRAKT's direct-to-fan store and its distributor so fans in every market can buy. U.S. units are protected by shipping and reporting rules agreed with the distributor in advance, since only eligible sales count toward U.S. charts. The activation budget covers store promotion, U.S. retail placement support and signed-copy fulfillment marketing.",
           components: {
@@ -324,7 +333,7 @@ export const fiftyFiftyExecutionPlan: StrategyPlanData = {
         {
           label: "C",
           title: "Release-Window Media",
-          budget: "$12,000",
+          budget: "$10,000",
           objective: "Concentrate paid weight where it converts: pre-save, pre-order and the counting week.",
           strategy: "Release-window media runs in two bursts. The first drives pre-saves and list pre-orders from retargeting pools built in December and January. The second runs the counting week itself, aimed at fans who have engaged but not yet bought, plus geo-weighted support in the markets where radio stations add the single.",
           charts: [
@@ -479,46 +488,46 @@ export const fiftyFiftyExecutionPlan: StrategyPlanData = {
       number: "07",
       navLabel: "Flight",
       title: "Core Program Media Flight",
-      intro: "The $60,000 of working media in three phases. Spend starts small in December, when holiday advertising makes it most expensive, and rises into January and the release window, when costs fall and the reason to act is strongest.",
-      totalBudget: "$60,000",
+      intro: "The $50,000 of working media in three phases. December and January stay lean: they test, build the list and set up the release. More than 70 percent of the media is spent in the release window, when the single is out and every dollar can turn into a stream, a follow, a signup or a sale.",
+      totalBudget: "$50,000",
       phases: [
         {
           label: "Phase 1 / Foundation and Test",
           window: "Dec 7 to Jan 3 / 4 weeks",
           focus: "Routing fixed, capture stack live, baselines locked. Small tests on all three platforms to read real cost per fan and cost per follower before anything scales.",
-          budget: "$10,000",
+          budget: "$4,500",
           tactics: [
-            "Fan-data capture test units: $4,000",
-            "U.S. paid growth test across Instagram, TikTok and YouTube: $5,000",
-            "First gaming creator seed: $1,000",
+            "Fan-data capture test units: $2,000",
+            "U.S. paid growth test across Instagram, TikTok and YouTube: $2,500",
           ],
         },
         {
-          label: "Phase 2 / Pre-Release Ramp",
+          label: "Phase 2 / Pre-Release Setup",
           window: "Jan 4 to Feb 7 / 5 weeks",
-          focus: "Scale whatever cleared its target at the first checkpoint. Single teaser and pre-save, list pre-order opens, radio pre-launch begins.",
-          budget: "$22,000",
+          focus: "Kept lean on purpose. Scale only what cleared its target at the first checkpoint, build the retargeting pools the release will use, open pre-save and the list pre-order, and seed creators ahead of release.",
+          budget: "$10,000",
           tactics: [
-            "Fan-data capture at scale: $9,000",
-            "U.S. paid growth on the winning platforms: $9,000",
-            "Gaming and creator seeding around the single: $2,000",
-            "Pre-order store promotion: $2,000",
+            "Fan-data capture, pre-save and list pre-order: $5,000",
+            "U.S. paid growth on the winning platforms: $3,000",
+            "Gaming and streaming creator seed: $1,000",
+            "Pre-order store promotion: $1,000",
           ],
         },
         {
           label: "Phase 3 / Release Window",
           window: "Feb 8 to Mar 6 / 4 weeks",
-          focus: "Everything concentrates on the counting week, then holds the new listeners. Paid weighted toward radio markets after each add.",
-          budget: "$28,000",
+          focus: "The single is out and most of the budget goes live. Paid, clipping and capture concentrate on the counting week, then hold the new listeners. Paid weighted toward radio markets after each add.",
+          budget: "$35,500",
           tactics: [
-            "Release-window media, pre-order and counting week: $12,000",
-            "Fan-data capture with release-week reason to join: $7,000",
-            "U.S. paid growth, radio-market weighted: $6,000",
+            "Release-window media, pre-order and counting week: $10,000",
+            "Fan-data capture with release-week reason to join: $9,000",
+            "U.S. paid growth, radio-market weighted: $7,000",
+            "Clipping of the single, performance and member moments: $6,500",
             "U.S. retail and signed-copy activation: $3,000",
           ],
         },
       ],
-      footnote: "Phase budgets are directional. The team reallocates weekly between lines and phases based on results, inside the $60,000 total.",
+      footnote: "Phase budgets are directional. The team reallocates weekly between lines and phases based on results, inside the $50,000 total.",
     },
 
     // ===================================================================
@@ -567,17 +576,27 @@ export const fiftyFiftyExecutionPlan: StrategyPlanData = {
         {
           name: "U.S. Paid",
           cells: [
-            { weekIndex: 2, intensity: "medium", label: "TEST" },
-            { weekIndex: 3, intensity: "medium" },
-            { weekIndex: 4, intensity: "low" },
-            { weekIndex: 5, intensity: "medium", label: "SCALE" },
-            { weekIndex: 6, intensity: "high" },
-            { weekIndex: 7, intensity: "high" },
-            { weekIndex: 8, intensity: "high" },
-            { weekIndex: 9, intensity: "high" },
+            { weekIndex: 2, intensity: "low", label: "TEST" },
+            { weekIndex: 3, intensity: "low" },
+            { weekIndex: 5, intensity: "low", label: "SCALE" },
+            { weekIndex: 6, intensity: "medium" },
+            { weekIndex: 7, intensity: "medium" },
+            { weekIndex: 8, intensity: "medium" },
+            { weekIndex: 9, intensity: "medium" },
             { weekIndex: 10, intensity: "high", label: "FULL" },
             { weekIndex: 11, intensity: "high" },
-            { weekIndex: 12, intensity: "medium" },
+            { weekIndex: 12, intensity: "high" },
+            { weekIndex: 13, intensity: "medium" },
+          ],
+        },
+        {
+          name: "Clipping",
+          cells: [
+            { weekIndex: 8, intensity: "low", label: "SEED" },
+            { weekIndex: 9, intensity: "low" },
+            { weekIndex: 10, intensity: "high", label: "CLIP" },
+            { weekIndex: 11, intensity: "high" },
+            { weekIndex: 12, intensity: "high" },
             { weekIndex: 13, intensity: "medium" },
           ],
         },
@@ -696,7 +715,7 @@ export const fiftyFiftyExecutionPlan: StrategyPlanData = {
           weekIndex: 10,
           title: "Release week",
           items: [
-            "EP out. List sends on day one and day four, paid concentrated on the counting week.",
+            "EP out. Most of the media budget goes live: list sends on day one and day four, paid and clipping concentrated on the counting week.",
             "Radio add date: Phase 1 stations add the single.",
             "Paid weighted toward the markets of each station that adds.",
           ],
@@ -867,24 +886,33 @@ export const fiftyFiftyExecutionPlan: StrategyPlanData = {
       navLabel: "Investment",
       title: "Investment",
       intro: "Two budgets for the February cycle: the core program and the U.S. radio campaign. Each shows exactly what goes in market and what goes to the team.",
-      ccdNote: "The team retainer is $10,000 a month for three months and covers strategy, the capture build, the content plan, creative testing, the live dashboard and weekly reporting. The $60,000 of core program media is billed at cost. Fixing the group's link surfaces is part of the retainer and uses no media budget.",
+      ccdNote: "The team fee is a retainer of $10,000 a month for three months plus 15 percent of the media the team manages. The retainer covers strategy, the capture build, the content plan, creative testing, the live dashboard and weekly reporting. The $50,000 of core program media is billed at cost. Fixing the group's link surfaces is part of the retainer and uses no media budget.",
       breakdownLabel: "Where the budget goes",
       deployableLabel: "In market",
       tiers: [
         {
           label: "Core Program",
-          budget: "$90,000",
+          budget: "$87,500",
           name: "90 Days, Dec 7 to Mar 6",
           tagline: "Fan data, U.S. growth, the February EP release window and physical.",
-          deployable: "$60,000",
+          deployable: "$50,000",
           breakdown: [
-            { vertical: "Fan-data capture media", amount: "$20,000" },
-            { vertical: "U.S. paid growth media", amount: "$20,000" },
-            { vertical: "Release-window media", amount: "$12,000" },
-            { vertical: "Pre-order and retail activation", amount: "$5,000" },
-            { vertical: "Gaming and creator seeding", amount: "$3,000" },
+            { vertical: "Fan-data capture media", amount: "$16,000" },
+            { vertical: "U.S. paid growth media", amount: "$12,500" },
+            { vertical: "Release-window media", amount: "$10,000" },
+            { vertical: "Pre-order and retail activation", amount: "$4,000" },
+            { vertical: "Clipping and seeding", amount: "$7,500" },
             { vertical: "Team retainer, 3 months", amount: "$30,000" },
+            { vertical: "Media management, 15%", amount: "$7,500" },
           ],
+          feeBreakdown: {
+            retainer: "$30,000",
+            retainerDetail: "$10,000 per month for the 90-day program.",
+            retainerLabel: "Retainer",
+            mediaManagement: "$7,500",
+            mediaManagementDetail: "15 percent of $50,000 in managed media.",
+            mediaManagementLabel: "Managed media fee",
+          },
         },
         {
           label: "U.S. Radio",
@@ -899,7 +927,7 @@ export const fiftyFiftyExecutionPlan: StrategyPlanData = {
           ],
         },
       ],
-      footnote: "Core program total: $90,000. Radio total: $100,000, with $60,000 due at pre-launch and $40,000 at the week six review. Combined February cycle: $190,000. Manufacturing, artist travel, accommodation and promotional dinners sit outside both budgets. Each later release cycle is authorized as its own budget on the same structure.",
+      footnote: "Core program total: $87,500. Radio total: $100,000, with $60,000 due at pre-launch and $40,000 at the week six review. Combined February cycle: $187,500. Manufacturing, artist travel, accommodation and promotional dinners sit outside both budgets. Each later release cycle is authorized as its own budget on the same structure.",
     },
   ],
 };
