@@ -142,6 +142,13 @@ export type ProjectData = {
     caveat: { heading: string; body: string };
     pacingNote?: string;
   };
+  creativeExamples?: {
+    sectionNumber?: string;
+    heading?: string;
+    subheading?: string;
+    footnote?: string;
+    items: { image: string; angle: string; description: string }[];
+  };
   competitive?: {
     summary: string;
     competitors: {

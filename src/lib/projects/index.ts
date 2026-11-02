@@ -38,6 +38,8 @@ import { kurtDeimerSilentLucidity } from "./kurt-deimer-silent-lucidity";
 import { electricGuestEveryday } from "./electric-guest-everyday";
 import type { ProjectData } from "../project-context";
 
+import { joyn } from "./joyn";
+
 export const PROJECTS: Record<string, ProjectData> = {
   "electric-guest-everyday": electricGuestEveryday,
   "framework-home-remodeling": frameworkHomeRemodeling,
@@ -77,6 +79,7 @@ export const PROJECTS: Record<string, ProjectData> = {
   "bogey-boys": bogeyBoys,
   "fendi-rodeo": fendiRodeo,
   "yo-quiero-bailar": yoQuieroBailar,
+  "joyn": joyn,
 };
 
 export function getProject(slug: string): ProjectData | undefined {
