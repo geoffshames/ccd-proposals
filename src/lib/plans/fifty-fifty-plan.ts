@@ -126,11 +126,211 @@ export const fiftyFiftyExecutionPlan: StrategyPlanData = {
     },
 
     // ===================================================================
-    // 03. Workstream 1: Fan Data
+    // 03. U.S. Audience
+    // ===================================================================
+    {
+      type: "audience",
+      number: "03",
+      navLabel: "Audience",
+      title: "U.S. Audience and Targeting",
+      intro: "Who the program reaches, drawn from FIFTY FIFTY's own audience data on Instagram, TikTok, YouTube and Spotify. The United States is the group's largest market on every one of the four platforms.",
+      thesis: "The follower base is young and female, but the people who engage are older and more male than the people who follow, and they share a taste for collecting, gaming and animation. The program targets all three lanes instead of only the obvious one.",
+      metrosLabel: "Top U.S. Metros by Instagram Followers",
+      metros: [
+        { name: "Los Angeles", tier: "primary" },
+        { name: "New York City", tier: "primary" },
+        { name: "Chicago", tier: "secondary" },
+        { name: "San Francisco", tier: "secondary" },
+        { name: "Houston", tier: "secondary" },
+      ],
+      ageDistribution: [
+        { bracket: "13-17", weight: 9.2 },
+        { bracket: "18-24", weight: 49.3 },
+        { bracket: "25-34", weight: 37.9 },
+        { bracket: "35-44", weight: 3.1 },
+        { bracket: "45+", weight: 0.4 },
+      ],
+      genderDistribution: { female: 78.2, male: 21.8 },
+      personas: [
+        {
+          name: "Core K-pop and Pop Fans",
+          label: "Segment 1",
+          priority: "primary",
+          profile: "Women 18 to 24, the center of the fanbase: 49 percent of Instagram followers and 67 percent of TikTok followers. They follow the members individually, post and share daily, and respond to member-led content and anything collectible.",
+          psychographics: ["Member loyalty over group loyalty", "Collects photocards, albums and versions", "Shares fan edits and challenges"],
+          behaviors: ["TikTok-first discovery, Instagram for following", "Buys multiple album versions", "Joins pre-orders and fan drops early"],
+          platforms: [
+            { name: "Instagram", role: "Follow and capture" },
+            { name: "TikTok", role: "Discovery and sound use" },
+          ],
+          triggers: ["Daily rotating member content in the pre-order window", "First access to pre-orders and signed copies"],
+          conversionGoal: "Join the fan list, then pre-order the EP",
+        },
+        {
+          name: "Millennial Pop Listeners",
+          label: "Segment 2",
+          priority: "primary",
+          profile: "Listeners 25 to 34 who found the group through Cupid and stayed as pop fans: 38 percent of Instagram followers and 64 percent of YouTube subscribers. Spotify already places the group beside mainstream pop rather than only K-pop, and this is the age band with the most to spend on a physical album.",
+          psychographics: ["Pop listener first, K-pop second", "Nostalgic for the 2023 breakout", "Buys albums as keepsakes, not as versions"],
+          behaviors: ["Discovers on YouTube and Spotify playlists", "Follows the artist on Spotify when a new song lands", "Shazams songs heard in stores, cars and on radio"],
+          platforms: [
+            { name: "YouTube", role: "Music video and Shorts reach" },
+            { name: "Instagram", role: "Follow and pre-order" },
+            { name: "Spotify", role: "Follow and pre-save" },
+          ],
+          triggers: ["A new song from the group behind Cupid", "Hearing the single on Top 40 radio"],
+          conversionGoal: "Follow on Spotify, then buy the EP",
+        },
+        {
+          name: "Gaming and Animation Crossover",
+          label: "Segment 3",
+          priority: "secondary",
+          profile: "The engaged audience is 59 percent male on Instagram, against 22 percent of followers, and over-indexes on Pokemon (2.3x), Nintendo (1.4x) and Marvel (1.4x). Gaming and esports content earns more than five times the group's other formats. This lane is large, under-served and cheap to reach.",
+          psychographics: ["Gaming, anime and fandom culture", "Follows creators and streamers more than artists", "Engages heavily, follows less"],
+          behaviors: ["Watches long-form and Shorts on YouTube", "Likes and comments more than it shares"],
+          platforms: [
+            { name: "YouTube", role: "Gaming-adjacent placements" },
+            { name: "TikTok", role: "Gaming-format content" },
+          ],
+          triggers: ["Members inside a game, a stream or a creator's world"],
+          conversionGoal: "Follow and subscribe, then join the list",
+        },
+        {
+          name: "People Who Know the Song, Not the Group",
+          label: "Segment 4",
+          priority: "expansion",
+          profile: "Cupid has been used in millions of TikTok videos, most of them pets, food and everyday moments rather than dance. Many of those viewers know the song and have never followed the group. They are reached through retargeting and the single's sound, not through K-pop interests.",
+          behaviors: ["Uses the song as a mood under everyday content", "Has watched or engaged with a FIFTY FIFTY video without following"],
+          platforms: [
+            { name: "TikTok", role: "Sound-led retargeting" },
+            { name: "Instagram", role: "Video-viewer retargeting" },
+          ],
+          triggers: ["The new single's sound appearing in the same kind of content"],
+          conversionGoal: "Follow, then stream the new single",
+        },
+      ],
+      psychographics: [
+        { label: "Collecting and keepsakes", items: ["Polaroid 4.5x affinity", "Pokemon 2.3x", "Strong fit for photobooks, photocards and signed copies"] },
+        { label: "Entertainment and fandom", items: ["Walt Disney 1.8x", "Marvel 1.4x", "Netflix 1.4x", "Nintendo 1.4x"] },
+        { label: "Interests above the platform average", items: ["Music 1.7x", "Art and design 1.3x", "Film and television 1.2x", "Pets 1.1x"] },
+      ],
+      behaviorSignals: [
+        { behavior: "The same video earns more on Instagram than on TikTok in most matched pairs", platforms: ["Instagram", "TikTok"], implication: "Instagram leads paid follow and capture" },
+        { behavior: "Engagers skew male and older than followers", platforms: ["Instagram"], implication: "Retarget engagers as their own audience instead of folding them into the core" },
+        { behavior: "Nostalgia now drives about 21 percent of YouTube comments, and the share of non-English comments has nearly doubled, led by Spanish and Portuguese", platforms: ["YouTube"], implication: "Lead with the new single plus the Cupid connection, and add Spanish copy tests in Phase 3" },
+      ],
+      similarArtists: ["KATSEYE", "ILLIT", "LE SSERAFIM", "IVE", "NewJeans", "TWICE", "Sabrina Carpenter"],
+      genres: ["K-pop", "Dance pop", "Euro-pop", "Pop"],
+      platformSignals: [
+        { platform: "Spotify", note: "1.31M U.S. monthly listeners, 21 percent of the total and the No. 1 market" },
+        { platform: "TikTok", note: "422,000 U.S. followers, 17 percent of 2.5M and the No. 1 market" },
+        { platform: "YouTube", note: "301,000 U.S. subscribers, 13 percent of 2.25M and the No. 1 market" },
+        { platform: "Instagram", note: "282,000 U.S. followers, 29 percent of 972,000 and the No. 1 market" },
+      ],
+      footnote: "Source: Chartmetric audience data, November 2026. Age, gender and affinity figures cover each platform's full follower base, not only U.S. followers. Affinity is the audience's likelihood against the platform average.",
+    },
+
+    // ===================================================================
+    // 04. Targeting Matrix
     // ===================================================================
     {
       type: "vertical",
-      number: "03",
+      number: "04",
+      navLabel: "Targeting",
+      title: "Targeting Matrix",
+      philosophy: "Five audiences, each with its own platform, objective, creative and share of the $50,000. The matrix cuts across the fan-data capture and U.S. paid growth lines.",
+      intro: "Shares are starting points. The team moves budget between rows at each checkpoint based on cost per fan and cost per follower. All prospecting is U.S. only, and fans already on the list are excluded from prospecting so no money is spent finding them twice.",
+      subBlocks: [
+        {
+          label: "A",
+          title: "Core K-pop and Pop Fans",
+          budget: "$17,500 (35%)",
+          objective: "Build the fan list and grow Instagram and TikTok followers among women 18 to 24.",
+          components: {
+            heading: "Targeting",
+            items: [
+              "Audience: U.S. women 18 to 24, K-pop and pop interest stacks, lookalikes of the first list signups and of top engagers",
+              "Platforms: Instagram 60 percent, TikTok 40 percent",
+              "Creative: rotating member content, challenges and behind-the-scenes, each with a join or pre-order step",
+              "Phasing: tests in December, steady in January, largest share in the release window",
+            ],
+          },
+          kpis: ["Cost per fan captured", "Cost per follower", "Pre-order rate from list members"],
+        },
+        {
+          label: "B",
+          title: "Millennial Pop Listeners",
+          budget: "$12,500 (25%)",
+          objective: "Turn Cupid-era listeners into Spotify followers and EP buyers.",
+          components: {
+            heading: "Targeting",
+            items: [
+              "Audience: U.S. adults 25 to 34, mainstream pop interests and fans of comparable pop acts",
+              "Platforms: YouTube 50 percent, Instagram 50 percent",
+              "Creative: the new single, framed as the next song from the group behind Cupid, then the physical album and photobooks",
+              "Phasing: light before release, concentrated on release week and the counting week",
+            ],
+          },
+          kpis: ["Spotify follows and pre-saves from paid", "Cost per subscriber on YouTube", "EP purchases traced to this audience"],
+        },
+        {
+          label: "C",
+          title: "Gaming and Animation Crossover",
+          budget: "$7,500 (15%)",
+          objective: "Reach the male-skewing, gaming-adjacent audience that already engages more than it follows.",
+          components: {
+            heading: "Targeting",
+            items: [
+              "Audience: U.S. 18 to 34, gaming, esports, anime and Pokemon interests, no gender restriction",
+              "Platforms: YouTube 60 percent, TikTok 40 percent",
+              "Creative: the gaming and esports format, members inside a game or a creator's world",
+              "Phasing: small test in December, scaled only if cost per follower clears the target",
+            ],
+          },
+          kpis: ["Cost per follower and subscriber", "View-through rate on gaming content"],
+        },
+        {
+          label: "D",
+          title: "Warm Retargeting",
+          budget: "$7,500 (15%)",
+          objective: "Convert people who have already watched, visited or engaged into list signups and pre-orders.",
+          components: {
+            heading: "Targeting",
+            items: [
+              "Audience: video viewers at 50 percent or more, profile visitors, engagers and capture-page visitors from the last 180 days, plus users of the Cupid sound where available",
+              "Platforms: Instagram, TikTok and YouTube, weighted to whichever pool is largest",
+              "Creative: the clearest offer of the moment, first access, pre-order, signed-copy draw",
+              "Phasing: pools built in December and January, spent mostly in the release window",
+            ],
+          },
+          kpis: ["Signup and pre-order conversion rate", "Cost per pre-order"],
+        },
+        {
+          label: "E",
+          title: "Radio Markets",
+          budget: "$5,000 (10%)",
+          objective: "Back up every station add with paid reach in that market.",
+          components: {
+            heading: "Targeting",
+            items: [
+              "Audience: 18 to 34 inside the listening area of each station that adds the single",
+              "Platforms: Instagram and YouTube",
+              "Creative: the single plus station interviews, IDs and acoustic clips",
+              "Phasing: release window only, switched on market by market as adds come in",
+            ],
+          },
+          kpis: ["Shazam lookups and list signups by market", "Cost per follower in radio markets"],
+        },
+      ],
+      footnote: "Exclusions on every prospecting row: residents of Korea, existing list members and current followers where the platform allows it.",
+    },
+
+    // ===================================================================
+    // 05. Workstream 1: Fan Data
+    // ===================================================================
+    {
+      type: "vertical",
+      number: "05",
       navLabel: "Fan Data",
       title: "Workstream 1 / First-Party Fan Data",
       philosophy: "Every other workstream gets cheaper once the label can reach its own fans directly. This one starts first and runs every week of the window.",
@@ -213,11 +413,11 @@ export const fiftyFiftyExecutionPlan: StrategyPlanData = {
     },
 
     // ===================================================================
-    // 04. Workstream 2: U.S. Growth and Content
+    // 06. Workstream 2: U.S. Growth and Content
     // ===================================================================
     {
       type: "vertical",
-      number: "04",
+      number: "06",
       navLabel: "U.S. Growth",
       title: "Workstream 2 / U.S. Growth and Content",
       philosophy: "Put paid weight behind the formats the group's own data proves, in the market where the listeners already are.",
@@ -267,11 +467,11 @@ export const fiftyFiftyExecutionPlan: StrategyPlanData = {
     },
 
     // ===================================================================
-    // 05. Workstream 3: Release and Physical
+    // 07. Workstream 3: Release and Physical
     // ===================================================================
     {
       type: "vertical",
-      number: "05",
+      number: "07",
       navLabel: "EP Release",
       title: "Workstream 3 / February EP Release and Physical",
       philosophy: "One album sale counts as one chart unit. It takes 1,000 premium streams to equal it. The release plan is built around that ratio.",
@@ -341,11 +541,11 @@ export const fiftyFiftyExecutionPlan: StrategyPlanData = {
     },
 
     // ===================================================================
-    // 06. Workstream 4: U.S. Radio
+    // 08. Workstream 4: U.S. Radio
     // ===================================================================
     {
       type: "vertical",
-      number: "06",
+      number: "08",
       navLabel: "Radio",
       title: "Workstream 4 / U.S. Top 40 Radio",
       philosophy: "Radio keeps a song in front of people long after the streaming curve flattens. The lead single is built for it, so it gets a full Top 40 campaign from day one.",
@@ -460,11 +660,11 @@ export const fiftyFiftyExecutionPlan: StrategyPlanData = {
     },
 
     // ===================================================================
-    // 07. Media Flight
+    // 09. Media Flight
     // ===================================================================
     {
       type: "flight",
-      number: "07",
+      number: "09",
       navLabel: "Flight",
       title: "Core Program Media Flight",
       intro: "The $50,000 of working media in three phases. December and January stay lean: they test, build the list and set up the release. More than 70 percent of the media is spent in the release window, when the single is out and every dollar can turn into a stream, a follow, a signup or a sale.",
@@ -506,11 +706,11 @@ export const fiftyFiftyExecutionPlan: StrategyPlanData = {
     },
 
     // ===================================================================
-    // 08. Execution Timeline
+    // 10. Execution Timeline
     // ===================================================================
     {
       type: "timeline",
-      number: "08",
+      number: "10",
       navLabel: "Timeline",
       title: "Execution Timeline",
       intro: "Thirteen weeks from December 7 to March 6. Release week is penciled for the week of February 8 and the grid shifts with the confirmed date. Weeks five and nine are checkpoints with the authority to move or stop budget.",
@@ -708,11 +908,11 @@ export const fiftyFiftyExecutionPlan: StrategyPlanData = {
     },
 
     // ===================================================================
-    // 09. Targets
+    // 11. Targets
     // ===================================================================
     {
       type: "targets",
-      number: "09",
+      number: "11",
       navLabel: "Targets",
       title: "90-Day Targets",
       intro: "What this cycle is measured on. Baselines are locked in week 1 and every target is reported weekly on the live dashboard.",
@@ -786,11 +986,11 @@ export const fiftyFiftyExecutionPlan: StrategyPlanData = {
     },
 
     // ===================================================================
-    // 10. Inputs and Reporting
+    // 12. Inputs and Reporting
     // ===================================================================
     {
       type: "vertical",
-      number: "10",
+      number: "12",
       navLabel: "Working Together",
       title: "Inputs, Roles and Reporting",
       philosophy: "One team, one weekly call, one report.",
@@ -842,11 +1042,11 @@ export const fiftyFiftyExecutionPlan: StrategyPlanData = {
     },
 
     // ===================================================================
-    // 11. Investment
+    // 13. Investment
     // ===================================================================
     {
       type: "pricing",
-      number: "11",
+      number: "13",
       navLabel: "Investment",
       title: "Investment",
       intro: "Two budgets for the February cycle: the core program and the U.S. radio campaign. Each shows exactly what goes in market and what goes to the team.",

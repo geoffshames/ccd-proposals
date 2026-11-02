@@ -2,8 +2,10 @@
 import { motion } from "framer-motion";
 import { PlanSectionHeader } from "./PlanSectionHeader";
 import type { AudienceSection } from "@/lib/plan-context";
+import { useT, type UIKey } from "@/lib/plan-i18n";
 
 export function PlanAudience({ section }: { section: AudienceSection }) {
+  const t = useT();
   return (
     <section id={`section-${section.number}`} className="px-6 md:px-12 lg:px-24 py-24 md:py-32 bg-bg-card/30">
       <div className="max-w-6xl mx-auto">
@@ -18,7 +20,7 @@ export function PlanAudience({ section }: { section: AudienceSection }) {
             className="border-l-2 border-accent pl-7 md:pl-9 max-w-5xl mb-12"
           >
             <div className="text-[10px] font-mono tracking-[0.22em] uppercase text-text-muted/70">
-              Audience thesis
+              {t("audThesis")}
             </div>
             <p
               className="mt-4 text-[clamp(1.25rem,2.4vw,1.85rem)] leading-[1.32] font-bold text-text-primary"
@@ -39,7 +41,7 @@ export function PlanAudience({ section }: { section: AudienceSection }) {
             className="mb-12"
           >
             <div className="text-[10px] font-mono tracking-[0.22em] uppercase text-text-muted/70 mb-4">
-              {section.metrosLabel ?? "Top U.S. Metros"}
+              {section.metrosLabel ?? t("audMetros")}
             </div>
             <div className="flex flex-wrap gap-2">
               {section.metros.map((m, i) => {
@@ -72,7 +74,7 @@ export function PlanAudience({ section }: { section: AudienceSection }) {
               className="border border-text-muted/15 bg-bg-card p-7"
             >
               <div className="text-[10px] font-mono tracking-[0.22em] uppercase text-text-muted/70 mb-5">
-                Age Distribution
+                {t("audAge")}
               </div>
               <div className="space-y-4">
                 {section.ageDistribution.map((b, i) => (
@@ -109,7 +111,7 @@ export function PlanAudience({ section }: { section: AudienceSection }) {
               className="border border-text-muted/15 bg-bg-card p-7 flex flex-col"
             >
               <div className="text-[10px] font-mono tracking-[0.22em] uppercase text-text-muted/70 mb-5">
-                Gender Distribution
+                {t("audGender")}
               </div>
               <div className="grid grid-cols-2 gap-px bg-text-muted/15 flex-1">
                 <div className="bg-bg-card p-5 text-center flex flex-col justify-center">
@@ -118,7 +120,7 @@ export function PlanAudience({ section }: { section: AudienceSection }) {
                     {section.genderDistribution.female}%
                   </div>
                   <div className="text-[11px] font-mono tracking-[0.18em] uppercase text-text-muted/70 mt-3">
-                    Female
+                    {t("audFemale")}
                   </div>
                 </div>
                 <div className="bg-bg-card p-5 text-center flex flex-col justify-center">
@@ -127,7 +129,7 @@ export function PlanAudience({ section }: { section: AudienceSection }) {
                     {section.genderDistribution.male}%
                   </div>
                   <div className="text-[11px] font-mono tracking-[0.18em] uppercase text-text-muted/70 mt-3">
-                    Male
+                    {t("audMale")}
                   </div>
                 </div>
               </div>
@@ -139,7 +141,7 @@ export function PlanAudience({ section }: { section: AudienceSection }) {
         {section.personas && section.personas.length > 0 && (
           <div className="mb-12">
             <div className="text-[10px] font-mono tracking-[0.22em] uppercase text-text-muted/70 mb-4">
-              Priority audience segments
+              {t("audSegments")}
             </div>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
               {section.personas.map((persona, i) => (
@@ -171,7 +173,7 @@ export function PlanAudience({ section }: { section: AudienceSection }) {
                     </div>
                     {persona.priority && (
                       <span className="border border-text-muted/20 px-2.5 py-1 text-[10px] font-mono tracking-[0.16em] uppercase text-text-muted/65 flex-shrink-0">
-                        {persona.priority}
+                        {t(`prio_${persona.priority}` as UIKey)}
                       </span>
                     )}
                   </div>
@@ -185,7 +187,7 @@ export function PlanAudience({ section }: { section: AudienceSection }) {
                       {persona.psychographics && persona.psychographics.length > 0 && (
                         <div>
                           <div className="text-[10px] font-mono tracking-[0.18em] uppercase text-text-muted/65 mb-3">
-                            Psychographics
+                            {t("audPsycho")}
                           </div>
                           <ul className="space-y-2">
                             {persona.psychographics.map((item, j) => (
@@ -200,7 +202,7 @@ export function PlanAudience({ section }: { section: AudienceSection }) {
                       {persona.motivations && persona.motivations.length > 0 && (
                         <div>
                           <div className="text-[10px] font-mono tracking-[0.18em] uppercase text-text-muted/65 mb-3">
-                            Motivations
+                            {t("audMotivations")}
                           </div>
                           <ul className="space-y-2">
                             {persona.motivations.map((item, j) => (
@@ -218,7 +220,7 @@ export function PlanAudience({ section }: { section: AudienceSection }) {
                   {persona.behaviors && persona.behaviors.length > 0 && (
                     <div className="mt-6">
                       <div className="text-[10px] font-mono tracking-[0.18em] uppercase text-text-muted/65 mb-3">
-                        Observable behaviors
+                        {t("audBehaviors")}
                       </div>
                       <div className="flex flex-wrap gap-2">
                         {persona.behaviors.map((behavior, j) => (
@@ -253,7 +255,7 @@ export function PlanAudience({ section }: { section: AudienceSection }) {
                       {persona.barriers && persona.barriers.length > 0 && (
                         <div>
                           <div className="text-[10px] font-mono tracking-[0.18em] uppercase text-text-muted/65 mb-3">
-                            Barriers
+                            {t("audBarriers")}
                           </div>
                           <ul className="space-y-2">
                             {persona.barriers.map((item, j) => (
@@ -267,7 +269,7 @@ export function PlanAudience({ section }: { section: AudienceSection }) {
                       {persona.triggers && persona.triggers.length > 0 && (
                         <div>
                           <div className="text-[10px] font-mono tracking-[0.18em] uppercase text-accent/80 mb-3">
-                            Triggers
+                            {t("audTriggers")}
                           </div>
                           <ul className="space-y-2">
                             {persona.triggers.map((item, j) => (
@@ -284,7 +286,7 @@ export function PlanAudience({ section }: { section: AudienceSection }) {
                   {persona.conversionGoal && (
                     <div className="mt-6 border-t border-text-muted/15 pt-5">
                       <div className="text-[10px] font-mono tracking-[0.18em] uppercase text-text-muted/65">
-                        Desired conversion
+                        {t("audConversion")}
                       </div>
                       <p className="mt-2 text-[13px] leading-relaxed text-text-primary">
                         {persona.conversionGoal}
@@ -309,7 +311,7 @@ export function PlanAudience({ section }: { section: AudienceSection }) {
                 className="border border-text-muted/15 bg-bg-card p-7 md:p-8"
               >
                 <div className="text-[10px] font-mono tracking-[0.22em] uppercase text-text-muted/70 mb-6">
-                  Psychographic map
+                  {t("audPsychoMap")}
                 </div>
                 <div className="space-y-6">
                   {section.psychographics.map((group, i) => (
@@ -342,7 +344,7 @@ export function PlanAudience({ section }: { section: AudienceSection }) {
                 className="border border-text-muted/15 bg-bg-card p-7 md:p-8"
               >
                 <div className="text-[10px] font-mono tracking-[0.22em] uppercase text-text-muted/70 mb-6">
-                  Behavior and platform signals
+                  {t("audBehaviorSignals")}
                 </div>
                 <div className="space-y-6">
                   {section.behaviorSignals.map((signal, i) => (
@@ -394,7 +396,7 @@ export function PlanAudience({ section }: { section: AudienceSection }) {
                 className="border border-text-muted/20 bg-bg-card p-7 md:p-8"
               >
                 <div className="text-[10px] font-mono tracking-[0.22em] uppercase text-text-muted/70 mb-6">
-                  Barriers and pain points
+                  {t("audBarriersPain")}
                 </div>
                 <div className="space-y-6">
                   {section.barriers.map((item, i) => (
@@ -420,7 +422,7 @@ export function PlanAudience({ section }: { section: AudienceSection }) {
                 className="border border-white/[0.14] bg-white/[0.035] p-7 md:p-8"
               >
                 <div className="text-[10px] font-mono tracking-[0.22em] uppercase text-accent mb-6">
-                  Conversion triggers
+                  {t("audConvTriggers")}
                 </div>
                 <div className="space-y-6">
                   {section.triggers.map((item, i) => (
@@ -451,7 +453,7 @@ export function PlanAudience({ section }: { section: AudienceSection }) {
                 className="lg:col-span-2 border border-text-muted/15 bg-bg-card p-7"
               >
                 <div className="text-[10px] font-mono tracking-[0.22em] uppercase text-text-muted/70 mb-4">
-                  Similar Artists (Lookalike + Conquest)
+                  {t("audSimilar")}
                 </div>
                 <div className="flex flex-wrap gap-2">
                   {section.similarArtists.map((a, i) => (
@@ -473,7 +475,7 @@ export function PlanAudience({ section }: { section: AudienceSection }) {
                 className="border border-text-muted/15 bg-bg-card p-7"
               >
                 <div className="text-[10px] font-mono tracking-[0.22em] uppercase text-text-muted/70 mb-4">
-                  Broad Genre
+                  {t("audGenre")}
                 </div>
                 <div className="flex flex-wrap gap-2">
                   {section.genres.map((g, i) => (
@@ -498,7 +500,7 @@ export function PlanAudience({ section }: { section: AudienceSection }) {
             className="mb-8"
           >
             <div className="text-[10px] font-mono tracking-[0.22em] uppercase text-text-muted/70 mb-4">
-              Platform Signals
+              {t("audPlatformSignals")}
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3">
               {section.platformSignals.map((p, i) => (
@@ -517,7 +519,7 @@ export function PlanAudience({ section }: { section: AudienceSection }) {
         {section.fanQuotes && section.fanQuotes.length > 0 && (
           <div className="mt-12 mb-8">
             <div className="text-[10px] font-mono tracking-[0.22em] uppercase text-text-muted/70 mb-4">
-              {section.fanQuotesLabel ?? "Voice of fan"}
+              {section.fanQuotesLabel ?? t("audVoice")}
             </div>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
               {section.fanQuotes.map((item, i) => (
@@ -552,7 +554,7 @@ export function PlanAudience({ section }: { section: AudienceSection }) {
                   {item.insight && (
                     <p className="mt-5 pt-5 border-t border-text-muted/15 text-[13px] leading-relaxed text-text-muted">
                       <span className="text-accent font-mono text-[10px] tracking-[0.14em] uppercase mr-2">
-                        Signal
+                        {t("audSignal")}
                       </span>
                       {item.insight}
                     </p>

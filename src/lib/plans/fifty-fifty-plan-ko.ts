@@ -126,11 +126,211 @@ export const fiftyFiftyExecutionPlanKorean: StrategyPlanData = {
     },
 
     // ===================================================================
-    // 03. Workstream 1: Fan Data
+    // 03. U.S. Audience
+    // ===================================================================
+    {
+      type: "audience",
+      number: "03",
+      navLabel: "오디언스",
+      title: "미국 오디언스 및 타겟팅",
+      intro: "이 프로그램이 도달하는 대상으로, FIFTY FIFTY의 Instagram, TikTok, YouTube, Spotify 오디언스 데이터를 기반으로 합니다. 미국은 네 플랫폼 모두에서 그룹의 최대 시장입니다.",
+      thesis: "팔로워층은 젊은 여성 중심이지만, 실제로 참여하는 사람들은 팔로워보다 연령대가 높고 남성 비중이 크며, 수집, 게이밍, 애니메이션에 대한 취향을 공유합니다. 이 프로그램은 눈에 띄는 한 가지 경로만이 아니라 세 가지 경로 모두를 타겟팅합니다.",
+      metrosLabel: "Instagram 팔로워 기준 미국 주요 도시",
+      metros: [
+        { name: "Los Angeles", tier: "primary" },
+        { name: "New York City", tier: "primary" },
+        { name: "Chicago", tier: "secondary" },
+        { name: "San Francisco", tier: "secondary" },
+        { name: "Houston", tier: "secondary" },
+      ],
+      ageDistribution: [
+        { bracket: "13-17", weight: 9.2 },
+        { bracket: "18-24", weight: 49.3 },
+        { bracket: "25-34", weight: 37.9 },
+        { bracket: "35-44", weight: 3.1 },
+        { bracket: "45+", weight: 0.4 },
+      ],
+      genderDistribution: { female: 78.2, male: 21.8 },
+      personas: [
+        {
+          name: "핵심 K-pop 및 팝 팬",
+          label: "세그먼트 1",
+          priority: "primary",
+          profile: "18~24세 여성으로 팬층의 중심입니다. Instagram 팔로워의 49%, TikTok 팔로워의 67%를 차지합니다. 멤버 개개인을 팔로우하고, 매일 게시하고 공유하며, 멤버 중심 콘텐츠와 수집 가능한 모든 것에 반응합니다.",
+          psychographics: ["그룹보다 멤버에 대한 충성도", "포토카드, 앨범, 버전별 수집", "팬 편집 영상과 챌린지 공유"],
+          behaviors: ["TikTok에서 발견, Instagram에서 팔로우", "여러 앨범 버전 구매", "선주문과 팬 드롭에 일찍 참여"],
+          platforms: [
+            { name: "Instagram", role: "팔로우 및 정보 확보" },
+            { name: "TikTok", role: "발견 및 음원 사용" },
+          ],
+          triggers: ["선주문 기간 매일 멤버별 순환 콘텐츠", "선주문 및 사인 앨범 우선 접근"],
+          conversionGoal: "팬 리스트 가입 후 EP 선주문",
+        },
+        {
+          name: "밀레니얼 팝 리스너",
+          label: "세그먼트 2",
+          priority: "primary",
+          profile: "Cupid로 그룹을 알게 된 뒤 팝 팬으로 남은 25~34세 리스너입니다. Instagram 팔로워의 38%, YouTube 구독자의 64%를 차지합니다. Spotify는 이미 그룹을 K-pop에만 한정하지 않고 메인스트림 팝과 나란히 배치하고 있으며, 이 연령대가 피지컬 앨범에 가장 많은 금액을 쓸 수 있습니다.",
+          psychographics: ["K-pop보다 팝 리스너", "2023년 브레이크아웃에 대한 향수", "버전 수집이 아닌 소장용으로 앨범 구매"],
+          behaviors: ["YouTube와 Spotify 플레이리스트에서 발견", "신곡이 나오면 Spotify에서 아티스트 팔로우", "매장, 차, 라디오에서 들은 곡을 Shazam으로 검색"],
+          platforms: [
+            { name: "YouTube", role: "뮤직비디오 및 Shorts 도달" },
+            { name: "Instagram", role: "팔로우 및 선주문" },
+            { name: "Spotify", role: "팔로우 및 프리세이브" },
+          ],
+          triggers: ["Cupid를 부른 그룹의 신곡", "Top 40 라디오에서 싱글을 듣는 순간"],
+          conversionGoal: "Spotify 팔로우 후 EP 구매",
+        },
+        {
+          name: "게이밍 및 애니메이션 크로스오버",
+          label: "세그먼트 3",
+          priority: "secondary",
+          profile: "Instagram 참여 오디언스의 59%가 남성으로 팔로워의 22%와 대비되며, Pokemon(2.3배), Nintendo(1.4배), Marvel(1.4배)에 대한 선호가 높습니다. 게이밍 및 e스포츠 콘텐츠는 그룹의 다른 포맷보다 5배 이상 높은 성과를 냅니다. 규모가 크고, 아직 공략되지 않았으며, 도달 비용이 낮은 영역입니다.",
+          psychographics: ["게이밍, 애니메이션, 팬덤 문화", "아티스트보다 크리에이터와 스트리머를 팔로우", "참여는 많고 팔로우는 적음"],
+          behaviors: ["YouTube에서 롱폼과 Shorts 시청", "공유보다 좋아요와 댓글"],
+          platforms: [
+            { name: "YouTube", role: "게이밍 관련 지면" },
+            { name: "TikTok", role: "게이밍 포맷 콘텐츠" },
+          ],
+          triggers: ["게임, 스트리밍, 크리에이터의 세계 안에 등장하는 멤버"],
+          conversionGoal: "팔로우 및 구독 후 리스트 가입",
+        },
+        {
+          name: "그룹은 모르지만 곡은 아는 사람들",
+          label: "세그먼트 4",
+          priority: "expansion",
+          profile: "Cupid는 수많은 TikTok 영상에 사용되었으며, 대부분은 댄스가 아닌 반려동물, 음식, 일상 장면입니다. 이 시청자 중 상당수는 곡은 알지만 그룹을 팔로우한 적이 없습니다. K-pop 관심사가 아닌 리타겟팅과 싱글 음원을 통해 도달합니다.",
+          behaviors: ["일상 콘텐츠의 분위기 음악으로 곡을 사용", "팔로우하지 않은 채 FIFTY FIFTY 영상을 시청하거나 참여한 경험"],
+          platforms: [
+            { name: "TikTok", role: "음원 기반 리타겟팅" },
+            { name: "Instagram", role: "영상 시청자 리타겟팅" },
+          ],
+          triggers: ["같은 유형의 콘텐츠에 신곡 음원이 등장하는 순간"],
+          conversionGoal: "팔로우 후 신곡 스트리밍",
+        },
+      ],
+      psychographics: [
+        { label: "수집과 소장", items: ["Polaroid 선호도 4.5배", "Pokemon 2.3배", "포토북, 포토카드, 사인 앨범과의 높은 적합성"] },
+        { label: "엔터테인먼트와 팬덤", items: ["Walt Disney 1.8배", "Marvel 1.4배", "Netflix 1.4배", "Nintendo 1.4배"] },
+        { label: "플랫폼 평균 이상의 관심사", items: ["음악 1.7배", "아트 및 디자인 1.3배", "영화 및 TV 1.2배", "반려동물 1.1배"] },
+      ],
+      behaviorSignals: [
+        { behavior: "대부분의 비교 사례에서 같은 영상이 TikTok보다 Instagram에서 더 높은 성과", platforms: ["Instagram", "TikTok"], implication: "Instagram이 유료 팔로우 및 캡처를 주도" },
+        { behavior: "참여자는 팔로워보다 남성 비중이 높고 연령대가 높음", platforms: ["Instagram"], implication: "참여자를 핵심층에 합치지 않고 별도 오디언스로 리타겟팅" },
+        { behavior: "향수가 YouTube 댓글의 약 21%를 차지하며, 비영어 댓글 비중이 스페인어와 포르투갈어를 중심으로 거의 두 배로 증가", platforms: ["YouTube"], implication: "신곡과 Cupid의 연결고리를 앞세우고, 3단계에서 스페인어 문구 테스트 추가" },
+      ],
+      similarArtists: ["KATSEYE", "ILLIT", "LE SSERAFIM", "IVE", "NewJeans", "TWICE", "Sabrina Carpenter"],
+      genres: ["K-pop", "댄스 팝", "유로팝", "팝"],
+      platformSignals: [
+        { platform: "Spotify", note: "미국 월간 리스너 131만 명, 전체의 21%로 1위 시장" },
+        { platform: "TikTok", note: "미국 팔로워 422,000명, 250만 명 중 17%로 1위 시장" },
+        { platform: "YouTube", note: "미국 구독자 301,000명, 225만 명 중 13%로 1위 시장" },
+        { platform: "Instagram", note: "미국 팔로워 282,000명, 972,000명 중 29%로 1위 시장" },
+      ],
+      footnote: "출처: Chartmetric 오디언스 데이터, 2026년 11월. 연령, 성별, 선호도 수치는 미국 팔로워만이 아닌 각 플랫폼 전체 팔로워 기준입니다. 선호도는 플랫폼 평균 대비 해당 오디언스의 관심 정도를 의미합니다.",
+    },
+
+    // ===================================================================
+    // 04. Targeting Matrix
     // ===================================================================
     {
       type: "vertical",
-      number: "03",
+      number: "04",
+      navLabel: "타겟팅",
+      title: "타겟팅 매트릭스",
+      philosophy: "다섯 개의 오디언스, 각각 고유한 플랫폼, 목표, 크리에이티브, $50,000 중 배분 비중을 가집니다. 매트릭스는 팬 데이터 확보와 미국 유료 성장 예산 전반에 걸쳐 적용됩니다.",
+      intro: "비중은 출발점입니다. 팀은 각 체크포인트에서 팬당 비용과 팔로워당 비용을 기준으로 항목 간 예산을 이동합니다. 모든 신규 타겟팅은 미국 한정이며, 이미 리스트에 있는 팬은 신규 타겟팅에서 제외하여 같은 팬을 두 번 찾는 데 예산을 쓰지 않습니다.",
+      subBlocks: [
+        {
+          label: "A",
+          title: "핵심 K-pop 및 팝 팬",
+          budget: "$17,500 (35%)",
+          objective: "18~24세 여성 대상으로 팬 리스트를 구축하고 Instagram 및 TikTok 팔로워를 늘립니다.",
+          components: {
+            heading: "타겟팅",
+            items: [
+              "오디언스: 미국 18~24세 여성, K-pop 및 팝 관심사, 초기 리스트 가입자와 상위 참여자 기반 유사 타겟",
+              "플랫폼: Instagram 60%, TikTok 40%",
+              "크리에이티브: 멤버별 순환 콘텐츠, 챌린지, 비하인드, 각각 가입 또는 선주문 안내 포함",
+              "단계: 12월 테스트, 1월 유지, 발매 기간에 가장 큰 비중",
+            ],
+          },
+          kpis: ["확보 팬당 비용", "팔로워당 비용", "리스트 회원의 선주문 비율"],
+        },
+        {
+          label: "B",
+          title: "밀레니얼 팝 리스너",
+          budget: "$12,500 (25%)",
+          objective: "Cupid 시절 리스너를 Spotify 팔로워와 EP 구매자로 전환합니다.",
+          components: {
+            heading: "타겟팅",
+            items: [
+              "오디언스: 미국 25~34세 성인, 메인스트림 팝 관심사 및 유사 팝 아티스트 팬",
+              "플랫폼: YouTube 50%, Instagram 50%",
+              "크리에이티브: Cupid를 부른 그룹의 다음 곡으로서 신곡을 소개한 뒤 피지컬 앨범과 포토북으로 연결",
+              "단계: 발매 전에는 소규모, 발매 주간과 집계 주간에 집중",
+            ],
+          },
+          kpis: ["유료 광고를 통한 Spotify 팔로우 및 프리세이브", "YouTube 구독자당 비용", "이 오디언스로부터 발생한 EP 구매"],
+        },
+        {
+          label: "C",
+          title: "게이밍 및 애니메이션 크로스오버",
+          budget: "$7,500 (15%)",
+          objective: "팔로우보다 참여가 많은, 남성 비중이 높은 게이밍 관련 오디언스에 도달합니다.",
+          components: {
+            heading: "타겟팅",
+            items: [
+              "오디언스: 미국 18~34세, 게이밍, e스포츠, 애니메이션, Pokemon 관심사, 성별 제한 없음",
+              "플랫폼: YouTube 60%, TikTok 40%",
+              "크리에이티브: 게이밍 및 e스포츠 포맷, 게임이나 크리에이터의 세계 안에 등장하는 멤버",
+              "단계: 12월 소규모 테스트, 팔로워당 비용이 목표를 충족할 때만 확대",
+            ],
+          },
+          kpis: ["팔로워 및 구독자당 비용", "게이밍 콘텐츠 시청 완료율"],
+        },
+        {
+          label: "D",
+          title: "웜 리타겟팅",
+          budget: "$7,500 (15%)",
+          objective: "이미 시청, 방문, 참여한 사람들을 리스트 가입과 선주문으로 전환합니다.",
+          components: {
+            heading: "타겟팅",
+            items: [
+              "오디언스: 최근 180일 내 영상 50% 이상 시청자, 프로필 방문자, 참여자, 캡처 페이지 방문자, 가능한 경우 Cupid 음원 사용자",
+              "플랫폼: Instagram, TikTok, YouTube, 규모가 가장 큰 오디언스에 가중",
+              "크리에이티브: 그 시점의 가장 명확한 혜택, 우선 접근, 선주문, 사인 앨범 추첨",
+              "단계: 12월과 1월에 오디언스 구축, 대부분 발매 기간에 집행",
+            ],
+          },
+          kpis: ["가입 및 선주문 전환율", "선주문당 비용"],
+        },
+        {
+          label: "E",
+          title: "라디오 시장",
+          budget: "$5,000 (10%)",
+          objective: "싱글을 편성한 모든 방송국의 시장에 유료 도달을 더합니다.",
+          components: {
+            heading: "타겟팅",
+            items: [
+              "오디언스: 싱글을 편성한 각 방송국 청취 권역 내 18~34세",
+              "플랫폼: Instagram 및 YouTube",
+              "크리에이티브: 싱글과 방송국 인터뷰, 스테이션 ID, 어쿠스틱 클립",
+              "단계: 발매 기간에만, 편성 추가에 따라 시장별로 가동",
+            ],
+          },
+          kpis: ["시장별 Shazam 검색 수 및 리스트 가입", "라디오 시장의 팔로워당 비용"],
+        },
+      ],
+      footnote: "모든 신규 타겟팅 항목의 제외 대상: 한국 거주자, 기존 리스트 회원, 플랫폼이 허용하는 경우 현재 팔로워.",
+    },
+
+    // ===================================================================
+    // 05. Workstream 1: Fan Data
+    // ===================================================================
+    {
+      type: "vertical",
+      number: "05",
       navLabel: "팬 데이터",
       title: "워크스트림 1 / 퍼스트파티 팬 데이터",
       philosophy: "레이블이 팬에게 직접 닿을 수 있게 되면 다른 모든 워크스트림의 비용이 낮아집니다. 이 워크스트림이 가장 먼저 시작되며 기간 내 매주 운영됩니다.",
@@ -213,11 +413,11 @@ export const fiftyFiftyExecutionPlanKorean: StrategyPlanData = {
     },
 
     // ===================================================================
-    // 04. Workstream 2: U.S. Growth and Content
+    // 06. Workstream 2: U.S. Growth and Content
     // ===================================================================
     {
       type: "vertical",
-      number: "04",
+      number: "06",
       navLabel: "미국 성장",
       title: "워크스트림 2 / 미국 성장 및 콘텐츠",
       philosophy: "그룹 자체 데이터로 검증된 포맷에, 리스너가 이미 있는 시장에서 유료 매체를 집중합니다.",
@@ -267,11 +467,11 @@ export const fiftyFiftyExecutionPlanKorean: StrategyPlanData = {
     },
 
     // ===================================================================
-    // 05. Workstream 3: Release and Physical
+    // 07. Workstream 3: Release and Physical
     // ===================================================================
     {
       type: "vertical",
-      number: "05",
+      number: "07",
       navLabel: "EP 발매",
       title: "워크스트림 3 / 2월 EP 발매 및 피지컬",
       philosophy: "앨범 1장 판매는 차트 1유닛입니다. 같은 1유닛을 만들려면 프리미엄 스트리밍 1,000회가 필요합니다. 발매 계획은 이 비율을 중심으로 설계되었습니다.",
@@ -341,11 +541,11 @@ export const fiftyFiftyExecutionPlanKorean: StrategyPlanData = {
     },
 
     // ===================================================================
-    // 06. Workstream 4: U.S. Radio
+    // 08. Workstream 4: U.S. Radio
     // ===================================================================
     {
       type: "vertical",
-      number: "06",
+      number: "08",
       navLabel: "라디오",
       title: "워크스트림 4 / 미국 Top 40 라디오",
       philosophy: "라디오는 스트리밍 곡선이 완만해진 이후에도 오랫동안 곡을 사람들 앞에 노출시킵니다. 리드 싱글은 라디오를 위해 만들어진 곡이므로, 첫날부터 완전한 Top 40 캠페인을 진행합니다.",
@@ -460,11 +660,11 @@ export const fiftyFiftyExecutionPlanKorean: StrategyPlanData = {
     },
 
     // ===================================================================
-    // 07. Media Flight
+    // 09. Media Flight
     // ===================================================================
     {
       type: "flight",
-      number: "07",
+      number: "09",
       navLabel: "매체 집행",
       title: "핵심 프로그램 매체 집행 계획",
       intro: "$50,000의 실집행 매체비를 세 단계로 운영합니다. 12월과 1월은 최소한으로 운영하며 테스트, 리스트 구축, 발매 준비에 집중합니다. 매체비의 70% 이상은 싱글이 나와 모든 예산이 스트리밍, 팔로우, 가입, 구매로 이어질 수 있는 발매 기간에 집행됩니다.",
@@ -506,11 +706,11 @@ export const fiftyFiftyExecutionPlanKorean: StrategyPlanData = {
     },
 
     // ===================================================================
-    // 08. Execution Timeline
+    // 10. Execution Timeline
     // ===================================================================
     {
       type: "timeline",
-      number: "08",
+      number: "10",
       navLabel: "타임라인",
       title: "실행 타임라인",
       intro: "12월 7일부터 3월 6일까지 13주. 발매 주간은 잠정적으로 2월 8일 주간이며 확정 날짜에 따라 전체 일정이 이동합니다. 5주차와 9주차는 예산을 이동하거나 중단할 권한이 있는 체크포인트입니다.",
@@ -708,11 +908,11 @@ export const fiftyFiftyExecutionPlanKorean: StrategyPlanData = {
     },
 
     // ===================================================================
-    // 09. Targets
+    // 11. Targets
     // ===================================================================
     {
       type: "targets",
-      number: "09",
+      number: "11",
       navLabel: "목표",
       title: "90일 목표",
       intro: "이번 사이클의 측정 기준입니다. 기준치는 1주차에 고정되며 모든 목표는 실시간 대시보드에서 매주 보고됩니다.",
@@ -786,11 +986,11 @@ export const fiftyFiftyExecutionPlanKorean: StrategyPlanData = {
     },
 
     // ===================================================================
-    // 10. Inputs and Reporting
+    // 12. Inputs and Reporting
     // ===================================================================
     {
       type: "vertical",
-      number: "10",
+      number: "12",
       navLabel: "협업 방식",
       title: "필요 사항, 역할 및 리포팅",
       philosophy: "하나의 팀, 하나의 주간 미팅, 하나의 리포트.",
@@ -842,11 +1042,11 @@ export const fiftyFiftyExecutionPlanKorean: StrategyPlanData = {
     },
 
     // ===================================================================
-    // 11. Investment
+    // 13. Investment
     // ===================================================================
     {
       type: "pricing",
-      number: "11",
+      number: "13",
       navLabel: "투자",
       title: "투자",
       intro: "2월 사이클의 두 가지 예산: 핵심 프로그램과 미국 라디오 캠페인. 각 예산에서 시장에 집행되는 금액과 팀에 지급되는 금액을 명확히 보여드립니다.",
