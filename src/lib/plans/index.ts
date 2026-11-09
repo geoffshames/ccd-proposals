@@ -38,6 +38,8 @@ import { triplesPlan } from "./triples";
 import { triplesPlanKorean } from "./triples-ko";
 import { idnttPlan } from "./idntt";
 import { idnttPlanKorean } from "./idntt-ko";
+import { artmsPlan } from "./artms";
+import { artmsPlanKorean } from "./artms-ko";
 import { zerobaseonePlan } from "./zerobaseone";
 import { zerobaseonePlanProposal } from "./zerobaseone-plan";
 import { zerobaseonePlanKorean } from "./zerobaseone-ko";
@@ -56,6 +58,8 @@ export const PLANS: Record<string, StrategyPlanData> = {
   "triples-ko": triplesPlanKorean,
   idntt: idnttPlan,
   "idntt-ko": idnttPlanKorean,
+  artms: artmsPlan,
+  "artms-ko": artmsPlanKorean,
   meovv: meovvPlan,
   "meovv-ko": meovvPlanKorean,
   "mark-tuan": markTuanPlan,
