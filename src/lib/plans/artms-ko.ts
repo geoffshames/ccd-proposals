@@ -233,8 +233,8 @@ export const artmsPlanKorean: StrategyPlanData = {
                   points: [
                     { x: "Moonshot 2024", y: 12 },
                     { x: "Lunar Theory 2025", y: 11 },
-                    { x: "Grand Club Icarus 2025-26", y: 11 },
-                    { x: "Art of Blue Blood 2026", y: 10 },
+                    { x: "Club Icarus 2025-26", y: 11 },
+                    { x: "Blue Blood 2026", y: 10 },
                   ],
                 },
               ],

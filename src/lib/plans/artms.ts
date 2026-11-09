@@ -233,8 +233,8 @@ export const artmsPlan: StrategyPlanData = {
                   points: [
                     { x: "Moonshot 2024", y: 12 },
                     { x: "Lunar Theory 2025", y: 11 },
-                    { x: "Grand Club Icarus 2025-26", y: 11 },
-                    { x: "Art of Blue Blood 2026", y: 10 },
+                    { x: "Club Icarus 2025-26", y: 11 },
+                    { x: "Blue Blood 2026", y: 10 },
                   ],
                 },
               ],
@@ -289,7 +289,7 @@ export const artmsPlan: StrategyPlanData = {
                 {
                   name: "Relative reach",
                   points: [
-                    { x: "Sub-unit, 3 to 4 members", y: 2.39 },
+                    { x: "Sub-unit (3 to 4)", y: 2.39 },
                     { x: "Trending outside audio", y: 1.21 },
                     { x: "Duo", y: 1.19 },
                     { x: "Solo member", y: 0.92 },
@@ -297,7 +297,7 @@ export const artmsPlan: StrategyPlanData = {
                   ],
                 },
               ],
-              highlightX: ["Sub-unit, 3 to 4 members"],
+              highlightX: ["Sub-unit (3 to 4)"],
               source: "Analysis of 393 ARTMS TikToks, Nov 2026",
             },
           ],
