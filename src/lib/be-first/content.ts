@@ -12,7 +12,7 @@ export const META = {
   date: { en: "November 2026", ja: "2026年11月" } as L,
   pulled: { en: "Social data pulled November 9, 2026", ja: "SNSデータ取得日：2026年11月9日" } as L,
   fx: 158,
-  email: "geoff@crowdcontroldigital.com",
+  email: "hello@crowdcontroldigital.com",
   name: "Geoff Shames",
 };
 
