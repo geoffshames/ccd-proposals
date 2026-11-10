@@ -56,6 +56,70 @@ function Reveal({ children, className = "", delay = 0, as: Tag = "div" }: { chil
   );
 }
 
+type Cur = "JPY" | "USD";
+type Post = { id: string; h: string; v: number };
+const vid = (u: string) => u.match(/video\/(\d+)/)?.[1] ?? "";
+
+function PostThumb({ post, onPlay, lang, wide = false }: { post: Post; onPlay: (p: Post) => void; lang: Lang; wide?: boolean }) {
+  return (
+    <button type="button" className={`${s.post} ${wide ? s.postWide : ""}`} onClick={() => onPlay(post)} aria-label={`${lang === "ja" ? "再生" : "Play"} ${post.h}`}>
+      <span className={s.postImg}>
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img src={`${IMG}/posts/${post.id}.webp`} alt="" loading="lazy" />
+        <i aria-hidden />
+      </span>
+      <span className={s.postMeta}>
+        <b>{compact(post.v)}</b>
+        <em>{post.h}</em>
+      </span>
+    </button>
+  );
+}
+
+function PostBox({ post, lang, onClose }: { post: Post; lang: Lang; onClose: () => void }) {
+  const closeRef = useRef<HTMLButtonElement | null>(null);
+  useEffect(() => {
+    const prev = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+    closeRef.current?.focus();
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape") onClose();
+    };
+    window.addEventListener("keydown", onKey);
+    return () => {
+      document.body.style.overflow = prev;
+      window.removeEventListener("keydown", onKey);
+    };
+  }, [onClose]);
+  const href = `https://www.tiktok.com/${post.h}/video/${post.id}`;
+  return (
+    <div className={s.postBox} role="dialog" aria-modal="true" aria-label={post.h} onClick={onClose}>
+      <div className={s.postBoxInner} onClick={(e) => e.stopPropagation()}>
+        <div className={s.postBoxBar}>
+          <span>
+            {post.h} <b>{compact(post.v)}</b>
+          </span>
+          <button ref={closeRef} type="button" className={s.postBoxClose} onClick={onClose}>
+            {lang === "ja" ? "閉じる" : "Close"} <span aria-hidden>×</span>
+          </button>
+        </div>
+        <div className={s.postBoxFrame} style={{ backgroundImage: `url(${IMG}/posts/${post.id}.webp)` }}>
+          <iframe
+            src={`https://www.tiktok.com/player/v1/${post.id}?autoplay=1&rel=0&description=1&music_info=1&native_context_menu=0`}
+            title={`${post.h} on TikTok`}
+            allow="autoplay; fullscreen; encrypted-media; picture-in-picture"
+            allowFullScreen
+            referrerPolicy="strict-origin-when-cross-origin"
+          />
+        </div>
+        <a className={s.postBoxLink} href={href} target="_blank" rel="noreferrer noopener">
+          {lang === "ja" ? "TikTokで開く" : "Open on TikTok"} <span aria-hidden>↗</span>
+        </a>
+      </div>
+    </div>
+  );
+}
+
 /* ------------------------------------------------------------ scroll film */
 
 function frameSrc(i: number, portrait: boolean) {
@@ -399,6 +463,11 @@ export default function BeFirstClient({ initialLang }: { initialLang: Lang | nul
   const [active, setActive] = useState(0);
   const [scrollP, setScrollP] = useState(0);
   const [dossier, setDossier] = useState<{ id: DossierId; origin: { x: number; y: number } } | null>(null);
+  const [cur, setCur] = useState<Cur>("JPY");
+  const [post, setPost] = useState<Post | null>(null);
+  const closePost = useCallback(() => setPost(null), []);
+  const money = (n: number) => (cur === "JPY" ? yen(n) : usd(n / META.fx));
+  const alt = (n: number) => (cur === "JPY" ? usd(n / META.fx) : yen(n));
 
   useEffect(() => {
     if (!initialLang && typeof navigator !== "undefined" && navigator.language?.toLowerCase().startsWith("ja")) setLang("ja");
@@ -479,24 +548,27 @@ export default function BeFirstClient({ initialLang }: { initialLang: Lang | nul
       </header>
 
       {/* --------------------------------------------------------- hero */}
-      <ScrollFilm from={0} to={21} vh={165} poster={`${IMG}/k1.jpg`}>
-        {(p) => (
-          <div className={s.hero} style={{ opacity: 1 - clamp((p - 0.62) / 0.3), transform: `translateY(${-p * 40}px)` }}>
-            <div className={s.heroTop}>
-              <span>{t(HERO.eyebrow)}</span>
-              <span>{t(HERO.forWhom)}</span>
-              <span>{t(META.date)}</span>
-            </div>
-            <h1 className={s.heroTitle}>BE:FIRST</h1>
-            <p className={s.heroStrap}>{t(HERO.strap)}</p>
-            <div className={s.heroBy}>{t(HERO.by)}</div>
-            <div className={s.heroScroll}>
-              <i aria-hidden />
-              {t(HERO.scroll)}
-            </div>
+      <section className={s.heroStage}>
+        <div className={s.heroBg}>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src={`${IMG}/k1.jpg`} alt="" />
+        </div>
+        <div className={s.filmShade} />
+        <div className={s.hero}>
+          <div className={s.heroTop}>
+            <span>{t(HERO.eyebrow)}</span>
+            <span>{t(HERO.forWhom)}</span>
+            <span>{t(META.date)}</span>
           </div>
-        )}
-      </ScrollFilm>
+          <h1 className={s.heroTitle}>BE:FIRST</h1>
+          <p className={s.heroStrap}>{t(HERO.strap)}</p>
+          <div className={s.heroBy}>{t(HERO.by)}</div>
+          <div className={s.heroScroll}>
+            <i aria-hidden />
+            {t(HERO.scroll)}
+          </div>
+        </div>
+      </section>
 
       {/* -------------------------------------------------------- tokyo */}
       <section className={s.section} id="tokyo">
@@ -543,7 +615,7 @@ export default function BeFirstClient({ initialLang }: { initialLang: Lang | nul
       </section>
 
       {/* ----------------------------------------------------- crossing */}
-      <ScrollFilm id="crossing" from={21} to={TOTAL - 1} vh={560} poster={`${IMG}/k2.jpg`}>
+      <ScrollFilm id="crossing" from={0} to={TOTAL - 1} vh={620} poster={`${IMG}/k1.jpg`}>
         {(p) => (
           <>
             <div className={s.beat} style={{ opacity: band(p, -0.1, 0.13), pointerEvents: "none" }}>
@@ -569,7 +641,7 @@ export default function BeFirstClient({ initialLang }: { initialLang: Lang | nul
       </ScrollFilm>
 
       <section className={`${s.section} ${s.afterFilm}`}>
-        <WhoFigure lang={lang} />
+        <WhoFigure lang={lang} onPlay={setPost} />
         <Reveal className={s.layer}>
           <div className={s.figTitle}>{t(CROSSING.layerTitle)}</div>
           <div className={s.layerGrid}>
@@ -592,7 +664,7 @@ export default function BeFirstClient({ initialLang }: { initialLang: Lang | nul
       </div>
       <section className={s.section} id="feed">
         <Head n="03" stop={t(STOPS[2].label)} title={t(FEED.title)} strap={t(FEED.strap)} />
-        <TrendBoard lang={lang} />
+        <TrendBoard lang={lang} onPlay={setPost} />
 
         <div className={s.two}>
           <Reveal className={s.figure}>
@@ -707,11 +779,22 @@ export default function BeFirstClient({ initialLang }: { initialLang: Lang | nul
       {/* --------------------------------------------------------- menu */}
       <section className={s.section} id="menu">
         <Head n="06" stop={t(STOPS[5].label)} title={t(MENU.title)} strap={t(MENU.strap)} />
+        <div className={s.curBar}>
+          <span>{t(MENU.currency)}</span>
+          <div className={s.curToggle} role="group" aria-label={t(MENU.currency)}>
+            <button type="button" className={cur === "JPY" ? s.curOn : ""} onClick={() => setCur("JPY")} aria-pressed={cur === "JPY"}>
+              JPY ¥
+            </button>
+            <button type="button" className={cur === "USD" ? s.curOn : ""} onClick={() => setCur("USD")} aria-pressed={cur === "USD"}>
+              USD $
+            </button>
+          </div>
+        </div>
         <div className={s.tiers}>
           {MENU.tiers.map((tr, i) => {
             const fee = tr.pool * 0.2;
             const total = tr.pool + fee + tr.desk;
-            const ceiling = (tr.pool / META.fx / 1.0) * 1000;
+            const ceiling = (tr.pool / META.fx / 3.0) * 1000;
             const subject = encodeURIComponent(`BE:FIRST clipping: approve ${tr.name.en}`);
             const body = encodeURIComponent(`We would like to go ahead with the ${tr.name.en} option (${yen(total)}).\n\nName:\nCompany:\n`);
             return (
@@ -723,22 +806,22 @@ export default function BeFirstClient({ initialLang }: { initialLang: Lang | nul
                 <div className={s.tierWindow}>{t(tr.window)}</div>
                 <p className={s.tierLine}>{t(tr.line)}</p>
                 <div className={s.tierPrice}>
-                  <b>{yen(total)}</b>
-                  <span>≈ {usd(total / META.fx)}</span>
+                  <b>{money(total)}</b>
+                  <span>≈ {alt(total)}</span>
                 </div>
                 <dl className={s.tierRows}>
                   <div>
                     <dt>{t(MENU.rows.pool)}</dt>
-                    <dd>{yen(tr.pool)}</dd>
+                    <dd>{money(tr.pool)}</dd>
                   </div>
                   <div>
                     <dt>{t(MENU.rows.fee)}</dt>
-                    <dd>{yen(fee)}</dd>
+                    <dd>{money(fee)}</dd>
                   </div>
                   {tr.desk > 0 && (
                     <div>
                       <dt>{t(MENU.rows.desk)}</dt>
-                      <dd>{yen(tr.desk)}</dd>
+                      <dd>{money(tr.desk)}</dd>
                     </div>
                   )}
                   <div data-ceiling>
@@ -763,7 +846,7 @@ export default function BeFirstClient({ initialLang }: { initialLang: Lang | nul
         </div>
         <p className={s.fx}>{t(MENU.fxNote)}</p>
 
-        <Calculator lang={lang} />
+        <Calculator lang={lang} cur={cur} />
         <PortalButton label={t(MENU.portal)} onOpen={openDossier("rates")} />
       </section>
 
@@ -772,24 +855,35 @@ export default function BeFirstClient({ initialLang }: { initialLang: Lang | nul
         <Reveal className={s.agencyHead}>
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img src="/brand/CC-LOGO-2024-WHITE.png" alt="Crowd Control" />
-          <h2 className={s.h3}>{t(AGENCY.title)}</h2>
           <p>{t(AGENCY.body)}</p>
         </Reveal>
-        <div className={s.services}>
+        <Reveal className={s.servicesHead}>
+          <span>{t(AGENCY.servicesLabel)}</span>
+          <em>
+            <i aria-hidden />
+            {t(AGENCY.inPlan)}
+          </em>
+        </Reveal>
+        <ol className={s.services}>
           {AGENCY.services.map((sv, i) => (
-            <Reveal key={i} delay={i * 60}>
+            <Reveal as="li" key={i} delay={(i % 4) * 50} className={sv.on ? s.serviceOn : ""}>
+              <span>{String(i + 1).padStart(2, "0")}</span>
               <b>{t(sv.h)}</b>
               <p>{t(sv.b)}</p>
             </Reveal>
           ))}
-        </div>
+        </ol>
         <Reveal className={s.clients}>
-          <div className={s.figTitle}>{t(AGENCY.clientsLabel)}</div>
-          <div>
-            {AGENCY.clients.map((c) => (
-              <span key={c}>{c}</span>
-            ))}
-          </div>
+          {AGENCY.clientGroups.map((g) => (
+            <div key={g.label.en} className={s.clientGroup}>
+              <div className={s.figTitle}>{t(g.label)}</div>
+              <div>
+                {g.names.map((n) => (
+                  <span key={n}>{n}</span>
+                ))}
+              </div>
+            </div>
+          ))}
         </Reveal>
       </section>
 
@@ -824,11 +918,7 @@ export default function BeFirstClient({ initialLang }: { initialLang: Lang | nul
             <a className={s.cta} href={`mailto:${META.email}?subject=${encodeURIComponent("BE:FIRST US clipping proposal")}`}>
               {t(NEXT.cta)}
             </a>
-            <div className={s.closeContact}>
-              {META.name}
-              <br />
-              {META.email}
-            </div>
+            <div className={s.closeContact}>{META.email}</div>
           </Reveal>
         </div>
         <footer className={s.footer}>
@@ -838,6 +928,7 @@ export default function BeFirstClient({ initialLang }: { initialLang: Lang | nul
         </footer>
       </section>
 
+      {post && <PostBox post={post} lang={lang} onClose={closePost} />}
       {dossier && <Dossier id={dossier.id} origin={dossier.origin} lang={lang} onClose={closeDossier} />}
     </div>
   );
@@ -845,7 +936,7 @@ export default function BeFirstClient({ initialLang }: { initialLang: Lang | nul
 
 /* ---------------------------------------------------------------- figures */
 
-function WhoFigure({ lang }: { lang: Lang }) {
+function WhoFigure({ lang, onPlay }: { lang: Lang; onPlay: (p: Post) => void }) {
   const t = (l: L) => l[lang];
   const [sel, setSel] = useState(5);
   const [filter, setFilter] = useState<string | null>(null);
@@ -899,16 +990,14 @@ function WhoFigure({ lang }: { lang: Lang }) {
               <dd>{cur.d}</dd>
             </div>
           </dl>
-          <a href={cur.u} target="_blank" rel="noreferrer noopener" className={s.link}>
-            {lang === "ja" ? "投稿を開く" : "Open the post"} <span aria-hidden>↗</span>
-          </a>
+          <PostThumb post={{ id: vid(cur.u), h: cur.h, v: cur.v }} onPlay={onPlay} lang={lang} wide />
         </aside>
       </div>
     </Reveal>
   );
 }
 
-function TrendBoard({ lang }: { lang: Lang }) {
+function TrendBoard({ lang, onPlay }: { lang: Lang; onPlay: (p: Post) => void }) {
   const t = (l: L) => l[lang];
   const [sel, setSel] = useState(0);
   const c = FEED.cards[sel];
@@ -949,9 +1038,12 @@ function TrendBoard({ lang }: { lang: Lang }) {
             <h4>{t(FEED.labels.yours)}</h4>
             <p>{t(c.yours)}</p>
           </div>
-          <a href={c.url} target="_blank" rel="noreferrer noopener" className={s.link}>
-            {t(FEED.labels.example)} <span aria-hidden>↗</span>
-          </a>
+          <h4 className={s.postsLabel}>{t(FEED.labels.example)}</h4>
+          <div className={s.posts}>
+            {c.posts.map((ps) => (
+              <PostThumb key={ps.id} post={ps} onPlay={onPlay} lang={lang} />
+            ))}
+          </div>
         </div>
       </div>
       <div className={s.skip}>
@@ -1048,11 +1140,13 @@ function Formats({ lang }: { lang: Lang }) {
   );
 }
 
-function Calculator({ lang }: { lang: Lang }) {
+function Calculator({ lang, cur }: { lang: Lang; cur: Cur }) {
+  const money = (n: number) => (cur === "JPY" ? yen(n) : usd(n / META.fx));
+  const alt = (n: number) => (cur === "JPY" ? usd(n / META.fx) : yen(n));
   const t = (l: L) => l[lang];
   const [pool, setPool] = useState(3000000);
-  const [rate, setRate] = useState(1);
-  const rates = [1, 1.5, 2];
+  const [rate, setRate] = useState(3);
+  const rates = [3, 4, 5];
   const out = useMemo(() => {
     const ceiling = (pool / META.fx / rate) * 1000;
     const fee = pool * 0.2;
@@ -1066,7 +1160,7 @@ function Calculator({ lang }: { lang: Lang }) {
         <p className={s.figStrap}>{t(MENU.calcStrap)}</p>
         <label className={s.calcLabel} htmlFor="pool">
           <span>{t(MENU.calc.pool)}</span>
-          <b>{yen(pool)}</b>
+          <b>{money(pool)}</b>
         </label>
         <input id="pool" className={s.range} type="range" min={500000} max={10000000} step={100000} value={pool} onChange={(e) => setPool(Number(e.target.value))} style={{ "--pct": `${pct}%` } as CSSProperties} />
         <div className={s.calcPresets}>
@@ -1093,16 +1187,16 @@ function Calculator({ lang }: { lang: Lang }) {
         <dl>
           <div>
             <dt>{t(MENU.calc.pool)}</dt>
-            <dd>{yen(pool)}</dd>
+            <dd>{money(pool)}</dd>
           </div>
           <div>
             <dt>{t(MENU.calc.fee)}</dt>
-            <dd>{yen(out.fee)}</dd>
+            <dd>{money(out.fee)}</dd>
           </div>
           <div data-total>
             <dt>{t(MENU.calc.total)}</dt>
             <dd>
-              {yen(out.total)} <em>≈ {usd(out.total / META.fx)}</em>
+              {money(out.total)} <em>≈ {alt(out.total)}</em>
             </dd>
           </div>
         </dl>

@@ -85,7 +85,7 @@ export const DOSSIERS: Record<DossierId, { no: string; title: L; strap: L; block
           [{ en: "Median, all campaigns", ja: "中央値（全施策）" }, "$1.00", { en: "719 live campaigns on one marketplace, October 17, 2026", ja: "大手マーケットプレイス上の719施策（2026年10月17日時点）" }],
           [{ en: "Middle half of campaigns", ja: "中央50%の範囲" }, "$1.00 to $2.00", { en: "Same data set", ja: "同データ" }],
           [{ en: "Median, music campaigns", ja: "中央値（音楽）" }, "$1.00", { en: "100 music campaigns in the same set", ja: "同データ内の音楽100施策" }],
-          [{ en: "This program", ja: "本プログラム" }, "$1.00 to $2.00", { en: "Opens at $1.00, rises only if supply is slow", ja: "1.00ドルで開始。参加が鈍い場合のみ引き上げ" }],
+          [{ en: "This program", ja: "本プログラム" }, "$3.00 to $5.00", { en: "Footage-led, a recruited US roster, every post reviewed before it is paid", ja: "映像主導型。米国クリエイターを個別に募集し、支払い前に全投稿を審査" }],
         ],
       },
       { kind: "h", text: { en: "Campaigns on record", ja: "実績のある施策" } },
@@ -105,15 +105,15 @@ export const DOSSIERS: Record<DossierId, { no: string; title: L; strap: L; block
       {
         kind: "p",
         text: {
-          en: "Reported cases are song-led: creators set the track under any footage, which is the cheapest way to buy views. This program is footage-led so the group is in every approved clip. Footage-led views cost more per thousand, which is why every pool has a day-7 line and returns what it does not spend.",
-          ja: "報道されている事例は「楽曲主導型」です。クリエイターが任意の映像に曲を乗せる方式で、再生単価は最も安くなります。本プログラムは「映像主導型」で、承認されるすべてのクリップにBE:FIRSTが映ります。映像主導型は1,000再生あたりの単価が高くなるため、すべてのプールに7日目の判定ラインを設け、未使用分は返金します。",
+          en: "Marketplace rates and the reported cases are song-led and open to anyone: creators set the track under any footage, which is the cheapest way to buy a view. This program is footage-led, so the group is in every approved clip, the creators are recruited by name for their US audience, and every post is reviewed before it is paid. That is what the $3.00 to $5.00 rate buys.",
+          ja: "マーケットプレイスの単価や報道されている事例は「楽曲主導型」で、誰でも参加できる形式です。クリエイターが任意の映像に曲を乗せるため、再生単価は最も安くなります。本プログラムは「映像主導型」です。承認されるすべてのクリップにBE:FIRSTが映り、クリエイターは米国の視聴者を持つ人を個別に募集し、支払い前に全投稿を審査します。3.00〜5.00ドルという単価は、その対価です。",
         },
       },
       { kind: "h", text: { en: "How this program is priced", ja: "本プログラムの料金設計" } },
       {
         kind: "list",
         items: [
-          { en: "The creator pool is BMSG's money and pays only for approved views. What is unused returns.", ja: "クリエイター報酬プールはBMSGの資金であり、承認済み再生数に対してのみ支払われます。未使用分は返金します。" },
+          { en: "The creator pool pays only for approved views. It is committed once paid and runs until it is spent.", ja: "クリエイター報酬プールは承認済み再生数に対してのみ支払われます。お支払い時点で確定し、使い切るまで運用します。" },
           { en: "The program fee is 20% of the pool, stated on top of it and never taken from inside it.", ja: "運営費はプールの20%です。プールとは別に明示し、プール内から差し引くことはありません。" },
           { en: "Each post has a payout cap, so one runaway clip cannot empty a pool.", ja: "投稿ごとに報酬の上限を設け、1本の動画が突出してもプールが枯渇しないようにします。" },
           { en: "Views, streams and chart positions are not guaranteed. A pool divided by its rate is a ceiling.", ja: "再生数、ストリーミング数、チャート順位は保証しません。プールを単価で割った数は上限値です。" },

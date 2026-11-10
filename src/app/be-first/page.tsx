@@ -13,7 +13,7 @@ const jp = Noto_Sans_JP({
 const TITLE = "BE:FIRST US Clipping Proposal | Crowd Control Digital";
 const DESC =
   "A US short-form clipping program for BE:FIRST, prepared for BMSG: where the group stands, the US gap, this week's trend board, the moments calendar, how the program runs and a three-tier menu.";
-const V = "1";
+const V = "2";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://proposal.crowdcontroldigital.com"),
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     url: "/be-first",
     siteName: "Crowd Control Digital",
     images: [{ url: `/images/be-first/og.png?v=${V}`, width: 1200, height: 630, alt: "BE:FIRST US clipping proposal by Crowd Control Digital" }],
-    videos: [{ url: `/images/be-first/share.mp4?v=${V}`, width: 1280, height: 720, type: "video/mp4" }],
+    videos: [{ url: `https://proposal.crowdcontroldigital.com/images/be-first/share.mp4?v=${V}`, width: 1280, height: 720, type: "video/mp4" }],
   },
   twitter: { card: "summary_large_image", title: TITLE, description: DESC, images: [`/images/be-first/og.png?v=${V}`] },
 };

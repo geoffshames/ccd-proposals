@@ -117,8 +117,8 @@ export const CROSSING = {
   ],
   whoTitle: { en: "The 15 most-viewed outside posts of 2026", ja: "2026年に最も再生された外部投稿15本" } as L,
   whoStrap: {
-    en: "Posts on other accounts that feature BE:FIRST or use an official BE:FIRST sound. Tap a bar for the detail.",
-    ja: "BE:FIRSTが登場する、または公式音源を使った他アカウントの投稿。バーをタップすると詳細を表示します。",
+    en: "Posts on other accounts that feature BE:FIRST or use an official BE:FIRST sound. Tap a bar for the detail and to play the post.",
+    ja: "BE:FIRSTが登場する、または公式音源を使った他アカウントの投稿。バーをタップすると詳細を表示し、投稿を再生できます。",
   } as L,
   kinds: {
     artist: { en: "Another artist's official account", ja: "他アーティストの公式アカウント" } as L,
@@ -178,7 +178,7 @@ export const FEED = {
     why: { en: "Why it catches", ja: "伸びる理由" } as L,
     proof: { en: "BE:FIRST already has proof", ja: "BE:FIRSTでの実績" } as L,
     yours: { en: "Make it yours, BE:FIRST", ja: "BE:FIRSTならこう作る" } as L,
-    example: { en: "Example post", ja: "参考投稿" } as L,
+    example: { en: "Logged example posts. Tap to play.", ja: "記録済みの参考投稿（タップで再生）" } as L,
     skip: { en: "Skip these", ja: "見送るトレンド" } as L,
   },
   cards: [
@@ -197,7 +197,7 @@ export const FEED = {
         en: "Creators cut every WATCH ME and NOW U KNOW guest pairing into one ranked clip. The ranking starts the argument in the comments.",
         ja: "「WATCH ME」と「NOW U KNOW」のゲストペアを1本にまとめたランキング動画。順位づけがコメント欄の議論を生みます。",
       } as L,
-      url: "https://www.tiktok.com/@roses_are_rosie/video/7702676777834925319",
+      posts: [{ h: "@roses_are_rosie", id: "7702676777834925319", v: 24800000 }, { h: "@jisoo", id: "7705807095454600449", v: 8200000 }, { h: "@jisoo", id: "7702359917029608725", v: 7200000 }],
     },
     {
       n: "02",
@@ -214,7 +214,7 @@ export const FEED = {
         en: "Isolate one eight-count of the NOW U KNOW hook. US dance creators learn it and post beside the group's clip.",
         ja: "「NOW U KNOW」のフックから8カウントを切り出し、米国のダンスクリエイターがBE:FIRSTの映像と並べて投稿します。",
       } as L,
-      url: "https://www.tiktok.com/@enhypen/video/7702096992058625281",
+      posts: [{ h: "@enhypen", id: "7702096992058625281", v: 7000000 }, { h: "@illit_official", id: "7703057299048238388", v: 3800000 }, { h: "@mai_linhi", id: "7703297629907586336", v: 445600 }],
     },
     {
       n: "03",
@@ -231,7 +231,7 @@ export const FEED = {
         en: "One-take vocal moments from the New York showcases, captioned for people hearing the group for the first time.",
         ja: "ニューヨーク公演のワンテイクのボーカル場面を、初めてBE:FIRSTを聴く人に向けたキャプションで。",
       } as L,
-      url: "https://www.tiktok.com/@babymonster_yg_tiktok/video/7701602152598523156",
+      posts: [{ h: "@babymonster_yg_tiktok", id: "7701602152598523156", v: 6000000 }, { h: "@babymonster_yg_tiktok", id: "7701594346881125653", v: 5800000 }, { h: "@yg_treasure_tiktok", id: "7702707810118782216", v: 2500000 }],
     },
     {
       n: "04",
@@ -248,7 +248,7 @@ export const FEED = {
         en: "Split screen: the group's dance practice on one side, a US creator trying to keep up on the other.",
         ja: "画面を2分割。片側にダンスプラクティス映像、もう片側に必死についていく米国クリエイター。",
       } as L,
-      url: "https://www.tiktok.com/@sierraandlaineydance/video/7696597924414852365",
+      posts: [{ h: "@minicaseoh6741", id: "7701089862232984846", v: 15600000 }, { h: "@sierraandlaineydance", id: "7696597924414852365", v: 11500000 }, { h: "@minicaseoh6741", id: "7702201239408266509", v: 11400000 }],
     },
     {
       n: "05",
@@ -265,7 +265,7 @@ export const FEED = {
         en: "Editors keep their own footage and close on two seconds of the group performing the hook. The song finally gets a face.",
         ja: "編集クリエイターは自分の素材を使い、最後の2秒にBE:FIRSTのパフォーマンスを入れます。曲に「顔」がつきます。",
       } as L,
-      url: "https://www.tiktok.com/@kziev/video/7681478135782690062",
+      posts: [{ h: "@kziev", id: "7681478135782690062", v: 9100000 }, { h: "@ddvelos", id: "7696974677620591886", v: 6400000 }, { h: "@3nocten", id: "7687206097882565910", v: 4800000 }],
     },
   ],
   skip: [
@@ -504,7 +504,7 @@ export const PROGRAM = {
     { h: { en: "Posting", ja: "投稿" } as L, b: { en: "Creators post from their own accounts on TikTok, Reels and Shorts.", ja: "クリエイターは自身のアカウントでTikTok、Reels、Shortsに投稿します。" } as L },
     { h: { en: "Review", ja: "審査" } as L, b: { en: "Every post is checked within 48 hours. Only approved views are paid.", ja: "すべての投稿を48時間以内に確認します。報酬の対象は承認済み再生数のみです。" } as L },
     { h: { en: "Read", ja: "判定" } as L, b: { en: "A day-7 read against a line set before launch, then money moves to the winning cuts.", ja: "開始前に決めた基準で7日目に判定し、成果の出ているカットへ予算を寄せます。" } as L },
-    { h: { en: "Close", ja: "終了" } as L, b: { en: "A performance report, and the unused pool goes back to BMSG.", ja: "成果報告書を提出し、未使用の報酬プールはBMSGに返金します。" } as L },
+    { h: { en: "Close", ja: "終了" } as L, b: { en: "A performance report with the cuts, creators and rates to carry forward.", ja: "成果報告書を提出します。次に引き継ぐカット、クリエイター、単価をまとめます。" } as L },
   ],
   control: [
     {
@@ -513,7 +513,7 @@ export const PROGRAM = {
         { en: "Which footage goes in the folder", ja: "フォルダに入れる映像" },
         { en: "The rules sheet and the off-limits list", ja: "ルールシートと禁止事項" },
         { en: "A veto on any post, any day", ja: "すべての投稿に対する拒否権（毎日行使可能）" },
-        { en: "Whether each next pool opens", ja: "次のプールを開くかどうか" },
+        { en: "Where the money moves after each day-7 read", ja: "7日目判定の後、予算をどこへ寄せるか" },
       ] as L[],
     },
     {
@@ -553,13 +553,14 @@ export const MENU = {
     en: "Three ways in. The test is built to decide the rest.",
     ja: "3つの始め方。テストは、その先を判断するために設計しています。",
   } as L,
+  currency: { en: "Currency", ja: "通貨" } as L,
   fxNote: { en: "Dollar figures are approximate at ¥158 to the dollar.", ja: "ドル表記は1ドル＝158円換算の概算です。" } as L,
   rows: {
     pool: { en: "Creator pool", ja: "クリエイター報酬プール" } as L,
     fee: { en: "Program fee, 20%", ja: "運営費（20%）" } as L,
     desk: { en: "Daily BE:FIRST trend brief", ja: "BE:FIRST専用デイリートレンドブリーフ" } as L,
     total: { en: "Total", ja: "合計" } as L,
-    ceiling: { en: "Pool ceiling at $1.00 per 1,000", ja: "プール上限（1,000再生あたり1ドルの場合）" } as L,
+    ceiling: { en: "Pool ceiling at $3.00 per 1,000", ja: "プール上限（1,000再生あたり3ドルの場合）" } as L,
     approve: { en: "Approve", ja: "承認する" } as L,
     approved: { en: "approved views", ja: "承認済み再生" } as L,
   },
@@ -569,7 +570,7 @@ export const MENU = {
       n: "01",
       name: { en: "Test", ja: "テスト" } as L,
       window: { en: "14 days. December 1 to 14, 2026", ja: "14日間（2026年12月1日〜14日）" } as L,
-      line: { en: "One pool on the New York footage and the NOW U KNOW sound, with a stop line on day 7.", ja: "ニューヨーク公演の映像と「NOW U KNOW」の音源でプール1本。7日目に中止判定ラインを設けます。" } as L,
+      line: { en: "One pool on the New York footage and the NOW U KNOW sound, with a read on day 7.", ja: "ニューヨーク公演の映像と「NOW U KNOW」の音源でプール1本。7日目に中間判定を行います。" } as L,
       pool: 800000,
       desk: 0,
       includes: [
@@ -580,8 +581,8 @@ export const MENU = {
         { en: "Day-7 read on December 8, report on December 21", ja: "12月8日に7日目判定、12月21日に報告書" },
       ] as L[],
       stop: {
-        en: "Stops on day 7 under 30 approved posts and 350,000 approved views. BMSG then pays the fee and what the posts earned; the rest of the pool returns.",
-        ja: "7日目時点で承認済み投稿30本未満かつ承認済み再生35万回未満の場合は中止します。その場合のお支払いは運営費と発生済み報酬のみで、残りのプールは返金します。",
+        en: "Day-7 read: under 30 approved posts and 350,000 approved views, the rate steps up and the brief is recut. The pool is committed once paid and runs until it is spent.",
+        ja: "7日目判定：承認済み投稿30本未満かつ承認済み再生35万回未満の場合は、単価を引き上げ、ブリーフを組み直します。プールはお支払い時点で確定し、使い切るまで運用します。",
       } as L,
     },
     {
@@ -599,8 +600,8 @@ export const MENU = {
         { en: "Weekly report and a moment report", ja: "週次レポートとモーメント報告書" },
       ] as L[],
       stop: {
-        en: "A day-7 line is set with BMSG before launch. Unused pool returns.",
-        ja: "7日目の判定基準は開始前にBMSGと決定します。未使用のプールは返金します。",
+        en: "A day-7 line is set with BMSG before launch. The pool is committed once paid and runs until it is spent.",
+        ja: "7日目の判定基準は開始前にBMSGと決定します。プールはお支払い時点で確定し、使い切るまで運用します。",
       } as L,
     },
     {
@@ -608,7 +609,7 @@ export const MENU = {
       n: "03",
       name: { en: "Season", ja: "シーズン" } as L,
       window: { en: "January to March 2027", ja: "2027年1月〜3月" } as L,
-      line: { en: "Three dome pools and a daily BE:FIRST brief for the group's own team. Each pool opens only if the one before it cleared its line.", ja: "ドーム3公演分のプールと、運営チーム向けのBE:FIRST専用デイリーブリーフ。各プールは、前のプールが基準を満たした場合のみ開きます。" } as L,
+      line: { en: "Three dome pools and a daily BE:FIRST brief for the group's own team. Winning cuts and creators carry from pool to pool.", ja: "ドーム3公演分のプールと、運営チーム向けのBE:FIRST専用デイリーブリーフ。成果の出たカットとクリエイターを次のプールへ引き継ぎます。" } as L,
       pool: 9000000,
       desk: 2250000,
       includes: [
@@ -619,8 +620,8 @@ export const MENU = {
         { en: "One season report comparing every moment", ja: "全モーメントを比較するシーズン報告書" },
       ] as L[],
       stop: {
-        en: "Each pool is its own decision. A pool that does not open is not charged.",
-        ja: "プールごとに実施を判断します。開かなかったプールの費用は発生しません。",
+        en: "The season is one commitment across three pools. Any balance left in one pool carries into the next.",
+        ja: "シーズンは3つのプールをまとめた1つの契約です。あるプールに残った予算は次のプールへ繰り越します。",
       } as L,
     },
   ],
@@ -636,8 +637,8 @@ export const MENU = {
     fee: { en: "Program fee, 20% on top", ja: "運営費（プールの20%を別途）" } as L,
     total: { en: "Total", ja: "合計" } as L,
     note: {
-      en: "Tests open at $1.00, where music clipping campaigns start. The rate rises toward $2.00 only if creators are slow to take the footage. Any platform fee is itemised before launch.",
-      ja: "テストは音楽クリッピング施策の標準的な開始単価である1.00ドルから始めます。クリエイターの参加が鈍い場合のみ、2.00ドルを上限に引き上げます。プラットフォーム手数料がある場合は開始前に明示します。",
+      en: "Pools open at $3.00 per 1,000 approved views. The rate steps to $4.00 or $5.00 when a format needs larger creators or creators are slow to take the footage. Any platform fee is itemised before launch.",
+      ja: "プールは承認済み1,000再生あたり3.00ドルで開始します。より大きなクリエイターが必要な型や、クリエイターの参加が鈍い場合は、4.00ドルまたは5.00ドルに引き上げます。プラットフォーム手数料がある場合は開始前に明示します。",
     } as L,
   },
   portal: { en: "Open rates and evidence", ja: "単価と根拠を見る" } as L,
@@ -648,13 +649,13 @@ export const MENU = {
 export const NEXT = {
   title: { en: "Next Steps", ja: "次のステップ" } as L,
   steps: [
-    { h: { en: "Pick a way in", ja: "始め方を選ぶ" } as L, b: { en: "Test, Moment or Season. Approve here or reply to Geoff.", ja: "テスト、モーメント、シーズンから選択。このページで承認、またはGeoffまでご返信ください。" } as L },
+    { h: { en: "Pick a way in", ja: "始め方を選ぶ" } as L, b: { en: "Test, Moment or Season. Approve here or reply to us.", ja: "テスト、モーメント、シーズンから選択。このページで承認、またはメールでご連絡ください。" } as L },
     { h: { en: "Share the folder", ja: "素材フォルダを共有" } as L, b: { en: "The New York footage and any dance practice video, with a note on what is cleared.", ja: "ニューヨーク公演の映像とダンスプラクティス動画を、使用可能範囲のメモとともに。" } as L },
     { h: { en: "See three sample clips", ja: "サンプルクリップ3本を確認" } as L, b: { en: "Cut from the folder within five working days, before any money moves.", ja: "フォルダ受領から5営業日以内に制作。予算投下の前にご確認いただきます。" } as L },
     { h: { en: "Meet the roster", ja: "クリエイター陣を確認" } as L, b: { en: "Ten or more named US creators with their audience splits.", ja: "米国クリエイター10名以上を、視聴者の内訳とともに提示します。" } as L },
     { h: { en: "Open the pool", ja: "プールを開始" } as L, b: { en: "December 1, three weeks before Tokyo Dome.", ja: "12月1日開始。東京ドームの3週間前です。" } as L },
   ],
-  cta: { en: "Talk to Geoff", ja: "Geoffに連絡する" } as L,
+  cta: { en: "Talk To Us", ja: "お問い合わせ" } as L,
   close: {
     en: "The domes are booked. Let the American feed see them.",
     ja: "ドームはもう決まっています。その景色を、米国のフィードへ。",
@@ -664,22 +665,34 @@ export const NEXT = {
 export const AGENCY = {
   title: { en: "Crowd Control Digital", ja: "Crowd Control Digitalについて" } as L,
   body: {
-    en: "Crowd Control is a music marketing agency in Los Angeles. We run clipping and creator campaigns, paid media and release strategy for artists and labels, and we build our own trend and video intelligence so the creative brief starts from what is working this week.",
-    ja: "Crowd Controlはロサンゼルスの音楽マーケティングエージェンシーです。アーティストやレーベルのクリッピング／クリエイター施策、広告運用、リリース戦略を手がけています。トレンド分析と映像分析の仕組みを自社で開発し、「今週、何が伸びているか」を起点にクリエイティブを設計します。",
+    en: "A culture-first marketing agency for brands, artists and platforms since 2015. Strategy, creative and paid media under one roof, measured in attention, sales, streams and fans.",
+    ja: "2015年創業。ブランド、アーティスト、プラットフォームのための、カルチャーを起点としたマーケティングエージェンシーです。戦略、クリエイティブ、広告運用を一つの体制で担い、注目、売上、ストリーミング、ファンの数で成果を測ります。",
   } as L,
+  servicesLabel: { en: "What we do", ja: "サービス" } as L,
+  inPlan: { en: "In this program", ja: "本プログラムで活用" } as L,
   services: [
-    { h: { en: "Clipping and creators", ja: "クリッピング／クリエイター" } as L, b: { en: "Recruiting, briefs, review and payout, with the fee stated on top of the pool.", ja: "募集、ブリーフ、審査、報酬支払いまで。運営費はプールとは別に明示します。" } as L },
-    { h: { en: "Trend intelligence", ja: "トレンドインテリジェンス" } as L, b: { en: "A daily, graded read of TikTok sounds and formats, written per artist.", ja: "TikTokの音源と型を毎日計測し、答え合わせを行い、アーティストごとに書き起こします。" } as L },
-    { h: { en: "Paid media", ja: "広告運用" } as L, b: { en: "Meta, TikTok and YouTube for releases, tours and festivals.", ja: "リリース、ツアー、フェスティバルに向けたMeta、TikTok、YouTube広告。" } as L },
-    { h: { en: "Release and tour strategy", ja: "リリース／ツアー戦略" } as L, b: { en: "Campaign plans built backwards from the dates that matter.", ja: "重要な日程から逆算して組み立てるキャンペーン設計。" } as L },
+    { h: { en: "Strategy & Consulting", ja: "戦略／コンサルティング" } as L, b: { en: "Release, launch and growth strategy built on real data, from a single drop to a twelve-month plan.", ja: "実データに基づくリリース、ローンチ、成長戦略。単発のリリースから12か月計画まで。" } as L, on: true },
+    { h: { en: "Social Listening", ja: "ソーシャルリスニング" } as L, b: { en: "Daily sentiment and share-of-voice dashboards across every platform.", ja: "全プラットフォームの反応と言及シェアを毎日可視化するダッシュボード。" } as L, on: true },
+    { h: { en: "Creative Services", ja: "クリエイティブ制作" } as L, b: { en: "Campaign creative, content and edits made for the feed they will run in.", ja: "配信されるフィードに合わせて制作するキャンペーンクリエイティブ、コンテンツ、編集。" } as L, on: false },
+    { h: { en: "Social Media Management", ja: "SNS運用" } as L, b: { en: "Channels run day to day: the calendar, the posts, the replies and the read on what is working.", ja: "日々のチャンネル運用。投稿計画、投稿、返信、そして何が効いているかの分析。" } as L, on: false },
+    { h: { en: "Creator Marketing & Clipping", ja: "クリエイター施策／クリッピング" } as L, b: { en: "Creators, clippers and UGC that reach people who would never follow your account.", ja: "公式アカウントをフォローしない層に届く、クリエイター、クリッパー、UGC。" } as L, on: true },
+    { h: { en: "Paid Media", ja: "広告運用" } as L, b: { en: "Paid social, search and video bought against outcomes: streams, tickets and sales.", ja: "SNS広告、検索広告、動画広告を、ストリーミング、チケット、売上という成果に対して運用。" } as L, on: false },
+    { h: { en: "Email & SMS", ja: "メール／SMS" } as L, b: { en: "Programs that turn followers into a list you own, and the list into tickets and streams.", ja: "フォロワーを自社のリストに変え、リストをチケットとストリーミングにつなげる施策。" } as L, on: false },
+    { h: { en: "Billboards & OOH", ja: "屋外広告（OOH）" } as L, b: { en: "Out-of-home placements, from a single board to a city takeover.", ja: "1枚のビルボードから街全体のジャックまで。" } as L, on: false },
+    { h: { en: "Event Production", ja: "イベント制作" } as L, b: { en: "Launch events, activations and fan experiences.", ja: "ローンチイベント、アクティベーション、ファン体験。" } as L, on: false },
+    { h: { en: "World Building & Tech", ja: "ワールドビルディング／テック" } as L, b: { en: "Custom sites, games and member systems, built and run in house.", ja: "特設サイト、ゲーム、会員システムを社内で開発、運用。" } as L, on: false },
+    { h: { en: "AI-Enablement", ja: "AI活用支援" } as L, b: { en: "Custom AI agents and tools for marketing teams, and getting named when people ask AI.", ja: "マーケティングチーム向けのAIエージェントやツールの開発。AIに尋ねられたときに名前が挙がるための施策。" } as L, on: true },
   ],
-  clientsLabel: { en: "Select clients", ja: "主な取引先" } as L,
-  clients: ["NBA", "Golden State Warriors", "Apple", "Amazon", "Beats By Dre", "Warner Bros", "Monster Energy", "Foot Locker", "Porsche", "Edition Hotels", "Malbon Golf", "Polymarket", "Weedmaps", "Barker Wellness", "Aplós", "Prima"],
+  clientGroups: [
+    { label: { en: "Music", ja: "音楽" } as L, names: ["bbno$", "Peso Pluma", "KSI", "ILLENIUM", "Miguel", "82MAJOR", "FIFTY FIFTY", "Liza Soberano", "Emotional Oranges", "ATLiens", "Habstrakt", "Bad Tuner"] },
+    { label: { en: "Live", ja: "ライブ" } as L, names: ["Live Nation", "AEG", "Insomniac Events", "Vibra Urbana", "Brooklyn Mirage", "Avant Gardner"] },
+    { label: { en: "Brands", ja: "ブランド" } as L, names: ["NBA", "Golden State Warriors", "Apple", "Amazon", "Beats By Dre", "Warner Bros", "Monster Energy", "Foot Locker", "Porsche"] },
+  ],
 };
 
 export const FOOT = {
   disclaimer: {
-    en: "BE:FIRST and BMSG are trademarks of BMSG Inc. All artwork on this page is original and illustrative, made for this proposal. No likeness or voice of any member has been generated. Social figures are public counts as scraped on November 9, 2026.",
-    ja: "BE:FIRSTおよびBMSGは株式会社BMSGの商標です。本ページのアートワークはすべて本提案のために制作したオリジナルのイメージです。メンバーの肖像および声は一切生成していません。SNSの数値は2026年11月9日時点で取得した公開データです。",
+    en: "BE:FIRST and BMSG are trademarks of BMSG Inc. All artwork on this page is original and illustrative, made for this proposal. No likeness or voice of any member has been generated. Post thumbnails belong to their creators and play through TikTok. Social figures are public counts as scraped on November 9, 2026.",
+    ja: "BE:FIRSTおよびBMSGは株式会社BMSGの商標です。本ページのアートワークはすべて本提案のために制作したオリジナルのイメージです。メンバーの肖像および声は一切生成していません。投稿のサムネイルは各投稿者に帰属し、TikTokのプレーヤーで再生されます。SNSの数値は2026年11月9日時点で取得した公開データです。",
   } as L,
 };
