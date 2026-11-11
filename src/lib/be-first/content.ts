@@ -151,8 +151,8 @@ export const CROSSING = {
     { value: "59%", label: { en: "of captions in Japanese", ja: "キャプションが日本語の割合" } as L },
   ],
   read: {
-    en: "The biggest outside posts come from two places: other artists' official accounts, and American creators who took the song and left the group out. A funded US roster cutting BMSG's own footage fills the space between them.",
-    ja: "外部の大きな投稿は2種類に分かれます。他アーティストの公式アカウントと、楽曲だけを使いBE:FIRSTを映していない米国クリエイターです。BMSGの公式映像を編集する米国クリエイター陣に報酬を用意することで、この間を埋めます。",
+    en: "The biggest outside posts come from two places: other artists' official accounts, and American creators who took the song and left the group out. Funded US creators cutting BMSG's own footage on TikTok fill the space between them.",
+    ja: "外部の大きな投稿は2種類に分かれます。他アーティストの公式アカウントと、楽曲だけを使いBE:FIRSTを映していない米国クリエイターです。BMSGの公式映像をTikTok向けに編集する米国クリエイターに報酬を用意することで、この間を埋めます。",
   } as L,
   portal: { en: "Open the data and method", ja: "データと算出方法を見る" } as L,
 };
@@ -407,8 +407,8 @@ export const MOMENTS = {
       name: { en: "Belluna Dome", ja: "ベルーナドーム" } as L,
       when: { en: "Pool March 3 to 23. Shows March 6 and 7, 2027", ja: "プール期間：3月3日〜23日。公演：2027年3月6日、7日" } as L,
       body: {
-        en: "The third pool. By now the roster knows the footage, and the season report compares all three moments on one page.",
-        ja: "3つ目のプール。この時点でクリエイター陣は素材を熟知しています。シーズン報告書で3つのモーメントを1枚で比較します。",
+        en: "The third pool. By now the creators know the footage, and the season report compares all three moments on one page.",
+        ja: "3つ目のプール。この時点でクリエイターは素材を熟知しています。シーズン報告書で3つのモーメントを1枚で比較します。",
       } as L,
     },
     {
@@ -500,8 +500,8 @@ export const PROGRAM = {
   steps: [
     { h: { en: "Folder", ja: "素材フォルダ" } as L, b: { en: "BMSG approves a footage folder once: stage cameras, dance practice, behind the scenes.", ja: "BMSGが素材フォルダを一度だけ承認します。ステージ映像、ダンスプラクティス、舞台裏など。" } as L },
     { h: { en: "Brief", ja: "ブリーフ" } as L, b: { en: "The six formats, the facts, the handles, the off-limits list and this week's trend board.", ja: "6つの型、基本情報、アカウント名、禁止事項、今週のトレンドボードをまとめます。" } as L },
-    { h: { en: "Roster", ja: "クリエイター陣" } as L, b: { en: "At least ten named US creators with their audience country splits, shown to BMSG before launch.", ja: "米国クリエイター10名以上を、視聴者の国別比率とともに開始前にBMSGへ提示します。" } as L },
-    { h: { en: "Posting", ja: "投稿" } as L, b: { en: "Creators post from their own accounts on TikTok, Reels and Shorts.", ja: "クリエイターは自身のアカウントでTikTok、Reels、Shortsに投稿します。" } as L },
+    { h: { en: "Creators", ja: "クリエイター" } as L, b: { en: "US creators are recruited for the brief through our clipping network.", ja: "当社のクリッピングネットワークを通じて、ブリーフに合う米国クリエイターを募集します。" } as L },
+    { h: { en: "Posting", ja: "投稿" } as L, b: { en: "Creators post on TikTok, from their own accounts.", ja: "クリエイターは自身のTikTokアカウントで投稿します。" } as L },
     { h: { en: "Review", ja: "審査" } as L, b: { en: "Every post is checked within 48 hours. Only approved views are paid.", ja: "すべての投稿を48時間以内に確認します。報酬の対象は承認済み再生数のみです。" } as L },
     { h: { en: "Read", ja: "判定" } as L, b: { en: "A day-7 read against a line set before launch, then money moves to the winning cuts.", ja: "開始前に決めた基準で7日目に判定し、成果の出ているカットへ予算を寄せます。" } as L },
     { h: { en: "Close", ja: "終了" } as L, b: { en: "A performance report with the cuts, creators and rates to carry forward.", ja: "成果報告書を提出します。次に引き継ぐカット、クリエイター、単価をまとめます。" } as L },
@@ -512,7 +512,7 @@ export const PROGRAM = {
       items: [
         { en: "Which footage goes in the folder", ja: "フォルダに入れる映像" },
         { en: "The rules sheet and the off-limits list", ja: "ルールシートと禁止事項" },
-        { en: "A veto on any post, any day", ja: "すべての投稿に対する拒否権（毎日行使可能）" },
+        { en: "The rates and the size of each pool", ja: "単価と各プールの規模" },
         { en: "Where the money moves after each day-7 read", ja: "7日目判定の後、予算をどこへ寄せるか" },
       ] as L[],
     },
@@ -521,7 +521,7 @@ export const PROGRAM = {
       items: [
         { en: "The story and the cut, inside the rules", ja: "ルールの範囲内での構成と編集" },
         { en: "Which format from the menu", ja: "メニューのどの型を使うか" },
-        { en: "Which platform, on their own account", ja: "自身のアカウントでどのプラットフォームに投稿するか" },
+        { en: "When and how often they post, on their own TikTok accounts", ja: "自身のTikTokアカウントで、いつ、どの頻度で投稿するか" },
       ] as L[],
     },
     {
@@ -576,8 +576,8 @@ export const MENU = {
       includes: [
         { en: "Folder setup, rules sheet and brief", ja: "素材フォルダの整備、ルールシート、ブリーフ" },
         { en: "Three sample clips before any money moves", ja: "予算投下前にサンプルクリップ3本" },
-        { en: "At least 10 named US creators", ja: "米国クリエイター10名以上（指名）" },
-        { en: "48-hour review and a daily BMSG veto", ja: "48時間以内の審査と、BMSGによる日次の拒否権" },
+        { en: "US creators recruited for the brief, posting on TikTok", ja: "ブリーフに合わせて募集した米国クリエイターがTikTokに投稿" },
+        { en: "Every post reviewed within 48 hours, before it is paid", ja: "すべての投稿を48時間以内に審査し、その後に報酬を支払い" },
         { en: "Day-7 read on December 8, report on December 21", ja: "12月8日に7日目判定、12月21日に報告書" },
       ] as L[],
       stop: {
@@ -595,7 +595,7 @@ export const MENU = {
       desk: 0,
       includes: [
         { en: "Everything in the test", ja: "テストの内容すべて" },
-        { en: "A larger roster, recruited by format", ja: "型ごとに募集する、より大きなクリエイター陣" },
+        { en: "More creators, recruited by format", ja: "型ごとに募集する、より多くのクリエイター" },
         { en: "The daily trend board for the length of the pool", ja: "プール期間中のデイリートレンドボード" },
         { en: "Weekly report and a moment report", ja: "週次レポートとモーメント報告書" },
       ] as L[],
@@ -652,7 +652,7 @@ export const NEXT = {
     { h: { en: "Pick a way in", ja: "始め方を選ぶ" } as L, b: { en: "Test, Moment or Season. Approve here or reply to us.", ja: "テスト、モーメント、シーズンから選択。このページで承認、またはメールでご連絡ください。" } as L },
     { h: { en: "Share the folder", ja: "素材フォルダを共有" } as L, b: { en: "The New York footage and any dance practice video, with a note on what is cleared.", ja: "ニューヨーク公演の映像とダンスプラクティス動画を、使用可能範囲のメモとともに。" } as L },
     { h: { en: "See three sample clips", ja: "サンプルクリップ3本を確認" } as L, b: { en: "Cut from the folder within five working days, before any money moves.", ja: "フォルダ受領から5営業日以内に制作。予算投下の前にご確認いただきます。" } as L },
-    { h: { en: "Meet the roster", ja: "クリエイター陣を確認" } as L, b: { en: "Ten or more named US creators with their audience splits.", ja: "米国クリエイター10名以上を、視聴者の内訳とともに提示します。" } as L },
+    { h: { en: "Sign off the brief", ja: "ブリーフを承認" } as L, b: { en: "The formats, the rules sheet and the rates, approved once.", ja: "型、ルールシート、単価をまとめて一度で承認いただきます。" } as L },
     { h: { en: "Open the pool", ja: "プールを開始" } as L, b: { en: "December 1, three weeks before Tokyo Dome.", ja: "12月1日開始。東京ドームの3週間前です。" } as L },
   ],
   cta: { en: "Talk To Us", ja: "お問い合わせ" } as L,
