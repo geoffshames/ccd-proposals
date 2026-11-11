@@ -327,14 +327,16 @@ function PhoneMock({ id, caption }: { id: string; caption: string }) {
           </>
         )}
         {id === "dance" && (
-          <div className={s.mockSplit}>
-            <div>
-              <Beams />
+          <>
+            <Beams />
+            <div className={s.mockCounts}>
+              {[1, 2, 3, 4, 5, 6, 7, 8].map((n) => (
+                <b key={n} className={n === 3 ? s.mockCountOn : ""}>
+                  {n}
+                </b>
+              ))}
             </div>
-            <div>
-              <span className={s.mockSolo} />
-            </div>
-          </div>
+          </>
         )}
         {id === "edit" && (
           <div className={s.mockEdit}>

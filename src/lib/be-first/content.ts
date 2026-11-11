@@ -151,8 +151,8 @@ export const CROSSING = {
     { value: "59%", label: { en: "of captions in Japanese", ja: "キャプションが日本語の割合" } as L },
   ],
   read: {
-    en: "The biggest outside posts come from two places: other artists' official accounts, and American creators who took the song and left the group out. Funded US creators cutting BMSG's own footage on TikTok fill the space between them.",
-    ja: "外部の大きな投稿は2種類に分かれます。他アーティストの公式アカウントと、楽曲だけを使いBE:FIRSTを映していない米国クリエイターです。BMSGの公式映像をTikTok向けに編集する米国クリエイターに報酬を用意することで、この間を埋めます。",
+    en: "The biggest outside posts come from two places: other artists' official accounts, and American creators who took the song and left the group out. Funded US editors cutting BMSG's own footage on TikTok fill the space between them.",
+    ja: "外部の大きな投稿は2種類に分かれます。他アーティストの公式アカウントと、楽曲だけを使いBE:FIRSTを映していない米国クリエイターです。BMSGの公式映像をTikTok向けに編集する米国のエディターに報酬を用意することで、この間を埋めます。",
   } as L,
   portal: { en: "Open the data and method", ja: "データと算出方法を見る" } as L,
 };
@@ -194,7 +194,7 @@ export const FEED = {
         ja: "BE:FIRSTの上位投稿もペア動画です。KATSEYEのYOONCHAE（Reels 240万）、IVEのREI（170万）、&TEAMのK（TikTok 140万）。",
       } as L,
       yours: {
-        en: "Creators cut every WATCH ME and NOW U KNOW guest pairing into one ranked clip. The ranking starts the argument in the comments.",
+        en: "Editors cut every WATCH ME and NOW U KNOW guest pairing into one ranked clip. The ranking starts the argument in the comments.",
         ja: "「WATCH ME」と「NOW U KNOW」のゲストペアを1本にまとめたランキング動画。順位づけがコメント欄の議論を生みます。",
       } as L,
       posts: [{ h: "@roses_are_rosie", id: "7702676777834925319", v: 24800000 }, { h: "@jisoo", id: "7705807095454600449", v: 8200000 }, { h: "@jisoo", id: "7702359917029608725", v: 7200000 }],
@@ -211,8 +211,8 @@ export const FEED = {
         ja: "「NOW U KNOW」のフック音源は公開6日で67本。ほぼすべてファンによる投稿です。",
       } as L,
       yours: {
-        en: "Isolate one eight-count of the NOW U KNOW hook. US dance creators learn it and post beside the group's clip.",
-        ja: "「NOW U KNOW」のフックから8カウントを切り出し、米国のダンスクリエイターがBE:FIRSTの映像と並べて投稿します。",
+        en: "Editors isolate one eight-count of the NOW U KNOW hook and loop it with the counts on screen, so it is easy to learn and cover.",
+        ja: "エディターが「NOW U KNOW」のフックから8カウントを切り出し、カウントを表示してループさせます。覚えやすく、カバーしやすい形です。",
       } as L,
       posts: [{ h: "@enhypen", id: "7702096992058625281", v: 7000000 }, { h: "@illit_official", id: "7703057299048238388", v: 3800000 }, { h: "@mai_linhi", id: "7703297629907586336", v: 445600 }],
     },
@@ -245,8 +245,8 @@ export const FEED = {
         ja: "Elliana WalmsleyとSOTAの動画は67万再生。米国ダンサーによる「BRUCE WAYNE」チャレンジも38万再生を超えています。",
       } as L,
       yours: {
-        en: "Split screen: the group's dance practice on one side, a US creator trying to keep up on the other.",
-        ja: "画面を2分割。片側にダンスプラクティス映像、もう片側に必死についていく米国クリエイター。",
+        en: "Editors cut the dance practice against rehearsal outtakes: one member nails it, another barely keeps up.",
+        ja: "エディターがダンスプラクティスとリハーサルのNGシーンを並べます。1人は完璧、もう1人はついていくのがやっと。",
       } as L,
       posts: [{ h: "@minicaseoh6741", id: "7701089862232984846", v: 15600000 }, { h: "@sierraandlaineydance", id: "7696597924414852365", v: 11500000 }, { h: "@minicaseoh6741", id: "7702201239408266509", v: 11400000 }],
     },
@@ -256,14 +256,14 @@ export const FEED = {
       name: { en: "Character edits", ja: "キャラクター編集動画" } as L,
       ref: "Rochelle Jordan, Follow Me",
       data: { en: "Videos using the sound: 34.7K to 36.1K in 3 days (+4%)", ja: "音源使用動画：3日間で3.47万本→3.61万本（+4%）" } as L,
-      why: { en: "Editors need a track that hits on the cut. Any fandom can use it.", ja: "編集クリエイターが求めるのは、カットに合わせて決まる曲。どのファンダムでも使えます。" } as L,
+      why: { en: "Editors need a track that hits on the cut. Any fandom can use it.", ja: "エディターが求めるのは、カットに合わせて決まる曲。どのファンダムでも使えます。" } as L,
       proof: {
         en: "A TV character edit on BRUCE WAYNE reached 1.9M views. The song already works as an edit bed.",
         ja: "「BRUCE WAYNE」を使った海外ドラマの編集動画が190万再生。この曲はすでに編集用の音源として機能しています。",
       } as L,
       yours: {
         en: "Editors keep their own footage and close on two seconds of the group performing the hook. The song finally gets a face.",
-        ja: "編集クリエイターは自分の素材を使い、最後の2秒にBE:FIRSTのパフォーマンスを入れます。曲に「顔」がつきます。",
+        ja: "エディターは自分の素材を使い、最後の2秒にBE:FIRSTのパフォーマンスを入れます。曲に「顔」がつきます。",
       } as L,
       posts: [{ h: "@kziev", id: "7681478135782690062", v: 9100000 }, { h: "@ddvelos", id: "7696974677620591886", v: 6400000 }, { h: "@3nocten", id: "7687206097882565910", v: 4800000 }],
     },
@@ -283,8 +283,8 @@ export const FEED = {
   ],
   indexCols: { share: { en: "share of posts", ja: "投稿に占める割合" } as L, idx: { en: "views index", ja: "再生指数" } as L },
   indexRead: {
-    en: "Half the feed is one format, and the formats that outperform are the ones posted least. Raw stage cuts trail the median, which is the footage creators are best at re-framing.",
-    ja: "投稿の半分が同じ型で、最も伸びる型ほど投稿数が少ない状態です。ライブ映像はそのままでは中央値を下回りますが、クリエイターが最も得意とするのがこの素材の再編集です。",
+    en: "Half the feed is one format, and the formats that outperform are the ones posted least. Raw stage cuts trail the median, which is the footage editors are best at re-framing.",
+    ja: "投稿の半分が同じ型で、最も伸びる型ほど投稿数が少ない状態です。ライブ映像はそのままでは中央値を下回りますが、エディターが最も得意とするのがこの素材の再編集です。",
   } as L,
   peersTitle: { en: "Median TikTok views per post, official accounts", ja: "公式TikTokの投稿1本あたり再生数（中央値）" } as L,
   peers: [
@@ -395,8 +395,8 @@ export const MOMENTS = {
       name: { en: "Fukuoka", ja: "福岡" } as L,
       when: { en: "Pool February 10 to March 2. Shows February 13 and 14, 2027", ja: "プール期間：2月10日〜3月2日。公演：2027年2月13日、14日" } as L,
       body: {
-        en: "The second dome pool carries forward the cuts and creators that won in January, so the money starts on proven formats.",
-        ja: "2つ目のドームプール。1月に成果を出したカットとクリエイターを引き継ぎ、実績のある型から予算を投下します。",
+        en: "The second dome pool carries forward the cuts and editors that won in January, so the money starts on proven formats.",
+        ja: "2つ目のドームプール。1月に成果を出したカットとエディターを引き継ぎ、実績のある型から予算を投下します。",
       } as L,
     },
     {
@@ -407,8 +407,8 @@ export const MOMENTS = {
       name: { en: "Belluna Dome", ja: "ベルーナドーム" } as L,
       when: { en: "Pool March 3 to 23. Shows March 6 and 7, 2027", ja: "プール期間：3月3日〜23日。公演：2027年3月6日、7日" } as L,
       body: {
-        en: "The third pool. By now the creators know the footage, and the season report compares all three moments on one page.",
-        ja: "3つ目のプール。この時点でクリエイターは素材を熟知しています。シーズン報告書で3つのモーメントを1枚で比較します。",
+        en: "The third pool. By now the editors know the footage, and the season report compares all three moments on one page.",
+        ja: "3つ目のプール。この時点でエディターは素材を熟知しています。シーズン報告書で3つのモーメントを1枚で比較します。",
       } as L,
     },
     {
@@ -437,13 +437,13 @@ export const MOMENTS = {
 export const PROGRAM = {
   title: { en: "How the Program Runs", ja: "プログラムの進め方" } as L,
   strap: {
-    en: "BMSG controls the footage, the rules and the money. Creators control the cut.",
-    ja: "映像、ルール、予算はBMSGが管理します。編集はクリエイターに委ねます。",
+    en: "BMSG controls the footage, the rules and the money. Editors control the cut.",
+    ja: "映像、ルール、予算はBMSGが管理します。編集はエディターに委ねます。",
   } as L,
   formatsTitle: { en: "The clip menu", ja: "クリップメニュー" } as L,
   formatsStrap: {
-    en: "Six formats in the brief, each tied to a post that already worked. Creators choose; nothing is assigned.",
-    ja: "ブリーフに載せる6つの型。いずれも実績のある投稿に基づいています。選ぶのはクリエイターで、割り当ては行いません。",
+    en: "Six formats in the brief, each tied to a post that already worked. Editors choose; nothing is assigned.",
+    ja: "ブリーフに載せる6つの型。いずれも実績のある投稿に基づいています。選ぶのはエディターで、割り当ては行いません。",
   } as L,
   formats: [
     {
@@ -458,7 +458,7 @@ export const PROGRAM = {
       n: "02",
       id: "ranking",
       name: { en: "Guest pairing ranking", ja: "ゲストペアのランキング" } as L,
-      what: { en: "Every guest pairing on one song, ranked by the creator. The ranking is the hook.", ja: "1曲のゲストペアをすべて並べ、クリエイターが順位づけ。順位そのものがフックになります。" } as L,
+      what: { en: "Every guest pairing on one song, cut together and ranked. The ranking is the hook.", ja: "1曲のゲストペアをすべてつなぎ、順位をつけます。順位そのものがフックになります。" } as L,
       proof: { en: "Pairings with KATSEYE, IVE and &TEAM are the group's top posts of 2026.", ja: "KATSEYE、IVE、&TEAMとのペア動画は2026年の上位投稿です。" } as L,
       caption: { en: "ranking every WATCH ME collab", ja: "ranking every WATCH ME collab" } as L,
     },
@@ -466,23 +466,23 @@ export const PROGRAM = {
       n: "03",
       id: "pov",
       name: { en: "Fan POV edit", ja: "ファン目線の編集" } as L,
-      what: { en: "The creator's own frame around the footage: a reaction, a first listen, a front-row caption.", ja: "映像にクリエイター自身の視点を重ねます。リアクション、初見の感想、最前列のキャプション。" } as L,
+      what: { en: "The footage framed by a caption in a fan's voice: a first listen, a ranking, a front-row point of view.", ja: "ファンの声で書いたキャプションで映像を見せます。初見の感想、ランキング、最前列の視点。" } as L,
       proof: { en: "A 262-follower account reached 817,500 with a crossover edit.", ja: "フォロワー262人のアカウントが、クロスオーバー編集で81.7万再生。" } as L,
       caption: { en: "POV: front row at Tokyo Dome", ja: "POV: front row at Tokyo Dome" } as L,
     },
     {
       n: "04",
       id: "dance",
-      name: { en: "Dance creator take", ja: "ダンスクリエイターの挑戦" } as L,
-      what: { en: "A US dance account learns eight counts and posts beside the group's clip.", ja: "米国のダンスアカウントが8カウントを覚え、BE:FIRSTの映像と並べて投稿します。" } as L,
+      name: { en: "Choreography breakdown", ja: "振付のブレイクダウン" } as L,
+      what: { en: "Eight counts of the dance practice, slowed and looped with the counts on screen, so dancers can learn it.", ja: "ダンスプラクティスの8カウントをスローとループで見せ、画面にカウントを表示。ダンサーが覚えやすい形にします。" } as L,
       proof: { en: "Elliana Walmsley with SOTA: 672,600. BRUCE WAYNE covers from US dancers: up to 389,000.", ja: "Elliana Walmsley × SOTA：67.2万再生。米国ダンサーの「BRUCE WAYNE」カバー：最大38.9万再生。" } as L,
-      caption: { en: "trying the NOW U KNOW hook", ja: "trying the NOW U KNOW hook" } as L,
+      caption: { en: "learn the NOW U KNOW hook in 8 counts", ja: "learn the NOW U KNOW hook in 8 counts" } as L,
     },
     {
       n: "05",
       id: "edit",
       name: { en: "Edit bed with a face", ja: "「顔」のある編集音源" } as L,
-      what: { en: "Editors cut their own fandom to the song and close on two seconds of the group.", ja: "編集クリエイターが自分のファンダムの映像を曲に合わせ、最後の2秒でBE:FIRSTを映します。" } as L,
+      what: { en: "Editors cut their own fandom to the song and close on two seconds of the group.", ja: "編集エディターが自分のファンダムの映像を曲に合わせ、最後の2秒でBE:FIRSTを映します。" } as L,
       proof: { en: "A TV character edit on BRUCE WAYNE reached 1.9M without showing the group.", ja: "「BRUCE WAYNE」を使ったドラマ編集動画は、BE:FIRSTを映さずに190万再生。" } as L,
       caption: { en: "song: BRUCE WAYNE by BE:FIRST", ja: "song: BRUCE WAYNE by BE:FIRST" } as L,
     },
@@ -500,11 +500,11 @@ export const PROGRAM = {
   steps: [
     { h: { en: "Folder", ja: "素材フォルダ" } as L, b: { en: "BMSG approves a footage folder once: stage cameras, dance practice, behind the scenes.", ja: "BMSGが素材フォルダを一度だけ承認します。ステージ映像、ダンスプラクティス、舞台裏など。" } as L },
     { h: { en: "Brief", ja: "ブリーフ" } as L, b: { en: "The six formats, the facts, the handles, the off-limits list and this week's trend board.", ja: "6つの型、基本情報、アカウント名、禁止事項、今週のトレンドボードをまとめます。" } as L },
-    { h: { en: "Creators", ja: "クリエイター" } as L, b: { en: "US creators are recruited for the brief through our clipping network.", ja: "当社のクリッピングネットワークを通じて、ブリーフに合う米国クリエイターを募集します。" } as L },
-    { h: { en: "Posting", ja: "投稿" } as L, b: { en: "Creators post on TikTok, from their own accounts.", ja: "クリエイターは自身のTikTokアカウントで投稿します。" } as L },
-    { h: { en: "Review", ja: "審査" } as L, b: { en: "Every post is checked within 48 hours. Only approved views are paid.", ja: "すべての投稿を48時間以内に確認します。報酬の対象は承認済み再生数のみです。" } as L },
+    { h: { en: "Editors", ja: "エディター" } as L, b: { en: "US editors are recruited for the brief through our clipping network.", ja: "当社のクリッピングネットワークを通じて、ブリーフに合う米国エディターを募集します。" } as L },
+    { h: { en: "Posting", ja: "投稿" } as L, b: { en: "Editors post on TikTok, from their own accounts.", ja: "エディターは自身のTikTokアカウントで投稿します。" } as L },
+    { h: { en: "Payout", ja: "報酬" } as L, b: { en: "The pool pays on views of posts that follow the brief. Nothing else is paid.", ja: "ブリーフに沿った投稿の再生数に対してプールから報酬を支払います。それ以外には支払いません。" } as L },
     { h: { en: "Read", ja: "判定" } as L, b: { en: "A day-7 read against a line set before launch, then money moves to the winning cuts.", ja: "開始前に決めた基準で7日目に判定し、成果の出ているカットへ予算を寄せます。" } as L },
-    { h: { en: "Close", ja: "終了" } as L, b: { en: "A performance report with the cuts, creators and rates to carry forward.", ja: "成果報告書を提出します。次に引き継ぐカット、クリエイター、単価をまとめます。" } as L },
+    { h: { en: "Close", ja: "終了" } as L, b: { en: "A performance report with the cuts, editors and rates to carry forward.", ja: "成果報告書を提出します。次に引き継ぐカット、エディター、単価をまとめます。" } as L },
   ],
   control: [
     {
@@ -517,7 +517,7 @@ export const PROGRAM = {
       ] as L[],
     },
     {
-      h: { en: "Creators decide", ja: "クリエイターが決めること" } as L,
+      h: { en: "Editors decide", ja: "エディターが決めること" } as L,
       items: [
         { en: "The story and the cut, inside the rules", ja: "ルールの範囲内での構成と編集" },
         { en: "Which format from the menu", ja: "メニューのどの型を使うか" },
@@ -527,7 +527,7 @@ export const PROGRAM = {
     {
       h: { en: "Plan for this", ja: "想定しておくこと" } as L,
       items: [
-        { en: "Approval happens once, on the folder and the rules. Creators do not wait on each video.", ja: "承認はフォルダとルールに対して一度だけ。動画1本ごとの事前承認は行いません。" },
+        { en: "Approval happens once, on the folder and the rules. Editors do not wait on each video.", ja: "承認はフォルダとルールに対して一度だけ。動画1本ごとの事前承認は行いません。" },
         { en: "Paid posts bring unpaid ones. On a recent K-pop campaign we ran, 10 paid posts were followed by about 40 organic ones.", ja: "有償投稿は無償の投稿を呼びます。当社が最近実施したK-POPの施策では、有償10本に対し約40本の自然発生的な投稿が続きました。" },
         { en: "No views, streams or chart positions are guaranteed. Streams are reported beside the dates.", ja: "再生数、ストリーミング数、チャート順位の保証はありません。ストリーミングは日付とともに報告します。" },
       ] as L[],
@@ -539,7 +539,7 @@ export const PROGRAM = {
       { en: "A generated likeness or voice of any member", ja: "メンバーの肖像や声の生成" },
       { en: "Bought followers or views", ja: "フォロワーや再生数の購入" },
       { en: "An undisclosed paid post", ja: "広告表記のない有償投稿" },
-      { en: "A format assigned to a creator", ja: "クリエイターへの型の割り当て" },
+      { en: "A format assigned to an editor", ja: "エディターへの型の割り当て" },
     ] as L[],
   },
   portal: { en: "Open rights and rules", ja: "権利とルールを見る" } as L,
@@ -556,7 +556,7 @@ export const MENU = {
   currency: { en: "Currency", ja: "通貨" } as L,
   fxNote: { en: "Dollar figures are approximate at ¥158 to the dollar.", ja: "ドル表記は1ドル＝158円換算の概算です。" } as L,
   rows: {
-    pool: { en: "Creator pool", ja: "クリエイター報酬プール" } as L,
+    pool: { en: "Editor pool", ja: "エディター報酬プール" } as L,
     fee: { en: "Program fee, 20%", ja: "運営費（20%）" } as L,
     desk: { en: "Daily BE:FIRST trend brief", ja: "BE:FIRST専用デイリートレンドブリーフ" } as L,
     total: { en: "Total", ja: "合計" } as L,
@@ -575,9 +575,8 @@ export const MENU = {
       desk: 0,
       includes: [
         { en: "Folder setup, rules sheet and brief", ja: "素材フォルダの整備、ルールシート、ブリーフ" },
-        { en: "Three sample clips before any money moves", ja: "予算投下前にサンプルクリップ3本" },
-        { en: "US creators recruited for the brief, posting on TikTok", ja: "ブリーフに合わせて募集した米国クリエイターがTikTokに投稿" },
-        { en: "Every post reviewed within 48 hours, before it is paid", ja: "すべての投稿を48時間以内に審査し、その後に報酬を支払い" },
+        { en: "US editors recruited for the brief, posting on TikTok", ja: "ブリーフに合わせて募集した米国エディターがTikTokに投稿" },
+        { en: "Payout on approved views only", ja: "報酬は承認済み再生数に対してのみ" },
         { en: "Day-7 read on December 8, report on December 21", ja: "12月8日に7日目判定、12月21日に報告書" },
       ] as L[],
       stop: {
@@ -595,7 +594,7 @@ export const MENU = {
       desk: 0,
       includes: [
         { en: "Everything in the test", ja: "テストの内容すべて" },
-        { en: "More creators, recruited by format", ja: "型ごとに募集する、より多くのクリエイター" },
+        { en: "More editors, recruited by format", ja: "型ごとに募集する、より多くのエディター" },
         { en: "The daily trend board for the length of the pool", ja: "プール期間中のデイリートレンドボード" },
         { en: "Weekly report and a moment report", ja: "週次レポートとモーメント報告書" },
       ] as L[],
@@ -609,13 +608,13 @@ export const MENU = {
       n: "03",
       name: { en: "Season", ja: "シーズン" } as L,
       window: { en: "January to March 2027", ja: "2027年1月〜3月" } as L,
-      line: { en: "Three dome pools and a daily BE:FIRST brief for the group's own team. Winning cuts and creators carry from pool to pool.", ja: "ドーム3公演分のプールと、運営チーム向けのBE:FIRST専用デイリーブリーフ。成果の出たカットとクリエイターを次のプールへ引き継ぎます。" } as L,
+      line: { en: "Three dome pools and a daily BE:FIRST brief for the group's own team. Winning cuts and editors carry from pool to pool.", ja: "ドーム3公演分のプールと、運営チーム向けのBE:FIRST専用デイリーブリーフ。成果の出たカットとエディターを次のプールへ引き継ぎます。" } as L,
       pool: 9000000,
       desk: 2250000,
       includes: [
         { en: "Three moment pools: Tokyo and Osaka, Fukuoka, Belluna", ja: "モーメントプール3本：東京と大阪、福岡、ベルーナ" },
         { en: "Daily BE:FIRST brief, January to March: each trend call with a script for the group's own channels", ja: "BE:FIRST専用デイリーブリーフ（1月〜3月）：トレンドごとに公式チャンネル向けの台本つき" },
-        { en: "Winning cuts and creators carried from pool to pool", ja: "成果の出たカットとクリエイターを次のプールへ引き継ぎ" },
+        { en: "Winning cuts and editors carried from pool to pool", ja: "成果の出たカットとエディターを次のプールへ引き継ぎ" },
         { en: "Standby pools for Grammys week and Nagoya, opened only on an announcement", ja: "グラミー賞ウィークと名古屋の待機プール（発表時のみ開始）" },
         { en: "One season report comparing every moment", ja: "全モーメントを比較するシーズン報告書" },
       ] as L[],
@@ -631,14 +630,14 @@ export const MENU = {
     ja: "プールを単価で割った数が、支払える再生数の上限です。上限であり、予測ではありません。",
   } as L,
   calc: {
-    pool: { en: "Creator pool", ja: "クリエイター報酬プール" } as L,
+    pool: { en: "Editor pool", ja: "エディター報酬プール" } as L,
     rate: { en: "Rate per 1,000 approved views", ja: "承認済み1,000再生あたりの単価" } as L,
     ceiling: { en: "Most approved views the pool can pay for", ja: "プールで支払える承認済み再生数の上限" } as L,
     fee: { en: "Program fee, 20% on top", ja: "運営費（プールの20%を別途）" } as L,
     total: { en: "Total", ja: "合計" } as L,
     note: {
-      en: "Pools open at $3.00 per 1,000 approved views. The rate steps to $4.00 or $5.00 when a format needs larger creators or creators are slow to take the footage. Any platform fee is itemised before launch.",
-      ja: "プールは承認済み1,000再生あたり3.00ドルで開始します。より大きなクリエイターが必要な型や、クリエイターの参加が鈍い場合は、4.00ドルまたは5.00ドルに引き上げます。プラットフォーム手数料がある場合は開始前に明示します。",
+      en: "Pools open at $3.00 per 1,000 approved views. The rate steps to $4.00 or $5.00 when a format needs larger accounts or editors are slow to take the footage. Any platform fee is itemised before launch.",
+      ja: "プールは承認済み1,000再生あたり3.00ドルで開始します。より大きなアカウントが必要な型や、エディターの参加が鈍い場合は、4.00ドルまたは5.00ドルに引き上げます。プラットフォーム手数料がある場合は開始前に明示します。",
     } as L,
   },
   portal: { en: "Open rates and evidence", ja: "単価と根拠を見る" } as L,
@@ -651,7 +650,6 @@ export const NEXT = {
   steps: [
     { h: { en: "Pick a way in", ja: "始め方を選ぶ" } as L, b: { en: "Test, Moment or Season. Approve here or reply to us.", ja: "テスト、モーメント、シーズンから選択。このページで承認、またはメールでご連絡ください。" } as L },
     { h: { en: "Share the folder", ja: "素材フォルダを共有" } as L, b: { en: "The New York footage and any dance practice video, with a note on what is cleared.", ja: "ニューヨーク公演の映像とダンスプラクティス動画を、使用可能範囲のメモとともに。" } as L },
-    { h: { en: "See three sample clips", ja: "サンプルクリップ3本を確認" } as L, b: { en: "Cut from the folder within five working days, before any money moves.", ja: "フォルダ受領から5営業日以内に制作。予算投下の前にご確認いただきます。" } as L },
     { h: { en: "Sign off the brief", ja: "ブリーフを承認" } as L, b: { en: "The formats, the rules sheet and the rates, approved once.", ja: "型、ルールシート、単価をまとめて一度で承認いただきます。" } as L },
     { h: { en: "Open the pool", ja: "プールを開始" } as L, b: { en: "December 1, three weeks before Tokyo Dome.", ja: "12月1日開始。東京ドームの3週間前です。" } as L },
   ],
