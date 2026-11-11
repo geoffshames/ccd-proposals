@@ -1,7 +1,7 @@
 /**
  * HASS DENIRO x CROWD CONTROL DIGITAL: personal brand proposal.
  * Built Nov 10, 2026 from Geoff's call with Hass the same day.
- * Pricing set by Geoff Nov 10, 2026: $7,500 build, $5,000/mo brand management, six-month minimum.
+ * Pricing set by Geoff Nov 10, 2026: $5,000 build, $5,000/mo brand management, six-month minimum.
  * Password gated. Example imagery is AI-generated and labeled as such.
  */
 
@@ -143,12 +143,12 @@ export const PRICING_INTRO =
   "One build fee for the site, identity and launch kit, then a monthly retainer to run your brand. Publicity is quoted directly by the publicist and runs alongside the festival press.";
 
 export const PRICING = [
-  { k: "Build", t: "Site + identity", price: "$7,500", per: "one time", b: "Story session, hassdeniro.com overhaul, personal identity, bio, press kit, executive one-pager, LinkedIn rebuild and shoot direction.", bill: "Paid on approval" },
+  { k: "Build", t: "Site + identity", price: "$5,000", per: "one time", b: "Story session, hassdeniro.com overhaul, personal identity, bio, press kit, executive one-pager, LinkedIn rebuild and shoot direction.", bill: "Paid on approval" },
   { k: "Brand management", t: "Monthly retainer", price: "$5,000", per: "/mo", b: "Instagram and LinkedIn run for you, interview clipping, email and SMS, the interview and podcast list, search upkeep and a monthly report.", bill: "Six-month minimum, billed monthly" },
   { k: "Publicity", t: "Earned press", price: "Quoted", per: "by the publicist", b: "A dedicated publicist from our network for personal press, scoped together with the festival campaign so one person runs both stories.", bill: "Contracted with the publicist" },
 ];
 
-export const TOTAL = { k: "Six-month total", v: "$37,500", b: "$7,500 build plus six months of brand management at $5,000." };
+export const TOTAL = { k: "Six-month total", v: "$35,000", b: "$5,000 build plus six months of brand management at $5,000." };
 
 export const FINE_PRINT =
   "Photographer, location and any travel are billed at cost and approved in advance. Paid amplification of interviews and posts is optional, with ad spend paid to the platform plus a 15% management fee. You own the site, the domain, every account and the list. Video production beyond interview clipping, and work for other Best Kept Secret projects, is quoted separately.";
@@ -157,7 +157,7 @@ export const FINE_PRINT =
 
 export const NEXT = {
   steps: [
-    "Approve the plan and the $7,500 build",
+    "Approve the plan and the $5,000 build",
     "Book the two-hour story session",
     "Send us what exists: photos, flyers, press, a list of the shows and artists",
     "Lock the Sway date for after the site goes live",

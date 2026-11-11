@@ -500,3 +500,14 @@
   .services { grid-template-columns: 1fr; }
   .services > li { padding-right: 0; }
 }
+
+/* spacing fixes: .page p resets margins, so paragraph spacing needs page-scoped selectors */
+.page .after { margin-top: 24px; }
+.page .siteLine { margin-top: 18px; }
+.page .steps { margin-bottom: 24px; }
+@media (max-width: 520px) {
+  .stats { grid-template-columns: 1fr; }
+  .stats > div, .stats > div + div { padding: 20px 0; border-left: 0; }
+  .stats > div:first-child { border-top: 0; }
+  .statV { font-size: 2.4rem; }
+}
