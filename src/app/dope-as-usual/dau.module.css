@@ -971,3 +971,14 @@
   .epList li:nth-child(n+6) { display: none; }
   .ttGrid { grid-template-columns: 1fr; }
 }
+
+/* refinements */
+.heroXL { font-size: clamp(4rem, 12.5vw, 13.5rem); }
+.coldRow .heroLine { font-size: clamp(1.6rem, 3vw, 3rem); }
+.coldRow { padding-bottom: 54px; }
+.epList button { padding: 7px 14px; }
+.anat { padding-bottom: 190px; }
+.anatLow { top: calc(100% + 84px); }
+.ladder { background: none; border: 0; gap: 10px; }
+.rung { border: 1px solid var(--line); }
+@media (max-width: 600px) { .roomCols { grid-template-columns: 1fr; } .anat { padding-bottom: 30px; } }

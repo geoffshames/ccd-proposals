@@ -149,12 +149,27 @@ function TopBar() {
 
 function PlayerDock() {
   const { scrollYProgress } = useScroll();
-  const fill = useSpring(scrollYProgress, { stiffness: 160, damping: 30 });
   const [t, setT] = useState(0);
   const [cur, setCur] = useState(0);
   const [show, setShow] = useState(false);
-  useMotionValueEvent(scrollYProgress, "change", (p) => {
-    setT(p * RUNTIME);
+  const tv = useSpring(0, { stiffness: 160, damping: 30 });
+  const fillX = useTransform(tv, (v) => v / RUNTIME);
+  useMotionValueEvent(scrollYProgress, "change", () => {
+    const y = window.scrollY + window.innerHeight * 0.45;
+    const tops = CHAPTERS.map((c) => {
+      const el = document.getElementById(c.id);
+      return el ? el.getBoundingClientRect().top + window.scrollY : 0;
+    });
+    const end = document.documentElement.scrollHeight;
+    let i = 0;
+    for (let j = 0; j < tops.length; j++) if (y >= tops[j]) i = j;
+    const a = CHAPTERS[i].at;
+    const b = i + 1 < CHAPTERS.length ? CHAPTERS[i + 1].at : RUNTIME;
+    const t0 = tops[i];
+    const t1 = i + 1 < tops.length ? tops[i + 1] : end;
+    const v = Math.min(RUNTIME, a + Math.max(0, Math.min(1, (y - t0) / Math.max(1, t1 - t0))) * (b - a));
+    setT(v);
+    tv.set(v);
     setShow(window.scrollY > window.innerHeight * 0.6);
   });
   useEffect(() => {
@@ -185,7 +200,7 @@ function PlayerDock() {
           </span>
         </div>
         <div className={s.dockTrack}>
-          <motion.div className={s.dockFill} style={{ scaleX: fill }} />
+          <motion.div className={s.dockFill} style={{ scaleX: fillX }} />
           {CHAPTERS.slice(1).map((ch) => (
             <button key={ch.id} type="button" className={s.dockTick} style={{ left: `${(ch.at / RUNTIME) * 100}%` }} onClick={() => go(ch.id)} aria-label={`Chapter ${ch.n}, ${ch.t}`}>
               <span className={s.dockTip}>
@@ -583,6 +598,7 @@ function EvBars({ rows, logScale = false }: { rows: { k: string; s?: string; v: 
           <span className={s.evV}>{short(r.v)}</span>
         </div>
       ))}
+      {logScale && <span className={`${s.mono} ${s.dim}`}>Log scale, so all three fit on one chart.</span>}
     </div>
   );
 }
@@ -789,7 +805,7 @@ function ChFormat() {
         <div className={s.sub}>
           <Reveal className={s.subHead}>
             <h3 className={s.h3}>A week of Dope As Usual</h3>
-            <span className={`${s.mono} ${s.dim}`}>About 18 clips, two drops and two texts a week</span>
+            <span className={`${s.mono} ${s.dim}`}>About 16 clips, two drops and two texts a week</span>
           </Reveal>
           <Reveal>
             <Week />
@@ -1083,7 +1099,7 @@ function Anatomy() {
         ))}
         {PLACEMENTS.map((p, i) => (
           <motion.div key={p.k} className={s.anatSlot} style={{ left: `${(p.at / len) * 100}%`, width: `${(p.w / len) * 100}%` }} initial={{ scaleY: 0 }} whileInView={{ scaleY: 1 }} viewport={{ once: true }} transition={{ duration: 0.6, ease: EASE, delay: 0.2 + i * 0.12 }}>
-            <span className={`${s.anatLbl} ${i === PLACEMENTS.length - 1 ? s.anatLblR : ""}`}>
+            <span className={`${s.anatLbl} ${i === PLACEMENTS.length - 1 ? s.anatLblR : ""} ${i % 2 ? s.anatLow : ""}`}>
               <b>{p.k}</b>
               {p.b}
             </span>
