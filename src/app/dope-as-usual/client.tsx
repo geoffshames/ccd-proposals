@@ -12,7 +12,7 @@ import { useEffect, useMemo, useRef, useState, useSyncExternalStore, type CSSPro
 import { animate, motion, useInView, useMotionValueEvent, useReducedMotion, useScroll, useSpring, useTransform } from "framer-motion";
 import s from "./dau.module.css";
 import { PASSWORD, EMAIL, SHOW_THESIS, SHOW_STATS, PLATFORMS, PEERS, PILLARS, MOMENT, CREATIVE, CREATIVE_RULES, VIDEO, SPONSOR_CATS, DEALS, TARGETS, AGENCY, NEXT, SOURCES } from "@/lib/dope-as-usual/content";
-import { RUNTIME, CHAPTERS, LIFECYCLE, SPLIT, GUEST_COMPARE, ATTENTION, THEN_NOW, FUNNEL, WEEK_ROWS, WEEK, WORKSTREAMS, PLACEMENTS, AD_FORMATS, GANTT_WEEKS, GANTT } from "@/lib/dope-as-usual/bespoke";
+import { RUNTIME, CHAPTERS, LIFECYCLE, SPLIT, GUEST_COMPARE, ATTENTION, THEN_NOW, FUNNEL, WEEK_ROWS, WEEK, WORKSTREAMS, PLACEMENTS, AD_FORMATS, GANTT_WEEKS, GANTT, LISTEN } from "@/lib/dope-as-usual/bespoke";
 import { EPISODES, type Ep } from "@/lib/dope-as-usual/episodes";
 
 const EASE = [0.16, 1, 0.3, 1] as const;
@@ -668,6 +668,64 @@ function EvFunnel() {
   );
 }
 
+function EvListen() {
+  const gmax = LISTEN.guests[0].v;
+  return (
+    <div className={s.ev}>
+      <div className={s.sent}>
+        {LISTEN.sentiment.map((x, i) => (
+          <motion.div key={x.k} className={`${s.sentSeg} ${i === 0 ? s.sentPos : i === 1 ? s.sentNeu : s.sentNeg}`} style={{ flexBasis: `${x.v}%` }} initial={{ scaleX: 0 }} whileInView={{ scaleX: 1 }} viewport={{ once: true }} transition={{ duration: 0.9, ease: EASE, delay: i * 0.1 }}>
+            <b>{Math.round(x.v)}%</b>
+            <span>{x.k}</span>
+          </motion.div>
+        ))}
+      </div>
+      <div className={s.evBars} style={{ display: "grid", gap: 12 }}>
+        {LISTEN.themes.map((r, i) => (
+          <div key={r.k} className={s.evRow}>
+            <div className={s.evK}>
+              <b>{r.k}</b>
+              <span>{r.s}</span>
+            </div>
+            <div className={s.evTrack}>
+              <Grow pct={Math.max(1.5, (r.v / 31) * 100)} className={i === 0 ? s.evFillRed : s.evFill} delay={i * 0.08} />
+            </div>
+            <span className={s.evV}>{r.v < 1 ? "<1%" : `${Math.round(r.v)}%`}</span>
+          </div>
+        ))}
+      </div>
+      <div className={s.gm}>
+        <span className={`${s.mono} ${s.dim}`}>Most mentioned guests</span>
+        <div className={s.gmRow}>
+          {LISTEN.guests.map((g) => (
+            <span key={g.k} className={s.gmChip} style={{ fontSize: `${0.85 + (g.v / gmax) * 0.9}rem` }}>
+              {g.k}
+              <em>{g.v}</em>
+            </span>
+          ))}
+        </div>
+      </div>
+      <span className={`${s.mono} ${s.dim}`}>{LISTEN.n} top comments, {LISTEN.episodes} episodes, 2021 to 2026</span>
+    </div>
+  );
+}
+
+function Quotes() {
+  return (
+    <div className={s.qWall}>
+      {LISTEN.quotes.map((q, i) => (
+        <Reveal key={q.t} delay={(i % 3) * 0.06} className={`${s.qCard} ${i === 0 ? s.qBig : ""}`}>
+          <p>{q.t}</p>
+          <div className={s.qMeta}>
+            <span className={s.mono}>{q.ep}</span>
+            {q.likes > 0 && <span className={`${s.mono} ${s.kicker}`}>{q.likes} likes</span>}
+          </div>
+        </Reveal>
+      ))}
+    </div>
+  );
+}
+
 const FINDINGS = [
   { n: "01", k: "Catalog", t: "80% of the views live in the archive", b: "Episodes from 2021 and 2022 hold about 42M of the 52.6M full-episode views we counted, and every one of the ten most watched episodes is from that era. It is the most valuable footage the show owns, and almost none of it has been cut for vertical.", ev: <EvArchive /> },
   { n: "02", k: "Attention", t: "The audience moved to short form", b: "The median full episode drew 258K views in 2021 and 24K in 2026. Over the same years a single reel of the show passed 17.9M on Instagram. The appetite is still there. It lives in clips now, and long form follows the clips.", ev: <EvBars rows={ATTENTION} logScale /> },
@@ -675,13 +733,14 @@ const FINDINGS = [
   { n: "04", k: "TikTok", t: "The biggest open lane is TikTok", b: "Stiff Socks, whose co-host Michael Blaustein sat down with you in July, has posted 2,527 TikToks to 3.5M followers. Dope As Usual has posted 49. The library to close that gap already exists.", ev: <EvTikTok /> },
   { n: "05", k: "Packaging", t: "Two packaging systems, one test", b: "The 2021 and 2022 thumbnails put the guest's name in giant type on the orange doodle wall. The current system leads with the episode number. A simple title and thumbnail test will tell us which one wins today.", ev: <EvThenNow /> },
   { n: "06", k: "Owned", t: "A list this size is a weekly revenue line", b: "120K newsletter contacts and 80K members is a bigger owned audience than most touring comedians have. Pointed at new episodes, live shows, merch and sponsors every week, it becomes the most reliable channel the show has.", ev: <EvFunnel /> },
+  { n: "07", k: "Sentiment", t: "The comments are asking for the plan", b: "We read 848 top comments across 13 episodes. Two in three are positive, almost none of the negatives are criticism, and fans name the hosts in one comment in five. They are already clipping the show with timestamps and asking for OGEE, Josh and Yola's mom to come back.", ev: <EvListen /> },
 ];
 
 function ChVault() {
   return (
     <section className={s.section} id="vault">
       <ChapterHead id="vault" title="The vault" strap="290 episodes audited">
-        We pulled every episode from YouTube and the audio feed, every platform and the full guest list. Six findings shape the plan, and each one comes with its evidence.
+        We pulled every episode from YouTube and the audio feed, every platform and the full guest list. Seven findings shape the plan, and each one comes with its evidence.
       </ChapterHead>
       <Reveal>
         <Statement />
@@ -721,6 +780,13 @@ function ChVault() {
             </article>
           ))}
         </div>
+      </div>
+      <div className={s.sub}>
+        <Reveal className={s.subHead}>
+          <h3 className={s.h3}>In their words</h3>
+          <span className={`${s.mono} ${s.dim}`}>Top comments, lightly trimmed</span>
+        </Reveal>
+        <Quotes />
       </div>
     </section>
   );
@@ -893,8 +959,8 @@ function ChEngine() {
   const w = WORKSTREAMS[i];
   return (
     <section className={s.section} id="engine">
-      <ChapterHead id="engine" title="The engine" strap="Nine workstreams">
-        Everything we would run, what ships, and how we measure it. Start with all nine or start with clipping and add the rest. Select a workstream to open it.
+      <ChapterHead id="engine" title="The engine" strap="Ten workstreams">
+        Everything we would run, what ships, and how we measure it. Start with all ten or start with clipping and add the rest. Select a workstream to open it.
       </ChapterHead>
       <Reveal>
         <div className={s.room}>

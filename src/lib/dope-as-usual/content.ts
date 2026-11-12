@@ -292,7 +292,7 @@ export const AGENCY = {
   body: "A culture-first marketing agency for brands, artists and platforms since 2015. Strategy, creative and paid media under one roof, measured in attention, sales, streams and fans.",
   services: [
     { h: "Strategy & Consulting", b: "Release, launch and growth strategy built on real data, from a single drop to a twelve-month plan.", on: true },
-    { h: "Social Listening", b: "Daily sentiment and share-of-voice dashboards across every platform.", on: false },
+    { h: "Social Listening", b: "Daily sentiment and share-of-voice dashboards across every platform.", on: true },
     { h: "Creative Services", b: "Campaign creative, content and edits made for the feed they will run in.", on: true },
     { h: "Social Media Management", b: "Channels run day to day: the calendar, the posts, the replies and the read on what is working.", on: true },
     { h: "Creator Marketing & Clipping", b: "Creators, clippers and UGC that reach people who would never follow your account.", on: true },

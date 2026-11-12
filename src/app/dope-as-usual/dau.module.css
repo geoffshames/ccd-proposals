@@ -982,3 +982,26 @@
 .ladder { background: none; border: 0; gap: 10px; }
 .rung { border: 1px solid var(--line); }
 @media (max-width: 600px) { .roomCols { grid-template-columns: 1fr; } .anat { padding-bottom: 30px; } }
+
+/* social listening */
+.sent { display: flex; gap: 2px; height: 86px; }
+.sentSeg { display: flex; flex-direction: column; justify-content: flex-end; padding: 10px 12px; min-width: 0; transform-origin: 0 50%; overflow: hidden; }
+.sentSeg b { font-family: var(--display); font-size: clamp(1.4rem, 2.4vw, 2.2rem); letter-spacing: -0.03em; line-height: 1; }
+.sentSeg span { font-family: var(--mono); font-size: 9.5px; letter-spacing: 0.12em; text-transform: uppercase; margin-top: 6px; white-space: nowrap; }
+.sentPos { background: var(--red); color: var(--ink); }
+.sentNeu { background: var(--paper); color: var(--ink); }
+.sentNeg { background: var(--ink3); border: 1px solid var(--line2); }
+.sentNeg span { display: none; }
+.gm { display: flex; flex-direction: column; gap: 10px; padding-top: 14px; border-top: 1px solid var(--line2); }
+.gmRow { display: flex; flex-wrap: wrap; gap: 8px 10px; align-items: baseline; }
+.gmChip { font-family: var(--display); text-transform: uppercase; letter-spacing: -0.01em; line-height: 1; padding: 8px 12px; border: 1px solid var(--line2); display: inline-flex; align-items: baseline; gap: 8px; }
+.gmChip em { font-style: normal; font-family: var(--mono); font-size: 10px; color: var(--red); }
+.qWall { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }
+.qCard { border: 1px solid var(--line); background: var(--ink2); padding: clamp(20px, 2.2vw, 30px); display: flex; flex-direction: column; justify-content: space-between; gap: 18px; position: relative; }
+.qCard p { font-size: clamp(1.05rem, 1.35vw, 1.25rem); line-height: 1.42; color: var(--paper); }
+.qCard p::before { content: "\201C"; font-family: var(--display); color: var(--red); font-size: 3.4rem; line-height: 0.6; display: block; margin-bottom: 8px; }
+.qBig { grid-column: span 2; grid-row: span 2; background: radial-gradient(90% 90% at 0% 0%, rgba(253,55,55,0.16), rgba(10,10,10,0) 60%), var(--ink2); }
+.qBig p { font-family: var(--display); text-transform: uppercase; font-size: clamp(1.8rem, 3.4vw, 3.2rem); letter-spacing: -0.03em; line-height: 0.98; }
+.qBig p::before { font-size: 6rem; }
+.qMeta { display: flex; justify-content: space-between; gap: 10px; flex-wrap: wrap; color: var(--dim); }
+@media (max-width: 900px) { .qWall { grid-template-columns: 1fr; } .qBig { grid-column: auto; grid-row: auto; } }

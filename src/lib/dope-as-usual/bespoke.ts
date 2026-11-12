@@ -69,15 +69,15 @@ export const FUNNEL = [
   { k: "TikTok followers", v: 21400, owned: false },
 ];
 
-export const WEEK_ROWS = ["Long form", "Clips", "Vault", "The list", "Guests"];
+export const WEEK_ROWS = ["Long form", "Clips", "Vault", "The list", "Guests", "Listening"];
 export const WEEK = [
-  { d: "Mon", cells: ["", "3 clips from last week's episode", "", "", ""] },
-  { d: "Tue", hot: true, cells: ["New episode, 12:30 PM", "Launch clip on every platform", "", "Drop text and email", "Clip pack to the guest"] },
-  { d: "Wed", cells: ["", "3 clips, Trial Reels test", "", "", "Guest collab posts"] },
-  { d: "Thu", cells: ["", "2 clips", "From The Vault drop", "Vault text to members", ""] },
-  { d: "Fri", cells: ["", "3 clips, weekend hooks", "", "", ""] },
-  { d: "Sat", cells: ["Vault compilation on YouTube", "2 clips", "", "", ""] },
-  { d: "Sun", cells: ["", "2 clips, best of week", "", "Next episode teaser", "Next guest announced"] },
+  { d: "Mon", cells: ["", "3 clips from last week's episode", "", "", "", "Weekly sentiment read"] },
+  { d: "Tue", hot: true, cells: ["New episode, 12:30 PM", "Launch clip on every platform", "", "Drop text and email", "Clip pack to the guest", "Launch-day comment watch"] },
+  { d: "Wed", cells: ["", "3 clips, Trial Reels test", "", "", "Guest collab posts", ""] },
+  { d: "Thu", cells: ["", "2 clips", "From The Vault drop", "Vault text to members", "", ""] },
+  { d: "Fri", cells: ["", "3 clips, weekend hooks", "", "", "", "Guest demand ranking"] },
+  { d: "Sat", cells: ["Vault compilation on YouTube", "2 clips", "", "", "", ""] },
+  { d: "Sun", cells: ["", "2 clips, best of week", "", "Next episode teaser", "Next guest announced", ""] },
 ];
 
 export const WORKSTREAMS = [
@@ -130,7 +130,13 @@ export const WORKSTREAMS = [
     kpi: "Deals opened, terms improved, licensing revenue",
   },
   {
-    n: "09", t: "Reporting", c: "Monthly",
+    n: "09", t: "Social listening and sentiment", c: "Weekly",
+    b: "Every comment, mention and thread about the show read and scored each week across YouTube, Instagram, TikTok, Reddit and X. Sentiment, share of voice against peer podcasts, the guests fans are asking for, and early warning on anything that needs a response.",
+    ships: ["Weekly sentiment and themes read", "Guest demand ranking for bookings", "Share of voice against peer podcasts", "Same-day alerts on anything that needs a reply"],
+    kpi: "Sentiment trend, share of voice, guest requests acted on",
+  },
+  {
+    n: "10", t: "Reporting", c: "Monthly",
     b: "One live dashboard across YouTube, Instagram, TikTok, the list and sponsor delivery, with a monthly read on what to do next.",
     ships: ["Live dashboard", "Monthly report", "Sponsor delivery reporting", "Quarterly plan reset"],
     kpi: "Every number in one place",
@@ -155,6 +161,7 @@ export const GANTT_WEEKS = ["W1", "W2", "W3", "W4", "W5", "W6", "W7", "W8", "W9"
 export const GANTT = [
   { k: "Plug in", s: 0, e: 2, red: true },
   { k: "Clip engine", s: 2, e: 13 },
+  { k: "Social listening", s: 0, e: 13 },
   { k: "Vault reissues", s: 2, e: 13 },
   { k: "Email and SMS", s: 2, e: 13 },
   { k: "Guest amplification", s: 3, e: 13 },
@@ -162,3 +169,37 @@ export const GANTT = [
   { k: "Sponsorship sales", s: 6, e: 13 },
   { k: "Platform conversations", s: 12, e: 13 },
 ];
+
+/* Social listening: 848 top-level YouTube comments across 13 episodes (2021 to 2026), pulled November 12, 2026, scored with VADER plus a slang lexicon and keyword themes. */
+export const LISTEN = {
+  n: 848,
+  episodes: 13,
+  sentiment: [
+    { k: "Positive", v: 66.0 },
+    { k: "Neutral", v: 26.3 },
+    { k: "Flagged negative", v: 7.7 },
+  ],
+  themes: [
+    { k: "Laughing out loud", s: "lmao, crying, dying, the emoji", v: 30.9 },
+    { k: "Name a host directly", s: "Yola 106 times, Marty 63", v: 20.3 },
+    { k: "Cite a timestamp", s: "Fans clipping the show themselves", v: 6.0 },
+    { k: "Ask for a guest back", s: "Need another OGEE episode", v: 3.1 },
+    { k: "Complain about ads", s: "Sponsor tolerance is high", v: 0.7 },
+  ],
+  guests: [
+    { k: "OGEE", v: 64 },
+    { k: "Yola's mom", v: 33 },
+    { k: "Goblin", v: 12 },
+    { k: "Luenell", v: 11 },
+    { k: "Dave Blunts", v: 11 },
+    { k: "Josh Wolf", v: 6 },
+  ],
+  quotes: [
+    { t: "These with OGEE seem like one of the most genuine actual conversations and it's exactly what I'm here for.", likes: 423, ep: "Story Time w/ OGEE" },
+    { t: "Who else is watching this legendary podcast years later again lol.", likes: 24, ep: "The GOAT Episode" },
+    { t: "Marty always has the funniest cut ins.", likes: 52, ep: "Mushrooms & Mayhem Pt. 2" },
+    { t: "Please have her back on, this is by far one of the funniest episodes on the show.", likes: 34, ep: "w/ Luenell" },
+    { t: "Ready to have Josh come back! Been watching it on repeat along with the GOAT episode.", likes: 19, ep: "w/ Yola's Mom" },
+    { t: "You, Marty and Josh really complete each other and are so hilarious to watch together.", likes: 0, ep: "Mushrooms & Mayhem Pt. 2" },
+  ],
+};
