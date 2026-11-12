@@ -939,9 +939,9 @@ function ChEngine() {
 
 const PHONES = [
   { src: "/images/dope-as-usual/creative/clip-frame.jpg", video: "/images/dope-as-usual/creative/clip-1.mp4", handle: "@dope.as.usual.podcast", cap: "The full story is on the pod.", tag: "TikTok" },
-  { src: "/images/dope-as-usual/creative/clip-vault.jpg", handle: "@dope_as_usual_podcast", cap: "From the vault. Season one.", tag: "Reels" },
+  { src: "/images/dope-as-usual/creative/clip-vault.jpg", video: "/images/dope-as-usual/creative/clip-2.mp4", handle: "@dope_as_usual_podcast", cap: "From the vault. Season one.", tag: "Reels" },
   null,
-  { src: "/images/dope-as-usual/creative/clip-phone.jpg", handle: "@DopeAsUsual", cap: "New episode every Tuesday.", tag: "Shorts" },
+  { src: "/images/dope-as-usual/creative/clip-phone.jpg", video: "/images/dope-as-usual/creative/clip-3.mp4", handle: "@DopeAsUsual", cap: "New episode every Tuesday.", tag: "Shorts" },
 ];
 
 function PhoneSms() {
