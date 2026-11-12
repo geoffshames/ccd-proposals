@@ -1005,3 +1005,4 @@
 .qBig p::before { font-size: 6rem; }
 .qMeta { display: flex; justify-content: space-between; gap: 10px; flex-wrap: wrap; color: var(--dim); }
 @media (max-width: 900px) { .qWall { grid-template-columns: 1fr; } .qBig { grid-column: auto; grid-row: auto; } }
+.sentNeg { min-width: 64px; } .sentNeg b { font-size: 1.15rem; }
