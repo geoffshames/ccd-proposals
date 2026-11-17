@@ -366,6 +366,29 @@ const html = `<!DOCTYPE html>
   .cta a.btn{display:inline-block;background:var(--accent);color:#fff;font-family:var(--fm);font-size:12px;text-transform:uppercase;letter-spacing:.14em;padding:16px 26px}
   .cta a.btn:hover{background:#ff4f4f}
   .cta .mail{font-family:var(--fm);font-size:12px;letter-spacing:.08em;color:var(--muted);margin-top:12px;display:block}
+
+  /* miguel to-do */
+  .mg{border:2px solid var(--accent);background:linear-gradient(180deg,rgba(253,55,55,.08),rgba(253,55,55,.02));padding:clamp(24px,4vw,44px)}
+  .mg-top{display:flex;justify-content:space-between;align-items:flex-start;gap:20px;flex-wrap:wrap}
+  .mg h2{font-size:clamp(2.6rem,7vw,5.2rem);line-height:.9;letter-spacing:-.02em}
+  .mg .mg-sub{font-family:var(--fh);text-transform:none;font-size:clamp(1.1rem,2vw,1.45rem);line-height:1.2;margin:18px 0 0;max-width:760px}
+  .mg .mg-count{font-family:var(--fm);font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:#fff;background:var(--accent);padding:8px 12px;white-space:nowrap}
+  .mg-list{margin-top:30px;border-top:1px solid rgba(253,55,55,.35)}
+  .mg-row{display:grid;grid-template-columns:150px 1fr 120px 44px;gap:18px;align-items:center;padding:20px 0;border-bottom:1px solid rgba(253,55,55,.25)}
+  @media(max-width:760px){.mg-row{grid-template-columns:1fr 44px;gap:8px}.mg-row .mg-d{grid-column:1/2}.mg-row .mg-t{grid-column:1/2}.mg-row .mg-m{grid-column:1/2}.mg-row .mg-c{grid-column:2/3;grid-row:1/4}}
+  .mg-d{font-family:var(--fh);font-size:1.35rem;color:var(--accent);line-height:1.05}
+  .mg-d span{display:block;font-family:var(--fm);font-size:10px;letter-spacing:.14em;color:var(--muted);margin-top:5px}
+  .mg-t h4{text-transform:none;font-size:1.22rem;letter-spacing:-.01em;margin:0 0 4px}
+  .mg-t p{margin:0;color:var(--muted);font-size:14.5px;line-height:1.5}
+  .mg-t p b{color:var(--ink)}
+  .mg-m{font-family:var(--fm);font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink)}
+  .mg-c input{width:26px;height:26px;accent-color:#FD3737;cursor:pointer}
+  .mg-row.done{opacity:.4}
+  .mg-rule{margin-top:26px;display:grid;grid-template-columns:1fr 1fr;gap:16px}
+  @media(max-width:760px){.mg-rule{grid-template-columns:1fr}}
+  .mg-rule div{background:var(--bg);border:1px solid var(--line-2);padding:16px 18px;font-size:14.5px;color:var(--muted);line-height:1.5}
+  .mg-rule div b{color:var(--ink)}
+  .mg-rule .k{font-family:var(--fm);font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);display:block;margin-bottom:6px}
 </style>
 </head>
 <body class="locked">
@@ -409,7 +432,7 @@ const html = `<!DOCTYPE html>
   <div class="navbar">
     <div class="navbar-in">
       <a class="nb-brand" href="#top">Miguel / Black Friday</a>
-      <div class="nb-jump"><a href="#basis">Basis</a><a href="#offer">Offer</a><a href="#early">Early Access</a><a href="#crm">Email + SMS</a><a href="#paid">Paid</a><a href="#calendar">Calendar</a><a href="#needs">Needs</a></div>
+      <div class="nb-jump"><a href="#miguel">Miguel</a><a href="#basis">Basis</a><a href="#offer">Offer</a><a href="#early">Early Access</a><a href="#crm">Email + SMS</a><a href="#paid">Paid</a><a href="#calendar">Calendar</a><a href="#needs">Team</a></div>
     </div>
   </div>
 
@@ -426,6 +449,29 @@ const html = `<!DOCTYPE html>
       <div class="rm"><div class="rn">$1,000</div><span class="rl">Starting paid test, scaled only on results</span></div>
       <div class="rm"><div class="rn">3.3X</div><span class="rl">Break-even return on ad spend at a 30% margin</span></div>
       <div class="rm"><div class="rn">6 DAYS</div><span class="rl">Thanksgiving through Cyber Monday plus one last-call day</span></div>
+    </div>
+  </section>
+
+  <section class="sec wrap" id="miguel">
+    <div class="mg">
+      <div class="mg-top">
+        <div><div class="mono" style="color:var(--accent);margin-bottom:14px">Yours to own</div><h2>MIGUEL&#39;S<br/>TO-DO</h2></div>
+        <span class="mg-count">7 items, Nov 18–25</span>
+      </div>
+      <p class="mg-sub">Seven things, each with a date. Every date holds the schedule: if one slips, the sale moves with it.</p>
+      <div class="mg-list">
+        <div class="mg-row"><div class="mg-d">Wed Nov 18<span>Livestream</span></div><div class="mg-t"><h4>Mention early access on the S1C stream</h4><p>"S1C members get Black Friday first. Join at <b>s1c.la</b>." Thirty seconds, any point in the stream.</p></div><div class="mg-m">About 1 min</div><div class="mg-c"><input type="checkbox" aria-label="Done" /></div></div>
+        <div class="mg-row"><div class="mg-d">Thu Nov 19<span>Approval</span></div><div class="mg-t"><h4>Approve the social copy</h4><p>The feed post and story lines from the copy sheet we send <b>Wed Nov 18</b>. Edits welcome, just in by Thursday morning.</p></div><div class="mg-m">About 10 min</div><div class="mg-c"><input type="checkbox" aria-label="Done" /></div></div>
+        <div class="mg-row"><div class="mg-d">Thu Nov 19<span>Post</span></div><div class="mg-t"><h4>Post one feed post and stories</h4><p>"S1C gets Black Friday first," with the <b>link in bio to s1c.la</b>. We supply the copy and any graphics.</p></div><div class="mg-m">About 5 min</div><div class="mg-c"><input type="checkbox" aria-label="Done" /></div></div>
+        <div class="mg-row"><div class="mg-d">Fri Nov 20<span>Approval</span></div><div class="mg-t"><h4>Approve the email flow copy</h4><p>Welcome to S1C, abandoned checkout and order confirmation. These run automatically, so <b>one approval covers every send</b>.</p></div><div class="mg-m">About 15 min</div><div class="mg-c"><input type="checkbox" aria-label="Done" /></div></div>
+        <div class="mg-row"><div class="mg-d">Fri Nov 20<span>Film</span></div><div class="mg-t"><h4>Send a 15-second phone clip</h4><p>Vertical, to camera, in his own words: the box set is signed, it is limited, S1C gets it first. <b>One take is fine.</b> This becomes the lead ad.</p></div><div class="mg-m">About 10 min</div><div class="mg-c"><input type="checkbox" aria-label="Done" /></div></div>
+        <div class="mg-row"><div class="mg-d">Mon Nov 23<span>Approval</span></div><div class="mg-t"><h4>Approve all sale emails and texts</h4><p>Every send from Nov 25 to Dec 1, <b>in one batch</b> on one copy sheet, so nothing waits on approval during the sale.</p></div><div class="mg-m">About 20 min</div><div class="mg-c"><input type="checkbox" aria-label="Done" /></div></div>
+        <div class="mg-row"><div class="mg-d">Wed Nov 25<span>Unboxing</span></div><div class="mg-t"><h4>Unbox the signed box set</h4><p>On the stream, or <b>filmed on his phone and sent to us</b> to post. It does not need to be live. Members get in the next morning at 9am PT.</p></div><div class="mg-m">About 5 min</div><div class="mg-c"><input type="checkbox" aria-label="Done" /></div></div>
+      </div>
+      <div class="mg-rule">
+        <div><span class="k">About an hour, total</span>Spread across eight days. Every approval comes as <b>one copy sheet</b> with the date it is needed by.</div>
+        <div><span class="k">Everything else is on us</span>Building the flows, setting up the store, running the ads, reporting the results. <b>The team checklist below covers the rest.</b></div>
+      </div>
     </div>
   </section>
 
@@ -452,7 +498,7 @@ const html = `<!DOCTYPE html>
         <div class="evn">13</div><span class="evl">Viewers asking for merch, vinyl or a "CAOS kit" on one Oct 28 livestream</span>
         <h4>Fans are asking for physical product</h4>
         <p>The S1C livestreams run at about 18 chat messages a minute, and the requests for product came unprompted.</p>
-        <div class="so"><span class="ml">So this drop</span>Opens the box set live on the Wednesday stream the night before members get in.</div>
+        <div class="so"><span class="ml">So this drop</span>Puts a box set unboxing in front of fans the night before members get in.</div>
       </div>
       <div class="ev">
         <div class="evn">30K</div><span class="evl">Contacts consolidated on Hive, alongside s1c.la as the owned home</span>
@@ -555,7 +601,7 @@ const html = `<!DOCTYPE html>
 
     <h3 class="sub-h">The push to join, Nov 18 to Nov 25</h3>
     <div class="flow">
-      <div class="fl"><div class="fh"><h4>Wednesday livestreams</h4><span class="tg">Nov 18 + Nov 25</span></div><p>Miguel mentions early access on the 18th. On the 25th he <b>opens a box set live</b> and tells viewers members get in at 9am.</p></div>
+      <div class="fl"><div class="fh"><h4>Wednesday livestreams</h4><span class="tg">Nov 18 + Nov 25</span></div><p>Miguel mentions early access on the 18th. On the 25th he <b>unboxes the signed box set</b>, on the stream or as a posted clip, and tells fans members get in at 9am.</p></div>
       <div class="fl"><div class="fh"><h4>Miguel's socials</h4><span class="tg">Nov 19 to 25</span></div><p>One feed post and a short story sequence: "S1C gets Black Friday first." <b>Link in bio to s1c.la.</b></p></div>
       <div class="fl"><div class="fh"><h4>Email to the wider Hive list</h4><span class="tg">Nov 19 + Nov 24</span></div><p>Contacts who are on Hive but not on s1c.la get <b>two invitations to join</b>, the second framed as a last call.</p></div>
       <div class="fl"><div class="fh"><h4>SMS</h4><span class="tg w">Nov 24</span></div><p>One text to SMS subscribers who have not joined s1c.la yet, the day before the list closes.</p></div>
@@ -612,7 +658,7 @@ const html = `<!DOCTYPE html>
       <table class="cal">
         <thead><tr><th>Line</th><th>Budget</th><th>Audience</th><th>Creative</th></tr></thead>
         <tbody>
-          <tr><td class="d">Retargeting</td><td><b>$600</b></td><td>Store visitors and cart abandoners from the last 30 days, Instagram and Facebook engagers over the last year, video viewers, and the Hive list uploaded as a custom audience</td><td>Box set unboxing from the Nov 25 livestream, product carousel, dynamic catalog ads</td></tr>
+          <tr><td class="d">Retargeting</td><td><b>$600</b></td><td>Store visitors and cart abandoners from the last 30 days, Instagram and Facebook engagers over the last year, video viewers, and the Hive list uploaded as a custom audience</td><td>Box set unboxing clip, product carousel, dynamic catalog ads</td></tr>
           <tr><td class="d">Prospecting</td><td><b>$400</b></td><td>Advantage+ shopping seeded with past purchasers and S1C members, plus lookalikes of both</td><td>A 15-second to-camera clip from Miguel on his phone, and the unboxing cut</td></tr>
         </tbody>
       </table>
@@ -653,13 +699,13 @@ const html = `<!DOCTYPE html>
       <table class="cal">
         <thead><tr><th>Date</th><th>What happens</th><th>Channels</th></tr></thead>
         <tbody>
-          <tr class="key"><td class="d">Tue Nov 17</td><td><b>Plan review.</b> Offer option, paid test and gift ladder approved.</td><td><span class="ch">Approval</span></td></tr>
-          <tr><td class="d">Wed Nov 18</td><td>Shopify and Hive access confirmed. Livestream mention of early access.</td><td><span class="ch">Setup</span><span class="ch">Livestream</span></td></tr>
-          <tr><td class="d">Thu Nov 19</td><td>Products, prices and stock locked. Join-S1C email to the wider list. Social post and stories begin.</td><td><span class="ch">Email</span><span class="ch">Social</span></td></tr>
-          <tr><td class="d">Fri Nov 20</td><td>Flows built: abandoned checkout, browse, welcome, confirmation. Codes and hidden collection set up.</td><td><span class="ch">Setup</span></td></tr>
+          <tr><td class="d">Tue Nov 17</td><td>Plan reviewed with Mitch and Sophie.</td><td><span class="ch">Review</span></td></tr>
+          <tr class="key"><td class="d">Wed Nov 18</td><td><b>Green light.</b> Offer, paid test and gift ladder approved. Shopify and Hive access confirmed. Social copy sheet to Miguel. Miguel mentions early access on the livestream.</td><td><span class="ch r">Approval</span><span class="ch">Setup</span><span class="ch">Livestream</span></td></tr>
+          <tr><td class="d">Thu Nov 19</td><td>Products, prices and stock locked. Join-S1C email to the wider list. Miguel posts the feed post and stories. Email flow copy sheet to Miguel.</td><td><span class="ch">Email</span><span class="ch">Social</span></td></tr>
+          <tr><td class="d">Fri Nov 20</td><td>Flows built: abandoned checkout, browse, welcome, confirmation. Codes and hidden collection set up. Flow copy approved and Miguel&#39;s phone clip in. Sale copy sheet to Miguel.</td><td><span class="ch">Setup</span></td></tr>
           <tr><td class="d">Mon Nov 23</td><td>Full QA: test orders, every flow, every code, pixel and conversion events. Sale copy approved in one batch.</td><td><span class="ch">QA</span><span class="ch">Approval</span></td></tr>
           <tr><td class="d">Tue Nov 24</td><td>Last-call email and SMS to join S1C. Ads built and in review.</td><td><span class="ch">Email</span><span class="ch">SMS</span><span class="ch">Paid</span></td></tr>
-          <tr class="key"><td class="d">Wed Nov 25</td><td><b>Box set opened live on the S1C stream.</b> Member list frozen at 11:59pm.</td><td><span class="ch r">Livestream</span><span class="ch">Email</span></td></tr>
+          <tr class="key"><td class="d">Wed Nov 25</td><td><b>Box set unboxing</b>, on the S1C stream or posted. Member list frozen at 11:59pm.</td><td><span class="ch r">Social</span><span class="ch">Livestream</span><span class="ch">Email</span></td></tr>
           <tr class="key"><td class="d">Thu Nov 26</td><td><b>Members early access, 9am PT.</b></td><td><span class="ch r">Email</span><span class="ch r">SMS</span></td></tr>
           <tr class="key"><td class="d">Fri Nov 27</td><td><b>Public launch, 9am PT.</b> Paid goes live. Report page goes live.</td><td><span class="ch r">Email</span><span class="ch r">SMS</span><span class="ch r">Paid</span><span class="ch">Social</span></td></tr>
           <tr><td class="d">Sat Nov 28</td><td>Paid checkpoint 1. Box set story email.</td><td><span class="ch">Paid</span><span class="ch">Email</span></td></tr>
@@ -675,24 +721,24 @@ const html = `<!DOCTYPE html>
   <section class="sec wrap" id="needs">
     <div class="sec-head">
       <div class="row"><span class="num">07</span><span class="ln"></span></div>
-      <h2>What We Need</h2>
-      <p class="desc">Everything the plan depends on, with an owner and a date. Tick items off as they land.</p>
+      <h2>Team Checklist</h2>
+      <p class="desc">Everything else the plan depends on, with an owner and a date. Miguel&#39;s items sit in his own list above. Tick items off as they land.</p>
     </div>
     <div class="tablewrap">
       <table class="cal needs">
         <thead><tr><th>Item</th><th>Owner</th><th>By</th><th>Done</th></tr></thead>
         <tbody>
-          <tr><td><b>Approvals:</b> offer option, $1,000 paid test, gift ladder, scale rule at checkpoint 1</td><td class="o">Mitch</td><td class="d">Nov 17</td><td><label class="chk"><input type="checkbox" /></label></td></tr>
+          <tr><td><b>Approvals:</b> offer option, $1,000 paid test, gift ladder, scale rule at checkpoint 1</td><td class="o">Mitch, Sophie</td><td class="d">Nov 18</td><td><label class="chk"><input type="checkbox" /></label></td></tr>
           <tr><td><b>Product list</b> with prices, stock per SKU and landed cost, including the gift items</td><td class="o">Sophie, merch partner</td><td class="d">Nov 19</td><td><label class="chk"><input type="checkbox" /></label></td></tr>
           <tr><td><b>Box set:</b> signed quantity, price, ship date and pre-order wording</td><td class="o">Sophie</td><td class="d">Nov 19</td><td><label class="chk"><input type="checkbox" /></label></td></tr>
           <tr><td><b>Vinyl:</b> confirmed Wildheart date and S1C store quantities for each reissue</td><td class="o">Sophie, label</td><td class="d">Nov 19</td><td><label class="chk"><input type="checkbox" /></label></td></tr>
           <tr><td><b>Shopify staff access</b> for CCD: discounts, notifications, hidden collection, apps</td><td class="o">Shopify admin</td><td class="d">Nov 18</td><td><label class="chk"><input type="checkbox" /></label></td></tr>
           <tr><td><b>Meta:</b> ad account access, pixel and conversions API on the store, product catalog connected</td><td class="o">Shopify admin, CCD</td><td class="d">Nov 20</td><td><label class="chk"><input type="checkbox" /></label></td></tr>
           <tr><td><b>Hive:</b> Shopify events flowing for cart and checkout, SMS sending on, send domain confirmed</td><td class="o">CCD, Hive</td><td class="d">Nov 20</td><td><label class="chk"><input type="checkbox" /></label></td></tr>
-          <tr><td><b>Product photography</b> of the box set and each item, flat and in hand</td><td class="o">Sophie, merch partner</td><td class="d">Nov 21</td><td><label class="chk"><input type="checkbox" /></label></td></tr>
-          <tr><td><b>Miguel:</b> early access mention on the Nov 18 stream, one feed post, a 15-second phone clip, the live unboxing on Nov 25</td><td class="o">Miguel, Sophie</td><td class="d">Nov 18–25</td><td><label class="chk"><input type="checkbox" /></label></td></tr>
-          <tr><td><b>Fulfillment:</b> holiday carrier cutoff dates and capacity for a sale-week spike</td><td class="o">Merch partner</td><td class="d">Nov 21</td><td><label class="chk"><input type="checkbox" /></label></td></tr>
-          <tr><td><b>Copy approval</b> for all sale emails and texts, in one batch</td><td class="o">Mitch, Sophie</td><td class="d">Nov 23</td><td><label class="chk"><input type="checkbox" /></label></td></tr>
+          <tr><td><b>Product photography</b> of the box set and each item, flat and in hand</td><td class="o">Sophie, merch partner</td><td class="d">Nov 20</td><td><label class="chk"><input type="checkbox" /></label></td></tr>
+          <tr><td><b>Copy sheets</b> to Miguel: social on Nov 18, email flows on Nov 19, sale sends on Nov 20</td><td class="o">CCD</td><td class="d">Nov 18–20</td><td><label class="chk"><input type="checkbox" /></label></td></tr>
+          <tr><td><b>Fulfillment:</b> holiday carrier cutoff dates and capacity for a sale-week spike</td><td class="o">Merch partner</td><td class="d">Nov 20</td><td><label class="chk"><input type="checkbox" /></label></td></tr>
+          <tr><td><b>Copy sign-off</b> alongside Miguel on each sheet, so approvals land on the dates in his list</td><td class="o">Mitch, Sophie</td><td class="d">Nov 19–23</td><td><label class="chk"><input type="checkbox" /></label></td></tr>
         </tbody>
       </table>
     </div>
@@ -734,6 +780,7 @@ const html = `<!DOCTYPE html>
           <tr><td class="d">Dec</td><td><b>CAOS box set fulfillment</b></td><td>Shipping updates in S1C branding, and an unboxing prompt to buyers so their posts become content.</td></tr>
           <tr><td class="d">Dec 18 (proposed)</td><td><b>Wildheart reissue</b></td><td>Pre-order and release-day emails to vinyl buyers and S1C members, plus a release-day story from Miguel.</td></tr>
           <tr><td class="d">Weekly</td><td><b>S1C livestreams</b></td><td>Clips out within 48 hours, and a store link on every stream that has product to show.</td></tr>
+          <tr><td class="d">From January</td><td><b>Always-on merch</b></td><td>If the sale clears 3.3x, a standing daily merch budget year-round, so D2C runs between tours and drops rather than only around them.</td></tr>
           <tr><td class="d">Before Jan 22</td><td><b>Have You Heard setup</b></td><td>Pre-save and s1c.la capture live before the announce, so new fans from the single are counted from the first day.</td></tr>
         </tbody>
       </table>
@@ -790,6 +837,11 @@ const html = `<!DOCTYPE html>
   }
   [sS,sR,sM].forEach(function(el){el.addEventListener('input',calc);});calc();
 
+  document.querySelectorAll('.mg-c input').forEach(function(c,i){
+    var k='ccd-miguel-bf-mg-'+i, row=c.closest('.mg-row');
+    try{if(localStorage.getItem(k)==='1'){c.checked=true;row.classList.add('done');}}catch(e){}
+    c.addEventListener('change',function(){row.classList.toggle('done',c.checked);try{localStorage.setItem(k,c.checked?'1':'0');}catch(e){}});
+  });
   document.querySelectorAll('.needs input[type=checkbox]').forEach(function(c,i){
     var k='ccd-miguel-bf-need-'+i;
     try{if(localStorage.getItem(k)==='1'){c.checked=true;c.closest('tr').classList.add('done');}}catch(e){}
