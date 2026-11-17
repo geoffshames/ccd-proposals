@@ -453,7 +453,7 @@ function Invest({ c }: { c: Copy }) {
   const [id, setId] = useState<Tier["id"]>("rec");
   const tier = TIERS.find((x) => x.id === id)!;
   const ko = c.locale === "ko";
-  const lineKeys = ["media", "creators", "offline", "mgmt", "retainer"] as const;
+  const lineKeys = ["media", "creators", "offline", "mgmt", "publicist", "retainer"] as const;
   const mail = useMemo(() => {
     const name = v.names[id];
     const subj = ko ? `SOWØ | ${name} 투자안 (${usd(tier.total)}) 승인` : `SOWØ | Approve ${name} (${usd(tier.total)})`;
@@ -478,7 +478,7 @@ function Invest({ c }: { c: Copy }) {
           {lineKeys.map((k) => (
             <div key={k} className={s.line}>
               <i className={s["st_" + k]} />
-              <span>{v.lines[k]}{k === "retainer" && <em>{v.feeNote}</em>}{k === "mgmt" && <em>{v.mgmtNote}</em>}</span>
+              <span>{v.lines[k]}{k === "retainer" && <em>{v.feeNote}</em>}{k === "mgmt" && <em>{v.mgmtNote}</em>}{k === "publicist" && <em>{v.publicistNote}</em>}</span>
               <b>{usd(tier.lines[k])}</b>
             </div>
           ))}

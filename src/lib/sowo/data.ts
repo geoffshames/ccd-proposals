@@ -55,16 +55,17 @@ export const COMPS: Comp[] = [
 export type Tier = {
   id: "lean" | "rec" | "agg";
   total: number;
-  lines: { media: number; creators: number; offline: number; mgmt: number; retainer: number };
+  lines: { media: number; creators: number; offline: number; mgmt: number; publicist: number; retainer: number };
   out: Record<string, [number, number]>; // thousands except ep (copies)
 };
 
 // Budget covers one cycle: Dec 1, 2026 to the EP week in early May 2027 (six months).
 // CCD fee: $10,000/month retainer + 15% of spend (media + creators + offline), inside each total.
 const RETAINER = 10000 * 6;
+const PUBLICIST = 5000 * 6; // publicist retainer, billed at cost, no management fee
 const tier = (id: Tier["id"], media: number, creators: number, offline: number, out: Tier["out"]): Tier => {
   const mgmt = Math.round((media + creators + offline) * 0.15);
-  return { id, total: media + creators + offline + mgmt + RETAINER, lines: { media, creators, offline, mgmt, retainer: RETAINER }, out };
+  return { id, total: media + creators + offline + mgmt + PUBLICIST + RETAINER, lines: { media, creators, offline, mgmt, publicist: PUBLICIST, retainer: RETAINER }, out };
 };
 export const TIERS: Tier[] = [
   tier("lean", 60000, 10000, 5000, { ig: [25, 35], tt: [30, 50], yt: [10, 15], fc: [5, 8], ps: [350, 550], ep: [2500, 4000] }),

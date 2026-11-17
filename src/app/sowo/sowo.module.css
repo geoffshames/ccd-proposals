@@ -278,6 +278,7 @@
 .st_creators { background: #fff; }
 .st_offline { background: rgba(255,255,255,.45); }
 .st_mgmt { background: rgba(255,255,255,.28); }
+.st_publicist { background: rgba(255,255,255,.62); }
 .st_retainer { background: rgba(255,255,255,.14); }
 .line { display: grid; grid-template-columns: 12px minmax(0,1fr) auto; gap: 12px; align-items: baseline; padding: 12px 0; border-bottom: 1px solid var(--line); font-size: 14.5px; }
 .line i { width: 10px; height: 10px; display: block; }
