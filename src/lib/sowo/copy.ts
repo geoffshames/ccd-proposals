@@ -18,7 +18,7 @@ export const en = {
     eyebrow: "Debut growth plan · A joint offering from Transparent Arts and Crowd Control Digital",
     title1: "From Ø",
     title2: "to the wave.",
-    sub: "A paid media and growth plan for the debut of SOWØ, Dec 2026 to the EP in May 2027. Built on the comparables you named, run back through the math.",
+    sub: "A paid media and growth plan for the debut of SOWØ, Dec 2026 to the EP in May 2027. Built on recent rookie boy-group launches, run back through the math.",
     meta: [["Prepared for", "OD UNIVERSE · Shin Choon-soo"], ["Prepared by", "Transparent Arts and Crowd Control Digital"], ["Cycle", "Dec 1, 2026 to early May 2027"], ["Date", "November 2026"]] as [string, string][],
     scroll: "Scroll to begin",
     program: "Program",
@@ -53,8 +53,8 @@ export const en = {
   },
   cast: {
     n: "03", k: "Comparables",
-    title: "The two groups you named, and the field around them.",
-    lead: "On our call you brought up LNGSHOT and CORTIS. Both are right references for SOWØ's sound and positioning. Both also had something SOWØ does not. Here is what to copy, and what can't be copied.",
+    title: "Two reference launches, and the field around them.",
+    lead: "We use LNGSHOT and CORTIS as reference points. Both are right comparisons for SOWØ's sound and positioning. Both also had something SOWØ does not. Here is what to copy, and what can't be copied.",
     lng: {
       name: "LNGSHOT", label: "MORE VISION · Jay Park · debuted Jan 13, 2026",
       stats: [["48,016", "First-week Hanteo"], ["100M", "Spotify streams by day 59"], ["5.9M", "Monthly listeners by day 59"], ["~400M", "Streams in ~10 months"]] as [string, string][],
@@ -305,7 +305,7 @@ export const ko: Copy = {
     eyebrow: "데뷔 성장 플랜 · Transparent Arts와 Crowd Control Digital의 공동 제안",
     title1: "From Ø",
     title2: "to the wave.",
-    sub: "2026년 12월부터 2027년 5월 EP까지, SOWØ 데뷔를 위한 유료 미디어 및 성장 플랜입니다. 귀사가 언급한 비교 사례를 바탕으로, 목표 수치를 역산했습니다.",
+    sub: "2026년 12월부터 2027년 5월 EP까지, SOWØ 데뷔를 위한 유료 미디어 및 성장 플랜입니다. 최근 신인 보이그룹 런칭 사례를 바탕으로, 목표 수치를 역산했습니다.",
     meta: [["대상", "OD UNIVERSE · 신춘수 대표"], ["작성", "Transparent Arts와 Crowd Control Digital"], ["기간", "2026년 12월 1일 ~ 2027년 5월 초"], ["작성일", "2026년 11월"]],
     scroll: "스크롤하여 시작",
     program: "프로그램",
@@ -340,8 +340,8 @@ export const ko: Copy = {
   },
   cast: {
     n: "03", k: "비교 사례",
-    title: "귀사가 언급한 두 그룹, 그리고 그 주변의 판.",
-    lead: "통화에서 LNGSHOT과 CORTIS를 언급하셨습니다. 두 그룹 모두 SOWØ의 사운드와 포지셔닝에 맞는 레퍼런스입니다. 동시에 둘 다 SOWØ에 없는 것을 가지고 있었습니다. 따라 할 수 있는 것과 따라 할 수 없는 것을 정리했습니다.",
+    title: "두 개의 레퍼런스 런칭, 그리고 그 주변의 판.",
+    lead: "LNGSHOT과 CORTIS를 레퍼런스로 삼았습니다. 두 그룹 모두 SOWØ의 사운드와 포지셔닝에 맞는 비교 대상입니다. 동시에 둘 다 SOWØ에 없는 것을 가지고 있었습니다. 따라 할 수 있는 것과 따라 할 수 없는 것을 정리했습니다.",
     lng: {
       name: "LNGSHOT", label: "MORE VISION · 박재범 · 2026년 1월 13일 데뷔",
       stats: [["48,016", "한터 초동"], ["1억", "데뷔 59일 Spotify 스트리밍"], ["590만", "데뷔 59일 월간 리스너"], ["~4억", "약 10개월 스트리밍"]],
