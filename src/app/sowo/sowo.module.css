@@ -16,7 +16,10 @@
 
 /* NAV */
 .nav { position: fixed; inset: 0 0 auto 0; z-index: 50; height: 56px; display: grid; grid-template-columns: auto 1fr auto; align-items: center; gap: 16px; padding: 0 var(--pad); padding-top: env(safe-area-inset-top); background: rgba(0,0,0,.72); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); border-bottom: 1px solid var(--line); }
+.navMark { display: flex; align-items: center; gap: 10px; text-decoration: none; }
 .navMark img { height: 16px; width: auto; display: block; }
+.navMark .taLogo { height: 26px; }
+.lockX { font-style: normal; color: var(--faint); font-size: 12px; }
 .navProg { justify-self: center; display: flex; align-items: center; gap: 10px; background: none; border: 1px solid var(--line); color: #fff; padding: 0 14px; height: 34px; border-radius: 999px; cursor: pointer; max-width: 100%; min-width: 0; font-family: N27, sans-serif; text-transform: uppercase; font-size: 12px; letter-spacing: .06em; }
 .navNum { color: var(--red); font-family: var(--font-geist-mono), monospace; font-size: 11px; }
 .navCur { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; min-width: 0; }
@@ -274,7 +277,8 @@
 .st_media { background: var(--red); }
 .st_creators { background: #fff; }
 .st_offline { background: rgba(255,255,255,.45); }
-.st_fee { background: rgba(255,255,255,.18); }
+.st_mgmt { background: rgba(255,255,255,.28); }
+.st_retainer { background: rgba(255,255,255,.14); }
 .line { display: grid; grid-template-columns: 12px minmax(0,1fr) auto; gap: 12px; align-items: baseline; padding: 12px 0; border-bottom: 1px solid var(--line); font-size: 14.5px; }
 .line i { width: 10px; height: 10px; display: block; }
 .line em { display: block; font-style: normal; font-size: 12px; color: var(--faint); margin-top: 4px; line-height: 1.4; }
@@ -427,3 +431,35 @@
 
 .o_countdown, .o_phone, .o_subway, .o_london, .o_desk, .o_corridor { }
 .page[lang="ko"] dd, .page[lang="ko"] b, .page[lang="ko"] em { word-break: keep-all; }
+
+/* Co-brand lockups */
+.coverLock { display: flex; align-items: center; gap: 16px; margin-bottom: 26px; }
+.coverLock i { font-style: normal; color: rgba(255,255,255,.6); font-size: 18px; }
+.coverTa { height: 44px; width: auto; }
+.coverCc { height: 24px; width: auto; }
+.team { border: 1px solid var(--line); padding: clamp(22px, 3vw, 40px); margin-bottom: clamp(50px, 7vw, 90px); }
+.teamHead { max-width: 760px; margin-bottom: 28px; }
+.teamHead p { color: rgba(255,255,255,.78); font-size: 16px; line-height: 1.6; }
+.teamCols { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line); }
+.teamCol { background: #000; padding: 24px 22px 26px; }
+.teamCol img { display: block; width: auto; margin-bottom: 18px; }
+.teamTa { height: 40px; }
+.teamCc { height: 20px; margin-top: 10px; margin-bottom: 28px !important; }
+.teamCol b { display: block; font-family: N27, sans-serif; text-transform: uppercase; font-size: 15px; color: var(--red); margin-bottom: 12px; }
+.teamCol ul { margin: 0; padding: 0 0 0 18px; display: flex; flex-direction: column; gap: 10px; font-size: 14.5px; line-height: 1.5; color: rgba(255,255,255,.8); }
+.usPair { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: clamp(30px, 5vw, 70px); align-items: start; }
+.usTa { display: block; height: 70px; width: auto; margin: 0 0 22px; }
+.usPair .usMark { width: min(420px, 100%); margin: 18px 0 38px; }
+.footTa { height: 22px !important; }
+@media (max-width: 760px) {
+  .navMark { gap: 6px; }
+  .navMark .taLogo { height: 20px; }
+  .navMark img { height: 11px; }
+  .lockX { font-size: 10px; }
+  .coverTa { height: 34px; }
+  .coverCc { height: 18px; }
+  .teamCols, .usPair { grid-template-columns: minmax(0,1fr); }
+  .usTa { height: 54px; }
+}
+@media (max-width: 380px) { .navMark .lockX { display: none; } .navMark .taLogo { height: 17px; } .navMark img { height: 9px; } }
+@media (max-width: 440px) { .navCur { display: none; } .navProg { justify-self: end; justify-content: center; width: 44px; padding: 0; } }

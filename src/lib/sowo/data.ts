@@ -55,20 +55,21 @@ export const COMPS: Comp[] = [
 export type Tier = {
   id: "lean" | "rec" | "agg";
   total: number;
-  monthly: number;
-  lines: { media: number; creators: number; offline: number; fee: number };
+  lines: { media: number; creators: number; offline: number; mgmt: number; retainer: number };
   out: Record<string, [number, number]>; // thousands except ep (copies)
 };
 
 // Budget covers one cycle: Dec 1, 2026 to the EP week in early May 2027 (six months).
-// The CCD fee sits inside each total.
+// CCD fee: $10,000/month retainer + 15% of spend (media + creators + offline), inside each total.
+const RETAINER = 10000 * 6;
+const tier = (id: Tier["id"], media: number, creators: number, offline: number, out: Tier["out"]): Tier => {
+  const mgmt = Math.round((media + creators + offline) * 0.15);
+  return { id, total: media + creators + offline + mgmt + RETAINER, lines: { media, creators, offline, mgmt, retainer: RETAINER }, out };
+};
 export const TIERS: Tier[] = [
-  { id: "lean", total: 105000, monthly: 5000, lines: { media: 60000, creators: 10000, offline: 5000, fee: 30000 },
-    out: { ig: [25, 35], tt: [30, 50], yt: [10, 15], fc: [5, 8], ps: [350, 550], ep: [2500, 4000] } },
-  { id: "rec", total: 225000, monthly: 7500, lines: { media: 135000, creators: 30000, offline: 15000, fee: 45000 },
-    out: { ig: [45, 60], tt: [60, 80], yt: [20, 28], fc: [9, 12], ps: [600, 850], ep: [4000, 6000] } },
-  { id: "agg", total: 410000, monthly: 10000, lines: { media: 260000, creators: 55000, offline: 35000, fee: 60000 },
-    out: { ig: [70, 90], tt: [100, 130], yt: [35, 45], fc: [14, 18], ps: [1000, 1400], ep: [6000, 9000] } },
+  tier("lean", 60000, 10000, 5000, { ig: [25, 35], tt: [30, 50], yt: [10, 15], fc: [5, 8], ps: [350, 550], ep: [2500, 4000] }),
+  tier("rec", 135000, 30000, 15000, { ig: [45, 60], tt: [60, 80], yt: [20, 28], fc: [9, 12], ps: [600, 850], ep: [4000, 6000] }),
+  tier("agg", 260000, 55000, 35000, { ig: [70, 90], tt: [100, 130], yt: [35, 45], fc: [14, 18], ps: [1000, 1400], ep: [6000, 9000] }),
 ];
 
 export const PHASES = [

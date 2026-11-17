@@ -63,13 +63,16 @@ function Nav({ c }: { c: Copy }) {
   return (
     <>
       <nav className={s.nav}>
-        <a href="#top" className={s.navMark} aria-label="Crowd Control">
+        <a href="#top" className={s.navMark} aria-label="Transparent Arts and Crowd Control">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img className={s.taLogo} src="/brand/TA-LOGO-WHITE.png" alt="Transparent Arts" />
+          <i className={s.lockX} aria-hidden="true">×</i>
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img src="/brand/CC-LOGO-2024-WHITE.png" alt="Crowd Control" />
         </a>
-        <button className={s.navProg} onClick={() => setOpen(true)} aria-label={c.cover.programme}>
+        <button className={s.navProg} onClick={() => setOpen(true)} aria-label={c.cover.program}>
           <span className={s.navNum}>{curIdx >= 0 ? String(curIdx + 1).padStart(2, "0") : "00"}</span>
-          <span className={s.navCur}>{curLabel || c.cover.programme}</span>
+          <span className={s.navCur}>{curLabel || c.cover.program}</span>
           <span className={s.navBurger} aria-hidden="true"><i /><i /></span>
         </button>
         <div className={s.navRight}>
@@ -81,7 +84,7 @@ function Nav({ c }: { c: Copy }) {
       {open && (
         <div className={s.menu} role="dialog" aria-modal="true" onClick={() => setOpen(false)}>
           <div className={s.menuIn} onClick={(e) => e.stopPropagation()}>
-            <div className={s.menuTop}><span>{c.cover.programme}</span><button onClick={() => setOpen(false)} aria-label="Close">×</button></div>
+            <div className={s.menuTop}><span>{c.cover.program}</span><button onClick={() => setOpen(false)} aria-label="Close">×</button></div>
             <ol>
               {c.nav.items.map(([id, label], i) => (
                 <li key={id}><a href={`#${id}`} onClick={() => setOpen(false)} className={id === cur ? s.menuOn : ""}><b>{String(i + 1).padStart(2, "0")}</b>{label}</a></li>
@@ -100,6 +103,13 @@ function Cover({ c }: { c: Copy }) {
       <div className={s.coverImg}><Image src={IMG("hero")} alt="" fill priority sizes="100vw" style={{ objectFit: "cover", objectPosition: "50% 45%" }} /></div>
       <div className={s.coverShade} />
       <div className={s.coverIn}>
+        <div className={s.coverLock}>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img className={s.coverTa} src="/brand/TA-LOGO-WHITE.png" alt="Transparent Arts" />
+          <i aria-hidden="true">×</i>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img className={s.coverCc} src="/brand/CC-LOGO-2024-WHITE.png" alt="Crowd Control" />
+        </div>
         <div className={s.coverEy}>{c.cover.eyebrow}</div>
         <h1 className={s.h1}><span>{c.cover.title1}</span><span className={s.red}>{c.cover.title2}</span></h1>
         <p className={s.coverSub}>{c.cover.sub}</p>
@@ -126,6 +136,19 @@ function Read({ c }: { c: Copy }) {
         ))}
       </div>
       <blockquote className={s.quote} data-r>{r.quote}</blockquote>
+      <div className={s.team} data-r>
+        <div className={s.teamHead}><h3 className={s.h3}>{r.team.k}</h3><p>{r.team.lead}</p></div>
+        <div className={s.teamCols}>
+          {[r.team.ta, r.team.ccd].map(([h, items], i) => (
+            <div key={h as string} className={s.teamCol}>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img className={i === 0 ? s.teamTa : s.teamCc} src={i === 0 ? "/brand/TA-LOGO-WHITE.png" : "/brand/CC-LOGO-2024-WHITE.png"} alt={i === 0 ? "Transparent Arts" : "Crowd Control"} />
+              <b>{h as string}</b>
+              <ul>{(items as string[]).map((x) => <li key={x}>{x}</li>)}</ul>
+            </div>
+          ))}
+        </div>
+      </div>
       <div className={s.kpiBill} data-r>
         <div className={s.kpiBillHead}><span>{r.kpiTitle}</span><span>{r.kpiFeb}</span><span>{r.kpiMay}</span></div>
         {KPIS.map((k) => (
@@ -430,7 +453,7 @@ function Invest({ c }: { c: Copy }) {
   const [id, setId] = useState<Tier["id"]>("rec");
   const tier = TIERS.find((x) => x.id === id)!;
   const ko = c.locale === "ko";
-  const lineKeys = ["media", "creators", "offline", "fee"] as const;
+  const lineKeys = ["media", "creators", "offline", "mgmt", "retainer"] as const;
   const mail = useMemo(() => {
     const name = v.names[id];
     const subj = ko ? `SOWØ | ${name} 투자안 (${usd(tier.total)}) 승인` : `SOWØ | Approve ${name} (${usd(tier.total)})`;
@@ -455,7 +478,7 @@ function Invest({ c }: { c: Copy }) {
           {lineKeys.map((k) => (
             <div key={k} className={s.line}>
               <i className={s["st_" + k]} />
-              <span>{v.lines[k]}{k === "fee" && <em>{usd(tier.monthly)} {v.feeNote}</em>}</span>
+              <span>{v.lines[k]}{k === "retainer" && <em>{v.feeNote}</em>}{k === "mgmt" && <em>{v.mgmtNote}</em>}</span>
               <b>{usd(tier.lines[k])}</b>
             </div>
           ))}
@@ -503,13 +526,22 @@ function Us({ c }: { c: Copy }) {
   return (
     <section className={s.section} id="us">
       <div className={s.eyebrow} data-r><b>{u.n}</b><span>{u.k}</span></div>
-      {/* eslint-disable-next-line @next/next/no-img-element */}
-      <img className={s.usMark} src="/brand/CC-LOGO-2024-WHITE.png" alt="Crowd Control" data-r />
-      <p className={s.usLine} data-r>{u.line}</p>
-      <div className={s.usK} data-r>{u.servicesK}</div>
+      <div className={s.usPair}>
+        <div data-r>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img className={s.usTa} src="/brand/TA-LOGO-WHITE.png" alt="Transparent Arts" />
+          <p className={s.usLine}>{u.ta}</p>
+        </div>
+        <div data-r>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img className={s.usMark} src="/brand/CC-LOGO-2024-WHITE.png" alt="Crowd Control" />
+          <p className={s.usLine}>{u.line}</p>
+        </div>
+      </div>
+      <div className={s.usK} data-r>{u.ccdK} · {u.servicesK}</div>
       <ol className={s.services}>{u.services.map(([t, d], i) => <li key={t} data-r><span>{String(i + 1).padStart(2, "0")}</span><b>{t}</b><p>{d}</p></li>)}</ol>
       <div className={s.clients} data-r>
-        <div><div className={s.usK}>{u.musicK}</div><p>{u.music.join(" · ")}</p></div>
+        <div><div className={s.usK}>{u.ccdK} · {u.musicK}</div><p>{u.music.join(" · ")}</p></div>
         <div><div className={s.usK}>{u.eventsK}</div><p>{u.events.join(" · ")}</p></div>
         <div><div className={s.usK}>{u.brandsK}</div><p>{u.brands.join(" · ")}</p></div>
       </div>
@@ -561,6 +593,8 @@ export default function SowoClient({ c }: { c: Copy }) {
           <p>{c.foot.note}</p>
         </details>
         <div className={s.footRow}>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img className={s.footTa} src="/brand/TA-LOGO-WHITE.png" alt="Transparent Arts" />
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img src="/brand/CC-LOGO-2024-WHITE.png" alt="Crowd Control" />
           <span>{c.foot.prepared}</span><span>{c.foot.date}</span>
