@@ -420,11 +420,11 @@ const html = `<!DOCTYPE html>
       <h1 class="cover-title">MIGUEL<span class="sm">BLACK FRIDAY MERCH PLAN</span></h1>
       <div class="cover-subwrap">
         <div class="bar"></div>
-        <p class="cover-sub">The signed CAOS box set leads, S1C members get in first, and every sale is traced to the channel that made it.</p>
+        <p class="cover-sub">The sale opens on Wednesday's livestream, goes public on Black Friday and closes with a Cyber Monday push. The box sets open a waitlist, and every sale is traced to the channel that made it.</p>
       </div>
     </div>
     <div class="cover-foot">
-      <div><div class="mono dim">Sale window</div><div class="cv">Members Nov 26, public Nov 27 to Dec 1</div></div>
+      <div><div class="mono dim">Key dates</div><div class="cv">Livestream Nov 25, public Nov 27, Cyber Monday Nov 30</div></div>
       <div><div class="mono dim">Prepared By</div><div class="cv">Geoff Shames, Co-Founder, CCD</div></div>
     </div>
   </section>
@@ -432,45 +432,46 @@ const html = `<!DOCTYPE html>
   <div class="navbar">
     <div class="navbar-in">
       <a class="nb-brand" href="#top">Miguel / Black Friday</a>
-      <div class="nb-jump"><a href="#miguel">Miguel</a><a href="#basis">Basis</a><a href="#offer">Offer</a><a href="#early">Early Access</a><a href="#crm">Email + SMS</a><a href="#paid">Paid</a><a href="#calendar">Calendar</a><a href="#needs">Team</a></div>
+      <div class="nb-jump"><a href="#miguel">Miguel</a><a href="#offer">Offer</a><a href="#early">Early Access</a><a href="#crm">Email + SMS</a><a href="#paid">Paid</a><a href="#calendar">Calendar</a><a href="#needs">Team</a></div>
     </div>
   </div>
 
   <section class="ctx wrap">
     <h2>The plan at a glance</h2>
-    <p class="lead">One six-day drop built on the channels Miguel already owns. <b>S1C.LA members get a 24-hour head start</b> on the signed box set, email and SMS on Hive carry the launch to the full list, and a <b>$1,000 paid test</b> only scales once it is paying for itself. Every order carries a code or a tracked link, so the report shows dollars in and revenue out by channel.</p>
+    <p class="lead">A soft launch on <b>Wednesday's livestream</b>, where the password-protected collection opens to the fans watching and to everyone who signed up for early access. <b>Black Friday opens the sale to everyone</b> with a full email and SMS push, and <b>Cyber Monday</b> brings one more. Archival merch is 30% off, the two box sets sit at full price on a notify-me waitlist, and a $1,000 paid test scales in real time once it clears 5x.</p>
     <div class="ctx-grid">
-      <div class="ctx-card"><span class="k">What we sell</span><p><b>The signed CAOS box set</b> as the hero, with catalog vinyl and the remaining tour and archival merch around it.</p></div>
-      <div class="ctx-card"><span class="k">How it reaches fans</span><p><b>S1C early access, email and SMS on Hive, Miguel's own posts and livestreams,</b> and a small paid layer pointed at people who already know him.</p></div>
-      <div class="ctx-card"><span class="k">How we measure it</span><p><b>A unique code or link per channel</b>, a daily read through the sale, and a live report page from launch day.</p></div>
+      <div class="ctx-card"><span class="k">What we sell</span><p><b>Archival merch at 30% off</b> leads the sale, alongside the current shop. The CAOS and Catalog vinyl box sets open a <b>notify-me waitlist</b> at full price.</p></div>
+      <div class="ctx-card"><span class="k">How it reaches fans</span><p><b>The Wednesday livestream, a sign-up call to action on socials, email and SMS on Hive,</b> and a paid layer pointed at the sale collection.</p></div>
+      <div class="ctx-card"><span class="k">How we measure it</span><p><b>Tracked links per channel</b>, sign-ups and waitlist counts, a daily read through the sale, and a live report page from Black Friday.</p></div>
     </div>
     <div class="react-momentum" style="margin-top:28px">
-      <div class="rm"><div class="rn">24H</div><span class="rl">S1C.LA member head start, Thu Nov 26 9am PT</span></div>
-      <div class="rm"><div class="rn">$1,000</div><span class="rl">Starting paid test, scaled only on results</span></div>
-      <div class="rm"><div class="rn">3.3X</div><span class="rl">Break-even return on ad spend at a 30% margin</span></div>
-      <div class="rm"><div class="rn">6 DAYS</div><span class="rl">Thanksgiving through Cyber Monday plus one last-call day</span></div>
+      <div class="rm"><div class="rn">WED</div><span class="rl">Soft launch on the livestream, password-protected collection opens</span></div>
+      <div class="rm"><div class="rn">30%</div><span class="rl">Off archival merch. Box sets stay full price</span></div>
+      <div class="rm"><div class="rn">150</div><span class="rl">Units of each box set. Once they're gone, they're gone</span></div>
+      <div class="rm"><div class="rn">5X</div><span class="rl">Return on ad spend that keeps the budget rising</span></div>
     </div>
   </section>
 
   <section class="sec wrap" id="miguel">
     <div class="mg">
       <div class="mg-top">
-        <div><div class="mono" style="color:var(--accent);margin-bottom:14px">Yours to own</div><h2>MIGUEL&#39;S<br/>TO-DO</h2></div>
-        <span class="mg-count">7 items, Nov 18–25</span>
+        <div><div class="mono" style="color:var(--accent);margin-bottom:14px">Yours to own</div><h2>MIGUEL'S<br/>TO-DO</h2></div>
+        <span class="mg-count">8 items, Nov 23–30</span>
       </div>
-      <p class="mg-sub">Seven things, each with a date. Every date holds the schedule: if one slips, the sale moves with it.</p>
+      <p class="mg-sub">Eight things, each with a date. Every date holds the schedule: if one slips, the sale moves with it.</p>
       <div class="mg-list">
-        <div class="mg-row"><div class="mg-d">Wed Nov 18<span>Livestream</span></div><div class="mg-t"><h4>Mention early access on the S1C stream</h4><p>"S1C members get Black Friday first. Join at <b>s1c.la</b>." Thirty seconds, any point in the stream.</p></div><div class="mg-m">About 1 min</div><div class="mg-c"><input type="checkbox" aria-label="Done" /></div></div>
-        <div class="mg-row"><div class="mg-d">Thu Nov 19<span>Approval</span></div><div class="mg-t"><h4>Approve the social copy</h4><p>The feed post and story lines from the copy sheet we send <b>Wed Nov 18</b>. Edits welcome, just in by Thursday morning.</p></div><div class="mg-m">About 10 min</div><div class="mg-c"><input type="checkbox" aria-label="Done" /></div></div>
-        <div class="mg-row"><div class="mg-d">Thu Nov 19<span>Post</span></div><div class="mg-t"><h4>Post one feed post and stories</h4><p>"S1C gets Black Friday first," with the <b>link in bio to s1c.la</b>. We supply the copy and any graphics.</p></div><div class="mg-m">About 5 min</div><div class="mg-c"><input type="checkbox" aria-label="Done" /></div></div>
-        <div class="mg-row"><div class="mg-d">Fri Nov 20<span>Approval</span></div><div class="mg-t"><h4>Approve the email flow copy</h4><p>Welcome to S1C, abandoned checkout and order confirmation. These run automatically, so <b>one approval covers every send</b>.</p></div><div class="mg-m">About 15 min</div><div class="mg-c"><input type="checkbox" aria-label="Done" /></div></div>
-        <div class="mg-row"><div class="mg-d">Fri Nov 20<span>Film</span></div><div class="mg-t"><h4>Send a 15-second phone clip</h4><p>Vertical, to camera, in his own words: the box set is signed, it is limited, S1C gets it first. <b>One take is fine.</b> This becomes the lead ad.</p></div><div class="mg-m">About 10 min</div><div class="mg-c"><input type="checkbox" aria-label="Done" /></div></div>
-        <div class="mg-row"><div class="mg-d">Mon Nov 23<span>Approval</span></div><div class="mg-t"><h4>Approve all sale emails and texts</h4><p>Every send from Nov 25 to Dec 1, <b>in one batch</b> on one copy sheet, so nothing waits on approval during the sale.</p></div><div class="mg-m">About 20 min</div><div class="mg-c"><input type="checkbox" aria-label="Done" /></div></div>
-        <div class="mg-row"><div class="mg-d">Wed Nov 25<span>Unboxing</span></div><div class="mg-t"><h4>Unbox the signed box set</h4><p>On the stream, or <b>filmed on his phone and sent to us</b> to post. It does not need to be live. Members get in the next morning at 9am PT.</p></div><div class="mg-m">About 5 min</div><div class="mg-c"><input type="checkbox" aria-label="Done" /></div></div>
+        <div class="mg-row"><div class="mg-d">Mon Nov 23<span>Tonight</span></div><div class="mg-t"><h4>Final notes on the site</h4><p>Anything he wants changed on the store goes in <b>tonight</b>. After that the site is locked through Cyber Monday so it matches the social and email creative.</p></div><div class="mg-m">About 15 min</div><div class="mg-c"><input type="checkbox" aria-label="Done" /></div></div>
+        <div class="mg-row"><div class="mg-d">Tue Nov 24<span>Approval</span></div><div class="mg-t"><h4>Sign off on the box set waitlist</h4><p>Both box sets go up as <b>notify me</b>, no deposit, 150 of each, with a clear note that delivery before Christmas is not guaranteed.</p></div><div class="mg-m">About 2 min</div><div class="mg-c"><input type="checkbox" aria-label="Done" /></div></div>
+        <div class="mg-row"><div class="mg-d">Tue Nov 24<span>Approval</span></div><div class="mg-t"><h4>Approve the sign-up graphic and the sale copy</h4><p>The early access graphic, plus every email and text from Wednesday to Cyber Monday <b>on one copy sheet</b>.</p></div><div class="mg-m">About 20 min</div><div class="mg-c"><input type="checkbox" aria-label="Done" /></div></div>
+        <div class="mg-row"><div class="mg-d">Tue Nov 24<span>Post</span></div><div class="mg-t"><h4>Post "Sign up for early access"</h4><p>Feed post and stories with the sign-up link. <b>Everyone who signs up gets the password</b> when the collection opens on Wednesday. We supply the graphic and copy.</p></div><div class="mg-m">About 5 min</div><div class="mg-c"><input type="checkbox" aria-label="Done" /></div></div>
+        <div class="mg-row"><div class="mg-d">Wed Nov 25<span>Film</span></div><div class="mg-t"><h4>Send a 15-second phone clip</h4><p>Vertical, to camera, in his own words: the Black Friday sale is live and archival pieces are 30% off. <b>One take is fine.</b> This becomes the lead ad from Friday.</p></div><div class="mg-m">About 10 min</div><div class="mg-c"><input type="checkbox" aria-label="Done" /></div></div>
+        <div class="mg-row"><div class="mg-d">Wed Nov 25<span>Livestream</span></div><div class="mg-t"><h4>Open the sale on the stream</h4><p>Tell viewers the collection is open, <b>share the password</b>, and point them to the box set waitlist. The people watching get first pick.</p></div><div class="mg-m">About 2 min</div><div class="mg-c"><input type="checkbox" aria-label="Done" /></div></div>
+        <div class="mg-row"><div class="mg-d">Fri Nov 27<span>Post</span></div><div class="mg-t"><h4>Story: Black Friday is live</h4><p>"If you missed it on Wednesday's stream, the sale is open to everyone now." Link to the shop.</p></div><div class="mg-m">About 2 min</div><div class="mg-c"><input type="checkbox" aria-label="Done" /></div></div>
+        <div class="mg-row"><div class="mg-d">Mon Nov 30<span>Post</span></div><div class="mg-t"><h4>Story: Cyber Monday</h4><p>One story for the <b>Cyber Monday push</b>. We send the graphic and copy over the weekend.</p></div><div class="mg-m">About 2 min</div><div class="mg-c"><input type="checkbox" aria-label="Done" /></div></div>
       </div>
       <div class="mg-rule">
-        <div><span class="k">About an hour, total</span>Spread across eight days. Every approval comes as <b>one copy sheet</b> with the date it is needed by.</div>
-        <div><span class="k">Everything else is on us</span>Building the flows, setting up the store, running the ads, reporting the results. <b>The team checklist below covers the rest.</b></div>
+        <div><span class="k">About an hour, total</span>Spread across the week. Every approval comes as <b>one copy sheet</b> with the date it is needed by.</div>
+        <div><span class="k">Everything else is on us</span>Building the creative, the flows and the ads, running the sale, reporting the results. <b>The team checklist below covers the rest.</b></div>
       </div>
     </div>
   </section>
@@ -479,32 +480,32 @@ const html = `<!DOCTYPE html>
     <div class="sec-head">
       <div class="row"><span class="num">01</span><span class="ln"></span></div>
       <h2>What We Are Building On</h2>
-      <p class="desc">What Miguel's own numbers say works, and how each one shapes this drop.</p>
+      <p class="desc">What Miguel's own numbers say works, and how each one shapes this sale.</p>
     </div>
     <div class="ev-grid">
       <div class="ev">
         <div class="evn">3,860</div><span class="evl">Emails captured in the October 2025 announce week, plus 2,536 in release week</span>
         <h4>Fans sign up around a moment</h4>
         <p>List growth has been strongest when capture was pointed at a live release moment. Outside those windows, capture has been close to flat.</p>
-        <div class="so"><span class="ml">So this drop</span>Treats Black Friday as a capture moment too. Early access is the reason to join S1C.LA this week.</div>
+        <div class="so"><span class="ml">So this sale</span>Asks fans to sign up for early access, and turns the box set waitlist into another reason to leave an email or number.</div>
       </div>
       <div class="ev">
         <div class="evn">4–5%</div><span class="evl">Click-through on the spring EU tour flight, at $0.05–$0.06 per click</span>
         <h4>His audience responds to paid</h4>
         <p>That flight ran at two to four times the 1 to 2% music benchmark, and tour paid delivered 7.3M Instagram video views in the first half of the year.</p>
-        <div class="so"><span class="ml">So this drop</span>Starts paid on warm audiences first, where response is already proven, and adds prospecting second.</div>
+        <div class="so"><span class="ml">So this sale</span>Starts paid on warm audiences first, where response is already proven, and adds prospecting second.</div>
       </div>
       <div class="ev">
         <div class="evn">13</div><span class="evl">Viewers asking for merch, vinyl or a "CAOS kit" on one Oct 28 livestream</span>
         <h4>Fans are asking for physical product</h4>
         <p>The S1C livestreams run at about 18 chat messages a minute, and the requests for product came unprompted.</p>
-        <div class="so"><span class="ml">So this drop</span>Puts a box set unboxing in front of fans the night before members get in.</div>
+        <div class="so"><span class="ml">So this sale</span>Opens on the Wednesday stream, where those fans already are, and gives them first pick.</div>
       </div>
       <div class="ev">
-        <div class="evn">30K</div><span class="evl">Contacts consolidated on Hive, alongside s1c.la as the owned home</span>
+        <div class="evn">30K</div><span class="evl">Contacts on the Miguel list in Hive, with good open rates</span>
         <h4>The owned channels are in place</h4>
-        <p>Email, SMS and the S1C site now sit in one system, which makes segment-level sends and per-channel attribution possible for the first time.</p>
-        <div class="so"><span class="ml">So this drop</span>Runs on owned channels first. Engaged segments get the most sends, and unengaged contacts get one well-timed reactivation.</div>
+        <p>Email, SMS and the S1C site now sit in one system, which makes segment-level sends and per-channel attribution possible.</p>
+        <div class="so"><span class="ml">So this sale</span>Hits the full list on Black Friday and again on Cyber Monday, with lighter follow-ups to people who have not bought.</div>
       </div>
     </div>
   </section>
@@ -513,119 +514,90 @@ const html = `<!DOCTYPE html>
     <div class="sec-head">
       <div class="row"><span class="num">02</span><span class="ln"></span></div>
       <h2>The Offer</h2>
-      <p class="desc">The signed box set does the heavy lifting. Final pricing, quantities and ship dates are locked with the S1C team and the merch partner before anything goes live.</p>
+      <p class="desc">Archival merch on sale, the box sets on a waitlist at full price, and the rest of the shop alongside.</p>
     </div>
     <div class="prod">
       <div class="pc hero">
-        <span class="tier">Hero</span>
-        <h3>Signed CAOS Box Set</h3>
-        <p>The collector piece, and the reason to show up early.</p>
+        <span class="tier">On sale</span>
+        <h3>Archival Merch, 30% Off</h3>
+        <p>The heart of the sale, and the pieces that lead the ads and emails.</p>
         <ul>
-          <li>CAOS deluxe vinyl, hand signed by Miguel</li>
-          <li>CAOS Zine Vol 1</li>
-          <li>CAOS Survival Club Journal</li>
-          <li>CAOS sticker sheet</li>
-          <li>Sew-on patch collection, exclusive to S1C.LA</li>
+          <li>Archival apparel and accessories</li>
+          <li>Wildheart Baja Hoodie</li>
+          <li>Script Logo Tee</li>
         </ul>
-        <div class="foot">Limited, signed <b>quantity TBC</b></div>
+        <div class="foot">Ships from <b>Oaklandish</b></div>
       </div>
       <div class="pc">
-        <span class="tier">Catalog</span>
-        <h3>Catalog Vinyl</h3>
-        <p>The reissue program gives the drop depth beyond CAOS.</p>
+        <span class="tier">Waitlist</span>
+        <h3>CAOS + Catalog Vinyl Box Sets</h3>
+        <p>Full price, 150 of each. Fans join a notify-me list now and get first access when they are ready to ship.</p>
         <ul>
-          <li>Wildheart, double LP deluxe, US reissue (proposed Dec 18)</li>
-          <li>War &amp; Leisure and Kaleidoscope Dream, where stock is available for the S1C store</li>
+          <li>CAOS: hand-signed deluxe vinyl, Zine Vol 1, Survival Club Journal, sticker sheet, patch collection</li>
+          <li>Catalog vinyl box set, pricing TBC</li>
         </ul>
-        <div class="foot">Pre-order where needed <b>dates TBC</b></div>
+        <div class="foot">Not guaranteed <b>before Christmas</b></div>
       </div>
       <div class="pc">
-        <span class="tier">Merch</span>
-        <h3>Tour + Archival Merch</h3>
-        <p>Remaining CAOS tour stock and archival pieces, ideal for gifting and for lifting order value.</p>
+        <span class="tier">Also in the shop</span>
+        <h3>The Rest of the Store</h3>
+        <p>Everything else stays live, so the sale page works as the full shop.</p>
         <ul>
-          <li>CAOS tour apparel and accessories</li>
-          <li>Archival merch pieces</li>
+          <li>Current tour merch and CAOS CDs</li>
+          <li>New long-sleeve tee, a small first run</li>
         </ul>
-        <div class="foot">Stock counts <b>TBC per SKU</b></div>
+        <div class="foot">One <b>catch-all sale page</b> from Friday</div>
       </div>
     </div>
 
-    <h3 class="sub-h">Pricing options</h3>
-    <p class="note" style="margin-top:-4px;margin-bottom:6px">Pick one. The signed box set stays full price in every option, because scarcity sells it better than a discount does.</p>
-    <div class="opts" id="opts">
-      <button class="opt" type="button" data-o="1">
-        <div class="ol"><span class="mono">Option 1</span></div>
-        <h4>Drop, no discount</h4>
-        <p>Black Friday as a release moment. Value comes from access and gifts, not markdowns.</p>
-        <ul><li>Everything full price</li><li>Gift with purchase ladder on every order</li><li>Members get first access only</li></ul>
-        <div class="pick">Select</div>
-      </button>
-      <button class="opt sel" type="button" data-o="2">
-        <div class="ol"><span class="mono">Option 2</span><span class="rec">Recommended</span></div>
-        <h4>Full price on collectibles, sale on merch</h4>
-        <p>Protects the box set and vinyl while moving tour and archival stock that is already paid for.</p>
-        <ul><li>Box set and vinyl full price</li><li>Tour and archival merch 20–30% off</li><li>Gift with purchase ladder on every order</li><li>Members get an extra 10% on merch in their 24 hours</li></ul>
-        <div class="pick">Selected</div>
-      </button>
-      <button class="opt" type="button" data-o="3">
-        <div class="ol"><span class="mono">Option 3</span></div>
-        <h4>Site-wide sale</h4>
-        <p>The broadest offer, simplest to message, and the biggest hit to margin.</p>
-        <ul><li>20% off site-wide, box set excluded</li><li>Members 25% off in their 24 hours</li><li>Gift with purchase on the top tier only</li></ul>
-        <div class="pick">Select</div>
-      </button>
+    <h3 class="sub-h">How the box set waitlist works</h3>
+    <div class="flow">
+      <div class="fl"><div class="fh"><h4>Notify me, no deposit</h4><span class="tg">Email + SMS</span></div><p>Each box set page carries a <b>notify-me sign-up</b> instead of a checkout. No money changes hands until the sets are ready, so there are no refunds or chargebacks to manage.</p></div>
+      <div class="fl"><div class="fh"><h4>150 of each</h4><span class="tg">Scarcity</span></div><p>The message is simple: <b>once they're gone, they're gone</b>. The waitlist has no cap, so demand above 150 is captured for a reprint or the next drop.</p></div>
+      <div class="fl"><div class="fh"><h4>Clear on timing</h4><span class="tg w">Product page</span></div><p>In bold on both pages: <b>not guaranteed to arrive before Christmas</b>. If they land early, that is a bonus.</p></div>
+      <div class="fl"><div class="fh"><h4>Updates all the way</h4><span class="tg w">Email + SMS</span></div><p>Status updates to the waitlist as news comes in, then <b>first access in sign-up order</b> when the sets are ready to ship.</p></div>
     </div>
-    <p class="note" id="optnote">Discount depth on merch gets set against landed cost per SKU once we have it from the merch partner. On stock that is already paid for, recovering cash matters more than holding margin.</p>
-
-    <h3 class="sub-h">Gift with purchase</h3>
-    <div class="ladder">
-      <div class="rung"><div class="t">$75+</div><div class="g"><b>CAOS sticker sheet</b> in the box</div></div>
-      <div class="rung"><div class="t">$150+</div><div class="g"><b>Sticker sheet plus a CAOS Zine</b></div></div>
-      <div class="rung"><div class="t">BOX SET</div><div class="g"><b>Priority shipping</b>, first wave out the door</div></div>
-    </div>
-    <p class="note">Thresholds are starting points, sized to sit just above the store's typical order value, and get finalized against extra stock of each gift item.</p>
   </section>
 
   <section class="sec wrap" id="early">
     <div class="sec-head">
       <div class="row"><span class="num">03</span><span class="ln"></span></div>
-      <h2>S1C.LA Early Access</h2>
-      <p class="desc">A 24-hour head start for anyone signed up on s1c.la. The week before is the push to join.</p>
+      <h2>Early Access</h2>
+      <p class="desc">The sale opens first to the people closest to Miguel: the ones on his Wednesday livestream and the ones who sign up for early access.</p>
     </div>
     <div class="gates" style="margin-top:0">
-      <div class="gt"><span class="k">Who</span><h4>S1C.LA signups only</h4><p>Anyone who has joined on s1c.la by <b>Wed Nov 25, 11:59pm PT</b>. The member list is frozen then and becomes its own Hive segment.</p></div>
-      <div class="gt"><span class="k">When</span><h4>Thu Nov 26, 9am PT</h4><p>Members get the store <b>24 hours before</b> the public launch on Friday morning, with first shot at the signed box sets.</p></div>
-      <div class="gt"><span class="k">How</span><h4>Private link plus member code</h4><p>A hidden Shopify collection and a <b>member-only code</b>, sent by email and SMS. The code doubles as attribution for every member order.</p></div>
+      <div class="gt"><span class="k">Who</span><h4>Livestream viewers and sign-ups</h4><p>Anyone watching Wednesday's stream, plus <b>everyone who signs up</b> through the early access call to action.</p></div>
+      <div class="gt"><span class="k">When</span><h4>Wed Nov 25, during the stream</h4><p>The password-protected collection <b>turns on live</b>. It stays gated until the public opening on Black Friday morning.</p></div>
+      <div class="gt"><span class="k">How</span><h4>One password</h4><p>Miguel shares it on the stream, and an <b>email and text deliver it</b> to everyone who signed up, the moment the collection opens.</p></div>
     </div>
 
-    <h3 class="sub-h">The push to join, Nov 18 to Nov 25</h3>
+    <h3 class="sub-h">The sign-up push, Nov 24 to 25</h3>
     <div class="flow">
-      <div class="fl"><div class="fh"><h4>Wednesday livestreams</h4><span class="tg">Nov 18 + Nov 25</span></div><p>Miguel mentions early access on the 18th. On the 25th he <b>unboxes the signed box set</b>, on the stream or as a posted clip, and tells fans members get in at 9am.</p></div>
-      <div class="fl"><div class="fh"><h4>Miguel's socials</h4><span class="tg">Nov 19 to 25</span></div><p>One feed post and a short story sequence: "S1C gets Black Friday first." <b>Link in bio to s1c.la.</b></p></div>
-      <div class="fl"><div class="fh"><h4>Email to the wider Hive list</h4><span class="tg">Nov 19 + Nov 24</span></div><p>Contacts who are on Hive but not on s1c.la get <b>two invitations to join</b>, the second framed as a last call.</p></div>
-      <div class="fl"><div class="fh"><h4>SMS</h4><span class="tg w">Nov 24</span></div><p>One text to SMS subscribers who have not joined s1c.la yet, the day before the list closes.</p></div>
+      <div class="fl"><div class="fh"><h4>Miguel's feed post</h4><span class="tg">Tue Nov 24</span></div><p>"Sign up for early access." The graphic comes from the layered Black Friday file, with a <b>sign-up link in bio</b>.</p></div>
+      <div class="fl"><div class="fh"><h4>Stories</h4><span class="tg">Tue Nov 24 + Wed Nov 25</span></div><p>A story when the post goes up and a <b>"tonight on the stream"</b> reminder on Wednesday.</p></div>
+      <div class="fl"><div class="fh"><h4>The livestream itself</h4><span class="tg">Wed Nov 25</span></div><p>Viewers are the S1C core. <b>If you're live, you get first pick.</b> The password goes out on stream.</p></div>
+      <div class="fl"><div class="fh"><h4>Password delivery</h4><span class="tg w">Email + SMS</span></div><p>Sign-ups get an instant confirmation, then the password <b>automatically</b> when the collection opens.</p></div>
     </div>
-    <div class="finding" style="margin-top:22px"><p>Capture target: <b>2,500+ new s1c.la members</b> in the join window, in line with what the October 2025 release week delivered.</p></div>
+    <div class="finding" style="margin-top:22px"><p>Capture target: <b>2,500+ new sign-ups</b> across early access and the box set waitlist, in line with what the October 2025 release week delivered.</p></div>
   </section>
 
   <section class="sec wrap" id="crm">
     <div class="sec-head">
       <div class="row"><span class="num">04</span><span class="ln"></span></div>
       <h2>Email + SMS</h2>
-      <p class="desc">Two parts: the always-on flows that recover revenue on their own, and the send calendar for the sale itself.</p>
+      <p class="desc">Two parts: the automated flows that run in the background, and the send calendar for the sale itself.</p>
     </div>
 
     <h3 class="sub-h" style="margin-top:0">Transactional and automated flows</h3>
     <div class="flow">
-      <div class="fl"><div class="fh"><h4>Abandoned checkout</h4><span class="tg">Email + SMS</span></div><p>Email at <b>1 hour</b>, SMS at <b>4 hours</b>, a final email at <b>24 hours</b> with the gift-with-purchase reminder. No added discount, so it never trains people to abandon.</p></div>
-      <div class="fl"><div class="fh"><h4>Browse abandonment</h4><span class="tg">Email</span></div><p>For anyone who viewed the box set or vinyl without adding to cart. One email at <b>2 hours</b>, built around the signed box set and its quantity.</p></div>
-      <div class="fl"><div class="fh"><h4>Order confirmation</h4><span class="tg w">Shopify</span></div><p>Rebuilt in S1C branding. Clear <b>ship-date language</b> for the box set and any pre-order vinyl, plus a prompt to join s1c.la for buyers who are not members yet.</p></div>
+      <div class="fl"><div class="fh"><h4>Early access sign-up</h4><span class="tg">Email + SMS</span></div><p>Instant confirmation: "You're in. The password lands Wednesday during the stream." Then the <b>password send</b> when the collection opens.</p></div>
+      <div class="fl"><div class="fh"><h4>Box set waitlist</h4><span class="tg">Email + SMS</span></div><p>Confirmation on sign-up, <b>status updates</b> as they come in, and a first-access send in sign-up order when the sets ship.</p></div>
+      <div class="fl"><div class="fh"><h4>Abandoned checkout</h4><span class="tg">Email + SMS</span></div><p>Email at <b>1 hour</b>, SMS at <b>4 hours</b>, a final email at <b>24 hours</b>. No added discount, so it never trains people to abandon.</p></div>
+      <div class="fl"><div class="fh"><h4>Browse abandonment</h4><span class="tg">Email</span></div><p>For anyone who viewed archival pieces without adding to cart. One email at <b>2 hours</b>.</p></div>
+      <div class="fl"><div class="fh"><h4>Order confirmation</h4><span class="tg w">Shopify</span></div><p>In S1C branding, with clear shipping times and a prompt to join the list for buyers who are not on it yet.</p></div>
       <div class="fl"><div class="fh"><h4>Shipping and delivery</h4><span class="tg w">Shopify</span></div><p>Branded shipped, out for delivery and delivered notices, so the most-opened emails in the funnel look and sound like S1C.</p></div>
-      <div class="fl"><div class="fh"><h4>Welcome to S1C</h4><span class="tg">Email</span></div><p>Instant confirmation on signup: "You're in for early access, Thursday at 9am PT." This is the email that makes joining feel worth it.</p></div>
-      <div class="fl"><div class="fh"><h4>Post-purchase</h4><span class="tg">Email</span></div><p>Day 3: vinyl buyers see the box set and box set buyers see the catalog vinyl. Day 10: a thank-you and the next S1C livestream date.</p></div>
-      <div class="fl"><div class="fh"><h4>Sold-out waitlist</h4><span class="tg">Email + SMS</span></div><p>If the signed box sets sell through, the product page flips to a waitlist that <b>keeps capturing contacts</b> for the next run.</p></div>
-      <div class="fl"><div class="fh"><h4>Holiday shipping cutoff</h4><span class="tg w">Email + SMS</span></div><p>A last-day-to-order-for-the-holidays send, timed to the merch partner's carrier cutoff in December.</p></div>
+      <div class="fl"><div class="fh"><h4>Post-purchase</h4><span class="tg">Email</span></div><p>Day 3: an invite to the box set waitlist. Day 10: a thank-you and the next S1C livestream date.</p></div>
+      <div class="fl"><div class="fh"><h4>Holiday shipping cutoff</h4><span class="tg w">Email + SMS</span></div><p>A last-day-to-order-for-the-holidays send, timed to the carrier cutoff in December.</p></div>
     </div>
 
     <h3 class="sub-h">Sale send calendar</h3>
@@ -633,41 +605,41 @@ const html = `<!DOCTYPE html>
       <table class="cal">
         <thead><tr><th>Date</th><th>Audience</th><th>Channel</th><th>Message</th></tr></thead>
         <tbody>
-          <tr><td class="d">Wed Nov 25, 6pm</td><td>S1C members</td><td><span class="ch">Email</span></td><td>Tomorrow at 9am, you're first. What's in the box.</td></tr>
-          <tr class="key"><td class="d">Thu Nov 26, 9am</td><td>S1C members</td><td><span class="ch r">Email</span><span class="ch r">SMS</span></td><td><b>Early access is open.</b> Private link and member code.</td></tr>
-          <tr><td class="d">Thu Nov 26, 6pm</td><td>Members who have not bought</td><td><span class="ch">Email</span></td><td>Signed box sets remaining, plus the merch offer.</td></tr>
-          <tr class="key"><td class="d">Fri Nov 27, 9am</td><td>Full engaged list</td><td><span class="ch r">Email</span><span class="ch r">SMS</span></td><td><b>Black Friday is live.</b> Box set, vinyl, merch and the gift ladder.</td></tr>
-          <tr><td class="d">Fri Nov 27, 9am</td><td>Unengaged 180 days+</td><td><span class="ch">Email</span></td><td>One reactivation send, kept separate to protect deliverability.</td></tr>
-          <tr><td class="d">Sat Nov 28</td><td>Engaged, not purchased</td><td><span class="ch">Email</span></td><td>The story of the box set, in Miguel's words.</td></tr>
-          <tr><td class="d">Sun Nov 29</td><td>Engaged, not purchased</td><td><span class="ch">Email</span></td><td>Gift guide: merch and vinyl by price point.</td></tr>
-          <tr class="key"><td class="d">Mon Nov 30, 9am</td><td>Full engaged list</td><td><span class="ch r">Email</span><span class="ch r">SMS</span></td><td><b>Cyber Monday.</b> Last full day of the offer.</td></tr>
-          <tr><td class="d">Tue Dec 1, 9am</td><td>Engaged, not purchased</td><td><span class="ch">Email</span><span class="ch">SMS</span></td><td>Ends tonight at midnight.</td></tr>
+          <tr><td class="d">Tue Nov 24</td><td>Miguel's followers</td><td><span class="ch">Social</span></td><td>"Sign up for early access." Feed post and stories.</td></tr>
+          <tr class="key"><td class="d">Wed Nov 25, stream</td><td>Early access sign-ups</td><td><span class="ch r">Email</span><span class="ch r">SMS</span></td><td><b>The collection is open.</b> The password, and a link to the box set waitlist.</td></tr>
+          <tr><td class="d">Thu Nov 26</td><td>Nobody</td><td><span class="ch">None</span></td><td>Thanksgiving. No sends.</td></tr>
+          <tr class="key"><td class="d">Fri Nov 27, 9am</td><td>Full list, about 30,000</td><td><span class="ch r">Email</span><span class="ch r">SMS</span></td><td><b>Black Friday is live.</b> "If you missed it on Wednesday's stream..." Archival 30% off and the box set waitlist.</td></tr>
+          <tr><td class="d">Sat Nov 28</td><td>Engaged, not purchased</td><td><span class="ch">Email</span></td><td>The archival pieces, and the story behind them.</td></tr>
+          <tr><td class="d">Sun Nov 29</td><td>Engaged, not purchased</td><td><span class="ch">Email</span></td><td>Gift guide by price point. Cyber Monday tease.</td></tr>
+          <tr class="key"><td class="d">Mon Nov 30, 9am</td><td>Full list</td><td><span class="ch r">Email</span><span class="ch r">SMS</span><span class="ch r">Social</span></td><td><b>Cyber Monday push.</b> Last full day of the sale, with a Miguel story and a paid budget push.</td></tr>
+          <tr><td class="d">Tue Dec 1, 9am</td><td>Engaged, not purchased</td><td><span class="ch">Email</span><span class="ch">SMS</span></td><td>Last call. Ends tonight at midnight.</td></tr>
         </tbody>
       </table>
     </div>
-    <p class="note">Copy is written in Miguel's voice and approved in one batch ahead of the sale, so nothing waits on approval mid-week. Purchasers are suppressed from sale sends the moment they buy.</p>
+    <p class="note">Copy is written in Miguel's voice and approved in one batch on Tuesday, so nothing waits on approval mid-sale. Purchasers are suppressed from sale sends the moment they buy.</p>
   </section>
 
   <section class="sec wrap" id="paid">
     <div class="sec-head">
       <div class="row"><span class="num">05</span><span class="ln"></span></div>
       <h2>Paid Media</h2>
-      <p class="desc">A $1,000 test on Meta and Instagram, live Friday through Tuesday. It starts on people who already know Miguel and grows only once it covers its own cost.</p>
+      <p class="desc">A $1,000 test on Meta and Instagram from Black Friday through Cyber Monday, with the budget raised in real time while returns hold above 5x.</p>
     </div>
     <div class="tablewrap">
       <table class="cal">
-        <thead><tr><th>Line</th><th>Budget</th><th>Audience</th><th>Creative</th></tr></thead>
+        <thead><tr><th>Line</th><th>Budget</th><th>Audience</th><th>Creative and destination</th></tr></thead>
         <tbody>
-          <tr><td class="d">Retargeting</td><td><b>$600</b></td><td>Store visitors and cart abandoners from the last 30 days, Instagram and Facebook engagers over the last year, video viewers, and the Hive list uploaded as a custom audience</td><td>Box set unboxing clip, product carousel, dynamic catalog ads</td></tr>
-          <tr><td class="d">Prospecting</td><td><b>$400</b></td><td>Advantage+ shopping seeded with past purchasers and S1C members, plus lookalikes of both</td><td>A 15-second to-camera clip from Miguel on his phone, and the unboxing cut</td></tr>
+          <tr><td class="d">Retargeting</td><td><b>$600</b></td><td>Store visitors and cart abandoners from the last 30 days, Instagram and Facebook engagers over the last year, video viewers, and the Hive list uploaded as a custom audience</td><td>Product carousel with <b>each card going to its own product page</b>, plus Black Friday graphics going to the sale collection</td></tr>
+          <tr><td class="d">Prospecting</td><td><b>$400</b></td><td>Advantage+ shopping seeded with past purchasers and list sign-ups, plus lookalikes of both</td><td>Miguel's 15-second phone clip and the Black Friday graphics, going to the <b>sale collection</b>, not the homepage</td></tr>
         </tbody>
       </table>
     </div>
+    <p class="note">The shop homepage becomes the catch-all sale page from Friday, so anyone who clicks the logo still lands on everything in the sale.</p>
 
     <div class="gates">
-      <div class="gt"><span class="k">Checkpoint 1, Sat Nov 28 noon</span><h4>Read after about $400</h4><p>At <b>3.3x or better</b>, add $1,500 on a one-line approval, funded by sale revenue already in.</p></div>
-      <div class="gt"><span class="k">Hold zone</span><h4>2x to 3.3x</h4><p>Keep spend flat and move budget toward retargeting, where returns run highest.</p></div>
-      <div class="gt"><span class="k">Pull back</span><h4>Under 2x</h4><p>Pause prospecting and let owned channels carry the rest of the sale. Checkpoint 2 lands Monday morning before Cyber Monday.</p></div>
+      <div class="gt"><span class="k">Scale</span><h4>5x or better</h4><p>Budget goes up <b>in real time</b>, on the day, for as long as returns hold. Cyber Monday gets the biggest push if the weekend clears it.</p></div>
+      <div class="gt"><span class="k">Hold</span><h4>3.3x to 5x</h4><p>Profitable at a 30% margin. Keep spend flat and move budget toward the best-performing ads.</p></div>
+      <div class="gt"><span class="k">Pull back</span><h4>Under 3.3x</h4><p>Below break-even. Pause prospecting and let email, SMS and social carry the rest of the sale.</p></div>
     </div>
 
     <div class="calc">
@@ -675,44 +647,40 @@ const html = `<!DOCTYPE html>
       <p class="cd">Move the sliders to see revenue and profit at different spend and return levels. At a 30% margin, the ads pay for themselves at about 3.3x.</p>
       <div class="calc-grid">
         <div class="ctrl"><label>Ad spend <b id="vSpend">$1,000</b></label><input type="range" id="sSpend" min="500" max="10000" step="250" value="1000" /></div>
-        <div class="ctrl"><label>Return on ad spend <b id="vRoas">4.0x</b></label><input type="range" id="sRoas" min="1" max="10" step="0.1" value="4" /></div>
+        <div class="ctrl"><label>Return on ad spend <b id="vRoas">5.0x</b></label><input type="range" id="sRoas" min="1" max="10" step="0.1" value="5" /></div>
         <div class="ctrl"><label>Net margin <b id="vMargin">30%</b></label><input type="range" id="sMargin" min="15" max="60" step="1" value="30" /></div>
       </div>
       <div class="calc-out">
-        <div class="co"><div class="n" id="oRev">$4,000</div><span class="l">Revenue from paid</span></div>
-        <div class="co"><div class="n" id="oGp">$1,200</div><span class="l">Margin on that revenue</span></div>
-        <div class="co" id="coNet"><div class="n" id="oNet">$200</div><span class="l">Profit after ad spend</span></div>
+        <div class="co"><div class="n" id="oRev">$5,000</div><span class="l">Revenue from paid</span></div>
+        <div class="co"><div class="n" id="oGp">$1,500</div><span class="l">Margin on that revenue</span></div>
+        <div class="co" id="coNet"><div class="n" id="oNet">$500</div><span class="l">Profit after ad spend</span></div>
         <div class="co"><div class="n" id="oBe">3.3x</div><span class="l">Break-even return</span></div>
       </div>
-      <div class="verdict" id="verdict">Pays for itself. This is the point where spend scales.</div>
+      <div class="verdict" id="verdict">At 5x or better, the budget keeps rising.</div>
     </div>
-    <p class="note">Revenue from email, SMS and early access sits on top of this and is reported separately, so the paid line is judged on its own.</p>
+    <p class="note">Revenue from email, SMS and the livestream sits on top of this and is reported separately, so the paid line is judged on its own.</p>
   </section>
 
   <section class="sec wrap" id="calendar">
     <div class="sec-head">
       <div class="row"><span class="num">06</span><span class="ln"></span></div>
       <h2>Calendar</h2>
-      <p class="desc">Day by day from today's review to the last call.</p>
+      <p class="desc">Day by day from tonight's cutoff to the last call.</p>
     </div>
     <div class="tablewrap">
       <table class="cal">
         <thead><tr><th>Date</th><th>What happens</th><th>Channels</th></tr></thead>
         <tbody>
-          <tr><td class="d">Tue Nov 17</td><td>Plan reviewed with Mitch and Sophie.</td><td><span class="ch">Review</span></td></tr>
-          <tr class="key"><td class="d">Wed Nov 18</td><td><b>Green light.</b> Offer, paid test and gift ladder approved. Shopify and Hive access confirmed. Social copy sheet to Miguel. Miguel mentions early access on the livestream.</td><td><span class="ch r">Approval</span><span class="ch">Setup</span><span class="ch">Livestream</span></td></tr>
-          <tr><td class="d">Thu Nov 19</td><td>Products, prices and stock locked. Join-S1C email to the wider list. Miguel posts the feed post and stories. Email flow copy sheet to Miguel.</td><td><span class="ch">Email</span><span class="ch">Social</span></td></tr>
-          <tr><td class="d">Fri Nov 20</td><td>Flows built: abandoned checkout, browse, welcome, confirmation. Codes and hidden collection set up. Flow copy approved and Miguel&#39;s phone clip in. Sale copy sheet to Miguel.</td><td><span class="ch">Setup</span></td></tr>
-          <tr><td class="d">Mon Nov 23</td><td>Full QA: test orders, every flow, every code, pixel and conversion events. Sale copy approved in one batch.</td><td><span class="ch">QA</span><span class="ch">Approval</span></td></tr>
-          <tr><td class="d">Tue Nov 24</td><td>Last-call email and SMS to join S1C. Ads built and in review.</td><td><span class="ch">Email</span><span class="ch">SMS</span><span class="ch">Paid</span></td></tr>
-          <tr class="key"><td class="d">Wed Nov 25</td><td><b>Box set unboxing</b>, on the S1C stream or posted. Member list frozen at 11:59pm.</td><td><span class="ch r">Social</span><span class="ch">Livestream</span><span class="ch">Email</span></td></tr>
-          <tr class="key"><td class="d">Thu Nov 26</td><td><b>Members early access, 9am PT.</b></td><td><span class="ch r">Email</span><span class="ch r">SMS</span></td></tr>
-          <tr class="key"><td class="d">Fri Nov 27</td><td><b>Public launch, 9am PT.</b> Paid goes live. Report page goes live.</td><td><span class="ch r">Email</span><span class="ch r">SMS</span><span class="ch r">Paid</span><span class="ch">Social</span></td></tr>
-          <tr><td class="d">Sat Nov 28</td><td>Paid checkpoint 1. Box set story email.</td><td><span class="ch">Paid</span><span class="ch">Email</span></td></tr>
-          <tr><td class="d">Sun Nov 29</td><td>Gift guide email. Stories with what's left.</td><td><span class="ch">Email</span><span class="ch">Social</span></td></tr>
-          <tr class="key"><td class="d">Mon Nov 30</td><td><b>Cyber Monday.</b> Paid checkpoint 2.</td><td><span class="ch r">Email</span><span class="ch r">SMS</span><span class="ch">Paid</span></td></tr>
-          <tr><td class="d">Tue Dec 1</td><td>Last call. Offer ends at midnight PT.</td><td><span class="ch">Email</span><span class="ch">SMS</span><span class="ch">Paid</span></td></tr>
-          <tr><td class="d">Fri Dec 4</td><td>Sale recap with revenue by channel, new S1C members and what carries into the holiday push.</td><td><span class="ch">Report</span></td></tr>
+          <tr class="key"><td class="d">Mon Nov 23</td><td><b>Cutoff tonight.</b> All products loaded into the password-protected collection. Final site notes in. Layered Black Friday file and product shots to CCD.</td><td><span class="ch r">Setup</span></td></tr>
+          <tr><td class="d">Tue Nov 24</td><td>Site review. Waitlist live on both box set pages. CCD builds the sign-up graphic and all sale creative. Sale copy approved. Miguel posts "Sign up for early access."</td><td><span class="ch">Setup</span><span class="ch">Approval</span><span class="ch">Social</span></td></tr>
+          <tr class="key"><td class="d">Wed Nov 25</td><td><b>Livestream soft launch.</b> Collection turns on during the stream, password shared live and sent to sign-ups. Miguel's phone clip in.</td><td><span class="ch r">Livestream</span><span class="ch r">Email</span><span class="ch r">SMS</span></td></tr>
+          <tr><td class="d">Thu Nov 26</td><td>Thanksgiving. No sends. Collection stays open to password holders.</td><td><span class="ch">None</span></td></tr>
+          <tr class="key"><td class="d">Fri Nov 27</td><td><b>Black Friday, public on sale.</b> Password comes down, catch-all sale page live. Full list email and SMS. Paid goes live. Report page goes live.</td><td><span class="ch r">Email</span><span class="ch r">SMS</span><span class="ch r">Paid</span><span class="ch">Social</span></td></tr>
+          <tr><td class="d">Sat Nov 28</td><td>Follow-up email. Paid read, budget up if above 5x.</td><td><span class="ch">Email</span><span class="ch">Paid</span></td></tr>
+          <tr><td class="d">Sun Nov 29</td><td>Gift guide email and Cyber Monday tease. Cyber Monday graphic to Miguel.</td><td><span class="ch">Email</span><span class="ch">Social</span></td></tr>
+          <tr class="key"><td class="d">Mon Nov 30</td><td><b>Cyber Monday push.</b> Full list email and SMS, Miguel story, paid budget push.</td><td><span class="ch r">Email</span><span class="ch r">SMS</span><span class="ch r">Social</span><span class="ch r">Paid</span></td></tr>
+          <tr><td class="d">Tue Dec 1</td><td>Last call. Sale ends at midnight PT.</td><td><span class="ch">Email</span><span class="ch">SMS</span><span class="ch">Paid</span></td></tr>
+          <tr><td class="d">Fri Dec 4</td><td>Sale recap with revenue by channel, new sign-ups, waitlist size and what carries into the holiday push.</td><td><span class="ch">Report</span></td></tr>
         </tbody>
       </table>
     </div>
@@ -722,26 +690,30 @@ const html = `<!DOCTYPE html>
     <div class="sec-head">
       <div class="row"><span class="num">07</span><span class="ln"></span></div>
       <h2>Team Checklist</h2>
-      <p class="desc">Everything else the plan depends on, with an owner and a date. Miguel&#39;s items sit in his own list above. Tick items off as they land.</p>
+      <p class="desc">Everything else the plan depends on, with an owner and a date. Miguel's items sit in his own list above. Tick items off as they land.</p>
     </div>
     <div class="tablewrap">
       <table class="cal needs">
         <thead><tr><th>Item</th><th>Owner</th><th>By</th><th>Done</th></tr></thead>
         <tbody>
-          <tr><td><b>Approvals:</b> offer option, $1,000 paid test, gift ladder, scale rule at checkpoint 1</td><td class="o">Mitch, Sophie</td><td class="d">Nov 18</td><td><label class="chk"><input type="checkbox" /></label></td></tr>
-          <tr><td><b>Product list</b> with prices, stock per SKU and landed cost, including the gift items</td><td class="o">Sophie, merch partner</td><td class="d">Nov 19</td><td><label class="chk"><input type="checkbox" /></label></td></tr>
-          <tr><td><b>Box set:</b> signed quantity, price, ship date and pre-order wording</td><td class="o">Sophie</td><td class="d">Nov 19</td><td><label class="chk"><input type="checkbox" /></label></td></tr>
-          <tr><td><b>Vinyl:</b> confirmed Wildheart date and S1C store quantities for each reissue</td><td class="o">Sophie, label</td><td class="d">Nov 19</td><td><label class="chk"><input type="checkbox" /></label></td></tr>
-          <tr><td><b>Shopify staff access</b> for CCD: discounts, notifications, hidden collection, apps</td><td class="o">Shopify admin</td><td class="d">Nov 18</td><td><label class="chk"><input type="checkbox" /></label></td></tr>
-          <tr><td><b>Meta:</b> ad account access, pixel and conversions API on the store, product catalog connected</td><td class="o">Shopify admin, CCD</td><td class="d">Nov 20</td><td><label class="chk"><input type="checkbox" /></label></td></tr>
-          <tr><td><b>Hive:</b> Shopify events flowing for cart and checkout, SMS sending on, send domain confirmed</td><td class="o">CCD, Hive</td><td class="d">Nov 20</td><td><label class="chk"><input type="checkbox" /></label></td></tr>
-          <tr><td><b>Product photography</b> of the box set and each item, flat and in hand</td><td class="o">Sophie, merch partner</td><td class="d">Nov 20</td><td><label class="chk"><input type="checkbox" /></label></td></tr>
-          <tr><td><b>Copy sheets</b> to Miguel: social on Nov 18, email flows on Nov 19, sale sends on Nov 20</td><td class="o">CCD</td><td class="d">Nov 18–20</td><td><label class="chk"><input type="checkbox" /></label></td></tr>
-          <tr><td><b>Fulfillment:</b> holiday carrier cutoff dates and capacity for a sale-week spike</td><td class="o">Merch partner</td><td class="d">Nov 20</td><td><label class="chk"><input type="checkbox" /></label></td></tr>
-          <tr><td><b>Copy sign-off</b> alongside Miguel on each sheet, so approvals land on the dates in his list</td><td class="o">Mitch, Sophie</td><td class="d">Nov 19–23</td><td><label class="chk"><input type="checkbox" /></label></td></tr>
+          <tr><td><b>All products loaded</b> into the password-protected collection, archival merch priced at 30% off</td><td class="o">Tommy</td><td class="d">Nov 23</td><td><label class="chk"><input type="checkbox" /></label></td></tr>
+          <tr><td><b>Layered Black Friday file</b> with fonts, one square Black Friday asset, and product shots for the Wildheart Baja Hoodie, Script Logo Tee and catalog vinyl box set</td><td class="o">Sophie, Christian</td><td class="d">Nov 23</td><td><label class="chk"><input type="checkbox" /></label></td></tr>
+          <tr><td><b>Miguel's sign-off</b> on the box set waitlist approach</td><td class="o">Sophie, Bruce</td><td class="d">Nov 23</td><td><label class="chk"><input type="checkbox" /></label></td></tr>
+          <tr><td><b>Sign-up graphic and all sale creative</b> in every size, back for approval</td><td class="o">CCD</td><td class="d">Nov 24</td><td><label class="chk"><input type="checkbox" /></label></td></tr>
+          <tr><td><b>Notify-me waitlist</b> on both box set pages, with the not-before-Christmas line in bold</td><td class="o">Tommy</td><td class="d">Nov 24</td><td><label class="chk"><input type="checkbox" /></label></td></tr>
+          <tr><td><b>Sale copy sheet</b> to Miguel: sign-up post, password send, Black Friday, follow-ups, Cyber Monday, last call</td><td class="o">CCD</td><td class="d">Nov 24</td><td><label class="chk"><input type="checkbox" /></label></td></tr>
+          <tr><td><b>Livestream and newsletter language</b> finalized with Miguel's team</td><td class="o">Sophie</td><td class="d">Nov 24</td><td><label class="chk"><input type="checkbox" /></label></td></tr>
+          <tr><td><b>Catalog vinyl box set pricing:</b> costs resent, price set</td><td class="o">Libby, Mitch, Bruce</td><td class="d">Nov 24</td><td><label class="chk"><input type="checkbox" /></label></td></tr>
+          <tr><td><b>UPCs</b> for the catalog and CAOS box sets</td><td class="o">Libby</td><td class="d">Nov 24</td><td><label class="chk"><input type="checkbox" /></label></td></tr>
+          <tr><td><b>Flows live:</b> early access sign-up and password send, waitlist, abandoned checkout, browse, confirmation</td><td class="o">CCD</td><td class="d">Nov 24</td><td><label class="chk"><input type="checkbox" /></label></td></tr>
+          <tr><td><b>Meta:</b> pixel and conversions API on the store, product catalog connected, ads built and in review</td><td class="o">CCD, Tommy</td><td class="d">Nov 25</td><td><label class="chk"><input type="checkbox" /></label></td></tr>
+          <tr><td><b>Tech cover</b> during the livestream in case anything glitches when the collection turns on</td><td class="o">Tommy</td><td class="d">Nov 25</td><td><label class="chk"><input type="checkbox" /></label></td></tr>
+          <tr><td><b>Catch-all sale page</b> as the shop homepage once the password comes down</td><td class="o">Tommy</td><td class="d">Nov 27</td><td><label class="chk"><input type="checkbox" /></label></td></tr>
+          <tr><td><b>New long-sleeve tee:</b> order the printer minimum and list it</td><td class="o">Sophie, Marika</td><td class="d">TBC</td><td><label class="chk"><input type="checkbox" /></label></td></tr>
         </tbody>
       </table>
     </div>
+    <p class="note">Fulfillment: all non-box inventory ships from Oaklandish. The CAOS box set goes to Oaklandish once every piece arrives, then to Music Today for fulfillment.</p>
   </section>
 
   <section class="sec wrap" id="report">
@@ -751,18 +723,18 @@ const html = `<!DOCTYPE html>
       <p class="desc">Every order is tagged at the source, so results can be tied to the action that produced them.</p>
     </div>
     <div class="method">
-      <div class="mcard"><span class="s">S1C early access</span><h4>Member code</h4><p>Every member order carries the member code, so the <b>value of an S1C signup</b> becomes a number.</p></div>
+      <div class="mcard"><span class="s">Livestream</span><h4>Password window</h4><p>Orders placed while the collection is gated count as the <b>livestream and early access</b> result.</p></div>
       <div class="mcard"><span class="s">Email</span><h4>Tracked links per send</h4><p>Each send has its own link tags, so revenue is reported <b>per email</b>, not as a lump.</p></div>
       <div class="mcard"><span class="s">SMS</span><h4>Tracked links per text</h4><p>Reported apart from email, so we learn which channel this audience buys from.</p></div>
-      <div class="mcard"><span class="s">Flows</span><h4>Recovered revenue</h4><p>Abandoned checkout and browse revenue reported weekly as its <b>own line</b>, since it keeps running after the sale.</p></div>
-      <div class="mcard"><span class="s">Paid</span><h4>Pixel plus tagged links</h4><p>Spend, revenue and return on ad spend daily, read against the 3.3x break-even.</p></div>
-      <div class="mcard"><span class="s">Reporting</span><h4>Live page plus daily read</h4><p>A report page from launch day, a short daily read through Dec 1, and a <b>full recap on Dec 4</b>.</p></div>
+      <div class="mcard"><span class="s">Flows</span><h4>Recovered revenue</h4><p>Abandoned checkout and browse revenue reported as its <b>own line</b>, since it keeps running after the sale.</p></div>
+      <div class="mcard"><span class="s">Paid</span><h4>Pixel plus tagged links</h4><p>Spend, revenue and return on ad spend daily, read against the 5x scale line and 3.3x break-even.</p></div>
+      <div class="mcard"><span class="s">Reporting</span><h4>Live page plus daily read</h4><p>A report page from Black Friday, a short daily read through Dec 1, and a <b>full recap on Dec 4</b>.</p></div>
     </div>
     <div class="statstrip" style="margin-top:26px">
       <div class="stat"><div class="n">Revenue</div><span class="l">Total and by channel</span></div>
-      <div class="stat"><div class="n">Orders + AOV</div><span class="l">Against the gift thresholds</span></div>
-      <div class="stat"><div class="n">ROAS</div><span class="l">Paid line, against 3.3x</span></div>
-      <div class="stat"><div class="n r">New members</div><span class="l">s1c.la signups, Nov 18 to Dec 1</span></div>
+      <div class="stat"><div class="n">Orders + AOV</div><span class="l">Archival and full price</span></div>
+      <div class="stat"><div class="n">ROAS</div><span class="l">Paid line, against 5x</span></div>
+      <div class="stat"><div class="n r">Sign-ups</div><span class="l">Early access and box set waitlist</span></div>
     </div>
   </section>
 
@@ -776,12 +748,13 @@ const html = `<!DOCTYPE html>
       <table class="cal">
         <thead><tr><th>When</th><th>Initiative</th><th>What we run</th></tr></thead>
         <tbody>
-          <tr><td class="d">Dec 2–14</td><td><b>Holiday gifting</b></td><td>Gift guide email, the carrier-cutoff send by email and SMS, and paid retargeting if the sale clears 3.3x.</td></tr>
-          <tr><td class="d">Dec</td><td><b>CAOS box set fulfillment</b></td><td>Shipping updates in S1C branding, and an unboxing prompt to buyers so their posts become content.</td></tr>
-          <tr><td class="d">Dec 18 (proposed)</td><td><b>Wildheart reissue</b></td><td>Pre-order and release-day emails to vinyl buyers and S1C members, plus a release-day story from Miguel.</td></tr>
+          <tr><td class="d">Dec 2–14</td><td><b>Holiday gifting</b></td><td>Gift guide email, the carrier-cutoff send by email and SMS, and paid retargeting if the sale clears 5x.</td></tr>
+          <tr><td class="d">As news lands</td><td><b>Box set waitlist</b></td><td>Status updates by email and SMS, then first access in sign-up order when the sets are ready to ship.</td></tr>
+          <tr><td class="d">Dec 18 (proposed)</td><td><b>Wildheart reissue</b></td><td>Pre-order and release-day emails to vinyl buyers and the waitlist, plus a release-day story from Miguel.</td></tr>
           <tr><td class="d">Weekly</td><td><b>S1C livestreams</b></td><td>Clips out within 48 hours, and a store link on every stream that has product to show.</td></tr>
-          <tr><td class="d">From January</td><td><b>Always-on merch</b></td><td>If the sale clears 3.3x, a standing daily merch budget year-round, so D2C runs between tours and drops rather than only around them.</td></tr>
-          <tr><td class="d">Before Jan 22</td><td><b>Have You Heard setup</b></td><td>Pre-save and s1c.la capture live before the announce, so new fans from the single are counted from the first day.</td></tr>
+          <tr><td class="d">TBC</td><td><b>Mexico show fan campaign</b></td><td>Fans upload videos and Miguel picks the top three, run through a fan-content partner.</td></tr>
+          <tr><td class="d">From January</td><td><b>Always-on merch</b></td><td>If the sale clears 5x, a standing daily merch budget year-round, so the shop sells between tours and drops rather than only around them.</td></tr>
+          <tr><td class="d">Before the single</td><td><b>Have You Heard setup</b></td><td>Pre-save and sign-up capture live before the announce, so new fans from the single are counted from the first day.</td></tr>
         </tbody>
       </table>
     </div>
@@ -831,19 +804,19 @@ const html = `<!DOCTYPE html>
     document.getElementById('oBe').textContent=be.toFixed(1)+'x';
     document.getElementById('coNet').classList.toggle('neg',net<0);
     var v=document.getElementById('verdict');
-    if(ro>=be){v.textContent='Pays for itself. This is the point where spend scales.';}
-    else if(ro>=2){v.textContent='Below break-even. Hold spend and shift budget to retargeting.';}
-    else{v.textContent='Well below break-even. Pause prospecting and let owned channels carry the sale.';}
+    if(ro>=5){v.textContent='At 5x or better, the budget keeps rising.';}
+    else if(ro>=be){v.textContent='Profitable. Hold spend and move budget to the best ads.';}
+    else{v.textContent='Below break-even. Pause prospecting and let owned channels carry the sale.';}
   }
   [sS,sR,sM].forEach(function(el){el.addEventListener('input',calc);});calc();
 
   document.querySelectorAll('.mg-c input').forEach(function(c,i){
-    var k='ccd-miguel-bf-mg-'+i, row=c.closest('.mg-row');
+    var k='ccd-miguel-bf2-mg-'+i, row=c.closest('.mg-row');
     try{if(localStorage.getItem(k)==='1'){c.checked=true;row.classList.add('done');}}catch(e){}
     c.addEventListener('change',function(){row.classList.toggle('done',c.checked);try{localStorage.setItem(k,c.checked?'1':'0');}catch(e){}});
   });
   document.querySelectorAll('.needs input[type=checkbox]').forEach(function(c,i){
-    var k='ccd-miguel-bf-need-'+i;
+    var k='ccd-miguel-bf2-need-'+i;
     try{if(localStorage.getItem(k)==='1'){c.checked=true;c.closest('tr').classList.add('done');}}catch(e){}
     c.addEventListener('change',function(){c.closest('tr').classList.toggle('done',c.checked);try{localStorage.setItem(k,c.checked?'1':'0');}catch(e){}});
   });
