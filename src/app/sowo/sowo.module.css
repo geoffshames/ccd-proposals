@@ -10,7 +10,7 @@
 .small { font-size: 12px; color: var(--faint); margin-top: 12px !important; }
 
 .page [data-r] { opacity: 0; transform: translateY(18px); transition: opacity .7s ease, transform .7s cubic-bezier(.2,.7,.2,1); }
-.page [data-r].in { opacity: 1; transform: none; }
+.page [data-r][data-in] { opacity: 1; transform: none; }
 .in { opacity: 1; }
 @media (prefers-reduced-motion: reduce) { .page [data-r] { opacity: 1; transform: none; transition: none; } }
 

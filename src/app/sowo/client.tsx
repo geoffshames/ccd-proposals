@@ -19,8 +19,8 @@ const range = (r: [number, number], unit: "k" | "n", ko: boolean) => `${kfmt(r[0
 function useReveal() {
   useEffect(() => {
     const els = Array.from(document.querySelectorAll<HTMLElement>("[data-r]"));
-    if (!("IntersectionObserver" in window)) { els.forEach((e) => e.classList.add(s.in)); return; }
-    const io = new IntersectionObserver((es) => es.forEach((e) => { if (e.isIntersecting) { e.target.classList.add(s.in); io.unobserve(e.target); } }), { rootMargin: "0px 0px -8% 0px", threshold: 0.05 });
+    if (!("IntersectionObserver" in window)) { els.forEach((e) => e.setAttribute("data-in", "")); return; }
+    const io = new IntersectionObserver((es) => es.forEach((e) => { if (e.isIntersecting) { e.target.setAttribute("data-in", ""); io.unobserve(e.target); } }), { rootMargin: "0px 0px -8% 0px", threshold: 0.05 });
     els.forEach((e) => io.observe(e));
     return () => io.disconnect();
   }, []);
