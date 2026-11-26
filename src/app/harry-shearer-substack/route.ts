@@ -439,13 +439,14 @@ const html = `<!DOCTYPE html>
     <div class="sec-head">
       <div class="row"><span class="num">02</span><span class="ln"></span></div>
       <h2>The Plan</h2>
-      <p class="desc">Four workstreams that run together every week.</p>
+      <p class="desc">Five workstreams that run together every week.</p>
     </div>
     <div class="principles" style="margin-top:0">
       <div class="pr"><span class="pn">Workstream 1</span><h4>The Substack as home base</h4><p>Design, about page, welcome email and a fixed weekly rhythm: <b>a free written dispatch built on Le Show segments, a midweek Shallowfake video post, and short Notes in between.</b> Most posts stay free so they travel. A paid tier opens once the free list has momentum, with the archive, bonus voices and live sessions behind it.</p></div>
       <div class="pr"><span class="pn">Workstream 2</span><h4>Shallowfakes, produced by Crowd Control</h4><p>Harry writes and records. Crowd Control builds the picture on the current generation of video models, then handles lip sync, compositing, edit, captions and sound. <b>Every piece goes to Harry for approval before anything publishes.</b></p></div>
       <div class="pr"><span class="pn">Workstream 3</span><h4>Short-form distribution</h4><p>Every Shallowfake and every strong Le Show moment is cut to vertical for TikTok, Instagram Reels, YouTube Shorts and X. <b>Each post ends by pointing to the Substack</b>, so views turn into subscribers.</p></div>
       <div class="pr"><span class="pn">Workstream 4</span><h4>The Substack network</h4><p>Substack grows writers through other writers. We set up recommendation swaps, guest pieces and joint live sessions with satire, politics and comedy writers whose readers fit Harry's, <b>which is the fastest free growth channel the platform has.</b></p></div>
+      <div class="pr"><span class="pn">Workstream 5</span><h4>Trial Reels arbitrage</h4><p>Instagram Trial Reels show a clip to people who do not follow the account, and every trial reaches a fresh audience. We run each Shallowfake and Le Show clip through Trial Reels many times, <b>changing the opening hook, caption and on-screen text on each pass</b>, so one piece of video earns repeated rounds of new reach instead of one. The same approach runs on TikTok. The hooks that win go to the main feed, and into paid if the add-on is active.</p></div>
     </div>
   </section>
 
@@ -481,6 +482,7 @@ const html = `<!DOCTYPE html>
           <li>2 Shallowfakes per week, about 8 per month</li>
           <li>Substack design, about page and welcome email</li>
           <li>Vertical cuts to TikTok, Reels, Shorts and X</li>
+          <li>Trial Reels on every clip</li>
           <li>Substack link and post copy on every piece</li>
           <li>Monthly performance report</li>
         </ul>
@@ -493,6 +495,7 @@ const html = `<!DOCTYPE html>
         <ul>
           <li>4 Shallowfakes per week, about 16 per month</li>
           <li>2 Le Show segment clips per week from the broadcast audio</li>
+          <li>Trial Reels arbitrage with multiple hook variants per clip</li>
           <li>Weekly written dispatch formatted and scheduled</li>
           <li>Substack Notes several times a week</li>
           <li>Recommendation swaps and collab outreach</li>
@@ -508,6 +511,7 @@ const html = `<!DOCTYPE html>
         <ul>
           <li>5 Shallowfakes per week, about 20 per month</li>
           <li>Weekly long-form video edition for YouTube and the Substack</li>
+          <li>Trial Reels arbitrage at full volume, with hook testing reported weekly</li>
           <li>Paid tier launch, pricing and ongoing management</li>
           <li>Monthly Substack live session, produced and promoted</li>
           <li>24-hour turnaround on news-driven pieces</li>
